@@ -20,18 +20,18 @@
 namespace KS.Arguments.ArgumentBase
 {
 	/// <summary>
-    /// Base kernel argument executor
-    /// </summary>
+	/// Base kernel argument executor
+	/// </summary>
 	public interface IArgument
 	{
 
 		/// <summary>
-        /// Executes the kernel argument with the given argument
-        /// </summary>
-        /// <param name="StringArgs">Arguments in a string</param>
-        /// <param name="ListArgs">List of provided arguments and switches</param>
-        /// <param name="ListArgsOnly">List of provided arguments</param>
-        /// <param name="ListSwitchesOnly">List of provided switches</param>
+		/// Executes the kernel argument with the given argument
+		/// </summary>
+		/// <param name="StringArgs">Arguments in a string</param>
+		/// <param name="ListArgs">List of provided arguments and switches</param>
+		/// <param name="ListArgsOnly">List of provided arguments</param>
+		/// <param name="ListSwitchesOnly">List of provided switches</param>
 		void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly);
 
 	}

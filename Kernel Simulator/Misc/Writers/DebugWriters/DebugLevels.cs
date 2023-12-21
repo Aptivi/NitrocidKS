@@ -20,25 +20,25 @@
 namespace KS.Misc.Writers.DebugWriters
 {
 	/// <summary>
-    /// One-lettered debugging level enumeration
-    /// </summary>
+	/// One-lettered debugging level enumeration
+	/// </summary>
 	public enum DebugLevel
 	{
 		/// <summary>
-        /// Informational message
-        /// </summary>
+		/// Informational message
+		/// </summary>
 		I,
 		/// <summary>
-        /// Warning message
-        /// </summary>
+		/// Warning message
+		/// </summary>
 		W,
 		/// <summary>
-        /// Error message
-        /// </summary>
+		/// Error message
+		/// </summary>
 		E,
 		/// <summary>
-        /// Fatal error message
-        /// </summary>
+		/// Fatal error message
+		/// </summary>
 		F
 	}
 }

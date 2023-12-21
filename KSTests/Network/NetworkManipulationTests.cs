@@ -32,8 +32,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests hostname change
-    /// </summary>
+		/// Tests hostname change
+		/// </summary>
 		[Test]
 		[Description("Manipulation")]
 		public void TestChangeHostname()

@@ -31,8 +31,8 @@ namespace KS.Misc.Configuration
 	{
 
 		/// <summary>
-        /// Reloads config
-        /// </summary>
+		/// Reloads config
+		/// </summary>
 		public static void ReloadConfig()
 		{
 			Kernel.Kernel.KernelEventManager.RaisePreReloadConfig();
@@ -41,9 +41,9 @@ namespace KS.Misc.Configuration
 		}
 
 		/// <summary>
-        /// Reloads config
-        /// </summary>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Reloads config
+		/// </summary>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool TryReloadConfig()
 		{
 			try
@@ -60,9 +60,9 @@ namespace KS.Misc.Configuration
 		}
 
 		/// <summary>
-        /// Checks to see if the config needs repair and repairs it as necessary.
-        /// </summary>
-        /// <returns>True if the config is repaired; False if no repairs done; Throws exceptions if unsuccessful.</returns>
+		/// Checks to see if the config needs repair and repairs it as necessary.
+		/// </summary>
+		/// <returns>True if the config is repaired; False if no repairs done; Throws exceptions if unsuccessful.</returns>
 		public static bool RepairConfig()
 		{
 			// Variables
@@ -151,7 +151,7 @@ namespace KS.Misc.Configuration
 			{
 				if (Config.ConfigToken["Colors"].Count() != ExpectedColorsKeys)
 				{
-					DebugWriter.Wdbg(DebugLevel.W, "Missing keys in Colors. Config fix needed set to true.");
+					DebugWriter.Wdbg(DebugLevel.W, "Missing keys in  Config fix needed set to true.");
 					FixesNeeded = true;
 				}
 			}
@@ -449,10 +449,10 @@ namespace KS.Misc.Configuration
 		}
 
 		/// <summary>
-        /// Gets the JSON token for specific configuration category with an optional sub-category
-        /// </summary>
-        /// <param name="ConfigCategory">Config category</param>
-        /// <param name="ConfigSubCategoryName">Sub-category name. Should be an Object. Currently used for screensavers</param>
+		/// Gets the JSON token for specific configuration category with an optional sub-category
+		/// </summary>
+		/// <param name="ConfigCategory">Config category</param>
+		/// <param name="ConfigSubCategoryName">Sub-category name. Should be an Object. Currently used for screensavers</param>
 		public static JToken GetConfigCategory(Config.ConfigCategory ConfigCategory, string ConfigSubCategoryName = "")
 		{
 			// Try to parse the config category
@@ -496,34 +496,34 @@ namespace KS.Misc.Configuration
 		}
 
 		/// <summary>
-        /// Sets the value of an entry in a category.
-        /// </summary>
-        /// <param name="ConfigCategory">Config category</param>
-        /// <param name="ConfigEntryName">Config entry name.</param>
-        /// <param name="ConfigValue">Config entry value to install</param>
+		/// Sets the value of an entry in a category.
+		/// </summary>
+		/// <param name="ConfigCategory">Config category</param>
+		/// <param name="ConfigEntryName">Config entry name.</param>
+		/// <param name="ConfigValue">Config entry value to install</param>
 		public static void SetConfigValue(Config.ConfigCategory ConfigCategory, string ConfigEntryName, JToken ConfigValue)
 		{
 			SetConfigValue(ConfigCategory, GetConfigCategory(ConfigCategory), ConfigEntryName, ConfigValue);
 		}
 
 		/// <summary>
-        /// Sets the value of an entry in a category.
-        /// </summary>
-        /// <param name="ConfigCategory">Config category</param>
-        /// <param name="ConfigEntryName">Config entry name.</param>
-        /// <param name="ConfigValue">Config entry value to install</param>
+		/// Sets the value of an entry in a category.
+		/// </summary>
+		/// <param name="ConfigCategory">Config category</param>
+		/// <param name="ConfigEntryName">Config entry name.</param>
+		/// <param name="ConfigValue">Config entry value to install</param>
 		public static void SetConfigValue(Config.ConfigCategory ConfigCategory, string ConfigSubCategoryName, string ConfigEntryName, JToken ConfigValue)
 		{
 			SetConfigValue(ConfigCategory, GetConfigCategory(ConfigCategory, ConfigSubCategoryName), ConfigEntryName, ConfigValue);
 		}
 
 		/// <summary>
-        /// Sets the value of an entry in a category.
-        /// </summary>
-        /// <param name="ConfigCategory">Config category</param>
-        /// <param name="ConfigCategoryToken">Config category or sub-category token (You can get it from <see cref="GetConfigCategory(ConfigCategory, String)"/></param>
-        /// <param name="ConfigEntryName">Config entry name.</param>
-        /// <param name="ConfigValue">Config entry value to install</param>
+		/// Sets the value of an entry in a category.
+		/// </summary>
+		/// <param name="ConfigCategory">Config category</param>
+		/// <param name="ConfigCategoryToken">Config category or sub-category token (You can get it from <see cref="GetConfigCategory(ConfigCategory, string)"/></param>
+		/// <param name="ConfigEntryName">Config entry name.</param>
+		/// <param name="ConfigValue">Config entry value to install</param>
 		public static void SetConfigValue(Config.ConfigCategory ConfigCategory, JToken ConfigCategoryToken, string ConfigEntryName, JToken ConfigValue)
 		{
 			// Try to parse the config category
@@ -532,7 +532,7 @@ namespace KS.Misc.Configuration
 			{
 				// We have a valid category. Now, find the config entry property in the token
 				DebugWriter.Wdbg(DebugLevel.I, "Parsing config entry {0}...", ConfigEntryName);
-				var CategoryToken = Config.ConfigToken[ConfigCategory.ToString()];
+				_ = Config.ConfigToken[ConfigCategory.ToString()];
 				if (ConfigCategoryToken[ConfigEntryName] is not null)
 				{
 					// Assign the new value to it and write the changes to the token and the config file. Don't worry, debuggers, when you set the value like below,
@@ -559,31 +559,31 @@ namespace KS.Misc.Configuration
 		}
 
 		/// <summary>
-        /// Gets the value of an entry in a category.
-        /// </summary>
-        /// <param name="ConfigCategory">Config category</param>
-        /// <param name="ConfigEntryName">Config entry name.</param>
+		/// Gets the value of an entry in a category.
+		/// </summary>
+		/// <param name="ConfigCategory">Config category</param>
+		/// <param name="ConfigEntryName">Config entry name.</param>
 		public static JToken GetConfigValue(Config.ConfigCategory ConfigCategory, string ConfigEntryName)
 		{
 			return GetConfigValue(ConfigCategory, GetConfigCategory(ConfigCategory), ConfigEntryName);
 		}
 
 		/// <summary>
-        /// Gets the value of an entry in a category.
-        /// </summary>
-        /// <param name="ConfigCategory">Config category</param>
-        /// <param name="ConfigEntryName">Config entry name.</param>
+		/// Gets the value of an entry in a category.
+		/// </summary>
+		/// <param name="ConfigCategory">Config category</param>
+		/// <param name="ConfigEntryName">Config entry name.</param>
 		public static JToken GetConfigValue(Config.ConfigCategory ConfigCategory, string ConfigSubCategoryName, string ConfigEntryName)
 		{
 			return GetConfigValue(ConfigCategory, GetConfigCategory(ConfigCategory, ConfigSubCategoryName), ConfigEntryName);
 		}
 
 		/// <summary>
-        /// Gets the value of an entry in a category.
-        /// </summary>
-        /// <param name="ConfigCategory">Config category</param>
-        /// <param name="ConfigCategoryToken">Config category or sub-category token (You can get it from <see cref="GetConfigCategory(ConfigCategory, String)"/></param>
-        /// <param name="ConfigEntryName">Config entry name.</param>
+		/// Gets the value of an entry in a category.
+		/// </summary>
+		/// <param name="ConfigCategory">Config category</param>
+		/// <param name="ConfigCategoryToken">Config category or sub-category token (You can get it from <see cref="GetConfigCategory(ConfigCategory, string)"/></param>
+		/// <param name="ConfigEntryName">Config entry name.</param>
 		public static JToken GetConfigValue(Config.ConfigCategory ConfigCategory, JToken ConfigCategoryToken, string ConfigEntryName)
 		{
 			// Try to parse the config category
@@ -592,7 +592,7 @@ namespace KS.Misc.Configuration
 			{
 				// We have a valid category. Now, find the config entry property in the token
 				DebugWriter.Wdbg(DebugLevel.I, "Parsing config entry {0}...", ConfigEntryName);
-				var CategoryToken = Config.ConfigToken[ConfigCategory.ToString()];
+				_ = Config.ConfigToken[ConfigCategory.ToString()];
 				if (ConfigCategoryToken[ConfigEntryName] is not null)
 				{
 					// We got the appropriate value! Return it.

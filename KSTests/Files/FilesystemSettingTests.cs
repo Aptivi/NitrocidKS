@@ -30,8 +30,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests current directory setting
-    /// </summary>
+		/// Tests current directory setting
+		/// </summary>
 		[Test]
 		[Description("Setting")]
 		public void TestSetCurrDir()
@@ -43,8 +43,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests current directory setting
-    /// </summary>
+		/// Tests current directory setting
+		/// </summary>
 		[Test]
 		[Description("Setting")]
 		public void TestTrySetCurrDir()
@@ -56,8 +56,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests saving the current directory value
-    /// </summary>
+		/// Tests saving the current directory value
+		/// </summary>
 		[Test]
 		[Description("Manipulation")]
 		public void TestSaveCurrDir()

@@ -24,28 +24,28 @@ namespace KS.Shell.ShellBase.Shells
 	{
 
 		/// <summary>
-        /// Shell type
-        /// </summary>
+		/// Shell type
+		/// </summary>
 		public readonly ShellType ShellType;
 		/// <summary>
-        /// Shell executor
-        /// </summary>
+		/// Shell executor
+		/// </summary>
 		public readonly ShellExecutor ShellExecutor;
 		/// <summary>
-        /// Shell command thread
-        /// </summary>
+		/// Shell command thread
+		/// </summary>
 		public readonly KernelThread ShellCommandThread;
 		/// <summary>
-        /// Alternative shell command threads
-        /// </summary>
-		protected internal readonly List<KernelThread> AltCommandThreads = new();
+		/// Alternative shell command threads
+		/// </summary>
+		protected internal readonly List<KernelThread> AltCommandThreads = [];
 
 		/// <summary>
-        /// Installs the values to a new instance of ShellInfo
-        /// </summary>
-        /// <param name="ShellType">The shell type</param>
-        /// <param name="ShellExecutor">Shell executor</param>
-        /// <param name="ShellCommandThread">Shell command thread</param>
+		/// Installs the values to a new instance of ShellInfo
+		/// </summary>
+		/// <param name="ShellType">The shell type</param>
+		/// <param name="ShellExecutor">Shell executor</param>
+		/// <param name="ShellCommandThread">Shell command thread</param>
 		public ShellInfo(ShellType ShellType, ShellExecutor ShellExecutor, KernelThread ShellCommandThread)
 		{
 			this.ShellType = ShellType;

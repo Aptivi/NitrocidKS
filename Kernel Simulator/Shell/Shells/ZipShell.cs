@@ -13,7 +13,6 @@ using KS.Misc.ZipFile;
 using KS.Shell.Prompts;
 using KS.Shell.ShellBase;
 using KS.Shell.ShellBase.Shells;
-using Microsoft.VisualBasic.CompilerServices;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
@@ -58,7 +57,7 @@ namespace KS.Shell.Shells
 			string ZipFile = "";
 			if (ShellArgs.Length > 0)
 			{
-				ZipFile = Conversions.ToString(ShellArgs[0]);
+				ZipFile = Convert.ToString(ShellArgs[0]);
 			}
 			else
 			{
@@ -92,7 +91,7 @@ namespace KS.Shell.Shells
 
 					// Prompt for the command
 					string WrittenCommand = Input.ReadLine();
-					if ((string.IsNullOrEmpty(WrittenCommand) | (WrittenCommand?.StartsWithAnyOf(new[] { " ", "#" }))) == false)
+					if ((string.IsNullOrEmpty(WrittenCommand) | (WrittenCommand?.StartsWithAnyOf([" ", "#"]))) == false)
 					{
 						Kernel.Kernel.KernelEventManager.RaiseZipPreExecuteCommand(WrittenCommand);
 						Shell.GetLine(WrittenCommand, false, "", ShellType.ZIPShell);

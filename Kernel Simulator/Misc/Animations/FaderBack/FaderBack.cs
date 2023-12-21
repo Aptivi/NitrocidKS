@@ -34,8 +34,8 @@ namespace KS.Misc.Animations.FaderBack
 		private static bool ResizeSyncing;
 
 		/// <summary>
-        /// Simulates the background fading animation
-        /// </summary>
+		/// Simulates the background fading animation
+		/// </summary>
 		public static void Simulate(FaderBackSettings Settings)
 		{
 			CurrentWindowWidth = ConsoleWrapper.WindowWidth;

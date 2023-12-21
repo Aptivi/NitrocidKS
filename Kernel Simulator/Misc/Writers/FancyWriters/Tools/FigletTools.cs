@@ -27,15 +27,15 @@ namespace KS.Misc.Writers.FancyWriters.Tools
 	{
 
 		/// <summary>
-        /// The figlet fonts dictionary. It lists all the Figlet fonts supported by the Figgle library.
-        /// </summary>
-		public readonly static Dictionary<string, object> FigletFonts = PropertyManager.GetProperties(typeof(FiggleFonts));
+		/// The figlet fonts dictionary. It lists all the Figlet fonts supported by the Figgle library.
+		/// </summary>
+		public static readonly Dictionary<string, object> FigletFonts = PropertyManager.GetProperties(typeof(FiggleFonts));
 
 		/// <summary>
-        /// Gets the figlet text height
-        /// </summary>
-        /// <param name="Text">Text</param>
-        /// <param name="FigletFont">Target figlet font</param>
+		/// Gets the figlet text height
+		/// </summary>
+		/// <param name="Text">Text</param>
+		/// <param name="FigletFont">Target figlet font</param>
 		public static int GetFigletHeight(string Text, FiggleFont FigletFont)
 		{
 			Text = FigletFont.Render(Text);
@@ -44,10 +44,10 @@ namespace KS.Misc.Writers.FancyWriters.Tools
 		}
 
 		/// <summary>
-        /// Gets the figlet text width
-        /// </summary>
-        /// <param name="Text">Text</param>
-        /// <param name="FigletFont">Target figlet font</param>
+		/// Gets the figlet text width
+		/// </summary>
+		/// <param name="Text">Text</param>
+		/// <param name="FigletFont">Target figlet font</param>
 		public static int GetFigletWidth(string Text, FiggleFont FigletFont)
 		{
 			Text = FigletFont.Render(Text);
@@ -56,10 +56,10 @@ namespace KS.Misc.Writers.FancyWriters.Tools
 		}
 
 		/// <summary>
-        /// Gets the figlet font from font name
-        /// </summary>
-        /// <param name="FontName">Font name that is supported by the Figgle library. Consult <see cref="FigletFonts"/> for more info.</param>
-        /// <returns>Figlet font instance of your font, or Small if not found</returns>
+		/// Gets the figlet font from font name
+		/// </summary>
+		/// <param name="FontName">Font name that is supported by the Figgle library. Consult <see cref="FigletFonts"/> for more info.</param>
+		/// <returns>Figlet font instance of your font, or Small if not found</returns>
 		public static FiggleFont GetFigletFont(string FontName)
 		{
 			if (FigletFonts.ContainsKey(FontName))

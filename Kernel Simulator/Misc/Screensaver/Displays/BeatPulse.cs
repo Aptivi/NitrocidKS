@@ -42,8 +42,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _beatpulseMaximumColorLevel = 255;
 
 		/// <summary>
-        /// [BeatPulse] Enable 255 color support. Has a higher priority than 16 color support. Please note that it only works if color cycling is enabled.
-        /// </summary>
+		/// [BeatPulse] Enable 255 color support. Has a higher priority than 16 color support. Please note that it only works if color cycling is enabled.
+		/// </summary>
 		public static bool BeatPulse255Colors
 		{
 			get
@@ -56,8 +56,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] Enable truecolor support. Has a higher priority than 255 color support. Please note that it only works if color cycling is enabled.
-        /// </summary>
+		/// [BeatPulse] Enable truecolor support. Has a higher priority than 255 color support. Please note that it only works if color cycling is enabled.
+		/// </summary>
 		public static bool BeatPulseTrueColor
 		{
 			get
@@ -70,8 +70,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] Enable color cycling (uses RNG. If disabled, uses the <see cref="BeatPulseBeatColor"/> color.)
-        /// </summary>
+		/// [BeatPulse] Enable color cycling (uses RNG. If disabled, uses the <see cref="BeatPulseBeatColor"/> color.)
+		/// </summary>
 		public static bool BeatPulseCycleColors
 		{
 			get
@@ -84,8 +84,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] The color of beats. It can be 1-16, 1-255, or "1-255;1-255;1-255".
-        /// </summary>
+		/// [BeatPulse] The color of beats. It can be 1-16, 1-255, or "1-255;1-255;1-255".
+		/// </summary>
 		public static string BeatPulseBeatColor
 		{
 			get
@@ -98,8 +98,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [BeatPulse] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int BeatPulseDelay
 		{
 			get
@@ -114,8 +114,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] How many fade steps to do?
-        /// </summary>
+		/// [BeatPulse] How many fade steps to do?
+		/// </summary>
 		public static int BeatPulseMaxSteps
 		{
 			get
@@ -130,8 +130,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] The minimum red color level (true color)
-        /// </summary>
+		/// [BeatPulse] The minimum red color level (true color)
+		/// </summary>
 		public static int BeatPulseMinimumRedColorLevel
 		{
 			get
@@ -148,8 +148,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] The minimum green color level (true color)
-        /// </summary>
+		/// [BeatPulse] The minimum green color level (true color)
+		/// </summary>
 		public static int BeatPulseMinimumGreenColorLevel
 		{
 			get
@@ -166,8 +166,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] The minimum blue color level (true color)
-        /// </summary>
+		/// [BeatPulse] The minimum blue color level (true color)
+		/// </summary>
 		public static int BeatPulseMinimumBlueColorLevel
 		{
 			get
@@ -184,8 +184,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] The minimum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [BeatPulse] The minimum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int BeatPulseMinimumColorLevel
 		{
 			get
@@ -203,8 +203,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] The maximum red color level (true color)
-        /// </summary>
+		/// [BeatPulse] The maximum red color level (true color)
+		/// </summary>
 		public static int BeatPulseMaximumRedColorLevel
 		{
 			get
@@ -221,8 +221,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] The maximum green color level (true color)
-        /// </summary>
+		/// [BeatPulse] The maximum green color level (true color)
+		/// </summary>
 		public static int BeatPulseMaximumGreenColorLevel
 		{
 			get
@@ -239,8 +239,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] The maximum blue color level (true color)
-        /// </summary>
+		/// [BeatPulse] The maximum blue color level (true color)
+		/// </summary>
 		public static int BeatPulseMaximumBlueColorLevel
 		{
 			get
@@ -257,8 +257,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] The maximum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [BeatPulse] The maximum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int BeatPulseMaximumColorLevel
 		{
 			get

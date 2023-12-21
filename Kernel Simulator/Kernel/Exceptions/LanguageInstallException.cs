@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when there was an installation failure for the language.
-    /// </summary>
+	/// Thrown when there was an installation failure for the language.
+	/// </summary>
 	public class LanguageInstallException : Exception
 	{
 

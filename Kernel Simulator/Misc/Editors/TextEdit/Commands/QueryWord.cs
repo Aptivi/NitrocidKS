@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 
@@ -23,7 +24,6 @@ using KS.Misc.Reflection;
 using KS.Misc.Text;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Misc.Editors.TextEdit.Commands
 {
@@ -36,13 +36,13 @@ namespace KS.Misc.Editors.TextEdit.Commands
 			{
 				if (StringQuery.IsStringNumeric(ListArgs[1]))
 				{
-					if (Conversions.ToInteger(ListArgs[1]) <= TextEditShellCommon.TextEdit_FileLines.Count)
+					if (Convert.ToInt32(ListArgs[1]) <= TextEditShellCommon.TextEdit_FileLines.Count)
 					{
-						var QueriedChars = TextEditTools.TextEdit_QueryWord(ListArgs[0], Conversions.ToInteger(ListArgs[1]));
+						var QueriedChars = TextEditTools.TextEdit_QueryWord(ListArgs[0], Convert.ToInt32(ListArgs[1]));
 						foreach (int WordIndex in QueriedChars.Keys)
 						{
 							TextWriterColor.Write("- {0}: ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), WordIndex);
-							TextWriterColor.Write("{0} ({1})", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), ListArgs[0], TextEditShellCommon.TextEdit_FileLines[Conversions.ToInteger(ListArgs[1])]);
+							TextWriterColor.Write("{0} ({1})", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), ListArgs[0], TextEditShellCommon.TextEdit_FileLines[Convert.ToInt32(ListArgs[1])]);
 						}
 					}
 					else
@@ -67,10 +67,10 @@ namespace KS.Misc.Editors.TextEdit.Commands
 			{
 				if (StringQuery.IsStringNumeric(ListArgs[1]) & StringQuery.IsStringNumeric(ListArgs[2]))
 				{
-					if (Conversions.ToInteger(ListArgs[1]) <= TextEditShellCommon.TextEdit_FileLines.Count & Conversions.ToInteger(ListArgs[2]) <= TextEditShellCommon.TextEdit_FileLines.Count)
+					if (Convert.ToInt32(ListArgs[1]) <= TextEditShellCommon.TextEdit_FileLines.Count & Convert.ToInt32(ListArgs[2]) <= TextEditShellCommon.TextEdit_FileLines.Count)
 					{
-						int LineNumberStart = Conversions.ToInteger(ListArgs[1]);
-						int LineNumberEnd = Conversions.ToInteger(ListArgs[2]);
+						int LineNumberStart = Convert.ToInt32(ListArgs[1]);
+						int LineNumberEnd = Convert.ToInt32(ListArgs[2]);
 						LineNumberStart.SwapIfSourceLarger(ref LineNumberEnd);
 						for (int LineNumber = LineNumberStart, loopTo = LineNumberEnd; LineNumber <= loopTo; LineNumber++)
 						{
@@ -78,7 +78,7 @@ namespace KS.Misc.Editors.TextEdit.Commands
 							foreach (int WordIndex in QueriedChars.Keys)
 							{
 								TextWriterColor.Write("- {0}:{1}: ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), LineNumber, WordIndex);
-								TextWriterColor.Write("{0} ({1})", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), ListArgs[0], TextEditShellCommon.TextEdit_FileLines[Conversions.ToInteger(ListArgs[1])]);
+								TextWriterColor.Write("{0} ({1})", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), ListArgs[0], TextEditShellCommon.TextEdit_FileLines[Convert.ToInt32(ListArgs[1])]);
 							}
 						}
 					}

@@ -19,7 +19,7 @@
 
 using KS.Network.RPC;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
+using System;
 
 namespace KS.Shell.Commands
 {
@@ -34,7 +34,7 @@ namespace KS.Shell.Commands
 			}
 			else
 			{
-				RPCCommands.SendCommand("<Request:Exec>(" + ListArgs[2] + ")", ListArgs[0], Conversions.ToInteger(ListArgs[1]));
+				RPCCommands.SendCommand("<Request:Exec>(" + ListArgs[2] + ")", ListArgs[0], Convert.ToInt32(ListArgs[1]));
 			}
 		}
 

@@ -24,11 +24,11 @@ namespace KS.Misc.Reflection
 	{
 
 		/// <summary>
-        /// Formats the string
-        /// </summary>
-        /// <param name="Format">The string to format</param>
-        /// <param name="Vars">The variables used</param>
-        /// <returns>A formatted string if successful, or the unformatted one if failed.</returns>
+		/// Formats the string
+		/// </summary>
+		/// <param name="Format">The string to format</param>
+		/// <param name="Vars">The variables used</param>
+		/// <returns>A formatted string if successful, or the unformatted one if failed.</returns>
 		public static string FormatString(string Format, params object[] Vars)
 		{
 			string FormattedString = Format;

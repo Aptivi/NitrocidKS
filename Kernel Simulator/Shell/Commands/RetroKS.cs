@@ -100,7 +100,7 @@ namespace KS.Shell.Commands
 				var RetroKSInfo = new KernelUpdateInfo(RetroKSVer, RetroKSURL);
 				SortedVersions.Add(RetroKSInfo);
 			}
-			SortedVersions = SortedVersions.OrderByDescending(x => x.UpdateVersion).ToList();
+			SortedVersions = [.. SortedVersions.OrderByDescending(x => x.UpdateVersion)];
 			NetworkTransfer.WClient.DefaultRequestHeaders.Remove("User-Agent");
 
 			// Populate paths
@@ -134,7 +134,7 @@ namespace KS.Shell.Commands
 
 			// Now, run the assembly
 			TextWriterColor.Write(Translate.DoTranslation("Going back to 2018..."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-			Assembly.LoadFrom(RetroExecKSPath).EntryPoint.Invoke("", Array.Empty<object>());
+			Assembly.LoadFrom(RetroExecKSPath).EntryPoint.Invoke("", []);
 
 			// Clear the console
 			KernelColorTools.SetConsoleColor(KernelColorTools.BackgroundColor, true);

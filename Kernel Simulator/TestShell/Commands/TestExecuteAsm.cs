@@ -29,7 +29,7 @@ namespace KS.TestShell.Commands
 		public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
 		{
 			ListArgsOnly[0] = Filesystem.NeutralizePath(ListArgsOnly[0]);
-			Assembly.LoadFrom(ListArgsOnly[0]).EntryPoint.Invoke("", Array.Empty<object>());
+			Assembly.LoadFrom(ListArgsOnly[0]).EntryPoint.Invoke("", []);
 		}
 
 	}

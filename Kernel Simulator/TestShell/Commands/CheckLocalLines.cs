@@ -2,6 +2,7 @@
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Writers.ConsoleWriters;
+using KS.Resources;
 using KS.Shell.ShellBase.Commands;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
@@ -30,11 +31,11 @@ namespace KS.TestShell.Commands
 
 		public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
 		{
-			var EnglishJson = JToken.Parse(My.Resources.Resources.eng);
+			var EnglishJson = JToken.Parse(KernelResources.eng);
 			JToken LanguageJson;
 			foreach (string LanguageName in LanguageManager.Languages.Keys)
 			{
-				LanguageJson = JToken.Parse(My.Resources.Resources.ResourceManager.GetString(LanguageName.Replace("-", "_")));
+				LanguageJson = JToken.Parse(KernelResources.ResourceManager.GetString(LanguageName.Replace("-", "_")));
 				if (LanguageJson.Count() != EnglishJson.Count())
 				{
 					TextWriterColor.Write(Translate.DoTranslation("Line mismatch in") + " {0}: {1} <> {2}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning), LanguageName, LanguageJson.Count(), EnglishJson.Count());

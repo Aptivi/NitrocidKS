@@ -29,8 +29,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests string translation
-    /// </summary>
+		/// Tests string translation
+		/// </summary>
 		[Test]
 		[Description("Action")]
 		public void TestTranslate()

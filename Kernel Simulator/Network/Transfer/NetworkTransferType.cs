@@ -20,18 +20,18 @@
 namespace KS.Network.Transfer
 {
 	/// <summary>
-    /// Network transfer type
-    /// </summary>
+	/// Network transfer type
+	/// </summary>
 	public enum NetworkTransferType
 	{
 
 		/// <summary>
-        /// Downloading from URL to file
-        /// </summary>
+		/// Downloading from URL to file
+		/// </summary>
 		Download,
 		/// <summary>
-        /// Uploading a file to URL
-        /// </summary>
+		/// Uploading a file to URL
+		/// </summary>
 		Upload
 
 	}

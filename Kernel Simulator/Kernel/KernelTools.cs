@@ -62,20 +62,20 @@ namespace KS.Kernel
 
 		// Variables
 		public static string BannerFigletFont = "Banner";
-		internal static KernelThread RPCPowerListener = new("RPC Power Listener Thread", true, (_) => KernelTools.PowerManage());
+		internal static KernelThread RPCPowerListener = new("RPC Power Listener Thread", true, (powerMode) => PowerManage((PowerMode)powerMode));
 		internal static Exception LastKernelErrorException;
 
 		// ----------------------------------------------- Kernel errors -----------------------------------------------
 
 		/// <summary>
-        /// Indicates that there's something wrong with the kernel.
-        /// </summary>
-        /// <param name="ErrorType">Specifies the error type.</param>
-        /// <param name="Reboot">Specifies whether to reboot on panic or to show the message to press any key to shut down</param>
-        /// <param name="RebootTime">Specifies seconds before reboot. 0 is instant. Negative numbers are not allowed.</param>
-        /// <param name="Description">Explanation of what happened when it errored.</param>
-        /// <param name="Exc">An exception to get stack traces, etc. Used for dump files currently.</param>
-        /// <param name="Variables">Optional. Specifies variables to get on text that will be printed.</param>
+		/// Indicates that there's something wrong with the kernel.
+		/// </summary>
+		/// <param name="ErrorType">Specifies the error type.</param>
+		/// <param name="Reboot">Specifies whether to reboot on panic or to show the message to press any key to shut down</param>
+		/// <param name="RebootTime">Specifies seconds before reboot. 0 is instant. Negative numbers are not allowed.</param>
+		/// <param name="Description">Explanation of what happened when it errored.</param>
+		/// <param name="Exc">An exception to get stack traces, etc. Used for dump files currently.</param>
+		/// <param name="Variables">Optional. Specifies variables to get on text that will be printed.</param>
 		public static void KernelError(KernelErrorLevel ErrorType, bool Reboot, long RebootTime, string Description, Exception Exc, params object[] Variables)
 		{
 			Flags.KernelErrored = true;
@@ -213,11 +213,11 @@ namespace KS.Kernel
 		}
 
 		/// <summary>
-        /// Generates the stack trace dump file for kernel panics
-        /// </summary>
-        /// <param name="Description">Error description</param>
-        /// <param name="ErrorType">Error type</param>
-        /// <param name="Exc">Exception</param>
+		/// Generates the stack trace dump file for kernel panics
+		/// </summary>
+		/// <param name="Description">Error description</param>
+		/// <param name="ErrorType">Error type</param>
+		/// <param name="Exc">Exception</param>
 		public static void GeneratePanicDump(string Description, KernelErrorLevel ErrorType, Exception Exc)
 		{
 			try
@@ -305,27 +305,27 @@ namespace KS.Kernel
 		// ----------------------------------------------- Power management -----------------------------------------------
 
 		/// <summary>
-        /// Manage computer's (actually, simulated computer) power
-        /// </summary>
-        /// <param name="PowerMode">Selects the power mode</param>
+		/// Manage computer's (actually, simulated computer) power
+		/// </summary>
+		/// <param name="PowerMode">Selects the power mode</param>
 		public static void PowerManage(PowerMode PowerMode)
 		{
 			PowerManage(PowerMode, "0.0.0.0", RemoteProcedure.RPCPort);
 		}
 
 		/// <summary>
-        /// Manage computer's (actually, simulated computer) power
-        /// </summary>
-        /// <param name="PowerMode">Selects the power mode</param>
+		/// Manage computer's (actually, simulated computer) power
+		/// </summary>
+		/// <param name="PowerMode">Selects the power mode</param>
 		public static void PowerManage(PowerMode PowerMode, string IP)
 		{
 			PowerManage(PowerMode, IP, RemoteProcedure.RPCPort);
 		}
 
 		/// <summary>
-        /// Manage computer's (actually, simulated computer) power
-        /// </summary>
-        /// <param name="PowerMode">Selects the power mode</param>
+		/// Manage computer's (actually, simulated computer) power
+		/// </summary>
+		/// <param name="PowerMode">Selects the power mode</param>
 		public static void PowerManage(PowerMode PowerMode, string IP, int Port)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "Power management has the argument of {0}", PowerMode);
@@ -375,8 +375,8 @@ namespace KS.Kernel
 
 		// ----------------------------------------------- Init and reset -----------------------------------------------
 		/// <summary>
-        /// Reset everything for the next restart
-        /// </summary>
+		/// Reset everything for the next restart
+		/// </summary>
 		public static void ResetEverything()
 		{
 			// Reset every variable below
@@ -433,8 +433,8 @@ namespace KS.Kernel
 		}
 
 		/// <summary>
-        /// Initializes everything
-        /// </summary>
+		/// Initializes everything
+		/// </summary>
 		public static void InitEverything(string[] Args)
 		{
 			// Initialize notifications
@@ -485,26 +485,18 @@ namespace KS.Kernel
 			// Show dev version notice
 			if (!Flags.EnableSplash)
 			{
-				/* TODO ERROR: Skipped IfDirectiveTrivia
-				#if SPECIFIERDEV 'WARNING: When the development nearly ends, change the compiler constant value to "REL" to suppress this message out of stable versions
-				*/
+#if SPECIFIERDEV
 				TextWriterColor.Write(Translate.DoTranslation("Looks like you were running the development version of the kernel. While you can see the aspects, it is frequently updated and might introduce bugs. It is recommended that you stay on the stable version."), true, KernelColorTools.ColTypes.DevelopmentWarning);
-				/* TODO ERROR: Skipped ElifDirectiveTrivia
-				#elif SPECIFIERRC
-				*//* TODO ERROR: Skipped DisabledTextTrivia
-								Write(DoTranslation("Looks like you were running the release candidate version. It is recommended that you stay on the stable version."), True, ColTypes.DevelopmentWarning)
-				*//* TODO ERROR: Skipped ElifDirectiveTrivia
-				#elseIf SPECIFIER <> "REL" Then
-				*//* TODO ERROR: Skipped DisabledTextTrivia
-								Write(DoTranslation("Looks like you were running an unsupported version. It's highly advisable not to use this version."), True, ColTypes.DevelopmentWarning)
-				*//* TODO ERROR: Skipped EndIfDirectiveTrivia
-				#endif
-				*/
+#elif SPECIFIERRC
+				TextWriterColor.Write(DoTranslation("Looks like you were running the release candidate version. It is recommended that you stay on the stable version."), true, KernelColorTools.ColTypes.DevelopmentWarning);
+#elif !SPECIFIERREL
+				TextWriterColor.Write(DoTranslation("Looks like you were running an unsupported version. It's highly advisable not to use this version."), true, KernelColorTools.ColTypes.DevelopmentWarning);
+#endif
 			}
 
 			// Parse real command-line arguments
 			if (Flags.ParseCommandLineArguments)
-				ArgumentParse.ParseArguments(Args.ToList(), ArgumentType.CommandLineArgs);
+				ArgumentParse.ParseArguments([.. Args], ArgumentType.CommandLineArgs);
 
 			// Check arguments
 			if (Flags.ArgsOnBoot)
@@ -540,9 +532,9 @@ namespace KS.Kernel
 		}
 
 		/// <summary>
-        /// Fetches the GitHub repo to see if there are any updates
-        /// </summary>
-        /// <returns>A kernel update instance</returns>
+		/// Fetches the GitHub repo to see if there are any updates
+		/// </summary>
+		/// <returns>A kernel update instance</returns>
 		public static KernelUpdate FetchKernelUpdates()
 		{
 			try
@@ -568,8 +560,8 @@ namespace KS.Kernel
 		}
 
 		/// <summary>
-        /// Prompt for checking for kernel updates
-        /// </summary>
+		/// Prompt for checking for kernel updates
+		/// </summary>
 		public static void CheckKernelUpdates()
 		{
 			SplashReport.ReportProgress(Translate.DoTranslation("Checking for system updates..."), 10, KernelColorTools.ColTypes.Neutral);
@@ -603,8 +595,8 @@ namespace KS.Kernel
 		}
 
 		/// <summary>
-        /// Removes all configuration files
-        /// </summary>
+		/// Removes all configuration files
+		/// </summary>
 		public static void FactoryReset()
 		{
 			// Delete every single thing found in KernelPaths
@@ -627,10 +619,10 @@ namespace KS.Kernel
 		}
 
 		/// <summary>
-        /// Reports the new kernel stage
-        /// </summary>
-        /// <param name="StageNumber">The stage number</param>
-        /// <param name="StageText">The stage text</param>
+		/// Reports the new kernel stage
+		/// </summary>
+		/// <param name="StageNumber">The stage number</param>
+		/// <param name="StageText">The stage text</param>
 		public static void ReportNewStage(int StageNumber, string StageText)
 		{
 			// Show the stage finish times
@@ -670,36 +662,37 @@ namespace KS.Kernel
 		}
 
 		/// <summary>
-        /// Gets the used compiler variables for building Kernel Simulator
-        /// </summary>
-        /// <returns>An array containing used compiler variables</returns>
+		/// Gets the used compiler variables for building Kernel Simulator
+		/// </summary>
+		/// <returns>An array containing used compiler variables</returns>
 		public static string[] GetCompilerVars()
 		{
-			var CompilerVars = new List<string>();
-
-			// Determine the compiler vars used to build KS using conditional checks
-			/* TODO ERROR: Skipped IfDirectiveTrivia
-			#if SPECIFIERDEV
-			*/
-			CompilerVars.Add("SPECIFIER = \"DEV\"");
+			var CompilerVars = new List<string>
+			{
+				// Determine the compiler vars used to build KS using conditional checks
+				/* TODO ERROR: Skipped IfDirectiveTrivia
+#if SPECIFIERDEV
+				*/
+				"SPECIFIER = \"DEV\""
+			};
 			/* TODO ERROR: Skipped ElifDirectiveTrivia
-			#elif SPECIFIERRC
+#elif SPECIFIERRC
 			*//* TODO ERROR: Skipped DisabledTextTrivia
 						CompilerVars.Add("SPECIFIER = ""RC""")
 			*//* TODO ERROR: Skipped ElifDirectiveTrivia
-			#elif SPECIFIERREL
+#elif SPECIFIERREL
 			*//* TODO ERROR: Skipped DisabledTextTrivia
 						CompilerVars.Add("SPECIFIER = ""REL""")
 			*//* TODO ERROR: Skipped EndIfDirectiveTrivia
-			#endif
+#endif
 			*/
 			/* TODO ERROR: Skipped IfDirectiveTrivia
-			#If ENABLEIMMEDIATEWINDOWDEBUG Then
+# If ENABLEIMMEDIATEWINDOWDEBUG Then
 			*//* TODO ERROR: Skipped DisabledTextTrivia
 						CompilerVars.Add("ENABLEIMMEDIATEWINDOWDEBUG")
 			*//* TODO ERROR: Skipped EndIfDirectiveTrivia
-			#endif
-			*/
+#endif
+				*/
 			/* TODO ERROR: Skipped IfDirectiveTrivia
 			#If POP3Feature Then
 			*//* TODO ERROR: Skipped DisabledTextTrivia
@@ -708,7 +701,7 @@ namespace KS.Kernel
 			#endif
 			*/
 			// Return the compiler vars
-			return CompilerVars.ToArray();
+			return [.. CompilerVars];
 		}
 
 	}

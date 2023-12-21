@@ -23,7 +23,7 @@ using KS.Misc.Writers.DebugWriters;
 
 using KS.Network.Mail.Directory;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
+using System;
 
 namespace KS.Network.Mail.Commands
 {
@@ -35,7 +35,7 @@ namespace KS.Network.Mail.Commands
 			DebugWriter.Wdbg(DebugLevel.I, "Message number is numeric? {0}", StringQuery.IsStringNumeric(ListArgs[0]));
 			if (StringQuery.IsStringNumeric(ListArgs[0]))
 			{
-				MailManager.MailMoveMessage(Conversions.ToInteger(ListArgs[0]), ListArgs[1]);
+				MailManager.MailMoveMessage(Convert.ToInt32(ListArgs[0]), ListArgs[1]);
 			}
 			else
 			{

@@ -15,8 +15,8 @@ namespace KS.Misc.Animations.Pulse
 		private static bool ResizeSyncing;
 
 		/// <summary>
-        /// Simulates the pulsing animation
-        /// </summary>
+		/// Simulates the pulsing animation
+		/// </summary>
 		public static void Simulate(PulseSettings Settings)
 		{
 			CurrentWindowWidth = ConsoleWrapper.WindowWidth;

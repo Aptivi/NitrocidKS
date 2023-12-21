@@ -35,9 +35,9 @@ namespace KS.Misc.ZipFile
 	{
 
 		/// <summary>
-        /// Lists all ZIP entries according to the target directory or the current directory
-        /// </summary>
-        /// <param name="Target">Target directory in an archive</param>
+		/// Lists all ZIP entries according to the target directory or the current directory
+		/// </summary>
+		/// <param name="Target">Target directory in an archive</param>
 		public static List<ZipArchiveEntry> ListZipEntries(string Target)
 		{
 			if (string.IsNullOrWhiteSpace(Target))
@@ -65,10 +65,10 @@ namespace KS.Misc.ZipFile
 		}
 
 		/// <summary>
-        /// Extracts a ZIP entry to a target directory
-        /// </summary>
-        /// <param name="Target">Target file in an archive</param>
-        /// <param name="Where">Where in the local filesystem to extract?</param>
+		/// Extracts a ZIP entry to a target directory
+		/// </summary>
+		/// <param name="Target">Target file in an archive</param>
+		/// <param name="Where">Where in the local filesystem to extract?</param>
 		public static bool ExtractZipFileEntry(string Target, string Where, bool FullTargetPath = false)
 		{
 			if (string.IsNullOrWhiteSpace(Target))
@@ -107,10 +107,10 @@ namespace KS.Misc.ZipFile
 		}
 
 		/// <summary>
-        /// Packs a local file to the ZIP archive
-        /// </summary>
-        /// <param name="Target">Target local file</param>
-        /// <param name="Where">Where in the archive to extract?</param>
+		/// Packs a local file to the ZIP archive
+		/// </summary>
+		/// <param name="Target">Target local file</param>
+		/// <param name="Where">Where in the archive to extract?</param>
 		public static bool PackFile(string Target, string Where)
 		{
 			if (string.IsNullOrWhiteSpace(Target))
@@ -134,9 +134,9 @@ namespace KS.Misc.ZipFile
 		}
 
 		/// <summary>
-        /// Changes the working archive directory
-        /// </summary>
-        /// <param name="Target">Target directory</param>
+		/// Changes the working archive directory
+		/// </summary>
+		/// <param name="Target">Target directory</param>
 		public static bool ChangeWorkingArchiveDirectory(string Target)
 		{
 			if (string.IsNullOrWhiteSpace(Target))
@@ -210,9 +210,9 @@ namespace KS.Misc.ZipFile
 		}
 
 		/// <summary>
-        /// Changes the working local directory
-        /// </summary>
-        /// <param name="Target">Target directory</param>
+		/// Changes the working local directory
+		/// </summary>
+		/// <param name="Target">Target directory</param>
 		public static bool ChangeWorkingZipLocalDirectory(string Target)
 		{
 			if (string.IsNullOrWhiteSpace(Target))

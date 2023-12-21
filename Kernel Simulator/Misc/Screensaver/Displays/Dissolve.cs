@@ -44,8 +44,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _dissolveMaximumColorLevel = 255;
 
 		/// <summary>
-        /// [Dissolve] Enable 255 color support. Has a higher priority than 16 color support.
-        /// </summary>
+		/// [Dissolve] Enable 255 color support. Has a higher priority than 16 color support.
+		/// </summary>
 		public static bool Dissolve255Colors
 		{
 			get
@@ -58,8 +58,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Dissolve] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
+		/// [Dissolve] Enable truecolor support. Has a higher priority than 255 color support.
+		/// </summary>
 		public static bool DissolveTrueColor
 		{
 			get
@@ -72,8 +72,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Dissolve] Screensaver background color
-        /// </summary>
+		/// [Dissolve] Screensaver background color
+		/// </summary>
 		public static string DissolveBackgroundColor
 		{
 			get
@@ -86,8 +86,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Dissolve] The minimum red color level (true color)
-        /// </summary>
+		/// [Dissolve] The minimum red color level (true color)
+		/// </summary>
 		public static int DissolveMinimumRedColorLevel
 		{
 			get
@@ -104,8 +104,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Dissolve] The minimum green color level (true color)
-        /// </summary>
+		/// [Dissolve] The minimum green color level (true color)
+		/// </summary>
 		public static int DissolveMinimumGreenColorLevel
 		{
 			get
@@ -122,8 +122,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Dissolve] The minimum blue color level (true color)
-        /// </summary>
+		/// [Dissolve] The minimum blue color level (true color)
+		/// </summary>
 		public static int DissolveMinimumBlueColorLevel
 		{
 			get
@@ -140,8 +140,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Dissolve] The minimum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [Dissolve] The minimum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int DissolveMinimumColorLevel
 		{
 			get
@@ -159,8 +159,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Dissolve] The maximum red color level (true color)
-        /// </summary>
+		/// [Dissolve] The maximum red color level (true color)
+		/// </summary>
 		public static int DissolveMaximumRedColorLevel
 		{
 			get
@@ -177,8 +177,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Dissolve] The maximum green color level (true color)
-        /// </summary>
+		/// [Dissolve] The maximum green color level (true color)
+		/// </summary>
 		public static int DissolveMaximumGreenColorLevel
 		{
 			get
@@ -195,8 +195,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Dissolve] The maximum blue color level (true color)
-        /// </summary>
+		/// [Dissolve] The maximum blue color level (true color)
+		/// </summary>
 		public static int DissolveMaximumBlueColorLevel
 		{
 			get
@@ -213,8 +213,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Dissolve] The maximum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [Dissolve] The maximum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int DissolveMaximumColorLevel
 		{
 			get
@@ -242,7 +242,7 @@ namespace KS.Misc.Screensaver.Displays
 		private int CurrentWindowWidth;
 		private int CurrentWindowHeight;
 		private bool ResizeSyncing;
-		private readonly List<Tuple<int, int>> CoveredPositions = new();
+		private readonly List<Tuple<int, int>> CoveredPositions = [];
 
 		public override string ScreensaverName { get; set; } = "Dissolve";
 

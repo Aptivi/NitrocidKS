@@ -30,13 +30,13 @@ namespace KS.Arguments.ArgumentBase
 	public static class ArgumentParse
 	{
 
-		public readonly static Dictionary<string, ArgumentInfo> AvailableArgs = new() { { "quiet", new ArgumentInfo("quiet", ArgumentType.KernelArgs, "Starts the kernel quietly", "", false, 0, new QuietArgument()) }, { "cmdinject", new ArgumentInfo("cmdinject", ArgumentType.KernelArgs, "Injects a command to start up in the next login", "[commands]", false, 0, new CmdInjectArgument()) }, { "debug", new ArgumentInfo("debug", ArgumentType.KernelArgs, "Enables debug mode", "", false, 0, new DebugArgument()) }, { "maintenance", new ArgumentInfo("maintenance", ArgumentType.KernelArgs, "Like safe mode, but also disables multi-user and some customization", "", false, 0, new MaintenanceArgument()) }, { "safe", new ArgumentInfo("safe", ArgumentType.KernelArgs, "Starts the kernel in safe mode, disabling all mods", "", false, 0, new SafeArgument()) }, { "testInteractive", new ArgumentInfo("testInteractive", ArgumentType.KernelArgs, "Opens a test shell", "", false, 0, new TestInteractiveArgument()) } };
+		public static readonly Dictionary<string, ArgumentInfo> AvailableArgs = new() { { "quiet", new ArgumentInfo("quiet", ArgumentType.KernelArgs, "Starts the kernel quietly", "", false, 0, new QuietArgument()) }, { "cmdinject", new ArgumentInfo("cmdinject", ArgumentType.KernelArgs, "Injects a command to start up in the next login", "[commands]", false, 0, new CmdInjectArgument()) }, { "debug", new ArgumentInfo("debug", ArgumentType.KernelArgs, "Enables debug mode", "", false, 0, new DebugArgument()) }, { "maintenance", new ArgumentInfo("maintenance", ArgumentType.KernelArgs, "Like safe mode, but also disables multi-user and some customization", "", false, 0, new MaintenanceArgument()) }, { "safe", new ArgumentInfo("safe", ArgumentType.KernelArgs, "Starts the kernel in safe mode, disabling all mods", "", false, 0, new SafeArgument()) }, { "testInteractive", new ArgumentInfo("testInteractive", ArgumentType.KernelArgs, "Opens a test shell", "", false, 0, new TestInteractiveArgument()) } };
 
 		/// <summary>
-        /// Parses specified arguments
-        /// </summary>
-        /// <param name="ArgumentsInput">Input Arguments</param>
-        /// <param name="ArgumentType">Argument type</param>
+		/// Parses specified arguments
+		/// </summary>
+		/// <param name="ArgumentsInput">Input Arguments</param>
+		/// <param name="ArgumentType">Argument type</param>
 		public static void ParseArguments(List<string> ArgumentsInput, ArgumentType ArgumentType)
 		{
 			// Check for the arguments written by the user

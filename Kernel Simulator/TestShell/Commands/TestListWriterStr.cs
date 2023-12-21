@@ -30,7 +30,7 @@ namespace KS.TestShell.Commands
 		public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
 		{
 			var NormalStringList = new List<string>() { "String 1", "String 2", "String 3" };
-			var ArrayStringList = new List<string[]>() { { { "String 1", "String 2", "String 3" } }, { { "String 1", "String 2", "String 3" } }, { { "String 1", "String 2", "String 3" } } };
+			var ArrayStringList = new List<string[]>() { { new string[] { "String 1", "String 2", "String 3" } }, { new string[] { "String 1", "String 2", "String 3" } }, { new string[] { "String 1", "String 2", "String 3" } } };
 			TextWriterColor.Write(Translate.DoTranslation("Normal string list:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
 			ListWriterColor.WriteList(NormalStringList);
 			TextWriterColor.Write(Translate.DoTranslation("Array string list:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));

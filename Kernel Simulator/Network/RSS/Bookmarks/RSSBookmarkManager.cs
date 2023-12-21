@@ -27,11 +27,11 @@ namespace KS.Network.RSS
 	public static class RSSBookmarkManager
 	{
 
-		private readonly static List<string> RssBookmarks = new();
+		private static readonly List<string> RssBookmarks = [];
 
 		/// <summary>
-        /// Adds the current RSS feed to the bookmarks
-        /// </summary>
+		/// Adds the current RSS feed to the bookmarks
+		/// </summary>
 		public static void AddRSSFeedToBookmark()
 		{
 			if (!string.IsNullOrEmpty(RSSShellCommon.RSSFeedLink))
@@ -45,9 +45,9 @@ namespace KS.Network.RSS
 		}
 
 		/// <summary>
-        /// Adds the RSS feed URL to the bookmarks
-        /// </summary>
-        /// <param name="FeedURL">The feed URL to parse</param>
+		/// Adds the RSS feed URL to the bookmarks
+		/// </summary>
+		/// <param name="FeedURL">The feed URL to parse</param>
 		public static void AddRSSFeedToBookmark(string FeedURL)
 		{
 			if (!string.IsNullOrEmpty(FeedURL))
@@ -87,8 +87,8 @@ namespace KS.Network.RSS
 		}
 
 		/// <summary>
-        /// Removes the current RSS feed from the bookmarks
-        /// </summary>
+		/// Removes the current RSS feed from the bookmarks
+		/// </summary>
 		public static void RemoveRSSFeedFromBookmark()
 		{
 			if (!string.IsNullOrEmpty(RSSShellCommon.RSSFeedLink))
@@ -102,9 +102,9 @@ namespace KS.Network.RSS
 		}
 
 		/// <summary>
-        /// Removes the RSS feed URL from the bookmarks
-        /// </summary>
-        /// <param name="FeedURL">The feed URL to parse</param>
+		/// Removes the RSS feed URL from the bookmarks
+		/// </summary>
+		/// <param name="FeedURL">The feed URL to parse</param>
 		public static void RemoveRSSFeedFromBookmark(string FeedURL)
 		{
 			if (!string.IsNullOrEmpty(FeedURL))
@@ -148,16 +148,16 @@ namespace KS.Network.RSS
 		}
 
 		/// <summary>
-        /// Gets all RSS bookmarks
-        /// </summary>
+		/// Gets all RSS bookmarks
+		/// </summary>
 		public static List<string> GetBookmarks()
 		{
 			return RssBookmarks;
 		}
 
 		/// <summary>
-        /// Gets the bookmark URL from number
-        /// </summary>
+		/// Gets the bookmark URL from number
+		/// </summary>
 		public static string GetBookmark(int Num)
 		{
 			// Return nothing if there are no bookmarks

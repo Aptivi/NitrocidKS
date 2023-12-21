@@ -43,8 +43,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _fireworksMaximumColorLevel = 255;
 
 		/// <summary>
-        /// [Fireworks] Enable 255 color support. Has a higher priority than 16 color support.
-        /// </summary>
+		/// [Fireworks] Enable 255 color support. Has a higher priority than 16 color support.
+		/// </summary>
 		public static bool Fireworks255Colors
 		{
 			get
@@ -57,8 +57,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Fireworks] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
+		/// [Fireworks] Enable truecolor support. Has a higher priority than 255 color support.
+		/// </summary>
 		public static bool FireworksTrueColor
 		{
 			get
@@ -71,8 +71,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Fireworks] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [Fireworks] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int FireworksDelay
 		{
 			get
@@ -87,8 +87,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Fireworks] The radius of the explosion
-        /// </summary>
+		/// [Fireworks] The radius of the explosion
+		/// </summary>
 		public static int FireworksRadius
 		{
 			get
@@ -103,8 +103,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Fireworks] The minimum red color level (true color)
-        /// </summary>
+		/// [Fireworks] The minimum red color level (true color)
+		/// </summary>
 		public static int FireworksMinimumRedColorLevel
 		{
 			get
@@ -121,8 +121,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Fireworks] The minimum green color level (true color)
-        /// </summary>
+		/// [Fireworks] The minimum green color level (true color)
+		/// </summary>
 		public static int FireworksMinimumGreenColorLevel
 		{
 			get
@@ -139,8 +139,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Fireworks] The minimum blue color level (true color)
-        /// </summary>
+		/// [Fireworks] The minimum blue color level (true color)
+		/// </summary>
 		public static int FireworksMinimumBlueColorLevel
 		{
 			get
@@ -157,8 +157,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Fireworks] The minimum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [Fireworks] The minimum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int FireworksMinimumColorLevel
 		{
 			get
@@ -176,8 +176,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Fireworks] The maximum red color level (true color)
-        /// </summary>
+		/// [Fireworks] The maximum red color level (true color)
+		/// </summary>
 		public static int FireworksMaximumRedColorLevel
 		{
 			get
@@ -194,8 +194,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Fireworks] The maximum green color level (true color)
-        /// </summary>
+		/// [Fireworks] The maximum green color level (true color)
+		/// </summary>
 		public static int FireworksMaximumGreenColorLevel
 		{
 			get
@@ -212,8 +212,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Fireworks] The maximum blue color level (true color)
-        /// </summary>
+		/// [Fireworks] The maximum blue color level (true color)
+		/// </summary>
 		public static int FireworksMaximumBlueColorLevel
 		{
 			get
@@ -230,8 +230,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Fireworks] The maximum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [Fireworks] The maximum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int FireworksMaximumColorLevel
 		{
 			get

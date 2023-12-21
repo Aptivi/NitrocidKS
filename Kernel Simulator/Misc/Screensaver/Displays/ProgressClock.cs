@@ -102,8 +102,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _progressClockMaximumColorLevel = 255;
 
 		/// <summary>
-        /// [ProgressClock] Enable 255 color support. Has a higher priority than 16 color support.
-        /// </summary>
+		/// [ProgressClock] Enable 255 color support. Has a higher priority than 16 color support.
+		/// </summary>
 		public static bool ProgressClock255Colors
 		{
 			get
@@ -116,8 +116,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
+		/// [ProgressClock] Enable truecolor support. Has a higher priority than 255 color support.
+		/// </summary>
 		public static bool ProgressClockTrueColor
 		{
 			get
@@ -130,8 +130,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Enable color cycling (uses RNG. If disabled, uses the <see cref="ProgressClockSecondsProgressColor"/>, <see cref="ProgressClockMinutesProgressColor"/>, and <see cref="ProgressClockHoursProgressColor"/> colors.)
-        /// </summary>
+		/// [ProgressClock] Enable color cycling (uses RNG. If disabled, uses the <see cref="ProgressClockSecondsProgressColor"/>, <see cref="ProgressClockMinutesProgressColor"/>, and <see cref="ProgressClockHoursProgressColor"/> colors.)
+		/// </summary>
 		public static bool ProgressClockCycleColors
 		{
 			get
@@ -144,8 +144,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The color of seconds progress bar. It can be 1-16, 1-255, or "1-255;1-255;1-255".
-        /// </summary>
+		/// [ProgressClock] The color of seconds progress bar. It can be 1-16, 1-255, or "1-255;1-255;1-255".
+		/// </summary>
 		public static string ProgressClockSecondsProgressColor
 		{
 			get
@@ -158,8 +158,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The color of minutes progress bar. It can be 1-16, 1-255, or "1-255;1-255;1-255".
-        /// </summary>
+		/// [ProgressClock] The color of minutes progress bar. It can be 1-16, 1-255, or "1-255;1-255;1-255".
+		/// </summary>
 		public static string ProgressClockMinutesProgressColor
 		{
 			get
@@ -172,8 +172,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The color of hours progress bar. It can be 1-16, 1-255, or "1-255;1-255;1-255".
-        /// </summary>
+		/// [ProgressClock] The color of hours progress bar. It can be 1-16, 1-255, or "1-255;1-255;1-255".
+		/// </summary>
 		public static string ProgressClockHoursProgressColor
 		{
 			get
@@ -186,8 +186,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The color of date information. It can be 1-16, 1-255, or "1-255;1-255;1-255".
-        /// </summary>
+		/// [ProgressClock] The color of date information. It can be 1-16, 1-255, or "1-255;1-255;1-255".
+		/// </summary>
 		public static string ProgressClockProgressColor
 		{
 			get
@@ -200,8 +200,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] If color cycling is enabled, how many ticks before changing colors? 1 tick = 0.5 seconds
-        /// </summary>
+		/// [ProgressClock] If color cycling is enabled, how many ticks before changing colors? 1 tick = 0.5 seconds
+		/// </summary>
 		public static long ProgressClockCycleColorsTicks
 		{
 			get
@@ -216,8 +216,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [ProgressClock] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int ProgressClockDelay
 		{
 			get
@@ -232,8 +232,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Upper left corner character for hours bar
-        /// </summary>
+		/// [ProgressClock] Upper left corner character for hours bar
+		/// </summary>
 		public static string ProgressClockUpperLeftCornerCharHours
 		{
 			get
@@ -248,8 +248,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Upper left corner character for minutes bar
-        /// </summary>
+		/// [ProgressClock] Upper left corner character for minutes bar
+		/// </summary>
 		public static string ProgressClockUpperLeftCornerCharMinutes
 		{
 			get
@@ -264,8 +264,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Upper left corner character for seconds bar
-        /// </summary>
+		/// [ProgressClock] Upper left corner character for seconds bar
+		/// </summary>
 		public static string ProgressClockUpperLeftCornerCharSeconds
 		{
 			get
@@ -280,8 +280,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Upper right corner character for hours bar
-        /// </summary>
+		/// [ProgressClock] Upper right corner character for hours bar
+		/// </summary>
 		public static string ProgressClockUpperRightCornerCharHours
 		{
 			get
@@ -296,8 +296,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Upper right corner character for minutes bar
-        /// </summary>
+		/// [ProgressClock] Upper right corner character for minutes bar
+		/// </summary>
 		public static string ProgressClockUpperRightCornerCharMinutes
 		{
 			get
@@ -312,8 +312,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Upper right corner character for seconds bar
-        /// </summary>
+		/// [ProgressClock] Upper right corner character for seconds bar
+		/// </summary>
 		public static string ProgressClockUpperRightCornerCharSeconds
 		{
 			get
@@ -328,8 +328,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Lower left corner character for hours bar
-        /// </summary>
+		/// [ProgressClock] Lower left corner character for hours bar
+		/// </summary>
 		public static string ProgressClockLowerLeftCornerCharHours
 		{
 			get
@@ -344,8 +344,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Lower left corner character for minutes bar
-        /// </summary>
+		/// [ProgressClock] Lower left corner character for minutes bar
+		/// </summary>
 		public static string ProgressClockLowerLeftCornerCharMinutes
 		{
 			get
@@ -360,8 +360,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Lower left corner character for seconds bar
-        /// </summary>
+		/// [ProgressClock] Lower left corner character for seconds bar
+		/// </summary>
 		public static string ProgressClockLowerLeftCornerCharSeconds
 		{
 			get
@@ -376,8 +376,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Lower right corner character for hours bar
-        /// </summary>
+		/// [ProgressClock] Lower right corner character for hours bar
+		/// </summary>
 		public static string ProgressClockLowerRightCornerCharHours
 		{
 			get
@@ -392,8 +392,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Lower right corner character for minutes bar
-        /// </summary>
+		/// [ProgressClock] Lower right corner character for minutes bar
+		/// </summary>
 		public static string ProgressClockLowerRightCornerCharMinutes
 		{
 			get
@@ -408,8 +408,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Lower right corner character for seconds bar
-        /// </summary>
+		/// [ProgressClock] Lower right corner character for seconds bar
+		/// </summary>
 		public static string ProgressClockLowerRightCornerCharSeconds
 		{
 			get
@@ -424,8 +424,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Upper frame character for hours bar
-        /// </summary>
+		/// [ProgressClock] Upper frame character for hours bar
+		/// </summary>
 		public static string ProgressClockUpperFrameCharHours
 		{
 			get
@@ -440,8 +440,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Upper frame character for minutes bar
-        /// </summary>
+		/// [ProgressClock] Upper frame character for minutes bar
+		/// </summary>
 		public static string ProgressClockUpperFrameCharMinutes
 		{
 			get
@@ -456,8 +456,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Upper frame character for seconds bar
-        /// </summary>
+		/// [ProgressClock] Upper frame character for seconds bar
+		/// </summary>
 		public static string ProgressClockUpperFrameCharSeconds
 		{
 			get
@@ -472,8 +472,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Lower frame character for hours bar
-        /// </summary>
+		/// [ProgressClock] Lower frame character for hours bar
+		/// </summary>
 		public static string ProgressClockLowerFrameCharHours
 		{
 			get
@@ -488,8 +488,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Lower frame character for minutes bar
-        /// </summary>
+		/// [ProgressClock] Lower frame character for minutes bar
+		/// </summary>
 		public static string ProgressClockLowerFrameCharMinutes
 		{
 			get
@@ -504,8 +504,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Lower frame character for seconds bar
-        /// </summary>
+		/// [ProgressClock] Lower frame character for seconds bar
+		/// </summary>
 		public static string ProgressClockLowerFrameCharSeconds
 		{
 			get
@@ -520,8 +520,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Left frame character for hours bar
-        /// </summary>
+		/// [ProgressClock] Left frame character for hours bar
+		/// </summary>
 		public static string ProgressClockLeftFrameCharHours
 		{
 			get
@@ -536,8 +536,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Left frame character for minutes bar
-        /// </summary>
+		/// [ProgressClock] Left frame character for minutes bar
+		/// </summary>
 		public static string ProgressClockLeftFrameCharMinutes
 		{
 			get
@@ -552,8 +552,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Left frame character for seconds bar
-        /// </summary>
+		/// [ProgressClock] Left frame character for seconds bar
+		/// </summary>
 		public static string ProgressClockLeftFrameCharSeconds
 		{
 			get
@@ -568,8 +568,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Right frame character for hours bar
-        /// </summary>
+		/// [ProgressClock] Right frame character for hours bar
+		/// </summary>
 		public static string ProgressClockRightFrameCharHours
 		{
 			get
@@ -584,8 +584,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Right frame character for minutes bar
-        /// </summary>
+		/// [ProgressClock] Right frame character for minutes bar
+		/// </summary>
 		public static string ProgressClockRightFrameCharMinutes
 		{
 			get
@@ -600,8 +600,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Right frame character for seconds bar
-        /// </summary>
+		/// [ProgressClock] Right frame character for seconds bar
+		/// </summary>
 		public static string ProgressClockRightFrameCharSeconds
 		{
 			get
@@ -616,8 +616,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Information text for hours bar
-        /// </summary>
+		/// [ProgressClock] Information text for hours bar
+		/// </summary>
 		public static string ProgressClockInfoTextHours
 		{
 			get
@@ -630,8 +630,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Information text for minutes bar
-        /// </summary>
+		/// [ProgressClock] Information text for minutes bar
+		/// </summary>
 		public static string ProgressClockInfoTextMinutes
 		{
 			get
@@ -644,8 +644,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] Information text for seconds bar
-        /// </summary>
+		/// [ProgressClock] Information text for seconds bar
+		/// </summary>
 		public static string ProgressClockInfoTextSeconds
 		{
 			get
@@ -658,8 +658,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The minimum red color level (true color - hours)
-        /// </summary>
+		/// [ProgressClock] The minimum red color level (true color - hours)
+		/// </summary>
 		public static int ProgressClockMinimumRedColorLevelHours
 		{
 			get
@@ -676,8 +676,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The minimum green color level (true color - hours)
-        /// </summary>
+		/// [ProgressClock] The minimum green color level (true color - hours)
+		/// </summary>
 		public static int ProgressClockMinimumGreenColorLevelHours
 		{
 			get
@@ -694,8 +694,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The minimum blue color level (true color - hours)
-        /// </summary>
+		/// [ProgressClock] The minimum blue color level (true color - hours)
+		/// </summary>
 		public static int ProgressClockMinimumBlueColorLevelHours
 		{
 			get
@@ -712,8 +712,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The minimum color level (255 colors or 16 colors - hours)
-        /// </summary>
+		/// [ProgressClock] The minimum color level (255 colors or 16 colors - hours)
+		/// </summary>
 		public static int ProgressClockMinimumColorLevelHours
 		{
 			get
@@ -731,8 +731,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The maximum red color level (true color - hours)
-        /// </summary>
+		/// [ProgressClock] The maximum red color level (true color - hours)
+		/// </summary>
 		public static int ProgressClockMaximumRedColorLevelHours
 		{
 			get
@@ -749,8 +749,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The maximum green color level (true color - hours)
-        /// </summary>
+		/// [ProgressClock] The maximum green color level (true color - hours)
+		/// </summary>
 		public static int ProgressClockMaximumGreenColorLevelHours
 		{
 			get
@@ -767,8 +767,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The maximum blue color level (true color - hours)
-        /// </summary>
+		/// [ProgressClock] The maximum blue color level (true color - hours)
+		/// </summary>
 		public static int ProgressClockMaximumBlueColorLevelHours
 		{
 			get
@@ -785,8 +785,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The maximum color level (255 colors or 16 colors - hours)
-        /// </summary>
+		/// [ProgressClock] The maximum color level (255 colors or 16 colors - hours)
+		/// </summary>
 		public static int ProgressClockMaximumColorLevelHours
 		{
 			get
@@ -804,8 +804,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The minimum red color level (true color - minutes)
-        /// </summary>
+		/// [ProgressClock] The minimum red color level (true color - minutes)
+		/// </summary>
 		public static int ProgressClockMinimumRedColorLevelMinutes
 		{
 			get
@@ -822,8 +822,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The minimum green color level (true color - minutes)
-        /// </summary>
+		/// [ProgressClock] The minimum green color level (true color - minutes)
+		/// </summary>
 		public static int ProgressClockMinimumGreenColorLevelMinutes
 		{
 			get
@@ -840,8 +840,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The minimum blue color level (true color - minutes)
-        /// </summary>
+		/// [ProgressClock] The minimum blue color level (true color - minutes)
+		/// </summary>
 		public static int ProgressClockMinimumBlueColorLevelMinutes
 		{
 			get
@@ -858,8 +858,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The minimum color level (255 colors or 16 colors - minutes)
-        /// </summary>
+		/// [ProgressClock] The minimum color level (255 colors or 16 colors - minutes)
+		/// </summary>
 		public static int ProgressClockMinimumColorLevelMinutes
 		{
 			get
@@ -877,8 +877,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The maximum red color level (true color - minutes)
-        /// </summary>
+		/// [ProgressClock] The maximum red color level (true color - minutes)
+		/// </summary>
 		public static int ProgressClockMaximumRedColorLevelMinutes
 		{
 			get
@@ -895,8 +895,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The maximum green color level (true color - minutes)
-        /// </summary>
+		/// [ProgressClock] The maximum green color level (true color - minutes)
+		/// </summary>
 		public static int ProgressClockMaximumGreenColorLevelMinutes
 		{
 			get
@@ -913,8 +913,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The maximum blue color level (true color - minutes)
-        /// </summary>
+		/// [ProgressClock] The maximum blue color level (true color - minutes)
+		/// </summary>
 		public static int ProgressClockMaximumBlueColorLevelMinutes
 		{
 			get
@@ -931,8 +931,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The maximum color level (255 colors or 16 colors - minutes)
-        /// </summary>
+		/// [ProgressClock] The maximum color level (255 colors or 16 colors - minutes)
+		/// </summary>
 		public static int ProgressClockMaximumColorLevelMinutes
 		{
 			get
@@ -950,8 +950,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The minimum red color level (true color - seconds)
-        /// </summary>
+		/// [ProgressClock] The minimum red color level (true color - seconds)
+		/// </summary>
 		public static int ProgressClockMinimumRedColorLevelSeconds
 		{
 			get
@@ -968,8 +968,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The minimum green color level (true color - seconds)
-        /// </summary>
+		/// [ProgressClock] The minimum green color level (true color - seconds)
+		/// </summary>
 		public static int ProgressClockMinimumGreenColorLevelSeconds
 		{
 			get
@@ -986,8 +986,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The minimum blue color level (true color - seconds)
-        /// </summary>
+		/// [ProgressClock] The minimum blue color level (true color - seconds)
+		/// </summary>
 		public static int ProgressClockMinimumBlueColorLevelSeconds
 		{
 			get
@@ -1004,8 +1004,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The minimum color level (255 colors or 16 colors - seconds)
-        /// </summary>
+		/// [ProgressClock] The minimum color level (255 colors or 16 colors - seconds)
+		/// </summary>
 		public static int ProgressClockMinimumColorLevelSeconds
 		{
 			get
@@ -1023,8 +1023,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The maximum red color level (true color - seconds)
-        /// </summary>
+		/// [ProgressClock] The maximum red color level (true color - seconds)
+		/// </summary>
 		public static int ProgressClockMaximumRedColorLevelSeconds
 		{
 			get
@@ -1041,8 +1041,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The maximum green color level (true color - seconds)
-        /// </summary>
+		/// [ProgressClock] The maximum green color level (true color - seconds)
+		/// </summary>
 		public static int ProgressClockMaximumGreenColorLevelSeconds
 		{
 			get
@@ -1059,8 +1059,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The maximum blue color level (true color - seconds)
-        /// </summary>
+		/// [ProgressClock] The maximum blue color level (true color - seconds)
+		/// </summary>
 		public static int ProgressClockMaximumBlueColorLevelSeconds
 		{
 			get
@@ -1077,8 +1077,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The maximum color level (255 colors or 16 colors - seconds)
-        /// </summary>
+		/// [ProgressClock] The maximum color level (255 colors or 16 colors - seconds)
+		/// </summary>
 		public static int ProgressClockMaximumColorLevelSeconds
 		{
 			get
@@ -1096,8 +1096,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The minimum red color level (true color)
-        /// </summary>
+		/// [ProgressClock] The minimum red color level (true color)
+		/// </summary>
 		public static int ProgressClockMinimumRedColorLevel
 		{
 			get
@@ -1114,8 +1114,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The minimum green color level (true color)
-        /// </summary>
+		/// [ProgressClock] The minimum green color level (true color)
+		/// </summary>
 		public static int ProgressClockMinimumGreenColorLevel
 		{
 			get
@@ -1132,8 +1132,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The minimum blue color level (true color)
-        /// </summary>
+		/// [ProgressClock] The minimum blue color level (true color)
+		/// </summary>
 		public static int ProgressClockMinimumBlueColorLevel
 		{
 			get
@@ -1150,8 +1150,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The minimum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [ProgressClock] The minimum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int ProgressClockMinimumColorLevel
 		{
 			get
@@ -1169,8 +1169,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The maximum red color level (true color)
-        /// </summary>
+		/// [ProgressClock] The maximum red color level (true color)
+		/// </summary>
 		public static int ProgressClockMaximumRedColorLevel
 		{
 			get
@@ -1187,8 +1187,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The maximum green color level (true color)
-        /// </summary>
+		/// [ProgressClock] The maximum green color level (true color)
+		/// </summary>
 		public static int ProgressClockMaximumGreenColorLevel
 		{
 			get
@@ -1205,8 +1205,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The maximum blue color level (true color)
-        /// </summary>
+		/// [ProgressClock] The maximum blue color level (true color)
+		/// </summary>
 		public static int ProgressClockMaximumBlueColorLevel
 		{
 			get
@@ -1223,8 +1223,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ProgressClock] The maximum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [ProgressClock] The maximum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int ProgressClockMaximumColorLevel
 		{
 			get
@@ -1308,7 +1308,7 @@ namespace KS.Misc.Screensaver.Displays
 						ColorStorageHours = new Color(RedColorNumHours, GreenColorNumHours, BlueColorNumHours);
 						ColorStorageMinutes = new Color(RedColorNumMinutes, GreenColorNumMinutes, BlueColorNumMinutes);
 						ColorStorageSeconds = new Color(RedColorNumSeconds, GreenColorNumSeconds, BlueColorNumSeconds);
-						ColorStorage = new Color(RedColorNum, GreenColorNum, BlueColorNum);
+						_ = new Color(RedColorNum, GreenColorNum, BlueColorNum);
 					}
 					else
 					{
@@ -1323,7 +1323,7 @@ namespace KS.Misc.Screensaver.Displays
 						ColorStorageHours = new Color(ColorNumHours);
 						ColorStorageMinutes = new Color(ColorNumMinutes);
 						ColorStorageSeconds = new Color(ColorNumSeconds);
-						ColorStorage = new Color(ColorNum);
+						_ = new Color(ColorNum);
 					}
 					CurrentTicks = 0L;
 				}
@@ -1334,7 +1334,7 @@ namespace KS.Misc.Screensaver.Displays
 				ColorStorageHours = new Color(ProgressClockSettings.ProgressClockHoursProgressColor);
 				ColorStorageMinutes = new Color(ProgressClockSettings.ProgressClockMinutesProgressColor);
 				ColorStorageSeconds = new Color(ProgressClockSettings.ProgressClockSecondsProgressColor);
-				ColorStorage = new Color(ProgressClockSettings.ProgressClockProgressColor);
+				_ = new Color(ProgressClockSettings.ProgressClockProgressColor);
 			}
 			ProgressFillPositionHours = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d) - 10;
 			DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Fill position for progress (Hours) {0}", ProgressFillPositionHours);

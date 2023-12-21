@@ -94,7 +94,7 @@ namespace KS.Misc.Splash.Splashes
 				while (!SplashClosing)
 					Animations.Fader.Fader.Simulate(FaderSettingsInstance);
 			}
-			catch (ThreadInterruptedException ex)
+			catch (ThreadInterruptedException)
 			{
 				DebugWriter.Wdbg(DebugLevel.I, "Splash done.");
 			}

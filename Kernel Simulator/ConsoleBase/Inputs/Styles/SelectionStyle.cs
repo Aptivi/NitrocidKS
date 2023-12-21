@@ -25,21 +25,21 @@ namespace KS.ConsoleBase.Inputs.Styles
 	{
 
 		/// <summary>
-        /// Prompts user for selection
-        /// </summary>
-        /// <param name="Question">A question</param>
-        /// <param name="AnswersStr">Set of answers. They can be written like this: Y/N/C.</param>
+		/// Prompts user for selection
+		/// </summary>
+		/// <param name="Question">A question</param>
+		/// <param name="AnswersStr">Set of answers. They can be written like this: Y/N/C.</param>
 		public static int PromptSelection(string Question, string AnswersStr)
 		{
-			return PromptSelection(Question, AnswersStr, Array.Empty<string>());
+			return PromptSelection(Question, AnswersStr, []);
 		}
 
 		/// <summary>
-        /// Prompts user for Selection
-        /// </summary>
-        /// <param name="Question">A question</param>
-        /// <param name="AnswersStr">Set of answers. They can be written like this: Y/N/C.</param>
-        /// <param name="AnswersTitles">Working titles for each answer. It must be the same amount as the answers.</param>
+		/// Prompts user for Selection
+		/// </summary>
+		/// <param name="Question">A question</param>
+		/// <param name="AnswersStr">Set of answers. They can be written like this: Y/N/C.</param>
+		/// <param name="AnswersTitles">Working titles for each answer. It must be the same amount as the answers.</param>
 		public static int PromptSelection(string Question, string AnswersStr, string[] AnswersTitles)
 		{
 			return TermSelectionStyle.PromptSelection(Question, AnswersStr, AnswersTitles);

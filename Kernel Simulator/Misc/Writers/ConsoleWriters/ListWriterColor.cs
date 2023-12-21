@@ -32,19 +32,19 @@ namespace KS.Misc.Writers.ConsoleWriters
 	{
 		#region Dictionary
 		/// <summary>
-        /// Outputs the list entries into the terminal prompt. It wraps output depending on the kernel settings.
-        /// </summary>
-        /// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
+		/// Outputs the list entries into the terminal prompt. It wraps output depending on the kernel settings.
+		/// </summary>
+		/// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
 		public static void WriteList<TKey, TValue>(Dictionary<TKey, TValue> List)
 		{
 			WriteList(List, Flags.WrapListOutputs);
 		}
 
 		/// <summary>
-        /// Outputs the list entries into the terminal prompt, and wraps output if needed.
-        /// </summary>
-        /// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
-        /// <param name="Wrap">Wraps the output as needed.</param>
+		/// Outputs the list entries into the terminal prompt, and wraps output if needed.
+		/// </summary>
+		/// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
+		/// <param name="Wrap">Wraps the output as needed.</param>
 		public static void WriteList<TKey, TValue>(Dictionary<TKey, TValue> List, bool Wrap)
 		{
 			lock (TextWriterColor.WriteLock)
@@ -99,23 +99,23 @@ namespace KS.Misc.Writers.ConsoleWriters
 		}
 
 		/// <summary>
-        /// Outputs the text into the terminal prompt with custom color support.
-        /// </summary>
-        /// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
-        /// <param name="ListKeyColor">A key color.</param>
-        /// <param name="ListValueColor">A value color.</param>
+		/// Outputs the text into the terminal prompt with custom color support.
+		/// </summary>
+		/// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
+		/// <param name="ListKeyColor">A key color.</param>
+		/// <param name="ListValueColor">A value color.</param>
 		public static void WriteList<TKey, TValue>(Dictionary<TKey, TValue> List, ConsoleColor ListKeyColor, ConsoleColor ListValueColor)
 		{
 			WriteList(List, ListKeyColor, ListValueColor, Flags.WrapListOutputs);
 		}
 
 		/// <summary>
-        /// Outputs the text into the terminal prompt with custom color support.
-        /// </summary>
-        /// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
-        /// <param name="ListKeyColor">A key color.</param>
-        /// <param name="ListValueColor">A value color.</param>
-        /// <param name="Wrap">Wraps the output as needed.</param>
+		/// Outputs the text into the terminal prompt with custom color support.
+		/// </summary>
+		/// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
+		/// <param name="ListKeyColor">A key color.</param>
+		/// <param name="ListValueColor">A value color.</param>
+		/// <param name="Wrap">Wraps the output as needed.</param>
 		public static void WriteList<TKey, TValue>(Dictionary<TKey, TValue> List, ConsoleColor ListKeyColor, ConsoleColor ListValueColor, bool Wrap)
 		{
 			lock (TextWriterColor.WriteLock)
@@ -170,23 +170,23 @@ namespace KS.Misc.Writers.ConsoleWriters
 		}
 
 		/// <summary>
-        /// Outputs the text into the terminal prompt with custom color support.
-        /// </summary>
-        /// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
-        /// <param name="ListKeyColor">A key color.</param>
-        /// <param name="ListValueColor">A value color.</param>
+		/// Outputs the text into the terminal prompt with custom color support.
+		/// </summary>
+		/// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
+		/// <param name="ListKeyColor">A key color.</param>
+		/// <param name="ListValueColor">A value color.</param>
 		public static void WriteList<TKey, TValue>(Dictionary<TKey, TValue> List, Color ListKeyColor, Color ListValueColor)
 		{
 			WriteList(List, ListKeyColor, ListValueColor, Flags.WrapListOutputs);
 		}
 
 		/// <summary>
-        /// Outputs the text into the terminal prompt with custom color support.
-        /// </summary>
-        /// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
-        /// <param name="ListKeyColor">A key color.</param>
-        /// <param name="ListValueColor">A value color.</param>
-        /// <param name="Wrap">Wraps the output as needed.</param>
+		/// Outputs the text into the terminal prompt with custom color support.
+		/// </summary>
+		/// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
+		/// <param name="ListKeyColor">A key color.</param>
+		/// <param name="ListValueColor">A value color.</param>
+		/// <param name="Wrap">Wraps the output as needed.</param>
 		public static void WriteList<TKey, TValue>(Dictionary<TKey, TValue> List, Color ListKeyColor, Color ListValueColor, bool Wrap)
 		{
 			lock (TextWriterColor.WriteLock)
@@ -242,19 +242,19 @@ namespace KS.Misc.Writers.ConsoleWriters
 		#endregion
 		#region Enumerables
 		/// <summary>
-        /// Outputs the list entries into the terminal prompt. It wraps output depending on the kernel settings.
-        /// </summary>
-        /// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
+		/// Outputs the list entries into the terminal prompt. It wraps output depending on the kernel settings.
+		/// </summary>
+		/// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
 		public static void WriteList<T>(IEnumerable<T> List)
 		{
 			WriteList(List, Flags.WrapListOutputs);
 		}
 
 		/// <summary>
-        /// Outputs the list entries into the terminal prompt, and wraps output if needed.
-        /// </summary>
-        /// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
-        /// <param name="Wrap">Wraps the output as needed.</param>
+		/// Outputs the list entries into the terminal prompt, and wraps output if needed.
+		/// </summary>
+		/// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
+		/// <param name="Wrap">Wraps the output as needed.</param>
 		public static void WriteList<T>(IEnumerable<T> List, bool Wrap)
 		{
 			lock (TextWriterColor.WriteLock)
@@ -311,23 +311,23 @@ namespace KS.Misc.Writers.ConsoleWriters
 		}
 
 		/// <summary>
-        /// Outputs the text into the terminal prompt with custom color support.
-        /// </summary>
-        /// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
-        /// <param name="ListKeyColor">A key color.</param>
-        /// <param name="ListValueColor">A value color.</param>
+		/// Outputs the text into the terminal prompt with custom color support.
+		/// </summary>
+		/// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
+		/// <param name="ListKeyColor">A key color.</param>
+		/// <param name="ListValueColor">A value color.</param>
 		public static void WriteList<T>(IEnumerable<T> List, ConsoleColor ListKeyColor, ConsoleColor ListValueColor)
 		{
 			WriteList(List, ListKeyColor, ListValueColor, Flags.WrapListOutputs);
 		}
 
 		/// <summary>
-        /// Outputs the text into the terminal prompt with custom color support.
-        /// </summary>
-        /// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
-        /// <param name="ListKeyColor">A key color.</param>
-        /// <param name="ListValueColor">A value color.</param>
-        /// <param name="Wrap">Wraps the output as needed.</param>
+		/// Outputs the text into the terminal prompt with custom color support.
+		/// </summary>
+		/// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
+		/// <param name="ListKeyColor">A key color.</param>
+		/// <param name="ListValueColor">A value color.</param>
+		/// <param name="Wrap">Wraps the output as needed.</param>
 		public static void WriteList<T>(IEnumerable<T> List, ConsoleColor ListKeyColor, ConsoleColor ListValueColor, bool Wrap)
 		{
 			lock (TextWriterColor.WriteLock)
@@ -384,23 +384,23 @@ namespace KS.Misc.Writers.ConsoleWriters
 		}
 
 		/// <summary>
-        /// Outputs the text into the terminal prompt with custom color support.
-        /// </summary>
-        /// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
-        /// <param name="ListKeyColor">A key color.</param>
-        /// <param name="ListValueColor">A value color.</param>
+		/// Outputs the text into the terminal prompt with custom color support.
+		/// </summary>
+		/// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
+		/// <param name="ListKeyColor">A key color.</param>
+		/// <param name="ListValueColor">A value color.</param>
 		public static void WriteList<T>(IEnumerable<T> List, Color ListKeyColor, Color ListValueColor)
 		{
 			WriteList(List, ListKeyColor, ListValueColor, Flags.WrapListOutputs);
 		}
 
 		/// <summary>
-        /// Outputs the text into the terminal prompt with custom color support.
-        /// </summary>
-        /// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
-        /// <param name="ListKeyColor">A key color.</param>
-        /// <param name="ListValueColor">A value color.</param>
-        /// <param name="Wrap">Wraps the output as needed.</param>
+		/// Outputs the text into the terminal prompt with custom color support.
+		/// </summary>
+		/// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
+		/// <param name="ListKeyColor">A key color.</param>
+		/// <param name="ListValueColor">A value color.</param>
+		/// <param name="Wrap">Wraps the output as needed.</param>
 		public static void WriteList<T>(IEnumerable<T> List, Color ListKeyColor, Color ListValueColor, bool Wrap)
 		{
 			lock (TextWriterColor.WriteLock)

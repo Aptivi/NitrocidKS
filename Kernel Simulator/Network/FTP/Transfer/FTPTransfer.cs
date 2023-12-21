@@ -22,7 +22,6 @@ using FluentFTP;
 using FluentFTP.Helpers;
 using KS.Languages;
 using KS.Misc.Writers.DebugWriters;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Network.FTP.Transfer
 {
@@ -35,21 +34,21 @@ namespace KS.Network.FTP.Transfer
 		internal static int ConsoleOriginalPosition_TOP;
 
 		/// <summary>
-        /// Downloads a file from the currently connected FTP server
-        /// </summary>
-        /// <param name="File">A remote file</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Downloads a file from the currently connected FTP server
+		/// </summary>
+		/// <param name="File">A remote file</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool FTPGetFile(string File)
 		{
 			return FTPGetFile(File, File);
 		}
 
 		/// <summary>
-        /// Downloads a file from the currently connected FTP server
-        /// </summary>
-        /// <param name="File">A remote file</param>
-        /// <param name="LocalFile">A name of the local file</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Downloads a file from the currently connected FTP server
+		/// </summary>
+		/// <param name="File">A remote file</param>
+		/// <param name="LocalFile">A name of the local file</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool FTPGetFile(string File, string LocalFile)
 		{
 			if (FTPShellCommon.FtpConnected)
@@ -84,20 +83,20 @@ namespace KS.Network.FTP.Transfer
 		}
 
 		/// <summary>
-        /// Downloads a folder from the currently connected FTP server
-        /// </summary>
-        /// <param name="Folder">A remote folder</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Downloads a folder from the currently connected FTP server
+		/// </summary>
+		/// <param name="Folder">A remote folder</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool FTPGetFolder(string Folder)
 		{
 			return FTPGetFolder(Folder, "");
 		}
 
 		/// <summary>
-        /// Downloads a folder from the currently connected FTP server
-        /// </summary>
-        /// <param name="Folder">A remote folder</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Downloads a folder from the currently connected FTP server
+		/// </summary>
+		/// <param name="Folder">A remote folder</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool FTPGetFolder(string Folder, string LocalFolder)
 		{
 			if (FTPShellCommon.FtpConnected)
@@ -165,21 +164,21 @@ namespace KS.Network.FTP.Transfer
 		}
 
 		/// <summary>
-        /// Uploads a file to the currently connected FTP server
-        /// </summary>
-        /// <param name="File">A local file</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Uploads a file to the currently connected FTP server
+		/// </summary>
+		/// <param name="File">A local file</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool FTPUploadFile(string File)
 		{
 			return FTPUploadFile(File, File);
 		}
 
 		/// <summary>
-        /// Uploads a file to the currently connected FTP server
-        /// </summary>
-        /// <param name="File">A local file</param>
-        /// <param name="LocalFile">A name of the local file</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Uploads a file to the currently connected FTP server
+		/// </summary>
+		/// <param name="File">A local file</param>
+		/// <param name="LocalFile">A name of the local file</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool FTPUploadFile(string File, string LocalFile)
 		{
 			if (FTPShellCommon.FtpConnected)
@@ -191,7 +190,7 @@ namespace KS.Network.FTP.Transfer
 
 				// Try to upload
 				string LocalFilePath = Files.Filesystem.NeutralizePath(LocalFile, FTPShellCommon.FtpCurrentDirectory);
-				bool Success = Conversions.ToBoolean(FTPShellCommon.ClientFTP.UploadFile(LocalFilePath, File, FtpRemoteExists.Resume, true, FtpVerify.Retry, FTPTransferProgress.FileProgress));
+				bool Success = Convert.ToBoolean(FTPShellCommon.ClientFTP.UploadFile(LocalFilePath, File, FtpRemoteExists.Resume, true, FtpVerify.Retry, FTPTransferProgress.FileProgress));
 				DebugWriter.Wdbg(DebugLevel.I, "Uploaded file {0} to {1} with status {2}.", LocalFile, File, Success);
 				Kernel.Kernel.KernelEventManager.RaiseFTPPostUpload(File, Success);
 				return Success;
@@ -204,21 +203,21 @@ namespace KS.Network.FTP.Transfer
 		}
 
 		/// <summary>
-        /// Uploads a folder to the currently connected FTP server
-        /// </summary>
-        /// <param name="Folder">A local folder</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Uploads a folder to the currently connected FTP server
+		/// </summary>
+		/// <param name="Folder">A local folder</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool FTPUploadFolder(string Folder)
 		{
 			return FTPUploadFolder(Folder, Folder);
 		}
 
 		/// <summary>
-        /// Uploads a folder to the currently connected FTP server
-        /// </summary>
-        /// <param name="Folder">A local folder</param>
-        /// <param name="LocalFolder"></param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Uploads a folder to the currently connected FTP server
+		/// </summary>
+		/// <param name="Folder">A local folder</param>
+		/// <param name="LocalFolder"></param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool FTPUploadFolder(string Folder, string LocalFolder)
 		{
 			if (FTPShellCommon.FtpConnected)
@@ -277,10 +276,10 @@ namespace KS.Network.FTP.Transfer
 		}
 
 		/// <summary>
-        /// Downloads a file to string
-        /// </summary>
-        /// <param name="File">A text file.</param>
-        /// <returns>Contents of the file</returns>
+		/// Downloads a file to string
+		/// </summary>
+		/// <param name="File">A text file.</param>
+		/// <returns>Contents of the file</returns>
 		public static string FTPDownloadToString(string File)
 		{
 			if (FTPShellCommon.FtpConnected)
@@ -292,7 +291,7 @@ namespace KS.Network.FTP.Transfer
 					DebugWriter.Wdbg(DebugLevel.I, "Downloading {0}...", File);
 
 					// Try to download 3 times
-					byte[] DownloadedBytes = Array.Empty<byte>();
+					byte[] DownloadedBytes = [];
 					var DownloadedContent = new StringBuilder();
 					bool Downloaded = FTPShellCommon.ClientFTP.DownloadBytes(out DownloadedBytes, File);
 					foreach (byte DownloadedByte in DownloadedBytes)

@@ -23,7 +23,6 @@ using KS.Languages;
 
 using KS.Misc.Reflection;
 using KS.Misc.Writers.DebugWriters;
-using Microsoft.VisualBasic.CompilerServices;
 using Terminaux.Base;
 using Terminaux.Colors;
 
@@ -33,11 +32,11 @@ namespace KS.Misc.Writers.ConsoleWriters
 	{
 
 		/// <summary>
-        /// Outputs the text into the terminal prompt, wraps the long terminal output if needed.
-        /// </summary>
-        /// <param name="text">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
-        /// <param name="Line">Whether to print a new line or not</param>
-        /// <param name="vars">Variables to format the message before it's written.</param>
+		/// Outputs the text into the terminal prompt, wraps the long terminal output if needed.
+		/// </summary>
+		/// <param name="text">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
+		/// <param name="Line">Whether to print a new line or not</param>
+		/// <param name="vars">Variables to format the message before it's written.</param>
 		public static void WriteWrappedPlain(string Text, bool Line, params object[] vars)
 		{
 			lock (TextWriterColor.WriteLock)
@@ -53,7 +52,7 @@ namespace KS.Misc.Writers.ConsoleWriters
 					OldTop = ConsoleWrapper.CursorTop;
 					foreach (char TextChar in Text.ToString().ToCharArray())
 					{
-						TextWriterColor.WritePlain(Conversions.ToString(TextChar), false);
+						TextWriterColor.WritePlain(Convert.ToString(TextChar), false);
 						LinesMade += ConsoleWrapper.CursorTop - OldTop;
 						OldTop = ConsoleWrapper.CursorTop;
 						if (LinesMade == ConsoleWrapper.WindowHeight - 1)
@@ -75,12 +74,12 @@ namespace KS.Misc.Writers.ConsoleWriters
 		}
 
 		/// <summary>
-        /// Outputs the text into the terminal prompt, wraps the long terminal output if needed, and sets colors as needed.
-        /// </summary>
-        /// <param name="text">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
-        /// <param name="Line">Whether to print a new line or not</param>
-        /// <param name="colorType">A type of colors that will be changed.</param>
-        /// <param name="vars">Variables to format the message before it's written.</param>
+		/// Outputs the text into the terminal prompt, wraps the long terminal output if needed, and sets colors as needed.
+		/// </summary>
+		/// <param name="text">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
+		/// <param name="Line">Whether to print a new line or not</param>
+		/// <param name="colorType">A type of colors that will be changed.</param>
+		/// <param name="vars">Variables to format the message before it's written.</param>
 		public static void WriteWrapped(string Text, bool Line, KernelColorTools.ColTypes colorType, params object[] vars)
 		{
 			lock (TextWriterColor.WriteLock)
@@ -102,13 +101,13 @@ namespace KS.Misc.Writers.ConsoleWriters
 		}
 
 		/// <summary>
-        /// Outputs the text into the terminal prompt, wraps the long terminal output if needed, and sets colors as needed.
-        /// </summary>
-        /// <param name="text">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
-        /// <param name="Line">Whether to print a new line or not</param>
-        /// <param name="colorTypeForeground">A type of colors that will be changed for the foreground color.</param>
-        /// <param name="colorTypeBackground">A type of colors that will be changed for the background color.</param>
-        /// <param name="vars">Variables to format the message before it's written.</param>
+		/// Outputs the text into the terminal prompt, wraps the long terminal output if needed, and sets colors as needed.
+		/// </summary>
+		/// <param name="text">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
+		/// <param name="Line">Whether to print a new line or not</param>
+		/// <param name="colorTypeForeground">A type of colors that will be changed for the foreground color.</param>
+		/// <param name="colorTypeBackground">A type of colors that will be changed for the background color.</param>
+		/// <param name="vars">Variables to format the message before it's written.</param>
 		public static void WriteWrapped(string Text, bool Line, KernelColorTools.ColTypes colorTypeForeground, KernelColorTools.ColTypes colorTypeBackground, params object[] vars)
 		{
 			lock (TextWriterColor.WriteLock)
@@ -131,12 +130,12 @@ namespace KS.Misc.Writers.ConsoleWriters
 		}
 
 		/// <summary>
-        /// Outputs the text into the terminal prompt with custom color support and wraps the long terminal output if needed.
-        /// </summary>
-        /// <param name="text">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
-        /// <param name="Line">Whether to print a new line or not</param>
-        /// <param name="color">A color that will be changed to.</param>
-        /// <param name="vars">Variables to format the message before it's written.</param>
+		/// Outputs the text into the terminal prompt with custom color support and wraps the long terminal output if needed.
+		/// </summary>
+		/// <param name="text">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
+		/// <param name="Line">Whether to print a new line or not</param>
+		/// <param name="color">A color that will be changed to.</param>
+		/// <param name="vars">Variables to format the message before it's written.</param>
 		public static void WriteWrapped(string Text, bool Line, ConsoleColor color, params object[] vars)
 		{
 			lock (TextWriterColor.WriteLock)
@@ -144,7 +143,7 @@ namespace KS.Misc.Writers.ConsoleWriters
 				try
 				{
 					// Try to write to console
-					Console.BackgroundColor = (ConsoleColor)Conversions.ToInteger(StringQuery.IsStringNumeric(KernelColorTools.BackgroundColor.PlainSequence) && Conversions.ToDouble(KernelColorTools.BackgroundColor.PlainSequence) <= 15d ? Enum.Parse(typeof(ConsoleColor), KernelColorTools.BackgroundColor.PlainSequence) : ConsoleColor.Black);
+					Console.BackgroundColor = (ConsoleColor)Convert.ToInt32(StringQuery.IsStringNumeric(KernelColorTools.BackgroundColor.PlainSequence) && Convert.ToDouble(KernelColorTools.BackgroundColor.PlainSequence) <= 15d ? Enum.Parse(typeof(ConsoleColor), KernelColorTools.BackgroundColor.PlainSequence) : ConsoleColor.Black);
 					Console.ForegroundColor = color;
 
 					// Write wrapped output
@@ -159,13 +158,13 @@ namespace KS.Misc.Writers.ConsoleWriters
 		}
 
 		/// <summary>
-        /// Outputs the text into the terminal prompt with custom color support and wraps the long terminal output if needed.
-        /// </summary>
-        /// <param name="text">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
-        /// <param name="Line">Whether to print a new line or not</param>
-        /// <param name="ForegroundColor">A foreground color that will be changed to.</param>
-        /// <param name="BackgroundColor">A background color that will be changed to.</param>
-        /// <param name="vars">Variables to format the message before it's written.</param>
+		/// Outputs the text into the terminal prompt with custom color support and wraps the long terminal output if needed.
+		/// </summary>
+		/// <param name="text">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
+		/// <param name="Line">Whether to print a new line or not</param>
+		/// <param name="ForegroundColor">A foreground color that will be changed to.</param>
+		/// <param name="BackgroundColor">A background color that will be changed to.</param>
+		/// <param name="vars">Variables to format the message before it's written.</param>
 		public static void WriteWrapped(string Text, bool Line, ConsoleColor ForegroundColor, ConsoleColor BackgroundColor, params object[] vars)
 		{
 			lock (TextWriterColor.WriteLock)
@@ -188,12 +187,12 @@ namespace KS.Misc.Writers.ConsoleWriters
 		}
 
 		/// <summary>
-        /// Outputs the text into the terminal prompt with custom color support and wraps the long terminal output if needed.
-        /// </summary>
-        /// <param name="text">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
-        /// <param name="Line">Whether to print a new line or not</param>
-        /// <param name="color">A color that will be changed to.</param>
-        /// <param name="vars">Variables to format the message before it's written.</param>
+		/// Outputs the text into the terminal prompt with custom color support and wraps the long terminal output if needed.
+		/// </summary>
+		/// <param name="text">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
+		/// <param name="Line">Whether to print a new line or not</param>
+		/// <param name="color">A color that will be changed to.</param>
+		/// <param name="vars">Variables to format the message before it's written.</param>
 		public static void WriteWrapped(string Text, bool Line, Color color, params object[] vars)
 		{
 			lock (TextWriterColor.WriteLock)
@@ -219,13 +218,13 @@ namespace KS.Misc.Writers.ConsoleWriters
 		}
 
 		/// <summary>
-        /// Outputs the text into the terminal prompt with custom color support and wraps the long terminal output if needed.
-        /// </summary>
-        /// <param name="text">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
-        /// <param name="Line">Whether to print a new line or not</param>
-        /// <param name="ForegroundColor">A foreground color that will be changed to.</param>
-        /// <param name="BackgroundColor">A background color that will be changed to.</param>
-        /// <param name="vars">Variables to format the message before it's written.</param>
+		/// Outputs the text into the terminal prompt with custom color support and wraps the long terminal output if needed.
+		/// </summary>
+		/// <param name="text">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
+		/// <param name="Line">Whether to print a new line or not</param>
+		/// <param name="ForegroundColor">A foreground color that will be changed to.</param>
+		/// <param name="BackgroundColor">A background color that will be changed to.</param>
+		/// <param name="vars">Variables to format the message before it's written.</param>
 		public static void WriteWrapped(string Text, bool Line, Color ForegroundColor, Color BackgroundColor, params object[] vars)
 		{
 			lock (TextWriterColor.WriteLock)

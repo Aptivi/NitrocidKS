@@ -23,7 +23,6 @@ using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell.ShellBase.Aliases;
 using KS.Shell.ShellBase.Commands;
 using KS.Shell.ShellBase.Shells;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Shell.Commands
 {
@@ -36,7 +35,7 @@ namespace KS.Shell.Commands
 			{
 				if (ListArgs[0] == "add" & Enum.IsDefined(typeof(ShellType), ListArgs[1]))
 				{
-					AliasManager.ManageAlias(ListArgs[0], (ShellType)Conversions.ToInteger(Enum.Parse(typeof(ShellType), ListArgs[1])), ListArgs[2], ListArgs[3]);
+					AliasManager.ManageAlias(ListArgs[0], (ShellType)Convert.ToInt32(Enum.Parse(typeof(ShellType), ListArgs[1])), ListArgs[2], ListArgs[3]);
 				}
 				else
 				{
@@ -47,7 +46,7 @@ namespace KS.Shell.Commands
 			{
 				if (ListArgs[0] == "rem" & Enum.IsDefined(typeof(ShellType), ListArgs[1]))
 				{
-					AliasManager.ManageAlias(ListArgs[0], (ShellType)Conversions.ToInteger(Enum.Parse(typeof(ShellType), ListArgs[1])), ListArgs[2]);
+					AliasManager.ManageAlias(ListArgs[0], (ShellType)Convert.ToInt32(Enum.Parse(typeof(ShellType), ListArgs[1])), ListArgs[2]);
 				}
 				else
 				{

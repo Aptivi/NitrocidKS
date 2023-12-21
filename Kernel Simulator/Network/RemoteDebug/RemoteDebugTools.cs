@@ -24,7 +24,6 @@ using KS.Files;
 using KS.Files.Operations;
 using KS.Languages;
 using KS.Misc.Writers.DebugWriters;
-using Microsoft.VisualBasic.CompilerServices;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -34,28 +33,28 @@ namespace KS.Network.RemoteDebug
 	{
 
 		/// <summary>
-        /// Device property enumeration
-        /// </summary>
+		/// Device property enumeration
+		/// </summary>
 		public enum DeviceProperty
 		{
 			/// <summary>
-            /// Device name
-            /// </summary>
+			/// Device name
+			/// </summary>
 			Name,
 			/// <summary>
-            /// Is the device blocked?
-            /// </summary>
+			/// Is the device blocked?
+			/// </summary>
 			Blocked,
 			/// <summary>
-            /// Device chat history
-            /// </summary>
+			/// Device chat history
+			/// </summary>
 			ChatHistory
 		}
 
 		/// <summary>
-        /// Disconnects a specified debug device
-        /// </summary>
-        /// <param name="IPAddr">An IP address of the connected debug device</param>
+		/// Disconnects a specified debug device
+		/// </summary>
+		/// <param name="IPAddr">An IP address of the connected debug device</param>
 		public static void DisconnectDbgDev(string IPAddr)
 		{
 			var Found = default(bool);
@@ -81,21 +80,21 @@ namespace KS.Network.RemoteDebug
 		}
 
 		/// <summary>
-        /// Adds device to block list
-        /// </summary>
-        /// <param name="IP">An IP address for device</param>
+		/// Adds device to block list
+		/// </summary>
+		/// <param name="IP">An IP address for device</param>
 		public static void AddToBlockList(string IP)
 		{
 			string[] BlockedDevices = ListDevices();
 			DebugWriter.Wdbg(DebugLevel.I, "Devices count: {0}", BlockedDevices.Length);
-			if (Conversions.ToBoolean(Operators.AndObject(BlockedDevices.Contains(IP), !GetDeviceProperty(IP, DeviceProperty.Blocked))))
+			if (BlockedDevices.Contains(IP) && !(bool)GetDeviceProperty(IP, DeviceProperty.Blocked))
 			{
 				DebugWriter.Wdbg(DebugLevel.I, "Device {0} will be blocked...", IP);
 				DisconnectDbgDev(IP);
 				SetDeviceProperty(IP, DeviceProperty.Blocked, true);
 				RemoteDebugger.RDebugBlocked.Add(IP);
 			}
-			else if (Conversions.ToBoolean(Operators.AndObject(BlockedDevices.Contains(IP), GetDeviceProperty(IP, DeviceProperty.Blocked))))
+			else if (BlockedDevices.Contains(IP) && (bool)GetDeviceProperty(IP, DeviceProperty.Blocked))
 			{
 				DebugWriter.Wdbg(DebugLevel.W, "Trying to add an already-blocked device {0}. Adding to list...", IP);
 				if (!RemoteDebugger.RDebugBlocked.Contains(IP))
@@ -112,10 +111,10 @@ namespace KS.Network.RemoteDebug
 		}
 
 		/// <summary>
-        /// Adds device to block list
-        /// </summary>
-        /// <param name="IP">An IP address for device</param>
-        /// <returns>True if successful; False if unsuccessful.</returns>
+		/// Adds device to block list
+		/// </summary>
+		/// <param name="IP">An IP address for device</param>
+		/// <returns>True if successful; False if unsuccessful.</returns>
 		public static bool TryAddToBlockList(string IP)
 		{
 			try
@@ -132,9 +131,9 @@ namespace KS.Network.RemoteDebug
 		}
 
 		/// <summary>
-        /// Removes device from block list
-        /// </summary>
-        /// <param name="IP">A blocked IP address for device</param>
+		/// Removes device from block list
+		/// </summary>
+		/// <param name="IP">A blocked IP address for device</param>
 		public static void RemoveFromBlockList(string IP)
 		{
 			string[] BlockedDevices = ListDevices();
@@ -154,10 +153,10 @@ namespace KS.Network.RemoteDebug
 		}
 
 		/// <summary>
-        /// Removes device from block list
-        /// </summary>
-        /// <param name="IP">A blocked IP address for device</param>
-        /// <returns>True if successful; False if unsuccessful.</returns>
+		/// Removes device from block list
+		/// </summary>
+		/// <param name="IP">A blocked IP address for device</param>
+		/// <returns>True if successful; False if unsuccessful.</returns>
 		public static bool TryRemoveFromBlockList(string IP)
 		{
 			try
@@ -174,9 +173,9 @@ namespace KS.Network.RemoteDebug
 		}
 
 		/// <summary>
-        /// Populates blocked devices
-        /// </summary>
-        /// <returns>True if successful; False if unsuccessful.</returns>
+		/// Populates blocked devices
+		/// </summary>
+		/// <returns>True if successful; False if unsuccessful.</returns>
 		public static bool PopulateBlockedDevices()
 		{
 			try
@@ -185,7 +184,7 @@ namespace KS.Network.RemoteDebug
 				DebugWriter.Wdbg(DebugLevel.I, "Devices count: {0}", BlockEntries.Length);
 				foreach (string BlockEntry in BlockEntries)
 				{
-					if (Conversions.ToBoolean(GetDeviceProperty(BlockEntry, DeviceProperty.Blocked)))
+					if (Convert.ToBoolean(GetDeviceProperty(BlockEntry, DeviceProperty.Blocked)))
 						AddToBlockList(BlockEntry);
 				}
 				return true;
@@ -199,11 +198,11 @@ namespace KS.Network.RemoteDebug
 		}
 
 		/// <summary>
-        /// Gets device property from device IP address
-        /// </summary>
-        /// <param name="DeviceIP">Device IP address from remote endpoint address</param>
-        /// <param name="DeviceProperty">Device property</param>
-        /// <returns>Device property if successful; nothing if unsuccessful.</returns>
+		/// Gets device property from device IP address
+		/// </summary>
+		/// <param name="DeviceIP">Device IP address from remote endpoint address</param>
+		/// <param name="DeviceProperty">Device property</param>
+		/// <returns>Device property if successful; nothing if unsuccessful.</returns>
 		public static object GetDeviceProperty(string DeviceIP, DeviceProperty DeviceProperty)
 		{
 			string DeviceJsonContent = File.ReadAllText(Paths.GetKernelPath(KernelPathType.DebugDevNames));
@@ -235,11 +234,11 @@ namespace KS.Network.RemoteDebug
 		}
 
 		/// <summary>
-        /// Sets device property from device IP address
-        /// </summary>
-        /// <param name="DeviceIP">Device IP address from remote endpoint address</param>
-        /// <param name="DeviceProperty">Device property</param>
-        /// <param name="Value">Value</param>
+		/// Sets device property from device IP address
+		/// </summary>
+		/// <param name="DeviceIP">Device IP address from remote endpoint address</param>
+		/// <param name="DeviceProperty">Device property</param>
+		/// <param name="Value">Value</param>
 		public static void SetDeviceProperty(string DeviceIP, DeviceProperty DeviceProperty, object Value)
 		{
 			string DeviceJsonContent = File.ReadAllText(Paths.GetKernelPath(KernelPathType.DebugDevNames));
@@ -275,12 +274,12 @@ namespace KS.Network.RemoteDebug
 		}
 
 		/// <summary>
-        /// Sets device property from device IP address
-        /// </summary>
-        /// <param name="DeviceIP">Device IP address from remote endpoint address</param>
-        /// <param name="DeviceProperty">Device property</param>
-        /// <param name="Value">Value</param>
-        /// <returns>True if successful; False if unsuccessful.</returns>
+		/// Sets device property from device IP address
+		/// </summary>
+		/// <param name="DeviceIP">Device IP address from remote endpoint address</param>
+		/// <param name="DeviceProperty">Device property</param>
+		/// <param name="Value">Value</param>
+		/// <returns>True if successful; False if unsuccessful.</returns>
 		public static bool TrySetDeviceProperty(string DeviceIP, DeviceProperty DeviceProperty, object Value)
 		{
 			try
@@ -288,17 +287,17 @@ namespace KS.Network.RemoteDebug
 				SetDeviceProperty(DeviceIP, DeviceProperty, Value);
 				return true;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				return false;
 			}
 		}
 
 		/// <summary>
-        /// Adds new device IP address to JSON
-        /// </summary>
-        /// <param name="DeviceIP">Device IP address from remote endpoint address</param>
-        /// <param name="ThrowException">Optionally throw exception</param>
+		/// Adds new device IP address to JSON
+		/// </summary>
+		/// <param name="DeviceIP">Device IP address from remote endpoint address</param>
+		/// <param name="ThrowException">Optionally throw exception</param>
 		public static void AddDeviceToJson(string DeviceIP, bool ThrowException = true)
 		{
 			Making.MakeFile(Paths.GetKernelPath(KernelPathType.DebugDevNames), false);
@@ -315,11 +314,11 @@ namespace KS.Network.RemoteDebug
 		}
 
 		/// <summary>
-        /// Adds new device IP address to JSON
-        /// </summary>
-        /// <param name="DeviceIP">Device IP address from remote endpoint address</param>
-        /// <param name="ThrowException">Optionally throw exception</param>
-        /// <returns>True if successful; False if unsuccessful.</returns>
+		/// Adds new device IP address to JSON
+		/// </summary>
+		/// <param name="DeviceIP">Device IP address from remote endpoint address</param>
+		/// <param name="ThrowException">Optionally throw exception</param>
+		/// <returns>True if successful; False if unsuccessful.</returns>
 		public static bool TryAddDeviceToJson(string DeviceIP, bool ThrowException = true)
 		{
 			try
@@ -327,16 +326,16 @@ namespace KS.Network.RemoteDebug
 				AddDeviceToJson(DeviceIP, ThrowException);
 				return true;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				return false;
 			}
 		}
 
 		/// <summary>
-        /// Removes a device IP address from JSON
-        /// </summary>
-        /// <param name="DeviceIP">Device IP address from remote endpoint address</param>
+		/// Removes a device IP address from JSON
+		/// </summary>
+		/// <param name="DeviceIP">Device IP address from remote endpoint address</param>
 		public static void RemoveDeviceFromJson(string DeviceIP)
 		{
 			string DeviceJsonContent = File.ReadAllText(Paths.GetKernelPath(KernelPathType.DebugDevNames));
@@ -353,10 +352,10 @@ namespace KS.Network.RemoteDebug
 		}
 
 		/// <summary>
-        /// Removes a device IP address from JSON
-        /// </summary>
-        /// <param name="DeviceIP">Device IP address from remote endpoint address</param>
-        /// <returns>True if successful; False if unsuccessful.</returns>
+		/// Removes a device IP address from JSON
+		/// </summary>
+		/// <param name="DeviceIP">Device IP address from remote endpoint address</param>
+		/// <returns>True if successful; False if unsuccessful.</returns>
 		public static bool TryRemoveDeviceFromJson(string DeviceIP)
 		{
 			try
@@ -364,15 +363,15 @@ namespace KS.Network.RemoteDebug
 				RemoveDeviceFromJson(DeviceIP);
 				return true;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				return false;
 			}
 		}
 
 		/// <summary>
-        /// Lists all devices and puts them into an array
-        /// </summary>
+		/// Lists all devices and puts them into an array
+		/// </summary>
 		public static string[] ListDevices()
 		{
 			Making.MakeFile(Paths.GetKernelPath(KernelPathType.DebugDevNames), false);

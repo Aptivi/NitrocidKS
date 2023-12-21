@@ -49,7 +49,6 @@ using KS.Network.SFTP;
 using KS.Shell.ShellBase.Commands;
 using KS.Shell.ShellBase.Shells;
 using KS.TestShell;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Modifications
 {
@@ -57,11 +56,11 @@ namespace KS.Modifications
 	{
 
 		public static string BlacklistedModsString = "";
-		internal static Dictionary<string, ModInfo> Mods = new();
+		internal static Dictionary<string, ModInfo> Mods = [];
 
 		/// <summary>
-        /// Loads all mods in KSMods
-        /// </summary>
+		/// Loads all mods in KSMods
+		/// </summary>
 		public static void StartMods()
 		{
 			string ModPath = Paths.GetKernelPath(KernelPathType.Mods);
@@ -82,17 +81,18 @@ namespace KS.Modifications
 					int CurrentCount = 1;
 					foreach (string modFile in Directory.EnumerateFiles(ModPath))
 					{
-						if (!GetBlacklistedMods().Contains(modFile))
+						string finalFile = modFile;
+						if (!GetBlacklistedMods().Contains(finalFile))
 						{
-							DebugWriter.Wdbg(DebugLevel.I, "Mod {0} is not blacklisted.", Path.GetFileName(modFile));
-							SplashReport.ReportProgress("[{1}/{2}] " + Translate.DoTranslation("Starting mod") + " {0}...", 0, KernelColorTools.ColTypes.Progress, Path.GetFileName(modFile), CurrentCount.ToString(), count.ToString());
-							modFile = Path.GetFileName(modFile);
-							ModParser.ParseMod(modFile);
+							DebugWriter.Wdbg(DebugLevel.I, "Mod {0} is not blacklisted.", Path.GetFileName(finalFile));
+							SplashReport.ReportProgress("[{1}/{2}] " + Translate.DoTranslation("Starting mod") + " {0}...", 0, KernelColorTools.ColTypes.Progress, Path.GetFileName(finalFile), CurrentCount.ToString(), count.ToString());
+							finalFile = Path.GetFileName(finalFile);
+							ModParser.ParseMod(finalFile);
 						}
 						else
 						{
-							DebugWriter.Wdbg(DebugLevel.W, "Trying to start blacklisted mod {0}. Ignoring...", Path.GetFileName(modFile));
-							SplashReport.ReportProgress("[{1}/{2}] " + Translate.DoTranslation("Mod {0} is blacklisted."), 0, KernelColorTools.ColTypes.Warning, Path.GetFileName(modFile), CurrentCount.ToString(), count.ToString());
+							DebugWriter.Wdbg(DebugLevel.W, "Trying to start blacklisted mod {0}. Ignoring...", Path.GetFileName(finalFile));
+							SplashReport.ReportProgress("[{1}/{2}] " + Translate.DoTranslation("Mod {0} is blacklisted."), 0, KernelColorTools.ColTypes.Warning, Path.GetFileName(finalFile), CurrentCount.ToString(), count.ToString());
 						}
 						CurrentCount += 1;
 					}
@@ -109,9 +109,9 @@ namespace KS.Modifications
 		}
 
 		/// <summary>
-        /// Starts a specified mod
-        /// </summary>
-        /// <param name="ModFilename">Mod filename found in KSMods</param>
+		/// Starts a specified mod
+		/// </summary>
+		/// <param name="ModFilename">Mod filename found in KSMods</param>
 		public static void StartMod(string ModFilename)
 		{
 			string ModPath = Paths.GetKernelPath(KernelPathType.Mods);
@@ -155,8 +155,8 @@ namespace KS.Modifications
 		}
 
 		/// <summary>
-        /// Stops all mods in KSMods
-        /// </summary>
+		/// Stops all mods in KSMods
+		/// </summary>
 		public static void StopMods()
 		{
 			string ModPath = Paths.GetKernelPath(KernelPathType.Mods);
@@ -207,7 +207,7 @@ namespace KS.Modifications
 					// Clear all mod commands list, since we've stopped all mods.
 					foreach (string ShellTypeName in Enum.GetNames(typeof(ShellType)))
 					{
-						ShellType ShellTypeEnum = (ShellType)Conversions.ToInteger(Enum.Parse(typeof(ShellType), ShellTypeName));
+						ShellType ShellTypeEnum = (ShellType)Convert.ToInt32(Enum.Parse(typeof(ShellType), ShellTypeName));
 						ListModCommands(ShellTypeEnum).Clear();
 						DebugWriter.Wdbg(DebugLevel.I, "Mod commands for {0} cleared.", ShellTypeEnum.ToString());
 					}
@@ -227,9 +227,9 @@ namespace KS.Modifications
 		}
 
 		/// <summary>
-        /// Stops a specified mod
-        /// </summary>
-        /// <param name="ModFilename">Mod filename found in KSMods</param>
+		/// Stops a specified mod
+		/// </summary>
+		/// <param name="ModFilename">Mod filename found in KSMods</param>
 		public static void StopMod(string ModFilename)
 		{
 			string ModPath = Paths.GetKernelPath(KernelPathType.Mods);
@@ -308,8 +308,8 @@ namespace KS.Modifications
 		}
 
 		/// <summary>
-        /// Reloads all mods
-        /// </summary>
+		/// Reloads all mods
+		/// </summary>
 		public static void ReloadMods()
 		{
 			// Stop all mods
@@ -322,9 +322,9 @@ namespace KS.Modifications
 		}
 
 		/// <summary>
-        /// Reloads a specified mod
-        /// </summary>
-        /// <param name="ModFilename">Mod filename found in KSMods</param>
+		/// Reloads a specified mod
+		/// </summary>
+		/// <param name="ModFilename">Mod filename found in KSMods</param>
 		public static void ReloadMod(string ModFilename)
 		{
 			StopMod(ModFilename);
@@ -332,9 +332,9 @@ namespace KS.Modifications
 		}
 
 		/// <summary>
-        /// Checks to see if the mod has started
-        /// </summary>
-        /// <param name="ModFilename">Mod filename found in KSMods</param>
+		/// Checks to see if the mod has started
+		/// </summary>
+		/// <param name="ModFilename">Mod filename found in KSMods</param>
 		public static bool HasModStarted(string ModFilename)
 		{
 			// Iterate through each mod and mod part
@@ -357,9 +357,9 @@ namespace KS.Modifications
 		}
 
 		/// <summary>
-        /// Adds the mod to the blacklist (specified mod will not start on the next boot)
-        /// </summary>
-        /// <param name="ModFilename">Mod filename found in KSMods</param>
+		/// Adds the mod to the blacklist (specified mod will not start on the next boot)
+		/// </summary>
+		/// <param name="ModFilename">Mod filename found in KSMods</param>
 		public static void AddModToBlacklist(string ModFilename)
 		{
 			ModFilename = Filesystem.NeutralizePath(ModFilename, Paths.GetKernelPath(KernelPathType.Mods));
@@ -376,9 +376,9 @@ namespace KS.Modifications
 		}
 
 		/// <summary>
-        /// Removes the mod from the blacklist (specified mod will start on the next boot)
-        /// </summary>
-        /// <param name="ModFilename">Mod filename found in KSMods</param>
+		/// Removes the mod from the blacklist (specified mod will start on the next boot)
+		/// </summary>
+		/// <param name="ModFilename">Mod filename found in KSMods</param>
 		public static void RemoveModFromBlacklist(string ModFilename)
 		{
 			ModFilename = Filesystem.NeutralizePath(ModFilename, Paths.GetKernelPath(KernelPathType.Mods));
@@ -395,17 +395,17 @@ namespace KS.Modifications
 		}
 
 		/// <summary>
-        /// Gets the blacklisted mods list
-        /// </summary>
+		/// Gets the blacklisted mods list
+		/// </summary>
 		public static List<string> GetBlacklistedMods()
 		{
-			return BlacklistedModsString.Split(';').ToList();
+			return [.. BlacklistedModsString.Split(';')];
 		}
 
 		/// <summary>
-        /// Installs the mod DLL or single code file to the mod directory
-        /// </summary>
-        /// <param name="ModPath">Target mod path</param>
+		/// Installs the mod DLL or single code file to the mod directory
+		/// </summary>
+		/// <param name="ModPath">Target mod path</param>
 		public static void InstallMod(string ModPath)
 		{
 			string TargetModPath = Filesystem.NeutralizePath(Path.GetFileName(ModPath), Paths.GetKernelPath(KernelPathType.Mods));
@@ -483,9 +483,9 @@ namespace KS.Modifications
 		}
 
 		/// <summary>
-        /// Uninstalls the mod from the mod directory
-        /// </summary>
-        /// <param name="ModPath">Target mod path found in KSMods</param>
+		/// Uninstalls the mod from the mod directory
+		/// </summary>
+		/// <param name="ModPath">Target mod path found in KSMods</param>
 		public static void UninstallMod(string ModPath)
 		{
 			string TargetModPath = Filesystem.NeutralizePath(ModPath, Paths.GetKernelPath(KernelPathType.Mods), true);
@@ -527,17 +527,17 @@ namespace KS.Modifications
 		}
 
 		/// <summary>
-        /// Lists the mods
-        /// </summary>
+		/// Lists the mods
+		/// </summary>
 		public static Dictionary<string, ModInfo> ListMods()
 		{
 			return ListMods("");
 		}
 
 		/// <summary>
-        /// Lists the mods
-        /// </summary>
-        /// <param name="SearchTerm">Search term</param>
+		/// Lists the mods
+		/// </summary>
+		/// <param name="SearchTerm">Search term</param>
 		public static Dictionary<string, ModInfo> ListMods(string SearchTerm)
 		{
 			var ListedMods = new Dictionary<string, ModInfo>();
@@ -554,9 +554,9 @@ namespace KS.Modifications
 		}
 
 		/// <summary>
-        /// Lists the mod commands based on the shell
-        /// </summary>
-        /// <param name="ShellType">Selected shell type</param>
+		/// Lists the mod commands based on the shell
+		/// </summary>
+		/// <param name="ShellType">Selected shell type</param>
 		public static Dictionary<string, CommandInfo> ListModCommands(ShellType ShellType)
 		{
 			switch (ShellType)

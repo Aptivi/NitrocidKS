@@ -29,8 +29,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests adding the reminder
-    /// </summary>
+		/// Tests adding the reminder
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestAddReminder()
@@ -44,8 +44,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests adding the reminder
-    /// </summary>
+		/// Tests adding the reminder
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestRemoveReminder()

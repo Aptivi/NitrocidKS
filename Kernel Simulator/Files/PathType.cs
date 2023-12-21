@@ -20,69 +20,69 @@
 namespace KS.Files
 {
 	/// <summary>
-    /// Specifies the kernel path type
-    /// </summary>
+	/// Specifies the kernel path type
+	/// </summary>
 	public enum KernelPathType
 	{
 		/// <summary>
-        /// Mods directory. Usually found in user directory as KSMods.
-        /// </summary>
+		/// Mods directory. Usually found in user directory as KSMods.
+		/// </summary>
 		Mods,
 		/// <summary>
-        /// Configuration file.
-        /// </summary>
+		/// Configuration file.
+		/// </summary>
 		Configuration,
 		/// <summary>
-        /// Kernel debug log file.
-        /// </summary>
+		/// Kernel debug log file.
+		/// </summary>
 		Debugging,
 		/// <summary>
-        /// Aliases file.
-        /// </summary>
+		/// Aliases file.
+		/// </summary>
 		Aliases,
 		/// <summary>
-        /// Users file.
-        /// </summary>
+		/// Users file.
+		/// </summary>
 		Users,
 		/// <summary>
-        /// FTP speed dial file.
-        /// </summary>
+		/// FTP speed dial file.
+		/// </summary>
 		FTPSpeedDial,
 		/// <summary>
-        /// SFTP speed dial file.
-        /// </summary>
+		/// SFTP speed dial file.
+		/// </summary>
 		SFTPSpeedDial,
 		/// <summary>
-        /// Debug devices configuration file.
-        /// </summary>
+		/// Debug devices configuration file.
+		/// </summary>
 		DebugDevNames,
 		/// <summary>
-        /// MOTD text file.
-        /// </summary>
+		/// MOTD text file.
+		/// </summary>
 		MOTD,
 		/// <summary>
-        /// MAL text file.
-        /// </summary>
+		/// MAL text file.
+		/// </summary>
 		MAL,
 		/// <summary>
-        /// Custom screensaver settings file.
-        /// </summary>
+		/// Custom screensaver settings file.
+		/// </summary>
 		CustomSaverSettings,
 		/// <summary>
-        /// Events folder
-        /// </summary>
+		/// Events folder
+		/// </summary>
 		Events,
 		/// <summary>
-        /// Reminders folder
-        /// </summary>
+		/// Reminders folder
+		/// </summary>
 		Reminders,
 		/// <summary>
-        /// Custom languages folder
-        /// </summary>
+		/// Custom languages folder
+		/// </summary>
 		CustomLanguages,
 		/// <summary>
-        /// Custom splashes folder
-        /// </summary>
+		/// Custom splashes folder
+		/// </summary>
 		CustomSplashes
 	}
 }

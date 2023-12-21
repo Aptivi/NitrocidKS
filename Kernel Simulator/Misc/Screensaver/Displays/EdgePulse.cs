@@ -35,8 +35,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _edgepulseMaximumBlueColorLevel = 255;
 
 		/// <summary>
-        /// [EdgePulse] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [EdgePulse] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int EdgePulseDelay
 		{
 			get
@@ -51,8 +51,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [EdgePulse] How many fade steps to do?
-        /// </summary>
+		/// [EdgePulse] How many fade steps to do?
+		/// </summary>
 		public static int EdgePulseMaxSteps
 		{
 			get
@@ -67,8 +67,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [EdgePulse] The minimum red color level (true color)
-        /// </summary>
+		/// [EdgePulse] The minimum red color level (true color)
+		/// </summary>
 		public static int EdgePulseMinimumRedColorLevel
 		{
 			get
@@ -85,8 +85,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [EdgePulse] The minimum green color level (true color)
-        /// </summary>
+		/// [EdgePulse] The minimum green color level (true color)
+		/// </summary>
 		public static int EdgePulseMinimumGreenColorLevel
 		{
 			get
@@ -103,8 +103,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [EdgePulse] The minimum blue color level (true color)
-        /// </summary>
+		/// [EdgePulse] The minimum blue color level (true color)
+		/// </summary>
 		public static int EdgePulseMinimumBlueColorLevel
 		{
 			get
@@ -121,8 +121,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [EdgePulse] The maximum red color level (true color)
-        /// </summary>
+		/// [EdgePulse] The maximum red color level (true color)
+		/// </summary>
 		public static int EdgePulseMaximumRedColorLevel
 		{
 			get
@@ -139,8 +139,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [EdgePulse] The maximum green color level (true color)
-        /// </summary>
+		/// [EdgePulse] The maximum green color level (true color)
+		/// </summary>
 		public static int EdgePulseMaximumGreenColorLevel
 		{
 			get
@@ -157,8 +157,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [EdgePulse] The maximum blue color level (true color)
-        /// </summary>
+		/// [EdgePulse] The maximum blue color level (true color)
+		/// </summary>
 		public static int EdgePulseMaximumBlueColorLevel
 		{
 			get

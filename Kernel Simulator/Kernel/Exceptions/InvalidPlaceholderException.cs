@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Invalid placeholder specified
-    /// </summary>
+	/// Invalid placeholder specified
+	/// </summary>
 	public class InvalidPlaceholderException : Exception
 	{
 

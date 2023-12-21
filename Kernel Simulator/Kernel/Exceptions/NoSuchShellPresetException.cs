@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when shell preset is nonexistent
-    /// </summary>
+	/// Thrown when shell preset is nonexistent
+	/// </summary>
 	public class NoSuchShellPresetException : Exception
 	{
 

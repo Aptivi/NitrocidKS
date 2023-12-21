@@ -5,7 +5,6 @@ using KS.Misc.Text;
 using KS.Misc.Threading;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
-using Microsoft.VisualBasic.CompilerServices;
 using Terminaux.Base;
 using Terminaux.Colors;
 
@@ -46,8 +45,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _wipeMaximumColorLevel = 255;
 
 		/// <summary>
-        /// [Wipe] Enable 255 color support. Has a higher priority than 16 color support.
-        /// </summary>
+		/// [Wipe] Enable 255 color support. Has a higher priority than 16 color support.
+		/// </summary>
 		public static bool Wipe255Colors
 		{
 			get
@@ -60,8 +59,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Wipe] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
+		/// [Wipe] Enable truecolor support. Has a higher priority than 255 color support.
+		/// </summary>
 		public static bool WipeTrueColor
 		{
 			get
@@ -74,8 +73,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Wipe] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [Wipe] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int WipeDelay
 		{
 			get
@@ -88,8 +87,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Wipe] How many wipes needed to change direction?
-        /// </summary>
+		/// [Wipe] How many wipes needed to change direction?
+		/// </summary>
 		public static int WipeWipesNeededToChangeDirection
 		{
 			get
@@ -102,8 +101,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Wipe] Screensaver background color
-        /// </summary>
+		/// [Wipe] Screensaver background color
+		/// </summary>
 		public static string WipeBackgroundColor
 		{
 			get
@@ -116,8 +115,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Wipe] The minimum red color level (true color)
-        /// </summary>
+		/// [Wipe] The minimum red color level (true color)
+		/// </summary>
 		public static int WipeMinimumRedColorLevel
 		{
 			get
@@ -130,8 +129,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Wipe] The minimum green color level (true color)
-        /// </summary>
+		/// [Wipe] The minimum green color level (true color)
+		/// </summary>
 		public static int WipeMinimumGreenColorLevel
 		{
 			get
@@ -144,8 +143,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Wipe] The minimum blue color level (true color)
-        /// </summary>
+		/// [Wipe] The minimum blue color level (true color)
+		/// </summary>
 		public static int WipeMinimumBlueColorLevel
 		{
 			get
@@ -158,8 +157,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Wipe] The minimum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [Wipe] The minimum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int WipeMinimumColorLevel
 		{
 			get
@@ -172,8 +171,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Wipe] The maximum red color level (true color)
-        /// </summary>
+		/// [Wipe] The maximum red color level (true color)
+		/// </summary>
 		public static int WipeMaximumRedColorLevel
 		{
 			get
@@ -186,8 +185,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Wipe] The maximum green color level (true color)
-        /// </summary>
+		/// [Wipe] The maximum green color level (true color)
+		/// </summary>
 		public static int WipeMaximumGreenColorLevel
 		{
 			get
@@ -200,8 +199,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Wipe] The maximum blue color level (true color)
-        /// </summary>
+		/// [Wipe] The maximum blue color level (true color)
+		/// </summary>
 		public static int WipeMaximumBlueColorLevel
 		{
 			get
@@ -214,8 +213,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Wipe] The maximum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [Wipe] The maximum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int WipeMaximumColorLevel
 		{
 			get
@@ -392,7 +391,7 @@ namespace KS.Misc.Screensaver.Displays
 				if (TimesWiped == WipeSettings.WipeWipesNeededToChangeDirection)
 				{
 					TimesWiped = 0;
-					ToDirection = (WipeDirections)Conversions.ToInteger(Enum.Parse(typeof(WipeDirections), RandomDriver.Next(0, 3).ToString()));
+					ToDirection = (WipeDirections)Convert.ToInt32(Enum.Parse(typeof(WipeDirections), RandomDriver.Next(0, 3).ToString()));
 					DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Changed direction to {0}", ToDirection.ToString());
 				}
 			}
@@ -410,25 +409,25 @@ namespace KS.Misc.Screensaver.Displays
 		}
 
 		/// <summary>
-        /// Wipe directions
-        /// </summary>
+		/// Wipe directions
+		/// </summary>
 		private enum WipeDirections
 		{
 			/// <summary>
-            /// Wipe from right to left
-            /// </summary>
+			/// Wipe from right to left
+			/// </summary>
 			Left,
 			/// <summary>
-            /// Wipe from left to right
-            /// </summary>
+			/// Wipe from left to right
+			/// </summary>
 			Right,
 			/// <summary>
-            /// Wipe from bottom to top
-            /// </summary>
+			/// Wipe from bottom to top
+			/// </summary>
 			Top,
 			/// <summary>
-            /// Wipe from top to bottom
-            /// </summary>
+			/// Wipe from top to bottom
+			/// </summary>
 			Bottom
 		}
 

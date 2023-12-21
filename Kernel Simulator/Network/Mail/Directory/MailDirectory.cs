@@ -28,9 +28,9 @@ namespace KS.Network.Mail.Directory
 	{
 
 		/// <summary>
-        /// Creates mail folder
-        /// </summary>
-        /// <param name="Directory">Directory name</param>
+		/// Creates mail folder
+		/// </summary>
+		/// <param name="Directory">Directory name</param>
 		public static void CreateMailDirectory(string Directory)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "Creating folder: {0}", Directory);
@@ -52,9 +52,9 @@ namespace KS.Network.Mail.Directory
 		}
 
 		/// <summary>
-        /// Deletes mail folder
-        /// </summary>
-        /// <param name="Directory">Directory name</param>
+		/// Deletes mail folder
+		/// </summary>
+		/// <param name="Directory">Directory name</param>
 		public static void DeleteMailDirectory(string Directory)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "Deleting folder: {0}", Directory);
@@ -76,9 +76,9 @@ namespace KS.Network.Mail.Directory
 		}
 
 		/// <summary>
-        /// Deletes mail folder
-        /// </summary>
-        /// <param name="Directory">Directory name</param>
+		/// Deletes mail folder
+		/// </summary>
+		/// <param name="Directory">Directory name</param>
 		public static void RenameMailDirectory(string Directory, string NewName)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "Renaming folder {0} to {1}", Directory, NewName);
@@ -100,9 +100,9 @@ namespace KS.Network.Mail.Directory
 		}
 
 		/// <summary>
-        /// Changes current mail directory
-        /// </summary>
-        /// <param name="Directory">A mail directory</param>
+		/// Changes current mail directory
+		/// </summary>
+		/// <param name="Directory">A mail directory</param>
 		public static void MailChangeDirectory(string Directory)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "Opening folder: {0}", Directory);
@@ -122,10 +122,10 @@ namespace KS.Network.Mail.Directory
 		}
 
 		/// <summary>
-        /// Locates the normal (not special) folder and opens it.
-        /// </summary>
-        /// <param name="FolderString">A folder to open (not a path)</param>
-        /// <returns>A folder</returns>
+		/// Locates the normal (not special) folder and opens it.
+		/// </summary>
+		/// <param name="FolderString">A folder to open (not a path)</param>
+		/// <returns>A folder</returns>
 		public static MailFolder OpenFolder(string FolderString, FolderAccess FolderMode = FolderAccess.ReadWrite)
 		{
 			var Opened = default(MailFolder);
@@ -188,9 +188,9 @@ namespace KS.Network.Mail.Directory
 		}
 
 		/// <summary>
-        /// Lists directories
-        /// </summary>
-        /// <returns>String list</returns>
+		/// Lists directories
+		/// </summary>
+		/// <returns>String list</returns>
 		public static string MailListDirectories()
 		{
 			var EntryBuilder = new StringBuilder();

@@ -44,8 +44,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _discoMaximumColorLevel = 255;
 
 		/// <summary>
-        /// [Disco] Enable 255 color support. Has a higher priority than 16 color support.
-        /// </summary>
+		/// [Disco] Enable 255 color support. Has a higher priority than 16 color support.
+		/// </summary>
 		public static bool Disco255Colors
 		{
 			get
@@ -58,8 +58,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Disco] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
+		/// [Disco] Enable truecolor support. Has a higher priority than 255 color support.
+		/// </summary>
 		public static bool DiscoTrueColor
 		{
 			get
@@ -72,8 +72,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Disco] Enable color cycling
-        /// </summary>
+		/// [Disco] Enable color cycling
+		/// </summary>
 		public static bool DiscoCycleColors
 		{
 			get
@@ -86,8 +86,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Disco] How many milliseconds, or beats per minute, to wait before making the next write?
-        /// </summary>
+		/// [Disco] How many milliseconds, or beats per minute, to wait before making the next write?
+		/// </summary>
 		public static int DiscoDelay
 		{
 			get
@@ -102,8 +102,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Disco] Whether to use the Beats Per Minute (1/4) to change the writing delay. If False, will use the standard milliseconds delay instead.
-        /// </summary>
+		/// [Disco] Whether to use the Beats Per Minute (1/4) to change the writing delay. If False, will use the standard milliseconds delay instead.
+		/// </summary>
 		public static bool DiscoUseBeatsPerMinute
 		{
 			get
@@ -116,8 +116,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Disco] Uses the black and white cycle to produce the same effect as the legacy "fed" screensaver introduced back in v0.0.1
-        /// </summary>
+		/// [Disco] Uses the black and white cycle to produce the same effect as the legacy "fed" screensaver introduced back in v0.0.1
+		/// </summary>
 		public static bool DiscoEnableFedMode
 		{
 			get
@@ -130,8 +130,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Disco] The minimum red color level (true color)
-        /// </summary>
+		/// [Disco] The minimum red color level (true color)
+		/// </summary>
 		public static int DiscoMinimumRedColorLevel
 		{
 			get
@@ -148,8 +148,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Disco] The minimum green color level (true color)
-        /// </summary>
+		/// [Disco] The minimum green color level (true color)
+		/// </summary>
 		public static int DiscoMinimumGreenColorLevel
 		{
 			get
@@ -166,8 +166,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Disco] The minimum blue color level (true color)
-        /// </summary>
+		/// [Disco] The minimum blue color level (true color)
+		/// </summary>
 		public static int DiscoMinimumBlueColorLevel
 		{
 			get
@@ -184,8 +184,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Disco] The minimum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [Disco] The minimum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int DiscoMinimumColorLevel
 		{
 			get
@@ -203,8 +203,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Disco] The maximum red color level (true color)
-        /// </summary>
+		/// [Disco] The maximum red color level (true color)
+		/// </summary>
 		public static int DiscoMaximumRedColorLevel
 		{
 			get
@@ -221,8 +221,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Disco] The maximum green color level (true color)
-        /// </summary>
+		/// [Disco] The maximum green color level (true color)
+		/// </summary>
 		public static int DiscoMaximumGreenColorLevel
 		{
 			get
@@ -239,8 +239,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Disco] The maximum blue color level (true color)
-        /// </summary>
+		/// [Disco] The maximum blue color level (true color)
+		/// </summary>
 		public static int DiscoMaximumBlueColorLevel
 		{
 			get
@@ -257,8 +257,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Disco] The maximum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [Disco] The maximum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int DiscoMaximumColorLevel
 		{
 			get
@@ -307,7 +307,7 @@ namespace KS.Misc.Screensaver.Displays
 			DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Maximum green color level: {0}", MaximumColorsG);
 			int MaximumColorsB = DiscoSettings.DiscoMaximumBlueColorLevel;
 			DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Maximum blue color level: {0}", MaximumColorsB);
-			ConsoleColors[] FedColors = new[] { ConsoleColors.Black, ConsoleColors.White };
+			ConsoleColors[] FedColors = [ConsoleColors.Black, ConsoleColors.White];
 
 			ConsoleWrapper.CursorVisible = false;
 
@@ -362,13 +362,13 @@ namespace KS.Misc.Screensaver.Displays
 			}
 			else
 			{
-				if (CurrentColor == (int)ConsoleColors.Black)
+				if (CurrentColor == (int)ConsoleColor.Black)
 				{
-					CurrentColor = (int)ConsoleColors.White;
+					CurrentColor = (int)ConsoleColor.White;
 				}
 				else
 				{
-					CurrentColor = (int)ConsoleColors.Black;
+					CurrentColor = (int)ConsoleColor.Black;
 				}
 				DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", CurrentColor);
 				KernelColorTools.SetConsoleColor(new Color(CurrentColor), true);

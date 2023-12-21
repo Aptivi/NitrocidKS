@@ -43,8 +43,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _colorMixMaximumColorLevel = 255;
 
 		/// <summary>
-        /// [ColorMix] Enable 255 color support. Has a higher priority than 16 color support.
-        /// </summary>
+		/// [ColorMix] Enable 255 color support. Has a higher priority than 16 color support.
+		/// </summary>
 		public static bool ColorMix255Colors
 		{
 			get
@@ -57,8 +57,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ColorMix] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
+		/// [ColorMix] Enable truecolor support. Has a higher priority than 255 color support.
+		/// </summary>
 		public static bool ColorMixTrueColor
 		{
 			get
@@ -71,8 +71,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ColorMix] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [ColorMix] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int ColorMixDelay
 		{
 			get
@@ -87,8 +87,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ColorMix] Screensaver background color
-        /// </summary>
+		/// [ColorMix] Screensaver background color
+		/// </summary>
 		public static string ColorMixBackgroundColor
 		{
 			get
@@ -101,8 +101,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ColorMix] The minimum red color level (true color)
-        /// </summary>
+		/// [ColorMix] The minimum red color level (true color)
+		/// </summary>
 		public static int ColorMixMinimumRedColorLevel
 		{
 			get
@@ -119,8 +119,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ColorMix] The minimum green color level (true color)
-        /// </summary>
+		/// [ColorMix] The minimum green color level (true color)
+		/// </summary>
 		public static int ColorMixMinimumGreenColorLevel
 		{
 			get
@@ -137,8 +137,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ColorMix] The minimum blue color level (true color)
-        /// </summary>
+		/// [ColorMix] The minimum blue color level (true color)
+		/// </summary>
 		public static int ColorMixMinimumBlueColorLevel
 		{
 			get
@@ -155,8 +155,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ColorMix] The minimum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [ColorMix] The minimum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int ColorMixMinimumColorLevel
 		{
 			get
@@ -174,8 +174,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ColorMix] The maximum red color level (true color)
-        /// </summary>
+		/// [ColorMix] The maximum red color level (true color)
+		/// </summary>
 		public static int ColorMixMaximumRedColorLevel
 		{
 			get
@@ -192,8 +192,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ColorMix] The maximum green color level (true color)
-        /// </summary>
+		/// [ColorMix] The maximum green color level (true color)
+		/// </summary>
 		public static int ColorMixMaximumGreenColorLevel
 		{
 			get
@@ -210,8 +210,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ColorMix] The maximum blue color level (true color)
-        /// </summary>
+		/// [ColorMix] The maximum blue color level (true color)
+		/// </summary>
 		public static int ColorMixMaximumBlueColorLevel
 		{
 			get
@@ -228,8 +228,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [ColorMix] The maximum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [ColorMix] The maximum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int ColorMixMaximumColorLevel
 		{
 			get

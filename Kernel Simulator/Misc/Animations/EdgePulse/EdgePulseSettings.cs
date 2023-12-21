@@ -33,8 +33,8 @@ namespace KS.Misc.Animations.EdgePulse
 		private int _edgepulseMaximumBlueColorLevel = 255;
 
 		/// <summary>
-        /// [EdgePulse] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [EdgePulse] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public int EdgePulseDelay
 		{
 			get
@@ -49,8 +49,8 @@ namespace KS.Misc.Animations.EdgePulse
 			}
 		}
 		/// <summary>
-        /// [EdgePulse] How many fade steps to do?
-        /// </summary>
+		/// [EdgePulse] How many fade steps to do?
+		/// </summary>
 		public int EdgePulseMaxSteps
 		{
 			get
@@ -65,8 +65,8 @@ namespace KS.Misc.Animations.EdgePulse
 			}
 		}
 		/// <summary>
-        /// [EdgePulse] The minimum red color level (true color)
-        /// </summary>
+		/// [EdgePulse] The minimum red color level (true color)
+		/// </summary>
 		public int EdgePulseMinimumRedColorLevel
 		{
 			get
@@ -83,8 +83,8 @@ namespace KS.Misc.Animations.EdgePulse
 			}
 		}
 		/// <summary>
-        /// [EdgePulse] The minimum green color level (true color)
-        /// </summary>
+		/// [EdgePulse] The minimum green color level (true color)
+		/// </summary>
 		public int EdgePulseMinimumGreenColorLevel
 		{
 			get
@@ -101,8 +101,8 @@ namespace KS.Misc.Animations.EdgePulse
 			}
 		}
 		/// <summary>
-        /// [EdgePulse] The minimum blue color level (true color)
-        /// </summary>
+		/// [EdgePulse] The minimum blue color level (true color)
+		/// </summary>
 		public int EdgePulseMinimumBlueColorLevel
 		{
 			get
@@ -119,8 +119,8 @@ namespace KS.Misc.Animations.EdgePulse
 			}
 		}
 		/// <summary>
-        /// [EdgePulse] The maximum red color level (true color)
-        /// </summary>
+		/// [EdgePulse] The maximum red color level (true color)
+		/// </summary>
 		public int EdgePulseMaximumRedColorLevel
 		{
 			get
@@ -137,8 +137,8 @@ namespace KS.Misc.Animations.EdgePulse
 			}
 		}
 		/// <summary>
-        /// [EdgePulse] The maximum green color level (true color)
-        /// </summary>
+		/// [EdgePulse] The maximum green color level (true color)
+		/// </summary>
 		public int EdgePulseMaximumGreenColorLevel
 		{
 			get
@@ -155,8 +155,8 @@ namespace KS.Misc.Animations.EdgePulse
 			}
 		}
 		/// <summary>
-        /// [EdgePulse] The maximum blue color level (true color)
-        /// </summary>
+		/// [EdgePulse] The maximum blue color level (true color)
+		/// </summary>
 		public int EdgePulseMaximumBlueColorLevel
 		{
 			get

@@ -21,7 +21,6 @@ using KS.ConsoleBase.Colors;
 using KS.Misc.Screensaver;
 using KS.Misc.Threading;
 using KS.Misc.Writers.DebugWriters;
-using Microsoft.VisualBasic.CompilerServices;
 using Terminaux.Base;
 using Terminaux.Colors;
 
@@ -35,8 +34,8 @@ namespace KS.Misc.Animations.BeatFader
 		private static bool ResizeSyncing;
 
 		/// <summary>
-        /// Simulates the beat fading animation
-        /// </summary>
+		/// Simulates the beat fading animation
+		/// </summary>
 		public static void Simulate(BeatFaderSettings Settings)
 		{
 			CurrentWindowWidth = ConsoleWrapper.WindowWidth;
@@ -90,7 +89,7 @@ namespace KS.Misc.Animations.BeatFader
 				}
 				else if (UserColor.Type == ColorType._255Color)
 				{
-					var ConsoleColor = new ConsoleColorsInfo((ConsoleColors)Conversions.ToInteger(UserColor.PlainSequence));
+					var ConsoleColor = new ConsoleColorsInfo((ConsoleColors)Convert.ToInt32(UserColor.PlainSequence));
 					RedColorNum = ConsoleColor.R;
 					GreenColorNum = ConsoleColor.G;
 					BlueColorNum = ConsoleColor.B;

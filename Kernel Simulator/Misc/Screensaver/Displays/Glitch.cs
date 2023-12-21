@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using KS.ConsoleBase.Colors;
 using KS.Misc.Threading;
 using KS.Misc.Writers.ConsoleWriters;
-using Microsoft.VisualBasic.CompilerServices;
 using Terminaux.Base;
 using Terminaux.Colors;
 
@@ -34,8 +33,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _GlitchDensity = 40;
 
 		/// <summary>
-        /// [Glitch] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [Glitch] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int GlitchDelay
 		{
 			get
@@ -50,8 +49,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Glitch] The Glitch density in percent
-        /// </summary>
+		/// [Glitch] The Glitch density in percent
+		/// </summary>
 		public static int GlitchDensity
 		{
 			get
@@ -112,24 +111,24 @@ namespace KS.Misc.Screensaver.Displays
 					ConsoleWrapper.SetCursorPosition(CoverX, CoverY);
 
 					// Select random glitch type
-					GlitchType GlitchType = (GlitchType)Conversions.ToInteger(Enum.Parse(typeof(GlitchType), RandomDriver.Next(5).ToString()));
+					GlitchType GlitchType = (GlitchType)Convert.ToInt32(Enum.Parse(typeof(GlitchType), RandomDriver.Next(5).ToString()));
 
 					// Select random letter
-					bool LetterCapitalized = Conversions.ToBoolean(RandomDriver.Next(2));
+					bool LetterCapitalized = Convert.ToBoolean(RandomDriver.Next(2));
 					int LetterRangeStart = LetterCapitalized ? 65 : 97;
 					int LetterRangeEnd = LetterCapitalized ? 90 : 122;
 					char Letter = Convert.ToChar(RandomDriver.Next(LetterRangeStart, LetterRangeEnd + 1));
 
 					// Select random symbol
-					bool UseExtendedAscii = Conversions.ToBoolean(RandomDriver.Next(2));
+					bool UseExtendedAscii = Convert.ToBoolean(RandomDriver.Next(2));
 					int SymbolRangeStart = UseExtendedAscii ? 128 : 33;
 					int SymbolRangeEnd = UseExtendedAscii ? 256 : 64;
 					char Symbol = Convert.ToChar(RandomDriver.Next(SymbolRangeStart, SymbolRangeEnd + 1));
 
 					// Select red, green, or blue background and foreground
-					GlitchColorType GlitchBlockColorType = (GlitchColorType)Conversions.ToInteger(Enum.Parse(typeof(GlitchColorType), RandomDriver.Next(3).ToString()));
-					GlitchColorType GlitchLetterColorType = (GlitchColorType)Conversions.ToInteger(Enum.Parse(typeof(GlitchColorType), RandomDriver.Next(3).ToString()));
-					bool ColorLetter = Conversions.ToBoolean(RandomDriver.Next(2));
+					GlitchColorType GlitchBlockColorType = (GlitchColorType)Convert.ToInt32(Enum.Parse(typeof(GlitchColorType), RandomDriver.Next(3).ToString()));
+					GlitchColorType GlitchLetterColorType = (GlitchColorType)Convert.ToInt32(Enum.Parse(typeof(GlitchColorType), RandomDriver.Next(3).ToString()));
+					bool ColorLetter = Convert.ToBoolean(RandomDriver.Next(2));
 					int ColorBlockNumber = RandomDriver.Next(0, 256);
 					int ColorLetterNumber = RandomDriver.Next(0, 256);
 					var ColorBlockInstance = Color.Empty;
@@ -184,7 +183,7 @@ namespace KS.Misc.Screensaver.Displays
 									KernelColorTools.SetConsoleColor(ColorLetterInstance);
 								else
 									Console.ForegroundColor = ConsoleColor.White;
-								TextWriterColor.WritePlain(Conversions.ToString(Letter), false);
+								TextWriterColor.WritePlain(Convert.ToString(Letter), false);
 								break;
 							}
 						case Displays.GlitchType.RandomSymbol:
@@ -193,7 +192,7 @@ namespace KS.Misc.Screensaver.Displays
 									KernelColorTools.SetConsoleColor(ColorLetterInstance);
 								else
 									Console.ForegroundColor = ConsoleColor.White;
-								TextWriterColor.WritePlain(Conversions.ToString(Symbol), false);
+								TextWriterColor.WritePlain(Convert.ToString(Symbol), false);
 								break;
 							}
 						case Displays.GlitchType.RedGreenBlueColor:
@@ -209,7 +208,7 @@ namespace KS.Misc.Screensaver.Displays
 								else
 									Console.ForegroundColor = ConsoleColor.White;
 								KernelColorTools.SetConsoleColor(ColorBlockInstance, true);
-								TextWriterColor.WritePlain(Conversions.ToString(Letter), false);
+								TextWriterColor.WritePlain(Convert.ToString(Letter), false);
 								break;
 							}
 						case Displays.GlitchType.RedGreenBlueColorWithRandomSymbol:
@@ -219,7 +218,7 @@ namespace KS.Misc.Screensaver.Displays
 								else
 									Console.ForegroundColor = ConsoleColor.White;
 								KernelColorTools.SetConsoleColor(ColorBlockInstance, true);
-								TextWriterColor.WritePlain(Conversions.ToString(Symbol), false);
+								TextWriterColor.WritePlain(Convert.ToString(Symbol), false);
 								break;
 							}
 					}
@@ -246,40 +245,40 @@ namespace KS.Misc.Screensaver.Displays
 	enum GlitchType
 	{
 		/// <summary>
-        /// A block with either red, green, or blue as color, and can be darkened
-        /// </summary>
+		/// A block with either red, green, or blue as color, and can be darkened
+		/// </summary>
 		RedGreenBlueColor,
 		/// <summary>
-        /// A block with either red, green, or blue as color, and can be darkened and feature a random letter printed in white
-        /// </summary>
+		/// A block with either red, green, or blue as color, and can be darkened and feature a random letter printed in white
+		/// </summary>
 		RedGreenBlueColorWithRandomLetter,
 		/// <summary>
-        /// A block with either red, green, or blue as color, and can be darkened and feature a random symbol printed in white
-        /// </summary>
+		/// A block with either red, green, or blue as color, and can be darkened and feature a random symbol printed in white
+		/// </summary>
 		RedGreenBlueColorWithRandomSymbol,
 		/// <summary>
-        /// A random letter printed in white, red, green, or blue, and can be darkened
-        /// </summary>
+		/// A random letter printed in white, red, green, or blue, and can be darkened
+		/// </summary>
 		RandomLetter,
 		/// <summary>
-        /// A random symbol printed in white, red, green, or blue, and can be darkened
-        /// </summary>
+		/// A random symbol printed in white, red, green, or blue, and can be darkened
+		/// </summary>
 		RandomSymbol
 	}
 
 	enum GlitchColorType
 	{
 		/// <summary>
-        /// The red color
-        /// </summary>
+		/// The red color
+		/// </summary>
 		Red,
 		/// <summary>
-        /// The green color
-        /// </summary>
+		/// The green color
+		/// </summary>
 		Green,
 		/// <summary>
-        /// The blue color
-        /// </summary>
+		/// The blue color
+		/// </summary>
 		Blue
 	}
 }

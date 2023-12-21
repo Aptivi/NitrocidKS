@@ -33,7 +33,7 @@ namespace KS.Network.RSS.Commands
 			{
 				TextWriterColor.Write("- {0}: ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), Article.ArticleTitle);
 				TextWriterColor.Write(Article.ArticleLink, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-				TextWriterColor.Write("    {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), TextTools.SplitNewLines(Article.ArticleDescription, 0).Truncate(200));
+				TextWriterColor.Write("    {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), TextTools.SplitNewLines(Article.ArticleDescription)[0].Truncate(200));
 			}
 		}
 

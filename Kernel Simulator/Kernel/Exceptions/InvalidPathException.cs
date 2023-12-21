@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Invalid path specified
-    /// </summary>
+	/// Invalid path specified
+	/// </summary>
 	public class InvalidPathException : Exception
 	{
 

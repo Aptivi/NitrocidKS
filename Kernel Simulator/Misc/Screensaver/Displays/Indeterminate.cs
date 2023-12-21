@@ -60,8 +60,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static bool _indeterminateUseBorderColors;
 
 		/// <summary>
-        /// [Indeterminate] Enable 255 color support. Has a higher priority than 16 color support.
-        /// </summary>
+		/// [Indeterminate] Enable 255 color support. Has a higher priority than 16 color support.
+		/// </summary>
 		public static bool Indeterminate255Colors
 		{
 			get
@@ -74,8 +74,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
+		/// [Indeterminate] Enable truecolor support. Has a higher priority than 255 color support.
+		/// </summary>
 		public static bool IndeterminateTrueColor
 		{
 			get
@@ -88,8 +88,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [Indeterminate] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int IndeterminateDelay
 		{
 			get
@@ -104,8 +104,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] Upper left corner character 
-        /// </summary>
+		/// [Indeterminate] Upper left corner character 
+		/// </summary>
 		public static string IndeterminateUpperLeftCornerChar
 		{
 			get
@@ -120,8 +120,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] Upper right corner character 
-        /// </summary>
+		/// [Indeterminate] Upper right corner character 
+		/// </summary>
 		public static string IndeterminateUpperRightCornerChar
 		{
 			get
@@ -136,8 +136,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] Lower left corner character 
-        /// </summary>
+		/// [Indeterminate] Lower left corner character 
+		/// </summary>
 		public static string IndeterminateLowerLeftCornerChar
 		{
 			get
@@ -152,8 +152,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] Lower right corner character 
-        /// </summary>
+		/// [Indeterminate] Lower right corner character 
+		/// </summary>
 		public static string IndeterminateLowerRightCornerChar
 		{
 			get
@@ -168,8 +168,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] Upper frame character 
-        /// </summary>
+		/// [Indeterminate] Upper frame character 
+		/// </summary>
 		public static string IndeterminateUpperFrameChar
 		{
 			get
@@ -184,8 +184,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] Lower frame character 
-        /// </summary>
+		/// [Indeterminate] Lower frame character 
+		/// </summary>
 		public static string IndeterminateLowerFrameChar
 		{
 			get
@@ -200,8 +200,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] Left frame character 
-        /// </summary>
+		/// [Indeterminate] Left frame character 
+		/// </summary>
 		public static string IndeterminateLeftFrameChar
 		{
 			get
@@ -216,8 +216,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] Right frame character 
-        /// </summary>
+		/// [Indeterminate] Right frame character 
+		/// </summary>
 		public static string IndeterminateRightFrameChar
 		{
 			get
@@ -232,8 +232,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] The minimum red color level (true color)
-        /// </summary>
+		/// [Indeterminate] The minimum red color level (true color)
+		/// </summary>
 		public static int IndeterminateMinimumRedColorLevel
 		{
 			get
@@ -250,8 +250,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] The minimum green color level (true color)
-        /// </summary>
+		/// [Indeterminate] The minimum green color level (true color)
+		/// </summary>
 		public static int IndeterminateMinimumGreenColorLevel
 		{
 			get
@@ -268,8 +268,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] The minimum blue color level (true color)
-        /// </summary>
+		/// [Indeterminate] The minimum blue color level (true color)
+		/// </summary>
 		public static int IndeterminateMinimumBlueColorLevel
 		{
 			get
@@ -286,8 +286,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] The minimum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [Indeterminate] The minimum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int IndeterminateMinimumColorLevel
 		{
 			get
@@ -305,8 +305,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] The maximum red color level (true color)
-        /// </summary>
+		/// [Indeterminate] The maximum red color level (true color)
+		/// </summary>
 		public static int IndeterminateMaximumRedColorLevel
 		{
 			get
@@ -323,8 +323,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] The maximum green color level (true color)
-        /// </summary>
+		/// [Indeterminate] The maximum green color level (true color)
+		/// </summary>
 		public static int IndeterminateMaximumGreenColorLevel
 		{
 			get
@@ -341,8 +341,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] The maximum blue color level (true color)
-        /// </summary>
+		/// [Indeterminate] The maximum blue color level (true color)
+		/// </summary>
 		public static int IndeterminateMaximumBlueColorLevel
 		{
 			get
@@ -359,8 +359,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] The maximum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [Indeterminate] The maximum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int IndeterminateMaximumColorLevel
 		{
 			get
@@ -378,8 +378,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] Upper left corner color.
-        /// </summary>
+		/// [Indeterminate] Upper left corner color.
+		/// </summary>
 		public static string IndeterminateUpperLeftCornerColor
 		{
 			get
@@ -392,8 +392,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] Upper right corner color.
-        /// </summary>
+		/// [Indeterminate] Upper right corner color.
+		/// </summary>
 		public static string IndeterminateUpperRightCornerColor
 		{
 			get
@@ -406,8 +406,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] Lower left corner color.
-        /// </summary>
+		/// [Indeterminate] Lower left corner color.
+		/// </summary>
 		public static string IndeterminateLowerLeftCornerColor
 		{
 			get
@@ -420,8 +420,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] Lower right corner color.
-        /// </summary>
+		/// [Indeterminate] Lower right corner color.
+		/// </summary>
 		public static string IndeterminateLowerRightCornerColor
 		{
 			get
@@ -434,8 +434,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] Upper frame color.
-        /// </summary>
+		/// [Indeterminate] Upper frame color.
+		/// </summary>
 		public static string IndeterminateUpperFrameColor
 		{
 			get
@@ -448,8 +448,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] Lower frame color.
-        /// </summary>
+		/// [Indeterminate] Lower frame color.
+		/// </summary>
 		public static string IndeterminateLowerFrameColor
 		{
 			get
@@ -462,8 +462,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] Left frame color.
-        /// </summary>
+		/// [Indeterminate] Left frame color.
+		/// </summary>
 		public static string IndeterminateLeftFrameColor
 		{
 			get
@@ -476,8 +476,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] Right frame color.
-        /// </summary>
+		/// [Indeterminate] Right frame color.
+		/// </summary>
 		public static string IndeterminateRightFrameColor
 		{
 			get
@@ -490,8 +490,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Indeterminate] Use the border colors.
-        /// </summary>
+		/// [Indeterminate] Use the border colors.
+		/// </summary>
 		public static bool IndeterminateUseBorderColors
 		{
 			get
@@ -564,18 +564,18 @@ namespace KS.Misc.Screensaver.Displays
 			// Draw the frame
 			if (!ResizeSyncing)
 			{
-				TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateUpperLeftCornerChar, RampFrameStartWidth, RampCenterPosition - 2, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateUpperLeftCornerColor) : new Color(ConsoleColors.Gray));
-				TextWriterColor.Write(IndeterminateSettings.IndeterminateUpperFrameChar.Repeat(RampFrameSpaces), false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateUpperFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterColor.Write(IndeterminateSettings.IndeterminateUpperRightCornerChar, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateUpperRightCornerColor) : new Color(ConsoleColors.Gray));
-				TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateLeftFrameChar, RampFrameStartWidth, RampCenterPosition - 1, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLeftFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateLeftFrameChar, RampFrameStartWidth, RampCenterPosition, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLeftFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateLeftFrameChar, RampFrameStartWidth, RampCenterPosition + 1, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLeftFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition - 1, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLeftFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLeftFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition + 1, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLeftFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateLowerLeftCornerChar, RampFrameStartWidth, RampCenterPosition + 2, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLowerLeftCornerColor) : new Color(ConsoleColors.Gray));
-				TextWriterColor.Write(IndeterminateSettings.IndeterminateLowerFrameChar.Repeat(RampFrameSpaces), false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLowerFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterColor.Write(IndeterminateSettings.IndeterminateLowerRightCornerChar, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLowerRightCornerColor) : new Color(ConsoleColors.Gray));
+				TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateUpperLeftCornerChar, RampFrameStartWidth, RampCenterPosition - 2, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateUpperLeftCornerColor) : new Color(ConsoleColor.Gray));
+				TextWriterColor.Write(IndeterminateSettings.IndeterminateUpperFrameChar.Repeat(RampFrameSpaces), false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateUpperFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterColor.Write(IndeterminateSettings.IndeterminateUpperRightCornerChar, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateUpperRightCornerColor) : new Color(ConsoleColor.Gray));
+				TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateLeftFrameChar, RampFrameStartWidth, RampCenterPosition - 1, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLeftFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateLeftFrameChar, RampFrameStartWidth, RampCenterPosition, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLeftFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateLeftFrameChar, RampFrameStartWidth, RampCenterPosition + 1, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLeftFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition - 1, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLeftFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLeftFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition + 1, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLeftFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateLowerLeftCornerChar, RampFrameStartWidth, RampCenterPosition + 2, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLowerLeftCornerColor) : new Color(ConsoleColor.Gray));
+				TextWriterColor.Write(IndeterminateSettings.IndeterminateLowerFrameChar.Repeat(RampFrameSpaces), false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLowerFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterColor.Write(IndeterminateSettings.IndeterminateLowerRightCornerChar, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLowerRightCornerColor) : new Color(ConsoleColor.Gray));
 			}
 
 			// Draw the ramp

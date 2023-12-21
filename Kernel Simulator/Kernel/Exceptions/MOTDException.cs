@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when there is a MOTD error
-    /// </summary>
+	/// Thrown when there is a MOTD error
+	/// </summary>
 	public class MOTDException : Exception
 	{
 

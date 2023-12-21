@@ -18,6 +18,7 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 using System.IO;
+using KS.Resources;
 using Newtonsoft.Json.Linq;
 using Terminaux.Colors;
 
@@ -27,178 +28,178 @@ namespace KS.ConsoleBase.Themes
 	{
 
 		/// <summary>
-        /// Input color set by theme
-        /// </summary>
+		/// Input color set by theme
+		/// </summary>
 		public Color ThemeInputColor { get; private set; }
 		/// <summary>
-        /// License color set by theme
-        /// </summary>
+		/// License color set by theme
+		/// </summary>
 		public Color ThemeLicenseColor { get; private set; }
 		/// <summary>
-        /// Continuable kernel error color set by theme
-        /// </summary>
+		/// Continuable kernel error color set by theme
+		/// </summary>
 		public Color ThemeContKernelErrorColor { get; private set; }
 		/// <summary>
-        /// Uncontinuable kernel error color set by theme
-        /// </summary>
+		/// Uncontinuable kernel error color set by theme
+		/// </summary>
 		public Color ThemeUncontKernelErrorColor { get; private set; }
 		/// <summary>
-        /// Host name color set by theme
-        /// </summary>
+		/// Host name color set by theme
+		/// </summary>
 		public Color ThemeHostNameShellColor { get; private set; }
 		/// <summary>
-        /// User name color set by theme
-        /// </summary>
+		/// User name color set by theme
+		/// </summary>
 		public Color ThemeUserNameShellColor { get; private set; }
 		/// <summary>
-        /// Background color set by theme
-        /// </summary>
+		/// Background color set by theme
+		/// </summary>
 		public Color ThemeBackgroundColor { get; private set; }
 		/// <summary>
-        /// Neutral text color set by theme
-        /// </summary>
+		/// Neutral text color set by theme
+		/// </summary>
 		public Color ThemeNeutralTextColor { get; private set; }
 		/// <summary>
-        /// List entry color set by theme
-        /// </summary>
+		/// List entry color set by theme
+		/// </summary>
 		public Color ThemeListEntryColor { get; private set; }
 		/// <summary>
-        /// List value color set by theme
-        /// </summary>
+		/// List value color set by theme
+		/// </summary>
 		public Color ThemeListValueColor { get; private set; }
 		/// <summary>
-        /// Stage color set by theme
-        /// </summary>
+		/// Stage color set by theme
+		/// </summary>
 		public Color ThemeStageColor { get; private set; }
 		/// <summary>
-        /// General error color set by theme
-        /// </summary>
+		/// General error color set by theme
+		/// </summary>
 		public Color ThemeErrorColor { get; private set; }
 		/// <summary>
-        /// General warning color set by theme
-        /// </summary>
+		/// General warning color set by theme
+		/// </summary>
 		public Color ThemeWarningColor { get; private set; }
 		/// <summary>
-        /// Option color set by theme
-        /// </summary>
+		/// Option color set by theme
+		/// </summary>
 		public Color ThemeOptionColor { get; private set; }
 		/// <summary>
-        /// Banner color set by theme
-        /// </summary>
+		/// Banner color set by theme
+		/// </summary>
 		public Color ThemeBannerColor { get; private set; }
 		/// <summary>
-        /// Input color set by theme
-        /// </summary>
+		/// Input color set by theme
+		/// </summary>
 		public Color ThemeNotificationTitleColor { get; private set; }
 		/// <summary>
-        /// License color set by theme
-        /// </summary>
+		/// License color set by theme
+		/// </summary>
 		public Color ThemeNotificationDescriptionColor { get; private set; }
 		/// <summary>
-        /// Continuable kernel error color set by theme
-        /// </summary>
+		/// Continuable kernel error color set by theme
+		/// </summary>
 		public Color ThemeNotificationProgressColor { get; private set; }
 		/// <summary>
-        /// Uncontinuable kernel error color set by theme
-        /// </summary>
+		/// Uncontinuable kernel error color set by theme
+		/// </summary>
 		public Color ThemeNotificationFailureColor { get; private set; }
 		/// <summary>
-        /// Host name color set by theme
-        /// </summary>
+		/// Host name color set by theme
+		/// </summary>
 		public Color ThemeQuestionColor { get; private set; }
 		/// <summary>
-        /// User name color set by theme
-        /// </summary>
+		/// User name color set by theme
+		/// </summary>
 		public Color ThemeSuccessColor { get; private set; }
 		/// <summary>
-        /// Background color set by theme
-        /// </summary>
+		/// Background color set by theme
+		/// </summary>
 		public Color ThemeUserDollarColor { get; private set; }
 		/// <summary>
-        /// Neutral text color set by theme
-        /// </summary>
+		/// Neutral text color set by theme
+		/// </summary>
 		public Color ThemeTipColor { get; private set; }
 		/// <summary>
-        /// List entry color set by theme
-        /// </summary>
+		/// List entry color set by theme
+		/// </summary>
 		public Color ThemeSeparatorTextColor { get; private set; }
 		/// <summary>
-        /// List value color set by theme
-        /// </summary>
+		/// List value color set by theme
+		/// </summary>
 		public Color ThemeSeparatorColor { get; private set; }
 		/// <summary>
-        /// Stage color set by theme
-        /// </summary>
+		/// Stage color set by theme
+		/// </summary>
 		public Color ThemeListTitleColor { get; private set; }
 		/// <summary>
-        /// General error color set by theme
-        /// </summary>
+		/// General error color set by theme
+		/// </summary>
 		public Color ThemeDevelopmentWarningColor { get; private set; }
 		/// <summary>
-        /// General warning color set by theme
-        /// </summary>
+		/// General warning color set by theme
+		/// </summary>
 		public Color ThemeStageTimeColor { get; private set; }
 		/// <summary>
-        /// Option color set by theme
-        /// </summary>
+		/// Option color set by theme
+		/// </summary>
 		public Color ThemeProgressColor { get; private set; }
 		/// <summary>
-        /// Banner color set by theme
-        /// </summary>
+		/// Banner color set by theme
+		/// </summary>
 		public Color ThemeBackOptionColor { get; private set; }
 		/// <summary>
-        /// Low priority notification border color set by theme
-        /// </summary>
+		/// Low priority notification border color set by theme
+		/// </summary>
 		public Color ThemeLowPriorityBorderColor { get; private set; }
 		/// <summary>
-        /// Medium priority notification border color set by theme
-        /// </summary>
+		/// Medium priority notification border color set by theme
+		/// </summary>
 		public Color ThemeMediumPriorityBorderColor { get; private set; }
 		/// <summary>
-        /// High priority notification border color set by theme
-        /// </summary>
+		/// High priority notification border color set by theme
+		/// </summary>
 		public Color ThemeHighPriorityBorderColor { get; private set; }
 		/// <summary>
-        /// Table separator color set by theme
-        /// </summary>
+		/// Table separator color set by theme
+		/// </summary>
 		public Color ThemeTableSeparatorColor { get; private set; }
 		/// <summary>
-        /// Table header color set by theme
-        /// </summary>
+		/// Table header color set by theme
+		/// </summary>
 		public Color ThemeTableHeaderColor { get; private set; }
 		/// <summary>
-        /// Table value color set by theme
-        /// </summary>
+		/// Table value color set by theme
+		/// </summary>
 		public Color ThemeTableValueColor { get; private set; }
 		/// <summary>
-        /// Selected option color set by theme
-        /// </summary>
+		/// Selected option color set by theme
+		/// </summary>
 		public Color ThemeSelectedOptionColor { get; private set; }
 		/// <summary>
-        /// Alternative option color set by theme
-        /// </summary>
+		/// Alternative option color set by theme
+		/// </summary>
 		public Color ThemeAlternativeOptionColor { get; private set; }
 
 		/// <summary>
-        /// Generates a new theme info from KS resources
-        /// </summary>
-        /// <param name="ThemeResourceName">Theme name (must match resource name)</param>
-		public ThemeInfo(string ThemeResourceName) : this(JToken.Parse(My.Resources.Resources.ResourceManager.GetString(ThemeResourceName)))
-		{
-		}
+		/// Generates a new theme info from KS resources
+		/// </summary>
+		/// <param name="ThemeResourceName">Theme name (must match resource name)</param>
+		public ThemeInfo(string ThemeResourceName) :
+			this(JToken.Parse(KernelResources.ResourceManager.GetString(ThemeResourceName)))
+		{ }
 
 		/// <summary>
-        /// Generates a new theme info from file stream
-        /// </summary>
-        /// <param name="ThemeFileStream">Theme file stream reader</param>
-		public ThemeInfo(StreamReader ThemeFileStream) : this(JToken.Parse(ThemeFileStream.ReadToEnd()))
-		{
-		}
+		/// Generates a new theme info from file stream
+		/// </summary>
+		/// <param name="ThemeFileStream">Theme file stream reader</param>
+		public ThemeInfo(StreamReader ThemeFileStream) :
+			this(JToken.Parse(ThemeFileStream.ReadToEnd()))
+		{ }
 
 		/// <summary>
-        /// Generates a new theme info from theme resource JSON
-        /// </summary>
-        /// <param name="ThemeResourceJson">Theme resource JSON</param>
+		/// Generates a new theme info from theme resource JSON
+		/// </summary>
+		/// <param name="ThemeResourceJson">Theme resource JSON</param>
 		protected ThemeInfo(JToken ThemeResourceJson)
 		{
 			ThemeInputColor = new Color(ThemeResourceJson.SelectToken("InputColor").ToString());

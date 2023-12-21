@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when there is an error in RSS shell
-    /// </summary>
+	/// Thrown when there is an error in RSS shell
+	/// </summary>
 	public class RSSShellException : Exception
 	{
 

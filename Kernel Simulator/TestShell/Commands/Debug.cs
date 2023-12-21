@@ -1,6 +1,6 @@
 ﻿using KS.Kernel;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
+using System;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
@@ -26,7 +26,7 @@ namespace KS.TestShell.Commands
 
 		public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
 		{
-			if (Conversions.ToBoolean(ListArgs[0]) == true)
+			if (Convert.ToBoolean(ListArgs[0]) == true)
 			{
 				Flags.DebugMode = true;
 			}

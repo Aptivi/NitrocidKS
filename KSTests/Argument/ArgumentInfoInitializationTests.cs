@@ -31,8 +31,8 @@ namespace KSTests
 		private static ArgumentExecutor ArgumentInstance;
 
 		/// <summary>
-    /// Tests initializing ArgumentInfo instance from a command line argument
-    /// </summary>
+		/// Tests initializing ArgumentInfo instance from a command line argument
+		/// </summary>
 		[Test]
 		[Description("Initialization")]
 		public void TestInitializeArgumentInfoInstanceFromCommandLineArg()
@@ -55,8 +55,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests initializing the argument instance from base
-    /// </summary>
+		/// Tests initializing the argument instance from base
+		/// </summary>
 		[Test]
 		[Description("Initialization")]
 		public void TestInitializeArgumentFromBase()
@@ -69,43 +69,43 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests initializing the argument instance from base
-    /// </summary>
+		/// Tests initializing the argument instance from base
+		/// </summary>
 		[Test]
 		[Description("Initialization")]
 		public void TestInitializedArgumentExecution()
 		{
-			Should.NotThrow(new Action(() => ArgumentInstance.Execute("", Array.Empty<string>(), Array.Empty<string>(), Array.Empty<string>())));
+			Should.NotThrow(new Action(() => ArgumentInstance.Execute("", [], [], [])));
 		}
 
 		/// <summary>
-    /// Tests initializing the argument instance from base
-    /// </summary>
+		/// Tests initializing the argument instance from base
+		/// </summary>
 		[Test]
 		[Description("Initialization")]
 		public void TestInitializedArgumentExecutionWithArguments()
 		{
-			Should.NotThrow(new Action(() => ArgumentInstance.Execute("Hello World", new[] { "Hello", "World" }, new[] { "Hello", "World" }, Array.Empty<string>())));
+			Should.NotThrow(new Action(() => ArgumentInstance.Execute("Hello World", ["Hello", "World"], ["Hello", "World"], [])));
 		}
 
 		/// <summary>
-    /// Tests initializing the argument instance from base
-    /// </summary>
+		/// Tests initializing the argument instance from base
+		/// </summary>
 		[Test]
 		[Description("Initialization")]
 		public void TestInitializedArgumentExecutionWithSwitches()
 		{
-			Should.NotThrow(new Action(() => ArgumentInstance.Execute("-s", new[] { "-s" }, Array.Empty<string>(), new[] { "-s" })));
+			Should.NotThrow(new Action(() => ArgumentInstance.Execute("-s", ["-s"], [], ["-s"])));
 		}
 
 		/// <summary>
-    /// Tests initializing the argument instance from base
-    /// </summary>
+		/// Tests initializing the argument instance from base
+		/// </summary>
 		[Test]
 		[Description("Initialization")]
 		public void TestInitializedArgumentExecutionWithArgumentsAndSwitches()
 		{
-			Should.NotThrow(new Action(() => ArgumentInstance.Execute("-s Hello!", new[] { "-s", "Hello!" }, new[] { "Hello!" }, new[] { "-s" })));
+			Should.NotThrow(new Action(() => ArgumentInstance.Execute("-s Hello!", ["-s", "Hello!"], ["Hello!"], ["-s"])));
 		}
 
 	}

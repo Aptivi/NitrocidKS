@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when there was a UESH script failure.
-    /// </summary>
+	/// Thrown when there was a UESH script failure.
+	/// </summary>
 	public class UESHScriptException : Exception
 	{
 

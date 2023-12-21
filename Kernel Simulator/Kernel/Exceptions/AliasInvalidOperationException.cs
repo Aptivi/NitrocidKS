@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when alias source and destination have the same name
-    /// </summary>
+	/// Thrown when alias source and destination have the same name
+	/// </summary>
 	public class AliasInvalidOperationException : Exception
 	{
 

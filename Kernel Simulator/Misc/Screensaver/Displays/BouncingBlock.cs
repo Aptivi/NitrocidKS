@@ -44,8 +44,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _bouncingBlockMaximumColorLevel = 255;
 
 		/// <summary>
-        /// [BouncingBlock] Enable 255 color support. Has a higher priority than 16 color support.
-        /// </summary>
+		/// [BouncingBlock] Enable 255 color support. Has a higher priority than 16 color support.
+		/// </summary>
 		public static bool BouncingBlock255Colors
 		{
 			get
@@ -58,8 +58,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingBlock] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
+		/// [BouncingBlock] Enable truecolor support. Has a higher priority than 255 color support.
+		/// </summary>
 		public static bool BouncingBlockTrueColor
 		{
 			get
@@ -72,8 +72,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingBlock] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [BouncingBlock] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int BouncingBlockDelay
 		{
 			get
@@ -88,8 +88,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingBlock] Screensaver background color
-        /// </summary>
+		/// [BouncingBlock] Screensaver background color
+		/// </summary>
 		public static string BouncingBlockBackgroundColor
 		{
 			get
@@ -102,8 +102,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingBlock] Screensaver foreground color
-        /// </summary>
+		/// [BouncingBlock] Screensaver foreground color
+		/// </summary>
 		public static string BouncingBlockForegroundColor
 		{
 			get
@@ -116,8 +116,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingBlock] The minimum red color level (true color)
-        /// </summary>
+		/// [BouncingBlock] The minimum red color level (true color)
+		/// </summary>
 		public static int BouncingBlockMinimumRedColorLevel
 		{
 			get
@@ -134,8 +134,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingBlock] The minimum green color level (true color)
-        /// </summary>
+		/// [BouncingBlock] The minimum green color level (true color)
+		/// </summary>
 		public static int BouncingBlockMinimumGreenColorLevel
 		{
 			get
@@ -152,8 +152,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingBlock] The minimum blue color level (true color)
-        /// </summary>
+		/// [BouncingBlock] The minimum blue color level (true color)
+		/// </summary>
 		public static int BouncingBlockMinimumBlueColorLevel
 		{
 			get
@@ -170,8 +170,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingBlock] The minimum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [BouncingBlock] The minimum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int BouncingBlockMinimumColorLevel
 		{
 			get
@@ -189,8 +189,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingBlock] The maximum red color level (true color)
-        /// </summary>
+		/// [BouncingBlock] The maximum red color level (true color)
+		/// </summary>
 		public static int BouncingBlockMaximumRedColorLevel
 		{
 			get
@@ -207,8 +207,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingBlock] The maximum green color level (true color)
-        /// </summary>
+		/// [BouncingBlock] The maximum green color level (true color)
+		/// </summary>
 		public static int BouncingBlockMaximumGreenColorLevel
 		{
 			get
@@ -225,8 +225,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingBlock] The maximum blue color level (true color)
-        /// </summary>
+		/// [BouncingBlock] The maximum blue color level (true color)
+		/// </summary>
 		public static int BouncingBlockMaximumBlueColorLevel
 		{
 			get
@@ -243,8 +243,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingBlock] The maximum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [BouncingBlock] The maximum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int BouncingBlockMaximumColorLevel
 		{
 			get

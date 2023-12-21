@@ -28,27 +28,26 @@ namespace KS.Files.LineEndings
 	{
 
 		/// <summary>
-        /// The new line style used for the current platform
-        /// </summary>
+		/// The new line style used for the current platform
+		/// </summary>
 		public static FilesystemNewlineStyle NewlineStyle
 		{
 			get
 			{
 				switch (Environment.NewLine ?? "")
 				{
-					case Microsoft.VisualBasic.Constants.vbCrLf:
+					case "\r\n":
 						{
 							return FilesystemNewlineStyle.CRLF;
 						}
-					case Microsoft.VisualBasic.Constants.vbLf:
+					case "\n":
 						{
 							return FilesystemNewlineStyle.LF;
 						}
-					case Microsoft.VisualBasic.Constants.vbCr:
+					case "\r":
 						{
 							return FilesystemNewlineStyle.CR;
 						}
-
 					default:
 						{
 							return FilesystemNewlineStyle.CRLF;
@@ -58,24 +57,24 @@ namespace KS.Files.LineEndings
 		}
 
 		/// <summary>
-        /// Gets the line ending string from the specified line ending style
-        /// </summary>
-        /// <param name="LineEndingStyle">Line ending style</param>
+		/// Gets the line ending string from the specified line ending style
+		/// </summary>
+		/// <param name="LineEndingStyle">Line ending style</param>
 		public static string GetLineEndingString(FilesystemNewlineStyle LineEndingStyle)
 		{
 			switch (LineEndingStyle)
 			{
 				case FilesystemNewlineStyle.CRLF:
 					{
-						return Microsoft.VisualBasic.Constants.vbCrLf;
+						return "\r\n";
 					}
 				case FilesystemNewlineStyle.LF:
 					{
-						return Microsoft.VisualBasic.Constants.vbLf;
+						return "\n";
 					}
 				case FilesystemNewlineStyle.CR:
 					{
-						return Microsoft.VisualBasic.Constants.vbCr;
+						return "\r";
 					}
 
 				default:
@@ -86,9 +85,9 @@ namespace KS.Files.LineEndings
 		}
 
 		/// <summary>
-        /// Gets the line ending style from file
-        /// </summary>
-        /// <param name="TextFile">Target text file</param>
+		/// Gets the line ending style from file
+		/// </summary>
+		/// <param name="TextFile">Target text file</param>
 		public static FilesystemNewlineStyle GetLineEndingFromFile(string TextFile)
 		{
 			Filesystem.ThrowOnInvalidPath(TextFile);
@@ -97,10 +96,10 @@ namespace KS.Files.LineEndings
 				throw new IOException(Translate.DoTranslation("File {0} not found.").FormatString(TextFile));
 
 			// Open the file stream
-			var NewlineStyle = NewlineStyle;
+			var NewlineStyle = FilesystemNewlineStyle.CRLF;
 			var TextFileStream = new FileStream(TextFile, FileMode.Open, FileAccess.Read);
 			int CarriageReturnCode = Convert.ToInt32(GetLineEndingString(FilesystemNewlineStyle.CR)[0]);
-			int LineFeedCode = Convert.ToInt32(GetLineEndingString(FilesystemNewlineStyle.LF));
+			int LineFeedCode = Convert.ToInt32(GetLineEndingString(FilesystemNewlineStyle.LF)[0]);
 			var CarriageReturnSpotted = default(bool);
 			var LineFeedSpotted = default(bool);
 			var ExitOnSpotted = default(bool);

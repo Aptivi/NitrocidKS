@@ -25,24 +25,24 @@ namespace KS.Misc.Platform
 	{
 
 		/// <summary>
-        /// Is this system a Windows system?
-        /// </summary>
+		/// Is this system a Windows system?
+		/// </summary>
 		public static bool IsOnWindows()
 		{
 			return Environment.OSVersion.Platform == PlatformID.Win32NT;
 		}
 
 		/// <summary>
-        /// Is this system a Unix system? True for macOS, too!
-        /// </summary>
+		/// Is this system a Unix system? True for macOS, too!
+		/// </summary>
 		public static bool IsOnUnix()
 		{
 			return Environment.OSVersion.Platform == PlatformID.Unix;
 		}
 
 		/// <summary>
-        /// Is this system a macOS system?
-        /// </summary>
+		/// Is this system a macOS system?
+		/// </summary>
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "We already have IsOnUnix() to do the job, so it returns false when Windows is detected.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("CodeQuality", "IDE0079:Remove unnecessary suppression", Justification = ".NET Framework doesn't have CA1416.")]
 		public static bool IsOnMacOS()
@@ -59,8 +59,8 @@ namespace KS.Misc.Platform
 		}
 
 		/// <summary>
-        /// Are we running KS on Mono?
-        /// </summary>
+		/// Are we running KS on Mono?
+		/// </summary>
 		public static bool IsOnMonoRuntime()
 		{
 			return Type.GetType("Mono.Runtime") is not null;

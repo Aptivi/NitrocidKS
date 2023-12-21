@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when screensaver is nonexistent
-    /// </summary>
+	/// Thrown when screensaver is nonexistent
+	/// </summary>
 	public class NoSuchScreensaverException : Exception
 	{
 

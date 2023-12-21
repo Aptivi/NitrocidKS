@@ -34,162 +34,162 @@ namespace KS.ConsoleBase.Themes.Studio
 	{
 
 		/// <summary>
-        /// Selected input color for new theme
-        /// </summary>
+		/// Selected input color for new theme
+		/// </summary>
 		internal static Color SelectedInputColor = KernelColorTools.InputColor;
 		/// <summary>
-        /// Selected license color for new theme
-        /// </summary>
+		/// Selected license color for new theme
+		/// </summary>
 		internal static Color SelectedLicenseColor = KernelColorTools.LicenseColor;
 		/// <summary>
-        /// Selected continuable kernel error color for new theme
-        /// </summary>
+		/// Selected continuable kernel error color for new theme
+		/// </summary>
 		internal static Color SelectedContKernelErrorColor = KernelColorTools.ContKernelErrorColor;
 		/// <summary>
-        /// Selected uncontinuable kernel error color for new theme
-        /// </summary>
+		/// Selected uncontinuable kernel error color for new theme
+		/// </summary>
 		internal static Color SelectedUncontKernelErrorColor = KernelColorTools.UncontKernelErrorColor;
 		/// <summary>
-        /// Selected host name shell color for new theme
-        /// </summary>
+		/// Selected host name shell color for new theme
+		/// </summary>
 		internal static Color SelectedHostNameShellColor = KernelColorTools.HostNameShellColor;
 		/// <summary>
-        /// Selected user name shell color for new theme
-        /// </summary>
+		/// Selected user name shell color for new theme
+		/// </summary>
 		internal static Color SelectedUserNameShellColor = KernelColorTools.UserNameShellColor;
 		/// <summary>
-        /// Selected background color for new theme
-        /// </summary>
+		/// Selected background color for new theme
+		/// </summary>
 		internal static Color SelectedBackgroundColor = KernelColorTools.BackgroundColor;
 		/// <summary>
-        /// Selected neutral text color for new theme
-        /// </summary>
+		/// Selected neutral text color for new theme
+		/// </summary>
 		internal static Color SelectedNeutralTextColor = KernelColorTools.NeutralTextColor;
 		/// <summary>
-        /// Selected list entry color for new theme
-        /// </summary>
+		/// Selected list entry color for new theme
+		/// </summary>
 		internal static Color SelectedListEntryColor = KernelColorTools.ListEntryColor;
 		/// <summary>
-        /// Selected list value color for new theme
-        /// </summary>
+		/// Selected list value color for new theme
+		/// </summary>
 		internal static Color SelectedListValueColor = KernelColorTools.ListValueColor;
 		/// <summary>
-        /// Selected stage color for new theme
-        /// </summary>
+		/// Selected stage color for new theme
+		/// </summary>
 		internal static Color SelectedStageColor = KernelColorTools.StageColor;
 		/// <summary>
-        /// Selected error color for new theme
-        /// </summary>
+		/// Selected error color for new theme
+		/// </summary>
 		internal static Color SelectedErrorColor = KernelColorTools.ErrorColor;
 		/// <summary>
-        /// Selected warning color for new theme
-        /// </summary>
+		/// Selected warning color for new theme
+		/// </summary>
 		internal static Color SelectedWarningColor = KernelColorTools.WarningColor;
 		/// <summary>
-        /// Selected option color for new theme
-        /// </summary>
+		/// Selected option color for new theme
+		/// </summary>
 		internal static Color _SelectedOptionColor = KernelColorTools.OptionColor;
 		/// <summary>
-        /// Selected banner color for new theme
-        /// </summary>
+		/// Selected banner color for new theme
+		/// </summary>
 		internal static Color SelectedBannerColor = KernelColorTools.BannerColor;
 		/// <summary>
-        /// Selected error color for new theme
-        /// </summary>
+		/// Selected error color for new theme
+		/// </summary>
 		internal static Color SelectedNotificationTitleColor = KernelColorTools.ErrorColor;
 		/// <summary>
-        /// Selected warning color for new theme
-        /// </summary>
+		/// Selected warning color for new theme
+		/// </summary>
 		internal static Color SelectedNotificationDescriptionColor = KernelColorTools.WarningColor;
 		/// <summary>
-        /// Selected option color for new theme
-        /// </summary>
+		/// Selected option color for new theme
+		/// </summary>
 		internal static Color SelectedNotificationProgressColor = KernelColorTools.OptionColor;
 		/// <summary>
-        /// Selected banner color for new theme
-        /// </summary>
+		/// Selected banner color for new theme
+		/// </summary>
 		internal static Color SelectedNotificationFailureColor = KernelColorTools.BannerColor;
 		/// <summary>
-        /// Selected error color for new theme
-        /// </summary>
+		/// Selected error color for new theme
+		/// </summary>
 		internal static Color SelectedQuestionColor = KernelColorTools.ErrorColor;
 		/// <summary>
-        /// Selected warning color for new theme
-        /// </summary>
+		/// Selected warning color for new theme
+		/// </summary>
 		internal static Color SelectedSuccessColor = KernelColorTools.WarningColor;
 		/// <summary>
-        /// Selected option color for new theme
-        /// </summary>
+		/// Selected option color for new theme
+		/// </summary>
 		internal static Color SelectedUserDollarColor = KernelColorTools.OptionColor;
 		/// <summary>
-        /// Selected banner color for new theme
-        /// </summary>
+		/// Selected banner color for new theme
+		/// </summary>
 		internal static Color SelectedTipColor = KernelColorTools.BannerColor;
 		/// <summary>
-        /// Selected error color for new theme
-        /// </summary>
+		/// Selected error color for new theme
+		/// </summary>
 		internal static Color SelectedSeparatorTextColor = KernelColorTools.ErrorColor;
 		/// <summary>
-        /// Selected warning color for new theme
-        /// </summary>
+		/// Selected warning color for new theme
+		/// </summary>
 		internal static Color SelectedSeparatorColor = KernelColorTools.WarningColor;
 		/// <summary>
-        /// Selected option color for new theme
-        /// </summary>
+		/// Selected option color for new theme
+		/// </summary>
 		internal static Color SelectedListTitleColor = KernelColorTools.OptionColor;
 		/// <summary>
-        /// Selected banner color for new theme
-        /// </summary>
+		/// Selected banner color for new theme
+		/// </summary>
 		internal static Color SelectedDevelopmentWarningColor = KernelColorTools.BannerColor;
 		/// <summary>
-        /// Selected warning color for new theme
-        /// </summary>
+		/// Selected warning color for new theme
+		/// </summary>
 		internal static Color SelectedStageTimeColor = KernelColorTools.WarningColor;
 		/// <summary>
-        /// Selected option color for new theme
-        /// </summary>
+		/// Selected option color for new theme
+		/// </summary>
 		internal static Color SelectedProgressColor = KernelColorTools.OptionColor;
 		/// <summary>
-        /// Selected banner color for new theme
-        /// </summary>
+		/// Selected banner color for new theme
+		/// </summary>
 		internal static Color SelectedBackOptionColor = KernelColorTools.BannerColor;
 		/// <summary>
-        /// Selected low priority notification border color for new theme
-        /// </summary>
+		/// Selected low priority notification border color for new theme
+		/// </summary>
 		internal static Color SelectedLowPriorityBorderColor = KernelColorTools.LowPriorityBorderColor;
 		/// <summary>
-        /// Selected medium priority notification border color for new theme
-        /// </summary>
+		/// Selected medium priority notification border color for new theme
+		/// </summary>
 		internal static Color SelectedMediumPriorityBorderColor = KernelColorTools.MediumPriorityBorderColor;
 		/// <summary>
-        /// Selected high priority notification border color for new theme
-        /// </summary>
+		/// Selected high priority notification border color for new theme
+		/// </summary>
 		internal static Color SelectedHighPriorityBorderColor = KernelColorTools.HighPriorityBorderColor;
 		/// <summary>
-        /// Selected Table separator color for new theme
-        /// </summary>
+		/// Selected Table separator color for new theme
+		/// </summary>
 		internal static Color SelectedTableSeparatorColor = KernelColorTools.TableSeparatorColor;
 		/// <summary>
-        /// Selected Table header color for new theme
-        /// </summary>
+		/// Selected Table header color for new theme
+		/// </summary>
 		internal static Color SelectedTableHeaderColor = KernelColorTools.TableHeaderColor;
 		/// <summary>
-        /// Selected Table value color for new theme
-        /// </summary>
+		/// Selected Table value color for new theme
+		/// </summary>
 		internal static Color SelectedTableValueColor = KernelColorTools.TableValueColor;
 		/// <summary>
-        /// Selected selected option color for new theme
-        /// </summary>
+		/// Selected selected option color for new theme
+		/// </summary>
 		internal static Color SelectedSelectedOptionColor = KernelColorTools.SelectedOptionColor;
 		/// <summary>
-        /// Selected alternative option color for new theme
-        /// </summary>
+		/// Selected alternative option color for new theme
+		/// </summary>
 		internal static Color SelectedAlternativeOptionColor = KernelColorTools.AlternativeOptionColor;
 
 		/// <summary>
-        /// Saves theme to current directory under "<paramref name="Theme"/>.json."
-        /// </summary>
-        /// <param name="Theme">Theme name</param>
+		/// Saves theme to current directory under "<paramref name="Theme"/>.json."
+		/// </summary>
+		/// <param name="Theme">Theme name</param>
 		public static void SaveThemeToCurrentDirectory(string Theme)
 		{
 			var ThemeJson = GetThemeJson();
@@ -197,10 +197,10 @@ namespace KS.ConsoleBase.Themes.Studio
 		}
 
 		/// <summary>
-        /// Saves theme to another directory under "<paramref name="Theme"/>.json."
-        /// </summary>
-        /// <param name="Theme">Theme name</param>
-        /// <param name="Path">Path name. Neutralized by <see cref="NeutralizePath(String, Boolean)"/></param>
+		/// Saves theme to another directory under "<paramref name="Theme"/>.json."
+		/// </summary>
+		/// <param name="Theme">Theme name</param>
+		/// <param name="Path">Path name. Neutralized by <see cref="NeutralizePath(String, Boolean)"/></param>
 		public static void SaveThemeToAnotherDirectory(string Theme, string Path)
 		{
 			var ThemeJson = GetThemeJson();
@@ -208,9 +208,9 @@ namespace KS.ConsoleBase.Themes.Studio
 		}
 
 		/// <summary>
-        /// Loads theme from resource and places it to the studio
-        /// </summary>
-        /// <param name="Theme">A theme name</param>
+		/// Loads theme from resource and places it to the studio
+		/// </summary>
+		/// <param name="Theme">A theme name</param>
 		public static void LoadThemeFromResource(string Theme)
 		{
 			// Populate theme info
@@ -239,9 +239,9 @@ namespace KS.ConsoleBase.Themes.Studio
 		}
 
 		/// <summary>
-        /// Loads theme from resource and places it to the studio
-        /// </summary>
-        /// <param name="Theme">A theme name</param>
+		/// Loads theme from resource and places it to the studio
+		/// </summary>
+		/// <param name="Theme">A theme name</param>
 		public static void LoadThemeFromFile(string Theme)
 		{
 			// Populate theme info
@@ -252,9 +252,9 @@ namespace KS.ConsoleBase.Themes.Studio
 		}
 
 		/// <summary>
-        /// Loads theme from theme info and places it to the studio
-        /// </summary>
-        /// <param name="ThemeInfo">A theme info instance</param>
+		/// Loads theme from theme info and places it to the studio
+		/// </summary>
+		/// <param name="ThemeInfo">A theme info instance</param>
 		public static void LoadThemeFromThemeInfo(ThemeInfo ThemeInfo)
 		{
 			// Place information to the studio
@@ -299,8 +299,8 @@ namespace KS.ConsoleBase.Themes.Studio
 		}
 
 		/// <summary>
-        /// Loads theme from current colors and places it to the studio
-        /// </summary>
+		/// Loads theme from current colors and places it to the studio
+		/// </summary>
 		public static void LoadThemeFromCurrentColors()
 		{
 			// Place information to the studio
@@ -345,17 +345,17 @@ namespace KS.ConsoleBase.Themes.Studio
 		}
 
 		/// <summary>
-        /// Gets the full theme JSON object
-        /// </summary>
-        /// <returns>A JSON object</returns>
+		/// Gets the full theme JSON object
+		/// </summary>
+		/// <returns>A JSON object</returns>
 		public static JObject GetThemeJson()
 		{
 			return new JObject(new JProperty("InputColor", SelectedInputColor.PlainSequence), new JProperty("LicenseColor", SelectedLicenseColor.PlainSequence), new JProperty("ContKernelErrorColor", SelectedContKernelErrorColor.PlainSequence), new JProperty("UncontKernelErrorColor", SelectedUncontKernelErrorColor.PlainSequence), new JProperty("HostNameShellColor", SelectedHostNameShellColor.PlainSequence), new JProperty("UserNameShellColor", SelectedUserNameShellColor.PlainSequence), new JProperty("BackgroundColor", SelectedBackgroundColor.PlainSequence), new JProperty("NeutralTextColor", SelectedNeutralTextColor.PlainSequence), new JProperty("ListEntryColor", SelectedListEntryColor.PlainSequence), new JProperty("ListValueColor", SelectedListValueColor.PlainSequence), new JProperty("StageColor", SelectedStageColor.PlainSequence), new JProperty("ErrorColor", SelectedErrorColor.PlainSequence), new JProperty("WarningColor", SelectedWarningColor.PlainSequence), new JProperty("OptionColor", _SelectedOptionColor.PlainSequence), new JProperty("BannerColor", SelectedBannerColor.PlainSequence), new JProperty("NotificationTitleColor", SelectedNotificationTitleColor.PlainSequence), new JProperty("NotificationDescriptionColor", SelectedNotificationDescriptionColor.PlainSequence), new JProperty("NotificationProgressColor", SelectedNotificationProgressColor.PlainSequence), new JProperty("NotificationFailureColor", SelectedNotificationFailureColor.PlainSequence), new JProperty("QuestionColor", SelectedQuestionColor.PlainSequence), new JProperty("SuccessColor", SelectedSuccessColor.PlainSequence), new JProperty("UserDollarColor", SelectedUserDollarColor.PlainSequence), new JProperty("TipColor", SelectedTipColor.PlainSequence), new JProperty("SeparatorTextColor", SelectedSeparatorTextColor.PlainSequence), new JProperty("SeparatorColor", SelectedSeparatorColor.PlainSequence), new JProperty("ListTitleColor", SelectedListTitleColor.PlainSequence), new JProperty("DevelopmentWarningColor", SelectedDevelopmentWarningColor.PlainSequence), new JProperty("StageTimeColor", SelectedStageTimeColor.PlainSequence), new JProperty("ProgressColor", SelectedProgressColor.PlainSequence), new JProperty("BackOptionColor", SelectedBackOptionColor.PlainSequence), new JProperty("LowPriorityBorderColor", SelectedLowPriorityBorderColor.PlainSequence), new JProperty("MediumPriorityBorderColor", SelectedMediumPriorityBorderColor.PlainSequence), new JProperty("HighPriorityBorderColor", SelectedHighPriorityBorderColor.PlainSequence), new JProperty("TableSeparatorColor", SelectedTableSeparatorColor.PlainSequence), new JProperty("TableHeaderColor", SelectedTableHeaderColor.PlainSequence), new JProperty("TableValueColor", SelectedTableValueColor.PlainSequence), new JProperty("SelectedOptionColor", SelectedSelectedOptionColor.PlainSequence), new JProperty("AlternativeOptionColor", SelectedAlternativeOptionColor.PlainSequence));
 		}
 
 		/// <summary>
-        /// Prepares the preview
-        /// </summary>
+		/// Prepares the preview
+		/// </summary>
 		public static void PreparePreview()
 		{
 			ConsoleWrapper.Clear();

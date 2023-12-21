@@ -30,8 +30,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests seeing if the command is found in specific shell (test case: Normal shell, help command)
-    /// </summary>
+		/// Tests seeing if the command is found in specific shell (test case: Normal shell, help command)
+		/// </summary>
 		[Test]
 		[Description("Action")]
 		public void TestIsCommandFoundInSpecificShell()
@@ -40,8 +40,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests seeing if the command is found in all the shells (test case: connect command)
-    /// </summary>
+		/// Tests seeing if the command is found in all the shells (test case: connect command)
+		/// </summary>
 		[Test]
 		[Description("Action")]
 		public void TestIsCommandFoundInAllTheShells()

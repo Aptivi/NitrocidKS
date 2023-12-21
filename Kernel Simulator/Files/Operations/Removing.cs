@@ -26,9 +26,9 @@ namespace KS.Files.Operations
 	{
 
 		/// <summary>
-        /// Removes a directory
-        /// </summary>
-        /// <param name="Target">Target directory</param>
+		/// Removes a directory
+		/// </summary>
+		/// <param name="Target">Target directory</param>
 		public static void RemoveDirectory(string Target)
 		{
 			Filesystem.ThrowOnInvalidPath(Target);
@@ -40,10 +40,10 @@ namespace KS.Files.Operations
 		}
 
 		/// <summary>
-        /// Removes a directory
-        /// </summary>
-        /// <param name="Target">Target directory</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Removes a directory
+		/// </summary>
+		/// <param name="Target">Target directory</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool TryRemoveDirectory(string Target)
 		{
 			try
@@ -59,9 +59,9 @@ namespace KS.Files.Operations
 		}
 
 		/// <summary>
-        /// Removes a file
-        /// </summary>
-        /// <param name="Target">Target directory</param>
+		/// Removes a file
+		/// </summary>
+		/// <param name="Target">Target directory</param>
 		public static void RemoveFile(string Target)
 		{
 			Filesystem.ThrowOnInvalidPath(Target);
@@ -73,10 +73,10 @@ namespace KS.Files.Operations
 		}
 
 		/// <summary>
-        /// Removes a file
-        /// </summary>
-        /// <param name="Target">Target directory</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Removes a file
+		/// </summary>
+		/// <param name="Target">Target directory</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool TryRemoveFile(string Target)
 		{
 			try

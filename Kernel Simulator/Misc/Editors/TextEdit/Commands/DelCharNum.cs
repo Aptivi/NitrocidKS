@@ -22,7 +22,7 @@ using KS.Misc.Reflection;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
+using System;
 
 namespace KS.Misc.Editors.TextEdit.Commands
 {
@@ -33,9 +33,9 @@ namespace KS.Misc.Editors.TextEdit.Commands
 		{
 			if (StringQuery.IsStringNumeric(ListArgs[1]) & StringQuery.IsStringNumeric(ListArgs[0]))
 			{
-				if (Conversions.ToInteger(ListArgs[1]) <= TextEditShellCommon.TextEdit_FileLines.Count)
+				if (Convert.ToInt32(ListArgs[1]) <= TextEditShellCommon.TextEdit_FileLines.Count)
 				{
-					TextEditTools.TextEdit_DeleteChar(Conversions.ToInteger(ListArgs[0]), Conversions.ToInteger(ListArgs[1]));
+					TextEditTools.TextEdit_DeleteChar(Convert.ToInt32(ListArgs[0]), Convert.ToInt32(ListArgs[1]));
 					TextWriterColor.Write(Translate.DoTranslation("Character deleted."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success));
 				}
 				else

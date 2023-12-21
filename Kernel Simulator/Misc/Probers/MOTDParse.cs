@@ -32,25 +32,25 @@ namespace KS.Misc.Probers
 		public static string MALFilePath = Paths.GetKernelPath(KernelPathType.MAL);
 
 		/// <summary>
-        /// Types of message
-        /// </summary>
+		/// Types of message
+		/// </summary>
 		public enum MessageType : int
 		{
 			/// <summary>
-            /// MOTD (Message of the Day) message
-            /// </summary>
+			/// MOTD (Message of the Day) message
+			/// </summary>
 			MOTD = 1,
 			/// <summary>
-            /// MAL (MOTD After Login) message
-            /// </summary>
+			/// MAL (MOTD After Login) message
+			/// </summary>
 			MAL
 		}
 
 		/// <summary>
-        /// Sets the Message of the Day or MAL
-        /// </summary>
-        /// <param name="Message">A message of the day before/after login</param>
-        /// <param name="MType">Message type</param>
+		/// Sets the Message of the Day or MAL
+		/// </summary>
+		/// <param name="Message">A message of the day before/after login</param>
+		/// <param name="MType">Message type</param>
 		public static void SetMOTD(string Message, MessageType MType)
 		{
 			try
@@ -99,9 +99,9 @@ namespace KS.Misc.Probers
 		}
 
 		/// <summary>
-        /// Reads the message of the day before/after login
-        /// </summary>
-        /// <param name="MType">Message type</param>
+		/// Reads the message of the day before/after login
+		/// </summary>
+		/// <param name="MType">Message type</param>
 		public static void ReadMOTD(MessageType MType)
 		{
 			try

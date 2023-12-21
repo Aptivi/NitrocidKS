@@ -69,7 +69,7 @@ namespace KS.Shell.Shells
 					string HttpCommand = Input.ReadLine();
 
 					// Parse command
-					if ((string.IsNullOrEmpty(HttpCommand) | (HttpCommand?.StartsWithAnyOf(new[] { " ", "#" }))) == false)
+					if ((string.IsNullOrEmpty(HttpCommand) | (HttpCommand?.StartsWithAnyOf([" ", "#"]))) == false)
 					{
 						Kernel.Kernel.KernelEventManager.RaiseHTTPPreExecuteCommand(HttpCommand);
 						Shell.GetLine(HttpCommand, false, "", ShellType.HTTPShell);

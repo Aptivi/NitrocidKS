@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when there is an SFTP filesystem error
-    /// </summary>
+	/// Thrown when there is an SFTP filesystem error
+	/// </summary>
 	public class SFTPFilesystemException : Exception
 	{
 

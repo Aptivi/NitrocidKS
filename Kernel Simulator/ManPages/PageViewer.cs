@@ -27,7 +27,6 @@ using KS.Misc.Probers;
 using KS.Misc.Text;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
-using Microsoft.VisualBasic.CompilerServices;
 using Terminaux.Base;
 
 namespace KS.ManPages
@@ -36,14 +35,14 @@ namespace KS.ManPages
 	{
 
 		/// <summary>
-        /// Manual page information style
-        /// </summary>
+		/// Manual page information style
+		/// </summary>
 		public static string ManpageInfoStyle = "";
 
 		/// <summary>
-        /// Previews the manual page
-        /// </summary>
-        /// <param name="ManualTitle">A manual title</param>
+		/// Previews the manual page
+		/// </summary>
+		/// <param name="ManualTitle">A manual title</param>
 		public static void ViewPage(string ManualTitle)
 		{
 			if (PageManager.Pages.ContainsKey(ManualTitle))
@@ -109,7 +108,7 @@ namespace KS.ManPages
 							InEsc = true;
 						if (InEsc)
 							EscapeCharactersCountInside += 1;
-						if (InEsc & (EscapeCharactersCountInside > 19 | Conversions.ToString(LineChar) == "m"))
+						if (InEsc & (EscapeCharactersCountInside > 19 | Convert.ToString(LineChar) == "m"))
 						{
 							EscapeCharacters += 1;
 							InEsc = false;

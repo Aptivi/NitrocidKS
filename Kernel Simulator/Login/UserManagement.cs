@@ -39,48 +39,48 @@ namespace KS.Login
 
 		// Variables
 		/// <summary>
-        /// Include anonymous users in list
-        /// </summary>
+		/// Include anonymous users in list
+		/// </summary>
 		public static bool IncludeAnonymous;
 		/// <summary>
-        /// Include disabled users in list
-        /// </summary>
+		/// Include disabled users in list
+		/// </summary>
 		public static bool IncludeDisabled;
 		/// <summary>
-        /// The users token
-        /// </summary>
+		/// The users token
+		/// </summary>
 		internal static JArray UsersToken;
 
 		/// <summary>
-        /// A user property
-        /// </summary>
+		/// A user property
+		/// </summary>
 		public enum UserProperty
 		{
 			/// <summary>
-            /// Username
-            /// </summary>
+			/// Username
+			/// </summary>
 			Username,
 			/// <summary>
-            /// Password
-            /// </summary>
+			/// Password
+			/// </summary>
 			Password,
 			/// <summary>
-            /// List of permissions
-            /// </summary>
+			/// List of permissions
+			/// </summary>
 			Permissions
 		}
 
 		// ---------- User Management ----------
 		/// <summary>
-        /// Initializes the uninitialized user (usually a new user)
-        /// </summary>
-        /// <param name="uninitUser">A new user</param>
-        /// <param name="unpassword">A password of a user in encrypted form</param>
-        /// <param name="ComputationNeeded">Whether or not a password encryption is needed</param>
-        /// <param name="ModifyExisting">Changes the password of the existing user</param>
-        /// <returns>True if successful; False if successful</returns>
-        /// <exception cref="InvalidOperationException"></exception>
-        /// <exception cref="Exceptions.UserCreationException"></exception>
+		/// Initializes the uninitialized user (usually a new user)
+		/// </summary>
+		/// <param name="uninitUser">A new user</param>
+		/// <param name="unpassword">A password of a user in encrypted form</param>
+		/// <param name="ComputationNeeded">Whether or not a password encryption is needed</param>
+		/// <param name="ModifyExisting">Changes the password of the existing user</param>
+		/// <returns>True if successful; False if successful</returns>
+		/// <exception cref="InvalidOperationException"></exception>
+		/// <exception cref="Exceptions.UserCreationException"></exception>
 		public static bool InitializeUser(string uninitUser, string unpassword = "", bool ComputationNeeded = true, bool ModifyExisting = false)
 		{
 			try
@@ -152,8 +152,8 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Reads the user file and adds them to the list.
-        /// </summary>
+		/// Reads the user file and adds them to the list.
+		/// </summary>
 		public static void InitializeUsers()
 		{
 			// Opens file stream
@@ -164,8 +164,8 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Loads user token
-        /// </summary>
+		/// Loads user token
+		/// </summary>
 		public static void LoadUserToken()
 		{
 			if (!Checking.FileExists(Paths.GetKernelPath(KernelPathType.Users)))
@@ -175,11 +175,11 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Gets user property
-        /// </summary>
-        /// <param name="User">Target user</param>
-        /// <param name="PropertyType">Property type</param>
-        /// <returns>JSON token of user property</returns>
+		/// Gets user property
+		/// </summary>
+		/// <param name="User">Target user</param>
+		/// <param name="PropertyType">Property type</param>
+		/// <returns>JSON token of user property</returns>
 		public static JToken GetUserProperty(string User, UserProperty PropertyType)
 		{
 			foreach (JObject UserToken in UsersToken)
@@ -193,11 +193,11 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Sets user property
-        /// </summary>
-        /// <param name="User">Target user</param>
-        /// <param name="PropertyType">Property type</param>
-        /// <param name="Value">Value</param>
+		/// Sets user property
+		/// </summary>
+		/// <param name="User">Target user</param>
+		/// <param name="PropertyType">Property type</param>
+		/// <param name="Value">Value</param>
 		public static void SetUserProperty(string User, UserProperty PropertyType, string Value)
 		{
 			foreach (JObject UserToken in UsersToken)
@@ -232,11 +232,11 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Adds a new user
-        /// </summary>
-        /// <param name="newUser">A new user</param>
-        /// <param name="newPassword">A password</param>
-        /// <exception cref="Exceptions.UserCreationException"></exception>
+		/// Adds a new user
+		/// </summary>
+		/// <param name="newUser">A new user</param>
+		/// <param name="newPassword">A password</param>
+		/// <exception cref="Exceptions.UserCreationException"></exception>
 		public static bool AddUser(string newUser, string newPassword = "")
 		{
 			// Adds user
@@ -289,11 +289,11 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Removes a user from users database
-        /// </summary>
-        /// <param name="user">A user</param>
-        /// <exception cref="Exceptions.UserManagementException"></exception>
-        /// <remarks>This sub is an accomplice of in-shell command arguments.</remarks>
+		/// Removes a user from users database
+		/// </summary>
+		/// <param name="user">A user</param>
+		/// <exception cref="Exceptions.UserManagementException"></exception>
+		/// <remarks>This sub is an accomplice of in-shell command arguments.</remarks>
 		public static void RemoveUser(string user)
 		{
 			if (user.Contains(" "))
@@ -361,12 +361,12 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Removes a user from users database
-        /// </summary>
-        /// <param name="user">A user</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
-        /// <exception cref="Exceptions.UserManagementException"></exception>
-        /// <remarks>This sub is an accomplice of in-shell command arguments.</remarks>
+		/// Removes a user from users database
+		/// </summary>
+		/// <param name="user">A user</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
+		/// <exception cref="Exceptions.UserManagementException"></exception>
+		/// <remarks>This sub is an accomplice of in-shell command arguments.</remarks>
 		public static bool TryRemoveUser(string user)
 		{
 			try
@@ -374,17 +374,17 @@ namespace KS.Login
 				RemoveUser(user);
 				return true;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				return false;
 			}
 		}
 
 		/// <summary>
-        /// Changes the username
-        /// </summary>
-        /// <param name="OldName">Old username</param>
-        /// <param name="Username">New username</param>
+		/// Changes the username
+		/// </summary>
+		/// <param name="OldName">Old username</param>
+		/// <param name="Username">New username</param>
 		public static void ChangeUsername(string OldName, string Username)
 		{
 			if (Login.Users.ContainsKey(OldName))
@@ -425,11 +425,11 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Changes the username
-        /// </summary>
-        /// <param name="OldName">Old username</param>
-        /// <param name="Username">New username</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Changes the username
+		/// </summary>
+		/// <param name="OldName">Old username</param>
+		/// <param name="Username">New username</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool TryChangeUsername(string OldName, string Username)
 		{
 			try
@@ -437,15 +437,15 @@ namespace KS.Login
 				ChangeUsername(OldName, Username);
 				return true;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				return false;
 			}
 		}
 
 		/// <summary>
-        /// Initializes root account
-        /// </summary>
+		/// Initializes root account
+		/// </summary>
 		public static void InitializeSystemAccount()
 		{
 			if (Checking.FileExists(Paths.GetKernelPath(KernelPathType.Users)))
@@ -467,12 +467,12 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Changes user password
-        /// </summary>
-        /// <param name="Target">Target username</param>
-        /// <param name="CurrentPass">Current user password</param>
-        /// <param name="NewPass">New user password</param>
-        /// <exception cref="Exceptions.UserManagementException"></exception>
+		/// Changes user password
+		/// </summary>
+		/// <param name="Target">Target username</param>
+		/// <param name="CurrentPass">Current user password</param>
+		/// <param name="NewPass">New user password</param>
+		/// <exception cref="Exceptions.UserManagementException"></exception>
 		public static void ChangePassword(string Target, string CurrentPass, string NewPass)
 		{
 			CurrentPass = Encryption.GetEncryptedString(CurrentPass, Encryption.Algorithms.SHA256);
@@ -506,13 +506,13 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Changes user password
-        /// </summary>
-        /// <param name="Target">Target username</param>
-        /// <param name="CurrentPass">Current user password</param>
-        /// <param name="NewPass">New user password</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
-        /// <exception cref="Exceptions.UserManagementException"></exception>
+		/// Changes user password
+		/// </summary>
+		/// <param name="Target">Target username</param>
+		/// <param name="CurrentPass">Current user password</param>
+		/// <param name="NewPass">New user password</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
+		/// <exception cref="Exceptions.UserManagementException"></exception>
 		public static bool TryChangePassword(string Target, string CurrentPass, string NewPass)
 		{
 			try
@@ -520,25 +520,25 @@ namespace KS.Login
 				ChangePassword(Target, CurrentPass, NewPass);
 				return true;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				return false;
 			}
 		}
 
 		/// <summary>
-        /// Lists all users and includes anonymous and disabled users if enabled.
-        /// </summary>
+		/// Lists all users and includes anonymous and disabled users if enabled.
+		/// </summary>
 		public static List<string> ListAllUsers()
 		{
 			return ListAllUsers(IncludeAnonymous, IncludeDisabled);
 		}
 
 		/// <summary>
-        /// Lists all users and includes anonymous and disabled users if enabled.
-        /// </summary>
-        /// <param name="IncludeAnonymous">Include anonymous users</param>
-        /// <param name="IncludeDisabled">Include disabled users</param>
+		/// Lists all users and includes anonymous and disabled users if enabled.
+		/// </summary>
+		/// <param name="IncludeAnonymous">Include anonymous users</param>
+		/// <param name="IncludeDisabled">Include disabled users</param>
 		public static List<string> ListAllUsers(bool IncludeAnonymous = false, bool IncludeDisabled = false)
 		{
 			var UsersList = new List<string>(Login.Users.Keys);
@@ -554,22 +554,22 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Selects a user from the <see cref="ListAllUsers(Boolean, Boolean)"/> list
-        /// </summary>
-        /// <param name="UserNumber">The user number. This is NOT an index!</param>
-        /// <returns>The username which is selected</returns>
+		/// Selects a user from the <see cref="ListAllUsers(bool, bool)"/> list
+		/// </summary>
+		/// <param name="UserNumber">The user number. This is NOT an index!</param>
+		/// <returns>The username which is selected</returns>
 		public static string SelectUser(int UserNumber)
 		{
 			return SelectUser(UserNumber, IncludeAnonymous, IncludeDisabled);
 		}
 
 		/// <summary>
-        /// Selects a user from the <see cref="ListAllUsers(Boolean, Boolean)"/> list
-        /// </summary>
-        /// <param name="UserNumber">The user number. This is NOT an index!</param>
-        /// <param name="IncludeAnonymous">Include anonymous users</param>
-        /// <param name="IncludeDisabled">Include disabled users</param>
-        /// <returns>The username which is selected</returns>
+		/// Selects a user from the <see cref="ListAllUsers(bool, bool)"/> list
+		/// </summary>
+		/// <param name="UserNumber">The user number. This is NOT an index!</param>
+		/// <param name="IncludeAnonymous">Include anonymous users</param>
+		/// <param name="IncludeDisabled">Include disabled users</param>
+		/// <returns>The username which is selected</returns>
 		public static string SelectUser(int UserNumber, bool IncludeAnonymous = false, bool IncludeDisabled = false)
 		{
 			var UsersList = ListAllUsers(IncludeAnonymous, IncludeDisabled);
@@ -578,8 +578,8 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Handles the prompts for setting up a first user
-        /// </summary>
+		/// Handles the prompts for setting up a first user
+		/// </summary>
 		public static void FirstUserTrigger()
 		{
 			int Step = 1;
@@ -712,26 +712,26 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Checks to see if the user exists
-        /// </summary>
-        /// <param name="User">The target user</param>
+		/// Checks to see if the user exists
+		/// </summary>
+		/// <param name="User">The target user</param>
 		public static bool UserExists(string User)
 		{
 			return Login.Users.ContainsKey(User);
 		}
 
 		/// <summary>
-        /// Gets the unique user identifier for the current user
-        /// </summary>
+		/// Gets the unique user identifier for the current user
+		/// </summary>
 		public static string GetUserDollarSign()
 		{
 			return GetUserDollarSign(Login.CurrentUser.Username);
 		}
 
 		/// <summary>
-        /// Gets the unique user identifier
-        /// </summary>
-        /// <param name="User">The target user</param>
+		/// Gets the unique user identifier
+		/// </summary>
+		/// <param name="User">The target user</param>
 		public static string GetUserDollarSign(string User)
 		{
 			if (UserExists(User))

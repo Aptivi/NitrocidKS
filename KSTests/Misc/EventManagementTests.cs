@@ -29,8 +29,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests adding the event
-    /// </summary>
+		/// Tests adding the event
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestAddEvent()
@@ -44,8 +44,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests adding the event
-    /// </summary>
+		/// Tests adding the event
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestRemoveEvent()

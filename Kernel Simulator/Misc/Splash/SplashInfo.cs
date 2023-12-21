@@ -23,24 +23,24 @@ namespace KS.Misc.Splash
 	{
 
 		/// <summary>
-        /// Splash name
-        /// </summary>
+		/// Splash name
+		/// </summary>
 		public string SplashName { get; private set; }
 		/// <summary>
-        /// Does the splash display progress?
-        /// </summary>
+		/// Does the splash display progress?
+		/// </summary>
 		public bool DisplaysProgress { get; private set; }
 		/// <summary>
-        /// Splash entry point
-        /// </summary>
+		/// Splash entry point
+		/// </summary>
 		public ISplash EntryPoint { get; private set; }
 
 		/// <summary>
-        /// Installs a new class instance of splash info
-        /// </summary>
-        /// <param name="SplashName">Splash name</param>
-        /// <param name="DisplaysProgress">Does the splash display progress?</param>
-        /// <param name="EntryPoint">Splash entry point</param>
+		/// Installs a new class instance of splash info
+		/// </summary>
+		/// <param name="SplashName">Splash name</param>
+		/// <param name="DisplaysProgress">Does the splash display progress?</param>
+		/// <param name="EntryPoint">Splash entry point</param>
 		protected internal SplashInfo(string SplashName, bool DisplaysProgress, ISplash EntryPoint)
 		{
 			this.SplashName = SplashName;

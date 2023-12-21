@@ -43,8 +43,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _stackBoxMaximumColorLevel = 255;
 
 		/// <summary>
-        /// [StackBox] Enable 255 color support. Has a higher priority than 16 color support.
-        /// </summary>
+		/// [StackBox] Enable 255 color support. Has a higher priority than 16 color support.
+		/// </summary>
 		public static bool StackBox255Colors
 		{
 			get
@@ -57,8 +57,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [StackBox] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
+		/// [StackBox] Enable truecolor support. Has a higher priority than 255 color support.
+		/// </summary>
 		public static bool StackBoxTrueColor
 		{
 			get
@@ -71,8 +71,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [StackBox] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [StackBox] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int StackBoxDelay
 		{
 			get
@@ -87,8 +87,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [StackBox] Whether to fill in the boxes drawn, or only draw the outline
-        /// </summary>
+		/// [StackBox] Whether to fill in the boxes drawn, or only draw the outline
+		/// </summary>
 		public static bool StackBoxFill
 		{
 			get
@@ -101,8 +101,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [StackBox] The minimum red color level (true color)
-        /// </summary>
+		/// [StackBox] The minimum red color level (true color)
+		/// </summary>
 		public static int StackBoxMinimumRedColorLevel
 		{
 			get
@@ -119,8 +119,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [StackBox] The minimum green color level (true color)
-        /// </summary>
+		/// [StackBox] The minimum green color level (true color)
+		/// </summary>
 		public static int StackBoxMinimumGreenColorLevel
 		{
 			get
@@ -137,8 +137,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [StackBox] The minimum blue color level (true color)
-        /// </summary>
+		/// [StackBox] The minimum blue color level (true color)
+		/// </summary>
 		public static int StackBoxMinimumBlueColorLevel
 		{
 			get
@@ -155,8 +155,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [StackBox] The minimum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [StackBox] The minimum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int StackBoxMinimumColorLevel
 		{
 			get
@@ -174,8 +174,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [StackBox] The maximum red color level (true color)
-        /// </summary>
+		/// [StackBox] The maximum red color level (true color)
+		/// </summary>
 		public static int StackBoxMaximumRedColorLevel
 		{
 			get
@@ -192,8 +192,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [StackBox] The maximum green color level (true color)
-        /// </summary>
+		/// [StackBox] The maximum green color level (true color)
+		/// </summary>
 		public static int StackBoxMaximumGreenColorLevel
 		{
 			get
@@ -210,8 +210,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [StackBox] The maximum blue color level (true color)
-        /// </summary>
+		/// [StackBox] The maximum blue color level (true color)
+		/// </summary>
 		public static int StackBoxMaximumBlueColorLevel
 		{
 			get
@@ -228,8 +228,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [StackBox] The maximum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [StackBox] The maximum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int StackBoxMaximumColorLevel
 		{
 			get

@@ -24,7 +24,6 @@ using KS.Misc.Games;
 using KS.Misc.Reflection;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Shell.Commands
 {
@@ -46,7 +45,7 @@ namespace KS.Shell.Commands
 			if (ListSwitchesOnly.Contains("-c") & ListArgsOnly.Count() > 0 && StringQuery.IsStringNumeric(ListArgsOnly[0]))
 			{
 				Difficulty = SpeedPress.SpeedPressDifficulty.Custom;
-				CustomTimeout = Conversions.ToInteger(ListArgsOnly[0]);
+				CustomTimeout = Convert.ToInt32(ListArgsOnly[0]);
 			}
 			SpeedPress.InitializeSpeedPress(Difficulty, CustomTimeout);
 		}

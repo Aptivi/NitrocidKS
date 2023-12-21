@@ -35,29 +35,29 @@ namespace KS.Shell.ShellBase.Commands
 	{
 
 		/// <summary>
-        /// Shows the help of a command, or command list if nothing is specified
-        /// </summary>
-        /// <param name="CommandType">A specified command type</param>
+		/// Shows the help of a command, or command list if nothing is specified
+		/// </summary>
+		/// <param name="CommandType">A specified command type</param>
 		public static void ShowHelp(ShellType CommandType)
 		{
 			ShowHelp("", CommandType);
 		}
 
 		/// <summary>
-        /// Shows the help of a command, or command list if nothing is specified
-        /// </summary>
-        /// <param name="command">A specified command</param>
+		/// Shows the help of a command, or command list if nothing is specified
+		/// </summary>
+		/// <param name="command">A specified command</param>
 		public static void ShowHelp(string command)
 		{
 			ShowHelp(command, ShellType.Shell);
 		}
 
 		/// <summary>
-        /// Shows the help of a command, or command list if nothing is specified
-        /// </summary>
-        /// <param name="command">A specified command</param>
-        /// <param name="CommandType">A specified command type</param>
-        /// <param name="DebugDeviceSocket">Only for remote debug shell. Specifies the debug device socket.</param>
+		/// Shows the help of a command, or command list if nothing is specified
+		/// </summary>
+		/// <param name="command">A specified command</param>
+		/// <param name="CommandType">A specified command type</param>
+		/// <param name="DebugDeviceSocket">Only for remote debug shell. Specifies the debug device socket.</param>
 		public static void ShowHelp(string command, ShellType CommandType, StreamWriter DebugDeviceSocket = null)
 		{
 			// Determine command type
@@ -143,12 +143,12 @@ namespace KS.Shell.ShellBase.Commands
 			{
 				// Found!
 				bool IsMod = ModCommandList.ContainsKey(command);
-				bool IsAlias = AliasedCommandList.ContainsKey(command);
+				_ = AliasedCommandList.ContainsKey(command);
 				var FinalCommandList = IsMod ? ModCommandList : CommandList;
 				string FinalCommand = IsMod ? command : AliasedCommandList.ContainsKey(command) ? AliasedCommandList[command] : command;
 				string HelpDefinition = IsMod ? FinalCommandList[FinalCommand].HelpDefinition : FinalCommandList[FinalCommand].GetTranslatedHelpEntry();
 				int UsageLength = Translate.DoTranslation("Usage:").Length;
-				string[] HelpUsages = Array.Empty<string>();
+				string[] HelpUsages = [];
 
 				// Populate help usages
 				if (FinalCommandList[FinalCommand].CommandArgumentInfo is not null)

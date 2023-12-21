@@ -43,8 +43,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _flashColorMaximumColorLevel = 0;
 
 		/// <summary>
-        /// [FlashColor] Enable 255 color support. Has a higher priority than 16 color support.
-        /// </summary>
+		/// [FlashColor] Enable 255 color support. Has a higher priority than 16 color support.
+		/// </summary>
 		public static bool FlashColor255Colors
 		{
 			get
@@ -57,8 +57,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashColor] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
+		/// [FlashColor] Enable truecolor support. Has a higher priority than 255 color support.
+		/// </summary>
 		public static bool FlashColorTrueColor
 		{
 			get
@@ -71,8 +71,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashColor] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [FlashColor] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int FlashColorDelay
 		{
 			get
@@ -87,8 +87,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashColor] Screensaver background color
-        /// </summary>
+		/// [FlashColor] Screensaver background color
+		/// </summary>
 		public static string FlashColorBackgroundColor
 		{
 			get
@@ -101,8 +101,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashColor] The minimum red color level (true color)
-        /// </summary>
+		/// [FlashColor] The minimum red color level (true color)
+		/// </summary>
 		public static int FlashColorMinimumRedColorLevel
 		{
 			get
@@ -119,8 +119,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashColor] The minimum green color level (true color)
-        /// </summary>
+		/// [FlashColor] The minimum green color level (true color)
+		/// </summary>
 		public static int FlashColorMinimumGreenColorLevel
 		{
 			get
@@ -137,8 +137,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashColor] The minimum blue color level (true color)
-        /// </summary>
+		/// [FlashColor] The minimum blue color level (true color)
+		/// </summary>
 		public static int FlashColorMinimumBlueColorLevel
 		{
 			get
@@ -155,8 +155,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashColor] The minimum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [FlashColor] The minimum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int FlashColorMinimumColorLevel
 		{
 			get
@@ -174,8 +174,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashColor] The maximum red color level (true color)
-        /// </summary>
+		/// [FlashColor] The maximum red color level (true color)
+		/// </summary>
 		public static int FlashColorMaximumRedColorLevel
 		{
 			get
@@ -192,8 +192,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashColor] The maximum green color level (true color)
-        /// </summary>
+		/// [FlashColor] The maximum green color level (true color)
+		/// </summary>
 		public static int FlashColorMaximumGreenColorLevel
 		{
 			get
@@ -210,8 +210,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashColor] The maximum blue color level (true color)
-        /// </summary>
+		/// [FlashColor] The maximum blue color level (true color)
+		/// </summary>
 		public static int FlashColorMaximumBlueColorLevel
 		{
 			get
@@ -228,8 +228,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashColor] The maximum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [FlashColor] The maximum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int FlashColorMaximumColorLevel
 		{
 			get

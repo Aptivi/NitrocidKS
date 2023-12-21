@@ -30,7 +30,6 @@ using KS.Files.Querying;
 using KS.Languages;
 using KS.Misc.Text;
 using KS.Misc.Writers.DebugWriters;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Network.FTP.Filesystem
 {
@@ -38,25 +37,25 @@ namespace KS.Network.FTP.Filesystem
 	{
 
 		/// <summary>
-        /// Lists remote folders and files
-        /// </summary>
-        /// <param name="Path">Path to folder</param>
-        /// <returns>The list if successful; null if unsuccessful</returns>
-        /// <exception cref="Exceptions.FTPFilesystemException"></exception>
-        /// <exception cref="InvalidOperationException"></exception>
+		/// Lists remote folders and files
+		/// </summary>
+		/// <param name="Path">Path to folder</param>
+		/// <returns>The list if successful; null if unsuccessful</returns>
+		/// <exception cref="Exceptions.FTPFilesystemException"></exception>
+		/// <exception cref="InvalidOperationException"></exception>
 		public static List<string> FTPListRemote(string Path)
 		{
 			return FTPListRemote(Path, FTPShellCommon.FtpShowDetailsInList);
 		}
 
 		/// <summary>
-        /// Lists remote folders and files
-        /// </summary>
-        /// <param name="Path">Path to folder</param>
-        /// <param name="ShowDetails">Shows the details of the file</param>
-        /// <returns>The list if successful; null if unsuccessful</returns>
-        /// <exception cref="Exceptions.FTPFilesystemException"></exception>
-        /// <exception cref="InvalidOperationException"></exception>
+		/// Lists remote folders and files
+		/// </summary>
+		/// <param name="Path">Path to folder</param>
+		/// <param name="ShowDetails">Shows the details of the file</param>
+		/// <returns>The list if successful; null if unsuccessful</returns>
+		/// <exception cref="Exceptions.FTPFilesystemException"></exception>
+		/// <exception cref="InvalidOperationException"></exception>
 		public static List<string> FTPListRemote(string Path, bool ShowDetails)
 		{
 			if (FTPShellCommon.FtpConnected)
@@ -79,28 +78,29 @@ namespace KS.Network.FTP.Filesystem
 					}
 					foreach (FtpListItem DirListFTP in Listing)
 					{
-						EntryBuilder.Append($"- {DirListFTP.Name}");
+						var listItem = DirListFTP;
+						EntryBuilder.Append($"- {listItem.Name}");
 						// Check to see if the file that we're dealing with is a symbolic link
-						if (DirListFTP.Type == FtpObjectType.Link)
+						if (listItem.Type == FtpObjectType.Link)
 						{
 							EntryBuilder.Append(" >> ");
-							EntryBuilder.Append(DirListFTP.LinkTarget);
-							DirListFTP = DirListFTP.LinkObject;
+							EntryBuilder.Append(listItem.LinkTarget);
+							listItem = listItem.LinkObject;
 						}
 
-						if (DirListFTP is not null)
+						if (listItem is not null)
 						{
-							if (DirListFTP.Type == FtpObjectType.File)
+							if (listItem.Type == FtpObjectType.File)
 							{
 								if (ShowDetails)
 								{
 									EntryBuilder.Append(": ");
-									FileSize = FTPShellCommon.ClientFTP.GetFileSize(DirListFTP.FullName);
-									ModDate = FTPShellCommon.ClientFTP.GetModifiedTime(DirListFTP.FullName);
+									FileSize = FTPShellCommon.ClientFTP.GetFileSize(listItem.FullName);
+									ModDate = FTPShellCommon.ClientFTP.GetModifiedTime(listItem.FullName);
 									EntryBuilder.Append(KernelColorTools.ListValueColor.VTSequenceForeground + Translate.DoTranslation("{0} KB | Modified in: {1}").FormatString((FileSize / 1024d).ToString("N2"), ModDate.ToString()));
 								}
 							}
-							else if (DirListFTP.Type == FtpObjectType.Directory)
+							else if (listItem.Type == FtpObjectType.Directory)
 							{
 								EntryBuilder.Append("/");
 							}
@@ -124,11 +124,11 @@ namespace KS.Network.FTP.Filesystem
 		}
 
 		/// <summary>
-        /// Removes remote file or folder
-        /// </summary>
-        /// <param name="Target">Target folder or file</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
-        /// <exception cref="Exceptions.FTPFilesystemException"></exception>
+		/// Removes remote file or folder
+		/// </summary>
+		/// <param name="Target">Target folder or file</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
+		/// <exception cref="Exceptions.FTPFilesystemException"></exception>
 		public static bool FTPDeleteRemote(string Target)
 		{
 			if (FTPShellCommon.FtpConnected)
@@ -163,13 +163,13 @@ namespace KS.Network.FTP.Filesystem
 		}
 
 		/// <summary>
-        /// Changes FTP remote directory
-        /// </summary>
-        /// <param name="Directory">Remote directory</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
-        /// <exception cref="Exceptions.FTPFilesystemException"></exception>
-        /// <exception cref="InvalidOperationException"></exception>
-        /// <exception cref="ArgumentNullException"></exception>
+		/// Changes FTP remote directory
+		/// </summary>
+		/// <param name="Directory">Remote directory</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
+		/// <exception cref="Exceptions.FTPFilesystemException"></exception>
+		/// <exception cref="InvalidOperationException"></exception>
+		/// <exception cref="ArgumentNullException"></exception>
 		public static bool FTPChangeRemoteDir(string Directory)
 		{
 			if (FTPShellCommon.FtpConnected == true)
@@ -230,12 +230,12 @@ namespace KS.Network.FTP.Filesystem
 		}
 
 		/// <summary>
-        /// Move file or directory to another area, or rename the file
-        /// </summary>
-        /// <param name="Source">Source file or folder</param>
-        /// <param name="Target">Target file or folder</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
-        /// <exception cref="InvalidOperationException"></exception>
+		/// Move file or directory to another area, or rename the file
+		/// </summary>
+		/// <param name="Source">Source file or folder</param>
+		/// <param name="Target">Target file or folder</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
+		/// <exception cref="InvalidOperationException"></exception>
 		public static bool FTPMoveItem(string Source, string Target)
 		{
 			if (FTPShellCommon.FtpConnected)
@@ -268,12 +268,12 @@ namespace KS.Network.FTP.Filesystem
 		}
 
 		/// <summary>
-        /// Copy file or directory to another area, or rename the file
-        /// </summary>
-        /// <param name="Source">Source file or folder</param>
-        /// <param name="Target">Target file or folder</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
-        /// <exception cref="InvalidOperationException"></exception>
+		/// Copy file or directory to another area, or rename the file
+		/// </summary>
+		/// <param name="Source">Source file or folder</param>
+		/// <param name="Target">Target file or folder</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
+		/// <exception cref="InvalidOperationException"></exception>
 		public static bool FTPCopyItem(string Source, string Target)
 		{
 			if (FTPShellCommon.FtpConnected)
@@ -319,7 +319,7 @@ namespace KS.Network.FTP.Filesystem
 				}
 				else if (Result.GetType() == typeof(FtpStatus))
 				{
-					if (((FtpStatus)Conversions.ToInteger(Result)).IsFailure())
+					if (((FtpStatus)Convert.ToInt32(Result)).IsFailure())
 					{
 						DebugWriter.Wdbg(DebugLevel.E, "Transfer failed");
 						Success = false;
@@ -339,11 +339,11 @@ namespace KS.Network.FTP.Filesystem
 		}
 
 		/// <summary>
-        /// Changes the permissions of a remote file
-        /// </summary>
-        /// <param name="Target">Target file</param>
-        /// <param name="Chmod">Permissions in CHMOD format. See https://man7.org/linux/man-pages/man2/chmod.2.html chmod(2) for more info.</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Changes the permissions of a remote file
+		/// </summary>
+		/// <param name="Target">Target file</param>
+		/// <param name="Chmod">Permissions in CHMOD format. See https://man7.org/linux/man-pages/man2/chmod.2.html chmod(2) for more info.</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool FTPChangePermissions(string Target, int Chmod)
 		{
 			if (FTPShellCommon.FtpConnected)

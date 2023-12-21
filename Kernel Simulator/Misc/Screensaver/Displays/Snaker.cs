@@ -42,8 +42,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _snakerMaximumColorLevel = 255;
 
 		/// <summary>
-        /// [Snaker] Enable 255 color support. Has a higher priority than 16 color support.
-        /// </summary>
+		/// [Snaker] Enable 255 color support. Has a higher priority than 16 color support.
+		/// </summary>
 		public static bool Snaker255Colors
 		{
 			get
@@ -56,8 +56,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Snaker] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
+		/// [Snaker] Enable truecolor support. Has a higher priority than 255 color support.
+		/// </summary>
 		public static bool SnakerTrueColor
 		{
 			get
@@ -70,8 +70,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Snaker] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [Snaker] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int SnakerDelay
 		{
 			get
@@ -86,8 +86,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Snaker] How many milliseconds to wait before making the next stage?
-        /// </summary>
+		/// [Snaker] How many milliseconds to wait before making the next stage?
+		/// </summary>
 		public static int SnakerStageDelay
 		{
 			get
@@ -102,8 +102,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Snaker] The minimum red color level (true color)
-        /// </summary>
+		/// [Snaker] The minimum red color level (true color)
+		/// </summary>
 		public static int SnakerMinimumRedColorLevel
 		{
 			get
@@ -120,8 +120,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Snaker] The minimum green color level (true color)
-        /// </summary>
+		/// [Snaker] The minimum green color level (true color)
+		/// </summary>
 		public static int SnakerMinimumGreenColorLevel
 		{
 			get
@@ -138,8 +138,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Snaker] The minimum blue color level (true color)
-        /// </summary>
+		/// [Snaker] The minimum blue color level (true color)
+		/// </summary>
 		public static int SnakerMinimumBlueColorLevel
 		{
 			get
@@ -156,8 +156,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Snaker] The minimum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [Snaker] The minimum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int SnakerMinimumColorLevel
 		{
 			get
@@ -175,8 +175,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Snaker] The maximum red color level (true color)
-        /// </summary>
+		/// [Snaker] The maximum red color level (true color)
+		/// </summary>
 		public static int SnakerMaximumRedColorLevel
 		{
 			get
@@ -193,8 +193,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Snaker] The maximum green color level (true color)
-        /// </summary>
+		/// [Snaker] The maximum green color level (true color)
+		/// </summary>
 		public static int SnakerMaximumGreenColorLevel
 		{
 			get
@@ -211,8 +211,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Snaker] The maximum blue color level (true color)
-        /// </summary>
+		/// [Snaker] The maximum blue color level (true color)
+		/// </summary>
 		public static int SnakerMaximumBlueColorLevel
 		{
 			get
@@ -229,8 +229,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Snaker] The maximum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [Snaker] The maximum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int SnakerMaximumColorLevel
 		{
 			get

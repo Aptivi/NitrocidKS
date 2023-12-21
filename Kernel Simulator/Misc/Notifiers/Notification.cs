@@ -21,8 +21,8 @@ using Terminaux.Colors;
 namespace KS.Misc.Notifications
 {
 	/// <summary>
-    /// Notification holder with title, description, and priority
-    /// </summary>
+	/// Notification holder with title, description, and priority
+	/// </summary>
 	public class Notification
 	{
 
@@ -31,33 +31,33 @@ namespace KS.Misc.Notifications
 		private Color _NotificationBorderColor;
 
 		/// <summary>
-        /// Notification title
-        /// </summary>
+		/// Notification title
+		/// </summary>
 		public string Title { get; set; }
 
 		/// <summary>
-        /// Notification description
-        /// </summary>
+		/// Notification description
+		/// </summary>
 		public string Desc { get; set; }
 
 		/// <summary>
-        /// Notification priority
-        /// </summary>
+		/// Notification priority
+		/// </summary>
 		public Notifications.NotifPriority Priority { get; set; }
 
 		/// <summary>
-        /// Notification type
-        /// </summary>
+		/// Notification type
+		/// </summary>
 		public Notifications.NotifType Type { get; set; }
 
 		/// <summary>
-        /// Whether the progress failed
-        /// </summary>
+		/// Whether the progress failed
+		/// </summary>
 		public bool ProgressFailed { get; set; }
 
 		/// <summary>
-        /// Notification progress
-        /// </summary>
+		/// Notification progress
+		/// </summary>
 		public int Progress
 		{
 			get
@@ -84,8 +84,8 @@ namespace KS.Misc.Notifications
 		// --> For Custom Priority Notifications
 
 		/// <summary>
-        /// Beep times (for custom priority notfications)
-        /// </summary>
+		/// Beep times (for custom priority notfications)
+		/// </summary>
 		public int CustomBeepTimes
 		{
 			get
@@ -106,73 +106,73 @@ namespace KS.Misc.Notifications
 		}
 
 		/// <summary>
-        /// Custom color (for custom priority notfications)
-        /// </summary>
+		/// Custom color (for custom priority notfications)
+		/// </summary>
 		public Color CustomColor { get; set; } = KernelColorTools.LowPriorityBorderColor;
 
 		/// <summary>
-        /// Custom title color (for custom priority notfications)
-        /// </summary>
+		/// Custom title color (for custom priority notfications)
+		/// </summary>
 		public Color CustomTitleColor { get; set; } = KernelColorTools.NotificationTitleColor;
 
 		/// <summary>
-        /// Custom description color (for custom priority notfications)
-        /// </summary>
+		/// Custom description color (for custom priority notfications)
+		/// </summary>
 		public Color CustomDescriptionColor { get; set; } = KernelColorTools.NotificationDescriptionColor;
 
 		/// <summary>
-        /// Custom progress color (for custom priority notfications)
-        /// </summary>
+		/// Custom progress color (for custom priority notfications)
+		/// </summary>
 		public Color CustomProgressColor { get; set; } = KernelColorTools.NotificationProgressColor;
 
 		/// <summary>
-        /// Custom progress failure color (for custom priority notfications)
-        /// </summary>
+		/// Custom progress failure color (for custom priority notfications)
+		/// </summary>
 		public Color CustomProgressFailureColor { get; set; } = KernelColorTools.NotificationFailureColor;
 
 		/// <summary>
-        /// Upper left corner character for custom priority notification
-        /// </summary>
+		/// Upper left corner character for custom priority notification
+		/// </summary>
 		public string CustomUpperLeftCornerChar { get; set; } = "╔";
 
 		/// <summary>
-        /// Upper right corner character for custom priority notification
-        /// </summary>
+		/// Upper right corner character for custom priority notification
+		/// </summary>
 		public string CustomUpperRightCornerChar { get; set; } = "╗";
 
 		/// <summary>
-        /// Lower left corner character for custom priority notification
-        /// </summary>
+		/// Lower left corner character for custom priority notification
+		/// </summary>
 		public string CustomLowerLeftCornerChar { get; set; } = "╚";
 
 		/// <summary>
-        /// Lower right corner character for custom priority notification
-        /// </summary>
+		/// Lower right corner character for custom priority notification
+		/// </summary>
 		public string CustomLowerRightCornerChar { get; set; } = "╝";
 
 		/// <summary>
-        /// Upper frame character for custom priority notification
-        /// </summary>
+		/// Upper frame character for custom priority notification
+		/// </summary>
 		public string CustomUpperFrameChar { get; set; } = "═";
 
 		/// <summary>
-        /// Lower frame character for custom priority notification
-        /// </summary>
+		/// Lower frame character for custom priority notification
+		/// </summary>
 		public string CustomLowerFrameChar { get; set; } = "═";
 
 		/// <summary>
-        /// Left frame character for custom priority notification
-        /// </summary>
+		/// Left frame character for custom priority notification
+		/// </summary>
 		public string CustomLeftFrameChar { get; set; } = "║";
 
 		/// <summary>
-        /// Right frame character for custom priority notification
-        /// </summary>
+		/// Right frame character for custom priority notification
+		/// </summary>
 		public string CustomRightFrameChar { get; set; } = "║";
 
 		/// <summary>
-        /// Whether the progress has been compeleted successfully or with failure
-        /// </summary>
+		/// Whether the progress has been compeleted successfully or with failure
+		/// </summary>
 		public bool ProgressCompleted
 		{
 			get
@@ -182,8 +182,8 @@ namespace KS.Misc.Notifications
 		}
 
 		/// <summary>
-        /// The notification border color. Must be null for custom priority notifications.
-        /// </summary>
+		/// The notification border color. Must be null for custom priority notifications.
+		/// </summary>
 		public Color NotificationBorderColor
 		{
 			get
@@ -200,12 +200,12 @@ namespace KS.Misc.Notifications
 		}
 
 		/// <summary>
-        /// Creates a new notification
-        /// </summary>
-        /// <param name="Title">Title of notification</param>
-        /// <param name="Desc">Description of notification</param>
-        /// <param name="Priority">Priority of notification</param>
-        /// <param name="Type">Notification type</param>
+		/// Creates a new notification
+		/// </summary>
+		/// <param name="Title">Title of notification</param>
+		/// <param name="Desc">Description of notification</param>
+		/// <param name="Priority">Priority of notification</param>
+		/// <param name="Type">Notification type</param>
 		public Notification(string Title, string Desc, Notifications.NotifPriority Priority, Notifications.NotifType Type)
 		{
 			this.Title = Title;

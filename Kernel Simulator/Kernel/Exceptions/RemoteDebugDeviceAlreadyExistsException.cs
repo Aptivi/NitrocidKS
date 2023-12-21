@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when there is already a device
-    /// </summary>
+	/// Thrown when there is already a device
+	/// </summary>
 	public class RemoteDebugDeviceAlreadyExistsException : Exception
 	{
 

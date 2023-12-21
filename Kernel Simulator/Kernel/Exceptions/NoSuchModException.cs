@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when mod is nonexistent
-    /// </summary>
+	/// Thrown when mod is nonexistent
+	/// </summary>
 	public class NoSuchModException : Exception
 	{
 

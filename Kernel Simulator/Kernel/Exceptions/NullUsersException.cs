@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// There are no more users remaining
-    /// </summary>
+	/// There are no more users remaining
+	/// </summary>
 	public class NullUsersException : Exception
 	{
 

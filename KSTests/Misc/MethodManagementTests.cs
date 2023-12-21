@@ -29,8 +29,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests getting method
-    /// </summary>
+		/// Tests getting method
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestGetMethod()

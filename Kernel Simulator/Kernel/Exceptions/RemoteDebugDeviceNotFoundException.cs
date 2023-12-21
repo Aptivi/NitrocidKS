@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when there is a remote debugger device not found error
-    /// </summary>
+	/// Thrown when there is a remote debugger device not found error
+	/// </summary>
 	public class RemoteDebugDeviceNotFoundException : Exception
 	{
 

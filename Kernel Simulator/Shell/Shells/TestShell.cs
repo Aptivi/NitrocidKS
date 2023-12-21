@@ -73,7 +73,7 @@ namespace KS.Shell.Shells
 				string FullCmd = Input.ReadLine();
 				try
 				{
-					if ((string.IsNullOrEmpty(FullCmd) | (FullCmd?.StartsWithAnyOf(new[] { " ", "#" }))) == false)
+					if ((string.IsNullOrEmpty(FullCmd) | (FullCmd?.StartsWithAnyOf([" ", "#"]))) == false)
 					{
 						Kernel.Kernel.KernelEventManager.RaiseTestPreExecuteCommand(FullCmd);
 						Shell.GetLine(FullCmd, false, "", ShellType.TestShell);

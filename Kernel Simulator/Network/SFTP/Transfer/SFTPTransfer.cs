@@ -25,10 +25,10 @@ namespace KS.Network.SFTP.Transfer
 	{
 
 		/// <summary>
-        /// Downloads a file from the currently connected SFTP server
-        /// </summary>
-        /// <param name="File">A remote file</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Downloads a file from the currently connected SFTP server
+		/// </summary>
+		/// <param name="File">A remote file</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool SFTPGetFile(string File)
 		{
 			if (SFTPShellCommon.SFTPConnected)
@@ -62,10 +62,10 @@ namespace KS.Network.SFTP.Transfer
 		}
 
 		/// <summary>
-        /// Uploads a file to the currently connected SFTP server
-        /// </summary>
-        /// <param name="File">A local file</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Uploads a file to the currently connected SFTP server
+		/// </summary>
+		/// <param name="File">A local file</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool SFTPUploadFile(string File)
 		{
 			if (SFTPShellCommon.SFTPConnected)

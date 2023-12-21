@@ -27,21 +27,20 @@ namespace KS.Shell.Commands
 
 		public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
 		{
-			int R, G, B;
 			string Hex;
 
 			// Check to see if we have the numeric arguments
-			if (!int.TryParse(ListArgsOnly[0], out R))
+			if (!int.TryParse(ListArgsOnly[0], out int R))
 			{
 				TextWriterColor.Write(Translate.DoTranslation("The red color level must be numeric."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
 				return;
 			}
-			if (!int.TryParse(ListArgsOnly[1], out G))
+			if (!int.TryParse(ListArgsOnly[1], out int G))
 			{
 				TextWriterColor.Write(Translate.DoTranslation("The green color level must be numeric."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
 				return;
 			}
-			if (!int.TryParse(ListArgsOnly[2], out B))
+			if (!int.TryParse(ListArgsOnly[2], out int B))
 			{
 				TextWriterColor.Write(Translate.DoTranslation("The blue color level must be numeric."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
 				return;

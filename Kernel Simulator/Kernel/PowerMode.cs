@@ -20,33 +20,33 @@
 namespace KS.Kernel
 {
 	/// <summary>
-    /// Kernel power modes
-    /// </summary>
+	/// Kernel power modes
+	/// </summary>
 	public enum PowerMode
 	{
 		/// <summary>
-        /// Kernel will shut down
-        /// </summary>
+		/// Kernel will shut down
+		/// </summary>
 		Shutdown,
 		/// <summary>
-        /// Kernel will reboot
-        /// </summary>
+		/// Kernel will reboot
+		/// </summary>
 		Reboot,
 		/// <summary>
-        /// Kernel will reboot to safe mode (disables all mods)
-        /// </summary>
+		/// Kernel will reboot to safe mode (disables all mods)
+		/// </summary>
 		RebootSafe,
 		/// <summary>
-        /// Kernel will remotely shutdown another kernel on the network (if RPC is running here and there)
-        /// </summary>
+		/// Kernel will remotely shutdown another kernel on the network (if RPC is running here and there)
+		/// </summary>
 		RemoteShutdown,
 		/// <summary>
-        /// Kernel will remotely reboot another kernel on the network (if RPC is running here and there)
-        /// </summary>
+		/// Kernel will remotely reboot another kernel on the network (if RPC is running here and there)
+		/// </summary>
 		RemoteRestart,
 		/// <summary>
-        /// Kernel will remotely reboot another kernel to safe mode on the network (if RPC is running here and there)
-        /// </summary>
+		/// Kernel will remotely reboot another kernel to safe mode on the network (if RPC is running here and there)
+		/// </summary>
 		RemoteRestartSafe
 	}
 }

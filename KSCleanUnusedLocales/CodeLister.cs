@@ -22,54 +22,54 @@ using System.IO;
 
 namespace KSCleanUnusedLocales
 {
-    internal static class CodeLister
-    {
-        private static string[] ListCodeFilesForKS()
-        {
-            // Check to see if we have the Kernel Simulator folder
-            string kernelSimulatorSource = "../../../../Kernel Simulator/";
-            if (Directory.Exists(kernelSimulatorSource))
-            {
-                // Iterate through all the source files for Kernel Simulator
-                string[] files = Directory.GetFiles(kernelSimulatorSource, "*.vb", SearchOption.AllDirectories);
-                return files;
-            }
-            return Array.Empty<string>();
-        }
+	internal static class CodeLister
+	{
+		private static string[] ListCodeFilesForKS()
+		{
+			// Check to see if we have the Kernel Simulator folder
+			string kernelSimulatorSource = "../../../../Kernel Simulator/";
+			if (Directory.Exists(kernelSimulatorSource))
+			{
+				// Iterate through all the source files for Kernel Simulator
+				string[] files = Directory.GetFiles(kernelSimulatorSource, "*.vb", SearchOption.AllDirectories);
+				return files;
+			}
+			return [];
+		}
 
-        private static string[] ListDataFilesForKS()
-        {
-            // Check to see if we have the Kernel Simulator folder
-            string kernelSimulatorDataSource = "../../../../Kernel Simulator/Resources/Data/";
-            if (Directory.Exists(kernelSimulatorDataSource))
-            {
-                // Iterate through all the data files for Kernel Simulator
-                string[] files = Directory.GetFiles(kernelSimulatorDataSource, "*Entries.json", SearchOption.AllDirectories);
-                return files;
-            }
-            return Array.Empty<string>();
-        }
+		private static string[] ListDataFilesForKS()
+		{
+			// Check to see if we have the Kernel Simulator folder
+			string kernelSimulatorDataSource = "../../../../Kernel Simulator/Resources/Data/";
+			if (Directory.Exists(kernelSimulatorDataSource))
+			{
+				// Iterate through all the data files for Kernel Simulator
+				string[] files = Directory.GetFiles(kernelSimulatorDataSource, "*Entries.json", SearchOption.AllDirectories);
+				return files;
+			}
+			return [];
+		}
 
-        internal static List<string> PopulateSources()
-        {
-            List<string> sources = new();
+		internal static List<string> PopulateSources()
+		{
+			List<string> sources = [];
 
-            // List all code files to add the sources
-            foreach (string source in ListCodeFilesForKS())
-                sources.Add(File.ReadAllText(source));
+			// List all code files to add the sources
+			foreach (string source in ListCodeFilesForKS())
+				sources.Add(File.ReadAllText(source));
 
-            return sources;
-        }
+			return sources;
+		}
 
-        internal static List<string> PopulateData()
-        {
-            List<string> sources = new();
+		internal static List<string> PopulateData()
+		{
+			List<string> sources = [];
 
-            // List all code files to add the sources
-            foreach (string source in ListDataFilesForKS())
-                sources.Add(File.ReadAllText(source));
+			// List all code files to add the sources
+			foreach (string source in ListDataFilesForKS())
+				sources.Add(File.ReadAllText(source));
 
-            return sources;
-        }
-    }
+			return sources;
+		}
+	}
 }

@@ -25,61 +25,61 @@ namespace KS.ConsoleBase
 	{
 
 		/// <summary>
-        /// Clears the console buffer, but keeps the current cursor position
-        /// </summary>
+		/// Clears the console buffer, but keeps the current cursor position
+		/// </summary>
 		public static void ClearKeepPosition()
 		{
 			TermConsoleExtensions.ClearKeepPosition();
 		}
 
 		/// <summary>
-        /// Clears the line to the right
-        /// </summary>
+		/// Clears the line to the right
+		/// </summary>
 		public static void ClearLineToRight()
 		{
 			TermConsoleExtensions.ClearLineToRight();
 		}
 
 		/// <summary>
-        /// Gets how many times to repeat the character to represent the appropriate percentage level for the specified number.
-        /// </summary>
-        /// <param name="CurrentNumber">The current number that is less than or equal to the maximum number.</param>
-        /// <param name="MaximumNumber">The maximum number.</param>
-        /// <param name="WidthOffset">The console window width offset. It's usually a multiple of 2.</param>
-        /// <returns>How many times to repeat the character</returns>
+		/// Gets how many times to repeat the character to represent the appropriate percentage level for the specified number.
+		/// </summary>
+		/// <param name="CurrentNumber">The current number that is less than or equal to the maximum number.</param>
+		/// <param name="MaximumNumber">The maximum number.</param>
+		/// <param name="WidthOffset">The console window width offset. It's usually a multiple of 2.</param>
+		/// <returns>How many times to repeat the character</returns>
 		public static int PercentRepeat(int CurrentNumber, int MaximumNumber, int WidthOffset)
 		{
 			return TermConsoleExtensions.PercentRepeat(CurrentNumber, MaximumNumber, WidthOffset);
 		}
 
 		/// <summary>
-        /// Gets how many times to repeat the character to represent the appropriate percentage level for the specified number.
-        /// </summary>
-        /// <param name="CurrentNumber">The current number that is less than or equal to the maximum number.</param>
-        /// <param name="MaximumNumber">The maximum number.</param>
-        /// <param name="TargetWidth">The target width</param>
-        /// <returns>How many times to repeat the character</returns>
+		/// Gets how many times to repeat the character to represent the appropriate percentage level for the specified number.
+		/// </summary>
+		/// <param name="CurrentNumber">The current number that is less than or equal to the maximum number.</param>
+		/// <param name="MaximumNumber">The maximum number.</param>
+		/// <param name="TargetWidth">The target width</param>
+		/// <returns>How many times to repeat the character</returns>
 		public static int PercentRepeatTargeted(int CurrentNumber, int MaximumNumber, int TargetWidth)
 		{
 			return TermConsoleExtensions.PercentRepeatTargeted(CurrentNumber, MaximumNumber, TargetWidth);
 		}
 
 		/// <summary>
-        /// Filters the VT sequences that matches the regex
-        /// </summary>
-        /// <param name="Text">The text that contains the VT sequences</param>
-        /// <returns>The text that doesn't contain the VT sequences</returns>
+		/// Filters the VT sequences that matches the regex
+		/// </summary>
+		/// <param name="Text">The text that contains the VT sequences</param>
+		/// <returns>The text that doesn't contain the VT sequences</returns>
 		public static string FilterVTSequences(string Text)
 		{
 			return TermConsoleExtensions.FilterVTSequences(Text);
 		}
 
 		/// <summary>
-        /// Get the filtered cursor positions (by filtered means filtered from the VT escape sequences that matches the regex in the routine)
-        /// </summary>
-        /// <param name="Text">The text that contains the VT sequences</param>
-        /// <param name="Left">The filtered left position</param>
-        /// <param name="Top">The filtered top position</param>
+		/// Get the filtered cursor positions (by filtered means filtered from the VT escape sequences that matches the regex in the routine)
+		/// </summary>
+		/// <param name="Text">The text that contains the VT sequences</param>
+		/// <param name="Left">The filtered left position</param>
+		/// <param name="Top">The filtered top position</param>
 		public static void GetFilteredPositions(string Text, ref int Left, ref int Top, params object[] Vars)
 		{
 			var pos = TermConsoleExtensions.GetFilteredPositions(Text, false, Vars);
@@ -88,16 +88,16 @@ namespace KS.ConsoleBase
 		}
 
 		/// <summary>
-        /// Polls $TERM_PROGRAM to get terminal emulator
-        /// </summary>
+		/// Polls $TERM_PROGRAM to get terminal emulator
+		/// </summary>
 		public static string GetTerminalEmulator()
 		{
 			return ConsolePlatform.GetTerminalEmulator();
 		}
 
 		/// <summary>
-        /// Polls $TERM to get terminal type (vt100, dumb, ...)
-        /// </summary>
+		/// Polls $TERM to get terminal type (vt100, dumb, ...)
+		/// </summary>
 		public static string GetTerminalType()
 		{
 			return ConsolePlatform.GetTerminalType();

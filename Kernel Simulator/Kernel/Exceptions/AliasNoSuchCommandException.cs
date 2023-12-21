@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when alias source command is nonexistent
-    /// </summary>
+	/// Thrown when alias source command is nonexistent
+	/// </summary>
 	public class AliasNoSuchCommandException : Exception
 	{
 

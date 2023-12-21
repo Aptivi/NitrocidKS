@@ -31,8 +31,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests pinging
-    /// </summary>
+		/// Tests pinging
+		/// </summary>
 		[Test]
 		[Description("Action")]
 		public void TestPingAddress()
@@ -41,8 +41,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests pinging with custom timeout
-    /// </summary>
+		/// Tests pinging with custom timeout
+		/// </summary>
 		[Test]
 		[Description("Action")]
 		public void TestPingAddressCustomTimeout()
@@ -51,8 +51,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests pinging with custom timeout and buffer
-    /// </summary>
+		/// Tests pinging with custom timeout and buffer
+		/// </summary>
 		[Test]
 		[Description("Action")]
 		public void TestPingAddressCustomTimeoutAndBuffer()
@@ -61,8 +61,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests pinging with custom timeout and buffer
-    /// </summary>
+		/// Tests pinging with custom timeout and buffer
+		/// </summary>
 		[Test]
 		[Description("Action")]
 		public void TestGetFilenameFromUrl()

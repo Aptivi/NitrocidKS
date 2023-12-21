@@ -34,8 +34,8 @@ namespace KS.Misc.Animations.Fader
 		private static bool ResizeSyncing;
 
 		/// <summary>
-        /// Simulates the fading animation
-        /// </summary>
+		/// Simulates the fading animation
+		/// </summary>
 		public static void Simulate(FaderSettings Settings)
 		{
 			CurrentWindowWidth = ConsoleWrapper.WindowWidth;
@@ -84,7 +84,7 @@ namespace KS.Misc.Animations.Fader
 				if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
 					ResizeSyncing = true;
 				if (!ResizeSyncing)
-					TextWriterWhereColor.WriteWhere(Settings.FaderWrite, Left, Top, true, new Color(CurrentColorRedIn + ";" + CurrentColorGreenIn + ";" + CurrentColorBlueIn), new Color(ConsoleColors.Black));
+					TextWriterWhereColor.WriteWhere(Settings.FaderWrite, Left, Top, true, new Color(CurrentColorRedIn + ";" + CurrentColorGreenIn + ";" + CurrentColorBlueIn), new Color(ConsoleColor.Black));
 			}
 
 			// Wait until fade out
@@ -105,7 +105,7 @@ namespace KS.Misc.Animations.Fader
 				int CurrentColorBlueOut = (int)Math.Round(BlueColorNum - ThresholdBlue * CurrentStep);
 				DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Color out (R;G;B: {0};{1};{2})", CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut);
 				if (!ResizeSyncing)
-					TextWriterWhereColor.WriteWhere(Settings.FaderWrite, Left, Top, true, new Color(CurrentColorRedOut + ";" + CurrentColorGreenOut + ";" + CurrentColorBlueOut), new Color(ConsoleColors.Black));
+					TextWriterWhereColor.WriteWhere(Settings.FaderWrite, Left, Top, true, new Color(CurrentColorRedOut + ";" + CurrentColorGreenOut + ";" + CurrentColorBlueOut), new Color(ConsoleColor.Black));
 			}
 
 			// Reset resize sync

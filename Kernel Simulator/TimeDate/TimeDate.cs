@@ -39,23 +39,23 @@ namespace KS.TimeDate
 		internal static KernelThread TimeDateChange = new("Time/date updater thread", true, TimeDateChange_DoWork);
 
 		/// <summary>
-        /// Specifies the time/date format type.
-        /// </summary>
+		/// Specifies the time/date format type.
+		/// </summary>
 		public enum FormatType
 		{
 			/// <summary>
-            /// Long time/date format
-            /// </summary>
+			/// Long time/date format
+			/// </summary>
 			Long,
 			/// <summary>
-            /// Short time/date format
-            /// </summary>
+			/// Short time/date format
+			/// </summary>
 			Short
 		}
 
 		/// <summary>
-        /// Updates the time and date. Also updates the time and date corner if it was enabled in kernel configuration.
-        /// </summary>
+		/// Updates the time and date. Also updates the time and date corner if it was enabled in kernel configuration.
+		/// </summary>
 		public static void TimeDateChange_DoWork()
 		{
 			try
@@ -89,8 +89,8 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Updates the KernelDateTime so it reflects the current time, and runs the updater.
-        /// </summary>
+		/// Updates the KernelDateTime so it reflects the current time, and runs the updater.
+		/// </summary>
 		public static void InitTimeDate()
 		{
 			if (!TimeDateChange.IsAlive)
@@ -102,8 +102,8 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Shows current time, date, and timezone.
-        /// </summary>
+		/// Shows current time, date, and timezone.
+		/// </summary>
 		public static void ShowCurrentTimes()
 		{
 			TextWriterColor.Write("datetime: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
@@ -117,9 +117,9 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Gets the remaining time from now
-        /// </summary>
-        /// <param name="Milliseconds">The milliseconds interval</param>
+		/// Gets the remaining time from now
+		/// </summary>
+		/// <param name="Milliseconds">The milliseconds interval</param>
 		public static string GetRemainingTimeFromNow(int Milliseconds)
 		{
 			var ThisMoment = KernelDateTime;

@@ -22,14 +22,14 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when the console is insane
-    /// </summary>
+	/// Thrown when the console is insane
+	/// </summary>
 	public class InsaneConsoleDetectedException : Exception
 	{
 
 		/// <summary>
-        /// The console insanity reason
-        /// </summary>
+		/// The console insanity reason
+		/// </summary>
 		public string InsanityReason { get; private set; }
 
 		public InsaneConsoleDetectedException() : base()

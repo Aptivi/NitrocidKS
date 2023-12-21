@@ -24,18 +24,18 @@ namespace KS.Misc.Splash
 
 		// -> Simple
 		/// <summary>
-        /// [Simple] The progress text location
-        /// </summary>
+		/// [Simple] The progress text location
+		/// </summary>
 		public static TextLocation SimpleProgressTextLocation = TextLocation.Top;
 
 		// -> Progress
 		/// <summary>
-        /// [Progress] The progress color
-        /// </summary>
+		/// [Progress] The progress color
+		/// </summary>
 		public static string ProgressProgressColor = KernelColorTools.ProgressColor.PlainSequence;
 		/// <summary>
-        /// [Progress] The progress text location
-        /// </summary>
+		/// [Progress] The progress text location
+		/// </summary>
 		public static TextLocation ProgressProgressTextLocation = TextLocation.Top;
 
 	}

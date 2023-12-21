@@ -27,21 +27,21 @@ namespace KS.Misc.Calendar.Reminders
 
 		private bool ReminderNotified;
 		/// <summary>
-        /// Reminder date
-        /// </summary>
+		/// Reminder date
+		/// </summary>
 		public DateTime ReminderDate { get; set; }
 		/// <summary>
-        /// Reminder title
-        /// </summary>
+		/// Reminder title
+		/// </summary>
 		public string ReminderTitle { get; set; }
 		/// <summary>
-        /// Reminder importance
-        /// </summary>
+		/// Reminder importance
+		/// </summary>
 		public Notifications.Notifications.NotifPriority ReminderImportance { get; set; }
 
 		/// <summary>
-        /// Notifies the user about the reminder
-        /// </summary>
+		/// Notifies the user about the reminder
+		/// </summary>
 		protected internal void NotifyReminder()
 		{
 			if (!ReminderNotified)

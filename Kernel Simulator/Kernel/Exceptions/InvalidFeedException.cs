@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when the RSS feed is invalid.
-    /// </summary>
+	/// Thrown when the RSS feed is invalid.
+	/// </summary>
 	public class InvalidFeedException : Exception
 	{
 

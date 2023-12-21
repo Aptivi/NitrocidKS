@@ -23,17 +23,17 @@ namespace KS.Kernel
 	{
 
 		/// <summary>
-        /// Lists all the fired events with arguments
-        /// </summary>
+		/// Lists all the fired events with arguments
+		/// </summary>
 		public static Dictionary<string, object[]> ListAllFiredEvents()
 		{
 			return ListAllFiredEvents("");
 		}
 
 		/// <summary>
-        /// Lists all the fired events with arguments
-        /// </summary>
-        /// <param name="SearchTerm">The search term</param>
+		/// Lists all the fired events with arguments
+		/// </summary>
+		/// <param name="SearchTerm">The search term</param>
 		public static Dictionary<string, object[]> ListAllFiredEvents(string SearchTerm)
 		{
 			var FiredEvents = new Dictionary<string, object[]>();
@@ -51,8 +51,8 @@ namespace KS.Kernel
 		}
 
 		/// <summary>
-        /// Clears all the fired events
-        /// </summary>
+		/// Clears all the fired events
+		/// </summary>
 		public static void ClearAllFiredEvents()
 		{
 			Kernel.KernelEventManager.FiredEvents.Clear();

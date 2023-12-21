@@ -27,27 +27,27 @@ namespace KS.Scripting.Interaction
 	{
 
 		/// <summary>
-        /// Prompts user for choice
-        /// </summary>
-        /// <param name="Question">A question</param>
-        /// <param name="ScriptVariable">A $variable</param>
-        /// <param name="AnswersStr">Set of answers. They can be written like this: Y/N/C.</param>
-        /// <param name="OutputType">Output type of choices</param>
-        /// <param name="PressEnter">When enabled, allows the input to consist of multiple characters</param>
+		/// Prompts user for choice
+		/// </summary>
+		/// <param name="Question">A question</param>
+		/// <param name="ScriptVariable">A $variable</param>
+		/// <param name="AnswersStr">Set of answers. They can be written like this: Y/N/C.</param>
+		/// <param name="OutputType">Output type of choices</param>
+		/// <param name="PressEnter">When enabled, allows the input to consist of multiple characters</param>
 		public static void PromptChoiceAndSet(string Question, string ScriptVariable, string AnswersStr, ChoiceOutputType OutputType = ChoiceOutputType.OneLine, bool PressEnter = false)
 		{
-			PromptChoiceAndSet(Question, ScriptVariable, AnswersStr, Array.Empty<string>(), OutputType, PressEnter);
+			PromptChoiceAndSet(Question, ScriptVariable, AnswersStr, [], OutputType, PressEnter);
 		}
 
 		/// <summary>
-        /// Prompts user for choice
-        /// </summary>
-        /// <param name="Question">A question</param>
-        /// <param name="ScriptVariable">A $variable</param>
-        /// <param name="AnswersStr">Set of answers. They can be written like this: Y/N/C.</param>
-        /// <param name="AnswersTitles">Working titles for each answer. It must be the same amount as the answers.</param>
-        /// <param name="OutputType">Output type of choices</param>
-        /// <param name="PressEnter">When enabled, allows the input to consist of multiple characters</param>
+		/// Prompts user for choice
+		/// </summary>
+		/// <param name="Question">A question</param>
+		/// <param name="ScriptVariable">A $variable</param>
+		/// <param name="AnswersStr">Set of answers. They can be written like this: Y/N/C.</param>
+		/// <param name="AnswersTitles">Working titles for each answer. It must be the same amount as the answers.</param>
+		/// <param name="OutputType">Output type of choices</param>
+		/// <param name="PressEnter">When enabled, allows the input to consist of multiple characters</param>
 		public static void PromptChoiceAndSet(string Question, string ScriptVariable, string AnswersStr, string[] AnswersTitles, ChoiceOutputType OutputType = ChoiceOutputType.OneLine, bool PressEnter = false)
 		{
 			string Answer = ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice(Question, AnswersStr, AnswersTitles, OutputType, PressEnter);
@@ -55,23 +55,23 @@ namespace KS.Scripting.Interaction
 		}
 
 		/// <summary>
-        /// Prompts user for selection
-        /// </summary>
-        /// <param name="Question">A question</param>
-        /// <param name="ScriptVariable">A $variable</param>
-        /// <param name="AnswersStr">Set of answers. They can be written like this: Y/N/C.</param>
+		/// Prompts user for selection
+		/// </summary>
+		/// <param name="Question">A question</param>
+		/// <param name="ScriptVariable">A $variable</param>
+		/// <param name="AnswersStr">Set of answers. They can be written like this: Y/N/C.</param>
 		public static void PromptSelectionAndSet(string Question, string ScriptVariable, string AnswersStr)
 		{
-			PromptSelectionAndSet(Question, ScriptVariable, AnswersStr, Array.Empty<string>());
+			PromptSelectionAndSet(Question, ScriptVariable, AnswersStr, []);
 		}
 
 		/// <summary>
-        /// Prompts user for Selection
-        /// </summary>
-        /// <param name="Question">A question</param>
-        /// <param name="ScriptVariable">A $variable</param>
-        /// <param name="AnswersStr">Set of answers. They can be written like this: Y/N/C.</param>
-        /// <param name="AnswersTitles">Working titles for each answer. It must be the same amount as the answers.</param>
+		/// Prompts user for Selection
+		/// </summary>
+		/// <param name="Question">A question</param>
+		/// <param name="ScriptVariable">A $variable</param>
+		/// <param name="AnswersStr">Set of answers. They can be written like this: Y/N/C.</param>
+		/// <param name="AnswersTitles">Working titles for each answer. It must be the same amount as the answers.</param>
 		public static void PromptSelectionAndSet(string Question, string ScriptVariable, string AnswersStr, string[] AnswersTitles)
 		{
 			int SelectedAnswer = SelectionStyle.PromptSelection(Question, AnswersStr, AnswersTitles);
@@ -81,9 +81,9 @@ namespace KS.Scripting.Interaction
 		}
 
 		/// <summary>
-        /// Prompts user for input (answer the question with your own answers)
-        /// </summary>
-        /// <param name="ScriptVariable">An $variable</param>
+		/// Prompts user for input (answer the question with your own answers)
+		/// </summary>
+		/// <param name="ScriptVariable">An $variable</param>
 		public static void PromptInputAndSet(string Question, string ScriptVariable)
 		{
 			// Variables

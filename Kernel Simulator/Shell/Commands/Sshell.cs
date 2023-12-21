@@ -19,7 +19,7 @@
 
 using KS.Network.SSH;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
+using System;
 
 namespace KS.Shell.Commands
 {
@@ -32,7 +32,7 @@ namespace KS.Shell.Commands
 			string Address = AddressDelimiter[0];
 			if (AddressDelimiter.Length > 1)
 			{
-				int Port = Conversions.ToInteger(AddressDelimiter[1]);
+				int Port = Convert.ToInt32(AddressDelimiter[1]);
 				SSH.InitializeSSH(Address, Port, ListArgs[1], SSH.ConnectionType.Shell);
 			}
 			else

@@ -27,14 +27,14 @@ namespace KS.Network.FTP.Filesystem
 	{
 
 		/// <summary>
-        /// Gets a hash for file
-        /// </summary>
-        /// <param name="File">A file to be hashed</param>
-        /// <param name="HashAlgorithm">A hash algorithm supported by the FTP server</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
-        /// <exception cref="Exceptions.FTPFilesystemException"></exception>
-        /// <exception cref="InvalidOperationException"></exception>
-        /// <exception cref="ArgumentNullException"></exception>
+		/// Gets a hash for file
+		/// </summary>
+		/// <param name="File">A file to be hashed</param>
+		/// <param name="HashAlgorithm">A hash algorithm supported by the FTP server</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
+		/// <exception cref="Exceptions.FTPFilesystemException"></exception>
+		/// <exception cref="InvalidOperationException"></exception>
+		/// <exception cref="ArgumentNullException"></exception>
 		public static FtpHash FTPGetHash(string File, FtpHashAlgorithm HashAlgorithm)
 		{
 			if (FTPShellCommon.FtpConnected == true)
@@ -64,27 +64,27 @@ namespace KS.Network.FTP.Filesystem
 		}
 
 		/// <summary>
-        /// Gets a hash for files in a directory
-        /// </summary>
-        /// <param name="Directory">A directory for its contents to be hashed</param>
-        /// <param name="HashAlgorithm">A hash algorithm supported by the FTP server</param>
-        /// <exception cref="Exceptions.FTPFilesystemException"></exception>
-        /// <exception cref="InvalidOperationException"></exception>
-        /// <exception cref="ArgumentNullException"></exception>
+		/// Gets a hash for files in a directory
+		/// </summary>
+		/// <param name="Directory">A directory for its contents to be hashed</param>
+		/// <param name="HashAlgorithm">A hash algorithm supported by the FTP server</param>
+		/// <exception cref="Exceptions.FTPFilesystemException"></exception>
+		/// <exception cref="InvalidOperationException"></exception>
+		/// <exception cref="ArgumentNullException"></exception>
 		public static Dictionary<string, FtpHash> FTPGetHashes(string Directory, FtpHashAlgorithm HashAlgorithm)
 		{
 			return FTPGetHashes(Directory, HashAlgorithm, FTPShellCommon.FtpRecursiveHashing);
 		}
 
 		/// <summary>
-        /// Gets a hash for files in a directory
-        /// </summary>
-        /// <param name="Directory">A directory for its contents to be hashed</param>
-        /// <param name="HashAlgorithm">A hash algorithm supported by the FTP server</param>
-        /// <param name="Recurse">Whether to hash the files within the subdirectories too.</param>
-        /// <exception cref="Exceptions.FTPFilesystemException"></exception>
-        /// <exception cref="InvalidOperationException"></exception>
-        /// <exception cref="ArgumentNullException"></exception>
+		/// Gets a hash for files in a directory
+		/// </summary>
+		/// <param name="Directory">A directory for its contents to be hashed</param>
+		/// <param name="HashAlgorithm">A hash algorithm supported by the FTP server</param>
+		/// <param name="Recurse">Whether to hash the files within the subdirectories too.</param>
+		/// <exception cref="Exceptions.FTPFilesystemException"></exception>
+		/// <exception cref="InvalidOperationException"></exception>
+		/// <exception cref="ArgumentNullException"></exception>
 		public static Dictionary<string, FtpHash> FTPGetHashes(string Directory, FtpHashAlgorithm HashAlgorithm, bool Recurse)
 		{
 			if (FTPShellCommon.FtpConnected == true)

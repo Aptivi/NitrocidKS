@@ -28,11 +28,11 @@ namespace KS.Misc.Beautifiers
 	{
 
 		/// <summary>
-        /// Minifies the JSON text contained in the file.
-        /// </summary>
-        /// <param name="JsonFile">Path to JSON file. It's automatically neutralized using <see cref="NeutralizePath(String, Boolean)"/>.</param>
-        /// <returns>Minified JSON</returns>
-        /// <exception cref="FileNotFoundException"></exception>
+		/// Minifies the JSON text contained in the file.
+		/// </summary>
+		/// <param name="JsonFile">Path to JSON file. It's automatically neutralized using <see cref="NeutralizePath(String, Boolean)"/>.</param>
+		/// <returns>Minified JSON</returns>
+		/// <exception cref="FileNotFoundException"></exception>
 		public static string MinifyJson(string JsonFile)
 		{
 			// Neutralize the file path
@@ -46,10 +46,10 @@ namespace KS.Misc.Beautifiers
 		}
 
 		/// <summary>
-        /// Minifies the JSON text.
-        /// </summary>
-        /// <param name="JsonText">Contents of a beautified JSON.</param>
-        /// <returns>Minified JSON</returns>
+		/// Minifies the JSON text.
+		/// </summary>
+		/// <param name="JsonText">Contents of a beautified JSON.</param>
+		/// <returns>Minified JSON</returns>
 		public static string MinifyJsonText(string JsonText)
 		{
 			// Make an instance of JToken with this text

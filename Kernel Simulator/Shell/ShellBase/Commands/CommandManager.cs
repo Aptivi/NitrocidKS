@@ -37,11 +37,11 @@ namespace KS.Shell.ShellBase.Commands
 	{
 
 		/// <summary>
-        /// Checks to see if the command is found in selected shell command type
-        /// </summary>
-        /// <param name="Command">A command</param>
-        /// <param name="ShellType">The shell type</param>
-        /// <returns>True if found; False if not found or shell type is invalid.</returns>
+		/// Checks to see if the command is found in selected shell command type
+		/// </summary>
+		/// <param name="Command">A command</param>
+		/// <param name="ShellType">The shell type</param>
+		/// <returns>True if found; False if not found or shell type is invalid.</returns>
 		public static bool IsCommandFound(string Command, ShellType ShellType)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "Command: {0}, ShellType: {1}", Command, ShellType);
@@ -108,10 +108,10 @@ namespace KS.Shell.ShellBase.Commands
 		}
 
 		/// <summary>
-        /// Checks to see if the command is found in all the shells
-        /// </summary>
-        /// <param name="Command">A command</param>
-        /// <returns>True if found; False if not found.</returns>
+		/// Checks to see if the command is found in all the shells
+		/// </summary>
+		/// <param name="Command">A command</param>
+		/// <returns>True if found; False if not found.</returns>
 		public static bool IsCommandFound(string Command)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "Command: {0}", Command);

@@ -25,7 +25,6 @@ using KS.Files;
 using KS.Languages;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
-using Microsoft.VisualBasic.CompilerServices;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -34,52 +33,52 @@ namespace KS.Login
 	public static class PermissionManagement
 	{
 
-		internal static Dictionary<string, PermissionType> UserPermissions = new();
+		internal static Dictionary<string, PermissionType> UserPermissions = [];
 
 		/// <summary>
-        /// This enumeration lists all permission types.
-        /// </summary>
+		/// This enumeration lists all permission types.
+		/// </summary>
 		public enum PermissionType : int
 		{
 			/// <summary>
-            /// User has no permissions
-            /// </summary>
+			/// User has no permissions
+			/// </summary>
 			None = 0,
 			/// <summary>
-            /// This user is an administrator
-            /// </summary>
+			/// This user is an administrator
+			/// </summary>
 			Administrator = 1,
 			/// <summary>
-            /// This user is disabled
-            /// </summary>
+			/// This user is disabled
+			/// </summary>
 			Disabled = 2,
 			/// <summary>
-            /// This user doesn't show in the available users list
-            /// </summary>
+			/// This user doesn't show in the available users list
+			/// </summary>
 			Anonymous = 4
 		}
 
 		/// <summary>
-        /// It specifies whether or not to allow permission
-        /// </summary>
+		/// It specifies whether or not to allow permission
+		/// </summary>
 		public enum PermissionManagementMode : int
 		{
 			/// <summary>
-            /// Adds the permission to the user properties
-            /// </summary>
+			/// Adds the permission to the user properties
+			/// </summary>
 			Allow = 1,
 			/// <summary>
-            /// Removes the permission from the user properties
-            /// </summary>
+			/// Removes the permission from the user properties
+			/// </summary>
 			Disallow
 		}
 
 		/// <summary>
-        /// Manages permissions
-        /// </summary>
-        /// <param name="PermType">A type of permission</param>
-        /// <param name="Username">A specified username</param>
-        /// <param name="PermissionMode">Whether to allow or disallow a specified type for a user</param>
+		/// Manages permissions
+		/// </summary>
+		/// <param name="PermType">A type of permission</param>
+		/// <param name="Username">A specified username</param>
+		/// <param name="PermissionMode">Whether to allow or disallow a specified type for a user</param>
 		public static void Permission(PermissionType PermType, string Username, PermissionManagementMode PermissionMode)
 		{
 
@@ -111,11 +110,11 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Adds user to one of permission types
-        /// </summary>
-        /// <param name="PermType">Whether it be Admin or Disabled</param>
-        /// <param name="Username">A username to be managed</param>
-        /// <exception cref="Exceptions.PermissionManagementException"></exception>
+		/// Adds user to one of permission types
+		/// </summary>
+		/// <param name="PermType">Whether it be Admin or Disabled</param>
+		/// <param name="Username">A username to be managed</param>
+		/// <exception cref="Exceptions.PermissionManagementException"></exception>
 		public static void AddPermission(PermissionType PermType, string Username)
 		{
 			// Sets the required permissions to false.
@@ -159,7 +158,7 @@ namespace KS.Login
 			{
 				if ((UserToken["username"].ToString() ?? "") == (Username ?? ""))
 				{
-					if (Conversions.ToBoolean(!((JArray)UserToken["permissions"]).ToObject(typeof(List<string>)).Contains(PermType.ToString())))
+					if (Convert.ToBoolean(!((JArray)UserToken["permissions"]).Contains(PermType.ToString())))
 					{
 						((JArray)UserToken["permissions"]).Add(PermType.ToString());
 					}
@@ -169,12 +168,12 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Adds user to one of permission types
-        /// </summary>
-        /// <param name="PermType">Whether it be Admin or Disabled</param>
-        /// <param name="Username">A username to be managed</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
-        /// <exception cref="Exceptions.PermissionManagementException"></exception>
+		/// Adds user to one of permission types
+		/// </summary>
+		/// <param name="PermType">Whether it be Admin or Disabled</param>
+		/// <param name="Username">A username to be managed</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
+		/// <exception cref="Exceptions.PermissionManagementException"></exception>
 		public static bool TryAddPermission(PermissionType PermType, string Username)
 		{
 			try
@@ -182,18 +181,18 @@ namespace KS.Login
 				AddPermission(PermType, Username);
 				return true;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				return false;
 			}
 		}
 
 		/// <summary>
-        /// Removes user from one of permission types
-        /// </summary>
-        /// <param name="PermType">Whether it be Admin or Disabled</param>
-        /// <param name="Username">A username to be managed</param>
-        /// <exception cref="Exceptions.PermissionManagementException"></exception>
+		/// Removes user from one of permission types
+		/// </summary>
+		/// <param name="PermType">Whether it be Admin or Disabled</param>
+		/// <param name="Username">A username to be managed</param>
+		/// <exception cref="Exceptions.PermissionManagementException"></exception>
 		public static void RemovePermission(PermissionType PermType, string Username)
 		{
 			// Sets the required permissions to false.
@@ -250,12 +249,12 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Removes user from one of permission types
-        /// </summary>
-        /// <param name="PermType">Whether it be Admin or Disabled</param>
-        /// <param name="Username">A username to be managed</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
-        /// <exception cref="Exceptions.PermissionManagementException"></exception>
+		/// Removes user from one of permission types
+		/// </summary>
+		/// <param name="PermType">Whether it be Admin or Disabled</param>
+		/// <param name="Username">A username to be managed</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
+		/// <exception cref="Exceptions.PermissionManagementException"></exception>
 		public static bool TryRemovePermission(PermissionType PermType, string Username)
 		{
 			try
@@ -263,18 +262,18 @@ namespace KS.Login
 				RemovePermission(PermType, Username);
 				return true;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				return false;
 			}
 		}
 
 		/// <summary>
-        /// Edits the permission database for new user name
-        /// </summary>
-        /// <param name="OldName">Old username</param>
-        /// <param name="Username">New username</param>
-        /// <exception cref="Exceptions.PermissionManagementException"></exception>
+		/// Edits the permission database for new user name
+		/// </summary>
+		/// <param name="OldName">Old username</param>
+		/// <param name="Username">New username</param>
+		/// <exception cref="Exceptions.PermissionManagementException"></exception>
 		public static void PermissionEditForNewUser(string OldName, string Username)
 		{
 			// Edit username
@@ -306,12 +305,12 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Edits the permission database for new user name
-        /// </summary>
-        /// <param name="OldName">Old username</param>
-        /// <param name="Username">New username</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
-        /// <exception cref="Exceptions.PermissionManagementException"></exception>
+		/// Edits the permission database for new user name
+		/// </summary>
+		/// <param name="OldName">Old username</param>
+		/// <param name="Username">New username</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
+		/// <exception cref="Exceptions.PermissionManagementException"></exception>
 		public static bool TryPermissionEditForNewUser(string OldName, string Username)
 		{
 			try
@@ -319,17 +318,17 @@ namespace KS.Login
 				PermissionEditForNewUser(OldName, Username);
 				return true;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				return false;
 			}
 		}
 
 		/// <summary>
-        /// Initializes permissions for a new user with default settings
-        /// </summary>
-        /// <param name="NewUser">A new user name</param>
-        /// <exception cref="Exceptions.PermissionManagementException"></exception>
+		/// Initializes permissions for a new user with default settings
+		/// </summary>
+		/// <param name="NewUser">A new user name</param>
+		/// <exception cref="Exceptions.PermissionManagementException"></exception>
 		public static void InitPermissionsForNewUser(string NewUser)
 		{
 			// Initialize permissions locally
@@ -338,11 +337,11 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Initializes permissions for a new user with default settings
-        /// </summary>
-        /// <param name="NewUser">A new user name</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
-        /// <exception cref="Exceptions.PermissionManagementException"></exception>
+		/// Initializes permissions for a new user with default settings
+		/// </summary>
+		/// <param name="NewUser">A new user name</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
+		/// <exception cref="Exceptions.PermissionManagementException"></exception>
 		public static bool TryInitPermissionsForNewUser(string NewUser)
 		{
 			try
@@ -350,16 +349,16 @@ namespace KS.Login
 				InitPermissionsForNewUser(NewUser);
 				return true;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				return false;
 			}
 		}
 
 		/// <summary>
-        /// Loads permissions for all users
-        /// </summary>
-        /// <exception cref="Exceptions.PermissionManagementException"></exception>
+		/// Loads permissions for all users
+		/// </summary>
+		/// <exception cref="Exceptions.PermissionManagementException"></exception>
 		public static void LoadPermissions()
 		{
 			foreach (JObject UserToken in UserManagement.UsersToken)
@@ -391,10 +390,10 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Loads permissions for all users
-        /// </summary>
-        /// <returns>True if successful; False if unsuccessful</returns>
-        /// <exception cref="Exceptions.PermissionManagementException"></exception>
+		/// Loads permissions for all users
+		/// </summary>
+		/// <returns>True if successful; False if unsuccessful</returns>
+		/// <exception cref="Exceptions.PermissionManagementException"></exception>
 		public static bool TryLoadPermissions()
 		{
 			try
@@ -402,17 +401,17 @@ namespace KS.Login
 				LoadPermissions();
 				return true;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				return false;
 			}
 		}
 
 		/// <summary>
-        /// Gets the permissions for the user
-        /// </summary>
-        /// <param name="Username">Target username</param>
-        /// <returns>Permission type enumeration for the current user, or none if the user isn't found or has no permissions</returns>
+		/// Gets the permissions for the user
+		/// </summary>
+		/// <param name="Username">Target username</param>
+		/// <returns>Permission type enumeration for the current user, or none if the user isn't found or has no permissions</returns>
 		public static PermissionType GetPermissions(string Username)
 		{
 			if (string.IsNullOrEmpty(Username))
@@ -421,11 +420,11 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Checks to see if the user has a specific permission
-        /// </summary>
-        /// <param name="Username">Target username</param>
-        /// <param name="SpecificPermission">Specific permission type</param>
-        /// <returns>True if the user has permission; False otherwise</returns>
+		/// Checks to see if the user has a specific permission
+		/// </summary>
+		/// <param name="Username">Target username</param>
+		/// <param name="SpecificPermission">Specific permission type</param>
+		/// <returns>True if the user has permission; False otherwise</returns>
 		public static bool HasPermission(string Username, PermissionType SpecificPermission)
 		{
 			var SpecificPermissions = GetPermissions(Username);

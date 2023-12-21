@@ -29,11 +29,11 @@ namespace KS.Scripting.Conditions
 	public static class UESHConditional
 	{
 
-		private readonly static Dictionary<string, BaseCondition> Conditions = new() { { "eq", new EqualsCondition() }, { "neq", new NotEqualsCondition() }, { "les", new LessThanCondition() }, { "lesoreq", new LessThanOrEqualCondition() }, { "gre", new GreaterThanCondition() }, { "greoreq", new GreaterThanOrEqualCondition() }, { "fileex", new FileExistsCondition() }, { "filenex", new FileNotExistsCondition() }, { "direx", new DirectoryExistsCondition() }, { "dirnex", new DirectoryNotExistsCondition() }, { "has", new ContainsCondition() }, { "hasno", new NotContainsCondition() }, { "ispath", new ValidPathCondition() }, { "isnotpath", new InvalidPathCondition() }, { "isfname", new ValidFileNameCondition() }, { "isnotfname", new InvalidFileNameCondition() }, { "sane", new HashesMatchCondition() }, { "insane", new HashesMismatchCondition() }, { "fsane", new FileHashMatchCondition() }, { "finsane", new FileHashMismatchCondition() }, { "none", new NoneCondition() } };
+		private static readonly Dictionary<string, BaseCondition> Conditions = new() { { "eq", new EqualsCondition() }, { "neq", new NotEqualsCondition() }, { "les", new LessThanCondition() }, { "lesoreq", new LessThanOrEqualCondition() }, { "gre", new GreaterThanCondition() }, { "greoreq", new GreaterThanOrEqualCondition() }, { "fileex", new FileExistsCondition() }, { "filenex", new FileNotExistsCondition() }, { "direx", new DirectoryExistsCondition() }, { "dirnex", new DirectoryNotExistsCondition() }, { "has", new ContainsCondition() }, { "hasno", new NotContainsCondition() }, { "ispath", new ValidPathCondition() }, { "isnotpath", new InvalidPathCondition() }, { "isfname", new ValidFileNameCondition() }, { "isnotfname", new InvalidFileNameCondition() }, { "sane", new HashesMatchCondition() }, { "insane", new HashesMismatchCondition() }, { "fsane", new FileHashMatchCondition() }, { "finsane", new FileHashMismatchCondition() }, { "none", new NoneCondition() } };
 
 		/// <summary>
-        /// The available condition names
-        /// </summary>
+		/// The available condition names
+		/// </summary>
 		public static Dictionary<string, BaseCondition> AvailableConditions
 		{
 			get
@@ -43,9 +43,9 @@ namespace KS.Scripting.Conditions
 		}
 
 		/// <summary>
-        /// Checks if the UESH condition was satisfied
-        /// </summary>
-        /// <param name="ConditionToSatisfy">The UESH condition to satisfy</param>
+		/// Checks if the UESH condition was satisfied
+		/// </summary>
+		/// <param name="ConditionToSatisfy">The UESH condition to satisfy</param>
 		public static bool ConditionSatisfied(string ConditionToSatisfy)
 		{
 			if (!string.IsNullOrWhiteSpace(ConditionToSatisfy))

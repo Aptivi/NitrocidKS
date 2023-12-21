@@ -23,8 +23,8 @@ using KS.Misc.Writers.DebugWriters;
 namespace KS.Misc.Threading
 {
 	/// <summary>
-    /// The kernel thread to simplify the access to making new threads, starting them, and stopping them
-    /// </summary>
+	/// The kernel thread to simplify the access to making new threads, starting them, and stopping them
+	/// </summary>
 	public class KernelThread
 	{
 
@@ -34,18 +34,18 @@ namespace KS.Misc.Threading
 		private readonly bool IsParameterized;
 
 		/// <summary>
-        /// The name of the thread
-        /// </summary>
+		/// The name of the thread
+		/// </summary>
 		public string Name { get; private set; }
 
 		/// <summary>
-        /// Is the thread a background thread?
-        /// </summary>
+		/// Is the thread a background thread?
+		/// </summary>
 		public bool IsBackground { get; private set; }
 
 		/// <summary>
-        /// Is the kernel thread alive?
-        /// </summary>
+		/// Is the kernel thread alive?
+		/// </summary>
 		public bool IsAlive
 		{
 			get
@@ -55,11 +55,11 @@ namespace KS.Misc.Threading
 		}
 
 		/// <summary>
-        /// Makes a new kernel thread
-        /// </summary>
-        /// <param name="ThreadName">The thread name</param>
-        /// <param name="Background">Indicates if the kernel thread is background</param>
-        /// <param name="Executor">The thread delegate</param>
+		/// Makes a new kernel thread
+		/// </summary>
+		/// <param name="ThreadName">The thread name</param>
+		/// <param name="Background">Indicates if the kernel thread is background</param>
+		/// <param name="Executor">The thread delegate</param>
 		public KernelThread(string ThreadName, bool Background, ThreadStart Executor)
 		{
 			BaseThread = new Thread(Executor) { Name = ThreadName, IsBackground = Background };
@@ -71,11 +71,11 @@ namespace KS.Misc.Threading
 		}
 
 		/// <summary>
-        /// Makes a new kernel thread
-        /// </summary>
-        /// <param name="ThreadName">The thread name</param>
-        /// <param name="Background">Indicates if the kernel thread is background</param>
-        /// <param name="Executor">The thread delegate</param>
+		/// Makes a new kernel thread
+		/// </summary>
+		/// <param name="ThreadName">The thread name</param>
+		/// <param name="Background">Indicates if the kernel thread is background</param>
+		/// <param name="Executor">The thread delegate</param>
 		public KernelThread(string ThreadName, bool Background, ParameterizedThreadStart Executor)
 		{
 			BaseThread = new Thread(Executor) { Name = ThreadName, IsBackground = Background };
@@ -87,8 +87,8 @@ namespace KS.Misc.Threading
 		}
 
 		/// <summary>
-        /// Starts the kernel thread
-        /// </summary>
+		/// Starts the kernel thread
+		/// </summary>
 		public void Start()
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "Starting kernel thread {0} with ID {1}", BaseThread.Name, BaseThread.ManagedThreadId);
@@ -96,9 +96,9 @@ namespace KS.Misc.Threading
 		}
 
 		/// <summary>
-        /// Starts the kernel thread
-        /// </summary>
-        /// <param name="Parameter">The parameter class instance containing multiple parameters, or a usual single parameter</param>
+		/// Starts the kernel thread
+		/// </summary>
+		/// <param name="Parameter">The parameter class instance containing multiple parameters, or a usual single parameter</param>
 		public void Start(object Parameter)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "Starting kernel thread {0} with ID {1} with parameters", BaseThread.Name, BaseThread.ManagedThreadId);
@@ -106,8 +106,8 @@ namespace KS.Misc.Threading
 		}
 
 		/// <summary>
-        /// Stops the kernel thread
-        /// </summary>
+		/// Stops the kernel thread
+		/// </summary>
 		public void Stop()
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "Stopping kernel thread {0} with ID {1}", Name, BaseThread.ManagedThreadId);
@@ -128,8 +128,8 @@ namespace KS.Misc.Threading
 		}
 
 		/// <summary>
-        /// Waits for the kernel thread to finish
-        /// </summary>
+		/// Waits for the kernel thread to finish
+		/// </summary>
 		public void Wait()
 		{
 			if (!BaseThread.IsAlive)
@@ -147,8 +147,8 @@ namespace KS.Misc.Threading
 		}
 
 		/// <summary>
-        /// Waits for the kernel thread to finish
-        /// </summary>
+		/// Waits for the kernel thread to finish
+		/// </summary>
 		public void Wait(long Time)
 		{
 			if (!BaseThread.IsAlive)

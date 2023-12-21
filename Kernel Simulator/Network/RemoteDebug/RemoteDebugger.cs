@@ -32,7 +32,6 @@ using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Aliases;
 using KS.TimeDate;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Network.RemoteDebug
 {
@@ -42,20 +41,20 @@ namespace KS.Network.RemoteDebug
 		public static int DebugPort = 3014;
 		public static Socket RDebugClient;
 		public static TcpListener DebugTCP;
-		public static List<RemoteDebugDevice> DebugDevices = new();
+		public static List<RemoteDebugDevice> DebugDevices = [];
 		public static KernelThread RDebugThread = new("Remote Debug Thread", true, StartRDebugger);
-		public static List<string> RDebugBlocked = new(); // Blocked IP addresses
+		public static List<string> RDebugBlocked = []; // Blocked IP addresses
 		public static bool RDebugStopping;
 		public static bool RDebugAutoStart = true;
 		public static string RDebugMessageFormat = "";
 		internal static bool RDebugFailed;
 		internal static Exception RDebugFailedReason;
-		private readonly static string RDebugVersion = "0.7.0";
+		private static readonly string RDebugVersion = "0.7.0";
 		private static bool RDebugBail;
 
 		/// <summary>
-        /// Whether to start or stop the remote debugger
-        /// </summary>
+		/// Whether to start or stop the remote debugger
+		/// </summary>
 		public static void StartRDebugThread()
 		{
 			if (Flags.DebugMode)
@@ -72,8 +71,8 @@ namespace KS.Network.RemoteDebug
 		}
 
 		/// <summary>
-        /// Whether to start or stop the remote debugger
-        /// </summary>
+		/// Whether to start or stop the remote debugger
+		/// </summary>
 		public static void StopRDebugThread()
 		{
 			if (Flags.DebugMode)
@@ -87,14 +86,14 @@ namespace KS.Network.RemoteDebug
 		}
 
 		/// <summary>
-        /// Thread to accept connections after the listener starts
-        /// </summary>
+		/// Thread to accept connections after the listener starts
+		/// </summary>
 		public static void StartRDebugger()
 		{
 			// Listen to a current IP address
 			try
 			{
-				DebugTCP = new TcpListener(new IPAddress(new[] { (byte)0, (byte)0, (byte)0, (byte)0 }), DebugPort);
+				DebugTCP = new TcpListener(new IPAddress([(byte)0, (byte)0, (byte)0, (byte)0]), DebugPort);
 				DebugTCP.Start();
 			}
 			catch (SocketException sex)
@@ -138,7 +137,7 @@ namespace KS.Network.RemoteDebug
 						RemoteDebugTools.AddDeviceToJson(RDebugIP, false);
 
 						// Get the remaining properties
-						RDebugName = Conversions.ToString(RemoteDebugTools.GetDeviceProperty(RDebugIP, RemoteDebugTools.DeviceProperty.Name));
+						RDebugName = Convert.ToString(RemoteDebugTools.GetDeviceProperty(RDebugIP, RemoteDebugTools.DeviceProperty.Name));
 						RDebugInstance = new RemoteDebugDevice(RDebugClient, RDebugStream, RDebugIP, RDebugName);
 						RDebugSWriter = RDebugInstance.ClientStreamWriter;
 
@@ -213,8 +212,8 @@ namespace KS.Network.RemoteDebug
 		}
 
 		/// <summary>
-        /// Thread to listen to messages and post them to the debugger
-        /// </summary>
+		/// Thread to listen to messages and post them to the debugger
+		/// </summary>
 		public static void ReadAndBroadcastAsync()
 		{
 			while (!RDebugStopping)
@@ -241,8 +240,8 @@ namespace KS.Network.RemoteDebug
 
 						// Make some fixups regarding newlines, which means remove all instances of vbCr (Mac OS 9 newlines) and vbLf (Linux newlines).
 						// Windows hosts are affected, too, because it uses vbCrLf, which means (vbCr + vbLf)
-						Message = Message.Replace(Microsoft.VisualBasic.Constants.vbCr, Microsoft.VisualBasic.Constants.vbNullChar);
-						Message = Message.Replace(Microsoft.VisualBasic.Constants.vbLf, Microsoft.VisualBasic.Constants.vbNullChar);
+						Message = Message.Replace("\r", "\0");
+						Message = Message.Replace("\n", "\0");
 
 						// Don't post message if it starts with a null character. On Unix, the nullchar detection always returns false even if it seems
 						// that the message starts with the actual character, not the null character, so detect nullchar by getting the first character
@@ -250,13 +249,13 @@ namespace KS.Network.RemoteDebug
 						if (!(Convert.ToInt32(Message[0]) == 0))
 						{
 							// Fix the value of the message
-							Message = Message.Replace(Microsoft.VisualBasic.Constants.vbNullChar, "");
+							Message = Message.Replace("\0", "");
 
 							// Now, check the message
 							if (Message.StartsWith("/"))
 							{
 								// Message is a command
-								string FullCommand = Message.Replace("/", "").Replace(Microsoft.VisualBasic.Constants.vbNullChar, "");
+								string FullCommand = Message.Replace("/", "").Replace("\0", "");
 								string Command = FullCommand.Split(' ')[0];
 								if (RemoteDebugCmd.DebugCommands.ContainsKey(Command))
 								{

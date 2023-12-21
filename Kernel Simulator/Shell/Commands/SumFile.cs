@@ -28,7 +28,6 @@ using KS.Languages;
 using KS.Misc.Encryption;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Shell.Commands
 {
@@ -43,7 +42,7 @@ namespace KS.Shell.Commands
 			var FileBuilder = new StringBuilder();
 			if (!(ListArgsOnly.Length < 3))
 			{
-				out = Filesystem.NeutralizePath(ListArgsOnly[2]);
+				@out = Filesystem.NeutralizePath(ListArgsOnly[2]);
 			}
 			if (Checking.FileExists(file))
 			{
@@ -52,7 +51,7 @@ namespace KS.Shell.Commands
 				{
 					foreach (string Algorithm in Enum.GetNames(typeof(Encryption.Algorithms)))
 					{
-						AlgorithmEnum = (Encryption.Algorithms)Conversions.ToInteger(Enum.Parse(typeof(Encryption.Algorithms), Algorithm));
+						AlgorithmEnum = (Encryption.Algorithms)Convert.ToInt32(Enum.Parse(typeof(Encryption.Algorithms), Algorithm));
 						var spent = new Stopwatch();
 						spent.Start(); // Time when you're on a breakpoint is counted
 						string encrypted = Encryption.GetEncryptedFile(file, AlgorithmEnum);
@@ -90,9 +89,9 @@ namespace KS.Shell.Commands
 				{
 					TextWriterColor.Write(Translate.DoTranslation("Invalid encryption algorithm."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
 				}
-				if (!string.IsNullOrEmpty(out))
+				if (!string.IsNullOrEmpty(@out))
 				{
-					var FStream = new StreamWriter(out);
+					var FStream = new StreamWriter(@out);
 					FStream.Write(FileBuilder.ToString());
 					FStream.Flush();
 				}

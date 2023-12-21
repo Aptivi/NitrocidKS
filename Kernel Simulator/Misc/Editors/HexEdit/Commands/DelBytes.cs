@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 
@@ -24,7 +25,6 @@ using KS.Misc.Text;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Misc.Editors.HexEdit.Commands
 {
@@ -37,9 +37,9 @@ namespace KS.Misc.Editors.HexEdit.Commands
 			{
 				if (StringQuery.IsStringNumeric(ListArgs[0]))
 				{
-					if (Conversions.ToLong(ListArgs[0]) <= HexEditShellCommon.HexEdit_FileBytes.LongCount())
+					if (Convert.ToInt64(ListArgs[0]) <= HexEditShellCommon.HexEdit_FileBytes.LongCount())
 					{
-						HexEditTools.HexEdit_DeleteBytes(Conversions.ToLong(ListArgs[0]));
+						HexEditTools.HexEdit_DeleteBytes(Convert.ToInt64(ListArgs[0]));
 						TextWriterColor.Write(Translate.DoTranslation("Deleted bytes."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success));
 					}
 					else
@@ -57,10 +57,10 @@ namespace KS.Misc.Editors.HexEdit.Commands
 			{
 				if (StringQuery.IsStringNumeric(ListArgs[0]) & StringQuery.IsStringNumeric(ListArgs[1]))
 				{
-					if (Conversions.ToLong(ListArgs[0]) <= HexEditShellCommon.HexEdit_FileBytes.LongCount() & Conversions.ToLong(ListArgs[1]) <= HexEditShellCommon.HexEdit_FileBytes.LongCount())
+					if (Convert.ToInt64(ListArgs[0]) <= HexEditShellCommon.HexEdit_FileBytes.LongCount() & Convert.ToInt64(ListArgs[1]) <= HexEditShellCommon.HexEdit_FileBytes.LongCount())
 					{
-						long ByteNumberStart = Conversions.ToLong(ListArgs[0]);
-						long ByteNumberEnd = Conversions.ToLong(ListArgs[1]);
+						long ByteNumberStart = Convert.ToInt64(ListArgs[0]);
+						long ByteNumberEnd = Convert.ToInt64(ListArgs[1]);
 						ByteNumberStart.SwapIfSourceLarger(ref ByteNumberEnd);
 						HexEditTools.HexEdit_DeleteBytes(ByteNumberStart, ByteNumberEnd);
 					}

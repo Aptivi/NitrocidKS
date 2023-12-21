@@ -5,7 +5,6 @@ using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
@@ -34,7 +33,7 @@ namespace KS.Shell.Commands
 		public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
 		{
 			string UnitType = ListArgsOnly[0];
-			int QuantityNum = Conversions.ToInteger(ListArgsOnly[1]);
+			int QuantityNum = Convert.ToInt32(ListArgsOnly[1]);
 			string SourceUnit = ListArgsOnly[2];
 			string TargetUnit = ListArgsOnly[3];
 			QuantityInfo[] QuantityInfos = Quantity.Infos.Where(x => (x.Name ?? "") == (UnitType ?? "")).ToArray();

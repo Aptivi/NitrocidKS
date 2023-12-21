@@ -39,35 +39,35 @@ namespace KS.Network.SSH
 	{
 
 		/// <summary>
-        /// Whether or not if disconnection is requested
-        /// </summary>
+		/// Whether or not if disconnection is requested
+		/// </summary>
 		private static bool DisconnectionRequested;
 		/// <summary>
-        /// Whether or not to show the SSH banner on connection
-        /// </summary>
+		/// Whether or not to show the SSH banner on connection
+		/// </summary>
 		public static bool SSHBanner;
 
 		/// <summary>
-        /// Specifies SSH connection type
-        /// </summary>
+		/// Specifies SSH connection type
+		/// </summary>
 		public enum ConnectionType : int
 		{
 			/// <summary>
-            /// Connecting to SSH to use a shell
-            /// </summary>
+			/// Connecting to SSH to use a shell
+			/// </summary>
 			Shell,
 			/// <summary>
-            /// Connecting to SSH to use a single command
-            /// </summary>
+			/// Connecting to SSH to use a single command
+			/// </summary>
 			Command
 		}
 
 		/// <summary>
-        /// Prompts the user for the connection info
-        /// </summary>
-        /// <param name="Address">An IP address or hostname</param>
-        /// <param name="Port">A port of the SSH/SFTP server. It's usually 22</param>
-        /// <param name="Username">A username to authenticate with</param>
+		/// Prompts the user for the connection info
+		/// </summary>
+		/// <param name="Address">An IP address or hostname</param>
+		/// <param name="Port">A port of the SSH/SFTP server. It's usually 22</param>
+		/// <param name="Username">A username to authenticate with</param>
 		public static ConnectionInfo PromptConnectionInfo(string Address, int Port, string Username)
 		{
 			// Authentication
@@ -191,23 +191,23 @@ namespace KS.Network.SSH
 		}
 
 		/// <summary>
-        /// Gets connection info from the information that the user provided
-        /// </summary>
-        /// <param name="Address">An IP address or hostname</param>
-        /// <param name="Port">A port of the SSH/SFTP server. It's usually 22</param>
-        /// <param name="Username">A username to authenticate with</param>
-        /// <param name="AuthMethods">Authentication methods list.</param>
+		/// Gets connection info from the information that the user provided
+		/// </summary>
+		/// <param name="Address">An IP address or hostname</param>
+		/// <param name="Port">A port of the SSH/SFTP server. It's usually 22</param>
+		/// <param name="Username">A username to authenticate with</param>
+		/// <param name="AuthMethods">Authentication methods list.</param>
 		public static ConnectionInfo GetConnectionInfo(string Address, int Port, string Username, List<AuthenticationMethod> AuthMethods)
 		{
-			return new ConnectionInfo(Address, Port, Username, AuthMethods.ToArray());
+			return new ConnectionInfo(Address, Port, Username, [.. AuthMethods]);
 		}
 
 		/// <summary>
-        /// Opens a session to specified address using the specified port and the username
-        /// </summary>
-        /// <param name="Address">An IP address or hostname</param>
-        /// <param name="Port">A port of the SSH server. It's usually 22</param>
-        /// <param name="Username">A username to authenticate with</param>
+		/// Opens a session to specified address using the specified port and the username
+		/// </summary>
+		/// <param name="Address">An IP address or hostname</param>
+		/// <param name="Port">A port of the SSH server. It's usually 22</param>
+		/// <param name="Username">A username to authenticate with</param>
 		public static void InitializeSSH(string Address, int Port, string Username, ConnectionType Connection, string Command = "")
 		{
 			try
@@ -239,8 +239,8 @@ namespace KS.Network.SSH
 		}
 
 		/// <summary>
-        /// Shows the SSH banner
-        /// </summary>
+		/// Shows the SSH banner
+		/// </summary>
 		private static void ShowBanner(object sender, AuthenticationBannerEventArgs e)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "Banner language: {0}", e.Language);
@@ -256,9 +256,9 @@ namespace KS.Network.SSH
 		}
 
 		/// <summary>
-        /// Opens an SSH shell
-        /// </summary>
-        /// <param name="SSHClient">SSH client instance</param>
+		/// Opens an SSH shell
+		/// </summary>
+		/// <param name="SSHClient">SSH client instance</param>
 		public static void OpenShell(SshClient SSHClient)
 		{
 			try
@@ -303,9 +303,9 @@ namespace KS.Network.SSH
 		}
 
 		/// <summary>
-        /// Opens an SSH shell for a command
-        /// </summary>
-        /// <param name="SSHClient">SSH client instance</param>
+		/// Opens an SSH shell for a command
+		/// </summary>
+		/// <param name="SSHClient">SSH client instance</param>
 		public static void OpenCommand(SshClient SSHClient, string Command)
 		{
 			try

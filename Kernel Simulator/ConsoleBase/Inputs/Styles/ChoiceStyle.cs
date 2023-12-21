@@ -28,25 +28,25 @@ namespace KS.ConsoleBase.Inputs.Styles
 		public static ChoiceOutputType DefaultChoiceOutputType = ChoiceOutputType.Modern;
 
 		/// <summary>
-        /// Prompts user for choice
-        /// </summary>
-        /// <param name="Question">A question</param>
-        /// <param name="AnswersStr">Set of answers. They can be written like this: Y/N/C.</param>
-        /// <param name="OutputType">Output type of choices</param>
-        /// <param name="PressEnter">When enabled, allows the input to consist of multiple characters</param>
+		/// Prompts user for choice
+		/// </summary>
+		/// <param name="Question">A question</param>
+		/// <param name="AnswersStr">Set of answers. They can be written like this: Y/N/C.</param>
+		/// <param name="OutputType">Output type of choices</param>
+		/// <param name="PressEnter">When enabled, allows the input to consist of multiple characters</param>
 		public static string PromptChoice(string Question, string AnswersStr, ChoiceOutputType OutputType = ChoiceOutputType.OneLine, bool PressEnter = false)
 		{
-			return PromptChoice(Question, AnswersStr, Array.Empty<string>(), OutputType, PressEnter);
+			return PromptChoice(Question, AnswersStr, [], OutputType, PressEnter);
 		}
 
 		/// <summary>
-        /// Prompts user for choice
-        /// </summary>
-        /// <param name="Question">A question</param>
-        /// <param name="AnswersStr">Set of answers. They can be written like this: Y/N/C.</param>
-        /// <param name="AnswersTitles">Working titles for each answer. It must be the same amount as the answers.</param>
-        /// <param name="OutputType">Output type of choices</param>
-        /// <param name="PressEnter">When enabled, allows the input to consist of multiple characters</param>
+		/// Prompts user for choice
+		/// </summary>
+		/// <param name="Question">A question</param>
+		/// <param name="AnswersStr">Set of answers. They can be written like this: Y/N/C.</param>
+		/// <param name="AnswersTitles">Working titles for each answer. It must be the same amount as the answers.</param>
+		/// <param name="OutputType">Output type of choices</param>
+		/// <param name="PressEnter">When enabled, allows the input to consist of multiple characters</param>
 		public static string PromptChoice(string Question, string AnswersStr, string[] AnswersTitles, ChoiceOutputType OutputType = ChoiceOutputType.OneLine, bool PressEnter = false)
 		{
 			return TermChoiceStyle.PromptChoice(Question, AnswersStr, AnswersTitles, OutputType, PressEnter);

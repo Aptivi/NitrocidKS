@@ -29,12 +29,12 @@ namespace KS.Shell.ShellBase.Shells
 	public static class ShellStart
 	{
 
-		internal static List<ShellInfo> ShellStack = new();
+		internal static List<ShellInfo> ShellStack = [];
 
 		/// <summary>
-        /// Starts the shell
-        /// </summary>
-        /// <param name="ShellType">The shell type</param>
+		/// Starts the shell
+		/// </summary>
+		/// <param name="ShellType">The shell type</param>
 		public static void StartShell(ShellType ShellType, params object[] ShellArgs)
 		{
 			if (ShellStack.Count >= 1)
@@ -45,9 +45,9 @@ namespace KS.Shell.ShellBase.Shells
 		}
 
 		/// <summary>
-        /// Force starts the shell
-        /// </summary>
-        /// <param name="ShellType">The shell type</param>
+		/// Force starts the shell
+		/// </summary>
+		/// <param name="ShellType">The shell type</param>
 		public static void StartShellForced(ShellType ShellType, params object[] ShellArgs)
 		{
 			// Make a shell executor based on shell type to select a specific executor (if the shell type is not UESH, and if the new shell isn't a mother shell)
@@ -55,7 +55,7 @@ namespace KS.Shell.ShellBase.Shells
 			var ShellExecute = GetShellExecutor(ShellType);
 
 			// Make a new instance of shell information
-			var ShellCommandThread = new KernelThread($"{ShellType} Command Thread", false, (_) => GetCommand.ExecuteCommand());
+			var ShellCommandThread = new KernelThread($"{ShellType} Command Thread", false, (param) => GetCommand.ExecuteCommand((GetCommand.ExecuteCommandThreadParameters)param));
 			var ShellInfo = new ShellInfo(ShellType, ShellExecute, ShellCommandThread);
 
 			// Now, initialize the command autocomplete handler. This will not be invoked if we have auto completion disabled.
@@ -67,8 +67,8 @@ namespace KS.Shell.ShellBase.Shells
 		}
 
 		/// <summary>
-        /// Kills the last running shell
-        /// </summary>
+		/// Kills the last running shell
+		/// </summary>
 		public static void KillShell()
 		{
 			// We must have at least two shells to kill the last shell. Else, we will have zero shells running, making us look like we've logged out!
@@ -84,8 +84,8 @@ namespace KS.Shell.ShellBase.Shells
 		}
 
 		/// <summary>
-        /// Force kills the last running shell
-        /// </summary>
+		/// Force kills the last running shell
+		/// </summary>
 		public static void KillShellForced()
 		{
 			if (ShellStack.Count >= 1)
@@ -96,8 +96,8 @@ namespace KS.Shell.ShellBase.Shells
 		}
 
 		/// <summary>
-        /// Cleans up the shell stack
-        /// </summary>
+		/// Cleans up the shell stack
+		/// </summary>
 		public static void PurgeShells()
 		{
 			// Remove these shells from the stack
@@ -105,9 +105,9 @@ namespace KS.Shell.ShellBase.Shells
 		}
 
 		/// <summary>
-        /// Gets the shell executor based on the shell type
-        /// </summary>
-        /// <param name="ShellType">The requested shell type</param>
+		/// Gets the shell executor based on the shell type
+		/// </summary>
+		/// <param name="ShellType">The requested shell type</param>
 		public static ShellExecutor GetShellExecutor(ShellType ShellType)
 		{
 			switch (ShellType)

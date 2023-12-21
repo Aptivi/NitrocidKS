@@ -26,35 +26,35 @@ namespace KS.Arguments.ArgumentBase
 	{
 
 		/// <summary>
-        /// Target kernel argument that the user executed in shell
-        /// </summary>
+		/// Target kernel argument that the user executed in shell
+		/// </summary>
 		public string Argument { get; private set; }
 		/// <summary>
-        /// Text version of the provided arguments and switches
-        /// </summary>
+		/// Text version of the provided arguments and switches
+		/// </summary>
 		public string ArgumentsText { get; private set; }
 		/// <summary>
-        /// List version of the provided arguments and switches
-        /// </summary>
+		/// List version of the provided arguments and switches
+		/// </summary>
 		public string[] FullArgumentsList { get; private set; }
 		/// <summary>
-        /// List version of the provided arguments
-        /// </summary>
+		/// List version of the provided arguments
+		/// </summary>
 		public string[] ArgumentsList { get; private set; }
 		/// <summary>
-        /// List version of the provided switches
-        /// </summary>
+		/// List version of the provided switches
+		/// </summary>
 		public string[] SwitchesList { get; private set; }
 		/// <summary>
-        /// Checks to see if the required arguments are provided
-        /// </summary>
+		/// Checks to see if the required arguments are provided
+		/// </summary>
 		public bool RequiredArgumentsProvided { get; private set; }
 
 		/// <summary>
-        /// Makes a new instance of the kernel argument argument info with the user-provided command text
-        /// </summary>
-        /// <param name="ArgumentText">Kernel argument text that the user provided</param>
-        /// <param name="ArgumentType">Kernel argument type. Consult the <see cref="ArgumentType"/> enum for information about supported shells.</param>
+		/// Makes a new instance of the kernel argument argument info with the user-provided command text
+		/// </summary>
+		/// <param name="ArgumentText">Kernel argument text that the user provided</param>
+		/// <param name="ArgumentType">Kernel argument type. Consult the <see cref="ArgumentType"/> enum for information about supported shells.</param>
 		internal ProvidedArgumentArgumentsInfo(string ArgumentText, ArgumentType ArgumentType)
 		{
 			string Argument;
@@ -88,7 +88,7 @@ namespace KS.Arguments.ArgumentBase
 			DebugWriter.Wdbg(DebugLevel.I, "Index: {0}", index);
 
 			// Split the requested command string into words
-			string[] words = ArgumentText.Split(new[] { ' ' });
+			string[] words = ArgumentText.Split([' ']);
 			for (int i = 0, loopTo = words.Length - 1; i <= loopTo; i++)
 				DebugWriter.Wdbg(DebugLevel.I, "Word {0}: {1}", i + 1, words[i]);
 			Argument = words[0];
@@ -133,8 +133,8 @@ namespace KS.Arguments.ArgumentBase
 
 			// Install the parsed values to the new class instance
 			FullArgumentsList = EnclosedArgs?.ToArray();
-			ArgumentsList = FinalArgs.ToArray();
-			SwitchesList = FinalSwitches.ToArray();
+			ArgumentsList = [.. FinalArgs];
+			SwitchesList = [.. FinalSwitches];
 			ArgumentsText = strArgs;
 			this.Argument = Argument;
 			this.RequiredArgumentsProvided = RequiredArgumentsProvided;

@@ -32,8 +32,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Initialize everything that is required before starting unit tests
-    /// </summary>
+		/// Initialize everything that is required before starting unit tests
+		/// </summary>
 		[OneTimeSetUp]
 		public static void ReadyEverything()
 		{
@@ -57,8 +57,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Clean up everything that the unit tests made
-    /// </summary>
+		/// Clean up everything that the unit tests made
+		/// </summary>
 		[OneTimeTearDown]
 		public static void CleanEverything()
 		{

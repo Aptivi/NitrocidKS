@@ -25,12 +25,12 @@ namespace KS.Network.RemoteDebug.Interface
 	{
 
 		/// <summary>
-        /// Executes the command with the given argument
-        /// </summary>
-        /// <param name="StringArgs">Arguments in a string</param>
-        /// <param name="ListArgs">List of provided arguments</param>
-        /// <param name="SocketStreamWriter">Target debug devide to write on</param>
-        /// <param name="DeviceAddress">Target device address</param>
+		/// Executes the command with the given argument
+		/// </summary>
+		/// <param name="StringArgs">Arguments in a string</param>
+		/// <param name="ListArgs">List of provided arguments</param>
+		/// <param name="SocketStreamWriter">Target debug devide to write on</param>
+		/// <param name="DeviceAddress">Target device address</param>
 		void Execute(string StringArgs, string[] ListArgs, StreamWriter SocketStreamWriter, string DeviceAddress);
 
 	}

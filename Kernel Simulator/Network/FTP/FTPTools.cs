@@ -35,7 +35,6 @@ using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 using KS.Misc.Writers.FancyWriters;
 using KS.Network.FTP.Transfer;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Network.FTP
 {
@@ -43,11 +42,11 @@ namespace KS.Network.FTP
 	{
 
 		/// <summary>
-        /// Prompts user for a password
-        /// </summary>
-        /// <param name="user">A user name</param>
-        /// <param name="Address">A host address</param>
-        /// <param name="Port">A port for the address</param>
+		/// Prompts user for a password
+		/// </summary>
+		/// <param name="user">A user name</param>
+		/// <param name="Address">A host address</param>
+		/// <param name="Port">A port for the address</param>
 		public static void PromptForPassword(string user, string Address = "", int Port = 0, FtpEncryptionMode EncryptionMode = FtpEncryptionMode.Explicit)
 		{
 			// Make a new FTP client object instance (Used in case logging in using speed dial)
@@ -86,9 +85,9 @@ namespace KS.Network.FTP
 		}
 
 		/// <summary>
-        /// Tries to connect to the FTP server
-        /// </summary>
-        /// <param name="address">An FTP server. You may specify it like "[address]" or "[address]:[port]"</param>
+		/// Tries to connect to the FTP server
+		/// </summary>
+		/// <param name="address">An FTP server. You may specify it like "[address]" or "[address]:[port]"</param>
 		public static void TryToConnect(string address)
 		{
 			if (FTPShellCommon.FtpConnected == true)
@@ -113,7 +112,7 @@ namespace KS.Network.FTP
 					FTPShellCommon._clientFTP = new FtpClient()
 					{
 						Host = FtpHost,
-						Port = Conversions.ToInteger(FtpPort)
+						Port = Convert.ToInt32(FtpPort)
 					};
 					FTPShellCommon._clientFTP.Config.RetryAttempts = FTPShellCommon.FtpVerifyRetryAttempts;
 					FTPShellCommon._clientFTP.Config.ConnectTimeout = FTPShellCommon.FtpConnectTimeout;
@@ -123,7 +122,7 @@ namespace KS.Network.FTP
 
 					// Add handler for SSL validation
 					if (FTPShellCommon.FtpTryToValidateCertificate)
-						FTPShellCommon.ClientFTP.ValidateCertificate += new FtpSslValidation((_, __) => FTPTools.TryToValidate());
+						FTPShellCommon.ClientFTP.ValidateCertificate += new FtpSslValidation((ctrl, e) => TryToValidate((FtpClient)ctrl, e));
 
 					// Prompt for username
 					if (!string.IsNullOrWhiteSpace(FTPShellCommon.FtpUserPromptStyle))
@@ -154,8 +153,8 @@ namespace KS.Network.FTP
 		}
 
 		/// <summary>
-        /// Tries to connect to the FTP server.
-        /// </summary>
+		/// Tries to connect to the FTP server.
+		/// </summary>
 		private static void ConnectFTP()
 		{
 			// Prepare profiles
@@ -173,7 +172,7 @@ namespace KS.Network.FTP
 				{
 					string profanswer;
 					var profanswered = default(bool);
-					string[] ProfHeaders = new[] { "#", Translate.DoTranslation("Host Name"), Translate.DoTranslation("Username"), Translate.DoTranslation("Data Type"), Translate.DoTranslation("Encoding"), Translate.DoTranslation("Encryption"), Translate.DoTranslation("Protocols") };
+					string[] ProfHeaders = ["#", Translate.DoTranslation("Host Name"), Translate.DoTranslation("Username"), Translate.DoTranslation("Data Type"), Translate.DoTranslation("Encoding"), Translate.DoTranslation("Encryption"), Translate.DoTranslation("Protocols")];
 					var ProfData = new string[profiles.Count, 7];
 					TextWriterColor.Write(Translate.DoTranslation("More than one profile found. Select one:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
 					for (int i = 0, loopTo = profiles.Count - 1; i <= loopTo; i++)
@@ -197,7 +196,7 @@ namespace KS.Network.FTP
 							try
 							{
 								DebugWriter.Wdbg(DebugLevel.I, "Profile selected");
-								int AnswerNumber = Conversions.ToInteger(profanswer);
+								int AnswerNumber = Convert.ToInt32(profanswer);
 								profsel = profiles[AnswerNumber - 1];
 								profanswered = true;
 							}
@@ -265,8 +264,8 @@ namespace KS.Network.FTP
 		}
 
 		/// <summary>
-        /// Tries to validate certificate
-        /// </summary>
+		/// Tries to validate certificate
+		/// </summary>
 		public static void TryToValidate(FtpClient control, FtpSslValidationEventArgs e)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "Certificate checks");
@@ -294,7 +293,7 @@ namespace KS.Network.FTP
 					{
 						TextWriterColor.Write(Translate.DoTranslation("Are you sure that you want to connect?") + " (y/n) ", false, KernelColorTools.ColTypes.Question);
 						KernelColorTools.SetConsoleColor(KernelColorTools.InputColor);
-						Answer = Conversions.ToString(Input.DetectKeypress().KeyChar);
+						Answer = Convert.ToString(Input.DetectKeypress().KeyChar);
 						TextWriterColor.WritePlain("", true);
 						DebugWriter.Wdbg(DebugLevel.I, $"Answer is {Answer}");
 						if (Answer.ToLower() == "y")
@@ -314,8 +313,8 @@ namespace KS.Network.FTP
 		}
 
 		/// <summary>
-        /// Opens speed dial prompt
-        /// </summary>
+		/// Opens speed dial prompt
+		/// </summary>
 		public static void QuickConnect()
 		{
 			if (Checking.FileExists(Paths.GetKernelPath(KernelPathType.FTPSpeedDial)))
@@ -324,7 +323,7 @@ namespace KS.Network.FTP
 				DebugWriter.Wdbg(DebugLevel.I, "Speed dial length: {0}", SpeedDialLines.Count);
 				string Answer;
 				bool Answering = true;
-				string[] SpeedDialHeaders = new[] { "#", Translate.DoTranslation("Host Name"), Translate.DoTranslation("Host Port"), Translate.DoTranslation("Username"), Translate.DoTranslation("Encryption") };
+				string[] SpeedDialHeaders = ["#", Translate.DoTranslation("Host Name"), Translate.DoTranslation("Host Port"), Translate.DoTranslation("Username"), Translate.DoTranslation("Encryption")];
 				var SpeedDialData = new string[SpeedDialLines.Count, 5];
 				if (!(SpeedDialLines.Count == 0))
 				{
@@ -349,7 +348,7 @@ namespace KS.Network.FTP
 						if (StringQuery.IsStringNumeric(Answer))
 						{
 							DebugWriter.Wdbg(DebugLevel.I, "Response is numeric. IsStringNumeric(Answer) returned true. Checking to see if in-bounds...");
-							int AnswerInt = Conversions.ToInteger(Answer);
+							int AnswerInt = Convert.ToInt32(Answer);
 							if (AnswerInt <= SpeedDialLines.Count)
 							{
 								Answering = false;
@@ -359,9 +358,9 @@ namespace KS.Network.FTP
 								string Address = ChosenSpeedDialAddress;
 								string Port = (string)SpeedDialLines[ChosenSpeedDialAddress]["Port"];
 								string Username = (string)SpeedDialLines[ChosenSpeedDialAddress]["User"];
-								FtpEncryptionMode Encryption = (FtpEncryptionMode)Conversions.ToInteger(Enum.Parse(typeof(FtpEncryptionMode), (string)SpeedDialLines[ChosenSpeedDialAddress]["FTP Encryption Mode"]));
+								FtpEncryptionMode Encryption = (FtpEncryptionMode)Convert.ToInt32(Enum.Parse(typeof(FtpEncryptionMode), (string)SpeedDialLines[ChosenSpeedDialAddress]["FTP Encryption Mode"]));
 								DebugWriter.Wdbg(DebugLevel.I, "Address: {0}, Port: {1}, Username: {2}, Encryption: {3}", Address, Port, Username, Encryption);
-								PromptForPassword(Username, Address, Conversions.ToInteger(Port), Encryption);
+								PromptForPassword(Username, Address, Convert.ToInt32(Port), Encryption);
 							}
 							else
 							{
@@ -395,18 +394,18 @@ namespace KS.Network.FTP
 	{
 
 		/// <summary>
-        /// Writes any message that the tracer has received to the debugger.
-        /// </summary>
-        /// <param name="Message">A message</param>
+		/// Writes any message that the tracer has received to the debugger.
+		/// </summary>
+		/// <param name="Message">A message</param>
 		public override void Write(string Message)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, Message);
 		}
 
 		/// <summary>
-        /// Writes any message that the tracer has received to the debugger. Please note that this does exactly as Write() since the debugger only supports writing with newlines.
-        /// </summary>
-        /// <param name="Message">A message</param>
+		/// Writes any message that the tracer has received to the debugger. Please note that this does exactly as Write() since the debugger only supports writing with newlines.
+		/// </summary>
+		/// <param name="Message">A message</param>
 		public override void WriteLine(string Message)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, Message);

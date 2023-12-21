@@ -20,17 +20,17 @@
 namespace KS.Files.Folders
 {
 	/// <summary>
-    /// Sort directions
-    /// </summary>
+	/// Sort directions
+	/// </summary>
 	public enum FilesystemSortDirection
 	{
 		/// <summary>
-        /// Ascending order
-        /// </summary>
+		/// Ascending order
+		/// </summary>
 		Ascending = 1,
 		/// <summary>
-        /// Descending order
-        /// </summary>
+		/// Descending order
+		/// </summary>
 		Descending
 	}
 }

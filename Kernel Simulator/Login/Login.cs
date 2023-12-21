@@ -39,25 +39,25 @@ namespace KS.Login
 
 		// Variables
 		/// <summary>
-        /// Username prompt
-        /// </summary>
+		/// Username prompt
+		/// </summary>
 		public static string UsernamePrompt;
 		/// <summary>
-        /// Password prompt
-        /// </summary>
+		/// Password prompt
+		/// </summary>
 		public static string PasswordPrompt;
 		/// <summary>
-        /// List of usernames and passwords
-        /// </summary>
-		internal static Dictionary<string, string> Users = new();
+		/// List of usernames and passwords
+		/// </summary>
+		internal static Dictionary<string, string> Users = [];
 		/// <summary>
-        /// Current username
-        /// </summary>
+		/// Current username
+		/// </summary>
 		private static UserInfo CurrentUserInfo;
 
 		/// <summary>
-        /// Current username
-        /// </summary>
+		/// Current username
+		/// </summary>
 		public static UserInfo CurrentUser
 		{
 			get
@@ -67,8 +67,8 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Prompts user for login information
-        /// </summary>
+		/// Prompts user for login information
+		/// </summary>
 		public static void LoginPrompt()
 		{
 			while (true)
@@ -217,9 +217,9 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Prompts user for password
-        /// </summary>
-        /// <param name="usernamerequested">A username that is about to be logged in</param>
+		/// Prompts user for password
+		/// </summary>
+		/// <param name="usernamerequested">A username that is about to be logged in</param>
 		public static void ShowPasswordPrompt(string usernamerequested)
 		{
 			// Prompts user to enter a user's password
@@ -291,9 +291,9 @@ namespace KS.Login
 		}
 
 		/// <summary>
-        /// Signs in to the username
-        /// </summary>
-        /// <param name="signedInUser">A specified username</param>
+		/// Signs in to the username
+		/// </summary>
+		/// <param name="signedInUser">A specified username</param>
 		internal static void SignIn(string signedInUser)
 		{
 			// Release lock

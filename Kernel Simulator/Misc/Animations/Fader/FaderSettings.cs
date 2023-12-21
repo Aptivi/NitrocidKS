@@ -37,8 +37,8 @@ namespace KS.Misc.Animations.Fader
 		private int _faderMaximumBlueColorLevel = 255;
 
 		/// <summary>
-        /// [Fader] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [Fader] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public int FaderDelay
 		{
 			get
@@ -53,8 +53,8 @@ namespace KS.Misc.Animations.Fader
 			}
 		}
 		/// <summary>
-        /// [Fader] How many milliseconds to wait before fading the text out?
-        /// </summary>
+		/// [Fader] How many milliseconds to wait before fading the text out?
+		/// </summary>
 		public int FaderFadeOutDelay
 		{
 			get
@@ -69,8 +69,8 @@ namespace KS.Misc.Animations.Fader
 			}
 		}
 		/// <summary>
-        /// [Fader] Text for Fader. Shorter is better.
-        /// </summary>
+		/// [Fader] Text for Fader. Shorter is better.
+		/// </summary>
 		public string FaderWrite
 		{
 			get
@@ -85,8 +85,8 @@ namespace KS.Misc.Animations.Fader
 			}
 		}
 		/// <summary>
-        /// [Fader] How many fade steps to do?
-        /// </summary>
+		/// [Fader] How many fade steps to do?
+		/// </summary>
 		public int FaderMaxSteps
 		{
 			get
@@ -101,8 +101,8 @@ namespace KS.Misc.Animations.Fader
 			}
 		}
 		/// <summary>
-        /// [Fader] Screensaver background color
-        /// </summary>
+		/// [Fader] Screensaver background color
+		/// </summary>
 		public string FaderBackgroundColor
 		{
 			get
@@ -115,8 +115,8 @@ namespace KS.Misc.Animations.Fader
 			}
 		}
 		/// <summary>
-        /// [Fader] The minimum red color level (true color)
-        /// </summary>
+		/// [Fader] The minimum red color level (true color)
+		/// </summary>
 		public int FaderMinimumRedColorLevel
 		{
 			get
@@ -133,8 +133,8 @@ namespace KS.Misc.Animations.Fader
 			}
 		}
 		/// <summary>
-        /// [Fader] The minimum green color level (true color)
-        /// </summary>
+		/// [Fader] The minimum green color level (true color)
+		/// </summary>
 		public int FaderMinimumGreenColorLevel
 		{
 			get
@@ -151,8 +151,8 @@ namespace KS.Misc.Animations.Fader
 			}
 		}
 		/// <summary>
-        /// [Fader] The minimum blue color level (true color)
-        /// </summary>
+		/// [Fader] The minimum blue color level (true color)
+		/// </summary>
 		public int FaderMinimumBlueColorLevel
 		{
 			get
@@ -169,8 +169,8 @@ namespace KS.Misc.Animations.Fader
 			}
 		}
 		/// <summary>
-        /// [Fader] The maximum red color level (true color)
-        /// </summary>
+		/// [Fader] The maximum red color level (true color)
+		/// </summary>
 		public int FaderMaximumRedColorLevel
 		{
 			get
@@ -187,8 +187,8 @@ namespace KS.Misc.Animations.Fader
 			}
 		}
 		/// <summary>
-        /// [Fader] The maximum green color level (true color)
-        /// </summary>
+		/// [Fader] The maximum green color level (true color)
+		/// </summary>
 		public int FaderMaximumGreenColorLevel
 		{
 			get
@@ -205,8 +205,8 @@ namespace KS.Misc.Animations.Fader
 			}
 		}
 		/// <summary>
-        /// [Fader] The maximum blue color level (true color)
-        /// </summary>
+		/// [Fader] The maximum blue color level (true color)
+		/// </summary>
 		public int FaderMaximumBlueColorLevel
 		{
 			get

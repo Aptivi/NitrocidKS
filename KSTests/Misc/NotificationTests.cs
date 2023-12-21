@@ -30,8 +30,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests notification creation
-    /// </summary>
+		/// Tests notification creation
+		/// </summary>
 		[Test]
 		public void TestNotifyCreate()
 		{
@@ -40,8 +40,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests custom notification creation
-    /// </summary>
+		/// Tests custom notification creation
+		/// </summary>
 		[Test]
 		public void TestNotifyCreateCustom()
 		{
@@ -66,8 +66,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests notification sending
-    /// </summary>
+		/// Tests notification sending
+		/// </summary>
 		[Test]
 		public void TestNotifySend()
 		{
@@ -77,8 +77,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests notifications sending
-    /// </summary>
+		/// Tests notifications sending
+		/// </summary>
 		[Test]
 		public void TestNotifySendRange()
 		{
@@ -91,8 +91,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests notification dismiss
-    /// </summary>
+		/// Tests notification dismiss
+		/// </summary>
 		[Test]
 		public void TestNotifyDismiss()
 		{

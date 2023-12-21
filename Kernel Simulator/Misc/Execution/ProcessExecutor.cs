@@ -38,17 +38,17 @@ namespace KS.Misc.Execution
 		internal static KernelThread NewDataDetector = new("New data detection for process", false, DetectNewData);
 
 		/// <summary>
-        /// Thread parameters for ExecuteProcess()
-        /// </summary>
+		/// Thread parameters for ExecuteProcess()
+		/// </summary>
 		internal class ExecuteProcessThreadParameters
 		{
 			/// <summary>
-            /// Full path to file
-            /// </summary>
+			/// Full path to file
+			/// </summary>
 			internal string File;
 			/// <summary>
-            /// Arguments, if any
-            /// </summary>
+			/// Arguments, if any
+			/// </summary>
 			internal string Args;
 
 			internal ExecuteProcessThreadParameters(string File, string Args)
@@ -59,30 +59,30 @@ namespace KS.Misc.Execution
 		}
 
 		/// <summary>
-        /// Executes a file with specified arguments
-        /// </summary>
+		/// Executes a file with specified arguments
+		/// </summary>
 		internal static void ExecuteProcess(ExecuteProcessThreadParameters ThreadParams)
 		{
 			ExecuteProcess(ThreadParams.File, ThreadParams.Args);
 		}
 
 		/// <summary>
-        /// Executes a file with specified arguments
-        /// </summary>
-        /// <param name="File">Full path to file</param>
-        /// <param name="Args">Arguments, if any</param>
-        /// <returns>Application exit code. -1 if internal error occurred.</returns>
+		/// Executes a file with specified arguments
+		/// </summary>
+		/// <param name="File">Full path to file</param>
+		/// <param name="Args">Arguments, if any</param>
+		/// <returns>Application exit code. -1 if internal error occurred.</returns>
 		public static int ExecuteProcess(string File, string Args)
 		{
 			return ExecuteProcess(File, Args, CurrentDirectory.CurrentDir);
 		}
 
 		/// <summary>
-        /// Executes a file with specified arguments
-        /// </summary>
-        /// <param name="File">Full path to file</param>
-        /// <param name="Args">Arguments, if any</param>
-        /// <returns>Application exit code. -1 if internal error occurred.</returns>
+		/// Executes a file with specified arguments
+		/// </summary>
+		/// <param name="File">Full path to file</param>
+		/// <param name="Args">Arguments, if any</param>
+		/// <returns>Application exit code. -1 if internal error occurred.</returns>
 		public static int ExecuteProcess(string File, string Args, string WorkingDirectory)
 		{
 			try
@@ -155,10 +155,10 @@ namespace KS.Misc.Execution
 		}
 
 		/// <summary>
-        /// Handles executable output
-        /// </summary>
-        /// <param name="sendingProcess">Sender</param>
-        /// <param name="outLine">Output</param>
+		/// Handles executable output
+		/// </summary>
+		/// <param name="sendingProcess">Sender</param>
+		/// <param name="outLine">Output</param>
 		private static void ExecutableOutput(object sendingProcess, DataReceivedEventArgs outLine)
 		{
 			NewDataSpotted = true;
@@ -168,8 +168,8 @@ namespace KS.Misc.Execution
 		}
 
 		/// <summary>
-        /// Detects new data
-        /// </summary>
+		/// Detects new data
+		/// </summary>
 		private static void DetectNewData()
 		{
 			while (Thread.CurrentThread.IsAlive)

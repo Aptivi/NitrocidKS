@@ -29,8 +29,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests initializing current times in all timezones
-    /// </summary>
+		/// Tests initializing current times in all timezones
+		/// </summary>
 		[Test]
 		[Description("Initialization")]
 		public void TestGetTimeZones()

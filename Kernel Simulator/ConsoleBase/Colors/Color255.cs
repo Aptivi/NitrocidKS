@@ -19,6 +19,7 @@
 
 using System.Runtime.InteropServices;
 using KS.Misc.Writers.DebugWriters;
+using KS.Resources;
 using Newtonsoft.Json.Linq;
 
 namespace KS.ConsoleBase.Colors
@@ -27,45 +28,44 @@ namespace KS.ConsoleBase.Colors
 	{
 
 		/// <summary>
-        /// The 255 console colors data JSON token to get information about these colors
-        /// </summary>
-		public readonly static JToken ColorDataJson = JToken.Parse(My.Resources.Resources.ConsoleColorsData);
+		/// The 255 console colors data JSON token to get information about these colors
+		/// </summary>
+		public static readonly JToken ColorDataJson = JToken.Parse(KernelResources.ConsoleColorsData);
 
 		/// <summary>
-        /// [Windows] Sets console mode
-        /// </summary>
-        /// <param name="hConsoleHandle">Console Handle</param>
-        /// <param name="mode">Mode</param>
-        /// <returns>True if succeeded, false if failed</returns>
+		/// [Windows] Sets console mode
+		/// </summary>
+		/// <param name="hConsoleHandle">Console Handle</param>
+		/// <param name="mode">Mode</param>
+		/// <returns>True if succeeded, false if failed</returns>
 		[DllImport("kernel32.dll", SetLastError = true)]
 		private static extern bool SetConsoleMode(IntPtr hConsoleHandle, int mode);
 
 		/// <summary>
-        /// [Windows] Gets console mode
-        /// </summary>
-        /// <param name="handle">Console handle</param>
-        /// <param name="mode">Mode</param>
-        /// <returns>True if succeeded, false if failed</returns>
+		/// [Windows] Gets console mode
+		/// </summary>
+		/// <param name="handle">Console handle</param>
+		/// <param name="mode">Mode</param>
+		/// <returns>True if succeeded, false if failed</returns>
 		[DllImport("kernel32.dll", SetLastError = true)]
 		private static extern bool GetConsoleMode(IntPtr handle, out int mode);
 
 		/// <summary>
-        /// [Windows] Gets console handle
-        /// </summary>
-        /// <param name="handle">Handle number</param>
-        /// <returns>True if succeeded, false if failed</returns>
+		/// [Windows] Gets console handle
+		/// </summary>
+		/// <param name="handle">Handle number</param>
+		/// <returns>True if succeeded, false if failed</returns>
 		[DllImport("kernel32.dll", SetLastError = true)]
 		private static extern IntPtr GetStdHandle(int handle);
 
 		/// <summary>
-        /// [Windows] Initializes 255 color support
-        /// </summary>
+		/// [Windows] Initializes 255 color support
+		/// </summary>
 		public static void Initialize255()
 		{
 			var handle = GetStdHandle(-11);
 			DebugWriter.Wdbg(DebugLevel.I, "Integer pointer {0}", handle);
-			int mode;
-			GetConsoleMode(handle, out mode);
+			GetConsoleMode(handle, out int mode);
 			DebugWriter.Wdbg(DebugLevel.I, "Mode: {0}", mode);
 			if (!(mode == 7))
 			{
@@ -75,9 +75,9 @@ namespace KS.ConsoleBase.Colors
 		}
 
 		/// <summary>
-        /// A simplification for <see cref="Convert.ToChar(Integer)"/> function to return the ESC character
-        /// </summary>
-        /// <returns>ESC</returns>
+		/// A simplification for <see cref="Convert.ToChar(Integer)"/> function to return the ESC character
+		/// </summary>
+		/// <returns>ESC</returns>
 		public static char GetEsc()
 		{
 			return Convert.ToChar(0x1B);

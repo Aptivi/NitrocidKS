@@ -30,41 +30,41 @@ namespace KS.Misc.Encryption
 	{
 
 		/// <summary>
-        /// Encryption algorithms supported by KS
-        /// </summary>
+		/// Encryption algorithms supported by KS
+		/// </summary>
 		public enum Algorithms
 		{
 			/// <summary>
-            /// The MD5 Algorithm
-            /// </summary>
+			/// The MD5 Algorithm
+			/// </summary>
 			MD5,
 			/// <summary>
-            /// The SHA1 Algorithm
-            /// </summary>
+			/// The SHA1 Algorithm
+			/// </summary>
 			SHA1,
 			/// <summary>
-            /// The SHA256 Algorithm
-            /// </summary>
+			/// The SHA256 Algorithm
+			/// </summary>
 			SHA256,
 			/// <summary>
-            /// The SHA384 Algorithm
-            /// </summary>
+			/// The SHA384 Algorithm
+			/// </summary>
 			SHA384,
 			/// <summary>
-            /// The SHA512 Algorithm
-            /// </summary>
+			/// The SHA512 Algorithm
+			/// </summary>
 			SHA512,
 			/// <summary>
-            /// The CRC32 Algorithm
-            /// </summary>
+			/// The CRC32 Algorithm
+			/// </summary>
 			CRC32
 		}
 
 		/// <summary>
-        /// Translates the array of encrypted bytes to string
-        /// </summary>
-        /// <param name="encrypted">Array of encrypted bytes</param>
-        /// <returns>A string representation of hash sum</returns>
+		/// Translates the array of encrypted bytes to string
+		/// </summary>
+		/// <param name="encrypted">Array of encrypted bytes</param>
+		/// <returns>A string representation of hash sum</returns>
 		public static string GetArrayEnc(byte[] encrypted)
 		{
 			string hash = "";
@@ -78,11 +78,11 @@ namespace KS.Misc.Encryption
 		}
 
 		/// <summary>
-        /// Encrypts a string
-        /// </summary>
-        /// <param name="str">Source string</param>
-        /// <param name="algorithm">Algorithm</param>
-        /// <returns>Encrypted hash sum</returns>
+		/// Encrypts a string
+		/// </summary>
+		/// <param name="str">Source string</param>
+		/// <param name="algorithm">Algorithm</param>
+		/// <returns>Encrypted hash sum</returns>
 		public static string GetEncryptedString(string str, Algorithms algorithm)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "Selected algorithm: {0}", algorithm.ToString());
@@ -124,11 +124,11 @@ namespace KS.Misc.Encryption
 		}
 
 		/// <summary>
-        /// Encrypts a file
-        /// </summary>
-        /// <param name="str">Source stream</param>
-        /// <param name="algorithm">Algorithm</param>
-        /// <returns>Encrypted hash sum</returns>
+		/// Encrypts a file
+		/// </summary>
+		/// <param name="str">Source stream</param>
+		/// <param name="algorithm">Algorithm</param>
+		/// <returns>Encrypted hash sum</returns>
 		public static string GetEncryptedFile(Stream str, Algorithms algorithm)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "Selected algorithm: {0}", algorithm.ToString());
@@ -170,11 +170,11 @@ namespace KS.Misc.Encryption
 		}
 
 		/// <summary>
-        /// Encrypts a file
-        /// </summary>
-        /// <param name="Path">Relative path</param>
-        /// <param name="algorithm">Algorithm</param>
-        /// <returns>Encrypted hash sum</returns>
+		/// Encrypts a file
+		/// </summary>
+		/// <param name="Path">Relative path</param>
+		/// <param name="algorithm">Algorithm</param>
+		/// <returns>Encrypted hash sum</returns>
 		public static string GetEncryptedFile(string Path, Algorithms algorithm)
 		{
 			Path = Filesystem.NeutralizePath(Path);
@@ -185,10 +185,10 @@ namespace KS.Misc.Encryption
 		}
 
 		/// <summary>
-        /// Gets empty hash
-        /// </summary>
-        /// <param name="Algorithm">Algorithm</param>
-        /// <returns>Empty hash</returns>
+		/// Gets empty hash
+		/// </summary>
+		/// <param name="Algorithm">Algorithm</param>
+		/// <returns>Empty hash</returns>
 		public static string GetEmptyHash(Algorithms Algorithm)
 		{
 			return GetEncryptedString("", Algorithm);

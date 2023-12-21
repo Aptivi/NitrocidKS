@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 
@@ -23,7 +24,6 @@ using KS.Misc.Reflection;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Misc.Editors.HexEdit.Commands
 {
@@ -34,9 +34,9 @@ namespace KS.Misc.Editors.HexEdit.Commands
 		{
 			if (StringQuery.IsStringNumeric(ListArgs[0]))
 			{
-				if (Conversions.ToInteger(ListArgs[0]) <= HexEditShellCommon.HexEdit_FileBytes.LongCount())
+				if (Convert.ToInt32(ListArgs[0]) <= HexEditShellCommon.HexEdit_FileBytes.LongCount())
 				{
-					HexEditTools.HexEdit_DeleteByte(Conversions.ToLong(ListArgs[0]));
+					HexEditTools.HexEdit_DeleteByte(Convert.ToInt64(ListArgs[0]));
 					TextWriterColor.Write(Translate.DoTranslation("Byte deleted."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success));
 				}
 				else

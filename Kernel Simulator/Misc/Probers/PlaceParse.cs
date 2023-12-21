@@ -36,11 +36,11 @@ namespace KS.Misc.Probers
 	{
 
 		/// <summary>
-        /// Probes the placeholders found in string
-        /// </summary>
-        /// <param name="text">Specified string</param>
-        /// <param name="ThrowIfFailure">Throw if the placeholder parsing fails</param>
-        /// <returns>A string that has the parsed placeholders</returns>
+		/// Probes the placeholders found in string
+		/// </summary>
+		/// <param name="text">Specified string</param>
+		/// <param name="ThrowIfFailure">Throw if the placeholder parsing fails</param>
+		/// <returns>A string that has the parsed placeholders</returns>
 		public static string ProbePlaces(string text, bool ThrowIfFailure = false)
 		{
 			Kernel.Kernel.KernelEventManager.RaisePlaceholderParsing(text);

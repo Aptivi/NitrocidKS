@@ -26,8 +26,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// [Kernel thread test] Write hello to console
-    /// </summary>
+		/// [Kernel thread test] Write hello to console
+		/// </summary>
 		public static void WriteHello()
 		{
 			try
@@ -37,15 +37,15 @@ namespace KSTests
 				while (true)
 					Thread.Sleep(1);
 			}
-			catch (ThreadInterruptedException ex)
+			catch (ThreadInterruptedException)
 			{
 				Console.WriteLine("- Goodbye from thread: {0} [{1}]", Thread.CurrentThread.Name, Thread.CurrentThread.ManagedThreadId);
 			}
 		}
 
 		/// <summary>
-    /// [Kernel thread test] Write hello to console with argument
-    /// </summary>
+		/// [Kernel thread test] Write hello to console with argument
+		/// </summary>
 		public static void WriteHelloWithArgument(string Name)
 		{
 			try
@@ -55,7 +55,7 @@ namespace KSTests
 				while (true)
 					Thread.Sleep(1);
 			}
-			catch (ThreadInterruptedException ex)
+			catch (ThreadInterruptedException)
 			{
 				Console.WriteLine("- Goodbye from thread: {0} [{1}]", Thread.CurrentThread.Name, Thread.CurrentThread.ManagedThreadId);
 			}

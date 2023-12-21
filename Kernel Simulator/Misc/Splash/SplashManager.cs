@@ -39,11 +39,11 @@ namespace KS.Misc.Splash
 
 		public static string SplashName = "Simple";
 		internal static KernelThread SplashThread = new("Kernel Splash Thread", false, () => CurrentSplash.Display());
-		private readonly static Dictionary<string, SplashInfo> InstalledSplashes = new() { { "Simple", new SplashInfo("Simple", true, new SplashSimple()) }, { "Progress", new SplashInfo("Progress", true, new SplashProgress()) }, { "Blank", new SplashInfo("Blank", false, new SplashBlank()) }, { "Fader", new SplashInfo("Fader", true, new SplashFader()) }, { "FaderBack", new SplashInfo("FaderBack", true, new SplashFaderBack()) }, { "BeatFader", new SplashInfo("BeatFader", true, new SplashBeatFader()) }, { "systemd", new SplashInfo("systemd", true, new SplashSystemd()) }, { "sysvinit", new SplashInfo("sysvinit", true, new SplashSysvinit()) }, { "openrc", new SplashInfo("openrc", true, new SplashOpenRC()) }, { "Pulse", new SplashInfo("Pulse", true, new SplashPulse()) }, { "BeatPulse", new SplashInfo("BeatPulse", true, new SplashBeatPulse()) }, { "EdgePulse", new SplashInfo("EdgePulse", true, new SplashEdgePulse()) }, { "BeatEdgePulse", new SplashInfo("BeatEdgePulse", true, new SplashBeatEdgePulse()) } };
+		private static readonly Dictionary<string, SplashInfo> InstalledSplashes = new() { { "Simple", new SplashInfo("Simple", true, new SplashSimple()) }, { "Progress", new SplashInfo("Progress", true, new SplashProgress()) }, { "Blank", new SplashInfo("Blank", false, new SplashBlank()) }, { "Fader", new SplashInfo("Fader", true, new SplashFader()) }, { "FaderBack", new SplashInfo("FaderBack", true, new SplashFaderBack()) }, { "BeatFader", new SplashInfo("BeatFader", true, new SplashBeatFader()) }, { "systemd", new SplashInfo("systemd", true, new SplashSystemd()) }, { "sysvinit", new SplashInfo("sysvinit", true, new SplashSysvinit()) }, { "openrc", new SplashInfo("openrc", true, new SplashOpenRC()) }, { "Pulse", new SplashInfo("Pulse", true, new SplashPulse()) }, { "BeatPulse", new SplashInfo("BeatPulse", true, new SplashBeatPulse()) }, { "EdgePulse", new SplashInfo("EdgePulse", true, new SplashEdgePulse()) }, { "BeatEdgePulse", new SplashInfo("BeatEdgePulse", true, new SplashBeatEdgePulse()) } };
 
 		/// <summary>
-        /// Current splash screen
-        /// </summary>
+		/// Current splash screen
+		/// </summary>
 		public static ISplash CurrentSplash
 		{
 			get
@@ -60,8 +60,8 @@ namespace KS.Misc.Splash
 		}
 
 		/// <summary>
-        /// Current splash screen info instance
-        /// </summary>
+		/// Current splash screen info instance
+		/// </summary>
 		public static SplashInfo CurrentSplashInfo
 		{
 			get
@@ -78,8 +78,8 @@ namespace KS.Misc.Splash
 		}
 
 		/// <summary>
-        /// All the installed splashes either normal or custom
-        /// </summary>
+		/// All the installed splashes either normal or custom
+		/// </summary>
 		public static Dictionary<string, SplashInfo> Splashes
 		{
 			get
@@ -89,8 +89,8 @@ namespace KS.Misc.Splash
 		}
 
 		/// <summary>
-        /// Loads all the splashes from the KSSplashes folder
-        /// </summary>
+		/// Loads all the splashes from the KSSplashes folder
+		/// </summary>
 		public static void LoadSplashes()
 		{
 			string SplashPath = Paths.GetKernelPath(KernelPathType.CustomSplashes);
@@ -155,8 +155,8 @@ namespace KS.Misc.Splash
 		}
 
 		/// <summary>
-        /// Unloads all the splashes from the KSSplashes folder
-        /// </summary>
+		/// Unloads all the splashes from the KSSplashes folder
+		/// </summary>
 		public static void UnloadSplashes()
 		{
 			var SplashFiles = Listing.CreateList(Paths.GetKernelPath(KernelPathType.CustomSplashes));
@@ -194,9 +194,9 @@ namespace KS.Misc.Splash
 		}
 
 		/// <summary>
-        /// Gets the splash instance from compiled assembly
-        /// </summary>
-        /// <param name="Assembly">An assembly</param>
+		/// Gets the splash instance from compiled assembly
+		/// </summary>
+		/// <param name="Assembly">An assembly</param>
 		public static ISplash GetSplashInstance(Assembly Assembly)
 		{
 			foreach (Type t in Assembly.GetTypes())
@@ -208,8 +208,8 @@ namespace KS.Misc.Splash
 		}
 
 		/// <summary>
-        /// Opens the splash screen
-        /// </summary>
+		/// Opens the splash screen
+		/// </summary>
 		public static void OpenSplash()
 		{
 			if (Flags.EnableSplash)
@@ -222,8 +222,8 @@ namespace KS.Misc.Splash
 		}
 
 		/// <summary>
-        /// Closes the splash screen
-        /// </summary>
+		/// Closes the splash screen
+		/// </summary>
 		public static void CloseSplash()
 		{
 			if (Flags.EnableSplash)

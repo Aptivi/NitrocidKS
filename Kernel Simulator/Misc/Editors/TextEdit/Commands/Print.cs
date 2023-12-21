@@ -23,7 +23,7 @@ using KS.Misc.Text;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
+using System;
 
 namespace KS.Misc.Editors.TextEdit.Commands
 {
@@ -42,9 +42,9 @@ namespace KS.Misc.Editors.TextEdit.Commands
 					DebugWriter.Wdbg(DebugLevel.I, "Is it numeric? {0}", StringQuery.IsStringNumeric(ListArgs[0]));
 					if (StringQuery.IsStringNumeric(ListArgs[0]))
 					{
-						LineNumber = Conversions.ToInteger(ListArgs[0]);
+						LineNumber = Convert.ToInt32(ListArgs[0]);
 						DebugWriter.Wdbg(DebugLevel.I, "File lines: {0}", TextEditShellCommon.TextEdit_FileLines.Count);
-						if (Conversions.ToInteger(ListArgs[0]) <= TextEditShellCommon.TextEdit_FileLines.Count)
+						if (Convert.ToInt32(ListArgs[0]) <= TextEditShellCommon.TextEdit_FileLines.Count)
 						{
 							string Line = TextEditShellCommon.TextEdit_FileLines[LineNumber - 1];
 							DebugWriter.Wdbg(DebugLevel.I, "Line number: {0} ({1})", LineNumber, Line);
@@ -69,8 +69,8 @@ namespace KS.Misc.Editors.TextEdit.Commands
 					DebugWriter.Wdbg(DebugLevel.I, "Is it numeric? {0}", StringQuery.IsStringNumeric(ListArgs[0]), StringQuery.IsStringNumeric(ListArgs[1]));
 					if (StringQuery.IsStringNumeric(ListArgs[0]) & StringQuery.IsStringNumeric(ListArgs[1]))
 					{
-						int LineNumberStart = Conversions.ToInteger(ListArgs[0]);
-						int LineNumberEnd = Conversions.ToInteger(ListArgs[1]);
+						int LineNumberStart = Convert.ToInt32(ListArgs[0]);
+						int LineNumberEnd = Convert.ToInt32(ListArgs[1]);
 						LineNumberStart.SwapIfSourceLarger(ref LineNumberEnd);
 						DebugWriter.Wdbg(DebugLevel.I, "File lines: {0}", TextEditShellCommon.TextEdit_FileLines.Count);
 						if (LineNumberStart <= TextEditShellCommon.TextEdit_FileLines.Count & LineNumberEnd <= TextEditShellCommon.TextEdit_FileLines.Count)

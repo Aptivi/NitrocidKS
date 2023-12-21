@@ -42,8 +42,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _glitterColorMaximumColorLevel = 255;
 
 		/// <summary>
-        /// [GlitterColor] Enable 255 color support. Has a higher priority than 16 color support.
-        /// </summary>
+		/// [GlitterColor] Enable 255 color support. Has a higher priority than 16 color support.
+		/// </summary>
 		public static bool GlitterColor255Colors
 		{
 			get
@@ -56,8 +56,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [GlitterColor] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
+		/// [GlitterColor] Enable truecolor support. Has a higher priority than 255 color support.
+		/// </summary>
 		public static bool GlitterColorTrueColor
 		{
 			get
@@ -70,8 +70,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [GlitterColor] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [GlitterColor] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int GlitterColorDelay
 		{
 			get
@@ -86,8 +86,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [GlitterColor] The minimum red color level (true color)
-        /// </summary>
+		/// [GlitterColor] The minimum red color level (true color)
+		/// </summary>
 		public static int GlitterColorMinimumRedColorLevel
 		{
 			get
@@ -104,8 +104,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [GlitterColor] The minimum green color level (true color)
-        /// </summary>
+		/// [GlitterColor] The minimum green color level (true color)
+		/// </summary>
 		public static int GlitterColorMinimumGreenColorLevel
 		{
 			get
@@ -122,8 +122,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [GlitterColor] The minimum blue color level (true color)
-        /// </summary>
+		/// [GlitterColor] The minimum blue color level (true color)
+		/// </summary>
 		public static int GlitterColorMinimumBlueColorLevel
 		{
 			get
@@ -140,8 +140,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [GlitterColor] The minimum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [GlitterColor] The minimum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int GlitterColorMinimumColorLevel
 		{
 			get
@@ -159,8 +159,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [GlitterColor] The maximum red color level (true color)
-        /// </summary>
+		/// [GlitterColor] The maximum red color level (true color)
+		/// </summary>
 		public static int GlitterColorMaximumRedColorLevel
 		{
 			get
@@ -177,8 +177,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [GlitterColor] The maximum green color level (true color)
-        /// </summary>
+		/// [GlitterColor] The maximum green color level (true color)
+		/// </summary>
 		public static int GlitterColorMaximumGreenColorLevel
 		{
 			get
@@ -195,8 +195,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [GlitterColor] The maximum blue color level (true color)
-        /// </summary>
+		/// [GlitterColor] The maximum blue color level (true color)
+		/// </summary>
 		public static int GlitterColorMaximumBlueColorLevel
 		{
 			get
@@ -213,8 +213,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [GlitterColor] The maximum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [GlitterColor] The maximum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int GlitterColorMaximumColorLevel
 		{
 			get

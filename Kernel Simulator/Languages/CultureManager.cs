@@ -30,8 +30,8 @@ namespace KS.Languages
 		public static CultureInfo CurrentCult = new("en-US");
 
 		/// <summary>
-        /// Updates current culture based on current language. If there are no cultures in the curent language, assume current culture.
-        /// </summary>
+		/// Updates current culture based on current language. If there are no cultures in the curent language, assume current culture.
+		/// </summary>
 		public static void UpdateCulture()
 		{
 			string StrCult = !(GetCulturesFromCurrentLang().Count == 0) ? GetCulturesFromCurrentLang()[0].EnglishName : CultureInfo.CurrentCulture.EnglishName;
@@ -53,9 +53,9 @@ namespace KS.Languages
 		}
 
 		/// <summary>
-        /// Updates current culture based on current language and custom culture
-        /// </summary>
-        /// <param name="Culture">Full culture name</param>
+		/// Updates current culture based on current language and custom culture
+		/// </summary>
+		/// <param name="Culture">Full culture name</param>
 		public static void UpdateCulture(string Culture)
 		{
 			var Cultures = GetCulturesFromCurrentLang();
@@ -74,16 +74,16 @@ namespace KS.Languages
 		}
 
 		/// <summary>
-        /// Gets all cultures available for the current language
-        /// </summary>
+		/// Gets all cultures available for the current language
+		/// </summary>
 		public static List<CultureInfo> GetCulturesFromCurrentLang()
 		{
 			return LanguageManager.Languages[LanguageManager.CurrentLanguage].Cultures;
 		}
 
 		/// <summary>
-        /// Gets all cultures available for the current language
-        /// </summary>
+		/// Gets all cultures available for the current language
+		/// </summary>
 		public static List<CultureInfo> GetCulturesFromLang(string Language)
 		{
 			if (LanguageManager.Languages.ContainsKey(Language))

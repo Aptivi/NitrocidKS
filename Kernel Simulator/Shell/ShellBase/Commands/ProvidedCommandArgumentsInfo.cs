@@ -29,35 +29,35 @@ namespace KS.Shell.ShellBase.Commands
 	{
 
 		/// <summary>
-        /// Target command that the user executed in shell
-        /// </summary>
+		/// Target command that the user executed in shell
+		/// </summary>
 		public string Command { get; private set; }
 		/// <summary>
-        /// Text version of the provided arguments and switches
-        /// </summary>
+		/// Text version of the provided arguments and switches
+		/// </summary>
 		public string ArgumentsText { get; private set; }
 		/// <summary>
-        /// List version of the provided arguments and switches
-        /// </summary>
+		/// List version of the provided arguments and switches
+		/// </summary>
 		public string[] FullArgumentsList { get; private set; }
 		/// <summary>
-        /// List version of the provided arguments
-        /// </summary>
+		/// List version of the provided arguments
+		/// </summary>
 		public string[] ArgumentsList { get; private set; }
 		/// <summary>
-        /// List version of the provided switches
-        /// </summary>
+		/// List version of the provided switches
+		/// </summary>
 		public string[] SwitchesList { get; private set; }
 		/// <summary>
-        /// Checks to see if the required arguments are provided
-        /// </summary>
+		/// Checks to see if the required arguments are provided
+		/// </summary>
 		public bool RequiredArgumentsProvided { get; private set; }
 
 		/// <summary>
-        /// Makes a new instance of the command argument info with the user-provided command text
-        /// </summary>
-        /// <param name="CommandText">Command text that the user provided</param>
-        /// <param name="CommandType">Shell command type. Consult the <see cref="ShellType"/> enum for information about supported shells.</param>
+		/// Makes a new instance of the command argument info with the user-provided command text
+		/// </summary>
+		/// <param name="CommandText">Command text that the user provided</param>
+		/// <param name="CommandType">Shell command type. Consult the <see cref="ShellType"/> enum for information about supported shells.</param>
 		internal ProvidedCommandArgumentsInfo(string CommandText, ShellType CommandType)
 		{
 			string Command;
@@ -76,7 +76,7 @@ namespace KS.Shell.ShellBase.Commands
 			DebugWriter.Wdbg(DebugLevel.I, "Index: {0}", index);
 
 			// Split the requested command string into words
-			string[] words = CommandText.Split(new[] { ' ' });
+			string[] words = CommandText.Split([' ']);
 			for (int i = 0, loopTo = words.Length - 1; i <= loopTo; i++)
 				DebugWriter.Wdbg(DebugLevel.I, "Word {0}: {1}", i + 1, words[i]);
 			Command = words[0];
@@ -131,8 +131,8 @@ namespace KS.Shell.ShellBase.Commands
 
 			// Install the parsed values to the new class instance
 			FullArgumentsList = EnclosedArgs;
-			ArgumentsList = FinalArgs.ToArray();
-			SwitchesList = FinalSwitches.ToArray();
+			ArgumentsList = [.. FinalArgs];
+			SwitchesList = [.. FinalSwitches];
 			ArgumentsText = strArgs;
 			this.Command = Command;
 			this.RequiredArgumentsProvided = RequiredArgumentsProvided;

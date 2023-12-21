@@ -33,8 +33,8 @@ namespace KS.Hardware
 		public static Inxi HardwareInfo;
 
 		/// <summary>
-        /// Starts probing hardware
-        /// </summary>
+		/// Starts probing hardware
+		/// </summary>
 		public static void StartProbing()
 		{
 			// We will probe hardware
@@ -66,8 +66,8 @@ namespace KS.Hardware
 		}
 
 		/// <summary>
-        /// Write Inxi.NET hardware parsing completion to debugger and, if quiet probe is disabled, the console
-        /// </summary>
+		/// Write Inxi.NET hardware parsing completion to debugger and, if quiet probe is disabled, the console
+		/// </summary>
 		private static void WriteWhatProbed(InxiHardwareType Hardware)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "Hardware {0} ({1}) successfully probed.", Hardware, Hardware.ToString());
@@ -76,8 +76,8 @@ namespace KS.Hardware
 		}
 
 		/// <summary>
-        /// Write Inxi.NET debug data to debugger
-        /// </summary>
+		/// Write Inxi.NET debug data to debugger
+		/// </summary>
 		private static void WriteInxiDebugData(string Message, string PlainMessage)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, PlainMessage);

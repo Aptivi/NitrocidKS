@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when there was no such variable for the reflection
-    /// </summary>
+	/// Thrown when there was no such variable for the reflection
+	/// </summary>
 	public class NoSuchReflectionVariableException : Exception
 	{
 

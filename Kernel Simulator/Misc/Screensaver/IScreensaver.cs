@@ -20,26 +20,26 @@
 namespace KS.Misc.Screensaver
 {
 	/// <summary>
-    /// Screensaver (KS built-in or custom) interface
-    /// </summary>
+	/// Screensaver (KS built-in or custom) interface
+	/// </summary>
 	public interface IScreensaver
 	{
 		/// <summary>
-        /// Prepare the screensaver before displaying.
-        /// </summary>
+		/// Prepare the screensaver before displaying.
+		/// </summary>
 		void ScreensaverPreparation();
 		/// <summary>
-        /// Display a screensaver. This is executed inside the loop.
-        /// </summary>
+		/// Display a screensaver. This is executed inside the loop.
+		/// </summary>
 		void ScreensaverLogic();
 		/// <summary>
-        /// The name of screensaver, usually the assembly name of the custom screensaver
-        /// </summary>
+		/// The name of screensaver, usually the assembly name of the custom screensaver
+		/// </summary>
 		string ScreensaverName { get; set; }
 		/// <summary>
-        /// Settings for custom screensaver
-        /// </summary>
-        /// <returns>A set of keys and values holding settings for the screensaver</returns>
+		/// Settings for custom screensaver
+		/// </summary>
+		/// <returns>A set of keys and values holding settings for the screensaver</returns>
 		Dictionary<string, object> ScreensaverSettings { get; set; }
 	}
 }

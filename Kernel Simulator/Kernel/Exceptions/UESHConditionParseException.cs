@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when there was a condition parse failure for the UESH shell.
-    /// </summary>
+	/// Thrown when there was a condition parse failure for the UESH shell.
+	/// </summary>
 	public class UESHConditionParseException : Exception
 	{
 

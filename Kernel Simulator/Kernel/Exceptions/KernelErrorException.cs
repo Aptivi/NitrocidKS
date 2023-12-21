@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when there was a kernel error. Used for <see cref="KernelError(KernelErrorLevel, Boolean, Long, String, Exception, Object())"/>
-    /// </summary>
+	/// Thrown when there was a kernel error. Used for <see cref="KernelError(KernelErrorLevel, bool, Long, string, Exception, object())"/>
+	/// </summary>
 	public class KernelErrorException : Exception
 	{
 

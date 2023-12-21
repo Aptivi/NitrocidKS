@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when there is an error in FTP shell
-    /// </summary>
+	/// Thrown when there is an error in FTP shell
+	/// </summary>
 	public class FTPShellException : Exception
 	{
 

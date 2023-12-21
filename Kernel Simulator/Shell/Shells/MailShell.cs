@@ -73,7 +73,7 @@ namespace KS.Shell.Shells
 
 				// Listen for a command
 				string cmd = Input.ReadLine();
-				if ((string.IsNullOrEmpty(cmd) | (cmd?.StartsWithAnyOf(new[] { " ", "#" }))) == false)
+				if ((string.IsNullOrEmpty(cmd) | (cmd?.StartsWithAnyOf([" ", "#"]))) == false)
 				{
 					Kernel.Kernel.KernelEventManager.RaiseIMAPPreExecuteCommand(cmd);
 					Shell.GetLine(cmd, false, "", ShellType.MailShell);

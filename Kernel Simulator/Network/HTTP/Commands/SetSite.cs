@@ -34,7 +34,7 @@ namespace KS.Network.HTTP.Commands
 				TextWriterColor.Write(Translate.DoTranslation("Setting site to") + " {0}...", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Progress), SiteUri.ToString());
 				HTTPShellCommon.HTTPSite = SiteUri.ToString();
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				TextWriterColor.Write(Translate.DoTranslation("The site URI format is invalid."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
 			}

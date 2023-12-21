@@ -26,21 +26,21 @@ namespace KS.Languages
 	{
 
 		/// <summary>
-        /// Translates string into current kernel language.
-        /// </summary>
-        /// <param name="text">Any string that exists in Kernel Simulator's translation files</param>
-        /// <returns>Translated string</returns>
+		/// Translates string into current kernel language.
+		/// </summary>
+		/// <param name="text">Any string that exists in Kernel Simulator's translation files</param>
+		/// <returns>Translated string</returns>
 		public static string DoTranslation(string text)
 		{
 			return DoTranslation(text, LanguageManager.CurrentLanguage);
 		}
 
 		/// <summary>
-        /// Translates string into another language, or to English if the language wasn't specified or if it's invalid.
-        /// </summary>
-        /// <param name="text">Any string that exists in Kernel Simulator's translation files</param>
-        /// <param name="lang">3 letter language</param>
-        /// <returns>Translated string</returns>
+		/// Translates string into another language, or to English if the language wasn't specified or if it's invalid.
+		/// </summary>
+		/// <param name="text">Any string that exists in Kernel Simulator's translation files</param>
+		/// <param name="lang">3 letter language</param>
+		/// <returns>Translated string</returns>
 		public static string DoTranslation(string text, string lang)
 		{
 			if (string.IsNullOrWhiteSpace(lang))
@@ -80,10 +80,10 @@ namespace KS.Languages
 		}
 
 		/// <summary>
-        /// Prepares the translation dictionary for a language
-        /// </summary>
-        /// <param name="lang">A specified language</param>
-        /// <returns>A dictionary of English strings and translated strings</returns>
+		/// Prepares the translation dictionary for a language
+		/// </summary>
+		/// <param name="lang">A specified language</param>
+		/// <returns>A dictionary of English strings and translated strings</returns>
 		public static Dictionary<string, string> PrepareDict(string lang)
 		{
 			var langStrings = new Dictionary<string, string>();

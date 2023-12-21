@@ -20,25 +20,25 @@
 namespace KS.Misc.Text
 {
 	/// <summary>
-    /// Type of enclosed double quotes in a word or phrase
-    /// </summary>
+	/// Type of enclosed double quotes in a word or phrase
+	/// </summary>
 	public enum EnclosedDoubleQuotesType
 	{
 		/// <summary>
-        /// No double quotes to be enclosed
-        /// </summary>
+		/// No double quotes to be enclosed
+		/// </summary>
 		None,
 		/// <summary>
-        /// Text enclosed by the double quotes
-        /// </summary>
+		/// Text enclosed by the double quotes
+		/// </summary>
 		DoubleQuotes,
 		/// <summary>
-        /// Text enclosed by the single quotes
-        /// </summary>
+		/// Text enclosed by the single quotes
+		/// </summary>
 		SingleQuotes,
 		/// <summary>
-        /// Text enclosed by the backticks
-        /// </summary>
+		/// Text enclosed by the backticks
+		/// </summary>
 		Backticks
 	}
 }

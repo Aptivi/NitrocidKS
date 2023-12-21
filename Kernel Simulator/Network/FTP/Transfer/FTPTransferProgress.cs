@@ -27,17 +27,17 @@ namespace KS.Network.FTP.Transfer
 	{
 
 		/// <summary>
-        /// Action of file progress. You can make your own handler by mods
-        /// </summary>
+		/// Action of file progress. You can make your own handler by mods
+		/// </summary>
 		public static Action<FtpProgress> FileProgress = new(FileProgressHandler);
 		/// <summary>
-        /// Action of folder/multiple file progress. You can make your own handler by mods
-        /// </summary>
+		/// Action of folder/multiple file progress. You can make your own handler by mods
+		/// </summary>
 		public static Action<FtpProgress> MultipleProgress = new(MultipleProgressHandler);
 
 		/// <summary>
-        /// Handles the individual file download/upload progress
-        /// </summary>
+		/// Handles the individual file download/upload progress
+		/// </summary>
 		private static void FileProgressHandler(FtpProgress Percentage)
 		{
 			// If the progress is not defined, disable progress bar
@@ -59,8 +59,8 @@ namespace KS.Network.FTP.Transfer
 		}
 
 		/// <summary>
-        /// Handles the multiple files/folder download/upload progress
-        /// </summary>
+		/// Handles the multiple files/folder download/upload progress
+		/// </summary>
 		private static void MultipleProgressHandler(FtpProgress Percentage)
 		{
 			// If the progress is not defined, disable progress bar

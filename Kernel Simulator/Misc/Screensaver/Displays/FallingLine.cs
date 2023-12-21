@@ -43,8 +43,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _fallingLineMaximumColorLevel = 255;
 
 		/// <summary>
-        /// [FallingLine] Enable 255 color support. Has a higher priority than 16 color support.
-        /// </summary>
+		/// [FallingLine] Enable 255 color support. Has a higher priority than 16 color support.
+		/// </summary>
 		public static bool FallingLine255Colors
 		{
 			get
@@ -57,8 +57,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FallingLine] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
+		/// [FallingLine] Enable truecolor support. Has a higher priority than 255 color support.
+		/// </summary>
 		public static bool FallingLineTrueColor
 		{
 			get
@@ -71,8 +71,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FallingLine] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [FallingLine] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int FallingLineDelay
 		{
 			get
@@ -87,8 +87,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FallingLine] How many fade steps to do?
-        /// </summary>
+		/// [FallingLine] How many fade steps to do?
+		/// </summary>
 		public static int FallingLineMaxSteps
 		{
 			get
@@ -103,8 +103,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FallingLine] The minimum red color level (true color)
-        /// </summary>
+		/// [FallingLine] The minimum red color level (true color)
+		/// </summary>
 		public static int FallingLineMinimumRedColorLevel
 		{
 			get
@@ -121,8 +121,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FallingLine] The minimum green color level (true color)
-        /// </summary>
+		/// [FallingLine] The minimum green color level (true color)
+		/// </summary>
 		public static int FallingLineMinimumGreenColorLevel
 		{
 			get
@@ -139,8 +139,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FallingLine] The minimum blue color level (true color)
-        /// </summary>
+		/// [FallingLine] The minimum blue color level (true color)
+		/// </summary>
 		public static int FallingLineMinimumBlueColorLevel
 		{
 			get
@@ -157,8 +157,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FallingLine] The minimum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [FallingLine] The minimum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int FallingLineMinimumColorLevel
 		{
 			get
@@ -176,8 +176,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FallingLine] The maximum red color level (true color)
-        /// </summary>
+		/// [FallingLine] The maximum red color level (true color)
+		/// </summary>
 		public static int FallingLineMaximumRedColorLevel
 		{
 			get
@@ -194,8 +194,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FallingLine] The maximum green color level (true color)
-        /// </summary>
+		/// [FallingLine] The maximum green color level (true color)
+		/// </summary>
 		public static int FallingLineMaximumGreenColorLevel
 		{
 			get
@@ -212,8 +212,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FallingLine] The maximum blue color level (true color)
-        /// </summary>
+		/// [FallingLine] The maximum blue color level (true color)
+		/// </summary>
 		public static int FallingLineMaximumBlueColorLevel
 		{
 			get
@@ -230,8 +230,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FallingLine] The maximum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [FallingLine] The maximum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int FallingLineMaximumColorLevel
 		{
 			get
@@ -259,7 +259,7 @@ namespace KS.Misc.Screensaver.Displays
 		private int CurrentWindowWidth;
 		private int CurrentWindowHeight;
 		private bool ResizeSyncing;
-		private readonly List<Tuple<int, int>> CoveredPositions = new();
+		private readonly List<Tuple<int, int>> CoveredPositions = [];
 
 		public override string ScreensaverName { get; set; } = "FallingLine";
 

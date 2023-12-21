@@ -1,7 +1,7 @@
 ﻿using KS.ConsoleBase.Colors;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
+using System;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
@@ -27,8 +27,8 @@ namespace KS.TestShell.Commands
 
 		public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
 		{
-			KernelColorTools.ColTypes Color = (KernelColorTools.ColTypes)Conversions.ToInteger(ListArgs[0]);
-			bool Line = Conversions.ToBoolean(ListArgs[1]);
+			KernelColorTools.ColTypes Color = (KernelColorTools.ColTypes)Convert.ToInt32(ListArgs[0]);
+			bool Line = Convert.ToBoolean(ListArgs[1]);
 			string Text = ListArgs[2];
 			TextWriterColor.Write(Text, Line, Color);
 		}

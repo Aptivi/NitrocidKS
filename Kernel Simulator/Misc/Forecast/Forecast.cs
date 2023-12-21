@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 using KS.Misc.Writers.FancyWriters;
-using Microsoft.VisualBasic.CompilerServices;
 using Nettify.Weather;
+using System;
 
 namespace KS.Misc.Forecast
 {
@@ -34,61 +34,61 @@ namespace KS.Misc.Forecast
 		internal static string ApiKey = "";
 
 		/// <summary>
-        /// Gets current weather info from OpenWeatherMap
-        /// </summary>
-        /// <param name="CityID">City ID</param>
-        /// <returns>A class containing properties of weather information</returns>
+		/// Gets current weather info from OpenWeatherMap
+		/// </summary>
+		/// <param name="CityID">City ID</param>
+		/// <returns>A class containing properties of weather information</returns>
 		public static WeatherForecastInfo GetWeatherInfo(long CityID)
 		{
 			return WeatherForecast.GetWeatherInfo(CityID: CityID, ApiKey, PreferredUnit);
 		}
 
 		/// <summary>
-        /// Gets current weather info from OpenWeatherMap
-        /// </summary>
-        /// <param name="CityID">City ID</param>
-        /// <param name="APIKey">API key</param>
-        /// <returns>A class containing properties of weather information</returns>
+		/// Gets current weather info from OpenWeatherMap
+		/// </summary>
+		/// <param name="CityID">City ID</param>
+		/// <param name="APIKey">API key</param>
+		/// <returns>A class containing properties of weather information</returns>
 		public static WeatherForecastInfo GetWeatherInfo(long CityID, string APIKey)
 		{
 			return WeatherForecast.GetWeatherInfo(CityID: CityID, APIKey, PreferredUnit);
 		}
 
 		/// <summary>
-        /// Gets current weather info from OpenWeatherMap
-        /// </summary>
-        /// <param name="CityName">City name</param>
-        /// <returns>A class containing properties of weather information</returns>
+		/// Gets current weather info from OpenWeatherMap
+		/// </summary>
+		/// <param name="CityName">City name</param>
+		/// <returns>A class containing properties of weather information</returns>
 		public static WeatherForecastInfo GetWeatherInfo(string CityName)
 		{
 			return WeatherForecast.GetWeatherInfo(CityName: CityName, ApiKey, PreferredUnit);
 		}
 
 		/// <summary>
-        /// Gets current weather info from OpenWeatherMap
-        /// </summary>
-        /// <param name="CityName">City name</param>
-        /// <param name="APIKey">API key</param>
-        /// <returns>A class containing properties of weather information</returns>
+		/// Gets current weather info from OpenWeatherMap
+		/// </summary>
+		/// <param name="CityName">City name</param>
+		/// <param name="APIKey">API key</param>
+		/// <returns>A class containing properties of weather information</returns>
 		public static WeatherForecastInfo GetWeatherInfo(string CityName, string APIKey)
 		{
 			return WeatherForecast.GetWeatherInfo(CityName: CityName, APIKey, PreferredUnit);
 		}
 
 		/// <summary>
-        /// Prints the weather information to the console
-        /// </summary>
-        /// <param name="CityID">City ID or name</param>
+		/// Prints the weather information to the console
+		/// </summary>
+		/// <param name="CityID">City ID or name</param>
 		public static void PrintWeatherInfo(string CityID)
 		{
 			PrintWeatherInfo(CityID, ApiKey);
 		}
 
 		/// <summary>
-        /// Prints the weather information to the console
-        /// </summary>
-        /// <param name="CityID">City ID or name</param>
-        /// <param name="APIKey">API Key</param>
+		/// Prints the weather information to the console
+		/// </summary>
+		/// <param name="CityID">City ID or name</param>
+		/// <param name="APIKey">API Key</param>
 		public static void PrintWeatherInfo(string CityID, string APIKey)
 		{
 			WeatherForecastInfo WeatherInfo;
@@ -96,7 +96,7 @@ namespace KS.Misc.Forecast
 			string WindSpeedSpecifier = "m.s";
 			if (StringQuery.IsStringNumeric(CityID))
 			{
-				WeatherInfo = GetWeatherInfo(Conversions.ToLong(CityID), APIKey);
+				WeatherInfo = GetWeatherInfo(Convert.ToInt64(CityID), APIKey);
 			}
 			else
 			{

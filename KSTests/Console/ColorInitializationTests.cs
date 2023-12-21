@@ -18,9 +18,9 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 using KS.ConsoleBase.Colors;
-using Microsoft.VisualBasic.CompilerServices;
 using NUnit.Framework;
 using Shouldly;
+using System;
 using Terminaux.Colors;
 
 namespace KSTests
@@ -31,14 +31,14 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests initializing color instance from 255 colors
-    /// </summary>
+		/// Tests initializing color instance from 255 colors
+		/// </summary>
 		[Test]
 		[Description("Initialization")]
 		public void TestInitializeColorInstanceFrom255Colors()
 		{
 			// Create instance
-			var ColorInstance = new Color(13);
+			var ColorInstance = new Color(18);
 
 			// Check for null
 			ColorInstance.ShouldNotBeNull();
@@ -47,20 +47,20 @@ namespace KSTests
 			ColorInstance.VTSequenceForeground.ShouldNotBeNullOrEmpty();
 
 			// Check for property correctness
-			ColorInstance.PlainSequence.ShouldBe("13");
+			ColorInstance.PlainSequence.ShouldBe("18");
 			ColorInstance.Type.ShouldBe(ColorType._255Color);
-			ColorInstance.VTSequenceBackground.ShouldBe(Conversions.ToString(Color255.GetEsc()) + "[48;5;13m");
-			ColorInstance.VTSequenceForeground.ShouldBe(Conversions.ToString(Color255.GetEsc()) + "[38;5;13m");
-			ColorInstance.R.ShouldBe(255);
+			ColorInstance.VTSequenceBackground.ShouldBe(Convert.ToString(Color255.GetEsc()) + "[48;5;18m");
+			ColorInstance.VTSequenceForeground.ShouldBe(Convert.ToString(Color255.GetEsc()) + "[38;5;18m");
+			ColorInstance.R.ShouldBe(0);
 			ColorInstance.G.ShouldBe(0);
-			ColorInstance.B.ShouldBe(255);
+			ColorInstance.B.ShouldBe(135);
 			ColorInstance.Brightness.ShouldBe(ColorBrightness.Light);
-			ColorInstance.Hex.ShouldBe("#FF00FF");
+			ColorInstance.Hex.ShouldBe("#000087");
 		}
 
 		/// <summary>
-    /// Tests initializing color instance from true color
-    /// </summary>
+		/// Tests initializing color instance from true color
+		/// </summary>
 		[Test]
 		[Description("Initialization")]
 		public void TestInitializeColorInstanceFromTrueColor()
@@ -77,8 +77,8 @@ namespace KSTests
 			// Check for property correctness
 			ColorInstance.PlainSequence.ShouldBe("94;0;63");
 			ColorInstance.Type.ShouldBe(ColorType.TrueColor);
-			ColorInstance.VTSequenceBackground.ShouldBe(Conversions.ToString(Color255.GetEsc()) + "[48;2;94;0;63m");
-			ColorInstance.VTSequenceForeground.ShouldBe(Conversions.ToString(Color255.GetEsc()) + "[38;2;94;0;63m");
+			ColorInstance.VTSequenceBackground.ShouldBe(Convert.ToString(Color255.GetEsc()) + "[48;2;94;0;63m");
+			ColorInstance.VTSequenceForeground.ShouldBe(Convert.ToString(Color255.GetEsc()) + "[38;2;94;0;63m");
 			ColorInstance.R.ShouldBe(94);
 			ColorInstance.G.ShouldBe(0);
 			ColorInstance.B.ShouldBe(63);
@@ -87,8 +87,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests initializing color instance from true color
-    /// </summary>
+		/// Tests initializing color instance from true color
+		/// </summary>
 		[Test]
 		[Description("Initialization")]
 		public void TestInitializeColorInstanceFromHex()
@@ -105,8 +105,8 @@ namespace KSTests
 			// Check for property correctness
 			ColorInstance.PlainSequence.ShouldBe("15;15;15");
 			ColorInstance.Type.ShouldBe(ColorType.TrueColor);
-			ColorInstance.VTSequenceBackground.ShouldBe(Conversions.ToString(Color255.GetEsc()) + "[48;2;15;15;15m");
-			ColorInstance.VTSequenceForeground.ShouldBe(Conversions.ToString(Color255.GetEsc()) + "[38;2;15;15;15m");
+			ColorInstance.VTSequenceBackground.ShouldBe(Convert.ToString(Color255.GetEsc()) + "[48;2;15;15;15m");
+			ColorInstance.VTSequenceForeground.ShouldBe(Convert.ToString(Color255.GetEsc()) + "[38;2;15;15;15m");
 			ColorInstance.R.ShouldBe(15);
 			ColorInstance.G.ShouldBe(15);
 			ColorInstance.B.ShouldBe(15);

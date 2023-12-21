@@ -20,29 +20,29 @@
 namespace KS.Files.Folders
 {
 	/// <summary>
-    /// How are the file system entries sorted in list?
-    /// </summary>
+	/// How are the file system entries sorted in list?
+	/// </summary>
 	public enum FilesystemSortOptions
 	{
 		/// <summary>
-        /// Sort by full name
-        /// </summary>
+		/// Sort by full name
+		/// </summary>
 		FullName = 1,
 		/// <summary>
-        /// Sort by length
-        /// </summary>
+		/// Sort by length
+		/// </summary>
 		Length,
 		/// <summary>
-        /// Sort by creation time
-        /// </summary>
+		/// Sort by creation time
+		/// </summary>
 		CreationTime,
 		/// <summary>
-        /// Sort by last write time
-        /// </summary>
+		/// Sort by last write time
+		/// </summary>
 		LastWriteTime,
 		/// <summary>
-        /// Sort by last access time
-        /// </summary>
+		/// Sort by last access time
+		/// </summary>
 		LastAccessTime
 	}
 }

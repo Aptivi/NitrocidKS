@@ -1,5 +1,4 @@
 ﻿using System;
-using Microsoft.VisualBasic.CompilerServices;
 using TermInput = Terminaux.Inputs.Input;
 
 
@@ -30,51 +29,51 @@ namespace KS.ConsoleBase.Inputs
 		internal static TermReaderSettings GlobalSettings = new();
 
 		/// <summary>
-        /// Current mask character
-        /// </summary>
-		public static string CurrentMask = Conversions.ToString('*');
+		/// Current mask character
+		/// </summary>
+		public static string CurrentMask = Convert.ToString('*');
 
 		/// <summary>
-        /// Reads the line from the console
-        /// </summary>
+		/// Reads the line from the console
+		/// </summary>
 		public static string ReadLine()
 		{
 			return ReadLine("", "", true);
 		}
 
 		/// <summary>
-        /// Reads the line from the console
-        /// </summary>
-        /// <param name="UseCtrlCAsInput">Whether to treat CTRL + C as input</param>
+		/// Reads the line from the console
+		/// </summary>
+		/// <param name="UseCtrlCAsInput">Whether to treat CTRL + C as input</param>
 		public static string ReadLine(bool UseCtrlCAsInput)
 		{
 			return ReadLine("", "", UseCtrlCAsInput);
 		}
 
 		/// <summary>
-        /// Reads the line from the console
-        /// </summary>
-        /// <param name="InputText">Input text to write</param>
-        /// <param name="DefaultValue">Default value</param>
+		/// Reads the line from the console
+		/// </summary>
+		/// <param name="InputText">Input text to write</param>
+		/// <param name="DefaultValue">Default value</param>
 		public static string ReadLine(string InputText, string DefaultValue)
 		{
 			return ReadLine(InputText, DefaultValue, true);
 		}
 
 		/// <summary>
-        /// Reads the line from the console
-        /// </summary>
-        /// <param name="InputText">Input text to write</param>
-        /// <param name="DefaultValue">Default value</param>
-        /// <param name="UseCtrlCAsInput">Whether to treat CTRL + C as input</param>
+		/// Reads the line from the console
+		/// </summary>
+		/// <param name="InputText">Input text to write</param>
+		/// <param name="DefaultValue">Default value</param>
+		/// <param name="UseCtrlCAsInput">Whether to treat CTRL + C as input</param>
 		public static string ReadLine(string InputText, string DefaultValue, bool UseCtrlCAsInput)
 		{
 			return TermInput.ReadLine(InputText, DefaultValue, new TermReaderSettings() { TreatCtrlCAsInput = UseCtrlCAsInput });
 		}
 
 		/// <summary>
-        /// Reads the next line of characters from the standard input stream without showing input being written by user.
-        /// </summary>
+		/// Reads the next line of characters from the standard input stream without showing input being written by user.
+		/// </summary>
 		public static string ReadLineNoInput()
 		{
 			if (!string.IsNullOrEmpty(CurrentMask))
@@ -83,32 +82,32 @@ namespace KS.ConsoleBase.Inputs
 			}
 			else
 			{
-				return ReadLineNoInput(Conversions.ToChar(""));
+				return ReadLineNoInput('\0');
 			}
 		}
 
 		/// <summary>
-        /// Reads the next line of characters from the standard input stream without showing input being written by user.
-        /// </summary>
-        /// <param name="MaskChar">Specifies the password mask character</param>
+		/// Reads the next line of characters from the standard input stream without showing input being written by user.
+		/// </summary>
+		/// <param name="MaskChar">Specifies the password mask character</param>
 		public static string ReadLineNoInput(char MaskChar)
 		{
 			return TermInput.ReadLineNoInput(MaskChar);
 		}
 
 		/// <summary>
-        /// Reads the next key from the console input stream with the timeout
-        /// </summary>
-        /// <param name="Intercept"></param>
-        /// <param name="Timeout"></param>
+		/// Reads the next key from the console input stream with the timeout
+		/// </summary>
+		/// <param name="Intercept"></param>
+		/// <param name="Timeout"></param>
 		public static ConsoleKeyInfo ReadKeyTimeout(bool Intercept, TimeSpan Timeout)
 		{
 			return TermInput.ReadKeyTimeout(Intercept, Timeout);
 		}
 
 		/// <summary>
-        /// Detects the keypress
-        /// </summary>
+		/// Detects the keypress
+		/// </summary>
 		public static ConsoleKeyInfo DetectKeypress()
 		{
 			return TermInput.DetectKeypress();

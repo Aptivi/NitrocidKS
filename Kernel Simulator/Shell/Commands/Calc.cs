@@ -33,7 +33,7 @@ namespace KS.Shell.Commands
 		{
 			try
 			{
-				string Res = (MathExpr)StringArgs.Result.ToString();
+				string Res = ((MathExpr)StringArgs).Result.ToString();
 				DebugWriter.Wdbg(DebugLevel.I, "Res = {0}", Res);
 				TextWriterColor.Write(StringArgs + " = " + Res, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
 			}

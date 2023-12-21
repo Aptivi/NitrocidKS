@@ -30,12 +30,12 @@ namespace KS.Arguments
 	{
 
 		// Variables
-		internal static List<string> EnteredArguments = new();
+		internal static List<string> EnteredArguments = [];
 
 		/// <summary>
-        /// Prompts user for arguments
-        /// </summary>
-        /// <param name="InjMode">Argument injection mode (usually by "arginj" command)</param>
+		/// Prompts user for arguments
+		/// </summary>
+		/// <param name="InjMode">Argument injection mode (usually by "arginj" command)</param>
 		public static void PromptArgs(bool InjMode = false)
 		{
 			// Checks if the arguments are injected

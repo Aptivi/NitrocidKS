@@ -34,22 +34,22 @@ namespace KS.Misc.Calendar
 	{
 
 		/// <summary>
-        /// Prints the table of the calendar
-        /// </summary>
+		/// Prints the table of the calendar
+		/// </summary>
 		public static void PrintCalendar()
 		{
 			PrintCalendar(DateTime.Today.Year, DateTime.Today.Month);
 		}
 
 		/// <summary>
-        /// Prints the table of the calendar
-        /// </summary>
+		/// Prints the table of the calendar
+		/// </summary>
 		public static void PrintCalendar(int Year, int Month)
 		{
 			string[] CalendarDays = CultureManager.CurrentCult.DateTimeFormat.DayNames;
 			string[] CalendarMonths = CultureManager.CurrentCult.DateTimeFormat.MonthNames;
 			var CalendarData = new string[6, CalendarDays.Length];
-			var DateFrom = new DateTime(Year, Month, 1, CultureManager.CurrentCult.Calendar);
+			_ = new DateTime(Year, Month, 1, CultureManager.CurrentCult.Calendar);
 			var DateTo = new DateTime(Year, Month, DateTime.DaysInMonth(Year, Month), CultureManager.CurrentCult.Calendar);
 			int CurrentWeek = 1;
 			string CalendarTitle = CalendarMonths[Month - 1] + " " + Year;

@@ -32,9 +32,9 @@ namespace KS.ManPages
 	{
 
 		/// <summary>
-        /// Initializes a manual page
-        /// </summary>
-        /// <param name="ManualFile">A manual file path (neutralized)</param>
+		/// Initializes a manual page
+		/// </summary>
+		/// <param name="ManualFile">A manual file path (neutralized)</param>
 		public static void InitMan(string ManualFile)
 		{
 			ManualFile = Filesystem.NeutralizePath(ManualFile);
@@ -53,13 +53,13 @@ namespace KS.ManPages
 		}
 
 		/// <summary>
-        /// Checks to see if the manual page is valid
-        /// </summary>
-        /// <param name="ManualFile">A manual file path (neutralized)</param>
-        /// <param name="ManTitle">Manual title to install to the new manual class instance</param>
-        /// <param name="ManRevision">Manual revision to install to the new manual class instance</param>
-        /// <param name="Body">Body to install to the new manual class instance</param>
-        /// <param name="Todos">Todo list to install to the new manual class instance</param>
+		/// Checks to see if the manual page is valid
+		/// </summary>
+		/// <param name="ManualFile">A manual file path (neutralized)</param>
+		/// <param name="ManTitle">Manual title to install to the new manual class instance</param>
+		/// <param name="ManRevision">Manual revision to install to the new manual class instance</param>
+		/// <param name="Body">Body to install to the new manual class instance</param>
+		/// <param name="Todos">Todo list to install to the new manual class instance</param>
 		internal static bool CheckManual(string ManualFile, ref string ManTitle, ref string ManRevision, ref StringBuilder Body, ref List<string> Todos)
 		{
 			bool Success = true;
@@ -88,7 +88,6 @@ namespace KS.ManPages
 						// Check the manual metadata
 						string RevisionConstant = "-REVISION:";
 						string TitleConstant = "-TITLE:";
-						string BodyStartConstant = "-BODY START-";
 						string BodyEndConstant = "-BODY END-";
 
 						// Check the body or manual metadata

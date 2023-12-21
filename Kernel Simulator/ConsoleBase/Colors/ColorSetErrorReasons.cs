@@ -20,21 +20,21 @@
 namespace KS.ConsoleBase.Colors
 {
 	/// <summary>
-    /// Enumeration for the color setting error reasons
-    /// </summary>
+	/// Enumeration for the color setting error reasons
+	/// </summary>
 	public enum ColorSetErrorReasons
 	{
 		/// <summary>
-        /// Unknown reason
-        /// </summary>
+		/// Unknown reason
+		/// </summary>
 		Unknown = 0,
 		/// <summary>
-        /// The colored shell is disabled
-        /// </summary>
+		/// The colored shell is disabled
+		/// </summary>
 		NoColors = 1,
 		/// <summary>
-        /// One or more of the colors is invalid
-        /// </summary>
+		/// One or more of the colors is invalid
+		/// </summary>
 		InvalidColors = 2
 	}
 }

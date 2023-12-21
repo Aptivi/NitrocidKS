@@ -55,21 +55,21 @@ namespace KS.Network.Transfer
 		internal static bool SuppressUploadMessage;
 
 		/// <summary>
-        /// Downloads a file to the current working directory.
-        /// </summary>
-        /// <param name="URL">A URL to a file</param>
-        /// <returns>True if successful. Throws exception if unsuccessful.</returns>
+		/// Downloads a file to the current working directory.
+		/// </summary>
+		/// <param name="URL">A URL to a file</param>
+		/// <returns>True if successful. Throws exception if unsuccessful.</returns>
 		public static bool DownloadFile(string URL)
 		{
 			return DownloadFile(URL, Flags.ShowProgress);
 		}
 
 		/// <summary>
-        /// Downloads a file to the current working directory.
-        /// </summary>
-        /// <param name="URL">A URL to a file</param>
-        /// <param name="ShowProgress">Whether or not to show progress bar</param>
-        /// <returns>True if successful. Throws exception if unsuccessful.</returns>
+		/// Downloads a file to the current working directory.
+		/// </summary>
+		/// <param name="URL">A URL to a file</param>
+		/// <param name="ShowProgress">Whether or not to show progress bar</param>
+		/// <returns>True if successful. Throws exception if unsuccessful.</returns>
 		public static bool DownloadFile(string URL, bool ShowProgress)
 		{
 			string FileName = NetworkTools.GetFilenameFromUrl(URL);
@@ -77,23 +77,23 @@ namespace KS.Network.Transfer
 		}
 
 		/// <summary>
-        /// Downloads a file to the current working directory.
-        /// </summary>
-        /// <param name="URL">A URL to a file</param>
-        /// <param name="FileName">File name to download to</param>
-        /// <returns>True if successful. Throws exception if unsuccessful.</returns>
+		/// Downloads a file to the current working directory.
+		/// </summary>
+		/// <param name="URL">A URL to a file</param>
+		/// <param name="FileName">File name to download to</param>
+		/// <returns>True if successful. Throws exception if unsuccessful.</returns>
 		public static bool DownloadFile(string URL, string FileName)
 		{
 			return DownloadFile(URL, Flags.ShowProgress, FileName);
 		}
 
 		/// <summary>
-        /// Downloads a file to the current working directory.
-        /// </summary>
-        /// <param name="URL">A URL to a file</param>
-        /// <param name="ShowProgress">Whether or not to show progress bar</param>
-        /// <param name="FileName">File name to download to</param>
-        /// <returns>True if successful. Throws exception if unsuccessful.</returns>
+		/// Downloads a file to the current working directory.
+		/// </summary>
+		/// <param name="URL">A URL to a file</param>
+		/// <param name="ShowProgress">Whether or not to show progress bar</param>
+		/// <param name="FileName">File name to download to</param>
+		/// <returns>True if successful. Throws exception if unsuccessful.</returns>
 		public static bool DownloadFile(string URL, bool ShowProgress, string FileName)
 		{
 			// Intialize variables
@@ -149,23 +149,23 @@ namespace KS.Network.Transfer
 		}
 
 		/// <summary>
-        /// Uploads a file to the current working directory.
-        /// </summary>
-        /// <param name="FileName">A target file name. Use <see cref="NeutralizePath(String, Boolean)"/> to get full path of source.</param>
-        /// <param name="URL">A URL to a file</param>
-        /// <returns>True if successful. Throws exception if unsuccessful.</returns>
+		/// Uploads a file to the current working directory.
+		/// </summary>
+		/// <param name="FileName">A target file name. Use <see cref="NeutralizePath(string, bool)"/> to get full path of source.</param>
+		/// <param name="URL">A URL to a file</param>
+		/// <returns>True if successful. Throws exception if unsuccessful.</returns>
 		public static bool UploadFile(string FileName, string URL)
 		{
 			return UploadFile(FileName, URL, Flags.ShowProgress);
 		}
 
 		/// <summary>
-        /// Uploads a file from the current working directory.
-        /// </summary>
-        /// <param name="FileName">A target file name. Use <see cref="NeutralizePath(String, Boolean)"/> to get full path of source.</param>
-        /// <param name="URL">A URL</param>
-        /// <param name="ShowProgress">Whether or not to show progress bar</param>
-        /// <returns>True if successful. Throws exception if unsuccessful.</returns>
+		/// Uploads a file from the current working directory.
+		/// </summary>
+		/// <param name="FileName">A target file name. Use <see cref="NeutralizePath(string, bool)"/> to get full path of source.</param>
+		/// <param name="URL">A URL</param>
+		/// <param name="ShowProgress">Whether or not to show progress bar</param>
+		/// <returns>True if successful. Throws exception if unsuccessful.</returns>
 		public static bool UploadFile(string FileName, string URL, bool ShowProgress)
 		{
 			// Intialize variables
@@ -219,21 +219,21 @@ namespace KS.Network.Transfer
 		}
 
 		/// <summary>
-        /// Downloads a resource from URL as a string.
-        /// </summary>
-        /// <param name="URL">A URL to a file</param>
-        /// <returns>True if successful. Throws exception if unsuccessful.</returns>
+		/// Downloads a resource from URL as a string.
+		/// </summary>
+		/// <param name="URL">A URL to a file</param>
+		/// <returns>True if successful. Throws exception if unsuccessful.</returns>
 		public static string DownloadString(string URL)
 		{
 			return DownloadString(URL, Flags.ShowProgress);
 		}
 
 		/// <summary>
-        /// Downloads a resource from URL as a string.
-        /// </summary>
-        /// <param name="URL">A URL</param>
-        /// <param name="ShowProgress">Whether or not to show progress bar</param>
-        /// <returns>A resource string if successful; Throws exception if unsuccessful.</returns>
+		/// Downloads a resource from URL as a string.
+		/// </summary>
+		/// <param name="URL">A URL</param>
+		/// <param name="ShowProgress">Whether or not to show progress bar</param>
+		/// <returns>A resource string if successful; Throws exception if unsuccessful.</returns>
 		public static string DownloadString(string URL, bool ShowProgress)
 		{
 			// Intialize variables
@@ -288,23 +288,23 @@ namespace KS.Network.Transfer
 		}
 
 		/// <summary>
-        /// Uploads a resource from URL as a string.
-        /// </summary>
-        /// <param name="URL">A URL to a file</param>
-        /// <param name="Data">Content to upload</param>
-        /// <returns>True if successful. Throws exception if unsuccessful.</returns>
+		/// Uploads a resource from URL as a string.
+		/// </summary>
+		/// <param name="URL">A URL to a file</param>
+		/// <param name="Data">Content to upload</param>
+		/// <returns>True if successful. Throws exception if unsuccessful.</returns>
 		public static bool UploadString(string URL, string Data)
 		{
 			return UploadString(URL, Data, Flags.ShowProgress);
 		}
 
 		/// <summary>
-        /// Uploads a resource from URL as a string.
-        /// </summary>
-        /// <param name="URL">A URL</param>
-        /// <param name="Data">Content to upload</param>
-        /// <param name="ShowProgress">Whether or not to show progress bar</param>
-        /// <returns>A resource string if successful; Throws exception if unsuccessful.</returns>
+		/// Uploads a resource from URL as a string.
+		/// </summary>
+		/// <param name="URL">A URL</param>
+		/// <param name="Data">Content to upload</param>
+		/// <param name="ShowProgress">Whether or not to show progress bar</param>
+		/// <returns>A resource string if successful; Throws exception if unsuccessful.</returns>
 		public static bool UploadString(string URL, string Data, bool ShowProgress)
 		{
 			// Intialize variables
@@ -355,8 +355,8 @@ namespace KS.Network.Transfer
 		}
 
 		/// <summary>
-        /// Check for errors on download completion.
-        /// </summary>
+		/// Check for errors on download completion.
+		/// </summary>
 		private static void DownloadChecker(Exception e)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "Download complete. Error: {0}", e?.Message);
@@ -371,8 +371,8 @@ namespace KS.Network.Transfer
 		}
 
 		/// <summary>
-        /// Thread to check for errors on download completion.
-        /// </summary>
+		/// Thread to check for errors on download completion.
+		/// </summary>
 		private static void UploadChecker(Exception e)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "Upload complete. Error: {0}", e?.Message);
@@ -403,8 +403,8 @@ namespace KS.Network.Transfer
 		}
 
 		/// <summary>
-        /// Report the progress to the console.
-        /// </summary>
+		/// Report the progress to the console.
+		/// </summary>
 		private static void TransferProgress(NetworkTransferInfo TransferInfo)
 		{
 			try

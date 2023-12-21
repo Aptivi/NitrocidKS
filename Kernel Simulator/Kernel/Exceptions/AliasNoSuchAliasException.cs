@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when alias is nonexistent
-    /// </summary>
+	/// Thrown when alias is nonexistent
+	/// </summary>
 	public class AliasNoSuchAliasException : Exception
 	{
 

@@ -23,24 +23,24 @@ namespace KS.Scripting.Conditions
 	{
 
 		/// <summary>
-        /// Specifies the condition name
-        /// </summary>
+		/// Specifies the condition name
+		/// </summary>
 		string ConditionName { get; }
 		/// <summary>
-        /// Specifies where the condition should be located. Beware that it starts from 1.
-        /// </summary>
+		/// Specifies where the condition should be located. Beware that it starts from 1.
+		/// </summary>
 		int ConditionPosition { get; }
 		/// <summary>
-        /// How many arguments are required (counting the condition itself)? Beware that it starts from 1.
-        /// </summary>
+		/// How many arguments are required (counting the condition itself)? Beware that it starts from 1.
+		/// </summary>
 		int ConditionRequiredArguments { get; }
 		/// <summary>
-        /// Checks whether the condition is satisfied
-        /// </summary>
+		/// Checks whether the condition is satisfied
+		/// </summary>
 		bool IsConditionSatisfied(string FirstVariable, string SecondVariable);
 		/// <summary>
-        /// Checks whether the condition is satisfiedfor more than two variables
-        /// </summary>
+		/// Checks whether the condition is satisfiedfor more than two variables
+		/// </summary>
 		bool IsConditionSatisfied(string[] Variables);
 
 	}

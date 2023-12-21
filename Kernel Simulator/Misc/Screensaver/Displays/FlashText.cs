@@ -44,8 +44,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _flashTextMaximumColorLevel = 0;
 
 		/// <summary>
-        /// [FlashText] Enable 255 color support. Has a higher priority than 16 color support.
-        /// </summary>
+		/// [FlashText] Enable 255 color support. Has a higher priority than 16 color support.
+		/// </summary>
 		public static bool FlashText255Colors
 		{
 			get
@@ -58,8 +58,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashText] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
+		/// [FlashText] Enable truecolor support. Has a higher priority than 255 color support.
+		/// </summary>
 		public static bool FlashTextTrueColor
 		{
 			get
@@ -72,8 +72,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashText] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [FlashText] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int FlashTextDelay
 		{
 			get
@@ -88,8 +88,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashText] Text for FlashText. Shorter is better.
-        /// </summary>
+		/// [FlashText] Text for FlashText. Shorter is better.
+		/// </summary>
 		public static string FlashTextWrite
 		{
 			get
@@ -102,8 +102,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashText] Screensaver background color
-        /// </summary>
+		/// [FlashText] Screensaver background color
+		/// </summary>
 		public static string FlashTextBackgroundColor
 		{
 			get
@@ -116,8 +116,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashText] The minimum red color level (true color)
-        /// </summary>
+		/// [FlashText] The minimum red color level (true color)
+		/// </summary>
 		public static int FlashTextMinimumRedColorLevel
 		{
 			get
@@ -134,8 +134,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashText] The minimum green color level (true color)
-        /// </summary>
+		/// [FlashText] The minimum green color level (true color)
+		/// </summary>
 		public static int FlashTextMinimumGreenColorLevel
 		{
 			get
@@ -152,8 +152,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashText] The minimum blue color level (true color)
-        /// </summary>
+		/// [FlashText] The minimum blue color level (true color)
+		/// </summary>
 		public static int FlashTextMinimumBlueColorLevel
 		{
 			get
@@ -170,8 +170,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashText] The minimum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [FlashText] The minimum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int FlashTextMinimumColorLevel
 		{
 			get
@@ -189,8 +189,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashText] The maximum red color level (true color)
-        /// </summary>
+		/// [FlashText] The maximum red color level (true color)
+		/// </summary>
 		public static int FlashTextMaximumRedColorLevel
 		{
 			get
@@ -207,8 +207,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashText] The maximum green color level (true color)
-        /// </summary>
+		/// [FlashText] The maximum green color level (true color)
+		/// </summary>
 		public static int FlashTextMaximumGreenColorLevel
 		{
 			get
@@ -225,8 +225,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashText] The maximum blue color level (true color)
-        /// </summary>
+		/// [FlashText] The maximum blue color level (true color)
+		/// </summary>
 		public static int FlashTextMaximumBlueColorLevel
 		{
 			get
@@ -243,8 +243,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [FlashText] The maximum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [FlashText] The maximum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int FlashTextMaximumColorLevel
 		{
 			get

@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when language is nonexistent
-    /// </summary>
+	/// Thrown when language is nonexistent
+	/// </summary>
 	public class NoSuchLanguageException : Exception
 	{
 

@@ -26,7 +26,6 @@ using KS.Misc.Text;
 using KS.Misc.Threading;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
-using Microsoft.VisualBasic.CompilerServices;
 using Terminaux.Base;
 using Terminaux.Colors;
 
@@ -44,8 +43,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static string _typewriterTextColor = new Color(ConsoleColor.White).PlainSequence;
 
 		/// <summary>
-        /// [Typewriter] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [Typewriter] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int TypewriterDelay
 		{
 			get
@@ -60,8 +59,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Typewriter] How many milliseconds to wait before writing the text in the new screen again?
-        /// </summary>
+		/// [Typewriter] How many milliseconds to wait before writing the text in the new screen again?
+		/// </summary>
 		public static int TypewriterNewScreenDelay
 		{
 			get
@@ -76,8 +75,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Typewriter] Text for Typewriter. Longer is better.
-        /// </summary>
+		/// [Typewriter] Text for Typewriter. Longer is better.
+		/// </summary>
 		public static string TypewriterWrite
 		{
 			get
@@ -92,8 +91,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Typewriter] Minimum writing speed in WPM
-        /// </summary>
+		/// [Typewriter] Minimum writing speed in WPM
+		/// </summary>
 		public static int TypewriterWritingSpeedMin
 		{
 			get
@@ -108,8 +107,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Typewriter] Maximum writing speed in WPM
-        /// </summary>
+		/// [Typewriter] Maximum writing speed in WPM
+		/// </summary>
 		public static int TypewriterWritingSpeedMax
 		{
 			get
@@ -124,8 +123,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Typewriter] Shows the typewriter letter column position by showing this key on the bottom of the screen: <code>^</code>
-        /// </summary>
+		/// [Typewriter] Shows the typewriter letter column position by showing this key on the bottom of the screen: <code>^</code>
+		/// </summary>
 		public static bool TypewriterShowArrowPos
 		{
 			get
@@ -138,8 +137,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Typewriter] Text color
-        /// </summary>
+		/// [Typewriter] Text color
+		/// </summary>
 		public static string TypewriterTextColor
 		{
 			get
@@ -287,13 +286,13 @@ namespace KS.Misc.Screensaver.Displays
 							int OldLeft = ConsoleWrapper.CursorLeft;
 							ConsoleWrapper.SetCursorPosition(OldLeft, ConsoleWrapper.WindowHeight - 1);
 							DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Arrow drawn in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop);
-							TextWriterColor.WritePlain(Conversions.ToString(Color255.GetEsc()) + "[1K^" + Conversions.ToString(Color255.GetEsc()) + "[K", false);
+							TextWriterColor.WritePlain(Convert.ToString(Color255.GetEsc()) + "[1K^" + Convert.ToString(Color255.GetEsc()) + "[K", false);
 							ConsoleWrapper.SetCursorPosition(OldLeft, OldTop);
 							DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Returned to {0}, {1}", OldLeft, OldTop);
 						}
 
 						// Write the final character to the console and wait
-						TextWriterColor.WritePlain(Conversions.ToString(StruckChar), false);
+						TextWriterColor.WritePlain(Convert.ToString(StruckChar), false);
 						ThreadManager.SleepNoBlock(WriteMs, ScreensaverDisplayer.ScreensaverDisplayerThread);
 					}
 					TextWriterColor.WritePlain("", true);

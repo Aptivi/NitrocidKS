@@ -40,8 +40,7 @@ namespace KS.Misc.Editors.HexEdit.Commands
 				FinalByte = Input.ReadLine(false);
 				if (!(FinalByte == "EOF"))
 				{
-					byte ByteContent;
-					if (byte.TryParse(FinalByte, System.Globalization.NumberStyles.HexNumber, null, out ByteContent))
+					if (byte.TryParse(FinalByte, System.Globalization.NumberStyles.HexNumber, null, out byte ByteContent))
 					{
 						FinalBytes.Add(ByteContent);
 					}
@@ -53,7 +52,7 @@ namespace KS.Misc.Editors.HexEdit.Commands
 			}
 
 			// Add the new bytes
-			HexEditTools.HexEdit_AddNewBytes(FinalBytes.ToArray());
+			HexEditTools.HexEdit_AddNewBytes([.. FinalBytes]);
 		}
 
 	}

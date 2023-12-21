@@ -20,40 +20,40 @@
 namespace KS.Misc.Splash
 {
 	/// <summary>
-    /// Splash screen interface
-    /// </summary>
+	/// Splash screen interface
+	/// </summary>
 	public interface ISplash
 	{
 
 		/// <summary>
-        /// Whether the splash is closing. If true, the thread of which handles the display should close itself. <see cref="Closing()"/> should set this property to True.
-        /// </summary>
+		/// Whether the splash is closing. If true, the thread of which handles the display should close itself. <see cref="Closing()"/> should set this property to True.
+		/// </summary>
 		bool SplashClosing { get; set; }
 		/// <summary>
-        /// Splash name
-        /// </summary>
+		/// Splash name
+		/// </summary>
 		string SplashName { get; }
 		/// <summary>
-        /// Splash displays progress
-        /// </summary>
+		/// Splash displays progress
+		/// </summary>
 		bool SplashDisplaysProgress { get; }
 		/// <summary>
-        /// The opening screen. Should be synchronous.
-        /// </summary>
+		/// The opening screen. Should be synchronous.
+		/// </summary>
 		void Opening();
 		/// <summary>
-        /// The screen which is meant to be looped. You can set it to do nothing. Should be async. It should also handle <see cref="System.Threading.ThreadInterruptedException"/> to avoid kernel exiting on startup.
-        /// </summary>
+		/// The screen which is meant to be looped. You can set it to do nothing. Should be async. It should also handle <see cref="System.Threading.ThreadInterruptedException"/> to avoid kernel exiting on startup.
+		/// </summary>
 		void Display();
 		/// <summary>
-        /// The closing screen. Should be synchronous.
-        /// </summary>
+		/// The closing screen. Should be synchronous.
+		/// </summary>
 		void Closing();
 		/// <summary>
-        /// Report the progress
-        /// </summary>
-        /// <param name="ProgressReport">The progress text to indicate how did the kernel progress</param>
-        /// <param name="Progress">The progress indicator of the kernel</param>
+		/// Report the progress
+		/// </summary>
+		/// <param name="ProgressReport">The progress text to indicate how did the kernel progress</param>
+		/// <param name="Progress">The progress indicator of the kernel</param>
 		void Report(int Progress, string ProgressReport, params object[] Vars);
 
 	}

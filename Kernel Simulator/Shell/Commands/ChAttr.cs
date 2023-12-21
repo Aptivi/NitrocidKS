@@ -24,7 +24,6 @@ using KS.Files.Querying;
 using KS.Languages;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Shell.Commands
 {
@@ -41,7 +40,7 @@ namespace KS.Shell.Commands
 				{
 					if (ListArgs[1].StartsWith("+"))
 					{
-						FileAttributes Attrib = (FileAttributes)Conversions.ToInteger(Enum.Parse(typeof(FileAttributes), ListArgs[1].Remove(0, 1)));
+						FileAttributes Attrib = (FileAttributes)Convert.ToInt32(Enum.Parse(typeof(FileAttributes), ListArgs[1].Remove(0, 1)));
 						if (AttributeManager.TryAddAttributeToFile(NeutralizedFilePath, Attrib))
 						{
 							TextWriterColor.Write(Translate.DoTranslation("Attribute has been added successfully."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ListArgs[1]);
@@ -53,7 +52,7 @@ namespace KS.Shell.Commands
 					}
 					else if (ListArgs[1].StartsWith("-"))
 					{
-						FileAttributes Attrib = (FileAttributes)Conversions.ToInteger(Enum.Parse(typeof(FileAttributes), ListArgs[1].Remove(0, 1)));
+						FileAttributes Attrib = (FileAttributes)Convert.ToInt32(Enum.Parse(typeof(FileAttributes), ListArgs[1].Remove(0, 1)));
 						if (AttributeManager.TryRemoveAttributeFromFile(NeutralizedFilePath, Attrib))
 						{
 							TextWriterColor.Write(Translate.DoTranslation("Attribute has been removed successfully."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ListArgs[1]);

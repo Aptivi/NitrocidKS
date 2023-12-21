@@ -20,29 +20,29 @@
 namespace KS.Kernel
 {
 	/// <summary>
-    /// One-lettered kernel error level enumeration
-    /// </summary>
+	/// One-lettered kernel error level enumeration
+	/// </summary>
 	public enum KernelErrorLevel
 	{
 		/// <summary>
-        /// Continuable kernel error
-        /// </summary>
+		/// Continuable kernel error
+		/// </summary>
 		C,
 		/// <summary>
-        /// Serious kernel error
-        /// </summary>
+		/// Serious kernel error
+		/// </summary>
 		S,
 		/// <summary>
-        /// Double kernel panic
-        /// </summary>
+		/// Double kernel panic
+		/// </summary>
 		D,
 		/// <summary>
-        /// Fatal kernel error
-        /// </summary>
+		/// Fatal kernel error
+		/// </summary>
 		F,
 		/// <summary>
-        /// Unrecoverable kernel error
-        /// </summary>
+		/// Unrecoverable kernel error
+		/// </summary>
 		U
 	}
 }

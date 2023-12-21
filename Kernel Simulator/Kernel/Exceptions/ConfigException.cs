@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when there is a config error
-    /// </summary>
+	/// Thrown when there is a config error
+	/// </summary>
 	public class ConfigException : Exception
 	{
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -32,7 +33,7 @@ using KS.Misc.Screensaver.Customized;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 using KS.Misc.Writers.FancyWriters;
-using Microsoft.VisualBasic.CompilerServices;
+using KS.Resources;
 using Newtonsoft.Json.Linq;
 using Terminaux.Base;
 using Terminaux.Colors;
@@ -49,8 +50,8 @@ namespace KS.Misc.Configuration
 		private static SettingsType CurrentSettingsType = SettingsType.Normal;
 
 		/// <summary>
-        /// Main page
-        /// </summary>
+		/// Main page
+		/// </summary>
 		public static void OpenMainPage(SettingsType SettingsType)
 		{
 			var PromptFinished = default(bool);
@@ -180,10 +181,10 @@ namespace KS.Misc.Configuration
 		}
 
 		/// <summary>
-        /// Open section
-        /// </summary>
-        /// <param name="Section">Section name</param>
-        /// <param name="SettingsToken">Settings token</param>
+		/// Open section
+		/// </summary>
+		/// <param name="Section">Section name</param>
+		/// <param name="SettingsToken">Settings token</param>
 		public static void OpenSection(string Section, JToken SettingsToken)
 		{
 			try
@@ -209,7 +210,7 @@ namespace KS.Misc.Configuration
 						object CurrentValue = "Unknown";
 						string Variable = (string)Setting["Variable"];
 						string VariableProperty = (string)Setting["VariableProperty"];
-						SettingsKeyType VariableType = (SettingsKeyType)Conversions.ToInteger(Enum.Parse(typeof(SettingsKeyType), (string)Setting["Type"]));
+						SettingsKeyType VariableType = (SettingsKeyType)Convert.ToInt32(Enum.Parse(typeof(SettingsKeyType), (string)Setting["Type"]));
 
 						// Print the option
 						if (VariableType == SettingsKeyType.SMaskedString)
@@ -234,9 +235,9 @@ namespace KS.Misc.Configuration
 								}
 
 								// Get the plain sequence from the color
-								if (CurrentValue is Color)
+								if (CurrentValue is Color valueColor)
 								{
-									CurrentValue = CurrentValue.PlainSequence;
+									CurrentValue = valueColor.PlainSequence;
 								}
 							}
 							else
@@ -304,11 +305,11 @@ namespace KS.Misc.Configuration
 		}
 
 		/// <summary>
-        /// Open a key.
-        /// </summary>
-        /// <param name="Section">Section</param>
-        /// <param name="KeyNumber">Key number</param>
-        /// <param name="SettingsToken">Settings token</param>
+		/// Open a key.
+		/// </summary>
+		/// <param name="Section">Section</param>
+		/// <param name="KeyNumber">Key number</param>
+		/// <param name="SettingsToken">Settings token</param>
 		public static void OpenKey(string Section, int KeyNumber, JToken SettingsToken)
 		{
 			try
@@ -322,7 +323,7 @@ namespace KS.Misc.Configuration
 				// Key properties
 				string KeyName = (string)KeyToken["Name"];
 				string KeyDescription = (string)KeyToken["Description"];
-				SettingsKeyType KeyType = (SettingsKeyType)Conversions.ToInteger(Enum.Parse(typeof(SettingsKeyType), (string)KeyToken["Type"]));
+				SettingsKeyType KeyType = (SettingsKeyType)Convert.ToInt32(Enum.Parse(typeof(SettingsKeyType), (string)KeyToken["Type"]));
 				string KeyVar = (string)KeyToken["Variable"];
 				object KeyValue = "";
 				object KeyDefaultValue = "";
@@ -353,16 +354,15 @@ namespace KS.Misc.Configuration
 				string ListFunctionName = (string)KeyToken["SelectionFunctionName"];
 				string ListFunctionType = (string)KeyToken["SelectionFunctionType"];
 				bool ListIsPathCurrentPath = (bool)(KeyToken["IsPathCurrentPath"] ?? false);
-				KernelPathType ListValuePathType = (KernelPathType)Conversions.ToInteger(KeyToken["ValuePathType"] is not null ? Enum.Parse(typeof(KernelPathType), (string)KeyToken["ValuePathType"]) : KernelPathType.Mods);
+				KernelPathType ListValuePathType = (KernelPathType)Convert.ToInt32(KeyToken["ValuePathType"] is not null ? Enum.Parse(typeof(KernelPathType), (string)KeyToken["ValuePathType"]) : KernelPathType.Mods);
 				var TargetList = default(IEnumerable<object>);
 				var SelectFrom = default(IEnumerable<object>);
-				var Selections = default(object);
+				var Selections = default(Array);
 				bool NeutralizePaths = (bool)(KeyToken["IsValuePath"] ?? false);
 				string NeutralizeRootPath = ListIsPathCurrentPath ? CurrentDirectory.CurrentDir : Paths.GetKernelPath(ListValuePathType);
 
 				// Inputs
 				string AnswerString = "";
-				int AnswerInt;
 
 				var PressedKey = default(ConsoleKey);
 				var FinalBool = default(bool);
@@ -419,9 +419,9 @@ namespace KS.Misc.Configuration
 							}
 
 							// Get the plain sequence from the color
-							if (KeyDefaultValue is Color)
+							if (KeyDefaultValue is Color valueColor)
 							{
-								KeyDefaultValue = KeyDefaultValue.PlainSequence;
+								KeyDefaultValue = valueColor.PlainSequence;
 							}
 						}
 						else
@@ -489,13 +489,13 @@ namespace KS.Misc.Configuration
 							TextWriterColor.Write("> ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
 							VariantValue = ConsoleBase.Inputs.Input.ReadLine();
 							if (NeutralizePaths)
-								VariantValue = Filesystem.NeutralizePath(Conversions.ToString(VariantValue), NeutralizeRootPath);
+								VariantValue = Filesystem.NeutralizePath(Convert.ToString(VariantValue), NeutralizeRootPath);
 							DebugWriter.Wdbg(DebugLevel.I, "User answered {0}", VariantValue);
 						}
 					}
 					else if (KeyType == SettingsKeyType.SBoolean)
 					{
-						if (Conversions.ToBoolean(FieldManager.GetValue(KeyVar)))
+						if (Convert.ToBoolean(FieldManager.GetValue(KeyVar)))
 						{
 							AnswerString = "2";
 						}
@@ -553,11 +553,11 @@ namespace KS.Misc.Configuration
 							}
 							else if (KeyType == SettingsKeyType.SChar)
 							{
-								AnswerString = Conversions.ToString(ConsoleBase.Inputs.Input.DetectKeypress().KeyChar);
+								AnswerString = Convert.ToString(ConsoleBase.Inputs.Input.DetectKeypress().KeyChar);
 							}
 							else if (KeyType == SettingsKeyType.SIntSlider)
 							{
-								int CurrentValue = Conversions.ToInteger(KeyDefaultValue);
+								int CurrentValue = Convert.ToInt32(KeyDefaultValue);
 								ConsoleWrapper.CursorVisible = false;
 								while (PressedKey != ConsoleKey.Enter)
 								{
@@ -565,7 +565,7 @@ namespace KS.Misc.Configuration
 									ProgressBarColor.WriteProgress(100d * (CurrentValue / (double)IntSliderMaximumValue), 4, ConsoleWrapper.WindowHeight - 4);
 
 									// Show the current value
-									TextWriterWhereColor.WriteWhere(Translate.DoTranslation("Current value:") + " {0} / {1} - {2}" + Conversions.ToString(Color255.GetEsc()) + "[0K", 5, ConsoleWrapper.WindowHeight - 5, false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), CurrentValue, IntSliderMinimumValue, IntSliderMaximumValue);
+									TextWriterWhereColor.WriteWhere(Translate.DoTranslation("Current value:") + " {0} / {1} - {2}" + Convert.ToString(Color255.GetEsc()) + "[0K", 5, ConsoleWrapper.WindowHeight - 5, false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), CurrentValue, IntSliderMinimumValue, IntSliderMaximumValue);
 
 									// Parse the user input
 									PressedKey = ConsoleBase.Inputs.Input.DetectKeypress().Key;
@@ -606,7 +606,7 @@ namespace KS.Misc.Configuration
 
 					// Check for input
 					DebugWriter.Wdbg(DebugLevel.I, "Is the answer numeric? {0}", StringQuery.IsStringNumeric(AnswerString));
-					if (int.TryParse(AnswerString, out AnswerInt))
+					if (int.TryParse(AnswerString, out int AnswerInt))
 					{
 						// The answer is numeric! Now, check for types
 						switch (KeyType)
@@ -685,12 +685,12 @@ namespace KS.Misc.Configuration
 											if (FieldManager.CheckField(KeyVar))
 											{
 												// We're dealing with the field
-												FieldManager.SetValue(KeyVar, Selections((object)AnswerIndex), true);
+												FieldManager.SetValue(KeyVar, Selections.GetValue(AnswerIndex), true);
 											}
 											else if (PropertyManager.CheckProperty(KeyVar))
 											{
 												// We're dealing with the property
-												PropertyManager.SetPropertyValue(KeyVar, Selections((object)AnswerIndex));
+												PropertyManager.SetPropertyValue(KeyVar, Selections.GetValue(AnswerIndex));
 											}
 										}
 										else if (!(AnswerInt > MaxKeyOptions))
@@ -814,7 +814,7 @@ namespace KS.Misc.Configuration
 									if (string.IsNullOrWhiteSpace(AnswerString))
 									{
 										DebugWriter.Wdbg(DebugLevel.I, "Answer is nothing. Setting to {0}...", KeyValue);
-										AnswerString = Conversions.ToString(KeyValue);
+										AnswerString = Convert.ToString(KeyValue);
 									}
 
 									// Check to see if the user intended to clear the variable to make it consist of nothing
@@ -848,7 +848,7 @@ namespace KS.Misc.Configuration
 									// Get the delimiter
 									if (ListJoinString is null)
 									{
-										FinalDelimiter = Conversions.ToString(FieldManager.GetValue(ListJoinStringVariable));
+										FinalDelimiter = Convert.ToString(FieldManager.GetValue(ListJoinStringVariable));
 									}
 									else
 									{
@@ -951,8 +951,8 @@ namespace KS.Misc.Configuration
 		}
 
 		/// <summary>
-        /// A sub for variable finding prompt
-        /// </summary>
+		/// A sub for variable finding prompt
+		/// </summary>
 		public static void VariableFinder(JToken SettingsToken)
 		{
 			string SearchFor;
@@ -985,8 +985,8 @@ namespace KS.Misc.Configuration
 				// Parse the input and go to setting
 				int ChosenSettingIndex = AnswerInt - 1;
 				string ChosenSetting = Results[ChosenSettingIndex];
-				int SectionIndex = Conversions.ToInteger(ChosenSetting.AsSpan().Slice(1, ChosenSetting.IndexOf("/") - 1).ToString()) - 1;
-				int KeyNumber = Conversions.ToInteger(ChosenSetting.AsSpan().Slice(ChosenSetting.IndexOf("/") + 1, ChosenSetting.IndexOf("]") - (ChosenSetting.IndexOf("/") + 1)).ToString());
+				int SectionIndex = Convert.ToInt32(ChosenSetting.AsSpan().Slice(1, ChosenSetting.IndexOf("/") - 1).ToString()) - 1;
+				int KeyNumber = Convert.ToInt32(ChosenSetting.AsSpan().Slice(ChosenSetting.IndexOf("/") + 1, ChosenSetting.IndexOf("]") - (ChosenSetting.IndexOf("/") + 1)).ToString());
 				JProperty Section = (JProperty)SettingsToken.ToList()[SectionIndex];
 				string SectionName = Section.Name;
 				OpenKey(SectionName, KeyNumber, SettingsToken);
@@ -999,8 +999,8 @@ namespace KS.Misc.Configuration
 		}
 
 		/// <summary>
-        /// Finds a setting with the matching pattern
-        /// </summary>
+		/// Finds a setting with the matching pattern
+		/// </summary>
 		public static List<string> FindSetting(string Pattern, JToken SettingsToken)
 		{
 			var Results = new List<string>();
@@ -1036,14 +1036,14 @@ namespace KS.Misc.Configuration
 		}
 
 		/// <summary>
-        /// Checks all the settings variables to see if they can be parsed
-        /// </summary>
+		/// Checks all the settings variables to see if they can be parsed
+		/// </summary>
 		public static Dictionary<string, bool> CheckSettingsVariables()
 		{
-			var SettingsToken = JToken.Parse(My.Resources.Resources.SettingsEntries);
-			var SaverSettingsToken = JToken.Parse(My.Resources.Resources.ScreensaverSettingsEntries);
-			var SplashSettingsToken = JToken.Parse(My.Resources.Resources.SplashSettingsEntries);
-			JToken[] Tokens = new[] { SettingsToken, SaverSettingsToken, SplashSettingsToken };
+			var SettingsToken = JToken.Parse(KernelResources.SettingsEntries);
+			var SaverSettingsToken = JToken.Parse(KernelResources.ScreensaverSettingsEntries);
+			var SplashSettingsToken = JToken.Parse(KernelResources.SplashSettingsEntries);
+			JToken[] Tokens = [SettingsToken, SaverSettingsToken, SplashSettingsToken];
 			var Results = new Dictionary<string, bool>();
 
 			// Parse all the settings
@@ -1089,29 +1089,29 @@ namespace KS.Misc.Configuration
 		}
 
 		/// <summary>
-        /// Open the settings resource
-        /// </summary>
-        /// <param name="SettingsType">The settings type</param>
+		/// Open the settings resource
+		/// </summary>
+		/// <param name="SettingsType">The settings type</param>
 		private static JToken OpenSettingsResource(SettingsType SettingsType)
 		{
 			switch (SettingsType)
 			{
 				case SettingsType.Normal:
 					{
-						return JToken.Parse(My.Resources.Resources.SettingsEntries);
+						return JToken.Parse(KernelResources.SettingsEntries);
 					}
 				case SettingsType.Screensaver:
 					{
-						return JToken.Parse(My.Resources.Resources.ScreensaverSettingsEntries);
+						return JToken.Parse(KernelResources.ScreensaverSettingsEntries);
 					}
 				case SettingsType.Splash:
 					{
-						return JToken.Parse(My.Resources.Resources.SplashSettingsEntries);
+						return JToken.Parse(KernelResources.SplashSettingsEntries);
 					}
 
 				default:
 					{
-						return JToken.Parse(My.Resources.Resources.SettingsEntries);
+						return JToken.Parse(KernelResources.SettingsEntries);
 					}
 			}
 		}

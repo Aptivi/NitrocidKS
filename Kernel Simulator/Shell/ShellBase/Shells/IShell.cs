@@ -20,22 +20,22 @@
 namespace KS.Shell.ShellBase.Shells
 {
 	/// <summary>
-    /// Base shell functions
-    /// </summary>
+	/// Base shell functions
+	/// </summary>
 	public interface IShell
 	{
 
 		/// <summary>
-        /// The shell type
-        /// </summary>
+		/// The shell type
+		/// </summary>
 		ShellType ShellType { get; }
 		/// <summary>
-        /// If true, will exit the shell
-        /// </summary>
+		/// If true, will exit the shell
+		/// </summary>
 		bool Bail { get; set; }
 		/// <summary>
-        /// The shell initializer
-        /// </summary>
+		/// The shell initializer
+		/// </summary>
 		void InitializeShell(params object[] ShellArgs);
 
 	}

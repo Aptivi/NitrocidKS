@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using KS.Languages;
+using KS.Resources;
 using Newtonsoft.Json.Linq;
 using NUnit.Framework;
 using Shouldly;
@@ -12,8 +13,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests creating the new instance of the language information
-    /// </summary>
+		/// Tests creating the new instance of the language information
+		/// </summary>
 		[Test]
 		[Description("Initialization")]
 		public void TestCreateNewLanguageInfoInstance()
@@ -34,27 +35,27 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests translation dictionary preparation for a language
-    /// </summary>
+		/// Tests translation dictionary preparation for a language
+		/// </summary>
 		[Test]
 		[Description("Initialization")]
 		public void TestPrepareDictForOneLanguage()
 		{
-			int ExpectedLength = JObject.Parse(KS.My.Resources.Resources.spa).SelectToken("Localizations").Count();
+			int ExpectedLength = JObject.Parse(KernelResources.spa).SelectToken("Localizations").Count();
 			int ActualLength = Translate.PrepareDict("spa").Values.Count;
 			ActualLength.ShouldBe(ExpectedLength);
 		}
 
 		/// <summary>
-    /// Tests translation dictionary preparation for all languages
-    /// </summary>
+		/// Tests translation dictionary preparation for all languages
+		/// </summary>
 		[Test]
 		[Description("Initialization")]
 		public void TestPrepareDictForAllLanguages()
 		{
 			foreach (string Lang in LanguageManager.Languages.Keys)
 			{
-				int ExpectedLength = JObject.Parse(KS.My.Resources.Resources.ResourceManager.GetString(Lang.Replace("-", "_"))).SelectToken("Localizations").Count();
+				int ExpectedLength = JObject.Parse(KernelResources.ResourceManager.GetString(Lang.Replace("-", "_"))).SelectToken("Localizations").Count();
 				int ActualLength = Translate.PrepareDict(Lang).Values.Count;
 				ActualLength.ShouldBe(ExpectedLength, $"Lang: {Lang}");
 			}

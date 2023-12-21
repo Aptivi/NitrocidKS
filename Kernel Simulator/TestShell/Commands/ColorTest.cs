@@ -1,7 +1,6 @@
 ﻿using System;
 using KS.ConsoleBase.Colors;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
@@ -28,7 +27,7 @@ namespace KS.TestShell.Commands
 		public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
 		{
 			char esc = Color255.GetEsc();
-			Console.WriteLine(Conversions.ToString(esc) + "[38;5;" + ListArgs[0] + "mIndex " + ListArgs[0]);
+			Console.WriteLine(Convert.ToString(esc) + "[38;5;" + ListArgs[0] + "mIndex " + ListArgs[0]);
 		}
 
 	}

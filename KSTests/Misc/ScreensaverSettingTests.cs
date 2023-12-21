@@ -29,8 +29,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests setting default screensaver
-    /// </summary>
+		/// Tests setting default screensaver
+		/// </summary>
 		[Test]
 		[Description("Setting")]
 		public void TestSetDefaultScreensaver()

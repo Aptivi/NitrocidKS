@@ -29,8 +29,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests user addition
-    /// </summary>
+		/// Tests user addition
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestAddUser()
@@ -40,8 +40,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests username change
-    /// </summary>
+		/// Tests username change
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestChangeUser()
@@ -50,8 +50,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests username change
-    /// </summary>
+		/// Tests username change
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestGetUserProperty()
@@ -61,8 +61,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests removing user
-    /// </summary>
+		/// Tests removing user
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestRemoveUser()

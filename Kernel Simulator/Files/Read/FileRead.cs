@@ -26,10 +26,10 @@ namespace KS.Files.Read
 	{
 
 		/// <summary>
-        /// Reads the contents of a file and writes it to the array. This is blocking and will put a lock on the file until read.
-        /// </summary>
-        /// <param name="filename">Full path to file</param>
-        /// <returns>An array full of file contents</returns>
+		/// Reads the contents of a file and writes it to the array. This is blocking and will put a lock on the file until read.
+		/// </summary>
+		/// <param name="filename">Full path to file</param>
+		/// <returns>An array full of file contents</returns>
 		public static string[] ReadContents(string filename)
 		{
 			// Read the contents
@@ -42,14 +42,14 @@ namespace KS.Files.Read
 				while (!FStream.EndOfStream)
 					FileContents.Add(FStream.ReadLine());
 			}
-			return FileContents.ToArray();
+			return [.. FileContents];
 		}
 
 		/// <summary>
-        /// Opens a file, reads all lines, and returns the array of lines
-        /// </summary>
-        /// <param name="path">Path to file</param>
-        /// <returns>Array of lines</returns>
+		/// Opens a file, reads all lines, and returns the array of lines
+		/// </summary>
+		/// <param name="path">Path to file</param>
+		/// <returns>Array of lines</returns>
 		public static string[] ReadAllLinesNoBlock(string path)
 		{
 			Filesystem.ThrowOnInvalidPath(path);
@@ -61,7 +61,7 @@ namespace KS.Files.Read
 			while (!FOpen.EndOfStream)
 				AllLnList.Add(FOpen.ReadLine());
 			FOpen.Close();
-			return AllLnList.ToArray();
+			return [.. AllLnList];
 		}
 
 	}

@@ -35,7 +35,7 @@ namespace KS.Misc.Timers
 	public static class StopwatchScreen
 	{
 
-		internal static List<LapDisplayInfo> Laps = new();
+		internal static List<LapDisplayInfo> Laps = [];
 		internal static KernelThread StopwatchUpdate = new("Stopwatch ETA Updater", true, UpdateStopwatchElapsedDisplay);
 		internal static Color LapColor = KernelColorTools.NeutralTextColor;
 		internal static Stopwatch Stopwatch = new();
@@ -43,8 +43,8 @@ namespace KS.Misc.Timers
 		internal static bool NewLapAcknowledged;
 
 		/// <summary>
-        /// Opens the stopwatch screen
-        /// </summary>
+		/// Opens the stopwatch screen
+		/// </summary>
 		public static void OpenStopwatch()
 		{
 			// Clear for cleanliness
@@ -173,8 +173,8 @@ namespace KS.Misc.Timers
 		}
 
 		/// <summary>
-        /// Updates the elapsed display for stopwatch
-        /// </summary>
+		/// Updates the elapsed display for stopwatch
+		/// </summary>
 		private static void UpdateStopwatchElapsedDisplay()
 		{
 			// Populate the positions for time and for lap list
@@ -213,7 +213,7 @@ namespace KS.Misc.Timers
 						NewLapAcknowledged = false;
 					}
 				}
-				catch (ThreadInterruptedException ex)
+				catch (ThreadInterruptedException)
 				{
 					break;
 				}
@@ -221,8 +221,8 @@ namespace KS.Misc.Timers
 		}
 
 		/// <summary>
-        /// Makes the display border
-        /// </summary>
+		/// Makes the display border
+		/// </summary>
 		public static void MakeBorder()
 		{
 			int KeysTextTopPosition = ConsoleWrapper.WindowHeight - 2;

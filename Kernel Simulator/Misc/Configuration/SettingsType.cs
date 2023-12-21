@@ -20,21 +20,21 @@
 namespace KS.Misc.Configuration
 {
 	/// <summary>
-    /// The settings type
-    /// </summary>
+	/// The settings type
+	/// </summary>
 	public enum SettingsType
 	{
 		/// <summary>
-        /// The normal kernel settings
-        /// </summary>
+		/// The normal kernel settings
+		/// </summary>
 		Normal,
 		/// <summary>
-        /// The screensaver settings
-        /// </summary>
+		/// The screensaver settings
+		/// </summary>
 		Screensaver,
 		/// <summary>
-        /// The splash settings
-        /// </summary>
+		/// The splash settings
+		/// </summary>
 		Splash
 	}
 }

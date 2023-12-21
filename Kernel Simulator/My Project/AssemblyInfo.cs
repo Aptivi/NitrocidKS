@@ -1,9 +1,3 @@
-﻿using System;
-using KS.ConsoleBase.Colors;
-using KS.Kernel;
-using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
-using KS.Shell.ShellBase.Commands;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
@@ -22,25 +16,7 @@ using KS.Shell.ShellBase.Commands;
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-using Microsoft.VisualBasic;
+using System.Runtime.CompilerServices;
 
-namespace KS.TestShell.Commands
-{
-	class Test_TestEventCommand : CommandExecutor, ICommand
-	{
-
-		public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
-		{
-			try
-			{
-				string SubName = "Raise" + ListArgs[0];
-				Interaction.CallByName(new Events(), SubName, CallType.Method);
-			}
-			catch (Exception ex)
-			{
-				TextWriterColor.Write(Translate.DoTranslation("Failure to raise event {0}: {1}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[0]);
-			}
-		}
-
-	}
-}
+[assembly: InternalsVisibleTo("KSTests")]
+[assembly: InternalsVisibleTo("KSConverter")]

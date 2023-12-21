@@ -23,29 +23,29 @@ namespace KS.Shell.ShellBase.Commands
 	{
 
 		/// <summary>
-        /// The help usages of command.
-        /// </summary>
+		/// The help usages of command.
+		/// </summary>
 		public string[] HelpUsages { get; private set; }
 		/// <summary>
-        /// Does the command require arguments?
-        /// </summary>
+		/// Does the command require arguments?
+		/// </summary>
 		public bool ArgumentsRequired { get; private set; }
 		/// <summary>
-        /// User must specify at least this number of arguments
-        /// </summary>
+		/// User must specify at least this number of arguments
+		/// </summary>
 		public int MinimumArguments { get; private set; }
 		/// <summary>
-        /// Auto completion function delegate
-        /// </summary>
+		/// Auto completion function delegate
+		/// </summary>
 		public Func<string[]> AutoCompleter { get; private set; }
 
 		/// <summary>
-        /// Installs a new instance of the command argument info class
-        /// </summary>
-        /// <param name="HelpUsages">Help usages</param>
-        /// <param name="ArgumentsRequired">Arguments required</param>
-        /// <param name="MinimumArguments">Minimum arguments</param>
-        /// <param name="AutoCompleter">Auto completion function</param>
+		/// Installs a new instance of the command argument info class
+		/// </summary>
+		/// <param name="HelpUsages">Help usages</param>
+		/// <param name="ArgumentsRequired">Arguments required</param>
+		/// <param name="MinimumArguments">Minimum arguments</param>
+		/// <param name="AutoCompleter">Auto completion function</param>
 		public CommandArgumentInfo(string[] HelpUsages, bool ArgumentsRequired, int MinimumArguments, Func<string[]> AutoCompleter = null)
 		{
 			this.HelpUsages = HelpUsages;

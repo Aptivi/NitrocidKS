@@ -44,17 +44,17 @@ namespace KS.Misc.Screensaver
 		public static string DefSaverName = "matrix";
 		public static int ScrnTimeout = 300000;
 		public static bool PasswordLock = true;
-		public readonly static ConsoleColor[] colors = (ConsoleColor[])Enum.GetValues(typeof(ConsoleColor));        // 15 Console Colors
-		public readonly static ConsoleColors[] colors255 = (ConsoleColors[])Enum.GetValues(typeof(ConsoleColors));  // 255 Console Colors
+		public static readonly ConsoleColor[] colors = (ConsoleColor[])Enum.GetValues(typeof(ConsoleColor));        // 15 Console Colors
+		public static readonly ConsoleColors[] colors255 = (ConsoleColors[])Enum.GetValues(typeof(ConsoleColors));  // 255 Console Colors
 
 		// Private variables
 		internal static Dictionary<string, BaseScreensaver> Screensavers = new() { { "barrot", new BarRotDisplay() }, { "beatfader", new BeatFaderDisplay() }, { "beatpulse", new BeatPulseDisplay() }, { "beatedgepulse", new BeatEdgePulseDisplay() }, { "bouncingblock", new BouncingBlockDisplay() }, { "bouncingtext", new BouncingTextDisplay() }, { "colormix", new ColorMixDisplay() }, { "dateandtime", new DateAndTimeDisplay() }, { "disco", new DiscoDisplay() }, { "dissolve", new DissolveDisplay() }, { "edgepulse", new EdgePulseDisplay() }, { "fader", new FaderDisplay() }, { "faderback", new FaderBackDisplay() }, { "fallingline", new FallingLineDisplay() }, { "figlet", new FigletDisplay() }, { "fireworks", new FireworksDisplay() }, { "flashcolor", new FlashColorDisplay() }, { "flashtext", new FlashTextDisplay() }, { "glitch", new GlitchDisplay() }, { "glittercolor", new GlitterColorDisplay() }, { "glittermatrix", new GlitterMatrixDisplay() }, { "indeterminate", new IndeterminateDisplay() }, { "lighter", new LighterDisplay() }, { "lines", new LinesDisplay() }, { "linotypo", new LinotypoDisplay() }, { "marquee", new MarqueeDisplay() }, { "matrix", new MatrixDisplay() }, { "noise", new NoiseDisplay() }, { "personlookup", new PersonLookupDisplay() }, { "plain", new PlainDisplay() }, { "progressclock", new ProgressClockDisplay() }, { "pulse", new PulseDisplay() }, { "ramp", new RampDisplay() }, { "random", new RandomSaverDisplay() }, { "snaker", new SnakerDisplay() }, { "spotwrite", new SpotWriteDisplay() }, { "stackbox", new StackBoxDisplay() }, { "typewriter", new TypewriterDisplay() }, { "typo", new TypoDisplay() }, { "windowslogo", new WindowsLogoDisplay() }, { "wipe", new WipeDisplay() } };
 		internal static AutoResetEvent SaverAutoReset = new(false);
 
 		/// <summary>
-        /// Shows the screensaver
-        /// </summary>
-        /// <param name="saver">A specified screensaver</param>
+		/// Shows the screensaver
+		/// </summary>
+		/// <param name="saver">A specified screensaver</param>
 		public static void ShowSavers(string saver)
 		{
 			try
@@ -110,8 +110,8 @@ namespace KS.Misc.Screensaver
 		}
 
 		/// <summary>
-        /// Locks the screen. The password will be required when unlocking, depending on the kernel settings.
-        /// </summary>
+		/// Locks the screen. The password will be required when unlocking, depending on the kernel settings.
+		/// </summary>
 		public static void LockScreen()
 		{
 			LockMode = true;
@@ -128,9 +128,9 @@ namespace KS.Misc.Screensaver
 		}
 
 		/// <summary>
-        /// Sets the default screensaver
-        /// </summary>
-        /// <param name="saver">Specified screensaver</param>
+		/// Sets the default screensaver
+		/// </summary>
+		/// <param name="saver">Specified screensaver</param>
 		public static void SetDefaultScreensaver(string saver)
 		{
 			saver = saver.ToLower();
@@ -149,9 +149,9 @@ namespace KS.Misc.Screensaver
 		}
 
 		/// <summary>
-        /// Gets a screensaver instance from loaded assembly
-        /// </summary>
-        /// <param name="Assembly">An assembly</param>
+		/// Gets a screensaver instance from loaded assembly
+		/// </summary>
+		/// <param name="Assembly">An assembly</param>
 		public static BaseScreensaver GetScreensaverInstance(Assembly Assembly)
 		{
 			foreach (Type t in Assembly.GetTypes())
@@ -163,8 +163,8 @@ namespace KS.Misc.Screensaver
 		}
 
 		/// <summary>
-        /// Screensaver error handler
-        /// </summary>
+		/// Screensaver error handler
+		/// </summary>
 		internal static void HandleSaverError(Exception Exception)
 		{
 			if (Exception is not null)
@@ -177,8 +177,8 @@ namespace KS.Misc.Screensaver
 		}
 
 		/// <summary>
-        /// Screensaver cancellation handler
-        /// </summary>
+		/// Screensaver cancellation handler
+		/// </summary>
 		internal static void HandleSaverCancel()
 		{
 			DebugWriter.Wdbg(DebugLevel.W, "Cancellation is pending. Cleaning everything up...");

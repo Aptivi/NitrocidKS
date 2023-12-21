@@ -28,7 +28,6 @@ using KS.Network.SFTP;
 using KS.Shell.Prompts;
 using KS.Shell.ShellBase;
 using KS.Shell.ShellBase.Shells;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Shell.Shells
 {
@@ -51,7 +50,7 @@ namespace KS.Shell.Shells
 			bool Connects = ShellArgs.Length > 0;
 			string Address = "";
 			if (Connects)
-				Address = Conversions.ToString(ShellArgs[0]);
+				Address = Convert.ToString(ShellArgs[0]);
 
 			// Actual shell logic
 			string SFTPStrCmd;
@@ -113,7 +112,7 @@ namespace KS.Shell.Shells
 					}
 
 					// Parse command
-					if ((string.IsNullOrEmpty(SFTPStrCmd) | (SFTPStrCmd?.StartsWithAnyOf(new[] { " ", "#" }))) == false)
+					if ((string.IsNullOrEmpty(SFTPStrCmd) | (SFTPStrCmd?.StartsWithAnyOf([" ", "#"]))) == false)
 					{
 						Kernel.Kernel.KernelEventManager.RaiseSFTPPreExecuteCommand(SFTPStrCmd);
 						Shell.GetLine(SFTPStrCmd, false, "", ShellType.SFTPShell);

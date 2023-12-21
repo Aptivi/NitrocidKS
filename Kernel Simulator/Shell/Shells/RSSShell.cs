@@ -31,7 +31,6 @@ using KS.Network.RSS.Instance;
 using KS.Shell.Prompts;
 using KS.Shell.ShellBase;
 using KS.Shell.ShellBase.Shells;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Shell.Shells
 {
@@ -56,7 +55,7 @@ namespace KS.Shell.Shells
 			string FeedUrl = "";
 			if (ShellArgs.Length > 0)
 			{
-				FeedUrl = Conversions.ToString(ShellArgs[0]);
+				FeedUrl = Convert.ToString(ShellArgs[0]);
 			}
 			RSSShellCommon.RSSFeedLink = FeedUrl;
 
@@ -157,7 +156,7 @@ namespace KS.Shell.Shells
 
 					// Prompt for command
 					string WrittenCommand = Input.ReadLine();
-					if ((string.IsNullOrEmpty(WrittenCommand) | (WrittenCommand?.StartsWithAnyOf(new[] { " ", "#" }))) == false)
+					if ((string.IsNullOrEmpty(WrittenCommand) | (WrittenCommand?.StartsWithAnyOf([" ", "#"]))) == false)
 					{
 						Kernel.Kernel.KernelEventManager.RaiseRSSPreExecuteCommand(RSSShellCommon.RSSFeedLink, WrittenCommand);
 						Shell.GetLine(WrittenCommand, false, "", ShellType.RSSShell);

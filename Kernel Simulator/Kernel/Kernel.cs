@@ -61,10 +61,10 @@ namespace KS.Kernel
 		// Variables
 		public static string MOTDMessage, MAL;
 		public static string HostName = "kernel";
-		public readonly static string KernelVersion = GetExecutingAssembly().GetName().Version.ToString();
-		public readonly static string NewLine = Environment.NewLine;
-		public readonly static Events KernelEventManager = new();
-		public readonly static string ExecutableDir = Environment.CurrentDirectory;
+		public static readonly string KernelVersion = GetExecutingAssembly().GetName().Version.ToString();
+		public static readonly string NewLine = Environment.NewLine;
+		public static readonly Events KernelEventManager = new();
+		public static readonly string ExecutableDir = Environment.CurrentDirectory;
 		internal static Stopwatch StageTimer = new();
 		internal static TextWriter DefConsoleOut;
 
@@ -82,14 +82,14 @@ namespace KS.Kernel
 #if MILESTONE
 		internal readonly static string ConsoleTitle = $"Kernel Simulator v{KernelVersion} - {KernelSimulatorMoniker} - Developer Preview - Milestone 1";
 #else
-		internal readonly static string ConsoleTitle = $"Kernel Simulator v{KernelVersion} - {KernelSimulatorMoniker} - Developer Preview";
+		internal static readonly string ConsoleTitle = $"Kernel Simulator v{KernelVersion} - {KernelSimulatorMoniker} - Developer Preview";
 #endif
 #else
 		internal readonly static string ConsoleTitle = $"Kernel Simulator v{KernelVersion} - {KernelSimulatorMoniker} - Unsupported Release";
 #endif
 		/// <summary>
-        /// Entry point
-        /// </summary>
+		/// Entry point
+		/// </summary>
 		internal static void Main(string[] Args)
 		{
 			// Set main thread name
@@ -117,7 +117,7 @@ namespace KS.Kernel
 					AppDomain.CurrentDomain.AssemblyResolve += AssemblyLookup.LoadFromAssemblySearchPaths;
 
 					// Check for pre-boot arguments
-					ArgumentParse.ParseArguments(Args.ToList(), ArgumentType.PreBootCommandLineArgs);
+					ArgumentParse.ParseArguments([.. Args], ArgumentType.PreBootCommandLineArgs);
 
 					// Download debug symbols if not found (loads automatically, useful for debugging problems and stack traces)
 					/* TODO ERROR: Skipped IfDirectiveTrivia
@@ -325,8 +325,8 @@ namespace KS.Kernel
 		}
 
 		/// <summary>
-        /// Check to see if KernelError has been called
-        /// </summary>
+		/// Check to see if KernelError has been called
+		/// </summary>
 		internal static void CheckErrored()
 		{
 			if (Flags.KernelErrored)

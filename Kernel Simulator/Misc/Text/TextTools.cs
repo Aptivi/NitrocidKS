@@ -10,12 +10,12 @@ namespace KS.Misc.Text
 {
 	public static class TextTools
 	{
-		private readonly static string regexMatchEnclosedStrings = @"(""(.+?)(?<![^\\]\\)"")|('(.+?)(?<![^\\]\\)')|(`(.+?)(?<![^\\]\\)`)|(?:[^\\\s]|\\.)+|\S+";
+		private static readonly string regexMatchEnclosedStrings = @"(""(.+?)(?<![^\\]\\)"")|('(.+?)(?<![^\\]\\)')|(`(.+?)(?<![^\\]\\)`)|(?:[^\\\s]|\\.)+|\S+";
 
 		/// <summary>
-        /// Splits the string enclosed in double quotes delimited by spaces using regular expression formula
-        /// </summary>
-        /// <paramname="target">Target string</param>
+		/// Splits the string enclosed in double quotes delimited by spaces using regular expression formula
+		/// </summary>
+		/// <paramname="target">Target string</param>
 		public static string[] SplitEncloseDoubleQuotes(this string target)
 		{
 			if (target is null)
@@ -25,9 +25,9 @@ namespace KS.Misc.Text
 		}
 
 		/// <summary>
-        /// Splits the string enclosed in double quotes delimited by spaces using regular expression formula without releasing double quotes
-        /// </summary>
-        /// <paramname="target">Target string</param>
+		/// Splits the string enclosed in double quotes delimited by spaces using regular expression formula without releasing double quotes
+		/// </summary>
+		/// <paramname="target">Target string</param>
 		public static string[] SplitEncloseDoubleQuotesNoRelease(this string target)
 		{
 			if (target is null)
@@ -37,10 +37,10 @@ namespace KS.Misc.Text
 		}
 
 		/// <summary>
-        /// Releases a string from double quotations
-        /// </summary>
-        /// <paramname="target">Target string</param>
-        /// <returns>A string that doesn't contain double quotation marks at the start and at the end of the string</returns>
+		/// Releases a string from double quotations
+		/// </summary>
+		/// <paramname="target">Target string</param>
+		/// <returns>A string that doesn't contain double quotation marks at the start and at the end of the string</returns>
 		public static string ReleaseDoubleQuotes(this string target)
 		{
 			if (target is null)
@@ -56,10 +56,10 @@ namespace KS.Misc.Text
 		}
 
 		/// <summary>
-        /// Gets the enclosed double quotes type from the string
-        /// </summary>
-        /// <paramname="target">Target string to query</param>
-        /// <returns><seecref="EnclosedDoubleQuotesType"/> containing information about the current string enclosure</returns>
+		/// Gets the enclosed double quotes type from the string
+		/// </summary>
+		/// <paramname="target">Target string to query</param>
+		/// <returns><seecref="EnclosedDoubleQuotesType"/> containing information about the current string enclosure</returns>
 		public static EnclosedDoubleQuotesType GetEnclosedDoubleQuotesType(this string target)
 		{
 			if (target is null)
@@ -82,11 +82,11 @@ namespace KS.Misc.Text
 		}
 
 		/// <summary>
-        /// Truncates the string if the string is larger than the threshold, otherwise, returns an unchanged string
-        /// </summary>
-        /// <paramname="target">Source string to truncate</param>
-        /// <paramname="threshold">Max number of string characters</param>
-        /// <returns>Truncated string</returns>
+		/// Truncates the string if the string is larger than the threshold, otherwise, returns an unchanged string
+		/// </summary>
+		/// <paramname="target">Source string to truncate</param>
+		/// <paramname="threshold">Max number of string characters</param>
+		/// <returns>Truncated string</returns>
 		public static string Truncate(this string target, int threshold)
 		{
 			if (target is null)
@@ -107,10 +107,10 @@ namespace KS.Misc.Text
 		}
 
 		/// <summary>
-        /// Makes a string array with new line as delimiter
-        /// </summary>
-        /// <paramname="target">Target string</param>
-        /// <returns>List of words that are separated by the new lines</returns>
+		/// Makes a string array with new line as delimiter
+		/// </summary>
+		/// <paramname="target">Target string</param>
+		/// <returns>List of words that are separated by the new lines</returns>
 		public static string[] SplitNewLines(this string target)
 		{
 			if (target is null)
@@ -120,11 +120,11 @@ namespace KS.Misc.Text
 		}
 
 		/// <summary>
-        /// Checks to see if the string starts with any of the values
-        /// </summary>
-        /// <paramname="target">Target string</param>
-        /// <paramname="values">Values</param>
-        /// <returns>True if the string starts with any of the values specified in the array. Otherwise, false.</returns>
+		/// Checks to see if the string starts with any of the values
+		/// </summary>
+		/// <paramname="target">Target string</param>
+		/// <paramname="values">Values</param>
+		/// <returns>True if the string starts with any of the values specified in the array. Otherwise, false.</returns>
 		public static bool StartsWithAnyOf(this string target, string[] values)
 		{
 			if (target is null)
@@ -140,11 +140,11 @@ namespace KS.Misc.Text
 		}
 
 		/// <summary>
-        /// Checks to see if the string contains any of the target strings.
-        /// </summary>
-        /// <paramname="source">Source string</param>
-        /// <paramname="targets">Target strings</param>
-        /// <returns>True if one of them is found; otherwise, false.</returns>
+		/// Checks to see if the string contains any of the target strings.
+		/// </summary>
+		/// <paramname="source">Source string</param>
+		/// <paramname="targets">Target strings</param>
+		/// <returns>True if one of them is found; otherwise, false.</returns>
 		public static bool ContainsAnyOf(this string source, string[] targets)
 		{
 			if (source is null)
@@ -159,13 +159,13 @@ namespace KS.Misc.Text
 		}
 
 		/// <summary>
-        /// Replaces all the instances of strings with a string
-        /// </summary>
-        /// <paramname="target">Target string</param>
-        /// <paramname="toBeReplaced">Strings to be replaced</param>
-        /// <paramname="toReplace">String to replace with</param>
-        /// <returns>Modified string</returns>
-        /// <exceptioncref="ArgumentNullException"></exception>
+		/// Replaces all the instances of strings with a string
+		/// </summary>
+		/// <paramname="target">Target string</param>
+		/// <paramname="toBeReplaced">Strings to be replaced</param>
+		/// <paramname="toReplace">String to replace with</param>
+		/// <returns>Modified string</returns>
+		/// <exceptioncref="ArgumentNullException"></exception>
 		public static string ReplaceAll(this string target, string[] toBeReplaced, string toReplace)
 		{
 			if (target is null)
@@ -179,14 +179,14 @@ namespace KS.Misc.Text
 		}
 
 		/// <summary>
-        /// Replaces all the instances of strings with a string assigned to each entry
-        /// </summary>
-        /// <paramname="target">Target string</param>
-        /// <paramname="toBeReplaced">Strings to be replaced</param>
-        /// <paramname="toReplace">Strings to replace with</param>
-        /// <returns>Modified string</returns>
-        /// <exceptioncref="ArgumentNullException"></exception>
-        /// <exceptioncref="ArgumentException"></exception>
+		/// Replaces all the instances of strings with a string assigned to each entry
+		/// </summary>
+		/// <paramname="target">Target string</param>
+		/// <paramname="toBeReplaced">Strings to be replaced</param>
+		/// <paramname="toReplace">Strings to replace with</param>
+		/// <returns>Modified string</returns>
+		/// <exceptioncref="ArgumentNullException"></exception>
+		/// <exceptioncref="ArgumentException"></exception>
 		public static string ReplaceAllRange(this string target, string[] toBeReplaced, string[] toReplace)
 		{
 			if (target is null)
@@ -210,12 +210,12 @@ namespace KS.Misc.Text
 		}
 
 		/// <summary>
-        /// Replaces last occurrence of a text in source string with the replacement
-        /// </summary>
-        /// <paramname="source">A string which has the specified text to replace</param>
-        /// <paramname="searchText">A string to be replaced</param>
-        /// <paramname="replace">A string to replace</param>
-        /// <returns>String that has its last occurrence of text replaced</returns>
+		/// Replaces last occurrence of a text in source string with the replacement
+		/// </summary>
+		/// <paramname="source">A string which has the specified text to replace</param>
+		/// <paramname="searchText">A string to be replaced</param>
+		/// <paramname="replace">A string to replace</param>
+		/// <returns>String that has its last occurrence of text replaced</returns>
 		public static string ReplaceLastOccurrence(this string source, string searchText, string replace)
 		{
 			if (source is null)
@@ -231,11 +231,11 @@ namespace KS.Misc.Text
 		}
 
 		/// <summary>
-        /// Get all indexes of a value in string
-        /// </summary>
-        /// <paramname="target">Source string</param>
-        /// <paramname="value">A value</param>
-        /// <returns>Indexes of strings</returns>
+		/// Get all indexes of a value in string
+		/// </summary>
+		/// <paramname="target">Source string</param>
+		/// <paramname="value">A value</param>
+		/// <returns>Indexes of strings</returns>
 		public static IEnumerable<int> AllIndexesOf(this string target, string value)
 		{
 			if (target is null)
@@ -255,12 +255,12 @@ namespace KS.Misc.Text
 		}
 
 		/// <summary>
-        /// Replaces last occurrence of a text in source string with the replacement
-        /// </summary>
-        /// <paramname="source">A string which has the specified text to replace</param>
-        /// <paramname="searchText">A string to be replaced</param>
-        /// <paramname="replace">A string to replace</param>
-        /// <returns>String that has its last occurrence of text replaced</returns>
+		/// Replaces last occurrence of a text in source string with the replacement
+		/// </summary>
+		/// <paramname="source">A string which has the specified text to replace</param>
+		/// <paramname="searchText">A string to be replaced</param>
+		/// <paramname="replace">A string to replace</param>
+		/// <returns>String that has its last occurrence of text replaced</returns>
 		public static string Repeat(this string source, int times)
 		{
 			string result = "";
@@ -270,11 +270,11 @@ namespace KS.Misc.Text
 		}
 
 		/// <summary>
-        /// Formats the string
-        /// </summary>
-        /// <paramname="Format">The string to format</param>
-        /// <paramname="Vars">The variables used</param>
-        /// <returns>A formatted string if successful, or the unformatted one if failed.</returns>
+		/// Formats the string
+		/// </summary>
+		/// <paramname="Format">The string to format</param>
+		/// <paramname="Vars">The variables used</param>
+		/// <returns>A formatted string if successful, or the unformatted one if failed.</returns>
 		public static string FormatString(this string Format, params object[] Vars)
 		{
 			if (Format is null)
@@ -295,9 +295,9 @@ namespace KS.Misc.Text
 		}
 
 		/// <summary>
-        /// Is the string numeric?
-        /// </summary>
-        /// <paramname="Expression">The expression</param>
+		/// Is the string numeric?
+		/// </summary>
+		/// <paramname="Expression">The expression</param>
 		public static bool IsStringNumeric(string Expression)
 		{
 			if (Expression is null)

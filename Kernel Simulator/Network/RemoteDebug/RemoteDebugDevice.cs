@@ -26,29 +26,29 @@ namespace KS.Network.RemoteDebug
 	{
 
 		/// <summary>
-        /// The client socket
-        /// </summary>
+		/// The client socket
+		/// </summary>
 		public Socket ClientSocket { get; private set; }
 		/// <summary>
-        /// The client stream
-        /// </summary>
+		/// The client stream
+		/// </summary>
 		public NetworkStream ClientStream { get; private set; }
 		/// <summary>
-        /// The client stream writer
-        /// </summary>
+		/// The client stream writer
+		/// </summary>
 		public StreamWriter ClientStreamWriter { get; private set; }
 		/// <summary>
-        /// The client IP address
-        /// </summary>
+		/// The client IP address
+		/// </summary>
 		public string ClientIP { get; private set; }
 		/// <summary>
-        /// The client name
-        /// </summary>
+		/// The client name
+		/// </summary>
 		public string ClientName { get; set; }
 
 		/// <summary>
-        /// Makes a new instance of a remote debug device
-        /// </summary>
+		/// Makes a new instance of a remote debug device
+		/// </summary>
 		public RemoteDebugDevice(Socket ClientSocket, NetworkStream ClientStream, string ClientIP, string ClientName)
 		{
 			this.ClientSocket = ClientSocket;

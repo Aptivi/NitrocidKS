@@ -29,8 +29,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests getting cultures from current language
-    /// </summary>
+		/// Tests getting cultures from current language
+		/// </summary>
 		[Test]
 		[Description("Querying")]
 		public void TestGetCulturesFromCurrentLang()
@@ -40,8 +40,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests getting cultures from specific language
-    /// </summary>
+		/// Tests getting cultures from specific language
+		/// </summary>
 		[Test]
 		[Description("Querying")]
 		public void TestGetCulturesFromLang()
@@ -51,8 +51,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests getting cultures from specific language
-    /// </summary>
+		/// Tests getting cultures from specific language
+		/// </summary>
 		[Test]
 		[Description("Querying")]
 		public void TestListLanguages()

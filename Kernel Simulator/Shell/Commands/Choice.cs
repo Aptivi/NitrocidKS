@@ -43,7 +43,7 @@ namespace KS.Shell.Commands
 			}
 
 			// Prompt for choice
-			UESHCommands.PromptChoiceAndSet(ListArgsOnly[2], ListArgsOnly[0], ListArgsOnly[1], Titles.ToArray(), OutputType, PressEnter);
+			UESHCommands.PromptChoiceAndSet(ListArgsOnly[2], ListArgsOnly[0], ListArgsOnly[1], [.. Titles], OutputType, PressEnter);
 		}
 
 		public override void HelpHelper()

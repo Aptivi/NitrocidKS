@@ -40,8 +40,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _faderMaximumBlueColorLevel = 255;
 
 		/// <summary>
-        /// [Fader] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [Fader] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int FaderDelay
 		{
 			get
@@ -56,8 +56,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Fader] How many milliseconds to wait before fading the text out?
-        /// </summary>
+		/// [Fader] How many milliseconds to wait before fading the text out?
+		/// </summary>
 		public static int FaderFadeOutDelay
 		{
 			get
@@ -72,8 +72,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Fader] Text for Fader. Shorter is better.
-        /// </summary>
+		/// [Fader] Text for Fader. Shorter is better.
+		/// </summary>
 		public static string FaderWrite
 		{
 			get
@@ -88,8 +88,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Fader] How many fade steps to do?
-        /// </summary>
+		/// [Fader] How many fade steps to do?
+		/// </summary>
 		public static int FaderMaxSteps
 		{
 			get
@@ -104,8 +104,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Fader] Screensaver background color
-        /// </summary>
+		/// [Fader] Screensaver background color
+		/// </summary>
 		public static string FaderBackgroundColor
 		{
 			get
@@ -118,8 +118,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Fader] The minimum red color level (true color)
-        /// </summary>
+		/// [Fader] The minimum red color level (true color)
+		/// </summary>
 		public static int FaderMinimumRedColorLevel
 		{
 			get
@@ -136,8 +136,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Fader] The minimum green color level (true color)
-        /// </summary>
+		/// [Fader] The minimum green color level (true color)
+		/// </summary>
 		public static int FaderMinimumGreenColorLevel
 		{
 			get
@@ -154,8 +154,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Fader] The minimum blue color level (true color)
-        /// </summary>
+		/// [Fader] The minimum blue color level (true color)
+		/// </summary>
 		public static int FaderMinimumBlueColorLevel
 		{
 			get
@@ -172,8 +172,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Fader] The maximum red color level (true color)
-        /// </summary>
+		/// [Fader] The maximum red color level (true color)
+		/// </summary>
 		public static int FaderMaximumRedColorLevel
 		{
 			get
@@ -190,8 +190,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Fader] The maximum green color level (true color)
-        /// </summary>
+		/// [Fader] The maximum green color level (true color)
+		/// </summary>
 		public static int FaderMaximumGreenColorLevel
 		{
 			get
@@ -208,8 +208,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Fader] The maximum blue color level (true color)
-        /// </summary>
+		/// [Fader] The maximum blue color level (true color)
+		/// </summary>
 		public static int FaderMaximumBlueColorLevel
 		{
 			get

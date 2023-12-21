@@ -27,17 +27,17 @@ namespace KS.Misc.Calendar.Events
 
 		private bool EventNotified;
 		/// <summary>
-        /// Event date
-        /// </summary>
+		/// Event date
+		/// </summary>
 		public DateTime EventDate { get; set; }
 		/// <summary>
-        /// Event title
-        /// </summary>
+		/// Event title
+		/// </summary>
 		public string EventTitle { get; set; }
 
 		/// <summary>
-        /// Notifies the user about the event
-        /// </summary>
+		/// Notifies the user about the event
+		/// </summary>
 		protected internal void NotifyEvent()
 		{
 			if (!EventNotified)

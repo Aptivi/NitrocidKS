@@ -37,13 +37,13 @@ namespace KS.Misc.Calendar.Events
 	public static class EventManager
 	{
 
-		public static List<EventInfo> CalendarEvents = new();
+		public static List<EventInfo> CalendarEvents = [];
 		public static KernelThread EventThread = new("Event Thread", false, EventListen);
 		internal static object EventManagerLock = new();
 
 		/// <summary>
-        /// Listens for events and notifies the user if the date is due to the event
-        /// </summary>
+		/// Listens for events and notifies the user if the date is due to the event
+		/// </summary>
 		private static void EventListen()
 		{
 			while (!Flags.KernelShutdown)
@@ -63,7 +63,7 @@ namespace KS.Misc.Calendar.Events
 						}
 					}
 				}
-				catch (ThreadInterruptedException ex)
+				catch (ThreadInterruptedException)
 				{
 					DebugWriter.Wdbg(DebugLevel.I, "Aborting event listener...");
 					return;
@@ -72,10 +72,10 @@ namespace KS.Misc.Calendar.Events
 		}
 
 		/// <summary>
-        /// Adds the event to the list (calendar will mark the day with color)
-        /// </summary>
-        /// <param name="EventDate">Event date and time</param>
-        /// <param name="EventTitle">Event title</param>
+		/// Adds the event to the list (calendar will mark the day with color)
+		/// </summary>
+		/// <param name="EventDate">Event date and time</param>
+		/// <param name="EventTitle">Event title</param>
 		public static void AddEvent(DateTime EventDate, string EventTitle)
 		{
 			if (string.IsNullOrWhiteSpace(EventTitle))
@@ -89,19 +89,19 @@ namespace KS.Misc.Calendar.Events
 		}
 
 		/// <summary>
-        /// Adds the event to the list (calendar will mark the day with color)
-        /// </summary>
-        /// <param name="EventInstance">Event info instance</param>
+		/// Adds the event to the list (calendar will mark the day with color)
+		/// </summary>
+		/// <param name="EventInstance">Event info instance</param>
 		internal static void AddEvent(EventInfo EventInstance)
 		{
 			CalendarEvents.Add(EventInstance);
 		}
 
 		/// <summary>
-        /// Removes the event from the list
-        /// </summary>
-        /// <param name="EventDate">Event date and time</param>
-        /// <param name="EventId">Event ID</param>
+		/// Removes the event from the list
+		/// </summary>
+		/// <param name="EventDate">Event date and time</param>
+		/// <param name="EventId">Event ID</param>
 		public static void RemoveEvent(DateTime EventDate, int EventId)
 		{
 			int EventIndex = EventId - 1;
@@ -113,8 +113,8 @@ namespace KS.Misc.Calendar.Events
 		}
 
 		/// <summary>
-        /// List all the events
-        /// </summary>
+		/// List all the events
+		/// </summary>
 		public static void ListEvents()
 		{
 			foreach (EventInfo EventInstance in CalendarEvents)
@@ -125,8 +125,8 @@ namespace KS.Misc.Calendar.Events
 		}
 
 		/// <summary>
-        /// Loads all the events from the KSEvents directory and adds them to the event list
-        /// </summary>
+		/// Loads all the events from the KSEvents directory and adds them to the event list
+		/// </summary>
 		public static void LoadEvents()
 		{
 			Making.MakeDirectory(Paths.GetKernelPath(KernelPathType.Events), false);
@@ -143,10 +143,10 @@ namespace KS.Misc.Calendar.Events
 		}
 
 		/// <summary>
-        /// Loads an event file
-        /// </summary>
-        /// <param name="EventFile">Event file</param>
-        /// <returns>A converted event info instance. null if unsuccessful.</returns>
+		/// Loads an event file
+		/// </summary>
+		/// <param name="EventFile">Event file</param>
+		/// <returns>A converted event info instance. null if unsuccessful.</returns>
 		public static EventInfo LoadEvent(string EventFile)
 		{
 			lock (EventManagerLock)
@@ -175,16 +175,16 @@ namespace KS.Misc.Calendar.Events
 		}
 
 		/// <summary>
-        /// Saves all the events from the event list to their individual files
-        /// </summary>
+		/// Saves all the events from the event list to their individual files
+		/// </summary>
 		public static void SaveEvents()
 		{
 			SaveEvents(Paths.GetKernelPath(KernelPathType.Events), Flags.SaveEventsRemindersDestructively);
 		}
 
 		/// <summary>
-        /// Saves all the events from the event list to their individual files
-        /// </summary>
+		/// Saves all the events from the event list to their individual files
+		/// </summary>
 		public static void SaveEvents(string Path, bool Destructive)
 		{
 			Filesystem.ThrowOnInvalidPath(Path);
@@ -219,16 +219,16 @@ namespace KS.Misc.Calendar.Events
 		}
 
 		/// <summary>
-        /// Saves an event to a file
-        /// </summary>
+		/// Saves an event to a file
+		/// </summary>
 		public static void SaveEvent(EventInfo EventInstance)
 		{
 			SaveEvent(EventInstance, Paths.GetKernelPath(KernelPathType.Events));
 		}
 
 		/// <summary>
-        /// Saves an event to a file
-        /// </summary>
+		/// Saves an event to a file
+		/// </summary>
 		public static void SaveEvent(EventInfo EventInstance, string File)
 		{
 			Filesystem.ThrowOnInvalidPath(File);

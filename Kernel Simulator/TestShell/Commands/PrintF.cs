@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using KS.ConsoleBase.Colors;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
@@ -29,8 +29,8 @@ namespace KS.TestShell.Commands
 		public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
 		{
 			var Parts = new List<string>(ListArgs);
-			KernelColorTools.ColTypes Color = (KernelColorTools.ColTypes)Conversions.ToInteger(ListArgs[0]);
-			bool Line = Conversions.ToBoolean(ListArgs[1]);
+			KernelColorTools.ColTypes Color = (KernelColorTools.ColTypes)Convert.ToInt32(ListArgs[0]);
+			bool Line = Convert.ToBoolean(ListArgs[1]);
 			object[] Vars = ListArgs[2].Split(';');
 			string Text = ListArgs[3];
 			TextWriterColor.Write(Text, Line, Color, Vars);

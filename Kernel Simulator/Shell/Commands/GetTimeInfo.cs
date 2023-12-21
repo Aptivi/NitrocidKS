@@ -30,8 +30,7 @@ namespace KS.Shell.Commands
 
 		public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
 		{
-			DateTime DateTimeInfo;
-			if (DateTime.TryParse(ListArgs[0], out DateTimeInfo))
+			if (DateTime.TryParse(ListArgs[0], out DateTime DateTimeInfo))
 			{
 				TextWriterColor.Write("-- " + Translate.DoTranslation("Information for") + " {0} --" + Kernel.Kernel.NewLine, true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), TimeDateRenderers.Render(DateTimeInfo));
 				TextWriterColor.Write(Translate.DoTranslation("Milliseconds:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), DateTimeInfo.Millisecond);

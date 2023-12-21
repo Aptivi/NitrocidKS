@@ -29,7 +29,6 @@ using KS.Misc.Writers.DebugWriters;
 using KS.Shell.Prompts;
 using KS.Shell.ShellBase;
 using KS.Shell.ShellBase.Shells;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Shell.Shells
 {
@@ -52,7 +51,7 @@ namespace KS.Shell.Shells
 			string FilePath = "";
 			if (ShellArgs.Length > 0)
 			{
-				FilePath = Conversions.ToString(ShellArgs[0]);
+				FilePath = Convert.ToString(ShellArgs[0]);
 			}
 			else
 			{
@@ -97,7 +96,7 @@ namespace KS.Shell.Shells
 
 					// Prompt for command
 					string WrittenCommand = Input.ReadLine();
-					if ((string.IsNullOrEmpty(WrittenCommand) | (WrittenCommand?.StartsWithAnyOf(new[] { " ", "#" }))) == false)
+					if ((string.IsNullOrEmpty(WrittenCommand) | (WrittenCommand?.StartsWithAnyOf([" ", "#"]))) == false)
 					{
 						Kernel.Kernel.KernelEventManager.RaiseHexPreExecuteCommand(WrittenCommand);
 						Shell.GetLine(WrittenCommand, false, "", ShellType.HexShell);

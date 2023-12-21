@@ -30,8 +30,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests opening, saving, and closing text file
-    /// </summary>
+		/// Tests opening, saving, and closing text file
+		/// </summary>
 		[Test]
 		[Description("Initialization")]
 		public void TestOpenSaveCloseTextFile()

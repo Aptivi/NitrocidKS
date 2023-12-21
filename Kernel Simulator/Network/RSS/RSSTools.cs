@@ -32,7 +32,6 @@ using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 using KS.Network.RSS.Instance;
 using KS.Network.Transfer;
-using Microsoft.VisualBasic.CompilerServices;
 using Newtonsoft.Json.Linq;
 using Terminaux.Base;
 
@@ -42,23 +41,23 @@ namespace KS.Network.RSS
 	{
 
 		/// <summary>
-        /// Whether to show the RSS headline each login
-        /// </summary>
+		/// Whether to show the RSS headline each login
+		/// </summary>
 		public static bool ShowHeadlineOnLogin;
 		/// <summary>
-        /// RSS headline URL
-        /// </summary>
+		/// RSS headline URL
+		/// </summary>
 		public static string RssHeadlineUrl = "https://www.techrepublic.com/rssfeeds/articles/";
 		/// <summary>
-        /// Cached feed list JSON
-        /// </summary>
+		/// Cached feed list JSON
+		/// </summary>
 		private static string FeedListJsonText = "";
 
 		/// <summary>
-        /// Make instances of RSS Article from feed node and type
-        /// </summary>
-        /// <param name="FeedNode">Feed XML node</param>
-        /// <param name="FeedType">Feed type</param>
+		/// Make instances of RSS Article from feed node and type
+		/// </summary>
+		/// <param name="FeedNode">Feed XML node</param>
+		/// <param name="FeedType">Feed type</param>
 		public static List<RSSArticle> MakeRssArticlesFromFeed(XmlNodeList FeedNode, RSSFeedType FeedType)
 		{
 			var Articles = new List<RSSArticle>();
@@ -116,10 +115,10 @@ namespace KS.Network.RSS
 		}
 
 		/// <summary>
-        /// Generates an instance of article from feed
-        /// </summary>
-        /// <param name="Article">The child node which holds the entire article</param>
-        /// <returns>An article</returns>
+		/// Generates an instance of article from feed
+		/// </summary>
+		/// <param name="Article">The child node which holds the entire article</param>
+		/// <returns>An article</returns>
 		public static RSSArticle MakeArticleFromFeed(XmlNode Article)
 		{
 			// Variables
@@ -133,7 +132,7 @@ namespace KS.Network.RSS
 				if (ArticleNode.Name == "title")
 				{
 					// Trimming newlines and spaces is necessary, since some RSS feeds (GitHub commits) might return string with trailing and leading spaces and newlines.
-					Title = ArticleNode.InnerText.Trim(Conversions.ToChar(Microsoft.VisualBasic.Constants.vbCr), Conversions.ToChar(Microsoft.VisualBasic.Constants.vbLf), ' ');
+					Title = ArticleNode.InnerText.Trim(Convert.ToChar("\r"), Convert.ToChar("\n"), ' ');
 				}
 
 				// Check the link
@@ -160,7 +159,7 @@ namespace KS.Network.RSS
 						{
 							// Extract plain text from HTML
 							var HtmlContent = new HtmlDocument();
-							HtmlContent.LoadHtml(ArticleNode.InnerText.Trim(Conversions.ToChar(Microsoft.VisualBasic.Constants.vbCr), Conversions.ToChar(Microsoft.VisualBasic.Constants.vbLf), ' '));
+							HtmlContent.LoadHtml(ArticleNode.InnerText.Trim(Convert.ToChar("\r"), Convert.ToChar("\n"), ' '));
 
 							// Some feeds have no node called "pre," so work around this...
 							var PreNode = HtmlContent.DocumentNode.SelectSingleNode("pre");
@@ -175,12 +174,12 @@ namespace KS.Network.RSS
 						}
 						else
 						{
-							Description = ArticleNode.InnerText.Trim(Conversions.ToChar(Microsoft.VisualBasic.Constants.vbCr), Conversions.ToChar(Microsoft.VisualBasic.Constants.vbLf), ' ');
+							Description = ArticleNode.InnerText.Trim(Convert.ToChar("\r"), Convert.ToChar("\n"), ' ');
 						}
 					}
 					else
 					{
-						Description = ArticleNode.InnerText.Trim(Conversions.ToChar(Microsoft.VisualBasic.Constants.vbCr), Conversions.ToChar(Microsoft.VisualBasic.Constants.vbLf), ' ');
+						Description = ArticleNode.InnerText.Trim(Convert.ToChar("\r"), Convert.ToChar("\n"), ' ');
 					}
 				}
 				if (Parameters.ContainsKey(ArticleNode.Name))
@@ -196,11 +195,11 @@ namespace KS.Network.RSS
 		}
 
 		/// <summary>
-        /// Gets a feed property
-        /// </summary>
-        /// <param name="FeedProperty">Feed property name</param>
-        /// <param name="FeedNode">Feed XML node</param>
-        /// <param name="FeedType">Feed type</param>
+		/// Gets a feed property
+		/// </summary>
+		/// <param name="FeedProperty">Feed property name</param>
+		/// <param name="FeedNode">Feed XML node</param>
+		/// <param name="FeedType">Feed type</param>
 		public static string GetFeedProperty(string FeedProperty, XmlNodeList FeedNode, RSSFeedType FeedType)
 		{
 			switch (FeedType)
@@ -257,8 +256,8 @@ namespace KS.Network.RSS
 		}
 
 		/// <summary>
-        /// Refreshes the feeds
-        /// </summary>
+		/// Refreshes the feeds
+		/// </summary>
 		internal static void RefreshFeeds()
 		{
 			try
@@ -290,15 +289,15 @@ namespace KS.Network.RSS
 					Thread.Sleep(RSSShellCommon.RSSRefreshInterval);
 				}
 			}
-			catch (ThreadInterruptedException ex)
+			catch (ThreadInterruptedException)
 			{
 				DebugWriter.Wdbg(DebugLevel.W, "Aborting refresher...");
 			}
 		}
 
 		/// <summary>
-        /// Show a headline on login
-        /// </summary>
+		/// Show a headline on login
+		/// </summary>
 		public static void ShowHeadlineLogin()
 		{
 			if (ShowHeadlineOnLogin)
@@ -322,15 +321,15 @@ namespace KS.Network.RSS
 		}
 
 		/// <summary>
-        /// Opens the feed selector
-        /// </summary>
+		/// Opens the feed selector
+		/// </summary>
 		public static void OpenFeedSelector()
 		{
 			int StepNumber = 1;
 			JToken FeedListJson;
-			JToken[] FeedListJsonCountries = Array.Empty<JToken>();
-			JToken[] FeedListJsonNewsSources = Array.Empty<JToken>();
-			JToken[] FeedListJsonNewsSourceFeeds = Array.Empty<JToken>();
+			JToken[] FeedListJsonCountries = [];
+			JToken[] FeedListJsonNewsSources = [];
+			JToken[] FeedListJsonNewsSourceFeeds = [];
 			int SelectedCountryIndex = 0;
 			var SelectedNewsSourceIndex = default(int);
 			int SelectedNewsSourceFeedIndex;
@@ -405,7 +404,7 @@ namespace KS.Network.RSS
 				{
 					// Go to the next step
 					DebugWriter.Wdbg(DebugLevel.I, "Selected country: {0}", FeedListJsonCountries[SelectedCountryIndex]["name"]);
-					FeedListJsonNewsSources = FeedListJsonCountries[SelectedCountryIndex]["newSources"].ToArray();
+					FeedListJsonNewsSources = [.. FeedListJsonCountries[SelectedCountryIndex]["newSources"]];
 					TextWriterColor.WritePlain("", true);
 					StepNumber += 1;
 				}
@@ -431,13 +430,13 @@ namespace KS.Network.RSS
 				if (StringQuery.IsStringNumeric(AnswerStr))
 				{
 					// Got a numeric string! Check to see if we're in range before parsing it to index
-					int AnswerInt = Conversions.ToInteger(AnswerStr);
+					int AnswerInt = Convert.ToInt32(AnswerStr);
 					DebugWriter.Wdbg(DebugLevel.W, "Got answer {0}.", AnswerInt);
 					if (AnswerInt > 0 & AnswerInt <= FeedListJsonNewsSources.Length)
 					{
 						DebugWriter.Wdbg(DebugLevel.W, "Answer is in range.");
 						SelectedNewsSourceIndex = AnswerInt - 1;
-						FeedListJsonNewsSourceFeeds = FeedListJsonNewsSources[SelectedNewsSourceIndex]["feedUrls"].ToArray();
+						FeedListJsonNewsSourceFeeds = [.. FeedListJsonNewsSources[SelectedNewsSourceIndex]["feedUrls"]];
 						TextWriterColor.WritePlain("", true);
 						StepNumber += 1;
 					}
@@ -480,7 +479,7 @@ namespace KS.Network.RSS
 				if (StringQuery.IsStringNumeric(AnswerStr))
 				{
 					// Got a numeric string! Check to see if we're in range before parsing it to index
-					int AnswerInt = Conversions.ToInteger(AnswerStr);
+					int AnswerInt = Convert.ToInt32(AnswerStr);
 					DebugWriter.Wdbg(DebugLevel.W, "Got answer {0}.", AnswerInt);
 					if (AnswerInt > 0 & AnswerInt <= FeedListJsonNewsSourceFeeds.Length)
 					{

@@ -30,13 +30,13 @@ namespace KS.Misc.Writers.MiscWriters
 	{
 
 		/// <summary>
-        /// The customized message banner to write. If none is specified, or if it only consists of whitespace, it uses the default message.
-        /// </summary>
+		/// The customized message banner to write. If none is specified, or if it only consists of whitespace, it uses the default message.
+		/// </summary>
 		public static string CustomBanner = "";
 
 		/// <summary>
-        /// Gets the custom banner actual text with placeholders parsed
-        /// </summary>
+		/// Gets the custom banner actual text with placeholders parsed
+		/// </summary>
 		public static string GetCustomBanner()
 		{
 			// The default message to write
@@ -54,8 +54,8 @@ namespace KS.Misc.Writers.MiscWriters
 		}
 
 		/// <summary>
-        /// Writes the welcoming message to the console (welcome to kernel)
-        /// </summary>
+		/// Writes the welcoming message to the console (welcome to kernel)
+		/// </summary>
 		public static void WriteMessage()
 		{
 			if (!Flags.EnableSplash)
@@ -89,8 +89,8 @@ namespace KS.Misc.Writers.MiscWriters
 		}
 
 		/// <summary>
-        /// Writes the license
-        /// </summary>
+		/// Writes the license
+		/// </summary>
 		public static void WriteLicense(bool TwoNewlines)
 		{
 			TextWriterColor.Write(Kernel.Kernel.NewLine + "    Kernel Simulator  Copyright (C) 2018-2022  Aptivi" + Kernel.Kernel.NewLine + "    This program comes with ABSOLUTELY NO WARRANTY, not even " + Kernel.Kernel.NewLine + "    MERCHANTABILITY or FITNESS for particular purposes." + Kernel.Kernel.NewLine + "    This is free software, and you are welcome to redistribute it" + Kernel.Kernel.NewLine + "    under certain conditions; See COPYING file in source code." + Kernel.Kernel.NewLine, true, KernelColorTools.ColTypes.License);

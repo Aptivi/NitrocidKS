@@ -40,8 +40,8 @@ namespace KS.Misc.Animations.BeatPulse
 		private int _beatpulseMaximumColorLevel = 255;
 
 		/// <summary>
-        /// [BeatPulse] Enable 255 color support. Has a higher priority than 16 color support. Please note that it only works if color cycling is enabled.
-        /// </summary>
+		/// [BeatPulse] Enable 255 color support. Has a higher priority than 16 color support. Please note that it only works if color cycling is enabled.
+		/// </summary>
 		public bool BeatPulse255Colors
 		{
 			get
@@ -54,8 +54,8 @@ namespace KS.Misc.Animations.BeatPulse
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] Enable truecolor support. Has a higher priority than 255 color support. Please note that it only works if color cycling is enabled.
-        /// </summary>
+		/// [BeatPulse] Enable truecolor support. Has a higher priority than 255 color support. Please note that it only works if color cycling is enabled.
+		/// </summary>
 		public bool BeatPulseTrueColor
 		{
 			get
@@ -68,8 +68,8 @@ namespace KS.Misc.Animations.BeatPulse
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] Enable color cycling (uses RNG. If disabled, uses the <see cref="BeatPulseBeatColor"/> color.)
-        /// </summary>
+		/// [BeatPulse] Enable color cycling (uses RNG. If disabled, uses the <see cref="BeatPulseBeatColor"/> color.)
+		/// </summary>
 		public bool BeatPulseCycleColors
 		{
 			get
@@ -82,8 +82,8 @@ namespace KS.Misc.Animations.BeatPulse
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] The color of beats. It can be 1-16, 1-255, or "1-255;1-255;1-255".
-        /// </summary>
+		/// [BeatPulse] The color of beats. It can be 1-16, 1-255, or "1-255;1-255;1-255".
+		/// </summary>
 		public string BeatPulseBeatColor
 		{
 			get
@@ -96,8 +96,8 @@ namespace KS.Misc.Animations.BeatPulse
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] How many beats per minute to wait before making the next write?
-        /// </summary>
+		/// [BeatPulse] How many beats per minute to wait before making the next write?
+		/// </summary>
 		public int BeatPulseDelay
 		{
 			get
@@ -112,8 +112,8 @@ namespace KS.Misc.Animations.BeatPulse
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] How many fade steps to do?
-        /// </summary>
+		/// [BeatPulse] How many fade steps to do?
+		/// </summary>
 		public int BeatPulseMaxSteps
 		{
 			get
@@ -128,8 +128,8 @@ namespace KS.Misc.Animations.BeatPulse
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] The minimum red color level (true color)
-        /// </summary>
+		/// [BeatPulse] The minimum red color level (true color)
+		/// </summary>
 		public int BeatPulseMinimumRedColorLevel
 		{
 			get
@@ -146,8 +146,8 @@ namespace KS.Misc.Animations.BeatPulse
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] The minimum green color level (true color)
-        /// </summary>
+		/// [BeatPulse] The minimum green color level (true color)
+		/// </summary>
 		public int BeatPulseMinimumGreenColorLevel
 		{
 			get
@@ -164,8 +164,8 @@ namespace KS.Misc.Animations.BeatPulse
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] The minimum blue color level (true color)
-        /// </summary>
+		/// [BeatPulse] The minimum blue color level (true color)
+		/// </summary>
 		public int BeatPulseMinimumBlueColorLevel
 		{
 			get
@@ -182,8 +182,8 @@ namespace KS.Misc.Animations.BeatPulse
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] The minimum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [BeatPulse] The minimum color level (255 colors or 16 colors)
+		/// </summary>
 		public int BeatPulseMinimumColorLevel
 		{
 			get
@@ -201,8 +201,8 @@ namespace KS.Misc.Animations.BeatPulse
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] The maximum red color level (true color)
-        /// </summary>
+		/// [BeatPulse] The maximum red color level (true color)
+		/// </summary>
 		public int BeatPulseMaximumRedColorLevel
 		{
 			get
@@ -219,8 +219,8 @@ namespace KS.Misc.Animations.BeatPulse
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] The maximum green color level (true color)
-        /// </summary>
+		/// [BeatPulse] The maximum green color level (true color)
+		/// </summary>
 		public int BeatPulseMaximumGreenColorLevel
 		{
 			get
@@ -237,8 +237,8 @@ namespace KS.Misc.Animations.BeatPulse
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] The maximum blue color level (true color)
-        /// </summary>
+		/// [BeatPulse] The maximum blue color level (true color)
+		/// </summary>
 		public int BeatPulseMaximumBlueColorLevel
 		{
 			get
@@ -255,8 +255,8 @@ namespace KS.Misc.Animations.BeatPulse
 			}
 		}
 		/// <summary>
-        /// [BeatPulse] The maximum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [BeatPulse] The maximum color level (255 colors or 16 colors)
+		/// </summary>
 		public int BeatPulseMaximumColorLevel
 		{
 			get

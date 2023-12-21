@@ -27,8 +27,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests user initialization
-    /// </summary>
+		/// Tests user initialization
+		/// </summary>
 		[Test]
 		[Description("Initialization")]
 		public void TestInitializeUsers()

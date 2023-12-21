@@ -30,10 +30,10 @@ namespace KS.Network.Mail.PGP
 	{
 
 		/// <summary>
-        /// Gets password for secret key.
-        /// </summary>
-        /// <param name="key">Target key</param>
-        /// <returns>Entered Password</returns>
+		/// Gets password for secret key.
+		/// </summary>
+		/// <param name="key">Target key</param>
+		/// <returns>Entered Password</returns>
 		protected override string GetPasswordForKey(PgpSecretKey key)
 		{
 			if (!string.IsNullOrWhiteSpace(MailLogin.Mail_GPGPromptStyle))

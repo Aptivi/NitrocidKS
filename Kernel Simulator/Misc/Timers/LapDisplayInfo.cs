@@ -24,12 +24,12 @@ namespace KS.Misc.Timers
 	{
 
 		/// <summary>
-        /// The lap color
-        /// </summary>
+		/// The lap color
+		/// </summary>
 		public readonly Color LapColor;
 		/// <summary>
-        /// The lap interval
-        /// </summary>
+		/// The lap interval
+		/// </summary>
 		public readonly TimeSpan LapInterval;
 
 		public LapDisplayInfo(Color LapColor, TimeSpan LapInterval)

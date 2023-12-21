@@ -21,44 +21,44 @@ using KS.Shell.ShellBase.Commands;
 namespace KS.Modifications
 {
 	/// <summary>
-    /// Interface for mods
-    /// </summary>
+	/// Interface for mods
+	/// </summary>
 	public interface IScript
 	{
 		/// <summary>
-        /// List of commands for mod
-        /// </summary>
+		/// List of commands for mod
+		/// </summary>
 		Dictionary<string, CommandInfo> Commands { get; set; }
 		/// <summary>
-        /// Mod name
-        /// </summary>
+		/// Mod name
+		/// </summary>
 		string Name { get; set; }
 		/// <summary>
-        /// Name of part of mod
-        /// </summary>
+		/// Name of part of mod
+		/// </summary>
 		string ModPart { get; set; }
 		/// <summary>
-        /// Mod version
-        /// </summary>
+		/// Mod version
+		/// </summary>
 		string Version { get; set; }
 		/// <summary>
-        /// Code executed when starting mod
-        /// </summary>
+		/// Code executed when starting mod
+		/// </summary>
 		void StartMod();
 		/// <summary>
-        /// Code executed when stopping mod
-        /// </summary>
+		/// Code executed when stopping mod
+		/// </summary>
 		void StopMod();
 		/// <summary>
-        /// Code executed when initializing events
-        /// </summary>
-        /// <param name="ev">Event name. Look it up on <see cref="Events"/></param>
+		/// Code executed when initializing events
+		/// </summary>
+		/// <param name="ev">Event name. Look it up on <see cref="Events"/></param>
 		void InitEvents(string ev);
 		/// <summary>
-        /// Code executed when initializing events
-        /// </summary>
-        /// <param name="ev">Event name. Look it up on <see cref="Events"/></param>
-        /// <param name="Args">Arguments.</param>
+		/// Code executed when initializing events
+		/// </summary>
+		/// <param name="ev">Event name. Look it up on <see cref="Events"/></param>
+		/// <param name="Args">Arguments.</param>
 		void InitEvents(string ev, params object[] Args);
 	}
 }

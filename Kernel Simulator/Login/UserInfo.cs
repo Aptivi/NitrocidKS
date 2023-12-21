@@ -23,17 +23,17 @@ namespace KS.Login
 	{
 
 		/// <summary>
-        /// The username
-        /// </summary>
+		/// The username
+		/// </summary>
 		public string Username { get; private set; }
 		/// <summary>
-        /// The user permissions
-        /// </summary>
+		/// The user permissions
+		/// </summary>
 		public PermissionManagement.PermissionType Permissions { get; private set; }
 
 		/// <summary>
-        /// Makes a new class instance of current user info
-        /// </summary>
+		/// Makes a new class instance of current user info
+		/// </summary>
 		protected internal UserInfo(string Username)
 		{
 			this.Username = Username;

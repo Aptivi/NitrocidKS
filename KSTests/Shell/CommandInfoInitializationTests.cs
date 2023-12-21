@@ -30,14 +30,14 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests initializing CommandInfo instance from a command line Command
-    /// </summary>
+		/// Tests initializing CommandInfo instance from a command line Command
+		/// </summary>
 		[Test]
 		[Description("Initialization")]
 		public void TestInitializeCommandInfoInstanceFromCommandLineArg()
 		{
 			// Create instance
-			var CommandInstance = new CommandInfo("help", ShellType.Shell, "Help page", new CommandArgumentInfo(new[] { "" }, false, 0), null);
+			var CommandInstance = new CommandInfo("help", ShellType.Shell, "Help page", new CommandArgumentInfo([""], false, 0), null);
 
 			// Check for null
 			CommandInstance.ShouldNotBeNull();

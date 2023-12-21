@@ -25,8 +25,8 @@ using KS.Misc.Configuration;
 using KS.Misc.Writers.DebugWriters;
 using Newtonsoft.Json;
 using Terminaux.Colors;
-using TermColorTools = Terminaux.Colors.ColorTools;
 using Terminaux.Colors.Models.Parsing;
+using TermColorTools = Terminaux.Colors.ColorTools;
 
 namespace KS.ConsoleBase.Colors
 {
@@ -34,176 +34,176 @@ namespace KS.ConsoleBase.Colors
 	{
 
 		/// <summary>
-        /// Enumeration for color types
-        /// </summary>
+		/// Enumeration for color types
+		/// </summary>
 		public enum ColTypes : int
 		{
 			/// <summary>
-            /// Neutral text (for general purposes)
-            /// </summary>
+			/// Neutral text (for general purposes)
+			/// </summary>
 			Neutral,
 			/// <summary>
-            /// Input text
-            /// </summary>
+			/// Input text
+			/// </summary>
 			Input,
 			/// <summary>
-            /// Continuable kernel panic text (usually sync'd with Warning)
-            /// </summary>
+			/// Continuable kernel panic text (usually sync'd with Warning)
+			/// </summary>
 			Continuable,
 			/// <summary>
-            /// Uncontinuable kernel panic text (usually sync'd with Error)
-            /// </summary>
+			/// Uncontinuable kernel panic text (usually sync'd with Error)
+			/// </summary>
 			Uncontinuable,
 			/// <summary>
-            /// Host name color
-            /// </summary>
+			/// Host name color
+			/// </summary>
 			HostName,
 			/// <summary>
-            /// User name color
-            /// </summary>
+			/// User name color
+			/// </summary>
 			UserName,
 			/// <summary>
-            /// License color
-            /// </summary>
+			/// License color
+			/// </summary>
 			License,
 			/// <summary>
-            /// Gray color (for special purposes)
-            /// </summary>
+			/// Gray color (for special purposes)
+			/// </summary>
 			Gray,
 			/// <summary>
-            /// List value text
-            /// </summary>
+			/// List value text
+			/// </summary>
 			ListValue,
 			/// <summary>
-            /// List entry text
-            /// </summary>
+			/// List entry text
+			/// </summary>
 			ListEntry,
 			/// <summary>
-            /// Stage text
-            /// </summary>
+			/// Stage text
+			/// </summary>
 			Stage,
 			/// <summary>
-            /// Error text
-            /// </summary>
+			/// Error text
+			/// </summary>
 			Error,
 			/// <summary>
-            /// Warning text
-            /// </summary>
+			/// Warning text
+			/// </summary>
 			Warning,
 			/// <summary>
-            /// Option text
-            /// </summary>
+			/// Option text
+			/// </summary>
 			Option,
 			/// <summary>
-            /// Banner text
-            /// </summary>
+			/// Banner text
+			/// </summary>
 			Banner,
 			/// <summary>
-            /// Notification title text
-            /// </summary>
+			/// Notification title text
+			/// </summary>
 			NotificationTitle,
 			/// <summary>
-            /// Notification description text
-            /// </summary>
+			/// Notification description text
+			/// </summary>
 			NotificationDescription,
 			/// <summary>
-            /// Notification progress text
-            /// </summary>
+			/// Notification progress text
+			/// </summary>
 			NotificationProgress,
 			/// <summary>
-            /// Notification failure text
-            /// </summary>
+			/// Notification failure text
+			/// </summary>
 			NotificationFailure,
 			/// <summary>
-            /// Question text
-            /// </summary>
+			/// Question text
+			/// </summary>
 			Question,
 			/// <summary>
-            /// Success text
-            /// </summary>
+			/// Success text
+			/// </summary>
 			Success,
 			/// <summary>
-            /// User dollar sign on shell text
-            /// </summary>
+			/// User dollar sign on shell text
+			/// </summary>
 			UserDollarSign,
 			/// <summary>
-            /// Tip text
-            /// </summary>
+			/// Tip text
+			/// </summary>
 			Tip,
 			/// <summary>
-            /// Separator text
-            /// </summary>
+			/// Separator text
+			/// </summary>
 			SeparatorText,
 			/// <summary>
-            /// Separator color
-            /// </summary>
+			/// Separator color
+			/// </summary>
 			Separator,
 			/// <summary>
-            /// List title text
-            /// </summary>
+			/// List title text
+			/// </summary>
 			ListTitle,
 			/// <summary>
-            /// Development warning text
-            /// </summary>
+			/// Development warning text
+			/// </summary>
 			DevelopmentWarning,
 			/// <summary>
-            /// Stage time text
-            /// </summary>
+			/// Stage time text
+			/// </summary>
 			StageTime,
 			/// <summary>
-            /// General progress text
-            /// </summary>
+			/// General progress text
+			/// </summary>
 			Progress,
 			/// <summary>
-            /// Back option text
-            /// </summary>
+			/// Back option text
+			/// </summary>
 			BackOption,
 			/// <summary>
-            /// Low priority notification border color
-            /// </summary>
+			/// Low priority notification border color
+			/// </summary>
 			LowPriorityBorder,
 			/// <summary>
-            /// Medium priority notification border color
-            /// </summary>
+			/// Medium priority notification border color
+			/// </summary>
 			MediumPriorityBorder,
 			/// <summary>
-            /// High priority notification border color
-            /// </summary>
+			/// High priority notification border color
+			/// </summary>
 			HighPriorityBorder,
 			/// <summary>
-            /// Table separator
-            /// </summary>
+			/// Table separator
+			/// </summary>
 			TableSeparator,
 			/// <summary>
-            /// Table header
-            /// </summary>
+			/// Table header
+			/// </summary>
 			TableHeader,
 			/// <summary>
-            /// Table value
-            /// </summary>
+			/// Table value
+			/// </summary>
 			TableValue,
 			/// <summary>
-            /// Selected option
-            /// </summary>
+			/// Selected option
+			/// </summary>
 			SelectedOption,
 			/// <summary>
-            /// Alternative option
-            /// </summary>
+			/// Alternative option
+			/// </summary>
 			AlternativeOption
 		}
 
 		/// <summary>
-        /// Color type enumeration
-        /// </summary>
+		/// Color type enumeration
+		/// </summary>
 		public enum ColorType
 		{
 			/// <summary>
-            /// Color is a true color
-            /// </summary>
+			/// Color is a true color
+			/// </summary>
 			TrueColor,
 			/// <summary>
-            /// Color is a 256-bit color
-            /// </summary>
+			/// Color is a 256-bit color
+			/// </summary>
 			_255Color
 		}
 
@@ -248,8 +248,8 @@ namespace KS.ConsoleBase.Colors
 		public static Color AlternativeOptionColor = new(ConsoleColors.DarkGreen);
 
 		/// <summary>
-        /// Resets all colors to default
-        /// </summary>
+		/// Resets all colors to default
+		/// </summary>
 		public static void ResetColors()
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "Resetting colors");
@@ -299,16 +299,16 @@ namespace KS.ConsoleBase.Colors
 		}
 
 		/// <summary>
-        /// Loads the background
-        /// </summary>
+		/// Loads the background
+		/// </summary>
 		public static void LoadBack()
 		{
 			TermColorTools.LoadBack(BackgroundColor);
 		}
 
 		/// <summary>
-        /// Makes the color configuration permanent
-        /// </summary>
+		/// Makes the color configuration permanent
+		/// </summary>
 		public static void MakePermanent()
 		{
 			Config.ConfigToken["Colors"]["User Name Shell Color"] = UserNameShellColor.PlainSequenceEnclosed;
@@ -353,47 +353,47 @@ namespace KS.ConsoleBase.Colors
 		}
 
 		/// <summary>
-        /// Sets custom colors. It only works if colored shell is enabled.
-        /// </summary>
-        /// <param name="InputColor">Input color</param>
-        /// <param name="LicenseColor">License color</param>
-        /// <param name="ContKernelErrorColor">Continuable kernel error color</param>
-        /// <param name="UncontKernelErrorColor">Uncontinuable kernel error color</param>
-        /// <param name="HostNameShellColor">Host name color</param>
-        /// <param name="UserNameShellColor">User name color</param>
-        /// <param name="BackgroundColor">Background color</param>
-        /// <param name="NeutralTextColor">Neutral text color</param>
-        /// <param name="ListEntryColor">Command list color</param>
-        /// <param name="ListValueColor">Command definition color</param>
-        /// <param name="StageColor">Stage color</param>
-        /// <param name="ErrorColor">Error color</param>
-        /// <param name="WarningColor">Warning color</param>
-        /// <param name="OptionColor">Option color</param>
-        /// <param name="BannerColor">Banner color</param>
-        /// <param name="NotificationTitleColor">Notification title color</param>
-        /// <param name="NotificationDescriptionColor">Notification description color</param>
-        /// <param name="NotificationProgressColor">Notification progress color</param>
-        /// <param name="NotificationFailureColor">Notification failure color</param>
-        /// <param name="QuestionColor">Question color</param>
-        /// <param name="SuccessColor">Success text color</param>
-        /// <param name="UserDollarColor">User dollar color</param>
-        /// <param name="TipColor">Tip color</param>
-        /// <param name="SeparatorTextColor">Separator text color</param>
-        /// <param name="SeparatorColor">Separator color</param>
-        /// <param name="ListTitleColor">List title color</param>
-        /// <param name="DevelopmentWarningColor">Development warning color</param>
-        /// <param name="StageTimeColor">Stage time color</param>
-        /// <param name="ProgressColor">Progress color</param>
-        /// <param name="BackOptionColor">Back option color</param>
-        /// <param name="LowPriorityBorderColor">Low priority notification border color</param>
-        /// <param name="MediumPriorityBorderColor">Medium priority notification border color</param>
-        /// <param name="HighPriorityBorderColor">High priority notification border color</param>
-        /// <param name="TableSeparatorColor">Table separator color</param>
-        /// <param name="TableHeaderColor">Table header color</param>
-        /// <param name="TableValueColor">Table value color</param>
-        /// <param name="SelectedOptionColor">Selected option color</param>
-        /// <param name="AlternativeOptionColor">Alternative option color</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Sets custom colors. It only works if colored shell is enabled.
+		/// </summary>
+		/// <param name="InputColor">Input color</param>
+		/// <param name="LicenseColor">License color</param>
+		/// <param name="ContKernelErrorColor">Continuable kernel error color</param>
+		/// <param name="UncontKernelErrorColor">Uncontinuable kernel error color</param>
+		/// <param name="HostNameShellColor">Host name color</param>
+		/// <param name="UserNameShellColor">User name color</param>
+		/// <param name="BackgroundColor">Background color</param>
+		/// <param name="NeutralTextColor">Neutral text color</param>
+		/// <param name="ListEntryColor">Command list color</param>
+		/// <param name="ListValueColor">Command definition color</param>
+		/// <param name="StageColor">Stage color</param>
+		/// <param name="ErrorColor">Error color</param>
+		/// <param name="WarningColor">Warning color</param>
+		/// <param name="OptionColor">Option color</param>
+		/// <param name="BannerColor">Banner color</param>
+		/// <param name="NotificationTitleColor">Notification title color</param>
+		/// <param name="NotificationDescriptionColor">Notification description color</param>
+		/// <param name="NotificationProgressColor">Notification progress color</param>
+		/// <param name="NotificationFailureColor">Notification failure color</param>
+		/// <param name="QuestionColor">Question color</param>
+		/// <param name="SuccessColor">Success text color</param>
+		/// <param name="UserDollarColor">User dollar color</param>
+		/// <param name="TipColor">Tip color</param>
+		/// <param name="SeparatorTextColor">Separator text color</param>
+		/// <param name="SeparatorColor">Separator color</param>
+		/// <param name="ListTitleColor">List title color</param>
+		/// <param name="DevelopmentWarningColor">Development warning color</param>
+		/// <param name="StageTimeColor">Stage time color</param>
+		/// <param name="ProgressColor">Progress color</param>
+		/// <param name="BackOptionColor">Back option color</param>
+		/// <param name="LowPriorityBorderColor">Low priority notification border color</param>
+		/// <param name="MediumPriorityBorderColor">Medium priority notification border color</param>
+		/// <param name="HighPriorityBorderColor">High priority notification border color</param>
+		/// <param name="TableSeparatorColor">Table separator color</param>
+		/// <param name="TableHeaderColor">Table header color</param>
+		/// <param name="TableValueColor">Table value color</param>
+		/// <param name="SelectedOptionColor">Selected option color</param>
+		/// <param name="AlternativeOptionColor">Alternative option color</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool TrySetColors(string InputColor, string LicenseColor, string ContKernelErrorColor, string UncontKernelErrorColor, string HostNameShellColor, string UserNameShellColor, string BackgroundColor, string NeutralTextColor, string ListEntryColor, string ListValueColor, string StageColor, string ErrorColor, string WarningColor, string OptionColor, string BannerColor, string NotificationTitleColor, string NotificationDescriptionColor, string NotificationProgressColor, string NotificationFailureColor, string QuestionColor, string SuccessColor, string UserDollarColor, string TipColor, string SeparatorTextColor, string SeparatorColor, string ListTitleColor, string DevelopmentWarningColor, string StageTimeColor, string ProgressColor, string BackOptionColor, string LowPriorityBorderColor, string MediumPriorityBorderColor, string HighPriorityBorderColor, string TableSeparatorColor, string TableHeaderColor, string TableValueColor, string SelectedOptionColor, string AlternativeOptionColor)
 		{
 			try
@@ -401,55 +401,54 @@ namespace KS.ConsoleBase.Colors
 				SetColors(InputColor, LicenseColor, ContKernelErrorColor, UncontKernelErrorColor, HostNameShellColor, UserNameShellColor, BackgroundColor, NeutralTextColor, ListEntryColor, ListValueColor, StageColor, ErrorColor, WarningColor, OptionColor, BannerColor, NotificationTitleColor, NotificationDescriptionColor, NotificationProgressColor, NotificationFailureColor, QuestionColor, SuccessColor, UserDollarColor, TipColor, SeparatorTextColor, SeparatorColor, ListTitleColor, DevelopmentWarningColor, StageTimeColor, ProgressColor, BackOptionColor, LowPriorityBorderColor, MediumPriorityBorderColor, HighPriorityBorderColor, TableSeparatorColor, TableHeaderColor, TableValueColor, SelectedOptionColor, AlternativeOptionColor);
 				return true;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				return false;
 			}
 		}
 
 		/// <summary>
-        /// Sets custom colors. It only works if colored shell is enabled.
-        /// </summary>
-        /// <param name="InputColor">Input color</param>
-        /// <param name="LicenseColor">License color</param>
-        /// <param name="ContKernelErrorColor">Continuable kernel error color</param>
-        /// <param name="UncontKernelErrorColor">Uncontinuable kernel error color</param>
-        /// <param name="HostNameShellColor">Host name color</param>
-        /// <param name="UserNameShellColor">User name color</param>
-        /// <param name="BackgroundColor">Background color</param>
-        /// <param name="NeutralTextColor">Neutral text color</param>
-        /// <param name="ListEntryColor">Command list color</param>
-        /// <param name="ListValueColor">Command definition color</param>
-        /// <param name="StageColor">Stage color</param>
-        /// <param name="ErrorColor">Error color</param>
-        /// <param name="WarningColor">Warning color</param>
-        /// <param name="OptionColor">Option color</param>
-        /// <param name="BannerColor">Banner color</param>
-        /// <param name="NotificationTitleColor">Notification title color</param>
-        /// <param name="NotificationDescriptionColor">Notification description color</param>
-        /// <param name="NotificationProgressColor">Notification progress color</param>
-        /// <param name="NotificationFailureColor">Notification failure color</param>
-        /// <param name="QuestionColor">Question color</param>
-        /// <param name="SuccessColor">Success text color</param>
-        /// <param name="UserDollarColor">User dollar color</param>
-        /// <param name="TipColor">Tip color</param>
-        /// <param name="SeparatorTextColor">Separator text color</param>
-        /// <param name="SeparatorColor">Separator color</param>
-        /// <param name="ListTitleColor">List title color</param>
-        /// <param name="DevelopmentWarningColor">Development warning color</param>
-        /// <param name="StageTimeColor">Stage time color</param>
-        /// <param name="ProgressColor">Progress color</param>
-        /// <param name="BackOptionColor">Back option color</param>
-        /// <param name="LowPriorityBorderColor">Low priority notification border color</param>
-        /// <param name="MediumPriorityBorderColor">Medium priority notification border color</param>
-        /// <param name="HighPriorityBorderColor">High priority notification border color</param>
-        /// <param name="TableSeparatorColor">Table separator color</param>
-        /// <param name="TableHeaderColor">Table header color</param>
-        /// <param name="TableValueColor">Table value color</param>
-        /// <param name="SelectedOptionColor">Selected option color</param>
-        /// <param name="AlternativeOptionColor">Alternative option color</param>
-        /// <exception cref="InvalidOperationException"></exception>
-        /// <exception cref="Exceptions.ColorException"></exception>
+		/// Sets custom colors. It only works if colored shell is enabled.
+		/// </summary>
+		/// <param name="InputColor">Input color</param>
+		/// <param name="LicenseColor">License color</param>
+		/// <param name="ContKernelErrorColor">Continuable kernel error color</param>
+		/// <param name="UncontKernelErrorColor">Uncontinuable kernel error color</param>
+		/// <param name="HostNameShellColor">Host name color</param>
+		/// <param name="UserNameShellColor">User name color</param>
+		/// <param name="BackgroundColor">Background color</param>
+		/// <param name="NeutralTextColor">Neutral text color</param>
+		/// <param name="ListEntryColor">Command list color</param>
+		/// <param name="ListValueColor">Command definition color</param>
+		/// <param name="StageColor">Stage color</param>
+		/// <param name="ErrorColor">Error color</param>
+		/// <param name="WarningColor">Warning color</param>
+		/// <param name="OptionColor">Option color</param>
+		/// <param name="BannerColor">Banner color</param>
+		/// <param name="NotificationTitleColor">Notification title color</param>
+		/// <param name="NotificationDescriptionColor">Notification description color</param>
+		/// <param name="NotificationProgressColor">Notification progress color</param>
+		/// <param name="NotificationFailureColor">Notification failure color</param>
+		/// <param name="QuestionColor">Question color</param>
+		/// <param name="SuccessColor">Success text color</param>
+		/// <param name="UserDollarColor">User dollar color</param>
+		/// <param name="TipColor">Tip color</param>
+		/// <param name="SeparatorTextColor">Separator text color</param>
+		/// <param name="SeparatorColor">Separator color</param>
+		/// <param name="ListTitleColor">List title color</param>
+		/// <param name="DevelopmentWarningColor">Development warning color</param>
+		/// <param name="StageTimeColor">Stage time color</param>
+		/// <param name="ProgressColor">Progress color</param>
+		/// <param name="BackOptionColor">Back option color</param>
+		/// <param name="LowPriorityBorderColor">Low priority notification border color</param>
+		/// <param name="MediumPriorityBorderColor">Medium priority notification border color</param>
+		/// <param name="HighPriorityBorderColor">High priority notification border color</param>
+		/// <param name="TableSeparatorColor">Table separator color</param>
+		/// <param name="TableHeaderColor">Table header color</param>
+		/// <param name="TableValueColor">Table value color</param>
+		/// <param name="SelectedOptionColor">Selected option color</param>
+		/// <param name="AlternativeOptionColor">Alternative option color</param>
+		/// <exception cref="InvalidOperationException"></exception>
 		public static void SetColors(string InputColor, string LicenseColor, string ContKernelErrorColor, string UncontKernelErrorColor, string HostNameShellColor, string UserNameShellColor, string BackgroundColor, string NeutralTextColor, string ListEntryColor, string ListValueColor, string StageColor, string ErrorColor, string WarningColor, string OptionColor, string BannerColor, string NotificationTitleColor, string NotificationDescriptionColor, string NotificationProgressColor, string NotificationFailureColor, string QuestionColor, string SuccessColor, string UserDollarColor, string TipColor, string SeparatorTextColor, string SeparatorColor, string ListTitleColor, string DevelopmentWarningColor, string StageTimeColor, string ProgressColor, string BackOptionColor, string LowPriorityBorderColor, string MediumPriorityBorderColor, string HighPriorityBorderColor, string TableSeparatorColor, string TableHeaderColor, string TableValueColor, string SelectedOptionColor, string AlternativeOptionColor)
 		{
 			// Check colors for null and set them to "def" if found
@@ -677,8 +676,8 @@ namespace KS.ConsoleBase.Colors
 		}
 
 		/// <summary>
-        /// Gets the gray color according to the brightness of the background color
-        /// </summary>
+		/// Gets the gray color according to the brightness of the background color
+		/// </summary>
 		public static Color GetGray()
 		{
 			if (BackgroundColor.Brightness == ColorBrightness.Light)
@@ -687,23 +686,24 @@ namespace KS.ConsoleBase.Colors
 			}
 			else
 			{
-				return new Color(ConsoleColors.Gray);
+				return new Color(ConsoleColor.Gray);
 			}
 		}
 
 		/// <summary>
-        /// Sets the console color
-        /// </summary>
-        /// <param name="colorType">A type of colors that will be changed.</param>
+		/// Sets the console color
+		/// </summary>
+		/// <param name="colorType">A type of colors that will be changed.</param>
 		public static void SetConsoleColor(ColTypes colorType)
 		{
 			SetConsoleColor(colorType, false);
 		}
 
 		/// <summary>
-        /// Sets the console color
-        /// </summary>
-        /// <param name="colorType">A type of colors that will be changed.</param>
+		/// Sets the console color
+		/// </summary>
+		/// <param name="colorType">A type of colors that will be changed.</param>
+		/// <param name="Background">Whether to use teh background color or not</param>
 		public static void SetConsoleColor(ColTypes colorType, bool Background)
 		{
 			if (Kernel.Kernel.DefConsoleOut is null | Equals(Kernel.Kernel.DefConsoleOut, Console.Out))
@@ -912,10 +912,10 @@ namespace KS.ConsoleBase.Colors
 		}
 
 		/// <summary>
-        /// Sets the console color
-        /// </summary>
-        /// <param name="ColorSequence">The color instance</param>
-        /// <param name="Background">Whether to set background or not</param>
+		/// Sets the console color
+		/// </summary>
+		/// <param name="ColorSequence">The color instance</param>
+		/// <param name="Background">Whether to set background or not</param>
 		public static void SetConsoleColor(Color ColorSequence, bool Background = false)
 		{
 			if (Shell.Shell.ColoredShell)
@@ -925,20 +925,21 @@ namespace KS.ConsoleBase.Colors
 		}
 
 		/// <summary>
-        /// Sets the console color
-        /// </summary>
-        /// <param name="colorType">A type of colors that will be changed.</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Sets the console color
+		/// </summary>
+		/// <param name="colorType">A type of colors that will be changed.</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool TrySetConsoleColor(ColTypes colorType)
 		{
 			return TrySetConsoleColor(colorType, false);
 		}
 
 		/// <summary>
-        /// Sets the console color
-        /// </summary>
-        /// <param name="colorType">A type of colors that will be changed.</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Sets the console color
+		/// </summary>
+		/// <param name="colorType">A type of colors that will be changed.</param>
+		/// <param name="Background">Whether to use teh background color or not</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool TrySetConsoleColor(ColTypes colorType, bool Background)
 		{
 			try
@@ -946,18 +947,18 @@ namespace KS.ConsoleBase.Colors
 				SetConsoleColor(colorType, Background);
 				return true;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				return false;
 			}
 		}
 
 		/// <summary>
-        /// Sets the console color
-        /// </summary>
-        /// <param name="ColorSequence">The color instance</param>
-        /// <param name="Background">Whether to set background or not</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Sets the console color
+		/// </summary>
+		/// <param name="ColorSequence">The color instance</param>
+		/// <param name="Background">Whether to set background or not</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool TrySetConsoleColor(Color ColorSequence, bool Background)
 		{
 			try
@@ -965,12 +966,17 @@ namespace KS.ConsoleBase.Colors
 				SetConsoleColor(ColorSequence, Background);
 				return true;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				return false;
 			}
 		}
 
+		/// <summary>
+		/// Gets a console color from the kernel color type
+		/// </summary>
+		/// <param name="colorType">Kernel color type</param>
+		/// <returns></returns>
 		public static Color GetConsoleColor(ColTypes colorType)
 		{
 			switch (colorType)
@@ -1136,10 +1142,10 @@ namespace KS.ConsoleBase.Colors
 		}
 
 		/// <summary>
-        /// Tries parsing the color from the specifier string
-        /// </summary>
-        /// <param name="ColorSpecifier">A color specifier. It must be a valid number from 0-255 if using 255-colors, or a VT sequence if using true color as follows: &lt;R&gt;;&lt;G&gt;;&lt;B&gt;</param>
-        /// <returns>True if successful; False if failed</returns>
+		/// Tries parsing the color from the specifier string
+		/// </summary>
+		/// <param name="ColorSpecifier">A color specifier. It must be a valid number from 0-255 if using 255-colors, or a VT sequence if using true color as follows: &lt;R&gt;;&lt;G&gt;;&lt;B&gt;</param>
+		/// <returns>True if successful; False if failed</returns>
 		public static bool TryParseColor(string ColorSpecifier)
 		{
 			try
@@ -1156,10 +1162,10 @@ namespace KS.ConsoleBase.Colors
 		}
 
 		/// <summary>
-        /// Tries parsing the color from the specifier string
-        /// </summary>
-        /// <param name="ColorNum">The color number</param>
-        /// <returns>True if successful; False if failed</returns>
+		/// Tries parsing the color from the specifier string
+		/// </summary>
+		/// <param name="ColorNum">The color number</param>
+		/// <returns>True if successful; False if failed</returns>
 		public static bool TryParseColor(int ColorNum)
 		{
 			try
@@ -1176,12 +1182,12 @@ namespace KS.ConsoleBase.Colors
 		}
 
 		/// <summary>
-        /// Tries parsing the color from the specifier string
-        /// </summary>
-        /// <param name="R">The red level</param>
-        /// <param name="G">The green level</param>
-        /// <param name="B">The blue level</param>
-        /// <returns>True if successful; False if failed</returns>
+		/// Tries parsing the color from the specifier string
+		/// </summary>
+		/// <param name="R">The red level</param>
+		/// <param name="G">The green level</param>
+		/// <param name="B">The blue level</param>
+		/// <returns>True if successful; False if failed</returns>
 		public static bool TryParseColor(int R, int G, int B)
 		{
 			try
@@ -1198,10 +1204,10 @@ namespace KS.ConsoleBase.Colors
 		}
 
 		/// <summary>
-        /// Converts from the hexadecimal representation of a color to the RGB sequence
-        /// </summary>
-        /// <param name="Hex">A hexadecimal representation of a color (#AABBCC for example)</param>
-        /// <returns>&lt;R&gt;;&lt;G&gt;;&lt;B&gt;</returns>
+		/// Converts from the hexadecimal representation of a color to the RGB sequence
+		/// </summary>
+		/// <param name="Hex">A hexadecimal representation of a color (#AABBCC for example)</param>
+		/// <returns>&lt;R&gt;;&lt;G&gt;;&lt;B&gt;</returns>
 		public static string ConvertFromHexToRGB(string Hex)
 		{
 			var rgb = ParsingTools.ParseSpecifierRgbHash(Hex);
@@ -1209,10 +1215,10 @@ namespace KS.ConsoleBase.Colors
 		}
 
 		/// <summary>
-        /// Converts from the RGB sequence of a color to the hexadecimal representation
-        /// </summary>
-        /// <param name="RGBSequence">&lt;R&gt;;&lt;G&gt;;&lt;B&gt;</param>
-        /// <returns>A hexadecimal representation of a color (#AABBCC for example)</returns>
+		/// Converts from the RGB sequence of a color to the hexadecimal representation
+		/// </summary>
+		/// <param name="RGBSequence">&lt;R&gt;;&lt;G&gt;;&lt;B&gt;</param>
+		/// <returns>A hexadecimal representation of a color (#AABBCC for example)</returns>
 		public static string ConvertFromRGBToHex(string RGBSequence)
 		{
 			Color rgb = RGBSequence;
@@ -1220,12 +1226,12 @@ namespace KS.ConsoleBase.Colors
 		}
 
 		/// <summary>
-        /// Converts from the RGB sequence of a color to the hexadecimal representation
-        /// </summary>
-        /// <param name="R">The red level</param>
-        /// <param name="G">The green level</param>
-        /// <param name="B">The blue level</param>
-        /// <returns>A hexadecimal representation of a color (#AABBCC for example)</returns>
+		/// Converts from the RGB sequence of a color to the hexadecimal representation
+		/// </summary>
+		/// <param name="R">The red level</param>
+		/// <param name="G">The green level</param>
+		/// <param name="B">The blue level</param>
+		/// <returns>A hexadecimal representation of a color (#AABBCC for example)</returns>
 		public static string ConvertFromRGBToHex(int R, int G, int B)
 		{
 			Color rgb = $"{R};{G};{B}";

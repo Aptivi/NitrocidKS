@@ -141,7 +141,7 @@ namespace KS.Misc.Splash.Splashes
 				while (!SplashClosing)
 					Thread.Sleep(1);
 			}
-			catch (ThreadInterruptedException ex)
+			catch (ThreadInterruptedException)
 			{
 				DebugWriter.Wdbg(DebugLevel.I, "Splash done.");
 			}
@@ -160,10 +160,10 @@ namespace KS.Misc.Splash.Splashes
 		}
 
 		/// <summary>
-        /// Updates the splash progress
-        /// </summary>
-        /// <param name="Progress">Progress percentage from 0 to 100</param>
-        /// <param name="ProgressReport">The progress text</param>
+		/// Updates the splash progress
+		/// </summary>
+		/// <param name="Progress">Progress percentage from 0 to 100</param>
+		/// <param name="ProgressReport">The progress text</param>
 		public void UpdateProgressReport(int Progress, string ProgressReport, params object[] Vars)
 		{
 			// Display the text and percentage

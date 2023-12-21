@@ -20,21 +20,21 @@
 namespace KS.Arguments.ArgumentBase
 {
 	/// <summary>
-    /// Argument type enumeration
-    /// </summary>
+	/// Argument type enumeration
+	/// </summary>
 	public enum ArgumentType
 	{
 		/// <summary>
-        /// Kernel arguments
-        /// </summary>
+		/// Kernel arguments
+		/// </summary>
 		KernelArgs,
 		/// <summary>
-        /// Command line arguments
-        /// </summary>
+		/// Command line arguments
+		/// </summary>
 		CommandLineArgs,
 		/// <summary>
-        /// Pre-boot command line arguments
-        /// </summary>
+		/// Pre-boot command line arguments
+		/// </summary>
 		PreBootCommandLineArgs
 	}
 }

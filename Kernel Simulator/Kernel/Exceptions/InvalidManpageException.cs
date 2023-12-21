@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when the manpage was invalid
-    /// </summary>
+	/// Thrown when the manpage was invalid
+	/// </summary>
 	public class InvalidManpageException : Exception
 	{
 

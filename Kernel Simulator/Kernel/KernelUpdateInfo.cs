@@ -26,19 +26,19 @@ namespace KS.Kernel
 	{
 
 		/// <summary>
-        /// Updated kernel version
-        /// </summary>
+		/// Updated kernel version
+		/// </summary>
 		public SemVer UpdateVersion { get; private set; }
 		/// <summary>
-        /// Update file URL
-        /// </summary>
+		/// Update file URL
+		/// </summary>
 		public Uri UpdateURL { get; private set; }
 
 		/// <summary>
-        /// Installs a new instance of class KernelUpdateInfo
-        /// </summary>
-        /// <param name="UpdateVer">The kernel version fetched from the update token</param>
-        /// <param name="UpdateUrl">The kernel URL fetched from the update token</param>
+		/// Installs a new instance of class KernelUpdateInfo
+		/// </summary>
+		/// <param name="UpdateVer">The kernel version fetched from the update token</param>
+		/// <param name="UpdateUrl">The kernel URL fetched from the update token</param>
 		protected internal KernelUpdateInfo(SemVer UpdateVer, string UpdateUrl)
 		{
 			try

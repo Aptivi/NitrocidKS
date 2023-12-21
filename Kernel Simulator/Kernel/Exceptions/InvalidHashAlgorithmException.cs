@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when the specified hash algorithm is invalid
-    /// </summary>
+	/// Thrown when the specified hash algorithm is invalid
+	/// </summary>
 	public class InvalidHashAlgorithmException : Exception
 	{
 

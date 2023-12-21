@@ -29,8 +29,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests raising an event and adding it to the fired events list
-    /// </summary>
+		/// Tests raising an event and adding it to the fired events list
+		/// </summary>
 		[Test]
 		[Description("Misc")]
 		public void TestRaiseEvent()

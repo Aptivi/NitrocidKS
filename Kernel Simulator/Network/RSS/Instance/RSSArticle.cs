@@ -25,29 +25,29 @@ namespace KS.Network.RSS.Instance
 	{
 
 		/// <summary>
-        /// RSS Article Title
-        /// </summary>
+		/// RSS Article Title
+		/// </summary>
 		public readonly string ArticleTitle;
 		/// <summary>
-        /// RSS Article Link
-        /// </summary>
+		/// RSS Article Link
+		/// </summary>
 		public readonly string ArticleLink;
 		/// <summary>
-        /// RSS Article Descirption
-        /// </summary>
+		/// RSS Article Descirption
+		/// </summary>
 		public readonly string ArticleDescription;
 		/// <summary>
-        /// RSS Article Parameters
-        /// </summary>
+		/// RSS Article Parameters
+		/// </summary>
 		public readonly Dictionary<string, XmlNode> ArticleVariables;
 
 		/// <summary>
-        /// Makes a new instance of RSS article
-        /// </summary>
-        /// <param name="ArticleTitle"></param>
-        /// <param name="ArticleLink"></param>
-        /// <param name="ArticleDescription"></param>
-        /// <param name="ArticleVariables"></param>
+		/// Makes a new instance of RSS article
+		/// </summary>
+		/// <param name="ArticleTitle"></param>
+		/// <param name="ArticleLink"></param>
+		/// <param name="ArticleDescription"></param>
+		/// <param name="ArticleVariables"></param>
 		public RSSArticle(string ArticleTitle, string ArticleLink, string ArticleDescription, Dictionary<string, XmlNode> ArticleVariables)
 		{
 			this.ArticleTitle = ArticleTitle.Trim();

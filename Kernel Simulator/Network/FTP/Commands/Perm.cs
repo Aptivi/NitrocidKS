@@ -21,7 +21,7 @@ using KS.Misc.Writers.ConsoleWriters;
 
 using KS.Network.FTP.Filesystem;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
+using System;
 
 namespace KS.Network.FTP.Commands
 {
@@ -32,7 +32,7 @@ namespace KS.Network.FTP.Commands
 		{
 			if (FTPShellCommon.FtpConnected)
 			{
-				if (FTPFilesystem.FTPChangePermissions(ListArgs[0], Conversions.ToInteger(ListArgs[1])))
+				if (FTPFilesystem.FTPChangePermissions(ListArgs[0], Convert.ToInt32(ListArgs[1])))
 				{
 					TextWriterColor.Write(Translate.DoTranslation("Permissions set successfully for file") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success), ListArgs[0]);
 				}

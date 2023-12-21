@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when the general filesystem error occurs
-    /// </summary>
+	/// Thrown when the general filesystem error occurs
+	/// </summary>
 	public class FilesystemException : Exception
 	{
 

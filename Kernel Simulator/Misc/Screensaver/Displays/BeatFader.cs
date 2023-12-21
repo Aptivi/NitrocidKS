@@ -42,8 +42,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _beatFaderMaximumColorLevel = 255;
 
 		/// <summary>
-        /// [BeatFader] Enable 255 color support. Has a higher priority than 16 color support. Please note that it only works if color cycling is enabled.
-        /// </summary>
+		/// [BeatFader] Enable 255 color support. Has a higher priority than 16 color support. Please note that it only works if color cycling is enabled.
+		/// </summary>
 		public static bool BeatFader255Colors
 		{
 			get
@@ -56,8 +56,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatFader] Enable truecolor support. Has a higher priority than 255 color support. Please note that it only works if color cycling is enabled.
-        /// </summary>
+		/// [BeatFader] Enable truecolor support. Has a higher priority than 255 color support. Please note that it only works if color cycling is enabled.
+		/// </summary>
 		public static bool BeatFaderTrueColor
 		{
 			get
@@ -70,8 +70,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatFader] Enable color cycling (uses RNG. If disabled, uses the <see cref="BeatFaderBeatColor"/> color.)
-        /// </summary>
+		/// [BeatFader] Enable color cycling (uses RNG. If disabled, uses the <see cref="BeatFaderBeatColor"/> color.)
+		/// </summary>
 		public static bool BeatFaderCycleColors
 		{
 			get
@@ -84,8 +84,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatFader] The color of beats. It can be 1-16, 1-255, or "1-255;1-255;1-255".
-        /// </summary>
+		/// [BeatFader] The color of beats. It can be 1-16, 1-255, or "1-255;1-255;1-255".
+		/// </summary>
 		public static string BeatFaderBeatColor
 		{
 			get
@@ -98,8 +98,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatFader] How many beats per minute to wait before making the next write?
-        /// </summary>
+		/// [BeatFader] How many beats per minute to wait before making the next write?
+		/// </summary>
 		public static int BeatFaderDelay
 		{
 			get
@@ -114,8 +114,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatFader] How many fade steps to do?
-        /// </summary>
+		/// [BeatFader] How many fade steps to do?
+		/// </summary>
 		public static int BeatFaderMaxSteps
 		{
 			get
@@ -130,8 +130,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatFader] The minimum red color level (true color)
-        /// </summary>
+		/// [BeatFader] The minimum red color level (true color)
+		/// </summary>
 		public static int BeatFaderMinimumRedColorLevel
 		{
 			get
@@ -148,8 +148,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatFader] The minimum green color level (true color)
-        /// </summary>
+		/// [BeatFader] The minimum green color level (true color)
+		/// </summary>
 		public static int BeatFaderMinimumGreenColorLevel
 		{
 			get
@@ -166,8 +166,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatFader] The minimum blue color level (true color)
-        /// </summary>
+		/// [BeatFader] The minimum blue color level (true color)
+		/// </summary>
 		public static int BeatFaderMinimumBlueColorLevel
 		{
 			get
@@ -184,8 +184,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatFader] The minimum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [BeatFader] The minimum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int BeatFaderMinimumColorLevel
 		{
 			get
@@ -203,8 +203,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatFader] The maximum red color level (true color)
-        /// </summary>
+		/// [BeatFader] The maximum red color level (true color)
+		/// </summary>
 		public static int BeatFaderMaximumRedColorLevel
 		{
 			get
@@ -221,8 +221,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatFader] The maximum green color level (true color)
-        /// </summary>
+		/// [BeatFader] The maximum green color level (true color)
+		/// </summary>
 		public static int BeatFaderMaximumGreenColorLevel
 		{
 			get
@@ -239,8 +239,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatFader] The maximum blue color level (true color)
-        /// </summary>
+		/// [BeatFader] The maximum blue color level (true color)
+		/// </summary>
 		public static int BeatFaderMaximumBlueColorLevel
 		{
 			get
@@ -257,8 +257,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BeatFader] The maximum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [BeatFader] The maximum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int BeatFaderMaximumColorLevel
 		{
 			get

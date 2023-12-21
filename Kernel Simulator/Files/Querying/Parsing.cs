@@ -27,12 +27,12 @@ namespace KS.Files.Querying
 	{
 
 		/// <summary>
-        /// Gets all the invalid path characters
-        /// </summary>
+		/// Gets all the invalid path characters
+		/// </summary>
 		public static char[] GetInvalidPathChars()
 		{
 			char[] FinalInvalidPathChars = Path.GetInvalidPathChars();
-			char[] WindowsInvalidPathChars = new[] { '"', '<', '>' };
+			char[] WindowsInvalidPathChars = ['"', '<', '>'];
 			if (Kernel.Kernel.KernelSimulatorMoniker == ".NET CoreCLR" & PlatformDetector.IsOnWindows())
 			{
 				// It's weird of .NET 6.0 to not consider the above three Windows invalid directory chars to be invalid,
@@ -44,10 +44,10 @@ namespace KS.Files.Querying
 		}
 
 		/// <summary>
-        /// Tries to parse the path (For file names and only names, use <see cref="TryParseFileName(String)"/> instead.)
-        /// </summary>
-        /// <param name="Path">The path to be parsed</param>
-        /// <returns>True if successful; false if unsuccessful</returns>
+		/// Tries to parse the path (For file names and only names, use <see cref="TryParseFileName(string)"/> instead.)
+		/// </summary>
+		/// <param name="Path">The path to be parsed</param>
+		/// <returns>True if successful; false if unsuccessful</returns>
 		public static bool TryParsePath(string Path)
 		{
 			try
@@ -66,10 +66,10 @@ namespace KS.Files.Querying
 		}
 
 		/// <summary>
-        /// Tries to parse the file name (For full paths, use <see cref="TryParsePath(String)"/> instead.)
-        /// </summary>
-        /// <param name="Name">The file name to be parsed</param>
-        /// <returns>True if successful; false if unsuccessful</returns>
+		/// Tries to parse the file name (For full paths, use <see cref="TryParsePath(string)"/> instead.)
+		/// </summary>
+		/// <param name="Name">The file name to be parsed</param>
+		/// <returns>True if successful; false if unsuccessful</returns>
 		public static bool TryParseFileName(string Name)
 		{
 			try

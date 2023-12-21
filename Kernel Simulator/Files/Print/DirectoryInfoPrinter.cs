@@ -33,16 +33,16 @@ namespace KS.Files.Print
 	{
 
 		/// <summary>
-        /// Prints the directory information to the console
-        /// </summary>
+		/// Prints the directory information to the console
+		/// </summary>
 		public static void PrintDirectoryInfo(FileSystemInfo DirectoryInfo)
 		{
 			PrintDirectoryInfo(DirectoryInfo, Listing.ShowFileDetailsList);
 		}
 
 		/// <summary>
-        /// Prints the directory information to the console
-        /// </summary>
+		/// Prints the directory information to the console
+		/// </summary>
 		public static void PrintDirectoryInfo(FileSystemInfo DirectoryInfo, bool ShowDirectoryDetails)
 		{
 			if (Checking.FolderExists(DirectoryInfo.FullName))

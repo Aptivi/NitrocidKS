@@ -25,7 +25,6 @@ using KS.Kernel;
 using KS.Misc.Platform;
 using KS.Misc.Text;
 using KS.Network.RemoteDebug;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Misc.Writers.DebugWriters
 {
@@ -33,13 +32,13 @@ namespace KS.Misc.Writers.DebugWriters
 	{
 
 		public static StreamWriter DebugStreamWriter;
-		public static List<string> DebugStackTraces = new();
+		public static List<string> DebugStackTraces = [];
 
 		/// <summary>
-        /// Outputs the text into the debugger file, and sets the time stamp.
-        /// </summary>
-        /// <param name="text">A sentence that will be written to the the debugger file. Supports {0}, {1}, ...</param>
-        /// <param name="vars">Variables to format the message before it's written.</param>
+		/// Outputs the text into the debugger file, and sets the time stamp.
+		/// </summary>
+		/// <param name="text">A sentence that will be written to the the debugger file. Supports {0}, {1}, ...</param>
+		/// <param name="vars">Variables to format the message before it's written.</param>
 		public static void Wdbg(DebugLevel Level, string text, params object[] vars)
 		{
 			if (Flags.DebugMode)
@@ -55,7 +54,7 @@ namespace KS.Misc.Writers.DebugWriters
 					string Source = Path.GetFileName(STrace.GetFrame(1).GetFileName());
 					string LineNum = STrace.GetFrame(1).GetFileLineNumber().ToString();
 					string Func = STrace.GetFrame(1).GetMethod().Name;
-					var OffendingIndex = new List<string>();
+					var OffendingIndex = new List<int>();
 
 					// We could be calling this function by WdbgConditional, so descend a frame
 					if (Func == "WdbgConditional")
@@ -75,7 +74,7 @@ namespace KS.Misc.Writers.DebugWriters
 					}
 
 					// For contributors who are testing new code: Define ENABLEIMMEDIATEWINDOWDEBUG for immediate debugging (Immediate Window)
-					if (Source is not null & !(Conversions.ToDouble(LineNum) == 0d))
+					if (Source is not null & !(Convert.ToDouble(LineNum) == 0d))
 					{
 						// Debug to file and all connected debug devices (raw mode)
 						DebugStreamWriter.WriteLine($"{TimeDate.TimeDate.KernelDateTime.ToShortDateString()} {TimeDate.TimeDate.KernelDateTime.ToShortTimeString()} [{Level}] ({Func} - {Source}:{LineNum}): {text}", vars);
@@ -87,7 +86,7 @@ namespace KS.Misc.Writers.DebugWriters
 							}
 							catch (Exception ex)
 							{
-								OffendingIndex.Add(i.ToString());
+								OffendingIndex.Add(i);
 								WStkTrc(ex);
 							}
 						}
@@ -110,7 +109,7 @@ namespace KS.Misc.Writers.DebugWriters
 							}
 							catch (Exception ex)
 							{
-								OffendingIndex.Add(i.ToString());
+								OffendingIndex.Add(i);
 								WStkTrc(ex);
 							}
 						}
@@ -145,11 +144,11 @@ namespace KS.Misc.Writers.DebugWriters
 		}
 
 		/// <summary>
-        /// Conditionally outputs the text into the debugger file, and sets the time stamp.
-        /// </summary>
-        /// <param name="Condition">The condition that must be satisfied</param>
-        /// <param name="text">A sentence that will be written to the the debugger file. Supports {0}, {1}, ...</param>
-        /// <param name="vars">Variables to format the message before it's written.</param>
+		/// Conditionally outputs the text into the debugger file, and sets the time stamp.
+		/// </summary>
+		/// <param name="Condition">The condition that must be satisfied</param>
+		/// <param name="text">A sentence that will be written to the the debugger file. Supports {0}, {1}, ...</param>
+		/// <param name="vars">Variables to format the message before it's written.</param>
 		public static void WdbgConditional(ref bool Condition, DebugLevel Level, string text, params object[] vars)
 		{
 			if (Condition)
@@ -157,15 +156,15 @@ namespace KS.Misc.Writers.DebugWriters
 		}
 
 		/// <summary>
-        /// Outputs the text into the debugger devices, and sets the time stamp. Note that it doesn't print where did the debugger debug in source files.
-        /// </summary>
-        /// <param name="text">A sentence that will be written to the the debugger devices. Supports {0}, {1}, ...</param>
-        /// <param name="vars">Variables to format the message before it's written.</param>
+		/// Outputs the text into the debugger devices, and sets the time stamp. Note that it doesn't print where did the debugger debug in source files.
+		/// </summary>
+		/// <param name="text">A sentence that will be written to the the debugger devices. Supports {0}, {1}, ...</param>
+		/// <param name="vars">Variables to format the message before it's written.</param>
 		public static void WdbgDevicesOnly(DebugLevel Level, string text, params object[] vars)
 		{
 			if (Flags.DebugMode)
 			{
-				var OffendingIndex = new List<string>();
+				var OffendingIndex = new List<int>();
 
 				// For contributors who are testing new code: Define ENABLEIMMEDIATEWINDOWDEBUG for immediate debugging (Immediate Window)
 				for (int i = 0, loopTo = RemoteDebugger.DebugDevices.Count - 1; i <= loopTo; i++)
@@ -176,7 +175,7 @@ namespace KS.Misc.Writers.DebugWriters
 					}
 					catch (Exception ex)
 					{
-						OffendingIndex.Add(i.ToString());
+						OffendingIndex.Add(i);
 						WStkTrc(ex);
 					}
 				}
@@ -203,10 +202,10 @@ namespace KS.Misc.Writers.DebugWriters
 		}
 
 		/// <summary>
-        /// Conditionally writes the exception's stack trace to the debugger
-        /// </summary>
-        /// <param name="Condition">The condition that must be satisfied</param>
-        /// <param name="Ex">An exception</param>
+		/// Conditionally writes the exception's stack trace to the debugger
+		/// </summary>
+		/// <param name="Condition">The condition that must be satisfied</param>
+		/// <param name="Ex">An exception</param>
 		public static void WStkTrcConditional(ref bool Condition, Exception Ex)
 		{
 			if (Condition)
@@ -214,9 +213,9 @@ namespace KS.Misc.Writers.DebugWriters
 		}
 
 		/// <summary>
-        /// Writes the exception's stack trace to the debugger
-        /// </summary>
-        /// <param name="Ex">An exception</param>
+		/// Writes the exception's stack trace to the debugger
+		/// </summary>
+		/// <param name="Ex">An exception</param>
 		public static void WStkTrc(Exception Ex)
 		{
 			if (Flags.DebugMode)

@@ -5,7 +5,6 @@ using KS.ConsoleBase.Colors;
 using KS.Misc.Threading;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
-using Microsoft.VisualBasic.CompilerServices;
 using Terminaux.Base;
 using Terminaux.Colors;
 
@@ -46,8 +45,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _lighterMaximumColorLevel = 255;
 
 		/// <summary>
-        /// [Lighter] Enable 255 color support. Has a higher priority than 16 color support.
-        /// </summary>
+		/// [Lighter] Enable 255 color support. Has a higher priority than 16 color support.
+		/// </summary>
 		public static bool Lighter255Colors
 		{
 			get
@@ -60,8 +59,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Lighter] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
+		/// [Lighter] Enable truecolor support. Has a higher priority than 255 color support.
+		/// </summary>
 		public static bool LighterTrueColor
 		{
 			get
@@ -74,8 +73,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Lighter] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [Lighter] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int LighterDelay
 		{
 			get
@@ -88,8 +87,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Lighter] How many positions to write before starting to blacken them?
-        /// </summary>
+		/// [Lighter] How many positions to write before starting to blacken them?
+		/// </summary>
 		public static int LighterMaxPositions
 		{
 			get
@@ -102,8 +101,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Lighter] Screensaver background color
-        /// </summary>
+		/// [Lighter] Screensaver background color
+		/// </summary>
 		public static string LighterBackgroundColor
 		{
 			get
@@ -116,8 +115,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Lighter] The minimum red color level (true color)
-        /// </summary>
+		/// [Lighter] The minimum red color level (true color)
+		/// </summary>
 		public static int LighterMinimumRedColorLevel
 		{
 			get
@@ -130,8 +129,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Lighter] The minimum green color level (true color)
-        /// </summary>
+		/// [Lighter] The minimum green color level (true color)
+		/// </summary>
 		public static int LighterMinimumGreenColorLevel
 		{
 			get
@@ -144,8 +143,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Lighter] The minimum blue color level (true color)
-        /// </summary>
+		/// [Lighter] The minimum blue color level (true color)
+		/// </summary>
 		public static int LighterMinimumBlueColorLevel
 		{
 			get
@@ -158,8 +157,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Lighter] The minimum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [Lighter] The minimum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int LighterMinimumColorLevel
 		{
 			get
@@ -172,8 +171,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Lighter] The maximum red color level (true color)
-        /// </summary>
+		/// [Lighter] The maximum red color level (true color)
+		/// </summary>
 		public static int LighterMaximumRedColorLevel
 		{
 			get
@@ -186,8 +185,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Lighter] The maximum green color level (true color)
-        /// </summary>
+		/// [Lighter] The maximum green color level (true color)
+		/// </summary>
 		public static int LighterMaximumGreenColorLevel
 		{
 			get
@@ -200,8 +199,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Lighter] The maximum blue color level (true color)
-        /// </summary>
+		/// [Lighter] The maximum blue color level (true color)
+		/// </summary>
 		public static int LighterMaximumBlueColorLevel
 		{
 			get
@@ -214,8 +213,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Lighter] The maximum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [Lighter] The maximum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int LighterMaximumColorLevel
 		{
 			get
@@ -236,7 +235,7 @@ namespace KS.Misc.Screensaver.Displays
 		private int CurrentWindowWidth;
 		private int CurrentWindowHeight;
 		private bool ResizeSyncing;
-		private readonly List<Tuple<int, int>> CoveredPositions = new();
+		private readonly List<Tuple<int, int>> CoveredPositions = [];
 
 		public override string ScreensaverName { get; set; } = "Lighter";
 
@@ -328,8 +327,8 @@ namespace KS.Misc.Screensaver.Displays
 			if (CoveredPositions.Count == LighterSettings.LighterMaxPositions)
 			{
 				DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Covered positions exceeded max positions of {0}", LighterSettings.LighterMaxPositions);
-				int WipeLeft = Conversions.ToInteger(CoveredPositions[0].ToString().Substring(0, CoveredPositions[0].ToString().IndexOf(";")));
-				int WipeTop = Conversions.ToInteger(CoveredPositions[0].ToString().Substring(CoveredPositions[0].ToString().IndexOf(";") + 1));
+				int WipeLeft = Convert.ToInt32(CoveredPositions[0].ToString().Substring(0, CoveredPositions[0].ToString().IndexOf(";")));
+				int WipeTop = Convert.ToInt32(CoveredPositions[0].ToString().Substring(CoveredPositions[0].ToString().IndexOf(";") + 1));
 				DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Wiping in {0}, {1}...", WipeLeft, WipeTop);
 				if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
 					ResizeSyncing = true;

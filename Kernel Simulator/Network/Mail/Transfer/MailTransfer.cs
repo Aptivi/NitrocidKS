@@ -31,7 +31,6 @@ using KS.Network.Mail.PGP;
 using KS.TimeDate;
 using MailKit;
 using MailKit.Search;
-using Microsoft.VisualBasic.CompilerServices;
 using MimeKit;
 using MimeKit.Cryptography;
 using MimeKit.Text;
@@ -42,9 +41,9 @@ namespace KS.Network.Mail.Transfer
 	{
 
 		/// <summary>
-        /// Prints content of message to console
-        /// </summary>
-        /// <param name="MessageNum">Message number</param>
+		/// Prints content of message to console
+		/// </summary>
+		/// <param name="MessageNum">Message number</param>
 		public static void MailPrintMessage(int MessageNum, bool Decrypt = false)
 		{
 			int Message = MessageNum - 1;
@@ -235,10 +234,10 @@ namespace KS.Network.Mail.Transfer
 		}
 
 		/// <summary>
-        /// Decrypts a message
-        /// </summary>
-        /// <param name="Text">Text part</param>
-        /// <returns>A decrypted message, or null if unsuccessful.</returns>
+		/// Decrypts a message
+		/// </summary>
+		/// <param name="Text">Text part</param>
+		/// <returns>A decrypted message, or null if unsuccessful.</returns>
 		public static Dictionary<string, MimeEntity> DecryptMessage(MimeMessage Text)
 		{
 			var EncryptedDict = new Dictionary<string, MimeEntity>();
@@ -278,13 +277,13 @@ namespace KS.Network.Mail.Transfer
 		}
 
 		/// <summary>
-        /// Sends a message
-        /// </summary>
-        /// <param name="Recipient">Recipient name</param>
-        /// <param name="Subject">Subject</param>
-        /// <param name="Body">Body (only text. See <see cref="MailSendMessage(String, String, MimeEntity)"/> for more.)</param>
-        /// <returns>True if successful; False if unsuccessful.</returns>
-		public static string MailSendMessage(string Recipient, string Subject, string Body)
+		/// Sends a message
+		/// </summary>
+		/// <param name="Recipient">Recipient name</param>
+		/// <param name="Subject">Subject</param>
+		/// <param name="Body">Body (only text. See <see cref="MailSendMessage(string, string, MimeEntity)"/> for more.)</param>
+		/// <returns>True if successful; False if unsuccessful.</returns>
+		public static bool MailSendMessage(string Recipient, string Subject, string Body)
 		{
 			// Construct a message
 			var FinalMessage = new MimeMessage();
@@ -303,25 +302,25 @@ namespace KS.Network.Mail.Transfer
 				try
 				{
 					MailLogin.SMTP_Client.Send(FinalMessage, default, MailShellCommon.Mail_Progress);
-					return Conversions.ToString(true);
+					return true;
 				}
 				catch (Exception ex)
 				{
 					DebugWriter.Wdbg(DebugLevel.E, "Failed to send message: {0}", ex.Message);
 					DebugWriter.WStkTrc(ex);
 				}
-				return Conversions.ToString(false);
+				return false;
 			}
 		}
 
 		/// <summary>
-        /// Sends a message with advanced features like attachments
-        /// </summary>
-        /// <param name="Recipient">Recipient name</param>
-        /// <param name="Subject">Subject</param>
-        /// <param name="Body">Body</param>
-        /// <returns>True if successful; False if unsuccessful.</returns>
-		public static string MailSendMessage(string Recipient, string Subject, MimeEntity Body)
+		/// Sends a message with advanced features like attachments
+		/// </summary>
+		/// <param name="Recipient">Recipient name</param>
+		/// <param name="Subject">Subject</param>
+		/// <param name="Body">Body</param>
+		/// <returns>True if successful; False if unsuccessful.</returns>
+		public static bool MailSendMessage(string Recipient, string Subject, MimeEntity Body)
 		{
 			// Construct a message
 			var FinalMessage = new MimeMessage();
@@ -340,25 +339,25 @@ namespace KS.Network.Mail.Transfer
 				try
 				{
 					MailLogin.SMTP_Client.Send(FinalMessage, default, MailShellCommon.Mail_Progress);
-					return Conversions.ToString(true);
+					return true;
 				}
 				catch (Exception ex)
 				{
 					DebugWriter.Wdbg(DebugLevel.E, "Failed to send message: {0}", ex.Message);
 					DebugWriter.WStkTrc(ex);
 				}
-				return Conversions.ToString(false);
+				return false;
 			}
 		}
 
 		/// <summary>
-        /// Sends an encrypted message with advanced features like attachments
-        /// </summary>
-        /// <param name="Recipient">Recipient name</param>
-        /// <param name="Subject">Subject</param>
-        /// <param name="Body">Body</param>
-        /// <returns>True if successful; False if unsuccessful.</returns>
-		public static string MailSendEncryptedMessage(string Recipient, string Subject, MimeEntity Body)
+		/// Sends an encrypted message with advanced features like attachments
+		/// </summary>
+		/// <param name="Recipient">Recipient name</param>
+		/// <param name="Subject">Subject</param>
+		/// <param name="Body">Body</param>
+		/// <returns>True if successful; False if unsuccessful.</returns>
+		public static bool MailSendEncryptedMessage(string Recipient, string Subject, MimeEntity Body)
 		{
 			// Construct a message
 			var FinalMessage = new MimeMessage();
@@ -377,20 +376,20 @@ namespace KS.Network.Mail.Transfer
 				try
 				{
 					MailLogin.SMTP_Client.Send(FinalMessage, default, MailShellCommon.Mail_Progress);
-					return Conversions.ToString(true);
+					return true;
 				}
 				catch (Exception ex)
 				{
 					DebugWriter.Wdbg(DebugLevel.E, "Failed to send message: {0}", ex.Message);
 					DebugWriter.WStkTrc(ex);
 				}
-				return Conversions.ToString(false);
+				return false;
 			}
 		}
 
 		/// <summary>
-        /// Populates e-mail messages
-        /// </summary>
+		/// Populates e-mail messages
+		/// </summary>
 		public static void PopulateMessages()
 		{
 			if (MailLogin.IMAP_Client.IsConnected)

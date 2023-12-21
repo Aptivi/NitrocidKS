@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when the mod has zero parts
-    /// </summary>
+	/// Thrown when the mod has zero parts
+	/// </summary>
 	public class ModNoPartsException : Exception
 	{
 

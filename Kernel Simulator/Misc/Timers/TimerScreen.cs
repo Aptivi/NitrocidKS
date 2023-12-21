@@ -74,8 +74,8 @@ namespace KS.Misc.Timers
 		}
 
 		/// <summary>
-        /// Opens the timer screen
-        /// </summary>
+		/// Opens the timer screen
+		/// </summary>
 		public static void OpenTimer()
 		{
 			// Clear for cleanliness
@@ -90,7 +90,7 @@ namespace KS.Misc.Timers
 
 			// Populate the positions for time
 			int HalfWidth = (int)Math.Round(ConsoleWrapper.WindowWidth / 2d);
-			int HalfHeight = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d);
+			_ = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d);
 			string CurrentRemainingString = TimeDate.TimeDate.GetRemainingTimeFromNow((int)Math.Round(TimerInterval));
 			int TimeLeftPosition = 0;
 			int TimeTopPosition = 0;
@@ -198,13 +198,13 @@ namespace KS.Misc.Timers
 		}
 
 		/// <summary>
-        /// Indicates that the timer has elapsed
-        /// </summary>
+		/// Indicates that the timer has elapsed
+		/// </summary>
 		private static void TimerElapsed(object sender, ElapsedEventArgs e)
 		{
 			var FigletFont = FigletTools.GetFigletFont(TimerFigletFont);
-			int HalfWidth = (int)Math.Round(ConsoleWrapper.WindowWidth / 2d);
-			int HalfHeight = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d);
+			_ = (int)Math.Round(ConsoleWrapper.WindowWidth / 2d);
+			_ = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d);
 			string ElapsedText = new TimeSpan().ToString(@"d\.hh\:mm\:ss\.fff", CultureManager.CurrentCult);
 			int TimeLeftPosition = 0;
 			int TimeTopPosition = 0;
@@ -228,8 +228,8 @@ namespace KS.Misc.Timers
 		}
 
 		/// <summary>
-        /// Updates the timer elapsed display
-        /// </summary>
+		/// Updates the timer elapsed display
+		/// </summary>
 		private static void UpdateTimerElapsedDisplay()
 		{
 			var FigletFont = FigletTools.GetFigletFont(TimerFigletFont);
@@ -258,7 +258,7 @@ namespace KS.Misc.Timers
 						TextWriterWhereColor.WriteWhere(UntilText, TimeLeftPosition, TimeTopPosition, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
 					}
 				}
-				catch (ThreadInterruptedException ex)
+				catch (ThreadInterruptedException)
 				{
 					break;
 				}
@@ -266,8 +266,8 @@ namespace KS.Misc.Timers
 		}
 
 		/// <summary>
-        /// Updates the remaining positions for time, adapting to Figlet if possible
-        /// </summary>
+		/// Updates the remaining positions for time, adapting to Figlet if possible
+		/// </summary>
 		private static void UpdateRemainingPositions(string RemainingTimeText, ref int TimeLeftPosition, ref int TimeTopPosition)
 		{
 			// Some initial variables

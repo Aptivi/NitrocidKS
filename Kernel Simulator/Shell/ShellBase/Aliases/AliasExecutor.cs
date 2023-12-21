@@ -21,7 +21,7 @@ using KS.Misc.Writers.DebugWriters;
 using KS.Network.RemoteDebug;
 using KS.Shell.ShellBase.Commands;
 using KS.Shell.ShellBase.Shells;
-using Microsoft.VisualBasic.CompilerServices;
+using System;
 
 namespace KS.Shell.ShellBase.Aliases
 {
@@ -29,13 +29,13 @@ namespace KS.Shell.ShellBase.Aliases
 	{
 
 		/// <summary>
-        /// Translates alias to actual command, preserving arguments
-        /// </summary>
-        /// <param name="aliascmd">Specifies the alias with arguments</param>
+		/// Translates alias to actual command, preserving arguments
+		/// </summary>
+		/// <param name="aliascmd">Specifies the alias with arguments</param>
 		public static void ExecuteAlias(string aliascmd, ShellType ShellType)
 		{
 			var AliasesList = AliasManager.GetAliasesListFromType(ShellType);
-			string FirstWordCmd = Conversions.ToString(aliascmd.SplitEncloseDoubleQuotes()[Conversions.ToInteger(" ")][0]);
+			string FirstWordCmd = Convert.ToString(aliascmd.SplitEncloseDoubleQuotes()[Convert.ToInt32(" ")][0]);
 			string actualCmd = aliascmd.Replace(FirstWordCmd, AliasesList[FirstWordCmd]);
 			DebugWriter.Wdbg(DebugLevel.I, "Actual command: {0}", actualCmd);
 			var Params = new GetCommand.ExecuteCommandThreadParameters(actualCmd, ShellType, null);
@@ -46,11 +46,11 @@ namespace KS.Shell.ShellBase.Aliases
 		}
 
 		/// <summary>
-        /// Executes the remote debugger alias
-        /// </summary>
-        /// <param name="aliascmd">Aliased command with arguments</param>
-        /// <param name="SocketStream">A socket stream writer</param>
-        /// <param name="Address">IP Address</param>
+		/// Executes the remote debugger alias
+		/// </summary>
+		/// <param name="aliascmd">Aliased command with arguments</param>
+		/// <param name="SocketStream">A socket stream writer</param>
+		/// <param name="Address">IP Address</param>
 		public static void ExecuteRDAlias(string aliascmd, System.IO.StreamWriter SocketStream, string Address)
 		{
 			string FirstWordCmd = aliascmd.Split(' ')[0];

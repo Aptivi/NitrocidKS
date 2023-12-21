@@ -26,8 +26,8 @@ namespace KS.Network.Mail.Transfer
 	{
 
 		/// <summary>
-        /// [IMAP] Tries to keep the connection going
-        /// </summary>
+		/// [IMAP] Tries to keep the connection going
+		/// </summary>
 		public static void IMAPKeepConnection()
 		{
 			// Every 30 seconds, send a ping to IMAP server
@@ -49,8 +49,8 @@ namespace KS.Network.Mail.Transfer
 		}
 
 		/// <summary>
-        /// [SMTP] Tries to keep the connection going
-        /// </summary>
+		/// [SMTP] Tries to keep the connection going
+		/// </summary>
 		public static void SMTPKeepConnection()
 		{
 			// Every 30 seconds, send a ping to SMTP server

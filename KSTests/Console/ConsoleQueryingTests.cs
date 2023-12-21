@@ -30,8 +30,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests getting how many times to repeat the character to represent the appropriate percentage level for the specified number.
-    /// </summary>
+		/// Tests getting how many times to repeat the character to represent the appropriate percentage level for the specified number.
+		/// </summary>
 		[Test]
 		[Description("Querying")]
 		public void TestPercentRepeatTargeted()
@@ -40,14 +40,14 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests filtering the VT sequences that matches the regex
-    /// </summary>
+		/// Tests filtering the VT sequences that matches the regex
+		/// </summary>
 		[Test]
 		[Description("Querying")]
 		public void TestFilterVTSequences()
 		{
 			char BellChar = Convert.ToChar(7);
-			char EscapeChar = Convert.ToChar(27);
+			_ = Convert.ToChar(27);
 			ConsoleExtensions.FilterVTSequences($"Hello!{Color255.GetEsc()}[38;5;43m").ShouldBe("Hello!");
 			ConsoleExtensions.FilterVTSequences($"{Color255.GetEsc()}]0;This is the title{BellChar}Hello!").ShouldBe("Hello!");
 		}

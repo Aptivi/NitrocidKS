@@ -38,7 +38,7 @@ namespace KS.Shell.Commands
 
 		public static string[] ListCmds()
 		{
-			return GetCommand.GetCommands(CancellationHandlers.CurrentShellType).Keys.ToArray();
+			return [.. GetCommand.GetCommands(CancellationHandlers.CurrentShellType).Keys];
 		}
 
 	}

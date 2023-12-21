@@ -26,10 +26,10 @@ namespace KS.Files
 	{
 
 		/// <summary>
-        /// Adds attribute to file
-        /// </summary>
-        /// <param name="FilePath">File path</param>
-        /// <param name="Attributes">Attributes</param>
+		/// Adds attribute to file
+		/// </summary>
+		/// <param name="FilePath">File path</param>
+		/// <param name="Attributes">Attributes</param>
 		public static void AddAttributeToFile(string FilePath, FileAttributes Attributes)
 		{
 			Filesystem.ThrowOnInvalidPath(FilePath);
@@ -42,11 +42,11 @@ namespace KS.Files
 		}
 
 		/// <summary>
-        /// Adds attribute to file
-        /// </summary>
-        /// <param name="FilePath">File path</param>
-        /// <param name="Attributes">Attributes</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Adds attribute to file
+		/// </summary>
+		/// <param name="FilePath">File path</param>
+		/// <param name="Attributes">Attributes</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool TryAddAttributeToFile(string FilePath, FileAttributes Attributes)
 		{
 			try
@@ -63,21 +63,21 @@ namespace KS.Files
 		}
 
 		/// <summary>
-        /// Removes attribute
-        /// </summary>
-        /// <param name="attributes">All attributes</param>
-        /// <param name="attributesToRemove">Attributes to remove</param>
-        /// <returns>Attributes without target attribute</returns>
+		/// Removes attribute
+		/// </summary>
+		/// <param name="attributes">All attributes</param>
+		/// <param name="attributesToRemove">Attributes to remove</param>
+		/// <returns>Attributes without target attribute</returns>
 		public static FileAttributes RemoveAttribute(this FileAttributes attributes, FileAttributes attributesToRemove)
 		{
 			return attributes & ~attributesToRemove;
 		}
 
 		/// <summary>
-        /// Removes attribute from file
-        /// </summary>
-        /// <param name="FilePath">File path</param>
-        /// <param name="Attributes">Attributes</param>
+		/// Removes attribute from file
+		/// </summary>
+		/// <param name="FilePath">File path</param>
+		/// <param name="Attributes">Attributes</param>
 		public static void RemoveAttributeFromFile(string FilePath, FileAttributes Attributes)
 		{
 			Filesystem.ThrowOnInvalidPath(FilePath);
@@ -93,11 +93,11 @@ namespace KS.Files
 		}
 
 		/// <summary>
-        /// Removes attribute from file
-        /// </summary>
-        /// <param name="FilePath">File path</param>
-        /// <param name="Attributes">Attributes</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Removes attribute from file
+		/// </summary>
+		/// <param name="FilePath">File path</param>
+		/// <param name="Attributes">Attributes</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool TryRemoveAttributeFromFile(string FilePath, FileAttributes Attributes)
 		{
 			try

@@ -33,7 +33,6 @@ using KS.Shell.ShellBase.Shells;
 using MailKit;
 using MailKit.Net.Imap;
 using MailKit.Net.Smtp;
-using Microsoft.VisualBasic.CompilerServices;
 using MimeKit.Cryptography;
 using Textify.Online.MailAddress;
 
@@ -55,23 +54,23 @@ namespace KS.Network.Mail
 		public static bool Mail_AutoDetectServer = true;
 
 		/// <summary>
-        /// Mail server type
-        /// </summary>
+		/// Mail server type
+		/// </summary>
 		public enum ServerType
 		{
 			/// <summary>
-            /// The IMAP server
-            /// </summary>
+			/// The IMAP server
+			/// </summary>
 			IMAP,
 			/// <summary>
-            /// The SMTP server
-            /// </summary>
+			/// The SMTP server
+			/// </summary>
 			SMTP
 		}
 
 		/// <summary>
-        /// Prompts user to enter username or e-mail address
-        /// </summary>
+		/// Prompts user to enter username or e-mail address
+		/// </summary>
 		public static void PromptUser()
 		{
 			// Username or mail address
@@ -90,9 +89,9 @@ namespace KS.Network.Mail
 		}
 
 		/// <summary>
-        /// Prompts user to enter password
-        /// </summary>
-        /// <param name="Username">Specified username</param>
+		/// Prompts user to enter password
+		/// </summary>
+		/// <param name="Username">Specified username</param>
 		public static void PromptPassword(string Username)
 		{
 			// Password
@@ -122,8 +121,8 @@ namespace KS.Network.Mail
 		}
 
 		/// <summary>
-        /// Prompts for server
-        /// </summary>
+		/// Prompts for server
+		/// </summary>
 		public static void PromptServer()
 		{
 			string IMAP_Address;
@@ -165,7 +164,7 @@ namespace KS.Network.Mail
 			if (IMAP_Address.Contains(":"))
 			{
 				DebugWriter.Wdbg(DebugLevel.I, "Found colon in address. Separating...", Mail_Authentication.UserName);
-				IMAP_Port = Conversions.ToInteger(IMAP_Address.Substring(IMAP_Address.IndexOf(":") + 1));
+				IMAP_Port = Convert.ToInt32(IMAP_Address.Substring(IMAP_Address.IndexOf(":") + 1));
 				IMAP_Address = IMAP_Address.Remove(IMAP_Address.IndexOf(":"));
 				DebugWriter.Wdbg(DebugLevel.I, "Final address: {0}, Final port: {1}", IMAP_Address, IMAP_Port);
 			}
@@ -174,7 +173,7 @@ namespace KS.Network.Mail
 			if (SMTP_Address.Contains(":"))
 			{
 				DebugWriter.Wdbg(DebugLevel.I, "Found colon in address. Separating...", Mail_Authentication.UserName);
-				SMTP_Port = Conversions.ToInteger(SMTP_Address.Substring(SMTP_Address.IndexOf(":") + 1));
+				SMTP_Port = Convert.ToInt32(SMTP_Address.Substring(SMTP_Address.IndexOf(":") + 1));
 				SMTP_Address = SMTP_Address.Remove(SMTP_Address.IndexOf(":"));
 				DebugWriter.Wdbg(DebugLevel.I, "Final address: {0}, Final port: {1}", SMTP_Address, SMTP_Port);
 			}
@@ -185,10 +184,10 @@ namespace KS.Network.Mail
 		}
 
 		/// <summary>
-        /// Detects servers based on dictionary
-        /// </summary>
-        /// <param name="Address">E-mail address</param>
-        /// <returns>Server address. Otherwise, null.</returns>
+		/// Detects servers based on dictionary
+		/// </summary>
+		/// <param name="Address">E-mail address</param>
+		/// <returns>Server address. Otherwise, null.</returns>
 		public static string ServerDetect(string Address, ServerType Type)
 		{
 			// Get the mail server dynamically
@@ -226,12 +225,12 @@ namespace KS.Network.Mail
 		}
 
 		/// <summary>
-        /// Tries to connect to specified address and port with specified credentials
-        /// </summary>
-        /// <param name="Address">An IP address of the IMAP server</param>
-        /// <param name="Port">A port of the IMAP server</param>
-        /// <param name="SmtpAddress">An IP address of the SMTP server</param>
-        /// <param name="SmtpPort">A port of the SMTP server</param>
+		/// Tries to connect to specified address and port with specified credentials
+		/// </summary>
+		/// <param name="Address">An IP address of the IMAP server</param>
+		/// <param name="Port">A port of the IMAP server</param>
+		/// <param name="SmtpAddress">An IP address of the SMTP server</param>
+		/// <param name="SmtpPort">A port of the SMTP server</param>
 		public static void ConnectShell(string Address, int Port, string SmtpAddress, int SmtpPort)
 		{
 			try

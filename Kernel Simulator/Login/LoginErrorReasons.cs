@@ -20,33 +20,33 @@
 namespace KS.Login
 {
 	/// <summary>
-    /// Enumeration for the login error reasons
-    /// </summary>
+	/// Enumeration for the login error reasons
+	/// </summary>
 	public enum LoginErrorReasons
 	{
 		/// <summary>
-        /// Unknown reason
-        /// </summary>
+		/// Unknown reason
+		/// </summary>
 		Unknown = 0,
 		/// <summary>
-        /// Spaces not allowed on username
-        /// </summary>
+		/// Spaces not allowed on username
+		/// </summary>
 		Spaces = 1,
 		/// <summary>
-        /// Special characters not allowed on username
-        /// </summary>
+		/// Special characters not allowed on username
+		/// </summary>
 		SpecialCharacters = 2,
 		/// <summary>
-        /// User is disabled
-        /// </summary>
+		/// User is disabled
+		/// </summary>
 		Disabled = 4,
 		/// <summary>
-        /// User is not found
-        /// </summary>
+		/// User is not found
+		/// </summary>
 		NotFound = 8,
 		/// <summary>
-        /// User entered the wrong password
-        /// </summary>
+		/// User entered the wrong password
+		/// </summary>
 		WrongPassword = 16
 	}
 }

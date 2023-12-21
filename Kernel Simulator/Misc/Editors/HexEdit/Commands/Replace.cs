@@ -24,7 +24,6 @@ using KS.Misc.Reflection;
 using KS.Misc.Text;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Misc.Editors.HexEdit.Commands
 {
@@ -44,11 +43,11 @@ namespace KS.Misc.Editors.HexEdit.Commands
 			{
 				if (StringQuery.IsStringNumeric(ListArgs[2]))
 				{
-					if (Conversions.ToLong(ListArgs[2]) <= HexEditShellCommon.HexEdit_FileBytes.LongCount())
+					if (Convert.ToInt64(ListArgs[2]) <= HexEditShellCommon.HexEdit_FileBytes.LongCount())
 					{
 						byte ByteFrom = Convert.ToByte(ListArgs[0], 16);
 						byte ByteWith = Convert.ToByte(ListArgs[1], 16);
-						HexEditTools.HexEdit_Replace(ByteFrom, ByteWith, Conversions.ToLong(ListArgs[2]));
+						HexEditTools.HexEdit_Replace(ByteFrom, ByteWith, Convert.ToInt64(ListArgs[2]));
 						TextWriterColor.Write(Translate.DoTranslation("Byte replaced."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success));
 					}
 					else
@@ -61,12 +60,12 @@ namespace KS.Misc.Editors.HexEdit.Commands
 			{
 				if (StringQuery.IsStringNumeric(ListArgs[2]) & StringQuery.IsStringNumeric(ListArgs[3]))
 				{
-					if (Conversions.ToLong(ListArgs[2]) <= HexEditShellCommon.HexEdit_FileBytes.LongCount() & Conversions.ToLong(ListArgs[3]) <= HexEditShellCommon.HexEdit_FileBytes.LongCount())
+					if (Convert.ToInt64(ListArgs[2]) <= HexEditShellCommon.HexEdit_FileBytes.LongCount() & Convert.ToInt64(ListArgs[3]) <= HexEditShellCommon.HexEdit_FileBytes.LongCount())
 					{
 						byte ByteFrom = Convert.ToByte(ListArgs[0], 16);
 						byte ByteWith = Convert.ToByte(ListArgs[1], 16);
-						long ByteNumberStart = Conversions.ToLong(ListArgs[2]);
-						long ByteNumberEnd = Conversions.ToLong(ListArgs[3]);
+						long ByteNumberStart = Convert.ToInt64(ListArgs[2]);
+						long ByteNumberEnd = Convert.ToInt64(ListArgs[3]);
 						ByteNumberStart.SwapIfSourceLarger(ref ByteNumberEnd);
 						HexEditTools.HexEdit_Replace(ByteFrom, ByteWith, ByteNumberStart, ByteNumberEnd);
 						TextWriterColor.Write(Translate.DoTranslation("Byte replaced."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success));

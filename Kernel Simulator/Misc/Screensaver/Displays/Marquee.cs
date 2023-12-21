@@ -5,7 +5,6 @@ using KS.Misc.Text;
 using KS.Misc.Threading;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
-using Microsoft.VisualBasic.CompilerServices;
 using Terminaux.Base;
 using Terminaux.Colors;
 
@@ -48,8 +47,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _marqueeMaximumColorLevel = 0;
 
 		/// <summary>
-        /// [Marquee] Enable 255 color support. Has a higher priority than 16 color support.
-        /// </summary>
+		/// [Marquee] Enable 255 color support. Has a higher priority than 16 color support.
+		/// </summary>
 		public static bool Marquee255Colors
 		{
 			get
@@ -62,8 +61,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Marquee] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
+		/// [Marquee] Enable truecolor support. Has a higher priority than 255 color support.
+		/// </summary>
 		public static bool MarqueeTrueColor
 		{
 			get
@@ -76,8 +75,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Marquee] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [Marquee] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int MarqueeDelay
 		{
 			get
@@ -90,8 +89,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Marquee] Text for Marquee. Shorter is better.
-        /// </summary>
+		/// [Marquee] Text for Marquee. Shorter is better.
+		/// </summary>
 		public static string MarqueeWrite
 		{
 			get
@@ -104,8 +103,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Marquee] Whether the text is always on center.
-        /// </summary>
+		/// [Marquee] Whether the text is always on center.
+		/// </summary>
 		public static bool MarqueeAlwaysCentered
 		{
 			get
@@ -118,8 +117,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Marquee] Whether to use the ConsoleWrapper.Clear() API (slow) or use the line-clearing VT sequence (fast).
-        /// </summary>
+		/// [Marquee] Whether to use the ConsoleWrapper.Clear() API (slow) or use the line-clearing VT sequence (fast).
+		/// </summary>
 		public static bool MarqueeUseConsoleAPI
 		{
 			get
@@ -132,8 +131,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Marquee] Screensaver background color
-        /// </summary>
+		/// [Marquee] Screensaver background color
+		/// </summary>
 		public static string MarqueeBackgroundColor
 		{
 			get
@@ -146,8 +145,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Marquee] The minimum red color level (true color)
-        /// </summary>
+		/// [Marquee] The minimum red color level (true color)
+		/// </summary>
 		public static int MarqueeMinimumRedColorLevel
 		{
 			get
@@ -160,8 +159,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Marquee] The minimum green color level (true color)
-        /// </summary>
+		/// [Marquee] The minimum green color level (true color)
+		/// </summary>
 		public static int MarqueeMinimumGreenColorLevel
 		{
 			get
@@ -174,8 +173,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Marquee] The minimum blue color level (true color)
-        /// </summary>
+		/// [Marquee] The minimum blue color level (true color)
+		/// </summary>
 		public static int MarqueeMinimumBlueColorLevel
 		{
 			get
@@ -188,8 +187,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Marquee] The minimum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [Marquee] The minimum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int MarqueeMinimumColorLevel
 		{
 			get
@@ -202,8 +201,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Marquee] The maximum red color level (true color)
-        /// </summary>
+		/// [Marquee] The maximum red color level (true color)
+		/// </summary>
 		public static int MarqueeMaximumRedColorLevel
 		{
 			get
@@ -216,8 +215,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Marquee] The maximum green color level (true color)
-        /// </summary>
+		/// [Marquee] The maximum green color level (true color)
+		/// </summary>
 		public static int MarqueeMaximumGreenColorLevel
 		{
 			get
@@ -230,8 +229,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Marquee] The maximum blue color level (true color)
-        /// </summary>
+		/// [Marquee] The maximum blue color level (true color)
+		/// </summary>
 		public static int MarqueeMaximumBlueColorLevel
 		{
 			get
@@ -244,8 +243,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Marquee] The maximum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [Marquee] The maximum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int MarqueeMaximumColorLevel
 		{
 			get
@@ -280,7 +279,7 @@ namespace KS.Misc.Screensaver.Displays
 			KernelColorTools.SetConsoleColor(new Color(MarqueeSettings.MarqueeBackgroundColor), true);
 			Console.ForegroundColor = ConsoleColor.White;
 			ConsoleWrapper.Clear();
-			MarqueeSettings.MarqueeWrite = MarqueeSettings.MarqueeWrite.ReplaceAll(new[] { Microsoft.VisualBasic.Constants.vbCr, Microsoft.VisualBasic.Constants.vbLf }, " - ");
+			MarqueeSettings.MarqueeWrite = MarqueeSettings.MarqueeWrite.ReplaceAll(["\r", "\n"], " - ");
 		}
 
 		public override void ScreensaverLogic()
@@ -356,7 +355,7 @@ namespace KS.Misc.Screensaver.Displays
 				}
 				DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Written result: {0}", MarqueeWritten);
 				if (!MarqueeSettings.MarqueeUseConsoleAPI)
-					MarqueeWritten += Conversions.ToString(Color255.GetEsc()) + "[0K";
+					MarqueeWritten += Convert.ToString(Color255.GetEsc()) + "[0K";
 
 				// Set the appropriate cursor position and write the results
 				ConsoleWrapper.SetCursorPosition(CurrentLeft, TopPrinted);

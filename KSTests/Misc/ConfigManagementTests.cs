@@ -29,8 +29,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests creates a new JSON object containing the kernel settings of all kinds
-    /// </summary>
+		/// Tests creates a new JSON object containing the kernel settings of all kinds
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestGetNewConfigObject()
@@ -39,8 +39,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests config repair (Actually, it checks to see if any of the config entries is missing. If any one of them is missing, unit test fails.)
-    /// </summary>
+		/// Tests config repair (Actually, it checks to see if any of the config entries is missing. If any one of them is missing, unit test fails.)
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestRepairConfig()
@@ -49,8 +49,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests getting a config category
-    /// </summary>
+		/// Tests getting a config category
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestGetConfigCategoryStandard()
@@ -59,8 +59,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests getting a config category with a sub-category
-    /// </summary>
+		/// Tests getting a config category with a sub-category
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestGetConfigCategoryWithSubcategory()
@@ -69,8 +69,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests setting the value of an entry in a category
-    /// </summary>
+		/// Tests setting the value of an entry in a category
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestSetConfigValueAndWriteStandard()
@@ -81,8 +81,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests setting the value of an entry in a category with the sub-category
-    /// </summary>
+		/// Tests setting the value of an entry in a category with the sub-category
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestSetConfigValueAndWriteWithSubcategory()
@@ -93,8 +93,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests checking the settings variables
-    /// </summary>
+		/// Tests checking the settings variables
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestCheckSettingsVariables()

@@ -29,8 +29,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests initializing, setting, and getting $variable
-    /// </summary>
+		/// Tests initializing, setting, and getting $variable
+		/// </summary>
 		[Test]
 		[Description("Action")]
 		public void TestVariables()

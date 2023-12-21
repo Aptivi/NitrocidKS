@@ -28,10 +28,10 @@ namespace KS.Scripting
 	{
 
 		/// <summary>
-        /// Executes the UESH script
-        /// </summary>
-        /// <param name="ScriptPath">Full path to script</param>
-        /// <param name="ScriptArguments">Script arguments</param>
+		/// Executes the UESH script
+		/// </summary>
+		/// <param name="ScriptPath">Full path to script</param>
+		/// <param name="ScriptArguments">Script arguments</param>
 		public static void Execute(string ScriptPath, string ScriptArguments)
 		{
 			try

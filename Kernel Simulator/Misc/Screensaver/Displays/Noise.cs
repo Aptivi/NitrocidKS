@@ -31,8 +31,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _noiseDensity = 40;
 
 		/// <summary>
-        /// [Noise] How many milliseconds to wait before making the new screen?
-        /// </summary>
+		/// [Noise] How many milliseconds to wait before making the new screen?
+		/// </summary>
 		public static int NoiseNewScreenDelay
 		{
 			get
@@ -47,8 +47,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Noise] The noise density in percent
-        /// </summary>
+		/// [Noise] The noise density in percent
+		/// </summary>
 		public static int NoiseDensity
 		{
 			get

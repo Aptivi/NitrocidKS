@@ -1,7 +1,7 @@
 ﻿using KS.Misc.Reflection;
-using Microsoft.VisualBasic.CompilerServices;
 using NUnit.Framework;
 using Shouldly;
+using System;
 
 namespace KSTests
 {
@@ -11,8 +11,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests checking field
-    /// </summary>
+		/// Tests checking field
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestCheckField()
@@ -21,31 +21,31 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests getting value
-    /// </summary>
+		/// Tests getting value
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestGetValue()
 		{
-			string Value = Conversions.ToString(FieldManager.GetValue("HiddenFiles"));
+			string Value = Convert.ToString(FieldManager.GetValue("HiddenFiles"));
 			Value.ShouldNotBeNullOrEmpty();
 		}
 
 		/// <summary>
-    /// Tests setting value
-    /// </summary>
+		/// Tests setting value
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestSetValue()
 		{
 			FieldManager.SetValue("HiddenFiles", false);
-			string Value = Conversions.ToString(FieldManager.GetValue("HiddenFiles"));
+			string Value = Convert.ToString(FieldManager.GetValue("HiddenFiles"));
 			Value.ShouldBe("False");
 		}
 
 		/// <summary>
-    /// Tests getting variable
-    /// </summary>
+		/// Tests getting variable
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestGetField()

@@ -11,7 +11,6 @@ using KS.Misc.Reflection;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 using KS.Misc.Writers.FancyWriters;
-using Microsoft.VisualBasic.CompilerServices;
 using Renci.SshNet;
 
 namespace KS.Network.SFTP
@@ -20,9 +19,9 @@ namespace KS.Network.SFTP
 	{
 
 		/// <summary>
-        /// Tries to connect to the FTP server
-        /// </summary>
-        /// <param name="address">An FTP server. You may specify it like "[address]" or "[address]:[port]"</param>
+		/// Tries to connect to the FTP server
+		/// </summary>
+		/// <param name="address">An FTP server. You may specify it like "[address]" or "[address]:[port]"</param>
 		public static void SFTPTryToConnect(string address)
 		{
 			if (SFTPShellCommon.SFTPConnected == true)
@@ -60,7 +59,7 @@ namespace KS.Network.SFTP
 					}
 
 					// Check to see if we're aborting or not
-					SFTPShellCommon._clientSFTP = new SftpClient(SSH.SSH.PromptConnectionInfo(SftpHost, Conversions.ToInteger(SftpPort), SFTPShellCommon.SFTPUser));
+					SFTPShellCommon._clientSFTP = new SftpClient(SSH.SSH.PromptConnectionInfo(SftpHost, Convert.ToInt32(SftpPort), SFTPShellCommon.SFTPUser));
 
 					// Connect to SFTP
 					ConnectSFTP();
@@ -75,8 +74,8 @@ namespace KS.Network.SFTP
 		}
 
 		/// <summary>
-        /// Tries to connect to the SFTP server.
-        /// </summary>
+		/// Tries to connect to the SFTP server.
+		/// </summary>
 		private static void ConnectSFTP()
 		{
 			// Connect
@@ -110,8 +109,8 @@ namespace KS.Network.SFTP
 		}
 
 		/// <summary>
-        /// Opens speed dial prompt
-        /// </summary>
+		/// Opens speed dial prompt
+		/// </summary>
 		public static void SFTPQuickConnect()
 		{
 			if (Checking.FileExists(Paths.GetKernelPath(KernelPathType.SFTPSpeedDial)))
@@ -120,7 +119,7 @@ namespace KS.Network.SFTP
 				DebugWriter.Wdbg(DebugLevel.I, "Speed dial length: {0}", SpeedDialLines.Count);
 				string Answer;
 				bool Answering = true;
-				string[] SpeedDialHeaders = new[] { "#", Translate.DoTranslation("Host Name"), Translate.DoTranslation("Host Port"), Translate.DoTranslation("Username") };
+				string[] SpeedDialHeaders = ["#", Translate.DoTranslation("Host Name"), Translate.DoTranslation("Host Port"), Translate.DoTranslation("Username")];
 				var SpeedDialData = new string[SpeedDialLines.Count, 4];
 				if (!(SpeedDialLines.Count == 0))
 				{
@@ -144,7 +143,7 @@ namespace KS.Network.SFTP
 						if (StringQuery.IsStringNumeric(Answer))
 						{
 							DebugWriter.Wdbg(DebugLevel.I, "Response is numeric. IsStringNumeric(Answer) returned true. Checking to see if in-bounds...");
-							int AnswerInt = Conversions.ToInteger(Answer);
+							int AnswerInt = Convert.ToInt32(Answer);
 							if (AnswerInt <= SpeedDialLines.Count)
 							{
 								Answering = false;
@@ -155,7 +154,7 @@ namespace KS.Network.SFTP
 								string Port = (string)SpeedDialLines[ChosenSpeedDialAddress]["Port"];
 								string Username = (string)SpeedDialLines[ChosenSpeedDialAddress]["User"];
 								DebugWriter.Wdbg(DebugLevel.I, "Address: {0}, Port: {1}, Username: {2}", Address, Port, Username);
-								SFTPShellCommon._clientSFTP = new SftpClient(SSH.SSH.PromptConnectionInfo(Address, Conversions.ToInteger(Port), Username));
+								SFTPShellCommon._clientSFTP = new SftpClient(SSH.SSH.PromptConnectionInfo(Address, Convert.ToInt32(Port), Username));
 								ConnectSFTP();
 							}
 							else

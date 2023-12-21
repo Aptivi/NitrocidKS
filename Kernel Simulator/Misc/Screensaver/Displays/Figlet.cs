@@ -29,8 +29,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _figletMaximumColorLevel = 255;
 
 		/// <summary>
-        /// [Figlet] Enable 255 color support. Has a higher priority than 16 color support.
-        /// </summary>
+		/// [Figlet] Enable 255 color support. Has a higher priority than 16 color support.
+		/// </summary>
 		public static bool Figlet255Colors
 		{
 			get
@@ -43,8 +43,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Figlet] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
+		/// [Figlet] Enable truecolor support. Has a higher priority than 255 color support.
+		/// </summary>
 		public static bool FigletTrueColor
 		{
 			get
@@ -57,8 +57,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Figlet] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [Figlet] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int FigletDelay
 		{
 			get
@@ -73,8 +73,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Figlet] Text for Figlet. Shorter is better.
-        /// </summary>
+		/// [Figlet] Text for Figlet. Shorter is better.
+		/// </summary>
 		public static string FigletText
 		{
 			get
@@ -89,8 +89,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Figlet] Figlet font supported by the figlet library used.
-        /// </summary>
+		/// [Figlet] Figlet font supported by the figlet library used.
+		/// </summary>
 		public static string FigletFont
 		{
 			get
@@ -103,8 +103,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Figlet] The minimum red color level (true color)
-        /// </summary>
+		/// [Figlet] The minimum red color level (true color)
+		/// </summary>
 		public static int FigletMinimumRedColorLevel
 		{
 			get
@@ -121,8 +121,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Figlet] The minimum green color level (true color)
-        /// </summary>
+		/// [Figlet] The minimum green color level (true color)
+		/// </summary>
 		public static int FigletMinimumGreenColorLevel
 		{
 			get
@@ -139,8 +139,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Figlet] The minimum blue color level (true color)
-        /// </summary>
+		/// [Figlet] The minimum blue color level (true color)
+		/// </summary>
 		public static int FigletMinimumBlueColorLevel
 		{
 			get
@@ -157,8 +157,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Figlet] The minimum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [Figlet] The minimum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int FigletMinimumColorLevel
 		{
 			get
@@ -176,8 +176,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Figlet] The maximum red color level (true color)
-        /// </summary>
+		/// [Figlet] The maximum red color level (true color)
+		/// </summary>
 		public static int FigletMaximumRedColorLevel
 		{
 			get
@@ -194,8 +194,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Figlet] The maximum green color level (true color)
-        /// </summary>
+		/// [Figlet] The maximum green color level (true color)
+		/// </summary>
 		public static int FigletMaximumGreenColorLevel
 		{
 			get
@@ -212,8 +212,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Figlet] The maximum blue color level (true color)
-        /// </summary>
+		/// [Figlet] The maximum blue color level (true color)
+		/// </summary>
 		public static int FigletMaximumBlueColorLevel
 		{
 			get
@@ -230,8 +230,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Figlet] The maximum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [Figlet] The maximum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int FigletMaximumColorLevel
 		{
 			get
@@ -303,7 +303,7 @@ namespace KS.Misc.Screensaver.Displays
 			}
 
 			// Prepare the figlet font for writing
-			string FigletWrite = FigletSettings.FigletText.ReplaceAll(new[] { Microsoft.VisualBasic.Constants.vbCr, Microsoft.VisualBasic.Constants.vbLf }, " - ");
+			string FigletWrite = FigletSettings.FigletText.ReplaceAll(["\r", "\n"], " - ");
 			FigletWrite = FigletFontUsed.Render(FigletWrite);
 			string[] FigletWriteLines = FigletWrite.SplitNewLines().SkipWhile(x => string.IsNullOrEmpty(x)).ToArray();
 			int FigletHeight = (int)Math.Round(ConsoleMiddleHeight - FigletWriteLines.Length / 2d);

@@ -13,11 +13,11 @@ namespace KS.Network.RSS.Instance
 		private RSSFeedType _FeedType;
 		private string _FeedTitle;
 		private string _FeedDescription;
-		private List<RSSArticle> _FeedArticles = new();
+		private List<RSSArticle> _FeedArticles = [];
 
 		/// <summary>
-        /// A URL to RSS feed
-        /// </summary>
+		/// A URL to RSS feed
+		/// </summary>
 		public string FeedUrl
 		{
 			get
@@ -27,8 +27,8 @@ namespace KS.Network.RSS.Instance
 		}
 
 		/// <summary>
-        /// RSS feed type
-        /// </summary>
+		/// RSS feed type
+		/// </summary>
 		public RSSFeedType FeedType
 		{
 			get
@@ -38,8 +38,8 @@ namespace KS.Network.RSS.Instance
 		}
 
 		/// <summary>
-        /// RSS feed type
-        /// </summary>
+		/// RSS feed type
+		/// </summary>
 		public string FeedTitle
 		{
 			get
@@ -49,8 +49,8 @@ namespace KS.Network.RSS.Instance
 		}
 
 		/// <summary>
-        /// RSS feed description (Atom feeds not supported and always return an empty string)
-        /// </summary>
+		/// RSS feed description (Atom feeds not supported and always return an empty string)
+		/// </summary>
 		public string FeedDescription
 		{
 			get
@@ -60,9 +60,9 @@ namespace KS.Network.RSS.Instance
 		}
 
 		/// <summary>
-        /// Feed articles
-        /// </summary>
-        /// <returns></returns>
+		/// Feed articles
+		/// </summary>
+		/// <returns></returns>
 		public List<RSSArticle> FeedArticles
 		{
 			get
@@ -72,28 +72,28 @@ namespace KS.Network.RSS.Instance
 		}
 
 		/// <summary>
-        /// Makes a new instance of an RSS feed class
-        /// </summary>
-        /// <param name="FeedUrl">A URL to RSS feed</param>
-        /// <param name="FeedType">A feed type to parse. If set to Infer, it will automatically detect the type based on contents.</param>
+		/// Makes a new instance of an RSS feed class
+		/// </summary>
+		/// <param name="FeedUrl">A URL to RSS feed</param>
+		/// <param name="FeedType">A feed type to parse. If set to Infer, it will automatically detect the type based on contents.</param>
 		public RSSFeed(string FeedUrl, RSSFeedType FeedType)
 		{
 			Refresh(FeedUrl, FeedType);
 		}
 
 		/// <summary>
-        /// Refreshes the RSS class instance
-        /// </summary>
+		/// Refreshes the RSS class instance
+		/// </summary>
 		public void Refresh()
 		{
 			Refresh(_FeedUrl, _FeedType);
 		}
 
 		/// <summary>
-        /// Refreshes the RSS class instance
-        /// </summary>
-        /// <param name="FeedUrl">A URL to RSS feed</param>
-        /// <param name="FeedType">A feed type to parse. If set to Infer, it will automatically detect the type based on contents.</param>
+		/// Refreshes the RSS class instance
+		/// </summary>
+		/// <param name="FeedUrl">A URL to RSS feed</param>
+		/// <param name="FeedType">A feed type to parse. If set to Infer, it will automatically detect the type based on contents.</param>
 		public void Refresh(string FeedUrl, RSSFeedType FeedType)
 		{
 			// Make a web request indicator
@@ -176,25 +176,25 @@ namespace KS.Network.RSS.Instance
 	}
 
 	/// <summary>
-    /// Enumeration for RSS feed type
-    /// </summary>
+	/// Enumeration for RSS feed type
+	/// </summary>
 	public enum RSSFeedType
 	{
 		/// <summary>
-        /// The RSS format is RSS 2.0
-        /// </summary>
+		/// The RSS format is RSS 2.0
+		/// </summary>
 		RSS2,
 		/// <summary>
-        /// The RSS format is RSS 1.0
-        /// </summary>
+		/// The RSS format is RSS 1.0
+		/// </summary>
 		RSS1,
 		/// <summary>
-        /// The RSS format is Atom
-        /// </summary>
+		/// The RSS format is Atom
+		/// </summary>
 		Atom,
 		/// <summary>
-        /// Try to infer RSS type
-        /// </summary>
+		/// Try to infer RSS type
+		/// </summary>
 		Infer = 1024
 	}
 }

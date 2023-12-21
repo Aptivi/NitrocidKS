@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
 using KS.Shell.ShellBase.Shells;
-using Microsoft.VisualBasic.CompilerServices;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
@@ -27,13 +26,13 @@ namespace KS.Scripting
 	public static class UESHVariables
 	{
 
-		internal static Dictionary<string, string> ShellVariables = new();
+		internal static Dictionary<string, string> ShellVariables = [];
 
 		/// <summary>
-        /// Checks to see if the variable name starts with the correct format
-        /// </summary>
-        /// <param name="var">A $variable name</param>
-        /// <returns>Sanitized variable name</returns>
+		/// Checks to see if the variable name starts with the correct format
+		/// </summary>
+		/// <param name="var">A $variable name</param>
+		/// <returns>Sanitized variable name</returns>
 		public static string SanitizeVariableName(string var)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "Sanitizing variable {0}...", var);
@@ -46,9 +45,9 @@ namespace KS.Scripting
 		}
 
 		/// <summary>
-        /// Initializes a $variable
-        /// </summary>
-        /// <param name="var">A $variable</param>
+		/// Initializes a $variable
+		/// </summary>
+		/// <param name="var">A $variable</param>
 		public static void InitializeVariable(string var)
 		{
 			var = SanitizeVariableName(var);
@@ -60,11 +59,11 @@ namespace KS.Scripting
 		}
 
 		/// <summary>
-        /// Gets a value of a $variable on command line
-        /// </summary>
-        /// <param name="var">A $variable</param>
-        /// <param name="cmd">A command line in script</param>
-        /// <returns>A command line in script that has a value of $variable</returns>
+		/// Gets a value of a $variable on command line
+		/// </summary>
+		/// <param name="var">A $variable</param>
+		/// <param name="cmd">A command line in script</param>
+		/// <returns>A command line in script that has a value of $variable</returns>
 		public static string GetVariableCommand(string var, string cmd)
 		{
 			var CommandArgumentsInfo = new ProvidedCommandArgumentsInfo(cmd, ShellType.Shell);
@@ -73,11 +72,12 @@ namespace KS.Scripting
 			{
 				foreach (string Word in CommandArgumentsInfo.ArgumentsList)
 				{
-					if (Word.Contains(var) & Word.StartsWith("$"))
+					string finalWord = Word;
+					if (finalWord.Contains(var) & finalWord.StartsWith("$"))
 					{
-						Word = ShellVariables[var];
+						finalWord = ShellVariables[var];
 					}
-					NewCommand += $"{Word} ";
+					NewCommand += $"{finalWord} ";
 				}
 				DebugWriter.Wdbg(DebugLevel.I, "Replaced variable {0} with their values. Result: {1}", var, NewCommand);
 				return NewCommand.TrimEnd(' ');
@@ -86,10 +86,10 @@ namespace KS.Scripting
 		}
 
 		/// <summary>
-        /// Gets a value of a $variable
-        /// </summary>
-        /// <param name="var">A $variable</param>
-        /// <returns>A value of $variable, or a variable name if not found</returns>
+		/// Gets a value of a $variable
+		/// </summary>
+		/// <param name="var">A $variable</param>
+		/// <returns>A value of $variable, or a variable name if not found</returns>
 		public static string GetVariable(string var)
 		{
 			try
@@ -105,18 +105,18 @@ namespace KS.Scripting
 		}
 
 		/// <summary>
-        /// Gets the variables and returns the available variables as a dictionary
-        /// </summary>
+		/// Gets the variables and returns the available variables as a dictionary
+		/// </summary>
 		public static Dictionary<string, string> GetVariables()
 		{
 			return ShellVariables;
 		}
 
 		/// <summary>
-        /// Sets a $variable
-        /// </summary>
-        /// <param name="var">A $variable</param>
-        /// <param name="value">A value to set to $variable</param>
+		/// Sets a $variable
+		/// </summary>
+		/// <param name="var">A $variable</param>
+		/// <param name="value">A value to set to $variable</param>
 		public static bool SetVariable(string var, string value)
 		{
 			try
@@ -136,10 +136,10 @@ namespace KS.Scripting
 		}
 
 		/// <summary>
-        /// Makes an array of a $variable with the chosen number of values (e.g. $variable[0] = first value, $variable[1] = second value, ...)
-        /// </summary>
-        /// <param name="var">A $variable array name</param>
-        /// <param name="values">A set of values to set</param>
+		/// Makes an array of a $variable with the chosen number of values (e.g. $variable[0] = first value, $variable[1] = second value, ...)
+		/// </summary>
+		/// <param name="var">A $variable array name</param>
+		/// <param name="values">A set of values to set</param>
 		public static bool SetVariables(string var, string[] values)
 		{
 			try
@@ -164,9 +164,9 @@ namespace KS.Scripting
 		}
 
 		/// <summary>
-        /// Removes a variable from the shell variables dictionary
-        /// </summary>
-        /// <param name="var">Target variable</param>
+		/// Removes a variable from the shell variables dictionary
+		/// </summary>
+		/// <param name="var">Target variable</param>
 		public static bool RemoveVariable(string var)
 		{
 			try
@@ -182,13 +182,13 @@ namespace KS.Scripting
 		}
 
 		/// <summary>
-        /// Parses the system environment variables and converts them to the UESH shell variables
-        /// </summary>
+		/// Parses the system environment variables and converts them to the UESH shell variables
+		/// </summary>
 		public static void ConvertSystemEnvironmentVariables()
 		{
 			var EnvVars = Environment.GetEnvironmentVariables();
 			foreach (string EnvVar in EnvVars.Keys)
-				SetVariable(EnvVar, Conversions.ToString(EnvVars[EnvVar]));
+				SetVariable(EnvVar, Convert.ToString(EnvVars[EnvVar]));
 		}
 
 	}

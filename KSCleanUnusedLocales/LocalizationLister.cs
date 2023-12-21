@@ -23,30 +23,30 @@ using System.Linq;
 
 namespace KSCleanUnusedLocales
 {
-    internal static class LocalizationLister
-    {
-        private static string[] ListLanguageFilesForKS()
-        {
-            // Check to see if we have the Kernel Simulator folder
-            string ksJsonifyLocalesSource = "../../../../KSJsonifyLocales/Translations";
-            if (Directory.Exists(ksJsonifyLocalesSource))
-            {
-                // Iterate through all the source files for Kernel Simulator
-                string[] files = Directory.GetFiles(ksJsonifyLocalesSource, "*.txt");
-                return files;
-            }
-            return Array.Empty<string>();
-        }
+	internal static class LocalizationLister
+	{
+		private static string[] ListLanguageFilesForKS()
+		{
+			// Check to see if we have the Kernel Simulator folder
+			string ksJsonifyLocalesSource = "../../../../KSJsonifyLocales/Translations";
+			if (Directory.Exists(ksJsonifyLocalesSource))
+			{
+				// Iterate through all the source files for Kernel Simulator
+				string[] files = Directory.GetFiles(ksJsonifyLocalesSource, "*.txt");
+				return files;
+			}
+			return [];
+		}
 
-        internal static Dictionary<string, List<string>> PopulateLanguages()
-        {
-            Dictionary<string, List<string>> sources = new();
+		internal static Dictionary<string, List<string>> PopulateLanguages()
+		{
+			Dictionary<string, List<string>> sources = [];
 
-            // List all code files to add the sources
-            foreach (string source in ListLanguageFilesForKS())
-                sources.Add(source, File.ReadAllLines(source).ToList());
+			// List all code files to add the sources
+			foreach (string source in ListLanguageFilesForKS())
+				sources.Add(source, [.. File.ReadAllLines(source)]);
 
-            return sources;
-        }
-    }
+			return sources;
+		}
+	}
 }

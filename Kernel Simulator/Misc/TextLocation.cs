@@ -20,17 +20,17 @@
 namespace KS.Misc
 {
 	/// <summary>
-    /// The console text location (used for screensavers and splashes)
-    /// </summary>
+	/// The console text location (used for screensavers and splashes)
+	/// </summary>
 	public enum TextLocation
 	{
 		/// <summary>
-        /// Top of the console
-        /// </summary>
+		/// Top of the console
+		/// </summary>
 		Top,
 		/// <summary>
-        /// Bottom of the console
-        /// </summary>
+		/// Bottom of the console
+		/// </summary>
 		Bottom
 	}
 }

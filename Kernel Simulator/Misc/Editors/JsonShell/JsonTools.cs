@@ -32,10 +32,10 @@ namespace KS.Misc.Editors.JsonShell
 	{
 
 		/// <summary>
-        /// Opens the JSON file
-        /// </summary>
-        /// <param name="File">Target file. We recommend you to use <see cref="NeutralizePath(String, Boolean)"></see> to neutralize path.</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Opens the JSON file
+		/// </summary>
+		/// <param name="File">Target file. We recommend you to use <see cref="NeutralizePath(string, bool)"></see> to neutralize path.</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool JsonShell_OpenJsonFile(string File)
 		{
 			try
@@ -59,9 +59,9 @@ namespace KS.Misc.Editors.JsonShell
 		}
 
 		/// <summary>
-        /// Closes text file
-        /// </summary>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Closes text file
+		/// </summary>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool JsonShell_CloseTextFile()
 		{
 			try
@@ -83,18 +83,18 @@ namespace KS.Misc.Editors.JsonShell
 		}
 
 		/// <summary>
-        /// Saves JSON file
-        /// </summary>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Saves JSON file
+		/// </summary>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool JsonShell_SaveFile(bool ClearJson)
 		{
 			return JsonShell_SaveFile(ClearJson, JsonShellCommon.JsonShell_Formatting);
 		}
 
 		/// <summary>
-        /// Saves JSON file
-        /// </summary>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Saves JSON file
+		/// </summary>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool JsonShell_SaveFile(bool ClearJson, Formatting Formatting)
 		{
 			try
@@ -124,8 +124,8 @@ namespace KS.Misc.Editors.JsonShell
 		}
 
 		/// <summary>
-        /// Handles autosave
-        /// </summary>
+		/// Handles autosave
+		/// </summary>
 		public static void JsonShell_HandleAutoSaveJsonFile()
 		{
 			if (JsonShellCommon.JsonShell_AutoSaveFlag)
@@ -146,17 +146,17 @@ namespace KS.Misc.Editors.JsonShell
 		}
 
 		/// <summary>
-        /// Was JSON edited?
-        /// </summary>
+		/// Was JSON edited?
+		/// </summary>
 		public static bool JsonShell_WasJsonEdited()
 		{
 			return !JToken.DeepEquals(JsonShellCommon.JsonShell_FileToken, JsonShellCommon.JsonShell_FileTokenOrig);
 		}
 
 		/// <summary>
-        /// Gets a property in the JSON file
-        /// </summary>
-        /// <param name="[Property]">The property. You can use JSONPath.</param>
+		/// Gets a property in the JSON file
+		/// </summary>
+		/// <param name="[Property]">The property. You can use JSONPath.</param>
 		public static JToken JsonShell_GetProperty(string Property)
 		{
 			if (JsonShellCommon.JsonShell_FileStream is not null)
@@ -178,11 +178,11 @@ namespace KS.Misc.Editors.JsonShell
 		}
 
 		/// <summary>
-        /// Adds a new property to the current JSON file
-        /// </summary>
-        /// <param name="ParentProperty">Where to place the new property?</param>
-        /// <param name="Key">New property</param>
-        /// <param name="Value">The value for the new property</param>
+		/// Adds a new property to the current JSON file
+		/// </summary>
+		/// <param name="ParentProperty">Where to place the new property?</param>
+		/// <param name="Key">New property</param>
+		/// <param name="Value">The value for the new property</param>
 		public static void JsonShell_AddNewProperty(string ParentProperty, string Key, JToken Value)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "Old file lines: {0}", JsonShellCommon.JsonShell_FileToken.Count());
@@ -193,9 +193,9 @@ namespace KS.Misc.Editors.JsonShell
 		}
 
 		/// <summary>
-        /// Removes a property from the current JSON file
-        /// </summary>
-        /// <param name="[Property]">The property. You can use JSONPath.</param>
+		/// Removes a property from the current JSON file
+		/// </summary>
+		/// <param name="[Property]">The property. You can use JSONPath.</param>
 		public static void JsonShell_RemoveProperty(string Property)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "Old file lines: {0}", JsonShellCommon.JsonShell_FileToken.Count());
@@ -205,9 +205,9 @@ namespace KS.Misc.Editors.JsonShell
 		}
 
 		/// <summary>
-        /// Serializes the property to the string
-        /// </summary>
-        /// <param name="[Property]">The property. You can use JSONPath.</param>
+		/// Serializes the property to the string
+		/// </summary>
+		/// <param name="[Property]">The property. You can use JSONPath.</param>
 		public static string JsonShell_SerializeToString(string Property)
 		{
 			var TargetToken = JsonShell_GetProperty(Property);

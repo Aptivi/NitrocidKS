@@ -28,7 +28,6 @@ using KS.Files.Operations;
 using KS.Languages;
 using KS.Misc.Configuration;
 using KS.Misc.Writers.DebugWriters;
-using Microsoft.VisualBasic.CompilerServices;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -46,18 +45,18 @@ namespace KS.Network
 		public enum SpeedDialType
 		{
 			/// <summary>
-            /// FTP speed dial
-            /// </summary>
+			/// FTP speed dial
+			/// </summary>
 			FTP,
 			/// <summary>
-            /// SFTP speed dial
-            /// </summary>
+			/// SFTP speed dial
+			/// </summary>
 			SFTP
 		}
 
 		/// <summary>
-        /// Checks to see if the network is available
-        /// </summary>
+		/// Checks to see if the network is available
+		/// </summary>
 		public static bool NetworkAvailable
 		{
 			get
@@ -67,37 +66,37 @@ namespace KS.Network
 		}
 
 		/// <summary>
-        /// Pings an address
-        /// </summary>
-        /// <param name="Address">Target address</param>
-        /// <returns>A ping reply status</returns>
+		/// Pings an address
+		/// </summary>
+		/// <param name="Address">Target address</param>
+		/// <returns>A ping reply status</returns>
 		public static PingReply PingAddress(string Address)
 		{
-			var Pinger = new Ping();
-			var PingerOpts = new PingOptions() { DontFragment = true };
+			_ = new Ping();
+			_ = new PingOptions() { DontFragment = true };
 			byte[] PingBuffer = Encoding.ASCII.GetBytes("Kernel Simulator");
 			int Timeout = PingTimeout; // 60 seconds = 1 minute. timeout of Pinger.Send() takes milliseconds.
 			return PingAddress(Address, Timeout, PingBuffer);
 		}
 
 		/// <summary>
-        /// Pings an address
-        /// </summary>
-        /// <param name="Address">Target address</param>
-        /// <returns>A ping reply status</returns>
+		/// Pings an address
+		/// </summary>
+		/// <param name="Address">Target address</param>
+		/// <returns>A ping reply status</returns>
 		public static PingReply PingAddress(string Address, int Timeout)
 		{
-			var Pinger = new Ping();
-			var PingerOpts = new PingOptions() { DontFragment = true };
+			_ = new Ping();
+			_ = new PingOptions() { DontFragment = true };
 			byte[] PingBuffer = Encoding.ASCII.GetBytes("Kernel Simulator");
 			return PingAddress(Address, Timeout, PingBuffer);
 		}
 
 		/// <summary>
-        /// Pings an address
-        /// </summary>
-        /// <param name="Address">Target address</param>
-        /// <returns>A ping reply status</returns>
+		/// Pings an address
+		/// </summary>
+		/// <param name="Address">Target address</param>
+		/// <returns>A ping reply status</returns>
 		public static PingReply PingAddress(string Address, int Timeout, byte[] Buffer)
 		{
 			var Pinger = new Ping();
@@ -106,9 +105,9 @@ namespace KS.Network
 		}
 
 		/// <summary>
-        /// Changes host name
-        /// </summary>
-        /// <param name="NewHost">New host name</param>
+		/// Changes host name
+		/// </summary>
+		/// <param name="NewHost">New host name</param>
 		public static void ChangeHostname(string NewHost)
 		{
 			Kernel.Kernel.HostName = NewHost;
@@ -117,10 +116,10 @@ namespace KS.Network
 		}
 
 		/// <summary>
-        /// Changes host name
-        /// </summary>
-        /// <param name="NewHost">New host name</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Changes host name
+		/// </summary>
+		/// <param name="NewHost">New host name</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool TryChangeHostname(string NewHost)
 		{
 			try
@@ -137,18 +136,18 @@ namespace KS.Network
 		}
 
 		/// <summary>
-        /// Adds an entry to speed dial
-        /// </summary>
-        /// <param name="Address">A speed dial address</param>
-        /// <param name="Port">A speed dial port</param>
-        /// <param name="User">A speed dial username</param>
-        /// <param name="EncryptionMode">A speed dial encryption mode</param>
-        /// <param name="SpeedDialType">Speed dial type</param>
-        /// <param name="ThrowException">Optionally throw exception</param>
+		/// Adds an entry to speed dial
+		/// </summary>
+		/// <param name="Address">A speed dial address</param>
+		/// <param name="Port">A speed dial port</param>
+		/// <param name="User">A speed dial username</param>
+		/// <param name="EncryptionMode">A speed dial encryption mode</param>
+		/// <param name="SpeedDialType">Speed dial type</param>
+		/// <param name="ThrowException">Optionally throw exception</param>
 		public static void AddEntryToSpeedDial(string Address, int Port, string User, SpeedDialType SpeedDialType, FtpEncryptionMode EncryptionMode = FtpEncryptionMode.None, bool ThrowException = true)
 		{
 			string PathName = SpeedDialType == SpeedDialType.SFTP ? "SFTPSpeedDial" : "FTPSpeedDial";
-			KernelPathType SpeedDialEnum = (KernelPathType)Conversions.ToInteger(Enum.Parse(typeof(KernelPathType), PathName));
+			KernelPathType SpeedDialEnum = (KernelPathType)Convert.ToInt32(Enum.Parse(typeof(KernelPathType), PathName));
 			Making.MakeFile(Paths.GetKernelPath(SpeedDialEnum), false);
 			string SpeedDialJsonContent = File.ReadAllText(Paths.GetKernelPath(SpeedDialEnum));
 			if (SpeedDialJsonContent.StartsWith("["))
@@ -177,15 +176,15 @@ namespace KS.Network
 		}
 
 		/// <summary>
-        /// Adds an entry to speed dial
-        /// </summary>
-        /// <param name="Address">A speed dial address</param>
-        /// <param name="Port">A speed dial port</param>
-        /// <param name="User">A speed dial username</param>
-        /// <param name="EncryptionMode">A speed dial encryption mode</param>
-        /// <param name="SpeedDialType">Speed dial type</param>
-        /// <param name="ThrowException">Optionally throw exception</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Adds an entry to speed dial
+		/// </summary>
+		/// <param name="Address">A speed dial address</param>
+		/// <param name="Port">A speed dial port</param>
+		/// <param name="User">A speed dial username</param>
+		/// <param name="EncryptionMode">A speed dial encryption mode</param>
+		/// <param name="SpeedDialType">Speed dial type</param>
+		/// <param name="ThrowException">Optionally throw exception</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool TryAddEntryToSpeedDial(string Address, int Port, string User, SpeedDialType SpeedDialType, FtpEncryptionMode EncryptionMode = FtpEncryptionMode.None, bool ThrowException = true)
 		{
 			try
@@ -193,21 +192,21 @@ namespace KS.Network
 				AddEntryToSpeedDial(Address, Port, User, SpeedDialType, EncryptionMode, ThrowException);
 				return true;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				return false;
 			}
 		}
 
 		/// <summary>
-        /// Lists all speed dial entries
-        /// </summary>
-        /// <param name="SpeedDialType">Speed dial type</param>
-        /// <returns>A list</returns>
+		/// Lists all speed dial entries
+		/// </summary>
+		/// <param name="SpeedDialType">Speed dial type</param>
+		/// <returns>A list</returns>
 		public static Dictionary<string, JToken> ListSpeedDialEntries(SpeedDialType SpeedDialType)
 		{
 			string PathName = SpeedDialType == SpeedDialType.SFTP ? "SFTPSpeedDial" : "FTPSpeedDial";
-			KernelPathType SpeedDialEnum = (KernelPathType)Conversions.ToInteger(Enum.Parse(typeof(KernelPathType), PathName));
+			KernelPathType SpeedDialEnum = (KernelPathType)Convert.ToInt32(Enum.Parse(typeof(KernelPathType), PathName));
 			Making.MakeFile(Paths.GetKernelPath(SpeedDialEnum), false);
 			string SpeedDialJsonContent = File.ReadAllText(Paths.GetKernelPath(SpeedDialEnum));
 			if (SpeedDialJsonContent.StartsWith("["))
@@ -223,13 +222,13 @@ namespace KS.Network
 		}
 
 		/// <summary>
-        /// Convert speed dial entries from the old jsonified version (pre-0.0.16 RC1) to the new jsonified version
-        /// </summary>
-        /// <param name="SpeedDialType">Speed dial type</param>
+		/// Convert speed dial entries from the old jsonified version (pre-0.0.16 RC1) to the new jsonified version
+		/// </summary>
+		/// <param name="SpeedDialType">Speed dial type</param>
 		public static void ConvertSpeedDialEntries(SpeedDialType SpeedDialType)
 		{
 			string PathName = SpeedDialType == SpeedDialType.SFTP ? "SFTPSpeedDial" : "FTPSpeedDial";
-			KernelPathType SpeedDialEnum = (KernelPathType)Conversions.ToInteger(Enum.Parse(typeof(KernelPathType), PathName));
+			KernelPathType SpeedDialEnum = (KernelPathType)Convert.ToInt32(Enum.Parse(typeof(KernelPathType), PathName));
 			string SpeedDialJsonContent = File.ReadAllText(Paths.GetKernelPath(SpeedDialEnum));
 			var SpeedDialToken = JArray.Parse(!string.IsNullOrEmpty(SpeedDialJsonContent) ? SpeedDialJsonContent : "[]");
 			File.Delete(Paths.GetKernelPath(SpeedDialEnum));
@@ -239,20 +238,20 @@ namespace KS.Network
 				string Address = ChosenLineSeparation[0];
 				string Port = ChosenLineSeparation[1];
 				string Username = ChosenLineSeparation[2];
-				FtpEncryptionMode Encryption = (FtpEncryptionMode)Conversions.ToInteger(SpeedDialType == SpeedDialType.FTP ? Enum.Parse(typeof(FtpEncryptionMode), ChosenLineSeparation[3]) : FtpEncryptionMode.None);
-				AddEntryToSpeedDial(Address, Conversions.ToInteger(Port), Username, SpeedDialType, Encryption, false);
+				FtpEncryptionMode Encryption = (FtpEncryptionMode)Convert.ToInt32(SpeedDialType == SpeedDialType.FTP ? Enum.Parse(typeof(FtpEncryptionMode), ChosenLineSeparation[3]) : FtpEncryptionMode.None);
+				AddEntryToSpeedDial(Address, Convert.ToInt32(Port), Username, SpeedDialType, Encryption, false);
 			}
 		}
 
 		/// <summary>
-        /// Gets the filename from the URL
-        /// </summary>
-        /// <param name="Url">The target URL that contains the filename</param>
+		/// Gets the filename from the URL
+		/// </summary>
+		/// <param name="Url">The target URL that contains the filename</param>
 		public static string GetFilenameFromUrl(string Url)
 		{
 			string FileName = Url.Split('/').Last();
 			DebugWriter.Wdbg(DebugLevel.I, "Prototype Filename: {0}", FileName);
-			if (FileName.Contains(Conversions.ToString('?')))
+			if (FileName.Contains(Convert.ToString('?')))
 			{
 				FileName = FileName.Remove(FileName.IndexOf('?'));
 			}

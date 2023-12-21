@@ -26,18 +26,17 @@ using KS.Misc.Writers.DebugWriters;
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 using KS.Network.Transfer;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Misc.Games
 {
 	static class Speller
 	{
 
-		public static List<string> Words = new();
+		public static List<string> Words = [];
 
 		/// <summary>
-        /// Initializes the game
-        /// </summary>
+		/// Initializes the game
+		/// </summary>
 		public static void InitializeWords()
 		{
 			var RandomDriver = new Random();
@@ -54,7 +53,7 @@ namespace KS.Misc.Games
 				RandomWord = Words.ElementAt(RandomDriver.Next(Words.Count));
 				DebugWriter.Wdbg(DebugLevel.I, "Word: {0}", RandomWord);
 				TextWriterColor.Write(RandomWord, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
-				SpeltWord = Input.ReadLineNoInput(Conversions.ToChar(""));
+				SpeltWord = Input.ReadLineNoInput('\0');
 
 				if ((SpeltWord ?? "") == (RandomWord ?? ""))
 				{

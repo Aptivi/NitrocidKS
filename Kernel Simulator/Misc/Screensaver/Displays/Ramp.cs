@@ -69,8 +69,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static bool _rampUseBorderColors;
 
 		/// <summary>
-        /// [Ramp] Enable 255 color support. Has a higher priority than 16 color support.
-        /// </summary>
+		/// [Ramp] Enable 255 color support. Has a higher priority than 16 color support.
+		/// </summary>
 		public static bool Ramp255Colors
 		{
 			get
@@ -83,8 +83,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
+		/// [Ramp] Enable truecolor support. Has a higher priority than 255 color support.
+		/// </summary>
 		public static bool RampTrueColor
 		{
 			get
@@ -97,8 +97,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [Ramp] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int RampDelay
 		{
 			get
@@ -113,8 +113,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] How many milliseconds to wait before starting the next ramp?
-        /// </summary>
+		/// [Ramp] How many milliseconds to wait before starting the next ramp?
+		/// </summary>
 		public static int RampNextRampDelay
 		{
 			get
@@ -129,8 +129,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] Upper left corner character 
-        /// </summary>
+		/// [Ramp] Upper left corner character 
+		/// </summary>
 		public static string RampUpperLeftCornerChar
 		{
 			get
@@ -145,8 +145,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] Upper right corner character 
-        /// </summary>
+		/// [Ramp] Upper right corner character 
+		/// </summary>
 		public static string RampUpperRightCornerChar
 		{
 			get
@@ -161,8 +161,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] Lower left corner character 
-        /// </summary>
+		/// [Ramp] Lower left corner character 
+		/// </summary>
 		public static string RampLowerLeftCornerChar
 		{
 			get
@@ -177,8 +177,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] Lower right corner character 
-        /// </summary>
+		/// [Ramp] Lower right corner character 
+		/// </summary>
 		public static string RampLowerRightCornerChar
 		{
 			get
@@ -193,8 +193,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] Upper frame character 
-        /// </summary>
+		/// [Ramp] Upper frame character 
+		/// </summary>
 		public static string RampUpperFrameChar
 		{
 			get
@@ -209,8 +209,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] Lower frame character 
-        /// </summary>
+		/// [Ramp] Lower frame character 
+		/// </summary>
 		public static string RampLowerFrameChar
 		{
 			get
@@ -225,8 +225,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] Left frame character 
-        /// </summary>
+		/// [Ramp] Left frame character 
+		/// </summary>
 		public static string RampLeftFrameChar
 		{
 			get
@@ -241,8 +241,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] Right frame character 
-        /// </summary>
+		/// [Ramp] Right frame character 
+		/// </summary>
 		public static string RampRightFrameChar
 		{
 			get
@@ -257,8 +257,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] The minimum red color level (true color - start)
-        /// </summary>
+		/// [Ramp] The minimum red color level (true color - start)
+		/// </summary>
 		public static int RampMinimumRedColorLevelStart
 		{
 			get
@@ -275,8 +275,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] The minimum green color level (true color - start)
-        /// </summary>
+		/// [Ramp] The minimum green color level (true color - start)
+		/// </summary>
 		public static int RampMinimumGreenColorLevelStart
 		{
 			get
@@ -293,8 +293,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] The minimum blue color level (true color - start)
-        /// </summary>
+		/// [Ramp] The minimum blue color level (true color - start)
+		/// </summary>
 		public static int RampMinimumBlueColorLevelStart
 		{
 			get
@@ -311,8 +311,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] The minimum color level (255 colors or 16 colors - start)
-        /// </summary>
+		/// [Ramp] The minimum color level (255 colors or 16 colors - start)
+		/// </summary>
 		public static int RampMinimumColorLevelStart
 		{
 			get
@@ -330,8 +330,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] The maximum red color level (true color - start)
-        /// </summary>
+		/// [Ramp] The maximum red color level (true color - start)
+		/// </summary>
 		public static int RampMaximumRedColorLevelStart
 		{
 			get
@@ -348,8 +348,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] The maximum green color level (true color - start)
-        /// </summary>
+		/// [Ramp] The maximum green color level (true color - start)
+		/// </summary>
 		public static int RampMaximumGreenColorLevelStart
 		{
 			get
@@ -366,8 +366,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] The maximum blue color level (true color - start)
-        /// </summary>
+		/// [Ramp] The maximum blue color level (true color - start)
+		/// </summary>
 		public static int RampMaximumBlueColorLevelStart
 		{
 			get
@@ -384,8 +384,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] The maximum color level (255 colors or 16 colors - start)
-        /// </summary>
+		/// [Ramp] The maximum color level (255 colors or 16 colors - start)
+		/// </summary>
 		public static int RampMaximumColorLevelStart
 		{
 			get
@@ -403,8 +403,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] The minimum red color level (true color - end)
-        /// </summary>
+		/// [Ramp] The minimum red color level (true color - end)
+		/// </summary>
 		public static int RampMinimumRedColorLevelEnd
 		{
 			get
@@ -421,8 +421,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] The minimum green color level (true color - end)
-        /// </summary>
+		/// [Ramp] The minimum green color level (true color - end)
+		/// </summary>
 		public static int RampMinimumGreenColorLevelEnd
 		{
 			get
@@ -439,8 +439,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] The minimum blue color level (true color - end)
-        /// </summary>
+		/// [Ramp] The minimum blue color level (true color - end)
+		/// </summary>
 		public static int RampMinimumBlueColorLevelEnd
 		{
 			get
@@ -457,8 +457,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] The minimum color level (255 colors or 16 colors - end)
-        /// </summary>
+		/// [Ramp] The minimum color level (255 colors or 16 colors - end)
+		/// </summary>
 		public static int RampMinimumColorLevelEnd
 		{
 			get
@@ -476,8 +476,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] The maximum red color level (true color - end)
-        /// </summary>
+		/// [Ramp] The maximum red color level (true color - end)
+		/// </summary>
 		public static int RampMaximumRedColorLevelEnd
 		{
 			get
@@ -494,8 +494,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] The maximum green color level (true color - end)
-        /// </summary>
+		/// [Ramp] The maximum green color level (true color - end)
+		/// </summary>
 		public static int RampMaximumGreenColorLevelEnd
 		{
 			get
@@ -512,8 +512,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] The maximum blue color level (true color - end)
-        /// </summary>
+		/// [Ramp] The maximum blue color level (true color - end)
+		/// </summary>
 		public static int RampMaximumBlueColorLevelEnd
 		{
 			get
@@ -530,8 +530,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] The maximum color level (255 colors or 16 colors - end)
-        /// </summary>
+		/// [Ramp] The maximum color level (255 colors or 16 colors - end)
+		/// </summary>
 		public static int RampMaximumColorLevelEnd
 		{
 			get
@@ -549,8 +549,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] Upper left corner color.
-        /// </summary>
+		/// [Ramp] Upper left corner color.
+		/// </summary>
 		public static string RampUpperLeftCornerColor
 		{
 			get
@@ -563,8 +563,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] Upper right corner color.
-        /// </summary>
+		/// [Ramp] Upper right corner color.
+		/// </summary>
 		public static string RampUpperRightCornerColor
 		{
 			get
@@ -577,8 +577,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] Lower left corner color.
-        /// </summary>
+		/// [Ramp] Lower left corner color.
+		/// </summary>
 		public static string RampLowerLeftCornerColor
 		{
 			get
@@ -591,8 +591,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] Lower right corner color.
-        /// </summary>
+		/// [Ramp] Lower right corner color.
+		/// </summary>
 		public static string RampLowerRightCornerColor
 		{
 			get
@@ -605,8 +605,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] Upper frame color.
-        /// </summary>
+		/// [Ramp] Upper frame color.
+		/// </summary>
 		public static string RampUpperFrameColor
 		{
 			get
@@ -619,8 +619,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] Lower frame color.
-        /// </summary>
+		/// [Ramp] Lower frame color.
+		/// </summary>
 		public static string RampLowerFrameColor
 		{
 			get
@@ -633,8 +633,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] Left frame color.
-        /// </summary>
+		/// [Ramp] Left frame color.
+		/// </summary>
 		public static string RampLeftFrameColor
 		{
 			get
@@ -647,8 +647,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] Right frame color.
-        /// </summary>
+		/// [Ramp] Right frame color.
+		/// </summary>
 		public static string RampRightFrameColor
 		{
 			get
@@ -661,8 +661,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Ramp] Use the border colors.
-        /// </summary>
+		/// [Ramp] Use the border colors.
+		/// </summary>
 		public static bool RampUseBorderColors
 		{
 			get
@@ -744,18 +744,18 @@ namespace KS.Misc.Screensaver.Displays
 			// Draw the frame
 			if (!ResizeSyncing)
 			{
-				TextWriterWhereColor.WriteWhere(RampSettings.RampUpperLeftCornerChar, RampFrameStartWidth, RampCenterPosition - 2, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampUpperLeftCornerColor) : new Color(ConsoleColors.Gray));
-				TextWriterColor.Write(RampSettings.RampUpperFrameChar.Repeat(RampFrameSpaces), false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampUpperFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterColor.Write(RampSettings.RampUpperRightCornerChar, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampUpperRightCornerColor) : new Color(ConsoleColors.Gray));
-				TextWriterWhereColor.WriteWhere(RampSettings.RampLeftFrameChar, RampFrameStartWidth, RampCenterPosition - 1, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLeftFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterWhereColor.WriteWhere(RampSettings.RampLeftFrameChar, RampFrameStartWidth, RampCenterPosition, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLeftFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterWhereColor.WriteWhere(RampSettings.RampLeftFrameChar, RampFrameStartWidth, RampCenterPosition + 1, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLeftFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterWhereColor.WriteWhere(RampSettings.RampRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition - 1, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLeftFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterWhereColor.WriteWhere(RampSettings.RampRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLeftFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterWhereColor.WriteWhere(RampSettings.RampRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition + 1, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLeftFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterWhereColor.WriteWhere(RampSettings.RampLowerLeftCornerChar, RampFrameStartWidth, RampCenterPosition + 2, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLowerLeftCornerColor) : new Color(ConsoleColors.Gray));
-				TextWriterColor.Write(RampSettings.RampLowerFrameChar.Repeat(RampFrameSpaces), false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLowerFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterColor.Write(RampSettings.RampLowerRightCornerChar, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLowerRightCornerColor) : new Color(ConsoleColors.Gray));
+				TextWriterWhereColor.WriteWhere(RampSettings.RampUpperLeftCornerChar, RampFrameStartWidth, RampCenterPosition - 2, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampUpperLeftCornerColor) : new Color(ConsoleColor.Gray));
+				TextWriterColor.Write(RampSettings.RampUpperFrameChar.Repeat(RampFrameSpaces), false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampUpperFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterColor.Write(RampSettings.RampUpperRightCornerChar, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampUpperRightCornerColor) : new Color(ConsoleColor.Gray));
+				TextWriterWhereColor.WriteWhere(RampSettings.RampLeftFrameChar, RampFrameStartWidth, RampCenterPosition - 1, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLeftFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterWhereColor.WriteWhere(RampSettings.RampLeftFrameChar, RampFrameStartWidth, RampCenterPosition, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLeftFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterWhereColor.WriteWhere(RampSettings.RampLeftFrameChar, RampFrameStartWidth, RampCenterPosition + 1, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLeftFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterWhereColor.WriteWhere(RampSettings.RampRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition - 1, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLeftFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterWhereColor.WriteWhere(RampSettings.RampRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLeftFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterWhereColor.WriteWhere(RampSettings.RampRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition + 1, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLeftFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterWhereColor.WriteWhere(RampSettings.RampLowerLeftCornerChar, RampFrameStartWidth, RampCenterPosition + 2, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLowerLeftCornerColor) : new Color(ConsoleColor.Gray));
+				TextWriterColor.Write(RampSettings.RampLowerFrameChar.Repeat(RampFrameSpaces), false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLowerFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterColor.Write(RampSettings.RampLowerRightCornerChar, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLowerRightCornerColor) : new Color(ConsoleColor.Gray));
 			}
 
 			// Draw the ramp

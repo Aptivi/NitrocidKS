@@ -29,8 +29,8 @@ namespace KS.Misc.Splash
 		internal static bool _KernelBooted = false;
 
 		/// <summary>
-        /// The progress indicator of the kernel 
-        /// </summary>
+		/// The progress indicator of the kernel 
+		/// </summary>
 		public static int Progress
 		{
 			get
@@ -40,8 +40,8 @@ namespace KS.Misc.Splash
 		}
 
 		/// <summary>
-        /// The progress text to indicate how did the kernel progress
-        /// </summary>
+		/// The progress text to indicate how did the kernel progress
+		/// </summary>
 		public static string ProgressText
 		{
 			get
@@ -51,8 +51,8 @@ namespace KS.Misc.Splash
 		}
 
 		/// <summary>
-        /// Did the kernel boot successfully?
-        /// </summary>
+		/// Did the kernel boot successfully?
+		/// </summary>
 		public static bool KernelBooted
 		{
 			get
@@ -62,14 +62,14 @@ namespace KS.Misc.Splash
 		}
 
 		/// <summary>
-        /// Reports the progress for the splash screen while the kernel is booting.
-        /// </summary>
-        /// <param name="Text">The progress text to indicate how did the kernel progress</param>
-        /// <param name="Progress">The progress indicator of the kernel</param>
-        /// <remarks>
-        /// If the kernel has booted successfully, it will act like the normal printing command. If this routine was called during boot,<br></br>
-        /// it will report the progress to the splash system.
-        /// </remarks>
+		/// Reports the progress for the splash screen while the kernel is booting.
+		/// </summary>
+		/// <param name="Text">The progress text to indicate how did the kernel progress</param>
+		/// <param name="Progress">The progress indicator of the kernel</param>
+		/// <remarks>
+		/// If the kernel has booted successfully, it will act like the normal printing command. If this routine was called during boot,<br></br>
+		/// it will report the progress to the splash system.
+		/// </remarks>
 		internal static void ReportProgress(string Text, int Progress, KernelColorTools.ColTypes ColTypes, params string[] Vars)
 		{
 			if (!KernelBooted)

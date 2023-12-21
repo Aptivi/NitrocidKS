@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when there was a uninstallation failure for the mod.
-    /// </summary>
+	/// Thrown when there was a uninstallation failure for the mod.
+	/// </summary>
 	public class ModUninstallException : Exception
 	{
 

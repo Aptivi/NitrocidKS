@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when alias already exists
-    /// </summary>
+	/// Thrown when alias already exists
+	/// </summary>
 	public class AliasAlreadyExistsException : Exception
 	{
 

@@ -35,9 +35,9 @@ namespace KS.Misc.RarFile
 	{
 
 		/// <summary>
-        /// Lists all RAR entries according to the target directory or the current directory
-        /// </summary>
-        /// <param name="Target">Target directory in an archive</param>
+		/// Lists all RAR entries according to the target directory or the current directory
+		/// </summary>
+		/// <param name="Target">Target directory in an archive</param>
 		public static List<RarArchiveEntry> ListRarEntries(string Target)
 		{
 			if (string.IsNullOrWhiteSpace(Target))
@@ -65,10 +65,10 @@ namespace KS.Misc.RarFile
 		}
 
 		/// <summary>
-        /// Extracts a RAR entry to a target directory
-        /// </summary>
-        /// <param name="Target">Target file in an archive</param>
-        /// <param name="Where">Where in the local filesystem to extract?</param>
+		/// Extracts a RAR entry to a target directory
+		/// </summary>
+		/// <param name="Target">Target file in an archive</param>
+		/// <param name="Where">Where in the local filesystem to extract?</param>
 		public static bool ExtractRarFileEntry(string Target, string Where, bool FullTargetPath = false)
 		{
 			if (string.IsNullOrWhiteSpace(Target))
@@ -107,9 +107,9 @@ namespace KS.Misc.RarFile
 		}
 
 		/// <summary>
-        /// Changes the working archive directory
-        /// </summary>
-        /// <param name="Target">Target directory</param>
+		/// Changes the working archive directory
+		/// </summary>
+		/// <param name="Target">Target directory</param>
 		public static bool ChangeWorkingArchiveDirectory(string Target)
 		{
 			if (string.IsNullOrWhiteSpace(Target))
@@ -183,9 +183,9 @@ namespace KS.Misc.RarFile
 		}
 
 		/// <summary>
-        /// Changes the working local directory
-        /// </summary>
-        /// <param name="Target">Target directory</param>
+		/// Changes the working local directory
+		/// </summary>
+		/// <param name="Target">Target directory</param>
 		public static bool ChangeWorkingRarLocalDirectory(string Target)
 		{
 			if (string.IsNullOrWhiteSpace(Target))

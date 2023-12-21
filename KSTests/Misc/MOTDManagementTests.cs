@@ -33,8 +33,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests reading MOTD from file
-    /// </summary>
+		/// Tests reading MOTD from file
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestReadMOTDFromFile()
@@ -45,8 +45,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests reading MAL from file
-    /// </summary>
+		/// Tests reading MAL from file
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestReadMALFromFile()

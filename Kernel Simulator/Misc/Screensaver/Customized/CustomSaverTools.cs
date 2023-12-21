@@ -29,12 +29,12 @@ namespace KS.Misc.Screensaver.Customized
 	public static class CustomSaverTools
 	{
 
-		public static Dictionary<string, CustomSaverInfo> CustomSavers = new();
+		public static Dictionary<string, CustomSaverInfo> CustomSavers = [];
 		public static JObject CustomSaverSettingsToken;
 
 		/// <summary>
-        /// Initializes and reads the custom saver settings
-        /// </summary>
+		/// Initializes and reads the custom saver settings
+		/// </summary>
 		public static void InitializeCustomSaverSettings()
 		{
 			Making.MakeFile(Paths.GetKernelPath(KernelPathType.CustomSaverSettings), false);
@@ -53,8 +53,8 @@ namespace KS.Misc.Screensaver.Customized
 		}
 
 		/// <summary>
-        /// Saves the custom saver settings
-        /// </summary>
+		/// Saves the custom saver settings
+		/// </summary>
 		public static void SaveCustomSaverSettings()
 		{
 			foreach (string Saver in CustomSavers.Keys)
@@ -82,10 +82,10 @@ namespace KS.Misc.Screensaver.Customized
 		}
 
 		/// <summary>
-        /// Adds a custom screensaver to settings
-        /// </summary>
-        /// <param name="CustomSaver">A custom saver</param>
-        /// <exception cref="Exceptions.NoSuchScreensaverException"></exception>
+		/// Adds a custom screensaver to settings
+		/// </summary>
+		/// <param name="CustomSaver">A custom saver</param>
+		/// <exception cref="Exceptions.NoSuchScreensaverException"></exception>
 		public static void AddCustomSaverToSettings(string CustomSaver)
 		{
 			if (!CustomSavers.ContainsKey(CustomSaver))
@@ -108,11 +108,11 @@ namespace KS.Misc.Screensaver.Customized
 		}
 
 		/// <summary>
-        /// Removes a custom screensaver from settings
-        /// </summary>
-        /// <param name="CustomSaver">A custom saver</param>
-        /// <exception cref="Exceptions.NoSuchScreensaverException"></exception>
-        /// <exception cref="Exceptions.ScreensaverManagementException"></exception>
+		/// Removes a custom screensaver from settings
+		/// </summary>
+		/// <param name="CustomSaver">A custom saver</param>
+		/// <exception cref="Exceptions.NoSuchScreensaverException"></exception>
+		/// <exception cref="Exceptions.ScreensaverManagementException"></exception>
 		public static void RemoveCustomSaverFromSettings(string CustomSaver)
 		{
 			if (!CustomSavers.ContainsKey(CustomSaver))
@@ -124,12 +124,12 @@ namespace KS.Misc.Screensaver.Customized
 		}
 
 		/// <summary>
-        /// Gets custom saver settings
-        /// </summary>
-        /// <param name="CustomSaver">A custom saver</param>
-        /// <param name="SaverSetting">A saver setting</param>
-        /// <returns>Saver setting value if successful; nothing if unsuccessful.</returns>
-        /// <exception cref="Exceptions.NoSuchScreensaverException"></exception>
+		/// Gets custom saver settings
+		/// </summary>
+		/// <param name="CustomSaver">A custom saver</param>
+		/// <param name="SaverSetting">A saver setting</param>
+		/// <returns>Saver setting value if successful; nothing if unsuccessful.</returns>
+		/// <exception cref="Exceptions.NoSuchScreensaverException"></exception>
 		public static object GetCustomSaverSettings(string CustomSaver, string SaverSetting)
 		{
 			if (!CustomSaverSettingsToken.ContainsKey(CustomSaver))
@@ -145,13 +145,13 @@ namespace KS.Misc.Screensaver.Customized
 		}
 
 		/// <summary>
-        /// Sets custom saver settings
-        /// </summary>
-        /// <param name="CustomSaver">A custom saver</param>
-        /// <param name="SaverSetting">A saver setting</param>
-        /// <param name="Value">Value</param>
-        /// <returns>True if successful; False if unsuccessful.</returns>
-        /// <exception cref="Exceptions.NoSuchScreensaverException"></exception>
+		/// Sets custom saver settings
+		/// </summary>
+		/// <param name="CustomSaver">A custom saver</param>
+		/// <param name="SaverSetting">A saver setting</param>
+		/// <param name="Value">Value</param>
+		/// <returns>True if successful; False if unsuccessful.</returns>
+		/// <exception cref="Exceptions.NoSuchScreensaverException"></exception>
 		public static bool SetCustomSaverSettings(string CustomSaver, string SaverSetting, object Value)
 		{
 			if (!CustomSaverSettingsToken.ContainsKey(CustomSaver))

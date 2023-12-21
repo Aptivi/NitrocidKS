@@ -4,7 +4,6 @@ using KS.ConsoleBase.Colors;
 using KS.Misc.Threading;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
-using Microsoft.VisualBasic.CompilerServices;
 using Terminaux.Base;
 using Terminaux.Colors;
 
@@ -40,8 +39,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static string _typoTextColor = new Color(ConsoleColor.White).PlainSequence;
 
 		/// <summary>
-        /// [Typo] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [Typo] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int TypoDelay
 		{
 			get
@@ -56,8 +55,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Typo] How many milliseconds to wait before writing the text again?
-        /// </summary>
+		/// [Typo] How many milliseconds to wait before writing the text again?
+		/// </summary>
 		public static int TypoWriteAgainDelay
 		{
 			get
@@ -72,8 +71,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Typo] Text for Typo. Longer is better.
-        /// </summary>
+		/// [Typo] Text for Typo. Longer is better.
+		/// </summary>
 		public static string TypoWrite
 		{
 			get
@@ -88,8 +87,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Typo] Minimum writing speed in WPM
-        /// </summary>
+		/// [Typo] Minimum writing speed in WPM
+		/// </summary>
 		public static int TypoWritingSpeedMin
 		{
 			get
@@ -104,8 +103,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Typo] Maximum writing speed in WPM
-        /// </summary>
+		/// [Typo] Maximum writing speed in WPM
+		/// </summary>
 		public static int TypoWritingSpeedMax
 		{
 			get
@@ -120,8 +119,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Typo] Possibility that the writer made a typo in percent
-        /// </summary>
+		/// [Typo] Possibility that the writer made a typo in percent
+		/// </summary>
 		public static int TypoMissStrikePossibility
 		{
 			get
@@ -136,8 +135,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Typo] Possibility that the writer missed a character in percent
-        /// </summary>
+		/// [Typo] Possibility that the writer missed a character in percent
+		/// </summary>
 		public static int TypoMissPossibility
 		{
 			get
@@ -152,8 +151,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Typo] Text color
-        /// </summary>
+		/// [Typo] Text color
+		/// </summary>
 		public static string TypoTextColor
 		{
 			get
@@ -206,18 +205,19 @@ namespace KS.Misc.Screensaver.Displays
 
 			// Get struck character and write it
 			var StrikeCharsIndex = default(int);
-			foreach (char StruckChar in TypoSettings.TypoWrite)
+			foreach (char struckChar in TypoSettings.TypoWrite)
 			{
 				if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
 					ResizeSyncing = true;
 				if (ResizeSyncing)
 					break;
+				char finalChar = struckChar;
 
 				// Calculate needed milliseconds from two WPM speeds (minimum and maximum)
 				int SelectedCpm = RandomDriver.Next(CpmSpeedMin, CpmSpeedMax);
 				int WriteMs = (int)Math.Round(60d / SelectedCpm * 1000d);
 				DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Delay for {0} CPM: {1} ms", SelectedCpm, WriteMs);
-				DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Struck character: {0}", StruckChar);
+				DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Struck character: {0}", finalChar);
 
 				// See if the typo is guaranteed
 				double Probability = (TypoSettings.TypoMissStrikePossibility >= 80 ? 80 : TypoSettings.TypoMissStrikePossibility) / 100d;
@@ -233,7 +233,7 @@ namespace KS.Misc.Screensaver.Displays
 					{
 						// Miss is guaranteed. Simulate the missed character
 						DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Missed a character!");
-						StruckChar = Conversions.ToChar("");
+						finalChar = '\0';
 					}
 					// Typo is guaranteed. Select a strike string randomly until the struck key is found in between the characters
 					else
@@ -245,9 +245,9 @@ namespace KS.Misc.Screensaver.Displays
 						while (!StruckFound)
 						{
 							StrikeCharsIndex = RandomDriver.Next(0, Strikes.Count - 1);
-							CappedStrike = char.IsUpper(StruckChar) | CapSymbols.Contains(Conversions.ToString(StruckChar));
+							CappedStrike = char.IsUpper(finalChar) | CapSymbols.Contains(Convert.ToString(finalChar));
 							StrikesString = CappedStrike ? CapStrikes[StrikeCharsIndex] : Strikes[StrikeCharsIndex];
-							StruckFound = !string.IsNullOrEmpty(StrikesString) && StrikesString.Contains(Conversions.ToString(StruckChar));
+							StruckFound = !string.IsNullOrEmpty(StrikesString) && StrikesString.Contains(Convert.ToString(finalChar));
 							DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Strike chars index: {0}", StrikeCharsIndex);
 							DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Capped strike: {0}", CappedStrike);
 							DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Strikes pattern: {0}", StrikesString);
@@ -258,20 +258,20 @@ namespace KS.Misc.Screensaver.Displays
 						// Select a random character that is a typo from the selected strike index
 						int RandomStrikeIndex = RandomDriver.Next(0, StrikesString.Length - 1);
 						char MistypedChar = StrikesString[RandomStrikeIndex];
-						if (@"`-=\][';/.,".Contains(Conversions.ToString(MistypedChar)) & CappedStrike)
+						if (@"`-=\][';/.,".Contains(Convert.ToString(MistypedChar)) & CappedStrike)
 						{
 							// The mistyped character is a symbol and the strike is capped. Select a symbol from CapStrikes.
 							DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Mistyped character is a symbol and the strike is capped.");
 							MistypedChar = CapStrikes[StrikeCharsIndex][RandomStrikeIndex];
 						}
-						StruckChar = MistypedChar;
-						DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Struck character: {0}", StruckChar);
+						finalChar = MistypedChar;
+						DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Struck character: {0}", finalChar);
 					}
 				}
 
 				// Write the final character to the console and wait
-				if (!(Conversions.ToString(StruckChar) == Microsoft.VisualBasic.Constants.vbNullChar))
-					TextWriterColor.WritePlain(Conversions.ToString(StruckChar), false);
+				if (!(Convert.ToString(finalChar) == "\0"))
+					TextWriterColor.WritePlain(Convert.ToString(finalChar), false);
 				ThreadManager.SleepNoBlock(WriteMs, ScreensaverDisplayer.ScreensaverDisplayerThread);
 			}
 

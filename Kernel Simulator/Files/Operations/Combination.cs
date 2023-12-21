@@ -28,10 +28,10 @@ namespace KS.Files.Operations
 	{
 
 		/// <summary>
-        /// Combines the files and puts the combined output to the array
-        /// </summary>
-        /// <param name="Input">An input file</param>
-        /// <param name="TargetInputs">The target inputs to merge</param>
+		/// Combines the files and puts the combined output to the array
+		/// </summary>
+		/// <param name="Input">An input file</param>
+		/// <param name="TargetInputs">The target inputs to merge</param>
 		public static string[] CombineFiles(string Input, string[] TargetInputs)
 		{
 			try
@@ -50,7 +50,7 @@ namespace KS.Files.Operations
 				}
 
 				// Return the combined contents
-				return CombinedContents.ToArray();
+				return [.. CombinedContents];
 			}
 			catch (Exception ex)
 			{

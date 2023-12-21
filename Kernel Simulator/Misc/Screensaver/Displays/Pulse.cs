@@ -35,8 +35,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _pulseMaximumBlueColorLevel = 255;
 
 		/// <summary>
-        /// [Pulse] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [Pulse] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int PulseDelay
 		{
 			get
@@ -51,8 +51,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Pulse] How many fade steps to do?
-        /// </summary>
+		/// [Pulse] How many fade steps to do?
+		/// </summary>
 		public static int PulseMaxSteps
 		{
 			get
@@ -67,8 +67,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Pulse] The minimum red color level (true color)
-        /// </summary>
+		/// [Pulse] The minimum red color level (true color)
+		/// </summary>
 		public static int PulseMinimumRedColorLevel
 		{
 			get
@@ -85,8 +85,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Pulse] The minimum green color level (true color)
-        /// </summary>
+		/// [Pulse] The minimum green color level (true color)
+		/// </summary>
 		public static int PulseMinimumGreenColorLevel
 		{
 			get
@@ -103,8 +103,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Pulse] The minimum blue color level (true color)
-        /// </summary>
+		/// [Pulse] The minimum blue color level (true color)
+		/// </summary>
 		public static int PulseMinimumBlueColorLevel
 		{
 			get
@@ -121,8 +121,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Pulse] The maximum red color level (true color)
-        /// </summary>
+		/// [Pulse] The maximum red color level (true color)
+		/// </summary>
 		public static int PulseMaximumRedColorLevel
 		{
 			get
@@ -139,8 +139,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Pulse] The maximum green color level (true color)
-        /// </summary>
+		/// [Pulse] The maximum green color level (true color)
+		/// </summary>
 		public static int PulseMaximumGreenColorLevel
 		{
 			get
@@ -157,8 +157,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Pulse] The maximum blue color level (true color)
-        /// </summary>
+		/// [Pulse] The maximum blue color level (true color)
+		/// </summary>
 		public static int PulseMaximumBlueColorLevel
 		{
 			get

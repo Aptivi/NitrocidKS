@@ -33,8 +33,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests beautifying the JSON text
-    /// </summary>
+		/// Tests beautifying the JSON text
+		/// </summary>
 		[Test]
 		[Description("Action")]
 		public void TestBeautifyJsonText()
@@ -45,8 +45,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests beautifying the JSON text
-    /// </summary>
+		/// Tests beautifying the JSON text
+		/// </summary>
 		[Test]
 		[Description("Action")]
 		public void TestBeautifyJsonFile()
@@ -58,8 +58,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests minifying the JSON text
-    /// </summary>
+		/// Tests minifying the JSON text
+		/// </summary>
 		[Test]
 		[Description("Action")]
 		public void TestMinifyJsonText()
@@ -70,8 +70,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests minifying the JSON text
-    /// </summary>
+		/// Tests minifying the JSON text
+		/// </summary>
 		[Test]
 		[Description("Action")]
 		public void TestMinifyJsonFile()

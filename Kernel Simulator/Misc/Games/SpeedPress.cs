@@ -30,36 +30,36 @@ namespace KS.Misc.Games
 		public static int SpeedPressTimeout = 3000;
 
 		/// <summary>
-        /// SpeedPress difficulty
-        /// </summary>
+		/// SpeedPress difficulty
+		/// </summary>
 		public enum SpeedPressDifficulty
 		{
 			/// <summary>
-            /// Easy difficulty (timeout for three seconds)
-            /// </summary>
+			/// Easy difficulty (timeout for three seconds)
+			/// </summary>
 			Easy,
 			/// <summary>
-            /// Medium difficulty (timeout for a second and a half)
-            /// </summary>
+			/// Medium difficulty (timeout for a second and a half)
+			/// </summary>
 			Medium,
 			/// <summary>
-            /// Hard difficulty (timeout for a half second)
-            /// </summary>
+			/// Hard difficulty (timeout for a half second)
+			/// </summary>
 			Hard,
 			/// <summary>
-            /// Very hard difficulty (timeout for a quarter of a second)
-            /// </summary>
+			/// Very hard difficulty (timeout for a quarter of a second)
+			/// </summary>
 			VeryHard,
 			/// <summary>
-            /// Custom difficulty (custom timeout according to either a switch or the kernel settings)
-            /// </summary>
+			/// Custom difficulty (custom timeout according to either a switch or the kernel settings)
+			/// </summary>
 			Custom
 		}
 
 		/// <summary>
-        /// Initializes the SpeedPress game
-        /// </summary>
-        /// <param name="Difficulty">The difficulty of the game</param>
+		/// Initializes the SpeedPress game
+		/// </summary>
+		/// <param name="Difficulty">The difficulty of the game</param>
 		public static void InitializeSpeedPress(SpeedPressDifficulty Difficulty, int CustomTimeout = 0)
 		{
 			var SpeedTimeout = default(int);
@@ -134,7 +134,7 @@ namespace KS.Misc.Games
 						TextWriterColor.Write(Translate.DoTranslation("You've pressed the wrong character."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
 					}
 				}
-				catch (Kernel.Exceptions.ConsoleReadTimeoutException ex)
+				catch (Kernel.Exceptions.ConsoleReadTimeoutException)
 				{
 					TextWriterColor.WritePlain("", true);
 					TextWriterColor.Write(Translate.DoTranslation("Character not pressed on time."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));

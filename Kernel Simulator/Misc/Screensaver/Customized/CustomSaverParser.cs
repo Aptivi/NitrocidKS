@@ -32,9 +32,9 @@ namespace KS.Misc.Screensaver.Customized
 	{
 
 		/// <summary>
-        /// Compiles the custom screensaver file and configures it so it can be viewed
-        /// </summary>
-        /// <param name="file">File name with .ss.vb</param>
+		/// Compiles the custom screensaver file and configures it so it can be viewed
+		/// </summary>
+		/// <param name="file">File name with .ss.vb</param>
 		public static void ParseCustomSaver(string file)
 		{
 			// Initialize path

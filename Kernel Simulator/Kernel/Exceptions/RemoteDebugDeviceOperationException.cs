@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when there is a remote debugger operation error
-    /// </summary>
+	/// Thrown when there is a remote debugger operation error
+	/// </summary>
 	public class RemoteDebugDeviceOperationException : Exception
 	{
 

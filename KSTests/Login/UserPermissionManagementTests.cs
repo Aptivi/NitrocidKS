@@ -33,8 +33,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests adding permissions to user
-    /// </summary>
+		/// Tests adding permissions to user
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestAddUserPerm()
@@ -44,8 +44,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests removing permissions from user
-    /// </summary>
+		/// Tests removing permissions from user
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestRemoveUserPerm()
@@ -55,8 +55,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests loading permissions
-    /// </summary>
+		/// Tests loading permissions
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestLoadPermissions()

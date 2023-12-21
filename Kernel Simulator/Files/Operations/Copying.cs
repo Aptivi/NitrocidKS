@@ -31,11 +31,11 @@ namespace KS.Files.Operations
 	{
 
 		/// <summary>
-        /// Copies a file or directory
-        /// </summary>
-        /// <param name="Source">Source file or directory</param>
-        /// <param name="Destination">Target file or directory</param>
-        /// <exception cref="IOException"></exception>
+		/// Copies a file or directory
+		/// </summary>
+		/// <param name="Source">Source file or directory</param>
+		/// <param name="Destination">Target file or directory</param>
+		/// <exception cref="IOException"></exception>
 		public static void CopyFileOrDir(string Source, string Destination)
 		{
 			Filesystem.ThrowOnInvalidPath(Source);
@@ -78,12 +78,12 @@ namespace KS.Files.Operations
 		}
 
 		/// <summary>
-        /// Copies a file or directory
-        /// </summary>
-        /// <param name="Source">Source file or directory</param>
-        /// <param name="Destination">Target file or directory</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
-        /// <exception cref="IOException"></exception>
+		/// Copies a file or directory
+		/// </summary>
+		/// <param name="Source">Source file or directory</param>
+		/// <param name="Destination">Target file or directory</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
+		/// <exception cref="IOException"></exception>
 		public static bool TryCopyFileOrDir(string Source, string Destination)
 		{
 			try
@@ -100,21 +100,21 @@ namespace KS.Files.Operations
 		}
 
 		/// <summary>
-        /// Copies the directory from source to destination
-        /// </summary>
-        /// <param name="Source">Source directory</param>
-        /// <param name="Destination">Target directory</param>
+		/// Copies the directory from source to destination
+		/// </summary>
+		/// <param name="Source">Source directory</param>
+		/// <param name="Destination">Target directory</param>
 		public static void CopyDirectory(string Source, string Destination)
 		{
 			CopyDirectory(Source, Destination, Filesystem.ShowFilesystemProgress);
 		}
 
 		/// <summary>
-        /// Copies the directory from source to destination
-        /// </summary>
-        /// <param name="Source">Source directory</param>
-        /// <param name="Destination">Target directory</param>
-        /// <param name="ShowProgress">Whether or not to show what files are being copied</param>
+		/// Copies the directory from source to destination
+		/// </summary>
+		/// <param name="Source">Source directory</param>
+		/// <param name="Destination">Target directory</param>
+		/// <param name="ShowProgress">Whether or not to show what files are being copied</param>
 		public static void CopyDirectory(string Source, string Destination, bool ShowProgress)
 		{
 			Filesystem.ThrowOnInvalidPath(Source);

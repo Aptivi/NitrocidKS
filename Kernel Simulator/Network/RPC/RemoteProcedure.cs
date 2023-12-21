@@ -37,8 +37,8 @@ namespace KS.Network.RPC
 		internal static KernelThread RPCThread = new("RPC Thread", true, RPCCommands.ReceiveCommand);
 
 		/// <summary>
-        /// Whether the RPC started
-        /// </summary>
+		/// Whether the RPC started
+		/// </summary>
 		public static bool RPCStarted
 		{
 			get
@@ -48,8 +48,8 @@ namespace KS.Network.RPC
 		}
 
 		/// <summary>
-        /// Starts the RPC listener
-        /// </summary>
+		/// Starts the RPC listener
+		/// </summary>
 		public static void StartRPC()
 		{
 			if (RPCEnabled)
@@ -74,8 +74,8 @@ namespace KS.Network.RPC
 		}
 
 		/// <summary>
-        /// The wrapper for <see cref="StartRPC"/>
-        /// </summary>
+		/// The wrapper for <see cref="StartRPC"/>
+		/// </summary>
 		public static void WrapperStartRPC()
 		{
 			if (RPCEnabled)
@@ -98,8 +98,8 @@ namespace KS.Network.RPC
 		}
 
 		/// <summary>
-        /// Stops the RPC listener
-        /// </summary>
+		/// Stops the RPC listener
+		/// </summary>
 		public static void StopRPC()
 		{
 			if (RPCStarted)

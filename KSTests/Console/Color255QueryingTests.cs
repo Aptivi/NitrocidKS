@@ -30,8 +30,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests querying 255-color data from JSON (parses only needed data by KS)
-    /// </summary>
+		/// Tests querying 255-color data from JSON (parses only needed data by KS)
+		/// </summary>
 		[Test]
 		[Description("Querying")]
 		public void TestQueryColorDataFromJson()
@@ -40,18 +40,15 @@ namespace KSTests
 			{
 				JObject ColorData = (JObject)Color255.ColorDataJson[ColorIndex];
 				ColorData["colorId"].ToString().ShouldBe(ColorIndex.ToString());
-				int argresult = 0;
-				int.TryParse(ColorData["rgb"]["r"].ToString(), out argresult).ShouldBeTrue();
-				int argresult1 = 0;
-				int.TryParse(ColorData["rgb"]["g"].ToString(), out argresult1).ShouldBeTrue();
-				int argresult2 = 0;
-				int.TryParse(ColorData["rgb"]["b"].ToString(), out argresult2).ShouldBeTrue();
+				int.TryParse(ColorData["rgb"]["r"].ToString(), out _).ShouldBeTrue();
+				int.TryParse(ColorData["rgb"]["g"].ToString(), out _).ShouldBeTrue();
+				int.TryParse(ColorData["rgb"]["b"].ToString(), out _).ShouldBeTrue();
 			}
 		}
 
 		/// <summary>
-    /// Tests getting an escape character
-    /// </summary>
+		/// Tests getting an escape character
+		/// </summary>
 		[Test]
 		[Description("Querying")]
 		public void TestGetEsc()

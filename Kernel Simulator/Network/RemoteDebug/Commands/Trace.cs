@@ -21,7 +21,6 @@ using System.IO;
 using KS.Languages;
 using KS.Misc.Writers.DebugWriters;
 using KS.Network.RemoteDebug.Interface;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Network.RemoteDebug.Commands
 {
@@ -36,9 +35,9 @@ namespace KS.Network.RemoteDebug.Commands
 				{
 					try
 					{
-						SocketStreamWriter.WriteLine(DebugWriter.DebugStackTraces[Conversions.ToInteger(ListArgs[0])]);
+						SocketStreamWriter.WriteLine(DebugWriter.DebugStackTraces[Convert.ToInt32(ListArgs[0])]);
 					}
-					catch (Exception ex)
+					catch (Exception)
 					{
 						SocketStreamWriter.WriteLine(Translate.DoTranslation("Index {0} invalid. There are {1} stack traces. Index is zero-based, so try subtracting by 1."), ListArgs[0], DebugWriter.DebugStackTraces.Count);
 					}

@@ -25,7 +25,6 @@ using KS.Files.Querying;
 using KS.Languages;
 using KS.Misc.Text;
 using KS.Misc.Writers.DebugWriters;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Network.SFTP.Filesystem
 {
@@ -33,25 +32,25 @@ namespace KS.Network.SFTP.Filesystem
 	{
 
 		/// <summary>
-        /// Lists remote folders and files
-        /// </summary>
-        /// <param name="Path">Path to folder</param>
-        /// <returns>The list if successful; null if unsuccessful</returns>
-        /// <exception cref="Exceptions.SFTPFilesystemException"></exception>
-        /// <exception cref="InvalidOperationException"></exception>
+		/// Lists remote folders and files
+		/// </summary>
+		/// <param name="Path">Path to folder</param>
+		/// <returns>The list if successful; null if unsuccessful</returns>
+		/// <exception cref="Exceptions.SFTPFilesystemException"></exception>
+		/// <exception cref="InvalidOperationException"></exception>
 		public static List<string> SFTPListRemote(string Path)
 		{
 			return SFTPListRemote(Path, SFTPShellCommon.SFTPShowDetailsInList);
 		}
 
 		/// <summary>
-        /// Lists remote folders and files
-        /// </summary>
-        /// <param name="Path">Path to folder</param>
-        /// <param name="ShowDetails">Shows the details of the file</param>
-        /// <returns>The list if successful; null if unsuccessful</returns>
-        /// <exception cref="Exceptions.SFTPFilesystemException"></exception>
-        /// <exception cref="InvalidOperationException"></exception>
+		/// Lists remote folders and files
+		/// </summary>
+		/// <param name="Path">Path to folder</param>
+		/// <param name="ShowDetails">Shows the details of the file</param>
+		/// <returns>The list if successful; null if unsuccessful</returns>
+		/// <exception cref="Exceptions.SFTPFilesystemException"></exception>
+		/// <exception cref="InvalidOperationException"></exception>
 		public static List<string> SFTPListRemote(string Path, bool ShowDetails)
 		{
 			if (SFTPShellCommon.SFTPConnected)
@@ -115,11 +114,11 @@ namespace KS.Network.SFTP.Filesystem
 		}
 
 		/// <summary>
-        /// Removes remote file or folder
-        /// </summary>
-        /// <param name="Target">Target folder or file</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
-        /// <exception cref="Exceptions.SFTPFilesystemException"></exception>
+		/// Removes remote file or folder
+		/// </summary>
+		/// <param name="Target">Target folder or file</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
+		/// <exception cref="Exceptions.SFTPFilesystemException"></exception>
 		public static bool SFTPDeleteRemote(string Target)
 		{
 			if (SFTPShellCommon.SFTPConnected)
@@ -149,13 +148,13 @@ namespace KS.Network.SFTP.Filesystem
 		}
 
 		/// <summary>
-        /// Changes FTP remote directory
-        /// </summary>
-        /// <param name="Directory">Remote directory</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
-        /// <exception cref="Exceptions.SFTPFilesystemException"></exception>
-        /// <exception cref="InvalidOperationException"></exception>
-        /// <exception cref="ArgumentNullException"></exception>
+		/// Changes FTP remote directory
+		/// </summary>
+		/// <param name="Directory">Remote directory</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
+		/// <exception cref="Exceptions.SFTPFilesystemException"></exception>
+		/// <exception cref="InvalidOperationException"></exception>
+		/// <exception cref="ArgumentNullException"></exception>
 		public static bool SFTPChangeRemoteDir(string Directory)
 		{
 			if (SFTPShellCommon.SFTPConnected == true)
@@ -216,10 +215,10 @@ namespace KS.Network.SFTP.Filesystem
 		}
 
 		/// <summary>
-        /// Gets the absolute path for the given path
-        /// </summary>
-        /// <param name="Path">The remote path</param>
-        /// <returns>Absolute path for a remote path</returns>
+		/// Gets the absolute path for the given path
+		/// </summary>
+		/// <param name="Path">The remote path</param>
+		/// <returns>Absolute path for a remote path</returns>
 		public static string SFTPGetCanonicalPath(string Path)
 		{
 			if (SFTPShellCommon.SFTPConnected)
@@ -230,7 +229,7 @@ namespace KS.Network.SFTP.Filesystem
 				var SFTPSession = SFTPSessionField.GetValue(SFTPShellCommon.ClientSFTP);
 				var SFTPSessionType = SFTPSession.GetType();
 				var SFTPSessionCanon = SFTPSessionType.GetMethod("GetCanonicalPath");
-				string CanonicalPath = Conversions.ToString(SFTPSessionCanon.Invoke(SFTPSession, new string[] { Path }));
+				string CanonicalPath = Convert.ToString(SFTPSessionCanon.Invoke(SFTPSession, new string[] { Path }));
 				DebugWriter.Wdbg(DebugLevel.I, "Canonical path: {0}", CanonicalPath);
 				return CanonicalPath;
 			}

@@ -30,9 +30,9 @@ namespace KS.Modifications
 	{
 
 		/// <summary>
-        /// Executes the command provided by a mod
-        /// </summary>
-        /// <param name="cmd">A mod command with arguments</param>
+		/// Executes the command provided by a mod
+		/// </summary>
+		/// <param name="cmd">A mod command with arguments</param>
 		public static void ExecuteModCommand(string cmd)
 		{
 			Kernel.Kernel.KernelEventManager.RaisePreExecuteModCommand(cmd);

@@ -23,7 +23,7 @@ using KS.Languages;
 using KS.Misc.Reflection;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
-using Microsoft.VisualBasic.CompilerServices;
+using System;
 using Terminaux.Base;
 using Terminaux.Colors;
 using Terminaux.Colors.Selector;
@@ -34,9 +34,9 @@ namespace KS.ConsoleBase.Themes.Studio
 	{
 
 		/// <summary>
-        /// Starts the theme studio
-        /// </summary>
-        /// <param name="ThemeName">Theme name</param>
+		/// Starts the theme studio
+		/// </summary>
+		/// <param name="ThemeName">Theme name</param>
 		public static void StartThemeStudio(string ThemeName)
 		{
 			// Inform user that we're on the studio
@@ -115,7 +115,7 @@ namespace KS.ConsoleBase.Themes.Studio
 				if (StringQuery.IsStringNumeric(Response))
 				{
 					DebugWriter.Wdbg(DebugLevel.I, "Response is numeric.");
-					int NumericResponse = Conversions.ToInteger(Response);
+					int NumericResponse = Convert.ToInt32(Response);
 					DebugWriter.Wdbg(DebugLevel.I, "Checking response...");
 					if (NumericResponse >= 1 & NumericResponse <= MaximumOptions)
 					{

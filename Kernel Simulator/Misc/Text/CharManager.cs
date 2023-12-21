@@ -25,8 +25,8 @@ namespace KS.Misc.Text
 	{
 
 		/// <summary>
-        /// Gets all the letters and the numbers.
-        /// </summary>
+		/// Gets all the letters and the numbers.
+		/// </summary>
 		public static char[] GetAllLettersAndNumbers()
 		{
 			return Enumerable.Range(0, Convert.ToInt32(char.MaxValue) + 1).Select(CharNum => Convert.ToChar(CharNum)).Where(c => char.IsLetterOrDigit(c)).ToArray();
@@ -35,8 +35,8 @@ namespace KS.Misc.Text
 		}
 
 		/// <summary>
-        /// Gets all the letters.
-        /// </summary>
+		/// Gets all the letters.
+		/// </summary>
 		public static char[] GetAllLetters()
 		{
 			return Enumerable.Range(0, Convert.ToInt32(char.MaxValue) + 1).Select(CharNum => Convert.ToChar(CharNum)).Where(c => char.IsLetter(c)).ToArray();
@@ -45,8 +45,8 @@ namespace KS.Misc.Text
 		}
 
 		/// <summary>
-        /// Gets all the numbers.
-        /// </summary>
+		/// Gets all the numbers.
+		/// </summary>
 		public static char[] GetAllNumbers()
 		{
 			return Enumerable.Range(0, Convert.ToInt32(char.MaxValue) + 1).Select(CharNum => Convert.ToChar(CharNum)).Where(c => char.IsNumber(c)).ToArray();

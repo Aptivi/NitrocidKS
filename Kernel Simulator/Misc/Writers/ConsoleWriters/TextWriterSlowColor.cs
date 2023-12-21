@@ -24,7 +24,6 @@ using KS.Kernel;
 using KS.Languages;
 using KS.Misc.Reflection;
 using KS.Misc.Writers.DebugWriters;
-using Microsoft.VisualBasic.CompilerServices;
 using Terminaux.Colors;
 
 namespace KS.Misc.Writers.ConsoleWriters
@@ -33,12 +32,12 @@ namespace KS.Misc.Writers.ConsoleWriters
 	{
 
 		/// <summary>
-        /// Outputs the text into the terminal prompt slowly with no color support.
-        /// </summary>
-        /// <param name="msg">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
-        /// <param name="Line">Whether to print a new line or not</param>
-        /// <param name="MsEachLetter">Time in milliseconds to delay writing</param>
-        /// <param name="vars">Variables to format the message before it's written.</param>
+		/// Outputs the text into the terminal prompt slowly with no color support.
+		/// </summary>
+		/// <param name="msg">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
+		/// <param name="Line">Whether to print a new line or not</param>
+		/// <param name="MsEachLetter">Time in milliseconds to delay writing</param>
+		/// <param name="vars">Variables to format the message before it's written.</param>
 		public static void WriteSlowlyPlain(string msg, bool Line, double MsEachLetter, params object[] vars)
 		{
 			lock (TextWriterColor.WriteLock)
@@ -54,7 +53,7 @@ namespace KS.Misc.Writers.ConsoleWriters
 					foreach (char ch in chars)
 					{
 						Thread.Sleep((int)Math.Round(MsEachLetter));
-						TextWriterColor.WritePlain(Conversions.ToString(ch), false);
+						TextWriterColor.WritePlain(Convert.ToString(ch), false);
 					}
 					if (Line)
 					{
@@ -70,13 +69,13 @@ namespace KS.Misc.Writers.ConsoleWriters
 		}
 
 		/// <summary>
-        /// Outputs the text into the terminal prompt slowly with color support.
-        /// </summary>
-        /// <param name="msg">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
-        /// <param name="Line">Whether to print a new line or not</param>
-        /// <param name="MsEachLetter">Time in milliseconds to delay writing</param>
-        /// <param name="colorType">A type of colors that will be changed.</param>
-        /// <param name="vars">Variables to format the message before it's written.</param>
+		/// Outputs the text into the terminal prompt slowly with color support.
+		/// </summary>
+		/// <param name="msg">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
+		/// <param name="Line">Whether to print a new line or not</param>
+		/// <param name="MsEachLetter">Time in milliseconds to delay writing</param>
+		/// <param name="colorType">A type of colors that will be changed.</param>
+		/// <param name="vars">Variables to format the message before it's written.</param>
 		public static void WriteSlowly(string msg, bool Line, double MsEachLetter, KernelColorTools.ColTypes colorType, params object[] vars)
 		{
 			lock (TextWriterColor.WriteLock)
@@ -98,14 +97,14 @@ namespace KS.Misc.Writers.ConsoleWriters
 		}
 
 		/// <summary>
-        /// Outputs the text into the terminal prompt slowly with color support.
-        /// </summary>
-        /// <param name="msg">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
-        /// <param name="Line">Whether to print a new line or not</param>
-        /// <param name="MsEachLetter">Time in milliseconds to delay writing</param>
-        /// <param name="colorTypeForeground">A type of colors that will be changed for the foreground color.</param>
-        /// <param name="colorTypeBackground">A type of colors that will be changed for the background color.</param>
-        /// <param name="vars">Variables to format the message before it's written.</param>
+		/// Outputs the text into the terminal prompt slowly with color support.
+		/// </summary>
+		/// <param name="msg">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
+		/// <param name="Line">Whether to print a new line or not</param>
+		/// <param name="MsEachLetter">Time in milliseconds to delay writing</param>
+		/// <param name="colorTypeForeground">A type of colors that will be changed for the foreground color.</param>
+		/// <param name="colorTypeBackground">A type of colors that will be changed for the background color.</param>
+		/// <param name="vars">Variables to format the message before it's written.</param>
 		public static void WriteSlowly(string msg, bool Line, double MsEachLetter, KernelColorTools.ColTypes colorTypeForeground, KernelColorTools.ColTypes colorTypeBackground, params object[] vars)
 		{
 			lock (TextWriterColor.WriteLock)
@@ -128,13 +127,13 @@ namespace KS.Misc.Writers.ConsoleWriters
 		}
 
 		/// <summary>
-        /// Outputs the text into the terminal prompt slowly with color support.
-        /// </summary>
-        /// <param name="msg">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
-        /// <param name="Line">Whether to print a new line or not</param>
-        /// <param name="MsEachLetter">Time in milliseconds to delay writing</param>
-        /// <param name="color">A color that will be changed to.</param>
-        /// <param name="vars">Variables to format the message before it's written.</param>
+		/// Outputs the text into the terminal prompt slowly with color support.
+		/// </summary>
+		/// <param name="msg">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
+		/// <param name="Line">Whether to print a new line or not</param>
+		/// <param name="MsEachLetter">Time in milliseconds to delay writing</param>
+		/// <param name="color">A color that will be changed to.</param>
+		/// <param name="vars">Variables to format the message before it's written.</param>
 		public static void WriteSlowly(string msg, bool Line, double MsEachLetter, ConsoleColor color, params object[] vars)
 		{
 			lock (TextWriterColor.WriteLock)
@@ -157,14 +156,14 @@ namespace KS.Misc.Writers.ConsoleWriters
 		}
 
 		/// <summary>
-        /// Outputs the text into the terminal prompt slowly with color support.
-        /// </summary>
-        /// <param name="msg">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
-        /// <param name="Line">Whether to print a new line or not</param>
-        /// <param name="MsEachLetter">Time in milliseconds to delay writing</param>
-        /// <param name="ForegroundColor">A foreground color that will be changed to.</param>
-        /// <param name="BackgroundColor">A background color that will be changed to.</param>
-        /// <param name="vars">Variables to format the message before it's written.</param>
+		/// Outputs the text into the terminal prompt slowly with color support.
+		/// </summary>
+		/// <param name="msg">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
+		/// <param name="Line">Whether to print a new line or not</param>
+		/// <param name="MsEachLetter">Time in milliseconds to delay writing</param>
+		/// <param name="ForegroundColor">A foreground color that will be changed to.</param>
+		/// <param name="BackgroundColor">A background color that will be changed to.</param>
+		/// <param name="vars">Variables to format the message before it's written.</param>
 		public static void WriteSlowly(string msg, bool Line, double MsEachLetter, ConsoleColor ForegroundColor, ConsoleColor BackgroundColor, params object[] vars)
 		{
 			lock (TextWriterColor.WriteLock)
@@ -186,13 +185,13 @@ namespace KS.Misc.Writers.ConsoleWriters
 		}
 
 		/// <summary>
-        /// Outputs the text into the terminal prompt slowly with color support.
-        /// </summary>
-        /// <param name="msg">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
-        /// <param name="Line">Whether to print a new line or not</param>
-        /// <param name="MsEachLetter">Time in milliseconds to delay writing</param>
-        /// <param name="color">A color that will be changed to.</param>
-        /// <param name="vars">Variables to format the message before it's written.</param>
+		/// Outputs the text into the terminal prompt slowly with color support.
+		/// </summary>
+		/// <param name="msg">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
+		/// <param name="Line">Whether to print a new line or not</param>
+		/// <param name="MsEachLetter">Time in milliseconds to delay writing</param>
+		/// <param name="color">A color that will be changed to.</param>
+		/// <param name="vars">Variables to format the message before it's written.</param>
 		public static void WriteSlowly(string msg, bool Line, double MsEachLetter, Color color, params object[] vars)
 		{
 			lock (TextWriterColor.WriteLock)
@@ -217,14 +216,14 @@ namespace KS.Misc.Writers.ConsoleWriters
 		}
 
 		/// <summary>
-        /// Outputs the text into the terminal prompt slowly with color support.
-        /// </summary>
-        /// <param name="msg">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
-        /// <param name="Line">Whether to print a new line or not</param>
-        /// <param name="MsEachLetter">Time in milliseconds to delay writing</param>
-        /// <param name="ForegroundColor">A foreground color that will be changed to.</param>
-        /// <param name="BackgroundColor">A background color that will be changed to.</param>
-        /// <param name="vars">Variables to format the message before it's written.</param>
+		/// Outputs the text into the terminal prompt slowly with color support.
+		/// </summary>
+		/// <param name="msg">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
+		/// <param name="Line">Whether to print a new line or not</param>
+		/// <param name="MsEachLetter">Time in milliseconds to delay writing</param>
+		/// <param name="ForegroundColor">A foreground color that will be changed to.</param>
+		/// <param name="BackgroundColor">A background color that will be changed to.</param>
+		/// <param name="vars">Variables to format the message before it's written.</param>
 		public static void WriteSlowly(string msg, bool Line, double MsEachLetter, Color ForegroundColor, Color BackgroundColor, params object[] vars)
 		{
 			lock (TextWriterColor.WriteLock)

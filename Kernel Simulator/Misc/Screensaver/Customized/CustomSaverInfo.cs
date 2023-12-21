@@ -23,25 +23,25 @@ namespace KS.Misc.Screensaver.Customized
 	{
 
 		/// <summary>
-        /// Name of the screensaver
-        /// </summary>
+		/// Name of the screensaver
+		/// </summary>
 		public string SaverName { get; private set; }
 		/// <summary>
-        /// File name of the screensaver
-        /// </summary>
+		/// File name of the screensaver
+		/// </summary>
 		public string FileName { get; private set; }
 		/// <summary>
-        /// File path of the screensaver
-        /// </summary>
+		/// File path of the screensaver
+		/// </summary>
 		public string FilePath { get; private set; }
 		/// <summary>
-        /// The screensaver base code
-        /// </summary>
+		/// The screensaver base code
+		/// </summary>
 		public BaseScreensaver ScreensaverBase { get; private set; }
 
 		/// <summary>
-        /// Creates new screensaver info instance
-        /// </summary>
+		/// Creates new screensaver info instance
+		/// </summary>
 		internal CustomSaverInfo(string SaverName, string FileName, string FilePath, BaseScreensaver ScreensaverBase)
 		{
 			this.SaverName = string.IsNullOrWhiteSpace(SaverName) ? FileName : SaverName;

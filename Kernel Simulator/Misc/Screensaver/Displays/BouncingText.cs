@@ -45,8 +45,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _bouncingTextMaximumColorLevel = 255;
 
 		/// <summary>
-        /// [BouncingText] Enable 255 color support. Has a higher priority than 16 color support.
-        /// </summary>
+		/// [BouncingText] Enable 255 color support. Has a higher priority than 16 color support.
+		/// </summary>
 		public static bool BouncingText255Colors
 		{
 			get
@@ -59,8 +59,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingText] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
+		/// [BouncingText] Enable truecolor support. Has a higher priority than 255 color support.
+		/// </summary>
 		public static bool BouncingTextTrueColor
 		{
 			get
@@ -73,8 +73,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingText] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [BouncingText] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int BouncingTextDelay
 		{
 			get
@@ -89,8 +89,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingText] Text for Bouncing Text. Shorter is better.
-        /// </summary>
+		/// [BouncingText] Text for Bouncing Text. Shorter is better.
+		/// </summary>
 		public static string BouncingTextWrite
 		{
 			get
@@ -105,8 +105,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingText] Screensaver background color
-        /// </summary>
+		/// [BouncingText] Screensaver background color
+		/// </summary>
 		public static string BouncingTextBackgroundColor
 		{
 			get
@@ -119,8 +119,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingText] Screensaver foreground color
-        /// </summary>
+		/// [BouncingText] Screensaver foreground color
+		/// </summary>
 		public static string BouncingTextForegroundColor
 		{
 			get
@@ -133,8 +133,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingText] The minimum red color level (true color)
-        /// </summary>
+		/// [BouncingText] The minimum red color level (true color)
+		/// </summary>
 		public static int BouncingTextMinimumRedColorLevel
 		{
 			get
@@ -151,8 +151,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingText] The minimum green color level (true color)
-        /// </summary>
+		/// [BouncingText] The minimum green color level (true color)
+		/// </summary>
 		public static int BouncingTextMinimumGreenColorLevel
 		{
 			get
@@ -169,8 +169,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingText] The minimum blue color level (true color)
-        /// </summary>
+		/// [BouncingText] The minimum blue color level (true color)
+		/// </summary>
 		public static int BouncingTextMinimumBlueColorLevel
 		{
 			get
@@ -187,8 +187,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingText] The minimum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [BouncingText] The minimum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int BouncingTextMinimumColorLevel
 		{
 			get
@@ -206,8 +206,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingText] The maximum red color level (true color)
-        /// </summary>
+		/// [BouncingText] The maximum red color level (true color)
+		/// </summary>
 		public static int BouncingTextMaximumRedColorLevel
 		{
 			get
@@ -224,8 +224,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingText] The maximum green color level (true color)
-        /// </summary>
+		/// [BouncingText] The maximum green color level (true color)
+		/// </summary>
 		public static int BouncingTextMaximumGreenColorLevel
 		{
 			get
@@ -242,8 +242,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingText] The maximum blue color level (true color)
-        /// </summary>
+		/// [BouncingText] The maximum blue color level (true color)
+		/// </summary>
 		public static int BouncingTextMaximumBlueColorLevel
 		{
 			get
@@ -260,8 +260,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BouncingText] The maximum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [BouncingText] The maximum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int BouncingTextMaximumColorLevel
 		{
 			get
@@ -402,8 +402,8 @@ namespace KS.Misc.Screensaver.Displays
 		}
 
 		/// <summary>
-        /// Changes the color of bouncing text
-        /// </summary>
+		/// Changes the color of bouncing text
+		/// </summary>
 		public Color ChangeBouncingTextColor()
 		{
 			var RandomDriver = new Random();

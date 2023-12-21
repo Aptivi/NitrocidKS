@@ -25,29 +25,29 @@ namespace KS.ManPages
 	{
 
 		/// <summary>
-        /// The manual page title
-        /// </summary>
+		/// The manual page title
+		/// </summary>
 		public string Title { get; private set; }
 		/// <summary>
-        /// The manual page revision
-        /// </summary>
+		/// The manual page revision
+		/// </summary>
 		public string Revision { get; private set; }
 		/// <summary>
-        /// The body string (the contents of manual)
-        /// </summary>
+		/// The body string (the contents of manual)
+		/// </summary>
 		public StringBuilder Body { get; private set; }
 		/// <summary>
-        /// The list of todos
-        /// </summary>
+		/// The list of todos
+		/// </summary>
 		public List<string> Todos { get; private set; }
 		/// <summary>
-        /// Is the manual page valid?
-        /// </summary>
+		/// Is the manual page valid?
+		/// </summary>
 		public bool ValidManpage { get; private set; }
 
 		/// <summary>
-        /// Makes a new instance of manual
-        /// </summary>
+		/// Makes a new instance of manual
+		/// </summary>
 		internal Manual(string ManualFileName)
 		{
 			string Title = "";

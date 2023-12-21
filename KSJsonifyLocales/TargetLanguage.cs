@@ -18,35 +18,35 @@
 
 namespace KSJsonifyLocales
 {
-    /// <summary>
-    /// Target language class
-    /// </summary>
-    public class TargetLanguage
-    {
-        /// <summary>
-        /// The file name of the language
-        /// </summary>
-        public string FileName { get; private set; }
-        /// <summary>
-        /// The language name
-        /// </summary>
-        public string LanguageName { get; private set; }
-        /// <summary>
-        /// Chooses whether the language is custom or from the KS resources
-        /// </summary>
-        public bool CustomLanguage { get; private set; }
+	/// <summary>
+	/// Target language class
+	/// </summary>
+	public class TargetLanguage
+	{
+		/// <summary>
+		/// The file name of the language
+		/// </summary>
+		public string FileName { get; private set; }
+		/// <summary>
+		/// The language name
+		/// </summary>
+		public string LanguageName { get; private set; }
+		/// <summary>
+		/// Chooses whether the language is custom or from the KS resources
+		/// </summary>
+		public bool CustomLanguage { get; private set; }
 
-        /// <summary>
-        /// Makes a new class instance of TargetLanguage
-        /// </summary>
-        /// <param name="FileName">The file name of the language</param>
-        /// <param name="LanguageName">The language name</param>
-        /// <param name="CustomLanguage">Chooses whether the language is custom or from the KS resources</param>
-        public TargetLanguage(string FileName, string LanguageName, bool CustomLanguage)
-        {
-            this.FileName = FileName;
-            this.LanguageName = LanguageName;
-            this.CustomLanguage = CustomLanguage;
-        }
-    }
+		/// <summary>
+		/// Makes a new class instance of TargetLanguage
+		/// </summary>
+		/// <param name="FileName">The file name of the language</param>
+		/// <param name="LanguageName">The language name</param>
+		/// <param name="CustomLanguage">Chooses whether the language is custom or from the KS resources</param>
+		public TargetLanguage(string FileName, string LanguageName, bool CustomLanguage)
+		{
+			this.FileName = FileName;
+			this.LanguageName = LanguageName;
+			this.CustomLanguage = CustomLanguage;
+		}
+	}
 }

@@ -26,7 +26,6 @@ using KS.Misc.Text;
 using KS.Misc.Threading;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
-using Microsoft.VisualBasic.CompilerServices;
 using Terminaux.Base;
 using Terminaux.Colors;
 
@@ -49,8 +48,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static string _linotypoTextColor = new Color(ConsoleColor.White).PlainSequence;
 
 		/// <summary>
-        /// [Linotypo] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [Linotypo] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int LinotypoDelay
 		{
 			get
@@ -65,8 +64,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Linotypo] How many milliseconds to wait before writing the text in the new screen again?
-        /// </summary>
+		/// [Linotypo] How many milliseconds to wait before writing the text in the new screen again?
+		/// </summary>
 		public static int LinotypoNewScreenDelay
 		{
 			get
@@ -81,8 +80,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Linotypo] Text for Linotypo. Longer is better.
-        /// </summary>
+		/// [Linotypo] Text for Linotypo. Longer is better.
+		/// </summary>
 		public static string LinotypoWrite
 		{
 			get
@@ -97,8 +96,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Linotypo] Minimum writing speed in WPM
-        /// </summary>
+		/// [Linotypo] Minimum writing speed in WPM
+		/// </summary>
 		public static int LinotypoWritingSpeedMin
 		{
 			get
@@ -113,8 +112,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Linotypo] Maximum writing speed in WPM
-        /// </summary>
+		/// [Linotypo] Maximum writing speed in WPM
+		/// </summary>
 		public static int LinotypoWritingSpeedMax
 		{
 			get
@@ -129,8 +128,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Linotypo] Possibility that the writer made a typo in percent
-        /// </summary>
+		/// [Linotypo] Possibility that the writer made a typo in percent
+		/// </summary>
 		public static int LinotypoMissStrikePossibility
 		{
 			get
@@ -145,8 +144,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Linotypo] The text columns to be printed.
-        /// </summary>
+		/// [Linotypo] The text columns to be printed.
+		/// </summary>
 		public static int LinotypoTextColumns
 		{
 			get
@@ -163,8 +162,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Linotypo] How many characters to write before triggering the "line fill"?
-        /// </summary>
+		/// [Linotypo] How many characters to write before triggering the "line fill"?
+		/// </summary>
 		public static int LinotypoEtaoinThreshold
 		{
 			get
@@ -181,8 +180,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Linotypo] Possibility that the Etaoin pattern will be printed in all caps in percent
-        /// </summary>
+		/// [Linotypo] Possibility that the Etaoin pattern will be printed in all caps in percent
+		/// </summary>
 		public static int LinotypoEtaoinCappingPossibility
 		{
 			get
@@ -197,8 +196,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Linotypo] Line fill pattern type
-        /// </summary>
+		/// [Linotypo] Line fill pattern type
+		/// </summary>
 		public static FillType LinotypoEtaoinType
 		{
 			get
@@ -211,8 +210,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Linotypo] Possibility that the writer missed a character in percent
-        /// </summary>
+		/// [Linotypo] Possibility that the writer missed a character in percent
+		/// </summary>
 		public static int LinotypoMissPossibility
 		{
 			get
@@ -227,8 +226,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [Linotypo] Text color
-        /// </summary>
+		/// [Linotypo] Text color
+		/// </summary>
 		public static string LinotypoTextColor
 		{
 			get
@@ -244,16 +243,16 @@ namespace KS.Misc.Screensaver.Displays
 		public enum FillType
 		{
 			/// <summary>
-            /// Prints the known pattern of etaoin characters, such as: etaoin shrdlu
-            /// </summary>
+			/// Prints the known pattern of etaoin characters, such as: etaoin shrdlu
+			/// </summary>
 			EtaoinPattern,
 			/// <summary>
-            /// Prints the complete pattern of etaoin characters, such as: etaoin shrdlu cmfwyp vbgkqj xz
-            /// </summary>
+			/// Prints the complete pattern of etaoin characters, such as: etaoin shrdlu cmfwyp vbgkqj xz
+			/// </summary>
 			EtaoinComplete,
 			/// <summary>
-            /// Prints the random set of characters to rapidly fill in the line
-            /// </summary>
+			/// Prints the random set of characters to rapidly fill in the line
+			/// </summary>
 			RandomChars
 		}
 
@@ -461,7 +460,7 @@ namespace KS.Misc.Screensaver.Displays
 							DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Etaoin mode on. Delaying {0} ms...", WriteMs);
 
 							// Get the character
-							StruckChar = Conversions.ToChar(LinotypeLayout[LinotypeColumnIndex, LinotypeKeyIndex]);
+							StruckChar = Convert.ToChar(LinotypeLayout[LinotypeColumnIndex, LinotypeKeyIndex]);
 							if (CappedEtaoin)
 							{
 								DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Capped Etaoin.");
@@ -521,7 +520,7 @@ namespace KS.Misc.Screensaver.Displays
 								{
 									// Miss is guaranteed. Simulate the missed character
 									DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Missed a character!");
-									StruckChar = Conversions.ToChar("");
+									StruckChar = '\0';
 								}
 								// Typo is guaranteed. Select a strike string randomly until the struck key is found in between the characters
 								else
@@ -533,9 +532,9 @@ namespace KS.Misc.Screensaver.Displays
 									while (!StruckFound)
 									{
 										StrikeCharsIndex = RandomDriver.Next(0, Strikes.Count - 1);
-										CappedStrike = char.IsUpper(StruckChar) | CapSymbols.Contains(Conversions.ToString(StruckChar));
+										CappedStrike = char.IsUpper(StruckChar) | CapSymbols.Contains(Convert.ToString(StruckChar));
 										StrikesString = CappedStrike ? CapStrikes[StrikeCharsIndex] : Strikes[StrikeCharsIndex];
-										StruckFound = !string.IsNullOrEmpty(StrikesString) && StrikesString.Contains(Conversions.ToString(StruckChar));
+										StruckFound = !string.IsNullOrEmpty(StrikesString) && StrikesString.Contains(Convert.ToString(StruckChar));
 										DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Strike chars index: {0}", StrikeCharsIndex);
 										DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Capped strike: {0}", CappedStrike);
 										DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Strikes pattern: {0}", StrikesString);
@@ -546,7 +545,7 @@ namespace KS.Misc.Screensaver.Displays
 									// Select a random character that is a typo from the selected strike index
 									int RandomStrikeIndex = RandomDriver.Next(0, StrikesString.Length - 1);
 									char MistypedChar = StrikesString[RandomStrikeIndex];
-									if (@"`-=\][';/.,".Contains(Conversions.ToString(MistypedChar)) & CappedStrike)
+									if (@"`-=\][';/.,".Contains(Convert.ToString(MistypedChar)) & CappedStrike)
 									{
 										// The mistyped character is a symbol and the strike is capped. Select a symbol from CapStrikes.
 										DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Mistyped character is a symbol and the strike is capped.");
@@ -568,8 +567,8 @@ namespace KS.Misc.Screensaver.Displays
 						}
 
 						// Write the final character to the console and wait
-						if (!(Conversions.ToString(StruckChar) == Microsoft.VisualBasic.Constants.vbNullChar))
-							TextWriterColor.WritePlain(Conversions.ToString(StruckChar), false);
+						if (!(Convert.ToString(StruckChar) == "\0"))
+							TextWriterColor.WritePlain(Convert.ToString(StruckChar), false);
 						ThreadManager.SleepNoBlock(WriteMs, ScreensaverDisplayer.ScreensaverDisplayerThread);
 
 						// If we're on the character counter mode, increment this for every character until the "line fill" mode starts
@@ -643,11 +642,11 @@ namespace KS.Misc.Screensaver.Displays
 		}
 
 		/// <summary>
-        /// Instructs the Linotypo screensaver to go to the next column
-        /// </summary>
-        /// <param name="CurrentColumn"></param>
-        /// <param name="CurrentColumnRowConsole"></param>
-        /// <param name="ColumnRowConsoleThreshold"></param>
+		/// Instructs the Linotypo screensaver to go to the next column
+		/// </summary>
+		/// <param name="CurrentColumn"></param>
+		/// <param name="CurrentColumnRowConsole"></param>
+		/// <param name="ColumnRowConsoleThreshold"></param>
 		public void HandleNextColumn(ref int CurrentColumn, ref int CurrentColumnRowConsole, int ColumnRowConsoleThreshold)
 		{
 			if (LinotypoSettings.LinotypoTextColumns > 1)

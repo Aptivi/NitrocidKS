@@ -19,6 +19,7 @@
 
 using System.Globalization;
 using System.Linq;
+using KS.Resources;
 using Newtonsoft.Json.Linq;
 
 namespace KS.Languages
@@ -27,40 +28,40 @@ namespace KS.Languages
 	{
 
 		/// <summary>
-        /// The three-letter language name found in resources. Some languages have translated variants, and they usually end with "_T" in resources and "-T" in KS.
-        /// </summary>
+		/// The three-letter language name found in resources. Some languages have translated variants, and they usually end with "_T" in resources and "-T" in KS.
+		/// </summary>
 		public readonly string ThreeLetterLanguageName;
 		/// <summary>
-        /// The full name of language without the country specifier.
-        /// </summary>
+		/// The full name of language without the country specifier.
+		/// </summary>
 		public readonly string FullLanguageName;
 		/// <summary>
-        /// Whether or not the language is transliterable (Arabic, Korea, ...)
-        /// </summary>
+		/// Whether or not the language is transliterable (Arabic, Korea, ...)
+		/// </summary>
 		public readonly bool Transliterable;
 		/// <summary>
-        /// Whether the language is custom
-        /// </summary>
+		/// Whether the language is custom
+		/// </summary>
 		public readonly bool Custom;
 		/// <summary>
-        /// The localization information containing KS strings
-        /// </summary>
+		/// The localization information containing KS strings
+		/// </summary>
 		public readonly JObject LanguageResource;
 		/// <summary>
-        /// List of cultures of language
-        /// </summary>
+		/// List of cultures of language
+		/// </summary>
 		public readonly List<CultureInfo> Cultures;
 
 		/// <summary>
-        /// Initializes the new instance of language information
-        /// </summary>
-        /// <param name="LangName">The three-letter language name found in resources. Some languages have translated variants, and they usually end with "_T" in resources and "-T" in KS.</param>
-        /// <param name="FullLanguageName">The full name of language without the country specifier.</param>
-        /// <param name="Transliterable">Whether or not the language is transliterable (Arabic, Korea, ...)</param>
+		/// Initializes the new instance of language information
+		/// </summary>
+		/// <param name="LangName">The three-letter language name found in resources. Some languages have translated variants, and they usually end with "_T" in resources and "-T" in KS.</param>
+		/// <param name="FullLanguageName">The full name of language without the country specifier.</param>
+		/// <param name="Transliterable">Whether or not the language is transliterable (Arabic, Korea, ...)</param>
 		public LanguageInfo(string LangName, string FullLanguageName, bool Transliterable)
 		{
 			// Check to see if the language being installed is found in resources
-			if (!string.IsNullOrEmpty(My.Resources.Resources.ResourceManager.GetString(LangName.Replace("-", "_"))))
+			if (!string.IsNullOrEmpty(KernelResources.ResourceManager.GetString(LangName.Replace("-", "_"))))
 			{
 				// Install values to the object instance
 				ThreeLetterLanguageName = LangName;
@@ -83,7 +84,7 @@ namespace KS.Languages
 				this.Cultures = Cultures;
 
 				// Get instance of langauge resource and install it
-				JObject LanguageResource = (JObject)JObject.Parse(My.Resources.Resources.ResourceManager.GetString(LangName.Replace("-", "_"))).SelectToken("Localizations");
+				JObject LanguageResource = (JObject)JObject.Parse(KernelResources.ResourceManager.GetString(LangName.Replace("-", "_"))).SelectToken("Localizations");
 				this.LanguageResource = LanguageResource;
 				Custom = false;
 			}
@@ -94,11 +95,11 @@ namespace KS.Languages
 		}
 
 		/// <summary>
-        /// Initializes the new instance of language information
-        /// </summary>
-        /// <param name="LangName">The three-letter language name found in resources. Some languages have translated variants, and they usually end with "_T" in resources and "-T" in KS.</param>
-        /// <param name="FullLanguageName">The full name of language without the country specifier.</param>
-        /// <param name="Transliterable">Whether or not the language is transliterable (Arabic, Korea, ...)</param>
+		/// Initializes the new instance of language information
+		/// </summary>
+		/// <param name="LangName">The three-letter language name found in resources. Some languages have translated variants, and they usually end with "_T" in resources and "-T" in KS.</param>
+		/// <param name="FullLanguageName">The full name of language without the country specifier.</param>
+		/// <param name="Transliterable">Whether or not the language is transliterable (Arabic, Korea, ...)</param>
 		public LanguageInfo(string LangName, string FullLanguageName, bool Transliterable, JObject LanguageToken)
 		{
 			// Install values to the object instance
@@ -122,7 +123,7 @@ namespace KS.Languages
 			this.Cultures = Cultures;
 
 			// Install it
-			int EnglishLength = JObject.Parse(My.Resources.Resources.eng).SelectToken("Localizations").Count();
+			int EnglishLength = JObject.Parse(KernelResources.eng).SelectToken("Localizations").Count();
 			Custom = true;
 			if (LanguageToken.Count == EnglishLength)
 			{

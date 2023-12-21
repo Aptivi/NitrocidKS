@@ -31,10 +31,10 @@ namespace KS.Files.Operations
 	{
 
 		/// <summary>
-        /// Makes a directory
-        /// </summary>
-        /// <param name="NewDirectory">New directory</param>
-        /// <exception cref="IOException"></exception>
+		/// Makes a directory
+		/// </summary>
+		/// <param name="NewDirectory">New directory</param>
+		/// <exception cref="IOException"></exception>
 		public static void MakeDirectory(string NewDirectory, bool ThrowIfDirectoryExists = true)
 		{
 			Filesystem.ThrowOnInvalidPath(NewDirectory);
@@ -54,11 +54,11 @@ namespace KS.Files.Operations
 		}
 
 		/// <summary>
-        /// Makes a directory
-        /// </summary>
-        /// <param name="NewDirectory">New directory</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
-        /// <exception cref="IOException"></exception>
+		/// Makes a directory
+		/// </summary>
+		/// <param name="NewDirectory">New directory</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
+		/// <exception cref="IOException"></exception>
 		public static bool TryMakeDirectory(string NewDirectory, bool ThrowIfDirectoryExists = true)
 		{
 			try
@@ -66,17 +66,17 @@ namespace KS.Files.Operations
 				MakeDirectory(NewDirectory, ThrowIfDirectoryExists);
 				return true;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				return false;
 			}
 		}
 
 		/// <summary>
-        /// Makes a file
-        /// </summary>
-        /// <param name="NewFile">New file</param>
-        /// <exception cref="IOException"></exception>
+		/// Makes a file
+		/// </summary>
+		/// <param name="NewFile">New file</param>
+		/// <exception cref="IOException"></exception>
 		public static void MakeFile(string NewFile, bool ThrowIfFileExists = true)
 		{
 			Filesystem.ThrowOnInvalidPath(NewFile);
@@ -107,11 +107,11 @@ namespace KS.Files.Operations
 		}
 
 		/// <summary>
-        /// Makes a file
-        /// </summary>
-        /// <param name="NewFile">New file</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
-        /// <exception cref="IOException"></exception>
+		/// Makes a file
+		/// </summary>
+		/// <param name="NewFile">New file</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
+		/// <exception cref="IOException"></exception>
 		public static bool TryMakeFile(string NewFile, bool ThrowIfFileExists = true)
 		{
 			try
@@ -119,17 +119,17 @@ namespace KS.Files.Operations
 				MakeFile(NewFile, ThrowIfFileExists);
 				return true;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				return false;
 			}
 		}
 
 		/// <summary>
-        /// Makes an empty JSON file
-        /// </summary>
-        /// <param name="NewFile">New JSON file</param>
-        /// <exception cref="IOException"></exception>
+		/// Makes an empty JSON file
+		/// </summary>
+		/// <param name="NewFile">New JSON file</param>
+		/// <exception cref="IOException"></exception>
 		public static void MakeJsonFile(string NewFile, bool ThrowIfFileExists = true)
 		{
 			Filesystem.ThrowOnInvalidPath(NewFile);
@@ -163,11 +163,11 @@ namespace KS.Files.Operations
 		}
 
 		/// <summary>
-        /// Makes an empty JSON file
-        /// </summary>
-        /// <param name="NewFile">New JSON file</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
-        /// <exception cref="IOException"></exception>
+		/// Makes an empty JSON file
+		/// </summary>
+		/// <param name="NewFile">New JSON file</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
+		/// <exception cref="IOException"></exception>
 		public static bool TryMakeJsonFile(string NewFile, bool ThrowIfFileExists = true)
 		{
 			try
@@ -175,7 +175,7 @@ namespace KS.Files.Operations
 				MakeJsonFile(NewFile, ThrowIfFileExists);
 				return true;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				return false;
 			}

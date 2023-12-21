@@ -24,54 +24,54 @@ namespace KS.Arguments.ArgumentBase
 	{
 
 		/// <summary>
-        /// The argument
-        /// </summary>
+		/// The argument
+		/// </summary>
 		public string Argument { get; private set; }
 		/// <summary>
-        /// The type of argument
-        /// </summary>
+		/// The type of argument
+		/// </summary>
 		public ArgumentType Type { get; private set; }
 		/// <summary>
-        /// The untranslated help definition of argument. Translated by <see cref="GetTranslatedHelpEntry()"/>
-        /// </summary>
+		/// The untranslated help definition of argument. Translated by <see cref="GetTranslatedHelpEntry()"/>
+		/// </summary>
 		public string HelpDefinition { get; set; }
 		/// <summary>
-        /// The help usage of command.
-        /// </summary>
+		/// The help usage of command.
+		/// </summary>
 		public string HelpUsage { get; private set; }
 		/// <summary>
-        /// Does the argument require arguments?
-        /// </summary>
+		/// Does the argument require arguments?
+		/// </summary>
 		public bool ArgumentsRequired { get; private set; }
 		/// <summary>
-        /// User must specify at least this number of arguments
-        /// </summary>
+		/// User must specify at least this number of arguments
+		/// </summary>
 		public int MinimumArguments { get; private set; }
 		/// <summary>
-        /// Kernel argument base for execution
-        /// </summary>
+		/// Kernel argument base for execution
+		/// </summary>
 		public ArgumentExecutor ArgumentBase { get; private set; }
 		/// <summary>
-        /// Is the argument obsolete?
-        /// </summary>
+		/// Is the argument obsolete?
+		/// </summary>
 		public bool Obsolete { get; private set; }
 		/// <summary>
-        /// An extra help action intended to show extra information
-        /// </summary>
+		/// An extra help action intended to show extra information
+		/// </summary>
 		public Action AdditionalHelpAction { get; private set; }
 
 		/// <summary>
-        /// Installs a new instance of argument info class
-        /// </summary>
-        /// <param name="Argument">Argument</param>
-        /// <param name="Type">Argument type</param>
-        /// <param name="HelpDefinition">Argument help definition</param>
-        /// <param name="HelpUsage">Command help usage</param>
-        /// <param name="ArgumentsRequired">Does the argument require arguments?</param>
-        /// <param name="MinimumArguments">User must specify at least this number of arguments</param>
-        /// <param name="ArgumentBase">Kernel argument base for execution</param>
-        /// <param name="Obsolete">Is the command obsolete?</param>
-        /// <param name="AdditionalHelpAction">An extra help action intended to show extra information</param>
+		/// Installs a new instance of argument info class
+		/// </summary>
+		/// <param name="Argument">Argument</param>
+		/// <param name="Type">Argument type</param>
+		/// <param name="HelpDefinition">Argument help definition</param>
+		/// <param name="HelpUsage">Command help usage</param>
+		/// <param name="ArgumentsRequired">Does the argument require arguments?</param>
+		/// <param name="MinimumArguments">User must specify at least this number of arguments</param>
+		/// <param name="ArgumentBase">Kernel argument base for execution</param>
+		/// <param name="Obsolete">Is the command obsolete?</param>
+		/// <param name="AdditionalHelpAction">An extra help action intended to show extra information</param>
 		public ArgumentInfo(string Argument, ArgumentType Type, string HelpDefinition, string HelpUsage, bool ArgumentsRequired, int MinimumArguments, ArgumentExecutor ArgumentBase, bool Obsolete = false, Action AdditionalHelpAction = null)
 		{
 			this.Argument = Argument;
@@ -86,9 +86,9 @@ namespace KS.Arguments.ArgumentBase
 		}
 
 		/// <summary>
-        /// Gets the translated version of help entry (KS built-in arguments only)
-        /// </summary>
-        /// <returns></returns>
+		/// Gets the translated version of help entry (KS built-in arguments only)
+		/// </summary>
+		/// <returns></returns>
 		public string GetTranslatedHelpEntry()
 		{
 			return Translate.DoTranslation(HelpDefinition);

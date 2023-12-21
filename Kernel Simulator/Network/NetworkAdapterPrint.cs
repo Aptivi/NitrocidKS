@@ -30,8 +30,8 @@ namespace KS.Network
 	{
 
 		/// <summary>
-        /// Print each of adapters' properties to the console.
-        /// </summary>
+		/// Print each of adapters' properties to the console.
+		/// </summary>
 		public static void PrintAdapterProperties()
 		{
 			NetworkInterface[] adapters = NetworkInterface.GetAllNetworkInterfaces();
@@ -132,12 +132,12 @@ namespace KS.Network
 		}
 
 		/// <summary>
-        /// Prints IPv4 info for adapter
-        /// </summary>
-        /// <param name="NInterface">A network interface or adapter</param>
-        /// <param name="Properties">Network properties</param>
-        /// <param name="Statistics">Network statistics</param>
-        /// <param name="AdapterNumber">Reference adapter number</param>
+		/// Prints IPv4 info for adapter
+		/// </summary>
+		/// <param name="NInterface">A network interface or adapter</param>
+		/// <param name="Properties">Network properties</param>
+		/// <param name="Statistics">Network statistics</param>
+		/// <param name="AdapterNumber">Reference adapter number</param>
 		public static void PrintAdapterIPv4Info(NetworkInterface NInterface, IPv4InterfaceProperties Properties, IPv4InterfaceStatistics Statistics, long AdapterNumber)
 		{
 			if (Flags.ExtensiveAdapterInformation)
@@ -151,11 +151,11 @@ namespace KS.Network
 		}
 
 		/// <summary>
-        /// Prints IPv6 info for adapter
-        /// </summary>
-        /// <param name="NInterface">A network interface or adapter</param>
-        /// <param name="Properties">Network properties</param>
-        /// <param name="AdapterNumber">Reference adapter number</param>
+		/// Prints IPv6 info for adapter
+		/// </summary>
+		/// <param name="NInterface">A network interface or adapter</param>
+		/// <param name="Properties">Network properties</param>
+		/// <param name="AdapterNumber">Reference adapter number</param>
 		public static void PrintAdapterIPv6Info(NetworkInterface NInterface, IPv6InterfaceProperties Properties, long AdapterNumber)
 		{
 			if (Flags.ExtensiveAdapterInformation)
@@ -169,10 +169,10 @@ namespace KS.Network
 		}
 
 		/// <summary>
-        /// Prints general network info
-        /// </summary>
-        /// <param name="IPv4Stat">IPv4 general statistics</param>
-        /// <param name="IPv6Stat">IPv6 general statistics</param>
+		/// Prints general network info
+		/// </summary>
+		/// <param name="IPv4Stat">IPv4 general statistics</param>
+		/// <param name="IPv6Stat">IPv6 general statistics</param>
 		public static void PrintGeneralNetInfo(IPGlobalStatistics IPv4Stat, IPGlobalStatistics IPv6Stat)
 		{
 			TextWriterColor.Write(Translate.DoTranslation("General IPv6 properties") + Kernel.Kernel.NewLine + Translate.DoTranslation("Packets (inbound):") + " {0}/{1}" + Kernel.Kernel.NewLine + Translate.DoTranslation("Packets (outbound):") + " {2}/{3}" + Kernel.Kernel.NewLine + Translate.DoTranslation("Errors in received packets:") + " {4}/{5}/{6}" + Kernel.Kernel.NewLine + Translate.DoTranslation("General IPv4 properties") + Kernel.Kernel.NewLine + Translate.DoTranslation("Packets (inbound):") + " {7}/{8}" + Kernel.Kernel.NewLine + Translate.DoTranslation("Packets (outbound):") + " {9}/{10}" + Kernel.Kernel.NewLine + Translate.DoTranslation("Errors in received packets:") + " {11}/{12}/{13}", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), IPv6Stat.ReceivedPackets, IPv6Stat.ReceivedPacketsDelivered, IPv6Stat.OutputPacketRequests, IPv6Stat.OutputPacketsDiscarded, IPv6Stat.ReceivedPacketsWithAddressErrors, IPv6Stat.ReceivedPacketsWithHeadersErrors, IPv6Stat.ReceivedPacketsWithUnknownProtocol, IPv4Stat.ReceivedPackets, IPv4Stat.ReceivedPacketsDelivered, IPv4Stat.OutputPacketRequests, IPv4Stat.OutputPacketsDiscarded, IPv4Stat.ReceivedPacketsWithAddressErrors, IPv4Stat.ReceivedPacketsWithHeadersErrors, IPv4Stat.ReceivedPacketsWithUnknownProtocol);

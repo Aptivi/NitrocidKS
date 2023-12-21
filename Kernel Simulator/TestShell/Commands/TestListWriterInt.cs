@@ -30,7 +30,7 @@ namespace KS.TestShell.Commands
 		public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
 		{
 			var NormalIntegerList = new List<int>() { 1, 2, 3 };
-			var ArrayIntegerList = new List<int[]>() { { { 1, 2, 3 } }, { { 1, 2, 3 } }, { { 1, 2, 3 } } };
+			var ArrayIntegerList = new List<int[]>() { { new int[] { 1, 2, 3 } }, { new int[] { 1, 2, 3 } }, { new int[] { 1, 2, 3 } } };
 			TextWriterColor.Write(Translate.DoTranslation("Normal integer list:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
 			ListWriterColor.WriteList(NormalIntegerList);
 			TextWriterColor.Write(Translate.DoTranslation("Array integer list:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));

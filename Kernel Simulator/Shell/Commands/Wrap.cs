@@ -42,7 +42,7 @@ namespace KS.Shell.Commands
 					var AltThreads = ShellStart.ShellStack[ShellStart.ShellStack.Count - 1].AltCommandThreads;
 					if (AltThreads.Count == 0 || AltThreads[AltThreads.Count - 1].IsAlive)
 					{
-						var WrappedCommand = new KernelThread($"Wrapped Shell Command Thread", false, (_) => GetCommand.ExecuteCommand());
+						var WrappedCommand = new KernelThread($"Wrapped Shell Command Thread", false, (param) => GetCommand.ExecuteCommand((GetCommand.ExecuteCommandThreadParameters)param));
 						ShellStart.ShellStack[ShellStart.ShellStack.Count - 1].AltCommandThreads.Add(WrappedCommand);
 					}
 					Shell.GetLine(ListArgs[0], false, WrapOutputPath);

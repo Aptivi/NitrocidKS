@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when there is no such mail directory
-    /// </summary>
+	/// Thrown when there is no such mail directory
+	/// </summary>
 	public class NoSuchMailDirectoryException : Exception
 	{
 

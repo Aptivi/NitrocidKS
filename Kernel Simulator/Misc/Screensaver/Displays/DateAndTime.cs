@@ -43,8 +43,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _dateAndTimeMaximumColorLevel = 255;
 
 		/// <summary>
-        /// [DateAndTime] Enable 255 color support. Has a higher priority than 16 color support.
-        /// </summary>
+		/// [DateAndTime] Enable 255 color support. Has a higher priority than 16 color support.
+		/// </summary>
 		public static bool DateAndTime255Colors
 		{
 			get
@@ -57,8 +57,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [DateAndTime] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
+		/// [DateAndTime] Enable truecolor support. Has a higher priority than 255 color support.
+		/// </summary>
 		public static bool DateAndTimeTrueColor
 		{
 			get
@@ -71,8 +71,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [DateAndTime] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [DateAndTime] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int DateAndTimeDelay
 		{
 			get
@@ -87,8 +87,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [DateAndTime] The minimum red color level (true color)
-        /// </summary>
+		/// [DateAndTime] The minimum red color level (true color)
+		/// </summary>
 		public static int DateAndTimeMinimumRedColorLevel
 		{
 			get
@@ -105,8 +105,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [DateAndTime] The minimum green color level (true color)
-        /// </summary>
+		/// [DateAndTime] The minimum green color level (true color)
+		/// </summary>
 		public static int DateAndTimeMinimumGreenColorLevel
 		{
 			get
@@ -123,8 +123,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [DateAndTime] The minimum blue color level (true color)
-        /// </summary>
+		/// [DateAndTime] The minimum blue color level (true color)
+		/// </summary>
 		public static int DateAndTimeMinimumBlueColorLevel
 		{
 			get
@@ -141,8 +141,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [DateAndTime] The minimum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [DateAndTime] The minimum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int DateAndTimeMinimumColorLevel
 		{
 			get
@@ -160,8 +160,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [DateAndTime] The maximum red color level (true color)
-        /// </summary>
+		/// [DateAndTime] The maximum red color level (true color)
+		/// </summary>
 		public static int DateAndTimeMaximumRedColorLevel
 		{
 			get
@@ -178,8 +178,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [DateAndTime] The maximum green color level (true color)
-        /// </summary>
+		/// [DateAndTime] The maximum green color level (true color)
+		/// </summary>
 		public static int DateAndTimeMaximumGreenColorLevel
 		{
 			get
@@ -196,8 +196,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [DateAndTime] The maximum blue color level (true color)
-        /// </summary>
+		/// [DateAndTime] The maximum blue color level (true color)
+		/// </summary>
 		public static int DateAndTimeMaximumBlueColorLevel
 		{
 			get
@@ -214,8 +214,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [DateAndTime] The maximum color level (255 colors or 16 colors)
-        /// </summary>
+		/// [DateAndTime] The maximum color level (255 colors or 16 colors)
+		/// </summary>
 		public static int DateAndTimeMaximumColorLevel
 		{
 			get
@@ -267,8 +267,8 @@ namespace KS.Misc.Screensaver.Displays
 		}
 
 		/// <summary>
-        /// Changes the color of date and time
-        /// </summary>
+		/// Changes the color of date and time
+		/// </summary>
 		public Color ChangeDateAndTimeColor()
 		{
 			Color ColorInstance;

@@ -30,12 +30,12 @@ namespace KS.Files.Querying
 	{
 
 		/// <summary>
-        /// Searches a file for string
-        /// </summary>
-        /// <param name="FilePath">File path</param>
-        /// <param name="StringLookup">String to find</param>
-        /// <returns>The list if successful; null if unsuccessful</returns>
-        /// <exception cref="IOException"></exception>
+		/// Searches a file for string
+		/// </summary>
+		/// <param name="FilePath">File path</param>
+		/// <param name="StringLookup">String to find</param>
+		/// <returns>The list if successful; null if unsuccessful</returns>
+		/// <exception cref="IOException"></exception>
 		public static List<string> SearchFileForString(string FilePath, string StringLookup)
 		{
 			try
@@ -66,12 +66,12 @@ namespace KS.Files.Querying
 		}
 
 		/// <summary>
-        /// Searches a file for string using regexp
-        /// </summary>
-        /// <param name="FilePath">File path</param>
-        /// <param name="StringLookup">String to find</param>
-        /// <returns>The list if successful; null if unsuccessful</returns>
-        /// <exception cref="IOException"></exception>
+		/// Searches a file for string using regexp
+		/// </summary>
+		/// <param name="FilePath">File path</param>
+		/// <param name="StringLookup">String to find</param>
+		/// <returns>The list if successful; null if unsuccessful</returns>
+		/// <exception cref="IOException"></exception>
 		public static List<string> SearchFileForStringRegexp(string FilePath, Regex StringLookup)
 		{
 			try

@@ -28,12 +28,12 @@ namespace KS.Misc.Reflection
 	public static class AssemblyLookup
 	{
 
-		private readonly static List<string> AssemblyLookupPaths = new();
+		private static readonly List<string> AssemblyLookupPaths = [];
 
 		/// <summary>
-        /// Adds the path pointing to the dependencies to the assembly search path
-        /// </summary>
-        /// <param name="Path">Path to the dependencies</param>
+		/// Adds the path pointing to the dependencies to the assembly search path
+		/// </summary>
+		/// <param name="Path">Path to the dependencies</param>
 		public static void AddPathToAssemblySearchPath(string Path)
 		{
 			Path = Filesystem.NeutralizePath(Path);
@@ -47,9 +47,9 @@ namespace KS.Misc.Reflection
 		}
 
 		/// <summary>
-        /// Loads assembly from the search paths
-        /// </summary>
-        /// <returns>If successful, returns the assembly instance. Otherwise, null.</returns>
+		/// Loads assembly from the search paths
+		/// </summary>
+		/// <returns>If successful, returns the assembly instance. Otherwise, null.</returns>
 		internal static Assembly LoadFromAssemblySearchPaths(object sender, ResolveEventArgs args)
 		{
 			Assembly FinalAssembly = null;

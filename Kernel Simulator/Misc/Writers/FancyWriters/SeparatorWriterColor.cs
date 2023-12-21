@@ -27,86 +27,86 @@ namespace KS.Misc.Writers.FancyWriters
 	{
 
 		/// <summary>
-        /// Draw a separator with text
-        /// </summary>
-        /// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
-        /// <param name="PrintSuffix">Whether or not to print the leading suffix. Only use if you don't have suffix on your text.</param>
-        /// <param name="Vars">Variables to format the message before it's written.</param>
+		/// Draw a separator with text
+		/// </summary>
+		/// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
+		/// <param name="PrintSuffix">Whether or not to print the leading suffix. Only use if you don't have suffix on your text.</param>
+		/// <param name="Vars">Variables to format the message before it's written.</param>
 		public static void WriteSeparator(string Text, bool PrintSuffix, params object[] Vars)
 		{
 			TermSeparator.WriteSeparator(Text, PrintSuffix, Vars);
 		}
 
 		/// <summary>
-        /// Draw a separator with text
-        /// </summary>
-        /// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
-        /// <param name="PrintSuffix">Whether or not to print the leading suffix. Only use if you don't have suffix on your text.</param>
-        /// <param name="ColTypes">A type of colors that will be changed.</param>
-        /// <param name="Vars">Variables to format the message before it's written.</param>
+		/// Draw a separator with text
+		/// </summary>
+		/// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
+		/// <param name="PrintSuffix">Whether or not to print the leading suffix. Only use if you don't have suffix on your text.</param>
+		/// <param name="ColTypes">A type of colors that will be changed.</param>
+		/// <param name="Vars">Variables to format the message before it's written.</param>
 		public static void WriteSeparator(string Text, bool PrintSuffix, KernelColorTools.ColTypes ColTypes, params object[] Vars)
 		{
 			TermSeparator.WriteSeparatorColor(Text, PrintSuffix, KernelColorTools.GetConsoleColor(ColTypes), Vars);
 		}
 
 		/// <summary>
-        /// Draw a separator with text
-        /// </summary>
-        /// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
-        /// <param name="PrintSuffix">Whether or not to print the leading suffix. Only use if you don't have suffix on your text.</param>
-        /// <param name="colorTypeForeground">A type of colors that will be changed for the foreground color.</param>
-        /// <param name="colorTypeBackground">A type of colors that will be changed for the background color.</param>
-        /// <param name="Vars">Variables to format the message before it's written.</param>
+		/// Draw a separator with text
+		/// </summary>
+		/// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
+		/// <param name="PrintSuffix">Whether or not to print the leading suffix. Only use if you don't have suffix on your text.</param>
+		/// <param name="colorTypeForeground">A type of colors that will be changed for the foreground color.</param>
+		/// <param name="colorTypeBackground">A type of colors that will be changed for the background color.</param>
+		/// <param name="Vars">Variables to format the message before it's written.</param>
 		public static void WriteSeparator(string Text, bool PrintSuffix, KernelColorTools.ColTypes colorTypeForeground, KernelColorTools.ColTypes colorTypeBackground, params object[] Vars)
 		{
 			TermSeparator.WriteSeparatorColorBack(Text, PrintSuffix, KernelColorTools.GetConsoleColor(colorTypeForeground), KernelColorTools.GetConsoleColor(colorTypeBackground), Vars);
 		}
 
 		/// <summary>
-        /// Draw a separator with text
-        /// </summary>
-        /// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
-        /// <param name="PrintSuffix">Whether or not to print the leading suffix. Only use if you have suffix on your text.</param>
-        /// <param name="Color">A color that will be changed to.</param>
-        /// <param name="Vars">Variables to format the message before it's written.</param>
+		/// Draw a separator with text
+		/// </summary>
+		/// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
+		/// <param name="PrintSuffix">Whether or not to print the leading suffix. Only use if you have suffix on your text.</param>
+		/// <param name="Color">A color that will be changed to.</param>
+		/// <param name="Vars">Variables to format the message before it's written.</param>
 		public static void WriteSeparator(string Text, bool PrintSuffix, ConsoleColor Color, params object[] Vars)
 		{
 			TermSeparator.WriteSeparatorColor(Text, PrintSuffix, (Color)Color, Vars);
 		}
 
 		/// <summary>
-        /// Draw a separator with text
-        /// </summary>
-        /// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
-        /// <param name="PrintSuffix">Whether or not to print the leading suffix. Only use if you have suffix on your text.</param>
-        /// <param name="ForegroundColor">A foreground color that will be changed to.</param>
-        /// <param name="BackgroundColor">A background color that will be changed to.</param>
-        /// <param name="Vars">Variables to format the message before it's written.</param>
+		/// Draw a separator with text
+		/// </summary>
+		/// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
+		/// <param name="PrintSuffix">Whether or not to print the leading suffix. Only use if you have suffix on your text.</param>
+		/// <param name="ForegroundColor">A foreground color that will be changed to.</param>
+		/// <param name="BackgroundColor">A background color that will be changed to.</param>
+		/// <param name="Vars">Variables to format the message before it's written.</param>
 		public static void WriteSeparator(string Text, bool PrintSuffix, ConsoleColor ForegroundColor, ConsoleColor BackgroundColor, params object[] Vars)
 		{
 			TermSeparator.WriteSeparatorColorBack(Text, PrintSuffix, (Color)ForegroundColor, (Color)BackgroundColor, Vars);
 		}
 
 		/// <summary>
-        /// Draw a separator with text
-        /// </summary>
-        /// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
-        /// <param name="PrintSuffix">Whether or not to print the leading suffix. Only use if you have suffix on your text.</param>
-        /// <param name="Color">A color that will be changed to.</param>
-        /// <param name="Vars">Variables to format the message before it's written.</param>
+		/// Draw a separator with text
+		/// </summary>
+		/// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
+		/// <param name="PrintSuffix">Whether or not to print the leading suffix. Only use if you have suffix on your text.</param>
+		/// <param name="Color">A color that will be changed to.</param>
+		/// <param name="Vars">Variables to format the message before it's written.</param>
 		public static void WriteSeparator(string Text, bool PrintSuffix, Color Color, params object[] Vars)
 		{
 			TermSeparator.WriteSeparatorColor(Text, PrintSuffix, Color, Vars);
 		}
 
 		/// <summary>
-        /// Draw a separator with text
-        /// </summary>
-        /// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
-        /// <param name="PrintSuffix">Whether or not to print the leading suffix. Only use if you have suffix on your text.</param>
-        /// <param name="ForegroundColor">A foreground color that will be changed to.</param>
-        /// <param name="BackgroundColor">A background color that will be changed to.</param>
-        /// <param name="Vars">Variables to format the message before it's written.</param>
+		/// Draw a separator with text
+		/// </summary>
+		/// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
+		/// <param name="PrintSuffix">Whether or not to print the leading suffix. Only use if you have suffix on your text.</param>
+		/// <param name="ForegroundColor">A foreground color that will be changed to.</param>
+		/// <param name="BackgroundColor">A background color that will be changed to.</param>
+		/// <param name="Vars">Variables to format the message before it's written.</param>
 		public static void WriteSeparator(string Text, bool PrintSuffix, Color ForegroundColor, Color BackgroundColor, params object[] Vars)
 		{
 			TermSeparator.WriteSeparatorColorBack(Text, PrintSuffix, ForegroundColor, BackgroundColor, Vars);

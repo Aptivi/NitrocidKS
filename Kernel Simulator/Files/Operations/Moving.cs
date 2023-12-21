@@ -28,11 +28,11 @@ namespace KS.Files.Operations
 	{
 
 		/// <summary>
-        /// Moves a file or directory
-        /// </summary>
-        /// <param name="Source">Source file or directory</param>
-        /// <param name="Destination">Target file or directory</param>
-        /// <exception cref="IOException"></exception>
+		/// Moves a file or directory
+		/// </summary>
+		/// <param name="Source">Source file or directory</param>
+		/// <param name="Destination">Target file or directory</param>
+		/// <exception cref="IOException"></exception>
 		public static void MoveFileOrDir(string Source, string Destination)
 		{
 			Filesystem.ThrowOnInvalidPath(Source);
@@ -75,12 +75,12 @@ namespace KS.Files.Operations
 		}
 
 		/// <summary>
-        /// Moves a file or directory
-        /// </summary>
-        /// <param name="Source">Source file or directory</param>
-        /// <param name="Destination">Target file or directory</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
-        /// <exception cref="IOException"></exception>
+		/// Moves a file or directory
+		/// </summary>
+		/// <param name="Source">Source file or directory</param>
+		/// <param name="Destination">Target file or directory</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
+		/// <exception cref="IOException"></exception>
 		public static bool TryMoveFileOrDir(string Source, string Destination)
 		{
 			try

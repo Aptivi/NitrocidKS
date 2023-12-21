@@ -16,8 +16,8 @@ namespace KS.Misc.Animations.EdgePulse
 		private static bool ResizeSyncing;
 
 		/// <summary>
-        /// Simulates the edge pulsing animation
-        /// </summary>
+		/// Simulates the edge pulsing animation
+		/// </summary>
 		public static void Simulate(EdgePulseSettings Settings)
 		{
 			CurrentWindowWidth = ConsoleWrapper.WindowWidth;

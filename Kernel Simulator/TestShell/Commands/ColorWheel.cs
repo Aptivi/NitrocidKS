@@ -1,5 +1,6 @@
 ﻿using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell.ShellBase.Commands;
+using Terminaux.Colors.Selector;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
@@ -18,7 +19,6 @@ using KS.Shell.ShellBase.Commands;
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-using Terminaux.Colors.Selector;
 
 namespace KS.TestShell.Commands
 {

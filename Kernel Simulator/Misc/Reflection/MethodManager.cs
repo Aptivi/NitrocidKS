@@ -25,10 +25,10 @@ namespace KS.Misc.Reflection
 	{
 
 		/// <summary>
-        /// Gets a method from method name
-        /// </summary>
-        /// <param name="Method">Method name. Use operator NameOf to get name.</param>
-        /// <returns>Method information</returns>
+		/// Gets a method from method name
+		/// </summary>
+		/// <param name="Method">Method name. Use operator NameOf to get name.</param>
+		/// <returns>Method information</returns>
 		public static MethodBase GetMethod(string Method)
 		{
 			Type[] PossibleTypes;

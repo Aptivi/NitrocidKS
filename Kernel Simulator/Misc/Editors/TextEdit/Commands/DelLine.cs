@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 
@@ -24,7 +25,6 @@ using KS.Misc.Text;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Misc.Editors.TextEdit.Commands
 {
@@ -37,9 +37,9 @@ namespace KS.Misc.Editors.TextEdit.Commands
 			{
 				if (StringQuery.IsStringNumeric(ListArgs[0]))
 				{
-					if (Conversions.ToInteger(ListArgs[0]) <= TextEditShellCommon.TextEdit_FileLines.Count)
+					if (Convert.ToInt32(ListArgs[0]) <= TextEditShellCommon.TextEdit_FileLines.Count)
 					{
-						TextEditTools.TextEdit_RemoveLine(Conversions.ToInteger(ListArgs[0]));
+						TextEditTools.TextEdit_RemoveLine(Convert.ToInt32(ListArgs[0]));
 						TextWriterColor.Write(Translate.DoTranslation("Removed line."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success));
 					}
 					else
@@ -57,10 +57,10 @@ namespace KS.Misc.Editors.TextEdit.Commands
 			{
 				if (StringQuery.IsStringNumeric(ListArgs[0]) & StringQuery.IsStringNumeric(ListArgs[1]))
 				{
-					if (Conversions.ToInteger(ListArgs[0]) <= TextEditShellCommon.TextEdit_FileLines.Count & Conversions.ToInteger(ListArgs[1]) <= TextEditShellCommon.TextEdit_FileLines.Count)
+					if (Convert.ToInt32(ListArgs[0]) <= TextEditShellCommon.TextEdit_FileLines.Count & Convert.ToInt32(ListArgs[1]) <= TextEditShellCommon.TextEdit_FileLines.Count)
 					{
-						int LineNumberStart = Conversions.ToInteger(ListArgs[0]);
-						int LineNumberEnd = Conversions.ToInteger(ListArgs[1]);
+						int LineNumberStart = Convert.ToInt32(ListArgs[0]);
+						int LineNumberEnd = Convert.ToInt32(ListArgs[1]);
 						LineNumberStart.SwapIfSourceLarger(ref LineNumberEnd);
 						for (int LineNumber = LineNumberStart, loopTo = LineNumberEnd; LineNumber <= loopTo; LineNumber++)
 						{

@@ -25,21 +25,21 @@ namespace KS.Network.Transfer
 		private bool _MessageSuppressed;
 
 		/// <summary>
-        /// How many bytes downloaded/uploaded
-        /// </summary>
+		/// How many bytes downloaded/uploaded
+		/// </summary>
 		public long DoneSize { get; private set; }
 		/// <summary>
-        /// File size
-        /// </summary>
+		/// File size
+		/// </summary>
 		public long FileSize { get; private set; }
 		/// <summary>
-        /// The transfer type
-        /// </summary>
+		/// The transfer type
+		/// </summary>
 		public NetworkTransferType TransferType { get; private set; }
 		/// <summary>
-        /// Whether the message is suppressed. Once set, it can't be unset.
-        /// </summary>
-        /// <returns></returns>
+		/// Whether the message is suppressed. Once set, it can't be unset.
+		/// </summary>
+		/// <returns></returns>
 		public bool MessageSuppressed
 		{
 			get

@@ -31,12 +31,12 @@ namespace KS.TimeDate
 	{
 
 		/// <summary>
-        /// Populates current time in all of the time zones (IANA on Unix).
-        /// </summary>
+		/// Populates current time in all of the time zones (IANA on Unix).
+		/// </summary>
 		public static Dictionary<string, DateTime> GetTimeZones()
 		{
 			// Get all system time zones (IANA on Unix)
-			TimeZoneInfo[] Zones = TimeZoneInfo.GetSystemTimeZones().ToArray();
+			TimeZoneInfo[] Zones = [.. GetSystemTimeZones()];
 			var ZoneTimes = new Dictionary<string, DateTime>();
 			DebugWriter.Wdbg(DebugLevel.I, "Found {0} time zones.", Zones.Length);
 
@@ -53,10 +53,10 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Shows current time in selected time zone
-        /// </summary>
-        /// <param name="zone">Time zone</param>
-        /// <returns>True if found; False if not found</returns>
+		/// Shows current time in selected time zone
+		/// </summary>
+		/// <param name="zone">Time zone</param>
+		/// <returns>True if found; False if not found</returns>
 		public static bool ShowTimeZone(string Zone)
 		{
 			var ZoneTimes = GetTimeZones();
@@ -69,10 +69,10 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Shows current time in selected time zone
-        /// </summary>
-        /// <param name="zone">Time zone to search</param>
-        /// <returns>True if found; False if not found</returns>
+		/// Shows current time in selected time zone
+		/// </summary>
+		/// <param name="zone">Time zone to search</param>
+		/// <returns>True if found; False if not found</returns>
 		public static bool ShowTimeZones(string Zone)
 		{
 			var ZoneTimes = GetTimeZones();
@@ -89,8 +89,8 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Shows current time in all time zones
-        /// </summary>
+		/// Shows current time in all time zones
+		/// </summary>
 		public static void ShowAllTimeZones()
 		{
 			var ZoneTimes = GetTimeZones();

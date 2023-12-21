@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when there is a color setting error
-    /// </summary>
+	/// Thrown when there is a color setting error
+	/// </summary>
 	public class ColorException : Exception
 	{
 

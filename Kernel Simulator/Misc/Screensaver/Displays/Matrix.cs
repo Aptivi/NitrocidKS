@@ -30,8 +30,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _matrixDelay = 1;
 
 		/// <summary>
-        /// [Matrix] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [Matrix] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int MatrixDelay
 		{
 			get

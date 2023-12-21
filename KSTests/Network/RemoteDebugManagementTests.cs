@@ -18,9 +18,9 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 using KS.Network.RemoteDebug;
-using Microsoft.VisualBasic.CompilerServices;
 using NUnit.Framework;
 using Shouldly;
+using System;
 
 namespace KSTests
 {
@@ -30,8 +30,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests adding device to json
-    /// </summary>
+		/// Tests adding device to json
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestAddDeviceToJson()
@@ -40,8 +40,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests setting device property
-    /// </summary>
+		/// Tests setting device property
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestDeviceSetProperty()
@@ -50,18 +50,18 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests getting device property
-    /// </summary>
+		/// Tests getting device property
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestGetDeviceProperty()
 		{
-			Conversions.ToString(RemoteDebugTools.GetDeviceProperty("123.123.123.123", RemoteDebugTools.DeviceProperty.Name)).ShouldBe("TestUser");
+			Convert.ToString(RemoteDebugTools.GetDeviceProperty("123.123.123.123", RemoteDebugTools.DeviceProperty.Name)).ShouldBe("TestUser");
 		}
 
 		/// <summary>
-    /// Removes a test device created by <see cref="TestAddDeviceToJson()"/>
-    /// </summary>
+		/// Removes a test device created by <see cref="TestAddDeviceToJson()"/>
+		/// </summary>
 		[OneTimeTearDown]
 		public static void TestRemoveTestDevice()
 		{

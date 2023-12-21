@@ -45,21 +45,21 @@ namespace KS.Shell.ShellBase.Commands
 	{
 
 		/// <summary>
-        /// Thread parameters for ExecuteCommand()
-        /// </summary>
+		/// Thread parameters for ExecuteCommand()
+		/// </summary>
 		internal class ExecuteCommandThreadParameters
 		{
 			/// <summary>
-            /// The requested command with arguments
-            /// </summary>
+			/// The requested command with arguments
+			/// </summary>
 			internal string RequestedCommand;
 			/// <summary>
-            /// The shell type
-            /// </summary>
+			/// The shell type
+			/// </summary>
 			internal ShellType ShellType;
 			/// <summary>
-            /// The debug device stream writer
-            /// </summary>
+			/// The debug device stream writer
+			/// </summary>
 			internal StreamWriter DebugDeviceSocket;
 
 			internal ExecuteCommandThreadParameters(string RequestedCommand, ShellType ShellType, StreamWriter DebugDeviceSocket)
@@ -71,9 +71,9 @@ namespace KS.Shell.ShellBase.Commands
 		}
 
 		/// <summary>
-        /// Executes a command
-        /// </summary>
-        /// <param name="ThreadParams">Thread parameters for ExecuteCommand.</param>
+		/// Executes a command
+		/// </summary>
+		/// <param name="ThreadParams">Thread parameters for ExecuteCommand.</param>
 		internal static void ExecuteCommand(ExecuteCommandThreadParameters ThreadParams)
 		{
 			string RequestedCommand = ThreadParams.RequestedCommand;
@@ -137,9 +137,9 @@ namespace KS.Shell.ShellBase.Commands
 		}
 
 		/// <summary>
-        /// Gets the command dictionary according to the shell type
-        /// </summary>
-        /// <param name="ShellType">The shell type</param>
+		/// Gets the command dictionary according to the shell type
+		/// </summary>
+		/// <param name="ShellType">The shell type</param>
 		public static Dictionary<string, CommandInfo> GetCommands(ShellType ShellType)
 		{
 			// Individual shells

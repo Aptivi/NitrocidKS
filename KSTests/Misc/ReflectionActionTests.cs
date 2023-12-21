@@ -28,8 +28,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests checking to see if the string is numeric
-    /// </summary>
+		/// Tests checking to see if the string is numeric
+		/// </summary>
 		[TestCase("64", ExpectedResult = true)]
 		[TestCase("64.5", ExpectedResult = true)]
 		[TestCase("64-5", ExpectedResult = false)]
@@ -42,8 +42,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests formatting the string
-    /// </summary>
+		/// Tests formatting the string
+		/// </summary>
 		[TestCase("Hello, {0}!", "Alex", ExpectedResult = "Hello, Alex!")]
 		[TestCase("We have 0x{0:X2} faults!", 15, ExpectedResult = "We have 0x0F faults!")]
 		[TestCase("Destroy {0 ships!", 3, ExpectedResult = "Destroy {0 ships!")]

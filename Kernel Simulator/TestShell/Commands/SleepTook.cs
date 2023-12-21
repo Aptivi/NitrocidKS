@@ -5,7 +5,6 @@ using KS.Languages;
 using KS.Misc.Threading;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
@@ -31,7 +30,7 @@ namespace KS.TestShell.Commands
 
 		public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
 		{
-			int SleepMs = Conversions.ToInteger(ListArgsOnly[0]);
+			int SleepMs = Convert.ToInt32(ListArgsOnly[0]);
 			bool Ticks = ListSwitchesOnly.Contains("-t");
 			if (Ticks)
 			{

@@ -30,19 +30,19 @@ namespace KS.Files.LineEndings
 	{
 
 		/// <summary>
-        /// Converts the line endings to the newline style for the current platform
-        /// </summary>
-        /// <param name="TextFile">Text file name with extension or file path</param>
+		/// Converts the line endings to the newline style for the current platform
+		/// </summary>
+		/// <param name="TextFile">Text file name with extension or file path</param>
 		public static void ConvertLineEndings(string TextFile)
 		{
 			ConvertLineEndings(TextFile, LineEndingsTools.NewlineStyle);
 		}
 
 		/// <summary>
-        /// Converts the line endings to the specified newline style
-        /// </summary>
-        /// <param name="TextFile">Text file name with extension or file path</param>
-        /// <param name="LineEndingStyle">Line ending style</param>
+		/// Converts the line endings to the specified newline style
+		/// </summary>
+		/// <param name="TextFile">Text file name with extension or file path</param>
+		/// <param name="LineEndingStyle">Line ending style</param>
 		public static void ConvertLineEndings(string TextFile, FilesystemNewlineStyle LineEndingStyle)
 		{
 			Filesystem.ThrowOnInvalidPath(TextFile);

@@ -29,8 +29,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests path neutralization on a folder in home directory
-    /// </summary>
+		/// Tests path neutralization on a folder in home directory
+		/// </summary>
 		[Test]
 		[Description("Neutralization")]
 		public void TestNeutralizePaths()
@@ -43,10 +43,11 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests path neutralization on a folder in a custom directory
-    /// </summary>
+		/// Tests path neutralization on a folder in a custom directory
+		/// </summary>
 		[Test]
 		[Description("Neutralization")]
+		[Platform(Exclude = "win")]
 		public void TestNeutralizePathsCustom()
 		{
 			string TestPath = "sources.list";

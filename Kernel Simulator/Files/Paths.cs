@@ -26,8 +26,8 @@ namespace KS.Files
 	{
 
 		/// <summary>
-        /// Platform-dependent home path
-        /// </summary>
+		/// Platform-dependent home path
+		/// </summary>
 		public static string HomePath
 		{
 			get
@@ -44,8 +44,8 @@ namespace KS.Files
 		}
 
 		/// <summary>
-        /// Platform-dependent temp path
-        /// </summary>
+		/// Platform-dependent temp path
+		/// </summary>
 		public static string TempPath
 		{
 			get
@@ -62,8 +62,8 @@ namespace KS.Files
 		}
 
 		/// <summary>
-        /// Retro Kernel Simulator download path
-        /// </summary>
+		/// Retro Kernel Simulator download path
+		/// </summary>
 		public static string RetroKSDownloadPath
 		{
 			get
@@ -94,11 +94,11 @@ namespace KS.Files
 		}
 
 		// Variables
-		internal static Dictionary<string, string> KernelPaths = new();
+		internal static Dictionary<string, string> KernelPaths = [];
 
 		/// <summary>
-        /// Initializes the paths
-        /// </summary>
+		/// Initializes the paths
+		/// </summary>
 		public static void InitPaths()
 		{
 			if (!KernelPaths.ContainsKey("Mods"))
@@ -134,11 +134,11 @@ namespace KS.Files
 		}
 
 		/// <summary>
-        /// Gets the neutralized kernel path
-        /// </summary>
-        /// <param name="PathType">Kernel path type</param>
-        /// <returns>A kernel path</returns>
-        /// <exception cref="Exceptions.InvalidKernelPathException"></exception>
+		/// Gets the neutralized kernel path
+		/// </summary>
+		/// <param name="PathType">Kernel path type</param>
+		/// <returns>A kernel path</returns>
+		/// <exception cref="Exceptions.InvalidKernelPathException"></exception>
 		public static string GetKernelPath(KernelPathType PathType)
 		{
 			if (Enum.IsDefined(typeof(KernelPathType), PathType))

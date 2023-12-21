@@ -42,9 +42,9 @@ namespace KS.Modifications
 	{
 
 		/// <summary>
-        /// Gets the mod instance from compiled assembly
-        /// </summary>
-        /// <param name="Assembly">An assembly</param>
+		/// Gets the mod instance from compiled assembly
+		/// </summary>
+		/// <param name="Assembly">An assembly</param>
 		public static IScript GetModInstance(Assembly Assembly)
 		{
 			foreach (Type t in Assembly.GetTypes())
@@ -56,9 +56,9 @@ namespace KS.Modifications
 		}
 
 		/// <summary>
-        /// Starts to parse the mod, and configures it so it can be used
-        /// </summary>
-        /// <param name="modFile">Mod file name with extension. It should end with .dll</param>
+		/// Starts to parse the mod, and configures it so it can be used
+		/// </summary>
+		/// <param name="modFile">Mod file name with extension. It should end with .dll</param>
 		public static void ParseMod(string modFile)
 		{
 			string ModPath = Paths.GetKernelPath(KernelPathType.Mods);
@@ -109,10 +109,10 @@ namespace KS.Modifications
 		}
 
 		/// <summary>
-        /// Configures the mod so it can be used
-        /// </summary>
-        /// <param name="script">Instance of script</param>
-        /// <param name="modFile">Mod file name with extension. It should end with .dll</param>
+		/// Configures the mod so it can be used
+		/// </summary>
+		/// <param name="script">Instance of script</param>
+		/// <param name="modFile">Mod file name with extension. It should end with .dll</param>
 		public static void FinalizeMods(IScript script, string modFile)
 		{
 			var ModParts = new Dictionary<string, PartInfo>();

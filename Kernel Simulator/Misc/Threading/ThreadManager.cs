@@ -27,15 +27,15 @@ namespace KS.Misc.Threading
 	{
 
 		/// <summary>
-        /// Sleeps until either the time specified, or the thread has finished or cancelled.
-        /// </summary>
-        /// <param name="Time">Time in milliseconds</param>
-        /// <param name="ThreadWork">The working thread</param>
+		/// Sleeps until either the time specified, or the thread has finished or cancelled.
+		/// </summary>
+		/// <param name="Time">Time in milliseconds</param>
+		/// <param name="ThreadWork">The working thread</param>
 		public static void SleepNoBlock(long Time, BackgroundWorker ThreadWork)
 		{
 			var WorkFinished = default(bool);
 			var TimeCount = default(long);
-			ThreadWork.RunWorkerCompleted += () => WorkFinished = true;
+			ThreadWork.RunWorkerCompleted += (_, _) => WorkFinished = true;
 			while (!(WorkFinished | TimeCount == Time))
 			{
 				Thread.Sleep(1);
@@ -46,30 +46,30 @@ namespace KS.Misc.Threading
 		}
 
 		/// <summary>
-        /// Sleeps until either the time specified, or the thread is no longer alive.
-        /// </summary>
-        /// <param name="Time">Time in milliseconds</param>
-        /// <param name="ThreadWork">The working thread</param>
+		/// Sleeps until either the time specified, or the thread is no longer alive.
+		/// </summary>
+		/// <param name="Time">Time in milliseconds</param>
+		/// <param name="ThreadWork">The working thread</param>
 		public static void SleepNoBlock(long Time, Thread ThreadWork)
 		{
 			ThreadWork.Join((int)Time);
 		}
 
 		/// <summary>
-        /// Sleeps until either the time specified, or the thread is no longer alive.
-        /// </summary>
-        /// <param name="Time">Time in milliseconds</param>
-        /// <param name="ThreadWork">The working thread</param>
+		/// Sleeps until either the time specified, or the thread is no longer alive.
+		/// </summary>
+		/// <param name="Time">Time in milliseconds</param>
+		/// <param name="ThreadWork">The working thread</param>
 		public static void SleepNoBlock(long Time, KernelThread ThreadWork)
 		{
 			ThreadWork.Wait(Time);
 		}
 
 		/// <summary>
-        /// Gets the actual milliseconds time from the sleep time provided
-        /// </summary>
-        /// <param name="Time">Sleep time</param>
-        /// <returns>How many milliseconds did it really sleep?</returns>
+		/// Gets the actual milliseconds time from the sleep time provided
+		/// </summary>
+		/// <param name="Time">Sleep time</param>
+		/// <returns>How many milliseconds did it really sleep?</returns>
 		public static int GetActualMilliseconds(int Time)
 		{
 			var SleepStopwatch = new Stopwatch();
@@ -80,10 +80,10 @@ namespace KS.Misc.Threading
 		}
 
 		/// <summary>
-        /// Gets the actual ticks from the sleep time provided
-        /// </summary>
-        /// <param name="Time">Sleep time</param>
-        /// <returns>How many ticks did it really sleep?</returns>
+		/// Gets the actual ticks from the sleep time provided
+		/// </summary>
+		/// <param name="Time">Sleep time</param>
+		/// <returns>How many ticks did it really sleep?</returns>
 		public static long GetActualTicks(int Time)
 		{
 			var SleepStopwatch = new Stopwatch();

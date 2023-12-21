@@ -20,23 +20,23 @@
 namespace KS.Shell.ShellBase.Commands
 {
 	/// <summary>
-    /// Base command executor
-    /// </summary>
+	/// Base command executor
+	/// </summary>
 	public interface ICommand
 	{
 
 		/// <summary>
-        /// Executes the command with the given argument
-        /// </summary>
-        /// <param name="StringArgs">Arguments in a string</param>
-        /// <param name="ListArgs">List of provided arguments and switches</param>
-        /// <param name="ListArgsOnly">List of provided arguments</param>
-        /// <param name="ListSwitchesOnly">List of provided switches</param>
+		/// Executes the command with the given argument
+		/// </summary>
+		/// <param name="StringArgs">Arguments in a string</param>
+		/// <param name="ListArgs">List of provided arguments and switches</param>
+		/// <param name="ListArgsOnly">List of provided arguments</param>
+		/// <param name="ListSwitchesOnly">List of provided switches</param>
 		void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly);
 
 		/// <summary>
-        /// Shows additional information for the command when "help command" is invoked
-        /// </summary>
+		/// Shows additional information for the command when "help command" is invoked
+		/// </summary>
 		void HelpHelper();
 
 	}

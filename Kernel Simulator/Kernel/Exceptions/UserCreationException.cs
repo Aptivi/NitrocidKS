@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when there is a user creation error
-    /// </summary>
+	/// Thrown when there is a user creation error
+	/// </summary>
 	public class UserCreationException : Exception
 	{
 

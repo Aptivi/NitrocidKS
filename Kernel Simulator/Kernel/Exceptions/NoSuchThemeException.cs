@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when theme is nonexistent
-    /// </summary>
+	/// Thrown when theme is nonexistent
+	/// </summary>
 	public class NoSuchThemeException : Exception
 	{
 

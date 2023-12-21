@@ -27,10 +27,10 @@ namespace KS.Network.HTTP
 	{
 
 		/// <summary>
-        /// Deletes the specified content from HTTP server
-        /// </summary>
-        /// <param name="ContentUri">Content URI (starts after the HTTP hostname, e.g. "filetodelete.html")</param>
-		public async static Task HttpDelete(string ContentUri)
+		/// Deletes the specified content from HTTP server
+		/// </summary>
+		/// <param name="ContentUri">Content URI (starts after the HTTP hostname, e.g. "filetodelete.html")</param>
+		public static async Task HttpDelete(string ContentUri)
 		{
 			if (HTTPShellCommon.HTTPConnected)
 			{
@@ -44,10 +44,10 @@ namespace KS.Network.HTTP
 		}
 
 		/// <summary>
-        /// Gets the specified content string from HTTP server
-        /// </summary>
-        /// <param name="ContentUri">Content URI (starts after the HTTP hostname, e.g. "filetoget.html")</param>
-		public async static Task<string> HttpGetString(string ContentUri)
+		/// Gets the specified content string from HTTP server
+		/// </summary>
+		/// <param name="ContentUri">Content URI (starts after the HTTP hostname, e.g. "filetoget.html")</param>
+		public static async Task<string> HttpGetString(string ContentUri)
 		{
 			if (HTTPShellCommon.HTTPConnected)
 			{
@@ -61,10 +61,10 @@ namespace KS.Network.HTTP
 		}
 
 		/// <summary>
-        /// Gets the specified content from HTTP server
-        /// </summary>
-        /// <param name="ContentUri">Content URI (starts after the HTTP hostname, e.g. "filetoget.html")</param>
-		public async static Task<HttpResponseMessage> HttpGet(string ContentUri)
+		/// Gets the specified content from HTTP server
+		/// </summary>
+		/// <param name="ContentUri">Content URI (starts after the HTTP hostname, e.g. "filetoget.html")</param>
+		public static async Task<HttpResponseMessage> HttpGet(string ContentUri)
 		{
 			if (HTTPShellCommon.HTTPConnected)
 			{
@@ -78,9 +78,9 @@ namespace KS.Network.HTTP
 		}
 
 		/// <summary>
-        /// Neutralize the URI so the host name, <see cref="HTTPSite"/>, doesn't appear twice.
-        /// </summary>
-        /// <param name="ContentUri">Content URI (starts after the HTTP hostname, e.g. "filetoget.html")</param>
+		/// Neutralize the URI so the host name, <see cref="HTTPSite"/>, doesn't appear twice.
+		/// </summary>
+		/// <param name="ContentUri">Content URI (starts after the HTTP hostname, e.g. "filetoget.html")</param>
 		public static string NeutralizeUri(string ContentUri)
 		{
 			string NeutralizedUri = "";

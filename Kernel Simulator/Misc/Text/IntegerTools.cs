@@ -23,10 +23,10 @@ namespace KS.Misc.Text
 	public static class IntegerTools
 	{
 		/// <summary>
-        /// Swaps the two numbers if the source is larger than the target
-        /// </summary>
-        /// <paramname="SourceNumber">Number</param>
-        /// <paramname="TargetNumber">Number</param>
+		/// Swaps the two numbers if the source is larger than the target
+		/// </summary>
+		/// <paramname="SourceNumber">Number</param>
+		/// <paramname="TargetNumber">Number</param>
 		public static void SwapIfSourceLarger(this ref int SourceNumber, ref int TargetNumber)
 		{
 			int Source = SourceNumber;
@@ -39,10 +39,10 @@ namespace KS.Misc.Text
 		}
 
 		/// <summary>
-        /// Swaps the two numbers if the source is larger than the target
-        /// </summary>
-        /// <paramname="SourceNumber">Number</param>
-        /// <paramname="TargetNumber">Number</param>
+		/// Swaps the two numbers if the source is larger than the target
+		/// </summary>
+		/// <paramname="SourceNumber">Number</param>
+		/// <paramname="TargetNumber">Number</param>
 		public static void SwapIfSourceLarger(this ref long SourceNumber, ref long TargetNumber)
 		{
 			long Source = SourceNumber;

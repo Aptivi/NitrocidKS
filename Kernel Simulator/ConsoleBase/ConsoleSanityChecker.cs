@@ -22,8 +22,8 @@ namespace KS.ConsoleBase
 	{
 
 		/// <summary>
-        /// Checks the running console for sanity, like the incompatible consoles, insane console types, etc.
-        /// </summary>
+		/// Checks the running console for sanity, like the incompatible consoles, insane console types, etc.
+		/// </summary>
 		public static void CheckConsole()
 		{
 			ConsoleChecker.CheckConsole();

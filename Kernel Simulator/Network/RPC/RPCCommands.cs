@@ -29,45 +29,44 @@ using KS.Misc.Notifications;
 using KS.Misc.Screensaver;
 using KS.Misc.Text;
 using KS.Misc.Writers.DebugWriters;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Network.RPC
 {
 	/// <summary>
-    /// RPC commands module
-    /// </summary>
+	/// RPC commands module
+	/// </summary>
 	public static class RPCCommands
 	{
 		private static bool received = false;
 
 		/// <summary>
-        /// List of RPC commands.<br/>
-        /// <br/>&lt;Request:Shutdown&gt;: Shuts down the remote kernel. Usage: &lt;Request:Shutdown&gt;(IP)
-        /// <br/>&lt;Request:Reboot&gt;: Reboots the remote kernel. Usage: &lt;Request:Reboot&gt;(IP)
-        /// <br/>&lt;Request:RebootSafe&gt;: Reboots the remote kernel to safe mode. Usage: &lt;Request:RebootSafe&gt;(IP)
-        /// <br/>&lt;Request:SaveScr&gt;: Saves the screen remotely. Usage: &lt;Request:SaveScr&gt;(IP)
-        /// <br/>&lt;Request:Acknowledge&gt;: Pings the remote kernel silently. Usage: &lt;Request:Acknowledge&gt;(IP)
-        /// <br/>&lt;Request:Ping&gt;: Pings the remote kernel with notification. Usage: &lt;Request:Ping&gt;(IP)
-        /// </summary>
-		private readonly static Dictionary<string, Action<string>> RPCCommandReplyActions = new() { { "Shutdown", (_) => HandleShutdown() }, { "Reboot", (_) => HandleReboot() }, { "RebootSafe", (_) => HandleRebootSafe() }, { "SaveScr", (_) => HandleSaveScr() }, { "Acknowledge", HandleAcknowledge }, { "Ping", HandlePing } };
+		/// List of RPC commands.<br/>
+		/// <br/>&lt;Request:Shutdown&gt;: Shuts down the remote kernel. Usage: &lt;Request:Shutdown&gt;(IP)
+		/// <br/>&lt;Request:Reboot&gt;: Reboots the remote kernel. Usage: &lt;Request:Reboot&gt;(IP)
+		/// <br/>&lt;Request:RebootSafe&gt;: Reboots the remote kernel to safe mode. Usage: &lt;Request:RebootSafe&gt;(IP)
+		/// <br/>&lt;Request:SaveScr&gt;: Saves the screen remotely. Usage: &lt;Request:SaveScr&gt;(IP)
+		/// <br/>&lt;Request:Acknowledge&gt;: Pings the remote kernel silently. Usage: &lt;Request:Acknowledge&gt;(IP)
+		/// <br/>&lt;Request:Ping&gt;: Pings the remote kernel with notification. Usage: &lt;Request:Ping&gt;(IP)
+		/// </summary>
+		private static readonly Dictionary<string, Action<string>> RPCCommandReplyActions = new() { { "Shutdown", (_) => HandleShutdown() }, { "Reboot", (_) => HandleReboot() }, { "RebootSafe", (_) => HandleRebootSafe() }, { "SaveScr", (_) => HandleSaveScr() }, { "Acknowledge", HandleAcknowledge }, { "Ping", HandlePing } };
 
 		/// <summary>
-        /// Send an RPC command to another instance of KS using the specified address
-        /// </summary>
-        /// <paramname="Request">A request</param>
-        /// <paramname="IP">An IP address which the RPC is hosted</param>
+		/// Send an RPC command to another instance of KS using the specified address
+		/// </summary>
+		/// <paramname="Request">A request</param>
+		/// <paramname="IP">An IP address which the RPC is hosted</param>
 		public static void SendCommand(string Request, string IP)
 		{
 			SendCommand(Request, IP, RemoteProcedure.RPCPort);
 		}
 
 		/// <summary>
-        /// Send an RPC command to another instance of KS using the specified address
-        /// </summary>
-        /// <paramname="Request">A request</param>
-        /// <paramname="IP">An IP address which the RPC is hosted</param>
-        /// <paramname="Port">A port which the RPC is hosted</param>
-        /// <exceptioncref="InvalidOperationException"></exception>
+		/// Send an RPC command to another instance of KS using the specified address
+		/// </summary>
+		/// <paramname="Request">A request</param>
+		/// <paramname="IP">An IP address which the RPC is hosted</param>
+		/// <paramname="Port">A port which the RPC is hosted</param>
+		/// <exceptioncref="InvalidOperationException"></exception>
 		public static void SendCommand(string Request, string IP, int Port)
 		{
 			if (RemoteProcedure.RPCEnabled)
@@ -86,7 +85,7 @@ namespace KS.Network.RPC
 					// Check the request type
 					DebugWriter.Wdbg(DebugLevel.I, "Command found.");
 					string RequestType = Cmd.Substring(Cmd.IndexOf(":") + 1, Cmd.IndexOf(">"));
-					byte[] ByteMsg = Array.Empty<byte>();
+					byte[] ByteMsg = [];
 
 					// Populate the byte message to send the confirmation to
 					DebugWriter.Wdbg(DebugLevel.I, "Stream opened for device {0}", Arg);
@@ -110,8 +109,8 @@ namespace KS.Network.RPC
 		}
 
 		/// <summary>
-        /// Thread to listen to commands.
-        /// </summary>
+		/// Thread to listen to commands.
+		/// </summary>
 		public static void ReceiveCommand()
 		{
 			var RemoteEndpoint = new IPEndPoint(IPAddress.Any, RemoteProcedure.RPCPort);
@@ -176,7 +175,7 @@ namespace KS.Network.RPC
 				// If the message is not empty, parse it
 				if (!string.IsNullOrEmpty(Message))
 				{
-					DebugWriter.Wdbg((DebugLevel)Conversions.ToInteger("RPC: Received message {0}"), Message);
+					DebugWriter.Wdbg((DebugLevel)Convert.ToInt32("RPC: Received message {0}"), Message);
 					Kernel.Kernel.KernelEventManager.RaiseRPCCommandReceived(Message, endpoint.Address.ToString(), endpoint.Port);
 
 					if (RPCCommandReplyActions.TryGetValue(Cmd, out replyAction))

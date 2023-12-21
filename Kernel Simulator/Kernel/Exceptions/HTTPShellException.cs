@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when there is an error in HTTP shell
-    /// </summary>
+	/// Thrown when there is an error in HTTP shell
+	/// </summary>
 	public class HTTPShellException : Exception
 	{
 

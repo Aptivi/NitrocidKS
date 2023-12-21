@@ -37,14 +37,14 @@ namespace KS.Misc.Calendar.Reminders
 	public static class ReminderManager
 	{
 
-		public static List<ReminderInfo> Reminders = new();
+		public static List<ReminderInfo> Reminders = [];
 		public static Notifications.Notifications.NotifPriority CurrentReminderImportance = Notifications.Notifications.NotifPriority.Low;
 		public static KernelThread ReminderThread = new("Reminder Thread", false, ReminderListen);
 		internal static object ReminderManagerLock = new();
 
 		/// <summary>
-        /// Listens for reminders and notifies the user
-        /// </summary>
+		/// Listens for reminders and notifies the user
+		/// </summary>
 		private static void ReminderListen()
 		{
 			while (!Flags.KernelShutdown)
@@ -65,7 +65,7 @@ namespace KS.Misc.Calendar.Reminders
 						}
 					}
 				}
-				catch (ThreadInterruptedException ex)
+				catch (ThreadInterruptedException)
 				{
 					DebugWriter.Wdbg(DebugLevel.I, "Aborting reminder listener...");
 					return;
@@ -74,21 +74,21 @@ namespace KS.Misc.Calendar.Reminders
 		}
 
 		/// <summary>
-        /// Adds the reminder to the list (calendar will mark the day with parentheses)
-        /// </summary>
-        /// <param name="ReminderDate">Reminder date and time</param>
-        /// <param name="ReminderTitle">Reminder title</param>
+		/// Adds the reminder to the list (calendar will mark the day with parentheses)
+		/// </summary>
+		/// <param name="ReminderDate">Reminder date and time</param>
+		/// <param name="ReminderTitle">Reminder title</param>
 		public static void AddReminder(DateTime ReminderDate, string ReminderTitle)
 		{
 			AddReminder(ReminderDate, ReminderTitle, CurrentReminderImportance);
 		}
 
 		/// <summary>
-        /// Adds the reminder to the list (calendar will mark the day with parentheses)
-        /// </summary>
-        /// <param name="ReminderDate">Reminder date and time</param>
-        /// <param name="ReminderTitle">Reminder title</param>
-        /// <param name="ReminderImportance">Reminder importance</param>
+		/// Adds the reminder to the list (calendar will mark the day with parentheses)
+		/// </summary>
+		/// <param name="ReminderDate">Reminder date and time</param>
+		/// <param name="ReminderTitle">Reminder title</param>
+		/// <param name="ReminderImportance">Reminder importance</param>
 		public static void AddReminder(DateTime ReminderDate, string ReminderTitle, Notifications.Notifications.NotifPriority ReminderImportance)
 		{
 			if (string.IsNullOrWhiteSpace(ReminderTitle))
@@ -103,19 +103,19 @@ namespace KS.Misc.Calendar.Reminders
 		}
 
 		/// <summary>
-        /// Adds the reminder to the list (calendar will mark the day with parentheses)
-        /// </summary>
-        /// <param name="Reminder">Reminder info instance</param>
+		/// Adds the reminder to the list (calendar will mark the day with parentheses)
+		/// </summary>
+		/// <param name="Reminder">Reminder info instance</param>
 		internal static void AddReminder(ReminderInfo Reminder)
 		{
 			Reminders.Add(Reminder);
 		}
 
 		/// <summary>
-        /// Removes the reminder from the list
-        /// </summary>
-        /// <param name="ReminderDate">Reminder date and time</param>
-        /// <param name="ReminderId">Reminder ID</param>
+		/// Removes the reminder from the list
+		/// </summary>
+		/// <param name="ReminderDate">Reminder date and time</param>
+		/// <param name="ReminderId">Reminder ID</param>
 		public static void RemoveReminder(DateTime ReminderDate, int ReminderId)
 		{
 			int ReminderIndex = ReminderId - 1;
@@ -127,8 +127,8 @@ namespace KS.Misc.Calendar.Reminders
 		}
 
 		/// <summary>
-        /// List all the reminders
-        /// </summary>
+		/// List all the reminders
+		/// </summary>
 		public static void ListReminders()
 		{
 			foreach (ReminderInfo Reminder in Reminders)
@@ -139,8 +139,8 @@ namespace KS.Misc.Calendar.Reminders
 		}
 
 		/// <summary>
-        /// Loads all the reminders from the KSReminders directory and adds them to the reminder list
-        /// </summary>
+		/// Loads all the reminders from the KSReminders directory and adds them to the reminder list
+		/// </summary>
 		public static void LoadReminders()
 		{
 			Making.MakeDirectory(Paths.GetKernelPath(KernelPathType.Reminders), false);
@@ -156,10 +156,10 @@ namespace KS.Misc.Calendar.Reminders
 		}
 
 		/// <summary>
-        /// Loads an reminder file
-        /// </summary>
-        /// <param name="ReminderFile">Reminder file</param>
-        /// <returns>A converted reminder info instance. null if unsuccessful.</returns>
+		/// Loads an reminder file
+		/// </summary>
+		/// <param name="ReminderFile">Reminder file</param>
+		/// <returns>A converted reminder info instance. null if unsuccessful.</returns>
 		public static ReminderInfo LoadReminder(string ReminderFile)
 		{
 			lock (ReminderManagerLock)
@@ -188,16 +188,16 @@ namespace KS.Misc.Calendar.Reminders
 		}
 
 		/// <summary>
-        /// Saves all the reminders from the reminder list to their individual files
-        /// </summary>
+		/// Saves all the reminders from the reminder list to their individual files
+		/// </summary>
 		public static void SaveReminders()
 		{
 			SaveReminders(Paths.GetKernelPath(KernelPathType.Reminders), Flags.SaveEventsRemindersDestructively);
 		}
 
 		/// <summary>
-        /// Saves all the reminders from the reminder list to their individual files
-        /// </summary>
+		/// Saves all the reminders from the reminder list to their individual files
+		/// </summary>
 		public static void SaveReminders(string Path, bool Destructive)
 		{
 			Filesystem.ThrowOnInvalidPath(Path);
@@ -232,16 +232,16 @@ namespace KS.Misc.Calendar.Reminders
 		}
 
 		/// <summary>
-        /// Saves an reminder to a file
-        /// </summary>
+		/// Saves an reminder to a file
+		/// </summary>
 		public static void SaveReminder(ReminderInfo ReminderInstance)
 		{
 			SaveReminder(ReminderInstance, Paths.GetKernelPath(KernelPathType.Reminders));
 		}
 
 		/// <summary>
-        /// Saves an reminder to a file
-        /// </summary>
+		/// Saves an reminder to a file
+		/// </summary>
 		public static void SaveReminder(ReminderInfo ReminderInstance, string File)
 		{
 			Filesystem.ThrowOnInvalidPath(File);

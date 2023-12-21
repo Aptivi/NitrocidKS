@@ -28,18 +28,18 @@ namespace KS.Files.Print
 	{
 
 		/// <summary>
-        /// Prints the contents of a file to the console
-        /// </summary>
-        /// <param name="filename">Full path to file</param>
+		/// Prints the contents of a file to the console
+		/// </summary>
+		/// <param name="filename">Full path to file</param>
 		public static void PrintContents(string filename)
 		{
 			PrintContents(filename, Flags.PrintLineNumbers);
 		}
 
 		/// <summary>
-        /// Prints the contents of a file to the console
-        /// </summary>
-        /// <param name="filename">Full path to file with wildcards supported</param>
+		/// Prints the contents of a file to the console
+		/// </summary>
+		/// <param name="filename">Full path to file with wildcards supported</param>
 		public static void PrintContents(string filename, bool PrintLineNumbers)
 		{
 			// Read the contents

@@ -34,24 +34,24 @@ namespace KS.Network.Mail
 	{
 
 		/// <summary>
-        /// Initializes the CountChanged handlers. Currently, it only supports inbox.
-        /// </summary>
+		/// Initializes the CountChanged handlers. Currently, it only supports inbox.
+		/// </summary>
 		public static void InitializeHandlers()
 		{
 			MailLogin.IMAP_Client.Inbox.CountChanged += OnCountChanged;
 		}
 
 		/// <summary>
-        /// Releases the CountChanged handlers. Currently, it only supports inbox.
-        /// </summary>
+		/// Releases the CountChanged handlers. Currently, it only supports inbox.
+		/// </summary>
 		public static void ReleaseHandlers()
 		{
 			MailLogin.IMAP_Client.Inbox.CountChanged -= OnCountChanged;
 		}
 
 		/// <summary>
-        /// Handles WebAlert sent by Gmail
-        /// </summary>
+		/// Handles WebAlert sent by Gmail
+		/// </summary>
 		public static void HandleWebAlert(object sender, WebAlertEventArgs e)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "WebAlert URI: {0}", e.WebUri.AbsoluteUri);
@@ -61,10 +61,10 @@ namespace KS.Network.Mail
 		}
 
 		/// <summary>
-        /// Executed when the CountChanged event is fired.
-        /// </summary>
-        /// <param name="Sender">A folder</param>
-        /// <param name="e">Event arguments</param>
+		/// Executed when the CountChanged event is fired.
+		/// </summary>
+		/// <param name="Sender">A folder</param>
+		/// <param name="e">Event arguments</param>
 		public static void OnCountChanged(object Sender, EventArgs e)
 		{
 			ImapFolder Folder = (ImapFolder)Sender;

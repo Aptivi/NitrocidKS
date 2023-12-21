@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Writers.ConsoleWriters;
@@ -30,7 +29,7 @@ namespace KS.TestShell.Commands
 		public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
 		{
 			var NormalCharList = new List<char>() { '1', '2', '3' };
-			var ArrayCharList = new List<char[]>() { { { '1', '2', '3' } }, { { '1', '2', '3' } }, { { '1', '2', '3' } } };
+			var ArrayCharList = new List<char[]>() { { new char[] { '1', '2', '3' } }, { new char[] { '1', '2', '3' } }, { new char[] { '1', '2', '3' } } };
 			TextWriterColor.Write(Translate.DoTranslation("Normal char list:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
 			ListWriterColor.WriteList(NormalCharList);
 			TextWriterColor.Write(Translate.DoTranslation("Array char list:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));

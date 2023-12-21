@@ -30,15 +30,15 @@ namespace KS.Network.RemoteDebug
 	static class RemoteDebugCmd
 	{
 
-		public readonly static Dictionary<string, CommandInfo> DebugCommands = new() { { "exit", new CommandInfo("exit", ShellType.RemoteDebugShell, "Disconnects you from the debugger", new CommandArgumentInfo(Array.Empty<string>(), false, 0), new Debug_ExitCommand()) }, { "help", new CommandInfo("help", ShellType.RemoteDebugShell, "Shows help screen", new CommandArgumentInfo(new[] { "[command]" }, false, 0), new Debug_HelpCommand()) }, { "register", new CommandInfo("register", ShellType.RemoteDebugShell, "Sets device username", new CommandArgumentInfo(new[] { "<username>" }, true, 1), new Debug_RegisterCommand()) }, { "trace", new CommandInfo("trace", ShellType.RemoteDebugShell, "Shows last stack trace on exception", new CommandArgumentInfo(new[] { "<tracenumber>" }, true, 1), new Debug_TraceCommand()) }, { "username", new CommandInfo("username", ShellType.RemoteDebugShell, "Shows current username in the session", new CommandArgumentInfo(Array.Empty<string>(), false, 0), new Debug_UsernameCommand()) } };
-		internal readonly static Dictionary<string, CommandInfo> DebugModCmds = new();
+		public static readonly Dictionary<string, CommandInfo> DebugCommands = new() { { "exit", new CommandInfo("exit", ShellType.RemoteDebugShell, "Disconnects you from the debugger", new CommandArgumentInfo([], false, 0), new Debug_ExitCommand()) }, { "help", new CommandInfo("help", ShellType.RemoteDebugShell, "Shows help screen", new CommandArgumentInfo(["[command]"], false, 0), new Debug_HelpCommand()) }, { "register", new CommandInfo("register", ShellType.RemoteDebugShell, "Sets device username", new CommandArgumentInfo(["<username>"], true, 1), new Debug_RegisterCommand()) }, { "trace", new CommandInfo("trace", ShellType.RemoteDebugShell, "Shows last stack trace on exception", new CommandArgumentInfo(["<tracenumber>"], true, 1), new Debug_TraceCommand()) }, { "username", new CommandInfo("username", ShellType.RemoteDebugShell, "Shows current username in the session", new CommandArgumentInfo([], false, 0), new Debug_UsernameCommand()) } };
+		internal static readonly Dictionary<string, CommandInfo> DebugModCmds = [];
 
 		/// <summary>
-        /// Client command parsing.
-        /// </summary>
-        /// <param name="CmdString">A specified command. It may contain arguments.</param>
-        /// <param name="SocketStreamWriter">A socket stream writer</param>
-        /// <param name="Address">An IP address</param>
+		/// Client command parsing.
+		/// </summary>
+		/// <param name="CmdString">A specified command. It may contain arguments.</param>
+		/// <param name="SocketStreamWriter">A socket stream writer</param>
+		/// <param name="Address">An IP address</param>
 		public static void ParseCmd(string CmdString, StreamWriter SocketStreamWriter, string Address)
 		{
 			Kernel.Kernel.KernelEventManager.RaiseRemoteDebugExecuteCommand(Address, CmdString);
@@ -46,7 +46,7 @@ namespace KS.Network.RemoteDebug
 			string Command = ArgumentInfo.Command;
 			string[] Args = ArgumentInfo.ArgumentsList;
 			string StrArgs = ArgumentInfo.ArgumentsText;
-			bool RequiredArgumentsProvided = ArgumentInfo.RequiredArgumentsProvided;
+			_ = ArgumentInfo.RequiredArgumentsProvided;
 
 			try
 			{

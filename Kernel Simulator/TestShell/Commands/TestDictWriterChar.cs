@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using KS.ConsoleBase.Colors;
-using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
-using KS.Shell.ShellBase.Commands;
-
+﻿
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
 // This file is part of Kernel Simulator
@@ -22,6 +16,12 @@ using KS.Shell.ShellBase.Commands;
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+using System.Collections.Generic;
+using KS.ConsoleBase.Colors;
+using KS.Languages;
+using KS.Misc.Writers.ConsoleWriters;
+using KS.Shell.ShellBase.Commands;
+
 namespace KS.TestShell.Commands
 {
 	class Test_TestDictWriterCharCommand : CommandExecutor, ICommand
@@ -30,7 +30,7 @@ namespace KS.TestShell.Commands
 		public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
 		{
 			var NormalCharDict = new Dictionary<string, char>() { { "One", '1' }, { "Two", '2' }, { "Three", '3' } };
-			var ArrayCharDict = new Dictionary<string, char[]>() { { "One", { '1', '2', '3' } }, { "Two", { '1', '2', '3' } }, { "Three", { '1', '2', '3' } } };
+			var ArrayCharDict = new Dictionary<string, char[]>() { { "One", new char[] { '1', '2', '3' } }, { "Two", new char[] { '1', '2', '3' } }, { "Three", new char[] { '1', '2', '3' } } };
 			TextWriterColor.Write(Translate.DoTranslation("Normal char dictionary:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
 			ListWriterColor.WriteList(NormalCharDict);
 			TextWriterColor.Write(Translate.DoTranslation("Array char dictionary:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));

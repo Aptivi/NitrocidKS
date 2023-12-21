@@ -20,7 +20,6 @@ using System.Diagnostics;
 
 using KS.Shell.ShellBase.Commands;
 using KS.Shell.ShellBase.Shells;
-using Microsoft.VisualBasic.CompilerServices;
 using NUnit.Framework;
 using Shouldly;
 
@@ -32,8 +31,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests getting list of commands from specific shell type
-    /// </summary>
+		/// Tests getting list of commands from specific shell type
+		/// </summary>
 		[Test]
 		[Description("Querying")]
 		public void TestGetCommandListFromSpecificShell()
@@ -46,15 +45,15 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests getting list of commands from all shells
-    /// </summary>
+		/// Tests getting list of commands from all shells
+		/// </summary>
 		[Test]
 		[Description("Querying")]
 		public void TestGetCommandListFromAllShells()
 		{
 			foreach (string ShellTypeName in Enum.GetNames(typeof(ShellType)))
 			{
-				var Commands = GetCommand.GetCommands((ShellType)Conversions.ToInteger(Enum.Parse(typeof(ShellType), ShellTypeName)));
+				var Commands = GetCommand.GetCommands((ShellType)Convert.ToInt32(Enum.Parse(typeof(ShellType), ShellTypeName)));
 				Debug.WriteLine(format: "Commands from {0}: {1} commands", ShellTypeName, Commands.Count);
 				Debug.WriteLine(format: string.Join(", ", Commands));
 				Commands.ShouldNotBeNull();

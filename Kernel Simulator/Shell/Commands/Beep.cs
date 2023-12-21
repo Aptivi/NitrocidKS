@@ -23,7 +23,6 @@ using KS.Misc.Platform;
 using KS.Misc.Reflection;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Shell.Commands
 {
@@ -33,13 +32,13 @@ namespace KS.Shell.Commands
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "There is already a platform check in the command logic.")]
 		public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
 		{
-			if (StringQuery.IsStringNumeric(ListArgs[0]) & Conversions.ToInteger(ListArgs[0]) >= 37 & Conversions.ToInteger(ListArgs[0]) <= 32767)
+			if (StringQuery.IsStringNumeric(ListArgs[0]) & Convert.ToInt32(ListArgs[0]) >= 37 & Convert.ToInt32(ListArgs[0]) <= 32767)
 			{
 				if (StringQuery.IsStringNumeric(ListArgs[1]))
 				{
 					if (PlatformDetector.IsOnWindows())
 					{
-						Console.Beep(Conversions.ToInteger(ListArgs[0]), Conversions.ToInteger(ListArgs[1]));
+						Console.Beep(Convert.ToInt32(ListArgs[0]), Convert.ToInt32(ListArgs[1]));
 					}
 					else
 					{

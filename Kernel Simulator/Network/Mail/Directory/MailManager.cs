@@ -35,21 +35,21 @@ namespace KS.Network.Mail.Directory
 		public static bool ShowPreview;
 
 		/// <summary>
-        /// Lists messages
-        /// </summary>
-        /// <param name="PageNum">Page number</param>
-        /// <exception cref="ArgumentException"></exception>
+		/// Lists messages
+		/// </summary>
+		/// <param name="PageNum">Page number</param>
+		/// <exception cref="ArgumentException"></exception>
 		public static void MailListMessages(int PageNum)
 		{
 			MailListMessages(PageNum, MailShellCommon.Mail_MaxMessagesInPage);
 		}
 
 		/// <summary>
-        /// Lists messages
-        /// </summary>
-        /// <param name="PageNum">Page number</param>
-        /// <param name="MessagesInPage">Max messages in one page</param>
-        /// <exception cref="ArgumentException"></exception>
+		/// Lists messages
+		/// </summary>
+		/// <param name="PageNum">Page number</param>
+		/// <param name="MessagesInPage">Max messages in one page</param>
+		/// <exception cref="ArgumentException"></exception>
 		public static void MailListMessages(int PageNum, int MessagesInPage)
 		{
 			// Sanity checks for the page number
@@ -110,12 +110,12 @@ namespace KS.Network.Mail.Directory
 		}
 
 		/// <summary>
-        /// Removes a message
-        /// </summary>
-        /// <param name="MsgNumber">Message number</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
-        /// <exception cref="ArgumentException"></exception>
-        /// <exception cref="Exceptions.MailException"></exception>
+		/// Removes a message
+		/// </summary>
+		/// <param name="MsgNumber">Message number</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
+		/// <exception cref="ArgumentException"></exception>
+		/// <exception cref="Exceptions.MailException"></exception>
 		public static bool MailRemoveMessage(int MsgNumber)
 		{
 			int Message = MsgNumber - 1;
@@ -159,10 +159,10 @@ namespace KS.Network.Mail.Directory
 		}
 
 		/// <summary>
-        /// Removes all mail that the specified sender has sent
-        /// </summary>
-        /// <param name="Sender">The sender name</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Removes all mail that the specified sender has sent
+		/// </summary>
+		/// <param name="Sender">The sender name</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool MailRemoveAllBySender(string Sender)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "All mail by {0} will be removed.", Sender);
@@ -229,13 +229,13 @@ namespace KS.Network.Mail.Directory
 		}
 
 		/// <summary>
-        /// Moves a message
-        /// </summary>
-        /// <param name="MsgNumber">Message number</param>
-        /// <param name="TargetFolder">Target folder</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
-        /// <exception cref="ArgumentException"></exception>
-        /// <exception cref="Exceptions.MailException"></exception>
+		/// Moves a message
+		/// </summary>
+		/// <param name="MsgNumber">Message number</param>
+		/// <param name="TargetFolder">Target folder</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
+		/// <exception cref="ArgumentException"></exception>
+		/// <exception cref="Exceptions.MailException"></exception>
 		public static bool MailMoveMessage(int MsgNumber, string TargetFolder)
 		{
 			int Message = MsgNumber - 1;
@@ -279,11 +279,11 @@ namespace KS.Network.Mail.Directory
 		}
 
 		/// <summary>
-        /// Moves all mail that the specified sender has sent
-        /// </summary>
-        /// <param name="Sender">The sender name</param>
-        /// <param name="TargetFolder">Target folder</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Moves all mail that the specified sender has sent
+		/// </summary>
+		/// <param name="Sender">The sender name</param>
+		/// <param name="TargetFolder">Target folder</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool MailMoveAllBySender(string Sender, string TargetFolder)
 		{
 			DebugWriter.Wdbg(DebugLevel.I, "All mail by {0} will be moved.", Sender);

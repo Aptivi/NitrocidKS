@@ -22,7 +22,6 @@ using KS.Misc.Screensaver;
 using KS.Misc.Threading;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
-using Microsoft.VisualBasic.CompilerServices;
 using Terminaux.Base;
 using Terminaux.Colors;
 
@@ -36,8 +35,8 @@ namespace KS.Misc.Animations.BeatEdgePulse
 		private static bool ResizeSyncing;
 
 		/// <summary>
-        /// Simulates the beat pulsing animation
-        /// </summary>
+		/// Simulates the beat pulsing animation
+		/// </summary>
 		public static void Simulate(BeatEdgePulseSettings Settings)
 		{
 			CurrentWindowWidth = ConsoleWrapper.WindowWidth;
@@ -91,7 +90,7 @@ namespace KS.Misc.Animations.BeatEdgePulse
 				}
 				else if (UserColor.Type == ColorType._255Color)
 				{
-					var ConsoleColor = new ConsoleColorsInfo((ConsoleColors)Conversions.ToInteger(UserColor.PlainSequence));
+					var ConsoleColor = new ConsoleColorsInfo((ConsoleColors)Convert.ToInt32(UserColor.PlainSequence));
 					RedColorNum = ConsoleColor.R;
 					GreenColorNum = ConsoleColor.G;
 					BlueColorNum = ConsoleColor.B;

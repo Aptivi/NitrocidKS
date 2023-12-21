@@ -33,10 +33,10 @@ namespace KS.Misc.Editors.HexEdit
 	{
 
 		/// <summary>
-        /// Opens the binary file
-        /// </summary>
-        /// <param name="File">Target file. We recommend you to use <see cref="NeutralizePath(String, Boolean)"></see> to neutralize path.</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Opens the binary file
+		/// </summary>
+		/// <param name="File">Target file. We recommend you to use <see cref="NeutralizePath(string, bool)"></see> to neutralize path.</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool HexEdit_OpenBinaryFile(string File)
 		{
 			try
@@ -51,7 +51,7 @@ namespace KS.Misc.Editors.HexEdit
 				HexEditShellCommon.HexEdit_FileStream.Seek(0L, SeekOrigin.Begin);
 
 				// Add the information to the arrays
-				HexEditShellCommon.HexEdit_FileBytes = FileBytes.ToList();
+				HexEditShellCommon.HexEdit_FileBytes = [.. FileBytes];
 				HexEditShellCommon.HexEdit_FileBytesOrig = FileBytes;
 				return true;
 			}
@@ -64,9 +64,9 @@ namespace KS.Misc.Editors.HexEdit
 		}
 
 		/// <summary>
-        /// Closes binary file
-        /// </summary>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Closes binary file
+		/// </summary>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool HexEdit_CloseBinaryFile()
 		{
 			try
@@ -76,7 +76,7 @@ namespace KS.Misc.Editors.HexEdit
 				HexEditShellCommon.HexEdit_FileStream = null;
 				DebugWriter.Wdbg(DebugLevel.I, "File is no longer open.");
 				HexEditShellCommon.HexEdit_FileBytes.Clear();
-				HexEditShellCommon.HexEdit_FileBytesOrig = Array.Empty<byte>();
+				HexEditShellCommon.HexEdit_FileBytesOrig = [];
 				return true;
 			}
 			catch (Exception ex)
@@ -88,14 +88,14 @@ namespace KS.Misc.Editors.HexEdit
 		}
 
 		/// <summary>
-        /// Saves binary file
-        /// </summary>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Saves binary file
+		/// </summary>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool HexEdit_SaveBinaryFile()
 		{
 			try
 			{
-				byte[] FileBytes = HexEditShellCommon.HexEdit_FileBytes.ToArray();
+				byte[] FileBytes = [.. HexEditShellCommon.HexEdit_FileBytes];
 				DebugWriter.Wdbg(DebugLevel.I, "Trying to save file...");
 				HexEditShellCommon.HexEdit_FileStream.SetLength(0L);
 				DebugWriter.Wdbg(DebugLevel.I, "Length set to 0.");
@@ -114,8 +114,8 @@ namespace KS.Misc.Editors.HexEdit
 		}
 
 		/// <summary>
-        /// Handles autosave
-        /// </summary>
+		/// Handles autosave
+		/// </summary>
 		public static void HexEdit_HandleAutoSaveBinaryFile()
 		{
 			if (HexEditShellCommon.HexEdit_AutoSaveFlag)
@@ -136,8 +136,8 @@ namespace KS.Misc.Editors.HexEdit
 		}
 
 		/// <summary>
-        /// Was binary edited?
-        /// </summary>
+		/// Was binary edited?
+		/// </summary>
 		public static bool HexEdit_WasHexEdited()
 		{
 			if (HexEditShellCommon.HexEdit_FileBytes is not null & HexEditShellCommon.HexEdit_FileBytesOrig is not null)
@@ -148,9 +148,9 @@ namespace KS.Misc.Editors.HexEdit
 		}
 
 		/// <summary>
-        /// Adds a new byte to the current hex
-        /// </summary>
-        /// <param name="Content">New byte content</param>
+		/// Adds a new byte to the current hex
+		/// </summary>
+		/// <param name="Content">New byte content</param>
 		public static void HexEdit_AddNewByte(byte Content)
 		{
 			if (HexEditShellCommon.HexEdit_FileStream is not null)
@@ -164,9 +164,9 @@ namespace KS.Misc.Editors.HexEdit
 		}
 
 		/// <summary>
-        /// Adds the new bytes to the current hex
-        /// </summary>
-        /// <param name="Bytes">New bytes</param>
+		/// Adds the new bytes to the current hex
+		/// </summary>
+		/// <param name="Bytes">New bytes</param>
 		public static void HexEdit_AddNewBytes(byte[] Bytes)
 		{
 			if (HexEditShellCommon.HexEdit_FileStream is not null)
@@ -181,9 +181,9 @@ namespace KS.Misc.Editors.HexEdit
 		}
 
 		/// <summary>
-        /// Deletes a byte
-        /// </summary>
-        /// <param name="ByteNumber">The byte number</param>
+		/// Deletes a byte
+		/// </summary>
+		/// <param name="ByteNumber">The byte number</param>
 		public static void HexEdit_DeleteByte(long ByteNumber)
 		{
 			if (HexEditShellCommon.HexEdit_FileStream is not null)
@@ -212,19 +212,19 @@ namespace KS.Misc.Editors.HexEdit
 		}
 
 		/// <summary>
-        /// Deletes the bytes
-        /// </summary>
-        /// <param name="StartByteNumber">Start from the byte number</param>
+		/// Deletes the bytes
+		/// </summary>
+		/// <param name="StartByteNumber">Start from the byte number</param>
 		public static void HexEdit_DeleteBytes(long StartByteNumber)
 		{
 			HexEdit_DeleteBytes(StartByteNumber, HexEditShellCommon.HexEdit_FileBytes.LongCount());
 		}
 
 		/// <summary>
-        /// Deletes the bytes
-        /// </summary>
-        /// <param name="StartByteNumber">Start from the byte number</param>
-        /// <param name="EndByteNumber">Ending byte number</param>
+		/// Deletes the bytes
+		/// </summary>
+		/// <param name="StartByteNumber">Start from the byte number</param>
+		/// <param name="EndByteNumber">Ending byte number</param>
 		public static void HexEdit_DeleteBytes(long StartByteNumber, long EndByteNumber)
 		{
 			if (HexEditShellCommon.HexEdit_FileStream is not null)
@@ -262,24 +262,24 @@ namespace KS.Misc.Editors.HexEdit
 		}
 
 		/// <summary>
-        /// Renders the file in hex
-        /// </summary>
+		/// Renders the file in hex
+		/// </summary>
 		public static void HexEdit_DisplayHex()
 		{
 			HexEdit_DisplayHex(1L, HexEditShellCommon.HexEdit_FileBytes.LongCount());
 		}
 
 		/// <summary>
-        /// Renders the file in hex
-        /// </summary>
+		/// Renders the file in hex
+		/// </summary>
 		public static void HexEdit_DisplayHex(long Start)
 		{
 			HexEdit_DisplayHex(Start, HexEditShellCommon.HexEdit_FileBytes.LongCount());
 		}
 
 		/// <summary>
-        /// Renders the file in hex
-        /// </summary>
+		/// Renders the file in hex
+		/// </summary>
 		public static void HexEdit_DisplayHex(long StartByte, long EndByte)
 		{
 			if (HexEditShellCommon.HexEdit_FileStream is not null)
@@ -349,24 +349,24 @@ namespace KS.Misc.Editors.HexEdit
 		}
 
 		/// <summary>
-        /// Queries the byte and displays the results
-        /// </summary>
+		/// Queries the byte and displays the results
+		/// </summary>
 		public static void HexEdit_QueryByteAndDisplay(byte ByteContent)
 		{
 			HexEdit_QueryByteAndDisplay(ByteContent, 1L, HexEditShellCommon.HexEdit_FileBytes.LongCount());
 		}
 
 		/// <summary>
-        /// Queries the byte and displays the results
-        /// </summary>
+		/// Queries the byte and displays the results
+		/// </summary>
 		public static void HexEdit_QueryByteAndDisplay(byte ByteContent, long Start)
 		{
 			HexEdit_QueryByteAndDisplay(ByteContent, Start, HexEditShellCommon.HexEdit_FileBytes.LongCount());
 		}
 
 		/// <summary>
-        /// Queries the byte and displays the results
-        /// </summary>
+		/// Queries the byte and displays the results
+		/// </summary>
 		public static void HexEdit_QueryByteAndDisplay(byte ByteContent, long StartByte, long EndByte)
 		{
 			if (HexEditShellCommon.HexEdit_FileStream is not null)
@@ -421,30 +421,30 @@ namespace KS.Misc.Editors.HexEdit
 		}
 
 		/// <summary>
-        /// Replaces every occurence of a byte with the replacement
-        /// </summary>
-        /// <param name="FromByte">Byte to be replaced</param>
-        /// <param name="WithByte">Byte to replace with</param>
+		/// Replaces every occurence of a byte with the replacement
+		/// </summary>
+		/// <param name="FromByte">Byte to be replaced</param>
+		/// <param name="WithByte">Byte to replace with</param>
 		public static void HexEdit_Replace(byte FromByte, byte WithByte)
 		{
 			HexEdit_Replace(FromByte, WithByte, 1L, HexEditShellCommon.HexEdit_FileBytes.LongCount());
 		}
 
 		/// <summary>
-        /// Replaces every occurence of a byte with the replacement
-        /// </summary>
-        /// <param name="FromByte">Byte to be replaced</param>
-        /// <param name="WithByte">Byte to replace with</param>
+		/// Replaces every occurence of a byte with the replacement
+		/// </summary>
+		/// <param name="FromByte">Byte to be replaced</param>
+		/// <param name="WithByte">Byte to replace with</param>
 		public static void HexEdit_Replace(byte FromByte, byte WithByte, long Start)
 		{
 			HexEdit_Replace(FromByte, WithByte, Start, HexEditShellCommon.HexEdit_FileBytes.LongCount());
 		}
 
 		/// <summary>
-        /// Replaces every occurence of a byte with the replacement
-        /// </summary>
-        /// <param name="FromByte">Byte to be replaced</param>
-        /// <param name="WithByte">Byte to replace with</param>
+		/// Replaces every occurence of a byte with the replacement
+		/// </summary>
+		/// <param name="FromByte">Byte to be replaced</param>
+		/// <param name="WithByte">Byte to replace with</param>
 		public static void HexEdit_Replace(byte FromByte, byte WithByte, long StartByte, long EndByte)
 		{
 			if (HexEditShellCommon.HexEdit_FileStream is not null)

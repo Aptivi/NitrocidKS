@@ -24,7 +24,6 @@ using KS.Misc.Reflection;
 using KS.Misc.Text;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Misc.Editors.HexEdit.Commands
 {
@@ -42,10 +41,10 @@ namespace KS.Misc.Editors.HexEdit.Commands
 			{
 				if (StringQuery.IsStringNumeric(ListArgs[1]))
 				{
-					if (Conversions.ToLong(ListArgs[1]) <= HexEditShellCommon.HexEdit_FileBytes.LongCount())
+					if (Convert.ToInt64(ListArgs[1]) <= HexEditShellCommon.HexEdit_FileBytes.LongCount())
 					{
 						byte ByteContent = Convert.ToByte(ListArgs[0], 16);
-						HexEditTools.HexEdit_QueryByteAndDisplay(ByteContent, Conversions.ToLong(ListArgs[1]));
+						HexEditTools.HexEdit_QueryByteAndDisplay(ByteContent, Convert.ToInt64(ListArgs[1]));
 					}
 					else
 					{
@@ -57,11 +56,11 @@ namespace KS.Misc.Editors.HexEdit.Commands
 			{
 				if (StringQuery.IsStringNumeric(ListArgs[1]) & StringQuery.IsStringNumeric(ListArgs[2]))
 				{
-					if (Conversions.ToLong(ListArgs[1]) <= HexEditShellCommon.HexEdit_FileBytes.LongCount() & Conversions.ToLong(ListArgs[2]) <= HexEditShellCommon.HexEdit_FileBytes.LongCount())
+					if (Convert.ToInt64(ListArgs[1]) <= HexEditShellCommon.HexEdit_FileBytes.LongCount() & Convert.ToInt64(ListArgs[2]) <= HexEditShellCommon.HexEdit_FileBytes.LongCount())
 					{
 						byte ByteContent = Convert.ToByte(ListArgs[0], 16);
-						long ByteNumberStart = Conversions.ToLong(ListArgs[1]);
-						long ByteNumberEnd = Conversions.ToLong(ListArgs[2]);
+						long ByteNumberStart = Convert.ToInt64(ListArgs[1]);
+						long ByteNumberEnd = Convert.ToInt64(ListArgs[2]);
 						ByteNumberStart.SwapIfSourceLarger(ref ByteNumberEnd);
 						HexEditTools.HexEdit_QueryByteAndDisplay(ByteContent, ByteNumberStart, ByteNumberEnd);
 					}

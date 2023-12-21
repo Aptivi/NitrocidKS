@@ -33,8 +33,8 @@ namespace KS.Files.Folders
 		private static string _CurrentDirectory = Paths.HomePath;
 
 		/// <summary>
-        /// The current directory
-        /// </summary>
+		/// The current directory
+		/// </summary>
 		public static string CurrentDir
 		{
 			get
@@ -57,10 +57,10 @@ namespace KS.Files.Folders
 		}
 
 		/// <summary>
-        /// Sets the current working directory
-        /// </summary>
-        /// <param name="dir">A directory</param>
-        /// <exception cref="DirectoryNotFoundException"></exception>
+		/// Sets the current working directory
+		/// </summary>
+		/// <param name="dir">A directory</param>
+		/// <exception cref="DirectoryNotFoundException"></exception>
 		public static void SetCurrDir(string dir)
 		{
 			CurrentDir = dir;
@@ -70,11 +70,11 @@ namespace KS.Files.Folders
 		}
 
 		/// <summary>
-        /// Tries to set the current working directory
-        /// </summary>
-        /// <param name="dir">A directory</param>
-        /// <returns>True if successful; otherwise, false.</returns>
-        /// <exception cref="DirectoryNotFoundException"></exception>
+		/// Tries to set the current working directory
+		/// </summary>
+		/// <param name="dir">A directory</param>
+		/// <returns>True if successful; otherwise, false.</returns>
+		/// <exception cref="DirectoryNotFoundException"></exception>
 		public static bool TrySetCurrDir(string dir)
 		{
 			try
@@ -91,8 +91,8 @@ namespace KS.Files.Folders
 		}
 
 		/// <summary>
-        /// Saves the current directory to configuration
-        /// </summary>
+		/// Saves the current directory to configuration
+		/// </summary>
 		public static void SaveCurrDir()
 		{
 			var Token = ConfigTools.GetConfigCategory(ConfigCategory.Shell);
@@ -100,9 +100,9 @@ namespace KS.Files.Folders
 		}
 
 		/// <summary>
-        /// Tries to set the current directory to configuration
-        /// </summary>
-        /// <returns>True if successful; otherwise, false.</returns>
+		/// Tries to set the current directory to configuration
+		/// </summary>
+		/// <returns>True if successful; otherwise, false.</returns>
 		public static bool TrySaveCurrDir()
 		{
 			try

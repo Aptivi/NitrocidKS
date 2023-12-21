@@ -33,16 +33,16 @@ namespace KS.Files.Print
 	{
 
 		/// <summary>
-        /// Prints the file information to the console
-        /// </summary>
+		/// Prints the file information to the console
+		/// </summary>
 		public static void PrintFileInfo(FileSystemInfo FileInfo)
 		{
 			PrintFileInfo(FileInfo, Listing.ShowFileDetailsList);
 		}
 
 		/// <summary>
-        /// Prints the file information to the console
-        /// </summary>
+		/// Prints the file information to the console
+		/// </summary>
 		public static void PrintFileInfo(FileSystemInfo FileInfo, bool ShowFileDetails)
 		{
 			if (Checking.FileExists(FileInfo.FullName))

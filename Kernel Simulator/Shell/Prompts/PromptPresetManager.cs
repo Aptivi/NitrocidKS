@@ -29,32 +29,32 @@ namespace KS.Shell.Prompts
 	{
 
 		// Shell presets
-		internal readonly static Dictionary<string, PromptPresetBase> UESHShellPresets = new() { { "Default", new DefaultPreset() }, { "PowerLine1", new PowerLine1Preset() }, { "PowerLine2", new PowerLine2Preset() }, { "PowerLine3", new PowerLine3Preset() }, { "PowerLineBG1", new PowerLineBG1Preset() }, { "PowerLineBG2", new PowerLineBG2Preset() }, { "PowerLineBG3", new PowerLineBG3Preset() } };
-		internal readonly static Dictionary<string, PromptPresetBase> TestShellPresets = new() { { "Default", new TestDefaultPreset() } };
-		internal readonly static Dictionary<string, PromptPresetBase> ZipShellPresets = new() { { "Default", new ZipDefaultPreset() } };
-		internal readonly static Dictionary<string, PromptPresetBase> TextShellPresets = new() { { "Default", new TextDefaultPreset() } };
-		internal readonly static Dictionary<string, PromptPresetBase> SFTPShellPresets = new() { { "Default", new SFTPDefaultPreset() } };
-		internal readonly static Dictionary<string, PromptPresetBase> RSSShellPresets = new() { { "Default", new RSSDefaultPreset() } };
-		internal readonly static Dictionary<string, PromptPresetBase> MailShellPresets = new() { { "Default", new MailDefaultPreset() } };
-		internal readonly static Dictionary<string, PromptPresetBase> JsonShellPresets = new() { { "Default", new JsonDefaultPreset() } };
-		internal readonly static Dictionary<string, PromptPresetBase> HTTPShellPresets = new() { { "Default", new HTTPDefaultPreset() } };
-		internal readonly static Dictionary<string, PromptPresetBase> HexShellPresets = new() { { "Default", new HexDefaultPreset() } };
-		internal readonly static Dictionary<string, PromptPresetBase> FTPShellPresets = new() { { "Default", new FTPDefaultPreset() } };
-		internal readonly static Dictionary<string, PromptPresetBase> RARShellPresets = new() { { "Default", new RarDefaultPreset() } };
+		internal static readonly Dictionary<string, PromptPresetBase> UESHShellPresets = new() { { "Default", new DefaultPreset() }, { "PowerLine1", new PowerLine1Preset() }, { "PowerLine2", new PowerLine2Preset() }, { "PowerLine3", new PowerLine3Preset() }, { "PowerLineBG1", new PowerLineBG1Preset() }, { "PowerLineBG2", new PowerLineBG2Preset() }, { "PowerLineBG3", new PowerLineBG3Preset() } };
+		internal static readonly Dictionary<string, PromptPresetBase> TestShellPresets = new() { { "Default", new TestDefaultPreset() } };
+		internal static readonly Dictionary<string, PromptPresetBase> ZipShellPresets = new() { { "Default", new ZipDefaultPreset() } };
+		internal static readonly Dictionary<string, PromptPresetBase> TextShellPresets = new() { { "Default", new TextDefaultPreset() } };
+		internal static readonly Dictionary<string, PromptPresetBase> SFTPShellPresets = new() { { "Default", new SFTPDefaultPreset() } };
+		internal static readonly Dictionary<string, PromptPresetBase> RSSShellPresets = new() { { "Default", new RSSDefaultPreset() } };
+		internal static readonly Dictionary<string, PromptPresetBase> MailShellPresets = new() { { "Default", new MailDefaultPreset() } };
+		internal static readonly Dictionary<string, PromptPresetBase> JsonShellPresets = new() { { "Default", new JsonDefaultPreset() } };
+		internal static readonly Dictionary<string, PromptPresetBase> HTTPShellPresets = new() { { "Default", new HTTPDefaultPreset() } };
+		internal static readonly Dictionary<string, PromptPresetBase> HexShellPresets = new() { { "Default", new HexDefaultPreset() } };
+		internal static readonly Dictionary<string, PromptPresetBase> FTPShellPresets = new() { { "Default", new FTPDefaultPreset() } };
+		internal static readonly Dictionary<string, PromptPresetBase> RARShellPresets = new() { { "Default", new RarDefaultPreset() } };
 
 		// Custom shell presets used by mods
-		internal readonly static Dictionary<string, PromptPresetBase> UESHCustomShellPresets = new();
-		internal readonly static Dictionary<string, PromptPresetBase> TestCustomShellPresets = new();
-		internal readonly static Dictionary<string, PromptPresetBase> ZipCustomShellPresets = new();
-		internal readonly static Dictionary<string, PromptPresetBase> TextCustomShellPresets = new();
-		internal readonly static Dictionary<string, PromptPresetBase> SFTPCustomShellPresets = new();
-		internal readonly static Dictionary<string, PromptPresetBase> RSSCustomShellPresets = new();
-		internal readonly static Dictionary<string, PromptPresetBase> MailCustomShellPresets = new();
-		internal readonly static Dictionary<string, PromptPresetBase> JsonCustomShellPresets = new();
-		internal readonly static Dictionary<string, PromptPresetBase> HTTPCustomShellPresets = new();
-		internal readonly static Dictionary<string, PromptPresetBase> HexCustomShellPresets = new();
-		internal readonly static Dictionary<string, PromptPresetBase> FTPCustomShellPresets = new();
-		internal readonly static Dictionary<string, PromptPresetBase> RARCustomShellPresets = new();
+		internal static readonly Dictionary<string, PromptPresetBase> UESHCustomShellPresets = [];
+		internal static readonly Dictionary<string, PromptPresetBase> TestCustomShellPresets = [];
+		internal static readonly Dictionary<string, PromptPresetBase> ZipCustomShellPresets = [];
+		internal static readonly Dictionary<string, PromptPresetBase> TextCustomShellPresets = [];
+		internal static readonly Dictionary<string, PromptPresetBase> SFTPCustomShellPresets = [];
+		internal static readonly Dictionary<string, PromptPresetBase> RSSCustomShellPresets = [];
+		internal static readonly Dictionary<string, PromptPresetBase> MailCustomShellPresets = [];
+		internal static readonly Dictionary<string, PromptPresetBase> JsonCustomShellPresets = [];
+		internal static readonly Dictionary<string, PromptPresetBase> HTTPCustomShellPresets = [];
+		internal static readonly Dictionary<string, PromptPresetBase> HexCustomShellPresets = [];
+		internal static readonly Dictionary<string, PromptPresetBase> FTPCustomShellPresets = [];
+		internal static readonly Dictionary<string, PromptPresetBase> RARCustomShellPresets = [];
 
 		// Current presets
 		internal static PromptPresetBase UESHShellCurrentPreset = UESHShellPresets["Default"];
@@ -71,9 +71,9 @@ namespace KS.Shell.Prompts
 		internal static PromptPresetBase RARShellCurrentPreset = FTPShellPresets["Default"];
 
 		/// <summary>
-        /// Sets the shell preset
-        /// </summary>
-        /// <param name="PresetName">The preset name</param>
+		/// Sets the shell preset
+		/// </summary>
+		/// <param name="PresetName">The preset name</param>
 		public static void SetPreset(string PresetName, ShellType ShellType, bool ThrowOnNotFound = true)
 		{
 			var Presets = GetPresetsFromShell(ShellType);
@@ -100,10 +100,10 @@ namespace KS.Shell.Prompts
 		}
 
 		/// <summary>
-        /// Sets the preset
-        /// </summary>
-        /// <param name="PresetName">The preset name</param>
-        /// <param name="ShellType">The shell type</param>
+		/// Sets the preset
+		/// </summary>
+		/// <param name="PresetName">The preset name</param>
+		/// <param name="ShellType">The shell type</param>
 		internal static void SetPresetInternal(string PresetName, ShellType ShellType, Dictionary<string, PromptPresetBase> Presets)
 		{
 			switch (ShellType)
@@ -184,9 +184,9 @@ namespace KS.Shell.Prompts
 		}
 
 		/// <summary>
-        /// Gets the current preset base from the shell
-        /// </summary>
-        /// <param name="ShellType">The shell type</param>
+		/// Gets the current preset base from the shell
+		/// </summary>
+		/// <param name="ShellType">The shell type</param>
 		public static PromptPresetBase GetCurrentPresetBaseFromShell(ShellType ShellType)
 		{
 			switch (ShellType)
@@ -248,9 +248,9 @@ namespace KS.Shell.Prompts
 		}
 
 		/// <summary>
-        /// Gets the predefined presets from the shell
-        /// </summary>
-        /// <param name="ShellType">The shell type</param>
+		/// Gets the predefined presets from the shell
+		/// </summary>
+		/// <param name="ShellType">The shell type</param>
 		public static Dictionary<string, PromptPresetBase> GetPresetsFromShell(ShellType ShellType)
 		{
 			switch (ShellType)
@@ -312,9 +312,9 @@ namespace KS.Shell.Prompts
 		}
 
 		/// <summary>
-        /// Gets the custom presets (defined by mods) from the shell
-        /// </summary>
-        /// <param name="ShellType">The shell type</param>
+		/// Gets the custom presets (defined by mods) from the shell
+		/// </summary>
+		/// <param name="ShellType">The shell type</param>
 		public static Dictionary<string, PromptPresetBase> GetCustomPresetsFromShell(ShellType ShellType)
 		{
 			switch (ShellType)
@@ -376,9 +376,9 @@ namespace KS.Shell.Prompts
 		}
 
 		/// <summary>
-        /// Writes the shell prompt
-        /// </summary>
-        /// <param name="ShellType">Shell type</param>
+		/// Writes the shell prompt
+		/// </summary>
+		/// <param name="ShellType">Shell type</param>
 		public static void WriteShellPrompt(ShellType ShellType)
 		{
 			var CurrentPresetBase = GetCurrentPresetBaseFromShell(ShellType);
@@ -386,8 +386,8 @@ namespace KS.Shell.Prompts
 		}
 
 		/// <summary>
-        /// Prompts a user to select the preset
-        /// </summary>
+		/// Prompts a user to select the preset
+		/// </summary>
 		public static void PromptForPresets()
 		{
 			var ShellType = ShellStart.ShellStack[ShellStart.ShellStack.Count - 1].ShellType;
@@ -398,7 +398,7 @@ namespace KS.Shell.Prompts
 				Presets.Add(PresetName, Presets[PresetName]);
 
 			// Now, prompt the user
-			string[] PresetNames = Presets.Keys.ToArray();
+			string[] PresetNames = [.. Presets.Keys];
 			string[] PresetDisplays = Presets.Values.Select(Preset => Preset.PresetPrompt).ToArray();
 			string SelectedPreset = ConsoleBase.Inputs.Styles.ChoiceStyle.PromptChoice(Translate.DoTranslation("Select preset for {0}:").FormatString(ShellType), string.Join("/", PresetNames), PresetDisplays, ChoiceOutputType.Modern, true);
 			SetPreset(SelectedPreset, ShellType);

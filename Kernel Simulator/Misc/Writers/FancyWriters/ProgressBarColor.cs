@@ -30,11 +30,11 @@ namespace KS.Misc.Writers.FancyWriters
 	{
 
 		/// <summary>
-        /// Writes the progress bar
-        /// </summary>
-        /// <param name="Progress">The progress percentage</param>
-        /// <param name="Left">The progress position from the upper left corner</param>
-        /// <param name="Top">The progress position from the top</param>
+		/// Writes the progress bar
+		/// </summary>
+		/// <param name="Progress">The progress percentage</param>
+		/// <param name="Left">The progress position from the upper left corner</param>
+		/// <param name="Top">The progress position from the top</param>
 		public static void WriteProgressPlain(double Progress, int Left, int Top)
 		{
 			try
@@ -49,11 +49,11 @@ namespace KS.Misc.Writers.FancyWriters
 		}
 
 		/// <summary>
-        /// Writes the progress bar
-        /// </summary>
-        /// <param name="Progress">The progress percentage</param>
-        /// <param name="Left">The progress position from the upper left corner</param>
-        /// <param name="Top">The progress position from the top</param>
+		/// Writes the progress bar
+		/// </summary>
+		/// <param name="Progress">The progress percentage</param>
+		/// <param name="Left">The progress position from the upper left corner</param>
+		/// <param name="Top">The progress position from the top</param>
 		public static void WriteProgress(double Progress, int Left, int Top)
 		{
 			try
@@ -68,12 +68,12 @@ namespace KS.Misc.Writers.FancyWriters
 		}
 
 		/// <summary>
-        /// Writes the progress bar
-        /// </summary>
-        /// <param name="Progress">The progress percentage</param>
-        /// <param name="Left">The progress position from the upper left corner</param>
-        /// <param name="Top">The progress position from the top</param>
-        /// <param name="ProgressColor">The progress bar color</param>
+		/// Writes the progress bar
+		/// </summary>
+		/// <param name="Progress">The progress percentage</param>
+		/// <param name="Left">The progress position from the upper left corner</param>
+		/// <param name="Top">The progress position from the top</param>
+		/// <param name="ProgressColor">The progress bar color</param>
 		public static void WriteProgress(double Progress, int Left, int Top, KernelColorTools.ColTypes ProgressColor)
 		{
 			try
@@ -88,13 +88,13 @@ namespace KS.Misc.Writers.FancyWriters
 		}
 
 		/// <summary>
-        /// Writes the progress bar
-        /// </summary>
-        /// <param name="Progress">The progress percentage</param>
-        /// <param name="Left">The progress position from the upper left corner</param>
-        /// <param name="Top">The progress position from the top</param>
-        /// <param name="ProgressColor">The progress bar color</param>
-        /// <param name="FrameColor">The progress bar frame color</param>
+		/// Writes the progress bar
+		/// </summary>
+		/// <param name="Progress">The progress percentage</param>
+		/// <param name="Left">The progress position from the upper left corner</param>
+		/// <param name="Top">The progress position from the top</param>
+		/// <param name="ProgressColor">The progress bar color</param>
+		/// <param name="FrameColor">The progress bar frame color</param>
 		public static void WriteProgress(double Progress, int Left, int Top, KernelColorTools.ColTypes ProgressColor, KernelColorTools.ColTypes FrameColor)
 		{
 			try
@@ -109,12 +109,12 @@ namespace KS.Misc.Writers.FancyWriters
 		}
 
 		/// <summary>
-        /// Writes the progress bar
-        /// </summary>
-        /// <param name="Progress">The progress percentage</param>
-        /// <param name="Left">The progress position from the upper left corner</param>
-        /// <param name="Top">The progress position from the top</param>
-        /// <param name="ProgressColor">The progress bar color</param>
+		/// Writes the progress bar
+		/// </summary>
+		/// <param name="Progress">The progress percentage</param>
+		/// <param name="Left">The progress position from the upper left corner</param>
+		/// <param name="Top">The progress position from the top</param>
+		/// <param name="ProgressColor">The progress bar color</param>
 		public static void WriteProgress(double Progress, int Left, int Top, Color ProgressColor)
 		{
 			try
@@ -129,13 +129,13 @@ namespace KS.Misc.Writers.FancyWriters
 		}
 
 		/// <summary>
-        /// Writes the progress bar
-        /// </summary>
-        /// <param name="Progress">The progress percentage</param>
-        /// <param name="Left">The progress position from the upper left corner</param>
-        /// <param name="Top">The progress position from the top</param>
-        /// <param name="ProgressColor">The progress bar color</param>
-        /// <param name="FrameColor">The progress bar frame color</param>
+		/// Writes the progress bar
+		/// </summary>
+		/// <param name="Progress">The progress percentage</param>
+		/// <param name="Left">The progress position from the upper left corner</param>
+		/// <param name="Top">The progress position from the top</param>
+		/// <param name="ProgressColor">The progress bar color</param>
+		/// <param name="FrameColor">The progress bar frame color</param>
 		public static void WriteProgress(double Progress, int Left, int Top, Color ProgressColor, Color FrameColor)
 		{
 			try

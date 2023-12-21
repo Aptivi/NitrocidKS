@@ -23,7 +23,6 @@ using KS.Misc.Writers.ConsoleWriters;
 
 using KS.Network.FTP.Filesystem;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Network.FTP.Commands
 {
@@ -38,7 +37,7 @@ namespace KS.Network.FTP.Commands
 			// Check to see if hash is found
 			if (Enum.IsDefined(typeof(FtpHashAlgorithm), Hash))
 			{
-				var HashResult = FTPHashing.FTPGetHash(RemoteFile, (FtpHashAlgorithm)Conversions.ToInteger(Enum.Parse(typeof(FtpHashAlgorithm), Hash)));
+				var HashResult = FTPHashing.FTPGetHash(RemoteFile, (FtpHashAlgorithm)Convert.ToInt32(Enum.Parse(typeof(FtpHashAlgorithm), Hash)));
 				TextWriterColor.Write(HashResult.Value, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
 			}
 			else

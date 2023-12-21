@@ -32,14 +32,14 @@ namespace KS.Misc.Writers.FancyWriters
 	{
 
 		/// <summary>
-        /// Writes the figlet text with position support
-        /// </summary>
-        /// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
-        /// <param name="Left">Column number in console</param>
-        /// <param name="Top">Row number in console</param>
-        /// <param name="Return">Whether or not to return to old position</param>
-        /// <param name="FigletFont">Figlet font to use in the text.</param>
-        /// <param name="Vars">Variables to format the message before it's written.</param>
+		/// Writes the figlet text with position support
+		/// </summary>
+		/// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
+		/// <param name="Left">Column number in console</param>
+		/// <param name="Top">Row number in console</param>
+		/// <param name="Return">Whether or not to return to old position</param>
+		/// <param name="FigletFont">Figlet font to use in the text.</param>
+		/// <param name="Vars">Variables to format the message before it's written.</param>
 		public static void WriteFigletWherePlain(string Text, int Left, int Top, bool Return, FiggleFont FigletFont, params object[] Vars)
 		{
 			try
@@ -60,15 +60,15 @@ namespace KS.Misc.Writers.FancyWriters
 		}
 
 		/// <summary>
-        /// Writes the figlet text with position support
-        /// </summary>
-        /// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
-        /// <param name="Left">Column number in console</param>
-        /// <param name="Top">Row number in console</param>
-        /// <param name="Return">Whether or not to return to old position</param>
-        /// <param name="FigletFont">Figlet font to use in the text.</param>
-        /// <param name="ColTypes">A type of colors that will be changed.</param>
-        /// <param name="Vars">Variables to format the message before it's written.</param>
+		/// Writes the figlet text with position support
+		/// </summary>
+		/// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
+		/// <param name="Left">Column number in console</param>
+		/// <param name="Top">Row number in console</param>
+		/// <param name="Return">Whether or not to return to old position</param>
+		/// <param name="FigletFont">Figlet font to use in the text.</param>
+		/// <param name="ColTypes">A type of colors that will be changed.</param>
+		/// <param name="Vars">Variables to format the message before it's written.</param>
 		public static void WriteFigletWhere(string Text, int Left, int Top, bool Return, FiggleFont FigletFont, KernelColorTools.ColTypes ColTypes, params object[] Vars)
 		{
 			try
@@ -87,16 +87,16 @@ namespace KS.Misc.Writers.FancyWriters
 		}
 
 		/// <summary>
-        /// Writes the figlet text with position support
-        /// </summary>
-        /// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
-        /// <param name="Left">Column number in console</param>
-        /// <param name="Top">Row number in console</param>
-        /// <param name="Return">Whether or not to return to old position</param>
-        /// <param name="FigletFont">Figlet font to use in the text.</param>
-        /// <param name="colorTypeForeground">A type of colors that will be changed for the foreground color.</param>
-        /// <param name="colorTypeBackground">A type of colors that will be changed for the background color.</param>
-        /// <param name="Vars">Variables to format the message before it's written.</param>
+		/// Writes the figlet text with position support
+		/// </summary>
+		/// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
+		/// <param name="Left">Column number in console</param>
+		/// <param name="Top">Row number in console</param>
+		/// <param name="Return">Whether or not to return to old position</param>
+		/// <param name="FigletFont">Figlet font to use in the text.</param>
+		/// <param name="colorTypeForeground">A type of colors that will be changed for the foreground color.</param>
+		/// <param name="colorTypeBackground">A type of colors that will be changed for the background color.</param>
+		/// <param name="Vars">Variables to format the message before it's written.</param>
 		public static void WriteFigletWhere(string Text, int Left, int Top, bool Return, FiggleFont FigletFont, KernelColorTools.ColTypes colorTypeForeground, KernelColorTools.ColTypes colorTypeBackground, params object[] Vars)
 		{
 			try
@@ -116,15 +116,15 @@ namespace KS.Misc.Writers.FancyWriters
 		}
 
 		/// <summary>
-        /// Writes the figlet text with position support
-        /// </summary>
-        /// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
-        /// <param name="Left">Column number in console</param>
-        /// <param name="Top">Row number in console</param>
-        /// <param name="Return">Whether or not to return to old position</param>
-        /// <param name="FigletFont">Figlet font to use in the text.</param>
-        /// <param name="color">A color that will be changed to.</param>
-        /// <param name="Vars">Variables to format the message before it's written.</param>
+		/// Writes the figlet text with position support
+		/// </summary>
+		/// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
+		/// <param name="Left">Column number in console</param>
+		/// <param name="Top">Row number in console</param>
+		/// <param name="Return">Whether or not to return to old position</param>
+		/// <param name="FigletFont">Figlet font to use in the text.</param>
+		/// <param name="color">A color that will be changed to.</param>
+		/// <param name="Vars">Variables to format the message before it's written.</param>
 		public static void WriteFigletWhere(string Text, int Left, int Top, bool Return, FiggleFont FigletFont, ConsoleColor Color, params object[] Vars)
 		{
 			try
@@ -143,16 +143,16 @@ namespace KS.Misc.Writers.FancyWriters
 		}
 
 		/// <summary>
-        /// Writes the figlet text with position support
-        /// </summary>
-        /// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
-        /// <param name="Left">Column number in console</param>
-        /// <param name="Top">Row number in console</param>
-        /// <param name="Return">Whether or not to return to old position</param>
-        /// <param name="FigletFont">Figlet font to use in the text.</param>
-        /// <param name="ForegroundColor">A foreground color that will be changed to.</param>
-        /// <param name="BackgroundColor">A background color that will be changed to.</param>
-        /// <param name="Vars">Variables to format the message before it's written.</param>
+		/// Writes the figlet text with position support
+		/// </summary>
+		/// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
+		/// <param name="Left">Column number in console</param>
+		/// <param name="Top">Row number in console</param>
+		/// <param name="Return">Whether or not to return to old position</param>
+		/// <param name="FigletFont">Figlet font to use in the text.</param>
+		/// <param name="ForegroundColor">A foreground color that will be changed to.</param>
+		/// <param name="BackgroundColor">A background color that will be changed to.</param>
+		/// <param name="Vars">Variables to format the message before it's written.</param>
 		public static void WriteFigletWhere(string Text, int Left, int Top, bool Return, FiggleFont FigletFont, ConsoleColor ForegroundColor, ConsoleColor BackgroundColor, params object[] Vars)
 		{
 			try
@@ -172,15 +172,15 @@ namespace KS.Misc.Writers.FancyWriters
 		}
 
 		/// <summary>
-        /// Writes the figlet text with position support
-        /// </summary>
-        /// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
-        /// <param name="Left">Column number in console</param>
-        /// <param name="Top">Row number in console</param>
-        /// <param name="Return">Whether or not to return to old position</param>
-        /// <param name="FigletFont">Figlet font to use in the text.</param>
-        /// <param name="Color">A color that will be changed to.</param>
-        /// <param name="Vars">Variables to format the message before it's written.</param>
+		/// Writes the figlet text with position support
+		/// </summary>
+		/// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
+		/// <param name="Left">Column number in console</param>
+		/// <param name="Top">Row number in console</param>
+		/// <param name="Return">Whether or not to return to old position</param>
+		/// <param name="FigletFont">Figlet font to use in the text.</param>
+		/// <param name="Color">A color that will be changed to.</param>
+		/// <param name="Vars">Variables to format the message before it's written.</param>
 		public static void WriteFigletWhere(string Text, int Left, int Top, bool Return, FiggleFont FigletFont, Color Color, params object[] Vars)
 		{
 			try
@@ -199,16 +199,16 @@ namespace KS.Misc.Writers.FancyWriters
 		}
 
 		/// <summary>
-        /// Writes the figlet text with position support
-        /// </summary>
-        /// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
-        /// <param name="Left">Column number in console</param>
-        /// <param name="Top">Row number in console</param>
-        /// <param name="Return">Whether or not to return to old position</param>
-        /// <param name="FigletFont">Figlet font to use in the text.</param>
-        /// <param name="ForegroundColor">A foreground color that will be changed to.</param>
-        /// <param name="BackgroundColor">A background color that will be changed to.</param>
-        /// <param name="Vars">Variables to format the message before it's written.</param>
+		/// Writes the figlet text with position support
+		/// </summary>
+		/// <param name="Text">Text to be written. If nothing, the entire line is filled with the separator.</param>
+		/// <param name="Left">Column number in console</param>
+		/// <param name="Top">Row number in console</param>
+		/// <param name="Return">Whether or not to return to old position</param>
+		/// <param name="FigletFont">Figlet font to use in the text.</param>
+		/// <param name="ForegroundColor">A foreground color that will be changed to.</param>
+		/// <param name="BackgroundColor">A background color that will be changed to.</param>
+		/// <param name="Vars">Variables to format the message before it's written.</param>
 		public static void WriteFigletWhere(string Text, int Left, int Top, bool Return, FiggleFont FigletFont, Color ForegroundColor, Color BackgroundColor, params object[] Vars)
 		{
 			try

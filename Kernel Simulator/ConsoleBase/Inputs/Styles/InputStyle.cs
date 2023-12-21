@@ -25,8 +25,8 @@ namespace KS.ConsoleBase.Inputs.Styles
 	{
 
 		/// <summary>
-        /// Prompts user for input (answer the question with your own answers)
-        /// </summary>
+		/// Prompts user for input (answer the question with your own answers)
+		/// </summary>
 		public static string PromptInput(string Question)
 		{
 			return TermInputStyle.PromptInput(Question);

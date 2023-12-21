@@ -3,7 +3,6 @@ using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
 using Terminaux.Colors;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
@@ -35,13 +34,13 @@ namespace KS.TestShell.Commands
 			char GitBranchChar = Convert.ToChar(0xE0A0);
 			TextWriterColor.Write(Translate.DoTranslation("Be sure to use a console font supporting PowerLine glyphs, or the output may not render properly. We recommend") + " Cascadia Code/Mono PL", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
 			TextWriterColor.Write(" One ", false, new Color(ConsoleColor.Black), new Color(85, 255, 255));
-			TextWriterColor.Write(Conversions.ToString(TransitionChar), false, new Color(85, 255, 255), new Color(255, 85, 255));
+			TextWriterColor.Write(Convert.ToString(TransitionChar), false, new Color(85, 255, 255), new Color(255, 85, 255));
 			TextWriterColor.Write(" Two ", false, new Color(ConsoleColor.Black), new Color(255, 85, 255));
-			TextWriterColor.Write(Conversions.ToString(TransitionChar), false, new Color(255, 85, 255), new Color(255, 255, 85));
+			TextWriterColor.Write(Convert.ToString(TransitionChar), false, new Color(255, 85, 255), new Color(255, 255, 85));
 			TextWriterColor.Write($" {PadlockChar} Secure ", false, new Color(ConsoleColor.Black), new Color(255, 255, 85));
-			TextWriterColor.Write(Conversions.ToString(TransitionChar), false, new Color(255, 255, 85), new Color(255, 255, 255));
+			TextWriterColor.Write(Convert.ToString(TransitionChar), false, new Color(255, 255, 85), new Color(255, 255, 255));
 			TextWriterColor.Write($" {GitBranchChar} master ", false, new Color(ConsoleColor.Black), new Color(255, 255, 255));
-			TextWriterColor.Write(Conversions.ToString(TransitionChar), true, new Color(255, 255, 255), KernelColorTools.BackgroundColor);
+			TextWriterColor.Write(Convert.ToString(TransitionChar), true, new Color(255, 255, 255), KernelColorTools.BackgroundColor);
 		}
 
 	}

@@ -24,59 +24,59 @@ namespace KS.Shell.ShellBase.Commands
 	{
 
 		/// <summary>
-        /// The command
-        /// </summary>
+		/// The command
+		/// </summary>
 		public string Command { get; private set; }
 		/// <summary>
-        /// The type of command
-        /// </summary>
+		/// The type of command
+		/// </summary>
 		public ShellType Type { get; private set; }
 		/// <summary>
-        /// The untranslated help definition of command. Translated by <see cref="GetTranslatedHelpEntry()"/>
-        /// </summary>
+		/// The untranslated help definition of command. Translated by <see cref="GetTranslatedHelpEntry()"/>
+		/// </summary>
 		public string HelpDefinition { get; set; }
 		/// <summary>
-        /// Command argument info
-        /// </summary>
+		/// Command argument info
+		/// </summary>
 		public CommandArgumentInfo CommandArgumentInfo { get; private set; }
 		/// <summary>
-        /// Command base for execution
-        /// </summary>
+		/// Command base for execution
+		/// </summary>
 		public CommandExecutor CommandBase { get; private set; }
 		/// <summary>
-        /// Is the command admin-only?
-        /// </summary>
+		/// Is the command admin-only?
+		/// </summary>
 		public bool Strict { get; private set; }
 		/// <summary>
-        /// Is the command wrappable?
-        /// </summary>
+		/// Is the command wrappable?
+		/// </summary>
 		public bool Wrappable { get; private set; }
 		/// <summary>
-        /// If true, the command can't be run in maintenance mode
-        /// </summary>
+		/// If true, the command can't be run in maintenance mode
+		/// </summary>
 		public bool NoMaintenance { get; private set; }
 		/// <summary>
-        /// Is the command obsolete?
-        /// </summary>
+		/// Is the command obsolete?
+		/// </summary>
 		public bool Obsolete { get; private set; }
 		/// <summary>
-        /// Does the command set a UESH $variable?
-        /// </summary>
+		/// Does the command set a UESH $variable?
+		/// </summary>
 		public bool SettingVariable { get; private set; }
 
 		/// <summary>
-        /// Installs a new instance of command info class
-        /// </summary>
-        /// <param name="Command">Command</param>
-        /// <param name="Type">Shell command type</param>
-        /// <param name="HelpDefinition">Command help definition</param>
-        /// <param name="CommandArgumentInfo">Command argument info</param>
-        /// <param name="CommandBase">Command base for execution</param>
-        /// <param name="Strict">Is the command admin-only?</param>
-        /// <param name="Wrappable">Is the command wrappable?</param>
-        /// <param name="NoMaintenance">If true, the command can't be run in maintenance mode</param>
-        /// <param name="Obsolete">Is the command obsolete?</param>
-        /// <param name="SettingVariable">Does the command set a UESH $variable?</param>
+		/// Installs a new instance of command info class
+		/// </summary>
+		/// <param name="Command">Command</param>
+		/// <param name="Type">Shell command type</param>
+		/// <param name="HelpDefinition">Command help definition</param>
+		/// <param name="CommandArgumentInfo">Command argument info</param>
+		/// <param name="CommandBase">Command base for execution</param>
+		/// <param name="Strict">Is the command admin-only?</param>
+		/// <param name="Wrappable">Is the command wrappable?</param>
+		/// <param name="NoMaintenance">If true, the command can't be run in maintenance mode</param>
+		/// <param name="Obsolete">Is the command obsolete?</param>
+		/// <param name="SettingVariable">Does the command set a UESH $variable?</param>
 		public CommandInfo(string Command, ShellType Type, string HelpDefinition, CommandArgumentInfo CommandArgumentInfo, CommandExecutor CommandBase, bool Strict = false, bool Wrappable = false, bool NoMaintenance = false, bool Obsolete = false, bool SettingVariable = false)
 		{
 			this.Command = Command;
@@ -92,8 +92,8 @@ namespace KS.Shell.ShellBase.Commands
 		}
 
 		/// <summary>
-        /// Gets the translated version of help entry (KS built-in commands only)
-        /// </summary>
+		/// Gets the translated version of help entry (KS built-in commands only)
+		/// </summary>
 		public string GetTranslatedHelpEntry()
 		{
 			return Translate.DoTranslation(HelpDefinition);

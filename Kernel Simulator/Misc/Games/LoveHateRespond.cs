@@ -7,7 +7,6 @@ using KS.Languages;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 using KS.Misc.Writers.FancyWriters;
-using Microsoft.VisualBasic.CompilerServices;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
@@ -34,29 +33,29 @@ namespace KS.Misc.Games
 	{
 
 		/// <summary>
-        /// How many users to add to the love/hate comment room?
-        /// </summary>
+		/// How many users to add to the love/hate comment room?
+		/// </summary>
 		public static int LoveOrHateUsersCount = 20;
-		private readonly static List<string> LoveComments = new() { Translate.DoTranslation("Thanks! This is interesting."), Translate.DoTranslation("Everyone will support your video for this."), Translate.DoTranslation("I gave you the special file in your e-mail for your next video."), Translate.DoTranslation("Listen, haters, he is trying to help us, not scam."), Translate.DoTranslation("I don't know how much do I and my friends thank you for this video."), Translate.DoTranslation("I love you for this video."), Translate.DoTranslation("Keep going, don't stop."), Translate.DoTranslation("I will help you reach to 1M subscribers!"), Translate.DoTranslation("My friends got their computer fixed because of you."), Translate.DoTranslation("Awesome prank! I shut down my enemy's PC."), Translate.DoTranslation("To haters: STOP HATING ON HIM"), Translate.DoTranslation("To haters: GET TO WORK"), Translate.DoTranslation("Nobody will notice this now thanks to your object hiding guide") };
-		private readonly static List<string> HateComments = new() { Translate.DoTranslation("I will stop watching your videos. Subscriber lost."), Translate.DoTranslation("What is this? This is unclear."), Translate.DoTranslation("This video is the worst!"), Translate.DoTranslation("Everyone report this video!"), Translate.DoTranslation("My friends are furious with you!"), Translate.DoTranslation("Lovers will now hate you for this."), Translate.DoTranslation("Your friend will hate you for this."), Translate.DoTranslation("This prank made me unsubscribe to you."), Translate.DoTranslation("Mission failed, Respect -, Subscriber -"), Translate.DoTranslation("Stop making this kind of video!!!"), Translate.DoTranslation("Get back to your job, your videos are the worst!"), Translate.DoTranslation("We prejudice on this video.") };
-		private readonly static Dictionary<string, List<string>> Comments = new() { { ((int)CommentType.Love).ToString(), LoveComments }, { ((int)CommentType.Hate).ToString(), HateComments } };
-		private readonly static Dictionary<string, CommentType> Users = new();
+		private static readonly List<string> LoveComments = [Translate.DoTranslation("Thanks! This is interesting."), Translate.DoTranslation("Everyone will support your video for this."), Translate.DoTranslation("I gave you the special file in your e-mail for your next video."), Translate.DoTranslation("Listen, haters, he is trying to help us, not scam."), Translate.DoTranslation("I don't know how much do I and my friends thank you for this video."), Translate.DoTranslation("I love you for this video."), Translate.DoTranslation("Keep going, don't stop."), Translate.DoTranslation("I will help you reach to 1M subscribers!"), Translate.DoTranslation("My friends got their computer fixed because of you."), Translate.DoTranslation("Awesome prank! I shut down my enemy's PC."), Translate.DoTranslation("To haters: STOP HATING ON HIM"), Translate.DoTranslation("To haters: GET TO WORK"), Translate.DoTranslation("Nobody will notice this now thanks to your object hiding guide")];
+		private static readonly List<string> HateComments = [Translate.DoTranslation("I will stop watching your videos. Subscriber lost."), Translate.DoTranslation("What is this? This is unclear."), Translate.DoTranslation("This video is the worst!"), Translate.DoTranslation("Everyone report this video!"), Translate.DoTranslation("My friends are furious with you!"), Translate.DoTranslation("Lovers will now hate you for this."), Translate.DoTranslation("Your friend will hate you for this."), Translate.DoTranslation("This prank made me unsubscribe to you."), Translate.DoTranslation("Mission failed, Respect -, Subscriber -"), Translate.DoTranslation("Stop making this kind of video!!!"), Translate.DoTranslation("Get back to your job, your videos are the worst!"), Translate.DoTranslation("We prejudice on this video.")];
+		private static readonly Dictionary<string, List<string>> Comments = new() { { ((int)CommentType.Love).ToString(), LoveComments }, { ((int)CommentType.Hate).ToString(), HateComments } };
+		private static readonly Dictionary<string, CommentType> Users = [];
 
 		public enum CommentType
 		{
 			/// <summary>
-            /// A love comment
-            /// </summary>
+			/// A love comment
+			/// </summary>
 			Love,
 			/// <summary>
-            /// A hate comment
-            /// </summary>
+			/// A hate comment
+			/// </summary>
 			Hate
 		}
 
 		/// <summary>
-        /// Initializes the game
-        /// </summary>
+		/// Initializes the game
+		/// </summary>
 		public static void InitializeLoveHate()
 		{
 			var RandomDriver = new Random();
@@ -93,7 +92,7 @@ namespace KS.Misc.Games
 				TextWriterColor.Write("- {0}:", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), RandomUser);
 				TextWriterColor.Write(" {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), RandomComment);
 				TextWriterColor.Write(Translate.DoTranslation("How would you respond?") + " <A/T/Q> ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
-				Response = Conversions.ToString(Input.DetectKeypress().KeyChar);
+				Response = Convert.ToString(Input.DetectKeypress().KeyChar);
 				TextWriterColor.WritePlain("", true);
 				DebugWriter.Wdbg(DebugLevel.I, "Response: {0}", Response);
 

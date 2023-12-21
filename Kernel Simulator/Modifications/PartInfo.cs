@@ -23,29 +23,29 @@ namespace KS.Modifications
 	{
 
 		/// <summary>
-        /// The mod name. If no name is specified, or if it only consists of whitespaces (space), the file name is taken.
-        /// </summary>
+		/// The mod name. If no name is specified, or if it only consists of whitespaces (space), the file name is taken.
+		/// </summary>
 		public string ModName { get; private set; }
 		/// <summary>
-        /// The part name.
-        /// </summary>
+		/// The part name.
+		/// </summary>
 		public string PartName { get; private set; }
 		/// <summary>
-        /// The mod part file name
-        /// </summary>
+		/// The mod part file name
+		/// </summary>
 		public string PartFileName { get; private set; }
 		/// <summary>
-        /// The mod part file path
-        /// </summary>
+		/// The mod part file path
+		/// </summary>
 		public string PartFilePath { get; private set; }
 		/// <summary>
-        /// The mod part script
-        /// </summary>
+		/// The mod part script
+		/// </summary>
 		public IScript PartScript { get; private set; }
 
 		/// <summary>
-        /// Creates new mod info instance
-        /// </summary>
+		/// Creates new mod info instance
+		/// </summary>
 		internal PartInfo(string ModName, string PartName, string PartFileName, string PartFilePath, IScript PartScript)
 		{
 			// Validate values. Check to see if the name is null. If so, it will take the mod file name.

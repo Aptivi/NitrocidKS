@@ -31,6 +31,7 @@ using KS.Kernel;
 using KS.Misc.Configuration;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
+using KS.Resources;
 using Newtonsoft.Json.Linq;
 
 namespace KS.Languages
@@ -40,14 +41,14 @@ namespace KS.Languages
 
 		// Variables
 		public static string CurrentLanguage = "eng"; // Default to English
-		internal static Dictionary<string, LanguageInfo> BaseLanguages = new();
-		internal static Dictionary<string, LanguageInfo> CustomLanguages = new();
+		internal static Dictionary<string, LanguageInfo> BaseLanguages = [];
+		internal static Dictionary<string, LanguageInfo> CustomLanguages = [];
 		private static bool NotifyCodepageError;
-		private readonly static JToken LanguageMetadata = JToken.Parse(My.Resources.Resources.LanguageMetadata);
+		private static readonly JToken LanguageMetadata = JToken.Parse(KernelResources.LanguageMetadata);
 
 		/// <summary>
-        /// The installed languages list.
-        /// </summary>
+		/// The installed languages list.
+		/// </summary>
 		public static Dictionary<string, LanguageInfo> Languages
 		{
 			get
@@ -83,10 +84,10 @@ namespace KS.Languages
 		}
 
 		/// <summary>
-        /// Sets a system language permanently
-        /// </summary>
-        /// <param name="lang">A specified language</param>
-        /// <returns>True if successful, False if unsuccessful.</returns>
+		/// Sets a system language permanently
+		/// </summary>
+		/// <param name="lang">A specified language</param>
+		/// <returns>True if successful, False if unsuccessful.</returns>
 		public static bool SetLang(string lang)
 		{
 			if (Languages.ContainsKey(lang))
@@ -187,10 +188,10 @@ namespace KS.Languages
 		}
 
 		/// <summary>
-        /// Prompt for setting language
-        /// </summary>
-        /// <param name="lang">A specified language</param>
-        /// <param name="Force">Force changes</param>
+		/// Prompt for setting language
+		/// </summary>
+		/// <param name="lang">A specified language</param>
+		/// <param name="Force">Force changes</param>
 		public static void PromptForSetLang(string lang, bool Force = false, bool AlwaysTransliterated = false, bool AlwaysTranslated = false)
 		{
 			if (Languages.ContainsKey(lang))
@@ -227,9 +228,8 @@ namespace KS.Languages
 								while (!LanguageSet)
 								{
 									TextWriterColor.Write(">> ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
-									int Answer;
 									string AnswerString = Input.ReadLine(false);
-									if (int.TryParse(AnswerString, out Answer))
+									if (int.TryParse(AnswerString, out int Answer))
 									{
 										DebugWriter.Wdbg(DebugLevel.I, "Choice: {0}", Answer);
 										switch (Answer)
@@ -288,9 +288,9 @@ namespace KS.Languages
 		}
 
 		/// <summary>
-        /// Installs the custom language to the installed languages
-        /// </summary>
-        /// <param name="LanguageName">The custom three-letter language name found in KSLanguages directory</param>
+		/// Installs the custom language to the installed languages
+		/// </summary>
+		/// <param name="LanguageName">The custom three-letter language name found in KSLanguages directory</param>
 		public static void InstallCustomLanguage(string LanguageName, bool ThrowOnAlreadyInstalled = true)
 		{
 			if (!Flags.SafeMode)
@@ -360,8 +360,8 @@ namespace KS.Languages
 		}
 
 		/// <summary>
-        /// Installs all the custom languages found in KSLanguages
-        /// </summary>
+		/// Installs all the custom languages found in KSLanguages
+		/// </summary>
 		public static void InstallCustomLanguages()
 		{
 			if (!Flags.SafeMode)
@@ -388,9 +388,9 @@ namespace KS.Languages
 		}
 
 		/// <summary>
-        /// Uninstalls the custom language to the installed languages
-        /// </summary>
-        /// <param name="LanguageName">The custom three-letter language name found in KSLanguages directory</param>
+		/// Uninstalls the custom language to the installed languages
+		/// </summary>
+		/// <param name="LanguageName">The custom three-letter language name found in KSLanguages directory</param>
 		public static void UninstallCustomLanguage(string LanguageName)
 		{
 			if (!Flags.SafeMode)
@@ -435,8 +435,8 @@ namespace KS.Languages
 		}
 
 		/// <summary>
-        /// Uninstalls all the custom languages found in KSLanguages
-        /// </summary>
+		/// Uninstalls all the custom languages found in KSLanguages
+		/// </summary>
 		public static void UninstallCustomLanguages()
 		{
 			if (!Flags.SafeMode)
@@ -473,9 +473,9 @@ namespace KS.Languages
 		}
 
 		/// <summary>
-        /// Lists the languages
-        /// </summary>
-        /// <param name="SearchTerm">Search term</param>
+		/// Lists the languages
+		/// </summary>
+		/// <param name="SearchTerm">Search term</param>
 		public static Dictionary<string, LanguageInfo> ListLanguages(string SearchTerm)
 		{
 			var ListedLanguages = new Dictionary<string, LanguageInfo>();

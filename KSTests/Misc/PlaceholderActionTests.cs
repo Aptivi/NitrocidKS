@@ -29,8 +29,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests parsing placeholders
-    /// </summary>
+		/// Tests parsing placeholders
+		/// </summary>
 		[Test]
 		[Description("Action")]
 		public void TestParsePlaceholders()

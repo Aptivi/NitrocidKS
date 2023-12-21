@@ -23,7 +23,6 @@ using KS.ConsoleBase.Inputs;
 using KS.Languages;
 using KS.Misc.Threading;
 using KS.Misc.Writers.ConsoleWriters;
-using Microsoft.VisualBasic.CompilerServices;
 using Terminaux.Base;
 
 namespace KS.Misc.Games
@@ -35,16 +34,16 @@ namespace KS.Misc.Games
 		public static int MeteorSpeed = 10;
 		private static int SpaceshipHeight = 0;
 		private static bool GameEnded = false;
-		private readonly static int MaxBullets = 10;
-		private readonly static List<Tuple<int, int>> Bullets = new();
-		private readonly static int MaxMeteors = 10;
-		private readonly static List<Tuple<int, int>> Meteors = new();
-		private readonly static KernelThread MeteorDrawThread = new("Meteor Shooter Draw Thread", true, DrawGame);
-		private readonly static Random RandomDriver = new();
+		private static readonly int MaxBullets = 10;
+		private static readonly List<Tuple<int, int>> Bullets = [];
+		private static readonly int MaxMeteors = 10;
+		private static readonly List<Tuple<int, int>> Meteors = [];
+		private static readonly KernelThread MeteorDrawThread = new("Meteor Shooter Draw Thread", true, DrawGame);
+		private static readonly Random RandomDriver = new();
 
 		/// <summary>
-        /// Initializes the Meteor game
-        /// </summary>
+		/// Initializes the Meteor game
+		/// </summary>
 		public static void InitializeMeteor()
 		{
 			// Clear all bullets and meteors
@@ -231,19 +230,19 @@ namespace KS.Misc.Games
 		{
 			char PowerLineSpaceship = Convert.ToChar(0xE0B0);
 			char SpaceshipSymbol = MeteorUsePowerLine ? PowerLineSpaceship : '>';
-			TextWriterWhereColor.WriteWhere(Conversions.ToString(SpaceshipSymbol), 0, SpaceshipHeight, false, ConsoleColor.Green);
+			TextWriterWhereColor.WriteWhere(Convert.ToString(SpaceshipSymbol), 0, SpaceshipHeight, false, ConsoleColor.Green);
 		}
 
 		public static void DrawMeteor(int MeteorX, int MeteorY)
 		{
 			char MeteorSymbol = '*';
-			TextWriterWhereColor.WriteWhere(Conversions.ToString(MeteorSymbol), MeteorX, MeteorY, false, ConsoleColor.Red);
+			TextWriterWhereColor.WriteWhere(Convert.ToString(MeteorSymbol), MeteorX, MeteorY, false, ConsoleColor.Red);
 		}
 
 		public static void DrawBullet(int BulletX, int BulletY)
 		{
 			char BulletSymbol = '-';
-			TextWriterWhereColor.WriteWhere(Conversions.ToString(BulletSymbol), BulletX, BulletY, false, ConsoleColor.Cyan);
+			TextWriterWhereColor.WriteWhere(Convert.ToString(BulletSymbol), BulletX, BulletY, false, ConsoleColor.Cyan);
 		}
 
 	}

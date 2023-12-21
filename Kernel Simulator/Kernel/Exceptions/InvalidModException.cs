@@ -22,8 +22,8 @@ using KS.Misc.Reflection;
 namespace KS.Kernel.Exceptions
 {
 	/// <summary>
-    /// Thrown when the mod is invalid.
-    /// </summary>
+	/// Thrown when the mod is invalid.
+	/// </summary>
 	public class InvalidModException : Exception
 	{
 

@@ -29,14 +29,14 @@ namespace KS.Misc.Writers.MiscWriters
 	{
 
 		/// <summary>
-        /// Decides where to write the text
-        /// </summary>
-        /// <param name="CommandType">A specified command type</param>
-        /// <param name="DebugDeviceSocket">Only for remote debug shell. Specifies the debug device socket.</param>
-        /// <param name="text">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
-        /// <param name="Line">Whether to print a new line or not</param>
-        /// <param name="colorType">A type of colors that will be changed.</param>
-        /// <param name="vars">Variables to format the message before it's written.</param>
+		/// Decides where to write the text
+		/// </summary>
+		/// <param name="CommandType">A specified command type</param>
+		/// <param name="DebugDeviceSocket">Only for remote debug shell. Specifies the debug device socket.</param>
+		/// <param name="text">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
+		/// <param name="Line">Whether to print a new line or not</param>
+		/// <param name="colorType">A type of colors that will be changed.</param>
+		/// <param name="vars">Variables to format the message before it's written.</param>
 		public static void DecisiveWrite(ShellType CommandType, StreamWriter DebugDeviceSocket, string Text, bool Line, KernelColorTools.ColTypes colorType, params object[] vars)
 		{
 			if (!(CommandType == ShellType.RemoteDebugShell))
@@ -57,14 +57,14 @@ namespace KS.Misc.Writers.MiscWriters
 		}
 
 		/// <summary>
-        /// Decides where to write the text
-        /// </summary>
-        /// <param name="CommandType">A specified command type</param>
-        /// <param name="DebugDeviceSocket">Only for remote debug shell. Specifies the debug device socket.</param>
-        /// <param name="text">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
-        /// <param name="Line">Whether to print a new line or not</param>
-        /// <param name="color">A color to use.</param>
-        /// <param name="vars">Variables to format the message before it's written.</param>
+		/// Decides where to write the text
+		/// </summary>
+		/// <param name="CommandType">A specified command type</param>
+		/// <param name="DebugDeviceSocket">Only for remote debug shell. Specifies the debug device socket.</param>
+		/// <param name="text">A sentence that will be written to the terminal prompt. Supports {0}, {1}, ...</param>
+		/// <param name="Line">Whether to print a new line or not</param>
+		/// <param name="color">A color to use.</param>
+		/// <param name="vars">Variables to format the message before it's written.</param>
 		public static void DecisiveWrite(ShellType CommandType, StreamWriter DebugDeviceSocket, string Text, bool Line, Color color, params object[] vars)
 		{
 			if (!(CommandType == ShellType.RemoteDebugShell))

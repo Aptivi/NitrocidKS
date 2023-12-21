@@ -1,6 +1,6 @@
 ﻿using KS.Kernel;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
+using System;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
@@ -36,7 +36,7 @@ namespace KS.Shell.Commands
 				{
 					if ((ListArgs?.Length) is { } arg2 && arg2 > 1)
 					{
-						KernelTools.PowerManage(PowerMode.RemoteRestart, ListArgs[0], Conversions.ToInteger(ListArgs[1]));
+						KernelTools.PowerManage(PowerMode.RemoteRestart, ListArgs[0], Convert.ToInt32(ListArgs[1]));
 					}
 					else
 					{

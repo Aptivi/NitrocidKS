@@ -20,27 +20,27 @@
 namespace KS.Shell.Prompts
 {
 	/// <summary>
-    /// Prompt preset interface
-    /// </summary>
+	/// Prompt preset interface
+	/// </summary>
 	public interface IPromptPreset
 	{
 
 		/// <summary>
-        /// Preset name
-        /// </summary>
+		/// Preset name
+		/// </summary>
 		string PresetName { get; }
 		/// <summary>
-        /// Preset prompt style
-        /// </summary>
+		/// Preset prompt style
+		/// </summary>
 		string PresetPrompt { get; }
 		/// <summary>
-        /// Preset shell type
-        /// </summary>
+		/// Preset shell type
+		/// </summary>
 		ShellType PresetShellType { get; }
 
 		/// <summary>
-        /// Preset prompt builder logic for advanced prompts, like PowerLine, ...
-        /// </summary>
+		/// Preset prompt builder logic for advanced prompts, like PowerLine, ...
+		/// </summary>
 		string PresetPromptBuilder();
 
 	}

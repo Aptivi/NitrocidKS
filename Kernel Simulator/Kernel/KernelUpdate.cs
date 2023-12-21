@@ -30,22 +30,22 @@ namespace KS.Kernel
 	{
 
 		/// <summary>
-        /// Updated kernel version
-        /// </summary>
+		/// Updated kernel version
+		/// </summary>
 		public SemVer UpdateVersion { get; private set; }
 		/// <summary>
-        /// Update file URL
-        /// </summary>
+		/// Update file URL
+		/// </summary>
 		public Uri UpdateURL { get; private set; }
 		/// <summary>
-        /// Is the kernel up to date?
-        /// </summary>
+		/// Is the kernel up to date?
+		/// </summary>
 		public bool Updated { get; private set; }
 
 		/// <summary>
-        /// Installs a new instance of class KernelUpdate
-        /// </summary>
-        /// <param name="UpdateToken">The kernel update token</param>
+		/// Installs a new instance of class KernelUpdate
+		/// </summary>
+		/// <param name="UpdateToken">The kernel update token</param>
 		protected internal KernelUpdate(JToken UpdateToken)
 		{
 			// Sort the versions (We sometimes release servicing versions of earlier series, like 0.0.8.x, and the GitHub API sorts the releases based
@@ -96,7 +96,7 @@ namespace KS.Kernel
 				var KernelUpdateInfo = new KernelUpdateInfo(KernelUpdateVer, KernelUpdateURL);
 				SortedVersions.Add(KernelUpdateInfo);
 			}
-			SortedVersions = SortedVersions.OrderByDescending(x => x.UpdateVersion).ToList();
+			SortedVersions = [.. SortedVersions.OrderByDescending(x => x.UpdateVersion)];
 
 			// Get the latest version found
 			var CurrentVer = SemVer.ParseWithRev(Kernel.KernelVersion);

@@ -22,19 +22,19 @@ namespace KS.TimeDate
 	public static class TimeDateConverters
 	{
 
-		public readonly static DateTime UnixEpoch = new(1970, 1, 1, 0, 0, 0, 0);
+		public static readonly DateTime UnixEpoch = new(1970, 1, 1, 0, 0, 0, 0);
 
 		/// <summary>
-        /// Converts the date to Unix time (seconds since 1970/1/1) (UTC)
-        /// </summary>
+		/// Converts the date to Unix time (seconds since 1970/1/1) (UTC)
+		/// </summary>
 		public static double DateToUnix(DateTime TargetDate)
 		{
 			return (TargetDate - UnixEpoch).TotalSeconds;
 		}
 
 		/// <summary>
-        /// Converts the Unix time (seconds since 1970/1/1) to date (UTC)
-        /// </summary>
+		/// Converts the Unix time (seconds since 1970/1/1) to date (UTC)
+		/// </summary>
 		public static DateTime UnixToDate(double UnixTime)
 		{
 			return UnixEpoch.AddSeconds(UnixTime);

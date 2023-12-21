@@ -39,17 +39,30 @@ namespace KS.Files.Interactive
 		internal string secondPanePath = Paths.HomePath;
 		internal bool refreshFirstPaneListing = true;
 		internal bool refreshSecondPaneListing = true;
-		private List<FileSystemInfo> firstPaneListing = new();
-		private List<FileSystemInfo> secondPaneListing = new();
+		private List<FileSystemInfo> firstPaneListing = [];
+		private List<FileSystemInfo> secondPaneListing = [];
 
 		/// <summary>
-        /// File manager bindings
-        /// </summary>
-		public override List<InteractiveTuiBinding> Bindings { get; set; } = new List<InteractiveTuiBinding>() { new("Open", ConsoleKey.Enter, default, (info, __) => Open((FileSystemInfo)info)), new("Copy", ConsoleKey.F1, default, (info, __) => CopyFileOrDir((FileSystemInfo)info)), new("Move", ConsoleKey.F2, default, (info, __) => MoveFileOrDir((FileSystemInfo)info)), new("Delete", ConsoleKey.F3, default, (info, __) => RemoveFileOrDir((FileSystemInfo)info)), new("Up", ConsoleKey.F4, default, (__, __) => GoUp()), new("Info", ConsoleKey.F5, default, (info, __) => PrintFileSystemInfo((FileSystemInfo)info)), new("Go To", ConsoleKey.F6, default, (__, __) => GoTo()), new("Copy To", ConsoleKey.F1, ConsoleModifiers.Shift, (info, __) => CopyTo((FileSystemInfo)info)), new("Move To", ConsoleKey.F2, ConsoleModifiers.Shift, (info, __) => MoveTo((FileSystemInfo)info)), new("Rename", ConsoleKey.F9, default, (info, __) => Rename((FileSystemInfo)info)), new("New Folder", ConsoleKey.F10, default, (__, __) => MakeDir()) };
+		/// File manager bindings
+		/// </summary>
+		public override List<InteractiveTuiBinding> Bindings { get; set; } =
+		[
+			new("Open", ConsoleKey.Enter, default, (info, _) => Open((FileSystemInfo)info)),
+			new("Copy", ConsoleKey.F1, default, (info, _) => CopyFileOrDir((FileSystemInfo)info)),
+			new("Move", ConsoleKey.F2, default, (info, _) => MoveFileOrDir((FileSystemInfo)info)),
+			new("Delete", ConsoleKey.F3, default, (info, _) => RemoveFileOrDir((FileSystemInfo)info)),
+			new("Up", ConsoleKey.F4, default, (_, _) => GoUp()),
+			new("Info", ConsoleKey.F5, default, (info, _) => PrintFileSystemInfo((FileSystemInfo)info)),
+			new("Go To", ConsoleKey.F6, default, (_, _) => GoTo()),
+			new("Copy To", ConsoleKey.F1, ConsoleModifiers.Shift, (info, _) => CopyTo((FileSystemInfo)info)),
+			new("Move To", ConsoleKey.F2, ConsoleModifiers.Shift, (info, _) => MoveTo((FileSystemInfo)info)),
+			new("Rename", ConsoleKey.F9, default, (info, _) => Rename((FileSystemInfo)info)),
+			new("New Folder", ConsoleKey.F10, default, (_, _) => MakeDir())
+		];
 
 		/// <summary>
-        /// Always true in the file manager as we want it to behave like Total Commander
-        /// </summary>
+		/// Always true in the file manager as we want it to behave like Total Commander
+		/// </summary>
 		public override bool SecondPaneInteractable
 		{
 			get
@@ -187,8 +200,8 @@ namespace KS.Files.Interactive
 			catch (Exception ex)
 			{
 				var finalInfoRendered = new StringBuilder();
-				finalInfoRendered.AppendLine(Translate.DoTranslation("Can't open file or folder") + ": {0}".FormatString(ex.Message));
-				finalInfoRendered.AppendLine(Microsoft.VisualBasic.Constants.vbLf + Translate.DoTranslation("Press any key to close this window.").ToString());
+				finalInfoRendered.AppendLine(Translate.DoTranslation("Can't open file or folder") + ": {0}\n".FormatString(ex.Message));
+				finalInfoRendered.AppendLine(Translate.DoTranslation("Press any key to close this window.").ToString());
 				InfoBoxColor.WriteInfoBox(finalInfoRendered.ToString());
 			}
 		}
@@ -247,7 +260,7 @@ namespace KS.Files.Interactive
 					finalInfoRendered.AppendLine(Translate.DoTranslation("Attributes: {0}").FormatString(fileInfo.Attributes));
 					finalInfoRendered.AppendLine(Translate.DoTranslation("Where to find: {0}").FormatString(Filesystem.NeutralizePath(fileInfo.DirectoryName)));
 				}
-				finalInfoRendered.AppendLine(Microsoft.VisualBasic.Constants.vbLf + Translate.DoTranslation("Press any key to close this window.").ToString());
+				finalInfoRendered.AppendLine("\n" + Translate.DoTranslation("Press any key to close this window.").ToString());
 
 				// Now, render the info box
 				InfoBoxColor.WriteInfoBox(finalInfoRendered.ToString());
@@ -256,7 +269,7 @@ namespace KS.Files.Interactive
 			{
 				var finalInfoRendered = new StringBuilder();
 				finalInfoRendered.AppendLine(Translate.DoTranslation("Can't get file system info") + ": {0}".FormatString(ex.Message));
-				finalInfoRendered.AppendLine(Microsoft.VisualBasic.Constants.vbLf + Translate.DoTranslation("Press any key to close this window.").ToString());
+				finalInfoRendered.AppendLine("\n" + Translate.DoTranslation("Press any key to close this window.").ToString());
 				InfoBoxColor.WriteInfoBox(finalInfoRendered.ToString());
 			}
 		}
@@ -285,7 +298,7 @@ namespace KS.Files.Interactive
 			{
 				var finalInfoRendered = new StringBuilder();
 				finalInfoRendered.AppendLine(Translate.DoTranslation("Can't copy file or directory") + ": {0}".FormatString(ex.Message));
-				finalInfoRendered.AppendLine(Microsoft.VisualBasic.Constants.vbLf + Translate.DoTranslation("Press any key to close this window.").ToString());
+				finalInfoRendered.AppendLine("\n" + Translate.DoTranslation("Press any key to close this window.").ToString());
 				InfoBoxColor.WriteInfoBox(finalInfoRendered.ToString());
 			}
 		}
@@ -308,7 +321,7 @@ namespace KS.Files.Interactive
 			{
 				var finalInfoRendered = new StringBuilder();
 				finalInfoRendered.AppendLine(Translate.DoTranslation("Can't move file or directory") + ": {0}".FormatString(ex.Message));
-				finalInfoRendered.AppendLine(Microsoft.VisualBasic.Constants.vbLf + Translate.DoTranslation("Press any key to close this window.").ToString());
+				finalInfoRendered.AppendLine("\n" + Translate.DoTranslation("Press any key to close this window.").ToString());
 				InfoBoxColor.WriteInfoBox(finalInfoRendered.ToString());
 			}
 		}
@@ -342,7 +355,7 @@ namespace KS.Files.Interactive
 			{
 				var finalInfoRendered = new StringBuilder();
 				finalInfoRendered.AppendLine(Translate.DoTranslation("Can't remove file or directory") + ": {0}".FormatString(ex.Message));
-				finalInfoRendered.AppendLine(Microsoft.VisualBasic.Constants.vbLf + Translate.DoTranslation("Press any key to close this window.").ToString());
+				finalInfoRendered.AppendLine("\n" + Translate.DoTranslation("Press any key to close this window.").ToString());
 				InfoBoxColor.WriteInfoBox(finalInfoRendered.ToString());
 			}
 		}
@@ -403,7 +416,7 @@ namespace KS.Files.Interactive
 			{
 				var finalInfoRendered = new StringBuilder();
 				finalInfoRendered.AppendLine(Translate.DoTranslation("Can't copy file or directory") + ": {0}".FormatString(ex.Message));
-				finalInfoRendered.AppendLine(Microsoft.VisualBasic.Constants.vbLf + Translate.DoTranslation("Press any key to close this window.").ToString());
+				finalInfoRendered.AppendLine("\n" + Translate.DoTranslation("Press any key to close this window.").ToString());
 				InfoBoxColor.WriteInfoBox(finalInfoRendered.ToString());
 			}
 		}
@@ -441,7 +454,7 @@ namespace KS.Files.Interactive
 			{
 				var finalInfoRendered = new StringBuilder();
 				finalInfoRendered.AppendLine(Translate.DoTranslation("Can't move file or directory") + ": {0}".FormatString(ex.Message));
-				finalInfoRendered.AppendLine(Microsoft.VisualBasic.Constants.vbLf + Translate.DoTranslation("Press any key to close this window.").ToString());
+				finalInfoRendered.AppendLine("\n" + Translate.DoTranslation("Press any key to close this window.").ToString());
 				InfoBoxColor.WriteInfoBox(finalInfoRendered.ToString());
 			}
 		}
@@ -484,7 +497,7 @@ namespace KS.Files.Interactive
 			{
 				var finalInfoRendered = new StringBuilder();
 				finalInfoRendered.AppendLine(Translate.DoTranslation("Can't move file or directory") + ": {0}".FormatString(ex.Message));
-				finalInfoRendered.AppendLine(Microsoft.VisualBasic.Constants.vbLf + Translate.DoTranslation("Press any key to close this window.").ToString());
+				finalInfoRendered.AppendLine("\n" + Translate.DoTranslation("Press any key to close this window.").ToString());
 				InfoBoxColor.WriteInfoBox(finalInfoRendered.ToString());
 			}
 		}

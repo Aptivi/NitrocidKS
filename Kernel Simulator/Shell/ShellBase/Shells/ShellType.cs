@@ -20,61 +20,61 @@
 namespace KS.Shell.ShellBase.Shells
 {
 	/// <summary>
-    /// Shell type enumeration
-    /// </summary>
+	/// Shell type enumeration
+	/// </summary>
 	public enum ShellType
 	{
 		/// <summary>
-        /// Normal UESH shell
-        /// </summary>
+		/// Normal UESH shell
+		/// </summary>
 		Shell,
 		/// <summary>
-        /// FTP shell
-        /// </summary>
+		/// FTP shell
+		/// </summary>
 		FTPShell,
 		/// <summary>
-        /// Mail shell
-        /// </summary>
+		/// Mail shell
+		/// </summary>
 		MailShell,
 		/// <summary>
-        /// SFTP shell
-        /// </summary>
+		/// SFTP shell
+		/// </summary>
 		SFTPShell,
 		/// <summary>
-        /// Text shell
-        /// </summary>
+		/// Text shell
+		/// </summary>
 		TextShell,
 		/// <summary>
-        /// Test shell
-        /// </summary>
+		/// Test shell
+		/// </summary>
 		TestShell,
 		/// <summary>
-        /// Remote debug shell
-        /// </summary>
+		/// Remote debug shell
+		/// </summary>
 		RemoteDebugShell,
 		/// <summary>
-        /// ZIP shell
-        /// </summary>
+		/// ZIP shell
+		/// </summary>
 		ZIPShell,
 		/// <summary>
-        /// RSS Shell
-        /// </summary>
+		/// RSS Shell
+		/// </summary>
 		RSSShell,
 		/// <summary>
-        /// JSON Shell
-        /// </summary>
+		/// JSON Shell
+		/// </summary>
 		JsonShell,
 		/// <summary>
-        /// HTTP shell
-        /// </summary>
+		/// HTTP shell
+		/// </summary>
 		HTTPShell,
 		/// <summary>
-        /// Hex shell
-        /// </summary>
+		/// Hex shell
+		/// </summary>
 		HexShell,
 		/// <summary>
-        /// RAR shell
-        /// </summary>
+		/// RAR shell
+		/// </summary>
 		RARShell
 	}
 }

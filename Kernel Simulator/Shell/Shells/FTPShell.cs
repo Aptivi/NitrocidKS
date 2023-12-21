@@ -28,7 +28,6 @@ using KS.Network.FTP;
 using KS.Shell.Prompts;
 using KS.Shell.ShellBase;
 using KS.Shell.ShellBase.Shells;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Shell.Shells
 {
@@ -54,7 +53,7 @@ namespace KS.Shell.Shells
 			bool Connects = ShellArgs.Length > 0;
 			string Address = "";
 			if (Connects)
-				Address = Conversions.ToString(ShellArgs[0]);
+				Address = Convert.ToString(ShellArgs[0]);
 
 			// Actual shell logic
 			while (!Bail)
@@ -116,7 +115,7 @@ namespace KS.Shell.Shells
 					}
 
 					// Parse command
-					if ((string.IsNullOrEmpty(FtpCommand) | (FtpCommand?.StartsWithAnyOf(new[] { " ", "#" }))) == false)
+					if ((string.IsNullOrEmpty(FtpCommand) | (FtpCommand?.StartsWithAnyOf([" ", "#"]))) == false)
 					{
 						Kernel.Kernel.KernelEventManager.RaiseFTPPreExecuteCommand(FtpCommand);
 						Shell.GetLine(FtpCommand, false, "", ShellType.FTPShell);

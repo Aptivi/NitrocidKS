@@ -26,7 +26,6 @@ using KS.Misc.Text;
 using KS.Misc.Threading;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
-using Microsoft.VisualBasic.CompilerServices;
 using Terminaux.Base;
 using Terminaux.Colors;
 
@@ -41,8 +40,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static string _spotWriteTextColor = new Color(ConsoleColor.White).PlainSequence;
 
 		/// <summary>
-        /// [SpotWrite] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [SpotWrite] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int SpotWriteDelay
 		{
 			get
@@ -57,8 +56,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [SpotWrite] Text for SpotWrite. Longer is better.
-        /// </summary>
+		/// [SpotWrite] Text for SpotWrite. Longer is better.
+		/// </summary>
 		public static string SpotWriteWrite
 		{
 			get
@@ -73,8 +72,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [SpotWrite] How many milliseconds to wait before writing the text in the new screen again?
-        /// </summary>
+		/// [SpotWrite] How many milliseconds to wait before writing the text in the new screen again?
+		/// </summary>
 		public static int SpotWriteNewScreenDelay
 		{
 			get
@@ -89,8 +88,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [SpotWrite] Text color
-        /// </summary>
+		/// [SpotWrite] Text color
+		/// </summary>
 		public static string SpotWriteTextColor
 		{
 			get
@@ -223,10 +222,10 @@ namespace KS.Misc.Screensaver.Displays
 						}
 
 						// Write the final character to the console and wait
-						TextWriterColor.WritePlain(Conversions.ToString(Color255.GetEsc()) + "[1K" + Conversions.ToString(StruckChar) + Conversions.ToString(Color255.GetEsc()) + "[K", false);
+						TextWriterColor.WritePlain(Convert.ToString(Color255.GetEsc()) + "[1K" + Convert.ToString(StruckChar) + Convert.ToString(Color255.GetEsc()) + "[K", false);
 						ThreadManager.SleepNoBlock(SpotWriteSettings.SpotWriteDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
 					}
-					TextWriterColor.WritePlain(Conversions.ToString(Color255.GetEsc()) + "[1K", false);
+					TextWriterColor.WritePlain(Convert.ToString(Color255.GetEsc()) + "[1K", false);
 				}
 			}
 

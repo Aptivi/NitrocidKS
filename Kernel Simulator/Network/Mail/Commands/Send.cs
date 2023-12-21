@@ -7,7 +7,6 @@ using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 using KS.Network.Mail.Transfer;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
@@ -86,7 +85,7 @@ namespace KS.Network.Mail.Commands
 
 				// Send the message
 				TextWriterColor.Write(Translate.DoTranslation("Sending message..."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Progress));
-				if (Conversions.ToBoolean(MailTransfer.MailSendMessage(Receiver, Subject, Body.ToMessageBody())))
+				if (MailTransfer.MailSendMessage(Receiver, Subject, Body.ToMessageBody()))
 				{
 					DebugWriter.Wdbg(DebugLevel.I, "Message sent.");
 					TextWriterColor.Write(Translate.DoTranslation("Message sent."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success));

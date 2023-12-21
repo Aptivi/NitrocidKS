@@ -45,7 +45,7 @@ namespace KS.Misc.Editors.TextEdit.Commands
 			}
 
 			// Add the new lines
-			TextEditTools.TextEdit_AddNewLines(FinalLines.ToArray());
+			TextEditTools.TextEdit_AddNewLines([.. FinalLines]);
 		}
 
 	}

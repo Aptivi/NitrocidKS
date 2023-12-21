@@ -37,8 +37,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static int _personLookupMaximumAgeYears = 100;
 
 		/// <summary>
-        /// [PersonLookup] How many milliseconds to wait before getting the new name?
-        /// </summary>
+		/// [PersonLookup] How many milliseconds to wait before getting the new name?
+		/// </summary>
 		public static int PersonLookupDelay
 		{
 			get
@@ -53,8 +53,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [PersonLookup] How many milliseconds to show the looked up name?
-        /// </summary>
+		/// [PersonLookup] How many milliseconds to show the looked up name?
+		/// </summary>
 		public static int PersonLookupLookedUpDelay
 		{
 			get
@@ -69,8 +69,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [PersonLookup] Minimum names count
-        /// </summary>
+		/// [PersonLookup] Minimum names count
+		/// </summary>
 		public static int PersonLookupMinimumNames
 		{
 			get
@@ -87,8 +87,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [PersonLookup] Maximum names count
-        /// </summary>
+		/// [PersonLookup] Maximum names count
+		/// </summary>
 		public static int PersonLookupMaximumNames
 		{
 			get
@@ -105,8 +105,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [PersonLookup] Minimum age years
-        /// </summary>
+		/// [PersonLookup] Minimum age years
+		/// </summary>
 		public static int PersonLookupMinimumAgeYears
 		{
 			get
@@ -123,8 +123,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [PersonLookup] Maximum age years
-        /// </summary>
+		/// [PersonLookup] Maximum age years
+		/// </summary>
 		public static int PersonLookupMaximumAgeYears
 		{
 			get

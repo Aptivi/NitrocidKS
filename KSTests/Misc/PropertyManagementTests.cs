@@ -17,11 +17,11 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+using System;
 using System.Reflection;
 using Figgle;
 using KS.Languages;
 using KS.Misc.Reflection;
-using Microsoft.VisualBasic.CompilerServices;
 using NUnit.Framework;
 using Shouldly;
 
@@ -33,8 +33,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests checking field
-    /// </summary>
+		/// Tests checking field
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestCheckProperty()
@@ -43,31 +43,31 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests getting value
-    /// </summary>
+		/// Tests getting value
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestGetPropertyValue()
 		{
-			string Value = Conversions.ToString(PropertyManager.GetPropertyValue("PersonLookupDelay"));
+			string Value = Convert.ToString(PropertyManager.GetPropertyValue("PersonLookupDelay"));
 			Value.ShouldNotBeNullOrEmpty();
 		}
 
 		/// <summary>
-    /// Tests setting value
-    /// </summary>
+		/// Tests setting value
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestSetPropertyValue()
 		{
 			PropertyManager.SetPropertyValue("PersonLookupDelay", 100);
-			int Value = Conversions.ToInteger(PropertyManager.GetPropertyValue("PersonLookupDelay"));
+			int Value = Convert.ToInt32(PropertyManager.GetPropertyValue("PersonLookupDelay"));
 			Value.ShouldBe(100);
 		}
 
 		/// <summary>
-    /// Tests getting variable
-    /// </summary>
+		/// Tests getting variable
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestGetConfigProperty()
@@ -77,8 +77,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests getting properties
-    /// </summary>
+		/// Tests getting properties
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestGetProperties()
@@ -89,8 +89,8 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests getting properties
-    /// </summary>
+		/// Tests getting properties
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestGetPropertiesNoEvaluation()
@@ -101,13 +101,13 @@ namespace KSTests
 		}
 
 		/// <summary>
-    /// Tests getting property value from variable
-    /// </summary>
+		/// Tests getting property value from variable
+		/// </summary>
 		[Test]
 		[Description("Management")]
 		public void TestGetPropertyValueInVariable()
 		{
-			string Value = Conversions.ToString(PropertyManager.GetPropertyValueInVariable(nameof(CultureManager.CurrentCult), nameof(CultureManager.CurrentCult.Name)));
+			string Value = Convert.ToString(PropertyManager.GetPropertyValueInVariable(nameof(CultureManager.CurrentCult), nameof(CultureManager.CurrentCult.Name)));
 			Value.ShouldNotBeNullOrEmpty();
 		}
 

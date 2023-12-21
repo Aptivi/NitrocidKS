@@ -65,8 +65,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static bool _barRotUseBorderColors;
 
 		/// <summary>
-        /// [BarRot] Enable 255 color support. Has a higher priority than 16 color support.
-        /// </summary>
+		/// [BarRot] Enable 255 color support. Has a higher priority than 16 color support.
+		/// </summary>
 		public static bool BarRot255Colors
 		{
 			get
@@ -79,8 +79,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
+		/// [BarRot] Enable truecolor support. Has a higher priority than 255 color support.
+		/// </summary>
 		public static bool BarRotTrueColor
 		{
 			get
@@ -93,8 +93,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [BarRot] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int BarRotDelay
 		{
 			get
@@ -109,8 +109,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] How many milliseconds to wait before rotting the next ramp's one end?
-        /// </summary>
+		/// [BarRot] How many milliseconds to wait before rotting the next ramp's one end?
+		/// </summary>
 		public static int BarRotNextRampDelay
 		{
 			get
@@ -125,8 +125,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] Upper left corner character 
-        /// </summary>
+		/// [BarRot] Upper left corner character 
+		/// </summary>
 		public static string BarRotUpperLeftCornerChar
 		{
 			get
@@ -141,8 +141,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] Upper right corner character 
-        /// </summary>
+		/// [BarRot] Upper right corner character 
+		/// </summary>
 		public static string BarRotUpperRightCornerChar
 		{
 			get
@@ -157,8 +157,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] Lower left corner character 
-        /// </summary>
+		/// [BarRot] Lower left corner character 
+		/// </summary>
 		public static string BarRotLowerLeftCornerChar
 		{
 			get
@@ -173,8 +173,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] Lower right corner character 
-        /// </summary>
+		/// [BarRot] Lower right corner character 
+		/// </summary>
 		public static string BarRotLowerRightCornerChar
 		{
 			get
@@ -189,8 +189,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] Upper frame character 
-        /// </summary>
+		/// [BarRot] Upper frame character 
+		/// </summary>
 		public static string BarRotUpperFrameChar
 		{
 			get
@@ -205,8 +205,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] Lower frame character 
-        /// </summary>
+		/// [BarRot] Lower frame character 
+		/// </summary>
 		public static string BarRotLowerFrameChar
 		{
 			get
@@ -221,8 +221,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] Left frame character 
-        /// </summary>
+		/// [BarRot] Left frame character 
+		/// </summary>
 		public static string BarRotLeftFrameChar
 		{
 			get
@@ -237,8 +237,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] Right frame character 
-        /// </summary>
+		/// [BarRot] Right frame character 
+		/// </summary>
 		public static string BarRotRightFrameChar
 		{
 			get
@@ -253,8 +253,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] The minimum red color level (true color - start)
-        /// </summary>
+		/// [BarRot] The minimum red color level (true color - start)
+		/// </summary>
 		public static int BarRotMinimumRedColorLevelStart
 		{
 			get
@@ -271,8 +271,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] The minimum green color level (true color - start)
-        /// </summary>
+		/// [BarRot] The minimum green color level (true color - start)
+		/// </summary>
 		public static int BarRotMinimumGreenColorLevelStart
 		{
 			get
@@ -289,8 +289,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] The minimum blue color level (true color - start)
-        /// </summary>
+		/// [BarRot] The minimum blue color level (true color - start)
+		/// </summary>
 		public static int BarRotMinimumBlueColorLevelStart
 		{
 			get
@@ -307,8 +307,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] The maximum red color level (true color - start)
-        /// </summary>
+		/// [BarRot] The maximum red color level (true color - start)
+		/// </summary>
 		public static int BarRotMaximumRedColorLevelStart
 		{
 			get
@@ -325,8 +325,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] The maximum green color level (true color - start)
-        /// </summary>
+		/// [BarRot] The maximum green color level (true color - start)
+		/// </summary>
 		public static int BarRotMaximumGreenColorLevelStart
 		{
 			get
@@ -343,8 +343,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] The maximum blue color level (true color - start)
-        /// </summary>
+		/// [BarRot] The maximum blue color level (true color - start)
+		/// </summary>
 		public static int BarRotMaximumBlueColorLevelStart
 		{
 			get
@@ -361,8 +361,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] The minimum red color level (true color - end)
-        /// </summary>
+		/// [BarRot] The minimum red color level (true color - end)
+		/// </summary>
 		public static int BarRotMinimumRedColorLevelEnd
 		{
 			get
@@ -379,8 +379,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] The minimum green color level (true color - end)
-        /// </summary>
+		/// [BarRot] The minimum green color level (true color - end)
+		/// </summary>
 		public static int BarRotMinimumGreenColorLevelEnd
 		{
 			get
@@ -397,8 +397,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] The minimum blue color level (true color - end)
-        /// </summary>
+		/// [BarRot] The minimum blue color level (true color - end)
+		/// </summary>
 		public static int BarRotMinimumBlueColorLevelEnd
 		{
 			get
@@ -415,8 +415,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] The maximum red color level (true color - end)
-        /// </summary>
+		/// [BarRot] The maximum red color level (true color - end)
+		/// </summary>
 		public static int BarRotMaximumRedColorLevelEnd
 		{
 			get
@@ -433,8 +433,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] The maximum green color level (true color - end)
-        /// </summary>
+		/// [BarRot] The maximum green color level (true color - end)
+		/// </summary>
 		public static int BarRotMaximumGreenColorLevelEnd
 		{
 			get
@@ -451,8 +451,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] The maximum blue color level (true color - end)
-        /// </summary>
+		/// [BarRot] The maximum blue color level (true color - end)
+		/// </summary>
 		public static int BarRotMaximumBlueColorLevelEnd
 		{
 			get
@@ -469,8 +469,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] Upper left corner color.
-        /// </summary>
+		/// [BarRot] Upper left corner color.
+		/// </summary>
 		public static string BarRotUpperLeftCornerColor
 		{
 			get
@@ -483,8 +483,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] Upper right corner color.
-        /// </summary>
+		/// [BarRot] Upper right corner color.
+		/// </summary>
 		public static string BarRotUpperRightCornerColor
 		{
 			get
@@ -497,8 +497,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] Lower left corner color.
-        /// </summary>
+		/// [BarRot] Lower left corner color.
+		/// </summary>
 		public static string BarRotLowerLeftCornerColor
 		{
 			get
@@ -511,8 +511,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] Lower right corner color.
-        /// </summary>
+		/// [BarRot] Lower right corner color.
+		/// </summary>
 		public static string BarRotLowerRightCornerColor
 		{
 			get
@@ -525,8 +525,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] Upper frame color.
-        /// </summary>
+		/// [BarRot] Upper frame color.
+		/// </summary>
 		public static string BarRotUpperFrameColor
 		{
 			get
@@ -539,8 +539,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] Lower frame color.
-        /// </summary>
+		/// [BarRot] Lower frame color.
+		/// </summary>
 		public static string BarRotLowerFrameColor
 		{
 			get
@@ -553,8 +553,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] Left frame color.
-        /// </summary>
+		/// [BarRot] Left frame color.
+		/// </summary>
 		public static string BarRotLeftFrameColor
 		{
 			get
@@ -567,8 +567,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] Right frame color.
-        /// </summary>
+		/// [BarRot] Right frame color.
+		/// </summary>
 		public static string BarRotRightFrameColor
 		{
 			get
@@ -581,8 +581,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [BarRot] Use the border colors.
-        /// </summary>
+		/// [BarRot] Use the border colors.
+		/// </summary>
 		public static bool BarRotUseBorderColors
 		{
 			get
@@ -662,18 +662,18 @@ namespace KS.Misc.Screensaver.Displays
 			// Draw the frame
 			if (!ResizeSyncing)
 			{
-				TextWriterWhereColor.WriteWhere(BarRotSettings.BarRotUpperLeftCornerChar, RampFrameStartWidth, RampCenterPosition - 2, false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotUpperLeftCornerColor) : new Color(ConsoleColors.Gray));
-				TextWriterColor.Write(BarRotSettings.BarRotUpperFrameChar.Repeat(RampFrameSpaces), false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotUpperFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterColor.Write(BarRotSettings.BarRotUpperRightCornerChar, false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotUpperRightCornerColor) : new Color(ConsoleColors.Gray));
-				TextWriterWhereColor.WriteWhere(BarRotSettings.BarRotLeftFrameChar, RampFrameStartWidth, RampCenterPosition - 1, false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotLeftFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterWhereColor.WriteWhere(BarRotSettings.BarRotLeftFrameChar, RampFrameStartWidth, RampCenterPosition, false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotLeftFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterWhereColor.WriteWhere(BarRotSettings.BarRotLeftFrameChar, RampFrameStartWidth, RampCenterPosition + 1, false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotLeftFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterWhereColor.WriteWhere(BarRotSettings.BarRotRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition - 1, false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotLeftFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterWhereColor.WriteWhere(BarRotSettings.BarRotRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition, false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotLeftFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterWhereColor.WriteWhere(BarRotSettings.BarRotRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition + 1, false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotLeftFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterWhereColor.WriteWhere(BarRotSettings.BarRotLowerLeftCornerChar, RampFrameStartWidth, RampCenterPosition + 2, false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotLowerLeftCornerColor) : new Color(ConsoleColors.Gray));
-				TextWriterColor.Write(BarRotSettings.BarRotLowerFrameChar.Repeat(RampFrameSpaces), false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotLowerFrameColor) : new Color(ConsoleColors.Gray));
-				TextWriterColor.Write(BarRotSettings.BarRotLowerRightCornerChar, false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotLowerRightCornerColor) : new Color(ConsoleColors.Gray));
+				TextWriterWhereColor.WriteWhere(BarRotSettings.BarRotUpperLeftCornerChar, RampFrameStartWidth, RampCenterPosition - 2, false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotUpperLeftCornerColor) : new Color(ConsoleColor.Gray));
+				TextWriterColor.Write(BarRotSettings.BarRotUpperFrameChar.Repeat(RampFrameSpaces), false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotUpperFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterColor.Write(BarRotSettings.BarRotUpperRightCornerChar, false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotUpperRightCornerColor) : new Color(ConsoleColor.Gray));
+				TextWriterWhereColor.WriteWhere(BarRotSettings.BarRotLeftFrameChar, RampFrameStartWidth, RampCenterPosition - 1, false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotLeftFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterWhereColor.WriteWhere(BarRotSettings.BarRotLeftFrameChar, RampFrameStartWidth, RampCenterPosition, false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotLeftFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterWhereColor.WriteWhere(BarRotSettings.BarRotLeftFrameChar, RampFrameStartWidth, RampCenterPosition + 1, false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotLeftFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterWhereColor.WriteWhere(BarRotSettings.BarRotRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition - 1, false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotLeftFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterWhereColor.WriteWhere(BarRotSettings.BarRotRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition, false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotLeftFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterWhereColor.WriteWhere(BarRotSettings.BarRotRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition + 1, false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotLeftFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterWhereColor.WriteWhere(BarRotSettings.BarRotLowerLeftCornerChar, RampFrameStartWidth, RampCenterPosition + 2, false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotLowerLeftCornerColor) : new Color(ConsoleColor.Gray));
+				TextWriterColor.Write(BarRotSettings.BarRotLowerFrameChar.Repeat(RampFrameSpaces), false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotLowerFrameColor) : new Color(ConsoleColor.Gray));
+				TextWriterColor.Write(BarRotSettings.BarRotLowerRightCornerChar, false, BarRotSettings.BarRotUseBorderColors ? new Color(BarRotSettings.BarRotLowerRightCornerColor) : new Color(ConsoleColor.Gray));
 			}
 
 			// Set the current colors

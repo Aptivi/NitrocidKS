@@ -24,29 +24,29 @@ namespace KS.Modifications
 	{
 
 		/// <summary>
-        /// The mod name. If no name is specified, or if it only consists of whitespaces (space), the file name is taken.
-        /// </summary>
+		/// The mod name. If no name is specified, or if it only consists of whitespaces (space), the file name is taken.
+		/// </summary>
 		public string ModName { get; private set; }
 		/// <summary>
-        /// The mod file name
-        /// </summary>
+		/// The mod file name
+		/// </summary>
 		public string ModFileName { get; private set; }
 		/// <summary>
-        /// The mod file path
-        /// </summary>
+		/// The mod file path
+		/// </summary>
 		public string ModFilePath { get; private set; }
 		/// <summary>
-        /// The mod parts and their scripts
-        /// </summary>
+		/// The mod parts and their scripts
+		/// </summary>
 		internal Dictionary<string, PartInfo> ModParts { get; set; }
 		/// <summary>
-        /// The mod version. We recommend using <seealso href="https://semver.org/">Semantic Versioning</seealso> scheme.
-        /// </summary>
+		/// The mod version. We recommend using <seealso href="https://semver.org/">Semantic Versioning</seealso> scheme.
+		/// </summary>
 		public string ModVersion { get; private set; }
 
 		/// <summary>
-        /// Creates new mod info instance
-        /// </summary>
+		/// Creates new mod info instance
+		/// </summary>
 		internal ModInfo(string ModName, string ModFileName, string ModFilePath, Dictionary<string, PartInfo> ModParts, string ModVersion)
 		{
 			// Validate values. Check to see if the name is null. If so, it will take the mod file name.

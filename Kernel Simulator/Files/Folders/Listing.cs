@@ -31,7 +31,6 @@ using KS.Misc.Text;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 using KS.Misc.Writers.FancyWriters;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Files.Folders
 {
@@ -45,12 +44,12 @@ namespace KS.Files.Folders
 		public static bool ShowTotalSizeInList;
 
 		/// <summary>
-        /// Creates a list of files and directories
-        /// </summary>
-        /// <param name="folder">Full path to folder</param>
-        /// <param name="Sorted">Whether the list is sorted or not</param>
-        /// <returns>List of filesystem entries if any. Empty list if folder is not found or is empty.</returns>
-        /// <exception cref="Exceptions.FilesystemException"></exception>
+		/// Creates a list of files and directories
+		/// </summary>
+		/// <param name="folder">Full path to folder</param>
+		/// <param name="Sorted">Whether the list is sorted or not</param>
+		/// <returns>List of filesystem entries if any. Empty list if folder is not found or is empty.</returns>
+		/// <exception cref="Exceptions.FilesystemException"></exception>
 		public static List<FileSystemInfo> CreateList(string folder, bool Sorted = false)
 		{
 			Filesystem.ThrowOnInvalidPath(folder);
@@ -59,7 +58,7 @@ namespace KS.Files.Folders
 
 			// List files and folders
 			folder = Filesystem.NeutralizePath(folder);
-			if (Checking.FolderExists(folder) | folder.ContainsAnyOf(new[] { "?", "*" }))
+			if (Checking.FolderExists(folder) | folder.ContainsAnyOf(["?", "*"]))
 			{
 				IEnumerable<string> enumeration;
 				try
@@ -107,12 +106,12 @@ namespace KS.Files.Folders
 				{
 					case FilesystemSortDirection.Ascending:
 						{
-							FilesystemEntries = FilesystemEntries.OrderBy(x => SortSelector(x, MaxLength), StringComparer.OrdinalIgnoreCase).ToList();
+							FilesystemEntries = [.. FilesystemEntries.OrderBy(x => SortSelector(x, MaxLength), StringComparer.OrdinalIgnoreCase)];
 							break;
 						}
 					case FilesystemSortDirection.Descending:
 						{
-							FilesystemEntries = FilesystemEntries.OrderByDescending(x => SortSelector(x, MaxLength), StringComparer.OrdinalIgnoreCase).ToList();
+							FilesystemEntries = [.. FilesystemEntries.OrderByDescending(x => SortSelector(x, MaxLength), StringComparer.OrdinalIgnoreCase)];
 							break;
 						}
 				}
@@ -126,10 +125,10 @@ namespace KS.Files.Folders
 		}
 
 		/// <summary>
-        /// Helper for sorting filesystem entries
-        /// </summary>
-        /// <param name="FileSystemEntry">File system entry</param>
-        /// <param name="MaxLength">For size, how many zeroes to pad the size string to the left?</param>
+		/// Helper for sorting filesystem entries
+		/// </summary>
+		/// <param name="FileSystemEntry">File system entry</param>
+		/// <param name="MaxLength">For size, how many zeroes to pad the size string to the left?</param>
 		private static string SortSelector(FileSystemInfo FileSystemEntry, int MaxLength)
 		{
 			switch (SortMode)
@@ -144,15 +143,15 @@ namespace KS.Files.Folders
 					}
 				case FilesystemSortOptions.CreationTime:
 					{
-						return Conversions.ToString(FileSystemEntry.CreationTime);
+						return Convert.ToString(FileSystemEntry.CreationTime);
 					}
 				case FilesystemSortOptions.LastAccessTime:
 					{
-						return Conversions.ToString(FileSystemEntry.LastAccessTime);
+						return Convert.ToString(FileSystemEntry.LastAccessTime);
 					}
 				case FilesystemSortOptions.LastWriteTime:
 					{
-						return Conversions.ToString(FileSystemEntry.LastWriteTime);
+						return Convert.ToString(FileSystemEntry.LastWriteTime);
 					}
 
 				default:
@@ -163,36 +162,36 @@ namespace KS.Files.Folders
 		}
 
 		/// <summary>
-        /// List all files and folders in a specified folder
-        /// </summary>
-        /// <param name="folder">Full path to folder</param>
+		/// List all files and folders in a specified folder
+		/// </summary>
+		/// <param name="folder">Full path to folder</param>
 		public static void List(string folder)
 		{
 			List(folder, ShowFileDetailsList, Flags.SuppressUnauthorizedMessages, SortList);
 		}
 
 		/// <summary>
-        /// List all files and folders in a specified folder
-        /// </summary>
-        /// <param name="folder">Full path to folder</param>
+		/// List all files and folders in a specified folder
+		/// </summary>
+		/// <param name="folder">Full path to folder</param>
 		public static void List(string folder, bool Sort)
 		{
 			List(folder, ShowFileDetailsList, Flags.SuppressUnauthorizedMessages, Sort);
 		}
 
 		/// <summary>
-        /// List all files and folders in a specified folder
-        /// </summary>
-        /// <param name="folder">Full path to folder</param>
+		/// List all files and folders in a specified folder
+		/// </summary>
+		/// <param name="folder">Full path to folder</param>
 		public static void List(string folder, bool ShowFileDetails, bool SuppressUnauthorizedMessage)
 		{
 			List(folder, ShowFileDetails, SuppressUnauthorizedMessage, SortList);
 		}
 
 		/// <summary>
-        /// List all files and folders in a specified folder
-        /// </summary>
-        /// <param name="folder">Full path to folder</param>
+		/// List all files and folders in a specified folder
+		/// </summary>
+		/// <param name="folder">Full path to folder</param>
 		public static void List(string folder, bool ShowFileDetails, bool SuppressUnauthorizedMessage, bool Sort)
 		{
 			Filesystem.ThrowOnInvalidPath(folder);
@@ -200,7 +199,7 @@ namespace KS.Files.Folders
 
 			// List files and folders
 			folder = Filesystem.NeutralizePath(folder);
-			if (Checking.FolderExists(folder) | folder.ContainsAnyOf(new[] { "?", "*" }))
+			if (Checking.FolderExists(folder) | folder.ContainsAnyOf(["?", "*"]))
 			{
 				List<FileSystemInfo> enumeration;
 				SeparatorWriterColor.WriteSeparator(folder, true);
@@ -268,13 +267,13 @@ namespace KS.Files.Folders
 		}
 
 		/// <summary>
-        /// Gets the filesystem entries of the parent with the specified pattern (wildcards, ...)
-        /// </summary>
-        /// <param name="Path">The path, including the pattern</param>
-        /// <returns>The array of full paths</returns>
+		/// Gets the filesystem entries of the parent with the specified pattern (wildcards, ...)
+		/// </summary>
+		/// <param name="Path">The path, including the pattern</param>
+		/// <returns>The array of full paths</returns>
 		public static string[] GetFilesystemEntries(string Path, bool IsFile = false)
 		{
-			string[] Entries = Array.Empty<string>();
+			string[] Entries = [];
 			try
 			{
 				Filesystem.ThrowOnInvalidPath(Path);
@@ -319,14 +318,14 @@ namespace KS.Files.Folders
 		}
 
 		/// <summary>
-        /// Gets the filesystem entries of the parent with the specified pattern (wildcards, ...)
-        /// </summary>
-        /// <param name="Parent">The parent path. It can be neutralized if necessary</param>
-        /// <param name="Pattern">The pattern</param>
-        /// <returns>The array of full paths</returns>
+		/// Gets the filesystem entries of the parent with the specified pattern (wildcards, ...)
+		/// </summary>
+		/// <param name="Parent">The parent path. It can be neutralized if necessary</param>
+		/// <param name="Pattern">The pattern</param>
+		/// <returns>The array of full paths</returns>
 		public static string[] GetFilesystemEntries(string Parent, string Pattern)
 		{
-			string[] Entries = Array.Empty<string>();
+			string[] Entries = [];
 			try
 			{
 				Filesystem.ThrowOnInvalidPath(Parent);
@@ -341,7 +340,7 @@ namespace KS.Files.Folders
 				}
 				else
 				{
-					Entries = new[] { Parent };
+					Entries = [Parent];
 				}
 			}
 			catch (Exception ex)

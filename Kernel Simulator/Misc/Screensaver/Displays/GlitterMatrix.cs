@@ -34,8 +34,8 @@ namespace KS.Misc.Screensaver.Displays
 		private static string _glitterMatrixForegroundColor = new Color(ConsoleColor.Green).PlainSequence;
 
 		/// <summary>
-        /// [GlitterMatrix] How many milliseconds to wait before making the next write?
-        /// </summary>
+		/// [GlitterMatrix] How many milliseconds to wait before making the next write?
+		/// </summary>
 		public static int GlitterMatrixDelay
 		{
 			get
@@ -50,8 +50,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [GlitterMatrix] Screensaver background color
-        /// </summary>
+		/// [GlitterMatrix] Screensaver background color
+		/// </summary>
 		public static string GlitterMatrixBackgroundColor
 		{
 			get
@@ -64,8 +64,8 @@ namespace KS.Misc.Screensaver.Displays
 			}
 		}
 		/// <summary>
-        /// [GlitterMatrix] Screensaver foreground color
-        /// </summary>
+		/// [GlitterMatrix] Screensaver foreground color
+		/// </summary>
 		public static string GlitterMatrixForegroundColor
 		{
 			get

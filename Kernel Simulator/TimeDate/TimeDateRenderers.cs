@@ -27,9 +27,9 @@ namespace KS.TimeDate
 	{
 
 		/// <summary>
-        /// Renders the current time based on kernel config (long or short) and current culture
-        /// </summary>
-        /// <returns>A long or short time</returns>
+		/// Renders the current time based on kernel config (long or short) and current culture
+		/// </summary>
+		/// <returns>A long or short time</returns>
 		public static string RenderTime()
 		{
 			if (Flags.LongTimeDate)
@@ -43,10 +43,10 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the current time based on kernel config (long or short) and current culture
-        /// </summary>
-        /// <param name="FormatType">Date/time format type</param>
-        /// <returns>A long or short time</returns>
+		/// Renders the current time based on kernel config (long or short) and current culture
+		/// </summary>
+		/// <param name="FormatType">Date/time format type</param>
+		/// <returns>A long or short time</returns>
 		public static string RenderTime(TimeDate.FormatType FormatType)
 		{
 			if (FormatType == TimeDate.FormatType.Long)
@@ -60,10 +60,10 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the current time based on specified culture
-        /// </summary>
-        /// <param name="Cult">A culture.</param>
-        /// <returns>A time</returns>
+		/// Renders the current time based on specified culture
+		/// </summary>
+		/// <param name="Cult">A culture.</param>
+		/// <returns>A time</returns>
 		public static string RenderTime(CultureInfo Cult)
 		{
 			if (Flags.LongTimeDate)
@@ -77,11 +77,11 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the current time based on specified culture
-        /// </summary>
-        /// <param name="Cult">A culture.</param>
-        /// <param name="FormatType">Date/time format type</param>
-        /// <returns>A time</returns>
+		/// Renders the current time based on specified culture
+		/// </summary>
+		/// <param name="Cult">A culture.</param>
+		/// <param name="FormatType">Date/time format type</param>
+		/// <returns>A time</returns>
 		public static string RenderTime(CultureInfo Cult, TimeDate.FormatType FormatType)
 		{
 			if (FormatType == TimeDate.FormatType.Long)
@@ -95,10 +95,10 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the time based on specified time using the kernel config (long or short) and current culture
-        /// </summary>
-        /// <param name="DT">Specified time</param>
-        /// <returns>A long or short time</returns>
+		/// Renders the time based on specified time using the kernel config (long or short) and current culture
+		/// </summary>
+		/// <param name="DT">Specified time</param>
+		/// <returns>A long or short time</returns>
 		public static string RenderTime(DateTime DT)
 		{
 			if (Flags.LongTimeDate)
@@ -112,11 +112,11 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the time based on specified time using the kernel config (long or short) and current culture
-        /// </summary>
-        /// <param name="DT">Specified time</param>
-        /// <param name="FormatType">Date/time format type</param>
-        /// <returns>A long or short time</returns>
+		/// Renders the time based on specified time using the kernel config (long or short) and current culture
+		/// </summary>
+		/// <param name="DT">Specified time</param>
+		/// <param name="FormatType">Date/time format type</param>
+		/// <returns>A long or short time</returns>
 		public static string RenderTime(DateTime DT, TimeDate.FormatType FormatType)
 		{
 			if (FormatType == TimeDate.FormatType.Long)
@@ -130,11 +130,11 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the time based on specified date and culture using the kernel config (long or short)
-        /// </summary>
-        /// <param name="DT">Specified time</param>
-        /// <param name="Cult">A culture</param>
-        /// <returns>A time</returns>
+		/// Renders the time based on specified date and culture using the kernel config (long or short)
+		/// </summary>
+		/// <param name="DT">Specified time</param>
+		/// <param name="Cult">A culture</param>
+		/// <returns>A time</returns>
 		public static string RenderTime(DateTime DT, CultureInfo Cult)
 		{
 			if (Flags.LongTimeDate)
@@ -148,12 +148,12 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the time based on specified date and culture using the kernel config (long or short)
-        /// </summary>
-        /// <param name="DT">Specified time</param>
-        /// <param name="Cult">A culture</param>
-        /// <param name="FormatType">Date/time format type</param>
-        /// <returns>A time</returns>
+		/// Renders the time based on specified date and culture using the kernel config (long or short)
+		/// </summary>
+		/// <param name="DT">Specified time</param>
+		/// <param name="Cult">A culture</param>
+		/// <param name="FormatType">Date/time format type</param>
+		/// <returns>A time</returns>
 		public static string RenderTime(DateTime DT, CultureInfo Cult, TimeDate.FormatType FormatType)
 		{
 			if (FormatType == TimeDate.FormatType.Long)
@@ -167,9 +167,9 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the current date based on kernel config (long or short) and current culture
-        /// </summary>
-        /// <returns>A long or short date</returns>
+		/// Renders the current date based on kernel config (long or short) and current culture
+		/// </summary>
+		/// <returns>A long or short date</returns>
 		public static string RenderDate()
 		{
 			if (Flags.LongTimeDate)
@@ -183,10 +183,10 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the current date based on kernel config (long or short) and current culture
-        /// </summary>
-        /// <param name="FormatType">Date/time format type</param>
-        /// <returns>A long or short date</returns>
+		/// Renders the current date based on kernel config (long or short) and current culture
+		/// </summary>
+		/// <param name="FormatType">Date/time format type</param>
+		/// <returns>A long or short date</returns>
 		public static string RenderDate(TimeDate.FormatType FormatType)
 		{
 			if (FormatType == TimeDate.FormatType.Long)
@@ -200,10 +200,10 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the current date based on specified culture
-        /// </summary>
-        /// <param name="Cult">A culture.</param>
-        /// <returns>A date</returns>
+		/// Renders the current date based on specified culture
+		/// </summary>
+		/// <param name="Cult">A culture.</param>
+		/// <returns>A date</returns>
 		public static string RenderDate(CultureInfo Cult)
 		{
 			if (Flags.LongTimeDate)
@@ -217,11 +217,11 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the current date based on specified culture
-        /// </summary>
-        /// <param name="Cult">A culture.</param>
-        /// <param name="FormatType">Date/time format type</param>
-        /// <returns>A date</returns>
+		/// Renders the current date based on specified culture
+		/// </summary>
+		/// <param name="Cult">A culture.</param>
+		/// <param name="FormatType">Date/time format type</param>
+		/// <returns>A date</returns>
 		public static string RenderDate(CultureInfo Cult, TimeDate.FormatType FormatType)
 		{
 			if (FormatType == TimeDate.FormatType.Long)
@@ -235,10 +235,10 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the date based on specified date using the kernel config (long or short) and current culture
-        /// </summary>
-        /// <param name="DT">Specified date</param>
-        /// <returns>A long or short date</returns>
+		/// Renders the date based on specified date using the kernel config (long or short) and current culture
+		/// </summary>
+		/// <param name="DT">Specified date</param>
+		/// <returns>A long or short date</returns>
 		public static string RenderDate(DateTime DT)
 		{
 			if (Flags.LongTimeDate)
@@ -252,11 +252,11 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the date based on specified date using the kernel config (long or short) and current culture
-        /// </summary>
-        /// <param name="DT">Specified date</param>
-        /// <param name="FormatType">Date/time format type</param>
-        /// <returns>A long or short date</returns>
+		/// Renders the date based on specified date using the kernel config (long or short) and current culture
+		/// </summary>
+		/// <param name="DT">Specified date</param>
+		/// <param name="FormatType">Date/time format type</param>
+		/// <returns>A long or short date</returns>
 		public static string RenderDate(DateTime DT, TimeDate.FormatType FormatType)
 		{
 			if (FormatType == TimeDate.FormatType.Long)
@@ -270,11 +270,11 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the date based on specified date and culture using the kernel config (long or short)
-        /// </summary>
-        /// <param name="DT">Specified date</param>
-        /// <param name="Cult">A culture</param>
-        /// <returns>A date</returns>
+		/// Renders the date based on specified date and culture using the kernel config (long or short)
+		/// </summary>
+		/// <param name="DT">Specified date</param>
+		/// <param name="Cult">A culture</param>
+		/// <returns>A date</returns>
 		public static string RenderDate(DateTime DT, CultureInfo Cult)
 		{
 			if (Flags.LongTimeDate)
@@ -288,12 +288,12 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the date based on specified date and culture using the kernel config (long or short)
-        /// </summary>
-        /// <param name="DT">Specified date</param>
-        /// <param name="Cult">A culture</param>
-        /// <param name="FormatType">Date/time format type</param>
-        /// <returns>A date</returns>
+		/// Renders the date based on specified date and culture using the kernel config (long or short)
+		/// </summary>
+		/// <param name="DT">Specified date</param>
+		/// <param name="Cult">A culture</param>
+		/// <param name="FormatType">Date/time format type</param>
+		/// <returns>A date</returns>
 		public static string RenderDate(DateTime DT, CultureInfo Cult, TimeDate.FormatType FormatType)
 		{
 			if (FormatType == TimeDate.FormatType.Long)
@@ -307,9 +307,9 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the current time and date based on kernel config (long or short) and current culture
-        /// </summary>
-        /// <returns>A long or short time and date</returns>
+		/// Renders the current time and date based on kernel config (long or short) and current culture
+		/// </summary>
+		/// <returns>A long or short time and date</returns>
 		public static string Render()
 		{
 			if (Flags.LongTimeDate)
@@ -323,10 +323,10 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the current time and date based on kernel config (long or short) and current culture
-        /// </summary>
-        /// <param name="FormatType">Date/time format type</param>
-        /// <returns>A long or short time and date</returns>
+		/// Renders the current time and date based on kernel config (long or short) and current culture
+		/// </summary>
+		/// <param name="FormatType">Date/time format type</param>
+		/// <returns>A long or short time and date</returns>
 		public static string Render(TimeDate.FormatType FormatType)
 		{
 			if (FormatType == TimeDate.FormatType.Long)
@@ -340,10 +340,10 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the current time and date based on specified culture
-        /// </summary>
-        /// <param name="Cult">A culture.</param>
-        /// <returns>A time and date</returns>
+		/// Renders the current time and date based on specified culture
+		/// </summary>
+		/// <param name="Cult">A culture.</param>
+		/// <returns>A time and date</returns>
 		public static string Render(CultureInfo Cult)
 		{
 			if (Flags.LongTimeDate)
@@ -357,11 +357,11 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the current time and date based on specified culture
-        /// </summary>
-        /// <param name="Cult">A culture.</param>
-        /// <param name="FormatType">Date/time format type</param>
-        /// <returns>A time and date</returns>
+		/// Renders the current time and date based on specified culture
+		/// </summary>
+		/// <param name="Cult">A culture.</param>
+		/// <param name="FormatType">Date/time format type</param>
+		/// <returns>A time and date</returns>
 		public static string Render(CultureInfo Cult, TimeDate.FormatType FormatType)
 		{
 			if (FormatType == TimeDate.FormatType.Long)
@@ -375,10 +375,10 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the time and date based on specified time using the kernel config (long or short) and current culture
-        /// </summary>
-        /// <param name="DT">Specified time and date</param>
-        /// <returns>A long or short time and date</returns>
+		/// Renders the time and date based on specified time using the kernel config (long or short) and current culture
+		/// </summary>
+		/// <param name="DT">Specified time and date</param>
+		/// <returns>A long or short time and date</returns>
 		public static string Render(DateTime DT)
 		{
 			if (Flags.LongTimeDate)
@@ -392,11 +392,11 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the time and date based on specified time using the kernel config (long or short) and current culture
-        /// </summary>
-        /// <param name="DT">Specified time and date</param>
-        /// <param name="FormatType">Date/time format type</param>
-        /// <returns>A long or short time and date</returns>
+		/// Renders the time and date based on specified time using the kernel config (long or short) and current culture
+		/// </summary>
+		/// <param name="DT">Specified time and date</param>
+		/// <param name="FormatType">Date/time format type</param>
+		/// <returns>A long or short time and date</returns>
 		public static string Render(DateTime DT, TimeDate.FormatType FormatType)
 		{
 			if (FormatType == TimeDate.FormatType.Long)
@@ -410,11 +410,11 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the time and date based on specified date and culture using the kernel config (long or short)
-        /// </summary>
-        /// <param name="DT">Specified time and date</param>
-        /// <param name="Cult">A culture</param>
-        /// <returns>A time and date</returns>
+		/// Renders the time and date based on specified date and culture using the kernel config (long or short)
+		/// </summary>
+		/// <param name="DT">Specified time and date</param>
+		/// <param name="Cult">A culture</param>
+		/// <returns>A time and date</returns>
 		public static string Render(DateTime DT, CultureInfo Cult)
 		{
 			if (Flags.LongTimeDate)
@@ -428,12 +428,12 @@ namespace KS.TimeDate
 		}
 
 		/// <summary>
-        /// Renders the time and date based on specified date and culture using the kernel config (long or short)
-        /// </summary>
-        /// <param name="DT">Specified time and date</param>
-        /// <param name="Cult">A culture</param>
-        /// <param name="FormatType">Date/time format type</param>
-        /// <returns>A time and date</returns>
+		/// Renders the time and date based on specified date and culture using the kernel config (long or short)
+		/// </summary>
+		/// <param name="DT">Specified time and date</param>
+		/// <param name="Cult">A culture</param>
+		/// <param name="FormatType">Date/time format type</param>
+		/// <returns>A time and date</returns>
 		public static string Render(DateTime DT, CultureInfo Cult, TimeDate.FormatType FormatType)
 		{
 			if (FormatType == TimeDate.FormatType.Long)

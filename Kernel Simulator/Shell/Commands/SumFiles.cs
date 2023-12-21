@@ -29,7 +29,6 @@ using KS.Misc.Encryption;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.FancyWriters;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Shell.Commands
 {
@@ -44,23 +43,23 @@ namespace KS.Shell.Commands
 			var FileBuilder = new StringBuilder();
 			if (!(ListArgsOnly.Length < 3))
 			{
-				out = Filesystem.NeutralizePath(ListArgsOnly[2]);
+				@out = Filesystem.NeutralizePath(ListArgsOnly[2]);
 			}
 			if (Checking.FolderExists(folder))
 			{
 				foreach (string file in Directory.EnumerateFiles(folder, "*", SearchOption.TopDirectoryOnly))
 				{
-					file = Filesystem.NeutralizePath(file);
-					SeparatorWriterColor.WriteSeparator(file, true);
+					string finalfile = Filesystem.NeutralizePath(file);
+					SeparatorWriterColor.WriteSeparator(finalfile, true);
 					Encryption.Algorithms AlgorithmEnum;
 					if (ListArgsOnly[0] == "all")
 					{
 						foreach (string Algorithm in Enum.GetNames(typeof(Encryption.Algorithms)))
 						{
-							AlgorithmEnum = (Encryption.Algorithms)Conversions.ToInteger(Enum.Parse(typeof(Encryption.Algorithms), Algorithm));
+							AlgorithmEnum = (Encryption.Algorithms)Convert.ToInt32(Enum.Parse(typeof(Encryption.Algorithms), Algorithm));
 							var spent = new Stopwatch();
 							spent.Start(); // Time when you're on a breakpoint is counted
-							string encrypted = Encryption.GetEncryptedFile(file, AlgorithmEnum);
+							string encrypted = Encryption.GetEncryptedFile(finalfile, AlgorithmEnum);
 							TextWriterColor.Write("{0} ({1})", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), encrypted, AlgorithmEnum);
 							TextWriterColor.Write(Translate.DoTranslation("Time spent: {0} milliseconds"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), spent.ElapsedMilliseconds);
 							if (UseRelative)
@@ -69,7 +68,7 @@ namespace KS.Shell.Commands
 							}
 							else
 							{
-								FileBuilder.AppendLine($"- {file}: {encrypted} ({AlgorithmEnum})");
+								FileBuilder.AppendLine($"- {finalfile}: {encrypted} ({AlgorithmEnum})");
 							}
 							spent.Stop();
 						}
@@ -78,7 +77,7 @@ namespace KS.Shell.Commands
 					{
 						var spent = new Stopwatch();
 						spent.Start(); // Time when you're on a breakpoint is counted
-						string encrypted = Encryption.GetEncryptedFile(file, AlgorithmEnum);
+						string encrypted = Encryption.GetEncryptedFile(finalfile, AlgorithmEnum);
 						TextWriterColor.Write(encrypted, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
 						TextWriterColor.Write(Translate.DoTranslation("Time spent: {0} milliseconds"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), spent.ElapsedMilliseconds);
 						if (UseRelative)
@@ -87,7 +86,7 @@ namespace KS.Shell.Commands
 						}
 						else
 						{
-							FileBuilder.AppendLine($"- {file}: {encrypted} ({AlgorithmEnum})");
+							FileBuilder.AppendLine($"- {finalfile}: {encrypted} ({AlgorithmEnum})");
 						}
 						spent.Stop();
 					}
@@ -98,9 +97,9 @@ namespace KS.Shell.Commands
 					}
 					TextWriterColor.WritePlain("", true);
 				}
-				if (!string.IsNullOrEmpty(out))
+				if (!string.IsNullOrEmpty(@out))
 				{
-					var FStream = new StreamWriter(out);
+					var FStream = new StreamWriter(@out);
 					FStream.Write(FileBuilder.ToString());
 					FStream.Flush();
 				}

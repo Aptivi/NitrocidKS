@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using System.Linq;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
@@ -22,7 +23,6 @@ using KS.Files.Folders;
 using KS.Misc.Text;
 using KS.Shell.ShellBase.Commands;
 using KS.Shell.ShellBase.Shells;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Shell.ShellBase
 {
@@ -36,12 +36,12 @@ namespace KS.Shell.ShellBase
 			{
 				if (string.IsNullOrEmpty(text))
 				{
-					return ShellCommands.Keys.ToArray();
+					return [.. ShellCommands.Keys];
 				}
 				else if (text.Contains(" "))
 				{
 					// We're providing completion for argument.
-					string CommandName = Conversions.ToString(text.SplitEncloseDoubleQuotes()[Conversions.ToInteger(" ")][0]);
+					string CommandName = Convert.ToString(text.SplitEncloseDoubleQuotes()[Convert.ToInt32(" ")][0]);
 					string[] FileFolderList = Listing.CreateList(CurrentDirectory.CurrentDir, true).Select(x => x.Name).ToArray();
 					if (ShellCommands.ContainsKey(CommandName))
 					{

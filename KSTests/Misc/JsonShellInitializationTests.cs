@@ -30,8 +30,8 @@ namespace KSTests
 	{
 
 		/// <summary>
-    /// Tests opening, saving, and closing a JSON file
-    /// </summary>
+		/// Tests opening, saving, and closing a JSON file
+		/// </summary>
 		[Test]
 		[Description("Initialization")]
 		public void TestOpenSaveCloseJsonFile()

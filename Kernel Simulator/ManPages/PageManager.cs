@@ -25,20 +25,20 @@ namespace KS.ManPages
 	{
 
 		// Variables
-		internal static Dictionary<string, Manual> Pages = new();
+		internal static Dictionary<string, Manual> Pages = [];
 
 		/// <summary>
-        /// Lists all manual pages
-        /// </summary>
+		/// Lists all manual pages
+		/// </summary>
 		public static Dictionary<string, Manual> ListAllPages()
 		{
 			return ListAllPages("");
 		}
 
 		/// <summary>
-        /// Lists all manual pages
-        /// </summary>
-        /// <param name="SearchTerm">Keywords to search</param>
+		/// Lists all manual pages
+		/// </summary>
+		/// <param name="SearchTerm">Keywords to search</param>
 		public static Dictionary<string, Manual> ListAllPages(string SearchTerm)
 		{
 			if (string.IsNullOrEmpty(SearchTerm))
@@ -60,10 +60,10 @@ namespace KS.ManPages
 		}
 
 		/// <summary>
-        /// Adds a manual page to the pages list
-        /// </summary>
-        /// <param name="Name">Manual page name</param>
-        /// <param name="Page">Manual page instance</param>
+		/// Adds a manual page to the pages list
+		/// </summary>
+		/// <param name="Name">Manual page name</param>
+		/// <param name="Page">Manual page instance</param>
 		public static void AddManualPage(string Name, Manual Page)
 		{
 			// Check to see if title is defined
@@ -88,9 +88,9 @@ namespace KS.ManPages
 		}
 
 		/// <summary>
-        /// Removes a manual page from the list
-        /// </summary>
-        /// <param name="Name">Manual page name</param>
+		/// Removes a manual page from the list
+		/// </summary>
+		/// <param name="Name">Manual page name</param>
 		public static bool RemoveManualPage(string Name)
 		{
 			return Pages.Remove(Name);

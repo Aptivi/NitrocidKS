@@ -21,7 +21,7 @@ using KS.Languages;
 using KS.Misc.Screensaver.Customized;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell.ShellBase.Commands;
-using Microsoft.VisualBasic.CompilerServices;
+using System;
 
 namespace KS.TestShell.Commands
 {
@@ -33,7 +33,7 @@ namespace KS.TestShell.Commands
 			if (CustomSaverTools.CustomSavers.ContainsKey(ListArgs[0]))
 			{
 				TextWriterColor.Write("- {0} -> {1}: ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), ListArgs[0], ListArgs[1]);
-				TextWriterColor.Write(Conversions.ToString(CustomSaverTools.GetCustomSaverSettings(ListArgs[0], ListArgs[1])), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+				TextWriterColor.Write(Convert.ToString(CustomSaverTools.GetCustomSaverSettings(ListArgs[0], ListArgs[1])), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
 			}
 			else
 			{

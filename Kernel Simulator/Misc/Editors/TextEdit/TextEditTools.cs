@@ -33,10 +33,10 @@ namespace KS.Misc.Editors.TextEdit
 	{
 
 		/// <summary>
-        /// Opens the text file
-        /// </summary>
-        /// <param name="File">Target file. We recommend you to use <see cref="NeutralizePath(String, Boolean)"></see> to neutralize path.</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Opens the text file
+		/// </summary>
+		/// <param name="File">Target file. We recommend you to use <see cref="NeutralizePath(string, bool)"></see> to neutralize path.</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool TextEdit_OpenTextFile(string File)
 		{
 			try
@@ -44,9 +44,9 @@ namespace KS.Misc.Editors.TextEdit
 				DebugWriter.Wdbg(DebugLevel.I, "Trying to open file {0}...", File);
 				TextEditShellCommon.TextEdit_FileStream = new FileStream(File, FileMode.Open);
 				if (TextEditShellCommon.TextEdit_FileLines is null)
-					TextEditShellCommon.TextEdit_FileLines = new List<string>();
+					TextEditShellCommon.TextEdit_FileLines = [];
 				if (TextEditShellCommon.TextEdit_FileLinesOrig is null)
-					TextEditShellCommon.TextEdit_FileLinesOrig = new List<string>();
+					TextEditShellCommon.TextEdit_FileLinesOrig = [];
 				DebugWriter.Wdbg(DebugLevel.I, "File {0} is open. Length: {1}, Pos: {2}", File, TextEditShellCommon.TextEdit_FileStream.Length, TextEditShellCommon.TextEdit_FileStream.Position);
 				var TextFileStreamReader = new StreamReader(TextEditShellCommon.TextEdit_FileStream);
 				while (!TextFileStreamReader.EndOfStream)
@@ -67,9 +67,9 @@ namespace KS.Misc.Editors.TextEdit
 		}
 
 		/// <summary>
-        /// Closes text file
-        /// </summary>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Closes text file
+		/// </summary>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool TextEdit_CloseTextFile()
 		{
 			try
@@ -91,9 +91,9 @@ namespace KS.Misc.Editors.TextEdit
 		}
 
 		/// <summary>
-        /// Saves text file
-        /// </summary>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Saves text file
+		/// </summary>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool TextEdit_SaveTextFile(bool ClearLines)
 		{
 			try
@@ -123,8 +123,8 @@ namespace KS.Misc.Editors.TextEdit
 		}
 
 		/// <summary>
-        /// Handles autosave
-        /// </summary>
+		/// Handles autosave
+		/// </summary>
 		public static void TextEdit_HandleAutoSaveTextFile()
 		{
 			if (TextEditShellCommon.TextEdit_AutoSaveFlag)
@@ -145,8 +145,8 @@ namespace KS.Misc.Editors.TextEdit
 		}
 
 		/// <summary>
-        /// Was text edited?
-        /// </summary>
+		/// Was text edited?
+		/// </summary>
 		public static bool TextEdit_WasTextEdited()
 		{
 			if (TextEditShellCommon.TextEdit_FileLines is not null & TextEditShellCommon.TextEdit_FileLinesOrig is not null)
@@ -157,9 +157,9 @@ namespace KS.Misc.Editors.TextEdit
 		}
 
 		/// <summary>
-        /// Adds a new line to the current text
-        /// </summary>
-        /// <param name="Content">New line content</param>
+		/// Adds a new line to the current text
+		/// </summary>
+		/// <param name="Content">New line content</param>
 		public static void TextEdit_AddNewLine(string Content)
 		{
 			if (TextEditShellCommon.TextEdit_FileStream is not null)
@@ -173,9 +173,9 @@ namespace KS.Misc.Editors.TextEdit
 		}
 
 		/// <summary>
-        /// Adds the new lines to the current text
-        /// </summary>
-        /// <param name="Lines">New lines</param>
+		/// Adds the new lines to the current text
+		/// </summary>
+		/// <param name="Lines">New lines</param>
 		public static void TextEdit_AddNewLines(string[] Lines)
 		{
 			if (TextEditShellCommon.TextEdit_FileStream is not null)
@@ -190,9 +190,9 @@ namespace KS.Misc.Editors.TextEdit
 		}
 
 		/// <summary>
-        /// Removes a line from the current text
-        /// </summary>
-        /// <param name="LineNumber">The line number to remove</param>
+		/// Removes a line from the current text
+		/// </summary>
+		/// <param name="LineNumber">The line number to remove</param>
 		public static void TextEdit_RemoveLine(int LineNumber)
 		{
 			if (TextEditShellCommon.TextEdit_FileStream is not null)
@@ -217,10 +217,10 @@ namespace KS.Misc.Editors.TextEdit
 		}
 
 		/// <summary>
-        /// Replaces every occurence of a string with the replacement using regular expressions
-        /// </summary>
-        /// <param name="From">Regular expression to be replaced</param>
-        /// <param name="[With]">String to replace with</param>
+		/// Replaces every occurence of a string with the replacement using regular expressions
+		/// </summary>
+		/// <param name="From">Regular expression to be replaced</param>
+		/// <param name="[With]">String to replace with</param>
 		public static void TextEdit_ReplaceRegex(string From, string With)
 		{
 			if (string.IsNullOrEmpty(From))
@@ -241,11 +241,11 @@ namespace KS.Misc.Editors.TextEdit
 		}
 
 		/// <summary>
-        /// Replaces every occurence of a string with the replacement using regular expressions
-        /// </summary>
-        /// <param name="From">Regular expression to be replaced</param>
-        /// <param name="[With]">String to replace with</param>
-        /// <param name="LineNumber">The line number</param>
+		/// Replaces every occurence of a string with the replacement using regular expressions
+		/// </summary>
+		/// <param name="From">Regular expression to be replaced</param>
+		/// <param name="[With]">String to replace with</param>
+		/// <param name="LineNumber">The line number</param>
 		public static void TextEdit_ReplaceRegex(string From, string With, int LineNumber)
 		{
 			if (string.IsNullOrEmpty(From))
@@ -272,10 +272,10 @@ namespace KS.Misc.Editors.TextEdit
 		}
 
 		/// <summary>
-        /// Replaces every occurence of a string with the replacement
-        /// </summary>
-        /// <param name="From">String to be replaced</param>
-        /// <param name="[With]">String to replace with</param>
+		/// Replaces every occurence of a string with the replacement
+		/// </summary>
+		/// <param name="From">String to be replaced</param>
+		/// <param name="[With]">String to replace with</param>
 		public static void TextEdit_Replace(string From, string With)
 		{
 			if (string.IsNullOrEmpty(From))
@@ -296,11 +296,11 @@ namespace KS.Misc.Editors.TextEdit
 		}
 
 		/// <summary>
-        /// Replaces every occurence of a string with the replacement
-        /// </summary>
-        /// <param name="From">String to be replaced</param>
-        /// <param name="[With]">String to replace with</param>
-        /// <param name="LineNumber">The line number</param>
+		/// Replaces every occurence of a string with the replacement
+		/// </summary>
+		/// <param name="From">String to be replaced</param>
+		/// <param name="[With]">String to replace with</param>
+		/// <param name="LineNumber">The line number</param>
 		public static void TextEdit_Replace(string From, string With, int LineNumber)
 		{
 			if (string.IsNullOrEmpty(From))
@@ -327,10 +327,10 @@ namespace KS.Misc.Editors.TextEdit
 		}
 
 		/// <summary>
-        /// Deletes a word or a phrase from the line
-        /// </summary>
-        /// <param name="Word">The word or phrase</param>
-        /// <param name="LineNumber">The line number</param>
+		/// Deletes a word or a phrase from the line
+		/// </summary>
+		/// <param name="Word">The word or phrase</param>
+		/// <param name="LineNumber">The line number</param>
 		public static void TextEdit_DeleteWord(string Word, int LineNumber)
 		{
 			if (string.IsNullOrEmpty(Word))
@@ -358,10 +358,10 @@ namespace KS.Misc.Editors.TextEdit
 		}
 
 		/// <summary>
-        /// Deletes a character from the line
-        /// </summary>
-        /// <param name="CharNumber">The character number</param>
-        /// <param name="LineNumber">The line number</param>
+		/// Deletes a character from the line
+		/// </summary>
+		/// <param name="CharNumber">The character number</param>
+		/// <param name="LineNumber">The line number</param>
 		public static void TextEdit_DeleteChar(int CharNumber, int LineNumber)
 		{
 			if (TextEditShellCommon.TextEdit_FileStream is not null)
@@ -389,9 +389,9 @@ namespace KS.Misc.Editors.TextEdit
 		}
 
 		/// <summary>
-        /// Queries a character in all lines.
-        /// </summary>
-        /// <param name="Char">The character to query</param>
+		/// Queries a character in all lines.
+		/// </summary>
+		/// <param name="Char">The character to query</param>
 		public static Dictionary<int, Dictionary<int, string>> TextEdit_QueryChar(char Char)
 		{
 			if (TextEditShellCommon.TextEdit_FileStream is not null)
@@ -421,10 +421,10 @@ namespace KS.Misc.Editors.TextEdit
 		}
 
 		/// <summary>
-        /// Queries a character in specific line.
-        /// </summary>
-        /// <param name="Char">The character to query</param>
-        /// <param name="LineNumber">The line number</param>
+		/// Queries a character in specific line.
+		/// </summary>
+		/// <param name="Char">The character to query</param>
+		/// <param name="LineNumber">The line number</param>
 		public static Dictionary<int, string> TextEdit_QueryChar(char Char, int LineNumber)
 		{
 			if (TextEditShellCommon.TextEdit_FileStream is not null)
@@ -457,9 +457,9 @@ namespace KS.Misc.Editors.TextEdit
 		}
 
 		/// <summary>
-        /// Queries a word in all lines.
-        /// </summary>
-        /// <param name="Word">The word to query</param>
+		/// Queries a word in all lines.
+		/// </summary>
+		/// <param name="Word">The word to query</param>
 		public static Dictionary<int, Dictionary<int, string>> TextEdit_QueryWord(string Word)
 		{
 			if (TextEditShellCommon.TextEdit_FileStream is not null)
@@ -490,10 +490,10 @@ namespace KS.Misc.Editors.TextEdit
 		}
 
 		/// <summary>
-        /// Queries a word in specific line.
-        /// </summary>
-        /// <param name="Word">The word to query</param>
-        /// <param name="LineNumber">The line number</param>
+		/// Queries a word in specific line.
+		/// </summary>
+		/// <param name="Word">The word to query</param>
+		/// <param name="LineNumber">The line number</param>
 		public static Dictionary<int, string> TextEdit_QueryWord(string Word, int LineNumber)
 		{
 			if (TextEditShellCommon.TextEdit_FileStream is not null)
@@ -527,9 +527,9 @@ namespace KS.Misc.Editors.TextEdit
 		}
 
 		/// <summary>
-        /// Queries a word in all lines using regular expressions
-        /// </summary>
-        /// <param name="Word">The regular expression to query</param>
+		/// Queries a word in all lines using regular expressions
+		/// </summary>
+		/// <param name="Word">The regular expression to query</param>
 		public static Dictionary<int, Dictionary<int, string>> TextEdit_QueryWordRegex(string Word)
 		{
 			if (TextEditShellCommon.TextEdit_FileStream is not null)
@@ -543,7 +543,7 @@ namespace KS.Misc.Editors.TextEdit
 					var LineMatches = Regex.Matches(TextEditShellCommon.TextEdit_FileLines[LineIndex], Word);
 					for (int MatchIndex = 0, loopTo1 = LineMatches.Count - 1; MatchIndex <= loopTo1; MatchIndex++)
 					{
-						var LineMatch = LineMatches[MatchIndex];
+						_ = LineMatches[MatchIndex];
 						Results.Add(MatchIndex, TextEditShellCommon.TextEdit_FileLines[LineIndex]);
 					}
 					Lines.Add(LineIndex, new Dictionary<int, string>(Results));
@@ -558,10 +558,10 @@ namespace KS.Misc.Editors.TextEdit
 		}
 
 		/// <summary>
-        /// Queries a word in specific line using regular expressions
-        /// </summary>
-        /// <param name="Word">The regular expression to query</param>
-        /// <param name="LineNumber">The line number</param>
+		/// Queries a word in specific line using regular expressions
+		/// </summary>
+		/// <param name="Word">The regular expression to query</param>
+		/// <param name="LineNumber">The line number</param>
 		public static Dictionary<int, string> TextEdit_QueryWordRegex(string Word, int LineNumber)
 		{
 			if (TextEditShellCommon.TextEdit_FileStream is not null)
@@ -576,7 +576,7 @@ namespace KS.Misc.Editors.TextEdit
 					var LineMatches = Regex.Matches(TextEditShellCommon.TextEdit_FileLines[LineIndex], Word);
 					for (int MatchIndex = 0, loopTo = LineMatches.Count - 1; MatchIndex <= loopTo; MatchIndex++)
 					{
-						var LineMatch = LineMatches[MatchIndex];
+						_ = LineMatches[MatchIndex];
 						Results.Add(MatchIndex, TextEditShellCommon.TextEdit_FileLines[LineIndex]);
 					}
 				}

@@ -29,20 +29,20 @@ namespace KS.Files.Querying
 	{
 
 		/// <summary>
-        /// Gets all file sizes in a folder, depending on the kernel setting <see cref="FullParseMode"/>
-        /// </summary>
-        /// <param name="DirectoryInfo">Directory information</param>
-        /// <returns>Directory Size</returns>
+		/// Gets all file sizes in a folder, depending on the kernel setting <see cref="FullParseMode"/>
+		/// </summary>
+		/// <param name="DirectoryInfo">Directory information</param>
+		/// <returns>Directory Size</returns>
 		public static long GetAllSizesInFolder(DirectoryInfo DirectoryInfo)
 		{
 			return GetAllSizesInFolder(DirectoryInfo, Flags.FullParseMode);
 		}
 
 		/// <summary>
-        /// Gets all file sizes in a folder, and optionally parses the entire folder
-        /// </summary>
-        /// <param name="DirectoryInfo">Directory information</param>
-        /// <returns>Directory Size</returns>
+		/// Gets all file sizes in a folder, and optionally parses the entire folder
+		/// </summary>
+		/// <param name="DirectoryInfo">Directory information</param>
+		/// <returns>Directory Size</returns>
 		public static long GetAllSizesInFolder(DirectoryInfo DirectoryInfo, bool FullParseMode)
 		{
 			List<FileInfo> Files;

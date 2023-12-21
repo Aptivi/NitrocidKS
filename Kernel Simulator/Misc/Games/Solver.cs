@@ -6,7 +6,6 @@ using KS.ConsoleBase.Inputs;
 using KS.Languages;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
-using Microsoft.VisualBasic.CompilerServices;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
@@ -35,14 +34,14 @@ namespace KS.Misc.Games
 		public static bool SolverShowInput;
 
 		/// <summary>
-        /// Initializes the game
-        /// </summary>
+		/// Initializes the game
+		/// </summary>
 		public static void InitializeSolver()
 		{
 			var RandomDriver = new Random();
 			string RandomExpression;
 			string UserEvaluated;
-			string[] Operations = new string[] { "+", "-", "*", "/" };
+			string[] Operations = ["+", "-", "*", "/"];
 
 			// Show tip to exit
 			TextWriterColor.Write(Translate.DoTranslation("Press \"q\" to exit."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
@@ -60,13 +59,12 @@ namespace KS.Misc.Games
 				TextWriterColor.Write(RandomExpression, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
 
 				// Wait for response
-				UserEvaluated = SolverShowInput ? Input.ReadLine() : Input.ReadLineNoInput(Conversions.ToChar(""));
+				UserEvaluated = SolverShowInput ? Input.ReadLine() : Input.ReadLineNoInput('\0');
 				DebugWriter.Wdbg(DebugLevel.I, "Evaluated: {0}", UserEvaluated);
 
 				// Check to see if the user has entered the correct answer
-				double UserEvaluatedNumber;
-				double EvaluatedNumber = Conversions.ToDouble(new DataTable().Compute(RandomExpression, null));
-				if (double.TryParse(UserEvaluated, out UserEvaluatedNumber))
+				double EvaluatedNumber = Convert.ToDouble(new DataTable().Compute(RandomExpression, null));
+				if (double.TryParse(UserEvaluated, out double UserEvaluatedNumber))
 				{
 					if (UserEvaluatedNumber == EvaluatedNumber)
 					{

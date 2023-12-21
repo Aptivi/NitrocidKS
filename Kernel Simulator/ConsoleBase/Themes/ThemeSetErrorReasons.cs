@@ -20,17 +20,17 @@
 namespace KS.ConsoleBase.Themes
 {
 	/// <summary>
-    /// Enumeration for the theme setting error reasons
-    /// </summary>
+	/// Enumeration for the theme setting error reasons
+	/// </summary>
 	public enum ThemeSetErrorReasons
 	{
 		/// <summary>
-        /// Unknown reason
-        /// </summary>
+		/// Unknown reason
+		/// </summary>
 		Unknown = 0,
 		/// <summary>
-        /// Theme is not found
-        /// </summary>
+		/// Theme is not found
+		/// </summary>
 		NotFound = 1
 	}
 }

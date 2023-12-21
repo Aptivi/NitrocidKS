@@ -20,7 +20,6 @@ using System.Linq;
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 using KS.Files.Querying;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace KS.Files.PathLookup
 {
@@ -28,16 +27,16 @@ namespace KS.Files.PathLookup
 	{
 
 		/// <summary>
-        /// Gets the lookup path list
-        /// </summary>
+		/// Gets the lookup path list
+		/// </summary>
 		public static List<string> GetPathList()
 		{
-			return Shell.Shell.PathsToLookup.Split(Conversions.ToChar(Shell.Shell.PathLookupDelimiter)).ToList();
+			return [.. Shell.Shell.PathsToLookup.Split(Convert.ToChar(Shell.Shell.PathLookupDelimiter))];
 		}
 
 		/// <summary>
-        /// Adds a (non-)neutralized path to lookup
-        /// </summary>
+		/// Adds a (non-)neutralized path to lookup
+		/// </summary>
 		public static void AddToPathLookup(string Path)
 		{
 			Filesystem.ThrowOnInvalidPath(Path);
@@ -48,8 +47,8 @@ namespace KS.Files.PathLookup
 		}
 
 		/// <summary>
-        /// Adds a (non-)neutralized path to lookup
-        /// </summary>
+		/// Adds a (non-)neutralized path to lookup
+		/// </summary>
 		public static void AddToPathLookup(string Path, string RootPath)
 		{
 			Filesystem.ThrowOnInvalidPath(Path);
@@ -61,9 +60,9 @@ namespace KS.Files.PathLookup
 		}
 
 		/// <summary>
-        /// Adds a (non-)neutralized path to lookup
-        /// </summary>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Adds a (non-)neutralized path to lookup
+		/// </summary>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool TryAddToPathLookup(string Path)
 		{
 			try
@@ -71,16 +70,16 @@ namespace KS.Files.PathLookup
 				AddToPathLookup(Path);
 				return true;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				return false;
 			}
 		}
 
 		/// <summary>
-        /// Adds a (non-)neutralized path to lookup
-        /// </summary>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Adds a (non-)neutralized path to lookup
+		/// </summary>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool TryAddToPathLookup(string Path, string RootPath)
 		{
 			try
@@ -88,15 +87,15 @@ namespace KS.Files.PathLookup
 				AddToPathLookup(Path, RootPath);
 				return true;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				return false;
 			}
 		}
 
 		/// <summary>
-        /// Removes an existing (non-)neutralized path from lookup
-        /// </summary>
+		/// Removes an existing (non-)neutralized path from lookup
+		/// </summary>
 		public static void RemoveFromPathLookup(string Path)
 		{
 			Filesystem.ThrowOnInvalidPath(Path);
@@ -107,8 +106,8 @@ namespace KS.Files.PathLookup
 		}
 
 		/// <summary>
-        /// Removes an existing (non-)neutralized path from lookup
-        /// </summary>
+		/// Removes an existing (non-)neutralized path from lookup
+		/// </summary>
 		public static void RemoveFromPathLookup(string Path, string RootPath)
 		{
 			Filesystem.ThrowOnInvalidPath(Path);
@@ -120,9 +119,9 @@ namespace KS.Files.PathLookup
 		}
 
 		/// <summary>
-        /// Removes an existing (non-)neutralized path from lookup
-        /// </summary>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Removes an existing (non-)neutralized path from lookup
+		/// </summary>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool TryRemoveFromPathLookup(string Path)
 		{
 			try
@@ -130,16 +129,16 @@ namespace KS.Files.PathLookup
 				RemoveFromPathLookup(Path);
 				return true;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				return false;
 			}
 		}
 
 		/// <summary>
-        /// Removes an existing (non-)neutralized path from lookup
-        /// </summary>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Removes an existing (non-)neutralized path from lookup
+		/// </summary>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool TryRemoveFromPathLookup(string Path, string RootPath)
 		{
 			try
@@ -147,18 +146,18 @@ namespace KS.Files.PathLookup
 				RemoveFromPathLookup(Path, RootPath);
 				return true;
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				return false;
 			}
 		}
 
 		/// <summary>
-        /// Checks to see if the file exists in PATH and writes the result (path to file) to a string variable, if any.
-        /// </summary>
-        /// <param name="FilePath">A full path to file or just a file name</param>
-        /// <param name="Result">The neutralized path</param>
-        /// <returns>True if successful; False if unsuccessful</returns>
+		/// Checks to see if the file exists in PATH and writes the result (path to file) to a string variable, if any.
+		/// </summary>
+		/// <param name="FilePath">A full path to file or just a file name</param>
+		/// <param name="Result">The neutralized path</param>
+		/// <returns>True if successful; False if unsuccessful</returns>
 		public static bool FileExistsInPath(string FilePath, ref string Result)
 		{
 			Filesystem.ThrowOnInvalidPath(FilePath);
