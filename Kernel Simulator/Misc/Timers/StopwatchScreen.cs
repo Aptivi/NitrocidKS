@@ -60,6 +60,7 @@ namespace KS.Misc.Timers
         internal static Stopwatch Stopwatch = new();
         internal static Stopwatch LappedStopwatch = new();
         internal static bool NewLapAcknowledged;
+        internal static bool stopwatchStopping;
 
         /// <summary>
         /// Opens the stopwatch screen
@@ -90,7 +91,7 @@ namespace KS.Misc.Timers
 
             // Print the time interval and the current lap
             TextWriterWhereColor.WriteWhere(Stopwatch.Elapsed.ToString(@"d\.hh\:mm\:ss\.fff", CultureManager.CurrentCult), TimeLeftPosition, TimeTopPosition, true, LapColor);
-            TextWriterWhereColor.WriteWhere(LapsText + " {0}: {1}", LapsCurrentLapLeftPosition, LapsCurrentLapTopPosition, true, LapColor, Laps.Count + 1, LappedStopwatch.Elapsed.ToString(@"d\.hh\:mm\:ss\.fff", CultureManager.CurrentCult));
+            TextWriterWhereColor.WriteWhere(LapsText + " {0}: {1}", LapsCurrentLapLeftPosition, LapsCurrentLapTopPosition, true, LapColor, vars: [Laps.Count + 1, LappedStopwatch.Elapsed.ToString(@"d\.hh\:mm\:ss\.fff", CultureManager.CurrentCult)]);
 
             // Print the border
             MakeBorder();
@@ -107,10 +108,12 @@ namespace KS.Misc.Timers
                         {
                             if (!StopwatchUpdate.IsAlive)
                             {
+                                stopwatchStopping = false;
                                 StopwatchUpdate.Start();
                             }
                             else
                             {
+                                stopwatchStopping = true;
                                 StopwatchUpdate.Stop();
                             }
                             if (LappedStopwatch.IsRunning)
@@ -146,6 +149,7 @@ namespace KS.Misc.Timers
                         {
                             if (StopwatchUpdate.IsAlive)
                             {
+                                stopwatchStopping = true;
                                 StopwatchUpdate.Stop();
                             }
                             if (LappedStopwatch.IsRunning)
@@ -163,7 +167,7 @@ namespace KS.Misc.Timers
 
                             // Reset the indicators
                             LapColor = KernelColorTools.NeutralTextColor;
-                            TextWriterWhereColor.WriteWhere(Translate.DoTranslation("Lap") + " {0}: {1}", LapsCurrentLapLeftPosition, LapsCurrentLapTopPosition, false, LapColor, Laps.Count + 1, LappedStopwatch.Elapsed.ToString(@"d\.hh\:mm\:ss\.fff", CultureManager.CurrentCult));
+                            TextWriterWhereColor.WriteWhere(Translate.DoTranslation("Lap") + " {0}: {1}", LapsCurrentLapLeftPosition, LapsCurrentLapTopPosition, false, LapColor, vars: [Laps.Count + 1, LappedStopwatch.Elapsed.ToString(@"d\.hh\:mm\:ss\.fff", CultureManager.CurrentCult)]);
                             ConsoleBase.ConsoleExtensions.ClearLineToRight();
                             ConsoleWrapper.SetCursorPosition(0, TimeTopPosition);
                             ConsoleBase.ConsoleExtensions.ClearLineToRight();
@@ -179,7 +183,10 @@ namespace KS.Misc.Timers
                                 Stopwatch.Reset();
                             LapColor = KernelColorTools.NeutralTextColor;
                             if (StopwatchUpdate.IsAlive)
+                            {
+                                stopwatchStopping = true;
                                 StopwatchUpdate.Stop();
+                            }
                             break;
                         }
                 }
@@ -189,6 +196,7 @@ namespace KS.Misc.Timers
             Laps.Clear();
             ConsoleWrapper.Clear();
             ConsoleWrapper.CursorVisible = true;
+            stopwatchStopping = false;
         }
 
         /// <summary>
@@ -207,13 +215,13 @@ namespace KS.Misc.Timers
             int LapsLapsListLeftPosition = 4;
             int LapsLapsListTopPosition = 3;
 
-            while (StopwatchUpdate.IsAlive)
+            while (!stopwatchStopping)
             {
                 try
                 {
                     // Update the elapsed display
                     TextWriterWhereColor.WriteWhere(Stopwatch.Elapsed.ToString(@"d\.hh\:mm\:ss\.fff", CultureManager.CurrentCult), TimeLeftPosition, TimeTopPosition, true, LapColor);
-                    TextWriterWhereColor.WriteWhere(LapsText + " {0}: {1}", LapsCurrentLapLeftPosition, LapsCurrentLapTopPosition, true, LapColor, Laps.Count + 1, LappedStopwatch.Elapsed.ToString(@"d\.hh\:mm\:ss\.fff", CultureManager.CurrentCult));
+                    TextWriterWhereColor.WriteWhere(LapsText + " {0}: {1}", LapsCurrentLapLeftPosition, LapsCurrentLapTopPosition, true, LapColor, vars: [Laps.Count + 1, LappedStopwatch.Elapsed.ToString(@"d\.hh\:mm\:ss\.fff", CultureManager.CurrentCult)]);
 
                     // Update the laps list if new lap is acknowledged
                     if (NewLapAcknowledged)

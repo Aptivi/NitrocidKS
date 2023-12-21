@@ -61,6 +61,7 @@ namespace KS.Misc.Timers
         internal static DateTime TimerStarted;
         internal static int FigletTimeOldWidth;
         internal static int FigletTimeOldWidthEnd;
+        private static bool timerStopping;
         private static Timer _Timer;
 
         internal static Timer Timer
@@ -155,6 +156,7 @@ namespace KS.Misc.Timers
                             Timer.Interval = TimerInterval;
                             Timer.Start();
                             TimerStarted = DateTime.Now;
+                            timerStopping = false;
                             if (!TimerUpdate.IsAlive)
                                 TimerUpdate.Start();
                             break;
@@ -203,8 +205,12 @@ namespace KS.Misc.Timers
                             // Stop the timer
                             Timer.Stop();
                             Timer.Dispose();
+                            timerStopping = true;
                             if (TimerUpdate.IsAlive)
+                            {
+                                timerStopping = true;
                                 TimerUpdate.Stop();
+                            }
                             break;
                         }
                 }
@@ -214,6 +220,7 @@ namespace KS.Misc.Timers
             Timer = new Timer();
             ConsoleWrapper.Clear();
             ConsoleWrapper.CursorVisible = true;
+            timerStopping = false;
         }
 
         /// <summary>
@@ -234,7 +241,10 @@ namespace KS.Misc.Timers
 
             // Actually display it
             if (TimerUpdate.IsAlive)
+            {
+                timerStopping = true;
                 TimerUpdate.Stop();
+            }
             if (Flags.EnableFigletTimer)
             {
                 FigletWhereColor.WriteFigletWhere(ElapsedText, TimeLeftPosition, TimeTopPosition, true, FigletFont, KernelColorTools.ColTypes.Success);
@@ -252,7 +262,7 @@ namespace KS.Misc.Timers
         private static void UpdateTimerElapsedDisplay()
         {
             var FigletFont = FigletTools.GetFigletFont(TimerFigletFont);
-            while (TimerUpdate.IsAlive)
+            while (!timerStopping)
             {
                 try
                 {
