@@ -1,4 +1,23 @@
-﻿using System.IO;
+﻿//
+// Kernel Simulator  Copyright (C) 2018-2024  Aptivi
+//
+// This file is part of Kernel Simulator
+//
+// Kernel Simulator is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Kernel Simulator is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY, without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+//
+
+using System.IO;
 using FluentFTP.Helpers;
 using KS.ConsoleBase.Colors;
 
@@ -29,48 +48,48 @@ using KS.Misc.Writers.DebugWriters;
 
 namespace KS.Files.Print
 {
-	public static class DirectoryInfoPrinter
-	{
+    public static class DirectoryInfoPrinter
+    {
 
-		/// <summary>
-		/// Prints the directory information to the console
-		/// </summary>
-		public static void PrintDirectoryInfo(FileSystemInfo DirectoryInfo)
-		{
-			PrintDirectoryInfo(DirectoryInfo, Listing.ShowFileDetailsList);
-		}
+        /// <summary>
+        /// Prints the directory information to the console
+        /// </summary>
+        public static void PrintDirectoryInfo(FileSystemInfo DirectoryInfo)
+        {
+            PrintDirectoryInfo(DirectoryInfo, Listing.ShowFileDetailsList);
+        }
 
-		/// <summary>
-		/// Prints the directory information to the console
-		/// </summary>
-		public static void PrintDirectoryInfo(FileSystemInfo DirectoryInfo, bool ShowDirectoryDetails)
-		{
-			if (Checking.FolderExists(DirectoryInfo.FullName))
-			{
-				// Get all file sizes in a folder
-				long TotalSize = SizeGetter.GetAllSizesInFolder((DirectoryInfo)DirectoryInfo);
+        /// <summary>
+        /// Prints the directory information to the console
+        /// </summary>
+        public static void PrintDirectoryInfo(FileSystemInfo DirectoryInfo, bool ShowDirectoryDetails)
+        {
+            if (Checking.FolderExists(DirectoryInfo.FullName))
+            {
+                // Get all file sizes in a folder
+                long TotalSize = SizeGetter.GetAllSizesInFolder((DirectoryInfo)DirectoryInfo);
 
-				// Print information
-				if (DirectoryInfo.Attributes == FileAttributes.Hidden & Flags.HiddenFiles | !DirectoryInfo.Attributes.HasFlag(FileAttributes.Hidden))
-				{
-					if (PlatformDetector.IsOnWindows() & (!DirectoryInfo.Name.StartsWith(".") | DirectoryInfo.Name.StartsWith(".") & Flags.HiddenFiles) | PlatformDetector.IsOnUnix())
-					{
-						TextWriterColor.Write("- " + DirectoryInfo.Name + "/", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-						if (ShowDirectoryDetails)
-						{
-							TextWriterColor.Write(": ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-							TextWriterColor.Write(Translate.DoTranslation("{0}, Created in {1} {2}, Modified in {3} {4}"), false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), TotalSize.FileSizeToString(), DirectoryInfo.CreationTime.ToShortDateString(), DirectoryInfo.CreationTime.ToShortTimeString(), DirectoryInfo.LastWriteTime.ToShortDateString(), DirectoryInfo.LastWriteTime.ToShortTimeString());
-						}
-						TextWriterColor.WritePlain("", true);
-					}
-				}
-			}
-			else
-			{
-				TextWriterColor.Write(Translate.DoTranslation("Directory {0} not found"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), DirectoryInfo.FullName);
-				DebugWriter.Wdbg(DebugLevel.I, "IO.FolderExists = {0}", Checking.FolderExists(DirectoryInfo.FullName));
-			}
-		}
+                // Print information
+                if (DirectoryInfo.Attributes == FileAttributes.Hidden & Flags.HiddenFiles | !DirectoryInfo.Attributes.HasFlag(FileAttributes.Hidden))
+                {
+                    if (PlatformDetector.IsOnWindows() & (!DirectoryInfo.Name.StartsWith(".") | DirectoryInfo.Name.StartsWith(".") & Flags.HiddenFiles) | PlatformDetector.IsOnUnix())
+                    {
+                        TextWriterColor.Write("- " + DirectoryInfo.Name + "/", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
+                        if (ShowDirectoryDetails)
+                        {
+                            TextWriterColor.Write(": ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
+                            TextWriterColor.Write(Translate.DoTranslation("{0}, Created in {1} {2}, Modified in {3} {4}"), false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), TotalSize.FileSizeToString(), DirectoryInfo.CreationTime.ToShortDateString(), DirectoryInfo.CreationTime.ToShortTimeString(), DirectoryInfo.LastWriteTime.ToShortDateString(), DirectoryInfo.LastWriteTime.ToShortTimeString());
+                        }
+                        TextWriterColor.WritePlain("", true);
+                    }
+                }
+            }
+            else
+            {
+                TextWriterColor.Write(Translate.DoTranslation("Directory {0} not found"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), DirectoryInfo.FullName);
+                DebugWriter.Wdbg(DebugLevel.I, "IO.FolderExists = {0}", Checking.FolderExists(DirectoryInfo.FullName));
+            }
+        }
 
-	}
+    }
 }
