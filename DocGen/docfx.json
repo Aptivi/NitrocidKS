@@ -3,7 +3,7 @@
         {
             "src": [
                 {
-                    "files": [ "Kernel Simulator/Kernel Simulator.vbproj" ],
+                    "files": [ "Kernel Simulator/Kernel Simulator.csproj" ],
                     "src": ".."
                 }
             ],
@@ -33,7 +33,7 @@
         ],
         "dest": "../docs",
         "globalMetadata": {
-            "_appTitle": "Kernel Simulator API - Aptivi",
+            "_appTitle": "Nitrocid 0.0.24.x API - Aptivi",
             "_enableSearch": true
         },
         "globalMetadataFiles": [],
@@ -44,9 +44,6 @@
         "noLangKeyword": false,
         "keepFileLink": false,
         "cleanupCacheHistory": false,
-        "disableGitFeatures": false,
-        "sitemap": {
-            "baseUrl": "https://aptivi.github.io/Kernel-Simulator/"
-        }
+        "disableGitFeatures": false
     }
 }
