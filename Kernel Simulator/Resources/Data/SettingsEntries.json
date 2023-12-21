@@ -86,12 +86,6 @@
                 "Description": "If there is any kernel error, choose whether or not to print the stack trace to the console."
             },
             {
-                "Name": "Check debug quota",
-                "Type": "SBoolean",
-                "Variable": "CheckDebugQuota",
-                "Description": "Do we check if the debug system needs to check for quota before writing to the debugger?"
-            },
-            {
                 "Name": "Automatically download updates",
                 "Type": "SBoolean",
                 "Variable": "AutoDownloadUpdate",
@@ -501,12 +495,6 @@
                 "Enumeration": "Files.Folders.FilesystemSortDirection",
                 "EnumerationZeroBased": false,
                 "Description": "Controls the direction of filesystem sorting whether it's ascending or descending."
-            },
-            {
-                "Name": "Debug Size Quota in Bytes",
-                "Type": "SInt",
-                "Variable": "DebugQuota",
-                "Description": "Write how many bytes can the debug log store. It must be numeric."
             },
             {
                 "Name": "Show Hidden Files",
@@ -1119,54 +1107,6 @@
                 "Description": "If enabled, deletes all events and/or reminders before saving all of them using the calendar command."
             },
             {
-                "Name": "Upper left corner character for RGB color wheel",
-                "Type": "SChar",
-                "Variable": "WheelUpperLeftCornerChar",
-                "Description": "A character that resembles the upper left corner. Be sure to only input one character."
-            },
-            {
-                "Name": "Lower left corner character for RGB color wheel",
-                "Type": "SChar",
-                "Variable": "WheelLowerLeftCornerChar",
-                "Description": "A character that resembles the lower left corner. Be sure to only input one character."
-            },
-            {
-                "Name": "Upper right corner character for RGB color wheel",
-                "Type": "SChar",
-                "Variable": "WheelUpperRightCornerChar",
-                "Description": "A character that resembles the upper right corner. Be sure to only input one character."
-            },
-            {
-                "Name": "Lower right corner character for RGB color wheel",
-                "Type": "SChar",
-                "Variable": "WheelLowerRightCornerChar",
-                "Description": "A character that resembles the lower right corner. Be sure to only input one character."
-            },
-            {
-                "Name": "Upper frame character for RGB color wheel",
-                "Type": "SChar",
-                "Variable": "WheelUpperFrameChar",
-                "Description": "A character that resembles the upper frame. Be sure to only input one character."
-            },
-            {
-                "Name": "Lower frame character for RGB color wheel",
-                "Type": "SChar",
-                "Variable": "WheelLowerFrameChar",
-                "Description": "A character that resembles the lower frame. Be sure to only input one character."
-            },
-            {
-                "Name": "Left frame character for RGB color wheel",
-                "Type": "SChar",
-                "Variable": "WheelLeftFrameChar",
-                "Description": "A character that resembles the left frame. Be sure to only input one character."
-            },
-            {
-                "Name": "Right frame character for RGB color wheel",
-                "Type": "SChar",
-                "Variable": "WheelRightFrameChar",
-                "Description": "A character that resembles the right frame. Be sure to only input one character."
-            },
-            {
                 "Name": "Default JSON formatting for JSON shell",
                 "Type": "SSelection",
                 "Variable": "JsonShell_Formatting",
@@ -1278,18 +1218,6 @@
                 "Type": "SBoolean",
                 "Variable": "InputHistoryEnabled",
                 "Description": "Whether the input history is enabled or not. If enabled, you can access recently typed commands using the up or down arrow keys."
-            },
-            {
-                "Name": "Input clipboard enabled",
-                "Type": "SBoolean",
-                "Variable": "InputClipboardEnabled",
-                "Description": "Whether the input clipboard is enabled or not."
-            },
-            {
-                "Name": "Input undo enabled",
-                "Type": "SBoolean",
-                "Variable": "InputUndoEnabled",
-                "Description": "Whether the input undo feature is enabled or not."
             },
             {
                 "Name": "Use PowerLine for rendering spaceship",
