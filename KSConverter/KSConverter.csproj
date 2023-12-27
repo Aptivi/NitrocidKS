@@ -96,7 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FluentFTP">
-      <Version>48.0.3</Version>
+      <Version>49.0.1</Version>
     </PackageReference>
     <PackageReference Include="MadMilkman.Ini" Condition="'$(TargetFramework)' == 'net48'">
       <Version>1.0.6</Version>

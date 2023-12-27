@@ -317,7 +317,7 @@ namespace KS.Shell
                                 {
                                     if (ShellType == ShellType.Shell)
                                     {
-                                        if ((PermissionManagement.HasPermission(Login.Login.CurrentUser.Username, PermissionManagement.PermissionType.Administrator) == false) & (Commands[Command].Strict))
+                                        if ((PermissionManagement.HasPermission(Login.Login.CurrentUser.Username, PermissionManagement.PermissionType.Administrator) == false) & (Commands[finalCommand].Strict))
                                         {
                                             DebugWriter.Wdbg(DebugLevel.W, "Cmd exec {0} failed: adminList(signedinusrnm) is False, strictCmds.Contains({0}) is True", Command);
                                             TextWriterColor.Write(Translate.DoTranslation("You don't have permission to use {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), Command);
