@@ -24,20 +24,23 @@ using System.IO;
 using System.Linq;
 using FluentFTP;
 using KS.ConsoleBase;
-using KS.ConsoleBase.Colors;
 using KS.ConsoleBase.Inputs;
 using KS.Files;
 using KS.Files.Querying;
 using KS.Login;
-using KS.Misc.Configuration;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.FancyWriters;
 using KS.Network;
 using KS.Network.RemoteDebug;
 using KS.Shell.ShellBase.Aliases;
 using KS.Shell.ShellBase.Shells;
-using KSConverter.ConfigFormats;
 using static KS.ConsoleBase.Colors.KernelColorTools;
+
+#if !NETCOREAPP
+using KSConverter.ConfigFormats;
+using KS.Misc.Configuration;
+using KS.ConsoleBase.Colors;
+#endif
 
 namespace KSConverter
 {
