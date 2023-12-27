@@ -19,6 +19,7 @@
 
 using KS.Login;
 
+
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
 // This file is part of Kernel Simulator
@@ -40,7 +41,7 @@ using Newtonsoft.Json.Linq;
 using NUnit.Framework;
 using Shouldly;
 
-namespace KSTests
+namespace KSTests.Login
 {
 
     [TestFixture]

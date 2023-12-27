@@ -36,12 +36,12 @@ using System.Collections.Generic;
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-using KS.Misc.Notifications;
+using KS.Misc.Notifiers;
 using NUnit.Framework;
 using Shouldly;
 using Terminaux.Colors;
 
-namespace KSTests
+namespace KSTests.Misc
 {
 
     [TestFixture]

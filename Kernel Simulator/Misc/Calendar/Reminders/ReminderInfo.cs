@@ -37,7 +37,7 @@ using KS.Languages;
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-using KS.Misc.Notifications;
+using KS.Misc.Notifiers;
 
 namespace KS.Misc.Calendar.Reminders
 {
@@ -56,7 +56,7 @@ namespace KS.Misc.Calendar.Reminders
         /// <summary>
         /// Reminder importance
         /// </summary>
-        public Notifications.Notifications.NotifPriority ReminderImportance { get; set; }
+        public Notifications.NotifPriority ReminderImportance { get; set; }
 
         /// <summary>
         /// Notifies the user about the reminder
@@ -65,8 +65,8 @@ namespace KS.Misc.Calendar.Reminders
         {
             if (!ReminderNotified)
             {
-                var ReminderNotification = new Notification(ReminderTitle, Translate.DoTranslation("Don't miss this!"), ReminderImportance, Notifications.Notifications.NotifType.Normal);
-                Notifications.Notifications.NotifySend(ReminderNotification);
+                var ReminderNotification = new Notification(ReminderTitle, Translate.DoTranslation("Don't miss this!"), ReminderImportance, Notifications.NotifType.Normal);
+                Notifications.NotifySend(ReminderNotification);
                 ReminderNotified = true;
             }
         }

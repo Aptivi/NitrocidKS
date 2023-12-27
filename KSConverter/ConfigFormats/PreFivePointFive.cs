@@ -27,7 +27,7 @@ using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell;
 using Terminaux.Colors;
 
-namespace KSConverter
+namespace KSConverter.ConfigFormats
 {
     static class PreFivePointFive
     {

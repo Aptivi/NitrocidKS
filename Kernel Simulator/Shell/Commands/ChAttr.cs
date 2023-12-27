@@ -21,6 +21,8 @@ using System;
 using System.IO;
 using KS.ConsoleBase.Colors;
 using KS.Files;
+using KS.Files.Attributes;
+
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 

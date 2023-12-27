@@ -39,7 +39,7 @@ using KS.Network;
 using NUnit.Framework;
 using Shouldly;
 
-namespace KSTests
+namespace KSTests.Network
 {
 
     // Warning: Don't implement the unit tests related to downloading or uploading files. This causes AppVeyor to choke.

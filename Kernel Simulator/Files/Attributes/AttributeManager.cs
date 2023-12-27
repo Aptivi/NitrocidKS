@@ -39,7 +39,7 @@ using System;
 using System.IO;
 using KS.Misc.Writers.DebugWriters;
 
-namespace KS.Files
+namespace KS.Files.Attributes
 {
     public static class AttributeManager
     {

@@ -30,7 +30,7 @@ using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 using KS.Misc.ZipFile;
 using KS.Shell.Prompts;
-using KS.Shell.ShellBase;
+using KS.Shell.ShellBase.Commands;
 using KS.Shell.ShellBase.Shells;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi

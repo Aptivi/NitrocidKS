@@ -21,7 +21,7 @@ using KS.Login;
 using NUnit.Framework;
 using Shouldly;
 
-namespace KSTests
+namespace KSTests.Login
 {
 
     // Kernel Simulator  Copyright (C) 2018-2022  Aptivi

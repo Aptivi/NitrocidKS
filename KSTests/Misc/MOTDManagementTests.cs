@@ -41,7 +41,7 @@ using KS.Misc.Probers;
 using NUnit.Framework;
 using Shouldly;
 
-namespace KSTests
+namespace KSTests.Misc
 {
 
     [TestFixture]
@@ -58,7 +58,7 @@ namespace KSTests
         {
             MOTDParse.ReadMOTD(MOTDParse.MessageType.MOTD);
             string MOTDLine = File.ReadAllText(Paths.GetKernelPath(KernelPathType.MOTD));
-            MOTDLine.ShouldBe(Kernel.MOTDMessage);
+            MOTDLine.ShouldBe(KS.Kernel.Kernel.MOTDMessage);
         }
 
         /// <summary>
@@ -70,7 +70,7 @@ namespace KSTests
         {
             MOTDParse.ReadMOTD(MOTDParse.MessageType.MAL);
             string MALLine = File.ReadAllText(Paths.GetKernelPath(KernelPathType.MAL));
-            MALLine.ShouldBe(Kernel.MAL);
+            MALLine.ShouldBe(KS.Kernel.Kernel.MAL);
         }
 
     }

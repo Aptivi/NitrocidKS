@@ -37,7 +37,7 @@
 using KS.Misc.Reflection;
 using NUnit.Framework;
 
-namespace KSTests
+namespace KSTests.Misc
 {
 
     [TestFixture]

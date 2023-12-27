@@ -38,7 +38,7 @@ using KS.Misc.Screensaver;
 using NUnit.Framework;
 using Shouldly;
 
-namespace KSTests
+namespace KSTests.Misc
 {
 
     [TestFixture]

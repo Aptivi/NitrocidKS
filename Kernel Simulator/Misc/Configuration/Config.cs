@@ -52,7 +52,7 @@ using KS.ManPages;
 using KS.Misc.Editors.JsonShell;
 using KS.Misc.Editors.TextEdit;
 using KS.Misc.Games;
-using KS.Misc.Notifications;
+using KS.Misc.Notifiers;
 using KS.Misc.Probers;
 using KS.Misc.Screensaver.Displays;
 using KS.Misc.Splash;
@@ -1116,14 +1116,14 @@ namespace KS.Misc.Configuration
                 { "Solver minimum number", Solver.SolverMinimumNumber },
                 { "Solver maximum number", Solver.SolverMaximumNumber },
                 { "Solver show input", Solver.SolverShowInput },
-                { "Upper left corner character for notification border", Notifications.Notifications.NotifyUpperLeftCornerChar },
-                { "Upper right corner character for notification border", Notifications.Notifications.NotifyUpperRightCornerChar },
-                { "Lower left corner character for notification border", Notifications.Notifications.NotifyLowerLeftCornerChar },
-                { "Lower right corner character for notification border", Notifications.Notifications.NotifyLowerRightCornerChar },
-                { "Upper frame character for notification border", Notifications.Notifications.NotifyUpperFrameChar },
-                { "Lower frame character for notification border", Notifications.Notifications.NotifyLowerFrameChar },
-                { "Left frame character for notification border", Notifications.Notifications.NotifyLeftFrameChar },
-                { "Right frame character for notification border", Notifications.Notifications.NotifyRightFrameChar },
+                { "Upper left corner character for notification border", Notifications.NotifyUpperLeftCornerChar },
+                { "Upper right corner character for notification border", Notifications.NotifyUpperRightCornerChar },
+                { "Lower left corner character for notification border", Notifications.NotifyLowerLeftCornerChar },
+                { "Lower right corner character for notification border", Notifications.NotifyLowerRightCornerChar },
+                { "Upper frame character for notification border", Notifications.NotifyUpperFrameChar },
+                { "Lower frame character for notification border", Notifications.NotifyLowerFrameChar },
+                { "Left frame character for notification border", Notifications.NotifyLeftFrameChar },
+                { "Right frame character for notification border", Notifications.NotifyRightFrameChar },
                 { "Manual page information style", PageViewer.ManpageInfoStyle },
                 { "Default difficulty for SpeedPress", (int)SpeedPress.SpeedPressCurrentDifficulty },
                 { "Keypress timeout for SpeedPress", SpeedPress.SpeedPressTimeout },
@@ -2025,14 +2025,14 @@ namespace KS.Misc.Configuration
             Solver.SolverMinimumNumber = (int)(int.TryParse((string)ConfigToken["Misc"]?["Solver minimum number"], out _) ? (ConfigToken["Misc"]?["Solver minimum number"]) : 1000);
             Solver.SolverMaximumNumber = (int)(int.TryParse((string)ConfigToken["Misc"]?["Solver maximum number"], out _) ? (ConfigToken["Misc"]?["Solver maximum number"]) : 1000);
             Solver.SolverShowInput = (bool)((ConfigToken["Misc"]?["Solver show input"]) ?? false);
-            Notifications.Notifications.NotifyUpperLeftCornerChar = (string)((ConfigToken["Misc"]?["Upper left corner character for notification border"]) ?? "╔");
-            Notifications.Notifications.NotifyUpperRightCornerChar = (string)((ConfigToken["Misc"]?["Upper right corner character for notification border"]) ?? "╗");
-            Notifications.Notifications.NotifyLowerLeftCornerChar = (string)((ConfigToken["Misc"]?["Lower left corner character for notification border"]) ?? "╚");
-            Notifications.Notifications.NotifyLowerRightCornerChar = (string)((ConfigToken["Misc"]?["Lower right corner character for notification border"]) ?? "╝");
-            Notifications.Notifications.NotifyUpperFrameChar = (string)((ConfigToken["Misc"]?["Upper frame character for notification border"]) ?? "═");
-            Notifications.Notifications.NotifyLowerFrameChar = (string)((ConfigToken["Misc"]?["Lower frame character for notification border"]) ?? "═");
-            Notifications.Notifications.NotifyLeftFrameChar = (string)((ConfigToken["Misc"]?["Left frame character for notification border"]) ?? "║");
-            Notifications.Notifications.NotifyRightFrameChar = (string)((ConfigToken["Misc"]?["Right frame character for notification border"]) ?? "║");
+            Notifications.NotifyUpperLeftCornerChar = (string)((ConfigToken["Misc"]?["Upper left corner character for notification border"]) ?? "╔");
+            Notifications.NotifyUpperRightCornerChar = (string)((ConfigToken["Misc"]?["Upper right corner character for notification border"]) ?? "╗");
+            Notifications.NotifyLowerLeftCornerChar = (string)((ConfigToken["Misc"]?["Lower left corner character for notification border"]) ?? "╚");
+            Notifications.NotifyLowerRightCornerChar = (string)((ConfigToken["Misc"]?["Lower right corner character for notification border"]) ?? "╝");
+            Notifications.NotifyUpperFrameChar = (string)((ConfigToken["Misc"]?["Upper frame character for notification border"]) ?? "═");
+            Notifications.NotifyLowerFrameChar = (string)((ConfigToken["Misc"]?["Lower frame character for notification border"]) ?? "═");
+            Notifications.NotifyLeftFrameChar = (string)((ConfigToken["Misc"]?["Left frame character for notification border"]) ?? "║");
+            Notifications.NotifyRightFrameChar = (string)((ConfigToken["Misc"]?["Right frame character for notification border"]) ?? "║");
             PageViewer.ManpageInfoStyle = (string)((ConfigToken["Misc"]?["Manual page information style"]) ?? "");
             SpeedPress.SpeedPressCurrentDifficulty = ConfigToken["Misc"]?["Default difficulty for SpeedPress"] is not null ? Enum.TryParse((string)ConfigToken["Misc"]?["Default difficulty for SpeedPress"], out SpeedPress.SpeedPressCurrentDifficulty) ? SpeedPress.SpeedPressCurrentDifficulty : SpeedPress.SpeedPressDifficulty.Medium : SpeedPress.SpeedPressDifficulty.Medium;
             SpeedPress.SpeedPressTimeout = (int)(int.TryParse((string)ConfigToken["Misc"]?["Keypress timeout for SpeedPress"], out _) ? (ConfigToken["Misc"]?["Keypress timeout for SpeedPress"]) : 3000);
@@ -2090,7 +2090,7 @@ namespace KS.Misc.Configuration
                 DebugWriter.WStkTrc(ex);
                 if (!SplashReport.KernelBooted)
                 {
-                    Notifications.Notifications.NotifySend(new Notification(Translate.DoTranslation("Error loading settings"), Translate.DoTranslation("There is an error while loading settings. You may need to check the settings file."), Notifications.Notifications.NotifPriority.Medium, Notifications.Notifications.NotifType.Normal));
+                    Notifications.NotifySend(new Notification(Translate.DoTranslation("Error loading settings"), Translate.DoTranslation("There is an error while loading settings. You may need to check the settings file."), Notifications.NotifPriority.Medium, Notifications.NotifType.Normal));
                 }
                 DebugWriter.Wdbg(DebugLevel.E, "Error trying to read config: {0}", ex.Message);
                 throw new Kernel.Exceptions.ConfigException(Translate.DoTranslation("There is an error trying to read configuration: {0}."), ex, ex.Message);

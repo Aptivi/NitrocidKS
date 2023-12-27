@@ -40,7 +40,7 @@ using KS.Files.Folders;
 using NUnit.Framework;
 using Shouldly;
 
-namespace KSTests
+namespace KSTests.Files
 {
 
     [TestFixture]

@@ -44,7 +44,7 @@ using System.Threading;
 using KS.ConsoleBase.Colors;
 using KS.Kernel;
 using KS.Languages;
-using KS.Misc.Notifications;
+using KS.Misc.Notifiers;
 using KS.Misc.Probers;
 using KS.Misc.Threading;
 using KS.Misc.Writers.ConsoleWriters;

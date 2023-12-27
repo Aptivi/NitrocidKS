@@ -40,7 +40,7 @@ using KS.Misc.Probers;
 using NUnit.Framework;
 using Shouldly;
 
-namespace KSTests
+namespace KSTests.Misc
 {
 
     [TestFixture]

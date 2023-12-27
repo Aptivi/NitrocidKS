@@ -40,7 +40,7 @@ using KS.Arguments.ArgumentBase;
 using NUnit.Framework;
 using Shouldly;
 
-namespace KSTests
+namespace KSTests.Argument
 {
 
     [TestFixture]

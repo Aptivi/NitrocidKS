@@ -37,6 +37,7 @@
 using System.IO;
 using System.Text.RegularExpressions;
 using KS.Files;
+using KS.Files.Attributes;
 using KS.Files.Folders;
 using KS.Files.Operations;
 using KS.Files.PathLookup;
@@ -47,7 +48,7 @@ using KS.Shell;
 using NUnit.Framework;
 using Shouldly;
 
-namespace KSTests
+namespace KSTests.Files
 {
 
     [TestFixture]
@@ -305,7 +306,7 @@ namespace KSTests
             string Path = PlatformDetector.IsOnWindows() ? @"C:\Program Files\dotnet" : "/bin";
             string NeutralizedPath = Filesystem.NeutralizePath(Path);
             PathLookupTools.TryAddToPathLookup(NeutralizedPath).ShouldBeTrue();
-            Shell.PathsToLookup.ShouldContain(NeutralizedPath);
+            KS.Shell.Shell.PathsToLookup.ShouldContain(NeutralizedPath);
         }
 
         /// <summary>
@@ -318,7 +319,7 @@ namespace KSTests
             string Path = PlatformDetector.IsOnWindows() ? "dotnet" : "bin";
             string NeutralizedPath = Filesystem.NeutralizePath(Path);
             PathLookupTools.TryAddToPathLookup(Path).ShouldBeTrue();
-            Shell.PathsToLookup.ShouldContain(NeutralizedPath);
+            KS.Shell.Shell.PathsToLookup.ShouldContain(NeutralizedPath);
         }
 
         /// <summary>
@@ -332,7 +333,7 @@ namespace KSTests
             string RootPath = PlatformDetector.IsOnWindows() ? @"C:\Program Files" : "/";
             string NeutralizedPath = Filesystem.NeutralizePath(Path, RootPath);
             PathLookupTools.TryAddToPathLookup(NeutralizedPath, RootPath).ShouldBeTrue();
-            Shell.PathsToLookup.ShouldContain(NeutralizedPath);
+            KS.Shell.Shell.PathsToLookup.ShouldContain(NeutralizedPath);
         }
 
         /// <summary>
@@ -346,7 +347,7 @@ namespace KSTests
             string RootPath = PlatformDetector.IsOnWindows() ? @"C:\Program Files" : "/";
             string NeutralizedPath = Filesystem.NeutralizePath(Path, RootPath);
             PathLookupTools.TryAddToPathLookup(Path, RootPath).ShouldBeTrue();
-            Shell.PathsToLookup.ShouldContain(NeutralizedPath);
+            KS.Shell.Shell.PathsToLookup.ShouldContain(NeutralizedPath);
         }
 
         /// <summary>
@@ -397,7 +398,7 @@ namespace KSTests
             string RootPath = PlatformDetector.IsOnWindows() ? @"C:\Program Files" : "/";
             string NeutralizedPath = Filesystem.NeutralizePath(Path, RootPath);
             PathLookupTools.TryRemoveFromPathLookup(Path, RootPath).ShouldBeTrue();
-            Shell.PathsToLookup.ShouldNotContain(NeutralizedPath);
+            KS.Shell.Shell.PathsToLookup.ShouldNotContain(NeutralizedPath);
         }
 
         /// <summary>

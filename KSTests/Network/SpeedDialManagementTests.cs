@@ -40,7 +40,7 @@ using KS.Network;
 using NUnit.Framework;
 using Shouldly;
 
-namespace KSTests
+namespace KSTests.Network
 {
 
     [TestFixture]

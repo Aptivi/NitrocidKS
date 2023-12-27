@@ -37,7 +37,7 @@ using System.Diagnostics;
 
 using KS.Shell.ShellBase.Shells;
 
-namespace KSTests
+namespace KSTests.Shell
 {
 
     class ShellTest : ShellExecutor, IShell

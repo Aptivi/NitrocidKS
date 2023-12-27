@@ -38,7 +38,7 @@ using KS.Languages;
 using NUnit.Framework;
 using Shouldly;
 
-namespace KSTests
+namespace KSTests.Languages
 {
 
     [TestFixture]

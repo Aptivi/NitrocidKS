@@ -38,7 +38,7 @@ using KS.TimeDate;
 using NUnit.Framework;
 using Shouldly;
 
-namespace KSTests
+namespace KSTests.TimeDate
 {
 
     [TestFixture]
@@ -52,7 +52,7 @@ namespace KSTests
         [Description("Querying")]
         public void TestGetRemainingTimeFromNow()
         {
-            string RemainingTime = TimeDate.GetRemainingTimeFromNow(1000);
+            string RemainingTime = KS.TimeDate.TimeDate.GetRemainingTimeFromNow(1000);
             RemainingTime.ShouldNotBeNullOrEmpty();
             RemainingTime.ShouldBe("0.00:00:01.000");
         }

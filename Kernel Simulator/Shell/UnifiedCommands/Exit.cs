@@ -37,7 +37,7 @@ using KS.Shell.ShellBase.Shells;
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-namespace KS.Shell.Commands
+namespace KS.Shell.UnifiedCommands
 {
     class ExitCommand : CommandExecutor, ICommand
     {

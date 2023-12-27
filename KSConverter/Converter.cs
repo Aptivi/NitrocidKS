@@ -36,6 +36,7 @@ using KS.Network;
 using KS.Network.RemoteDebug;
 using KS.Shell.ShellBase.Aliases;
 using KS.Shell.ShellBase.Shells;
+using KSConverter.ConfigFormats;
 using static KS.ConsoleBase.Colors.KernelColorTools;
 
 namespace KSConverter

@@ -40,7 +40,7 @@ using Shouldly;
 using System;
 using Terminaux.Colors;
 
-namespace KSTests
+namespace KSTests.Console
 {
 
     [TestFixture]

@@ -47,7 +47,7 @@ using KS.Files;
 using KS.Files.Folders;
 using KS.Kernel;
 using KS.Languages;
-using KS.Misc.Notifications;
+using KS.Misc.Notifiers;
 using KS.Misc.Probers;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;

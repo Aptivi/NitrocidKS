@@ -38,7 +38,7 @@ using System;
 
 using System.Threading;
 
-namespace KSTests
+namespace KSTests.Misc
 {
 
     public static class KernelThreadTestHelper
@@ -51,14 +51,14 @@ namespace KSTests
         {
             try
             {
-                Console.WriteLine("Hello world!");
-                Console.WriteLine("- Writing from thread: {0} [{1}]", Thread.CurrentThread.Name, Thread.CurrentThread.ManagedThreadId);
+                System.Console.WriteLine("Hello world!");
+                System.Console.WriteLine("- Writing from thread: {0} [{1}]", Thread.CurrentThread.Name, Thread.CurrentThread.ManagedThreadId);
                 while (true)
                     Thread.Sleep(1);
             }
             catch (ThreadInterruptedException)
             {
-                Console.WriteLine("- Goodbye from thread: {0} [{1}]", Thread.CurrentThread.Name, Thread.CurrentThread.ManagedThreadId);
+                System.Console.WriteLine("- Goodbye from thread: {0} [{1}]", Thread.CurrentThread.Name, Thread.CurrentThread.ManagedThreadId);
             }
         }
 
@@ -69,14 +69,14 @@ namespace KSTests
         {
             try
             {
-                Console.WriteLine("Hello, {0}!", Name);
-                Console.WriteLine("- Writing from thread: {0} [{1}]", Thread.CurrentThread.Name, Thread.CurrentThread.ManagedThreadId);
+                System.Console.WriteLine("Hello, {0}!", Name);
+                System.Console.WriteLine("- Writing from thread: {0} [{1}]", Thread.CurrentThread.Name, Thread.CurrentThread.ManagedThreadId);
                 while (true)
                     Thread.Sleep(1);
             }
             catch (ThreadInterruptedException)
             {
-                Console.WriteLine("- Goodbye from thread: {0} [{1}]", Thread.CurrentThread.Name, Thread.CurrentThread.ManagedThreadId);
+                System.Console.WriteLine("- Goodbye from thread: {0} [{1}]", Thread.CurrentThread.Name, Thread.CurrentThread.ManagedThreadId);
             }
         }
 

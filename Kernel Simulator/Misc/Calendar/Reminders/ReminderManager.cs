@@ -47,6 +47,7 @@ using KS.Files.Operations;
 using KS.Files.Querying;
 using KS.Kernel;
 using KS.Languages;
+using KS.Misc.Notifiers;
 using KS.Misc.Threading;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
@@ -57,7 +58,7 @@ namespace KS.Misc.Calendar.Reminders
     {
 
         public static List<ReminderInfo> Reminders = [];
-        public static Notifications.Notifications.NotifPriority CurrentReminderImportance = Notifications.Notifications.NotifPriority.Low;
+        public static Notifications.NotifPriority CurrentReminderImportance = Notifications.NotifPriority.Low;
         public static KernelThread ReminderThread = new("Reminder Thread", false, ReminderListen);
         internal static object ReminderManagerLock = new();
 
@@ -108,7 +109,7 @@ namespace KS.Misc.Calendar.Reminders
         /// <param name="ReminderDate">Reminder date and time</param>
         /// <param name="ReminderTitle">Reminder title</param>
         /// <param name="ReminderImportance">Reminder importance</param>
-        public static void AddReminder(DateTime ReminderDate, string ReminderTitle, Notifications.Notifications.NotifPriority ReminderImportance)
+        public static void AddReminder(DateTime ReminderDate, string ReminderTitle, Notifications.NotifPriority ReminderImportance)
         {
             if (string.IsNullOrWhiteSpace(ReminderTitle))
                 ReminderTitle = Translate.DoTranslation("Untitled reminder");

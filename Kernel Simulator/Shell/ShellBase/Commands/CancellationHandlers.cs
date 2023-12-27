@@ -41,7 +41,7 @@ using KS.Kernel;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell.ShellBase.Shells;
 
-namespace KS.Shell.ShellBase
+namespace KS.Shell.ShellBase.Commands
 {
     static class CancellationHandlers
     {

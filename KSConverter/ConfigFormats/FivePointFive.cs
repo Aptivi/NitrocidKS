@@ -39,7 +39,7 @@ using MadMilkman.Ini;
 using Nettify.Weather;
 using Terminaux.Colors;
 
-namespace KSConverter
+namespace KSConverter.ConfigFormats
 {
     static class FivePointFive
     {

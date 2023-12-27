@@ -38,7 +38,7 @@ using KS.Scripting;
 using NUnit.Framework;
 using Shouldly;
 
-namespace KSTests
+namespace KSTests.Shell
 {
 
     [TestFixture]

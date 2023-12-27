@@ -38,7 +38,7 @@ using KS.Kernel;
 using NUnit.Framework;
 using Shouldly;
 
-namespace KSTests
+namespace KSTests.Kernel
 {
 
     [TestFixture]
@@ -52,7 +52,7 @@ namespace KSTests
         [Description("Misc")]
         public void TestRaiseEvent()
         {
-            Kernel.KernelEventManager.RaiseStartKernel();
+            KS.Kernel.Kernel.KernelEventManager.RaiseStartKernel();
             EventsManager.ListAllFiredEvents().ShouldContainKey("KernelStarted (" + (EventsManager.ListAllFiredEvents().Count - 1).ToString() + ")");
         }
 

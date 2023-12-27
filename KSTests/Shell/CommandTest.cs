@@ -37,7 +37,7 @@ using System.Diagnostics;
 
 using KS.Shell.ShellBase.Commands;
 
-namespace KSTests
+namespace KSTests.Shell
 {
 
     class CommandTest : CommandExecutor, ICommand

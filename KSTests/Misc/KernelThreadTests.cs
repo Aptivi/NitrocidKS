@@ -21,7 +21,7 @@ using KS.Misc.Threading;
 using NUnit.Framework;
 using Shouldly;
 
-namespace KSTests
+namespace KSTests.Misc
 {
 
     /// <summary>

@@ -37,7 +37,7 @@ using System.Diagnostics;
 
 using KS.Arguments.ArgumentBase;
 
-namespace KSTests
+namespace KSTests.Argument
 {
 
     class ArgumentTest : ArgumentExecutor, IArgument

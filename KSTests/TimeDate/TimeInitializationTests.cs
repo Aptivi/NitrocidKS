@@ -40,7 +40,7 @@ using KS.TimeDate;
 using NUnit.Framework;
 using Shouldly;
 
-namespace KSTests
+namespace KSTests.TimeDate
 {
 
     [TestFixture]
@@ -54,11 +54,11 @@ namespace KSTests
         [Description("Initialization")]
         public void TestGetTimeZones()
         {
-            TimeDate.KernelDateTime = DateTime.Now;
-            TimeDate.KernelDateTimeUtc = DateTime.UtcNow;
-            var TimeZones = KS.TimeDate.TimeZones.GetTimeZones();
-            TimeZones.ShouldNotBeNull();
-            TimeZones.ShouldNotBeEmpty();
+            KS.TimeDate.TimeDate.KernelDateTime = DateTime.Now;
+            KS.TimeDate.TimeDate.KernelDateTimeUtc = DateTime.UtcNow;
+            var timeZones = TimeZones.GetTimeZones();
+            timeZones.ShouldNotBeNull();
+            timeZones.ShouldNotBeEmpty();
         }
 
     }

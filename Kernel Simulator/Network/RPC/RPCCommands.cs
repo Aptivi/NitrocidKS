@@ -44,7 +44,7 @@ using System.Text;
 using System.Threading;
 using KS.Kernel;
 using KS.Languages;
-using KS.Misc.Notifications;
+using KS.Misc.Notifiers;
 using KS.Misc.Screensaver;
 using KS.Misc.Text;
 using KS.Misc.Writers.DebugWriters;

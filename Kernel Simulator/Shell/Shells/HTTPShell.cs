@@ -44,7 +44,7 @@ using KS.Misc.Text;
 using KS.Misc.Writers.DebugWriters;
 using KS.Network.HTTP;
 using KS.Shell.Prompts;
-using KS.Shell.ShellBase;
+using KS.Shell.ShellBase.Commands;
 using KS.Shell.ShellBase.Shells;
 
 namespace KS.Shell.Shells

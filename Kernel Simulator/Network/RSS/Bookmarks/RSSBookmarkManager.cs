@@ -20,6 +20,7 @@
 using System;
 using System.Collections.Generic;
 
+
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
 // This file is part of Kernel Simulator
@@ -41,7 +42,7 @@ using KS.Kernel.Exceptions;
 using KS.Languages;
 using KS.Misc.Writers.DebugWriters;
 
-namespace KS.Network.RSS
+namespace KS.Network.RSS.Bookmarks
 {
     public static class RSSBookmarkManager
     {

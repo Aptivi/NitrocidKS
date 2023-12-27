@@ -40,7 +40,7 @@ using KS.TimeDate;
 using NUnit.Framework;
 using Shouldly;
 
-namespace KSTests
+namespace KSTests.TimeDate
 {
 
     [TestFixture]

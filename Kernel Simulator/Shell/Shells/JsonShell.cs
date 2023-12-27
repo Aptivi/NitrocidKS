@@ -44,7 +44,7 @@ using KS.Misc.Writers.DebugWriters;
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 using KS.Shell.Prompts;
-using KS.Shell.ShellBase;
+using KS.Shell.ShellBase.Commands;
 using KS.Shell.ShellBase.Shells;
 
 namespace KS.Shell.Shells

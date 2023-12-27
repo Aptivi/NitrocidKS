@@ -41,7 +41,7 @@ using System.IO;
 using KS.ConsoleBase.Colors;
 using KS.ConsoleBase.Themes;
 using KS.Login;
-using KS.Misc.Notifications;
+using KS.Misc.Notifiers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Modifications;
 

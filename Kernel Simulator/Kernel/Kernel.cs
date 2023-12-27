@@ -51,7 +51,6 @@ using KS.Hardware;
 using KS.Kernel.Exceptions;
 using KS.Languages;
 using KS.Login;
-using KS.Misc.Notifications;
 using KS.Misc.Platform;
 using KS.Misc.Probers;
 using KS.Misc.Reflection;
@@ -66,6 +65,7 @@ using KS.Network.RemoteDebug;
 using KS.Network.RPC;
 using Terminaux.Base;
 using TermExts = Terminaux.Base.ConsoleExtensions;
+using KS.Misc.Notifiers;
 
 #if SPECIFIERREL
 using KS.Network;

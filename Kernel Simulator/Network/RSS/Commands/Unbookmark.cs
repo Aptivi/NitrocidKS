@@ -17,6 +17,7 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
+using KS.Network.RSS.Bookmarks;
 using KS.Shell.ShellBase.Commands;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi

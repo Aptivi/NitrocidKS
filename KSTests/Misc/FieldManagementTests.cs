@@ -22,7 +22,7 @@ using NUnit.Framework;
 using Shouldly;
 using System;
 
-namespace KSTests
+namespace KSTests.Misc
 {
 
     [TestFixture]

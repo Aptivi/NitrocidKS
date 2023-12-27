@@ -41,7 +41,7 @@ using KS.Misc.Configuration;
 using NUnit.Framework;
 using Shouldly;
 
-namespace KSTests
+namespace KSTests.Files
 {
 
     [TestFixture]

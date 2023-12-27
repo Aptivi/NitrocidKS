@@ -18,7 +18,6 @@
 //
 
 using System.Linq;
-using KS.Shell.ShellBase;
 using KS.Shell.ShellBase.Commands;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi

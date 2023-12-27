@@ -40,7 +40,7 @@ using KS.Network;
 using NUnit.Framework;
 using Shouldly;
 
-namespace KSTests
+namespace KSTests.Network
 {
 
     // Warning: Don't implement the unit tests related to downloading or uploading files. This causes AppVeyor to choke.
@@ -56,7 +56,7 @@ namespace KSTests
         public void TestChangeHostname()
         {
             NetworkTools.TryChangeHostname("NewHost").ShouldBeTrue();
-            Kernel.HostName.ShouldBe("NewHost");
+            KS.Kernel.Kernel.HostName.ShouldBe("NewHost");
             ConfigTools.GetConfigValue(Config.ConfigCategory.Login, "Host Name").ShouldBe("NewHost");
         }
 

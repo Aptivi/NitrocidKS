@@ -48,7 +48,7 @@ using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 
-namespace KS.Misc.Notifications
+namespace KS.Misc.Notifiers
 {
     public static class Notifications
     {

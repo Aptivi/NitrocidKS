@@ -40,6 +40,7 @@ using KS.Modifications;
 using KS.Shell.ShellBase.Aliases;
 using KS.Shell.ShellBase.Commands;
 using KS.Shell.ShellBase.Shells;
+using KS.Shell.UnifiedCommands;
 
 namespace KS.Shell
 {
@@ -189,11 +190,16 @@ namespace KS.Shell
             { "wrap", new CommandInfo("wrap", ShellType.Shell, "Wraps the console output", new CommandArgumentInfo(["<command>"], true, 1), new Commands.WrapCommand(), false, false, false, false, true) },
             { "zip", new CommandInfo("zip", ShellType.Shell, "Creates a ZIP archive", new CommandArgumentInfo(["<zipfile> <path> [-fast|-nocomp|-nobasedir]"], true, 2), new Commands.ZipCommand()) },
             { "zipshell", new CommandInfo("zipshell", ShellType.Shell, "Opens a ZIP archive", new CommandArgumentInfo(["<zipfile>"], true, 1), new Commands.ZipShellCommand()) }
-  };
+        };
+
         /// <summary>
         /// List of unified commands
         /// </summary>
-        public static readonly Dictionary<string, CommandInfo> UnifiedCommandDict = new() { { "presets", new CommandInfo("presets", ShellType.Shell, "Opens the shell preset library", new CommandArgumentInfo([], false, 0), new UnifiedCommands.PresetsUnifiedCommand()) }, { "exit", new CommandInfo("exit", ShellType.Shell, "Exits the shell if running on subshell", new CommandArgumentInfo([], false, 0), new Commands.ExitCommand()) } };
+        public static readonly Dictionary<string, CommandInfo> UnifiedCommandDict = new()
+        {
+            { "presets", new CommandInfo("presets", ShellType.Shell, "Opens the shell preset library", new CommandArgumentInfo([], false, 0), new PresetsUnifiedCommand()) },
+            { "exit", new CommandInfo("exit", ShellType.Shell, "Exits the shell if running on subshell", new CommandArgumentInfo([], false, 0), new ExitCommand()) }
+        };
 
         /// <summary>
         /// Parses a specified command.

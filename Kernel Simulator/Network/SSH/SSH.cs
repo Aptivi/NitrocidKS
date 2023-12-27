@@ -47,7 +47,7 @@ using KS.Misc.Platform;
 using KS.Misc.Text;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
-using KS.Shell.ShellBase;
+using KS.Shell.ShellBase.Commands;
 using Renci.SshNet;
 using Renci.SshNet.Common;
 using Terminaux.Base;

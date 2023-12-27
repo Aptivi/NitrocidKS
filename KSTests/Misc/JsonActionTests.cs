@@ -42,7 +42,7 @@ using Newtonsoft.Json.Linq;
 using NUnit.Framework;
 using Shouldly;
 
-namespace KSTests
+namespace KSTests.Misc
 {
 
     [TestFixture]

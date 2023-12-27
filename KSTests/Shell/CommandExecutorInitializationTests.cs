@@ -40,7 +40,7 @@ using KS.Shell.ShellBase.Commands;
 using NUnit.Framework;
 using Shouldly;
 
-namespace KSTests
+namespace KSTests.Shell
 {
 
     [TestFixture]

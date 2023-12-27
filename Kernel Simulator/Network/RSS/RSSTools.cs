@@ -45,7 +45,7 @@ using HtmlAgilityPack;
 using KS.ConsoleBase.Colors;
 using KS.ConsoleBase.Inputs;
 using KS.Languages;
-using KS.Misc.Notifications;
+using KS.Misc.Notifiers;
 using KS.Misc.Reflection;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;

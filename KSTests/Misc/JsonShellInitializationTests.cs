@@ -39,7 +39,7 @@ using KS.Misc.Editors.JsonShell;
 using NUnit.Framework;
 using Shouldly;
 
-namespace KSTests
+namespace KSTests.Misc
 {
 
     [TestFixture]

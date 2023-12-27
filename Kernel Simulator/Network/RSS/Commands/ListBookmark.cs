@@ -18,6 +18,7 @@
 //
 
 using KS.Misc.Writers.ConsoleWriters;
+using KS.Network.RSS.Bookmarks;
 using KS.Shell.ShellBase.Commands;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi

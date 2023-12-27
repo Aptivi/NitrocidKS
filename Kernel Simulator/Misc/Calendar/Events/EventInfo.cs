@@ -37,7 +37,7 @@ using KS.Languages;
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-using KS.Misc.Notifications;
+using KS.Misc.Notifiers;
 
 namespace KS.Misc.Calendar.Events
 {
@@ -61,8 +61,8 @@ namespace KS.Misc.Calendar.Events
         {
             if (!EventNotified)
             {
-                var EventNotification = new Notification(EventTitle, Translate.DoTranslation("Now it's an event day!"), Notifications.Notifications.NotifPriority.Medium, Notifications.Notifications.NotifType.Normal);
-                Notifications.Notifications.NotifySend(EventNotification);
+                var EventNotification = new Notification(EventTitle, Translate.DoTranslation("Now it's an event day!"), Notifications.NotifPriority.Medium, Notifications.NotifType.Normal);
+                Notifications.NotifySend(EventNotification);
                 EventNotified = true;
             }
         }

@@ -37,7 +37,7 @@ using Terminaux.Colors;
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-namespace KS.Misc.Notifications
+namespace KS.Misc.Notifiers
 {
     /// <summary>
     /// Notification holder with title, description, and priority

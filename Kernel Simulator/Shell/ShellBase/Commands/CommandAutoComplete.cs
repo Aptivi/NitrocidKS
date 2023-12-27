@@ -21,6 +21,7 @@ using System;
 using System.Data;
 using System.Linq;
 
+
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
 // This file is part of Kernel Simulator
@@ -40,10 +41,9 @@ using System.Linq;
 
 using KS.Files.Folders;
 using KS.Misc.Text;
-using KS.Shell.ShellBase.Commands;
 using KS.Shell.ShellBase.Shells;
 
-namespace KS.Shell.ShellBase
+namespace KS.Shell.ShellBase.Commands
 {
     public static class CommandAutoComplete
     {
