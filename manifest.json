@@ -3685,30 +3685,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Misc.Text.CharManager.yml",
+      "source_relative_path": "api/Nitrocid.Misc.Text.FigletTextTools.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Nitrocid.Misc.Text.CharManager.html"
+          "relative_path": "api/Nitrocid.Misc.Text.FigletTextTools.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Misc.Text.EnclosedDoubleQuotesType.yml",
+      "source_relative_path": "api/Nitrocid.Misc.Text.JsonTextTools.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Nitrocid.Misc.Text.EnclosedDoubleQuotesType.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Misc.Text.JsonTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Misc.Text.JsonTools.html"
+          "relative_path": "api/Nitrocid.Misc.Text.JsonTextTools.html"
         }
       },
       "version": ""
@@ -3799,16 +3789,6 @@
       "output": {
         ".html": {
           "relative_path": "api/Nitrocid.Misc.Text.TextLocation.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Misc.Text.TextTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Misc.Text.TextTools.html"
         }
       },
       "version": ""
