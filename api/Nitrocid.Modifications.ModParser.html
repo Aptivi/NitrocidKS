@@ -104,7 +104,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Modifications_ModParser_FinalizeMods_Nitrocid_Modifications_IMod_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Modifications.ModParser.FinalizeMods(Nitrocid.Modifications.IMod%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Modifications/ModParser.cs/#L143">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Modifications/ModParser.cs/#L147">View Source</a>
   </span>
   <a id="Nitrocid_Modifications_ModParser_FinalizeMods_" data-uid="Nitrocid.Modifications.ModParser.FinalizeMods*"></a>
   <h4 id="Nitrocid_Modifications_ModParser_FinalizeMods_Nitrocid_Modifications_IMod_System_String_" data-uid="Nitrocid.Modifications.ModParser.FinalizeMods(Nitrocid.Modifications.IMod,System.String)">FinalizeMods(IMod, string)</h4>
@@ -190,19 +190,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Modifications_ModParser_ParseMod_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Modifications.ModParser.ParseMod(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Modifications_ModParser_ParseMod_System_String_Nitrocid_Modifications_ModLoadPriority_.md&amp;value=---%0Auid%3A%20Nitrocid.Modifications.ModParser.ParseMod(System.String%2CNitrocid.Modifications.ModLoadPriority)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Modifications/ModParser.cs/#L71">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Modifications/ModParser.cs/#L72">View Source</a>
   </span>
   <a id="Nitrocid_Modifications_ModParser_ParseMod_" data-uid="Nitrocid.Modifications.ModParser.ParseMod*"></a>
-  <h4 id="Nitrocid_Modifications_ModParser_ParseMod_System_String_" data-uid="Nitrocid.Modifications.ModParser.ParseMod(System.String)">ParseMod(string)</h4>
+  <h4 id="Nitrocid_Modifications_ModParser_ParseMod_System_String_Nitrocid_Modifications_ModLoadPriority_" data-uid="Nitrocid.Modifications.ModParser.ParseMod(System.String,Nitrocid.Modifications.ModLoadPriority)">ParseMod(string, ModLoadPriority)</h4>
   <div class="markdown level1 summary"><p>Starts to parse the mod, and configures it so it can be used</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ParseMod(string modFile)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ParseMod(string modFile, ModLoadPriority priority = ModLoadPriority.Optional)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -218,6 +218,12 @@
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">modFile</span></td>
         <td><p>Mod file name with extension. It should end with .dll</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Modifications.ModLoadPriority.html">ModLoadPriority</a></td>
+        <td><span class="parametername">priority</span></td>
+        <td><p>Specifies the mod load priority</p>
 </td>
       </tr>
     </tbody>
