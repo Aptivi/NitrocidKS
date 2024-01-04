@@ -1324,11 +1324,6 @@
     "title": "Namespace Nitrocid.Kernel.Exceptions | Nitrocid KS API - Aptivi",
     "keywords": "Namespace Nitrocid.Kernel.Exceptions Classes KernelErrorException Thrown when there was a kernel error. Used for KernelError(KernelErrorLevel, bool, long, string, Exception, params object[]) KernelException A kernel exception occurred Enums KernelErrorLevel One-lettered kernel error level enumeration KernelExceptionType Kernel exception types"
   },
-  "api/Nitrocid.Kernel.Extensions.AddonType.html": {
-    "href": "api/Nitrocid.Kernel.Extensions.AddonType.html",
-    "title": "Enum AddonType | Nitrocid KS API - Aptivi",
-    "keywords": "Enum AddonType Addon type Namespace: Nitrocid.Kernel.Extensions Assembly: Nitrocid.dll Syntax public enum AddonType Fields Name Description Important Important addons that must be loaded before all the optional ones. Optional Optional addons that may be loaded."
-  },
   "api/Nitrocid.Kernel.Extensions.InterAddonTools.html": {
     "href": "api/Nitrocid.Kernel.Extensions.InterAddonTools.html",
     "title": "Class InterAddonTools | Nitrocid KS API - Aptivi",
@@ -1347,7 +1342,7 @@
   "api/Nitrocid.Kernel.Extensions.html": {
     "href": "api/Nitrocid.Kernel.Extensions.html",
     "title": "Namespace Nitrocid.Kernel.Extensions | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace Nitrocid.Kernel.Extensions Classes InterAddonTools Inter-Addon Communication tools InterAddonTranslations Translations from enumerations to names for all known addons Enums AddonType Addon type KnownAddons Known addons list for inter-addon communication"
+    "keywords": "Namespace Nitrocid.Kernel.Extensions Classes InterAddonTools Inter-Addon Communication tools InterAddonTranslations Translations from enumerations to names for all known addons Enums KnownAddons Known addons list for inter-addon communication"
   },
   "api/Nitrocid.Kernel.Hardware.HardwareList.html": {
     "href": "api/Nitrocid.Kernel.Hardware.HardwareList.html",
@@ -1954,6 +1949,11 @@
     "title": "Class ModInfo | Nitrocid KS API - Aptivi",
     "keywords": "Class ModInfo Mod information Inheritance object ModInfo Namespace: Nitrocid.Modifications Assembly: Nitrocid.dll Syntax public class ModInfo Properties | Edit this page View Source ModFileName The mod file name Declaration public string ModFileName { get; } Property Value Type Description string | Edit this page View Source ModFilePath The mod file path Declaration public string ModFilePath { get; } Property Value Type Description string | Edit this page View Source ModName The mod name. If no name is specified, or if it only consists of whitespaces (space), the file name is taken. Declaration public string ModName { get; } Property Value Type Description string | Edit this page View Source ModStrings The localization information containing the mod's strings Declaration public Dictionary<string, string[]> ModStrings { get; } Property Value Type Description Dictionary<string, string[]> | Edit this page View Source ModVersion The mod version. We recommend using Semantic Versioning scheme. Declaration public string ModVersion { get; } Property Value Type Description string"
   },
+  "api/Nitrocid.Modifications.ModLoadPriority.html": {
+    "href": "api/Nitrocid.Modifications.ModLoadPriority.html",
+    "title": "Enum ModLoadPriority | Nitrocid KS API - Aptivi",
+    "keywords": "Enum ModLoadPriority Kernel modification loading priority type Namespace: Nitrocid.Modifications Assembly: Nitrocid.dll Syntax public enum ModLoadPriority Fields Name Description Important Important modifications that must be loaded before all the optional ones. Optional Optional modifications that may be loaded."
+  },
   "api/Nitrocid.Modifications.ModManager.html": {
     "href": "api/Nitrocid.Modifications.ModManager.html",
     "title": "Class ModManager | Nitrocid KS API - Aptivi",
@@ -1967,7 +1967,7 @@
   "api/Nitrocid.Modifications.html": {
     "href": "api/Nitrocid.Modifications.html",
     "title": "Namespace Nitrocid.Modifications | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace Nitrocid.Modifications Classes ModInfo Mod information ModManager Mod management module ModParser Mod parsing module Interfaces IMod Interface for mods"
+    "keywords": "Namespace Nitrocid.Modifications Classes ModInfo Mod information ModManager Mod management module ModParser Mod parsing module Interfaces IMod Interface for mods Enums ModLoadPriority Kernel modification loading priority type"
   },
   "api/Nitrocid.Network.Base.Connections.NetworkConnection.html": {
     "href": "api/Nitrocid.Network.Base.Connections.NetworkConnection.html",

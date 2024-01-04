@@ -2665,16 +2665,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Kernel.Extensions.AddonType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Kernel.Extensions.AddonType.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.Kernel.Extensions.InterAddonTools.yml",
       "output": {
         ".html": {
@@ -3919,6 +3909,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Nitrocid.Modifications.ModInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Modifications.ModLoadPriority.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Modifications.ModLoadPriority.html"
         }
       },
       "version": ""
