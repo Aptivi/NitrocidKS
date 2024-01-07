@@ -1635,6 +1635,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Kernel.Configuration.Instances.KernelDriverConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Kernel.Configuration.Instances.KernelDriverConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.yml",
       "output": {
         ".html": {
