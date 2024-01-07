@@ -1880,38 +1880,6 @@ references:
   commentId: F:Nitrocid.ConsoleBase.Colors.KernelColorType.WeekendDay
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorType.WeekendDay
   nameWithType: KernelColorType.WeekendDay
-- uid: Nitrocid.ConsoleBase.ConsoleChecker
-  name: ConsoleChecker
-  href: api/Nitrocid.ConsoleBase.ConsoleChecker.html
-  commentId: T:Nitrocid.ConsoleBase.ConsoleChecker
-  fullName: Nitrocid.ConsoleBase.ConsoleChecker
-  nameWithType: ConsoleChecker
-- uid: Nitrocid.ConsoleBase.ConsoleChecker.CheckConsole
-  name: CheckConsole()
-  href: api/Nitrocid.ConsoleBase.ConsoleChecker.html#Nitrocid_ConsoleBase_ConsoleChecker_CheckConsole
-  commentId: M:Nitrocid.ConsoleBase.ConsoleChecker.CheckConsole
-  fullName: Nitrocid.ConsoleBase.ConsoleChecker.CheckConsole()
-  nameWithType: ConsoleChecker.CheckConsole()
-- uid: Nitrocid.ConsoleBase.ConsoleChecker.CheckConsole*
-  name: CheckConsole
-  href: api/Nitrocid.ConsoleBase.ConsoleChecker.html#Nitrocid_ConsoleBase_ConsoleChecker_CheckConsole_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleChecker.CheckConsole
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleChecker.CheckConsole
-  nameWithType: ConsoleChecker.CheckConsole
-- uid: Nitrocid.ConsoleBase.ConsoleChecker.IsConsole256Colors
-  name: IsConsole256Colors()
-  href: api/Nitrocid.ConsoleBase.ConsoleChecker.html#Nitrocid_ConsoleBase_ConsoleChecker_IsConsole256Colors
-  commentId: M:Nitrocid.ConsoleBase.ConsoleChecker.IsConsole256Colors
-  fullName: Nitrocid.ConsoleBase.ConsoleChecker.IsConsole256Colors()
-  nameWithType: ConsoleChecker.IsConsole256Colors()
-- uid: Nitrocid.ConsoleBase.ConsoleChecker.IsConsole256Colors*
-  name: IsConsole256Colors
-  href: api/Nitrocid.ConsoleBase.ConsoleChecker.html#Nitrocid_ConsoleBase_ConsoleChecker_IsConsole256Colors_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleChecker.IsConsole256Colors
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleChecker.IsConsole256Colors
-  nameWithType: ConsoleChecker.IsConsole256Colors
 - uid: Nitrocid.ConsoleBase.ConsoleExtensions
   name: ConsoleExtensions
   href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html
@@ -2044,22 +2012,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.ConsoleExtensions.PercentRepeat
   nameWithType: ConsoleExtensions.PercentRepeat
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.PercentRepeatTargeted(System.Int32,System.Int32,System.Int32)
-  name: PercentRepeatTargeted(int, int, int)
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_PercentRepeatTargeted_System_Int32_System_Int32_System_Int32_
-  commentId: M:Nitrocid.ConsoleBase.ConsoleExtensions.PercentRepeatTargeted(System.Int32,System.Int32,System.Int32)
-  name.vb: PercentRepeatTargeted(Integer, Integer, Integer)
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.PercentRepeatTargeted(int, int, int)
-  fullName.vb: Nitrocid.ConsoleBase.ConsoleExtensions.PercentRepeatTargeted(Integer, Integer, Integer)
-  nameWithType: ConsoleExtensions.PercentRepeatTargeted(int, int, int)
-  nameWithType.vb: ConsoleExtensions.PercentRepeatTargeted(Integer, Integer, Integer)
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.PercentRepeatTargeted*
-  name: PercentRepeatTargeted
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_PercentRepeatTargeted_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleExtensions.PercentRepeatTargeted
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.PercentRepeatTargeted
-  nameWithType: ConsoleExtensions.PercentRepeatTargeted
 - uid: Nitrocid.ConsoleBase.ConsoleExtensions.ResetAll
   name: ResetAll()
   href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_ResetAll
@@ -2073,6 +2025,22 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.ConsoleExtensions.ResetAll
   nameWithType: ConsoleExtensions.ResetAll
+- uid: Nitrocid.ConsoleBase.ConsoleExtensions.ResetBackground(System.Boolean)
+  name: ResetBackground(bool)
+  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_ResetBackground_System_Boolean_
+  commentId: M:Nitrocid.ConsoleBase.ConsoleExtensions.ResetBackground(System.Boolean)
+  name.vb: ResetBackground(Boolean)
+  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.ResetBackground(bool)
+  fullName.vb: Nitrocid.ConsoleBase.ConsoleExtensions.ResetBackground(Boolean)
+  nameWithType: ConsoleExtensions.ResetBackground(bool)
+  nameWithType.vb: ConsoleExtensions.ResetBackground(Boolean)
+- uid: Nitrocid.ConsoleBase.ConsoleExtensions.ResetBackground*
+  name: ResetBackground
+  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_ResetBackground_
+  commentId: Overload:Nitrocid.ConsoleBase.ConsoleExtensions.ResetBackground
+  isSpec: "True"
+  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.ResetBackground
+  nameWithType: ConsoleExtensions.ResetBackground
 - uid: Nitrocid.ConsoleBase.ConsoleExtensions.ResetColors(System.Boolean)
   name: ResetColors(bool)
   href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_ResetColors_System_Boolean_
@@ -2089,6 +2057,22 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.ConsoleExtensions.ResetColors
   nameWithType: ConsoleExtensions.ResetColors
+- uid: Nitrocid.ConsoleBase.ConsoleExtensions.ResetForeground(System.Boolean)
+  name: ResetForeground(bool)
+  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_ResetForeground_System_Boolean_
+  commentId: M:Nitrocid.ConsoleBase.ConsoleExtensions.ResetForeground(System.Boolean)
+  name.vb: ResetForeground(Boolean)
+  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.ResetForeground(bool)
+  fullName.vb: Nitrocid.ConsoleBase.ConsoleExtensions.ResetForeground(Boolean)
+  nameWithType: ConsoleExtensions.ResetForeground(bool)
+  nameWithType.vb: ConsoleExtensions.ResetForeground(Boolean)
+- uid: Nitrocid.ConsoleBase.ConsoleExtensions.ResetForeground*
+  name: ResetForeground
+  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_ResetForeground_
+  commentId: Overload:Nitrocid.ConsoleBase.ConsoleExtensions.ResetForeground
+  isSpec: "True"
+  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.ResetForeground
+  nameWithType: ConsoleExtensions.ResetForeground
 - uid: Nitrocid.ConsoleBase.ConsoleExtensions.SetTitle(System.String)
   name: SetTitle(string)
   href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_SetTitle_System_String_
