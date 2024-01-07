@@ -39,11 +39,6 @@
     "title": "Namespace Nitrocid.Arguments | Nitrocid KS API - Aptivi",
     "keywords": "Namespace Nitrocid.Arguments Classes ArgumentExecutor Argument executor base class ArgumentInfo Argument information class ArgumentParameters Argument parameters that holds information about arguments and switches ArgumentParse Argument parser class Interfaces IArgument Base kernel argument executor"
   },
-  "api/Nitrocid.ConsoleBase.Colors.ColorSelector.html": {
-    "href": "api/Nitrocid.ConsoleBase.Colors.ColorSelector.html",
-    "title": "Class ColorSelector | Nitrocid KS API - Aptivi",
-    "keywords": "Class ColorSelector Color selection application Inheritance object ColorSelector Namespace: Nitrocid.ConsoleBase.Colors Assembly: Nitrocid.dll Syntax public static class ColorSelector Methods | Edit this page View Source OpenColorSelector() Opens the color selector Declaration public static Color OpenColorSelector() Returns Type Description Color An instance of Color to get the resulting color | Edit this page View Source OpenColorSelector(KernelColorType) Opens the color selector Declaration public static Color OpenColorSelector(KernelColorType initialColor) Parameters Type Name Description KernelColorType initialColor Initial color to use Returns Type Description Color An instance of Color to get the resulting color | Edit this page View Source OpenColorSelector(Color) Opens the color selector Declaration public static Color OpenColorSelector(Color initialColor) Parameters Type Name Description Color initialColor Initial color to use Returns Type Description Color An instance of Color to get the resulting color | Edit this page View Source OpenColorSelector(ConsoleColors) Opens the color selector Declaration public static Color OpenColorSelector(ConsoleColors initialColor) Parameters Type Name Description ConsoleColors initialColor Initial color to use Returns Type Description Color An instance of Color to get the resulting color"
-  },
   "api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html": {
     "href": "api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html",
     "title": "Class KernelColorConversionTools | Nitrocid KS API - Aptivi",
@@ -67,7 +62,7 @@
   "api/Nitrocid.ConsoleBase.Colors.html": {
     "href": "api/Nitrocid.ConsoleBase.Colors.html",
     "title": "Namespace Nitrocid.ConsoleBase.Colors | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace Nitrocid.ConsoleBase.Colors Classes ColorSelector Color selection application KernelColorConversionTools Kernel color conversion tools KernelColorTools Color tools module Enums KernelColorSetErrorReasons Enumeration for the color setting error reasons KernelColorType Enumeration for color types"
+    "keywords": "Namespace Nitrocid.ConsoleBase.Colors Classes KernelColorConversionTools Kernel color conversion tools KernelColorTools Color tools module Enums KernelColorSetErrorReasons Enumeration for the color setting error reasons KernelColorType Enumeration for color types"
   },
   "api/Nitrocid.ConsoleBase.ConsoleChecker.html": {
     "href": "api/Nitrocid.ConsoleBase.ConsoleChecker.html",
