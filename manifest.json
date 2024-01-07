@@ -205,56 +205,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.ConsoleBase.Interactive.BaseInteractiveTui.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.ConsoleBase.Interactive.BaseInteractiveTui.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.ConsoleBase.Interactive.IInteractiveTui.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.ConsoleBase.Interactive.IInteractiveTui.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.ConsoleBase.Interactive.InteractiveTuiBinding.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.ConsoleBase.Interactive.InteractiveTuiBinding.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.ConsoleBase.Interactive.InteractiveTuiTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.ConsoleBase.Interactive.InteractiveTuiTools.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.ConsoleBase.Interactive.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.ConsoleBase.Interactive.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.ConsoleBase.Presentation.Elements.ChoiceInputElement.yml",
       "output": {
         ".html": {
