@@ -18383,6 +18383,12 @@ references:
   commentId: F:Nitrocid.Files.Paths.KernelPathType.Debugging
   fullName: Nitrocid.Files.Paths.KernelPathType.Debugging
   nameWithType: KernelPathType.Debugging
+- uid: Nitrocid.Files.Paths.KernelPathType.DriverConfiguration
+  name: DriverConfiguration
+  href: api/Nitrocid.Files.Paths.KernelPathType.html#Nitrocid_Files_Paths_KernelPathType_DriverConfiguration
+  commentId: F:Nitrocid.Files.Paths.KernelPathType.DriverConfiguration
+  fullName: Nitrocid.Files.Paths.KernelPathType.DriverConfiguration
+  nameWithType: KernelPathType.DriverConfiguration
 - uid: Nitrocid.Files.Paths.KernelPathType.Events
   name: Events
   href: api/Nitrocid.Files.Paths.KernelPathType.html#Nitrocid_Files_Paths_KernelPathType_Events
@@ -18764,6 +18770,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Files.Paths.PathsManagement.DebuggingPath
   nameWithType: PathsManagement.DebuggingPath
+- uid: Nitrocid.Files.Paths.PathsManagement.DriverConfigurationPath
+  name: DriverConfigurationPath
+  href: api/Nitrocid.Files.Paths.PathsManagement.html#Nitrocid_Files_Paths_PathsManagement_DriverConfigurationPath
+  commentId: P:Nitrocid.Files.Paths.PathsManagement.DriverConfigurationPath
+  fullName: Nitrocid.Files.Paths.PathsManagement.DriverConfigurationPath
+  nameWithType: PathsManagement.DriverConfigurationPath
+- uid: Nitrocid.Files.Paths.PathsManagement.DriverConfigurationPath*
+  name: DriverConfigurationPath
+  href: api/Nitrocid.Files.Paths.PathsManagement.html#Nitrocid_Files_Paths_PathsManagement_DriverConfigurationPath_
+  commentId: Overload:Nitrocid.Files.Paths.PathsManagement.DriverConfigurationPath
+  isSpec: "True"
+  fullName: Nitrocid.Files.Paths.PathsManagement.DriverConfigurationPath
+  nameWithType: PathsManagement.DriverConfigurationPath
 - uid: Nitrocid.Files.Paths.PathsManagement.EventsPath
   name: EventsPath
   href: api/Nitrocid.Files.Paths.PathsManagement.html#Nitrocid_Files_Paths_PathsManagement_EventsPath
