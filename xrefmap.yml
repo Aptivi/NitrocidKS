@@ -1880,647 +1880,131 @@ references:
   commentId: F:Nitrocid.ConsoleBase.Colors.KernelColorType.WeekendDay
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorType.WeekendDay
   nameWithType: KernelColorType.WeekendDay
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions
-  name: ConsoleExtensions
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html
-  commentId: T:Nitrocid.ConsoleBase.ConsoleExtensions
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions
-  nameWithType: ConsoleExtensions
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.ClearKeepPosition
-  name: ClearKeepPosition()
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_ClearKeepPosition
-  commentId: M:Nitrocid.ConsoleBase.ConsoleExtensions.ClearKeepPosition
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.ClearKeepPosition()
-  nameWithType: ConsoleExtensions.ClearKeepPosition()
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.ClearKeepPosition*
-  name: ClearKeepPosition
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_ClearKeepPosition_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleExtensions.ClearKeepPosition
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.ClearKeepPosition
-  nameWithType: ConsoleExtensions.ClearKeepPosition
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.ClearLineToRight
-  name: ClearLineToRight()
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_ClearLineToRight
-  commentId: M:Nitrocid.ConsoleBase.ConsoleExtensions.ClearLineToRight
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.ClearLineToRight()
-  nameWithType: ConsoleExtensions.ClearLineToRight()
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.ClearLineToRight*
-  name: ClearLineToRight
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_ClearLineToRight_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleExtensions.ClearLineToRight
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.ClearLineToRight
-  nameWithType: ConsoleExtensions.ClearLineToRight
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.ConsoleSupportsTrueColor
+- uid: Nitrocid.ConsoleBase.ConsoleResizeHandler
+  name: ConsoleResizeHandler
+  href: api/Nitrocid.ConsoleBase.ConsoleResizeHandler.html
+  commentId: T:Nitrocid.ConsoleBase.ConsoleResizeHandler
+  fullName: Nitrocid.ConsoleBase.ConsoleResizeHandler
+  nameWithType: ConsoleResizeHandler
+- uid: Nitrocid.ConsoleBase.ConsoleTools
+  name: ConsoleTools
+  href: api/Nitrocid.ConsoleBase.ConsoleTools.html
+  commentId: T:Nitrocid.ConsoleBase.ConsoleTools
+  fullName: Nitrocid.ConsoleBase.ConsoleTools
+  nameWithType: ConsoleTools
+- uid: Nitrocid.ConsoleBase.ConsoleTools.ConsoleSupportsTrueColor
   name: ConsoleSupportsTrueColor
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_ConsoleSupportsTrueColor
-  commentId: P:Nitrocid.ConsoleBase.ConsoleExtensions.ConsoleSupportsTrueColor
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.ConsoleSupportsTrueColor
-  nameWithType: ConsoleExtensions.ConsoleSupportsTrueColor
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.ConsoleSupportsTrueColor*
+  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_ConsoleSupportsTrueColor
+  commentId: P:Nitrocid.ConsoleBase.ConsoleTools.ConsoleSupportsTrueColor
+  fullName: Nitrocid.ConsoleBase.ConsoleTools.ConsoleSupportsTrueColor
+  nameWithType: ConsoleTools.ConsoleSupportsTrueColor
+- uid: Nitrocid.ConsoleBase.ConsoleTools.ConsoleSupportsTrueColor*
   name: ConsoleSupportsTrueColor
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_ConsoleSupportsTrueColor_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleExtensions.ConsoleSupportsTrueColor
+  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_ConsoleSupportsTrueColor_
+  commentId: Overload:Nitrocid.ConsoleBase.ConsoleTools.ConsoleSupportsTrueColor
   isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.ConsoleSupportsTrueColor
-  nameWithType: ConsoleExtensions.ConsoleSupportsTrueColor
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.EnableScrollBarInSelection
+  fullName: Nitrocid.ConsoleBase.ConsoleTools.ConsoleSupportsTrueColor
+  nameWithType: ConsoleTools.ConsoleSupportsTrueColor
+- uid: Nitrocid.ConsoleBase.ConsoleTools.EnableScrollBarInSelection
   name: EnableScrollBarInSelection
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_EnableScrollBarInSelection
-  commentId: P:Nitrocid.ConsoleBase.ConsoleExtensions.EnableScrollBarInSelection
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.EnableScrollBarInSelection
-  nameWithType: ConsoleExtensions.EnableScrollBarInSelection
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.EnableScrollBarInSelection*
+  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_EnableScrollBarInSelection
+  commentId: P:Nitrocid.ConsoleBase.ConsoleTools.EnableScrollBarInSelection
+  fullName: Nitrocid.ConsoleBase.ConsoleTools.EnableScrollBarInSelection
+  nameWithType: ConsoleTools.EnableScrollBarInSelection
+- uid: Nitrocid.ConsoleBase.ConsoleTools.EnableScrollBarInSelection*
   name: EnableScrollBarInSelection
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_EnableScrollBarInSelection_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleExtensions.EnableScrollBarInSelection
+  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_EnableScrollBarInSelection_
+  commentId: Overload:Nitrocid.ConsoleBase.ConsoleTools.EnableScrollBarInSelection
   isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.EnableScrollBarInSelection
-  nameWithType: ConsoleExtensions.EnableScrollBarInSelection
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.FilterVTSequences(System.String)
-  name: FilterVTSequences(string)
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_FilterVTSequences_System_String_
-  commentId: M:Nitrocid.ConsoleBase.ConsoleExtensions.FilterVTSequences(System.String)
-  name.vb: FilterVTSequences(String)
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.FilterVTSequences(string)
-  fullName.vb: Nitrocid.ConsoleBase.ConsoleExtensions.FilterVTSequences(String)
-  nameWithType: ConsoleExtensions.FilterVTSequences(string)
-  nameWithType.vb: ConsoleExtensions.FilterVTSequences(String)
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.FilterVTSequences*
-  name: FilterVTSequences
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_FilterVTSequences_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleExtensions.FilterVTSequences
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.FilterVTSequences
-  nameWithType: ConsoleExtensions.FilterVTSequences
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.GetClearLineToRightSequence
-  name: GetClearLineToRightSequence()
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_GetClearLineToRightSequence
-  commentId: M:Nitrocid.ConsoleBase.ConsoleExtensions.GetClearLineToRightSequence
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.GetClearLineToRightSequence()
-  nameWithType: ConsoleExtensions.GetClearLineToRightSequence()
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.GetClearLineToRightSequence*
-  name: GetClearLineToRightSequence
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_GetClearLineToRightSequence_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleExtensions.GetClearLineToRightSequence
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.GetClearLineToRightSequence
-  nameWithType: ConsoleExtensions.GetClearLineToRightSequence
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.GetFilteredPositions(System.String,System.Boolean,System.Object[])
-  name: GetFilteredPositions(string, bool, params object[])
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_GetFilteredPositions_System_String_System_Boolean_System_Object___
-  commentId: M:Nitrocid.ConsoleBase.ConsoleExtensions.GetFilteredPositions(System.String,System.Boolean,System.Object[])
-  name.vb: GetFilteredPositions(String, Boolean, ParamArray Object())
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.GetFilteredPositions(string, bool, params object[])
-  fullName.vb: Nitrocid.ConsoleBase.ConsoleExtensions.GetFilteredPositions(String, Boolean, ParamArray Object())
-  nameWithType: ConsoleExtensions.GetFilteredPositions(string, bool, params object[])
-  nameWithType.vb: ConsoleExtensions.GetFilteredPositions(String, Boolean, ParamArray Object())
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.GetFilteredPositions*
-  name: GetFilteredPositions
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_GetFilteredPositions_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleExtensions.GetFilteredPositions
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.GetFilteredPositions
-  nameWithType: ConsoleExtensions.GetFilteredPositions
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.InputHistoryEnabled
+  fullName: Nitrocid.ConsoleBase.ConsoleTools.EnableScrollBarInSelection
+  nameWithType: ConsoleTools.EnableScrollBarInSelection
+- uid: Nitrocid.ConsoleBase.ConsoleTools.InputHistoryEnabled
   name: InputHistoryEnabled
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_InputHistoryEnabled
-  commentId: P:Nitrocid.ConsoleBase.ConsoleExtensions.InputHistoryEnabled
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.InputHistoryEnabled
-  nameWithType: ConsoleExtensions.InputHistoryEnabled
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.InputHistoryEnabled*
+  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_InputHistoryEnabled
+  commentId: P:Nitrocid.ConsoleBase.ConsoleTools.InputHistoryEnabled
+  fullName: Nitrocid.ConsoleBase.ConsoleTools.InputHistoryEnabled
+  nameWithType: ConsoleTools.InputHistoryEnabled
+- uid: Nitrocid.ConsoleBase.ConsoleTools.InputHistoryEnabled*
   name: InputHistoryEnabled
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_InputHistoryEnabled_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleExtensions.InputHistoryEnabled
+  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_InputHistoryEnabled_
+  commentId: Overload:Nitrocid.ConsoleBase.ConsoleTools.InputHistoryEnabled
   isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.InputHistoryEnabled
-  nameWithType: ConsoleExtensions.InputHistoryEnabled
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.PercentRepeat(System.Int32,System.Int32,System.Int32)
-  name: PercentRepeat(int, int, int)
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_PercentRepeat_System_Int32_System_Int32_System_Int32_
-  commentId: M:Nitrocid.ConsoleBase.ConsoleExtensions.PercentRepeat(System.Int32,System.Int32,System.Int32)
-  name.vb: PercentRepeat(Integer, Integer, Integer)
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.PercentRepeat(int, int, int)
-  fullName.vb: Nitrocid.ConsoleBase.ConsoleExtensions.PercentRepeat(Integer, Integer, Integer)
-  nameWithType: ConsoleExtensions.PercentRepeat(int, int, int)
-  nameWithType.vb: ConsoleExtensions.PercentRepeat(Integer, Integer, Integer)
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.PercentRepeat*
-  name: PercentRepeat
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_PercentRepeat_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleExtensions.PercentRepeat
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.PercentRepeat
-  nameWithType: ConsoleExtensions.PercentRepeat
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.ResetAll
-  name: ResetAll()
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_ResetAll
-  commentId: M:Nitrocid.ConsoleBase.ConsoleExtensions.ResetAll
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.ResetAll()
-  nameWithType: ConsoleExtensions.ResetAll()
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.ResetAll*
-  name: ResetAll
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_ResetAll_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleExtensions.ResetAll
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.ResetAll
-  nameWithType: ConsoleExtensions.ResetAll
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.ResetBackground(System.Boolean)
+  fullName: Nitrocid.ConsoleBase.ConsoleTools.InputHistoryEnabled
+  nameWithType: ConsoleTools.InputHistoryEnabled
+- uid: Nitrocid.ConsoleBase.ConsoleTools.ResetBackground(System.Boolean)
   name: ResetBackground(bool)
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_ResetBackground_System_Boolean_
-  commentId: M:Nitrocid.ConsoleBase.ConsoleExtensions.ResetBackground(System.Boolean)
+  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_ResetBackground_System_Boolean_
+  commentId: M:Nitrocid.ConsoleBase.ConsoleTools.ResetBackground(System.Boolean)
   name.vb: ResetBackground(Boolean)
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.ResetBackground(bool)
-  fullName.vb: Nitrocid.ConsoleBase.ConsoleExtensions.ResetBackground(Boolean)
-  nameWithType: ConsoleExtensions.ResetBackground(bool)
-  nameWithType.vb: ConsoleExtensions.ResetBackground(Boolean)
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.ResetBackground*
+  fullName: Nitrocid.ConsoleBase.ConsoleTools.ResetBackground(bool)
+  fullName.vb: Nitrocid.ConsoleBase.ConsoleTools.ResetBackground(Boolean)
+  nameWithType: ConsoleTools.ResetBackground(bool)
+  nameWithType.vb: ConsoleTools.ResetBackground(Boolean)
+- uid: Nitrocid.ConsoleBase.ConsoleTools.ResetBackground*
   name: ResetBackground
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_ResetBackground_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleExtensions.ResetBackground
+  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_ResetBackground_
+  commentId: Overload:Nitrocid.ConsoleBase.ConsoleTools.ResetBackground
   isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.ResetBackground
-  nameWithType: ConsoleExtensions.ResetBackground
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.ResetColors(System.Boolean)
+  fullName: Nitrocid.ConsoleBase.ConsoleTools.ResetBackground
+  nameWithType: ConsoleTools.ResetBackground
+- uid: Nitrocid.ConsoleBase.ConsoleTools.ResetColors(System.Boolean)
   name: ResetColors(bool)
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_ResetColors_System_Boolean_
-  commentId: M:Nitrocid.ConsoleBase.ConsoleExtensions.ResetColors(System.Boolean)
+  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_ResetColors_System_Boolean_
+  commentId: M:Nitrocid.ConsoleBase.ConsoleTools.ResetColors(System.Boolean)
   name.vb: ResetColors(Boolean)
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.ResetColors(bool)
-  fullName.vb: Nitrocid.ConsoleBase.ConsoleExtensions.ResetColors(Boolean)
-  nameWithType: ConsoleExtensions.ResetColors(bool)
-  nameWithType.vb: ConsoleExtensions.ResetColors(Boolean)
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.ResetColors*
+  fullName: Nitrocid.ConsoleBase.ConsoleTools.ResetColors(bool)
+  fullName.vb: Nitrocid.ConsoleBase.ConsoleTools.ResetColors(Boolean)
+  nameWithType: ConsoleTools.ResetColors(bool)
+  nameWithType.vb: ConsoleTools.ResetColors(Boolean)
+- uid: Nitrocid.ConsoleBase.ConsoleTools.ResetColors*
   name: ResetColors
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_ResetColors_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleExtensions.ResetColors
+  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_ResetColors_
+  commentId: Overload:Nitrocid.ConsoleBase.ConsoleTools.ResetColors
   isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.ResetColors
-  nameWithType: ConsoleExtensions.ResetColors
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.ResetForeground(System.Boolean)
+  fullName: Nitrocid.ConsoleBase.ConsoleTools.ResetColors
+  nameWithType: ConsoleTools.ResetColors
+- uid: Nitrocid.ConsoleBase.ConsoleTools.ResetForeground(System.Boolean)
   name: ResetForeground(bool)
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_ResetForeground_System_Boolean_
-  commentId: M:Nitrocid.ConsoleBase.ConsoleExtensions.ResetForeground(System.Boolean)
+  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_ResetForeground_System_Boolean_
+  commentId: M:Nitrocid.ConsoleBase.ConsoleTools.ResetForeground(System.Boolean)
   name.vb: ResetForeground(Boolean)
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.ResetForeground(bool)
-  fullName.vb: Nitrocid.ConsoleBase.ConsoleExtensions.ResetForeground(Boolean)
-  nameWithType: ConsoleExtensions.ResetForeground(bool)
-  nameWithType.vb: ConsoleExtensions.ResetForeground(Boolean)
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.ResetForeground*
+  fullName: Nitrocid.ConsoleBase.ConsoleTools.ResetForeground(bool)
+  fullName.vb: Nitrocid.ConsoleBase.ConsoleTools.ResetForeground(Boolean)
+  nameWithType: ConsoleTools.ResetForeground(bool)
+  nameWithType.vb: ConsoleTools.ResetForeground(Boolean)
+- uid: Nitrocid.ConsoleBase.ConsoleTools.ResetForeground*
   name: ResetForeground
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_ResetForeground_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleExtensions.ResetForeground
+  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_ResetForeground_
+  commentId: Overload:Nitrocid.ConsoleBase.ConsoleTools.ResetForeground
   isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.ResetForeground
-  nameWithType: ConsoleExtensions.ResetForeground
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.SetTitle(System.String)
-  name: SetTitle(string)
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_SetTitle_System_String_
-  commentId: M:Nitrocid.ConsoleBase.ConsoleExtensions.SetTitle(System.String)
-  name.vb: SetTitle(String)
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.SetTitle(string)
-  fullName.vb: Nitrocid.ConsoleBase.ConsoleExtensions.SetTitle(String)
-  nameWithType: ConsoleExtensions.SetTitle(string)
-  nameWithType.vb: ConsoleExtensions.SetTitle(String)
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.SetTitle*
-  name: SetTitle
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_SetTitle_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleExtensions.SetTitle
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.SetTitle
-  nameWithType: ConsoleExtensions.SetTitle
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.UseNewColorSelector
+  fullName: Nitrocid.ConsoleBase.ConsoleTools.ResetForeground
+  nameWithType: ConsoleTools.ResetForeground
+- uid: Nitrocid.ConsoleBase.ConsoleTools.UseNewColorSelector
   name: UseNewColorSelector
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_UseNewColorSelector
-  commentId: P:Nitrocid.ConsoleBase.ConsoleExtensions.UseNewColorSelector
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.UseNewColorSelector
-  nameWithType: ConsoleExtensions.UseNewColorSelector
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.UseNewColorSelector*
+  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_UseNewColorSelector
+  commentId: P:Nitrocid.ConsoleBase.ConsoleTools.UseNewColorSelector
+  fullName: Nitrocid.ConsoleBase.ConsoleTools.UseNewColorSelector
+  nameWithType: ConsoleTools.UseNewColorSelector
+- uid: Nitrocid.ConsoleBase.ConsoleTools.UseNewColorSelector*
   name: UseNewColorSelector
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_UseNewColorSelector_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleExtensions.UseNewColorSelector
+  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_UseNewColorSelector_
+  commentId: Overload:Nitrocid.ConsoleBase.ConsoleTools.UseNewColorSelector
   isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.UseNewColorSelector
-  nameWithType: ConsoleExtensions.UseNewColorSelector
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.WrapListOutputs
+  fullName: Nitrocid.ConsoleBase.ConsoleTools.UseNewColorSelector
+  nameWithType: ConsoleTools.UseNewColorSelector
+- uid: Nitrocid.ConsoleBase.ConsoleTools.WrapListOutputs
   name: WrapListOutputs
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_WrapListOutputs
-  commentId: P:Nitrocid.ConsoleBase.ConsoleExtensions.WrapListOutputs
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.WrapListOutputs
-  nameWithType: ConsoleExtensions.WrapListOutputs
-- uid: Nitrocid.ConsoleBase.ConsoleExtensions.WrapListOutputs*
+  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_WrapListOutputs
+  commentId: P:Nitrocid.ConsoleBase.ConsoleTools.WrapListOutputs
+  fullName: Nitrocid.ConsoleBase.ConsoleTools.WrapListOutputs
+  nameWithType: ConsoleTools.WrapListOutputs
+- uid: Nitrocid.ConsoleBase.ConsoleTools.WrapListOutputs*
   name: WrapListOutputs
-  href: api/Nitrocid.ConsoleBase.ConsoleExtensions.html#Nitrocid_ConsoleBase_ConsoleExtensions_WrapListOutputs_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleExtensions.WrapListOutputs
+  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_WrapListOutputs_
+  commentId: Overload:Nitrocid.ConsoleBase.ConsoleTools.WrapListOutputs
   isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleExtensions.WrapListOutputs
-  nameWithType: ConsoleExtensions.WrapListOutputs
-- uid: Nitrocid.ConsoleBase.ConsoleResizeListener
-  name: ConsoleResizeListener
-  href: api/Nitrocid.ConsoleBase.ConsoleResizeListener.html
-  commentId: T:Nitrocid.ConsoleBase.ConsoleResizeListener
-  fullName: Nitrocid.ConsoleBase.ConsoleResizeListener
-  nameWithType: ConsoleResizeListener
-- uid: Nitrocid.ConsoleBase.ConsoleResizeListener.GetCurrentConsoleSize
-  name: GetCurrentConsoleSize()
-  href: api/Nitrocid.ConsoleBase.ConsoleResizeListener.html#Nitrocid_ConsoleBase_ConsoleResizeListener_GetCurrentConsoleSize
-  commentId: M:Nitrocid.ConsoleBase.ConsoleResizeListener.GetCurrentConsoleSize
-  fullName: Nitrocid.ConsoleBase.ConsoleResizeListener.GetCurrentConsoleSize()
-  nameWithType: ConsoleResizeListener.GetCurrentConsoleSize()
-- uid: Nitrocid.ConsoleBase.ConsoleResizeListener.GetCurrentConsoleSize*
-  name: GetCurrentConsoleSize
-  href: api/Nitrocid.ConsoleBase.ConsoleResizeListener.html#Nitrocid_ConsoleBase_ConsoleResizeListener_GetCurrentConsoleSize_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleResizeListener.GetCurrentConsoleSize
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleResizeListener.GetCurrentConsoleSize
-  nameWithType: ConsoleResizeListener.GetCurrentConsoleSize
-- uid: Nitrocid.ConsoleBase.ConsoleResizeListener.WasResized(System.Boolean)
-  name: WasResized(bool)
-  href: api/Nitrocid.ConsoleBase.ConsoleResizeListener.html#Nitrocid_ConsoleBase_ConsoleResizeListener_WasResized_System_Boolean_
-  commentId: M:Nitrocid.ConsoleBase.ConsoleResizeListener.WasResized(System.Boolean)
-  name.vb: WasResized(Boolean)
-  fullName: Nitrocid.ConsoleBase.ConsoleResizeListener.WasResized(bool)
-  fullName.vb: Nitrocid.ConsoleBase.ConsoleResizeListener.WasResized(Boolean)
-  nameWithType: ConsoleResizeListener.WasResized(bool)
-  nameWithType.vb: ConsoleResizeListener.WasResized(Boolean)
-- uid: Nitrocid.ConsoleBase.ConsoleResizeListener.WasResized*
-  name: WasResized
-  href: api/Nitrocid.ConsoleBase.ConsoleResizeListener.html#Nitrocid_ConsoleBase_ConsoleResizeListener_WasResized_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleResizeListener.WasResized
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleResizeListener.WasResized
-  nameWithType: ConsoleResizeListener.WasResized
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper
-  name: ConsoleWrapper
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html
-  commentId: T:Nitrocid.ConsoleBase.ConsoleWrapper
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper
-  nameWithType: ConsoleWrapper
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.Beep
-  name: Beep()
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_Beep
-  commentId: M:Nitrocid.ConsoleBase.ConsoleWrapper.Beep
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.Beep()
-  nameWithType: ConsoleWrapper.Beep()
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.Beep*
-  name: Beep
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_Beep_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.Beep
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.Beep
-  nameWithType: ConsoleWrapper.Beep
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.BufferHeight
-  name: BufferHeight
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_BufferHeight
-  commentId: P:Nitrocid.ConsoleBase.ConsoleWrapper.BufferHeight
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.BufferHeight
-  nameWithType: ConsoleWrapper.BufferHeight
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.BufferHeight*
-  name: BufferHeight
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_BufferHeight_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.BufferHeight
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.BufferHeight
-  nameWithType: ConsoleWrapper.BufferHeight
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.BufferWidth
-  name: BufferWidth
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_BufferWidth
-  commentId: P:Nitrocid.ConsoleBase.ConsoleWrapper.BufferWidth
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.BufferWidth
-  nameWithType: ConsoleWrapper.BufferWidth
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.BufferWidth*
-  name: BufferWidth
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_BufferWidth_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.BufferWidth
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.BufferWidth
-  nameWithType: ConsoleWrapper.BufferWidth
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.Clear(System.Boolean)
-  name: Clear(bool)
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_Clear_System_Boolean_
-  commentId: M:Nitrocid.ConsoleBase.ConsoleWrapper.Clear(System.Boolean)
-  name.vb: Clear(Boolean)
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.Clear(bool)
-  fullName.vb: Nitrocid.ConsoleBase.ConsoleWrapper.Clear(Boolean)
-  nameWithType: ConsoleWrapper.Clear(bool)
-  nameWithType.vb: ConsoleWrapper.Clear(Boolean)
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.Clear*
-  name: Clear
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_Clear_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.Clear
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.Clear
-  nameWithType: ConsoleWrapper.Clear
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.CursorLeft
-  name: CursorLeft
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_CursorLeft
-  commentId: P:Nitrocid.ConsoleBase.ConsoleWrapper.CursorLeft
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.CursorLeft
-  nameWithType: ConsoleWrapper.CursorLeft
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.CursorLeft*
-  name: CursorLeft
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_CursorLeft_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.CursorLeft
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.CursorLeft
-  nameWithType: ConsoleWrapper.CursorLeft
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.CursorTop
-  name: CursorTop
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_CursorTop
-  commentId: P:Nitrocid.ConsoleBase.ConsoleWrapper.CursorTop
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.CursorTop
-  nameWithType: ConsoleWrapper.CursorTop
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.CursorTop*
-  name: CursorTop
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_CursorTop_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.CursorTop
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.CursorTop
-  nameWithType: ConsoleWrapper.CursorTop
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.CursorVisible
-  name: CursorVisible
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_CursorVisible
-  commentId: P:Nitrocid.ConsoleBase.ConsoleWrapper.CursorVisible
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.CursorVisible
-  nameWithType: ConsoleWrapper.CursorVisible
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.CursorVisible*
-  name: CursorVisible
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_CursorVisible_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.CursorVisible
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.CursorVisible
-  nameWithType: ConsoleWrapper.CursorVisible
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.InputEncoding
-  name: InputEncoding
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_InputEncoding
-  commentId: P:Nitrocid.ConsoleBase.ConsoleWrapper.InputEncoding
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.InputEncoding
-  nameWithType: ConsoleWrapper.InputEncoding
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.InputEncoding*
-  name: InputEncoding
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_InputEncoding_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.InputEncoding
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.InputEncoding
-  nameWithType: ConsoleWrapper.InputEncoding
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.KeyAvailable
-  name: KeyAvailable
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_KeyAvailable
-  commentId: P:Nitrocid.ConsoleBase.ConsoleWrapper.KeyAvailable
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.KeyAvailable
-  nameWithType: ConsoleWrapper.KeyAvailable
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.KeyAvailable*
-  name: KeyAvailable
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_KeyAvailable_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.KeyAvailable
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.KeyAvailable
-  nameWithType: ConsoleWrapper.KeyAvailable
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.OpenStandardError
-  name: OpenStandardError()
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_OpenStandardError
-  commentId: M:Nitrocid.ConsoleBase.ConsoleWrapper.OpenStandardError
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.OpenStandardError()
-  nameWithType: ConsoleWrapper.OpenStandardError()
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.OpenStandardError*
-  name: OpenStandardError
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_OpenStandardError_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.OpenStandardError
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.OpenStandardError
-  nameWithType: ConsoleWrapper.OpenStandardError
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.OpenStandardInput
-  name: OpenStandardInput()
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_OpenStandardInput
-  commentId: M:Nitrocid.ConsoleBase.ConsoleWrapper.OpenStandardInput
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.OpenStandardInput()
-  nameWithType: ConsoleWrapper.OpenStandardInput()
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.OpenStandardInput*
-  name: OpenStandardInput
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_OpenStandardInput_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.OpenStandardInput
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.OpenStandardInput
-  nameWithType: ConsoleWrapper.OpenStandardInput
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.OpenStandardOutput
-  name: OpenStandardOutput()
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_OpenStandardOutput
-  commentId: M:Nitrocid.ConsoleBase.ConsoleWrapper.OpenStandardOutput
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.OpenStandardOutput()
-  nameWithType: ConsoleWrapper.OpenStandardOutput()
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.OpenStandardOutput*
-  name: OpenStandardOutput
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_OpenStandardOutput_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.OpenStandardOutput
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.OpenStandardOutput
-  nameWithType: ConsoleWrapper.OpenStandardOutput
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.OutputEncoding
-  name: OutputEncoding
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_OutputEncoding
-  commentId: P:Nitrocid.ConsoleBase.ConsoleWrapper.OutputEncoding
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.OutputEncoding
-  nameWithType: ConsoleWrapper.OutputEncoding
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.OutputEncoding*
-  name: OutputEncoding
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_OutputEncoding_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.OutputEncoding
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.OutputEncoding
-  nameWithType: ConsoleWrapper.OutputEncoding
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.ReadKey(System.Boolean)
-  name: ReadKey(bool)
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_ReadKey_System_Boolean_
-  commentId: M:Nitrocid.ConsoleBase.ConsoleWrapper.ReadKey(System.Boolean)
-  name.vb: ReadKey(Boolean)
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.ReadKey(bool)
-  fullName.vb: Nitrocid.ConsoleBase.ConsoleWrapper.ReadKey(Boolean)
-  nameWithType: ConsoleWrapper.ReadKey(bool)
-  nameWithType.vb: ConsoleWrapper.ReadKey(Boolean)
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.ReadKey*
-  name: ReadKey
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_ReadKey_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.ReadKey
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.ReadKey
-  nameWithType: ConsoleWrapper.ReadKey
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.ResetColor
-  name: ResetColor()
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_ResetColor
-  commentId: M:Nitrocid.ConsoleBase.ConsoleWrapper.ResetColor
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.ResetColor()
-  nameWithType: ConsoleWrapper.ResetColor()
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.ResetColor*
-  name: ResetColor
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_ResetColor_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.ResetColor
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.ResetColor
-  nameWithType: ConsoleWrapper.ResetColor
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.SetCursorPosition(System.Int32,System.Int32)
-  name: SetCursorPosition(int, int)
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_SetCursorPosition_System_Int32_System_Int32_
-  commentId: M:Nitrocid.ConsoleBase.ConsoleWrapper.SetCursorPosition(System.Int32,System.Int32)
-  name.vb: SetCursorPosition(Integer, Integer)
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.SetCursorPosition(int, int)
-  fullName.vb: Nitrocid.ConsoleBase.ConsoleWrapper.SetCursorPosition(Integer, Integer)
-  nameWithType: ConsoleWrapper.SetCursorPosition(int, int)
-  nameWithType.vb: ConsoleWrapper.SetCursorPosition(Integer, Integer)
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.SetCursorPosition*
-  name: SetCursorPosition
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_SetCursorPosition_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.SetCursorPosition
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.SetCursorPosition
-  nameWithType: ConsoleWrapper.SetCursorPosition
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.SetOut(System.IO.TextWriter)
-  name: SetOut(TextWriter)
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_SetOut_System_IO_TextWriter_
-  commentId: M:Nitrocid.ConsoleBase.ConsoleWrapper.SetOut(System.IO.TextWriter)
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.SetOut(System.IO.TextWriter)
-  nameWithType: ConsoleWrapper.SetOut(TextWriter)
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.SetOut*
-  name: SetOut
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_SetOut_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.SetOut
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.SetOut
-  nameWithType: ConsoleWrapper.SetOut
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.TreatCtrlCAsInput
-  name: TreatCtrlCAsInput
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_TreatCtrlCAsInput
-  commentId: P:Nitrocid.ConsoleBase.ConsoleWrapper.TreatCtrlCAsInput
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.TreatCtrlCAsInput
-  nameWithType: ConsoleWrapper.TreatCtrlCAsInput
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.TreatCtrlCAsInput*
-  name: TreatCtrlCAsInput
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_TreatCtrlCAsInput_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.TreatCtrlCAsInput
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.TreatCtrlCAsInput
-  nameWithType: ConsoleWrapper.TreatCtrlCAsInput
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.WindowHeight
-  name: WindowHeight
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_WindowHeight
-  commentId: P:Nitrocid.ConsoleBase.ConsoleWrapper.WindowHeight
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.WindowHeight
-  nameWithType: ConsoleWrapper.WindowHeight
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.WindowHeight*
-  name: WindowHeight
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_WindowHeight_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.WindowHeight
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.WindowHeight
-  nameWithType: ConsoleWrapper.WindowHeight
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.WindowTop
-  name: WindowTop
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_WindowTop
-  commentId: P:Nitrocid.ConsoleBase.ConsoleWrapper.WindowTop
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.WindowTop
-  nameWithType: ConsoleWrapper.WindowTop
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.WindowTop*
-  name: WindowTop
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_WindowTop_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.WindowTop
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.WindowTop
-  nameWithType: ConsoleWrapper.WindowTop
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.WindowWidth
-  name: WindowWidth
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_WindowWidth
-  commentId: P:Nitrocid.ConsoleBase.ConsoleWrapper.WindowWidth
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.WindowWidth
-  nameWithType: ConsoleWrapper.WindowWidth
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.WindowWidth*
-  name: WindowWidth
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_WindowWidth_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.WindowWidth
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.WindowWidth
-  nameWithType: ConsoleWrapper.WindowWidth
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.Write(System.Char)
-  name: Write(char)
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_Write_System_Char_
-  commentId: M:Nitrocid.ConsoleBase.ConsoleWrapper.Write(System.Char)
-  name.vb: Write(Char)
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.Write(char)
-  fullName.vb: Nitrocid.ConsoleBase.ConsoleWrapper.Write(Char)
-  nameWithType: ConsoleWrapper.Write(char)
-  nameWithType.vb: ConsoleWrapper.Write(Char)
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.Write(System.String)
-  name: Write(string)
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_Write_System_String_
-  commentId: M:Nitrocid.ConsoleBase.ConsoleWrapper.Write(System.String)
-  name.vb: Write(String)
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.Write(string)
-  fullName.vb: Nitrocid.ConsoleBase.ConsoleWrapper.Write(String)
-  nameWithType: ConsoleWrapper.Write(string)
-  nameWithType.vb: ConsoleWrapper.Write(String)
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.Write(System.String,System.Object[])
-  name: Write(string, params object[])
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_Write_System_String_System_Object___
-  commentId: M:Nitrocid.ConsoleBase.ConsoleWrapper.Write(System.String,System.Object[])
-  name.vb: Write(String, ParamArray Object())
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.Write(string, params object[])
-  fullName.vb: Nitrocid.ConsoleBase.ConsoleWrapper.Write(String, ParamArray Object())
-  nameWithType: ConsoleWrapper.Write(string, params object[])
-  nameWithType.vb: ConsoleWrapper.Write(String, ParamArray Object())
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.Write*
-  name: Write
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_Write_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.Write
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.Write
-  nameWithType: ConsoleWrapper.Write
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.WriteLine
-  name: WriteLine()
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_WriteLine
-  commentId: M:Nitrocid.ConsoleBase.ConsoleWrapper.WriteLine
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.WriteLine()
-  nameWithType: ConsoleWrapper.WriteLine()
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.WriteLine(System.String)
-  name: WriteLine(string)
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_WriteLine_System_String_
-  commentId: M:Nitrocid.ConsoleBase.ConsoleWrapper.WriteLine(System.String)
-  name.vb: WriteLine(String)
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.WriteLine(string)
-  fullName.vb: Nitrocid.ConsoleBase.ConsoleWrapper.WriteLine(String)
-  nameWithType: ConsoleWrapper.WriteLine(string)
-  nameWithType.vb: ConsoleWrapper.WriteLine(String)
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.WriteLine(System.String,System.Object[])
-  name: WriteLine(string, params object[])
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_WriteLine_System_String_System_Object___
-  commentId: M:Nitrocid.ConsoleBase.ConsoleWrapper.WriteLine(System.String,System.Object[])
-  name.vb: WriteLine(String, ParamArray Object())
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.WriteLine(string, params object[])
-  fullName.vb: Nitrocid.ConsoleBase.ConsoleWrapper.WriteLine(String, ParamArray Object())
-  nameWithType: ConsoleWrapper.WriteLine(string, params object[])
-  nameWithType.vb: ConsoleWrapper.WriteLine(String, ParamArray Object())
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.WriteLine(System.String,Terminaux.Reader.TermReaderSettings)
-  name: WriteLine(string, TermReaderSettings)
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_WriteLine_System_String_Terminaux_Reader_TermReaderSettings_
-  commentId: M:Nitrocid.ConsoleBase.ConsoleWrapper.WriteLine(System.String,Terminaux.Reader.TermReaderSettings)
-  name.vb: WriteLine(String, TermReaderSettings)
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.WriteLine(string, Terminaux.Reader.TermReaderSettings)
-  fullName.vb: Nitrocid.ConsoleBase.ConsoleWrapper.WriteLine(String, Terminaux.Reader.TermReaderSettings)
-  nameWithType: ConsoleWrapper.WriteLine(string, TermReaderSettings)
-  nameWithType.vb: ConsoleWrapper.WriteLine(String, TermReaderSettings)
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.WriteLine(System.String,Terminaux.Reader.TermReaderSettings,System.Object[])
-  name: WriteLine(string, TermReaderSettings, params object[])
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_WriteLine_System_String_Terminaux_Reader_TermReaderSettings_System_Object___
-  commentId: M:Nitrocid.ConsoleBase.ConsoleWrapper.WriteLine(System.String,Terminaux.Reader.TermReaderSettings,System.Object[])
-  name.vb: WriteLine(String, TermReaderSettings, ParamArray Object())
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.WriteLine(string, Terminaux.Reader.TermReaderSettings, params object[])
-  fullName.vb: Nitrocid.ConsoleBase.ConsoleWrapper.WriteLine(String, Terminaux.Reader.TermReaderSettings, ParamArray Object())
-  nameWithType: ConsoleWrapper.WriteLine(string, TermReaderSettings, params object[])
-  nameWithType.vb: ConsoleWrapper.WriteLine(String, TermReaderSettings, ParamArray Object())
-- uid: Nitrocid.ConsoleBase.ConsoleWrapper.WriteLine*
-  name: WriteLine
-  href: api/Nitrocid.ConsoleBase.ConsoleWrapper.html#Nitrocid_ConsoleBase_ConsoleWrapper_WriteLine_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleWrapper.WriteLine
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleWrapper.WriteLine
-  nameWithType: ConsoleWrapper.WriteLine
+  fullName: Nitrocid.ConsoleBase.ConsoleTools.WrapListOutputs
+  nameWithType: ConsoleTools.WrapListOutputs
 - uid: Nitrocid.ConsoleBase.Inputs
   name: Nitrocid.ConsoleBase.Inputs
   href: api/Nitrocid.ConsoleBase.Inputs.html
