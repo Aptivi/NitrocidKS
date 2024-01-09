@@ -64,11 +64,6 @@
     "title": "Namespace Nitrocid.ConsoleBase.Colors | Nitrocid KS API - Aptivi",
     "keywords": "Namespace Nitrocid.ConsoleBase.Colors Classes KernelColorConversionTools Kernel color conversion tools KernelColorTools Color tools module Enums KernelColorSetErrorReasons Enumeration for the color setting error reasons KernelColorType Enumeration for color types"
   },
-  "api/Nitrocid.ConsoleBase.ConsoleResizeHandler.html": {
-    "href": "api/Nitrocid.ConsoleBase.ConsoleResizeHandler.html",
-    "title": "Class ConsoleResizeHandler | Nitrocid KS API - Aptivi",
-    "keywords": "Class ConsoleResizeHandler The console resize listener module Inheritance object ConsoleResizeHandler Namespace: Nitrocid.ConsoleBase Assembly: Nitrocid.dll Syntax public static class ConsoleResizeHandler"
-  },
   "api/Nitrocid.ConsoleBase.ConsoleTools.html": {
     "href": "api/Nitrocid.ConsoleBase.ConsoleTools.html",
     "title": "Class ConsoleTools | Nitrocid KS API - Aptivi",
@@ -207,7 +202,7 @@
   "api/Nitrocid.ConsoleBase.html": {
     "href": "api/Nitrocid.ConsoleBase.html",
     "title": "Namespace Nitrocid.ConsoleBase | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace Nitrocid.ConsoleBase Classes ConsoleResizeHandler The console resize listener module ConsoleTools Additional routines for the console"
+    "keywords": "Namespace Nitrocid.ConsoleBase Classes ConsoleTools Additional routines for the console"
   },
   "api/Nitrocid.Drivers.Console.BaseConsoleDriver.html": {
     "href": "api/Nitrocid.Drivers.Console.BaseConsoleDriver.html",
