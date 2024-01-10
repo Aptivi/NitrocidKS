@@ -32056,15 +32056,15 @@ references:
   commentId: T:Nitrocid.Misc.Progress.ProgressHandler
   fullName: Nitrocid.Misc.Progress.ProgressHandler
   nameWithType: ProgressHandler
-- uid: Nitrocid.Misc.Progress.ProgressHandler.#ctor(System.Action{System.Int32,System.String},System.String)
-  name: ProgressHandler(Action<int, string>, string)
-  href: api/Nitrocid.Misc.Progress.ProgressHandler.html#Nitrocid_Misc_Progress_ProgressHandler__ctor_System_Action_System_Int32_System_String__System_String_
-  commentId: M:Nitrocid.Misc.Progress.ProgressHandler.#ctor(System.Action{System.Int32,System.String},System.String)
-  name.vb: New(Action(Of Integer, String), String)
-  fullName: Nitrocid.Misc.Progress.ProgressHandler.ProgressHandler(System.Action<int, string>, string)
-  fullName.vb: Nitrocid.Misc.Progress.ProgressHandler.New(System.Action(Of Integer, String), String)
-  nameWithType: ProgressHandler.ProgressHandler(Action<int, string>, string)
-  nameWithType.vb: ProgressHandler.New(Action(Of Integer, String), String)
+- uid: Nitrocid.Misc.Progress.ProgressHandler.#ctor(System.Action{System.Double,System.String},System.String)
+  name: ProgressHandler(Action<double, string>, string)
+  href: api/Nitrocid.Misc.Progress.ProgressHandler.html#Nitrocid_Misc_Progress_ProgressHandler__ctor_System_Action_System_Double_System_String__System_String_
+  commentId: M:Nitrocid.Misc.Progress.ProgressHandler.#ctor(System.Action{System.Double,System.String},System.String)
+  name.vb: New(Action(Of Double, String), String)
+  fullName: Nitrocid.Misc.Progress.ProgressHandler.ProgressHandler(System.Action<double, string>, string)
+  fullName.vb: Nitrocid.Misc.Progress.ProgressHandler.New(System.Action(Of Double, String), String)
+  nameWithType: ProgressHandler.ProgressHandler(Action<double, string>, string)
+  nameWithType.vb: ProgressHandler.New(Action(Of Double, String), String)
 - uid: Nitrocid.Misc.Progress.ProgressHandler.#ctor*
   name: ProgressHandler
   href: api/Nitrocid.Misc.Progress.ProgressHandler.html#Nitrocid_Misc_Progress_ProgressHandler__ctor_
@@ -32120,33 +32120,33 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Progress.ProgressManager.RegisterProgressHandler
   nameWithType: ProgressManager.RegisterProgressHandler
-- uid: Nitrocid.Misc.Progress.ProgressManager.ReportProgress(System.Int32,System.String)
-  name: ReportProgress(int, string)
-  href: api/Nitrocid.Misc.Progress.ProgressManager.html#Nitrocid_Misc_Progress_ProgressManager_ReportProgress_System_Int32_System_String_
-  commentId: M:Nitrocid.Misc.Progress.ProgressManager.ReportProgress(System.Int32,System.String)
-  name.vb: ReportProgress(Integer, String)
-  fullName: Nitrocid.Misc.Progress.ProgressManager.ReportProgress(int, string)
-  fullName.vb: Nitrocid.Misc.Progress.ProgressManager.ReportProgress(Integer, String)
-  nameWithType: ProgressManager.ReportProgress(int, string)
-  nameWithType.vb: ProgressManager.ReportProgress(Integer, String)
-- uid: Nitrocid.Misc.Progress.ProgressManager.ReportProgress(System.Int32,System.String,System.String)
-  name: ReportProgress(int, string, string)
-  href: api/Nitrocid.Misc.Progress.ProgressManager.html#Nitrocid_Misc_Progress_ProgressManager_ReportProgress_System_Int32_System_String_System_String_
-  commentId: M:Nitrocid.Misc.Progress.ProgressManager.ReportProgress(System.Int32,System.String,System.String)
-  name.vb: ReportProgress(Integer, String, String)
-  fullName: Nitrocid.Misc.Progress.ProgressManager.ReportProgress(int, string, string)
-  fullName.vb: Nitrocid.Misc.Progress.ProgressManager.ReportProgress(Integer, String, String)
-  nameWithType: ProgressManager.ReportProgress(int, string, string)
-  nameWithType.vb: ProgressManager.ReportProgress(Integer, String, String)
-- uid: Nitrocid.Misc.Progress.ProgressManager.ReportProgress(System.Int32,System.String,System.String,System.Object[])
-  name: ReportProgress(int, string, string, params object[])
-  href: api/Nitrocid.Misc.Progress.ProgressManager.html#Nitrocid_Misc_Progress_ProgressManager_ReportProgress_System_Int32_System_String_System_String_System_Object___
-  commentId: M:Nitrocid.Misc.Progress.ProgressManager.ReportProgress(System.Int32,System.String,System.String,System.Object[])
-  name.vb: ReportProgress(Integer, String, String, ParamArray Object())
-  fullName: Nitrocid.Misc.Progress.ProgressManager.ReportProgress(int, string, string, params object[])
-  fullName.vb: Nitrocid.Misc.Progress.ProgressManager.ReportProgress(Integer, String, String, ParamArray Object())
-  nameWithType: ProgressManager.ReportProgress(int, string, string, params object[])
-  nameWithType.vb: ProgressManager.ReportProgress(Integer, String, String, ParamArray Object())
+- uid: Nitrocid.Misc.Progress.ProgressManager.ReportProgress(System.Double,System.String)
+  name: ReportProgress(double, string)
+  href: api/Nitrocid.Misc.Progress.ProgressManager.html#Nitrocid_Misc_Progress_ProgressManager_ReportProgress_System_Double_System_String_
+  commentId: M:Nitrocid.Misc.Progress.ProgressManager.ReportProgress(System.Double,System.String)
+  name.vb: ReportProgress(Double, String)
+  fullName: Nitrocid.Misc.Progress.ProgressManager.ReportProgress(double, string)
+  fullName.vb: Nitrocid.Misc.Progress.ProgressManager.ReportProgress(Double, String)
+  nameWithType: ProgressManager.ReportProgress(double, string)
+  nameWithType.vb: ProgressManager.ReportProgress(Double, String)
+- uid: Nitrocid.Misc.Progress.ProgressManager.ReportProgress(System.Double,System.String,System.String)
+  name: ReportProgress(double, string, string)
+  href: api/Nitrocid.Misc.Progress.ProgressManager.html#Nitrocid_Misc_Progress_ProgressManager_ReportProgress_System_Double_System_String_System_String_
+  commentId: M:Nitrocid.Misc.Progress.ProgressManager.ReportProgress(System.Double,System.String,System.String)
+  name.vb: ReportProgress(Double, String, String)
+  fullName: Nitrocid.Misc.Progress.ProgressManager.ReportProgress(double, string, string)
+  fullName.vb: Nitrocid.Misc.Progress.ProgressManager.ReportProgress(Double, String, String)
+  nameWithType: ProgressManager.ReportProgress(double, string, string)
+  nameWithType.vb: ProgressManager.ReportProgress(Double, String, String)
+- uid: Nitrocid.Misc.Progress.ProgressManager.ReportProgress(System.Double,System.String,System.String,System.Object[])
+  name: ReportProgress(double, string, string, params object[])
+  href: api/Nitrocid.Misc.Progress.ProgressManager.html#Nitrocid_Misc_Progress_ProgressManager_ReportProgress_System_Double_System_String_System_String_System_Object___
+  commentId: M:Nitrocid.Misc.Progress.ProgressManager.ReportProgress(System.Double,System.String,System.String,System.Object[])
+  name.vb: ReportProgress(Double, String, String, ParamArray Object())
+  fullName: Nitrocid.Misc.Progress.ProgressManager.ReportProgress(double, string, string, params object[])
+  fullName.vb: Nitrocid.Misc.Progress.ProgressManager.ReportProgress(Double, String, String, ParamArray Object())
+  nameWithType: ProgressManager.ReportProgress(double, string, string, params object[])
+  nameWithType.vb: ProgressManager.ReportProgress(Double, String, String, ParamArray Object())
 - uid: Nitrocid.Misc.Progress.ProgressManager.ReportProgress*
   name: ReportProgress
   href: api/Nitrocid.Misc.Progress.ProgressManager.html#Nitrocid_Misc_Progress_ProgressManager_ReportProgress_
