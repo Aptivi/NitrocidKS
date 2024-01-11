@@ -3597,15 +3597,31 @@ references:
   commentId: T:Nitrocid.ConsoleBase.Themes.ThemeTools
   fullName: Nitrocid.ConsoleBase.Themes.ThemeTools
   nameWithType: ThemeTools
-- uid: Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyThemeFromFile(System.String)
-  name: ApplyThemeFromFile(string)
-  href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_ApplyThemeFromFile_System_String_
-  commentId: M:Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyThemeFromFile(System.String)
-  name.vb: ApplyThemeFromFile(String)
-  fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyThemeFromFile(string)
-  fullName.vb: Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyThemeFromFile(String)
-  nameWithType: ThemeTools.ApplyThemeFromFile(string)
-  nameWithType.vb: ThemeTools.ApplyThemeFromFile(String)
+- uid: Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyTheme(Nitrocid.ConsoleBase.Themes.ThemeInfo,System.Boolean)
+  name: ApplyTheme(ThemeInfo, bool)
+  href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_ApplyTheme_Nitrocid_ConsoleBase_Themes_ThemeInfo_System_Boolean_
+  commentId: M:Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyTheme(Nitrocid.ConsoleBase.Themes.ThemeInfo,System.Boolean)
+  name.vb: ApplyTheme(ThemeInfo, Boolean)
+  fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyTheme(Nitrocid.ConsoleBase.Themes.ThemeInfo, bool)
+  fullName.vb: Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyTheme(Nitrocid.ConsoleBase.Themes.ThemeInfo, Boolean)
+  nameWithType: ThemeTools.ApplyTheme(ThemeInfo, bool)
+  nameWithType.vb: ThemeTools.ApplyTheme(ThemeInfo, Boolean)
+- uid: Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyTheme*
+  name: ApplyTheme
+  href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_ApplyTheme_
+  commentId: Overload:Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyTheme
+  isSpec: "True"
+  fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyTheme
+  nameWithType: ThemeTools.ApplyTheme
+- uid: Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyThemeFromFile(System.String,System.Boolean)
+  name: ApplyThemeFromFile(string, bool)
+  href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_ApplyThemeFromFile_System_String_System_Boolean_
+  commentId: M:Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyThemeFromFile(System.String,System.Boolean)
+  name.vb: ApplyThemeFromFile(String, Boolean)
+  fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyThemeFromFile(string, bool)
+  fullName.vb: Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyThemeFromFile(String, Boolean)
+  nameWithType: ThemeTools.ApplyThemeFromFile(string, bool)
+  nameWithType.vb: ThemeTools.ApplyThemeFromFile(String, Boolean)
 - uid: Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyThemeFromFile*
   name: ApplyThemeFromFile
   href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_ApplyThemeFromFile_
@@ -3613,15 +3629,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyThemeFromFile
   nameWithType: ThemeTools.ApplyThemeFromFile
-- uid: Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyThemeFromResources(System.String)
-  name: ApplyThemeFromResources(string)
-  href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_ApplyThemeFromResources_System_String_
-  commentId: M:Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyThemeFromResources(System.String)
-  name.vb: ApplyThemeFromResources(String)
-  fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyThemeFromResources(string)
-  fullName.vb: Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyThemeFromResources(String)
-  nameWithType: ThemeTools.ApplyThemeFromResources(string)
-  nameWithType.vb: ThemeTools.ApplyThemeFromResources(String)
+- uid: Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyThemeFromResources(System.String,System.Boolean)
+  name: ApplyThemeFromResources(string, bool)
+  href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_ApplyThemeFromResources_System_String_System_Boolean_
+  commentId: M:Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyThemeFromResources(System.String,System.Boolean)
+  name.vb: ApplyThemeFromResources(String, Boolean)
+  fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyThemeFromResources(string, bool)
+  fullName.vb: Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyThemeFromResources(String, Boolean)
+  nameWithType: ThemeTools.ApplyThemeFromResources(string, bool)
+  nameWithType.vb: ThemeTools.ApplyThemeFromResources(String, Boolean)
 - uid: Nitrocid.ConsoleBase.Themes.ThemeTools.ApplyThemeFromResources*
   name: ApplyThemeFromResources
   href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_ApplyThemeFromResources_
@@ -3771,12 +3787,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.IsTrueColorRequired
   nameWithType: ThemeTools.IsTrueColorRequired
-- uid: Nitrocid.ConsoleBase.Themes.ThemeTools.SetColorsTheme(Nitrocid.ConsoleBase.Themes.ThemeInfo)
-  name: SetColorsTheme(ThemeInfo)
-  href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_SetColorsTheme_Nitrocid_ConsoleBase_Themes_ThemeInfo_
-  commentId: M:Nitrocid.ConsoleBase.Themes.ThemeTools.SetColorsTheme(Nitrocid.ConsoleBase.Themes.ThemeInfo)
-  fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.SetColorsTheme(Nitrocid.ConsoleBase.Themes.ThemeInfo)
-  nameWithType: ThemeTools.SetColorsTheme(ThemeInfo)
+- uid: Nitrocid.ConsoleBase.Themes.ThemeTools.SetColorsTheme(Nitrocid.ConsoleBase.Themes.ThemeInfo,System.Boolean)
+  name: SetColorsTheme(ThemeInfo, bool)
+  href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_SetColorsTheme_Nitrocid_ConsoleBase_Themes_ThemeInfo_System_Boolean_
+  commentId: M:Nitrocid.ConsoleBase.Themes.ThemeTools.SetColorsTheme(Nitrocid.ConsoleBase.Themes.ThemeInfo,System.Boolean)
+  name.vb: SetColorsTheme(ThemeInfo, Boolean)
+  fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.SetColorsTheme(Nitrocid.ConsoleBase.Themes.ThemeInfo, bool)
+  fullName.vb: Nitrocid.ConsoleBase.Themes.ThemeTools.SetColorsTheme(Nitrocid.ConsoleBase.Themes.ThemeInfo, Boolean)
+  nameWithType: ThemeTools.SetColorsTheme(ThemeInfo, bool)
+  nameWithType.vb: ThemeTools.SetColorsTheme(ThemeInfo, Boolean)
 - uid: Nitrocid.ConsoleBase.Themes.ThemeTools.SetColorsTheme*
   name: SetColorsTheme
   href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_SetColorsTheme_
