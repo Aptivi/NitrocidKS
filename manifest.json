@@ -3035,36 +3035,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Misc.Text.Probers.Motd.MalParse.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Misc.Text.Probers.Motd.MalParse.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Misc.Text.Probers.Motd.MotdParse.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Misc.Text.Probers.Motd.MotdParse.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Misc.Text.Probers.Motd.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Misc.Text.Probers.Motd.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.Misc.Text.Probers.Placeholder.PlaceInfo.yml",
       "output": {
         ".html": {
@@ -4949,6 +4919,36 @@
       "output": {
         ".html": {
           "relative_path": "api/Nitrocid.Users.Login.LoginErrorReasons.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Users.Login.Motd.MalParse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Users.Login.Motd.MalParse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Users.Login.Motd.MotdParse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Users.Login.Motd.MotdParse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Users.Login.Motd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Users.Login.Motd.html"
         }
       },
       "version": ""
