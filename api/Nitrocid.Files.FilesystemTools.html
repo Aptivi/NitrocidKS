@@ -590,8 +590,8 @@
   </table>
   <h5 id="Nitrocid_Files_FilesystemTools_ThrowOnInvalidPath_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><ul>
-<li>When we try to access the secret NTFS bitmap path, which contains <b>$i30</b>, from the partition root path, we'll trigger the &quot;Your disk is corrupt.&quot; <br></li>
-<li>When we try to access the <b>kernelconnect</b> secret device from the system partition root path, we'll trigger the BSOD. <br><br>
+<li>When we try to access the secret NTFS bitmap path, which contains <b>$i30</b>, from the partition root path, we'll trigger the &quot;Your disk is corrupt&quot; message.<br></li>
+<li>When we try to access the <b>kernelconnect</b> secret device from the system partition root path, we'll trigger the BSOD.<br><br>
 This sub will try to prevent access to these paths on unpatched systems and patched systems by throwing <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></li>
 </ul>
 </div>
