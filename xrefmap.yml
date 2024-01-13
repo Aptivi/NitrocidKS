@@ -1682,15 +1682,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromRybToYuv
   nameWithType: KernelColorConversionTools.ConvertFromRybToYuv
-- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToCmy(System.Int32,System.Int32,System.Int32)
-  name: ConvertFromYiqToCmy(int, int, int)
-  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToCmy_System_Int32_System_Int32_System_Int32_
-  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToCmy(System.Int32,System.Int32,System.Int32)
-  name.vb: ConvertFromYiqToCmy(Integer, Integer, Integer)
-  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToCmy(int, int, int)
-  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToCmy(Integer, Integer, Integer)
-  nameWithType: KernelColorConversionTools.ConvertFromYiqToCmy(int, int, int)
-  nameWithType.vb: KernelColorConversionTools.ConvertFromYiqToCmy(Integer, Integer, Integer)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToCmy(System.Double,System.Double,System.Double)
+  name: ConvertFromYiqToCmy(double, double, double)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToCmy_System_Double_System_Double_System_Double_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToCmy(System.Double,System.Double,System.Double)
+  name.vb: ConvertFromYiqToCmy(Double, Double, Double)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToCmy(double, double, double)
+  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToCmy(Double, Double, Double)
+  nameWithType: KernelColorConversionTools.ConvertFromYiqToCmy(double, double, double)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromYiqToCmy(Double, Double, Double)
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToCmy(System.String)
   name: ConvertFromYiqToCmy(string)
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToCmy_System_String_
@@ -1707,15 +1707,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToCmy
   nameWithType: KernelColorConversionTools.ConvertFromYiqToCmy
-- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToCmyk(System.Int32,System.Int32,System.Int32)
-  name: ConvertFromYiqToCmyk(int, int, int)
-  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToCmyk_System_Int32_System_Int32_System_Int32_
-  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToCmyk(System.Int32,System.Int32,System.Int32)
-  name.vb: ConvertFromYiqToCmyk(Integer, Integer, Integer)
-  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToCmyk(int, int, int)
-  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToCmyk(Integer, Integer, Integer)
-  nameWithType: KernelColorConversionTools.ConvertFromYiqToCmyk(int, int, int)
-  nameWithType.vb: KernelColorConversionTools.ConvertFromYiqToCmyk(Integer, Integer, Integer)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToCmyk(System.Double,System.Double,System.Double)
+  name: ConvertFromYiqToCmyk(double, double, double)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToCmyk_System_Double_System_Double_System_Double_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToCmyk(System.Double,System.Double,System.Double)
+  name.vb: ConvertFromYiqToCmyk(Double, Double, Double)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToCmyk(double, double, double)
+  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToCmyk(Double, Double, Double)
+  nameWithType: KernelColorConversionTools.ConvertFromYiqToCmyk(double, double, double)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromYiqToCmyk(Double, Double, Double)
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToCmyk(System.String)
   name: ConvertFromYiqToCmyk(string)
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToCmyk_System_String_
@@ -1732,15 +1732,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToCmyk
   nameWithType: KernelColorConversionTools.ConvertFromYiqToCmyk
-- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHex(System.Int32,System.Int32,System.Int32)
-  name: ConvertFromYiqToHex(int, int, int)
-  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToHex_System_Int32_System_Int32_System_Int32_
-  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHex(System.Int32,System.Int32,System.Int32)
-  name.vb: ConvertFromYiqToHex(Integer, Integer, Integer)
-  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHex(int, int, int)
-  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHex(Integer, Integer, Integer)
-  nameWithType: KernelColorConversionTools.ConvertFromYiqToHex(int, int, int)
-  nameWithType.vb: KernelColorConversionTools.ConvertFromYiqToHex(Integer, Integer, Integer)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHex(System.Double,System.Double,System.Double)
+  name: ConvertFromYiqToHex(double, double, double)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToHex_System_Double_System_Double_System_Double_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHex(System.Double,System.Double,System.Double)
+  name.vb: ConvertFromYiqToHex(Double, Double, Double)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHex(double, double, double)
+  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHex(Double, Double, Double)
+  nameWithType: KernelColorConversionTools.ConvertFromYiqToHex(double, double, double)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromYiqToHex(Double, Double, Double)
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHex(System.String)
   name: ConvertFromYiqToHex(string)
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToHex_System_String_
@@ -1757,15 +1757,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHex
   nameWithType: KernelColorConversionTools.ConvertFromYiqToHex
-- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHsl(System.Int32,System.Int32,System.Int32)
-  name: ConvertFromYiqToHsl(int, int, int)
-  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToHsl_System_Int32_System_Int32_System_Int32_
-  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHsl(System.Int32,System.Int32,System.Int32)
-  name.vb: ConvertFromYiqToHsl(Integer, Integer, Integer)
-  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHsl(int, int, int)
-  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHsl(Integer, Integer, Integer)
-  nameWithType: KernelColorConversionTools.ConvertFromYiqToHsl(int, int, int)
-  nameWithType.vb: KernelColorConversionTools.ConvertFromYiqToHsl(Integer, Integer, Integer)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHsl(System.Double,System.Double,System.Double)
+  name: ConvertFromYiqToHsl(double, double, double)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToHsl_System_Double_System_Double_System_Double_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHsl(System.Double,System.Double,System.Double)
+  name.vb: ConvertFromYiqToHsl(Double, Double, Double)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHsl(double, double, double)
+  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHsl(Double, Double, Double)
+  nameWithType: KernelColorConversionTools.ConvertFromYiqToHsl(double, double, double)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromYiqToHsl(Double, Double, Double)
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHsl(System.String)
   name: ConvertFromYiqToHsl(string)
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToHsl_System_String_
@@ -1782,15 +1782,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHsl
   nameWithType: KernelColorConversionTools.ConvertFromYiqToHsl
-- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHsv(System.Int32,System.Int32,System.Int32)
-  name: ConvertFromYiqToHsv(int, int, int)
-  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToHsv_System_Int32_System_Int32_System_Int32_
-  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHsv(System.Int32,System.Int32,System.Int32)
-  name.vb: ConvertFromYiqToHsv(Integer, Integer, Integer)
-  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHsv(int, int, int)
-  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHsv(Integer, Integer, Integer)
-  nameWithType: KernelColorConversionTools.ConvertFromYiqToHsv(int, int, int)
-  nameWithType.vb: KernelColorConversionTools.ConvertFromYiqToHsv(Integer, Integer, Integer)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHsv(System.Double,System.Double,System.Double)
+  name: ConvertFromYiqToHsv(double, double, double)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToHsv_System_Double_System_Double_System_Double_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHsv(System.Double,System.Double,System.Double)
+  name.vb: ConvertFromYiqToHsv(Double, Double, Double)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHsv(double, double, double)
+  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHsv(Double, Double, Double)
+  nameWithType: KernelColorConversionTools.ConvertFromYiqToHsv(double, double, double)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromYiqToHsv(Double, Double, Double)
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHsv(System.String)
   name: ConvertFromYiqToHsv(string)
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToHsv_System_String_
@@ -1807,15 +1807,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToHsv
   nameWithType: KernelColorConversionTools.ConvertFromYiqToHsv
-- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToRgb(System.Int32,System.Int32,System.Int32)
-  name: ConvertFromYiqToRgb(int, int, int)
-  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToRgb_System_Int32_System_Int32_System_Int32_
-  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToRgb(System.Int32,System.Int32,System.Int32)
-  name.vb: ConvertFromYiqToRgb(Integer, Integer, Integer)
-  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToRgb(int, int, int)
-  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToRgb(Integer, Integer, Integer)
-  nameWithType: KernelColorConversionTools.ConvertFromYiqToRgb(int, int, int)
-  nameWithType.vb: KernelColorConversionTools.ConvertFromYiqToRgb(Integer, Integer, Integer)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToRgb(System.Double,System.Double,System.Double)
+  name: ConvertFromYiqToRgb(double, double, double)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToRgb_System_Double_System_Double_System_Double_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToRgb(System.Double,System.Double,System.Double)
+  name.vb: ConvertFromYiqToRgb(Double, Double, Double)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToRgb(double, double, double)
+  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToRgb(Double, Double, Double)
+  nameWithType: KernelColorConversionTools.ConvertFromYiqToRgb(double, double, double)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromYiqToRgb(Double, Double, Double)
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToRgb(System.String)
   name: ConvertFromYiqToRgb(string)
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToRgb_System_String_
@@ -1832,15 +1832,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToRgb
   nameWithType: KernelColorConversionTools.ConvertFromYiqToRgb
-- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToRyb(System.Int32,System.Int32,System.Int32)
-  name: ConvertFromYiqToRyb(int, int, int)
-  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToRyb_System_Int32_System_Int32_System_Int32_
-  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToRyb(System.Int32,System.Int32,System.Int32)
-  name.vb: ConvertFromYiqToRyb(Integer, Integer, Integer)
-  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToRyb(int, int, int)
-  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToRyb(Integer, Integer, Integer)
-  nameWithType: KernelColorConversionTools.ConvertFromYiqToRyb(int, int, int)
-  nameWithType.vb: KernelColorConversionTools.ConvertFromYiqToRyb(Integer, Integer, Integer)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToRyb(System.Double,System.Double,System.Double)
+  name: ConvertFromYiqToRyb(double, double, double)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToRyb_System_Double_System_Double_System_Double_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToRyb(System.Double,System.Double,System.Double)
+  name.vb: ConvertFromYiqToRyb(Double, Double, Double)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToRyb(double, double, double)
+  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToRyb(Double, Double, Double)
+  nameWithType: KernelColorConversionTools.ConvertFromYiqToRyb(double, double, double)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromYiqToRyb(Double, Double, Double)
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToRyb(System.String)
   name: ConvertFromYiqToRyb(string)
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToRyb_System_String_
@@ -1857,15 +1857,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToRyb
   nameWithType: KernelColorConversionTools.ConvertFromYiqToRyb
-- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToYuv(System.Int32,System.Int32,System.Int32)
-  name: ConvertFromYiqToYuv(int, int, int)
-  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToYuv_System_Int32_System_Int32_System_Int32_
-  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToYuv(System.Int32,System.Int32,System.Int32)
-  name.vb: ConvertFromYiqToYuv(Integer, Integer, Integer)
-  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToYuv(int, int, int)
-  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToYuv(Integer, Integer, Integer)
-  nameWithType: KernelColorConversionTools.ConvertFromYiqToYuv(int, int, int)
-  nameWithType.vb: KernelColorConversionTools.ConvertFromYiqToYuv(Integer, Integer, Integer)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToYuv(System.Double,System.Double,System.Double)
+  name: ConvertFromYiqToYuv(double, double, double)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToYuv_System_Double_System_Double_System_Double_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToYuv(System.Double,System.Double,System.Double)
+  name.vb: ConvertFromYiqToYuv(Double, Double, Double)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToYuv(double, double, double)
+  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToYuv(Double, Double, Double)
+  nameWithType: KernelColorConversionTools.ConvertFromYiqToYuv(double, double, double)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromYiqToYuv(Double, Double, Double)
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToYuv(System.String)
   name: ConvertFromYiqToYuv(string)
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYiqToYuv_System_String_
@@ -1882,15 +1882,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYiqToYuv
   nameWithType: KernelColorConversionTools.ConvertFromYiqToYuv
-- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToCmy(System.Int32,System.Int32,System.Int32)
-  name: ConvertFromYuvToCmy(int, int, int)
-  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToCmy_System_Int32_System_Int32_System_Int32_
-  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToCmy(System.Int32,System.Int32,System.Int32)
-  name.vb: ConvertFromYuvToCmy(Integer, Integer, Integer)
-  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToCmy(int, int, int)
-  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToCmy(Integer, Integer, Integer)
-  nameWithType: KernelColorConversionTools.ConvertFromYuvToCmy(int, int, int)
-  nameWithType.vb: KernelColorConversionTools.ConvertFromYuvToCmy(Integer, Integer, Integer)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToCmy(System.Double,System.Double,System.Double)
+  name: ConvertFromYuvToCmy(double, double, double)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToCmy_System_Double_System_Double_System_Double_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToCmy(System.Double,System.Double,System.Double)
+  name.vb: ConvertFromYuvToCmy(Double, Double, Double)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToCmy(double, double, double)
+  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToCmy(Double, Double, Double)
+  nameWithType: KernelColorConversionTools.ConvertFromYuvToCmy(double, double, double)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromYuvToCmy(Double, Double, Double)
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToCmy(System.String)
   name: ConvertFromYuvToCmy(string)
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToCmy_System_String_
@@ -1907,15 +1907,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToCmy
   nameWithType: KernelColorConversionTools.ConvertFromYuvToCmy
-- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToCmyk(System.Int32,System.Int32,System.Int32)
-  name: ConvertFromYuvToCmyk(int, int, int)
-  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToCmyk_System_Int32_System_Int32_System_Int32_
-  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToCmyk(System.Int32,System.Int32,System.Int32)
-  name.vb: ConvertFromYuvToCmyk(Integer, Integer, Integer)
-  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToCmyk(int, int, int)
-  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToCmyk(Integer, Integer, Integer)
-  nameWithType: KernelColorConversionTools.ConvertFromYuvToCmyk(int, int, int)
-  nameWithType.vb: KernelColorConversionTools.ConvertFromYuvToCmyk(Integer, Integer, Integer)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToCmyk(System.Double,System.Double,System.Double)
+  name: ConvertFromYuvToCmyk(double, double, double)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToCmyk_System_Double_System_Double_System_Double_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToCmyk(System.Double,System.Double,System.Double)
+  name.vb: ConvertFromYuvToCmyk(Double, Double, Double)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToCmyk(double, double, double)
+  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToCmyk(Double, Double, Double)
+  nameWithType: KernelColorConversionTools.ConvertFromYuvToCmyk(double, double, double)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromYuvToCmyk(Double, Double, Double)
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToCmyk(System.String)
   name: ConvertFromYuvToCmyk(string)
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToCmyk_System_String_
@@ -1932,15 +1932,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToCmyk
   nameWithType: KernelColorConversionTools.ConvertFromYuvToCmyk
-- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHex(System.Int32,System.Int32,System.Int32)
-  name: ConvertFromYuvToHex(int, int, int)
-  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToHex_System_Int32_System_Int32_System_Int32_
-  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHex(System.Int32,System.Int32,System.Int32)
-  name.vb: ConvertFromYuvToHex(Integer, Integer, Integer)
-  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHex(int, int, int)
-  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHex(Integer, Integer, Integer)
-  nameWithType: KernelColorConversionTools.ConvertFromYuvToHex(int, int, int)
-  nameWithType.vb: KernelColorConversionTools.ConvertFromYuvToHex(Integer, Integer, Integer)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHex(System.Double,System.Double,System.Double)
+  name: ConvertFromYuvToHex(double, double, double)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToHex_System_Double_System_Double_System_Double_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHex(System.Double,System.Double,System.Double)
+  name.vb: ConvertFromYuvToHex(Double, Double, Double)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHex(double, double, double)
+  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHex(Double, Double, Double)
+  nameWithType: KernelColorConversionTools.ConvertFromYuvToHex(double, double, double)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromYuvToHex(Double, Double, Double)
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHex(System.String)
   name: ConvertFromYuvToHex(string)
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToHex_System_String_
@@ -1957,15 +1957,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHex
   nameWithType: KernelColorConversionTools.ConvertFromYuvToHex
-- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHsl(System.Int32,System.Int32,System.Int32)
-  name: ConvertFromYuvToHsl(int, int, int)
-  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToHsl_System_Int32_System_Int32_System_Int32_
-  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHsl(System.Int32,System.Int32,System.Int32)
-  name.vb: ConvertFromYuvToHsl(Integer, Integer, Integer)
-  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHsl(int, int, int)
-  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHsl(Integer, Integer, Integer)
-  nameWithType: KernelColorConversionTools.ConvertFromYuvToHsl(int, int, int)
-  nameWithType.vb: KernelColorConversionTools.ConvertFromYuvToHsl(Integer, Integer, Integer)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHsl(System.Double,System.Double,System.Double)
+  name: ConvertFromYuvToHsl(double, double, double)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToHsl_System_Double_System_Double_System_Double_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHsl(System.Double,System.Double,System.Double)
+  name.vb: ConvertFromYuvToHsl(Double, Double, Double)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHsl(double, double, double)
+  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHsl(Double, Double, Double)
+  nameWithType: KernelColorConversionTools.ConvertFromYuvToHsl(double, double, double)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromYuvToHsl(Double, Double, Double)
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHsl(System.String)
   name: ConvertFromYuvToHsl(string)
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToHsl_System_String_
@@ -1982,15 +1982,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHsl
   nameWithType: KernelColorConversionTools.ConvertFromYuvToHsl
-- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHsv(System.Int32,System.Int32,System.Int32)
-  name: ConvertFromYuvToHsv(int, int, int)
-  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToHsv_System_Int32_System_Int32_System_Int32_
-  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHsv(System.Int32,System.Int32,System.Int32)
-  name.vb: ConvertFromYuvToHsv(Integer, Integer, Integer)
-  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHsv(int, int, int)
-  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHsv(Integer, Integer, Integer)
-  nameWithType: KernelColorConversionTools.ConvertFromYuvToHsv(int, int, int)
-  nameWithType.vb: KernelColorConversionTools.ConvertFromYuvToHsv(Integer, Integer, Integer)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHsv(System.Double,System.Double,System.Double)
+  name: ConvertFromYuvToHsv(double, double, double)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToHsv_System_Double_System_Double_System_Double_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHsv(System.Double,System.Double,System.Double)
+  name.vb: ConvertFromYuvToHsv(Double, Double, Double)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHsv(double, double, double)
+  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHsv(Double, Double, Double)
+  nameWithType: KernelColorConversionTools.ConvertFromYuvToHsv(double, double, double)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromYuvToHsv(Double, Double, Double)
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHsv(System.String)
   name: ConvertFromYuvToHsv(string)
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToHsv_System_String_
@@ -2007,15 +2007,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToHsv
   nameWithType: KernelColorConversionTools.ConvertFromYuvToHsv
-- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToRgb(System.Int32,System.Int32,System.Int32)
-  name: ConvertFromYuvToRgb(int, int, int)
-  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToRgb_System_Int32_System_Int32_System_Int32_
-  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToRgb(System.Int32,System.Int32,System.Int32)
-  name.vb: ConvertFromYuvToRgb(Integer, Integer, Integer)
-  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToRgb(int, int, int)
-  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToRgb(Integer, Integer, Integer)
-  nameWithType: KernelColorConversionTools.ConvertFromYuvToRgb(int, int, int)
-  nameWithType.vb: KernelColorConversionTools.ConvertFromYuvToRgb(Integer, Integer, Integer)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToRgb(System.Double,System.Double,System.Double)
+  name: ConvertFromYuvToRgb(double, double, double)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToRgb_System_Double_System_Double_System_Double_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToRgb(System.Double,System.Double,System.Double)
+  name.vb: ConvertFromYuvToRgb(Double, Double, Double)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToRgb(double, double, double)
+  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToRgb(Double, Double, Double)
+  nameWithType: KernelColorConversionTools.ConvertFromYuvToRgb(double, double, double)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromYuvToRgb(Double, Double, Double)
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToRgb(System.String)
   name: ConvertFromYuvToRgb(string)
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToRgb_System_String_
@@ -2032,15 +2032,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToRgb
   nameWithType: KernelColorConversionTools.ConvertFromYuvToRgb
-- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToRyb(System.Int32,System.Int32,System.Int32)
-  name: ConvertFromYuvToRyb(int, int, int)
-  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToRyb_System_Int32_System_Int32_System_Int32_
-  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToRyb(System.Int32,System.Int32,System.Int32)
-  name.vb: ConvertFromYuvToRyb(Integer, Integer, Integer)
-  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToRyb(int, int, int)
-  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToRyb(Integer, Integer, Integer)
-  nameWithType: KernelColorConversionTools.ConvertFromYuvToRyb(int, int, int)
-  nameWithType.vb: KernelColorConversionTools.ConvertFromYuvToRyb(Integer, Integer, Integer)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToRyb(System.Double,System.Double,System.Double)
+  name: ConvertFromYuvToRyb(double, double, double)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToRyb_System_Double_System_Double_System_Double_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToRyb(System.Double,System.Double,System.Double)
+  name.vb: ConvertFromYuvToRyb(Double, Double, Double)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToRyb(double, double, double)
+  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToRyb(Double, Double, Double)
+  nameWithType: KernelColorConversionTools.ConvertFromYuvToRyb(double, double, double)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromYuvToRyb(Double, Double, Double)
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToRyb(System.String)
   name: ConvertFromYuvToRyb(string)
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToRyb_System_String_
@@ -2057,15 +2057,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToRyb
   nameWithType: KernelColorConversionTools.ConvertFromYuvToRyb
-- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToYiq(System.Int32,System.Int32,System.Int32)
-  name: ConvertFromYuvToYiq(int, int, int)
-  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToYiq_System_Int32_System_Int32_System_Int32_
-  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToYiq(System.Int32,System.Int32,System.Int32)
-  name.vb: ConvertFromYuvToYiq(Integer, Integer, Integer)
-  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToYiq(int, int, int)
-  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToYiq(Integer, Integer, Integer)
-  nameWithType: KernelColorConversionTools.ConvertFromYuvToYiq(int, int, int)
-  nameWithType.vb: KernelColorConversionTools.ConvertFromYuvToYiq(Integer, Integer, Integer)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToYiq(System.Double,System.Double,System.Double)
+  name: ConvertFromYuvToYiq(double, double, double)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToYiq_System_Double_System_Double_System_Double_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToYiq(System.Double,System.Double,System.Double)
+  name.vb: ConvertFromYuvToYiq(Double, Double, Double)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToYiq(double, double, double)
+  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToYiq(Double, Double, Double)
+  nameWithType: KernelColorConversionTools.ConvertFromYuvToYiq(double, double, double)
+  nameWithType.vb: KernelColorConversionTools.ConvertFromYuvToYiq(Double, Double, Double)
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.ConvertFromYuvToYiq(System.String)
   name: ConvertFromYuvToYiq(string)
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorConversionTools.html#Nitrocid_ConsoleBase_Colors_KernelColorConversionTools_ConvertFromYuvToYiq_System_String_
