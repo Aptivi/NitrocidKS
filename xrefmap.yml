@@ -9936,6 +9936,22 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Drivers.Filesystem.BaseFilesystemDriver.CombineTextFiles
   nameWithType: BaseFilesystemDriver.CombineTextFiles
+- uid: Nitrocid.Drivers.Filesystem.BaseFilesystemDriver.Compare(System.String,System.String)
+  name: Compare(string, string)
+  href: api/Nitrocid.Drivers.Filesystem.BaseFilesystemDriver.html#Nitrocid_Drivers_Filesystem_BaseFilesystemDriver_Compare_System_String_System_String_
+  commentId: M:Nitrocid.Drivers.Filesystem.BaseFilesystemDriver.Compare(System.String,System.String)
+  name.vb: Compare(String, String)
+  fullName: Nitrocid.Drivers.Filesystem.BaseFilesystemDriver.Compare(string, string)
+  fullName.vb: Nitrocid.Drivers.Filesystem.BaseFilesystemDriver.Compare(String, String)
+  nameWithType: BaseFilesystemDriver.Compare(string, string)
+  nameWithType.vb: BaseFilesystemDriver.Compare(String, String)
+- uid: Nitrocid.Drivers.Filesystem.BaseFilesystemDriver.Compare*
+  name: Compare
+  href: api/Nitrocid.Drivers.Filesystem.BaseFilesystemDriver.html#Nitrocid_Drivers_Filesystem_BaseFilesystemDriver_Compare_
+  commentId: Overload:Nitrocid.Drivers.Filesystem.BaseFilesystemDriver.Compare
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Filesystem.BaseFilesystemDriver.Compare
+  nameWithType: BaseFilesystemDriver.Compare
 - uid: Nitrocid.Drivers.Filesystem.BaseFilesystemDriver.ConvertLineEndings(System.String)
   name: ConvertLineEndings(string)
   href: api/Nitrocid.Drivers.Filesystem.BaseFilesystemDriver.html#Nitrocid_Drivers_Filesystem_BaseFilesystemDriver_ConvertLineEndings_System_String_
@@ -11230,6 +11246,22 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Drivers.Filesystem.IFilesystemDriver.CombineTextFiles
   nameWithType: IFilesystemDriver.CombineTextFiles
+- uid: Nitrocid.Drivers.Filesystem.IFilesystemDriver.Compare(System.String,System.String)
+  name: Compare(string, string)
+  href: api/Nitrocid.Drivers.Filesystem.IFilesystemDriver.html#Nitrocid_Drivers_Filesystem_IFilesystemDriver_Compare_System_String_System_String_
+  commentId: M:Nitrocid.Drivers.Filesystem.IFilesystemDriver.Compare(System.String,System.String)
+  name.vb: Compare(String, String)
+  fullName: Nitrocid.Drivers.Filesystem.IFilesystemDriver.Compare(string, string)
+  fullName.vb: Nitrocid.Drivers.Filesystem.IFilesystemDriver.Compare(String, String)
+  nameWithType: IFilesystemDriver.Compare(string, string)
+  nameWithType.vb: IFilesystemDriver.Compare(String, String)
+- uid: Nitrocid.Drivers.Filesystem.IFilesystemDriver.Compare*
+  name: Compare
+  href: api/Nitrocid.Drivers.Filesystem.IFilesystemDriver.html#Nitrocid_Drivers_Filesystem_IFilesystemDriver_Compare_
+  commentId: Overload:Nitrocid.Drivers.Filesystem.IFilesystemDriver.Compare
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Filesystem.IFilesystemDriver.Compare
+  nameWithType: IFilesystemDriver.Compare
 - uid: Nitrocid.Drivers.Filesystem.IFilesystemDriver.ConvertLineEndings(System.String)
   name: ConvertLineEndings(string)
   href: api/Nitrocid.Drivers.Filesystem.IFilesystemDriver.html#Nitrocid_Drivers_Filesystem_IFilesystemDriver_ConvertLineEndings_System_String_
@@ -18010,6 +18042,22 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Files.Operations.Manipulation.ClearFile
   nameWithType: Manipulation.ClearFile
+- uid: Nitrocid.Files.Operations.Manipulation.Compare(System.String,System.String)
+  name: Compare(string, string)
+  href: api/Nitrocid.Files.Operations.Manipulation.html#Nitrocid_Files_Operations_Manipulation_Compare_System_String_System_String_
+  commentId: M:Nitrocid.Files.Operations.Manipulation.Compare(System.String,System.String)
+  name.vb: Compare(String, String)
+  fullName: Nitrocid.Files.Operations.Manipulation.Compare(string, string)
+  fullName.vb: Nitrocid.Files.Operations.Manipulation.Compare(String, String)
+  nameWithType: Manipulation.Compare(string, string)
+  nameWithType.vb: Manipulation.Compare(String, String)
+- uid: Nitrocid.Files.Operations.Manipulation.Compare*
+  name: Compare
+  href: api/Nitrocid.Files.Operations.Manipulation.html#Nitrocid_Files_Operations_Manipulation_Compare_
+  commentId: Overload:Nitrocid.Files.Operations.Manipulation.Compare
+  isSpec: "True"
+  fullName: Nitrocid.Files.Operations.Manipulation.Compare
+  nameWithType: Manipulation.Compare
 - uid: Nitrocid.Files.Operations.Manipulation.WrapTextFile(System.String)
   name: WrapTextFile(string)
   href: api/Nitrocid.Files.Operations.Manipulation.html#Nitrocid_Files_Operations_Manipulation_WrapTextFile_System_String_
