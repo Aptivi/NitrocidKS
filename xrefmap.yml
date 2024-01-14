@@ -40349,6 +40349,19 @@ references:
   fullName.vb: Nitrocid.Shell.ShellBase.Commands.CommandInfo.New
   nameWithType: CommandInfo.CommandInfo
   nameWithType.vb: CommandInfo.New
+- uid: Nitrocid.Shell.ShellBase.Commands.CommandInfo.Aliases
+  name: Aliases
+  href: api/Nitrocid.Shell.ShellBase.Commands.CommandInfo.html#Nitrocid_Shell_ShellBase_Commands_CommandInfo_Aliases
+  commentId: P:Nitrocid.Shell.ShellBase.Commands.CommandInfo.Aliases
+  fullName: Nitrocid.Shell.ShellBase.Commands.CommandInfo.Aliases
+  nameWithType: CommandInfo.Aliases
+- uid: Nitrocid.Shell.ShellBase.Commands.CommandInfo.Aliases*
+  name: Aliases
+  href: api/Nitrocid.Shell.ShellBase.Commands.CommandInfo.html#Nitrocid_Shell_ShellBase_Commands_CommandInfo_Aliases_
+  commentId: Overload:Nitrocid.Shell.ShellBase.Commands.CommandInfo.Aliases
+  isSpec: "True"
+  fullName: Nitrocid.Shell.ShellBase.Commands.CommandInfo.Aliases
+  nameWithType: CommandInfo.Aliases
 - uid: Nitrocid.Shell.ShellBase.Commands.CommandInfo.Command
   name: Command
   href: api/Nitrocid.Shell.ShellBase.Commands.CommandInfo.html#Nitrocid_Shell_ShellBase_Commands_CommandInfo_Command
@@ -40433,24 +40446,24 @@ references:
   commentId: T:Nitrocid.Shell.ShellBase.Commands.CommandManager
   fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager
   nameWithType: CommandManager
-- uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.FindCommands(System.String,Nitrocid.Shell.ShellBase.Shells.ShellType,System.Boolean)
-  name: FindCommands(string, ShellType, bool)
-  href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_FindCommands_System_String_Nitrocid_Shell_ShellBase_Shells_ShellType_System_Boolean_
-  commentId: M:Nitrocid.Shell.ShellBase.Commands.CommandManager.FindCommands(System.String,Nitrocid.Shell.ShellBase.Shells.ShellType,System.Boolean)
-  name.vb: FindCommands(String, ShellType, Boolean)
-  fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.FindCommands(string, Nitrocid.Shell.ShellBase.Shells.ShellType, bool)
-  fullName.vb: Nitrocid.Shell.ShellBase.Commands.CommandManager.FindCommands(String, Nitrocid.Shell.ShellBase.Shells.ShellType, Boolean)
-  nameWithType: CommandManager.FindCommands(string, ShellType, bool)
-  nameWithType.vb: CommandManager.FindCommands(String, ShellType, Boolean)
-- uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.FindCommands(System.String,System.String,System.Boolean)
-  name: FindCommands(string, string, bool)
-  href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_FindCommands_System_String_System_String_System_Boolean_
-  commentId: M:Nitrocid.Shell.ShellBase.Commands.CommandManager.FindCommands(System.String,System.String,System.Boolean)
-  name.vb: FindCommands(String, String, Boolean)
-  fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.FindCommands(string, string, bool)
-  fullName.vb: Nitrocid.Shell.ShellBase.Commands.CommandManager.FindCommands(String, String, Boolean)
-  nameWithType: CommandManager.FindCommands(string, string, bool)
-  nameWithType.vb: CommandManager.FindCommands(String, String, Boolean)
+- uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.FindCommands(System.String,Nitrocid.Shell.ShellBase.Shells.ShellType)
+  name: FindCommands(string, ShellType)
+  href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_FindCommands_System_String_Nitrocid_Shell_ShellBase_Shells_ShellType_
+  commentId: M:Nitrocid.Shell.ShellBase.Commands.CommandManager.FindCommands(System.String,Nitrocid.Shell.ShellBase.Shells.ShellType)
+  name.vb: FindCommands(String, ShellType)
+  fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.FindCommands(string, Nitrocid.Shell.ShellBase.Shells.ShellType)
+  fullName.vb: Nitrocid.Shell.ShellBase.Commands.CommandManager.FindCommands(String, Nitrocid.Shell.ShellBase.Shells.ShellType)
+  nameWithType: CommandManager.FindCommands(string, ShellType)
+  nameWithType.vb: CommandManager.FindCommands(String, ShellType)
+- uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.FindCommands(System.String,System.String)
+  name: FindCommands(string, string)
+  href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_FindCommands_System_String_System_String_
+  commentId: M:Nitrocid.Shell.ShellBase.Commands.CommandManager.FindCommands(System.String,System.String)
+  name.vb: FindCommands(String, String)
+  fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.FindCommands(string, string)
+  fullName.vb: Nitrocid.Shell.ShellBase.Commands.CommandManager.FindCommands(String, String)
+  nameWithType: CommandManager.FindCommands(string, string)
+  nameWithType.vb: CommandManager.FindCommands(String, String)
 - uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.FindCommands*
   name: FindCommands
   href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_FindCommands_
@@ -40458,24 +40471,24 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.FindCommands
   nameWithType: CommandManager.FindCommands
-- uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommand(System.String,Nitrocid.Shell.ShellBase.Shells.ShellType,System.Boolean)
-  name: GetCommand(string, ShellType, bool)
-  href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_GetCommand_System_String_Nitrocid_Shell_ShellBase_Shells_ShellType_System_Boolean_
-  commentId: M:Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommand(System.String,Nitrocid.Shell.ShellBase.Shells.ShellType,System.Boolean)
-  name.vb: GetCommand(String, ShellType, Boolean)
-  fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommand(string, Nitrocid.Shell.ShellBase.Shells.ShellType, bool)
-  fullName.vb: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommand(String, Nitrocid.Shell.ShellBase.Shells.ShellType, Boolean)
-  nameWithType: CommandManager.GetCommand(string, ShellType, bool)
-  nameWithType.vb: CommandManager.GetCommand(String, ShellType, Boolean)
-- uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommand(System.String,System.String,System.Boolean)
-  name: GetCommand(string, string, bool)
-  href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_GetCommand_System_String_System_String_System_Boolean_
-  commentId: M:Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommand(System.String,System.String,System.Boolean)
-  name.vb: GetCommand(String, String, Boolean)
-  fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommand(string, string, bool)
-  fullName.vb: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommand(String, String, Boolean)
-  nameWithType: CommandManager.GetCommand(string, string, bool)
-  nameWithType.vb: CommandManager.GetCommand(String, String, Boolean)
+- uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommand(System.String,Nitrocid.Shell.ShellBase.Shells.ShellType)
+  name: GetCommand(string, ShellType)
+  href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_GetCommand_System_String_Nitrocid_Shell_ShellBase_Shells_ShellType_
+  commentId: M:Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommand(System.String,Nitrocid.Shell.ShellBase.Shells.ShellType)
+  name.vb: GetCommand(String, ShellType)
+  fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommand(string, Nitrocid.Shell.ShellBase.Shells.ShellType)
+  fullName.vb: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommand(String, Nitrocid.Shell.ShellBase.Shells.ShellType)
+  nameWithType: CommandManager.GetCommand(string, ShellType)
+  nameWithType.vb: CommandManager.GetCommand(String, ShellType)
+- uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommand(System.String,System.String)
+  name: GetCommand(string, string)
+  href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_GetCommand_System_String_System_String_
+  commentId: M:Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommand(System.String,System.String)
+  name.vb: GetCommand(String, String)
+  fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommand(string, string)
+  fullName.vb: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommand(String, String)
+  nameWithType: CommandManager.GetCommand(string, string)
+  nameWithType.vb: CommandManager.GetCommand(String, String)
 - uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommand*
   name: GetCommand
   href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_GetCommand_
@@ -40483,24 +40496,43 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommand
   nameWithType: CommandManager.GetCommand
-- uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommands(Nitrocid.Shell.ShellBase.Shells.ShellType,System.Boolean)
-  name: GetCommands(ShellType, bool)
-  href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_GetCommands_Nitrocid_Shell_ShellBase_Shells_ShellType_System_Boolean_
-  commentId: M:Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommands(Nitrocid.Shell.ShellBase.Shells.ShellType,System.Boolean)
-  name.vb: GetCommands(ShellType, Boolean)
-  fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommands(Nitrocid.Shell.ShellBase.Shells.ShellType, bool)
-  fullName.vb: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommands(Nitrocid.Shell.ShellBase.Shells.ShellType, Boolean)
-  nameWithType: CommandManager.GetCommands(ShellType, bool)
-  nameWithType.vb: CommandManager.GetCommands(ShellType, Boolean)
-- uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommands(System.String,System.Boolean)
-  name: GetCommands(string, bool)
-  href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_GetCommands_System_String_System_Boolean_
-  commentId: M:Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommands(System.String,System.Boolean)
-  name.vb: GetCommands(String, Boolean)
-  fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommands(string, bool)
-  fullName.vb: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommands(String, Boolean)
-  nameWithType: CommandManager.GetCommands(string, bool)
-  nameWithType.vb: CommandManager.GetCommands(String, Boolean)
+- uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommandNames(Nitrocid.Shell.ShellBase.Shells.ShellType)
+  name: GetCommandNames(ShellType)
+  href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_GetCommandNames_Nitrocid_Shell_ShellBase_Shells_ShellType_
+  commentId: M:Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommandNames(Nitrocid.Shell.ShellBase.Shells.ShellType)
+  fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommandNames(Nitrocid.Shell.ShellBase.Shells.ShellType)
+  nameWithType: CommandManager.GetCommandNames(ShellType)
+- uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommandNames(System.String)
+  name: GetCommandNames(string)
+  href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_GetCommandNames_System_String_
+  commentId: M:Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommandNames(System.String)
+  name.vb: GetCommandNames(String)
+  fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommandNames(string)
+  fullName.vb: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommandNames(String)
+  nameWithType: CommandManager.GetCommandNames(string)
+  nameWithType.vb: CommandManager.GetCommandNames(String)
+- uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommandNames*
+  name: GetCommandNames
+  href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_GetCommandNames_
+  commentId: Overload:Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommandNames
+  isSpec: "True"
+  fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommandNames
+  nameWithType: CommandManager.GetCommandNames
+- uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommands(Nitrocid.Shell.ShellBase.Shells.ShellType)
+  name: GetCommands(ShellType)
+  href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_GetCommands_Nitrocid_Shell_ShellBase_Shells_ShellType_
+  commentId: M:Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommands(Nitrocid.Shell.ShellBase.Shells.ShellType)
+  fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommands(Nitrocid.Shell.ShellBase.Shells.ShellType)
+  nameWithType: CommandManager.GetCommands(ShellType)
+- uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommands(System.String)
+  name: GetCommands(string)
+  href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_GetCommands_System_String_
+  commentId: M:Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommands(System.String)
+  name.vb: GetCommands(String)
+  fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommands(string)
+  fullName.vb: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommands(String)
+  nameWithType: CommandManager.GetCommands(string)
+  nameWithType.vb: CommandManager.GetCommands(String)
 - uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommands*
   name: GetCommands
   href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_GetCommands_
@@ -40508,33 +40540,33 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.GetCommands
   nameWithType: CommandManager.GetCommands
-- uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(System.String,Nitrocid.Shell.ShellBase.Shells.ShellType,System.Boolean)
-  name: IsCommandFound(string, ShellType, bool)
-  href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_IsCommandFound_System_String_Nitrocid_Shell_ShellBase_Shells_ShellType_System_Boolean_
-  commentId: M:Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(System.String,Nitrocid.Shell.ShellBase.Shells.ShellType,System.Boolean)
-  name.vb: IsCommandFound(String, ShellType, Boolean)
-  fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(string, Nitrocid.Shell.ShellBase.Shells.ShellType, bool)
-  fullName.vb: Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(String, Nitrocid.Shell.ShellBase.Shells.ShellType, Boolean)
-  nameWithType: CommandManager.IsCommandFound(string, ShellType, bool)
-  nameWithType.vb: CommandManager.IsCommandFound(String, ShellType, Boolean)
-- uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(System.String,System.Boolean)
-  name: IsCommandFound(string, bool)
-  href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_IsCommandFound_System_String_System_Boolean_
-  commentId: M:Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(System.String,System.Boolean)
-  name.vb: IsCommandFound(String, Boolean)
-  fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(string, bool)
-  fullName.vb: Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(String, Boolean)
-  nameWithType: CommandManager.IsCommandFound(string, bool)
-  nameWithType.vb: CommandManager.IsCommandFound(String, Boolean)
-- uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(System.String,System.String,System.Boolean)
-  name: IsCommandFound(string, string, bool)
-  href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_IsCommandFound_System_String_System_String_System_Boolean_
-  commentId: M:Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(System.String,System.String,System.Boolean)
-  name.vb: IsCommandFound(String, String, Boolean)
-  fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(string, string, bool)
-  fullName.vb: Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(String, String, Boolean)
-  nameWithType: CommandManager.IsCommandFound(string, string, bool)
-  nameWithType.vb: CommandManager.IsCommandFound(String, String, Boolean)
+- uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(System.String)
+  name: IsCommandFound(string)
+  href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_IsCommandFound_System_String_
+  commentId: M:Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(System.String)
+  name.vb: IsCommandFound(String)
+  fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(string)
+  fullName.vb: Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(String)
+  nameWithType: CommandManager.IsCommandFound(string)
+  nameWithType.vb: CommandManager.IsCommandFound(String)
+- uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(System.String,Nitrocid.Shell.ShellBase.Shells.ShellType)
+  name: IsCommandFound(string, ShellType)
+  href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_IsCommandFound_System_String_Nitrocid_Shell_ShellBase_Shells_ShellType_
+  commentId: M:Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(System.String,Nitrocid.Shell.ShellBase.Shells.ShellType)
+  name.vb: IsCommandFound(String, ShellType)
+  fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(string, Nitrocid.Shell.ShellBase.Shells.ShellType)
+  fullName.vb: Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(String, Nitrocid.Shell.ShellBase.Shells.ShellType)
+  nameWithType: CommandManager.IsCommandFound(string, ShellType)
+  nameWithType.vb: CommandManager.IsCommandFound(String, ShellType)
+- uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(System.String,System.String)
+  name: IsCommandFound(string, string)
+  href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_IsCommandFound_System_String_System_String_
+  commentId: M:Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(System.String,System.String)
+  name.vb: IsCommandFound(String, String)
+  fullName: Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(string, string)
+  fullName.vb: Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound(String, String)
+  nameWithType: CommandManager.IsCommandFound(string, string)
+  nameWithType.vb: CommandManager.IsCommandFound(String, String)
 - uid: Nitrocid.Shell.ShellBase.Commands.CommandManager.IsCommandFound*
   name: IsCommandFound
   href: api/Nitrocid.Shell.ShellBase.Commands.CommandManager.html#Nitrocid_Shell_ShellBase_Commands_CommandManager_IsCommandFound_
