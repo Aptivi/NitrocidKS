@@ -177,7 +177,7 @@ namespace KS.Login
             string UsersTokenContent = File.ReadAllText(Paths.GetKernelPath(KernelPathType.Users));
             var UninitUsersToken = JArray.Parse(!string.IsNullOrEmpty(UsersTokenContent) ? UsersTokenContent : "[]");
             foreach (JObject UserToken in UninitUsersToken.Cast<JObject>())
-                InitializeUser((string)UserToken["username"], (string)UserToken["password"], false);
+                InitializeUser((string)UserToken["username"], (string)UserToken["password"], false, true);
         }
 
         /// <summary>
@@ -453,29 +453,6 @@ namespace KS.Login
             catch (Exception)
             {
                 return false;
-            }
-        }
-
-        /// <summary>
-        /// Initializes root account
-        /// </summary>
-        public static void InitializeSystemAccount()
-        {
-            if (Checking.FileExists(Paths.GetKernelPath(KernelPathType.Users)))
-            {
-                if (GetUserProperty("root", UserProperty.Password) is not null)
-                {
-                    InitializeUser("root", (string)GetUserProperty("root", UserProperty.Password), false, true);
-                }
-                else
-                {
-                    InitializeUser("root", "", true, true);
-                }
-            }
-            else
-            {
-                InitializeUser("root", "", true, true);
-                PermissionManagement.AddPermission(PermissionManagement.PermissionType.Administrator, "root");
             }
         }
 

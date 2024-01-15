@@ -258,8 +258,6 @@ namespace KS.Kernel
 
                     // Phase 4: Log-in
                     KernelTools.ReportNewStage(4, Translate.DoTranslation("- Stage 4: Log in"));
-                    UserManagement.InitializeSystemAccount();
-                    SplashReport.ReportProgress(Translate.DoTranslation("System account initialized"), 5, KernelColorTools.ColTypes.Neutral);
                     UserManagement.InitializeUsers();
                     SplashReport.ReportProgress(Translate.DoTranslation("Users initialized"), 5, KernelColorTools.ColTypes.Neutral);
                     PermissionManagement.LoadPermissions();
@@ -310,7 +308,6 @@ namespace KS.Kernel
                         {
                             // Some malicious mod removed the root account, or rare situation happened and it was gone.
                             DebugWriter.Wdbg(DebugLevel.W, "Root account not found for maintenance. Initializing it...");
-                            UserManagement.InitializeSystemAccount();
                             Login.Login.ShowPasswordPrompt("root");
                         }
                     }
