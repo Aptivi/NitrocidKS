@@ -80,6 +80,7 @@ using Nettify.Weather;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Terminaux.Colors;
+using Terminaux.Colors.Data;
 using Terminaux.Inputs.Styles.Choice;
 
 namespace KS.Misc.Configuration

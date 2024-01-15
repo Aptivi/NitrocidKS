@@ -26,6 +26,7 @@ using KS.Kernel;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell;
 using Terminaux.Colors;
+using Terminaux.Colors.Data;
 
 namespace KSConverter.ConfigFormats
 {

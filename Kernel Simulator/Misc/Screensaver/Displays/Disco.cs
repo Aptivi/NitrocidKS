@@ -24,6 +24,7 @@ using KS.Misc.Threading;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 using Terminaux.Colors;
+using Terminaux.Colors.Data;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 

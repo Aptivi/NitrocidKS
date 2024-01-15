@@ -53,7 +53,7 @@ using MailKit;
 using MailKit.Net.Imap;
 using MailKit.Net.Smtp;
 using MimeKit.Cryptography;
-using Textify.Online.MailAddress;
+using Nettify.MailAddress;
 
 namespace KS.Network.Mail
 {
@@ -146,7 +146,6 @@ namespace KS.Network.Mail
         {
             string IMAP_Address;
             var IMAP_Port = default(int);
-            string SMTP_Address = "";
             int SMTP_Port;
             // IMAP server address and port
             if (!string.IsNullOrWhiteSpace(Mail_IMAPPromptStyle))
@@ -169,7 +168,7 @@ namespace KS.Network.Mail
             {
                 TextWriterColor.Write(Translate.DoTranslation("Enter SMTP server address and port (<address> or <address>:[port]): "), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
             }
-            SMTP_Address = Input.ReadLine(false);
+            string SMTP_Address = Input.ReadLine(false);
             SMTP_Port = 587;
             DebugWriter.Wdbg(DebugLevel.I, "SMTP Server: \"{0}\"", SMTP_Address);
 

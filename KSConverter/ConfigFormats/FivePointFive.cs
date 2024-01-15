@@ -38,6 +38,7 @@ using KS.Shell;
 using MadMilkman.Ini;
 using Nettify.Weather;
 using Terminaux.Colors;
+using Terminaux.Colors.Data;
 
 namespace KSConverter.ConfigFormats
 {

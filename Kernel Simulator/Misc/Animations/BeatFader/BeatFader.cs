@@ -42,6 +42,7 @@ using KS.Misc.Threading;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 using Terminaux.Colors;
+using Terminaux.Colors.Data;
 
 namespace KS.Misc.Animations.BeatFader
 {

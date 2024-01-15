@@ -72,6 +72,7 @@ using KS.Shell.ShellBase.Commands;
 using KS.TimeDate;
 using Newtonsoft.Json.Linq;
 using Terminaux.Base;
+using Terminaux.ResizeListener;
 using TermExts = Terminaux.Base.ConsoleExtensions;
 
 namespace KS.Kernel

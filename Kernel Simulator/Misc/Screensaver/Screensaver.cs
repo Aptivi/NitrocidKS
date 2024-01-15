@@ -49,7 +49,7 @@ using KS.Misc.Screensaver.Displays;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
-using Terminaux.Colors;
+using Terminaux.Colors.Data;
 
 namespace KS.Misc.Screensaver
 {

@@ -44,6 +44,7 @@ using KS.Misc.Configuration;
 using KS.Misc.Writers.DebugWriters;
 using Newtonsoft.Json;
 using Terminaux.Colors;
+using Terminaux.Colors.Data;
 using Terminaux.Colors.Models.Parsing;
 using TermColorTools = Terminaux.Colors.ColorTools;
 
