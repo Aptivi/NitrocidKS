@@ -47907,6 +47907,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Users.UserManagement.RemoveUser
   nameWithType: UserManagement.RemoveUser
+- uid: Nitrocid.Users.UserManagement.SaveUsers
+  name: SaveUsers()
+  href: api/Nitrocid.Users.UserManagement.html#Nitrocid_Users_UserManagement_SaveUsers
+  commentId: M:Nitrocid.Users.UserManagement.SaveUsers
+  fullName: Nitrocid.Users.UserManagement.SaveUsers()
+  nameWithType: UserManagement.SaveUsers()
+- uid: Nitrocid.Users.UserManagement.SaveUsers*
+  name: SaveUsers
+  href: api/Nitrocid.Users.UserManagement.html#Nitrocid_Users_UserManagement_SaveUsers_
+  commentId: Overload:Nitrocid.Users.UserManagement.SaveUsers
+  isSpec: "True"
+  fullName: Nitrocid.Users.UserManagement.SaveUsers
+  nameWithType: UserManagement.SaveUsers
 - uid: Nitrocid.Users.UserManagement.SelectUser(System.Int32)
   name: SelectUser(int)
   href: api/Nitrocid.Users.UserManagement.html#Nitrocid_Users_UserManagement_SelectUser_System_Int32_
