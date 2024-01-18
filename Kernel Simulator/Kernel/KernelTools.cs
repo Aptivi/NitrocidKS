@@ -40,6 +40,7 @@ using System.Diagnostics;
 
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading;
 using KS.Arguments;
 using KS.Arguments.ArgumentBase;
@@ -53,6 +54,7 @@ using KS.Login;
 using KS.Misc.Calendar.Events;
 using KS.Misc.Calendar.Reminders;
 using KS.Misc.Configuration;
+using KS.Misc.Execution;
 using KS.Misc.Notifiers;
 using KS.Misc.Reflection;
 using KS.Misc.Splash;
@@ -675,6 +677,24 @@ namespace KS.Kernel
                 }
                 DebugWriter.Wdbg(DebugLevel.I, $"- Kernel stage {StageNumber} | Text: {StageText}");
             }
+        }
+
+        internal static void ElevateSelf()
+        {
+            var selfProcess = new Process
+            {
+                StartInfo = new(Path.ChangeExtension(Assembly.GetExecutingAssembly().Location, ".exe"))
+                {
+                    UseShellExecute = true,
+                    Verb = "runas",
+                    Arguments = string.Join(" ", Kernel.arguments)
+                },
+            };
+            selfProcess.StartInfo = ProcessExecutor.StripEnvironmentVariables(selfProcess.StartInfo);
+
+            // Now, go ahead and start.
+            selfProcess.Start();
+            Flags.rebootingElevated = false;
         }
 
     }

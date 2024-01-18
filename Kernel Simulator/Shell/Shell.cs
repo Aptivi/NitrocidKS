@@ -187,6 +187,7 @@ namespace KS.Shell
             { "usermanual", new CommandInfo("usermanual", ShellType.Shell, "Takes you to our GitHub Wiki.", new CommandArgumentInfo(["[-modapi]"], false, 0), new Commands.UserManualCommand()) },
             { "verify", new CommandInfo("verify", ShellType.Shell, "Verifies sanity of the file", new CommandArgumentInfo(["<MD5/SHA1/SHA256/SHA384/SHA512> <calculatedhash> <hashfile/expectedhash> <file>"], true, 4), new Commands.VerifyCommand()) },
             { "weather", new CommandInfo("weather", ShellType.Shell, "Shows weather info for specified city. Uses OpenWeatherMap.", new CommandArgumentInfo(["[-list] <CityID/CityName> [apikey]"], true, 1), new Commands.WeatherCommand(), false, false, false, false, true) },
+            { "winelevate", new CommandInfo("winelevate", ShellType.Shell, "Restarts Nitrocid with the elevated permissions (Windows only)", new CommandArgumentInfo([], false, 0), new Commands.WinElevateCommand()) },
             { "wrap", new CommandInfo("wrap", ShellType.Shell, "Wraps the console output", new CommandArgumentInfo(["<command>"], true, 1), new Commands.WrapCommand(), false, false, false, false, true) },
             { "zip", new CommandInfo("zip", ShellType.Shell, "Creates a ZIP archive", new CommandArgumentInfo(["<zipfile> <path> [-fast|-nocomp|-nobasedir]"], true, 2), new Commands.ZipCommand()) },
             { "zipshell", new CommandInfo("zipshell", ShellType.Shell, "Opens a ZIP archive", new CommandArgumentInfo(["<zipfile>"], true, 1), new Commands.ZipShellCommand()) }

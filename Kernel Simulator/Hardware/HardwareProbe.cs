@@ -23,6 +23,7 @@ using System.Security.Principal;
 using KS.ConsoleBase.Colors;
 using KS.Kernel;
 using KS.Languages;
+using KS.Login;
 using KS.Misc.Splash;
 using KS.Misc.Writers.DebugWriters;
 using SpecProbe.Hardware;
@@ -62,7 +63,7 @@ namespace KS.Hardware
             Kernel.Kernel.KernelEventManager.RaiseHardwareProbing();
             try
             {
-                if (!PlatformHelper.IsOnWindows() || PlatformHelper.IsOnWindows() && IsAdministrator())
+                if (!PlatformHelper.IsOnWindows() || PlatformHelper.IsOnWindows() && WindowsUserTools.IsAdministrator())
                 {
                     processors = ProbeProcessor();
                     pcMemory = ProbePcMemory();
@@ -88,22 +89,6 @@ namespace KS.Hardware
 
             // Raise event
             Kernel.Kernel.KernelEventManager.RaiseHardwareProbed();
-        }
-
-        /// <summary>
-        /// Checks to see if the current user is an administrator
-        /// </summary>
-        private static bool IsAdministrator()
-        {
-            if (PlatformHelper.IsOnWindows())
-            {
-                var identity = WindowsIdentity.GetCurrent();
-                var principal = new WindowsPrincipal(identity);
-                return principal.IsInRole(WindowsBuiltInRole.Administrator);
-            }
-            else
-                // Assume that the user is admin for other systems.
-                return true;
         }
 
     }

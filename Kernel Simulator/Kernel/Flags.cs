@@ -339,6 +339,10 @@ namespace KS.Kernel
         /// If the kernel is shut down, exit from main entry point gracefully.
         /// </summary>
         internal static bool KernelShutdown;
+        /// <summary>
+        /// Whether rebooting to elevated kernel is requested.
+        /// </summary>
+        internal static bool rebootingElevated;
 
     }
 }

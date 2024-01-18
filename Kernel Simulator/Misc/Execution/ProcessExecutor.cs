@@ -20,6 +20,8 @@
 using System;
 using System.Diagnostics;
 using System.Linq;
+using System.Reflection;
+
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
@@ -170,6 +172,54 @@ namespace KS.Misc.Execution
                 TextWriterColor.Write(Translate.DoTranslation("Error trying to execute command") + " {2}." + Kernel.Kernel.NewLine + Translate.DoTranslation("Error {0}: {1}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.GetType().FullName, ex.Message, File);
             }
             return -1;
+        }
+
+        internal static ProcessStartInfo StripEnvironmentVariables(ProcessStartInfo processStartInfo)
+        {
+            // --- UseShellExecute and the Environment property population Hack ---
+            //
+            // We need UseShellExecute to be able to use the runas verb, but it looks like that we can't start the process with the VS debugger,
+            // because the StartInfo always populates the _environmentVariables field once the Environment property is populated.
+            // _environmentVariables is not a public field.
+            //
+            // .NET expects _environmentVariables to be null when trying to start the process with the UseShellExecute being set to true,
+            // but when calling Start(), .NET calls StartWithShellExecuteEx() and checks to see if that variable is null, so executing the
+            // process in this way is basically impossible after evaluating the Environment property without having to somehow nullify this
+            // _environmentVariables field using private reflection after evaluating the Environment property.
+            //
+            // if (startInfo._environmentVariables != null)
+            //     throw new InvalidOperationException(SR.CantUseEnvVars);
+            //
+            // Please DO NOT even try to evaluate selfProcess.StartInfo.Environment in your debugger even if hovering over selfProcess.StartInfo,
+            // because that would undo all the changes that we've made to the _environmentVariables and causes us to lose all the changes made
+            // to this instance of StartInfo.
+            //
+            // if (_environmentVariables == null)
+            // {
+            //     IDictionary envVars = System.Environment.GetEnvironmentVariables();
+            //     _environmentVariables = new DictionaryWrapper(new Dictionary<string, string?>(
+            //     (...)
+            // }
+            //
+            // This hack is only applicable to developers debugging the StartInfo instance of this specific process using VS. Nitrocid should
+            // be able to restart itself as elevated normally if no debugger is attached.
+            //
+            // References:
+            //   - https://github.com/dotnet/runtime/blob/release/8.0/src/libraries/System.Diagnostics.Process/src/System/Diagnostics/Process.Win32.cs#L47
+            //   - https://github.com/dotnet/runtime/blob/release/8.0/src/libraries/System.Diagnostics.Process/src/System/Diagnostics/ProcessStartInfo.cs#L91
+            //
+            // Issue report: https://github.com/dotnet/runtime/issues/94338
+            var privateReflection = BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.SetField;
+            var startInfoType = processStartInfo.GetType();
+#if NETCOREAPP
+            var envVarsField = startInfoType.GetField("_environmentVariables", privateReflection);
+#else
+            var envVarsField = startInfoType.GetField("environmentVariables", privateReflection);
+#endif
+            envVarsField.SetValue(processStartInfo, null);
+            // 
+            // --- UseShellExecute and the Environment property population Hack End ---
+            return processStartInfo;
         }
 
         /// <summary>
