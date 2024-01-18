@@ -18,38 +18,40 @@
 //
 
 using System;
-
-// Kernel Simulator  Copyright (C) 2018-2022  Aptivi
-// 
-// This file is part of Kernel Simulator
-// 
-// Kernel Simulator is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-// 
-// Kernel Simulator is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-// 
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-using InxiFrontend;
+using System.Collections;
+using System.Security.Principal;
 using KS.ConsoleBase.Colors;
 using KS.Kernel;
 using KS.Languages;
 using KS.Misc.Splash;
-using KS.Misc.Text;
 using KS.Misc.Writers.DebugWriters;
+using SpecProbe.Hardware;
+using SpecProbe.Platform;
 
 namespace KS.Hardware
 {
     public static class HardwareProbe
     {
+        internal static IEnumerable processors;
+        internal static IEnumerable pcMemory;
+        internal static IEnumerable hardDrive;
+        internal static IEnumerable graphics;
 
-        public static Inxi HardwareInfo;
+        /// <inheritdoc/>
+        public static IEnumerable ProbeGraphics() =>
+            HardwareProber.Video;
+
+        /// <inheritdoc/>
+        public static IEnumerable ProbeHardDrive() =>
+            HardwareProber.HardDisk;
+
+        /// <inheritdoc/>
+        public static IEnumerable ProbePcMemory() =>
+            HardwareProber.Memory;
+
+        /// <inheritdoc/>
+        public static IEnumerable ProbeProcessor() =>
+            HardwareProber.Processors;
 
         /// <summary>
         /// Starts probing hardware
@@ -60,18 +62,22 @@ namespace KS.Hardware
             Kernel.Kernel.KernelEventManager.RaiseHardwareProbing();
             try
             {
-                InxiTrace.DebugDataReceived += WriteInxiDebugData;
-                InxiTrace.HardwareParsed += WriteWhatProbed;
-                if (Flags.FullHardwareProbe)
+                if (!PlatformHelper.IsOnWindows() || PlatformHelper.IsOnWindows() && IsAdministrator())
                 {
-                    HardwareInfo = new Inxi();
+                    processors = ProbeProcessor();
+                    pcMemory = ProbePcMemory();
+                    hardDrive = ProbeHardDrive();
+                    graphics = ProbeGraphics();
+                    DebugWriter.Wdbg(DebugLevel.I, "Probe finished.");
                 }
                 else
                 {
-                    HardwareInfo = new Inxi(InxiHardwareType.Processor | InxiHardwareType.PCMemory | InxiHardwareType.Graphics | InxiHardwareType.HardDrive);
+                    processors = Array.Empty<object>();
+                    pcMemory = Array.Empty<object>();
+                    hardDrive = Array.Empty<object>();
+                    graphics = Array.Empty<object>();
+                    SplashReport.ReportProgress(Translate.DoTranslation("Hardware won't be parsed because of insufficient privileges. Use \"winelevate\" to restart Nitrocid in elevated mode."), 0, KernelColorTools.ColTypes.Warning);
                 }
-                InxiTrace.DebugDataReceived -= WriteInxiDebugData;
-                InxiTrace.HardwareParsed -= WriteWhatProbed;
             }
             catch (Exception ex)
             {
@@ -85,21 +91,19 @@ namespace KS.Hardware
         }
 
         /// <summary>
-        /// Write Inxi.NET hardware parsing completion to debugger and, if quiet probe is disabled, the console
+        /// Checks to see if the current user is an administrator
         /// </summary>
-        private static void WriteWhatProbed(InxiHardwareType Hardware)
+        private static bool IsAdministrator()
         {
-            DebugWriter.Wdbg(DebugLevel.I, "Hardware {0} ({1}) successfully probed.", Hardware, Hardware.ToString());
-            if (!Flags.QuietHardwareProbe & Flags.VerboseHardwareProbe | Flags.EnableSplash)
-                SplashReport.ReportProgress(Translate.DoTranslation("Successfully probed {0}.").FormatString(Hardware.ToString()), 5, KernelColorTools.ColTypes.Neutral);
-        }
-
-        /// <summary>
-        /// Write Inxi.NET debug data to debugger
-        /// </summary>
-        private static void WriteInxiDebugData(string Message, string PlainMessage)
-        {
-            DebugWriter.Wdbg(DebugLevel.I, PlainMessage);
+            if (PlatformHelper.IsOnWindows())
+            {
+                var identity = WindowsIdentity.GetCurrent();
+                var principal = new WindowsPrincipal(identity);
+                return principal.IsInRole(WindowsBuiltInRole.Administrator);
+            }
+            else
+                // Assume that the user is admin for other systems.
+                return true;
         }
 
     }

@@ -40,14 +40,16 @@ using System.Linq;
 
 using System.Reflection;
 using FluentFTP.Helpers;
-using InxiFrontend;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Platform;
 using KS.Misc.Reflection;
+using KS.Misc.Splash;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 using KS.Misc.Writers.FancyWriters;
+using SpecProbe.Hardware;
+using SpecProbe.Hardware.Parts.Types;
 
 namespace KS.Hardware
 {
@@ -59,93 +61,59 @@ namespace KS.Hardware
         /// </summary>
         public static void ListHardware()
         {
-            if (HardwareProbe.HardwareInfo is not null)
+            var processors = HardwareProbe.ProbeProcessor();
+            var memory = HardwareProbe.ProbePcMemory();
+            var graphics = HardwareProbe.ProbeGraphics();
+            var hardDrives = HardwareProbe.ProbeHardDrive();
+
+            // Verify the types
+            if (processors is not ProcessorPart[] procDict)
             {
-                // We are checking to see if any of the probers reported a failure starting with CPU
-                if (HardwareProbe.HardwareInfo.Hardware.CPU is null | HardwareProbe.HardwareInfo.Hardware.CPU is not null & HardwareProbe.HardwareInfo.Hardware.CPU.Count == 0)
-                {
-                    DebugWriter.Wdbg(DebugLevel.E, "CPU failed to probe.");
-                    TextWriterColor.Write(Translate.DoTranslation("CPU: One or more of the CPU cores failed to be probed. Showing information anyway..."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
-                }
-
-                // then RAM
-                if (HardwareProbe.HardwareInfo.Hardware.RAM is null)
-                {
-                    DebugWriter.Wdbg(DebugLevel.E, "RAM failed to probe.");
-                    TextWriterColor.Write(Translate.DoTranslation("RAM: One or more of the RAM chips failed to be probed. Showing information anyway..."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
-                }
-
-                // then GPU
-                if (HardwareProbe.HardwareInfo.Hardware.GPU is null)
-                {
-                    DebugWriter.Wdbg(DebugLevel.E, "GPU failed to probe.");
-                    TextWriterColor.Write(Translate.DoTranslation("GPU: One or more of the graphics cards failed to be probed. Showing information anyway..."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
-                }
-
-                // and finally HDD
-                if (HardwareProbe.HardwareInfo.Hardware.HDD is null | HardwareProbe.HardwareInfo.Hardware.HDD is not null & HardwareProbe.HardwareInfo.Hardware.HDD.Count == 0)
-                {
-                    DebugWriter.Wdbg(DebugLevel.E, "HDD failed to probe.");
-                    TextWriterColor.Write(Translate.DoTranslation("HDD: One or more of the hard drives failed to be probed. Showing information anyway..."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
-                }
-
-                // Print information about the probed hardware
-                // CPU Info
-                foreach (string ProcessorInfo in HardwareProbe.HardwareInfo.Hardware.CPU.Keys)
-                {
-                    var TargetProcessor = HardwareProbe.HardwareInfo.Hardware.CPU[ProcessorInfo];
-                    TextWriterColor.Write("CPU: " + Translate.DoTranslation("Processor name:"), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                    TextWriterColor.Write(" {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), ProcessorInfo);
-                    TextWriterColor.Write("CPU: " + Translate.DoTranslation("Processor clock speed:"), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                    TextWriterColor.Write(" {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), TargetProcessor.Speed);
-                    TextWriterColor.Write("CPU: " + Translate.DoTranslation("Processor bits:"), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                    TextWriterColor.Write(" {0}-bit", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), TargetProcessor.Bits);
-                    TextWriterColor.Write("CPU: " + Translate.DoTranslation("Processor SSE2 support:"), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                    TextWriterColor.Write(" {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), TargetProcessor.Flags.Contains("sse2") | TargetProcessor.Flags.Contains("SSE2"));
-                }
-                TextWriterColor.Write("CPU: " + Translate.DoTranslation("Total number of processors:"), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                TextWriterColor.Write(" {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), Environment.ProcessorCount);
-
-                // Print RAM info
-                TextWriterColor.Write("RAM: " + Translate.DoTranslation("Total memory:"), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                TextWriterColor.Write(" {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), PlatformDetector.IsOnWindows() ? ((long)Math.Round(Convert.ToDouble(HardwareProbe.HardwareInfo.Hardware.RAM.TotalMemory) * 1024d)).FileSizeToString() : HardwareProbe.HardwareInfo.Hardware.RAM.TotalMemory);
-
-                // GPU info
-                foreach (string GPUInfo in HardwareProbe.HardwareInfo.Hardware.GPU.Keys)
-                {
-                    var TargetGraphics = HardwareProbe.HardwareInfo.Hardware.GPU[GPUInfo];
-                    TextWriterColor.Write("GPU: " + Translate.DoTranslation("Graphics card:"), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                    TextWriterColor.Write(" {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), TargetGraphics.Name);
-                }
-
-                // Drive Info
-                foreach (string DriveInfo in HardwareProbe.HardwareInfo.Hardware.HDD.Keys)
-                {
-                    var TargetDrive = HardwareProbe.HardwareInfo.Hardware.HDD[DriveInfo];
-                    if (TargetDrive.Vendor == "(Standard disk drives)")
-                    {
-                        TextWriterColor.Write("HDD: " + Translate.DoTranslation("Disk model:"), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                        TextWriterColor.Write(" {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), TargetDrive.Model);
-                        TextWriterColor.Write("HDD: " + Translate.DoTranslation("Disk size:"), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                        TextWriterColor.Write(" {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), PlatformDetector.IsOnWindows() ? Convert.ToInt64(TargetDrive.Size).FileSizeToString() : TargetDrive.Size);
-                    }
-                    else
-                    {
-                        TextWriterColor.Write("HDD: " + Translate.DoTranslation("Disk model:"), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                        TextWriterColor.Write(" {0} {1}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), TargetDrive.Vendor, TargetDrive.Model);
-                        TextWriterColor.Write("HDD: " + Translate.DoTranslation("Disk size:"), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                        TextWriterColor.Write(" {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), PlatformDetector.IsOnWindows() ? Convert.ToInt64(TargetDrive.Size).FileSizeToString() : TargetDrive.Size);
-                    }
-                    foreach (string PartInfo in TargetDrive.Partitions.Keys)
-                    {
-                        var TargetPart = TargetDrive.Partitions[PartInfo];
-                        TextWriterColor.Write("HDD ({0}): " + Translate.DoTranslation("Partition size:"), false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), TargetPart.ID);
-                        TextWriterColor.Write(" {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), PlatformDetector.IsOnWindows() ? Convert.ToInt64(TargetPart.Size).FileSizeToString() : TargetPart.Size);
-                        TextWriterColor.Write("HDD ({0}): " + Translate.DoTranslation("Partition filesystem:"), false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), TargetPart.ID);
-                        TextWriterColor.Write(" {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), TargetPart.FileSystem);
-                    }
-                }
+                SplashReport.ReportProgress("CPU: " + Translate.DoTranslation("Failed to parse the CPU info. Ensure that it's a valid info list."), 0, KernelColorTools.ColTypes.Error);
+                return;
             }
+            if (memory is not MemoryPart[] memList)
+            {
+                SplashReport.ReportProgress("RAM: " + Translate.DoTranslation("Failed to parse the RAM info. Ensure that it's a valid info list."), 0, KernelColorTools.ColTypes.Error);
+                return;
+            }
+            if (graphics is not VideoPart[] gpuDict)
+            {
+                SplashReport.ReportProgress("GPU: " + Translate.DoTranslation("Failed to parse the GPU info. Ensure that it's a valid info list."), 0, KernelColorTools.ColTypes.Error);
+                return;
+            }
+            if (hardDrives is not HardDiskPart[] hddDict)
+            {
+                SplashReport.ReportProgress("HDD: " + Translate.DoTranslation("Failed to parse the HDD info. Ensure that it's a valid info list."), 0, KernelColorTools.ColTypes.Error);
+                return;
+            }
+
+            // Print information about the probed hardware, starting from the CPU info
+            foreach (var cpu in procDict)
+            {
+                SplashReport.ReportProgress("CPU: " + Translate.DoTranslation("Processor name:") + " {0}", 0, KernelColorTools.ColTypes.Neutral, cpu.Name);
+                SplashReport.ReportProgress("CPU: " + Translate.DoTranslation("Processor clock speed:") + " {0} MHz", 0, KernelColorTools.ColTypes.Neutral, $"{cpu.Speed}");
+                SplashReport.ReportProgress("CPU: " + Translate.DoTranslation("Total number of processors:") + $" {cpu.TotalCores}", 3, KernelColorTools.ColTypes.Neutral);
+            }
+
+            // Print RAM info
+            var mem = memList[0];
+            SplashReport.ReportProgress("RAM: " + Translate.DoTranslation("Total memory:") + " {0}", 2, KernelColorTools.ColTypes.Neutral, $"{mem.TotalMemory}");
+
+            // GPU info
+            foreach (var gpu in gpuDict)
+                SplashReport.ReportProgress("GPU: " + Translate.DoTranslation("Graphics card:") + " {0}", 0, KernelColorTools.ColTypes.Neutral, gpu.VideoCardName);
+
+            // Drive Info
+            foreach (var hdd in hddDict)
+            {
+                SplashReport.ReportProgress("HDD: " + Translate.DoTranslation("Disk size:") + " {0}", 0, KernelColorTools.ColTypes.Neutral, $"{hdd.HardDiskSize}");
+
+                // Partition info
+                foreach (var part in hdd.Partitions)
+                    SplashReport.ReportProgress("HDD [{0}]: " + Translate.DoTranslation("Partition size:") + " {1}", 0, KernelColorTools.ColTypes.Neutral, $"{hdd.HardDiskNumber}", $"{part.PartitionSize}");
+            }
+            PrintErrors();
         }
 
         /// <summary>
@@ -154,84 +122,115 @@ namespace KS.Hardware
         /// <param name="HardwareType">Hadrware type defined by Inxi.NET. If "all", prints all information.</param>
         public static void ListHardware(string HardwareType)
         {
-            var HardwareField = FieldManager.GetField(HardwareType, FieldManager.GetField(nameof(HardwareProbe.HardwareInfo.Hardware), typeof(Inxi)).FieldType);
-            DebugWriter.Wdbg(DebugLevel.I, "Got hardware field {0}.", HardwareField is not null ? HardwareField.Name : "unknown");
-            if (HardwareField is not null)
+            string[] supportedTypes = ["CPU", "RAM", "HDD", "GPU"];
+            if (HardwareType == "all")
             {
-                ListHardwareProperties(HardwareField);
-            }
-            else if (HardwareType.ToLower() == "all")
-            {
-                FieldInfo[] HardwareFields = FieldManager.GetField(nameof(HardwareProbe.HardwareInfo.Hardware), typeof(Inxi)).FieldType.GetFields();
-                foreach (FieldInfo HardwareFieldType in HardwareFields)
-                    ListHardwareProperties(HardwareFieldType);
+                foreach (string supportedType in supportedTypes)
+                    ListHardwareInternal(supportedType);
             }
             else
+                ListHardwareInternal(HardwareType);
+            PrintErrors();
+        }
+
+        private static void ListHardwareInternal(string hardwareType)
+        {
+            SeparatorWriterColor.WriteSeparator(hardwareType, true);
+            switch (hardwareType)
             {
-                TextWriterColor.Write(Translate.DoTranslation("Either the hardware type {0} is not probed, or is not valid."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), HardwareType);
+                case "CPU":
+                    {
+                        var hardwareList = HardwareProbe.ProbeProcessor() as ProcessorPart[];
+                        if (hardwareList is not null)
+                        {
+                            foreach (var processor in hardwareList)
+                            {
+                                TextWriterColor.Write(Translate.DoTranslation("Processor name:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriterColor.Write($" {processor.Name}", true, KernelColorTools.ColTypes.ListValue);
+                                TextWriterColor.Write(Translate.DoTranslation("Processor vendor:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriterColor.Write($" {processor.Vendor} [CPUID: {processor.CpuidVendor}]", true, KernelColorTools.ColTypes.ListValue);
+                                TextWriterColor.Write(Translate.DoTranslation("Clock speed:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriterColor.Write($" {processor.Speed} MHz", true, KernelColorTools.ColTypes.ListValue);
+                                TextWriterColor.Write(Translate.DoTranslation("Total cores:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriterColor.Write($" {processor.TotalCores} ({processor.ProcessorCores} x{processor.CoresForEachCore})", true, KernelColorTools.ColTypes.ListValue);
+                                TextWriterColor.Write(Translate.DoTranslation("Cache sizes:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriterColor.Write($" {processor.L1CacheSize} L1, {processor.L2CacheSize} L2, {processor.L3CacheSize} L3", true, KernelColorTools.ColTypes.ListValue);
+                            }
+                        }
+                        break;
+                    }
+                case "RAM":
+                    {
+                        var hardwareList = HardwareProbe.ProbePcMemory() as MemoryPart[];
+                        if (hardwareList is not null)
+                        {
+                            foreach (var ram in hardwareList)
+                            {
+                                TextWriterColor.Write(Translate.DoTranslation("Total usable memory:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriterColor.Write($" {ram.TotalMemory}", true, KernelColorTools.ColTypes.ListValue);
+                                TextWriterColor.Write(Translate.DoTranslation("Total memory:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriterColor.Write($" {ram.TotalPhysicalMemory}", true, KernelColorTools.ColTypes.ListValue);
+                                TextWriterColor.Write(Translate.DoTranslation("Reserved memory:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriterColor.Write($" {ram.SystemReservedMemory}", true, KernelColorTools.ColTypes.ListValue);
+                            }
+                        }
+                        break;
+                    }
+                case "HDD":
+                    {
+                        var hardwareList = HardwareProbe.ProbeHardDrive() as HardDiskPart[];
+                        if (hardwareList is not null)
+                        {
+                            foreach (var hdd in hardwareList)
+                            {
+                                TextWriterColor.Write(Translate.DoTranslation("Disk number:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriterColor.Write($" {hdd.HardDiskNumber}", true, KernelColorTools.ColTypes.ListValue);
+                                TextWriterColor.Write(Translate.DoTranslation("Disk size:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriterColor.Write($" {hdd.HardDiskSize}", true, KernelColorTools.ColTypes.ListValue);
+                                TextWriterColor.Write(Translate.DoTranslation("Partitions:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriterColor.Write($" {hdd.PartitionCount}", true, KernelColorTools.ColTypes.ListValue);
+                                foreach (var part in hdd.Partitions)
+                                {
+                                    TextWriterColor.Write(Translate.DoTranslation("Partition number:"), false, KernelColorTools.ColTypes.ListEntry);
+                                    TextWriterColor.Write($" {part.PartitionNumber}", true, KernelColorTools.ColTypes.ListValue);
+                                    TextWriterColor.Write(Translate.DoTranslation("Partition size:"), false, KernelColorTools.ColTypes.ListEntry);
+                                    TextWriterColor.Write($" {part.PartitionSize}", true, KernelColorTools.ColTypes.ListValue);
+                                }
+                            }
+                        }
+                        break;
+                    }
+                case "GPU":
+                    {
+                        var hardwareList = HardwareProbe.ProbeGraphics() as VideoPart[];
+                        if (hardwareList is not null)
+                        {
+                            foreach (var gpu in hardwareList)
+                            {
+                                TextWriterColor.Write(Translate.DoTranslation("Graphics card name:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriterColor.Write($" {gpu.VideoCardName}", true, KernelColorTools.ColTypes.ListValue);
+                            }
+                        }
+                        break;
+                    }
+                default:
+                    TextWriterColor.Write(Translate.DoTranslation("Either the hardware type {0} is not probed, or is not valid."), true, KernelColorTools.ColTypes.Error, hardwareType);
+                    break;
             }
         }
 
-        private static void ListHardwareProperties(FieldInfo Field)
+        private static void PrintErrors()
         {
-            DebugWriter.Wdbg(DebugLevel.I, "Got hardware field {0}.", Field.Name);
-            SeparatorWriterColor.WriteSeparator(Field.Name, true);
-            var FieldValue = Field.GetValue(HardwareProbe.HardwareInfo.Hardware);
-            if (FieldValue is not null)
+            if (HardwareProber.Errors.Length > 0)
             {
-                IDictionary FieldValueDict = FieldValue as IDictionary;
-                if (FieldValueDict is not null)
+                SplashReport.ReportProgress(Translate.DoTranslation("SpecProbe failed to parse some of the hardware. Below are the errors reported by SpecProbe:"), 0, KernelColorTools.ColTypes.Error);
+                DebugWriter.Wdbg(DebugLevel.E, "SpecProbe failed to parse hardware due to the following errors:");
+                foreach (var error in HardwareProber.Errors)
                 {
-                    foreach (string HardwareKey in FieldValueDict.Keys)
-                    {
-                        TextWriterColor.Write("- {0}: ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), HardwareKey);
-                        foreach (PropertyInfo HardwareValuePropertyInfo in FieldValueDict[HardwareKey].GetType().GetProperties())
-                        {
-                            TextWriterColor.Write("  - {0}: ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), HardwareValuePropertyInfo.Name);
-                            if (Field.Name == "HDD" & HardwareValuePropertyInfo.Name == "Partitions")
-                            {
-                                TextWriterColor.WritePlain("", true);
-                                IDictionary Partitions = HardwareValuePropertyInfo.GetValue(FieldValueDict[HardwareKey]) as IDictionary;
-                                if (Partitions is not null)
-                                {
-                                    foreach (string PartitionKey in Partitions.Keys)
-                                    {
-                                        TextWriterColor.Write("    - {0}: ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), PartitionKey);
-                                        foreach (PropertyInfo PartitionValuePropertyInfo in Partitions[PartitionKey].GetType().GetProperties())
-                                        {
-                                            TextWriterColor.Write("      - {0}: ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), PartitionValuePropertyInfo.Name);
-                                            TextWriterColor.Write(Convert.ToString(PartitionValuePropertyInfo.GetValue(Partitions[PartitionKey])), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-                                        }
-                                    }
-                                }
-                                else
-                                {
-                                    TextWriterColor.Write(Translate.DoTranslation("Partitions not parsed to list."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
-                                }
-                            }
-                            else if (Field.Name == "CPU" & HardwareValuePropertyInfo.Name == "Flags")
-                            {
-                                TextWriterColor.Write(string.Join(", ", HardwareValuePropertyInfo.GetValue(FieldValueDict[HardwareKey]) as string[]), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-                            }
-                            else
-                            {
-                                TextWriterColor.Write(Convert.ToString(HardwareValuePropertyInfo.GetValue(FieldValueDict[HardwareKey])), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-                            }
-                        }
-                    }
+                    DebugWriter.Wdbg(DebugLevel.E, $"- {error.Message}");
+                    DebugWriter.WStkTrc(error);
+                    SplashReport.ReportProgress(error.Message, 0, KernelColorTools.ColTypes.Error);
                 }
-                else
-                {
-                    foreach (FieldInfo HardwareFieldInfo in Field.FieldType.GetFields())
-                    {
-                        TextWriterColor.Write("- {0}: ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), HardwareFieldInfo.Name);
-                        TextWriterColor.Write(Convert.ToString(HardwareFieldInfo.GetValue(FieldValue)), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-                    }
-                }
-            }
-            else
-            {
-                TextWriterColor.Write(Translate.DoTranslation("The hardware type {0} is not probed yet. If you're sure that it's probed, restart the kernel with debugging enabled."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), Field.Name);
             }
         }
 

@@ -414,10 +414,6 @@ namespace KS.Kernel
             SplashReport._KernelBooted = false;
             DebugWriter.Wdbg(DebugLevel.I, "General variables reset");
 
-            // Reset hardware info
-            HardwareProbe.HardwareInfo = null;
-            DebugWriter.Wdbg(DebugLevel.I, "Hardware info reset.");
-
             // Disconnect all hosts from remote debugger
             RemoteDebugger.StopRDebugThread();
             DebugWriter.Wdbg(DebugLevel.I, "Remote debugger stopped");
