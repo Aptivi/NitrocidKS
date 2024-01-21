@@ -35956,1315 +35956,1315 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Modifications.ModParser.ParseMod
   nameWithType: ModParser.ParseMod
-- uid: Nitrocid.Network.Base
-  name: Nitrocid.Network.Base
-  href: api/Nitrocid.Network.Base.html
-  commentId: N:Nitrocid.Network.Base
-  fullName: Nitrocid.Network.Base
-  nameWithType: Nitrocid.Network.Base
-- uid: Nitrocid.Network.Base.Connections
-  name: Nitrocid.Network.Base.Connections
-  href: api/Nitrocid.Network.Base.Connections.html
-  commentId: N:Nitrocid.Network.Base.Connections
-  fullName: Nitrocid.Network.Base.Connections
-  nameWithType: Nitrocid.Network.Base.Connections
-- uid: Nitrocid.Network.Base.Connections.NetworkConnection
+- uid: Nitrocid.Network
+  name: Nitrocid.Network
+  href: api/Nitrocid.Network.html
+  commentId: N:Nitrocid.Network
+  fullName: Nitrocid.Network
+  nameWithType: Nitrocid.Network
+- uid: Nitrocid.Network.Connections
+  name: Nitrocid.Network.Connections
+  href: api/Nitrocid.Network.Connections.html
+  commentId: N:Nitrocid.Network.Connections
+  fullName: Nitrocid.Network.Connections
+  nameWithType: Nitrocid.Network.Connections
+- uid: Nitrocid.Network.Connections.NetworkConnection
   name: NetworkConnection
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnection.html
-  commentId: T:Nitrocid.Network.Base.Connections.NetworkConnection
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnection
+  href: api/Nitrocid.Network.Connections.NetworkConnection.html
+  commentId: T:Nitrocid.Network.Connections.NetworkConnection
+  fullName: Nitrocid.Network.Connections.NetworkConnection
   nameWithType: NetworkConnection
-- uid: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionAlive
+- uid: Nitrocid.Network.Connections.NetworkConnection.ConnectionAlive
   name: ConnectionAlive
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnection.html#Nitrocid_Network_Base_Connections_NetworkConnection_ConnectionAlive
-  commentId: P:Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionAlive
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionAlive
+  href: api/Nitrocid.Network.Connections.NetworkConnection.html#Nitrocid_Network_Connections_NetworkConnection_ConnectionAlive
+  commentId: P:Nitrocid.Network.Connections.NetworkConnection.ConnectionAlive
+  fullName: Nitrocid.Network.Connections.NetworkConnection.ConnectionAlive
   nameWithType: NetworkConnection.ConnectionAlive
-- uid: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionAlive*
+- uid: Nitrocid.Network.Connections.NetworkConnection.ConnectionAlive*
   name: ConnectionAlive
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnection.html#Nitrocid_Network_Base_Connections_NetworkConnection_ConnectionAlive_
-  commentId: Overload:Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionAlive
+  href: api/Nitrocid.Network.Connections.NetworkConnection.html#Nitrocid_Network_Connections_NetworkConnection_ConnectionAlive_
+  commentId: Overload:Nitrocid.Network.Connections.NetworkConnection.ConnectionAlive
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionAlive
+  fullName: Nitrocid.Network.Connections.NetworkConnection.ConnectionAlive
   nameWithType: NetworkConnection.ConnectionAlive
-- uid: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionIsInstance
+- uid: Nitrocid.Network.Connections.NetworkConnection.ConnectionIsInstance
   name: ConnectionIsInstance
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnection.html#Nitrocid_Network_Base_Connections_NetworkConnection_ConnectionIsInstance
-  commentId: P:Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionIsInstance
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionIsInstance
+  href: api/Nitrocid.Network.Connections.NetworkConnection.html#Nitrocid_Network_Connections_NetworkConnection_ConnectionIsInstance
+  commentId: P:Nitrocid.Network.Connections.NetworkConnection.ConnectionIsInstance
+  fullName: Nitrocid.Network.Connections.NetworkConnection.ConnectionIsInstance
   nameWithType: NetworkConnection.ConnectionIsInstance
-- uid: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionIsInstance*
+- uid: Nitrocid.Network.Connections.NetworkConnection.ConnectionIsInstance*
   name: ConnectionIsInstance
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnection.html#Nitrocid_Network_Base_Connections_NetworkConnection_ConnectionIsInstance_
-  commentId: Overload:Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionIsInstance
+  href: api/Nitrocid.Network.Connections.NetworkConnection.html#Nitrocid_Network_Connections_NetworkConnection_ConnectionIsInstance_
+  commentId: Overload:Nitrocid.Network.Connections.NetworkConnection.ConnectionIsInstance
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionIsInstance
+  fullName: Nitrocid.Network.Connections.NetworkConnection.ConnectionIsInstance
   nameWithType: NetworkConnection.ConnectionIsInstance
-- uid: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionName
+- uid: Nitrocid.Network.Connections.NetworkConnection.ConnectionName
   name: ConnectionName
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnection.html#Nitrocid_Network_Base_Connections_NetworkConnection_ConnectionName
-  commentId: P:Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionName
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionName
+  href: api/Nitrocid.Network.Connections.NetworkConnection.html#Nitrocid_Network_Connections_NetworkConnection_ConnectionName
+  commentId: P:Nitrocid.Network.Connections.NetworkConnection.ConnectionName
+  fullName: Nitrocid.Network.Connections.NetworkConnection.ConnectionName
   nameWithType: NetworkConnection.ConnectionName
-- uid: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionName*
+- uid: Nitrocid.Network.Connections.NetworkConnection.ConnectionName*
   name: ConnectionName
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnection.html#Nitrocid_Network_Base_Connections_NetworkConnection_ConnectionName_
-  commentId: Overload:Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionName
+  href: api/Nitrocid.Network.Connections.NetworkConnection.html#Nitrocid_Network_Connections_NetworkConnection_ConnectionName_
+  commentId: Overload:Nitrocid.Network.Connections.NetworkConnection.ConnectionName
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionName
+  fullName: Nitrocid.Network.Connections.NetworkConnection.ConnectionName
   nameWithType: NetworkConnection.ConnectionName
-- uid: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionOriginalUrl
+- uid: Nitrocid.Network.Connections.NetworkConnection.ConnectionOriginalUrl
   name: ConnectionOriginalUrl
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnection.html#Nitrocid_Network_Base_Connections_NetworkConnection_ConnectionOriginalUrl
-  commentId: P:Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionOriginalUrl
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionOriginalUrl
+  href: api/Nitrocid.Network.Connections.NetworkConnection.html#Nitrocid_Network_Connections_NetworkConnection_ConnectionOriginalUrl
+  commentId: P:Nitrocid.Network.Connections.NetworkConnection.ConnectionOriginalUrl
+  fullName: Nitrocid.Network.Connections.NetworkConnection.ConnectionOriginalUrl
   nameWithType: NetworkConnection.ConnectionOriginalUrl
-- uid: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionOriginalUrl*
+- uid: Nitrocid.Network.Connections.NetworkConnection.ConnectionOriginalUrl*
   name: ConnectionOriginalUrl
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnection.html#Nitrocid_Network_Base_Connections_NetworkConnection_ConnectionOriginalUrl_
-  commentId: Overload:Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionOriginalUrl
+  href: api/Nitrocid.Network.Connections.NetworkConnection.html#Nitrocid_Network_Connections_NetworkConnection_ConnectionOriginalUrl_
+  commentId: Overload:Nitrocid.Network.Connections.NetworkConnection.ConnectionOriginalUrl
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionOriginalUrl
+  fullName: Nitrocid.Network.Connections.NetworkConnection.ConnectionOriginalUrl
   nameWithType: NetworkConnection.ConnectionOriginalUrl
-- uid: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionType
+- uid: Nitrocid.Network.Connections.NetworkConnection.ConnectionType
   name: ConnectionType
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnection.html#Nitrocid_Network_Base_Connections_NetworkConnection_ConnectionType
-  commentId: P:Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionType
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionType
+  href: api/Nitrocid.Network.Connections.NetworkConnection.html#Nitrocid_Network_Connections_NetworkConnection_ConnectionType
+  commentId: P:Nitrocid.Network.Connections.NetworkConnection.ConnectionType
+  fullName: Nitrocid.Network.Connections.NetworkConnection.ConnectionType
   nameWithType: NetworkConnection.ConnectionType
-- uid: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionType*
+- uid: Nitrocid.Network.Connections.NetworkConnection.ConnectionType*
   name: ConnectionType
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnection.html#Nitrocid_Network_Base_Connections_NetworkConnection_ConnectionType_
-  commentId: Overload:Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionType
+  href: api/Nitrocid.Network.Connections.NetworkConnection.html#Nitrocid_Network_Connections_NetworkConnection_ConnectionType_
+  commentId: Overload:Nitrocid.Network.Connections.NetworkConnection.ConnectionType
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionType
+  fullName: Nitrocid.Network.Connections.NetworkConnection.ConnectionType
   nameWithType: NetworkConnection.ConnectionType
-- uid: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionUri
+- uid: Nitrocid.Network.Connections.NetworkConnection.ConnectionUri
   name: ConnectionUri
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnection.html#Nitrocid_Network_Base_Connections_NetworkConnection_ConnectionUri
-  commentId: P:Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionUri
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionUri
+  href: api/Nitrocid.Network.Connections.NetworkConnection.html#Nitrocid_Network_Connections_NetworkConnection_ConnectionUri
+  commentId: P:Nitrocid.Network.Connections.NetworkConnection.ConnectionUri
+  fullName: Nitrocid.Network.Connections.NetworkConnection.ConnectionUri
   nameWithType: NetworkConnection.ConnectionUri
-- uid: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionUri*
+- uid: Nitrocid.Network.Connections.NetworkConnection.ConnectionUri*
   name: ConnectionUri
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnection.html#Nitrocid_Network_Base_Connections_NetworkConnection_ConnectionUri_
-  commentId: Overload:Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionUri
+  href: api/Nitrocid.Network.Connections.NetworkConnection.html#Nitrocid_Network_Connections_NetworkConnection_ConnectionUri_
+  commentId: Overload:Nitrocid.Network.Connections.NetworkConnection.ConnectionUri
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnection.ConnectionUri
+  fullName: Nitrocid.Network.Connections.NetworkConnection.ConnectionUri
   nameWithType: NetworkConnection.ConnectionUri
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools
   name: NetworkConnectionTools
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html
-  commentId: T:Nitrocid.Network.Base.Connections.NetworkConnectionTools
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html
+  commentId: T:Nitrocid.Network.Connections.NetworkConnectionTools
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools
   nameWithType: NetworkConnectionTools
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.CloseAllConnections
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.CloseAllConnections
   name: CloseAllConnections()
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_CloseAllConnections
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.CloseAllConnections
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.CloseAllConnections()
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_CloseAllConnections
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.CloseAllConnections
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.CloseAllConnections()
   nameWithType: NetworkConnectionTools.CloseAllConnections()
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.CloseAllConnections*
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.CloseAllConnections*
   name: CloseAllConnections
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_CloseAllConnections_
-  commentId: Overload:Nitrocid.Network.Base.Connections.NetworkConnectionTools.CloseAllConnections
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_CloseAllConnections_
+  commentId: Overload:Nitrocid.Network.Connections.NetworkConnectionTools.CloseAllConnections
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.CloseAllConnections
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.CloseAllConnections
   nameWithType: NetworkConnectionTools.CloseAllConnections
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.CloseConnection(System.Int32)
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.CloseConnection(System.Int32)
   name: CloseConnection(int)
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_CloseConnection_System_Int32_
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.CloseConnection(System.Int32)
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_CloseConnection_System_Int32_
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.CloseConnection(System.Int32)
   name.vb: CloseConnection(Integer)
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.CloseConnection(int)
-  fullName.vb: Nitrocid.Network.Base.Connections.NetworkConnectionTools.CloseConnection(Integer)
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.CloseConnection(int)
+  fullName.vb: Nitrocid.Network.Connections.NetworkConnectionTools.CloseConnection(Integer)
   nameWithType: NetworkConnectionTools.CloseConnection(int)
   nameWithType.vb: NetworkConnectionTools.CloseConnection(Integer)
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.CloseConnection*
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.CloseConnection*
   name: CloseConnection
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_CloseConnection_
-  commentId: Overload:Nitrocid.Network.Base.Connections.NetworkConnectionTools.CloseConnection
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_CloseConnection_
+  commentId: Overload:Nitrocid.Network.Connections.NetworkConnectionTools.CloseConnection
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.CloseConnection
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.CloseConnection
   nameWithType: NetworkConnectionTools.CloseConnection
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.ConnectionTypeExists(System.String)
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.ConnectionTypeExists(System.String)
   name: ConnectionTypeExists(string)
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_ConnectionTypeExists_System_String_
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.ConnectionTypeExists(System.String)
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_ConnectionTypeExists_System_String_
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.ConnectionTypeExists(System.String)
   name.vb: ConnectionTypeExists(String)
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.ConnectionTypeExists(string)
-  fullName.vb: Nitrocid.Network.Base.Connections.NetworkConnectionTools.ConnectionTypeExists(String)
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.ConnectionTypeExists(string)
+  fullName.vb: Nitrocid.Network.Connections.NetworkConnectionTools.ConnectionTypeExists(String)
   nameWithType: NetworkConnectionTools.ConnectionTypeExists(string)
   nameWithType.vb: NetworkConnectionTools.ConnectionTypeExists(String)
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.ConnectionTypeExists*
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.ConnectionTypeExists*
   name: ConnectionTypeExists
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_ConnectionTypeExists_
-  commentId: Overload:Nitrocid.Network.Base.Connections.NetworkConnectionTools.ConnectionTypeExists
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_ConnectionTypeExists_
+  commentId: Overload:Nitrocid.Network.Connections.NetworkConnectionTools.ConnectionTypeExists
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.ConnectionTypeExists
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.ConnectionTypeExists
   nameWithType: NetworkConnectionTools.ConnectionTypeExists
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.String,Nitrocid.Network.Base.Connections.NetworkConnectionType,Nitrocid.Kernel.Threading.KernelThread)
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.String,Nitrocid.Network.Connections.NetworkConnectionType,Nitrocid.Kernel.Threading.KernelThread)
   name: EstablishConnection(string, string, NetworkConnectionType, KernelThread)
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_EstablishConnection_System_String_System_String_Nitrocid_Network_Base_Connections_NetworkConnectionType_Nitrocid_Kernel_Threading_KernelThread_
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.String,Nitrocid.Network.Base.Connections.NetworkConnectionType,Nitrocid.Kernel.Threading.KernelThread)
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_EstablishConnection_System_String_System_String_Nitrocid_Network_Connections_NetworkConnectionType_Nitrocid_Kernel_Threading_KernelThread_
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.String,Nitrocid.Network.Connections.NetworkConnectionType,Nitrocid.Kernel.Threading.KernelThread)
   name.vb: EstablishConnection(String, String, NetworkConnectionType, KernelThread)
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(string, string, Nitrocid.Network.Base.Connections.NetworkConnectionType, Nitrocid.Kernel.Threading.KernelThread)
-  fullName.vb: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(String, String, Nitrocid.Network.Base.Connections.NetworkConnectionType, Nitrocid.Kernel.Threading.KernelThread)
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(string, string, Nitrocid.Network.Connections.NetworkConnectionType, Nitrocid.Kernel.Threading.KernelThread)
+  fullName.vb: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(String, String, Nitrocid.Network.Connections.NetworkConnectionType, Nitrocid.Kernel.Threading.KernelThread)
   nameWithType: NetworkConnectionTools.EstablishConnection(string, string, NetworkConnectionType, KernelThread)
   nameWithType.vb: NetworkConnectionTools.EstablishConnection(String, String, NetworkConnectionType, KernelThread)
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.String,Nitrocid.Network.Base.Connections.NetworkConnectionType,System.Object)
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.String,Nitrocid.Network.Connections.NetworkConnectionType,System.Object)
   name: EstablishConnection(string, string, NetworkConnectionType, object)
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_EstablishConnection_System_String_System_String_Nitrocid_Network_Base_Connections_NetworkConnectionType_System_Object_
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.String,Nitrocid.Network.Base.Connections.NetworkConnectionType,System.Object)
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_EstablishConnection_System_String_System_String_Nitrocid_Network_Connections_NetworkConnectionType_System_Object_
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.String,Nitrocid.Network.Connections.NetworkConnectionType,System.Object)
   name.vb: EstablishConnection(String, String, NetworkConnectionType, Object)
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(string, string, Nitrocid.Network.Base.Connections.NetworkConnectionType, object)
-  fullName.vb: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(String, String, Nitrocid.Network.Base.Connections.NetworkConnectionType, Object)
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(string, string, Nitrocid.Network.Connections.NetworkConnectionType, object)
+  fullName.vb: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(String, String, Nitrocid.Network.Connections.NetworkConnectionType, Object)
   nameWithType: NetworkConnectionTools.EstablishConnection(string, string, NetworkConnectionType, object)
   nameWithType.vb: NetworkConnectionTools.EstablishConnection(String, String, NetworkConnectionType, Object)
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.String,System.String,Nitrocid.Kernel.Threading.KernelThread)
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.String,System.String,Nitrocid.Kernel.Threading.KernelThread)
   name: EstablishConnection(string, string, string, KernelThread)
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_EstablishConnection_System_String_System_String_System_String_Nitrocid_Kernel_Threading_KernelThread_
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.String,System.String,Nitrocid.Kernel.Threading.KernelThread)
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_EstablishConnection_System_String_System_String_System_String_Nitrocid_Kernel_Threading_KernelThread_
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.String,System.String,Nitrocid.Kernel.Threading.KernelThread)
   name.vb: EstablishConnection(String, String, String, KernelThread)
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(string, string, string, Nitrocid.Kernel.Threading.KernelThread)
-  fullName.vb: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(String, String, String, Nitrocid.Kernel.Threading.KernelThread)
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(string, string, string, Nitrocid.Kernel.Threading.KernelThread)
+  fullName.vb: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(String, String, String, Nitrocid.Kernel.Threading.KernelThread)
   nameWithType: NetworkConnectionTools.EstablishConnection(string, string, string, KernelThread)
   nameWithType.vb: NetworkConnectionTools.EstablishConnection(String, String, String, KernelThread)
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.String,System.String,System.Object)
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.String,System.String,System.Object)
   name: EstablishConnection(string, string, string, object)
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_EstablishConnection_System_String_System_String_System_String_System_Object_
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.String,System.String,System.Object)
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_EstablishConnection_System_String_System_String_System_String_System_Object_
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.String,System.String,System.Object)
   name.vb: EstablishConnection(String, String, String, Object)
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(string, string, string, object)
-  fullName.vb: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(String, String, String, Object)
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(string, string, string, object)
+  fullName.vb: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(String, String, String, Object)
   nameWithType: NetworkConnectionTools.EstablishConnection(string, string, string, object)
   nameWithType.vb: NetworkConnectionTools.EstablishConnection(String, String, String, Object)
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.Uri,Nitrocid.Network.Base.Connections.NetworkConnectionType,Nitrocid.Kernel.Threading.KernelThread)
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.Uri,Nitrocid.Network.Connections.NetworkConnectionType,Nitrocid.Kernel.Threading.KernelThread)
   name: EstablishConnection(string, Uri, NetworkConnectionType, KernelThread)
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_EstablishConnection_System_String_System_Uri_Nitrocid_Network_Base_Connections_NetworkConnectionType_Nitrocid_Kernel_Threading_KernelThread_
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.Uri,Nitrocid.Network.Base.Connections.NetworkConnectionType,Nitrocid.Kernel.Threading.KernelThread)
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_EstablishConnection_System_String_System_Uri_Nitrocid_Network_Connections_NetworkConnectionType_Nitrocid_Kernel_Threading_KernelThread_
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.Uri,Nitrocid.Network.Connections.NetworkConnectionType,Nitrocid.Kernel.Threading.KernelThread)
   name.vb: EstablishConnection(String, Uri, NetworkConnectionType, KernelThread)
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(string, System.Uri, Nitrocid.Network.Base.Connections.NetworkConnectionType, Nitrocid.Kernel.Threading.KernelThread)
-  fullName.vb: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(String, System.Uri, Nitrocid.Network.Base.Connections.NetworkConnectionType, Nitrocid.Kernel.Threading.KernelThread)
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(string, System.Uri, Nitrocid.Network.Connections.NetworkConnectionType, Nitrocid.Kernel.Threading.KernelThread)
+  fullName.vb: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(String, System.Uri, Nitrocid.Network.Connections.NetworkConnectionType, Nitrocid.Kernel.Threading.KernelThread)
   nameWithType: NetworkConnectionTools.EstablishConnection(string, Uri, NetworkConnectionType, KernelThread)
   nameWithType.vb: NetworkConnectionTools.EstablishConnection(String, Uri, NetworkConnectionType, KernelThread)
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.Uri,Nitrocid.Network.Base.Connections.NetworkConnectionType,System.Object)
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.Uri,Nitrocid.Network.Connections.NetworkConnectionType,System.Object)
   name: EstablishConnection(string, Uri, NetworkConnectionType, object)
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_EstablishConnection_System_String_System_Uri_Nitrocid_Network_Base_Connections_NetworkConnectionType_System_Object_
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.Uri,Nitrocid.Network.Base.Connections.NetworkConnectionType,System.Object)
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_EstablishConnection_System_String_System_Uri_Nitrocid_Network_Connections_NetworkConnectionType_System_Object_
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.Uri,Nitrocid.Network.Connections.NetworkConnectionType,System.Object)
   name.vb: EstablishConnection(String, Uri, NetworkConnectionType, Object)
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(string, System.Uri, Nitrocid.Network.Base.Connections.NetworkConnectionType, object)
-  fullName.vb: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(String, System.Uri, Nitrocid.Network.Base.Connections.NetworkConnectionType, Object)
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(string, System.Uri, Nitrocid.Network.Connections.NetworkConnectionType, object)
+  fullName.vb: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(String, System.Uri, Nitrocid.Network.Connections.NetworkConnectionType, Object)
   nameWithType: NetworkConnectionTools.EstablishConnection(string, Uri, NetworkConnectionType, object)
   nameWithType.vb: NetworkConnectionTools.EstablishConnection(String, Uri, NetworkConnectionType, Object)
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.Uri,System.String,Nitrocid.Kernel.Threading.KernelThread)
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.Uri,System.String,Nitrocid.Kernel.Threading.KernelThread)
   name: EstablishConnection(string, Uri, string, KernelThread)
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_EstablishConnection_System_String_System_Uri_System_String_Nitrocid_Kernel_Threading_KernelThread_
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.Uri,System.String,Nitrocid.Kernel.Threading.KernelThread)
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_EstablishConnection_System_String_System_Uri_System_String_Nitrocid_Kernel_Threading_KernelThread_
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.Uri,System.String,Nitrocid.Kernel.Threading.KernelThread)
   name.vb: EstablishConnection(String, Uri, String, KernelThread)
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(string, System.Uri, string, Nitrocid.Kernel.Threading.KernelThread)
-  fullName.vb: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(String, System.Uri, String, Nitrocid.Kernel.Threading.KernelThread)
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(string, System.Uri, string, Nitrocid.Kernel.Threading.KernelThread)
+  fullName.vb: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(String, System.Uri, String, Nitrocid.Kernel.Threading.KernelThread)
   nameWithType: NetworkConnectionTools.EstablishConnection(string, Uri, string, KernelThread)
   nameWithType.vb: NetworkConnectionTools.EstablishConnection(String, Uri, String, KernelThread)
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.Uri,System.String,System.Object)
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.Uri,System.String,System.Object)
   name: EstablishConnection(string, Uri, string, object)
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_EstablishConnection_System_String_System_Uri_System_String_System_Object_
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.Uri,System.String,System.Object)
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_EstablishConnection_System_String_System_Uri_System_String_System_Object_
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(System.String,System.Uri,System.String,System.Object)
   name.vb: EstablishConnection(String, Uri, String, Object)
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(string, System.Uri, string, object)
-  fullName.vb: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection(String, System.Uri, String, Object)
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(string, System.Uri, string, object)
+  fullName.vb: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection(String, System.Uri, String, Object)
   nameWithType: NetworkConnectionTools.EstablishConnection(string, Uri, string, object)
   nameWithType.vb: NetworkConnectionTools.EstablishConnection(String, Uri, String, Object)
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection*
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection*
   name: EstablishConnection
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_EstablishConnection_
-  commentId: Overload:Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_EstablishConnection_
+  commentId: Overload:Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.EstablishConnection
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.EstablishConnection
   nameWithType: NetworkConnectionTools.EstablishConnection
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionFromIndex(System.Int32)
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionFromIndex(System.Int32)
   name: GetConnectionFromIndex(int)
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_GetConnectionFromIndex_System_Int32_
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionFromIndex(System.Int32)
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_GetConnectionFromIndex_System_Int32_
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionFromIndex(System.Int32)
   name.vb: GetConnectionFromIndex(Integer)
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionFromIndex(int)
-  fullName.vb: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionFromIndex(Integer)
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionFromIndex(int)
+  fullName.vb: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionFromIndex(Integer)
   nameWithType: NetworkConnectionTools.GetConnectionFromIndex(int)
   nameWithType.vb: NetworkConnectionTools.GetConnectionFromIndex(Integer)
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionFromIndex*
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionFromIndex*
   name: GetConnectionFromIndex
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_GetConnectionFromIndex_
-  commentId: Overload:Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionFromIndex
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_GetConnectionFromIndex_
+  commentId: Overload:Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionFromIndex
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionFromIndex
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionFromIndex
   nameWithType: NetworkConnectionTools.GetConnectionFromIndex
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific(System.Int32,Nitrocid.Network.Base.Connections.NetworkConnectionType)
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific(System.Int32,Nitrocid.Network.Connections.NetworkConnectionType)
   name: GetConnectionFromIndexSpecific(int, NetworkConnectionType)
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_GetConnectionFromIndexSpecific_System_Int32_Nitrocid_Network_Base_Connections_NetworkConnectionType_
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific(System.Int32,Nitrocid.Network.Base.Connections.NetworkConnectionType)
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_GetConnectionFromIndexSpecific_System_Int32_Nitrocid_Network_Connections_NetworkConnectionType_
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific(System.Int32,Nitrocid.Network.Connections.NetworkConnectionType)
   name.vb: GetConnectionFromIndexSpecific(Integer, NetworkConnectionType)
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific(int, Nitrocid.Network.Base.Connections.NetworkConnectionType)
-  fullName.vb: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific(Integer, Nitrocid.Network.Base.Connections.NetworkConnectionType)
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific(int, Nitrocid.Network.Connections.NetworkConnectionType)
+  fullName.vb: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific(Integer, Nitrocid.Network.Connections.NetworkConnectionType)
   nameWithType: NetworkConnectionTools.GetConnectionFromIndexSpecific(int, NetworkConnectionType)
   nameWithType.vb: NetworkConnectionTools.GetConnectionFromIndexSpecific(Integer, NetworkConnectionType)
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific(System.Int32,System.String)
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific(System.Int32,System.String)
   name: GetConnectionFromIndexSpecific(int, string)
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_GetConnectionFromIndexSpecific_System_Int32_System_String_
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific(System.Int32,System.String)
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_GetConnectionFromIndexSpecific_System_Int32_System_String_
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific(System.Int32,System.String)
   name.vb: GetConnectionFromIndexSpecific(Integer, String)
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific(int, string)
-  fullName.vb: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific(Integer, String)
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific(int, string)
+  fullName.vb: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific(Integer, String)
   nameWithType: NetworkConnectionTools.GetConnectionFromIndexSpecific(int, string)
   nameWithType.vb: NetworkConnectionTools.GetConnectionFromIndexSpecific(Integer, String)
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific*
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific*
   name: GetConnectionFromIndexSpecific
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_GetConnectionFromIndexSpecific_
-  commentId: Overload:Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_GetConnectionFromIndexSpecific_
+  commentId: Overload:Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionFromIndexSpecific
   nameWithType: NetworkConnectionTools.GetConnectionFromIndexSpecific
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionIndex(Nitrocid.Network.Base.Connections.NetworkConnection)
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionIndex(Nitrocid.Network.Connections.NetworkConnection)
   name: GetConnectionIndex(NetworkConnection)
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_GetConnectionIndex_Nitrocid_Network_Base_Connections_NetworkConnection_
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionIndex(Nitrocid.Network.Base.Connections.NetworkConnection)
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionIndex(Nitrocid.Network.Base.Connections.NetworkConnection)
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_GetConnectionIndex_Nitrocid_Network_Connections_NetworkConnection_
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionIndex(Nitrocid.Network.Connections.NetworkConnection)
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionIndex(Nitrocid.Network.Connections.NetworkConnection)
   nameWithType: NetworkConnectionTools.GetConnectionIndex(NetworkConnection)
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionIndex*
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionIndex*
   name: GetConnectionIndex
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_GetConnectionIndex_
-  commentId: Overload:Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionIndex
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_GetConnectionIndex_
+  commentId: Overload:Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionIndex
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionIndex
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionIndex
   nameWithType: NetworkConnectionTools.GetConnectionIndex
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionIndexSpecific(Nitrocid.Network.Base.Connections.NetworkConnection,Nitrocid.Network.Base.Connections.NetworkConnectionType)
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionIndexSpecific(Nitrocid.Network.Connections.NetworkConnection,Nitrocid.Network.Connections.NetworkConnectionType)
   name: GetConnectionIndexSpecific(NetworkConnection, NetworkConnectionType)
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_GetConnectionIndexSpecific_Nitrocid_Network_Base_Connections_NetworkConnection_Nitrocid_Network_Base_Connections_NetworkConnectionType_
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionIndexSpecific(Nitrocid.Network.Base.Connections.NetworkConnection,Nitrocid.Network.Base.Connections.NetworkConnectionType)
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionIndexSpecific(Nitrocid.Network.Base.Connections.NetworkConnection, Nitrocid.Network.Base.Connections.NetworkConnectionType)
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_GetConnectionIndexSpecific_Nitrocid_Network_Connections_NetworkConnection_Nitrocid_Network_Connections_NetworkConnectionType_
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionIndexSpecific(Nitrocid.Network.Connections.NetworkConnection,Nitrocid.Network.Connections.NetworkConnectionType)
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionIndexSpecific(Nitrocid.Network.Connections.NetworkConnection, Nitrocid.Network.Connections.NetworkConnectionType)
   nameWithType: NetworkConnectionTools.GetConnectionIndexSpecific(NetworkConnection, NetworkConnectionType)
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionIndexSpecific(Nitrocid.Network.Base.Connections.NetworkConnection,System.String)
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionIndexSpecific(Nitrocid.Network.Connections.NetworkConnection,System.String)
   name: GetConnectionIndexSpecific(NetworkConnection, string)
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_GetConnectionIndexSpecific_Nitrocid_Network_Base_Connections_NetworkConnection_System_String_
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionIndexSpecific(Nitrocid.Network.Base.Connections.NetworkConnection,System.String)
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_GetConnectionIndexSpecific_Nitrocid_Network_Connections_NetworkConnection_System_String_
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionIndexSpecific(Nitrocid.Network.Connections.NetworkConnection,System.String)
   name.vb: GetConnectionIndexSpecific(NetworkConnection, String)
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionIndexSpecific(Nitrocid.Network.Base.Connections.NetworkConnection, string)
-  fullName.vb: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionIndexSpecific(Nitrocid.Network.Base.Connections.NetworkConnection, String)
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionIndexSpecific(Nitrocid.Network.Connections.NetworkConnection, string)
+  fullName.vb: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionIndexSpecific(Nitrocid.Network.Connections.NetworkConnection, String)
   nameWithType: NetworkConnectionTools.GetConnectionIndexSpecific(NetworkConnection, string)
   nameWithType.vb: NetworkConnectionTools.GetConnectionIndexSpecific(NetworkConnection, String)
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionIndexSpecific*
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionIndexSpecific*
   name: GetConnectionIndexSpecific
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_GetConnectionIndexSpecific_
-  commentId: Overload:Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionIndexSpecific
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_GetConnectionIndexSpecific_
+  commentId: Overload:Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionIndexSpecific
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetConnectionIndexSpecific
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.GetConnectionIndexSpecific
   nameWithType: NetworkConnectionTools.GetConnectionIndexSpecific
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetNetworkConnections(Nitrocid.Network.Base.Connections.NetworkConnectionType)
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.GetNetworkConnections(Nitrocid.Network.Connections.NetworkConnectionType)
   name: GetNetworkConnections(NetworkConnectionType)
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_GetNetworkConnections_Nitrocid_Network_Base_Connections_NetworkConnectionType_
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetNetworkConnections(Nitrocid.Network.Base.Connections.NetworkConnectionType)
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetNetworkConnections(Nitrocid.Network.Base.Connections.NetworkConnectionType)
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_GetNetworkConnections_Nitrocid_Network_Connections_NetworkConnectionType_
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.GetNetworkConnections(Nitrocid.Network.Connections.NetworkConnectionType)
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.GetNetworkConnections(Nitrocid.Network.Connections.NetworkConnectionType)
   nameWithType: NetworkConnectionTools.GetNetworkConnections(NetworkConnectionType)
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetNetworkConnections(System.String)
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.GetNetworkConnections(System.String)
   name: GetNetworkConnections(string)
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_GetNetworkConnections_System_String_
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetNetworkConnections(System.String)
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_GetNetworkConnections_System_String_
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.GetNetworkConnections(System.String)
   name.vb: GetNetworkConnections(String)
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetNetworkConnections(string)
-  fullName.vb: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetNetworkConnections(String)
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.GetNetworkConnections(string)
+  fullName.vb: Nitrocid.Network.Connections.NetworkConnectionTools.GetNetworkConnections(String)
   nameWithType: NetworkConnectionTools.GetNetworkConnections(string)
   nameWithType.vb: NetworkConnectionTools.GetNetworkConnections(String)
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetNetworkConnections*
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.GetNetworkConnections*
   name: GetNetworkConnections
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_GetNetworkConnections_
-  commentId: Overload:Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetNetworkConnections
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_GetNetworkConnections_
+  commentId: Overload:Nitrocid.Network.Connections.NetworkConnectionTools.GetNetworkConnections
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.GetNetworkConnections
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.GetNetworkConnections
   nameWithType: NetworkConnectionTools.GetNetworkConnections
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(Nitrocid.Shell.ShellBase.Shells.ShellType,System.Func{System.String,Nitrocid.Network.Base.Connections.NetworkConnection},System.Func{System.String,Nitrocid.Network.Base.SpeedDial.SpeedDialEntry,Nitrocid.Network.Base.Connections.NetworkConnection},System.String)
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.OpenConnectionForShell(Nitrocid.Shell.ShellBase.Shells.ShellType,System.Func{System.String,Nitrocid.Network.Connections.NetworkConnection},System.Func{System.String,Nitrocid.Network.SpeedDial.SpeedDialEntry,Nitrocid.Network.Connections.NetworkConnection},System.String)
   name: OpenConnectionForShell(ShellType, Func<string, NetworkConnection>, Func<string, SpeedDialEntry, NetworkConnection>, string)
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_OpenConnectionForShell_Nitrocid_Shell_ShellBase_Shells_ShellType_System_Func_System_String_Nitrocid_Network_Base_Connections_NetworkConnection__System_Func_System_String_Nitrocid_Network_Base_SpeedDial_SpeedDialEntry_Nitrocid_Network_Base_Connections_NetworkConnection__System_String_
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(Nitrocid.Shell.ShellBase.Shells.ShellType,System.Func{System.String,Nitrocid.Network.Base.Connections.NetworkConnection},System.Func{System.String,Nitrocid.Network.Base.SpeedDial.SpeedDialEntry,Nitrocid.Network.Base.Connections.NetworkConnection},System.String)
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_OpenConnectionForShell_Nitrocid_Shell_ShellBase_Shells_ShellType_System_Func_System_String_Nitrocid_Network_Connections_NetworkConnection__System_Func_System_String_Nitrocid_Network_SpeedDial_SpeedDialEntry_Nitrocid_Network_Connections_NetworkConnection__System_String_
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.OpenConnectionForShell(Nitrocid.Shell.ShellBase.Shells.ShellType,System.Func{System.String,Nitrocid.Network.Connections.NetworkConnection},System.Func{System.String,Nitrocid.Network.SpeedDial.SpeedDialEntry,Nitrocid.Network.Connections.NetworkConnection},System.String)
   name.vb: OpenConnectionForShell(ShellType, Func(Of String, NetworkConnection), Func(Of String, SpeedDialEntry, NetworkConnection), String)
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(Nitrocid.Shell.ShellBase.Shells.ShellType, System.Func<string, Nitrocid.Network.Base.Connections.NetworkConnection>, System.Func<string, Nitrocid.Network.Base.SpeedDial.SpeedDialEntry, Nitrocid.Network.Base.Connections.NetworkConnection>, string)
-  fullName.vb: Nitrocid.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(Nitrocid.Shell.ShellBase.Shells.ShellType, System.Func(Of String, Nitrocid.Network.Base.Connections.NetworkConnection), System.Func(Of String, Nitrocid.Network.Base.SpeedDial.SpeedDialEntry, Nitrocid.Network.Base.Connections.NetworkConnection), String)
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.OpenConnectionForShell(Nitrocid.Shell.ShellBase.Shells.ShellType, System.Func<string, Nitrocid.Network.Connections.NetworkConnection>, System.Func<string, Nitrocid.Network.SpeedDial.SpeedDialEntry, Nitrocid.Network.Connections.NetworkConnection>, string)
+  fullName.vb: Nitrocid.Network.Connections.NetworkConnectionTools.OpenConnectionForShell(Nitrocid.Shell.ShellBase.Shells.ShellType, System.Func(Of String, Nitrocid.Network.Connections.NetworkConnection), System.Func(Of String, Nitrocid.Network.SpeedDial.SpeedDialEntry, Nitrocid.Network.Connections.NetworkConnection), String)
   nameWithType: NetworkConnectionTools.OpenConnectionForShell(ShellType, Func<string, NetworkConnection>, Func<string, SpeedDialEntry, NetworkConnection>, string)
   nameWithType.vb: NetworkConnectionTools.OpenConnectionForShell(ShellType, Func(Of String, NetworkConnection), Func(Of String, SpeedDialEntry, NetworkConnection), String)
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(System.String,System.Func{System.String,Nitrocid.Network.Base.Connections.NetworkConnection},System.Func{System.String,Nitrocid.Network.Base.SpeedDial.SpeedDialEntry,Nitrocid.Network.Base.Connections.NetworkConnection},System.String)
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.OpenConnectionForShell(System.String,System.Func{System.String,Nitrocid.Network.Connections.NetworkConnection},System.Func{System.String,Nitrocid.Network.SpeedDial.SpeedDialEntry,Nitrocid.Network.Connections.NetworkConnection},System.String)
   name: OpenConnectionForShell(string, Func<string, NetworkConnection>, Func<string, SpeedDialEntry, NetworkConnection>, string)
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_OpenConnectionForShell_System_String_System_Func_System_String_Nitrocid_Network_Base_Connections_NetworkConnection__System_Func_System_String_Nitrocid_Network_Base_SpeedDial_SpeedDialEntry_Nitrocid_Network_Base_Connections_NetworkConnection__System_String_
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(System.String,System.Func{System.String,Nitrocid.Network.Base.Connections.NetworkConnection},System.Func{System.String,Nitrocid.Network.Base.SpeedDial.SpeedDialEntry,Nitrocid.Network.Base.Connections.NetworkConnection},System.String)
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_OpenConnectionForShell_System_String_System_Func_System_String_Nitrocid_Network_Connections_NetworkConnection__System_Func_System_String_Nitrocid_Network_SpeedDial_SpeedDialEntry_Nitrocid_Network_Connections_NetworkConnection__System_String_
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.OpenConnectionForShell(System.String,System.Func{System.String,Nitrocid.Network.Connections.NetworkConnection},System.Func{System.String,Nitrocid.Network.SpeedDial.SpeedDialEntry,Nitrocid.Network.Connections.NetworkConnection},System.String)
   name.vb: OpenConnectionForShell(String, Func(Of String, NetworkConnection), Func(Of String, SpeedDialEntry, NetworkConnection), String)
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(string, System.Func<string, Nitrocid.Network.Base.Connections.NetworkConnection>, System.Func<string, Nitrocid.Network.Base.SpeedDial.SpeedDialEntry, Nitrocid.Network.Base.Connections.NetworkConnection>, string)
-  fullName.vb: Nitrocid.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell(String, System.Func(Of String, Nitrocid.Network.Base.Connections.NetworkConnection), System.Func(Of String, Nitrocid.Network.Base.SpeedDial.SpeedDialEntry, Nitrocid.Network.Base.Connections.NetworkConnection), String)
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.OpenConnectionForShell(string, System.Func<string, Nitrocid.Network.Connections.NetworkConnection>, System.Func<string, Nitrocid.Network.SpeedDial.SpeedDialEntry, Nitrocid.Network.Connections.NetworkConnection>, string)
+  fullName.vb: Nitrocid.Network.Connections.NetworkConnectionTools.OpenConnectionForShell(String, System.Func(Of String, Nitrocid.Network.Connections.NetworkConnection), System.Func(Of String, Nitrocid.Network.SpeedDial.SpeedDialEntry, Nitrocid.Network.Connections.NetworkConnection), String)
   nameWithType: NetworkConnectionTools.OpenConnectionForShell(string, Func<string, NetworkConnection>, Func<string, SpeedDialEntry, NetworkConnection>, string)
   nameWithType.vb: NetworkConnectionTools.OpenConnectionForShell(String, Func(Of String, NetworkConnection), Func(Of String, SpeedDialEntry, NetworkConnection), String)
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell*
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.OpenConnectionForShell*
   name: OpenConnectionForShell
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_OpenConnectionForShell_
-  commentId: Overload:Nitrocid.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_OpenConnectionForShell_
+  commentId: Overload:Nitrocid.Network.Connections.NetworkConnectionTools.OpenConnectionForShell
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.OpenConnectionForShell
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.OpenConnectionForShell
   nameWithType: NetworkConnectionTools.OpenConnectionForShell
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.RegisterCustomConnectionType(System.String)
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.RegisterCustomConnectionType(System.String)
   name: RegisterCustomConnectionType(string)
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_RegisterCustomConnectionType_System_String_
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.RegisterCustomConnectionType(System.String)
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_RegisterCustomConnectionType_System_String_
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.RegisterCustomConnectionType(System.String)
   name.vb: RegisterCustomConnectionType(String)
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.RegisterCustomConnectionType(string)
-  fullName.vb: Nitrocid.Network.Base.Connections.NetworkConnectionTools.RegisterCustomConnectionType(String)
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.RegisterCustomConnectionType(string)
+  fullName.vb: Nitrocid.Network.Connections.NetworkConnectionTools.RegisterCustomConnectionType(String)
   nameWithType: NetworkConnectionTools.RegisterCustomConnectionType(string)
   nameWithType.vb: NetworkConnectionTools.RegisterCustomConnectionType(String)
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.RegisterCustomConnectionType*
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.RegisterCustomConnectionType*
   name: RegisterCustomConnectionType
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_RegisterCustomConnectionType_
-  commentId: Overload:Nitrocid.Network.Base.Connections.NetworkConnectionTools.RegisterCustomConnectionType
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_RegisterCustomConnectionType_
+  commentId: Overload:Nitrocid.Network.Connections.NetworkConnectionTools.RegisterCustomConnectionType
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.RegisterCustomConnectionType
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.RegisterCustomConnectionType
   nameWithType: NetworkConnectionTools.RegisterCustomConnectionType
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.UnregisterCustomConnectionType(System.String)
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.UnregisterCustomConnectionType(System.String)
   name: UnregisterCustomConnectionType(string)
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_UnregisterCustomConnectionType_System_String_
-  commentId: M:Nitrocid.Network.Base.Connections.NetworkConnectionTools.UnregisterCustomConnectionType(System.String)
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_UnregisterCustomConnectionType_System_String_
+  commentId: M:Nitrocid.Network.Connections.NetworkConnectionTools.UnregisterCustomConnectionType(System.String)
   name.vb: UnregisterCustomConnectionType(String)
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.UnregisterCustomConnectionType(string)
-  fullName.vb: Nitrocid.Network.Base.Connections.NetworkConnectionTools.UnregisterCustomConnectionType(String)
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.UnregisterCustomConnectionType(string)
+  fullName.vb: Nitrocid.Network.Connections.NetworkConnectionTools.UnregisterCustomConnectionType(String)
   nameWithType: NetworkConnectionTools.UnregisterCustomConnectionType(string)
   nameWithType.vb: NetworkConnectionTools.UnregisterCustomConnectionType(String)
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionTools.UnregisterCustomConnectionType*
+- uid: Nitrocid.Network.Connections.NetworkConnectionTools.UnregisterCustomConnectionType*
   name: UnregisterCustomConnectionType
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionTools.html#Nitrocid_Network_Base_Connections_NetworkConnectionTools_UnregisterCustomConnectionType_
-  commentId: Overload:Nitrocid.Network.Base.Connections.NetworkConnectionTools.UnregisterCustomConnectionType
+  href: api/Nitrocid.Network.Connections.NetworkConnectionTools.html#Nitrocid_Network_Connections_NetworkConnectionTools_UnregisterCustomConnectionType_
+  commentId: Overload:Nitrocid.Network.Connections.NetworkConnectionTools.UnregisterCustomConnectionType
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionTools.UnregisterCustomConnectionType
+  fullName: Nitrocid.Network.Connections.NetworkConnectionTools.UnregisterCustomConnectionType
   nameWithType: NetworkConnectionTools.UnregisterCustomConnectionType
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionType
+- uid: Nitrocid.Network.Connections.NetworkConnectionType
   name: NetworkConnectionType
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionType.html
-  commentId: T:Nitrocid.Network.Base.Connections.NetworkConnectionType
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionType
+  href: api/Nitrocid.Network.Connections.NetworkConnectionType.html
+  commentId: T:Nitrocid.Network.Connections.NetworkConnectionType
+  fullName: Nitrocid.Network.Connections.NetworkConnectionType
   nameWithType: NetworkConnectionType
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionType.FTP
+- uid: Nitrocid.Network.Connections.NetworkConnectionType.FTP
   name: FTP
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionType.html#Nitrocid_Network_Base_Connections_NetworkConnectionType_FTP
-  commentId: F:Nitrocid.Network.Base.Connections.NetworkConnectionType.FTP
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionType.FTP
+  href: api/Nitrocid.Network.Connections.NetworkConnectionType.html#Nitrocid_Network_Connections_NetworkConnectionType_FTP
+  commentId: F:Nitrocid.Network.Connections.NetworkConnectionType.FTP
+  fullName: Nitrocid.Network.Connections.NetworkConnectionType.FTP
   nameWithType: NetworkConnectionType.FTP
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionType.HTTP
+- uid: Nitrocid.Network.Connections.NetworkConnectionType.HTTP
   name: HTTP
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionType.html#Nitrocid_Network_Base_Connections_NetworkConnectionType_HTTP
-  commentId: F:Nitrocid.Network.Base.Connections.NetworkConnectionType.HTTP
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionType.HTTP
+  href: api/Nitrocid.Network.Connections.NetworkConnectionType.html#Nitrocid_Network_Connections_NetworkConnectionType_HTTP
+  commentId: F:Nitrocid.Network.Connections.NetworkConnectionType.HTTP
+  fullName: Nitrocid.Network.Connections.NetworkConnectionType.HTTP
   nameWithType: NetworkConnectionType.HTTP
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionType.Mail
+- uid: Nitrocid.Network.Connections.NetworkConnectionType.Mail
   name: Mail
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionType.html#Nitrocid_Network_Base_Connections_NetworkConnectionType_Mail
-  commentId: F:Nitrocid.Network.Base.Connections.NetworkConnectionType.Mail
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionType.Mail
+  href: api/Nitrocid.Network.Connections.NetworkConnectionType.html#Nitrocid_Network_Connections_NetworkConnectionType_Mail
+  commentId: F:Nitrocid.Network.Connections.NetworkConnectionType.Mail
+  fullName: Nitrocid.Network.Connections.NetworkConnectionType.Mail
   nameWithType: NetworkConnectionType.Mail
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionType.RSS
+- uid: Nitrocid.Network.Connections.NetworkConnectionType.RSS
   name: RSS
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionType.html#Nitrocid_Network_Base_Connections_NetworkConnectionType_RSS
-  commentId: F:Nitrocid.Network.Base.Connections.NetworkConnectionType.RSS
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionType.RSS
+  href: api/Nitrocid.Network.Connections.NetworkConnectionType.html#Nitrocid_Network_Connections_NetworkConnectionType_RSS
+  commentId: F:Nitrocid.Network.Connections.NetworkConnectionType.RSS
+  fullName: Nitrocid.Network.Connections.NetworkConnectionType.RSS
   nameWithType: NetworkConnectionType.RSS
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionType.SFTP
+- uid: Nitrocid.Network.Connections.NetworkConnectionType.SFTP
   name: SFTP
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionType.html#Nitrocid_Network_Base_Connections_NetworkConnectionType_SFTP
-  commentId: F:Nitrocid.Network.Base.Connections.NetworkConnectionType.SFTP
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionType.SFTP
+  href: api/Nitrocid.Network.Connections.NetworkConnectionType.html#Nitrocid_Network_Connections_NetworkConnectionType_SFTP
+  commentId: F:Nitrocid.Network.Connections.NetworkConnectionType.SFTP
+  fullName: Nitrocid.Network.Connections.NetworkConnectionType.SFTP
   nameWithType: NetworkConnectionType.SFTP
-- uid: Nitrocid.Network.Base.Connections.NetworkConnectionType.SSH
+- uid: Nitrocid.Network.Connections.NetworkConnectionType.SSH
   name: SSH
-  href: api/Nitrocid.Network.Base.Connections.NetworkConnectionType.html#Nitrocid_Network_Base_Connections_NetworkConnectionType_SSH
-  commentId: F:Nitrocid.Network.Base.Connections.NetworkConnectionType.SSH
-  fullName: Nitrocid.Network.Base.Connections.NetworkConnectionType.SSH
+  href: api/Nitrocid.Network.Connections.NetworkConnectionType.html#Nitrocid_Network_Connections_NetworkConnectionType_SSH
+  commentId: F:Nitrocid.Network.Connections.NetworkConnectionType.SSH
+  fullName: Nitrocid.Network.Connections.NetworkConnectionType.SSH
   nameWithType: NetworkConnectionType.SSH
-- uid: Nitrocid.Network.Base.NetworkTools
+- uid: Nitrocid.Network.NetworkTools
   name: NetworkTools
-  href: api/Nitrocid.Network.Base.NetworkTools.html
-  commentId: T:Nitrocid.Network.Base.NetworkTools
-  fullName: Nitrocid.Network.Base.NetworkTools
+  href: api/Nitrocid.Network.NetworkTools.html
+  commentId: T:Nitrocid.Network.NetworkTools
+  fullName: Nitrocid.Network.NetworkTools
   nameWithType: NetworkTools
-- uid: Nitrocid.Network.Base.NetworkTools.ChangeHostname(System.String)
+- uid: Nitrocid.Network.NetworkTools.ChangeHostname(System.String)
   name: ChangeHostname(string)
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_ChangeHostname_System_String_
-  commentId: M:Nitrocid.Network.Base.NetworkTools.ChangeHostname(System.String)
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_ChangeHostname_System_String_
+  commentId: M:Nitrocid.Network.NetworkTools.ChangeHostname(System.String)
   name.vb: ChangeHostname(String)
-  fullName: Nitrocid.Network.Base.NetworkTools.ChangeHostname(string)
-  fullName.vb: Nitrocid.Network.Base.NetworkTools.ChangeHostname(String)
+  fullName: Nitrocid.Network.NetworkTools.ChangeHostname(string)
+  fullName.vb: Nitrocid.Network.NetworkTools.ChangeHostname(String)
   nameWithType: NetworkTools.ChangeHostname(string)
   nameWithType.vb: NetworkTools.ChangeHostname(String)
-- uid: Nitrocid.Network.Base.NetworkTools.ChangeHostname*
+- uid: Nitrocid.Network.NetworkTools.ChangeHostname*
   name: ChangeHostname
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_ChangeHostname_
-  commentId: Overload:Nitrocid.Network.Base.NetworkTools.ChangeHostname
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_ChangeHostname_
+  commentId: Overload:Nitrocid.Network.NetworkTools.ChangeHostname
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.NetworkTools.ChangeHostname
+  fullName: Nitrocid.Network.NetworkTools.ChangeHostname
   nameWithType: NetworkTools.ChangeHostname
-- uid: Nitrocid.Network.Base.NetworkTools.DownloadRetries
+- uid: Nitrocid.Network.NetworkTools.DownloadRetries
   name: DownloadRetries
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_DownloadRetries
-  commentId: P:Nitrocid.Network.Base.NetworkTools.DownloadRetries
-  fullName: Nitrocid.Network.Base.NetworkTools.DownloadRetries
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_DownloadRetries
+  commentId: P:Nitrocid.Network.NetworkTools.DownloadRetries
+  fullName: Nitrocid.Network.NetworkTools.DownloadRetries
   nameWithType: NetworkTools.DownloadRetries
-- uid: Nitrocid.Network.Base.NetworkTools.DownloadRetries*
+- uid: Nitrocid.Network.NetworkTools.DownloadRetries*
   name: DownloadRetries
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_DownloadRetries_
-  commentId: Overload:Nitrocid.Network.Base.NetworkTools.DownloadRetries
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_DownloadRetries_
+  commentId: Overload:Nitrocid.Network.NetworkTools.DownloadRetries
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.NetworkTools.DownloadRetries
+  fullName: Nitrocid.Network.NetworkTools.DownloadRetries
   nameWithType: NetworkTools.DownloadRetries
-- uid: Nitrocid.Network.Base.NetworkTools.GetFilenameFromUrl(System.String)
+- uid: Nitrocid.Network.NetworkTools.GetFilenameFromUrl(System.String)
   name: GetFilenameFromUrl(string)
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_GetFilenameFromUrl_System_String_
-  commentId: M:Nitrocid.Network.Base.NetworkTools.GetFilenameFromUrl(System.String)
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_GetFilenameFromUrl_System_String_
+  commentId: M:Nitrocid.Network.NetworkTools.GetFilenameFromUrl(System.String)
   name.vb: GetFilenameFromUrl(String)
-  fullName: Nitrocid.Network.Base.NetworkTools.GetFilenameFromUrl(string)
-  fullName.vb: Nitrocid.Network.Base.NetworkTools.GetFilenameFromUrl(String)
+  fullName: Nitrocid.Network.NetworkTools.GetFilenameFromUrl(string)
+  fullName.vb: Nitrocid.Network.NetworkTools.GetFilenameFromUrl(String)
   nameWithType: NetworkTools.GetFilenameFromUrl(string)
   nameWithType.vb: NetworkTools.GetFilenameFromUrl(String)
-- uid: Nitrocid.Network.Base.NetworkTools.GetFilenameFromUrl*
+- uid: Nitrocid.Network.NetworkTools.GetFilenameFromUrl*
   name: GetFilenameFromUrl
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_GetFilenameFromUrl_
-  commentId: Overload:Nitrocid.Network.Base.NetworkTools.GetFilenameFromUrl
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_GetFilenameFromUrl_
+  commentId: Overload:Nitrocid.Network.NetworkTools.GetFilenameFromUrl
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.NetworkTools.GetFilenameFromUrl
+  fullName: Nitrocid.Network.NetworkTools.GetFilenameFromUrl
   nameWithType: NetworkTools.GetFilenameFromUrl
-- uid: Nitrocid.Network.Base.NetworkTools.GetOnlineDevicesInNetwork
+- uid: Nitrocid.Network.NetworkTools.GetOnlineDevicesInNetwork
   name: GetOnlineDevicesInNetwork()
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_GetOnlineDevicesInNetwork
-  commentId: M:Nitrocid.Network.Base.NetworkTools.GetOnlineDevicesInNetwork
-  fullName: Nitrocid.Network.Base.NetworkTools.GetOnlineDevicesInNetwork()
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_GetOnlineDevicesInNetwork
+  commentId: M:Nitrocid.Network.NetworkTools.GetOnlineDevicesInNetwork
+  fullName: Nitrocid.Network.NetworkTools.GetOnlineDevicesInNetwork()
   nameWithType: NetworkTools.GetOnlineDevicesInNetwork()
-- uid: Nitrocid.Network.Base.NetworkTools.GetOnlineDevicesInNetwork*
+- uid: Nitrocid.Network.NetworkTools.GetOnlineDevicesInNetwork*
   name: GetOnlineDevicesInNetwork
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_GetOnlineDevicesInNetwork_
-  commentId: Overload:Nitrocid.Network.Base.NetworkTools.GetOnlineDevicesInNetwork
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_GetOnlineDevicesInNetwork_
+  commentId: Overload:Nitrocid.Network.NetworkTools.GetOnlineDevicesInNetwork
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.NetworkTools.GetOnlineDevicesInNetwork
+  fullName: Nitrocid.Network.NetworkTools.GetOnlineDevicesInNetwork
   nameWithType: NetworkTools.GetOnlineDevicesInNetwork
-- uid: Nitrocid.Network.Base.NetworkTools.HostName
+- uid: Nitrocid.Network.NetworkTools.HostName
   name: HostName
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_HostName
-  commentId: P:Nitrocid.Network.Base.NetworkTools.HostName
-  fullName: Nitrocid.Network.Base.NetworkTools.HostName
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_HostName
+  commentId: P:Nitrocid.Network.NetworkTools.HostName
+  fullName: Nitrocid.Network.NetworkTools.HostName
   nameWithType: NetworkTools.HostName
-- uid: Nitrocid.Network.Base.NetworkTools.HostName*
+- uid: Nitrocid.Network.NetworkTools.HostName*
   name: HostName
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_HostName_
-  commentId: Overload:Nitrocid.Network.Base.NetworkTools.HostName
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_HostName_
+  commentId: Overload:Nitrocid.Network.NetworkTools.HostName
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.NetworkTools.HostName
+  fullName: Nitrocid.Network.NetworkTools.HostName
   nameWithType: NetworkTools.HostName
-- uid: Nitrocid.Network.Base.NetworkTools.InternetAvailable
+- uid: Nitrocid.Network.NetworkTools.InternetAvailable
   name: InternetAvailable
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_InternetAvailable
-  commentId: P:Nitrocid.Network.Base.NetworkTools.InternetAvailable
-  fullName: Nitrocid.Network.Base.NetworkTools.InternetAvailable
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_InternetAvailable
+  commentId: P:Nitrocid.Network.NetworkTools.InternetAvailable
+  fullName: Nitrocid.Network.NetworkTools.InternetAvailable
   nameWithType: NetworkTools.InternetAvailable
-- uid: Nitrocid.Network.Base.NetworkTools.InternetAvailable*
+- uid: Nitrocid.Network.NetworkTools.InternetAvailable*
   name: InternetAvailable
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_InternetAvailable_
-  commentId: Overload:Nitrocid.Network.Base.NetworkTools.InternetAvailable
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_InternetAvailable_
+  commentId: Overload:Nitrocid.Network.NetworkTools.InternetAvailable
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.NetworkTools.InternetAvailable
+  fullName: Nitrocid.Network.NetworkTools.InternetAvailable
   nameWithType: NetworkTools.InternetAvailable
-- uid: Nitrocid.Network.Base.NetworkTools.NetworkAvailable
+- uid: Nitrocid.Network.NetworkTools.NetworkAvailable
   name: NetworkAvailable
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_NetworkAvailable
-  commentId: P:Nitrocid.Network.Base.NetworkTools.NetworkAvailable
-  fullName: Nitrocid.Network.Base.NetworkTools.NetworkAvailable
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_NetworkAvailable
+  commentId: P:Nitrocid.Network.NetworkTools.NetworkAvailable
+  fullName: Nitrocid.Network.NetworkTools.NetworkAvailable
   nameWithType: NetworkTools.NetworkAvailable
-- uid: Nitrocid.Network.Base.NetworkTools.NetworkAvailable*
+- uid: Nitrocid.Network.NetworkTools.NetworkAvailable*
   name: NetworkAvailable
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_NetworkAvailable_
-  commentId: Overload:Nitrocid.Network.Base.NetworkTools.NetworkAvailable
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_NetworkAvailable_
+  commentId: Overload:Nitrocid.Network.NetworkTools.NetworkAvailable
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.NetworkTools.NetworkAvailable
+  fullName: Nitrocid.Network.NetworkTools.NetworkAvailable
   nameWithType: NetworkTools.NetworkAvailable
-- uid: Nitrocid.Network.Base.NetworkTools.PingAddress(System.String,System.Int32,System.Byte[],System.Net.NetworkInformation.PingOptions)
+- uid: Nitrocid.Network.NetworkTools.PingAddress(System.String,System.Int32,System.Byte[],System.Net.NetworkInformation.PingOptions)
   name: PingAddress(string, int, byte[], PingOptions)
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_PingAddress_System_String_System_Int32_System_Byte___System_Net_NetworkInformation_PingOptions_
-  commentId: M:Nitrocid.Network.Base.NetworkTools.PingAddress(System.String,System.Int32,System.Byte[],System.Net.NetworkInformation.PingOptions)
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_PingAddress_System_String_System_Int32_System_Byte___System_Net_NetworkInformation_PingOptions_
+  commentId: M:Nitrocid.Network.NetworkTools.PingAddress(System.String,System.Int32,System.Byte[],System.Net.NetworkInformation.PingOptions)
   name.vb: PingAddress(String, Integer, Byte(), PingOptions)
-  fullName: Nitrocid.Network.Base.NetworkTools.PingAddress(string, int, byte[], System.Net.NetworkInformation.PingOptions)
-  fullName.vb: Nitrocid.Network.Base.NetworkTools.PingAddress(String, Integer, Byte(), System.Net.NetworkInformation.PingOptions)
+  fullName: Nitrocid.Network.NetworkTools.PingAddress(string, int, byte[], System.Net.NetworkInformation.PingOptions)
+  fullName.vb: Nitrocid.Network.NetworkTools.PingAddress(String, Integer, Byte(), System.Net.NetworkInformation.PingOptions)
   nameWithType: NetworkTools.PingAddress(string, int, byte[], PingOptions)
   nameWithType.vb: NetworkTools.PingAddress(String, Integer, Byte(), PingOptions)
-- uid: Nitrocid.Network.Base.NetworkTools.PingAddress(System.String,System.Int32,System.Net.NetworkInformation.PingOptions)
+- uid: Nitrocid.Network.NetworkTools.PingAddress(System.String,System.Int32,System.Net.NetworkInformation.PingOptions)
   name: PingAddress(string, int, PingOptions)
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_PingAddress_System_String_System_Int32_System_Net_NetworkInformation_PingOptions_
-  commentId: M:Nitrocid.Network.Base.NetworkTools.PingAddress(System.String,System.Int32,System.Net.NetworkInformation.PingOptions)
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_PingAddress_System_String_System_Int32_System_Net_NetworkInformation_PingOptions_
+  commentId: M:Nitrocid.Network.NetworkTools.PingAddress(System.String,System.Int32,System.Net.NetworkInformation.PingOptions)
   name.vb: PingAddress(String, Integer, PingOptions)
-  fullName: Nitrocid.Network.Base.NetworkTools.PingAddress(string, int, System.Net.NetworkInformation.PingOptions)
-  fullName.vb: Nitrocid.Network.Base.NetworkTools.PingAddress(String, Integer, System.Net.NetworkInformation.PingOptions)
+  fullName: Nitrocid.Network.NetworkTools.PingAddress(string, int, System.Net.NetworkInformation.PingOptions)
+  fullName.vb: Nitrocid.Network.NetworkTools.PingAddress(String, Integer, System.Net.NetworkInformation.PingOptions)
   nameWithType: NetworkTools.PingAddress(string, int, PingOptions)
   nameWithType.vb: NetworkTools.PingAddress(String, Integer, PingOptions)
-- uid: Nitrocid.Network.Base.NetworkTools.PingAddress(System.String,System.Int32,System.String,System.Net.NetworkInformation.PingOptions)
+- uid: Nitrocid.Network.NetworkTools.PingAddress(System.String,System.Int32,System.String,System.Net.NetworkInformation.PingOptions)
   name: PingAddress(string, int, string, PingOptions)
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_PingAddress_System_String_System_Int32_System_String_System_Net_NetworkInformation_PingOptions_
-  commentId: M:Nitrocid.Network.Base.NetworkTools.PingAddress(System.String,System.Int32,System.String,System.Net.NetworkInformation.PingOptions)
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_PingAddress_System_String_System_Int32_System_String_System_Net_NetworkInformation_PingOptions_
+  commentId: M:Nitrocid.Network.NetworkTools.PingAddress(System.String,System.Int32,System.String,System.Net.NetworkInformation.PingOptions)
   name.vb: PingAddress(String, Integer, String, PingOptions)
-  fullName: Nitrocid.Network.Base.NetworkTools.PingAddress(string, int, string, System.Net.NetworkInformation.PingOptions)
-  fullName.vb: Nitrocid.Network.Base.NetworkTools.PingAddress(String, Integer, String, System.Net.NetworkInformation.PingOptions)
+  fullName: Nitrocid.Network.NetworkTools.PingAddress(string, int, string, System.Net.NetworkInformation.PingOptions)
+  fullName.vb: Nitrocid.Network.NetworkTools.PingAddress(String, Integer, String, System.Net.NetworkInformation.PingOptions)
   nameWithType: NetworkTools.PingAddress(string, int, string, PingOptions)
   nameWithType.vb: NetworkTools.PingAddress(String, Integer, String, PingOptions)
-- uid: Nitrocid.Network.Base.NetworkTools.PingAddress(System.String,System.Net.NetworkInformation.PingOptions)
+- uid: Nitrocid.Network.NetworkTools.PingAddress(System.String,System.Net.NetworkInformation.PingOptions)
   name: PingAddress(string, PingOptions)
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_PingAddress_System_String_System_Net_NetworkInformation_PingOptions_
-  commentId: M:Nitrocid.Network.Base.NetworkTools.PingAddress(System.String,System.Net.NetworkInformation.PingOptions)
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_PingAddress_System_String_System_Net_NetworkInformation_PingOptions_
+  commentId: M:Nitrocid.Network.NetworkTools.PingAddress(System.String,System.Net.NetworkInformation.PingOptions)
   name.vb: PingAddress(String, PingOptions)
-  fullName: Nitrocid.Network.Base.NetworkTools.PingAddress(string, System.Net.NetworkInformation.PingOptions)
-  fullName.vb: Nitrocid.Network.Base.NetworkTools.PingAddress(String, System.Net.NetworkInformation.PingOptions)
+  fullName: Nitrocid.Network.NetworkTools.PingAddress(string, System.Net.NetworkInformation.PingOptions)
+  fullName.vb: Nitrocid.Network.NetworkTools.PingAddress(String, System.Net.NetworkInformation.PingOptions)
   nameWithType: NetworkTools.PingAddress(string, PingOptions)
   nameWithType.vb: NetworkTools.PingAddress(String, PingOptions)
-- uid: Nitrocid.Network.Base.NetworkTools.PingAddress*
+- uid: Nitrocid.Network.NetworkTools.PingAddress*
   name: PingAddress
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_PingAddress_
-  commentId: Overload:Nitrocid.Network.Base.NetworkTools.PingAddress
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_PingAddress_
+  commentId: Overload:Nitrocid.Network.NetworkTools.PingAddress
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.NetworkTools.PingAddress
+  fullName: Nitrocid.Network.NetworkTools.PingAddress
   nameWithType: NetworkTools.PingAddress
-- uid: Nitrocid.Network.Base.NetworkTools.PingTimeout
+- uid: Nitrocid.Network.NetworkTools.PingTimeout
   name: PingTimeout
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_PingTimeout
-  commentId: P:Nitrocid.Network.Base.NetworkTools.PingTimeout
-  fullName: Nitrocid.Network.Base.NetworkTools.PingTimeout
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_PingTimeout
+  commentId: P:Nitrocid.Network.NetworkTools.PingTimeout
+  fullName: Nitrocid.Network.NetworkTools.PingTimeout
   nameWithType: NetworkTools.PingTimeout
-- uid: Nitrocid.Network.Base.NetworkTools.PingTimeout*
+- uid: Nitrocid.Network.NetworkTools.PingTimeout*
   name: PingTimeout
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_PingTimeout_
-  commentId: Overload:Nitrocid.Network.Base.NetworkTools.PingTimeout
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_PingTimeout_
+  commentId: Overload:Nitrocid.Network.NetworkTools.PingTimeout
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.NetworkTools.PingTimeout
+  fullName: Nitrocid.Network.NetworkTools.PingTimeout
   nameWithType: NetworkTools.PingTimeout
-- uid: Nitrocid.Network.Base.NetworkTools.ShowProgress
+- uid: Nitrocid.Network.NetworkTools.ShowProgress
   name: ShowProgress
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_ShowProgress
-  commentId: P:Nitrocid.Network.Base.NetworkTools.ShowProgress
-  fullName: Nitrocid.Network.Base.NetworkTools.ShowProgress
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_ShowProgress
+  commentId: P:Nitrocid.Network.NetworkTools.ShowProgress
+  fullName: Nitrocid.Network.NetworkTools.ShowProgress
   nameWithType: NetworkTools.ShowProgress
-- uid: Nitrocid.Network.Base.NetworkTools.ShowProgress*
+- uid: Nitrocid.Network.NetworkTools.ShowProgress*
   name: ShowProgress
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_ShowProgress_
-  commentId: Overload:Nitrocid.Network.Base.NetworkTools.ShowProgress
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_ShowProgress_
+  commentId: Overload:Nitrocid.Network.NetworkTools.ShowProgress
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.NetworkTools.ShowProgress
+  fullName: Nitrocid.Network.NetworkTools.ShowProgress
   nameWithType: NetworkTools.ShowProgress
-- uid: Nitrocid.Network.Base.NetworkTools.TryChangeHostname(System.String)
+- uid: Nitrocid.Network.NetworkTools.TryChangeHostname(System.String)
   name: TryChangeHostname(string)
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_TryChangeHostname_System_String_
-  commentId: M:Nitrocid.Network.Base.NetworkTools.TryChangeHostname(System.String)
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_TryChangeHostname_System_String_
+  commentId: M:Nitrocid.Network.NetworkTools.TryChangeHostname(System.String)
   name.vb: TryChangeHostname(String)
-  fullName: Nitrocid.Network.Base.NetworkTools.TryChangeHostname(string)
-  fullName.vb: Nitrocid.Network.Base.NetworkTools.TryChangeHostname(String)
+  fullName: Nitrocid.Network.NetworkTools.TryChangeHostname(string)
+  fullName.vb: Nitrocid.Network.NetworkTools.TryChangeHostname(String)
   nameWithType: NetworkTools.TryChangeHostname(string)
   nameWithType.vb: NetworkTools.TryChangeHostname(String)
-- uid: Nitrocid.Network.Base.NetworkTools.TryChangeHostname*
+- uid: Nitrocid.Network.NetworkTools.TryChangeHostname*
   name: TryChangeHostname
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_TryChangeHostname_
-  commentId: Overload:Nitrocid.Network.Base.NetworkTools.TryChangeHostname
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_TryChangeHostname_
+  commentId: Overload:Nitrocid.Network.NetworkTools.TryChangeHostname
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.NetworkTools.TryChangeHostname
+  fullName: Nitrocid.Network.NetworkTools.TryChangeHostname
   nameWithType: NetworkTools.TryChangeHostname
-- uid: Nitrocid.Network.Base.NetworkTools.UploadRetries
+- uid: Nitrocid.Network.NetworkTools.UploadRetries
   name: UploadRetries
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_UploadRetries
-  commentId: P:Nitrocid.Network.Base.NetworkTools.UploadRetries
-  fullName: Nitrocid.Network.Base.NetworkTools.UploadRetries
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_UploadRetries
+  commentId: P:Nitrocid.Network.NetworkTools.UploadRetries
+  fullName: Nitrocid.Network.NetworkTools.UploadRetries
   nameWithType: NetworkTools.UploadRetries
-- uid: Nitrocid.Network.Base.NetworkTools.UploadRetries*
+- uid: Nitrocid.Network.NetworkTools.UploadRetries*
   name: UploadRetries
-  href: api/Nitrocid.Network.Base.NetworkTools.html#Nitrocid_Network_Base_NetworkTools_UploadRetries_
-  commentId: Overload:Nitrocid.Network.Base.NetworkTools.UploadRetries
+  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_UploadRetries_
+  commentId: Overload:Nitrocid.Network.NetworkTools.UploadRetries
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.NetworkTools.UploadRetries
+  fullName: Nitrocid.Network.NetworkTools.UploadRetries
   nameWithType: NetworkTools.UploadRetries
-- uid: Nitrocid.Network.Base.SpeedDial
-  name: Nitrocid.Network.Base.SpeedDial
-  href: api/Nitrocid.Network.Base.SpeedDial.html
-  commentId: N:Nitrocid.Network.Base.SpeedDial
-  fullName: Nitrocid.Network.Base.SpeedDial
-  nameWithType: Nitrocid.Network.Base.SpeedDial
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialEntry
+- uid: Nitrocid.Network.SpeedDial
+  name: Nitrocid.Network.SpeedDial
+  href: api/Nitrocid.Network.SpeedDial.html
+  commentId: N:Nitrocid.Network.SpeedDial
+  fullName: Nitrocid.Network.SpeedDial
+  nameWithType: Nitrocid.Network.SpeedDial
+- uid: Nitrocid.Network.SpeedDial.SpeedDialEntry
   name: SpeedDialEntry
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.html
-  commentId: T:Nitrocid.Network.Base.SpeedDial.SpeedDialEntry
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialEntry
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialEntry.html
+  commentId: T:Nitrocid.Network.SpeedDial.SpeedDialEntry
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialEntry
   nameWithType: SpeedDialEntry
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Address
+- uid: Nitrocid.Network.SpeedDial.SpeedDialEntry.Address
   name: Address
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.html#Nitrocid_Network_Base_SpeedDial_SpeedDialEntry_Address
-  commentId: P:Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Address
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Address
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialEntry.html#Nitrocid_Network_SpeedDial_SpeedDialEntry_Address
+  commentId: P:Nitrocid.Network.SpeedDial.SpeedDialEntry.Address
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialEntry.Address
   nameWithType: SpeedDialEntry.Address
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Address*
+- uid: Nitrocid.Network.SpeedDial.SpeedDialEntry.Address*
   name: Address
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.html#Nitrocid_Network_Base_SpeedDial_SpeedDialEntry_Address_
-  commentId: Overload:Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Address
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialEntry.html#Nitrocid_Network_SpeedDial_SpeedDialEntry_Address_
+  commentId: Overload:Nitrocid.Network.SpeedDial.SpeedDialEntry.Address
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Address
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialEntry.Address
   nameWithType: SpeedDialEntry.Address
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Options
+- uid: Nitrocid.Network.SpeedDial.SpeedDialEntry.Options
   name: Options
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.html#Nitrocid_Network_Base_SpeedDial_SpeedDialEntry_Options
-  commentId: P:Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Options
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Options
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialEntry.html#Nitrocid_Network_SpeedDial_SpeedDialEntry_Options
+  commentId: P:Nitrocid.Network.SpeedDial.SpeedDialEntry.Options
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialEntry.Options
   nameWithType: SpeedDialEntry.Options
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Options*
+- uid: Nitrocid.Network.SpeedDial.SpeedDialEntry.Options*
   name: Options
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.html#Nitrocid_Network_Base_SpeedDial_SpeedDialEntry_Options_
-  commentId: Overload:Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Options
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialEntry.html#Nitrocid_Network_SpeedDial_SpeedDialEntry_Options_
+  commentId: Overload:Nitrocid.Network.SpeedDial.SpeedDialEntry.Options
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Options
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialEntry.Options
   nameWithType: SpeedDialEntry.Options
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Port
+- uid: Nitrocid.Network.SpeedDial.SpeedDialEntry.Port
   name: Port
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.html#Nitrocid_Network_Base_SpeedDial_SpeedDialEntry_Port
-  commentId: P:Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Port
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Port
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialEntry.html#Nitrocid_Network_SpeedDial_SpeedDialEntry_Port
+  commentId: P:Nitrocid.Network.SpeedDial.SpeedDialEntry.Port
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialEntry.Port
   nameWithType: SpeedDialEntry.Port
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Port*
+- uid: Nitrocid.Network.SpeedDial.SpeedDialEntry.Port*
   name: Port
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.html#Nitrocid_Network_Base_SpeedDial_SpeedDialEntry_Port_
-  commentId: Overload:Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Port
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialEntry.html#Nitrocid_Network_SpeedDial_SpeedDialEntry_Port_
+  commentId: Overload:Nitrocid.Network.SpeedDial.SpeedDialEntry.Port
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Port
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialEntry.Port
   nameWithType: SpeedDialEntry.Port
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Type
+- uid: Nitrocid.Network.SpeedDial.SpeedDialEntry.Type
   name: Type
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.html#Nitrocid_Network_Base_SpeedDial_SpeedDialEntry_Type
-  commentId: P:Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Type
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Type
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialEntry.html#Nitrocid_Network_SpeedDial_SpeedDialEntry_Type
+  commentId: P:Nitrocid.Network.SpeedDial.SpeedDialEntry.Type
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialEntry.Type
   nameWithType: SpeedDialEntry.Type
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Type*
+- uid: Nitrocid.Network.SpeedDial.SpeedDialEntry.Type*
   name: Type
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.html#Nitrocid_Network_Base_SpeedDial_SpeedDialEntry_Type_
-  commentId: Overload:Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Type
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialEntry.html#Nitrocid_Network_SpeedDial_SpeedDialEntry_Type_
+  commentId: Overload:Nitrocid.Network.SpeedDial.SpeedDialEntry.Type
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialEntry.Type
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialEntry.Type
   nameWithType: SpeedDialEntry.Type
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialTools
+- uid: Nitrocid.Network.SpeedDial.SpeedDialTools
   name: SpeedDialTools
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialTools.html
-  commentId: T:Nitrocid.Network.Base.SpeedDial.SpeedDialTools
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialTools
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialTools.html
+  commentId: T:Nitrocid.Network.SpeedDial.SpeedDialTools
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialTools
   nameWithType: SpeedDialTools
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(System.String,System.Int32,Nitrocid.Network.Base.Connections.NetworkConnectionType,System.Boolean,System.Object[])
+- uid: Nitrocid.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(System.String,System.Int32,Nitrocid.Network.Connections.NetworkConnectionType,System.Boolean,System.Object[])
   name: AddEntryToSpeedDial(string, int, NetworkConnectionType, bool, params object[])
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialTools.html#Nitrocid_Network_Base_SpeedDial_SpeedDialTools_AddEntryToSpeedDial_System_String_System_Int32_Nitrocid_Network_Base_Connections_NetworkConnectionType_System_Boolean_System_Object___
-  commentId: M:Nitrocid.Network.Base.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(System.String,System.Int32,Nitrocid.Network.Base.Connections.NetworkConnectionType,System.Boolean,System.Object[])
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialTools.html#Nitrocid_Network_SpeedDial_SpeedDialTools_AddEntryToSpeedDial_System_String_System_Int32_Nitrocid_Network_Connections_NetworkConnectionType_System_Boolean_System_Object___
+  commentId: M:Nitrocid.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(System.String,System.Int32,Nitrocid.Network.Connections.NetworkConnectionType,System.Boolean,System.Object[])
   name.vb: AddEntryToSpeedDial(String, Integer, NetworkConnectionType, Boolean, ParamArray Object())
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(string, int, Nitrocid.Network.Base.Connections.NetworkConnectionType, bool, params object[])
-  fullName.vb: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(String, Integer, Nitrocid.Network.Base.Connections.NetworkConnectionType, Boolean, ParamArray Object())
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(string, int, Nitrocid.Network.Connections.NetworkConnectionType, bool, params object[])
+  fullName.vb: Nitrocid.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(String, Integer, Nitrocid.Network.Connections.NetworkConnectionType, Boolean, ParamArray Object())
   nameWithType: SpeedDialTools.AddEntryToSpeedDial(string, int, NetworkConnectionType, bool, params object[])
   nameWithType.vb: SpeedDialTools.AddEntryToSpeedDial(String, Integer, NetworkConnectionType, Boolean, ParamArray Object())
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(System.String,System.Int32,System.String,System.Boolean,System.Object[])
+- uid: Nitrocid.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(System.String,System.Int32,System.String,System.Boolean,System.Object[])
   name: AddEntryToSpeedDial(string, int, string, bool, params object[])
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialTools.html#Nitrocid_Network_Base_SpeedDial_SpeedDialTools_AddEntryToSpeedDial_System_String_System_Int32_System_String_System_Boolean_System_Object___
-  commentId: M:Nitrocid.Network.Base.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(System.String,System.Int32,System.String,System.Boolean,System.Object[])
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialTools.html#Nitrocid_Network_SpeedDial_SpeedDialTools_AddEntryToSpeedDial_System_String_System_Int32_System_String_System_Boolean_System_Object___
+  commentId: M:Nitrocid.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(System.String,System.Int32,System.String,System.Boolean,System.Object[])
   name.vb: AddEntryToSpeedDial(String, Integer, String, Boolean, ParamArray Object())
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(string, int, string, bool, params object[])
-  fullName.vb: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(String, Integer, String, Boolean, ParamArray Object())
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(string, int, string, bool, params object[])
+  fullName.vb: Nitrocid.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial(String, Integer, String, Boolean, ParamArray Object())
   nameWithType: SpeedDialTools.AddEntryToSpeedDial(string, int, string, bool, params object[])
   nameWithType.vb: SpeedDialTools.AddEntryToSpeedDial(String, Integer, String, Boolean, ParamArray Object())
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.AddEntryToSpeedDial*
+- uid: Nitrocid.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial*
   name: AddEntryToSpeedDial
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialTools.html#Nitrocid_Network_Base_SpeedDial_SpeedDialTools_AddEntryToSpeedDial_
-  commentId: Overload:Nitrocid.Network.Base.SpeedDial.SpeedDialTools.AddEntryToSpeedDial
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialTools.html#Nitrocid_Network_SpeedDial_SpeedDialTools_AddEntryToSpeedDial_
+  commentId: Overload:Nitrocid.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.AddEntryToSpeedDial
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialTools.AddEntryToSpeedDial
   nameWithType: SpeedDialTools.AddEntryToSpeedDial
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,Nitrocid.Network.Base.Connections.NetworkConnectionType)
+- uid: Nitrocid.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,Nitrocid.Network.Connections.NetworkConnectionType)
   name: GetSpeedDialEntry(string, int, NetworkConnectionType)
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialTools.html#Nitrocid_Network_Base_SpeedDial_SpeedDialTools_GetSpeedDialEntry_System_String_System_Int32_Nitrocid_Network_Base_Connections_NetworkConnectionType_
-  commentId: M:Nitrocid.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,Nitrocid.Network.Base.Connections.NetworkConnectionType)
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialTools.html#Nitrocid_Network_SpeedDial_SpeedDialTools_GetSpeedDialEntry_System_String_System_Int32_Nitrocid_Network_Connections_NetworkConnectionType_
+  commentId: M:Nitrocid.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,Nitrocid.Network.Connections.NetworkConnectionType)
   name.vb: GetSpeedDialEntry(String, Integer, NetworkConnectionType)
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(string, int, Nitrocid.Network.Base.Connections.NetworkConnectionType)
-  fullName.vb: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(String, Integer, Nitrocid.Network.Base.Connections.NetworkConnectionType)
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(string, int, Nitrocid.Network.Connections.NetworkConnectionType)
+  fullName.vb: Nitrocid.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(String, Integer, Nitrocid.Network.Connections.NetworkConnectionType)
   nameWithType: SpeedDialTools.GetSpeedDialEntry(string, int, NetworkConnectionType)
   nameWithType.vb: SpeedDialTools.GetSpeedDialEntry(String, Integer, NetworkConnectionType)
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,Nitrocid.Network.Base.Connections.NetworkConnectionType,System.Object[])
+- uid: Nitrocid.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,Nitrocid.Network.Connections.NetworkConnectionType,System.Object[])
   name: GetSpeedDialEntry(string, int, NetworkConnectionType, object[])
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialTools.html#Nitrocid_Network_Base_SpeedDial_SpeedDialTools_GetSpeedDialEntry_System_String_System_Int32_Nitrocid_Network_Base_Connections_NetworkConnectionType_System_Object___
-  commentId: M:Nitrocid.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,Nitrocid.Network.Base.Connections.NetworkConnectionType,System.Object[])
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialTools.html#Nitrocid_Network_SpeedDial_SpeedDialTools_GetSpeedDialEntry_System_String_System_Int32_Nitrocid_Network_Connections_NetworkConnectionType_System_Object___
+  commentId: M:Nitrocid.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,Nitrocid.Network.Connections.NetworkConnectionType,System.Object[])
   name.vb: GetSpeedDialEntry(String, Integer, NetworkConnectionType, Object())
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(string, int, Nitrocid.Network.Base.Connections.NetworkConnectionType, object[])
-  fullName.vb: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(String, Integer, Nitrocid.Network.Base.Connections.NetworkConnectionType, Object())
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(string, int, Nitrocid.Network.Connections.NetworkConnectionType, object[])
+  fullName.vb: Nitrocid.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(String, Integer, Nitrocid.Network.Connections.NetworkConnectionType, Object())
   nameWithType: SpeedDialTools.GetSpeedDialEntry(string, int, NetworkConnectionType, object[])
   nameWithType.vb: SpeedDialTools.GetSpeedDialEntry(String, Integer, NetworkConnectionType, Object())
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,System.String)
+- uid: Nitrocid.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,System.String)
   name: GetSpeedDialEntry(string, int, string)
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialTools.html#Nitrocid_Network_Base_SpeedDial_SpeedDialTools_GetSpeedDialEntry_System_String_System_Int32_System_String_
-  commentId: M:Nitrocid.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,System.String)
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialTools.html#Nitrocid_Network_SpeedDial_SpeedDialTools_GetSpeedDialEntry_System_String_System_Int32_System_String_
+  commentId: M:Nitrocid.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,System.String)
   name.vb: GetSpeedDialEntry(String, Integer, String)
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(string, int, string)
-  fullName.vb: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(String, Integer, String)
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(string, int, string)
+  fullName.vb: Nitrocid.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(String, Integer, String)
   nameWithType: SpeedDialTools.GetSpeedDialEntry(string, int, string)
   nameWithType.vb: SpeedDialTools.GetSpeedDialEntry(String, Integer, String)
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,System.String,System.Object[])
+- uid: Nitrocid.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,System.String,System.Object[])
   name: GetSpeedDialEntry(string, int, string, object[])
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialTools.html#Nitrocid_Network_Base_SpeedDial_SpeedDialTools_GetSpeedDialEntry_System_String_System_Int32_System_String_System_Object___
-  commentId: M:Nitrocid.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,System.String,System.Object[])
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialTools.html#Nitrocid_Network_SpeedDial_SpeedDialTools_GetSpeedDialEntry_System_String_System_Int32_System_String_System_Object___
+  commentId: M:Nitrocid.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(System.String,System.Int32,System.String,System.Object[])
   name.vb: GetSpeedDialEntry(String, Integer, String, Object())
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(string, int, string, object[])
-  fullName.vb: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry(String, Integer, String, Object())
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(string, int, string, object[])
+  fullName.vb: Nitrocid.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry(String, Integer, String, Object())
   nameWithType: SpeedDialTools.GetSpeedDialEntry(string, int, string, object[])
   nameWithType.vb: SpeedDialTools.GetSpeedDialEntry(String, Integer, String, Object())
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry*
+- uid: Nitrocid.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry*
   name: GetSpeedDialEntry
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialTools.html#Nitrocid_Network_Base_SpeedDial_SpeedDialTools_GetSpeedDialEntry_
-  commentId: Overload:Nitrocid.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialTools.html#Nitrocid_Network_SpeedDial_SpeedDialTools_GetSpeedDialEntry_
+  commentId: Overload:Nitrocid.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.GetSpeedDialEntry
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialTools.GetSpeedDialEntry
   nameWithType: SpeedDialTools.GetSpeedDialEntry
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntries
+- uid: Nitrocid.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntries
   name: ListSpeedDialEntries()
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialTools.html#Nitrocid_Network_Base_SpeedDial_SpeedDialTools_ListSpeedDialEntries
-  commentId: M:Nitrocid.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntries
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntries()
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialTools.html#Nitrocid_Network_SpeedDial_SpeedDialTools_ListSpeedDialEntries
+  commentId: M:Nitrocid.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntries
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntries()
   nameWithType: SpeedDialTools.ListSpeedDialEntries()
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntries*
+- uid: Nitrocid.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntries*
   name: ListSpeedDialEntries
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialTools.html#Nitrocid_Network_Base_SpeedDial_SpeedDialTools_ListSpeedDialEntries_
-  commentId: Overload:Nitrocid.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntries
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialTools.html#Nitrocid_Network_SpeedDial_SpeedDialTools_ListSpeedDialEntries_
+  commentId: Overload:Nitrocid.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntries
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntries
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntries
   nameWithType: SpeedDialTools.ListSpeedDialEntries
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(Nitrocid.Network.Base.Connections.NetworkConnectionType)
+- uid: Nitrocid.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(Nitrocid.Network.Connections.NetworkConnectionType)
   name: ListSpeedDialEntriesByType(NetworkConnectionType)
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialTools.html#Nitrocid_Network_Base_SpeedDial_SpeedDialTools_ListSpeedDialEntriesByType_Nitrocid_Network_Base_Connections_NetworkConnectionType_
-  commentId: M:Nitrocid.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(Nitrocid.Network.Base.Connections.NetworkConnectionType)
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(Nitrocid.Network.Base.Connections.NetworkConnectionType)
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialTools.html#Nitrocid_Network_SpeedDial_SpeedDialTools_ListSpeedDialEntriesByType_Nitrocid_Network_Connections_NetworkConnectionType_
+  commentId: M:Nitrocid.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(Nitrocid.Network.Connections.NetworkConnectionType)
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(Nitrocid.Network.Connections.NetworkConnectionType)
   nameWithType: SpeedDialTools.ListSpeedDialEntriesByType(NetworkConnectionType)
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(System.String)
+- uid: Nitrocid.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(System.String)
   name: ListSpeedDialEntriesByType(string)
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialTools.html#Nitrocid_Network_Base_SpeedDial_SpeedDialTools_ListSpeedDialEntriesByType_System_String_
-  commentId: M:Nitrocid.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(System.String)
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialTools.html#Nitrocid_Network_SpeedDial_SpeedDialTools_ListSpeedDialEntriesByType_System_String_
+  commentId: M:Nitrocid.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(System.String)
   name.vb: ListSpeedDialEntriesByType(String)
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(string)
-  fullName.vb: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(String)
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(string)
+  fullName.vb: Nitrocid.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType(String)
   nameWithType: SpeedDialTools.ListSpeedDialEntriesByType(string)
   nameWithType.vb: SpeedDialTools.ListSpeedDialEntriesByType(String)
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType*
+- uid: Nitrocid.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType*
   name: ListSpeedDialEntriesByType
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialTools.html#Nitrocid_Network_Base_SpeedDial_SpeedDialTools_ListSpeedDialEntriesByType_
-  commentId: Overload:Nitrocid.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialTools.html#Nitrocid_Network_SpeedDial_SpeedDialTools_ListSpeedDialEntriesByType_
+  commentId: Overload:Nitrocid.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialTools.ListSpeedDialEntriesByType
   nameWithType: SpeedDialTools.ListSpeedDialEntriesByType
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.LoadAll
+- uid: Nitrocid.Network.SpeedDial.SpeedDialTools.LoadAll
   name: LoadAll()
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialTools.html#Nitrocid_Network_Base_SpeedDial_SpeedDialTools_LoadAll
-  commentId: M:Nitrocid.Network.Base.SpeedDial.SpeedDialTools.LoadAll
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.LoadAll()
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialTools.html#Nitrocid_Network_SpeedDial_SpeedDialTools_LoadAll
+  commentId: M:Nitrocid.Network.SpeedDial.SpeedDialTools.LoadAll
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialTools.LoadAll()
   nameWithType: SpeedDialTools.LoadAll()
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.LoadAll*
+- uid: Nitrocid.Network.SpeedDial.SpeedDialTools.LoadAll*
   name: LoadAll
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialTools.html#Nitrocid_Network_Base_SpeedDial_SpeedDialTools_LoadAll_
-  commentId: Overload:Nitrocid.Network.Base.SpeedDial.SpeedDialTools.LoadAll
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialTools.html#Nitrocid_Network_SpeedDial_SpeedDialTools_LoadAll_
+  commentId: Overload:Nitrocid.Network.SpeedDial.SpeedDialTools.LoadAll
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.LoadAll
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialTools.LoadAll
   nameWithType: SpeedDialTools.LoadAll
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.SaveAll
+- uid: Nitrocid.Network.SpeedDial.SpeedDialTools.SaveAll
   name: SaveAll()
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialTools.html#Nitrocid_Network_Base_SpeedDial_SpeedDialTools_SaveAll
-  commentId: M:Nitrocid.Network.Base.SpeedDial.SpeedDialTools.SaveAll
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.SaveAll()
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialTools.html#Nitrocid_Network_SpeedDial_SpeedDialTools_SaveAll
+  commentId: M:Nitrocid.Network.SpeedDial.SpeedDialTools.SaveAll
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialTools.SaveAll()
   nameWithType: SpeedDialTools.SaveAll()
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.SaveAll*
+- uid: Nitrocid.Network.SpeedDial.SpeedDialTools.SaveAll*
   name: SaveAll
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialTools.html#Nitrocid_Network_Base_SpeedDial_SpeedDialTools_SaveAll_
-  commentId: Overload:Nitrocid.Network.Base.SpeedDial.SpeedDialTools.SaveAll
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialTools.html#Nitrocid_Network_SpeedDial_SpeedDialTools_SaveAll_
+  commentId: Overload:Nitrocid.Network.SpeedDial.SpeedDialTools.SaveAll
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.SaveAll
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialTools.SaveAll
   nameWithType: SpeedDialTools.SaveAll
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(System.String,System.Int32,Nitrocid.Network.Base.Connections.NetworkConnectionType,System.Boolean,System.Object[])
+- uid: Nitrocid.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(System.String,System.Int32,Nitrocid.Network.Connections.NetworkConnectionType,System.Boolean,System.Object[])
   name: TryAddEntryToSpeedDial(string, int, NetworkConnectionType, bool, params object[])
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialTools.html#Nitrocid_Network_Base_SpeedDial_SpeedDialTools_TryAddEntryToSpeedDial_System_String_System_Int32_Nitrocid_Network_Base_Connections_NetworkConnectionType_System_Boolean_System_Object___
-  commentId: M:Nitrocid.Network.Base.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(System.String,System.Int32,Nitrocid.Network.Base.Connections.NetworkConnectionType,System.Boolean,System.Object[])
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialTools.html#Nitrocid_Network_SpeedDial_SpeedDialTools_TryAddEntryToSpeedDial_System_String_System_Int32_Nitrocid_Network_Connections_NetworkConnectionType_System_Boolean_System_Object___
+  commentId: M:Nitrocid.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(System.String,System.Int32,Nitrocid.Network.Connections.NetworkConnectionType,System.Boolean,System.Object[])
   name.vb: TryAddEntryToSpeedDial(String, Integer, NetworkConnectionType, Boolean, ParamArray Object())
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(string, int, Nitrocid.Network.Base.Connections.NetworkConnectionType, bool, params object[])
-  fullName.vb: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(String, Integer, Nitrocid.Network.Base.Connections.NetworkConnectionType, Boolean, ParamArray Object())
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(string, int, Nitrocid.Network.Connections.NetworkConnectionType, bool, params object[])
+  fullName.vb: Nitrocid.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(String, Integer, Nitrocid.Network.Connections.NetworkConnectionType, Boolean, ParamArray Object())
   nameWithType: SpeedDialTools.TryAddEntryToSpeedDial(string, int, NetworkConnectionType, bool, params object[])
   nameWithType.vb: SpeedDialTools.TryAddEntryToSpeedDial(String, Integer, NetworkConnectionType, Boolean, ParamArray Object())
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(System.String,System.Int32,System.String,System.Boolean,System.Object[])
+- uid: Nitrocid.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(System.String,System.Int32,System.String,System.Boolean,System.Object[])
   name: TryAddEntryToSpeedDial(string, int, string, bool, params object[])
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialTools.html#Nitrocid_Network_Base_SpeedDial_SpeedDialTools_TryAddEntryToSpeedDial_System_String_System_Int32_System_String_System_Boolean_System_Object___
-  commentId: M:Nitrocid.Network.Base.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(System.String,System.Int32,System.String,System.Boolean,System.Object[])
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialTools.html#Nitrocid_Network_SpeedDial_SpeedDialTools_TryAddEntryToSpeedDial_System_String_System_Int32_System_String_System_Boolean_System_Object___
+  commentId: M:Nitrocid.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(System.String,System.Int32,System.String,System.Boolean,System.Object[])
   name.vb: TryAddEntryToSpeedDial(String, Integer, String, Boolean, ParamArray Object())
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(string, int, string, bool, params object[])
-  fullName.vb: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(String, Integer, String, Boolean, ParamArray Object())
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(string, int, string, bool, params object[])
+  fullName.vb: Nitrocid.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial(String, Integer, String, Boolean, ParamArray Object())
   nameWithType: SpeedDialTools.TryAddEntryToSpeedDial(string, int, string, bool, params object[])
   nameWithType.vb: SpeedDialTools.TryAddEntryToSpeedDial(String, Integer, String, Boolean, ParamArray Object())
-- uid: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial*
+- uid: Nitrocid.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial*
   name: TryAddEntryToSpeedDial
-  href: api/Nitrocid.Network.Base.SpeedDial.SpeedDialTools.html#Nitrocid_Network_Base_SpeedDial_SpeedDialTools_TryAddEntryToSpeedDial_
-  commentId: Overload:Nitrocid.Network.Base.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial
+  href: api/Nitrocid.Network.SpeedDial.SpeedDialTools.html#Nitrocid_Network_SpeedDial_SpeedDialTools_TryAddEntryToSpeedDial_
+  commentId: Overload:Nitrocid.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial
+  fullName: Nitrocid.Network.SpeedDial.SpeedDialTools.TryAddEntryToSpeedDial
   nameWithType: SpeedDialTools.TryAddEntryToSpeedDial
-- uid: Nitrocid.Network.Base.Transfer
-  name: Nitrocid.Network.Base.Transfer
-  href: api/Nitrocid.Network.Base.Transfer.html
-  commentId: N:Nitrocid.Network.Base.Transfer
-  fullName: Nitrocid.Network.Base.Transfer
-  nameWithType: Nitrocid.Network.Base.Transfer
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer
+- uid: Nitrocid.Network.Transfer
+  name: Nitrocid.Network.Transfer
+  href: api/Nitrocid.Network.Transfer.html
+  commentId: N:Nitrocid.Network.Transfer
+  fullName: Nitrocid.Network.Transfer
+  nameWithType: Nitrocid.Network.Transfer
+- uid: Nitrocid.Network.Transfer.NetworkTransfer
   name: NetworkTransfer
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html
-  commentId: T:Nitrocid.Network.Base.Transfer.NetworkTransfer
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html
+  commentId: T:Nitrocid.Network.Transfer.NetworkTransfer
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer
   nameWithType: NetworkTransfer
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadFile(System.String)
+- uid: Nitrocid.Network.Transfer.NetworkTransfer.DownloadFile(System.String)
   name: DownloadFile(string)
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html#Nitrocid_Network_Base_Transfer_NetworkTransfer_DownloadFile_System_String_
-  commentId: M:Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadFile(System.String)
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_DownloadFile_System_String_
+  commentId: M:Nitrocid.Network.Transfer.NetworkTransfer.DownloadFile(System.String)
   name.vb: DownloadFile(String)
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadFile(string)
-  fullName.vb: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadFile(String)
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer.DownloadFile(string)
+  fullName.vb: Nitrocid.Network.Transfer.NetworkTransfer.DownloadFile(String)
   nameWithType: NetworkTransfer.DownloadFile(string)
   nameWithType.vb: NetworkTransfer.DownloadFile(String)
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadFile(System.String,System.Boolean)
+- uid: Nitrocid.Network.Transfer.NetworkTransfer.DownloadFile(System.String,System.Boolean)
   name: DownloadFile(string, bool)
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html#Nitrocid_Network_Base_Transfer_NetworkTransfer_DownloadFile_System_String_System_Boolean_
-  commentId: M:Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadFile(System.String,System.Boolean)
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_DownloadFile_System_String_System_Boolean_
+  commentId: M:Nitrocid.Network.Transfer.NetworkTransfer.DownloadFile(System.String,System.Boolean)
   name.vb: DownloadFile(String, Boolean)
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadFile(string, bool)
-  fullName.vb: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadFile(String, Boolean)
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer.DownloadFile(string, bool)
+  fullName.vb: Nitrocid.Network.Transfer.NetworkTransfer.DownloadFile(String, Boolean)
   nameWithType: NetworkTransfer.DownloadFile(string, bool)
   nameWithType.vb: NetworkTransfer.DownloadFile(String, Boolean)
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadFile(System.String,System.Boolean,System.String)
+- uid: Nitrocid.Network.Transfer.NetworkTransfer.DownloadFile(System.String,System.Boolean,System.String)
   name: DownloadFile(string, bool, string)
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html#Nitrocid_Network_Base_Transfer_NetworkTransfer_DownloadFile_System_String_System_Boolean_System_String_
-  commentId: M:Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadFile(System.String,System.Boolean,System.String)
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_DownloadFile_System_String_System_Boolean_System_String_
+  commentId: M:Nitrocid.Network.Transfer.NetworkTransfer.DownloadFile(System.String,System.Boolean,System.String)
   name.vb: DownloadFile(String, Boolean, String)
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadFile(string, bool, string)
-  fullName.vb: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadFile(String, Boolean, String)
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer.DownloadFile(string, bool, string)
+  fullName.vb: Nitrocid.Network.Transfer.NetworkTransfer.DownloadFile(String, Boolean, String)
   nameWithType: NetworkTransfer.DownloadFile(string, bool, string)
   nameWithType.vb: NetworkTransfer.DownloadFile(String, Boolean, String)
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadFile(System.String,System.String)
+- uid: Nitrocid.Network.Transfer.NetworkTransfer.DownloadFile(System.String,System.String)
   name: DownloadFile(string, string)
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html#Nitrocid_Network_Base_Transfer_NetworkTransfer_DownloadFile_System_String_System_String_
-  commentId: M:Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadFile(System.String,System.String)
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_DownloadFile_System_String_System_String_
+  commentId: M:Nitrocid.Network.Transfer.NetworkTransfer.DownloadFile(System.String,System.String)
   name.vb: DownloadFile(String, String)
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadFile(string, string)
-  fullName.vb: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadFile(String, String)
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer.DownloadFile(string, string)
+  fullName.vb: Nitrocid.Network.Transfer.NetworkTransfer.DownloadFile(String, String)
   nameWithType: NetworkTransfer.DownloadFile(string, string)
   nameWithType.vb: NetworkTransfer.DownloadFile(String, String)
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadFile*
+- uid: Nitrocid.Network.Transfer.NetworkTransfer.DownloadFile*
   name: DownloadFile
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html#Nitrocid_Network_Base_Transfer_NetworkTransfer_DownloadFile_
-  commentId: Overload:Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadFile
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_DownloadFile_
+  commentId: Overload:Nitrocid.Network.Transfer.NetworkTransfer.DownloadFile
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadFile
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer.DownloadFile
   nameWithType: NetworkTransfer.DownloadFile
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadNotificationProvoke
+- uid: Nitrocid.Network.Transfer.NetworkTransfer.DownloadNotificationProvoke
   name: DownloadNotificationProvoke
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html#Nitrocid_Network_Base_Transfer_NetworkTransfer_DownloadNotificationProvoke
-  commentId: P:Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadNotificationProvoke
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadNotificationProvoke
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_DownloadNotificationProvoke
+  commentId: P:Nitrocid.Network.Transfer.NetworkTransfer.DownloadNotificationProvoke
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer.DownloadNotificationProvoke
   nameWithType: NetworkTransfer.DownloadNotificationProvoke
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadNotificationProvoke*
+- uid: Nitrocid.Network.Transfer.NetworkTransfer.DownloadNotificationProvoke*
   name: DownloadNotificationProvoke
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html#Nitrocid_Network_Base_Transfer_NetworkTransfer_DownloadNotificationProvoke_
-  commentId: Overload:Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadNotificationProvoke
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_DownloadNotificationProvoke_
+  commentId: Overload:Nitrocid.Network.Transfer.NetworkTransfer.DownloadNotificationProvoke
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadNotificationProvoke
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer.DownloadNotificationProvoke
   nameWithType: NetworkTransfer.DownloadNotificationProvoke
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadPercentagePrint
+- uid: Nitrocid.Network.Transfer.NetworkTransfer.DownloadPercentagePrint
   name: DownloadPercentagePrint
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html#Nitrocid_Network_Base_Transfer_NetworkTransfer_DownloadPercentagePrint
-  commentId: P:Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadPercentagePrint
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadPercentagePrint
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_DownloadPercentagePrint
+  commentId: P:Nitrocid.Network.Transfer.NetworkTransfer.DownloadPercentagePrint
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer.DownloadPercentagePrint
   nameWithType: NetworkTransfer.DownloadPercentagePrint
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadPercentagePrint*
+- uid: Nitrocid.Network.Transfer.NetworkTransfer.DownloadPercentagePrint*
   name: DownloadPercentagePrint
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html#Nitrocid_Network_Base_Transfer_NetworkTransfer_DownloadPercentagePrint_
-  commentId: Overload:Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadPercentagePrint
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_DownloadPercentagePrint_
+  commentId: Overload:Nitrocid.Network.Transfer.NetworkTransfer.DownloadPercentagePrint
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadPercentagePrint
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer.DownloadPercentagePrint
   nameWithType: NetworkTransfer.DownloadPercentagePrint
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadString(System.String)
+- uid: Nitrocid.Network.Transfer.NetworkTransfer.DownloadString(System.String)
   name: DownloadString(string)
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html#Nitrocid_Network_Base_Transfer_NetworkTransfer_DownloadString_System_String_
-  commentId: M:Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadString(System.String)
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_DownloadString_System_String_
+  commentId: M:Nitrocid.Network.Transfer.NetworkTransfer.DownloadString(System.String)
   name.vb: DownloadString(String)
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadString(string)
-  fullName.vb: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadString(String)
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer.DownloadString(string)
+  fullName.vb: Nitrocid.Network.Transfer.NetworkTransfer.DownloadString(String)
   nameWithType: NetworkTransfer.DownloadString(string)
   nameWithType.vb: NetworkTransfer.DownloadString(String)
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadString(System.String,System.Boolean)
+- uid: Nitrocid.Network.Transfer.NetworkTransfer.DownloadString(System.String,System.Boolean)
   name: DownloadString(string, bool)
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html#Nitrocid_Network_Base_Transfer_NetworkTransfer_DownloadString_System_String_System_Boolean_
-  commentId: M:Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadString(System.String,System.Boolean)
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_DownloadString_System_String_System_Boolean_
+  commentId: M:Nitrocid.Network.Transfer.NetworkTransfer.DownloadString(System.String,System.Boolean)
   name.vb: DownloadString(String, Boolean)
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadString(string, bool)
-  fullName.vb: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadString(String, Boolean)
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer.DownloadString(string, bool)
+  fullName.vb: Nitrocid.Network.Transfer.NetworkTransfer.DownloadString(String, Boolean)
   nameWithType: NetworkTransfer.DownloadString(string, bool)
   nameWithType.vb: NetworkTransfer.DownloadString(String, Boolean)
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadString*
+- uid: Nitrocid.Network.Transfer.NetworkTransfer.DownloadString*
   name: DownloadString
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html#Nitrocid_Network_Base_Transfer_NetworkTransfer_DownloadString_
-  commentId: Overload:Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadString
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_DownloadString_
+  commentId: Overload:Nitrocid.Network.Transfer.NetworkTransfer.DownloadString
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer.DownloadString
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer.DownloadString
   nameWithType: NetworkTransfer.DownloadString
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadFile(System.String,System.String)
+- uid: Nitrocid.Network.Transfer.NetworkTransfer.UploadFile(System.String,System.String)
   name: UploadFile(string, string)
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html#Nitrocid_Network_Base_Transfer_NetworkTransfer_UploadFile_System_String_System_String_
-  commentId: M:Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadFile(System.String,System.String)
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_UploadFile_System_String_System_String_
+  commentId: M:Nitrocid.Network.Transfer.NetworkTransfer.UploadFile(System.String,System.String)
   name.vb: UploadFile(String, String)
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadFile(string, string)
-  fullName.vb: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadFile(String, String)
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer.UploadFile(string, string)
+  fullName.vb: Nitrocid.Network.Transfer.NetworkTransfer.UploadFile(String, String)
   nameWithType: NetworkTransfer.UploadFile(string, string)
   nameWithType.vb: NetworkTransfer.UploadFile(String, String)
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadFile(System.String,System.String,System.Boolean)
+- uid: Nitrocid.Network.Transfer.NetworkTransfer.UploadFile(System.String,System.String,System.Boolean)
   name: UploadFile(string, string, bool)
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html#Nitrocid_Network_Base_Transfer_NetworkTransfer_UploadFile_System_String_System_String_System_Boolean_
-  commentId: M:Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadFile(System.String,System.String,System.Boolean)
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_UploadFile_System_String_System_String_System_Boolean_
+  commentId: M:Nitrocid.Network.Transfer.NetworkTransfer.UploadFile(System.String,System.String,System.Boolean)
   name.vb: UploadFile(String, String, Boolean)
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadFile(string, string, bool)
-  fullName.vb: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadFile(String, String, Boolean)
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer.UploadFile(string, string, bool)
+  fullName.vb: Nitrocid.Network.Transfer.NetworkTransfer.UploadFile(String, String, Boolean)
   nameWithType: NetworkTransfer.UploadFile(string, string, bool)
   nameWithType.vb: NetworkTransfer.UploadFile(String, String, Boolean)
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadFile*
+- uid: Nitrocid.Network.Transfer.NetworkTransfer.UploadFile*
   name: UploadFile
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html#Nitrocid_Network_Base_Transfer_NetworkTransfer_UploadFile_
-  commentId: Overload:Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadFile
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_UploadFile_
+  commentId: Overload:Nitrocid.Network.Transfer.NetworkTransfer.UploadFile
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadFile
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer.UploadFile
   nameWithType: NetworkTransfer.UploadFile
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadNotificationProvoke
+- uid: Nitrocid.Network.Transfer.NetworkTransfer.UploadNotificationProvoke
   name: UploadNotificationProvoke
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html#Nitrocid_Network_Base_Transfer_NetworkTransfer_UploadNotificationProvoke
-  commentId: P:Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadNotificationProvoke
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadNotificationProvoke
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_UploadNotificationProvoke
+  commentId: P:Nitrocid.Network.Transfer.NetworkTransfer.UploadNotificationProvoke
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer.UploadNotificationProvoke
   nameWithType: NetworkTransfer.UploadNotificationProvoke
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadNotificationProvoke*
+- uid: Nitrocid.Network.Transfer.NetworkTransfer.UploadNotificationProvoke*
   name: UploadNotificationProvoke
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html#Nitrocid_Network_Base_Transfer_NetworkTransfer_UploadNotificationProvoke_
-  commentId: Overload:Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadNotificationProvoke
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_UploadNotificationProvoke_
+  commentId: Overload:Nitrocid.Network.Transfer.NetworkTransfer.UploadNotificationProvoke
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadNotificationProvoke
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer.UploadNotificationProvoke
   nameWithType: NetworkTransfer.UploadNotificationProvoke
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadPercentagePrint
+- uid: Nitrocid.Network.Transfer.NetworkTransfer.UploadPercentagePrint
   name: UploadPercentagePrint
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html#Nitrocid_Network_Base_Transfer_NetworkTransfer_UploadPercentagePrint
-  commentId: P:Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadPercentagePrint
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadPercentagePrint
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_UploadPercentagePrint
+  commentId: P:Nitrocid.Network.Transfer.NetworkTransfer.UploadPercentagePrint
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer.UploadPercentagePrint
   nameWithType: NetworkTransfer.UploadPercentagePrint
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadPercentagePrint*
+- uid: Nitrocid.Network.Transfer.NetworkTransfer.UploadPercentagePrint*
   name: UploadPercentagePrint
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html#Nitrocid_Network_Base_Transfer_NetworkTransfer_UploadPercentagePrint_
-  commentId: Overload:Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadPercentagePrint
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_UploadPercentagePrint_
+  commentId: Overload:Nitrocid.Network.Transfer.NetworkTransfer.UploadPercentagePrint
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadPercentagePrint
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer.UploadPercentagePrint
   nameWithType: NetworkTransfer.UploadPercentagePrint
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadString(System.String,System.String)
+- uid: Nitrocid.Network.Transfer.NetworkTransfer.UploadString(System.String,System.String)
   name: UploadString(string, string)
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html#Nitrocid_Network_Base_Transfer_NetworkTransfer_UploadString_System_String_System_String_
-  commentId: M:Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadString(System.String,System.String)
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_UploadString_System_String_System_String_
+  commentId: M:Nitrocid.Network.Transfer.NetworkTransfer.UploadString(System.String,System.String)
   name.vb: UploadString(String, String)
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadString(string, string)
-  fullName.vb: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadString(String, String)
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer.UploadString(string, string)
+  fullName.vb: Nitrocid.Network.Transfer.NetworkTransfer.UploadString(String, String)
   nameWithType: NetworkTransfer.UploadString(string, string)
   nameWithType.vb: NetworkTransfer.UploadString(String, String)
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadString(System.String,System.String,System.Boolean)
+- uid: Nitrocid.Network.Transfer.NetworkTransfer.UploadString(System.String,System.String,System.Boolean)
   name: UploadString(string, string, bool)
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html#Nitrocid_Network_Base_Transfer_NetworkTransfer_UploadString_System_String_System_String_System_Boolean_
-  commentId: M:Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadString(System.String,System.String,System.Boolean)
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_UploadString_System_String_System_String_System_Boolean_
+  commentId: M:Nitrocid.Network.Transfer.NetworkTransfer.UploadString(System.String,System.String,System.Boolean)
   name.vb: UploadString(String, String, Boolean)
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadString(string, string, bool)
-  fullName.vb: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadString(String, String, Boolean)
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer.UploadString(string, string, bool)
+  fullName.vb: Nitrocid.Network.Transfer.NetworkTransfer.UploadString(String, String, Boolean)
   nameWithType: NetworkTransfer.UploadString(string, string, bool)
   nameWithType.vb: NetworkTransfer.UploadString(String, String, Boolean)
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadString*
+- uid: Nitrocid.Network.Transfer.NetworkTransfer.UploadString*
   name: UploadString
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransfer.html#Nitrocid_Network_Base_Transfer_NetworkTransfer_UploadString_
-  commentId: Overload:Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadString
+  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_UploadString_
+  commentId: Overload:Nitrocid.Network.Transfer.NetworkTransfer.UploadString
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransfer.UploadString
+  fullName: Nitrocid.Network.Transfer.NetworkTransfer.UploadString
   nameWithType: NetworkTransfer.UploadString
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransferInfo
+- uid: Nitrocid.Network.Transfer.NetworkTransferInfo
   name: NetworkTransferInfo
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransferInfo.html
-  commentId: T:Nitrocid.Network.Base.Transfer.NetworkTransferInfo
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransferInfo
+  href: api/Nitrocid.Network.Transfer.NetworkTransferInfo.html
+  commentId: T:Nitrocid.Network.Transfer.NetworkTransferInfo
+  fullName: Nitrocid.Network.Transfer.NetworkTransferInfo
   nameWithType: NetworkTransferInfo
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransferInfo.#ctor(System.Int64,System.Int64,Nitrocid.Network.Base.Transfer.NetworkTransferType)
+- uid: Nitrocid.Network.Transfer.NetworkTransferInfo.#ctor(System.Int64,System.Int64,Nitrocid.Network.Transfer.NetworkTransferType)
   name: NetworkTransferInfo(long, long, NetworkTransferType)
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransferInfo.html#Nitrocid_Network_Base_Transfer_NetworkTransferInfo__ctor_System_Int64_System_Int64_Nitrocid_Network_Base_Transfer_NetworkTransferType_
-  commentId: M:Nitrocid.Network.Base.Transfer.NetworkTransferInfo.#ctor(System.Int64,System.Int64,Nitrocid.Network.Base.Transfer.NetworkTransferType)
+  href: api/Nitrocid.Network.Transfer.NetworkTransferInfo.html#Nitrocid_Network_Transfer_NetworkTransferInfo__ctor_System_Int64_System_Int64_Nitrocid_Network_Transfer_NetworkTransferType_
+  commentId: M:Nitrocid.Network.Transfer.NetworkTransferInfo.#ctor(System.Int64,System.Int64,Nitrocid.Network.Transfer.NetworkTransferType)
   name.vb: New(Long, Long, NetworkTransferType)
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransferInfo.NetworkTransferInfo(long, long, Nitrocid.Network.Base.Transfer.NetworkTransferType)
-  fullName.vb: Nitrocid.Network.Base.Transfer.NetworkTransferInfo.New(Long, Long, Nitrocid.Network.Base.Transfer.NetworkTransferType)
+  fullName: Nitrocid.Network.Transfer.NetworkTransferInfo.NetworkTransferInfo(long, long, Nitrocid.Network.Transfer.NetworkTransferType)
+  fullName.vb: Nitrocid.Network.Transfer.NetworkTransferInfo.New(Long, Long, Nitrocid.Network.Transfer.NetworkTransferType)
   nameWithType: NetworkTransferInfo.NetworkTransferInfo(long, long, NetworkTransferType)
   nameWithType.vb: NetworkTransferInfo.New(Long, Long, NetworkTransferType)
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransferInfo.#ctor*
+- uid: Nitrocid.Network.Transfer.NetworkTransferInfo.#ctor*
   name: NetworkTransferInfo
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransferInfo.html#Nitrocid_Network_Base_Transfer_NetworkTransferInfo__ctor_
-  commentId: Overload:Nitrocid.Network.Base.Transfer.NetworkTransferInfo.#ctor
+  href: api/Nitrocid.Network.Transfer.NetworkTransferInfo.html#Nitrocid_Network_Transfer_NetworkTransferInfo__ctor_
+  commentId: Overload:Nitrocid.Network.Transfer.NetworkTransferInfo.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransferInfo.NetworkTransferInfo
-  fullName.vb: Nitrocid.Network.Base.Transfer.NetworkTransferInfo.New
+  fullName: Nitrocid.Network.Transfer.NetworkTransferInfo.NetworkTransferInfo
+  fullName.vb: Nitrocid.Network.Transfer.NetworkTransferInfo.New
   nameWithType: NetworkTransferInfo.NetworkTransferInfo
   nameWithType.vb: NetworkTransferInfo.New
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransferInfo.DoneSize
+- uid: Nitrocid.Network.Transfer.NetworkTransferInfo.DoneSize
   name: DoneSize
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransferInfo.html#Nitrocid_Network_Base_Transfer_NetworkTransferInfo_DoneSize
-  commentId: P:Nitrocid.Network.Base.Transfer.NetworkTransferInfo.DoneSize
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransferInfo.DoneSize
+  href: api/Nitrocid.Network.Transfer.NetworkTransferInfo.html#Nitrocid_Network_Transfer_NetworkTransferInfo_DoneSize
+  commentId: P:Nitrocid.Network.Transfer.NetworkTransferInfo.DoneSize
+  fullName: Nitrocid.Network.Transfer.NetworkTransferInfo.DoneSize
   nameWithType: NetworkTransferInfo.DoneSize
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransferInfo.DoneSize*
+- uid: Nitrocid.Network.Transfer.NetworkTransferInfo.DoneSize*
   name: DoneSize
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransferInfo.html#Nitrocid_Network_Base_Transfer_NetworkTransferInfo_DoneSize_
-  commentId: Overload:Nitrocid.Network.Base.Transfer.NetworkTransferInfo.DoneSize
+  href: api/Nitrocid.Network.Transfer.NetworkTransferInfo.html#Nitrocid_Network_Transfer_NetworkTransferInfo_DoneSize_
+  commentId: Overload:Nitrocid.Network.Transfer.NetworkTransferInfo.DoneSize
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransferInfo.DoneSize
+  fullName: Nitrocid.Network.Transfer.NetworkTransferInfo.DoneSize
   nameWithType: NetworkTransferInfo.DoneSize
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransferInfo.FileSize
+- uid: Nitrocid.Network.Transfer.NetworkTransferInfo.FileSize
   name: FileSize
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransferInfo.html#Nitrocid_Network_Base_Transfer_NetworkTransferInfo_FileSize
-  commentId: P:Nitrocid.Network.Base.Transfer.NetworkTransferInfo.FileSize
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransferInfo.FileSize
+  href: api/Nitrocid.Network.Transfer.NetworkTransferInfo.html#Nitrocid_Network_Transfer_NetworkTransferInfo_FileSize
+  commentId: P:Nitrocid.Network.Transfer.NetworkTransferInfo.FileSize
+  fullName: Nitrocid.Network.Transfer.NetworkTransferInfo.FileSize
   nameWithType: NetworkTransferInfo.FileSize
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransferInfo.FileSize*
+- uid: Nitrocid.Network.Transfer.NetworkTransferInfo.FileSize*
   name: FileSize
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransferInfo.html#Nitrocid_Network_Base_Transfer_NetworkTransferInfo_FileSize_
-  commentId: Overload:Nitrocid.Network.Base.Transfer.NetworkTransferInfo.FileSize
+  href: api/Nitrocid.Network.Transfer.NetworkTransferInfo.html#Nitrocid_Network_Transfer_NetworkTransferInfo_FileSize_
+  commentId: Overload:Nitrocid.Network.Transfer.NetworkTransferInfo.FileSize
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransferInfo.FileSize
+  fullName: Nitrocid.Network.Transfer.NetworkTransferInfo.FileSize
   nameWithType: NetworkTransferInfo.FileSize
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransferInfo.MessageSuppressed
+- uid: Nitrocid.Network.Transfer.NetworkTransferInfo.MessageSuppressed
   name: MessageSuppressed
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransferInfo.html#Nitrocid_Network_Base_Transfer_NetworkTransferInfo_MessageSuppressed
-  commentId: P:Nitrocid.Network.Base.Transfer.NetworkTransferInfo.MessageSuppressed
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransferInfo.MessageSuppressed
+  href: api/Nitrocid.Network.Transfer.NetworkTransferInfo.html#Nitrocid_Network_Transfer_NetworkTransferInfo_MessageSuppressed
+  commentId: P:Nitrocid.Network.Transfer.NetworkTransferInfo.MessageSuppressed
+  fullName: Nitrocid.Network.Transfer.NetworkTransferInfo.MessageSuppressed
   nameWithType: NetworkTransferInfo.MessageSuppressed
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransferInfo.MessageSuppressed*
+- uid: Nitrocid.Network.Transfer.NetworkTransferInfo.MessageSuppressed*
   name: MessageSuppressed
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransferInfo.html#Nitrocid_Network_Base_Transfer_NetworkTransferInfo_MessageSuppressed_
-  commentId: Overload:Nitrocid.Network.Base.Transfer.NetworkTransferInfo.MessageSuppressed
+  href: api/Nitrocid.Network.Transfer.NetworkTransferInfo.html#Nitrocid_Network_Transfer_NetworkTransferInfo_MessageSuppressed_
+  commentId: Overload:Nitrocid.Network.Transfer.NetworkTransferInfo.MessageSuppressed
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransferInfo.MessageSuppressed
+  fullName: Nitrocid.Network.Transfer.NetworkTransferInfo.MessageSuppressed
   nameWithType: NetworkTransferInfo.MessageSuppressed
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransferInfo.TransferType
+- uid: Nitrocid.Network.Transfer.NetworkTransferInfo.TransferType
   name: TransferType
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransferInfo.html#Nitrocid_Network_Base_Transfer_NetworkTransferInfo_TransferType
-  commentId: P:Nitrocid.Network.Base.Transfer.NetworkTransferInfo.TransferType
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransferInfo.TransferType
+  href: api/Nitrocid.Network.Transfer.NetworkTransferInfo.html#Nitrocid_Network_Transfer_NetworkTransferInfo_TransferType
+  commentId: P:Nitrocid.Network.Transfer.NetworkTransferInfo.TransferType
+  fullName: Nitrocid.Network.Transfer.NetworkTransferInfo.TransferType
   nameWithType: NetworkTransferInfo.TransferType
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransferInfo.TransferType*
+- uid: Nitrocid.Network.Transfer.NetworkTransferInfo.TransferType*
   name: TransferType
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransferInfo.html#Nitrocid_Network_Base_Transfer_NetworkTransferInfo_TransferType_
-  commentId: Overload:Nitrocid.Network.Base.Transfer.NetworkTransferInfo.TransferType
+  href: api/Nitrocid.Network.Transfer.NetworkTransferInfo.html#Nitrocid_Network_Transfer_NetworkTransferInfo_TransferType_
+  commentId: Overload:Nitrocid.Network.Transfer.NetworkTransferInfo.TransferType
   isSpec: "True"
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransferInfo.TransferType
+  fullName: Nitrocid.Network.Transfer.NetworkTransferInfo.TransferType
   nameWithType: NetworkTransferInfo.TransferType
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransferType
+- uid: Nitrocid.Network.Transfer.NetworkTransferType
   name: NetworkTransferType
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransferType.html
-  commentId: T:Nitrocid.Network.Base.Transfer.NetworkTransferType
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransferType
+  href: api/Nitrocid.Network.Transfer.NetworkTransferType.html
+  commentId: T:Nitrocid.Network.Transfer.NetworkTransferType
+  fullName: Nitrocid.Network.Transfer.NetworkTransferType
   nameWithType: NetworkTransferType
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransferType.Download
+- uid: Nitrocid.Network.Transfer.NetworkTransferType.Download
   name: Download
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransferType.html#Nitrocid_Network_Base_Transfer_NetworkTransferType_Download
-  commentId: F:Nitrocid.Network.Base.Transfer.NetworkTransferType.Download
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransferType.Download
+  href: api/Nitrocid.Network.Transfer.NetworkTransferType.html#Nitrocid_Network_Transfer_NetworkTransferType_Download
+  commentId: F:Nitrocid.Network.Transfer.NetworkTransferType.Download
+  fullName: Nitrocid.Network.Transfer.NetworkTransferType.Download
   nameWithType: NetworkTransferType.Download
-- uid: Nitrocid.Network.Base.Transfer.NetworkTransferType.Upload
+- uid: Nitrocid.Network.Transfer.NetworkTransferType.Upload
   name: Upload
-  href: api/Nitrocid.Network.Base.Transfer.NetworkTransferType.html#Nitrocid_Network_Base_Transfer_NetworkTransferType_Upload
-  commentId: F:Nitrocid.Network.Base.Transfer.NetworkTransferType.Upload
-  fullName: Nitrocid.Network.Base.Transfer.NetworkTransferType.Upload
+  href: api/Nitrocid.Network.Transfer.NetworkTransferType.html#Nitrocid_Network_Transfer_NetworkTransferType_Upload
+  commentId: F:Nitrocid.Network.Transfer.NetworkTransferType.Upload
+  fullName: Nitrocid.Network.Transfer.NetworkTransferType.Upload
   nameWithType: NetworkTransferType.Upload
-- uid: Nitrocid.Network.RPC
-  name: Nitrocid.Network.RPC
-  href: api/Nitrocid.Network.RPC.html
-  commentId: N:Nitrocid.Network.RPC
-  fullName: Nitrocid.Network.RPC
-  nameWithType: Nitrocid.Network.RPC
-- uid: Nitrocid.Network.RPC.RPCCommands
+- uid: Nitrocid.Network.Types.RPC
+  name: Nitrocid.Network.Types.RPC
+  href: api/Nitrocid.Network.Types.RPC.html
+  commentId: N:Nitrocid.Network.Types.RPC
+  fullName: Nitrocid.Network.Types.RPC
+  nameWithType: Nitrocid.Network.Types.RPC
+- uid: Nitrocid.Network.Types.RPC.RPCCommands
   name: RPCCommands
-  href: api/Nitrocid.Network.RPC.RPCCommands.html
-  commentId: T:Nitrocid.Network.RPC.RPCCommands
-  fullName: Nitrocid.Network.RPC.RPCCommands
+  href: api/Nitrocid.Network.Types.RPC.RPCCommands.html
+  commentId: T:Nitrocid.Network.Types.RPC.RPCCommands
+  fullName: Nitrocid.Network.Types.RPC.RPCCommands
   nameWithType: RPCCommands
-- uid: Nitrocid.Network.RPC.RPCCommands.ReceiveCommand
+- uid: Nitrocid.Network.Types.RPC.RPCCommands.ReceiveCommand
   name: ReceiveCommand()
-  href: api/Nitrocid.Network.RPC.RPCCommands.html#Nitrocid_Network_RPC_RPCCommands_ReceiveCommand
-  commentId: M:Nitrocid.Network.RPC.RPCCommands.ReceiveCommand
-  fullName: Nitrocid.Network.RPC.RPCCommands.ReceiveCommand()
+  href: api/Nitrocid.Network.Types.RPC.RPCCommands.html#Nitrocid_Network_Types_RPC_RPCCommands_ReceiveCommand
+  commentId: M:Nitrocid.Network.Types.RPC.RPCCommands.ReceiveCommand
+  fullName: Nitrocid.Network.Types.RPC.RPCCommands.ReceiveCommand()
   nameWithType: RPCCommands.ReceiveCommand()
-- uid: Nitrocid.Network.RPC.RPCCommands.ReceiveCommand*
+- uid: Nitrocid.Network.Types.RPC.RPCCommands.ReceiveCommand*
   name: ReceiveCommand
-  href: api/Nitrocid.Network.RPC.RPCCommands.html#Nitrocid_Network_RPC_RPCCommands_ReceiveCommand_
-  commentId: Overload:Nitrocid.Network.RPC.RPCCommands.ReceiveCommand
+  href: api/Nitrocid.Network.Types.RPC.RPCCommands.html#Nitrocid_Network_Types_RPC_RPCCommands_ReceiveCommand_
+  commentId: Overload:Nitrocid.Network.Types.RPC.RPCCommands.ReceiveCommand
   isSpec: "True"
-  fullName: Nitrocid.Network.RPC.RPCCommands.ReceiveCommand
+  fullName: Nitrocid.Network.Types.RPC.RPCCommands.ReceiveCommand
   nameWithType: RPCCommands.ReceiveCommand
-- uid: Nitrocid.Network.RPC.RPCCommands.SendCommand(System.String,System.String)
+- uid: Nitrocid.Network.Types.RPC.RPCCommands.SendCommand(System.String,System.String)
   name: SendCommand(string, string)
-  href: api/Nitrocid.Network.RPC.RPCCommands.html#Nitrocid_Network_RPC_RPCCommands_SendCommand_System_String_System_String_
-  commentId: M:Nitrocid.Network.RPC.RPCCommands.SendCommand(System.String,System.String)
+  href: api/Nitrocid.Network.Types.RPC.RPCCommands.html#Nitrocid_Network_Types_RPC_RPCCommands_SendCommand_System_String_System_String_
+  commentId: M:Nitrocid.Network.Types.RPC.RPCCommands.SendCommand(System.String,System.String)
   name.vb: SendCommand(String, String)
-  fullName: Nitrocid.Network.RPC.RPCCommands.SendCommand(string, string)
-  fullName.vb: Nitrocid.Network.RPC.RPCCommands.SendCommand(String, String)
+  fullName: Nitrocid.Network.Types.RPC.RPCCommands.SendCommand(string, string)
+  fullName.vb: Nitrocid.Network.Types.RPC.RPCCommands.SendCommand(String, String)
   nameWithType: RPCCommands.SendCommand(string, string)
   nameWithType.vb: RPCCommands.SendCommand(String, String)
-- uid: Nitrocid.Network.RPC.RPCCommands.SendCommand(System.String,System.String,System.Int32)
+- uid: Nitrocid.Network.Types.RPC.RPCCommands.SendCommand(System.String,System.String,System.Int32)
   name: SendCommand(string, string, int)
-  href: api/Nitrocid.Network.RPC.RPCCommands.html#Nitrocid_Network_RPC_RPCCommands_SendCommand_System_String_System_String_System_Int32_
-  commentId: M:Nitrocid.Network.RPC.RPCCommands.SendCommand(System.String,System.String,System.Int32)
+  href: api/Nitrocid.Network.Types.RPC.RPCCommands.html#Nitrocid_Network_Types_RPC_RPCCommands_SendCommand_System_String_System_String_System_Int32_
+  commentId: M:Nitrocid.Network.Types.RPC.RPCCommands.SendCommand(System.String,System.String,System.Int32)
   name.vb: SendCommand(String, String, Integer)
-  fullName: Nitrocid.Network.RPC.RPCCommands.SendCommand(string, string, int)
-  fullName.vb: Nitrocid.Network.RPC.RPCCommands.SendCommand(String, String, Integer)
+  fullName: Nitrocid.Network.Types.RPC.RPCCommands.SendCommand(string, string, int)
+  fullName.vb: Nitrocid.Network.Types.RPC.RPCCommands.SendCommand(String, String, Integer)
   nameWithType: RPCCommands.SendCommand(string, string, int)
   nameWithType.vb: RPCCommands.SendCommand(String, String, Integer)
-- uid: Nitrocid.Network.RPC.RPCCommands.SendCommand*
+- uid: Nitrocid.Network.Types.RPC.RPCCommands.SendCommand*
   name: SendCommand
-  href: api/Nitrocid.Network.RPC.RPCCommands.html#Nitrocid_Network_RPC_RPCCommands_SendCommand_
-  commentId: Overload:Nitrocid.Network.RPC.RPCCommands.SendCommand
+  href: api/Nitrocid.Network.Types.RPC.RPCCommands.html#Nitrocid_Network_Types_RPC_RPCCommands_SendCommand_
+  commentId: Overload:Nitrocid.Network.Types.RPC.RPCCommands.SendCommand
   isSpec: "True"
-  fullName: Nitrocid.Network.RPC.RPCCommands.SendCommand
+  fullName: Nitrocid.Network.Types.RPC.RPCCommands.SendCommand
   nameWithType: RPCCommands.SendCommand
-- uid: Nitrocid.Network.RPC.RemoteProcedure
+- uid: Nitrocid.Network.Types.RPC.RemoteProcedure
   name: RemoteProcedure
-  href: api/Nitrocid.Network.RPC.RemoteProcedure.html
-  commentId: T:Nitrocid.Network.RPC.RemoteProcedure
-  fullName: Nitrocid.Network.RPC.RemoteProcedure
+  href: api/Nitrocid.Network.Types.RPC.RemoteProcedure.html
+  commentId: T:Nitrocid.Network.Types.RPC.RemoteProcedure
+  fullName: Nitrocid.Network.Types.RPC.RemoteProcedure
   nameWithType: RemoteProcedure
-- uid: Nitrocid.Network.RPC.RemoteProcedure.RPCEnabled
+- uid: Nitrocid.Network.Types.RPC.RemoteProcedure.RPCEnabled
   name: RPCEnabled
-  href: api/Nitrocid.Network.RPC.RemoteProcedure.html#Nitrocid_Network_RPC_RemoteProcedure_RPCEnabled
-  commentId: P:Nitrocid.Network.RPC.RemoteProcedure.RPCEnabled
-  fullName: Nitrocid.Network.RPC.RemoteProcedure.RPCEnabled
+  href: api/Nitrocid.Network.Types.RPC.RemoteProcedure.html#Nitrocid_Network_Types_RPC_RemoteProcedure_RPCEnabled
+  commentId: P:Nitrocid.Network.Types.RPC.RemoteProcedure.RPCEnabled
+  fullName: Nitrocid.Network.Types.RPC.RemoteProcedure.RPCEnabled
   nameWithType: RemoteProcedure.RPCEnabled
-- uid: Nitrocid.Network.RPC.RemoteProcedure.RPCEnabled*
+- uid: Nitrocid.Network.Types.RPC.RemoteProcedure.RPCEnabled*
   name: RPCEnabled
-  href: api/Nitrocid.Network.RPC.RemoteProcedure.html#Nitrocid_Network_RPC_RemoteProcedure_RPCEnabled_
-  commentId: Overload:Nitrocid.Network.RPC.RemoteProcedure.RPCEnabled
+  href: api/Nitrocid.Network.Types.RPC.RemoteProcedure.html#Nitrocid_Network_Types_RPC_RemoteProcedure_RPCEnabled_
+  commentId: Overload:Nitrocid.Network.Types.RPC.RemoteProcedure.RPCEnabled
   isSpec: "True"
-  fullName: Nitrocid.Network.RPC.RemoteProcedure.RPCEnabled
+  fullName: Nitrocid.Network.Types.RPC.RemoteProcedure.RPCEnabled
   nameWithType: RemoteProcedure.RPCEnabled
-- uid: Nitrocid.Network.RPC.RemoteProcedure.RPCPort
+- uid: Nitrocid.Network.Types.RPC.RemoteProcedure.RPCPort
   name: RPCPort
-  href: api/Nitrocid.Network.RPC.RemoteProcedure.html#Nitrocid_Network_RPC_RemoteProcedure_RPCPort
-  commentId: P:Nitrocid.Network.RPC.RemoteProcedure.RPCPort
-  fullName: Nitrocid.Network.RPC.RemoteProcedure.RPCPort
+  href: api/Nitrocid.Network.Types.RPC.RemoteProcedure.html#Nitrocid_Network_Types_RPC_RemoteProcedure_RPCPort
+  commentId: P:Nitrocid.Network.Types.RPC.RemoteProcedure.RPCPort
+  fullName: Nitrocid.Network.Types.RPC.RemoteProcedure.RPCPort
   nameWithType: RemoteProcedure.RPCPort
-- uid: Nitrocid.Network.RPC.RemoteProcedure.RPCPort*
+- uid: Nitrocid.Network.Types.RPC.RemoteProcedure.RPCPort*
   name: RPCPort
-  href: api/Nitrocid.Network.RPC.RemoteProcedure.html#Nitrocid_Network_RPC_RemoteProcedure_RPCPort_
-  commentId: Overload:Nitrocid.Network.RPC.RemoteProcedure.RPCPort
+  href: api/Nitrocid.Network.Types.RPC.RemoteProcedure.html#Nitrocid_Network_Types_RPC_RemoteProcedure_RPCPort_
+  commentId: Overload:Nitrocid.Network.Types.RPC.RemoteProcedure.RPCPort
   isSpec: "True"
-  fullName: Nitrocid.Network.RPC.RemoteProcedure.RPCPort
+  fullName: Nitrocid.Network.Types.RPC.RemoteProcedure.RPCPort
   nameWithType: RemoteProcedure.RPCPort
-- uid: Nitrocid.Network.RPC.RemoteProcedure.RPCStarted
+- uid: Nitrocid.Network.Types.RPC.RemoteProcedure.RPCStarted
   name: RPCStarted
-  href: api/Nitrocid.Network.RPC.RemoteProcedure.html#Nitrocid_Network_RPC_RemoteProcedure_RPCStarted
-  commentId: P:Nitrocid.Network.RPC.RemoteProcedure.RPCStarted
-  fullName: Nitrocid.Network.RPC.RemoteProcedure.RPCStarted
+  href: api/Nitrocid.Network.Types.RPC.RemoteProcedure.html#Nitrocid_Network_Types_RPC_RemoteProcedure_RPCStarted
+  commentId: P:Nitrocid.Network.Types.RPC.RemoteProcedure.RPCStarted
+  fullName: Nitrocid.Network.Types.RPC.RemoteProcedure.RPCStarted
   nameWithType: RemoteProcedure.RPCStarted
-- uid: Nitrocid.Network.RPC.RemoteProcedure.RPCStarted*
+- uid: Nitrocid.Network.Types.RPC.RemoteProcedure.RPCStarted*
   name: RPCStarted
-  href: api/Nitrocid.Network.RPC.RemoteProcedure.html#Nitrocid_Network_RPC_RemoteProcedure_RPCStarted_
-  commentId: Overload:Nitrocid.Network.RPC.RemoteProcedure.RPCStarted
+  href: api/Nitrocid.Network.Types.RPC.RemoteProcedure.html#Nitrocid_Network_Types_RPC_RemoteProcedure_RPCStarted_
+  commentId: Overload:Nitrocid.Network.Types.RPC.RemoteProcedure.RPCStarted
   isSpec: "True"
-  fullName: Nitrocid.Network.RPC.RemoteProcedure.RPCStarted
+  fullName: Nitrocid.Network.Types.RPC.RemoteProcedure.RPCStarted
   nameWithType: RemoteProcedure.RPCStarted
-- uid: Nitrocid.Network.RPC.RemoteProcedure.StartRPC
+- uid: Nitrocid.Network.Types.RPC.RemoteProcedure.StartRPC
   name: StartRPC()
-  href: api/Nitrocid.Network.RPC.RemoteProcedure.html#Nitrocid_Network_RPC_RemoteProcedure_StartRPC
-  commentId: M:Nitrocid.Network.RPC.RemoteProcedure.StartRPC
-  fullName: Nitrocid.Network.RPC.RemoteProcedure.StartRPC()
+  href: api/Nitrocid.Network.Types.RPC.RemoteProcedure.html#Nitrocid_Network_Types_RPC_RemoteProcedure_StartRPC
+  commentId: M:Nitrocid.Network.Types.RPC.RemoteProcedure.StartRPC
+  fullName: Nitrocid.Network.Types.RPC.RemoteProcedure.StartRPC()
   nameWithType: RemoteProcedure.StartRPC()
-- uid: Nitrocid.Network.RPC.RemoteProcedure.StartRPC*
+- uid: Nitrocid.Network.Types.RPC.RemoteProcedure.StartRPC*
   name: StartRPC
-  href: api/Nitrocid.Network.RPC.RemoteProcedure.html#Nitrocid_Network_RPC_RemoteProcedure_StartRPC_
-  commentId: Overload:Nitrocid.Network.RPC.RemoteProcedure.StartRPC
+  href: api/Nitrocid.Network.Types.RPC.RemoteProcedure.html#Nitrocid_Network_Types_RPC_RemoteProcedure_StartRPC_
+  commentId: Overload:Nitrocid.Network.Types.RPC.RemoteProcedure.StartRPC
   isSpec: "True"
-  fullName: Nitrocid.Network.RPC.RemoteProcedure.StartRPC
+  fullName: Nitrocid.Network.Types.RPC.RemoteProcedure.StartRPC
   nameWithType: RemoteProcedure.StartRPC
-- uid: Nitrocid.Network.RPC.RemoteProcedure.StopRPC
+- uid: Nitrocid.Network.Types.RPC.RemoteProcedure.StopRPC
   name: StopRPC()
-  href: api/Nitrocid.Network.RPC.RemoteProcedure.html#Nitrocid_Network_RPC_RemoteProcedure_StopRPC
-  commentId: M:Nitrocid.Network.RPC.RemoteProcedure.StopRPC
-  fullName: Nitrocid.Network.RPC.RemoteProcedure.StopRPC()
+  href: api/Nitrocid.Network.Types.RPC.RemoteProcedure.html#Nitrocid_Network_Types_RPC_RemoteProcedure_StopRPC
+  commentId: M:Nitrocid.Network.Types.RPC.RemoteProcedure.StopRPC
+  fullName: Nitrocid.Network.Types.RPC.RemoteProcedure.StopRPC()
   nameWithType: RemoteProcedure.StopRPC()
-- uid: Nitrocid.Network.RPC.RemoteProcedure.StopRPC*
+- uid: Nitrocid.Network.Types.RPC.RemoteProcedure.StopRPC*
   name: StopRPC
-  href: api/Nitrocid.Network.RPC.RemoteProcedure.html#Nitrocid_Network_RPC_RemoteProcedure_StopRPC_
-  commentId: Overload:Nitrocid.Network.RPC.RemoteProcedure.StopRPC
+  href: api/Nitrocid.Network.Types.RPC.RemoteProcedure.html#Nitrocid_Network_Types_RPC_RemoteProcedure_StopRPC_
+  commentId: Overload:Nitrocid.Network.Types.RPC.RemoteProcedure.StopRPC
   isSpec: "True"
-  fullName: Nitrocid.Network.RPC.RemoteProcedure.StopRPC
+  fullName: Nitrocid.Network.Types.RPC.RemoteProcedure.StopRPC
   nameWithType: RemoteProcedure.StopRPC
-- uid: Nitrocid.Network.RPC.RemoteProcedure.WrapperStartRPC
+- uid: Nitrocid.Network.Types.RPC.RemoteProcedure.WrapperStartRPC
   name: WrapperStartRPC()
-  href: api/Nitrocid.Network.RPC.RemoteProcedure.html#Nitrocid_Network_RPC_RemoteProcedure_WrapperStartRPC
-  commentId: M:Nitrocid.Network.RPC.RemoteProcedure.WrapperStartRPC
-  fullName: Nitrocid.Network.RPC.RemoteProcedure.WrapperStartRPC()
+  href: api/Nitrocid.Network.Types.RPC.RemoteProcedure.html#Nitrocid_Network_Types_RPC_RemoteProcedure_WrapperStartRPC
+  commentId: M:Nitrocid.Network.Types.RPC.RemoteProcedure.WrapperStartRPC
+  fullName: Nitrocid.Network.Types.RPC.RemoteProcedure.WrapperStartRPC()
   nameWithType: RemoteProcedure.WrapperStartRPC()
-- uid: Nitrocid.Network.RPC.RemoteProcedure.WrapperStartRPC*
+- uid: Nitrocid.Network.Types.RPC.RemoteProcedure.WrapperStartRPC*
   name: WrapperStartRPC
-  href: api/Nitrocid.Network.RPC.RemoteProcedure.html#Nitrocid_Network_RPC_RemoteProcedure_WrapperStartRPC_
-  commentId: Overload:Nitrocid.Network.RPC.RemoteProcedure.WrapperStartRPC
+  href: api/Nitrocid.Network.Types.RPC.RemoteProcedure.html#Nitrocid_Network_Types_RPC_RemoteProcedure_WrapperStartRPC_
+  commentId: Overload:Nitrocid.Network.Types.RPC.RemoteProcedure.WrapperStartRPC
   isSpec: "True"
-  fullName: Nitrocid.Network.RPC.RemoteProcedure.WrapperStartRPC
+  fullName: Nitrocid.Network.Types.RPC.RemoteProcedure.WrapperStartRPC
   nameWithType: RemoteProcedure.WrapperStartRPC
-- uid: Nitrocid.Network.RSS
-  name: Nitrocid.Network.RSS
-  href: api/Nitrocid.Network.RSS.html
-  commentId: N:Nitrocid.Network.RSS
-  fullName: Nitrocid.Network.RSS
-  nameWithType: Nitrocid.Network.RSS
-- uid: Nitrocid.Network.RSS.RSSTools
+- uid: Nitrocid.Network.Types.RSS
+  name: Nitrocid.Network.Types.RSS
+  href: api/Nitrocid.Network.Types.RSS.html
+  commentId: N:Nitrocid.Network.Types.RSS
+  fullName: Nitrocid.Network.Types.RSS
+  nameWithType: Nitrocid.Network.Types.RSS
+- uid: Nitrocid.Network.Types.RSS.RSSTools
   name: RSSTools
-  href: api/Nitrocid.Network.RSS.RSSTools.html
-  commentId: T:Nitrocid.Network.RSS.RSSTools
-  fullName: Nitrocid.Network.RSS.RSSTools
+  href: api/Nitrocid.Network.Types.RSS.RSSTools.html
+  commentId: T:Nitrocid.Network.Types.RSS.RSSTools
+  fullName: Nitrocid.Network.Types.RSS.RSSTools
   nameWithType: RSSTools
-- uid: Nitrocid.Network.RSS.RSSTools.RssHeadlineUrl
+- uid: Nitrocid.Network.Types.RSS.RSSTools.RssHeadlineUrl
   name: RssHeadlineUrl
-  href: api/Nitrocid.Network.RSS.RSSTools.html#Nitrocid_Network_RSS_RSSTools_RssHeadlineUrl
-  commentId: P:Nitrocid.Network.RSS.RSSTools.RssHeadlineUrl
-  fullName: Nitrocid.Network.RSS.RSSTools.RssHeadlineUrl
+  href: api/Nitrocid.Network.Types.RSS.RSSTools.html#Nitrocid_Network_Types_RSS_RSSTools_RssHeadlineUrl
+  commentId: P:Nitrocid.Network.Types.RSS.RSSTools.RssHeadlineUrl
+  fullName: Nitrocid.Network.Types.RSS.RSSTools.RssHeadlineUrl
   nameWithType: RSSTools.RssHeadlineUrl
-- uid: Nitrocid.Network.RSS.RSSTools.RssHeadlineUrl*
+- uid: Nitrocid.Network.Types.RSS.RSSTools.RssHeadlineUrl*
   name: RssHeadlineUrl
-  href: api/Nitrocid.Network.RSS.RSSTools.html#Nitrocid_Network_RSS_RSSTools_RssHeadlineUrl_
-  commentId: Overload:Nitrocid.Network.RSS.RSSTools.RssHeadlineUrl
+  href: api/Nitrocid.Network.Types.RSS.RSSTools.html#Nitrocid_Network_Types_RSS_RSSTools_RssHeadlineUrl_
+  commentId: Overload:Nitrocid.Network.Types.RSS.RSSTools.RssHeadlineUrl
   isSpec: "True"
-  fullName: Nitrocid.Network.RSS.RSSTools.RssHeadlineUrl
+  fullName: Nitrocid.Network.Types.RSS.RSSTools.RssHeadlineUrl
   nameWithType: RSSTools.RssHeadlineUrl
-- uid: Nitrocid.Network.RSS.RSSTools.ShowHeadlineLogin
+- uid: Nitrocid.Network.Types.RSS.RSSTools.ShowHeadlineLogin
   name: ShowHeadlineLogin()
-  href: api/Nitrocid.Network.RSS.RSSTools.html#Nitrocid_Network_RSS_RSSTools_ShowHeadlineLogin
-  commentId: M:Nitrocid.Network.RSS.RSSTools.ShowHeadlineLogin
-  fullName: Nitrocid.Network.RSS.RSSTools.ShowHeadlineLogin()
+  href: api/Nitrocid.Network.Types.RSS.RSSTools.html#Nitrocid_Network_Types_RSS_RSSTools_ShowHeadlineLogin
+  commentId: M:Nitrocid.Network.Types.RSS.RSSTools.ShowHeadlineLogin
+  fullName: Nitrocid.Network.Types.RSS.RSSTools.ShowHeadlineLogin()
   nameWithType: RSSTools.ShowHeadlineLogin()
-- uid: Nitrocid.Network.RSS.RSSTools.ShowHeadlineLogin*
+- uid: Nitrocid.Network.Types.RSS.RSSTools.ShowHeadlineLogin*
   name: ShowHeadlineLogin
-  href: api/Nitrocid.Network.RSS.RSSTools.html#Nitrocid_Network_RSS_RSSTools_ShowHeadlineLogin_
-  commentId: Overload:Nitrocid.Network.RSS.RSSTools.ShowHeadlineLogin
+  href: api/Nitrocid.Network.Types.RSS.RSSTools.html#Nitrocid_Network_Types_RSS_RSSTools_ShowHeadlineLogin_
+  commentId: Overload:Nitrocid.Network.Types.RSS.RSSTools.ShowHeadlineLogin
   isSpec: "True"
-  fullName: Nitrocid.Network.RSS.RSSTools.ShowHeadlineLogin
+  fullName: Nitrocid.Network.Types.RSS.RSSTools.ShowHeadlineLogin
   nameWithType: RSSTools.ShowHeadlineLogin
-- uid: Nitrocid.Network.RSS.RSSTools.ShowHeadlineOnLogin
+- uid: Nitrocid.Network.Types.RSS.RSSTools.ShowHeadlineOnLogin
   name: ShowHeadlineOnLogin
-  href: api/Nitrocid.Network.RSS.RSSTools.html#Nitrocid_Network_RSS_RSSTools_ShowHeadlineOnLogin
-  commentId: P:Nitrocid.Network.RSS.RSSTools.ShowHeadlineOnLogin
-  fullName: Nitrocid.Network.RSS.RSSTools.ShowHeadlineOnLogin
+  href: api/Nitrocid.Network.Types.RSS.RSSTools.html#Nitrocid_Network_Types_RSS_RSSTools_ShowHeadlineOnLogin
+  commentId: P:Nitrocid.Network.Types.RSS.RSSTools.ShowHeadlineOnLogin
+  fullName: Nitrocid.Network.Types.RSS.RSSTools.ShowHeadlineOnLogin
   nameWithType: RSSTools.ShowHeadlineOnLogin
-- uid: Nitrocid.Network.RSS.RSSTools.ShowHeadlineOnLogin*
+- uid: Nitrocid.Network.Types.RSS.RSSTools.ShowHeadlineOnLogin*
   name: ShowHeadlineOnLogin
-  href: api/Nitrocid.Network.RSS.RSSTools.html#Nitrocid_Network_RSS_RSSTools_ShowHeadlineOnLogin_
-  commentId: Overload:Nitrocid.Network.RSS.RSSTools.ShowHeadlineOnLogin
+  href: api/Nitrocid.Network.Types.RSS.RSSTools.html#Nitrocid_Network_Types_RSS_RSSTools_ShowHeadlineOnLogin_
+  commentId: Overload:Nitrocid.Network.Types.RSS.RSSTools.ShowHeadlineOnLogin
   isSpec: "True"
-  fullName: Nitrocid.Network.RSS.RSSTools.ShowHeadlineOnLogin
+  fullName: Nitrocid.Network.Types.RSS.RSSTools.ShowHeadlineOnLogin
   nameWithType: RSSTools.ShowHeadlineOnLogin
 - uid: Nitrocid.Resources
   name: Nitrocid.Resources
