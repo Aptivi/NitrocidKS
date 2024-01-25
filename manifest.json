@@ -2745,26 +2745,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Misc.Screensaver.Displays.MatrixDisplay.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Misc.Screensaver.Displays.MatrixDisplay.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Misc.Screensaver.Displays.MatrixSettings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Misc.Screensaver.Displays.MatrixSettings.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.Misc.Screensaver.Displays.PlainDisplay.yml",
       "output": {
         ".html": {
@@ -4917,11 +4897,11 @@
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "api/toc.html"
-        },
         ".json": {
           "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
         }
       },
       "version": ""
@@ -4960,11 +4940,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "toc.html"
-        },
         ".json": {
           "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
         }
       },
       "version": ""
