@@ -16751,44 +16751,6 @@ references:
   commentId: N:Nitrocid.Files.Operations
   fullName: Nitrocid.Files.Operations
   nameWithType: Nitrocid.Files.Operations
-- uid: Nitrocid.Files.Operations.Combination
-  name: Combination
-  href: api/Nitrocid.Files.Operations.Combination.html
-  commentId: T:Nitrocid.Files.Operations.Combination
-  fullName: Nitrocid.Files.Operations.Combination
-  nameWithType: Combination
-- uid: Nitrocid.Files.Operations.Combination.CombineBinaryFiles(System.String,System.String[])
-  name: CombineBinaryFiles(string, string[])
-  href: api/Nitrocid.Files.Operations.Combination.html#Nitrocid_Files_Operations_Combination_CombineBinaryFiles_System_String_System_String___
-  commentId: M:Nitrocid.Files.Operations.Combination.CombineBinaryFiles(System.String,System.String[])
-  name.vb: CombineBinaryFiles(String, String())
-  fullName: Nitrocid.Files.Operations.Combination.CombineBinaryFiles(string, string[])
-  fullName.vb: Nitrocid.Files.Operations.Combination.CombineBinaryFiles(String, String())
-  nameWithType: Combination.CombineBinaryFiles(string, string[])
-  nameWithType.vb: Combination.CombineBinaryFiles(String, String())
-- uid: Nitrocid.Files.Operations.Combination.CombineBinaryFiles*
-  name: CombineBinaryFiles
-  href: api/Nitrocid.Files.Operations.Combination.html#Nitrocid_Files_Operations_Combination_CombineBinaryFiles_
-  commentId: Overload:Nitrocid.Files.Operations.Combination.CombineBinaryFiles
-  isSpec: "True"
-  fullName: Nitrocid.Files.Operations.Combination.CombineBinaryFiles
-  nameWithType: Combination.CombineBinaryFiles
-- uid: Nitrocid.Files.Operations.Combination.CombineTextFiles(System.String,System.String[])
-  name: CombineTextFiles(string, string[])
-  href: api/Nitrocid.Files.Operations.Combination.html#Nitrocid_Files_Operations_Combination_CombineTextFiles_System_String_System_String___
-  commentId: M:Nitrocid.Files.Operations.Combination.CombineTextFiles(System.String,System.String[])
-  name.vb: CombineTextFiles(String, String())
-  fullName: Nitrocid.Files.Operations.Combination.CombineTextFiles(string, string[])
-  fullName.vb: Nitrocid.Files.Operations.Combination.CombineTextFiles(String, String())
-  nameWithType: Combination.CombineTextFiles(string, string[])
-  nameWithType.vb: Combination.CombineTextFiles(String, String())
-- uid: Nitrocid.Files.Operations.Combination.CombineTextFiles*
-  name: CombineTextFiles
-  href: api/Nitrocid.Files.Operations.Combination.html#Nitrocid_Files_Operations_Combination_CombineTextFiles_
-  commentId: Overload:Nitrocid.Files.Operations.Combination.CombineTextFiles
-  isSpec: "True"
-  fullName: Nitrocid.Files.Operations.Combination.CombineTextFiles
-  nameWithType: Combination.CombineTextFiles
 - uid: Nitrocid.Files.Operations.Copying
   name: Copying
   href: api/Nitrocid.Files.Operations.Copying.html
@@ -17104,6 +17066,38 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Files.Operations.Manipulation.ClearFile
   nameWithType: Manipulation.ClearFile
+- uid: Nitrocid.Files.Operations.Manipulation.CombineBinaryFiles(System.String,System.String[])
+  name: CombineBinaryFiles(string, string[])
+  href: api/Nitrocid.Files.Operations.Manipulation.html#Nitrocid_Files_Operations_Manipulation_CombineBinaryFiles_System_String_System_String___
+  commentId: M:Nitrocid.Files.Operations.Manipulation.CombineBinaryFiles(System.String,System.String[])
+  name.vb: CombineBinaryFiles(String, String())
+  fullName: Nitrocid.Files.Operations.Manipulation.CombineBinaryFiles(string, string[])
+  fullName.vb: Nitrocid.Files.Operations.Manipulation.CombineBinaryFiles(String, String())
+  nameWithType: Manipulation.CombineBinaryFiles(string, string[])
+  nameWithType.vb: Manipulation.CombineBinaryFiles(String, String())
+- uid: Nitrocid.Files.Operations.Manipulation.CombineBinaryFiles*
+  name: CombineBinaryFiles
+  href: api/Nitrocid.Files.Operations.Manipulation.html#Nitrocid_Files_Operations_Manipulation_CombineBinaryFiles_
+  commentId: Overload:Nitrocid.Files.Operations.Manipulation.CombineBinaryFiles
+  isSpec: "True"
+  fullName: Nitrocid.Files.Operations.Manipulation.CombineBinaryFiles
+  nameWithType: Manipulation.CombineBinaryFiles
+- uid: Nitrocid.Files.Operations.Manipulation.CombineTextFiles(System.String,System.String[])
+  name: CombineTextFiles(string, string[])
+  href: api/Nitrocid.Files.Operations.Manipulation.html#Nitrocid_Files_Operations_Manipulation_CombineTextFiles_System_String_System_String___
+  commentId: M:Nitrocid.Files.Operations.Manipulation.CombineTextFiles(System.String,System.String[])
+  name.vb: CombineTextFiles(String, String())
+  fullName: Nitrocid.Files.Operations.Manipulation.CombineTextFiles(string, string[])
+  fullName.vb: Nitrocid.Files.Operations.Manipulation.CombineTextFiles(String, String())
+  nameWithType: Manipulation.CombineTextFiles(string, string[])
+  nameWithType.vb: Manipulation.CombineTextFiles(String, String())
+- uid: Nitrocid.Files.Operations.Manipulation.CombineTextFiles*
+  name: CombineTextFiles
+  href: api/Nitrocid.Files.Operations.Manipulation.html#Nitrocid_Files_Operations_Manipulation_CombineTextFiles_
+  commentId: Overload:Nitrocid.Files.Operations.Manipulation.CombineTextFiles
+  isSpec: "True"
+  fullName: Nitrocid.Files.Operations.Manipulation.CombineTextFiles
+  nameWithType: Manipulation.CombineTextFiles
 - uid: Nitrocid.Files.Operations.Manipulation.Compare(System.String,System.String)
   name: Compare(string, string)
   href: api/Nitrocid.Files.Operations.Manipulation.html#Nitrocid_Files_Operations_Manipulation_Compare_System_String_System_String_
