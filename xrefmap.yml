@@ -26875,6 +26875,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.KernelPlatform.IsOnUnixMusl
   nameWithType: KernelPlatform.IsOnUnixMusl
+- uid: Nitrocid.Kernel.KernelPlatform.IsOnUsualEnvironment
+  name: IsOnUsualEnvironment()
+  href: api/Nitrocid.Kernel.KernelPlatform.html#Nitrocid_Kernel_KernelPlatform_IsOnUsualEnvironment
+  commentId: M:Nitrocid.Kernel.KernelPlatform.IsOnUsualEnvironment
+  fullName: Nitrocid.Kernel.KernelPlatform.IsOnUsualEnvironment()
+  nameWithType: KernelPlatform.IsOnUsualEnvironment()
+- uid: Nitrocid.Kernel.KernelPlatform.IsOnUsualEnvironment*
+  name: IsOnUsualEnvironment
+  href: api/Nitrocid.Kernel.KernelPlatform.html#Nitrocid_Kernel_KernelPlatform_IsOnUsualEnvironment_
+  commentId: Overload:Nitrocid.Kernel.KernelPlatform.IsOnUsualEnvironment
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.KernelPlatform.IsOnUsualEnvironment
+  nameWithType: KernelPlatform.IsOnUsualEnvironment
 - uid: Nitrocid.Kernel.KernelPlatform.IsOnWindows
   name: IsOnWindows()
   href: api/Nitrocid.Kernel.KernelPlatform.html#Nitrocid_Kernel_KernelPlatform_IsOnWindows
