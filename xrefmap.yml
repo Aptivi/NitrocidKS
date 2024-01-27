@@ -11615,6 +11615,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Drivers.HardwareProber.BaseHardwareProberDriver.ProbeProcessor
   nameWithType: BaseHardwareProberDriver.ProbeProcessor
+- uid: Nitrocid.Drivers.HardwareProber.BaseHardwareProberDriver.SupportedHardwareTypes
+  name: SupportedHardwareTypes
+  href: api/Nitrocid.Drivers.HardwareProber.BaseHardwareProberDriver.html#Nitrocid_Drivers_HardwareProber_BaseHardwareProberDriver_SupportedHardwareTypes
+  commentId: P:Nitrocid.Drivers.HardwareProber.BaseHardwareProberDriver.SupportedHardwareTypes
+  fullName: Nitrocid.Drivers.HardwareProber.BaseHardwareProberDriver.SupportedHardwareTypes
+  nameWithType: BaseHardwareProberDriver.SupportedHardwareTypes
+- uid: Nitrocid.Drivers.HardwareProber.BaseHardwareProberDriver.SupportedHardwareTypes*
+  name: SupportedHardwareTypes
+  href: api/Nitrocid.Drivers.HardwareProber.BaseHardwareProberDriver.html#Nitrocid_Drivers_HardwareProber_BaseHardwareProberDriver_SupportedHardwareTypes_
+  commentId: Overload:Nitrocid.Drivers.HardwareProber.BaseHardwareProberDriver.SupportedHardwareTypes
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.HardwareProber.BaseHardwareProberDriver.SupportedHardwareTypes
+  nameWithType: BaseHardwareProberDriver.SupportedHardwareTypes
 - uid: Nitrocid.Drivers.HardwareProber.HardwareProberDriver
   name: HardwareProberDriver
   href: api/Nitrocid.Drivers.HardwareProber.HardwareProberDriver.html
@@ -11957,6 +11970,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Drivers.HardwareProber.IHardwareProberDriver.ProbeProcessor
   nameWithType: IHardwareProberDriver.ProbeProcessor
+- uid: Nitrocid.Drivers.HardwareProber.IHardwareProberDriver.SupportedHardwareTypes
+  name: SupportedHardwareTypes
+  href: api/Nitrocid.Drivers.HardwareProber.IHardwareProberDriver.html#Nitrocid_Drivers_HardwareProber_IHardwareProberDriver_SupportedHardwareTypes
+  commentId: P:Nitrocid.Drivers.HardwareProber.IHardwareProberDriver.SupportedHardwareTypes
+  fullName: Nitrocid.Drivers.HardwareProber.IHardwareProberDriver.SupportedHardwareTypes
+  nameWithType: IHardwareProberDriver.SupportedHardwareTypes
+- uid: Nitrocid.Drivers.HardwareProber.IHardwareProberDriver.SupportedHardwareTypes*
+  name: SupportedHardwareTypes
+  href: api/Nitrocid.Drivers.HardwareProber.IHardwareProberDriver.html#Nitrocid_Drivers_HardwareProber_IHardwareProberDriver_SupportedHardwareTypes_
+  commentId: Overload:Nitrocid.Drivers.HardwareProber.IHardwareProberDriver.SupportedHardwareTypes
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.HardwareProber.IHardwareProberDriver.SupportedHardwareTypes
+  nameWithType: IHardwareProberDriver.SupportedHardwareTypes
 - uid: Nitrocid.Drivers.IDriver
   name: IDriver
   href: api/Nitrocid.Drivers.IDriver.html
