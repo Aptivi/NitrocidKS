@@ -947,7 +947,7 @@
   "api/Nitrocid.Kernel.Hardware.HardwareList.html": {
     "href": "api/Nitrocid.Kernel.Hardware.HardwareList.html",
     "title": "Class HardwareList | Nitrocid KS API - Aptivi",
-    "keywords": "Class HardwareList Hardware list module Inheritance object HardwareList Namespace: Nitrocid.Kernel.Hardware Assembly: Nitrocid.dll Syntax public static class HardwareList Methods | Edit this page View Source ListHardware(string) Lists information about hardware Declaration public static void ListHardware(string HardwareType) Parameters Type Name Description string HardwareType Hardware type defined by Inxi.NET. If \"all\", prints all information."
+    "keywords": "Class HardwareList Hardware list module Inheritance object HardwareList Namespace: Nitrocid.Kernel.Hardware Assembly: Nitrocid.dll Syntax public static class HardwareList Methods | Edit this page View Source ListHardware(string) Lists information about hardware Declaration public static void ListHardware(string HardwareType) Parameters Type Name Description string HardwareType Hardware type. If \"all\", prints all information."
   },
   "api/Nitrocid.Kernel.Hardware.HardwareProbe.html": {
     "href": "api/Nitrocid.Kernel.Hardware.HardwareProbe.html",
