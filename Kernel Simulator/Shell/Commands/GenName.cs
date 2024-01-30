@@ -19,6 +19,8 @@
 
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell.ShellBase.Commands;
+using Textify.Data;
+
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
@@ -64,6 +66,7 @@ namespace KS.Shell.Commands
                 SurnameSuffix = ListArgsOnly[4];
 
             // Generate n names
+            DataInitializer.Initialize();
             NameGenerator.PopulateNames();
             NamesList = NameGenerator.GenerateNames(NamesCount, NamePrefix, NameSuffix, SurnamePrefix, SurnameSuffix);
             ListWriterColor.WriteList(NamesList);
