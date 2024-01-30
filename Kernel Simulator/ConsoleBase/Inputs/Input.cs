@@ -121,7 +121,7 @@ namespace KS.ConsoleBase.Inputs
         /// <param name="Timeout"></param>
         public static ConsoleKeyInfo ReadKeyTimeout(bool Intercept, TimeSpan Timeout)
         {
-            return TermInput.ReadKeyTimeout(Intercept, Timeout);
+            return TermInput.ReadKeyTimeout(Intercept, Timeout).result;
         }
 
         /// <summary>

@@ -68,9 +68,9 @@ namespace KSTests.Console
             ColorInstance.Type.ShouldBe(ColorType._255Color);
             ColorInstance.VTSequenceBackground.ShouldBe(Convert.ToString(Color255.GetEsc()) + "[48;5;18m");
             ColorInstance.VTSequenceForeground.ShouldBe(Convert.ToString(Color255.GetEsc()) + "[38;5;18m");
-            ColorInstance.R.ShouldBe(0);
-            ColorInstance.G.ShouldBe(0);
-            ColorInstance.B.ShouldBe(135);
+            ColorInstance.RGB.R.ShouldBe(0);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(135);
             ColorInstance.Brightness.ShouldBe(ColorBrightness.Light);
             ColorInstance.Hex.ShouldBe("#000087");
         }
@@ -96,9 +96,9 @@ namespace KSTests.Console
             ColorInstance.Type.ShouldBe(ColorType.TrueColor);
             ColorInstance.VTSequenceBackground.ShouldBe(Convert.ToString(Color255.GetEsc()) + "[48;2;94;0;63m");
             ColorInstance.VTSequenceForeground.ShouldBe(Convert.ToString(Color255.GetEsc()) + "[38;2;94;0;63m");
-            ColorInstance.R.ShouldBe(94);
-            ColorInstance.G.ShouldBe(0);
-            ColorInstance.B.ShouldBe(63);
+            ColorInstance.RGB.R.ShouldBe(94);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(63);
             ColorInstance.Brightness.ShouldBe(ColorBrightness.Light);
             ColorInstance.Hex.ShouldBe("#5E003F");
         }
@@ -124,9 +124,9 @@ namespace KSTests.Console
             ColorInstance.Type.ShouldBe(ColorType.TrueColor);
             ColorInstance.VTSequenceBackground.ShouldBe(Convert.ToString(Color255.GetEsc()) + "[48;2;15;15;15m");
             ColorInstance.VTSequenceForeground.ShouldBe(Convert.ToString(Color255.GetEsc()) + "[38;2;15;15;15m");
-            ColorInstance.R.ShouldBe(15);
-            ColorInstance.G.ShouldBe(15);
-            ColorInstance.B.ShouldBe(15);
+            ColorInstance.RGB.R.ShouldBe(15);
+            ColorInstance.RGB.G.ShouldBe(15);
+            ColorInstance.RGB.B.ShouldBe(15);
             ColorInstance.Brightness.ShouldBe(ColorBrightness.Dark);
             ColorInstance.Hex.ShouldBe("#0F0F0F");
         }

@@ -358,15 +358,15 @@ namespace KS.Misc.Screensaver.Displays
                     break;
 
                 // Set thresholds
-                double ThresholdRed = ColorStorage.R / (double)FallingLineSettings.FallingLineMaxSteps;
-                double ThresholdGreen = ColorStorage.G / (double)FallingLineSettings.FallingLineMaxSteps;
-                double ThresholdBlue = ColorStorage.B / (double)FallingLineSettings.FallingLineMaxSteps;
+                double ThresholdRed = ColorStorage.RGB.R / (double)FallingLineSettings.FallingLineMaxSteps;
+                double ThresholdGreen = ColorStorage.RGB.G / (double)FallingLineSettings.FallingLineMaxSteps;
+                double ThresholdBlue = ColorStorage.RGB.B / (double)FallingLineSettings.FallingLineMaxSteps;
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Color threshold (R;G;B: {0})", ThresholdRed, ThresholdGreen, ThresholdBlue);
 
                 // Set color fade steps
-                int CurrentColorRedOut = (int)Math.Round(ColorStorage.R - ThresholdRed * StepNum);
-                int CurrentColorGreenOut = (int)Math.Round(ColorStorage.G - ThresholdGreen * StepNum);
-                int CurrentColorBlueOut = (int)Math.Round(ColorStorage.B - ThresholdBlue * StepNum);
+                int CurrentColorRedOut = (int)Math.Round(ColorStorage.RGB.R - ThresholdRed * StepNum);
+                int CurrentColorGreenOut = (int)Math.Round(ColorStorage.RGB.G - ThresholdGreen * StepNum);
+                int CurrentColorBlueOut = (int)Math.Round(ColorStorage.RGB.B - ThresholdBlue * StepNum);
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Color out (R;G;B: {0};{1};{2})", CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut);
 
                 // Get the positions and write the block with new color
