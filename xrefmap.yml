@@ -32245,41 +32245,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Reflection.AssemblyLookup.RemovePathFromAssemblySearchPath
   nameWithType: AssemblyLookup.RemovePathFromAssemblySearchPath
-- uid: Nitrocid.Misc.Reflection.EnumerableTools
-  name: EnumerableTools
-  href: api/Nitrocid.Misc.Reflection.EnumerableTools.html
-  commentId: T:Nitrocid.Misc.Reflection.EnumerableTools
-  fullName: Nitrocid.Misc.Reflection.EnumerableTools
-  nameWithType: EnumerableTools
-- uid: Nitrocid.Misc.Reflection.EnumerableTools.CountElements(System.Collections.IEnumerable)
-  name: CountElements(IEnumerable)
-  href: api/Nitrocid.Misc.Reflection.EnumerableTools.html#Nitrocid_Misc_Reflection_EnumerableTools_CountElements_System_Collections_IEnumerable_
-  commentId: M:Nitrocid.Misc.Reflection.EnumerableTools.CountElements(System.Collections.IEnumerable)
-  fullName: Nitrocid.Misc.Reflection.EnumerableTools.CountElements(System.Collections.IEnumerable)
-  nameWithType: EnumerableTools.CountElements(IEnumerable)
-- uid: Nitrocid.Misc.Reflection.EnumerableTools.CountElements*
-  name: CountElements
-  href: api/Nitrocid.Misc.Reflection.EnumerableTools.html#Nitrocid_Misc_Reflection_EnumerableTools_CountElements_
-  commentId: Overload:Nitrocid.Misc.Reflection.EnumerableTools.CountElements
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Reflection.EnumerableTools.CountElements
-  nameWithType: EnumerableTools.CountElements
-- uid: Nitrocid.Misc.Reflection.EnumerableTools.GetElementFromIndex(System.Collections.IEnumerable,System.Int32)
-  name: GetElementFromIndex(IEnumerable, int)
-  href: api/Nitrocid.Misc.Reflection.EnumerableTools.html#Nitrocid_Misc_Reflection_EnumerableTools_GetElementFromIndex_System_Collections_IEnumerable_System_Int32_
-  commentId: M:Nitrocid.Misc.Reflection.EnumerableTools.GetElementFromIndex(System.Collections.IEnumerable,System.Int32)
-  name.vb: GetElementFromIndex(IEnumerable, Integer)
-  fullName: Nitrocid.Misc.Reflection.EnumerableTools.GetElementFromIndex(System.Collections.IEnumerable, int)
-  fullName.vb: Nitrocid.Misc.Reflection.EnumerableTools.GetElementFromIndex(System.Collections.IEnumerable, Integer)
-  nameWithType: EnumerableTools.GetElementFromIndex(IEnumerable, int)
-  nameWithType.vb: EnumerableTools.GetElementFromIndex(IEnumerable, Integer)
-- uid: Nitrocid.Misc.Reflection.EnumerableTools.GetElementFromIndex*
-  name: GetElementFromIndex
-  href: api/Nitrocid.Misc.Reflection.EnumerableTools.html#Nitrocid_Misc_Reflection_EnumerableTools_GetElementFromIndex_
-  commentId: Overload:Nitrocid.Misc.Reflection.EnumerableTools.GetElementFromIndex
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Reflection.EnumerableTools.GetElementFromIndex
-  nameWithType: EnumerableTools.GetElementFromIndex
 - uid: Nitrocid.Misc.Reflection.FieldManager
   name: FieldManager
   href: api/Nitrocid.Misc.Reflection.FieldManager.html

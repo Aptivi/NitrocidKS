@@ -1319,11 +1319,6 @@
     "title": "Class AssemblyLookup | Nitrocid KS API - Aptivi",
     "keywords": "Class AssemblyLookup Assembly lookup module Inheritance object AssemblyLookup Namespace: Nitrocid.Misc.Reflection Assembly: Nitrocid.dll Syntax public static class AssemblyLookup Methods | Edit this page View Source AddPathToAssemblySearchPath(string) Adds the path pointing to the dependencies to the assembly search path Declaration public static void AddPathToAssemblySearchPath(string Path) Parameters Type Name Description string Path Path to the dependencies | Edit this page View Source RemovePathFromAssemblySearchPath(string) Removes the path pointing to the dependencies from the assembly search path Declaration public static void RemovePathFromAssemblySearchPath(string Path) Parameters Type Name Description string Path Path to the dependencies"
   },
-  "api/Nitrocid.Misc.Reflection.EnumerableTools.html": {
-    "href": "api/Nitrocid.Misc.Reflection.EnumerableTools.html",
-    "title": "Class EnumerableTools | Nitrocid KS API - Aptivi",
-    "keywords": "Class EnumerableTools Tools for enumerables Inheritance object EnumerableTools Namespace: Nitrocid.Misc.Reflection Assembly: Nitrocid.dll Syntax public static class EnumerableTools Methods | Edit this page View Source CountElements(IEnumerable) Counts the number of elements in the IEnumerable instance Declaration public static int CountElements(IEnumerable enumerable) Parameters Type Name Description IEnumerable enumerable An instance of an enumerable to count the elements found in it Returns Type Description int Number of elements | Edit this page View Source GetElementFromIndex(IEnumerable, int) Gets an element from the IEnumerable instance with the provided item index number starting from zero Declaration public static object GetElementFromIndex(IEnumerable enumerable, int index) Parameters Type Name Description IEnumerable enumerable An instance of an enumerable to get an item from int index An index of an element to search for Returns Type Description object An element from the enumerable if found, or null if not found"
-  },
   "api/Nitrocid.Misc.Reflection.FieldManager.html": {
     "href": "api/Nitrocid.Misc.Reflection.FieldManager.html",
     "title": "Class FieldManager | Nitrocid KS API - Aptivi",
@@ -1347,7 +1342,7 @@
   "api/Nitrocid.Misc.Reflection.html": {
     "href": "api/Nitrocid.Misc.Reflection.html",
     "title": "Namespace Nitrocid.Misc.Reflection | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace Nitrocid.Misc.Reflection Classes ArrayTools Array tools that are useful AssemblyLookup Assembly lookup module EnumerableTools Tools for enumerables FieldManager Field management module IntegerTools Tools to manipulate with integers MethodManager Method management module PropertyManager Property management module"
+    "keywords": "Namespace Nitrocid.Misc.Reflection Classes ArrayTools Array tools that are useful AssemblyLookup Assembly lookup module FieldManager Field management module IntegerTools Tools to manipulate with integers MethodManager Method management module PropertyManager Property management module"
   },
   "api/Nitrocid.Misc.Screensaver.BaseScreensaver.html": {
     "href": "api/Nitrocid.Misc.Screensaver.BaseScreensaver.html",
