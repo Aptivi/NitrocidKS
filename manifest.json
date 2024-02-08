@@ -485,16 +485,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Drivers.Encryption.Bases.MD5.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Drivers.Encryption.Bases.MD5.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.Drivers.Encryption.Bases.SHA1.yml",
       "output": {
         ".html": {
