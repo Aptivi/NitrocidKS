@@ -1815,6 +1815,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Kernel.Exceptions.KernelExceptionTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Kernel.Exceptions.KernelExceptionTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.Kernel.Exceptions.KernelExceptionType.yml",
       "output": {
         ".html": {

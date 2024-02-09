@@ -24812,6 +24812,31 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Exceptions.KernelException.OriginalExceptionMessage
   nameWithType: KernelException.OriginalExceptionMessage
+- uid: Nitrocid.Kernel.Exceptions.KernelExceptionTools
+  name: KernelExceptionTools
+  href: api/Nitrocid.Kernel.Exceptions.KernelExceptionTools.html
+  commentId: T:Nitrocid.Kernel.Exceptions.KernelExceptionTools
+  fullName: Nitrocid.Kernel.Exceptions.KernelExceptionTools
+  nameWithType: KernelExceptionTools
+- uid: Nitrocid.Kernel.Exceptions.KernelExceptionTools.GetErrorCode(Nitrocid.Kernel.Exceptions.KernelException)
+  name: GetErrorCode(KernelException)
+  href: api/Nitrocid.Kernel.Exceptions.KernelExceptionTools.html#Nitrocid_Kernel_Exceptions_KernelExceptionTools_GetErrorCode_Nitrocid_Kernel_Exceptions_KernelException_
+  commentId: M:Nitrocid.Kernel.Exceptions.KernelExceptionTools.GetErrorCode(Nitrocid.Kernel.Exceptions.KernelException)
+  fullName: Nitrocid.Kernel.Exceptions.KernelExceptionTools.GetErrorCode(Nitrocid.Kernel.Exceptions.KernelException)
+  nameWithType: KernelExceptionTools.GetErrorCode(KernelException)
+- uid: Nitrocid.Kernel.Exceptions.KernelExceptionTools.GetErrorCode(Nitrocid.Kernel.Exceptions.KernelExceptionType)
+  name: GetErrorCode(KernelExceptionType)
+  href: api/Nitrocid.Kernel.Exceptions.KernelExceptionTools.html#Nitrocid_Kernel_Exceptions_KernelExceptionTools_GetErrorCode_Nitrocid_Kernel_Exceptions_KernelExceptionType_
+  commentId: M:Nitrocid.Kernel.Exceptions.KernelExceptionTools.GetErrorCode(Nitrocid.Kernel.Exceptions.KernelExceptionType)
+  fullName: Nitrocid.Kernel.Exceptions.KernelExceptionTools.GetErrorCode(Nitrocid.Kernel.Exceptions.KernelExceptionType)
+  nameWithType: KernelExceptionTools.GetErrorCode(KernelExceptionType)
+- uid: Nitrocid.Kernel.Exceptions.KernelExceptionTools.GetErrorCode*
+  name: GetErrorCode
+  href: api/Nitrocid.Kernel.Exceptions.KernelExceptionTools.html#Nitrocid_Kernel_Exceptions_KernelExceptionTools_GetErrorCode_
+  commentId: Overload:Nitrocid.Kernel.Exceptions.KernelExceptionTools.GetErrorCode
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Exceptions.KernelExceptionTools.GetErrorCode
+  nameWithType: KernelExceptionTools.GetErrorCode
 - uid: Nitrocid.Kernel.Exceptions.KernelExceptionType
   name: KernelExceptionType
   href: api/Nitrocid.Kernel.Exceptions.KernelExceptionType.html
