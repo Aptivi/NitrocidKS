@@ -1404,11 +1404,6 @@
     "title": "Namespace Nitrocid.Misc.Splash | Nitrocid KS API - Aptivi",
     "keywords": "Namespace Nitrocid.Misc.Splash Classes BaseSplash Base splash screen class SplashInfo Splash information class SplashManager Splash management module SplashReport Splash reporting module Interfaces ISplash Splash screen interface Enums SplashContext Context of the splash"
   },
-  "api/Nitrocid.Misc.Text.FigletTextTools.html": {
-    "href": "api/Nitrocid.Misc.Text.FigletTextTools.html",
-    "title": "Class FigletTextTools | Nitrocid KS API - Aptivi",
-    "keywords": "Class FigletTextTools Tools for text manipulation Inheritance object FigletTextTools Namespace: Nitrocid.Misc.Text Assembly: Nitrocid.dll Syntax public static class FigletTextTools Properties | Edit this page View Source DefaultFigletFontName Default figlet font name Declaration public static string DefaultFigletFontName { get; } Property Value Type Description string"
-  },
   "api/Nitrocid.Misc.Text.JsonTextTools.html": {
     "href": "api/Nitrocid.Misc.Text.JsonTextTools.html",
     "title": "Class JsonTextTools | Nitrocid KS API - Aptivi",
@@ -1447,7 +1442,7 @@
   "api/Nitrocid.Misc.Text.html": {
     "href": "api/Nitrocid.Misc.Text.html",
     "title": "Namespace Nitrocid.Misc.Text | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace Nitrocid.Misc.Text Classes FigletTextTools Tools for text manipulation JsonTextTools JSON shell tools Enums TextLocation The console text location (used for screensavers and splashes)"
+    "keywords": "Namespace Nitrocid.Misc.Text Classes JsonTextTools JSON shell tools Enums TextLocation The console text location (used for screensavers and splashes)"
   },
   "api/Nitrocid.Modifications.Communication.InterModTools.html": {
     "href": "api/Nitrocid.Modifications.Communication.InterModTools.html",
