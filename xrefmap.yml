@@ -26841,19 +26841,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Threading.KernelThread.Name
   nameWithType: KernelThread.Name
-- uid: Nitrocid.Kernel.Threading.KernelThread.NativeThreadId
-  name: NativeThreadId
-  href: api/Nitrocid.Kernel.Threading.KernelThread.html#Nitrocid_Kernel_Threading_KernelThread_NativeThreadId
-  commentId: P:Nitrocid.Kernel.Threading.KernelThread.NativeThreadId
-  fullName: Nitrocid.Kernel.Threading.KernelThread.NativeThreadId
-  nameWithType: KernelThread.NativeThreadId
-- uid: Nitrocid.Kernel.Threading.KernelThread.NativeThreadId*
-  name: NativeThreadId
-  href: api/Nitrocid.Kernel.Threading.KernelThread.html#Nitrocid_Kernel_Threading_KernelThread_NativeThreadId_
-  commentId: Overload:Nitrocid.Kernel.Threading.KernelThread.NativeThreadId
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Threading.KernelThread.NativeThreadId
-  nameWithType: KernelThread.NativeThreadId
 - uid: Nitrocid.Kernel.Threading.KernelThread.ParentThread
   name: ParentThread
   href: api/Nitrocid.Kernel.Threading.KernelThread.html#Nitrocid_Kernel_Threading_KernelThread_ParentThread
@@ -38005,31 +37992,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Shell.ShellBase.Aliases.AliasManager.InitAliases
   nameWithType: AliasManager.InitAliases
-- uid: Nitrocid.Shell.ShellBase.Aliases.AliasManager.ManageAlias(System.String,Nitrocid.Shell.ShellBase.Shells.ShellType,System.String,System.String)
-  name: ManageAlias(string, ShellType, string, string)
-  href: api/Nitrocid.Shell.ShellBase.Aliases.AliasManager.html#Nitrocid_Shell_ShellBase_Aliases_AliasManager_ManageAlias_System_String_Nitrocid_Shell_ShellBase_Shells_ShellType_System_String_System_String_
-  commentId: M:Nitrocid.Shell.ShellBase.Aliases.AliasManager.ManageAlias(System.String,Nitrocid.Shell.ShellBase.Shells.ShellType,System.String,System.String)
-  name.vb: ManageAlias(String, ShellType, String, String)
-  fullName: Nitrocid.Shell.ShellBase.Aliases.AliasManager.ManageAlias(string, Nitrocid.Shell.ShellBase.Shells.ShellType, string, string)
-  fullName.vb: Nitrocid.Shell.ShellBase.Aliases.AliasManager.ManageAlias(String, Nitrocid.Shell.ShellBase.Shells.ShellType, String, String)
-  nameWithType: AliasManager.ManageAlias(string, ShellType, string, string)
-  nameWithType.vb: AliasManager.ManageAlias(String, ShellType, String, String)
-- uid: Nitrocid.Shell.ShellBase.Aliases.AliasManager.ManageAlias(System.String,System.String,System.String,System.String)
-  name: ManageAlias(string, string, string, string)
-  href: api/Nitrocid.Shell.ShellBase.Aliases.AliasManager.html#Nitrocid_Shell_ShellBase_Aliases_AliasManager_ManageAlias_System_String_System_String_System_String_System_String_
-  commentId: M:Nitrocid.Shell.ShellBase.Aliases.AliasManager.ManageAlias(System.String,System.String,System.String,System.String)
-  name.vb: ManageAlias(String, String, String, String)
-  fullName: Nitrocid.Shell.ShellBase.Aliases.AliasManager.ManageAlias(string, string, string, string)
-  fullName.vb: Nitrocid.Shell.ShellBase.Aliases.AliasManager.ManageAlias(String, String, String, String)
-  nameWithType: AliasManager.ManageAlias(string, string, string, string)
-  nameWithType.vb: AliasManager.ManageAlias(String, String, String, String)
-- uid: Nitrocid.Shell.ShellBase.Aliases.AliasManager.ManageAlias*
-  name: ManageAlias
-  href: api/Nitrocid.Shell.ShellBase.Aliases.AliasManager.html#Nitrocid_Shell_ShellBase_Aliases_AliasManager_ManageAlias_
-  commentId: Overload:Nitrocid.Shell.ShellBase.Aliases.AliasManager.ManageAlias
-  isSpec: "True"
-  fullName: Nitrocid.Shell.ShellBase.Aliases.AliasManager.ManageAlias
-  nameWithType: AliasManager.ManageAlias
 - uid: Nitrocid.Shell.ShellBase.Aliases.AliasManager.RemoveAlias(System.String,Nitrocid.Shell.ShellBase.Shells.ShellType)
   name: RemoveAlias(string, ShellType)
   href: api/Nitrocid.Shell.ShellBase.Aliases.AliasManager.html#Nitrocid_Shell_ShellBase_Aliases_AliasManager_RemoveAlias_System_String_Nitrocid_Shell_ShellBase_Shells_ShellType_
@@ -41207,84 +41169,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Shell.ShellBase.Scripting.Conditions.UESHConditional.UnregisterCondition
   nameWithType: UESHConditional.UnregisterCondition
-- uid: Nitrocid.Shell.ShellBase.Scripting.Interaction
-  name: Nitrocid.Shell.ShellBase.Scripting.Interaction
-  href: api/Nitrocid.Shell.ShellBase.Scripting.Interaction.html
-  commentId: N:Nitrocid.Shell.ShellBase.Scripting.Interaction
-  fullName: Nitrocid.Shell.ShellBase.Scripting.Interaction
-  nameWithType: Nitrocid.Shell.ShellBase.Scripting.Interaction
-- uid: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands
-  name: UESHCommands
-  href: api/Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.html
-  commentId: T:Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands
-  fullName: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands
-  nameWithType: UESHCommands
-- uid: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptChoiceAndSet(System.String,System.String,System.String,System.String[],Terminaux.Inputs.Styles.Choice.ChoiceOutputType,System.Boolean)
-  name: PromptChoiceAndSet(string, string, string, string[], ChoiceOutputType, bool)
-  href: api/Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.html#Nitrocid_Shell_ShellBase_Scripting_Interaction_UESHCommands_PromptChoiceAndSet_System_String_System_String_System_String_System_String___Terminaux_Inputs_Styles_Choice_ChoiceOutputType_System_Boolean_
-  commentId: M:Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptChoiceAndSet(System.String,System.String,System.String,System.String[],Terminaux.Inputs.Styles.Choice.ChoiceOutputType,System.Boolean)
-  name.vb: PromptChoiceAndSet(String, String, String, String(), ChoiceOutputType, Boolean)
-  fullName: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptChoiceAndSet(string, string, string, string[], Terminaux.Inputs.Styles.Choice.ChoiceOutputType, bool)
-  fullName.vb: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptChoiceAndSet(String, String, String, String(), Terminaux.Inputs.Styles.Choice.ChoiceOutputType, Boolean)
-  nameWithType: UESHCommands.PromptChoiceAndSet(string, string, string, string[], ChoiceOutputType, bool)
-  nameWithType.vb: UESHCommands.PromptChoiceAndSet(String, String, String, String(), ChoiceOutputType, Boolean)
-- uid: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptChoiceAndSet(System.String,System.String,System.String,Terminaux.Inputs.Styles.Choice.ChoiceOutputType,System.Boolean)
-  name: PromptChoiceAndSet(string, string, string, ChoiceOutputType, bool)
-  href: api/Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.html#Nitrocid_Shell_ShellBase_Scripting_Interaction_UESHCommands_PromptChoiceAndSet_System_String_System_String_System_String_Terminaux_Inputs_Styles_Choice_ChoiceOutputType_System_Boolean_
-  commentId: M:Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptChoiceAndSet(System.String,System.String,System.String,Terminaux.Inputs.Styles.Choice.ChoiceOutputType,System.Boolean)
-  name.vb: PromptChoiceAndSet(String, String, String, ChoiceOutputType, Boolean)
-  fullName: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptChoiceAndSet(string, string, string, Terminaux.Inputs.Styles.Choice.ChoiceOutputType, bool)
-  fullName.vb: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptChoiceAndSet(String, String, String, Terminaux.Inputs.Styles.Choice.ChoiceOutputType, Boolean)
-  nameWithType: UESHCommands.PromptChoiceAndSet(string, string, string, ChoiceOutputType, bool)
-  nameWithType.vb: UESHCommands.PromptChoiceAndSet(String, String, String, ChoiceOutputType, Boolean)
-- uid: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptChoiceAndSet*
-  name: PromptChoiceAndSet
-  href: api/Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.html#Nitrocid_Shell_ShellBase_Scripting_Interaction_UESHCommands_PromptChoiceAndSet_
-  commentId: Overload:Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptChoiceAndSet
-  isSpec: "True"
-  fullName: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptChoiceAndSet
-  nameWithType: UESHCommands.PromptChoiceAndSet
-- uid: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptInputAndSet(System.String,System.String)
-  name: PromptInputAndSet(string, string)
-  href: api/Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.html#Nitrocid_Shell_ShellBase_Scripting_Interaction_UESHCommands_PromptInputAndSet_System_String_System_String_
-  commentId: M:Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptInputAndSet(System.String,System.String)
-  name.vb: PromptInputAndSet(String, String)
-  fullName: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptInputAndSet(string, string)
-  fullName.vb: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptInputAndSet(String, String)
-  nameWithType: UESHCommands.PromptInputAndSet(string, string)
-  nameWithType.vb: UESHCommands.PromptInputAndSet(String, String)
-- uid: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptInputAndSet*
-  name: PromptInputAndSet
-  href: api/Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.html#Nitrocid_Shell_ShellBase_Scripting_Interaction_UESHCommands_PromptInputAndSet_
-  commentId: Overload:Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptInputAndSet
-  isSpec: "True"
-  fullName: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptInputAndSet
-  nameWithType: UESHCommands.PromptInputAndSet
-- uid: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptSelectionAndSet(System.String,System.String,System.String)
-  name: PromptSelectionAndSet(string, string, string)
-  href: api/Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.html#Nitrocid_Shell_ShellBase_Scripting_Interaction_UESHCommands_PromptSelectionAndSet_System_String_System_String_System_String_
-  commentId: M:Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptSelectionAndSet(System.String,System.String,System.String)
-  name.vb: PromptSelectionAndSet(String, String, String)
-  fullName: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptSelectionAndSet(string, string, string)
-  fullName.vb: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptSelectionAndSet(String, String, String)
-  nameWithType: UESHCommands.PromptSelectionAndSet(string, string, string)
-  nameWithType.vb: UESHCommands.PromptSelectionAndSet(String, String, String)
-- uid: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptSelectionAndSet(System.String,System.String,System.String,System.String[])
-  name: PromptSelectionAndSet(string, string, string, string[])
-  href: api/Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.html#Nitrocid_Shell_ShellBase_Scripting_Interaction_UESHCommands_PromptSelectionAndSet_System_String_System_String_System_String_System_String___
-  commentId: M:Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptSelectionAndSet(System.String,System.String,System.String,System.String[])
-  name.vb: PromptSelectionAndSet(String, String, String, String())
-  fullName: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptSelectionAndSet(string, string, string, string[])
-  fullName.vb: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptSelectionAndSet(String, String, String, String())
-  nameWithType: UESHCommands.PromptSelectionAndSet(string, string, string, string[])
-  nameWithType.vb: UESHCommands.PromptSelectionAndSet(String, String, String, String())
-- uid: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptSelectionAndSet*
-  name: PromptSelectionAndSet
-  href: api/Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.html#Nitrocid_Shell_ShellBase_Scripting_Interaction_UESHCommands_PromptSelectionAndSet_
-  commentId: Overload:Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptSelectionAndSet
-  isSpec: "True"
-  fullName: Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.PromptSelectionAndSet
-  nameWithType: UESHCommands.PromptSelectionAndSet
 - uid: Nitrocid.Shell.ShellBase.Scripting.UESHOperators
   name: UESHOperators
   href: api/Nitrocid.Shell.ShellBase.Scripting.UESHOperators.html

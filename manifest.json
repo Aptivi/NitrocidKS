@@ -3945,26 +3945,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Shell.ShellBase.Scripting.Interaction.UESHCommands.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Shell.ShellBase.Scripting.Interaction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Shell.ShellBase.Scripting.Interaction.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.Shell.ShellBase.Scripting.UESHOperators.yml",
       "output": {
         ".html": {
