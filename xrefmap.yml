@@ -2248,6 +2248,31 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.SetConsoleColor
   nameWithType: KernelColorTools.SetConsoleColor
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.SetConsoleColorDry(Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)
+  name: SetConsoleColorDry(KernelColorType, bool)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_SetConsoleColorDry_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorTools.SetConsoleColorDry(Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)
+  name.vb: SetConsoleColorDry(KernelColorType, Boolean)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.SetConsoleColorDry(Nitrocid.ConsoleBase.Colors.KernelColorType, bool)
+  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorTools.SetConsoleColorDry(Nitrocid.ConsoleBase.Colors.KernelColorType, Boolean)
+  nameWithType: KernelColorTools.SetConsoleColorDry(KernelColorType, bool)
+  nameWithType.vb: KernelColorTools.SetConsoleColorDry(KernelColorType, Boolean)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.SetConsoleColorDry(Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Boolean)
+  name: SetConsoleColorDry(KernelColorType, bool, bool)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_SetConsoleColorDry_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_System_Boolean_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorTools.SetConsoleColorDry(Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Boolean)
+  name.vb: SetConsoleColorDry(KernelColorType, Boolean, Boolean)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.SetConsoleColorDry(Nitrocid.ConsoleBase.Colors.KernelColorType, bool, bool)
+  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorTools.SetConsoleColorDry(Nitrocid.ConsoleBase.Colors.KernelColorType, Boolean, Boolean)
+  nameWithType: KernelColorTools.SetConsoleColorDry(KernelColorType, bool, bool)
+  nameWithType.vb: KernelColorTools.SetConsoleColorDry(KernelColorType, Boolean, Boolean)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.SetConsoleColorDry*
+  name: SetConsoleColorDry
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_SetConsoleColorDry_
+  commentId: Overload:Nitrocid.ConsoleBase.Colors.KernelColorTools.SetConsoleColorDry
+  isSpec: "True"
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.SetConsoleColorDry
+  nameWithType: KernelColorTools.SetConsoleColorDry
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.TrySetConsoleColor(Nitrocid.ConsoleBase.Colors.KernelColorType)
   name: TrySetConsoleColor(KernelColorType)
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_TrySetConsoleColor_Nitrocid_ConsoleBase_Colors_KernelColorType_
@@ -2270,6 +2295,28 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.TrySetConsoleColor
   nameWithType: KernelColorTools.TrySetConsoleColor
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.TrySetConsoleColorDry(Nitrocid.ConsoleBase.Colors.KernelColorType)
+  name: TrySetConsoleColorDry(KernelColorType)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_TrySetConsoleColorDry_Nitrocid_ConsoleBase_Colors_KernelColorType_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorTools.TrySetConsoleColorDry(Nitrocid.ConsoleBase.Colors.KernelColorType)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.TrySetConsoleColorDry(Nitrocid.ConsoleBase.Colors.KernelColorType)
+  nameWithType: KernelColorTools.TrySetConsoleColorDry(KernelColorType)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.TrySetConsoleColorDry(Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)
+  name: TrySetConsoleColorDry(KernelColorType, bool)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_TrySetConsoleColorDry_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorTools.TrySetConsoleColorDry(Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)
+  name.vb: TrySetConsoleColorDry(KernelColorType, Boolean)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.TrySetConsoleColorDry(Nitrocid.ConsoleBase.Colors.KernelColorType, bool)
+  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorTools.TrySetConsoleColorDry(Nitrocid.ConsoleBase.Colors.KernelColorType, Boolean)
+  nameWithType: KernelColorTools.TrySetConsoleColorDry(KernelColorType, bool)
+  nameWithType.vb: KernelColorTools.TrySetConsoleColorDry(KernelColorType, Boolean)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.TrySetConsoleColorDry*
+  name: TrySetConsoleColorDry
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_TrySetConsoleColorDry_
+  commentId: Overload:Nitrocid.ConsoleBase.Colors.KernelColorTools.TrySetConsoleColorDry
+  isSpec: "True"
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.TrySetConsoleColorDry
+  nameWithType: KernelColorTools.TrySetConsoleColorDry
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorType
   name: KernelColorType
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorType.html
