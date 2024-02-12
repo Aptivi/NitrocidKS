@@ -2359,6 +2359,12 @@ references:
   commentId: F:Nitrocid.ConsoleBase.Colors.KernelColorType.DevelopmentWarning
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorType.DevelopmentWarning
   nameWithType: KernelColorType.DevelopmentWarning
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorType.DisabledOption
+  name: DisabledOption
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorType.html#Nitrocid_ConsoleBase_Colors_KernelColorType_DisabledOption
+  commentId: F:Nitrocid.ConsoleBase.Colors.KernelColorType.DisabledOption
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorType.DisabledOption
+  nameWithType: KernelColorType.DisabledOption
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorType.Error
   name: Error
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorType.html#Nitrocid_ConsoleBase_Colors_KernelColorType_Error
@@ -19899,6 +19905,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.DevelopmentWarningColor
   nameWithType: KernelMainConfig.DevelopmentWarningColor
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.DisabledOptionColor
+  name: DisabledOptionColor
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_DisabledOptionColor
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.DisabledOptionColor
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.DisabledOptionColor
+  nameWithType: KernelMainConfig.DisabledOptionColor
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.DisabledOptionColor*
+  name: DisabledOptionColor
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_DisabledOptionColor_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.DisabledOptionColor
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.DisabledOptionColor
+  nameWithType: KernelMainConfig.DisabledOptionColor
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.DoNotDisturb
   name: DoNotDisturb
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_DoNotDisturb
