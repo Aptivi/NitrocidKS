@@ -38327,15 +38327,15 @@ references:
   fullName.vb: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.New(Boolean, String, Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPartOptions)
   nameWithType: CommandArgumentPart.CommandArgumentPart(bool, string, CommandArgumentPartOptions)
   nameWithType.vb: CommandArgumentPart.New(Boolean, String, CommandArgumentPartOptions)
-- uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor(System.Boolean,System.String,System.Func{System.String[],System.String[]},System.Boolean,System.String)
-  name: CommandArgumentPart(bool, string, Func<string[], string[]>, bool, string)
-  href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentPart__ctor_System_Boolean_System_String_System_Func_System_String___System_String____System_Boolean_System_String_
-  commentId: M:Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor(System.Boolean,System.String,System.Func{System.String[],System.String[]},System.Boolean,System.String)
-  name.vb: New(Boolean, String, Func(Of String(), String()), Boolean, String)
-  fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.CommandArgumentPart(bool, string, System.Func<string[], string[]>, bool, string)
-  fullName.vb: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.New(Boolean, String, System.Func(Of String(), String()), Boolean, String)
-  nameWithType: CommandArgumentPart.CommandArgumentPart(bool, string, Func<string[], string[]>, bool, string)
-  nameWithType.vb: CommandArgumentPart.New(Boolean, String, Func(Of String(), String()), Boolean, String)
+- uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor(System.Boolean,System.String,System.Func{System.String[],System.String[]},System.Boolean,System.String[])
+  name: CommandArgumentPart(bool, string, Func<string[], string[]>, bool, string[])
+  href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentPart__ctor_System_Boolean_System_String_System_Func_System_String___System_String____System_Boolean_System_String___
+  commentId: M:Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor(System.Boolean,System.String,System.Func{System.String[],System.String[]},System.Boolean,System.String[])
+  name.vb: New(Boolean, String, Func(Of String(), String()), Boolean, String())
+  fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.CommandArgumentPart(bool, string, System.Func<string[], string[]>, bool, string[])
+  fullName.vb: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.New(Boolean, String, System.Func(Of String(), String()), Boolean, String())
+  nameWithType: CommandArgumentPart.CommandArgumentPart(bool, string, Func<string[], string[]>, bool, string[])
+  nameWithType.vb: CommandArgumentPart.New(Boolean, String, Func(Of String(), String()), Boolean, String())
 - uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor*
   name: CommandArgumentPart
   href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentPart__ctor_
