@@ -34461,6 +34461,47 @@ references:
   commentId: T:Nitrocid.Misc.Text.Probers.Regexp.RegexpTools
   fullName: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools
   nameWithType: RegexpTools
+- uid: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Escape(System.String)
+  name: Escape(string)
+  href: api/Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.html#Nitrocid_Misc_Text_Probers_Regexp_RegexpTools_Escape_System_String_
+  commentId: M:Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Escape(System.String)
+  name.vb: Escape(String)
+  fullName: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Escape(string)
+  fullName.vb: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Escape(String)
+  nameWithType: RegexpTools.Escape(string)
+  nameWithType.vb: RegexpTools.Escape(String)
+- uid: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Escape*
+  name: Escape
+  href: api/Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.html#Nitrocid_Misc_Text_Probers_Regexp_RegexpTools_Escape_
+  commentId: Overload:Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Escape
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Escape
+  nameWithType: RegexpTools.Escape
+- uid: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Filter(System.String,System.String)
+  name: Filter(string, string)
+  href: api/Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.html#Nitrocid_Misc_Text_Probers_Regexp_RegexpTools_Filter_System_String_System_String_
+  commentId: M:Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Filter(System.String,System.String)
+  name.vb: Filter(String, String)
+  fullName: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Filter(string, string)
+  fullName.vb: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Filter(String, String)
+  nameWithType: RegexpTools.Filter(string, string)
+  nameWithType.vb: RegexpTools.Filter(String, String)
+- uid: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Filter(System.String,System.String,System.String)
+  name: Filter(string, string, string)
+  href: api/Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.html#Nitrocid_Misc_Text_Probers_Regexp_RegexpTools_Filter_System_String_System_String_System_String_
+  commentId: M:Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Filter(System.String,System.String,System.String)
+  name.vb: Filter(String, String, String)
+  fullName: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Filter(string, string, string)
+  fullName.vb: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Filter(String, String, String)
+  nameWithType: RegexpTools.Filter(string, string, string)
+  nameWithType.vb: RegexpTools.Filter(String, String, String)
+- uid: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Filter*
+  name: Filter
+  href: api/Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.html#Nitrocid_Misc_Text_Probers_Regexp_RegexpTools_Filter_
+  commentId: Overload:Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Filter
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Filter
+  nameWithType: RegexpTools.Filter
 - uid: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.IsMatch(System.String,System.String)
   name: IsMatch(string, string)
   href: api/Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.html#Nitrocid_Misc_Text_Probers_Regexp_RegexpTools_IsMatch_System_String_System_String_
@@ -34493,6 +34534,70 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.IsValidRegex
   nameWithType: RegexpTools.IsValidRegex
+- uid: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Match(System.String,System.String)
+  name: Match(string, string)
+  href: api/Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.html#Nitrocid_Misc_Text_Probers_Regexp_RegexpTools_Match_System_String_System_String_
+  commentId: M:Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Match(System.String,System.String)
+  name.vb: Match(String, String)
+  fullName: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Match(string, string)
+  fullName.vb: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Match(String, String)
+  nameWithType: RegexpTools.Match(string, string)
+  nameWithType.vb: RegexpTools.Match(String, String)
+- uid: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Match*
+  name: Match
+  href: api/Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.html#Nitrocid_Misc_Text_Probers_Regexp_RegexpTools_Match_
+  commentId: Overload:Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Match
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Match
+  nameWithType: RegexpTools.Match
+- uid: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Matches(System.String,System.String)
+  name: Matches(string, string)
+  href: api/Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.html#Nitrocid_Misc_Text_Probers_Regexp_RegexpTools_Matches_System_String_System_String_
+  commentId: M:Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Matches(System.String,System.String)
+  name.vb: Matches(String, String)
+  fullName: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Matches(string, string)
+  fullName.vb: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Matches(String, String)
+  nameWithType: RegexpTools.Matches(string, string)
+  nameWithType.vb: RegexpTools.Matches(String, String)
+- uid: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Matches*
+  name: Matches
+  href: api/Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.html#Nitrocid_Misc_Text_Probers_Regexp_RegexpTools_Matches_
+  commentId: Overload:Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Matches
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Matches
+  nameWithType: RegexpTools.Matches
+- uid: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Split(System.String,System.String)
+  name: Split(string, string)
+  href: api/Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.html#Nitrocid_Misc_Text_Probers_Regexp_RegexpTools_Split_System_String_System_String_
+  commentId: M:Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Split(System.String,System.String)
+  name.vb: Split(String, String)
+  fullName: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Split(string, string)
+  fullName.vb: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Split(String, String)
+  nameWithType: RegexpTools.Split(string, string)
+  nameWithType.vb: RegexpTools.Split(String, String)
+- uid: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Split*
+  name: Split
+  href: api/Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.html#Nitrocid_Misc_Text_Probers_Regexp_RegexpTools_Split_
+  commentId: Overload:Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Split
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Split
+  nameWithType: RegexpTools.Split
+- uid: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Unescape(System.String)
+  name: Unescape(string)
+  href: api/Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.html#Nitrocid_Misc_Text_Probers_Regexp_RegexpTools_Unescape_System_String_
+  commentId: M:Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Unescape(System.String)
+  name.vb: Unescape(String)
+  fullName: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Unescape(string)
+  fullName.vb: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Unescape(String)
+  nameWithType: RegexpTools.Unescape(string)
+  nameWithType.vb: RegexpTools.Unescape(String)
+- uid: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Unescape*
+  name: Unescape
+  href: api/Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.html#Nitrocid_Misc_Text_Probers_Regexp_RegexpTools_Unescape_
+  commentId: Overload:Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Unescape
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Text.Probers.Regexp.RegexpTools.Unescape
+  nameWithType: RegexpTools.Unescape
 - uid: Nitrocid.Misc.Text.TextLocation
   name: TextLocation
   href: api/Nitrocid.Misc.Text.TextLocation.html
