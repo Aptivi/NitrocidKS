@@ -42557,19 +42557,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Shell.ShellBase.Shells.ShellManager.KillShell
   nameWithType: ShellManager.KillShell
-- uid: Nitrocid.Shell.ShellBase.Shells.ShellManager.KillShellForced
-  name: KillShellForced()
-  href: api/Nitrocid.Shell.ShellBase.Shells.ShellManager.html#Nitrocid_Shell_ShellBase_Shells_ShellManager_KillShellForced
-  commentId: M:Nitrocid.Shell.ShellBase.Shells.ShellManager.KillShellForced
-  fullName: Nitrocid.Shell.ShellBase.Shells.ShellManager.KillShellForced()
-  nameWithType: ShellManager.KillShellForced()
-- uid: Nitrocid.Shell.ShellBase.Shells.ShellManager.KillShellForced*
-  name: KillShellForced
-  href: api/Nitrocid.Shell.ShellBase.Shells.ShellManager.html#Nitrocid_Shell_ShellBase_Shells_ShellManager_KillShellForced_
-  commentId: Overload:Nitrocid.Shell.ShellBase.Shells.ShellManager.KillShellForced
-  isSpec: "True"
-  fullName: Nitrocid.Shell.ShellBase.Shells.ShellManager.KillShellForced
-  nameWithType: ShellManager.KillShellForced
 - uid: Nitrocid.Shell.ShellBase.Shells.ShellManager.LastShellType
   name: LastShellType
   href: api/Nitrocid.Shell.ShellBase.Shells.ShellManager.html#Nitrocid_Shell_ShellBase_Shells_ShellManager_LastShellType
@@ -42653,31 +42640,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Shell.ShellBase.Shells.ShellManager.StartShell
   nameWithType: ShellManager.StartShell
-- uid: Nitrocid.Shell.ShellBase.Shells.ShellManager.StartShellForced(Nitrocid.Shell.ShellBase.Shells.ShellType,System.Object[])
-  name: StartShellForced(ShellType, params object[])
-  href: api/Nitrocid.Shell.ShellBase.Shells.ShellManager.html#Nitrocid_Shell_ShellBase_Shells_ShellManager_StartShellForced_Nitrocid_Shell_ShellBase_Shells_ShellType_System_Object___
-  commentId: M:Nitrocid.Shell.ShellBase.Shells.ShellManager.StartShellForced(Nitrocid.Shell.ShellBase.Shells.ShellType,System.Object[])
-  name.vb: StartShellForced(ShellType, ParamArray Object())
-  fullName: Nitrocid.Shell.ShellBase.Shells.ShellManager.StartShellForced(Nitrocid.Shell.ShellBase.Shells.ShellType, params object[])
-  fullName.vb: Nitrocid.Shell.ShellBase.Shells.ShellManager.StartShellForced(Nitrocid.Shell.ShellBase.Shells.ShellType, ParamArray Object())
-  nameWithType: ShellManager.StartShellForced(ShellType, params object[])
-  nameWithType.vb: ShellManager.StartShellForced(ShellType, ParamArray Object())
-- uid: Nitrocid.Shell.ShellBase.Shells.ShellManager.StartShellForced(System.String,System.Object[])
-  name: StartShellForced(string, params object[])
-  href: api/Nitrocid.Shell.ShellBase.Shells.ShellManager.html#Nitrocid_Shell_ShellBase_Shells_ShellManager_StartShellForced_System_String_System_Object___
-  commentId: M:Nitrocid.Shell.ShellBase.Shells.ShellManager.StartShellForced(System.String,System.Object[])
-  name.vb: StartShellForced(String, ParamArray Object())
-  fullName: Nitrocid.Shell.ShellBase.Shells.ShellManager.StartShellForced(string, params object[])
-  fullName.vb: Nitrocid.Shell.ShellBase.Shells.ShellManager.StartShellForced(String, ParamArray Object())
-  nameWithType: ShellManager.StartShellForced(string, params object[])
-  nameWithType.vb: ShellManager.StartShellForced(String, ParamArray Object())
-- uid: Nitrocid.Shell.ShellBase.Shells.ShellManager.StartShellForced*
-  name: StartShellForced
-  href: api/Nitrocid.Shell.ShellBase.Shells.ShellManager.html#Nitrocid_Shell_ShellBase_Shells_ShellManager_StartShellForced_
-  commentId: Overload:Nitrocid.Shell.ShellBase.Shells.ShellManager.StartShellForced
-  isSpec: "True"
-  fullName: Nitrocid.Shell.ShellBase.Shells.ShellManager.StartShellForced
-  nameWithType: ShellManager.StartShellForced
 - uid: Nitrocid.Shell.ShellBase.Shells.ShellManager.UnifiedCommands
   name: UnifiedCommands
   href: api/Nitrocid.Shell.ShellBase.Shells.ShellManager.html#Nitrocid_Shell_ShellBase_Shells_ShellManager_UnifiedCommands
