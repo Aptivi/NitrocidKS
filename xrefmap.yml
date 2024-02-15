@@ -3540,15 +3540,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.GetInstalledThemesByCategory
   nameWithType: ThemeTools.GetInstalledThemesByCategory
-- uid: Nitrocid.ConsoleBase.Themes.ThemeTools.GetThemeInfo(System.String)
-  name: GetThemeInfo(string)
-  href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_GetThemeInfo_System_String_
-  commentId: M:Nitrocid.ConsoleBase.Themes.ThemeTools.GetThemeInfo(System.String)
-  name.vb: GetThemeInfo(String)
-  fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.GetThemeInfo(string)
-  fullName.vb: Nitrocid.ConsoleBase.Themes.ThemeTools.GetThemeInfo(String)
-  nameWithType: ThemeTools.GetThemeInfo(string)
-  nameWithType.vb: ThemeTools.GetThemeInfo(String)
+- uid: Nitrocid.ConsoleBase.Themes.ThemeTools.GetThemeInfo(System.String,System.Boolean)
+  name: GetThemeInfo(string, bool)
+  href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_GetThemeInfo_System_String_System_Boolean_
+  commentId: M:Nitrocid.ConsoleBase.Themes.ThemeTools.GetThemeInfo(System.String,System.Boolean)
+  name.vb: GetThemeInfo(String, Boolean)
+  fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.GetThemeInfo(string, bool)
+  fullName.vb: Nitrocid.ConsoleBase.Themes.ThemeTools.GetThemeInfo(String, Boolean)
+  nameWithType: ThemeTools.GetThemeInfo(string, bool)
+  nameWithType.vb: ThemeTools.GetThemeInfo(String, Boolean)
 - uid: Nitrocid.ConsoleBase.Themes.ThemeTools.GetThemeInfo*
   name: GetThemeInfo
   href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_GetThemeInfo_
