@@ -8258,6 +8258,22 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Drivers.Encryption.HashVerifier.VerifyHashFromHashesFile
   nameWithType: HashVerifier.VerifyHashFromHashesFile
+- uid: Nitrocid.Drivers.Encryption.HashVerifier.VerifyHashPlain(System.String,System.String,System.String)
+  name: VerifyHashPlain(string, string, string)
+  href: api/Nitrocid.Drivers.Encryption.HashVerifier.html#Nitrocid_Drivers_Encryption_HashVerifier_VerifyHashPlain_System_String_System_String_System_String_
+  commentId: M:Nitrocid.Drivers.Encryption.HashVerifier.VerifyHashPlain(System.String,System.String,System.String)
+  name.vb: VerifyHashPlain(String, String, String)
+  fullName: Nitrocid.Drivers.Encryption.HashVerifier.VerifyHashPlain(string, string, string)
+  fullName.vb: Nitrocid.Drivers.Encryption.HashVerifier.VerifyHashPlain(String, String, String)
+  nameWithType: HashVerifier.VerifyHashPlain(string, string, string)
+  nameWithType.vb: HashVerifier.VerifyHashPlain(String, String, String)
+- uid: Nitrocid.Drivers.Encryption.HashVerifier.VerifyHashPlain*
+  name: VerifyHashPlain
+  href: api/Nitrocid.Drivers.Encryption.HashVerifier.html#Nitrocid_Drivers_Encryption_HashVerifier_VerifyHashPlain_
+  commentId: Overload:Nitrocid.Drivers.Encryption.HashVerifier.VerifyHashPlain
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Encryption.HashVerifier.VerifyHashPlain
+  nameWithType: HashVerifier.VerifyHashPlain
 - uid: Nitrocid.Drivers.Encryption.HashVerifier.VerifyUncalculatedHashFromHash(System.String,System.String,System.String)
   name: VerifyUncalculatedHashFromHash(string, string, string)
   href: api/Nitrocid.Drivers.Encryption.HashVerifier.html#Nitrocid_Drivers_Encryption_HashVerifier_VerifyUncalculatedHashFromHash_System_String_System_String_System_String_
