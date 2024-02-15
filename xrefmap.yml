@@ -34083,15 +34083,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Splash.SplashReport.ProgressText
   nameWithType: SplashReport.ProgressText
-- uid: Nitrocid.Misc.Splash.SplashReport.ReportProgress(System.String,System.Int32,System.Boolean,Nitrocid.Misc.Splash.ISplash,System.Object[])
-  name: ReportProgress(string, int, bool, ISplash, params object[])
-  href: api/Nitrocid.Misc.Splash.SplashReport.html#Nitrocid_Misc_Splash_SplashReport_ReportProgress_System_String_System_Int32_System_Boolean_Nitrocid_Misc_Splash_ISplash_System_Object___
-  commentId: M:Nitrocid.Misc.Splash.SplashReport.ReportProgress(System.String,System.Int32,System.Boolean,Nitrocid.Misc.Splash.ISplash,System.Object[])
-  name.vb: ReportProgress(String, Integer, Boolean, ISplash, ParamArray Object())
-  fullName: Nitrocid.Misc.Splash.SplashReport.ReportProgress(string, int, bool, Nitrocid.Misc.Splash.ISplash, params object[])
-  fullName.vb: Nitrocid.Misc.Splash.SplashReport.ReportProgress(String, Integer, Boolean, Nitrocid.Misc.Splash.ISplash, ParamArray Object())
-  nameWithType: SplashReport.ReportProgress(string, int, bool, ISplash, params object[])
-  nameWithType.vb: SplashReport.ReportProgress(String, Integer, Boolean, ISplash, ParamArray Object())
+- uid: Nitrocid.Misc.Splash.SplashReport.ReportProgress(System.String,System.Int32,System.Boolean,System.Exception,Nitrocid.Misc.Splash.SplashReportSeverity,Nitrocid.Misc.Splash.ISplash,System.Object[])
+  name: ReportProgress(string, int, bool, Exception, SplashReportSeverity, ISplash, params object[])
+  href: api/Nitrocid.Misc.Splash.SplashReport.html#Nitrocid_Misc_Splash_SplashReport_ReportProgress_System_String_System_Int32_System_Boolean_System_Exception_Nitrocid_Misc_Splash_SplashReportSeverity_Nitrocid_Misc_Splash_ISplash_System_Object___
+  commentId: M:Nitrocid.Misc.Splash.SplashReport.ReportProgress(System.String,System.Int32,System.Boolean,System.Exception,Nitrocid.Misc.Splash.SplashReportSeverity,Nitrocid.Misc.Splash.ISplash,System.Object[])
+  name.vb: ReportProgress(String, Integer, Boolean, Exception, SplashReportSeverity, ISplash, ParamArray Object())
+  fullName: Nitrocid.Misc.Splash.SplashReport.ReportProgress(string, int, bool, System.Exception, Nitrocid.Misc.Splash.SplashReportSeverity, Nitrocid.Misc.Splash.ISplash, params object[])
+  fullName.vb: Nitrocid.Misc.Splash.SplashReport.ReportProgress(String, Integer, Boolean, System.Exception, Nitrocid.Misc.Splash.SplashReportSeverity, Nitrocid.Misc.Splash.ISplash, ParamArray Object())
+  nameWithType: SplashReport.ReportProgress(string, int, bool, Exception, SplashReportSeverity, ISplash, params object[])
+  nameWithType.vb: SplashReport.ReportProgress(String, Integer, Boolean, Exception, SplashReportSeverity, ISplash, ParamArray Object())
 - uid: Nitrocid.Misc.Splash.SplashReport.ReportProgress(System.String,System.Int32,System.Object[])
   name: ReportProgress(string, int, params object[])
   href: api/Nitrocid.Misc.Splash.SplashReport.html#Nitrocid_Misc_Splash_SplashReport_ReportProgress_System_String_System_Int32_System_Object___
@@ -34204,6 +34204,30 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Splash.SplashReport.ResetProgressReportArea
   nameWithType: SplashReport.ResetProgressReportArea
+- uid: Nitrocid.Misc.Splash.SplashReportSeverity
+  name: SplashReportSeverity
+  href: api/Nitrocid.Misc.Splash.SplashReportSeverity.html
+  commentId: T:Nitrocid.Misc.Splash.SplashReportSeverity
+  fullName: Nitrocid.Misc.Splash.SplashReportSeverity
+  nameWithType: SplashReportSeverity
+- uid: Nitrocid.Misc.Splash.SplashReportSeverity.Error
+  name: Error
+  href: api/Nitrocid.Misc.Splash.SplashReportSeverity.html#Nitrocid_Misc_Splash_SplashReportSeverity_Error
+  commentId: F:Nitrocid.Misc.Splash.SplashReportSeverity.Error
+  fullName: Nitrocid.Misc.Splash.SplashReportSeverity.Error
+  nameWithType: SplashReportSeverity.Error
+- uid: Nitrocid.Misc.Splash.SplashReportSeverity.Info
+  name: Info
+  href: api/Nitrocid.Misc.Splash.SplashReportSeverity.html#Nitrocid_Misc_Splash_SplashReportSeverity_Info
+  commentId: F:Nitrocid.Misc.Splash.SplashReportSeverity.Info
+  fullName: Nitrocid.Misc.Splash.SplashReportSeverity.Info
+  nameWithType: SplashReportSeverity.Info
+- uid: Nitrocid.Misc.Splash.SplashReportSeverity.Warning
+  name: Warning
+  href: api/Nitrocid.Misc.Splash.SplashReportSeverity.html#Nitrocid_Misc_Splash_SplashReportSeverity_Warning
+  commentId: F:Nitrocid.Misc.Splash.SplashReportSeverity.Warning
+  fullName: Nitrocid.Misc.Splash.SplashReportSeverity.Warning
+  nameWithType: SplashReportSeverity.Warning
 - uid: Nitrocid.Misc.Text
   name: Nitrocid.Misc.Text
   href: api/Nitrocid.Misc.Text.html

@@ -2835,6 +2835,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Misc.Splash.SplashReportSeverity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Misc.Splash.SplashReportSeverity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.Misc.Splash.yml",
       "output": {
         ".html": {
