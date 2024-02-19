@@ -23,7 +23,7 @@ jobs:
         choco pack (Get-Item "$pathdotnet\ks.nuspec").FullName
     - name: Package Publication
       run: |
-        $FileName = Get-ChildItem -Path $pwd.Path -Name -Filter "KS*.nupkg"
+        $FileName = Get-ChildItem -Path $pwd.Path -Name -Filter "*.nupkg"
         foreach($fn in $FileName) {
             choco push "$pwd\$fn" --source https://push.chocolatey.org/
         }
