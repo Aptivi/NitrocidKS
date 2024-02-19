@@ -30024,15 +30024,12 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FileManagerCli.Bindings
   nameWithType: FileManagerCli.Bindings
-- uid: Nitrocid.Misc.Interactives.FileManagerCli.GetEntryFromItem(System.Object)
-  name: GetEntryFromItem(object)
-  href: api/Nitrocid.Misc.Interactives.FileManagerCli.html#Nitrocid_Misc_Interactives_FileManagerCli_GetEntryFromItem_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.FileManagerCli.GetEntryFromItem(System.Object)
-  name.vb: GetEntryFromItem(Object)
-  fullName: Nitrocid.Misc.Interactives.FileManagerCli.GetEntryFromItem(object)
-  fullName.vb: Nitrocid.Misc.Interactives.FileManagerCli.GetEntryFromItem(Object)
-  nameWithType: FileManagerCli.GetEntryFromItem(object)
-  nameWithType.vb: FileManagerCli.GetEntryFromItem(Object)
+- uid: Nitrocid.Misc.Interactives.FileManagerCli.GetEntryFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  name: GetEntryFromItem(FileSystemEntry)
+  href: api/Nitrocid.Misc.Interactives.FileManagerCli.html#Nitrocid_Misc_Interactives_FileManagerCli_GetEntryFromItem_Nitrocid_Files_Instances_FileSystemEntry_
+  commentId: M:Nitrocid.Misc.Interactives.FileManagerCli.GetEntryFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  fullName: Nitrocid.Misc.Interactives.FileManagerCli.GetEntryFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  nameWithType: FileManagerCli.GetEntryFromItem(FileSystemEntry)
 - uid: Nitrocid.Misc.Interactives.FileManagerCli.GetEntryFromItem*
   name: GetEntryFromItem
   href: api/Nitrocid.Misc.Interactives.FileManagerCli.html#Nitrocid_Misc_Interactives_FileManagerCli_GetEntryFromItem_
@@ -30053,15 +30050,12 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FileManagerCli.PrimaryDataSource
   nameWithType: FileManagerCli.PrimaryDataSource
-- uid: Nitrocid.Misc.Interactives.FileManagerCli.RenderStatus(System.Object)
-  name: RenderStatus(object)
-  href: api/Nitrocid.Misc.Interactives.FileManagerCli.html#Nitrocid_Misc_Interactives_FileManagerCli_RenderStatus_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.FileManagerCli.RenderStatus(System.Object)
-  name.vb: RenderStatus(Object)
-  fullName: Nitrocid.Misc.Interactives.FileManagerCli.RenderStatus(object)
-  fullName.vb: Nitrocid.Misc.Interactives.FileManagerCli.RenderStatus(Object)
-  nameWithType: FileManagerCli.RenderStatus(object)
-  nameWithType.vb: FileManagerCli.RenderStatus(Object)
+- uid: Nitrocid.Misc.Interactives.FileManagerCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
+  name: RenderStatus(FileSystemEntry)
+  href: api/Nitrocid.Misc.Interactives.FileManagerCli.html#Nitrocid_Misc_Interactives_FileManagerCli_RenderStatus_Nitrocid_Files_Instances_FileSystemEntry_
+  commentId: M:Nitrocid.Misc.Interactives.FileManagerCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
+  fullName: Nitrocid.Misc.Interactives.FileManagerCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
+  nameWithType: FileManagerCli.RenderStatus(FileSystemEntry)
 - uid: Nitrocid.Misc.Interactives.FileManagerCli.RenderStatus*
   name: RenderStatus
   href: api/Nitrocid.Misc.Interactives.FileManagerCli.html#Nitrocid_Misc_Interactives_FileManagerCli_RenderStatus_
@@ -30127,15 +30121,12 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FileSelectorCli.Bindings
   nameWithType: FileSelectorCli.Bindings
-- uid: Nitrocid.Misc.Interactives.FileSelectorCli.GetEntryFromItem(System.Object)
-  name: GetEntryFromItem(object)
-  href: api/Nitrocid.Misc.Interactives.FileSelectorCli.html#Nitrocid_Misc_Interactives_FileSelectorCli_GetEntryFromItem_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.FileSelectorCli.GetEntryFromItem(System.Object)
-  name.vb: GetEntryFromItem(Object)
-  fullName: Nitrocid.Misc.Interactives.FileSelectorCli.GetEntryFromItem(object)
-  fullName.vb: Nitrocid.Misc.Interactives.FileSelectorCli.GetEntryFromItem(Object)
-  nameWithType: FileSelectorCli.GetEntryFromItem(object)
-  nameWithType.vb: FileSelectorCli.GetEntryFromItem(Object)
+- uid: Nitrocid.Misc.Interactives.FileSelectorCli.GetEntryFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  name: GetEntryFromItem(FileSystemEntry)
+  href: api/Nitrocid.Misc.Interactives.FileSelectorCli.html#Nitrocid_Misc_Interactives_FileSelectorCli_GetEntryFromItem_Nitrocid_Files_Instances_FileSystemEntry_
+  commentId: M:Nitrocid.Misc.Interactives.FileSelectorCli.GetEntryFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  fullName: Nitrocid.Misc.Interactives.FileSelectorCli.GetEntryFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  nameWithType: FileSelectorCli.GetEntryFromItem(FileSystemEntry)
 - uid: Nitrocid.Misc.Interactives.FileSelectorCli.GetEntryFromItem*
   name: GetEntryFromItem
   href: api/Nitrocid.Misc.Interactives.FileSelectorCli.html#Nitrocid_Misc_Interactives_FileSelectorCli_GetEntryFromItem_
@@ -30143,15 +30134,12 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FileSelectorCli.GetEntryFromItem
   nameWithType: FileSelectorCli.GetEntryFromItem
-- uid: Nitrocid.Misc.Interactives.FileSelectorCli.GetInfoFromItem(System.Object)
-  name: GetInfoFromItem(object)
-  href: api/Nitrocid.Misc.Interactives.FileSelectorCli.html#Nitrocid_Misc_Interactives_FileSelectorCli_GetInfoFromItem_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.FileSelectorCli.GetInfoFromItem(System.Object)
-  name.vb: GetInfoFromItem(Object)
-  fullName: Nitrocid.Misc.Interactives.FileSelectorCli.GetInfoFromItem(object)
-  fullName.vb: Nitrocid.Misc.Interactives.FileSelectorCli.GetInfoFromItem(Object)
-  nameWithType: FileSelectorCli.GetInfoFromItem(object)
-  nameWithType.vb: FileSelectorCli.GetInfoFromItem(Object)
+- uid: Nitrocid.Misc.Interactives.FileSelectorCli.GetInfoFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  name: GetInfoFromItem(FileSystemEntry)
+  href: api/Nitrocid.Misc.Interactives.FileSelectorCli.html#Nitrocid_Misc_Interactives_FileSelectorCli_GetInfoFromItem_Nitrocid_Files_Instances_FileSystemEntry_
+  commentId: M:Nitrocid.Misc.Interactives.FileSelectorCli.GetInfoFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  fullName: Nitrocid.Misc.Interactives.FileSelectorCli.GetInfoFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  nameWithType: FileSelectorCli.GetInfoFromItem(FileSystemEntry)
 - uid: Nitrocid.Misc.Interactives.FileSelectorCli.GetInfoFromItem*
   name: GetInfoFromItem
   href: api/Nitrocid.Misc.Interactives.FileSelectorCli.html#Nitrocid_Misc_Interactives_FileSelectorCli_GetInfoFromItem_
@@ -30172,15 +30160,12 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FileSelectorCli.PrimaryDataSource
   nameWithType: FileSelectorCli.PrimaryDataSource
-- uid: Nitrocid.Misc.Interactives.FileSelectorCli.RenderStatus(System.Object)
-  name: RenderStatus(object)
-  href: api/Nitrocid.Misc.Interactives.FileSelectorCli.html#Nitrocid_Misc_Interactives_FileSelectorCli_RenderStatus_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.FileSelectorCli.RenderStatus(System.Object)
-  name.vb: RenderStatus(Object)
-  fullName: Nitrocid.Misc.Interactives.FileSelectorCli.RenderStatus(object)
-  fullName.vb: Nitrocid.Misc.Interactives.FileSelectorCli.RenderStatus(Object)
-  nameWithType: FileSelectorCli.RenderStatus(object)
-  nameWithType.vb: FileSelectorCli.RenderStatus(Object)
+- uid: Nitrocid.Misc.Interactives.FileSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
+  name: RenderStatus(FileSystemEntry)
+  href: api/Nitrocid.Misc.Interactives.FileSelectorCli.html#Nitrocid_Misc_Interactives_FileSelectorCli_RenderStatus_Nitrocid_Files_Instances_FileSystemEntry_
+  commentId: M:Nitrocid.Misc.Interactives.FileSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
+  fullName: Nitrocid.Misc.Interactives.FileSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
+  nameWithType: FileSelectorCli.RenderStatus(FileSystemEntry)
 - uid: Nitrocid.Misc.Interactives.FileSelectorCli.RenderStatus*
   name: RenderStatus
   href: api/Nitrocid.Misc.Interactives.FileSelectorCli.html#Nitrocid_Misc_Interactives_FileSelectorCli_RenderStatus_
@@ -30233,15 +30218,12 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FilesSelectorCli.Bindings
   nameWithType: FilesSelectorCli.Bindings
-- uid: Nitrocid.Misc.Interactives.FilesSelectorCli.GetEntryFromItem(System.Object)
-  name: GetEntryFromItem(object)
-  href: api/Nitrocid.Misc.Interactives.FilesSelectorCli.html#Nitrocid_Misc_Interactives_FilesSelectorCli_GetEntryFromItem_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.FilesSelectorCli.GetEntryFromItem(System.Object)
-  name.vb: GetEntryFromItem(Object)
-  fullName: Nitrocid.Misc.Interactives.FilesSelectorCli.GetEntryFromItem(object)
-  fullName.vb: Nitrocid.Misc.Interactives.FilesSelectorCli.GetEntryFromItem(Object)
-  nameWithType: FilesSelectorCli.GetEntryFromItem(object)
-  nameWithType.vb: FilesSelectorCli.GetEntryFromItem(Object)
+- uid: Nitrocid.Misc.Interactives.FilesSelectorCli.GetEntryFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  name: GetEntryFromItem(FileSystemEntry)
+  href: api/Nitrocid.Misc.Interactives.FilesSelectorCli.html#Nitrocid_Misc_Interactives_FilesSelectorCli_GetEntryFromItem_Nitrocid_Files_Instances_FileSystemEntry_
+  commentId: M:Nitrocid.Misc.Interactives.FilesSelectorCli.GetEntryFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  fullName: Nitrocid.Misc.Interactives.FilesSelectorCli.GetEntryFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  nameWithType: FilesSelectorCli.GetEntryFromItem(FileSystemEntry)
 - uid: Nitrocid.Misc.Interactives.FilesSelectorCli.GetEntryFromItem*
   name: GetEntryFromItem
   href: api/Nitrocid.Misc.Interactives.FilesSelectorCli.html#Nitrocid_Misc_Interactives_FilesSelectorCli_GetEntryFromItem_
@@ -30249,15 +30231,12 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FilesSelectorCli.GetEntryFromItem
   nameWithType: FilesSelectorCli.GetEntryFromItem
-- uid: Nitrocid.Misc.Interactives.FilesSelectorCli.GetInfoFromItem(System.Object)
-  name: GetInfoFromItem(object)
-  href: api/Nitrocid.Misc.Interactives.FilesSelectorCli.html#Nitrocid_Misc_Interactives_FilesSelectorCli_GetInfoFromItem_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.FilesSelectorCli.GetInfoFromItem(System.Object)
-  name.vb: GetInfoFromItem(Object)
-  fullName: Nitrocid.Misc.Interactives.FilesSelectorCli.GetInfoFromItem(object)
-  fullName.vb: Nitrocid.Misc.Interactives.FilesSelectorCli.GetInfoFromItem(Object)
-  nameWithType: FilesSelectorCli.GetInfoFromItem(object)
-  nameWithType.vb: FilesSelectorCli.GetInfoFromItem(Object)
+- uid: Nitrocid.Misc.Interactives.FilesSelectorCli.GetInfoFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  name: GetInfoFromItem(FileSystemEntry)
+  href: api/Nitrocid.Misc.Interactives.FilesSelectorCli.html#Nitrocid_Misc_Interactives_FilesSelectorCli_GetInfoFromItem_Nitrocid_Files_Instances_FileSystemEntry_
+  commentId: M:Nitrocid.Misc.Interactives.FilesSelectorCli.GetInfoFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  fullName: Nitrocid.Misc.Interactives.FilesSelectorCli.GetInfoFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  nameWithType: FilesSelectorCli.GetInfoFromItem(FileSystemEntry)
 - uid: Nitrocid.Misc.Interactives.FilesSelectorCli.GetInfoFromItem*
   name: GetInfoFromItem
   href: api/Nitrocid.Misc.Interactives.FilesSelectorCli.html#Nitrocid_Misc_Interactives_FilesSelectorCli_GetInfoFromItem_
@@ -30278,15 +30257,12 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FilesSelectorCli.PrimaryDataSource
   nameWithType: FilesSelectorCli.PrimaryDataSource
-- uid: Nitrocid.Misc.Interactives.FilesSelectorCli.RenderStatus(System.Object)
-  name: RenderStatus(object)
-  href: api/Nitrocid.Misc.Interactives.FilesSelectorCli.html#Nitrocid_Misc_Interactives_FilesSelectorCli_RenderStatus_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.FilesSelectorCli.RenderStatus(System.Object)
-  name.vb: RenderStatus(Object)
-  fullName: Nitrocid.Misc.Interactives.FilesSelectorCli.RenderStatus(object)
-  fullName.vb: Nitrocid.Misc.Interactives.FilesSelectorCli.RenderStatus(Object)
-  nameWithType: FilesSelectorCli.RenderStatus(object)
-  nameWithType.vb: FilesSelectorCli.RenderStatus(Object)
+- uid: Nitrocid.Misc.Interactives.FilesSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
+  name: RenderStatus(FileSystemEntry)
+  href: api/Nitrocid.Misc.Interactives.FilesSelectorCli.html#Nitrocid_Misc_Interactives_FilesSelectorCli_RenderStatus_Nitrocid_Files_Instances_FileSystemEntry_
+  commentId: M:Nitrocid.Misc.Interactives.FilesSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
+  fullName: Nitrocid.Misc.Interactives.FilesSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
+  nameWithType: FilesSelectorCli.RenderStatus(FileSystemEntry)
 - uid: Nitrocid.Misc.Interactives.FilesSelectorCli.RenderStatus*
   name: RenderStatus
   href: api/Nitrocid.Misc.Interactives.FilesSelectorCli.html#Nitrocid_Misc_Interactives_FilesSelectorCli_RenderStatus_
@@ -30339,15 +30315,12 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FolderSelectorCli.Bindings
   nameWithType: FolderSelectorCli.Bindings
-- uid: Nitrocid.Misc.Interactives.FolderSelectorCli.GetEntryFromItem(System.Object)
-  name: GetEntryFromItem(object)
-  href: api/Nitrocid.Misc.Interactives.FolderSelectorCli.html#Nitrocid_Misc_Interactives_FolderSelectorCli_GetEntryFromItem_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.FolderSelectorCli.GetEntryFromItem(System.Object)
-  name.vb: GetEntryFromItem(Object)
-  fullName: Nitrocid.Misc.Interactives.FolderSelectorCli.GetEntryFromItem(object)
-  fullName.vb: Nitrocid.Misc.Interactives.FolderSelectorCli.GetEntryFromItem(Object)
-  nameWithType: FolderSelectorCli.GetEntryFromItem(object)
-  nameWithType.vb: FolderSelectorCli.GetEntryFromItem(Object)
+- uid: Nitrocid.Misc.Interactives.FolderSelectorCli.GetEntryFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  name: GetEntryFromItem(FileSystemEntry)
+  href: api/Nitrocid.Misc.Interactives.FolderSelectorCli.html#Nitrocid_Misc_Interactives_FolderSelectorCli_GetEntryFromItem_Nitrocid_Files_Instances_FileSystemEntry_
+  commentId: M:Nitrocid.Misc.Interactives.FolderSelectorCli.GetEntryFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  fullName: Nitrocid.Misc.Interactives.FolderSelectorCli.GetEntryFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  nameWithType: FolderSelectorCli.GetEntryFromItem(FileSystemEntry)
 - uid: Nitrocid.Misc.Interactives.FolderSelectorCli.GetEntryFromItem*
   name: GetEntryFromItem
   href: api/Nitrocid.Misc.Interactives.FolderSelectorCli.html#Nitrocid_Misc_Interactives_FolderSelectorCli_GetEntryFromItem_
@@ -30355,15 +30328,12 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FolderSelectorCli.GetEntryFromItem
   nameWithType: FolderSelectorCli.GetEntryFromItem
-- uid: Nitrocid.Misc.Interactives.FolderSelectorCli.GetInfoFromItem(System.Object)
-  name: GetInfoFromItem(object)
-  href: api/Nitrocid.Misc.Interactives.FolderSelectorCli.html#Nitrocid_Misc_Interactives_FolderSelectorCli_GetInfoFromItem_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.FolderSelectorCli.GetInfoFromItem(System.Object)
-  name.vb: GetInfoFromItem(Object)
-  fullName: Nitrocid.Misc.Interactives.FolderSelectorCli.GetInfoFromItem(object)
-  fullName.vb: Nitrocid.Misc.Interactives.FolderSelectorCli.GetInfoFromItem(Object)
-  nameWithType: FolderSelectorCli.GetInfoFromItem(object)
-  nameWithType.vb: FolderSelectorCli.GetInfoFromItem(Object)
+- uid: Nitrocid.Misc.Interactives.FolderSelectorCli.GetInfoFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  name: GetInfoFromItem(FileSystemEntry)
+  href: api/Nitrocid.Misc.Interactives.FolderSelectorCli.html#Nitrocid_Misc_Interactives_FolderSelectorCli_GetInfoFromItem_Nitrocid_Files_Instances_FileSystemEntry_
+  commentId: M:Nitrocid.Misc.Interactives.FolderSelectorCli.GetInfoFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  fullName: Nitrocid.Misc.Interactives.FolderSelectorCli.GetInfoFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  nameWithType: FolderSelectorCli.GetInfoFromItem(FileSystemEntry)
 - uid: Nitrocid.Misc.Interactives.FolderSelectorCli.GetInfoFromItem*
   name: GetInfoFromItem
   href: api/Nitrocid.Misc.Interactives.FolderSelectorCli.html#Nitrocid_Misc_Interactives_FolderSelectorCli_GetInfoFromItem_
@@ -30384,15 +30354,12 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FolderSelectorCli.PrimaryDataSource
   nameWithType: FolderSelectorCli.PrimaryDataSource
-- uid: Nitrocid.Misc.Interactives.FolderSelectorCli.RenderStatus(System.Object)
-  name: RenderStatus(object)
-  href: api/Nitrocid.Misc.Interactives.FolderSelectorCli.html#Nitrocid_Misc_Interactives_FolderSelectorCli_RenderStatus_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.FolderSelectorCli.RenderStatus(System.Object)
-  name.vb: RenderStatus(Object)
-  fullName: Nitrocid.Misc.Interactives.FolderSelectorCli.RenderStatus(object)
-  fullName.vb: Nitrocid.Misc.Interactives.FolderSelectorCli.RenderStatus(Object)
-  nameWithType: FolderSelectorCli.RenderStatus(object)
-  nameWithType.vb: FolderSelectorCli.RenderStatus(Object)
+- uid: Nitrocid.Misc.Interactives.FolderSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
+  name: RenderStatus(FileSystemEntry)
+  href: api/Nitrocid.Misc.Interactives.FolderSelectorCli.html#Nitrocid_Misc_Interactives_FolderSelectorCli_RenderStatus_Nitrocid_Files_Instances_FileSystemEntry_
+  commentId: M:Nitrocid.Misc.Interactives.FolderSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
+  fullName: Nitrocid.Misc.Interactives.FolderSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
+  nameWithType: FolderSelectorCli.RenderStatus(FileSystemEntry)
 - uid: Nitrocid.Misc.Interactives.FolderSelectorCli.RenderStatus*
   name: RenderStatus
   href: api/Nitrocid.Misc.Interactives.FolderSelectorCli.html#Nitrocid_Misc_Interactives_FolderSelectorCli_RenderStatus_
@@ -30445,15 +30412,12 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FoldersSelectorCli.Bindings
   nameWithType: FoldersSelectorCli.Bindings
-- uid: Nitrocid.Misc.Interactives.FoldersSelectorCli.GetEntryFromItem(System.Object)
-  name: GetEntryFromItem(object)
-  href: api/Nitrocid.Misc.Interactives.FoldersSelectorCli.html#Nitrocid_Misc_Interactives_FoldersSelectorCli_GetEntryFromItem_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.FoldersSelectorCli.GetEntryFromItem(System.Object)
-  name.vb: GetEntryFromItem(Object)
-  fullName: Nitrocid.Misc.Interactives.FoldersSelectorCli.GetEntryFromItem(object)
-  fullName.vb: Nitrocid.Misc.Interactives.FoldersSelectorCli.GetEntryFromItem(Object)
-  nameWithType: FoldersSelectorCli.GetEntryFromItem(object)
-  nameWithType.vb: FoldersSelectorCli.GetEntryFromItem(Object)
+- uid: Nitrocid.Misc.Interactives.FoldersSelectorCli.GetEntryFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  name: GetEntryFromItem(FileSystemEntry)
+  href: api/Nitrocid.Misc.Interactives.FoldersSelectorCli.html#Nitrocid_Misc_Interactives_FoldersSelectorCli_GetEntryFromItem_Nitrocid_Files_Instances_FileSystemEntry_
+  commentId: M:Nitrocid.Misc.Interactives.FoldersSelectorCli.GetEntryFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  fullName: Nitrocid.Misc.Interactives.FoldersSelectorCli.GetEntryFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  nameWithType: FoldersSelectorCli.GetEntryFromItem(FileSystemEntry)
 - uid: Nitrocid.Misc.Interactives.FoldersSelectorCli.GetEntryFromItem*
   name: GetEntryFromItem
   href: api/Nitrocid.Misc.Interactives.FoldersSelectorCli.html#Nitrocid_Misc_Interactives_FoldersSelectorCli_GetEntryFromItem_
@@ -30461,15 +30425,12 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FoldersSelectorCli.GetEntryFromItem
   nameWithType: FoldersSelectorCli.GetEntryFromItem
-- uid: Nitrocid.Misc.Interactives.FoldersSelectorCli.GetInfoFromItem(System.Object)
-  name: GetInfoFromItem(object)
-  href: api/Nitrocid.Misc.Interactives.FoldersSelectorCli.html#Nitrocid_Misc_Interactives_FoldersSelectorCli_GetInfoFromItem_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.FoldersSelectorCli.GetInfoFromItem(System.Object)
-  name.vb: GetInfoFromItem(Object)
-  fullName: Nitrocid.Misc.Interactives.FoldersSelectorCli.GetInfoFromItem(object)
-  fullName.vb: Nitrocid.Misc.Interactives.FoldersSelectorCli.GetInfoFromItem(Object)
-  nameWithType: FoldersSelectorCli.GetInfoFromItem(object)
-  nameWithType.vb: FoldersSelectorCli.GetInfoFromItem(Object)
+- uid: Nitrocid.Misc.Interactives.FoldersSelectorCli.GetInfoFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  name: GetInfoFromItem(FileSystemEntry)
+  href: api/Nitrocid.Misc.Interactives.FoldersSelectorCli.html#Nitrocid_Misc_Interactives_FoldersSelectorCli_GetInfoFromItem_Nitrocid_Files_Instances_FileSystemEntry_
+  commentId: M:Nitrocid.Misc.Interactives.FoldersSelectorCli.GetInfoFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  fullName: Nitrocid.Misc.Interactives.FoldersSelectorCli.GetInfoFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  nameWithType: FoldersSelectorCli.GetInfoFromItem(FileSystemEntry)
 - uid: Nitrocid.Misc.Interactives.FoldersSelectorCli.GetInfoFromItem*
   name: GetInfoFromItem
   href: api/Nitrocid.Misc.Interactives.FoldersSelectorCli.html#Nitrocid_Misc_Interactives_FoldersSelectorCli_GetInfoFromItem_
@@ -30490,15 +30451,12 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FoldersSelectorCli.PrimaryDataSource
   nameWithType: FoldersSelectorCli.PrimaryDataSource
-- uid: Nitrocid.Misc.Interactives.FoldersSelectorCli.RenderStatus(System.Object)
-  name: RenderStatus(object)
-  href: api/Nitrocid.Misc.Interactives.FoldersSelectorCli.html#Nitrocid_Misc_Interactives_FoldersSelectorCli_RenderStatus_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.FoldersSelectorCli.RenderStatus(System.Object)
-  name.vb: RenderStatus(Object)
-  fullName: Nitrocid.Misc.Interactives.FoldersSelectorCli.RenderStatus(object)
-  fullName.vb: Nitrocid.Misc.Interactives.FoldersSelectorCli.RenderStatus(Object)
-  nameWithType: FoldersSelectorCli.RenderStatus(object)
-  nameWithType.vb: FoldersSelectorCli.RenderStatus(Object)
+- uid: Nitrocid.Misc.Interactives.FoldersSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
+  name: RenderStatus(FileSystemEntry)
+  href: api/Nitrocid.Misc.Interactives.FoldersSelectorCli.html#Nitrocid_Misc_Interactives_FoldersSelectorCli_RenderStatus_Nitrocid_Files_Instances_FileSystemEntry_
+  commentId: M:Nitrocid.Misc.Interactives.FoldersSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
+  fullName: Nitrocid.Misc.Interactives.FoldersSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
+  nameWithType: FoldersSelectorCli.RenderStatus(FileSystemEntry)
 - uid: Nitrocid.Misc.Interactives.FoldersSelectorCli.RenderStatus*
   name: RenderStatus
   href: api/Nitrocid.Misc.Interactives.FoldersSelectorCli.html#Nitrocid_Misc_Interactives_FoldersSelectorCli_RenderStatus_
@@ -30538,15 +30496,12 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.ManualViewerCli.Bindings
   nameWithType: ManualViewerCli.Bindings
-- uid: Nitrocid.Misc.Interactives.ManualViewerCli.GetEntryFromItem(System.Object)
-  name: GetEntryFromItem(object)
-  href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_GetEntryFromItem_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.ManualViewerCli.GetEntryFromItem(System.Object)
-  name.vb: GetEntryFromItem(Object)
-  fullName: Nitrocid.Misc.Interactives.ManualViewerCli.GetEntryFromItem(object)
-  fullName.vb: Nitrocid.Misc.Interactives.ManualViewerCli.GetEntryFromItem(Object)
-  nameWithType: ManualViewerCli.GetEntryFromItem(object)
-  nameWithType.vb: ManualViewerCli.GetEntryFromItem(Object)
+- uid: Nitrocid.Misc.Interactives.ManualViewerCli.GetEntryFromItem(Nitrocid.Modifications.ManPages.Manual)
+  name: GetEntryFromItem(Manual)
+  href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_GetEntryFromItem_Nitrocid_Modifications_ManPages_Manual_
+  commentId: M:Nitrocid.Misc.Interactives.ManualViewerCli.GetEntryFromItem(Nitrocid.Modifications.ManPages.Manual)
+  fullName: Nitrocid.Misc.Interactives.ManualViewerCli.GetEntryFromItem(Nitrocid.Modifications.ManPages.Manual)
+  nameWithType: ManualViewerCli.GetEntryFromItem(Manual)
 - uid: Nitrocid.Misc.Interactives.ManualViewerCli.GetEntryFromItem*
   name: GetEntryFromItem
   href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_GetEntryFromItem_
@@ -30554,15 +30509,12 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.ManualViewerCli.GetEntryFromItem
   nameWithType: ManualViewerCli.GetEntryFromItem
-- uid: Nitrocid.Misc.Interactives.ManualViewerCli.GetInfoFromItem(System.Object)
-  name: GetInfoFromItem(object)
-  href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_GetInfoFromItem_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.ManualViewerCli.GetInfoFromItem(System.Object)
-  name.vb: GetInfoFromItem(Object)
-  fullName: Nitrocid.Misc.Interactives.ManualViewerCli.GetInfoFromItem(object)
-  fullName.vb: Nitrocid.Misc.Interactives.ManualViewerCli.GetInfoFromItem(Object)
-  nameWithType: ManualViewerCli.GetInfoFromItem(object)
-  nameWithType.vb: ManualViewerCli.GetInfoFromItem(Object)
+- uid: Nitrocid.Misc.Interactives.ManualViewerCli.GetInfoFromItem(Nitrocid.Modifications.ManPages.Manual)
+  name: GetInfoFromItem(Manual)
+  href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_GetInfoFromItem_Nitrocid_Modifications_ManPages_Manual_
+  commentId: M:Nitrocid.Misc.Interactives.ManualViewerCli.GetInfoFromItem(Nitrocid.Modifications.ManPages.Manual)
+  fullName: Nitrocid.Misc.Interactives.ManualViewerCli.GetInfoFromItem(Nitrocid.Modifications.ManPages.Manual)
+  nameWithType: ManualViewerCli.GetInfoFromItem(Manual)
 - uid: Nitrocid.Misc.Interactives.ManualViewerCli.GetInfoFromItem*
   name: GetInfoFromItem
   href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_GetInfoFromItem_
@@ -30583,15 +30535,12 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.ManualViewerCli.PrimaryDataSource
   nameWithType: ManualViewerCli.PrimaryDataSource
-- uid: Nitrocid.Misc.Interactives.ManualViewerCli.RenderStatus(System.Object)
-  name: RenderStatus(object)
-  href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_RenderStatus_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.ManualViewerCli.RenderStatus(System.Object)
-  name.vb: RenderStatus(Object)
-  fullName: Nitrocid.Misc.Interactives.ManualViewerCli.RenderStatus(object)
-  fullName.vb: Nitrocid.Misc.Interactives.ManualViewerCli.RenderStatus(Object)
-  nameWithType: ManualViewerCli.RenderStatus(object)
-  nameWithType.vb: ManualViewerCli.RenderStatus(Object)
+- uid: Nitrocid.Misc.Interactives.ManualViewerCli.RenderStatus(Nitrocid.Modifications.ManPages.Manual)
+  name: RenderStatus(Manual)
+  href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_RenderStatus_Nitrocid_Modifications_ManPages_Manual_
+  commentId: M:Nitrocid.Misc.Interactives.ManualViewerCli.RenderStatus(Nitrocid.Modifications.ManPages.Manual)
+  fullName: Nitrocid.Misc.Interactives.ManualViewerCli.RenderStatus(Nitrocid.Modifications.ManPages.Manual)
+  nameWithType: ManualViewerCli.RenderStatus(Manual)
 - uid: Nitrocid.Misc.Interactives.ManualViewerCli.RenderStatus*
   name: RenderStatus
   href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_RenderStatus_
@@ -30711,15 +30660,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.TimeZoneShowCli.Bindings
   nameWithType: TimeZoneShowCli.Bindings
-- uid: Nitrocid.Misc.Interactives.TimeZoneShowCli.GetEntryFromItem(System.Object)
-  name: GetEntryFromItem(object)
-  href: api/Nitrocid.Misc.Interactives.TimeZoneShowCli.html#Nitrocid_Misc_Interactives_TimeZoneShowCli_GetEntryFromItem_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.TimeZoneShowCli.GetEntryFromItem(System.Object)
-  name.vb: GetEntryFromItem(Object)
-  fullName: Nitrocid.Misc.Interactives.TimeZoneShowCli.GetEntryFromItem(object)
-  fullName.vb: Nitrocid.Misc.Interactives.TimeZoneShowCli.GetEntryFromItem(Object)
-  nameWithType: TimeZoneShowCli.GetEntryFromItem(object)
-  nameWithType.vb: TimeZoneShowCli.GetEntryFromItem(Object)
+- uid: Nitrocid.Misc.Interactives.TimeZoneShowCli.GetEntryFromItem(System.String)
+  name: GetEntryFromItem(string)
+  href: api/Nitrocid.Misc.Interactives.TimeZoneShowCli.html#Nitrocid_Misc_Interactives_TimeZoneShowCli_GetEntryFromItem_System_String_
+  commentId: M:Nitrocid.Misc.Interactives.TimeZoneShowCli.GetEntryFromItem(System.String)
+  name.vb: GetEntryFromItem(String)
+  fullName: Nitrocid.Misc.Interactives.TimeZoneShowCli.GetEntryFromItem(string)
+  fullName.vb: Nitrocid.Misc.Interactives.TimeZoneShowCli.GetEntryFromItem(String)
+  nameWithType: TimeZoneShowCli.GetEntryFromItem(string)
+  nameWithType.vb: TimeZoneShowCli.GetEntryFromItem(String)
 - uid: Nitrocid.Misc.Interactives.TimeZoneShowCli.GetEntryFromItem*
   name: GetEntryFromItem
   href: api/Nitrocid.Misc.Interactives.TimeZoneShowCli.html#Nitrocid_Misc_Interactives_TimeZoneShowCli_GetEntryFromItem_
@@ -30727,15 +30676,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.TimeZoneShowCli.GetEntryFromItem
   nameWithType: TimeZoneShowCli.GetEntryFromItem
-- uid: Nitrocid.Misc.Interactives.TimeZoneShowCli.GetInfoFromItem(System.Object)
-  name: GetInfoFromItem(object)
-  href: api/Nitrocid.Misc.Interactives.TimeZoneShowCli.html#Nitrocid_Misc_Interactives_TimeZoneShowCli_GetInfoFromItem_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.TimeZoneShowCli.GetInfoFromItem(System.Object)
-  name.vb: GetInfoFromItem(Object)
-  fullName: Nitrocid.Misc.Interactives.TimeZoneShowCli.GetInfoFromItem(object)
-  fullName.vb: Nitrocid.Misc.Interactives.TimeZoneShowCli.GetInfoFromItem(Object)
-  nameWithType: TimeZoneShowCli.GetInfoFromItem(object)
-  nameWithType.vb: TimeZoneShowCli.GetInfoFromItem(Object)
+- uid: Nitrocid.Misc.Interactives.TimeZoneShowCli.GetInfoFromItem(System.String)
+  name: GetInfoFromItem(string)
+  href: api/Nitrocid.Misc.Interactives.TimeZoneShowCli.html#Nitrocid_Misc_Interactives_TimeZoneShowCli_GetInfoFromItem_System_String_
+  commentId: M:Nitrocid.Misc.Interactives.TimeZoneShowCli.GetInfoFromItem(System.String)
+  name.vb: GetInfoFromItem(String)
+  fullName: Nitrocid.Misc.Interactives.TimeZoneShowCli.GetInfoFromItem(string)
+  fullName.vb: Nitrocid.Misc.Interactives.TimeZoneShowCli.GetInfoFromItem(String)
+  nameWithType: TimeZoneShowCli.GetInfoFromItem(string)
+  nameWithType.vb: TimeZoneShowCli.GetInfoFromItem(String)
 - uid: Nitrocid.Misc.Interactives.TimeZoneShowCli.GetInfoFromItem*
   name: GetInfoFromItem
   href: api/Nitrocid.Misc.Interactives.TimeZoneShowCli.html#Nitrocid_Misc_Interactives_TimeZoneShowCli_GetInfoFromItem_
@@ -30769,15 +30718,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.TimeZoneShowCli.RefreshInterval
   nameWithType: TimeZoneShowCli.RefreshInterval
-- uid: Nitrocid.Misc.Interactives.TimeZoneShowCli.RenderStatus(System.Object)
-  name: RenderStatus(object)
-  href: api/Nitrocid.Misc.Interactives.TimeZoneShowCli.html#Nitrocid_Misc_Interactives_TimeZoneShowCli_RenderStatus_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.TimeZoneShowCli.RenderStatus(System.Object)
-  name.vb: RenderStatus(Object)
-  fullName: Nitrocid.Misc.Interactives.TimeZoneShowCli.RenderStatus(object)
-  fullName.vb: Nitrocid.Misc.Interactives.TimeZoneShowCli.RenderStatus(Object)
-  nameWithType: TimeZoneShowCli.RenderStatus(object)
-  nameWithType.vb: TimeZoneShowCli.RenderStatus(Object)
+- uid: Nitrocid.Misc.Interactives.TimeZoneShowCli.RenderStatus(System.String)
+  name: RenderStatus(string)
+  href: api/Nitrocid.Misc.Interactives.TimeZoneShowCli.html#Nitrocid_Misc_Interactives_TimeZoneShowCli_RenderStatus_System_String_
+  commentId: M:Nitrocid.Misc.Interactives.TimeZoneShowCli.RenderStatus(System.String)
+  name.vb: RenderStatus(String)
+  fullName: Nitrocid.Misc.Interactives.TimeZoneShowCli.RenderStatus(string)
+  fullName.vb: Nitrocid.Misc.Interactives.TimeZoneShowCli.RenderStatus(String)
+  nameWithType: TimeZoneShowCli.RenderStatus(string)
+  nameWithType.vb: TimeZoneShowCli.RenderStatus(String)
 - uid: Nitrocid.Misc.Interactives.TimeZoneShowCli.RenderStatus*
   name: RenderStatus
   href: api/Nitrocid.Misc.Interactives.TimeZoneShowCli.html#Nitrocid_Misc_Interactives_TimeZoneShowCli_RenderStatus_
