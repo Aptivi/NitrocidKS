@@ -100,13 +100,17 @@ namespace KS.Kernel
             arguments = Args;
             Thread.CurrentThread.Name = "Main Kernel Thread";
 
+            // Turn on foreground and background
+            ColorTools.AllowBackground = true;
+            ColorTools.AllowForeground = true;
+
             // This is a kernel entry point
             while (!Flags.KernelShutdown)
             {
                 try
                 {
                     // A title
-                    ConsoleBase.ConsoleExtensions.SetTitle(ConsoleTitle);
+                    ConsoleExtensions.SetTitle(ConsoleTitle);
 
                     // Initial ReadLine settings
                     Input.GlobalSettings.TreatCtrlCAsInput = true;
