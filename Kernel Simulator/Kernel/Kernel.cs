@@ -46,9 +46,9 @@ using KS.Modifications;
 using KS.Network.RemoteDebug;
 using KS.Network.RPC;
 using Terminaux.Base;
-using TermExts = Terminaux.Base.ConsoleExtensions;
 using KS.Misc.Notifiers;
 using SpecProbe.Platform;
+using Terminaux.Colors;
 
 #if SPECIFIERREL
 using KS.Network;
@@ -319,7 +319,7 @@ namespace KS.Kernel
             }
 
             // Clear the console and reset the colors
-            TermExts.ResetColors();
+            ColorTools.ResetColors();
             ConsoleWrapper.Clear();
 
             // If "No APM" is enabled, simply print the text

@@ -18,26 +18,6 @@
 //
 
 using System;
-using TermInput = Terminaux.Inputs.Input;
-
-
-// Kernel Simulator  Copyright (C) 2018-2022  Aptivi
-// 
-// This file is part of Kernel Simulator
-// 
-// Kernel Simulator is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-// 
-// Kernel Simulator is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-// 
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 using Terminaux.Reader;
 
 namespace KS.ConsoleBase.Inputs
@@ -87,7 +67,7 @@ namespace KS.ConsoleBase.Inputs
         /// <param name="UseCtrlCAsInput">Whether to treat CTRL + C as input</param>
         public static string ReadLine(string InputText, string DefaultValue, bool UseCtrlCAsInput)
         {
-            return TermInput.ReadLine(InputText, DefaultValue, new TermReaderSettings() { TreatCtrlCAsInput = UseCtrlCAsInput });
+            return TermReader.Read(InputText, DefaultValue, new TermReaderSettings() { TreatCtrlCAsInput = UseCtrlCAsInput });
         }
 
         /// <summary>
@@ -111,7 +91,7 @@ namespace KS.ConsoleBase.Inputs
         /// <param name="MaskChar">Specifies the password mask character</param>
         public static string ReadLineNoInput(char MaskChar)
         {
-            return TermInput.ReadLineNoInput(MaskChar);
+            return TermReader.ReadPassword(MaskChar);
         }
 
         /// <summary>
@@ -121,7 +101,7 @@ namespace KS.ConsoleBase.Inputs
         /// <param name="Timeout"></param>
         public static ConsoleKeyInfo ReadKeyTimeout(bool Intercept, TimeSpan Timeout)
         {
-            return TermInput.ReadKeyTimeout(Intercept, Timeout).result;
+            return TermReader.ReadKeyTimeout(Intercept, Timeout).result;
         }
 
         /// <summary>
@@ -129,7 +109,7 @@ namespace KS.ConsoleBase.Inputs
         /// </summary>
         public static ConsoleKeyInfo DetectKeypress()
         {
-            return TermInput.DetectKeypress();
+            return TermReader.ReadKey();
         }
 
     }

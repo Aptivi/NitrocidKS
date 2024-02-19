@@ -56,8 +56,8 @@ using KS.Resources;
 using Newtonsoft.Json.Linq;
 using Terminaux.Base;
 using Terminaux.Colors;
-using Terminaux.Colors.Selector;
 using Terminaux.Inputs;
+using Terminaux.Inputs.Styles;
 using Terminaux.Inputs.Styles.Selection;
 using TermSeparator = Terminaux.Writer.FancyWriters.SeparatorWriterColor;
 
@@ -100,7 +100,7 @@ namespace KS.Misc.Configuration
                 }
 
                 // Prompt for selection
-                AnswerInt = SelectionStyle.PromptSelection(TermSeparator.RenderSeparator(Translate.DoTranslation("Welcome to Settings!"), true) + Kernel.Kernel.NewLine + Kernel.Kernel.NewLine + Translate.DoTranslation("Select section:"), inputs, inputsAlt);
+                AnswerInt = SelectionStyle.PromptSelection(TermSeparator.RenderSeparator(Translate.DoTranslation("Welcome to Settings!"), true) + Kernel.Kernel.NewLine + Kernel.Kernel.NewLine + Translate.DoTranslation("Select section:"), [.. inputs], [.. inputsAlt]);
 
                 // Check for input
                 DebugWriter.Wdbg(DebugLevel.I, "Succeeded. Checking the answer if it points to the right direction...");
@@ -281,7 +281,7 @@ namespace KS.Misc.Configuration
                     DebugWriter.Wdbg(DebugLevel.W, "Section {0} has {1} selections.", Section, MaxOptions);
 
                     // Prompt for selection
-                    AnswerInt = SelectionStyle.PromptSelection(TermSeparator.RenderSeparator(Translate.DoTranslation(Section + " Settings..."), true) + Kernel.Kernel.NewLine + Kernel.Kernel.NewLine + Translate.DoTranslation((string)SectionDescription), inputs, inputsAlt);
+                    AnswerInt = SelectionStyle.PromptSelection(TermSeparator.RenderSeparator(Translate.DoTranslation(Section + " Settings..."), true) + Kernel.Kernel.NewLine + Kernel.Kernel.NewLine + Translate.DoTranslation((string)SectionDescription), [.. inputs], [.. inputsAlt]);
 
                     // Check for answer
                     DebugWriter.Wdbg(DebugLevel.I, "Succeeded. Checking the answer if it points to the right direction...");
@@ -994,7 +994,7 @@ namespace KS.Misc.Configuration
                 }
 
                 // Prompt for selection
-                int AnswerInt = SelectionStyle.PromptSelection(TermSeparator.RenderSeparator(Translate.DoTranslation("Welcome to Settings!"), true) + Kernel.Kernel.NewLine + Kernel.Kernel.NewLine + Translate.DoTranslation("Select section:"), inputs, inputsAlt);
+                int AnswerInt = SelectionStyle.PromptSelection(TermSeparator.RenderSeparator(Translate.DoTranslation("Welcome to Settings!"), true) + Kernel.Kernel.NewLine + Kernel.Kernel.NewLine + Translate.DoTranslation("Select section:"), [.. inputs], [.. inputsAlt]);
 
                 // Parse the input and go to setting
                 int ChosenSettingIndex = AnswerInt - 1;

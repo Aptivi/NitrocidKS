@@ -39,6 +39,7 @@ using Shouldly;
 
 using Terminaux.Colors;
 using Terminaux.Colors.Data;
+using Terminaux.Colors.Transformation.Contrast;
 
 namespace KSTests.Console
 {

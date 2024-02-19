@@ -46,6 +46,7 @@ using Newtonsoft.Json;
 using Terminaux.Colors;
 using Terminaux.Colors.Data;
 using Terminaux.Colors.Models.Parsing;
+using Terminaux.Colors.Transformation.Contrast;
 using TermColorTools = Terminaux.Colors.ColorTools;
 
 namespace KS.ConsoleBase.Colors
@@ -232,40 +233,40 @@ namespace KS.ConsoleBase.Colors
         public static Color LicenseColor = new(ConsoleColors.White);
         public static Color ContKernelErrorColor = new(ConsoleColors.Yellow);
         public static Color UncontKernelErrorColor = new(ConsoleColors.Red);
-        public static Color HostNameShellColor = new(ConsoleColors.DarkGreen);
+        public static Color HostNameShellColor = new(ConsoleColors.Lime);
         public static Color UserNameShellColor = new(ConsoleColors.Green);
         public static Color BackgroundColor = new(ConsoleColors.Black);
-        public static Color NeutralTextColor = new(ConsoleColors.Gray);
-        public static Color ListEntryColor = new(ConsoleColors.DarkYellow);
-        public static Color ListValueColor = new(ConsoleColors.DarkGray);
+        public static Color NeutralTextColor = new(ConsoleColors.Silver);
+        public static Color ListEntryColor = new(ConsoleColors.Olive);
+        public static Color ListValueColor = new(ConsoleColors.Grey);
         public static Color StageColor = new(ConsoleColors.Green);
         public static Color ErrorColor = new(ConsoleColors.Red);
         public static Color WarningColor = new(ConsoleColors.Yellow);
-        public static Color OptionColor = new(ConsoleColors.DarkYellow);
+        public static Color OptionColor = new(ConsoleColors.Olive);
         public static Color BannerColor = new(ConsoleColors.Green);
         public static Color NotificationTitleColor = new(ConsoleColors.White);
-        public static Color NotificationDescriptionColor = new(ConsoleColors.Gray);
-        public static Color NotificationProgressColor = new(ConsoleColors.DarkYellow);
+        public static Color NotificationDescriptionColor = new(ConsoleColors.Silver);
+        public static Color NotificationProgressColor = new(ConsoleColors.Olive);
         public static Color NotificationFailureColor = new(ConsoleColors.Red);
         public static Color QuestionColor = new(ConsoleColors.Yellow);
         public static Color SuccessColor = new(ConsoleColors.Green);
-        public static Color UserDollarColor = new(ConsoleColors.Gray);
-        public static Color TipColor = new(ConsoleColors.Gray);
+        public static Color UserDollarColor = new(ConsoleColors.Silver);
+        public static Color TipColor = new(ConsoleColors.Silver);
         public static Color SeparatorTextColor = new(ConsoleColors.White);
-        public static Color SeparatorColor = new(ConsoleColors.Gray);
+        public static Color SeparatorColor = new(ConsoleColors.Silver);
         public static Color ListTitleColor = new(ConsoleColors.White);
         public static Color DevelopmentWarningColor = new(ConsoleColors.Yellow);
-        public static Color StageTimeColor = new(ConsoleColors.Gray);
-        public static Color ProgressColor = new(ConsoleColors.DarkYellow);
+        public static Color StageTimeColor = new(ConsoleColors.Silver);
+        public static Color ProgressColor = new(ConsoleColors.Olive);
         public static Color BackOptionColor = new(ConsoleColors.DarkRed);
         public static Color LowPriorityBorderColor = new(ConsoleColors.White);
         public static Color MediumPriorityBorderColor = new(ConsoleColors.Yellow);
         public static Color HighPriorityBorderColor = new(ConsoleColors.Red);
-        public static Color TableSeparatorColor = new(ConsoleColors.DarkGray);
+        public static Color TableSeparatorColor = new(ConsoleColors.Grey);
         public static Color TableHeaderColor = new(ConsoleColors.White);
-        public static Color TableValueColor = new(ConsoleColors.Gray);
+        public static Color TableValueColor = new(ConsoleColors.Silver);
         public static Color SelectedOptionColor = new(ConsoleColors.Yellow);
-        public static Color AlternativeOptionColor = new(ConsoleColors.DarkGreen);
+        public static Color AlternativeOptionColor = new(ConsoleColors.Lime);
 
         /// <summary>
         /// Resets all colors to default
@@ -563,15 +564,15 @@ namespace KS.ConsoleBase.Colors
                 if (UncontKernelErrorColor == "def")
                     UncontKernelErrorColor = new Color(ConsoleColors.Red).PlainSequence;
                 if (HostNameShellColor == "def")
-                    HostNameShellColor = new Color(ConsoleColors.DarkGreen).PlainSequence;
+                    HostNameShellColor = new Color(ConsoleColors.Lime).PlainSequence;
                 if (UserNameShellColor == "def")
                     UserNameShellColor = new Color(ConsoleColors.Green).PlainSequence;
                 if (NeutralTextColor == "def")
-                    NeutralTextColor = new Color(ConsoleColors.Gray).PlainSequence;
+                    NeutralTextColor = new Color(ConsoleColors.Silver).PlainSequence;
                 if (ListEntryColor == "def")
-                    ListEntryColor = new Color(ConsoleColors.DarkYellow).PlainSequence;
+                    ListEntryColor = new Color(ConsoleColors.Olive).PlainSequence;
                 if (ListValueColor == "def")
-                    ListValueColor = new Color(ConsoleColors.DarkGray).PlainSequence;
+                    ListValueColor = new Color(ConsoleColors.Grey).PlainSequence;
                 if (StageColor == "def")
                     StageColor = new Color(ConsoleColors.Green).PlainSequence;
                 if (ErrorColor == "def")
@@ -579,15 +580,15 @@ namespace KS.ConsoleBase.Colors
                 if (WarningColor == "def")
                     WarningColor = new Color(ConsoleColors.Yellow).PlainSequence;
                 if (OptionColor == "def")
-                    OptionColor = new Color(ConsoleColors.DarkYellow).PlainSequence;
+                    OptionColor = new Color(ConsoleColors.Olive).PlainSequence;
                 if (BannerColor == "def")
                     OptionColor = new Color(ConsoleColors.Green).PlainSequence;
                 if (NotificationTitleColor == "def")
                     NotificationTitleColor = new Color(ConsoleColors.White).PlainSequence;
                 if (NotificationDescriptionColor == "def")
-                    NotificationDescriptionColor = new Color(ConsoleColors.Gray).PlainSequence;
+                    NotificationDescriptionColor = new Color(ConsoleColors.Silver).PlainSequence;
                 if (NotificationProgressColor == "def")
-                    NotificationProgressColor = new Color(ConsoleColors.DarkYellow).PlainSequence;
+                    NotificationProgressColor = new Color(ConsoleColors.Olive).PlainSequence;
                 if (NotificationFailureColor == "def")
                     NotificationFailureColor = new Color(ConsoleColors.Red).PlainSequence;
                 if (QuestionColor == "def")
@@ -595,21 +596,21 @@ namespace KS.ConsoleBase.Colors
                 if (SuccessColor == "def")
                     SuccessColor = new Color(ConsoleColors.Green).PlainSequence;
                 if (UserDollarColor == "def")
-                    UserDollarColor = new Color(ConsoleColors.Gray).PlainSequence;
+                    UserDollarColor = new Color(ConsoleColors.Silver).PlainSequence;
                 if (TipColor == "def")
-                    TipColor = new Color(ConsoleColors.Gray).PlainSequence;
+                    TipColor = new Color(ConsoleColors.Silver).PlainSequence;
                 if (SeparatorTextColor == "def")
                     SeparatorTextColor = new Color(ConsoleColors.White).PlainSequence;
                 if (SeparatorColor == "def")
-                    SeparatorColor = new Color(ConsoleColors.Gray).PlainSequence;
+                    SeparatorColor = new Color(ConsoleColors.Silver).PlainSequence;
                 if (ListTitleColor == "def")
                     ListTitleColor = new Color(ConsoleColors.White).PlainSequence;
                 if (DevelopmentWarningColor == "def")
                     DevelopmentWarningColor = new Color(ConsoleColors.Yellow).PlainSequence;
                 if (StageTimeColor == "def")
-                    StageTimeColor = new Color(ConsoleColors.Gray).PlainSequence;
+                    StageTimeColor = new Color(ConsoleColors.Silver).PlainSequence;
                 if (ProgressColor == "def")
-                    ProgressColor = new Color(ConsoleColors.DarkYellow).PlainSequence;
+                    ProgressColor = new Color(ConsoleColors.Olive).PlainSequence;
                 if (BackOptionColor == "def")
                     BackOptionColor = new Color(ConsoleColors.DarkRed).PlainSequence;
                 if (LowPriorityBorderColor == "def")
@@ -619,15 +620,15 @@ namespace KS.ConsoleBase.Colors
                 if (HighPriorityBorderColor == "def")
                     HighPriorityBorderColor = new Color(ConsoleColors.Red).PlainSequence;
                 if (TableSeparatorColor == "def")
-                    TableSeparatorColor = new Color(ConsoleColors.DarkGray).PlainSequence;
+                    TableSeparatorColor = new Color(ConsoleColors.Grey).PlainSequence;
                 if (TableHeaderColor == "def")
                     TableHeaderColor = new Color(ConsoleColors.White).PlainSequence;
                 if (TableValueColor == "def")
-                    TableValueColor = new Color(ConsoleColors.Gray).PlainSequence;
+                    TableValueColor = new Color(ConsoleColors.Silver).PlainSequence;
                 if (SelectedOptionColor == "def")
                     SelectedOptionColor = new Color(ConsoleColors.Yellow).PlainSequence;
                 if (AlternativeOptionColor == "def")
-                    AlternativeOptionColor = new Color(ConsoleColors.DarkGreen).PlainSequence;
+                    AlternativeOptionColor = new Color(ConsoleColors.Lime).PlainSequence;
                 if (BackgroundColor == "def")
                 {
                     BackgroundColor = new Color(ConsoleColors.Black).PlainSequence;

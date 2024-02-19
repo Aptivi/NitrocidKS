@@ -17,7 +17,9 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
+using SpecProbe.Platform;
 using Terminaux.Base;
+using Terminaux.Base.Extensions;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
@@ -36,8 +38,6 @@ using Terminaux.Base;
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-using TermConsoleExtensions = Terminaux.Base.ConsoleExtensions;
-
 namespace KS.ConsoleBase
 {
     public static class ConsoleExtensions
@@ -48,7 +48,7 @@ namespace KS.ConsoleBase
         /// </summary>
         public static void ClearKeepPosition()
         {
-            TermConsoleExtensions.ClearKeepPosition();
+            ConsolePositioning.ClearKeepPosition();
         }
 
         /// <summary>
@@ -56,7 +56,7 @@ namespace KS.ConsoleBase
         /// </summary>
         public static void ClearLineToRight()
         {
-            TermConsoleExtensions.ClearLineToRight();
+            ConsoleClearing.ClearLineToRight();
         }
 
         /// <summary>
@@ -68,7 +68,7 @@ namespace KS.ConsoleBase
         /// <returns>How many times to repeat the character</returns>
         public static int PercentRepeat(int CurrentNumber, int MaximumNumber, int WidthOffset)
         {
-            return TermConsoleExtensions.PercentRepeat(CurrentNumber, MaximumNumber, WidthOffset);
+            return ConsoleMisc.PercentRepeat(CurrentNumber, MaximumNumber, WidthOffset);
         }
 
         /// <summary>
@@ -80,7 +80,7 @@ namespace KS.ConsoleBase
         /// <returns>How many times to repeat the character</returns>
         public static int PercentRepeatTargeted(int CurrentNumber, int MaximumNumber, int TargetWidth)
         {
-            return TermConsoleExtensions.PercentRepeatTargeted(CurrentNumber, MaximumNumber, TargetWidth);
+            return ConsoleMisc.PercentRepeatTargeted(CurrentNumber, MaximumNumber, TargetWidth);
         }
 
         /// <summary>
@@ -90,7 +90,7 @@ namespace KS.ConsoleBase
         /// <returns>The text that doesn't contain the VT sequences</returns>
         public static string FilterVTSequences(string Text)
         {
-            return TermConsoleExtensions.FilterVTSequences(Text);
+            return ConsoleMisc.FilterVTSequences(Text);
         }
 
         /// <summary>
@@ -101,7 +101,7 @@ namespace KS.ConsoleBase
         /// <param name="Top">The filtered top position</param>
         public static void GetFilteredPositions(string Text, ref int Left, ref int Top, params object[] Vars)
         {
-            var pos = TermConsoleExtensions.GetFilteredPositions(Text, false, Vars);
+            var pos = ConsolePositioning.GetFilteredPositions(Text, false, Vars);
             Left = pos.Item1;
             Top = pos.Item2;
         }
@@ -111,7 +111,7 @@ namespace KS.ConsoleBase
         /// </summary>
         public static string GetTerminalEmulator()
         {
-            return ConsolePlatform.GetTerminalEmulator();
+            return PlatformHelper.GetTerminalEmulator();
         }
 
         /// <summary>
@@ -119,12 +119,12 @@ namespace KS.ConsoleBase
         /// </summary>
         public static string GetTerminalType()
         {
-            return ConsolePlatform.GetTerminalType();
+            return PlatformHelper.GetTerminalType();
         }
 
         public static void SetTitle(string Text)
         {
-            TermConsoleExtensions.SetTitle(Text);
+            ConsoleMisc.SetTitle(Text);
         }
 
     }

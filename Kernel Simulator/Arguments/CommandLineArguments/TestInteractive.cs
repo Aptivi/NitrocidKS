@@ -39,7 +39,7 @@ using KS.Arguments.ArgumentBase;
 using KS.Shell.ShellBase.Shells;
 using KS.TestShell;
 using Terminaux.Base;
-using TermExts = Terminaux.Base.ConsoleExtensions;
+using Terminaux.Colors;
 
 namespace KS.Arguments.CommandLineArguments
 {
@@ -55,7 +55,7 @@ namespace KS.Arguments.CommandLineArguments
             if (TestShellCommon.Test_ShutdownFlag)
             {
                 // Clear the console and reset the colors
-                TermExts.ResetColors();
+                ColorTools.ResetColors();
                 ConsoleWrapper.Clear();
                 Environment.Exit(0);
             }

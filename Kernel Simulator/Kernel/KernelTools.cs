@@ -74,8 +74,8 @@ using KS.Shell.ShellBase.Commands;
 using KS.TimeDate;
 using Newtonsoft.Json.Linq;
 using Terminaux.Base;
+using Terminaux.Colors;
 using Terminaux.ResizeListener;
-using TermExts = Terminaux.Base.ConsoleExtensions;
 
 namespace KS.Kernel
 {
@@ -631,7 +631,7 @@ namespace KS.Kernel
             }
 
             // Clear the console and reset the colors
-            TermExts.ResetColors();
+            ColorTools.ResetColors();
             ConsoleWrapper.Clear();
             Environment.Exit(0);
         }

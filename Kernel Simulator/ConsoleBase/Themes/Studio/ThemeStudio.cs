@@ -45,7 +45,7 @@ using KS.Misc.Writers.DebugWriters;
 using System;
 using Terminaux.Base;
 using Terminaux.Colors;
-using Terminaux.Colors.Selector;
+using Terminaux.Inputs.Styles;
 
 namespace KS.ConsoleBase.Themes.Studio
 {

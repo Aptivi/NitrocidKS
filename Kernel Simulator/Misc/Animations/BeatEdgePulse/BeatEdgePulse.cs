@@ -108,7 +108,7 @@ namespace KS.Misc.Animations.BeatEdgePulse
                     GreenColorNum = UserColor.RGB.G;
                     BlueColorNum = UserColor.RGB.B;
                 }
-                else if (UserColor.Type == ColorType._255Color)
+                else if (UserColor.Type == ColorType.EightBitColor)
                 {
                     var ConsoleColor = new ConsoleColorsInfo((ConsoleColors)Convert.ToInt32(UserColor.PlainSequence));
                     RedColorNum = ConsoleColor.R;

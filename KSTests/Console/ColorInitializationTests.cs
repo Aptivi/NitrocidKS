@@ -39,6 +39,7 @@ using NUnit.Framework;
 using Shouldly;
 using System;
 using Terminaux.Colors;
+using Terminaux.Colors.Transformation.Contrast;
 
 namespace KSTests.Console
 {
@@ -65,7 +66,7 @@ namespace KSTests.Console
 
             // Check for property correctness
             ColorInstance.PlainSequence.ShouldBe("18");
-            ColorInstance.Type.ShouldBe(ColorType._255Color);
+            ColorInstance.Type.ShouldBe(ColorType.EightBitColor);
             ColorInstance.VTSequenceBackground.ShouldBe(Convert.ToString(Color255.GetEsc()) + "[48;5;18m");
             ColorInstance.VTSequenceForeground.ShouldBe(Convert.ToString(Color255.GetEsc()) + "[38;5;18m");
             ColorInstance.RGB.R.ShouldBe(0);

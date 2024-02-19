@@ -52,7 +52,7 @@ using Terminaux.Inputs.Styles.Infobox;
 
 namespace KS.Files.Interactive
 {
-    public class FileManagerCli : BaseInteractiveTui, IInteractiveTui
+    public class FileManagerCli : BaseInteractiveTui<FileSystemInfo>, IInteractiveTui<FileSystemInfo>
     {
         internal string firstPanePath = Paths.HomePath;
         internal string secondPanePath = Paths.HomePath;
@@ -85,7 +85,7 @@ namespace KS.Files.Interactive
         public override bool SecondPaneInteractable => true;
 
         /// <inheritdoc/>
-        public override IEnumerable PrimaryDataSource
+        public override IEnumerable<FileSystemInfo> PrimaryDataSource
         {
             get
             {
@@ -108,7 +108,7 @@ namespace KS.Files.Interactive
         }
 
         /// <inheritdoc/>
-        public override IEnumerable SecondaryDataSource
+        public override IEnumerable<FileSystemInfo> SecondaryDataSource
         {
             get
             {
@@ -134,12 +134,10 @@ namespace KS.Files.Interactive
         public override bool AcceptsEmptyData => true;
 
         /// <inheritdoc/>
-        public override void RenderStatus(object item)
+        public override void RenderStatus(FileSystemInfo item)
         {
-            FileSystemInfo FileInfoCurrentPane = (FileSystemInfo)item;
-
             // Check to see if we're given the file system info
-            if (FileInfoCurrentPane is null)
+            if (item is null)
             {
                 InteractiveTuiStatus.Status = Translate.DoTranslation("No info.");
                 return;
@@ -148,8 +146,8 @@ namespace KS.Files.Interactive
             // Now, populate the info to the status
             try
             {
-                bool infoIsDirectory = Checking.FolderExists(FileInfoCurrentPane.FullName);
-                InteractiveTuiStatus.Status = $"[{(infoIsDirectory ? "/" : "*")}] {FileInfoCurrentPane.Name}";
+                bool infoIsDirectory = Checking.FolderExists(item.FullName);
+                InteractiveTuiStatus.Status = $"[{(infoIsDirectory ? "/" : "*")}] {item.Name}";
             }
             catch (Exception ex)
             {
@@ -158,13 +156,12 @@ namespace KS.Files.Interactive
         }
 
         /// <inheritdoc/>
-        public override string GetEntryFromItem(object item)
+        public override string GetEntryFromItem(FileSystemInfo item)
         {
             try
             {
-                FileSystemInfo file = (FileSystemInfo)item;
-                bool isDirectory = Checking.FolderExists(file.FullName);
-                return $" [{(isDirectory ? "/" : "*")}] {file.Name}";
+                bool isDirectory = Checking.FolderExists(item.FullName);
+                return $" [{(isDirectory ? "/" : "*")}] {item.Name}";
             }
             catch (Exception ex)
             {

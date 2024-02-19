@@ -41,7 +41,7 @@ using KS.ConsoleBase.Inputs;
 using KS.Languages;
 using KS.Misc.Writers.ConsoleWriters;
 using Terminaux.Base;
-using TermExts = Terminaux.Base.ConsoleExtensions;
+using Terminaux.Colors;
 
 namespace KS.Arguments.CommandLineArguments
 {
@@ -65,7 +65,7 @@ namespace KS.Arguments.CommandLineArguments
             if (Input.DetectKeypress().Key == ConsoleKey.Escape)
             {
                 // Clear the console and reset the colors
-                TermExts.ResetColors();
+                ColorTools.ResetColors();
                 ConsoleWrapper.Clear();
                 Environment.Exit(0);
             }
