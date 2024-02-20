@@ -19316,6 +19316,32 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AdminShellPromptPreset
   nameWithType: KernelMainConfig.AdminShellPromptPreset
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowBackgroundColor
+  name: AllowBackgroundColor
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_AllowBackgroundColor
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowBackgroundColor
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowBackgroundColor
+  nameWithType: KernelMainConfig.AllowBackgroundColor
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowBackgroundColor*
+  name: AllowBackgroundColor
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_AllowBackgroundColor_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowBackgroundColor
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowBackgroundColor
+  nameWithType: KernelMainConfig.AllowBackgroundColor
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowForegroundColor
+  name: AllowForegroundColor
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_AllowForegroundColor
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowForegroundColor
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowForegroundColor
+  nameWithType: KernelMainConfig.AllowForegroundColor
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowForegroundColor*
+  name: AllowForegroundColor
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_AllowForegroundColor_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowForegroundColor
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowForegroundColor
+  nameWithType: KernelMainConfig.AllowForegroundColor
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowUntrustedMods
   name: AllowUntrustedMods
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_AllowUntrustedMods
