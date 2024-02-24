@@ -38327,6 +38327,15 @@ references:
   fullName.vb: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.New(Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart(), Nitrocid.Shell.ShellBase.Switches.SwitchInfo(), Boolean)
   nameWithType: CommandArgumentInfo.CommandArgumentInfo(CommandArgumentPart[], SwitchInfo[], bool)
   nameWithType.vb: CommandArgumentInfo.New(CommandArgumentPart(), SwitchInfo(), Boolean)
+- uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart[],Nitrocid.Shell.ShellBase.Switches.SwitchInfo[],System.Boolean,System.Boolean)
+  name: CommandArgumentInfo(CommandArgumentPart[], SwitchInfo[], bool, bool)
+  href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentInfo__ctor_Nitrocid_Shell_ShellBase_Arguments_CommandArgumentPart___Nitrocid_Shell_ShellBase_Switches_SwitchInfo___System_Boolean_System_Boolean_
+  commentId: M:Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart[],Nitrocid.Shell.ShellBase.Switches.SwitchInfo[],System.Boolean,System.Boolean)
+  name.vb: New(CommandArgumentPart(), SwitchInfo(), Boolean, Boolean)
+  fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.CommandArgumentInfo(Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart[], Nitrocid.Shell.ShellBase.Switches.SwitchInfo[], bool, bool)
+  fullName.vb: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.New(Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart(), Nitrocid.Shell.ShellBase.Switches.SwitchInfo(), Boolean, Boolean)
+  nameWithType: CommandArgumentInfo.CommandArgumentInfo(CommandArgumentPart[], SwitchInfo[], bool, bool)
+  nameWithType.vb: CommandArgumentInfo.New(CommandArgumentPart(), SwitchInfo(), Boolean, Boolean)
 - uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart[],System.Boolean)
   name: CommandArgumentInfo(CommandArgumentPart[], bool)
   href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentInfo__ctor_Nitrocid_Shell_ShellBase_Arguments_CommandArgumentPart___System_Boolean_
@@ -38336,6 +38345,15 @@ references:
   fullName.vb: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.New(Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart(), Boolean)
   nameWithType: CommandArgumentInfo.CommandArgumentInfo(CommandArgumentPart[], bool)
   nameWithType.vb: CommandArgumentInfo.New(CommandArgumentPart(), Boolean)
+- uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart[],System.Boolean,System.Boolean)
+  name: CommandArgumentInfo(CommandArgumentPart[], bool, bool)
+  href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentInfo__ctor_Nitrocid_Shell_ShellBase_Arguments_CommandArgumentPart___System_Boolean_System_Boolean_
+  commentId: M:Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart[],System.Boolean,System.Boolean)
+  name.vb: New(CommandArgumentPart(), Boolean, Boolean)
+  fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.CommandArgumentInfo(Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart[], bool, bool)
+  fullName.vb: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.New(Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart(), Boolean, Boolean)
+  nameWithType: CommandArgumentInfo.CommandArgumentInfo(CommandArgumentPart[], bool, bool)
+  nameWithType.vb: CommandArgumentInfo.New(CommandArgumentPart(), Boolean, Boolean)
 - uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(Nitrocid.Shell.ShellBase.Switches.SwitchInfo[])
   name: CommandArgumentInfo(SwitchInfo[])
   href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentInfo__ctor_Nitrocid_Shell_ShellBase_Switches_SwitchInfo___
@@ -38354,6 +38372,15 @@ references:
   fullName.vb: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.New(Nitrocid.Shell.ShellBase.Switches.SwitchInfo(), Boolean)
   nameWithType: CommandArgumentInfo.CommandArgumentInfo(SwitchInfo[], bool)
   nameWithType.vb: CommandArgumentInfo.New(SwitchInfo(), Boolean)
+- uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(Nitrocid.Shell.ShellBase.Switches.SwitchInfo[],System.Boolean,System.Boolean)
+  name: CommandArgumentInfo(SwitchInfo[], bool, bool)
+  href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentInfo__ctor_Nitrocid_Shell_ShellBase_Switches_SwitchInfo___System_Boolean_System_Boolean_
+  commentId: M:Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(Nitrocid.Shell.ShellBase.Switches.SwitchInfo[],System.Boolean,System.Boolean)
+  name.vb: New(SwitchInfo(), Boolean, Boolean)
+  fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.CommandArgumentInfo(Nitrocid.Shell.ShellBase.Switches.SwitchInfo[], bool, bool)
+  fullName.vb: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.New(Nitrocid.Shell.ShellBase.Switches.SwitchInfo(), Boolean, Boolean)
+  nameWithType: CommandArgumentInfo.CommandArgumentInfo(SwitchInfo[], bool, bool)
+  nameWithType.vb: CommandArgumentInfo.New(SwitchInfo(), Boolean, Boolean)
 - uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(System.Boolean)
   name: CommandArgumentInfo(bool)
   href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentInfo__ctor_System_Boolean_
@@ -38363,6 +38390,15 @@ references:
   fullName.vb: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.New(Boolean)
   nameWithType: CommandArgumentInfo.CommandArgumentInfo(bool)
   nameWithType.vb: CommandArgumentInfo.New(Boolean)
+- uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(System.Boolean,System.Boolean)
+  name: CommandArgumentInfo(bool, bool)
+  href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentInfo__ctor_System_Boolean_System_Boolean_
+  commentId: M:Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor(System.Boolean,System.Boolean)
+  name.vb: New(Boolean, Boolean)
+  fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.CommandArgumentInfo(bool, bool)
+  fullName.vb: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.New(Boolean, Boolean)
+  nameWithType: CommandArgumentInfo.CommandArgumentInfo(bool, bool)
+  nameWithType.vb: CommandArgumentInfo.New(Boolean, Boolean)
 - uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.#ctor*
   name: CommandArgumentInfo
   href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentInfo__ctor_
@@ -38412,6 +38448,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.ArgumentsRequired
   nameWithType: CommandArgumentInfo.ArgumentsRequired
+- uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.InfiniteBounds
+  name: InfiniteBounds
+  href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentInfo_InfiniteBounds
+  commentId: P:Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.InfiniteBounds
+  fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.InfiniteBounds
+  nameWithType: CommandArgumentInfo.InfiniteBounds
+- uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.InfiniteBounds*
+  name: InfiniteBounds
+  href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentInfo_InfiniteBounds_
+  commentId: Overload:Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.InfiniteBounds
+  isSpec: "True"
+  fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.InfiniteBounds
+  nameWithType: CommandArgumentInfo.InfiniteBounds
 - uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.MinimumArguments
   name: MinimumArguments
   href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentInfo_MinimumArguments
