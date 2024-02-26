@@ -33159,6 +33159,22 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Screensaver.ScreensaverManager.DefaultSaverName
   nameWithType: ScreensaverManager.DefaultSaverName
+- uid: Nitrocid.Misc.Screensaver.ScreensaverManager.GetScreensaver(System.String)
+  name: GetScreensaver(string)
+  href: api/Nitrocid.Misc.Screensaver.ScreensaverManager.html#Nitrocid_Misc_Screensaver_ScreensaverManager_GetScreensaver_System_String_
+  commentId: M:Nitrocid.Misc.Screensaver.ScreensaverManager.GetScreensaver(System.String)
+  name.vb: GetScreensaver(String)
+  fullName: Nitrocid.Misc.Screensaver.ScreensaverManager.GetScreensaver(string)
+  fullName.vb: Nitrocid.Misc.Screensaver.ScreensaverManager.GetScreensaver(String)
+  nameWithType: ScreensaverManager.GetScreensaver(string)
+  nameWithType.vb: ScreensaverManager.GetScreensaver(String)
+- uid: Nitrocid.Misc.Screensaver.ScreensaverManager.GetScreensaver*
+  name: GetScreensaver
+  href: api/Nitrocid.Misc.Screensaver.ScreensaverManager.html#Nitrocid_Misc_Screensaver_ScreensaverManager_GetScreensaver_
+  commentId: Overload:Nitrocid.Misc.Screensaver.ScreensaverManager.GetScreensaver
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Screensaver.ScreensaverManager.GetScreensaver
+  nameWithType: ScreensaverManager.GetScreensaver
 - uid: Nitrocid.Misc.Screensaver.ScreensaverManager.GetScreensaverInstance(System.Reflection.Assembly)
   name: GetScreensaverInstance(Assembly)
   href: api/Nitrocid.Misc.Screensaver.ScreensaverManager.html#Nitrocid_Misc_Screensaver_ScreensaverManager_GetScreensaverInstance_System_Reflection_Assembly_
