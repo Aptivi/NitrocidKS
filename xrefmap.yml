@@ -2758,19 +2758,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.ConsoleTools.ResetForeground
   nameWithType: ConsoleTools.ResetForeground
-- uid: Nitrocid.ConsoleBase.ConsoleTools.UseNewColorSelector
-  name: UseNewColorSelector
-  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_UseNewColorSelector
-  commentId: P:Nitrocid.ConsoleBase.ConsoleTools.UseNewColorSelector
-  fullName: Nitrocid.ConsoleBase.ConsoleTools.UseNewColorSelector
-  nameWithType: ConsoleTools.UseNewColorSelector
-- uid: Nitrocid.ConsoleBase.ConsoleTools.UseNewColorSelector*
-  name: UseNewColorSelector
-  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_UseNewColorSelector_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleTools.UseNewColorSelector
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleTools.UseNewColorSelector
-  nameWithType: ConsoleTools.UseNewColorSelector
 - uid: Nitrocid.ConsoleBase.ConsoleTools.WrapListOutputs
   name: WrapListOutputs
   href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_WrapListOutputs
@@ -21877,19 +21864,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.UseConsoleColorPalette
   nameWithType: KernelMainConfig.UseConsoleColorPalette
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.UseNewColorSelector
-  name: UseNewColorSelector
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_UseNewColorSelector
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.UseNewColorSelector
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.UseNewColorSelector
-  nameWithType: KernelMainConfig.UseNewColorSelector
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.UseNewColorSelector*
-  name: UseNewColorSelector
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_UseNewColorSelector_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.UseNewColorSelector
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.UseNewColorSelector
-  nameWithType: KernelMainConfig.UseNewColorSelector
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.UseSystemTimeZone
   name: UseSystemTimeZone
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_UseSystemTimeZone
