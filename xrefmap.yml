@@ -27415,6 +27415,12 @@ references:
   commentId: F:Nitrocid.Kernel.Time.Calendars.CalendarTypes.ThaiBuddhist
   fullName: Nitrocid.Kernel.Time.Calendars.CalendarTypes.ThaiBuddhist
   nameWithType: CalendarTypes.ThaiBuddhist
+- uid: Nitrocid.Kernel.Time.Calendars.CalendarTypes.Variant
+  name: Variant
+  href: api/Nitrocid.Kernel.Time.Calendars.CalendarTypes.html#Nitrocid_Kernel_Time_Calendars_CalendarTypes_Variant
+  commentId: F:Nitrocid.Kernel.Time.Calendars.CalendarTypes.Variant
+  fullName: Nitrocid.Kernel.Time.Calendars.CalendarTypes.Variant
+  nameWithType: CalendarTypes.Variant
 - uid: Nitrocid.Kernel.Time.Calendars.ICalendar
   name: ICalendar
   href: api/Nitrocid.Kernel.Time.Calendars.ICalendar.html
@@ -27696,6 +27702,38 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Time.Calendars.Types.ThaiBuddhistCalendar.Name
   nameWithType: ThaiBuddhistCalendar.Name
+- uid: Nitrocid.Kernel.Time.Calendars.Types.VariantCalendar
+  name: VariantCalendar
+  href: api/Nitrocid.Kernel.Time.Calendars.Types.VariantCalendar.html
+  commentId: T:Nitrocid.Kernel.Time.Calendars.Types.VariantCalendar
+  fullName: Nitrocid.Kernel.Time.Calendars.Types.VariantCalendar
+  nameWithType: VariantCalendar
+- uid: Nitrocid.Kernel.Time.Calendars.Types.VariantCalendar.Culture
+  name: Culture
+  href: api/Nitrocid.Kernel.Time.Calendars.Types.VariantCalendar.html#Nitrocid_Kernel_Time_Calendars_Types_VariantCalendar_Culture
+  commentId: P:Nitrocid.Kernel.Time.Calendars.Types.VariantCalendar.Culture
+  fullName: Nitrocid.Kernel.Time.Calendars.Types.VariantCalendar.Culture
+  nameWithType: VariantCalendar.Culture
+- uid: Nitrocid.Kernel.Time.Calendars.Types.VariantCalendar.Culture*
+  name: Culture
+  href: api/Nitrocid.Kernel.Time.Calendars.Types.VariantCalendar.html#Nitrocid_Kernel_Time_Calendars_Types_VariantCalendar_Culture_
+  commentId: Overload:Nitrocid.Kernel.Time.Calendars.Types.VariantCalendar.Culture
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Time.Calendars.Types.VariantCalendar.Culture
+  nameWithType: VariantCalendar.Culture
+- uid: Nitrocid.Kernel.Time.Calendars.Types.VariantCalendar.Name
+  name: Name
+  href: api/Nitrocid.Kernel.Time.Calendars.Types.VariantCalendar.html#Nitrocid_Kernel_Time_Calendars_Types_VariantCalendar_Name
+  commentId: P:Nitrocid.Kernel.Time.Calendars.Types.VariantCalendar.Name
+  fullName: Nitrocid.Kernel.Time.Calendars.Types.VariantCalendar.Name
+  nameWithType: VariantCalendar.Name
+- uid: Nitrocid.Kernel.Time.Calendars.Types.VariantCalendar.Name*
+  name: Name
+  href: api/Nitrocid.Kernel.Time.Calendars.Types.VariantCalendar.html#Nitrocid_Kernel_Time_Calendars_Types_VariantCalendar_Name_
+  commentId: Overload:Nitrocid.Kernel.Time.Calendars.Types.VariantCalendar.Name
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Time.Calendars.Types.VariantCalendar.Name
+  nameWithType: VariantCalendar.Name
 - uid: Nitrocid.Kernel.Time.Converters
   name: Nitrocid.Kernel.Time.Converters
   href: api/Nitrocid.Kernel.Time.Converters.html
