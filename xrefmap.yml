@@ -7239,6 +7239,203 @@ references:
   commentId: T:Nitrocid.Drivers.Encoding.Bases.AesEncoding
   fullName: Nitrocid.Drivers.Encoding.Bases.AesEncoding
   nameWithType: AesEncoding
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding
+  name: Base64Encoding
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html
+  commentId: T:Nitrocid.Drivers.Encoding.Bases.Base64Encoding
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding
+  nameWithType: Base64Encoding
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DecodeFile(System.String)
+  name: DecodeFile(string)
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_DecodeFile_System_String_
+  commentId: M:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DecodeFile(System.String)
+  name.vb: DecodeFile(String)
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DecodeFile(string)
+  fullName.vb: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DecodeFile(String)
+  nameWithType: Base64Encoding.DecodeFile(string)
+  nameWithType.vb: Base64Encoding.DecodeFile(String)
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DecodeFile(System.String,System.Byte[],System.Byte[])
+  name: DecodeFile(string, byte[], byte[])
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_DecodeFile_System_String_System_Byte___System_Byte___
+  commentId: M:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DecodeFile(System.String,System.Byte[],System.Byte[])
+  name.vb: DecodeFile(String, Byte(), Byte())
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DecodeFile(string, byte[], byte[])
+  fullName.vb: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DecodeFile(String, Byte(), Byte())
+  nameWithType: Base64Encoding.DecodeFile(string, byte[], byte[])
+  nameWithType.vb: Base64Encoding.DecodeFile(String, Byte(), Byte())
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DecodeFile*
+  name: DecodeFile
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_DecodeFile_
+  commentId: Overload:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DecodeFile
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DecodeFile
+  nameWithType: Base64Encoding.DecodeFile
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DriverName
+  name: DriverName
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_DriverName
+  commentId: P:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DriverName
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DriverName
+  nameWithType: Base64Encoding.DriverName
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DriverName*
+  name: DriverName
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_DriverName_
+  commentId: Overload:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DriverName
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DriverName
+  nameWithType: Base64Encoding.DriverName
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DriverType
+  name: DriverType
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_DriverType
+  commentId: P:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DriverType
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DriverType
+  nameWithType: Base64Encoding.DriverType
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DriverType*
+  name: DriverType
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_DriverType_
+  commentId: Overload:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DriverType
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.DriverType
+  nameWithType: Base64Encoding.DriverType
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.EncodeFile(System.String)
+  name: EncodeFile(string)
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_EncodeFile_System_String_
+  commentId: M:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.EncodeFile(System.String)
+  name.vb: EncodeFile(String)
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.EncodeFile(string)
+  fullName.vb: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.EncodeFile(String)
+  nameWithType: Base64Encoding.EncodeFile(string)
+  nameWithType.vb: Base64Encoding.EncodeFile(String)
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.EncodeFile(System.String,System.Byte[],System.Byte[])
+  name: EncodeFile(string, byte[], byte[])
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_EncodeFile_System_String_System_Byte___System_Byte___
+  commentId: M:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.EncodeFile(System.String,System.Byte[],System.Byte[])
+  name.vb: EncodeFile(String, Byte(), Byte())
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.EncodeFile(string, byte[], byte[])
+  fullName.vb: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.EncodeFile(String, Byte(), Byte())
+  nameWithType: Base64Encoding.EncodeFile(string, byte[], byte[])
+  nameWithType.vb: Base64Encoding.EncodeFile(String, Byte(), Byte())
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.EncodeFile*
+  name: EncodeFile
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_EncodeFile_
+  commentId: Overload:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.EncodeFile
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.EncodeFile
+  nameWithType: Base64Encoding.EncodeFile
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.GetDecodedString(System.Byte[])
+  name: GetDecodedString(byte[])
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_GetDecodedString_System_Byte___
+  commentId: M:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.GetDecodedString(System.Byte[])
+  name.vb: GetDecodedString(Byte())
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.GetDecodedString(byte[])
+  fullName.vb: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.GetDecodedString(Byte())
+  nameWithType: Base64Encoding.GetDecodedString(byte[])
+  nameWithType.vb: Base64Encoding.GetDecodedString(Byte())
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.GetDecodedString(System.Byte[],System.Byte[],System.Byte[])
+  name: GetDecodedString(byte[], byte[], byte[])
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_GetDecodedString_System_Byte___System_Byte___System_Byte___
+  commentId: M:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.GetDecodedString(System.Byte[],System.Byte[],System.Byte[])
+  name.vb: GetDecodedString(Byte(), Byte(), Byte())
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.GetDecodedString(byte[], byte[], byte[])
+  fullName.vb: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.GetDecodedString(Byte(), Byte(), Byte())
+  nameWithType: Base64Encoding.GetDecodedString(byte[], byte[], byte[])
+  nameWithType.vb: Base64Encoding.GetDecodedString(Byte(), Byte(), Byte())
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.GetDecodedString*
+  name: GetDecodedString
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_GetDecodedString_
+  commentId: Overload:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.GetDecodedString
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.GetDecodedString
+  nameWithType: Base64Encoding.GetDecodedString
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.GetEncodedString(System.String)
+  name: GetEncodedString(string)
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_GetEncodedString_System_String_
+  commentId: M:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.GetEncodedString(System.String)
+  name.vb: GetEncodedString(String)
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.GetEncodedString(string)
+  fullName.vb: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.GetEncodedString(String)
+  nameWithType: Base64Encoding.GetEncodedString(string)
+  nameWithType.vb: Base64Encoding.GetEncodedString(String)
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.GetEncodedString(System.String,System.Byte[],System.Byte[])
+  name: GetEncodedString(string, byte[], byte[])
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_GetEncodedString_System_String_System_Byte___System_Byte___
+  commentId: M:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.GetEncodedString(System.String,System.Byte[],System.Byte[])
+  name.vb: GetEncodedString(String, Byte(), Byte())
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.GetEncodedString(string, byte[], byte[])
+  fullName.vb: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.GetEncodedString(String, Byte(), Byte())
+  nameWithType: Base64Encoding.GetEncodedString(string, byte[], byte[])
+  nameWithType.vb: Base64Encoding.GetEncodedString(String, Byte(), Byte())
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.GetEncodedString*
+  name: GetEncodedString
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_GetEncodedString_
+  commentId: Overload:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.GetEncodedString
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.GetEncodedString
+  nameWithType: Base64Encoding.GetEncodedString
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Initialize
+  name: Initialize()
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_Initialize
+  commentId: M:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Initialize
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Initialize()
+  nameWithType: Base64Encoding.Initialize()
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Initialize*
+  name: Initialize
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_Initialize_
+  commentId: Overload:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Initialize
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Initialize
+  nameWithType: Base64Encoding.Initialize
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Instance
+  name: Instance
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_Instance
+  commentId: P:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Instance
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Instance
+  nameWithType: Base64Encoding.Instance
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Instance*
+  name: Instance
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_Instance_
+  commentId: Overload:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Instance
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Instance
+  nameWithType: Base64Encoding.Instance
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.IsSymmetric
+  name: IsSymmetric
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_IsSymmetric
+  commentId: P:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.IsSymmetric
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.IsSymmetric
+  nameWithType: Base64Encoding.IsSymmetric
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.IsSymmetric*
+  name: IsSymmetric
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_IsSymmetric_
+  commentId: Overload:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.IsSymmetric
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.IsSymmetric
+  nameWithType: Base64Encoding.IsSymmetric
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Iv
+  name: Iv
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_Iv
+  commentId: P:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Iv
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Iv
+  nameWithType: Base64Encoding.Iv
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Iv*
+  name: Iv
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_Iv_
+  commentId: Overload:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Iv
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Iv
+  nameWithType: Base64Encoding.Iv
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Key
+  name: Key
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_Key
+  commentId: P:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Key
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Key
+  nameWithType: Base64Encoding.Key
+- uid: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Key*
+  name: Key
+  href: api/Nitrocid.Drivers.Encoding.Bases.Base64Encoding.html#Nitrocid_Drivers_Encoding_Bases_Base64Encoding_Key_
+  commentId: Overload:Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Key
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Encoding.Bases.Base64Encoding.Key
+  nameWithType: Base64Encoding.Key
 - uid: Nitrocid.Drivers.Encoding.Bases.RsaEncoding
   name: RsaEncoding
   href: api/Nitrocid.Drivers.Encoding.Bases.RsaEncoding.html
