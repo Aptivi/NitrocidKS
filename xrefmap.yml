@@ -19390,6 +19390,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelDriverConfig.CurrentHardwareProberDriver
   nameWithType: KernelDriverConfig.CurrentHardwareProberDriver
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelDriverConfig.CurrentInputDriver
+  name: CurrentInputDriver
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelDriverConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelDriverConfig_CurrentInputDriver
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelDriverConfig.CurrentInputDriver
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelDriverConfig.CurrentInputDriver
+  nameWithType: KernelDriverConfig.CurrentInputDriver
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelDriverConfig.CurrentInputDriver*
+  name: CurrentInputDriver
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelDriverConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelDriverConfig_CurrentInputDriver_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelDriverConfig.CurrentInputDriver
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelDriverConfig.CurrentInputDriver
+  nameWithType: KernelDriverConfig.CurrentInputDriver
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelDriverConfig.CurrentNetworkDriver
   name: CurrentNetworkDriver
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelDriverConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelDriverConfig_CurrentNetworkDriver
