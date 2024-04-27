@@ -18,6 +18,9 @@
 //
 
 using System;
+using System.Collections.Generic;
+using Terminaux.Inputs;
+
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
@@ -53,10 +56,8 @@ namespace KS.ConsoleBase.Inputs.Styles
         /// <param name="AnswersStr">Set of answers. They can be written like this: Y/N/C.</param>
         /// <param name="OutputType">Output type of choices</param>
         /// <param name="PressEnter">When enabled, allows the input to consist of multiple characters</param>
-        public static string PromptChoice(string Question, string AnswersStr, ChoiceOutputType OutputType = ChoiceOutputType.OneLine, bool PressEnter = false)
-        {
-            return PromptChoice(Question, AnswersStr, [], OutputType, PressEnter);
-        }
+        public static string PromptChoice(string Question, string AnswersStr, ChoiceOutputType OutputType = ChoiceOutputType.OneLine, bool PressEnter = false) =>
+            PromptChoice(Question, AnswersStr, [], OutputType, PressEnter);
 
         /// <summary>
         /// Prompts user for choice
@@ -68,7 +69,20 @@ namespace KS.ConsoleBase.Inputs.Styles
         /// <param name="PressEnter">When enabled, allows the input to consist of multiple characters</param>
         public static string PromptChoice(string Question, string AnswersStr, string[] AnswersTitles, ChoiceOutputType OutputType = ChoiceOutputType.OneLine, bool PressEnter = false)
         {
-            return TermChoiceStyle.PromptChoice(Question, AnswersStr, AnswersTitles, OutputType, PressEnter);
+            // Variables
+            var answerSplit = AnswersStr.Split(new char[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
+            var finalChoices = new List<InputChoiceInfo>();
+
+            // Check to see if the answer titles are the same
+            if (answerSplit.Length > AnswersTitles.Length)
+                Array.Resize(ref AnswersTitles, answerSplit.Length);
+            if (AnswersTitles.Length > answerSplit.Length)
+                Array.Resize(ref answerSplit, AnswersTitles.Length);
+
+            // Now, populate choice information from the arrays
+            for (int i = 0; i < answerSplit.Length; i++)
+                finalChoices.Add(new InputChoiceInfo(answerSplit[i] ?? $"[{i + 1}]", AnswersTitles[i] ?? $"[{i + 1}]"));
+            return TermChoiceStyle.PromptChoice(Question, [.. finalChoices], OutputType, PressEnter);
         }
 
     }

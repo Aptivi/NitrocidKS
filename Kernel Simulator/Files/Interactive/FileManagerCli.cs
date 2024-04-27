@@ -64,7 +64,7 @@ namespace KS.Files.Interactive
         /// <summary>
         /// File manager bindings
         /// </summary>
-        public override List<InteractiveTuiBinding> Bindings { get; set; } =
+        public override InteractiveTuiBinding[] Bindings { get; } =
         [
             new("Open", ConsoleKey.Enter, default, (info, _) => Open((FileSystemInfo)info)),
             new("Copy", ConsoleKey.F1, default, (info, _) => CopyFileOrDir((FileSystemInfo)info)),
@@ -134,24 +134,21 @@ namespace KS.Files.Interactive
         public override bool AcceptsEmptyData => true;
 
         /// <inheritdoc/>
-        public override void RenderStatus(FileSystemInfo item)
+        public override string GetStatusFromItem(FileSystemInfo item)
         {
             // Check to see if we're given the file system info
             if (item is null)
-            {
-                InteractiveTuiStatus.Status = Translate.DoTranslation("No info.");
-                return;
-            }
+                return Translate.DoTranslation("No info.");
 
             // Now, populate the info to the status
             try
             {
                 bool infoIsDirectory = Checking.FolderExists(item.FullName);
-                InteractiveTuiStatus.Status = $"[{(infoIsDirectory ? "/" : "*")}] {item.Name}";
+                return $"[{(infoIsDirectory ? "/" : "*")}] {item.Name}";
             }
             catch (Exception ex)
             {
-                InteractiveTuiStatus.Status = ex.Message;
+                return ex.Message;
             }
         }
 
@@ -190,15 +187,14 @@ namespace KS.Files.Interactive
                     if (InteractiveTuiStatus.CurrentPane == 2)
                     {
                         ((FileManagerCli)Instance).secondPanePath = Filesystem.NeutralizePath(currentFileSystemInfo.FullName.ToString() + "/");
-                        InteractiveTuiStatus.SecondPaneCurrentSelection = 1;
                         ((FileManagerCli)Instance).refreshSecondPaneListing = true;
                     }
                     else
                     {
                         ((FileManagerCli)Instance).firstPanePath = Filesystem.NeutralizePath(currentFileSystemInfo.FullName.ToString() + "/");
-                        InteractiveTuiStatus.FirstPaneCurrentSelection = 1;
                         ((FileManagerCli)Instance).refreshFirstPaneListing = true;
                     }
+                    InteractiveTuiTools.SelectionMovement(Instance, 1);
                 }
             }
             catch (Exception ex)
@@ -215,15 +211,14 @@ namespace KS.Files.Interactive
             if (InteractiveTuiStatus.CurrentPane == 2)
             {
                 ((FileManagerCli)Instance).secondPanePath = Filesystem.NeutralizePath(((FileManagerCli)Instance).secondPanePath + "/..");
-                InteractiveTuiStatus.SecondPaneCurrentSelection = 1;
                 ((FileManagerCli)Instance).refreshSecondPaneListing = true;
             }
             else
             {
                 ((FileManagerCli)Instance).firstPanePath = Filesystem.NeutralizePath(((FileManagerCli)Instance).firstPanePath + "/..");
-                InteractiveTuiStatus.FirstPaneCurrentSelection = 1;
                 ((FileManagerCli)Instance).refreshFirstPaneListing = true;
             }
+            InteractiveTuiTools.SelectionMovement(Instance, 1);
         }
 
         private static void PrintFileSystemInfo(FileSystemInfo currentFileSystemInfo)
@@ -371,7 +366,7 @@ namespace KS.Files.Interactive
             path = Filesystem.NeutralizePath(path, ((FileManagerCli)Instance).firstPanePath);
             if (Checking.FolderExists(path))
             {
-                InteractiveTuiStatus.FirstPaneCurrentSelection = 1;
+                InteractiveTuiTools.SelectionMovement(Instance, 1);
                 ((FileManagerCli)Instance).firstPanePath = path;
                 ((FileManagerCli)Instance).refreshFirstPaneListing = true;
             }

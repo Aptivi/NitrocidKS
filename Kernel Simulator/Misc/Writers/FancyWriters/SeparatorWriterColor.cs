@@ -65,7 +65,7 @@ namespace KS.Misc.Writers.FancyWriters
         /// <param name="Vars">Variables to format the message before it's written.</param>
         public static void WriteSeparator(string Text, bool PrintSuffix, KernelColorTools.ColTypes ColTypes, params object[] Vars)
         {
-            TermSeparator.WriteSeparatorColor(Text, PrintSuffix, KernelColorTools.GetConsoleColor(ColTypes), Vars);
+            TermSeparator.WriteSeparatorColor(Text, PrintSuffix, KernelColorTools.GetConsoleColor(ColTypes), true, Vars);
         }
 
         /// <summary>
@@ -78,7 +78,7 @@ namespace KS.Misc.Writers.FancyWriters
         /// <param name="Vars">Variables to format the message before it's written.</param>
         public static void WriteSeparator(string Text, bool PrintSuffix, KernelColorTools.ColTypes colorTypeForeground, KernelColorTools.ColTypes colorTypeBackground, params object[] Vars)
         {
-            TermSeparator.WriteSeparatorColorBack(Text, PrintSuffix, KernelColorTools.GetConsoleColor(colorTypeForeground), KernelColorTools.GetConsoleColor(colorTypeBackground), Vars);
+            TermSeparator.WriteSeparatorColorBack(Text, PrintSuffix, KernelColorTools.GetConsoleColor(colorTypeForeground), KernelColorTools.GetConsoleColor(colorTypeBackground), true, Vars);
         }
 
         /// <summary>
@@ -90,7 +90,7 @@ namespace KS.Misc.Writers.FancyWriters
         /// <param name="Vars">Variables to format the message before it's written.</param>
         public static void WriteSeparator(string Text, bool PrintSuffix, ConsoleColor Color, params object[] Vars)
         {
-            TermSeparator.WriteSeparatorColor(Text, PrintSuffix, (Color)Color, Vars);
+            TermSeparator.WriteSeparatorColor(Text, PrintSuffix, (Color)Color, true, Vars);
         }
 
         /// <summary>
@@ -103,7 +103,7 @@ namespace KS.Misc.Writers.FancyWriters
         /// <param name="Vars">Variables to format the message before it's written.</param>
         public static void WriteSeparator(string Text, bool PrintSuffix, ConsoleColor ForegroundColor, ConsoleColor BackgroundColor, params object[] Vars)
         {
-            TermSeparator.WriteSeparatorColorBack(Text, PrintSuffix, (Color)ForegroundColor, (Color)BackgroundColor, Vars);
+            TermSeparator.WriteSeparatorColorBack(Text, PrintSuffix, (Color)ForegroundColor, (Color)BackgroundColor, true, Vars);
         }
 
         /// <summary>
@@ -115,7 +115,7 @@ namespace KS.Misc.Writers.FancyWriters
         /// <param name="Vars">Variables to format the message before it's written.</param>
         public static void WriteSeparator(string Text, bool PrintSuffix, Color Color, params object[] Vars)
         {
-            TermSeparator.WriteSeparatorColor(Text, PrintSuffix, Color, Vars);
+            TermSeparator.WriteSeparatorColor(Text, PrintSuffix, Color, true, Vars);
         }
 
         /// <summary>
@@ -128,7 +128,7 @@ namespace KS.Misc.Writers.FancyWriters
         /// <param name="Vars">Variables to format the message before it's written.</param>
         public static void WriteSeparator(string Text, bool PrintSuffix, Color ForegroundColor, Color BackgroundColor, params object[] Vars)
         {
-            TermSeparator.WriteSeparatorColorBack(Text, PrintSuffix, ForegroundColor, BackgroundColor, Vars);
+            TermSeparator.WriteSeparatorColorBack(Text, PrintSuffix, ForegroundColor, BackgroundColor, true, Vars);
         }
 
     }

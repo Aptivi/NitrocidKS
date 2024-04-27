@@ -18,6 +18,9 @@
 //
 
 using System;
+using System.Collections.Generic;
+using Terminaux.Inputs;
+
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
@@ -48,10 +51,8 @@ namespace KS.ConsoleBase.Inputs.Styles
         /// </summary>
         /// <param name="Question">A question</param>
         /// <param name="AnswersStr">Set of answers. They can be written like this: Y/N/C.</param>
-        public static int PromptSelection(string Question, string AnswersStr)
-        {
-            return PromptSelection(Question, AnswersStr, []);
-        }
+        public static int PromptSelection(string Question, string AnswersStr) =>
+            PromptSelection(Question, AnswersStr, []);
 
         /// <summary>
         /// Prompts user for Selection
@@ -61,7 +62,20 @@ namespace KS.ConsoleBase.Inputs.Styles
         /// <param name="AnswersTitles">Working titles for each answer. It must be the same amount as the answers.</param>
         public static int PromptSelection(string Question, string AnswersStr, string[] AnswersTitles)
         {
-            return TermSelectionStyle.PromptSelection(Question, AnswersStr, AnswersTitles);
+            // Variables
+            var answerSplit = AnswersStr.Split(new char[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
+            var finalChoices = new List<InputChoiceInfo>();
+
+            // Check to see if the answer titles are the same
+            if (answerSplit.Length > AnswersTitles.Length)
+                Array.Resize(ref AnswersTitles, answerSplit.Length);
+            if (AnswersTitles.Length > answerSplit.Length)
+                Array.Resize(ref answerSplit, AnswersTitles.Length);
+
+            // Now, populate choice information from the arrays
+            for (int i = 0; i < answerSplit.Length; i++)
+                finalChoices.Add(new InputChoiceInfo(answerSplit[i] ?? $"[{i + 1}]", AnswersTitles[i] ?? $"[{i + 1}]"));
+            return TermSelectionStyle.PromptSelection(Question, [.. finalChoices]);
         }
 
     }

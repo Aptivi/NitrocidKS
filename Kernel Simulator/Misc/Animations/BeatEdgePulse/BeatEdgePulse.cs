@@ -83,17 +83,17 @@ namespace KS.Misc.Animations.BeatEdgePulse
                 }
                 else if (Settings.BeatEdgePulse255Colors)
                 {
-                    var ConsoleColor = new ConsoleColorsInfo((ConsoleColors)RandomDriver.Next(Settings.BeatEdgePulseMinimumColorLevel, Settings.BeatEdgePulseMaximumColorLevel));
-                    RedColorNum = ConsoleColor.R;
-                    GreenColorNum = ConsoleColor.G;
-                    BlueColorNum = ConsoleColor.B;
+                    var ConsoleColor = new Color((ConsoleColors)RandomDriver.Next(Settings.BeatEdgePulseMinimumColorLevel, Settings.BeatEdgePulseMaximumColorLevel));
+                    RedColorNum = ConsoleColor.RGB.R;
+                    GreenColorNum = ConsoleColor.RGB.G;
+                    BlueColorNum = ConsoleColor.RGB.B;
                 }
                 else
                 {
-                    var ConsoleColor = new ConsoleColorsInfo((ConsoleColors)RandomDriver.Next(Settings.BeatEdgePulseMinimumColorLevel, Settings.BeatEdgePulseMaximumColorLevel));
-                    RedColorNum = ConsoleColor.R;
-                    GreenColorNum = ConsoleColor.G;
-                    BlueColorNum = ConsoleColor.B;
+                    var ConsoleColor = new Color((ConsoleColors)RandomDriver.Next(Settings.BeatEdgePulseMinimumColorLevel, Settings.BeatEdgePulseMaximumColorLevel));
+                    RedColorNum = ConsoleColor.RGB.R;
+                    GreenColorNum = ConsoleColor.RGB.G;
+                    BlueColorNum = ConsoleColor.RGB.B;
                 }
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
             }
@@ -110,10 +110,10 @@ namespace KS.Misc.Animations.BeatEdgePulse
                 }
                 else if (UserColor.Type == ColorType.EightBitColor)
                 {
-                    var ConsoleColor = new ConsoleColorsInfo((ConsoleColors)Convert.ToInt32(UserColor.PlainSequence));
-                    RedColorNum = ConsoleColor.R;
-                    GreenColorNum = ConsoleColor.G;
-                    BlueColorNum = ConsoleColor.B;
+                    var ConsoleColor = new Color((ConsoleColors)Convert.ToInt32(UserColor.PlainSequence));
+                    RedColorNum = ConsoleColor.RGB.R;
+                    GreenColorNum = ConsoleColor.RGB.G;
+                    BlueColorNum = ConsoleColor.RGB.B;
                 }
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
             }

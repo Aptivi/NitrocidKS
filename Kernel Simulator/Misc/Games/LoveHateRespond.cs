@@ -26,6 +26,7 @@ using KS.Languages;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 using KS.Misc.Writers.FancyWriters;
+using Textify.Data.Analysis.NameGen;
 
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
@@ -43,8 +44,6 @@ using KS.Misc.Writers.FancyWriters;
 // 
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-using Textify.NameGen;
 
 namespace KS.Misc.Games
 {
