@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#    Kernel Simulator  Copyright (C) 2018-2021  EoflaOE
+#    Kernel Simulator  Copyright (C) 2018-2021  Aptivi
 #
 #    This file is part of Kernel Simulator
 #
@@ -18,7 +18,7 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 # This script builds KS and packs the artifacts. Use when you have MSBuild installed.
-ksversion=$(cat version)
+ksversion=$(grep "<Version>" ../Directory.Build.props | cut -d "<" -f 2 | cut -d ">" -f 2)
 
 # Check for dependencies
 zippath=`which zip`
@@ -26,20 +26,26 @@ if [ ! $? == 0 ]; then
 	echo zip is not found.
 	exit 1
 fi
+shapath=`which sha256sum`
+if [ ! $? == 0 ]; then
+	echo sha256sum is not found.
+	exit 1
+fi
 
 # Pack binary
 echo Packing binary...
-find . -type f -iname \*.nupkg -delete >> ~/tmp/buildandpack.log
 (cd "../Kernel Simulator/KSBuild/net48/" && "$zippath" -r /tmp/$ksversion-bin.zip . && cd -) >> ~/tmp/buildandpack.log
 (cd "../Kernel Simulator/KSBuild/net8.0/" && "$zippath" -r /tmp/$ksversion-bin-dotnet.zip . && cd -) >> ~/tmp/buildandpack.log
 if [ ! $? == 0 ]; then
-	echo Packing using zip failed.
+	echo Packing failed.
 	exit 1
 fi
 
 # Inform success
-mv ~/tmp/$ksversion-bin.zip .
-mv ~/tmp/$ksversion-bin-dotnet.zip .
+"$shapath" /tmp/$ksversion-bin.zip >> hashsums.txt
+"$shapath" /tmp/$ksversion-bin-dotnet.zip >> hashsums.txt
+mv /tmp/$ksversion-bin.zip .
+mv /tmp/$ksversion-bin-dotnet.zip .
 cp "../Kernel Simulator/KSBuild/net48/Kernel Simulator.pdb" ./$ksversion.pdb
 cp "../Kernel Simulator/KSBuild/net8.0/Kernel Simulator.pdb" ./$ksversion-dotnet.pdb
 echo Build and pack successful.

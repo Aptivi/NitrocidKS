@@ -1,10 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  
   <!-- KS NuGet Information -->
   <PropertyGroup>
     <PackageId>KS</PackageId>
-    <PackageId Condition=" '$(Configuration)' == 'Debug-dotnet' ">KS.CoreCLR</PackageId>
-    <PackageId Condition=" '$(Configuration)' == 'Release-dotnet' ">KS.CoreCLR</PackageId>
     <Authors>Aptivi</Authors>
     <Title>Kernel Simulator</Title>
     <PackageDescription>Simulates our future-planned kernel</PackageDescription>
@@ -17,67 +14,27 @@
     <!-- MSBuild Tags -->
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <PackageOutputPath>KSBuild</PackageOutputPath>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <!-- Repository set up -->
     <RepositoryUrl>https://github.com/Aptivi/NitrocidKS.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Configurations>Debug;Release;Debug-dotnet;Release-dotnet</Configurations>
   </PropertyGroup>
   <!-- KS NuGet Information End -->
   
   <!-- KS General Information -->
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <RootNamespace>KS</RootNamespace>
-    <LangVersion>latest</LangVersion>
-    <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7597F9F2-0F39-0DCC-174A-3474E5335CC6}</ProjectGuid>
-    <StartupObject>KS.Kernel.Kernel</StartupObject>
     <AssemblyName>Kernel Simulator</AssemblyName>
     <Description>Simulates our future kernel</Description>
-    <Copyright>Copyright © Aptivi 2018 - 2022</Copyright>
-    <MyType Condition="'$(TargetFramework)' == 'net48'">Console</MyType>
     <OutputPath>KSBuild\</OutputPath>
     <ApplicationIcon>OfficialAppIcon-KernelSimulator-256.ico</ApplicationIcon>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <Version>0.0.24.24</Version>
-    <PackageVersion>0.0.24.24</PackageVersion>
-    <FileVersion>2.1.24.24</FileVersion>
     <DebugSymbols>true</DebugSymbols>
-    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <!-- KS General Information End -->
-
-  <!-- KS Platform Information -->
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <TargetFramework>net48</TargetFramework>
-    <DebugType>portable</DebugType>
-    <Optimize>false</Optimize>
-    <DefineConstants>TRACE;DEBUG;SPECIFIERDEV</DefineConstants>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-dotnet|AnyCPU'">
-    <TargetFramework>net8.0</TargetFramework>
-    <DebugType>portable</DebugType>
-    <Optimize>false</Optimize>
-    <DefineConstants>TRACE;DEBUG;SPECIFIERDEV</DefineConstants>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
-    <TargetFramework>net48</TargetFramework>
-    <Optimize>true</Optimize>
-    <DebugType>pdbonly</DebugType>
-    <DefineConstants>TRACE;SPECIFIERREL</DefineConstants>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-dotnet|AnyCPU'">
-    <TargetFramework>net8.0</TargetFramework>
-    <Optimize>true</Optimize>
-    <DebugType>pdbonly</DebugType>
-    <DefineConstants>TRACE;SPECIFIERREL</DefineConstants>
-  </PropertyGroup>
-  <!-- KS Platform Information End -->
   
   <!-- KS Dependencies Information -->
   <ItemGroup>
@@ -90,10 +47,6 @@
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0" />
     <PackageReference Include="Nettify" Version="1.1.0.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="NuGet.Build.Tasks.Pack" Version="6.9.1">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
     <PackageReference Include="SharpCompress" Version="0.36.0" />
     <PackageReference Include="SpecProbe" Version="1.4.2" />
     <PackageReference Include="SSH.NET" Version="2023.0.1" />
@@ -104,19 +57,6 @@
     <PackageReference Include="UnitsNet" Version="5.43.0" />
   </ItemGroup>
   <!-- KS Dependencies Information End -->
-  
-  <!-- KS Reference Information -->
-  <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.IO.Compression.FileSystem" />
-    <Reference Include="System.Net" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-  </ItemGroup>
-  <!-- KS Reference Information End -->
   
   <!-- KS Launchers and Manpages -->
   <ItemGroup>
@@ -174,7 +114,7 @@
 
   <!-- KS Manifest -->
   <ItemGroup>
-    <EmbeddedResource Update="My Project\KernelResources.resx">
+    <EmbeddedResource Update="Resources\KernelResources.resx">
       <SubType>Designer</SubType>
       <CustomToolNamespace>KS.Resources</CustomToolNamespace>
       <LastGenOutput>KernelResources.Designer.cs</LastGenOutput>
@@ -182,12 +122,11 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="My Project\KernelResources.Designer.cs">
+    <Compile Update="Resources\KernelResources.Designer.cs">
       <DependentUpon>KernelResources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
   </ItemGroup>
   <!-- KS Manifest End -->
-  
 </Project>

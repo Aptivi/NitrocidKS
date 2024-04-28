@@ -1,6 +1,6 @@
 @echo off
 
-REM    Kernel Simulator  Copyright (C) 2018-2021  EoflaOE
+REM    Kernel Simulator  Copyright (C) 2018-2021  Aptivi
 REM
 REM    This file is part of Kernel Simulator
 REM
@@ -18,14 +18,23 @@ REM    You should have received a copy of the GNU General Public License
 REM    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 REM This script builds KS and packs the artifacts. Use when you have VS installed.
-for /f "tokens=* USEBACKQ" %%f in (`type version`) do set ksversion=%%f
+set releaseconfig=%1
+if "%releaseconfig%" == "" set releaseconfig=Release
+
+set buildoptions=%*
+call set buildoptions=%%buildoptions:*%1=%%
+if "%buildoptions%" == "*=" set buildoptions=
+
+:download
+echo Downloading packages...
+"%ProgramFiles%\dotnet\dotnet.exe" msbuild "..\Kernel Simulator.sln" -t:restore -p:Configuration=%releaseconfig% %buildoptions%
+if %errorlevel% == 0 goto :build
+echo There was an error trying to download packages (%errorlevel%).
+goto :finished
 
 :build
 echo Building Kernel Simulator...
-"%ProgramFiles%\dotnet\dotnet.exe" msbuild "..\Kernel Simulator.sln" -t:restore -p:Configuration=Release-dotnet
-"%ProgramFiles%\dotnet\dotnet.exe" msbuild "..\Kernel Simulator.sln" -p:Configuration=Release-dotnet
-"%ProgramFiles%\dotnet\dotnet.exe" msbuild "..\Kernel Simulator.sln" -t:restore -p:Configuration=Release
-"%ProgramFiles%\dotnet\dotnet.exe" msbuild "..\Kernel Simulator.sln" -p:Configuration=Release
+"%ProgramFiles%\dotnet\dotnet.exe" msbuild "..\Kernel Simulator.sln" -p:Configuration=%releaseconfig% -maxCpuCount:1 %buildoptions%
 if %errorlevel% == 0 goto :success
 echo There was an error trying to build (%errorlevel%).
 goto :finished

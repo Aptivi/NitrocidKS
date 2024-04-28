@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#    Kernel Simulator  Copyright (C) 2018-2022  EoflaOE
+#    Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 #
 #    This file is part of Kernel Simulator
 #
@@ -18,8 +18,6 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 # This script builds KS and packs the artifacts. Use when you have MSBuild installed.
-ksversion=$(cat version)
-
 # Check for dependencies
 msbuildpath=`which docfx`
 if [ ! $? == 0 ]; then
@@ -29,7 +27,7 @@ fi
 
 # Build KS
 echo Building KS documentation...
-docfx DocGen/docfx.json
+docfx ../DocGen/docfx.json
 if [ ! $? == 0 ]; then
 	echo Build failed.
 	exit 1

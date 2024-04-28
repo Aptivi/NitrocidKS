@@ -7,27 +7,19 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-      with:
-        ref: ${{ github.ref }}
-    - name: NuGet Installation
-      uses: nuget/setup-nuget@v1
-      with: 
-        nuget-version: "latest"
-    - name: MSBuild Installation
-      uses: microsoft/setup-msbuild@v1.3
-    - name: Dependency Restoration
-      run: msbuild "Kernel Simulator.sln" -t:restore -p:Configuration=Release
-    - name: Solution Compilation
-      run: msbuild "Kernel Simulator.sln" -p:Configuration=Release
-    - name: NuGet Preparation
-      run: nuget setApiKey ${{ secrets.NUGET_APIKEY }}
-    - name: Package Publication
-      run: |
-        $path = "Kernel Simulator\KSBuild"
-        $FileName = Get-ChildItem -Path $path -Recurse -Name -Filter "*symbols*"
-        nuget push "$path\$FileName" -source "nuget.org"
-        
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Solution Compilation
+        run: make
+      - name: Package Publication
+        run: |
+          chmod +x tools/*.sh
+          cd tools ; NUGET_APIKEY=${{ secrets.NUGET_APIKEY }} ./push.sh ; cd ..

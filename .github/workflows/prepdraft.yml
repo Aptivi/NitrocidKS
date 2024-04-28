@@ -8,7 +8,7 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
@@ -19,16 +19,15 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: '8.0.x'
-    - name: Setup docfx
-      uses: crazy-max/ghaction-chocolatey@v3
-      with:
-        args: install docfx
+    - name: Setup DocFX
+      run: dotnet tool install --global docfx
     - name: Release Asset Preparation
       run: |
-        cd tools ; ./build.cmd ; cd ..
-        cd tools ; ./pack.cmd ; cd ..
-        cd tools ; ./docgen.cmd ; cd ..
-        cd tools ; ./docgen-pack.cmd ; cd ..
+        chmod +x tools/*.sh
+        make
+        cd tools ; ./pack.sh ; cd ..
+        make doc
+        cd tools ; ./docgen-pack.sh ; cd ..
     - name: Release Draft Making
       uses: softprops/action-gh-release@v1
       with:
@@ -36,3 +35,5 @@ jobs:
         draft: true
         files: |
           tools/*.zip
+          tools/*.pdb
+          tools/hashsums.txt
