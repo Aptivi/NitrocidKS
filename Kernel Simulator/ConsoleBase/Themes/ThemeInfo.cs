@@ -202,7 +202,7 @@ namespace KS.ConsoleBase.Themes
         /// </summary>
         /// <param name="ThemeResourceName">Theme name (must match resource name)</param>
         public ThemeInfo(string ThemeResourceName) :
-            this(JToken.Parse(KernelResources.ResourceManager.GetString(ThemeResourceName)))
+            this(JToken.Parse(ResourcesManager.GetData($"{ThemeResourceName}.json", ResourcesType.Themes)))
         { }
 
         /// <summary>

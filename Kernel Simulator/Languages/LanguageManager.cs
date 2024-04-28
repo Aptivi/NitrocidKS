@@ -63,7 +63,7 @@ namespace KS.Languages
         internal static Dictionary<string, LanguageInfo> BaseLanguages = [];
         internal static Dictionary<string, LanguageInfo> CustomLanguages = [];
         private static bool NotifyCodepageError;
-        private static readonly JToken LanguageMetadata = JToken.Parse(KernelResources.LanguageMetadata);
+        private static readonly JToken LanguageMetadata = JToken.Parse(ResourcesManager.GetData("Kernel_Simulator.Metadata.json", ResourcesType.Misc));
 
         /// <summary>
         /// The installed languages list.

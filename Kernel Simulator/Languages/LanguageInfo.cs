@@ -80,7 +80,7 @@ namespace KS.Languages
         public LanguageInfo(string LangName, string FullLanguageName, bool Transliterable)
         {
             // Check to see if the language being installed is found in resources
-            if (!string.IsNullOrEmpty(KernelResources.ResourceManager.GetString(LangName.Replace("-", "_"))))
+            if (ResourcesManager.DataExists($"{LangName}.json", ResourcesType.Languages, out string langData))
             {
                 // Install values to the object instance
                 ThreeLetterLanguageName = LangName;
@@ -103,7 +103,7 @@ namespace KS.Languages
                 this.Cultures = Cultures;
 
                 // Get instance of langauge resource and install it
-                JObject LanguageResource = (JObject)JObject.Parse(KernelResources.ResourceManager.GetString(LangName.Replace("-", "_"))).SelectToken("Localizations");
+                JObject LanguageResource = (JObject)JObject.Parse(langData).SelectToken("Localizations");
                 this.LanguageResource = LanguageResource;
                 Custom = false;
             }
@@ -142,7 +142,7 @@ namespace KS.Languages
             this.Cultures = Cultures;
 
             // Install it
-            int EnglishLength = JObject.Parse(KernelResources.eng).SelectToken("Localizations").Count();
+            int EnglishLength = JObject.Parse(ResourcesManager.GetData("eng.json", ResourcesType.Languages)).SelectToken("Localizations").Count();
             Custom = true;
             if (LanguageToken.Count == EnglishLength)
             {

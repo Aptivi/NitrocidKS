@@ -60,7 +60,7 @@ namespace KSTests.Languages
         [Description("Initialization")]
         public void TestPrepareDictForOneLanguage()
         {
-            int ExpectedLength = JObject.Parse(KernelResources.spa).SelectToken("Localizations").Count();
+            int ExpectedLength = JObject.Parse(ResourcesManager.GetData("spa.json", ResourcesType.Languages)).SelectToken("Localizations").Count();
             int ActualLength = Translate.PrepareDict("spa").Values.Count;
             ActualLength.ShouldBe(ExpectedLength);
         }
@@ -74,7 +74,7 @@ namespace KSTests.Languages
         {
             foreach (string Lang in LanguageManager.Languages.Keys)
             {
-                int ExpectedLength = JObject.Parse(KernelResources.ResourceManager.GetString(Lang.Replace("-", "_"))).SelectToken("Localizations").Count();
+                int ExpectedLength = JObject.Parse(ResourcesManager.GetData($"{Lang}.json", ResourcesType.Languages)).SelectToken("Localizations").Count();
                 int ActualLength = Translate.PrepareDict(Lang).Values.Count;
                 ActualLength.ShouldBe(ExpectedLength, $"Lang: {Lang}");
             }

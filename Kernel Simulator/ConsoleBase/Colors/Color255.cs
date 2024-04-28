@@ -37,8 +37,8 @@ using System;
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 using System.Runtime.InteropServices;
-using KS.Misc.Writers.DebugWriters;
 using KS.Resources;
+using KS.Misc.Writers.DebugWriters;
 using Newtonsoft.Json.Linq;
 
 namespace KS.ConsoleBase.Colors
@@ -49,7 +49,7 @@ namespace KS.ConsoleBase.Colors
         /// <summary>
         /// The 255 console colors data JSON token to get information about these colors
         /// </summary>
-        public static readonly JToken ColorDataJson = JToken.Parse(KernelResources.ConsoleColorsData);
+        public static readonly JToken ColorDataJson = JToken.Parse(ResourcesManager.GetData("ConsoleColorsData.json", ResourcesType.Data));
 
         /// <summary>
         /// [Windows] Sets console mode

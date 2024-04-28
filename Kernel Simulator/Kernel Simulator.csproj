@@ -104,19 +104,10 @@
 
   <!-- KS Manifest -->
   <ItemGroup>
-    <EmbeddedResource Update="Resources\KernelResources.resx">
-      <SubType>Designer</SubType>
-      <CustomToolNamespace>KS.Resources</CustomToolNamespace>
-      <LastGenOutput>KernelResources.Designer.cs</LastGenOutput>
-      <Generator>PublicResXFileCodeGenerator</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Update="Resources\KernelResources.Designer.cs">
-      <DependentUpon>KernelResources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-    </Compile>
+    <EmbeddedResource Include="Resources\Languages\*.json" />
+    <EmbeddedResource Include="Resources\Themes\*.json" />
+    <EmbeddedResource Include="Resources\Data\*.json" />
+    <EmbeddedResource Include="..\KSJsonifyLocales\Translations\Metadata.json" />
   </ItemGroup>
   <!-- KS Manifest End -->
 </Project>

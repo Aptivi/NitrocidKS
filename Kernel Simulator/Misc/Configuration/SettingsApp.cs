@@ -18,28 +18,9 @@
 //
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-
-// Kernel Simulator  Copyright (C) 2018-2022  Aptivi
-// 
-// This file is part of Kernel Simulator
-// 
-// Kernel Simulator is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-// 
-// Kernel Simulator is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-// 
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 using System.Reflection;
 using System.Text.RegularExpressions;
 using KS.ConsoleBase.Colors;
@@ -1054,9 +1035,9 @@ namespace KS.Misc.Configuration
         /// </summary>
         public static Dictionary<string, bool> CheckSettingsVariables()
         {
-            var SettingsToken = JToken.Parse(KernelResources.SettingsEntries);
-            var SaverSettingsToken = JToken.Parse(KernelResources.ScreensaverSettingsEntries);
-            var SplashSettingsToken = JToken.Parse(KernelResources.SplashSettingsEntries);
+            var SettingsToken = JToken.Parse(ResourcesManager.GetData("SettingsEntries.json", ResourcesType.Data));
+            var SaverSettingsToken = JToken.Parse(ResourcesManager.GetData("ScreensaverSettingsEntries.json", ResourcesType.Data));
+            var SplashSettingsToken = JToken.Parse(ResourcesManager.GetData("SplashSettingsEntries.json", ResourcesType.Data));
             JToken[] Tokens = [SettingsToken, SaverSettingsToken, SplashSettingsToken];
             var Results = new Dictionary<string, bool>();
 
@@ -1112,20 +1093,20 @@ namespace KS.Misc.Configuration
             {
                 case SettingsType.Normal:
                     {
-                        return JToken.Parse(KernelResources.SettingsEntries);
+                        return JToken.Parse(ResourcesManager.GetData("SettingsEntries.json", ResourcesType.Data));
                     }
                 case SettingsType.Screensaver:
                     {
-                        return JToken.Parse(KernelResources.ScreensaverSettingsEntries);
+                        return JToken.Parse(ResourcesManager.GetData("ScreensaverSettingsEntries.json", ResourcesType.Data));
                     }
                 case SettingsType.Splash:
                     {
-                        return JToken.Parse(KernelResources.SplashSettingsEntries);
+                        return JToken.Parse(ResourcesManager.GetData("SplashSettingsEntries.json", ResourcesType.Data));
                     }
 
                 default:
                     {
-                        return JToken.Parse(KernelResources.SettingsEntries);
+                        return JToken.Parse(ResourcesManager.GetData("SettingsEntries.json", ResourcesType.Data));
                     }
             }
         }
