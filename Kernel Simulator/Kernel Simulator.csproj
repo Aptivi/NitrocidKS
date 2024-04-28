@@ -59,9 +59,6 @@
   
   <!-- KS Launchers and Manpages -->
   <ItemGroup>
-    <None Include="ks-converter.1">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="ks-jl.1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -69,12 +66,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="ks-jl.sh">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="ks-converter.cmd">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="ks-converter.sh">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="ks.1">
