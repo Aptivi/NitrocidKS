@@ -34,8 +34,8 @@ fi
 
 # Pack binary
 echo Packing binary...
-(cd "../Kernel Simulator/KSBuild/net48/" && "$zippath" -r /tmp/$ksversion-bin.zip . && cd -) >> ~/tmp/buildandpack.log
-(cd "../Kernel Simulator/KSBuild/net8.0/" && "$zippath" -r /tmp/$ksversion-bin-dotnet.zip . && cd -) >> ~/tmp/buildandpack.log
+cd "../Kernel Simulator/KSBuild/net48/" && "$zippath" -r /tmp/$ksversion-bin.zip . && cd -
+cd "../Kernel Simulator/KSBuild/net8.0/" && "$zippath" -r /tmp/$ksversion-bin-dotnet.zip . && cd -
 if [ ! $? == 0 ]; then
 	echo Packing failed.
 	exit 1

@@ -22,8 +22,8 @@ for /f "tokens=1 delims=<" %%a in ("%MIDVER:~9%") do (set ksversion=%%a)
 
 :packbin
 echo Packing binary...
-"%ProgramFiles%\7-Zip\7z.exe" a -tzip %temp%/%ksversion%-bin.zip "..\Kernel Simulator\KSBuild\net48\*" >> %temp%/buildandpack.log 2>&1
-"%ProgramFiles%\7-Zip\7z.exe" a -tzip %temp%/%ksversion%-bin-dotnet.zip "..\Kernel Simulator\KSBuild\net8.0\*" >> %temp%/buildandpack.log 2>&1
+"%ProgramFiles%\7-Zip\7z.exe" a -tzip %temp%/%ksversion%-bin.zip "..\Kernel Simulator\KSBuild\net48\*"
+"%ProgramFiles%\7-Zip\7z.exe" a -tzip %temp%/%ksversion%-bin-dotnet.zip "..\Kernel Simulator\KSBuild\net8.0\*"
 if %errorlevel% == 0 goto :complete
 echo There was an error trying to pack binary (%errorlevel%).
 goto :finished
