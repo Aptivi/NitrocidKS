@@ -119,7 +119,7 @@
                 "Name": "Banner figlet font",
                 "Type": "SString",
                 "Variable": "BannerFigletFont",
-                "Description": "Write a figlet font that is supported by the Figgle library. Consult the library documentation for more information"
+                "Description": "Write a figlet font that is supported by the Figletize library. Consult the library documentation for more information"
             },
             {
                 "Name": "Simulate No APM Mode",
@@ -1127,7 +1127,7 @@
                 "Name": "Figlet font for timer",
                 "Type": "SString",
                 "Variable": "TimerFigletFont",
-                "Description": "Write a figlet font that is supported by the Figgle library. Consult the library documentation for more information"
+                "Description": "Write a figlet font that is supported by the Figletize library. Consult the library documentation for more information"
             },
             {
                 "Name": "Show the commands count on help",

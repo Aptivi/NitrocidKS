@@ -36,7 +36,7 @@
 
 using System;
 using System.Reflection;
-using Figgle;
+using Figletize;
 using KS.Languages;
 using KS.Misc.Reflection;
 using NUnit.Framework;
@@ -100,7 +100,7 @@ namespace KSTests.Misc
         [Description("Management")]
         public void TestGetProperties()
         {
-            var Properties = PropertyManager.GetProperties(typeof(FiggleFonts));
+            var Properties = PropertyManager.GetProperties(typeof(FigletizeFonts));
             Properties.ShouldNotBeNull();
             Properties.ShouldNotBeEmpty();
         }
@@ -112,7 +112,7 @@ namespace KSTests.Misc
         [Description("Management")]
         public void TestGetPropertiesNoEvaluation()
         {
-            var Properties = PropertyManager.GetPropertiesNoEvaluation(typeof(FiggleFonts));
+            var Properties = PropertyManager.GetPropertiesNoEvaluation(typeof(FigletizeFonts));
             Properties.ShouldNotBeNull();
             Properties.ShouldNotBeEmpty();
         }
