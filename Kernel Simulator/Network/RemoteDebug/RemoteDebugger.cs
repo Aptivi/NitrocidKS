@@ -237,23 +237,26 @@ namespace KS.Network.RemoteDebug
         {
             while (!RDebugStopping)
             {
-                for (int DeviceIndex = 0, loopTo = DebugDevices.Count - 1; DeviceIndex <= loopTo; DeviceIndex++)
+                for (int DeviceIndex = 0; DeviceIndex <= DebugDevices.Count - 1; DeviceIndex++)
                 {
+                    var device = DebugDevices[DeviceIndex];
                     try
                     {
                         Thread.Sleep(1);
 
                         // Variables
                         var MessageBuffer = new byte[65537];
-                        var SocketStream = new NetworkStream(DebugDevices[DeviceIndex].ClientSocket);
-                        var SocketStreamWriter = DebugDevices[DeviceIndex].ClientStreamWriter;
-                        string SocketIP = DebugDevices[DeviceIndex].ClientIP;
-                        string SocketName = DebugDevices[DeviceIndex].ClientName;
-
-                        // Set the timeout of ten milliseconds to ensure that no device "take turns in messaging"
-                        SocketStream.ReadTimeout = 10;
+                        var SocketStream = new NetworkStream(device.ClientSocket);
+                        var SocketStreamWriter = device.ClientStreamWriter;
+                        string SocketIP = device.ClientIP;
+                        string SocketName = device.ClientName;
 
                         // Read a message from the stream
+                        if (!SocketStream.DataAvailable)
+                            if (device.ClientSocket.Connected)
+                                continue;
+                            else
+                                break;
                         SocketStream.Read(MessageBuffer, 0, 65536);
                         string Message = System.Text.Encoding.Default.GetString(MessageBuffer);
 
@@ -336,7 +339,7 @@ namespace KS.Network.RemoteDebug
                             {
                                 if (DebugDevices.Count > DeviceIndex)
                                 {
-                                    string SocketIP = DebugDevices[DeviceIndex]?.ClientIP;
+                                    string SocketIP = device?.ClientIP;
                                     DebugWriter.Wdbg(DebugLevel.E, "Error from host {0}: {1}", SocketIP, SE.SocketErrorCode.ToString());
                                     DebugWriter.WStkTrc(ex);
                                 }
