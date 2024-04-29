@@ -21,24 +21,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-
-// Kernel Simulator  Copyright (C) 2018-2022  Aptivi
-// 
-// This file is part of Kernel Simulator
-// 
-// Kernel Simulator is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-// 
-// Kernel Simulator is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-// 
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
@@ -67,17 +49,33 @@ namespace KS.Network.RPC
         /// <br/>&lt;Request:Acknowledge&gt;: Pings the remote kernel silently. Usage: &lt;Request:Acknowledge&gt;(IP)
         /// <br/>&lt;Request:Ping&gt;: Pings the remote kernel with notification. Usage: &lt;Request:Ping&gt;(IP)
         /// </summary>
-        private static readonly Dictionary<string, Action<string>> RPCCommandReplyActions = new() { { "Shutdown", (_) => HandleShutdown() }, { "Reboot", (_) => HandleReboot() }, { "RebootSafe", (_) => HandleRebootSafe() }, { "SaveScr", (_) => HandleSaveScr() }, { "Acknowledge", HandleAcknowledge }, { "Ping", HandlePing } };
+        private readonly static List<string> RPCCommandsField =
+        [
+            "Shutdown",
+            "Reboot",
+            "RebootSafe",
+            "SaveScr",
+            "Acknowledge",
+            "Ping"
+        ];
+
+        private readonly static Dictionary<string, Action<string>> RPCCommandReplyActions = new()
+        {
+            { "ShutdownConfirm",    (_)     => HandleShutdown() },
+            { "RebootConfirm",      (_)     => HandleReboot() },
+            { "RebootSafeConfirm",  (_)     => HandleRebootSafe() },
+            { "SaveScrConfirm",     (_)     => HandleSaveScr() },
+            { "AcknowledgeConfirm",            HandleAcknowledge },
+            { "PingConfirm",                   HandlePing },
+        };
 
         /// <summary>
         /// Send an RPC command to another instance of KS using the specified address
         /// </summary>
         /// <param name="Request">A request</param>
         /// <param name="IP">An IP address which the RPC is hosted</param>
-        public static void SendCommand(string Request, string IP)
-        {
+        public static void SendCommand(string Request, string IP) =>
             SendCommand(Request, IP, RemoteProcedure.RPCPort);
-        }
 
         /// <summary>
         /// Send an RPC command to another instance of KS using the specified address
@@ -99,12 +97,13 @@ namespace KS.Network.RPC
                 DebugWriter.Wdbg(DebugLevel.I, "Finished Arg: {0}", Arg);
 
                 // Check the command
-                if (RPCCommandReplyActions.Keys.Any(Cmd.Contains))
+                if (RPCCommandsField.Any(Cmd.Contains))
                 {
-                    // Check the request type
                     DebugWriter.Wdbg(DebugLevel.I, "Command found.");
+
+                    // Check the request type
                     string RequestType = Cmd.Substring(Cmd.IndexOf(":") + 1, Cmd.IndexOf(">"));
-                    byte[] ByteMsg = [];
+                    var ByteMsg = Array.Empty<byte>();
 
                     // Populate the byte message to send the confirmation to
                     DebugWriter.Wdbg(DebugLevel.I, "Stream opened for device {0}", Arg);
@@ -116,10 +115,8 @@ namespace KS.Network.RPC
                     Kernel.Kernel.KernelEventManager.RaiseRPCCommandSent(Cmd, Arg, IP, Port);
                 }
                 else
-                {
                     // Rare case reached. Drop it.
                     DebugWriter.Wdbg(DebugLevel.E, "Malformed request. {0}", Cmd);
-                }
             }
             else
             {
@@ -133,15 +130,15 @@ namespace KS.Network.RPC
         public static void ReceiveCommand()
         {
             var RemoteEndpoint = new IPEndPoint(IPAddress.Any, RemoteProcedure.RPCPort);
-            while (!Flags.RebootRequested)
+            while (!RemoteProcedure.rpcStopping)
             {
                 try
                 {
                     var receiveResult = RemoteProcedure.RPCListen.BeginReceive(new AsyncCallback(AcknowledgeMessage), null);
                     while (!received)
                     {
-                        SpinWait.SpinUntil(new Func<bool>(() => received || Flags.RebootRequested));
-                        if (Flags.RebootRequested)
+                        SpinWait.SpinUntil(() => received || RemoteProcedure.rpcStopping);
+                        if (RemoteProcedure.rpcStopping)
                             break;
                     }
                 }
@@ -165,19 +162,17 @@ namespace KS.Network.RPC
                 }
                 received = false;
             }
+            RemoteProcedure.RPCListen.Close();
         }
 
         private static void AcknowledgeMessage(IAsyncResult asyncResult)
         {
             received = true;
-
-            // Invoke the action based on message
-            Action<string> replyAction = null;
             try
             {
                 if (RemoteProcedure.RPCListen is null || RemoteProcedure.RPCListen.Client is null)
                     return;
-                if (Flags.RebootRequested)
+                if (RemoteProcedure.rpcStopping)
                     return;
                 if (RemoteProcedure.RPCListen.Available == 0)
                     return;
@@ -194,17 +189,14 @@ namespace KS.Network.RPC
                 // If the message is not empty, parse it
                 if (!string.IsNullOrEmpty(Message))
                 {
-                    DebugWriter.Wdbg((DebugLevel)Convert.ToInt32("RPC: Received message {0}"), Message);
+                    DebugWriter.Wdbg(DebugLevel.I, "RPC: Received message {0}", Message);
                     Kernel.Kernel.KernelEventManager.RaiseRPCCommandReceived(Message, endpoint.Address.ToString(), endpoint.Port);
 
-                    if (RPCCommandReplyActions.TryGetValue(Cmd, out replyAction))
-                    {
+                    // Invoke the action based on message
+                    if (RPCCommandReplyActions.TryGetValue(Cmd, out Action<string> replyAction))
                         replyAction.Invoke(Arg);
-                    }
                     else
-                    {
                         DebugWriter.Wdbg(DebugLevel.W, "Not found. Message was {0}", Message);
-                    }
                 }
             }
             catch (Exception ex)
