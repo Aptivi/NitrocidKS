@@ -20,7 +20,6 @@
 using System;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using static System.Reflection.Assembly;
 using System.Threading;
 using KS.Arguments.ArgumentBase;
@@ -80,14 +79,8 @@ namespace KS.Kernel
 #endif
 #if SPECIFIERREL
         internal readonly static string ConsoleTitle = $"Kernel Simulator v{KernelVersion} - {KernelSimulatorMoniker}";
-#elif SPECIFIERRC
-        internal readonly static string ConsoleTitle = $"Kernel Simulator v{KernelVersion} - {KernelSimulatorMoniker} - Release Candidate";
 #elif SPECIFIERDEV
-#if MILESTONE
-        internal readonly static string ConsoleTitle = $"Kernel Simulator v{KernelVersion} - {KernelSimulatorMoniker} - Developer Preview - Milestone 1";
-#else
         internal static readonly string ConsoleTitle = $"Kernel Simulator v{KernelVersion} - {KernelSimulatorMoniker} - Developer Preview";
-#endif
 #else
         internal readonly static string ConsoleTitle = $"Kernel Simulator v{KernelVersion} - {KernelSimulatorMoniker} - Unsupported Release";
 #endif

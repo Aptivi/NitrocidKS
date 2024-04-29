@@ -22,24 +22,6 @@ using System.Data;
 using System.Diagnostics;
 using System.Linq;
 using System.Net;
-
-// Kernel Simulator  Copyright (C) 2018-2022  Aptivi
-// 
-// This file is part of Kernel Simulator
-// 
-// Kernel Simulator is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-// 
-// Kernel Simulator is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-// 
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 using System.Net.Security;
 using FluentFTP;
 using KS.ConsoleBase.Colors;
@@ -141,7 +123,7 @@ namespace KS.Network.FTP
 
                     // Add handler for SSL validation
                     if (FTPShellCommon.FtpTryToValidateCertificate)
-                        FTPShellCommon.ClientFTP.ValidateCertificate += new FtpSslValidation((ctrl, e) => TryToValidate((FtpClient)ctrl, e));
+                        FTPShellCommon.ClientFTP.ValidateCertificate += new FtpSslValidation((ctrl, e) => TryToValidate(e));
 
                     // Prompt for username
                     if (!string.IsNullOrWhiteSpace(FTPShellCommon.FtpUserPromptStyle))
@@ -285,7 +267,7 @@ namespace KS.Network.FTP
         /// <summary>
         /// Tries to validate certificate
         /// </summary>
-        public static void TryToValidate(FtpClient control, FtpSslValidationEventArgs e)
+        public static void TryToValidate(FtpSslValidationEventArgs e)
         {
             DebugWriter.Wdbg(DebugLevel.I, "Certificate checks");
             if (e.PolicyErrors == SslPolicyErrors.None)

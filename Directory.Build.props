@@ -40,9 +40,6 @@
       Possible specifiers (NitrocidReleaseSpecifier):
           - REL: Final release
           - DEV: Developer preview
-          - ALPHA: Alpha release
-          - BETA: Beta release
-          - RC: Release candidate
 
     -->
     <PropertyGroup>

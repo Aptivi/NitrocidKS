@@ -19,7 +19,6 @@
 
 using System;
 using System.Collections;
-using System.Security.Principal;
 using KS.ConsoleBase.Colors;
 using KS.Kernel;
 using KS.Languages;
