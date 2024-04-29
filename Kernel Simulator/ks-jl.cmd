@@ -19,4 +19,5 @@ REM    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 REM This script runs Kernel Simulator JL. This is a shortcut for running
 REM KS-JL so that you don't have to write the full name of the executable.
-"KSJsonifyLocales.exe" %*
+set ROOTPATH=%~dp0
+dotnet "%ROOTPATH%KSJsonifyLocales.dll" %*
