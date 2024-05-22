@@ -22,6 +22,8 @@ using System.Diagnostics;
 using System.Linq;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
+using KS.Misc.Execution;
+using KS.Misc.Platform;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Shell.Commands
@@ -32,14 +34,16 @@ namespace KS.Shell.Commands
         public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
         {
             bool ModDocumentation = ListSwitchesOnly.Contains("-modapi");
-            if (ModDocumentation)
-            {
-                Process.Start("https://aptivi.github.io/Kernel-Simulator");
-            }
+            string link =
+                ModDocumentation ?
+                "https://aptivi.github.io/Kernel-Simulator" :
+                "https://aptivi.gitbook.io/nitrocid-ks-manual";
+            if (PlatformDetector.IsOnWindows())
+                ProcessExecutor.ExecuteProcess("cmd.exe", $"/c \"start {link}\"");
+            else if (PlatformDetector.IsOnMacOS())
+                ProcessExecutor.ExecuteProcess("open", link);
             else
-            {
-                Process.Start("https://github.com/Aptivi/NitrocidKS/wiki");
-            }
+                ProcessExecutor.ExecuteProcess("xdg-open", link);
         }
 
         public override void HelpHelper()

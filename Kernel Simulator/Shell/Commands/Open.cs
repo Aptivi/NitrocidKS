@@ -17,7 +17,8 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using System.Diagnostics;
+using KS.Misc.Execution;
+using KS.Misc.Platform;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Shell.Commands
 {
@@ -26,7 +27,12 @@ namespace KS.Shell.Commands
 
         public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
         {
-            Process.Start(ListArgsOnly[0]);
+            if (PlatformDetector.IsOnWindows())
+                ProcessExecutor.ExecuteProcess("cmd.exe", $"/c \"start {ListArgsOnly[0]}\"");
+            else if (PlatformDetector.IsOnMacOS())
+                ProcessExecutor.ExecuteProcess("open", ListArgsOnly[0]);
+            else
+                ProcessExecutor.ExecuteProcess("xdg-open", ListArgsOnly[0]);
         }
 
     }

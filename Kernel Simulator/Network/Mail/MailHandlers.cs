@@ -22,7 +22,9 @@ using System.Diagnostics;
 using System.Linq;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
+using KS.Misc.Execution;
 using KS.Misc.Notifiers;
+using KS.Misc.Platform;
 using KS.Misc.Text;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
@@ -58,7 +60,12 @@ namespace KS.Network.Mail
             DebugWriter.Wdbg(DebugLevel.I, "WebAlert URI: {0}", e.WebUri.AbsoluteUri);
             TextWriterColor.Write(e.Message, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
             TextWriterColor.Write(Translate.DoTranslation("Opening URL... Make sure to follow the steps shown on the screen."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-            Process.Start(e.WebUri.AbsoluteUri).WaitForExit();
+            if (PlatformDetector.IsOnWindows())
+                ProcessExecutor.ExecuteProcess("cmd.exe", $"/c \"start {e.WebUri.AbsoluteUri}\"");
+            else if (PlatformDetector.IsOnMacOS())
+                ProcessExecutor.ExecuteProcess("open", e.WebUri.AbsoluteUri);
+            else
+                ProcessExecutor.ExecuteProcess("xdg-open", e.WebUri.AbsoluteUri);
         }
 
         /// <summary>

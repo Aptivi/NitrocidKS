@@ -21,6 +21,8 @@ using System;
 using System.Diagnostics;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
+using KS.Misc.Execution;
+using KS.Misc.Platform;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
@@ -40,7 +42,12 @@ namespace KS.Network.RSS.Commands
             else if (!string.IsNullOrWhiteSpace(RSSShellCommon.RSSFeedInstance.FeedArticles[ArticleIndex].ArticleLink))
             {
                 DebugWriter.Wdbg(DebugLevel.I, "Opening web browser to {0}...", RSSShellCommon.RSSFeedInstance.FeedArticles[ArticleIndex].ArticleLink);
-                Process.Start(RSSShellCommon.RSSFeedInstance.FeedArticles[ArticleIndex].ArticleLink);
+                if (PlatformDetector.IsOnWindows())
+                    ProcessExecutor.ExecuteProcess("cmd.exe", $"/c \"start {RSSShellCommon.RSSFeedInstance.FeedArticles[ArticleIndex].ArticleLink}\"");
+                else if (PlatformDetector.IsOnMacOS())
+                    ProcessExecutor.ExecuteProcess("open", RSSShellCommon.RSSFeedInstance.FeedArticles[ArticleIndex].ArticleLink);
+                else
+                    ProcessExecutor.ExecuteProcess("xdg-open", RSSShellCommon.RSSFeedInstance.FeedArticles[ArticleIndex].ArticleLink);
             }
             else
             {
