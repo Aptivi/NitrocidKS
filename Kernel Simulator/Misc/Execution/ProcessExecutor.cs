@@ -19,15 +19,13 @@
 
 using System;
 using System.Diagnostics;
-using System.Linq;
 using System.Reflection;
-
+using System.Text;
 using System.Threading;
 using KS.ConsoleBase.Colors;
 using KS.Files.Folders;
 using KS.Kernel;
 using KS.Languages;
-using KS.Misc.Threading;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 
@@ -36,38 +34,11 @@ namespace KS.Misc.Execution
     public static class ProcessExecutor
     {
 
-        internal static string ProcessData = "";
-        internal static bool NewDataSpotted;
-        internal static KernelThread NewDataDetector = new("New data detection for process", false, DetectNewData);
-
-        /// <summary>
-        /// Thread parameters for ExecuteProcess()
-        /// </summary>
-        internal class ExecuteProcessThreadParameters
-        {
-            /// <summary>
-            /// Full path to file
-            /// </summary>
-            internal string File;
-            /// <summary>
-            /// Arguments, if any
-            /// </summary>
-            internal string Args;
-
-            internal ExecuteProcessThreadParameters(string File, string Args)
-            {
-                this.File = File;
-                this.Args = Args;
-            }
-        }
-
         /// <summary>
         /// Executes a file with specified arguments
         /// </summary>
-        internal static void ExecuteProcess(ExecuteProcessThreadParameters ThreadParams)
-        {
+        internal static void ExecuteProcess(ExecuteProcessThreadParameters ThreadParams) =>
             ExecuteProcess(ThreadParams.File, ThreadParams.Args);
-        }
 
         /// <summary>
         /// Executes a file with specified arguments
@@ -75,21 +46,21 @@ namespace KS.Misc.Execution
         /// <param name="File">Full path to file</param>
         /// <param name="Args">Arguments, if any</param>
         /// <returns>Application exit code. -1 if internal error occurred.</returns>
-        public static int ExecuteProcess(string File, string Args)
-        {
-            return ExecuteProcess(File, Args, CurrentDirectory.CurrentDir);
-        }
+        public static int ExecuteProcess(string File, string Args) =>
+            ExecuteProcess(File, Args, CurrentDirectory.CurrentDir);
 
         /// <summary>
         /// Executes a file with specified arguments
         /// </summary>
         /// <param name="File">Full path to file</param>
         /// <param name="Args">Arguments, if any</param>
+        /// <param name="WorkingDirectory">Specifies the working directory</param>
         /// <returns>Application exit code. -1 if internal error occurred.</returns>
         public static int ExecuteProcess(string File, string Args, string WorkingDirectory)
         {
             try
             {
+                bool HasProcessExited = false;
                 var CommandProcess = new Process();
                 var CommandProcessStart = new ProcessStartInfo()
                 {
@@ -104,56 +75,202 @@ namespace KS.Misc.Execution
                     UseShellExecute = false
                 };
                 CommandProcess.StartInfo = CommandProcessStart;
+                CommandProcess.EnableRaisingEvents = true;
                 CommandProcess.OutputDataReceived += ExecutableOutput;
                 CommandProcess.ErrorDataReceived += ExecutableOutput;
+                CommandProcess.Exited += (sender, args) => HasProcessExited = true;
 
                 // Start the process
-                DebugWriter.Wdbg(DebugLevel.I, "Starting...");
+                DebugWriter.Wdbg(DebugLevel.I, "Starting process {0} with working directory {1} and arguments {2}...", File, WorkingDirectory, Args);
                 CommandProcess.Start();
                 CommandProcess.BeginOutputReadLine();
                 CommandProcess.BeginErrorReadLine();
-                NewDataDetector.Start();
 
                 // Wait for process exit
-                while (!CommandProcess.HasExited | !Flags.CancelRequested)
+                while (!HasProcessExited | !Flags.CancelRequested)
                 {
-                    if (CommandProcess.HasExited)
+                    if (HasProcessExited)
                     {
+                        DebugWriter.Wdbg(DebugLevel.W, "Process exited! Output may not be complete!");
+                        CommandProcess.WaitForExit();
+                        DebugWriter.Wdbg(DebugLevel.I, "Flushed as much as possible.");
                         break;
                     }
                     else if (Flags.CancelRequested)
                     {
+                        DebugWriter.Wdbg(DebugLevel.W, "Process killed! Output may not be complete!");
                         CommandProcess.Kill();
+                        CommandProcess.WaitForExit();
+                        DebugWriter.Wdbg(DebugLevel.I, "Flushed as much as possible.");
                         break;
                     }
                 }
-
-                // Wait until no more data is entered
-                while (NewDataSpotted)
-                {
-                }
-
-                // Stop the new data detector
-                NewDataDetector.Stop();
-                ProcessData = "";
-
-                // Assume that we've spotted new data. This is to avoid race conditions happening sometimes if the processes are exited while output is still going.
-                // This is a workaround for some commands like netstat.exe that don't work with normal workarounds shown below.
-                NewDataSpotted = true;
+                DebugWriter.Wdbg(DebugLevel.I, "Process exited with exit code {0}.", CommandProcess.ExitCode);
                 return CommandProcess.ExitCode;
             }
             catch (ThreadInterruptedException)
             {
                 Flags.CancelRequested = false;
-                return -1;
+                return default;
+            }
+            catch (Exception ex)
+            {
+                DebugWriter.Wdbg(DebugLevel.E, "Process error for {0}, {1}, {2}: {3}.", File, WorkingDirectory, Args, ex.Message);
+                DebugWriter.WStkTrc(ex);
+                TextWriterColor.Write(Translate.DoTranslation("Error trying to execute command") + " {2}.\n" + Translate.DoTranslation("Error {0}: {1}"), true, KernelColorTools.ColTypes.Error, ex.GetType().FullName, ex.Message, File);
+            }
+            return -1;
+        }
+
+        /// <summary>
+        /// Executes a file with specified arguments and puts the output to the string
+        /// </summary>
+        /// <param name="File">Full path to file</param>
+        /// <param name="Args">Arguments, if any</param>
+        /// <param name="exitCode">Application exit code. -1 if internal error occurred</param>
+        /// <param name="includeStdErr">Include output printed to StdErr</param>
+        /// <returns>Output of a command from stdout</returns>
+        public static string ExecuteProcessToString(string File, string Args, ref int exitCode, bool includeStdErr) =>
+            ExecuteProcessToString(File, Args, CurrentDirectory.CurrentDir, ref exitCode, includeStdErr);
+
+        /// <summary>
+        /// Executes a file with specified arguments and puts the output to the string
+        /// </summary>
+        /// <param name="File">Full path to file</param>
+        /// <param name="Args">Arguments, if any</param>
+        /// <param name="WorkingDirectory">Specifies the working directory</param>
+        /// <param name="exitCode">Application exit code. -1 if internal error occurred</param>
+        /// <param name="includeStdErr">Include output printed to StdErr</param>
+        /// <returns>Output of a command from stdout</returns>
+        public static string ExecuteProcessToString(string File, string Args, string WorkingDirectory, ref int exitCode, bool includeStdErr)
+        {
+            var commandOutputBuilder = new StringBuilder();
+            try
+            {
+                bool HasProcessExited = false;
+                var CommandProcess = new Process();
+                var CommandProcessStart = new ProcessStartInfo()
+                {
+                    RedirectStandardInput = true,
+                    RedirectStandardOutput = true,
+                    RedirectStandardError = includeStdErr,
+                    FileName = File,
+                    Arguments = Args,
+                    WorkingDirectory = WorkingDirectory,
+                    CreateNoWindow = true,
+                    WindowStyle = ProcessWindowStyle.Hidden,
+                    UseShellExecute = false
+                };
+                CommandProcess.StartInfo = CommandProcessStart;
+
+                // Set events up
+                void DataReceivedHandler(object _, DataReceivedEventArgs data)
+                {
+                    if (data.Data is not null)
+                        commandOutputBuilder.Append(data.Data);
+                }
+                CommandProcess.EnableRaisingEvents = true;
+                CommandProcess.OutputDataReceived += DataReceivedHandler;
+                if (includeStdErr)
+                    CommandProcess.ErrorDataReceived += DataReceivedHandler;
+                CommandProcess.Exited += (sender, args) => HasProcessExited = true;
+
+                // Start the process
+                DebugWriter.Wdbg(DebugLevel.I, "Starting process {0} with working directory {1} and arguments {2}...", File, WorkingDirectory, Args);
+                CommandProcess.Start();
+                CommandProcess.BeginOutputReadLine();
+                if (includeStdErr)
+                    CommandProcess.BeginErrorReadLine();
+
+                // Wait for process exit
+                while (!HasProcessExited | !Flags.CancelRequested)
+                {
+                    if (HasProcessExited)
+                    {
+                        DebugWriter.Wdbg(DebugLevel.W, "Process exited! Output may not be complete!");
+                        CommandProcess.WaitForExit();
+                        DebugWriter.Wdbg(DebugLevel.I, "Flushed as much as possible.");
+                        break;
+                    }
+                    else if (Flags.CancelRequested)
+                    {
+                        DebugWriter.Wdbg(DebugLevel.W, "Process killed! Output may not be complete!");
+                        CommandProcess.Kill();
+                        CommandProcess.WaitForExit();
+                        DebugWriter.Wdbg(DebugLevel.I, "Flushed as much as possible.");
+                        break;
+                    }
+                }
+                DebugWriter.Wdbg(DebugLevel.I, "Process exited with exit code {0}.", CommandProcess.ExitCode);
+                exitCode = CommandProcess.ExitCode;
+            }
+            catch (ThreadInterruptedException)
+            {
+                Flags.CancelRequested = false;
+                exitCode = -1;
             }
             catch (Exception ex)
             {
                 Kernel.Kernel.KernelEventManager.RaiseProcessError(File + Args, ex);
+                DebugWriter.Wdbg(DebugLevel.E, "Process error for {0}, {1}, {2}: {3}.", File, WorkingDirectory, Args, ex.Message);
                 DebugWriter.WStkTrc(ex);
-                TextWriterColor.Write(Translate.DoTranslation("Error trying to execute command") + " {2}." + Kernel.Kernel.NewLine + Translate.DoTranslation("Error {0}: {1}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.GetType().FullName, ex.Message, File);
+                TextWriterColor.Write(Translate.DoTranslation("Error trying to execute command") + " {2}.\n" + Translate.DoTranslation("Error {0}: {1}"), true, KernelColorTools.ColTypes.Error, ex.GetType().FullName, ex.Message, File);
+                exitCode = -1;
             }
-            return -1;
+            return commandOutputBuilder.ToString();
+        }
+
+        /// <summary>
+        /// Executes a file with specified arguments to a separate window. Doesn't block.
+        /// </summary>
+        internal static void ExecuteProcessForked(ExecuteProcessThreadParameters ThreadParams) =>
+            ExecuteProcessForked(ThreadParams.File, ThreadParams.Args);
+
+        /// <summary>
+        /// Executes a file with specified arguments to a separate window. Doesn't block.
+        /// </summary>
+        /// <param name="File">Full path to file</param>
+        /// <param name="Args">Arguments, if any</param>
+        /// <returns>Application exit code. -1 if internal error occurred.</returns>
+        public static void ExecuteProcessForked(string File, string Args) =>
+            ExecuteProcessForked(File, Args, CurrentDirectory.CurrentDir);
+
+        /// <summary>
+        /// Executes a file with specified arguments to a separate window. Doesn't block.
+        /// </summary>
+        /// <param name="File">Full path to file</param>
+        /// <param name="Args">Arguments, if any</param>
+        /// <param name="WorkingDirectory">Specifies the working directory</param>
+        /// <returns>Application exit code. -1 if internal error occurred.</returns>
+        public static void ExecuteProcessForked(string File, string Args, string WorkingDirectory)
+        {
+            try
+            {
+                var CommandProcess = new Process();
+                var CommandProcessStart = new ProcessStartInfo()
+                {
+                    FileName = File,
+                    Arguments = Args,
+                    WorkingDirectory = WorkingDirectory,
+                    UseShellExecute = true,
+                };
+                CommandProcess.StartInfo = StripEnvironmentVariables(CommandProcessStart);
+
+                // Start the process
+                DebugWriter.Wdbg(DebugLevel.I, "Starting process {0} with working directory {1} and arguments {2}...", File, WorkingDirectory, Args);
+                CommandProcess.Start();
+            }
+            catch (ThreadInterruptedException)
+            {
+                Flags.CancelRequested = false;
+            }
+            catch (Exception ex)
+            {
+                Kernel.Kernel.KernelEventManager.RaiseProcessError(File + Args, ex);
+                DebugWriter.Wdbg(DebugLevel.E, "Process error for {0}, {1}, {2}: {3}.", File, WorkingDirectory, Args, ex.Message);
+                DebugWriter.WStkTrc(ex);
+                TextWriterColor.Write(Translate.DoTranslation("Error trying to execute command") + " {2}.\n" + Translate.DoTranslation("Error {0}: {1}"), true, KernelColorTools.ColTypes.Error, ex.GetType().FullName, ex.Message, File);
+            }
         }
 
         internal static ProcessStartInfo StripEnvironmentVariables(ProcessStartInfo processStartInfo)
@@ -211,27 +328,10 @@ namespace KS.Misc.Execution
         /// <param name="outLine">Output</param>
         private static void ExecutableOutput(object sendingProcess, DataReceivedEventArgs outLine)
         {
-            NewDataSpotted = true;
+            if (outLine.Data is null)
+                return;
             DebugWriter.Wdbg(DebugLevel.I, outLine.Data);
-            TextWriterColor.Write(outLine.Data, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-            ProcessData += outLine.Data;
-        }
-
-        /// <summary>
-        /// Detects new data
-        /// </summary>
-        private static void DetectNewData()
-        {
-            while (Thread.CurrentThread.IsAlive)
-            {
-                if (NewDataSpotted)
-                {
-                    long OldLength = ProcessData.LongCount();
-                    Thread.Sleep(50);
-                    if (OldLength == ProcessData.LongCount())
-                        NewDataSpotted = false;
-                }
-            }
+            TextWriterColor.Write(outLine.Data, true, KernelColorTools.ColTypes.Neutral);
         }
 
     }

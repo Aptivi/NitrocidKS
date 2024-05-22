@@ -38,7 +38,6 @@ namespace KS.Shell.Commands
                 ProcessExecutor.ExecuteProcess("open", "https://github.com/Aptivi/NitrocidKS/issues/new/choose");
             else
                 ProcessExecutor.ExecuteProcess("xdg-open", "https://github.com/Aptivi/NitrocidKS/issues/new/choose");
-            Process.Start("https://github.com/Aptivi/NitrocidKS/issues/new/choose");
         }
 
     }

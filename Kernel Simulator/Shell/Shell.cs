@@ -49,7 +49,7 @@ namespace KS.Shell
     public static class Shell
     {
 
-        internal static KernelThread ProcessStartCommandThread = new("Executable Command Thread", false, (param) => ProcessExecutor.ExecuteProcess((ProcessExecutor.ExecuteProcessThreadParameters)param));
+        internal static KernelThread ProcessStartCommandThread = new("Executable Command Thread", false, (param) => ProcessExecutor.ExecuteProcess((ExecuteProcessThreadParameters)param));
         internal static readonly Dictionary<string, CommandInfo> ModCommands = [];
         internal static readonly List<string> InjectedCommands = [];
 
@@ -386,7 +386,7 @@ namespace KS.Shell
                                                 cmdArgs = cmdArgs.Replace(TargetFileName, "");
                                                 cmdArgs.Trim();
                                                 DebugWriter.Wdbg(DebugLevel.I, "Command: {0}, Arguments: {1}", TargetFile, cmdArgs);
-                                                var Params = new ProcessExecutor.ExecuteProcessThreadParameters(TargetFile, cmdArgs);
+                                                var Params = new ExecuteProcessThreadParameters(TargetFile, cmdArgs);
                                                 ProcessStartCommandThread.Start(Params);
                                                 ProcessStartCommandThread.Wait();
                                                 ProcessStartCommandThread.Stop();
