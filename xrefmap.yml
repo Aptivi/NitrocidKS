@@ -30285,6 +30285,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FileManagerCli.GetEntryFromItem
   nameWithType: FileManagerCli.GetEntryFromItem
+- uid: Nitrocid.Misc.Interactives.FileManagerCli.GetStatusFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  name: GetStatusFromItem(FileSystemEntry)
+  href: api/Nitrocid.Misc.Interactives.FileManagerCli.html#Nitrocid_Misc_Interactives_FileManagerCli_GetStatusFromItem_Nitrocid_Files_Instances_FileSystemEntry_
+  commentId: M:Nitrocid.Misc.Interactives.FileManagerCli.GetStatusFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  fullName: Nitrocid.Misc.Interactives.FileManagerCli.GetStatusFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  nameWithType: FileManagerCli.GetStatusFromItem(FileSystemEntry)
+- uid: Nitrocid.Misc.Interactives.FileManagerCli.GetStatusFromItem*
+  name: GetStatusFromItem
+  href: api/Nitrocid.Misc.Interactives.FileManagerCli.html#Nitrocid_Misc_Interactives_FileManagerCli_GetStatusFromItem_
+  commentId: Overload:Nitrocid.Misc.Interactives.FileManagerCli.GetStatusFromItem
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Interactives.FileManagerCli.GetStatusFromItem
+  nameWithType: FileManagerCli.GetStatusFromItem
 - uid: Nitrocid.Misc.Interactives.FileManagerCli.PrimaryDataSource
   name: PrimaryDataSource
   href: api/Nitrocid.Misc.Interactives.FileManagerCli.html#Nitrocid_Misc_Interactives_FileManagerCli_PrimaryDataSource
@@ -30298,19 +30311,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FileManagerCli.PrimaryDataSource
   nameWithType: FileManagerCli.PrimaryDataSource
-- uid: Nitrocid.Misc.Interactives.FileManagerCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
-  name: RenderStatus(FileSystemEntry)
-  href: api/Nitrocid.Misc.Interactives.FileManagerCli.html#Nitrocid_Misc_Interactives_FileManagerCli_RenderStatus_Nitrocid_Files_Instances_FileSystemEntry_
-  commentId: M:Nitrocid.Misc.Interactives.FileManagerCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
-  fullName: Nitrocid.Misc.Interactives.FileManagerCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
-  nameWithType: FileManagerCli.RenderStatus(FileSystemEntry)
-- uid: Nitrocid.Misc.Interactives.FileManagerCli.RenderStatus*
-  name: RenderStatus
-  href: api/Nitrocid.Misc.Interactives.FileManagerCli.html#Nitrocid_Misc_Interactives_FileManagerCli_RenderStatus_
-  commentId: Overload:Nitrocid.Misc.Interactives.FileManagerCli.RenderStatus
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Interactives.FileManagerCli.RenderStatus
-  nameWithType: FileManagerCli.RenderStatus
 - uid: Nitrocid.Misc.Interactives.FileManagerCli.SecondPaneInteractable
   name: SecondPaneInteractable
   href: api/Nitrocid.Misc.Interactives.FileManagerCli.html#Nitrocid_Misc_Interactives_FileManagerCli_SecondPaneInteractable
@@ -30395,6 +30395,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FileSelectorCli.GetInfoFromItem
   nameWithType: FileSelectorCli.GetInfoFromItem
+- uid: Nitrocid.Misc.Interactives.FileSelectorCli.GetStatusFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  name: GetStatusFromItem(FileSystemEntry)
+  href: api/Nitrocid.Misc.Interactives.FileSelectorCli.html#Nitrocid_Misc_Interactives_FileSelectorCli_GetStatusFromItem_Nitrocid_Files_Instances_FileSystemEntry_
+  commentId: M:Nitrocid.Misc.Interactives.FileSelectorCli.GetStatusFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  fullName: Nitrocid.Misc.Interactives.FileSelectorCli.GetStatusFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  nameWithType: FileSelectorCli.GetStatusFromItem(FileSystemEntry)
+- uid: Nitrocid.Misc.Interactives.FileSelectorCli.GetStatusFromItem*
+  name: GetStatusFromItem
+  href: api/Nitrocid.Misc.Interactives.FileSelectorCli.html#Nitrocid_Misc_Interactives_FileSelectorCli_GetStatusFromItem_
+  commentId: Overload:Nitrocid.Misc.Interactives.FileSelectorCli.GetStatusFromItem
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Interactives.FileSelectorCli.GetStatusFromItem
+  nameWithType: FileSelectorCli.GetStatusFromItem
 - uid: Nitrocid.Misc.Interactives.FileSelectorCli.PrimaryDataSource
   name: PrimaryDataSource
   href: api/Nitrocid.Misc.Interactives.FileSelectorCli.html#Nitrocid_Misc_Interactives_FileSelectorCli_PrimaryDataSource
@@ -30408,19 +30421,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FileSelectorCli.PrimaryDataSource
   nameWithType: FileSelectorCli.PrimaryDataSource
-- uid: Nitrocid.Misc.Interactives.FileSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
-  name: RenderStatus(FileSystemEntry)
-  href: api/Nitrocid.Misc.Interactives.FileSelectorCli.html#Nitrocid_Misc_Interactives_FileSelectorCli_RenderStatus_Nitrocid_Files_Instances_FileSystemEntry_
-  commentId: M:Nitrocid.Misc.Interactives.FileSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
-  fullName: Nitrocid.Misc.Interactives.FileSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
-  nameWithType: FileSelectorCli.RenderStatus(FileSystemEntry)
-- uid: Nitrocid.Misc.Interactives.FileSelectorCli.RenderStatus*
-  name: RenderStatus
-  href: api/Nitrocid.Misc.Interactives.FileSelectorCli.html#Nitrocid_Misc_Interactives_FileSelectorCli_RenderStatus_
-  commentId: Overload:Nitrocid.Misc.Interactives.FileSelectorCli.RenderStatus
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Interactives.FileSelectorCli.RenderStatus
-  nameWithType: FileSelectorCli.RenderStatus
 - uid: Nitrocid.Misc.Interactives.FileSelectorCli.SelectedFile
   name: SelectedFile
   href: api/Nitrocid.Misc.Interactives.FileSelectorCli.html#Nitrocid_Misc_Interactives_FileSelectorCli_SelectedFile
@@ -30492,6 +30492,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FilesSelectorCli.GetInfoFromItem
   nameWithType: FilesSelectorCli.GetInfoFromItem
+- uid: Nitrocid.Misc.Interactives.FilesSelectorCli.GetStatusFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  name: GetStatusFromItem(FileSystemEntry)
+  href: api/Nitrocid.Misc.Interactives.FilesSelectorCli.html#Nitrocid_Misc_Interactives_FilesSelectorCli_GetStatusFromItem_Nitrocid_Files_Instances_FileSystemEntry_
+  commentId: M:Nitrocid.Misc.Interactives.FilesSelectorCli.GetStatusFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  fullName: Nitrocid.Misc.Interactives.FilesSelectorCli.GetStatusFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  nameWithType: FilesSelectorCli.GetStatusFromItem(FileSystemEntry)
+- uid: Nitrocid.Misc.Interactives.FilesSelectorCli.GetStatusFromItem*
+  name: GetStatusFromItem
+  href: api/Nitrocid.Misc.Interactives.FilesSelectorCli.html#Nitrocid_Misc_Interactives_FilesSelectorCli_GetStatusFromItem_
+  commentId: Overload:Nitrocid.Misc.Interactives.FilesSelectorCli.GetStatusFromItem
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Interactives.FilesSelectorCli.GetStatusFromItem
+  nameWithType: FilesSelectorCli.GetStatusFromItem
 - uid: Nitrocid.Misc.Interactives.FilesSelectorCli.PrimaryDataSource
   name: PrimaryDataSource
   href: api/Nitrocid.Misc.Interactives.FilesSelectorCli.html#Nitrocid_Misc_Interactives_FilesSelectorCli_PrimaryDataSource
@@ -30505,19 +30518,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FilesSelectorCli.PrimaryDataSource
   nameWithType: FilesSelectorCli.PrimaryDataSource
-- uid: Nitrocid.Misc.Interactives.FilesSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
-  name: RenderStatus(FileSystemEntry)
-  href: api/Nitrocid.Misc.Interactives.FilesSelectorCli.html#Nitrocid_Misc_Interactives_FilesSelectorCli_RenderStatus_Nitrocid_Files_Instances_FileSystemEntry_
-  commentId: M:Nitrocid.Misc.Interactives.FilesSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
-  fullName: Nitrocid.Misc.Interactives.FilesSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
-  nameWithType: FilesSelectorCli.RenderStatus(FileSystemEntry)
-- uid: Nitrocid.Misc.Interactives.FilesSelectorCli.RenderStatus*
-  name: RenderStatus
-  href: api/Nitrocid.Misc.Interactives.FilesSelectorCli.html#Nitrocid_Misc_Interactives_FilesSelectorCli_RenderStatus_
-  commentId: Overload:Nitrocid.Misc.Interactives.FilesSelectorCli.RenderStatus
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Interactives.FilesSelectorCli.RenderStatus
-  nameWithType: FilesSelectorCli.RenderStatus
 - uid: Nitrocid.Misc.Interactives.FilesSelectorCli.SelectedFiles
   name: SelectedFiles
   href: api/Nitrocid.Misc.Interactives.FilesSelectorCli.html#Nitrocid_Misc_Interactives_FilesSelectorCli_SelectedFiles
@@ -30589,6 +30589,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FolderSelectorCli.GetInfoFromItem
   nameWithType: FolderSelectorCli.GetInfoFromItem
+- uid: Nitrocid.Misc.Interactives.FolderSelectorCli.GetStatusFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  name: GetStatusFromItem(FileSystemEntry)
+  href: api/Nitrocid.Misc.Interactives.FolderSelectorCli.html#Nitrocid_Misc_Interactives_FolderSelectorCli_GetStatusFromItem_Nitrocid_Files_Instances_FileSystemEntry_
+  commentId: M:Nitrocid.Misc.Interactives.FolderSelectorCli.GetStatusFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  fullName: Nitrocid.Misc.Interactives.FolderSelectorCli.GetStatusFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  nameWithType: FolderSelectorCli.GetStatusFromItem(FileSystemEntry)
+- uid: Nitrocid.Misc.Interactives.FolderSelectorCli.GetStatusFromItem*
+  name: GetStatusFromItem
+  href: api/Nitrocid.Misc.Interactives.FolderSelectorCli.html#Nitrocid_Misc_Interactives_FolderSelectorCli_GetStatusFromItem_
+  commentId: Overload:Nitrocid.Misc.Interactives.FolderSelectorCli.GetStatusFromItem
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Interactives.FolderSelectorCli.GetStatusFromItem
+  nameWithType: FolderSelectorCli.GetStatusFromItem
 - uid: Nitrocid.Misc.Interactives.FolderSelectorCli.PrimaryDataSource
   name: PrimaryDataSource
   href: api/Nitrocid.Misc.Interactives.FolderSelectorCli.html#Nitrocid_Misc_Interactives_FolderSelectorCli_PrimaryDataSource
@@ -30602,19 +30615,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FolderSelectorCli.PrimaryDataSource
   nameWithType: FolderSelectorCli.PrimaryDataSource
-- uid: Nitrocid.Misc.Interactives.FolderSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
-  name: RenderStatus(FileSystemEntry)
-  href: api/Nitrocid.Misc.Interactives.FolderSelectorCli.html#Nitrocid_Misc_Interactives_FolderSelectorCli_RenderStatus_Nitrocid_Files_Instances_FileSystemEntry_
-  commentId: M:Nitrocid.Misc.Interactives.FolderSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
-  fullName: Nitrocid.Misc.Interactives.FolderSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
-  nameWithType: FolderSelectorCli.RenderStatus(FileSystemEntry)
-- uid: Nitrocid.Misc.Interactives.FolderSelectorCli.RenderStatus*
-  name: RenderStatus
-  href: api/Nitrocid.Misc.Interactives.FolderSelectorCli.html#Nitrocid_Misc_Interactives_FolderSelectorCli_RenderStatus_
-  commentId: Overload:Nitrocid.Misc.Interactives.FolderSelectorCli.RenderStatus
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Interactives.FolderSelectorCli.RenderStatus
-  nameWithType: FolderSelectorCli.RenderStatus
 - uid: Nitrocid.Misc.Interactives.FolderSelectorCli.SelectedFolder
   name: SelectedFolder
   href: api/Nitrocid.Misc.Interactives.FolderSelectorCli.html#Nitrocid_Misc_Interactives_FolderSelectorCli_SelectedFolder
@@ -30686,6 +30686,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FoldersSelectorCli.GetInfoFromItem
   nameWithType: FoldersSelectorCli.GetInfoFromItem
+- uid: Nitrocid.Misc.Interactives.FoldersSelectorCli.GetStatusFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  name: GetStatusFromItem(FileSystemEntry)
+  href: api/Nitrocid.Misc.Interactives.FoldersSelectorCli.html#Nitrocid_Misc_Interactives_FoldersSelectorCli_GetStatusFromItem_Nitrocid_Files_Instances_FileSystemEntry_
+  commentId: M:Nitrocid.Misc.Interactives.FoldersSelectorCli.GetStatusFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  fullName: Nitrocid.Misc.Interactives.FoldersSelectorCli.GetStatusFromItem(Nitrocid.Files.Instances.FileSystemEntry)
+  nameWithType: FoldersSelectorCli.GetStatusFromItem(FileSystemEntry)
+- uid: Nitrocid.Misc.Interactives.FoldersSelectorCli.GetStatusFromItem*
+  name: GetStatusFromItem
+  href: api/Nitrocid.Misc.Interactives.FoldersSelectorCli.html#Nitrocid_Misc_Interactives_FoldersSelectorCli_GetStatusFromItem_
+  commentId: Overload:Nitrocid.Misc.Interactives.FoldersSelectorCli.GetStatusFromItem
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Interactives.FoldersSelectorCli.GetStatusFromItem
+  nameWithType: FoldersSelectorCli.GetStatusFromItem
 - uid: Nitrocid.Misc.Interactives.FoldersSelectorCli.PrimaryDataSource
   name: PrimaryDataSource
   href: api/Nitrocid.Misc.Interactives.FoldersSelectorCli.html#Nitrocid_Misc_Interactives_FoldersSelectorCli_PrimaryDataSource
@@ -30699,19 +30712,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FoldersSelectorCli.PrimaryDataSource
   nameWithType: FoldersSelectorCli.PrimaryDataSource
-- uid: Nitrocid.Misc.Interactives.FoldersSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
-  name: RenderStatus(FileSystemEntry)
-  href: api/Nitrocid.Misc.Interactives.FoldersSelectorCli.html#Nitrocid_Misc_Interactives_FoldersSelectorCli_RenderStatus_Nitrocid_Files_Instances_FileSystemEntry_
-  commentId: M:Nitrocid.Misc.Interactives.FoldersSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
-  fullName: Nitrocid.Misc.Interactives.FoldersSelectorCli.RenderStatus(Nitrocid.Files.Instances.FileSystemEntry)
-  nameWithType: FoldersSelectorCli.RenderStatus(FileSystemEntry)
-- uid: Nitrocid.Misc.Interactives.FoldersSelectorCli.RenderStatus*
-  name: RenderStatus
-  href: api/Nitrocid.Misc.Interactives.FoldersSelectorCli.html#Nitrocid_Misc_Interactives_FoldersSelectorCli_RenderStatus_
-  commentId: Overload:Nitrocid.Misc.Interactives.FoldersSelectorCli.RenderStatus
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Interactives.FoldersSelectorCli.RenderStatus
-  nameWithType: FoldersSelectorCli.RenderStatus
 - uid: Nitrocid.Misc.Interactives.FoldersSelectorCli.SelectedFolders
   name: SelectedFolders
   href: api/Nitrocid.Misc.Interactives.FoldersSelectorCli.html#Nitrocid_Misc_Interactives_FoldersSelectorCli_SelectedFolders
@@ -30770,6 +30770,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.ManualViewerCli.GetInfoFromItem
   nameWithType: ManualViewerCli.GetInfoFromItem
+- uid: Nitrocid.Misc.Interactives.ManualViewerCli.GetStatusFromItem(Nitrocid.Modifications.ManPages.Manual)
+  name: GetStatusFromItem(Manual)
+  href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_GetStatusFromItem_Nitrocid_Modifications_ManPages_Manual_
+  commentId: M:Nitrocid.Misc.Interactives.ManualViewerCli.GetStatusFromItem(Nitrocid.Modifications.ManPages.Manual)
+  fullName: Nitrocid.Misc.Interactives.ManualViewerCli.GetStatusFromItem(Nitrocid.Modifications.ManPages.Manual)
+  nameWithType: ManualViewerCli.GetStatusFromItem(Manual)
+- uid: Nitrocid.Misc.Interactives.ManualViewerCli.GetStatusFromItem*
+  name: GetStatusFromItem
+  href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_GetStatusFromItem_
+  commentId: Overload:Nitrocid.Misc.Interactives.ManualViewerCli.GetStatusFromItem
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Interactives.ManualViewerCli.GetStatusFromItem
+  nameWithType: ManualViewerCli.GetStatusFromItem
 - uid: Nitrocid.Misc.Interactives.ManualViewerCli.PrimaryDataSource
   name: PrimaryDataSource
   href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_PrimaryDataSource
@@ -30783,19 +30796,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.ManualViewerCli.PrimaryDataSource
   nameWithType: ManualViewerCli.PrimaryDataSource
-- uid: Nitrocid.Misc.Interactives.ManualViewerCli.RenderStatus(Nitrocid.Modifications.ManPages.Manual)
-  name: RenderStatus(Manual)
-  href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_RenderStatus_Nitrocid_Modifications_ManPages_Manual_
-  commentId: M:Nitrocid.Misc.Interactives.ManualViewerCli.RenderStatus(Nitrocid.Modifications.ManPages.Manual)
-  fullName: Nitrocid.Misc.Interactives.ManualViewerCli.RenderStatus(Nitrocid.Modifications.ManPages.Manual)
-  nameWithType: ManualViewerCli.RenderStatus(Manual)
-- uid: Nitrocid.Misc.Interactives.ManualViewerCli.RenderStatus*
-  name: RenderStatus
-  href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_RenderStatus_
-  commentId: Overload:Nitrocid.Misc.Interactives.ManualViewerCli.RenderStatus
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Interactives.ManualViewerCli.RenderStatus
-  nameWithType: ManualViewerCli.RenderStatus
 - uid: Nitrocid.Misc.Interactives.TaskManagerCli
   name: TaskManagerCli
   href: api/Nitrocid.Misc.Interactives.TaskManagerCli.html
@@ -30847,6 +30847,22 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.TaskManagerCli.GetInfoFromItem
   nameWithType: TaskManagerCli.GetInfoFromItem
+- uid: Nitrocid.Misc.Interactives.TaskManagerCli.GetStatusFromItem(System.Object)
+  name: GetStatusFromItem(object)
+  href: api/Nitrocid.Misc.Interactives.TaskManagerCli.html#Nitrocid_Misc_Interactives_TaskManagerCli_GetStatusFromItem_System_Object_
+  commentId: M:Nitrocid.Misc.Interactives.TaskManagerCli.GetStatusFromItem(System.Object)
+  name.vb: GetStatusFromItem(Object)
+  fullName: Nitrocid.Misc.Interactives.TaskManagerCli.GetStatusFromItem(object)
+  fullName.vb: Nitrocid.Misc.Interactives.TaskManagerCli.GetStatusFromItem(Object)
+  nameWithType: TaskManagerCli.GetStatusFromItem(object)
+  nameWithType.vb: TaskManagerCli.GetStatusFromItem(Object)
+- uid: Nitrocid.Misc.Interactives.TaskManagerCli.GetStatusFromItem*
+  name: GetStatusFromItem
+  href: api/Nitrocid.Misc.Interactives.TaskManagerCli.html#Nitrocid_Misc_Interactives_TaskManagerCli_GetStatusFromItem_
+  commentId: Overload:Nitrocid.Misc.Interactives.TaskManagerCli.GetStatusFromItem
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Interactives.TaskManagerCli.GetStatusFromItem
+  nameWithType: TaskManagerCli.GetStatusFromItem
 - uid: Nitrocid.Misc.Interactives.TaskManagerCli.PrimaryDataSource
   name: PrimaryDataSource
   href: api/Nitrocid.Misc.Interactives.TaskManagerCli.html#Nitrocid_Misc_Interactives_TaskManagerCli_PrimaryDataSource
@@ -30873,22 +30889,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.TaskManagerCli.RefreshInterval
   nameWithType: TaskManagerCli.RefreshInterval
-- uid: Nitrocid.Misc.Interactives.TaskManagerCli.RenderStatus(System.Object)
-  name: RenderStatus(object)
-  href: api/Nitrocid.Misc.Interactives.TaskManagerCli.html#Nitrocid_Misc_Interactives_TaskManagerCli_RenderStatus_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.TaskManagerCli.RenderStatus(System.Object)
-  name.vb: RenderStatus(Object)
-  fullName: Nitrocid.Misc.Interactives.TaskManagerCli.RenderStatus(object)
-  fullName.vb: Nitrocid.Misc.Interactives.TaskManagerCli.RenderStatus(Object)
-  nameWithType: TaskManagerCli.RenderStatus(object)
-  nameWithType.vb: TaskManagerCli.RenderStatus(Object)
-- uid: Nitrocid.Misc.Interactives.TaskManagerCli.RenderStatus*
-  name: RenderStatus
-  href: api/Nitrocid.Misc.Interactives.TaskManagerCli.html#Nitrocid_Misc_Interactives_TaskManagerCli_RenderStatus_
-  commentId: Overload:Nitrocid.Misc.Interactives.TaskManagerCli.RenderStatus
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Interactives.TaskManagerCli.RenderStatus
-  nameWithType: TaskManagerCli.RenderStatus
 - uid: Nitrocid.Misc.Interactives.TimeZoneShowCli
   name: TimeZoneShowCli
   href: api/Nitrocid.Misc.Interactives.TimeZoneShowCli.html
@@ -30940,6 +30940,22 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.TimeZoneShowCli.GetInfoFromItem
   nameWithType: TimeZoneShowCli.GetInfoFromItem
+- uid: Nitrocid.Misc.Interactives.TimeZoneShowCli.GetStatusFromItem(System.String)
+  name: GetStatusFromItem(string)
+  href: api/Nitrocid.Misc.Interactives.TimeZoneShowCli.html#Nitrocid_Misc_Interactives_TimeZoneShowCli_GetStatusFromItem_System_String_
+  commentId: M:Nitrocid.Misc.Interactives.TimeZoneShowCli.GetStatusFromItem(System.String)
+  name.vb: GetStatusFromItem(String)
+  fullName: Nitrocid.Misc.Interactives.TimeZoneShowCli.GetStatusFromItem(string)
+  fullName.vb: Nitrocid.Misc.Interactives.TimeZoneShowCli.GetStatusFromItem(String)
+  nameWithType: TimeZoneShowCli.GetStatusFromItem(string)
+  nameWithType.vb: TimeZoneShowCli.GetStatusFromItem(String)
+- uid: Nitrocid.Misc.Interactives.TimeZoneShowCli.GetStatusFromItem*
+  name: GetStatusFromItem
+  href: api/Nitrocid.Misc.Interactives.TimeZoneShowCli.html#Nitrocid_Misc_Interactives_TimeZoneShowCli_GetStatusFromItem_
+  commentId: Overload:Nitrocid.Misc.Interactives.TimeZoneShowCli.GetStatusFromItem
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Interactives.TimeZoneShowCli.GetStatusFromItem
+  nameWithType: TimeZoneShowCli.GetStatusFromItem
 - uid: Nitrocid.Misc.Interactives.TimeZoneShowCli.PrimaryDataSource
   name: PrimaryDataSource
   href: api/Nitrocid.Misc.Interactives.TimeZoneShowCli.html#Nitrocid_Misc_Interactives_TimeZoneShowCli_PrimaryDataSource
@@ -30966,22 +30982,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.TimeZoneShowCli.RefreshInterval
   nameWithType: TimeZoneShowCli.RefreshInterval
-- uid: Nitrocid.Misc.Interactives.TimeZoneShowCli.RenderStatus(System.String)
-  name: RenderStatus(string)
-  href: api/Nitrocid.Misc.Interactives.TimeZoneShowCli.html#Nitrocid_Misc_Interactives_TimeZoneShowCli_RenderStatus_System_String_
-  commentId: M:Nitrocid.Misc.Interactives.TimeZoneShowCli.RenderStatus(System.String)
-  name.vb: RenderStatus(String)
-  fullName: Nitrocid.Misc.Interactives.TimeZoneShowCli.RenderStatus(string)
-  fullName.vb: Nitrocid.Misc.Interactives.TimeZoneShowCli.RenderStatus(String)
-  nameWithType: TimeZoneShowCli.RenderStatus(string)
-  nameWithType.vb: TimeZoneShowCli.RenderStatus(String)
-- uid: Nitrocid.Misc.Interactives.TimeZoneShowCli.RenderStatus*
-  name: RenderStatus
-  href: api/Nitrocid.Misc.Interactives.TimeZoneShowCli.html#Nitrocid_Misc_Interactives_TimeZoneShowCli_RenderStatus_
-  commentId: Overload:Nitrocid.Misc.Interactives.TimeZoneShowCli.RenderStatus
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Interactives.TimeZoneShowCli.RenderStatus
-  nameWithType: TimeZoneShowCli.RenderStatus
 - uid: Nitrocid.Misc.Notifications
   name: Nitrocid.Misc.Notifications
   href: api/Nitrocid.Misc.Notifications.html
@@ -37096,257 +37096,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Network.Types.RSS.RSSTools.ShowHeadlineOnLogin
   nameWithType: RSSTools.ShowHeadlineOnLogin
-- uid: Nitrocid.Resources
-  name: Nitrocid.Resources
-  href: api/Nitrocid.Resources.html
-  commentId: N:Nitrocid.Resources
-  fullName: Nitrocid.Resources
-  nameWithType: Nitrocid.Resources
-- uid: Nitrocid.Resources.LanguageResources
-  name: LanguageResources
-  href: api/Nitrocid.Resources.LanguageResources.html
-  commentId: T:Nitrocid.Resources.LanguageResources
-  fullName: Nitrocid.Resources.LanguageResources
-  nameWithType: LanguageResources
-- uid: Nitrocid.Resources.LanguageResources.Culture
-  name: Culture
-  href: api/Nitrocid.Resources.LanguageResources.html#Nitrocid_Resources_LanguageResources_Culture
-  commentId: P:Nitrocid.Resources.LanguageResources.Culture
-  fullName: Nitrocid.Resources.LanguageResources.Culture
-  nameWithType: LanguageResources.Culture
-- uid: Nitrocid.Resources.LanguageResources.Culture*
-  name: Culture
-  href: api/Nitrocid.Resources.LanguageResources.html#Nitrocid_Resources_LanguageResources_Culture_
-  commentId: Overload:Nitrocid.Resources.LanguageResources.Culture
-  isSpec: "True"
-  fullName: Nitrocid.Resources.LanguageResources.Culture
-  nameWithType: LanguageResources.Culture
-- uid: Nitrocid.Resources.LanguageResources.LanguageMetadata
-  name: LanguageMetadata
-  href: api/Nitrocid.Resources.LanguageResources.html#Nitrocid_Resources_LanguageResources_LanguageMetadata
-  commentId: P:Nitrocid.Resources.LanguageResources.LanguageMetadata
-  fullName: Nitrocid.Resources.LanguageResources.LanguageMetadata
-  nameWithType: LanguageResources.LanguageMetadata
-- uid: Nitrocid.Resources.LanguageResources.LanguageMetadata*
-  name: LanguageMetadata
-  href: api/Nitrocid.Resources.LanguageResources.html#Nitrocid_Resources_LanguageResources_LanguageMetadata_
-  commentId: Overload:Nitrocid.Resources.LanguageResources.LanguageMetadata
-  isSpec: "True"
-  fullName: Nitrocid.Resources.LanguageResources.LanguageMetadata
-  nameWithType: LanguageResources.LanguageMetadata
-- uid: Nitrocid.Resources.LanguageResources.ResourceManager
-  name: ResourceManager
-  href: api/Nitrocid.Resources.LanguageResources.html#Nitrocid_Resources_LanguageResources_ResourceManager
-  commentId: P:Nitrocid.Resources.LanguageResources.ResourceManager
-  fullName: Nitrocid.Resources.LanguageResources.ResourceManager
-  nameWithType: LanguageResources.ResourceManager
-- uid: Nitrocid.Resources.LanguageResources.ResourceManager*
-  name: ResourceManager
-  href: api/Nitrocid.Resources.LanguageResources.html#Nitrocid_Resources_LanguageResources_ResourceManager_
-  commentId: Overload:Nitrocid.Resources.LanguageResources.ResourceManager
-  isSpec: "True"
-  fullName: Nitrocid.Resources.LanguageResources.ResourceManager
-  nameWithType: LanguageResources.ResourceManager
-- uid: Nitrocid.Resources.LanguageResources.eng
-  name: eng
-  href: api/Nitrocid.Resources.LanguageResources.html#Nitrocid_Resources_LanguageResources_eng
-  commentId: P:Nitrocid.Resources.LanguageResources.eng
-  fullName: Nitrocid.Resources.LanguageResources.eng
-  nameWithType: LanguageResources.eng
-- uid: Nitrocid.Resources.LanguageResources.eng*
-  name: eng
-  href: api/Nitrocid.Resources.LanguageResources.html#Nitrocid_Resources_LanguageResources_eng_
-  commentId: Overload:Nitrocid.Resources.LanguageResources.eng
-  isSpec: "True"
-  fullName: Nitrocid.Resources.LanguageResources.eng
-  nameWithType: LanguageResources.eng
-- uid: Nitrocid.Resources.SchemasResources
-  name: SchemasResources
-  href: api/Nitrocid.Resources.SchemasResources.html
-  commentId: T:Nitrocid.Resources.SchemasResources
-  fullName: Nitrocid.Resources.SchemasResources
-  nameWithType: SchemasResources
-- uid: Nitrocid.Resources.SchemasResources.Culture
-  name: Culture
-  href: api/Nitrocid.Resources.SchemasResources.html#Nitrocid_Resources_SchemasResources_Culture
-  commentId: P:Nitrocid.Resources.SchemasResources.Culture
-  fullName: Nitrocid.Resources.SchemasResources.Culture
-  nameWithType: SchemasResources.Culture
-- uid: Nitrocid.Resources.SchemasResources.Culture*
-  name: Culture
-  href: api/Nitrocid.Resources.SchemasResources.html#Nitrocid_Resources_SchemasResources_Culture_
-  commentId: Overload:Nitrocid.Resources.SchemasResources.Culture
-  isSpec: "True"
-  fullName: Nitrocid.Resources.SchemasResources.Culture
-  nameWithType: SchemasResources.Culture
-- uid: Nitrocid.Resources.SchemasResources.ResourceManager
-  name: ResourceManager
-  href: api/Nitrocid.Resources.SchemasResources.html#Nitrocid_Resources_SchemasResources_ResourceManager
-  commentId: P:Nitrocid.Resources.SchemasResources.ResourceManager
-  fullName: Nitrocid.Resources.SchemasResources.ResourceManager
-  nameWithType: SchemasResources.ResourceManager
-- uid: Nitrocid.Resources.SchemasResources.ResourceManager*
-  name: ResourceManager
-  href: api/Nitrocid.Resources.SchemasResources.html#Nitrocid_Resources_SchemasResources_ResourceManager_
-  commentId: Overload:Nitrocid.Resources.SchemasResources.ResourceManager
-  isSpec: "True"
-  fullName: Nitrocid.Resources.SchemasResources.ResourceManager
-  nameWithType: SchemasResources.ResourceManager
-- uid: Nitrocid.Resources.SchemasResources.SettingsSchema
-  name: SettingsSchema
-  href: api/Nitrocid.Resources.SchemasResources.html#Nitrocid_Resources_SchemasResources_SettingsSchema
-  commentId: P:Nitrocid.Resources.SchemasResources.SettingsSchema
-  fullName: Nitrocid.Resources.SchemasResources.SettingsSchema
-  nameWithType: SchemasResources.SettingsSchema
-- uid: Nitrocid.Resources.SchemasResources.SettingsSchema*
-  name: SettingsSchema
-  href: api/Nitrocid.Resources.SchemasResources.html#Nitrocid_Resources_SchemasResources_SettingsSchema_
-  commentId: Overload:Nitrocid.Resources.SchemasResources.SettingsSchema
-  isSpec: "True"
-  fullName: Nitrocid.Resources.SchemasResources.SettingsSchema
-  nameWithType: SchemasResources.SettingsSchema
-- uid: Nitrocid.Resources.SettingsResources
-  name: SettingsResources
-  href: api/Nitrocid.Resources.SettingsResources.html
-  commentId: T:Nitrocid.Resources.SettingsResources
-  fullName: Nitrocid.Resources.SettingsResources
-  nameWithType: SettingsResources
-- uid: Nitrocid.Resources.SettingsResources.Culture
-  name: Culture
-  href: api/Nitrocid.Resources.SettingsResources.html#Nitrocid_Resources_SettingsResources_Culture
-  commentId: P:Nitrocid.Resources.SettingsResources.Culture
-  fullName: Nitrocid.Resources.SettingsResources.Culture
-  nameWithType: SettingsResources.Culture
-- uid: Nitrocid.Resources.SettingsResources.Culture*
-  name: Culture
-  href: api/Nitrocid.Resources.SettingsResources.html#Nitrocid_Resources_SettingsResources_Culture_
-  commentId: Overload:Nitrocid.Resources.SettingsResources.Culture
-  isSpec: "True"
-  fullName: Nitrocid.Resources.SettingsResources.Culture
-  nameWithType: SettingsResources.Culture
-- uid: Nitrocid.Resources.SettingsResources.DriverSettingsEntries
-  name: DriverSettingsEntries
-  href: api/Nitrocid.Resources.SettingsResources.html#Nitrocid_Resources_SettingsResources_DriverSettingsEntries
-  commentId: P:Nitrocid.Resources.SettingsResources.DriverSettingsEntries
-  fullName: Nitrocid.Resources.SettingsResources.DriverSettingsEntries
-  nameWithType: SettingsResources.DriverSettingsEntries
-- uid: Nitrocid.Resources.SettingsResources.DriverSettingsEntries*
-  name: DriverSettingsEntries
-  href: api/Nitrocid.Resources.SettingsResources.html#Nitrocid_Resources_SettingsResources_DriverSettingsEntries_
-  commentId: Overload:Nitrocid.Resources.SettingsResources.DriverSettingsEntries
-  isSpec: "True"
-  fullName: Nitrocid.Resources.SettingsResources.DriverSettingsEntries
-  nameWithType: SettingsResources.DriverSettingsEntries
-- uid: Nitrocid.Resources.SettingsResources.ResourceManager
-  name: ResourceManager
-  href: api/Nitrocid.Resources.SettingsResources.html#Nitrocid_Resources_SettingsResources_ResourceManager
-  commentId: P:Nitrocid.Resources.SettingsResources.ResourceManager
-  fullName: Nitrocid.Resources.SettingsResources.ResourceManager
-  nameWithType: SettingsResources.ResourceManager
-- uid: Nitrocid.Resources.SettingsResources.ResourceManager*
-  name: ResourceManager
-  href: api/Nitrocid.Resources.SettingsResources.html#Nitrocid_Resources_SettingsResources_ResourceManager_
-  commentId: Overload:Nitrocid.Resources.SettingsResources.ResourceManager
-  isSpec: "True"
-  fullName: Nitrocid.Resources.SettingsResources.ResourceManager
-  nameWithType: SettingsResources.ResourceManager
-- uid: Nitrocid.Resources.SettingsResources.ScreensaverSettingsEntries
-  name: ScreensaverSettingsEntries
-  href: api/Nitrocid.Resources.SettingsResources.html#Nitrocid_Resources_SettingsResources_ScreensaverSettingsEntries
-  commentId: P:Nitrocid.Resources.SettingsResources.ScreensaverSettingsEntries
-  fullName: Nitrocid.Resources.SettingsResources.ScreensaverSettingsEntries
-  nameWithType: SettingsResources.ScreensaverSettingsEntries
-- uid: Nitrocid.Resources.SettingsResources.ScreensaverSettingsEntries*
-  name: ScreensaverSettingsEntries
-  href: api/Nitrocid.Resources.SettingsResources.html#Nitrocid_Resources_SettingsResources_ScreensaverSettingsEntries_
-  commentId: Overload:Nitrocid.Resources.SettingsResources.ScreensaverSettingsEntries
-  isSpec: "True"
-  fullName: Nitrocid.Resources.SettingsResources.ScreensaverSettingsEntries
-  nameWithType: SettingsResources.ScreensaverSettingsEntries
-- uid: Nitrocid.Resources.SettingsResources.SettingsEntries
-  name: SettingsEntries
-  href: api/Nitrocid.Resources.SettingsResources.html#Nitrocid_Resources_SettingsResources_SettingsEntries
-  commentId: P:Nitrocid.Resources.SettingsResources.SettingsEntries
-  fullName: Nitrocid.Resources.SettingsResources.SettingsEntries
-  nameWithType: SettingsResources.SettingsEntries
-- uid: Nitrocid.Resources.SettingsResources.SettingsEntries*
-  name: SettingsEntries
-  href: api/Nitrocid.Resources.SettingsResources.html#Nitrocid_Resources_SettingsResources_SettingsEntries_
-  commentId: Overload:Nitrocid.Resources.SettingsResources.SettingsEntries
-  isSpec: "True"
-  fullName: Nitrocid.Resources.SettingsResources.SettingsEntries
-  nameWithType: SettingsResources.SettingsEntries
-- uid: Nitrocid.Resources.ThemesResources
-  name: ThemesResources
-  href: api/Nitrocid.Resources.ThemesResources.html
-  commentId: T:Nitrocid.Resources.ThemesResources
-  fullName: Nitrocid.Resources.ThemesResources
-  nameWithType: ThemesResources
-- uid: Nitrocid.Resources.ThemesResources.Culture
-  name: Culture
-  href: api/Nitrocid.Resources.ThemesResources.html#Nitrocid_Resources_ThemesResources_Culture
-  commentId: P:Nitrocid.Resources.ThemesResources.Culture
-  fullName: Nitrocid.Resources.ThemesResources.Culture
-  nameWithType: ThemesResources.Culture
-- uid: Nitrocid.Resources.ThemesResources.Culture*
-  name: Culture
-  href: api/Nitrocid.Resources.ThemesResources.html#Nitrocid_Resources_ThemesResources_Culture_
-  commentId: Overload:Nitrocid.Resources.ThemesResources.Culture
-  isSpec: "True"
-  fullName: Nitrocid.Resources.ThemesResources.Culture
-  nameWithType: ThemesResources.Culture
-- uid: Nitrocid.Resources.ThemesResources.Default
-  name: Default
-  href: api/Nitrocid.Resources.ThemesResources.html#Nitrocid_Resources_ThemesResources_Default
-  commentId: P:Nitrocid.Resources.ThemesResources.Default
-  fullName: Nitrocid.Resources.ThemesResources.Default
-  nameWithType: ThemesResources.Default
-- uid: Nitrocid.Resources.ThemesResources.Default*
-  name: Default
-  href: api/Nitrocid.Resources.ThemesResources.html#Nitrocid_Resources_ThemesResources_Default_
-  commentId: Overload:Nitrocid.Resources.ThemesResources.Default
-  isSpec: "True"
-  fullName: Nitrocid.Resources.ThemesResources.Default
-  nameWithType: ThemesResources.Default
-- uid: Nitrocid.Resources.ThemesResources.Dynamic
-  name: Dynamic
-  href: api/Nitrocid.Resources.ThemesResources.html#Nitrocid_Resources_ThemesResources_Dynamic
-  commentId: P:Nitrocid.Resources.ThemesResources.Dynamic
-  fullName: Nitrocid.Resources.ThemesResources.Dynamic
-  nameWithType: ThemesResources.Dynamic
-- uid: Nitrocid.Resources.ThemesResources.Dynamic*
-  name: Dynamic
-  href: api/Nitrocid.Resources.ThemesResources.html#Nitrocid_Resources_ThemesResources_Dynamic_
-  commentId: Overload:Nitrocid.Resources.ThemesResources.Dynamic
-  isSpec: "True"
-  fullName: Nitrocid.Resources.ThemesResources.Dynamic
-  nameWithType: ThemesResources.Dynamic
-- uid: Nitrocid.Resources.ThemesResources.NitricAcid
-  name: NitricAcid
-  href: api/Nitrocid.Resources.ThemesResources.html#Nitrocid_Resources_ThemesResources_NitricAcid
-  commentId: P:Nitrocid.Resources.ThemesResources.NitricAcid
-  fullName: Nitrocid.Resources.ThemesResources.NitricAcid
-  nameWithType: ThemesResources.NitricAcid
-- uid: Nitrocid.Resources.ThemesResources.NitricAcid*
-  name: NitricAcid
-  href: api/Nitrocid.Resources.ThemesResources.html#Nitrocid_Resources_ThemesResources_NitricAcid_
-  commentId: Overload:Nitrocid.Resources.ThemesResources.NitricAcid
-  isSpec: "True"
-  fullName: Nitrocid.Resources.ThemesResources.NitricAcid
-  nameWithType: ThemesResources.NitricAcid
-- uid: Nitrocid.Resources.ThemesResources.ResourceManager
-  name: ResourceManager
-  href: api/Nitrocid.Resources.ThemesResources.html#Nitrocid_Resources_ThemesResources_ResourceManager
-  commentId: P:Nitrocid.Resources.ThemesResources.ResourceManager
-  fullName: Nitrocid.Resources.ThemesResources.ResourceManager
-  nameWithType: ThemesResources.ResourceManager
-- uid: Nitrocid.Resources.ThemesResources.ResourceManager*
-  name: ResourceManager
-  href: api/Nitrocid.Resources.ThemesResources.html#Nitrocid_Resources_ThemesResources_ResourceManager_
-  commentId: Overload:Nitrocid.Resources.ThemesResources.ResourceManager
-  isSpec: "True"
-  fullName: Nitrocid.Resources.ThemesResources.ResourceManager
-  nameWithType: ThemesResources.ResourceManager
 - uid: Nitrocid.Security.Permissions
   name: Nitrocid.Security.Permissions
   href: api/Nitrocid.Security.Permissions.html

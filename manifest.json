@@ -2,7 +2,7 @@
   "sitemap": {
     "baseUrl": "https://aptivi.github.io/NitrocidKS/"
   },
-  "source_base_path": "/github/workspace/DocGen",
+  "source_base_path": "/home/runner/work/NitrocidKS/NitrocidKS/DocGen",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -3265,56 +3265,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Resources.LanguageResources.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Resources.LanguageResources.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Resources.SchemasResources.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Resources.SchemasResources.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Resources.SettingsResources.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Resources.SettingsResources.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Resources.ThemesResources.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Resources.ThemesResources.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Resources.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Resources.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.Security.Permissions.PermissionTypes.yml",
       "output": {
         ".html": {
@@ -4877,11 +4827,11 @@
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "api/toc.html"
-        },
         ".json": {
           "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
         }
       },
       "version": ""
@@ -4920,11 +4870,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "toc.html"
-        },
         ".json": {
           "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
         }
       },
       "version": ""
