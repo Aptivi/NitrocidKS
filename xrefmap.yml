@@ -2145,19 +2145,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.ColorBlind
   nameWithType: KernelColorTools.ColorBlind
-- uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.ColorBlindSimple
-  name: ColorBlindSimple
-  href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_ColorBlindSimple
-  commentId: P:Nitrocid.ConsoleBase.Colors.KernelColorTools.ColorBlindSimple
-  fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.ColorBlindSimple
-  nameWithType: KernelColorTools.ColorBlindSimple
-- uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.ColorBlindSimple*
-  name: ColorBlindSimple
-  href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_ColorBlindSimple_
-  commentId: Overload:Nitrocid.ConsoleBase.Colors.KernelColorTools.ColorBlindSimple
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.ColorBlindSimple
-  nameWithType: KernelColorTools.ColorBlindSimple
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.GetColor(Nitrocid.ConsoleBase.Colors.KernelColorType)
   name: GetColor(KernelColorType)
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_GetColor_Nitrocid_ConsoleBase_Colors_KernelColorType_
@@ -4132,42 +4119,42 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCentered
   nameWithType: TextFancyWriters.WriteCentered
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(Figletize.Utilities.FigletizeFont,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name: WriteCenteredFiglet(FigletizeFont, string, KernelColorType, KernelColorType, params object[])
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredFiglet_Figletize_Utilities_FigletizeFont_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(Figletize.Utilities.FigletizeFont,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name.vb: WriteCenteredFiglet(FigletizeFont, String, KernelColorType, KernelColorType, ParamArray Object())
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(Figletize.Utilities.FigletizeFont, string, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(Figletize.Utilities.FigletizeFont, String, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
-  nameWithType: TextFancyWriters.WriteCenteredFiglet(FigletizeFont, string, KernelColorType, KernelColorType, params object[])
-  nameWithType.vb: TextFancyWriters.WriteCenteredFiglet(FigletizeFont, String, KernelColorType, KernelColorType, ParamArray Object())
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(Figletize.Utilities.FigletizeFont,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name: WriteCenteredFiglet(FigletizeFont, string, KernelColorType, params object[])
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredFiglet_Figletize_Utilities_FigletizeFont_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(Figletize.Utilities.FigletizeFont,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name.vb: WriteCenteredFiglet(FigletizeFont, String, KernelColorType, ParamArray Object())
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(Figletize.Utilities.FigletizeFont, string, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(Figletize.Utilities.FigletizeFont, String, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
-  nameWithType: TextFancyWriters.WriteCenteredFiglet(FigletizeFont, string, KernelColorType, params object[])
-  nameWithType.vb: TextFancyWriters.WriteCenteredFiglet(FigletizeFont, String, KernelColorType, ParamArray Object())
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(System.Int32,Figletize.Utilities.FigletizeFont,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name: WriteCenteredFiglet(int, FigletizeFont, string, KernelColorType, KernelColorType, params object[])
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredFiglet_System_Int32_Figletize_Utilities_FigletizeFont_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(System.Int32,Figletize.Utilities.FigletizeFont,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name.vb: WriteCenteredFiglet(Integer, FigletizeFont, String, KernelColorType, KernelColorType, ParamArray Object())
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(int, Figletize.Utilities.FigletizeFont, string, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(Integer, Figletize.Utilities.FigletizeFont, String, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
-  nameWithType: TextFancyWriters.WriteCenteredFiglet(int, FigletizeFont, string, KernelColorType, KernelColorType, params object[])
-  nameWithType.vb: TextFancyWriters.WriteCenteredFiglet(Integer, FigletizeFont, String, KernelColorType, KernelColorType, ParamArray Object())
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(System.Int32,Figletize.Utilities.FigletizeFont,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name: WriteCenteredFiglet(int, FigletizeFont, string, KernelColorType, params object[])
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredFiglet_System_Int32_Figletize_Utilities_FigletizeFont_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(System.Int32,Figletize.Utilities.FigletizeFont,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name.vb: WriteCenteredFiglet(Integer, FigletizeFont, String, KernelColorType, ParamArray Object())
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(int, Figletize.Utilities.FigletizeFont, string, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(Integer, Figletize.Utilities.FigletizeFont, String, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
-  nameWithType: TextFancyWriters.WriteCenteredFiglet(int, FigletizeFont, string, KernelColorType, params object[])
-  nameWithType.vb: TextFancyWriters.WriteCenteredFiglet(Integer, FigletizeFont, String, KernelColorType, ParamArray Object())
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(System.Int32,Textify.Figlet.Utilities.Lines.FigletFont,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteCenteredFiglet(int, FigletFont, string, KernelColorType, KernelColorType, params object[])
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredFiglet_System_Int32_Textify_Figlet_Utilities_Lines_FigletFont_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(System.Int32,Textify.Figlet.Utilities.Lines.FigletFont,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteCenteredFiglet(Integer, FigletFont, String, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(int, Textify.Figlet.Utilities.Lines.FigletFont, string, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(Integer, Textify.Figlet.Utilities.Lines.FigletFont, String, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextFancyWriters.WriteCenteredFiglet(int, FigletFont, string, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: TextFancyWriters.WriteCenteredFiglet(Integer, FigletFont, String, KernelColorType, KernelColorType, ParamArray Object())
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(System.Int32,Textify.Figlet.Utilities.Lines.FigletFont,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteCenteredFiglet(int, FigletFont, string, KernelColorType, params object[])
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredFiglet_System_Int32_Textify_Figlet_Utilities_Lines_FigletFont_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(System.Int32,Textify.Figlet.Utilities.Lines.FigletFont,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteCenteredFiglet(Integer, FigletFont, String, KernelColorType, ParamArray Object())
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(int, Textify.Figlet.Utilities.Lines.FigletFont, string, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(Integer, Textify.Figlet.Utilities.Lines.FigletFont, String, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextFancyWriters.WriteCenteredFiglet(int, FigletFont, string, KernelColorType, params object[])
+  nameWithType.vb: TextFancyWriters.WriteCenteredFiglet(Integer, FigletFont, String, KernelColorType, ParamArray Object())
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(Textify.Figlet.Utilities.Lines.FigletFont,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteCenteredFiglet(FigletFont, string, KernelColorType, KernelColorType, params object[])
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredFiglet_Textify_Figlet_Utilities_Lines_FigletFont_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(Textify.Figlet.Utilities.Lines.FigletFont,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteCenteredFiglet(FigletFont, String, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(Textify.Figlet.Utilities.Lines.FigletFont, string, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(Textify.Figlet.Utilities.Lines.FigletFont, String, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextFancyWriters.WriteCenteredFiglet(FigletFont, string, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: TextFancyWriters.WriteCenteredFiglet(FigletFont, String, KernelColorType, KernelColorType, ParamArray Object())
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(Textify.Figlet.Utilities.Lines.FigletFont,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteCenteredFiglet(FigletFont, string, KernelColorType, params object[])
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredFiglet_Textify_Figlet_Utilities_Lines_FigletFont_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(Textify.Figlet.Utilities.Lines.FigletFont,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteCenteredFiglet(FigletFont, String, KernelColorType, ParamArray Object())
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(Textify.Figlet.Utilities.Lines.FigletFont, string, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet(Textify.Figlet.Utilities.Lines.FigletFont, String, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextFancyWriters.WriteCenteredFiglet(FigletFont, string, KernelColorType, params object[])
+  nameWithType.vb: TextFancyWriters.WriteCenteredFiglet(FigletFont, String, KernelColorType, ParamArray Object())
 - uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredFiglet*
   name: WriteCenteredFiglet
   href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredFiglet_
@@ -4218,24 +4205,24 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredOneLine
   nameWithType: TextFancyWriters.WriteCenteredOneLine
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet(System.String,Figletize.Utilities.FigletizeFont,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name: WriteFiglet(string, FigletizeFont, KernelColorType, KernelColorType, params object[])
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteFiglet_System_String_Figletize_Utilities_FigletizeFont_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet(System.String,Figletize.Utilities.FigletizeFont,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name.vb: WriteFiglet(String, FigletizeFont, KernelColorType, KernelColorType, ParamArray Object())
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet(string, Figletize.Utilities.FigletizeFont, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet(String, Figletize.Utilities.FigletizeFont, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
-  nameWithType: TextFancyWriters.WriteFiglet(string, FigletizeFont, KernelColorType, KernelColorType, params object[])
-  nameWithType.vb: TextFancyWriters.WriteFiglet(String, FigletizeFont, KernelColorType, KernelColorType, ParamArray Object())
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet(System.String,Figletize.Utilities.FigletizeFont,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name: WriteFiglet(string, FigletizeFont, KernelColorType, params object[])
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteFiglet_System_String_Figletize_Utilities_FigletizeFont_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet(System.String,Figletize.Utilities.FigletizeFont,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name.vb: WriteFiglet(String, FigletizeFont, KernelColorType, ParamArray Object())
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet(string, Figletize.Utilities.FigletizeFont, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet(String, Figletize.Utilities.FigletizeFont, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
-  nameWithType: TextFancyWriters.WriteFiglet(string, FigletizeFont, KernelColorType, params object[])
-  nameWithType.vb: TextFancyWriters.WriteFiglet(String, FigletizeFont, KernelColorType, ParamArray Object())
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet(System.String,Textify.Figlet.Utilities.Lines.FigletFont,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteFiglet(string, FigletFont, KernelColorType, KernelColorType, params object[])
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteFiglet_System_String_Textify_Figlet_Utilities_Lines_FigletFont_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet(System.String,Textify.Figlet.Utilities.Lines.FigletFont,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteFiglet(String, FigletFont, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet(string, Textify.Figlet.Utilities.Lines.FigletFont, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet(String, Textify.Figlet.Utilities.Lines.FigletFont, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextFancyWriters.WriteFiglet(string, FigletFont, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: TextFancyWriters.WriteFiglet(String, FigletFont, KernelColorType, KernelColorType, ParamArray Object())
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet(System.String,Textify.Figlet.Utilities.Lines.FigletFont,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteFiglet(string, FigletFont, KernelColorType, params object[])
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteFiglet_System_String_Textify_Figlet_Utilities_Lines_FigletFont_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet(System.String,Textify.Figlet.Utilities.Lines.FigletFont,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteFiglet(String, FigletFont, KernelColorType, ParamArray Object())
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet(string, Textify.Figlet.Utilities.Lines.FigletFont, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet(String, Textify.Figlet.Utilities.Lines.FigletFont, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextFancyWriters.WriteFiglet(string, FigletFont, KernelColorType, params object[])
+  nameWithType.vb: TextFancyWriters.WriteFiglet(String, FigletFont, KernelColorType, ParamArray Object())
 - uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet*
   name: WriteFiglet
   href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteFiglet_
@@ -4243,24 +4230,24 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet
   nameWithType: TextFancyWriters.WriteFiglet
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere(System.String,System.Int32,System.Int32,System.Boolean,Figletize.Utilities.FigletizeFont,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name: WriteFigletWhere(string, int, int, bool, FigletizeFont, KernelColorType, KernelColorType, params object[])
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteFigletWhere_System_String_System_Int32_System_Int32_System_Boolean_Figletize_Utilities_FigletizeFont_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere(System.String,System.Int32,System.Int32,System.Boolean,Figletize.Utilities.FigletizeFont,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name.vb: WriteFigletWhere(String, Integer, Integer, Boolean, FigletizeFont, KernelColorType, KernelColorType, ParamArray Object())
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere(string, int, int, bool, Figletize.Utilities.FigletizeFont, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere(String, Integer, Integer, Boolean, Figletize.Utilities.FigletizeFont, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
-  nameWithType: TextFancyWriters.WriteFigletWhere(string, int, int, bool, FigletizeFont, KernelColorType, KernelColorType, params object[])
-  nameWithType.vb: TextFancyWriters.WriteFigletWhere(String, Integer, Integer, Boolean, FigletizeFont, KernelColorType, KernelColorType, ParamArray Object())
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere(System.String,System.Int32,System.Int32,System.Boolean,Figletize.Utilities.FigletizeFont,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name: WriteFigletWhere(string, int, int, bool, FigletizeFont, KernelColorType, params object[])
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteFigletWhere_System_String_System_Int32_System_Int32_System_Boolean_Figletize_Utilities_FigletizeFont_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere(System.String,System.Int32,System.Int32,System.Boolean,Figletize.Utilities.FigletizeFont,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name.vb: WriteFigletWhere(String, Integer, Integer, Boolean, FigletizeFont, KernelColorType, ParamArray Object())
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere(string, int, int, bool, Figletize.Utilities.FigletizeFont, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere(String, Integer, Integer, Boolean, Figletize.Utilities.FigletizeFont, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
-  nameWithType: TextFancyWriters.WriteFigletWhere(string, int, int, bool, FigletizeFont, KernelColorType, params object[])
-  nameWithType.vb: TextFancyWriters.WriteFigletWhere(String, Integer, Integer, Boolean, FigletizeFont, KernelColorType, ParamArray Object())
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere(System.String,System.Int32,System.Int32,System.Boolean,Textify.Figlet.Utilities.Lines.FigletFont,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteFigletWhere(string, int, int, bool, FigletFont, KernelColorType, KernelColorType, params object[])
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteFigletWhere_System_String_System_Int32_System_Int32_System_Boolean_Textify_Figlet_Utilities_Lines_FigletFont_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere(System.String,System.Int32,System.Int32,System.Boolean,Textify.Figlet.Utilities.Lines.FigletFont,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteFigletWhere(String, Integer, Integer, Boolean, FigletFont, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere(string, int, int, bool, Textify.Figlet.Utilities.Lines.FigletFont, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere(String, Integer, Integer, Boolean, Textify.Figlet.Utilities.Lines.FigletFont, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextFancyWriters.WriteFigletWhere(string, int, int, bool, FigletFont, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: TextFancyWriters.WriteFigletWhere(String, Integer, Integer, Boolean, FigletFont, KernelColorType, KernelColorType, ParamArray Object())
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere(System.String,System.Int32,System.Int32,System.Boolean,Textify.Figlet.Utilities.Lines.FigletFont,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteFigletWhere(string, int, int, bool, FigletFont, KernelColorType, params object[])
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteFigletWhere_System_String_System_Int32_System_Int32_System_Boolean_Textify_Figlet_Utilities_Lines_FigletFont_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere(System.String,System.Int32,System.Int32,System.Boolean,Textify.Figlet.Utilities.Lines.FigletFont,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteFigletWhere(String, Integer, Integer, Boolean, FigletFont, KernelColorType, ParamArray Object())
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere(string, int, int, bool, Textify.Figlet.Utilities.Lines.FigletFont, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere(String, Integer, Integer, Boolean, Textify.Figlet.Utilities.Lines.FigletFont, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextFancyWriters.WriteFigletWhere(string, int, int, bool, FigletFont, KernelColorType, params object[])
+  nameWithType.vb: TextFancyWriters.WriteFigletWhere(String, Integer, Integer, Boolean, FigletFont, KernelColorType, ParamArray Object())
 - uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere*
   name: WriteFigletWhere
   href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteFigletWhere_
@@ -4284,87 +4271,60 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WritePowerLine
   nameWithType: TextFancyWriters.WritePowerLine
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Boolean)
-  name: WriteProgress(double, int, int, KernelColorType, KernelColorType, KernelColorType, bool, bool)
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_System_Boolean_
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Boolean)
-  name.vb: WriteProgress(Double, Integer, Integer, KernelColorType, KernelColorType, KernelColorType, Boolean, Boolean)
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(double, int, int, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, bool, bool)
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(Double, Integer, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Boolean, Boolean)
-  nameWithType: TextFancyWriters.WriteProgress(double, int, int, KernelColorType, KernelColorType, KernelColorType, bool, bool)
-  nameWithType.vb: TextFancyWriters.WriteProgress(Double, Integer, Integer, KernelColorType, KernelColorType, KernelColorType, Boolean, Boolean)
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Boolean)
-  name: WriteProgress(double, int, int, KernelColorType, KernelColorType, bool, bool)
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_System_Boolean_
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Boolean)
-  name.vb: WriteProgress(Double, Integer, Integer, KernelColorType, KernelColorType, Boolean, Boolean)
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(double, int, int, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, bool, bool)
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(Double, Integer, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Boolean, Boolean)
-  nameWithType: TextFancyWriters.WriteProgress(double, int, int, KernelColorType, KernelColorType, bool, bool)
-  nameWithType.vb: TextFancyWriters.WriteProgress(Double, Integer, Integer, KernelColorType, KernelColorType, Boolean, Boolean)
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Boolean)
-  name: WriteProgress(double, int, int, KernelColorType, bool, bool)
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_System_Boolean_
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Boolean)
-  name.vb: WriteProgress(Double, Integer, Integer, KernelColorType, Boolean, Boolean)
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(double, int, int, Nitrocid.ConsoleBase.Colors.KernelColorType, bool, bool)
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(Double, Integer, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, Boolean, Boolean)
-  nameWithType: TextFancyWriters.WriteProgress(double, int, int, KernelColorType, bool, bool)
-  nameWithType.vb: TextFancyWriters.WriteProgress(Double, Integer, Integer, KernelColorType, Boolean, Boolean)
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Boolean)
-  name: WriteProgress(double, int, int, int, KernelColorType, KernelColorType, KernelColorType, bool, bool)
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_System_Boolean_
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Boolean)
-  name.vb: WriteProgress(Double, Integer, Integer, Integer, KernelColorType, KernelColorType, KernelColorType, Boolean, Boolean)
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(double, int, int, int, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, bool, bool)
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(Double, Integer, Integer, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Boolean, Boolean)
-  nameWithType: TextFancyWriters.WriteProgress(double, int, int, int, KernelColorType, KernelColorType, KernelColorType, bool, bool)
-  nameWithType.vb: TextFancyWriters.WriteProgress(Double, Integer, Integer, Integer, KernelColorType, KernelColorType, KernelColorType, Boolean, Boolean)
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Boolean)
-  name: WriteProgress(double, int, int, int, KernelColorType, KernelColorType, bool, bool)
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_System_Boolean_
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Boolean)
-  name.vb: WriteProgress(Double, Integer, Integer, Integer, KernelColorType, KernelColorType, Boolean, Boolean)
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(double, int, int, int, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, bool, bool)
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(Double, Integer, Integer, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Boolean, Boolean)
-  nameWithType: TextFancyWriters.WriteProgress(double, int, int, int, KernelColorType, KernelColorType, bool, bool)
-  nameWithType.vb: TextFancyWriters.WriteProgress(Double, Integer, Integer, Integer, KernelColorType, KernelColorType, Boolean, Boolean)
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Boolean)
-  name: WriteProgress(double, int, int, int, KernelColorType, bool, bool)
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_System_Boolean_
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Boolean)
-  name.vb: WriteProgress(Double, Integer, Integer, Integer, KernelColorType, Boolean, Boolean)
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(double, int, int, int, Nitrocid.ConsoleBase.Colors.KernelColorType, bool, bool)
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(Double, Integer, Integer, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, Boolean, Boolean)
-  nameWithType: TextFancyWriters.WriteProgress(double, int, int, int, KernelColorType, bool, bool)
-  nameWithType.vb: TextFancyWriters.WriteProgress(Double, Integer, Integer, Integer, KernelColorType, Boolean, Boolean)
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Boolean)
-  name: WriteProgress(double, int, int, int, int, KernelColorType, KernelColorType, KernelColorType, bool, bool)
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_System_Boolean_
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Boolean)
-  name.vb: WriteProgress(Double, Integer, Integer, Integer, Integer, KernelColorType, KernelColorType, KernelColorType, Boolean, Boolean)
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(double, int, int, int, int, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, bool, bool)
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(Double, Integer, Integer, Integer, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Boolean, Boolean)
-  nameWithType: TextFancyWriters.WriteProgress(double, int, int, int, int, KernelColorType, KernelColorType, KernelColorType, bool, bool)
-  nameWithType.vb: TextFancyWriters.WriteProgress(Double, Integer, Integer, Integer, Integer, KernelColorType, KernelColorType, KernelColorType, Boolean, Boolean)
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Boolean)
-  name: WriteProgress(double, int, int, int, int, KernelColorType, KernelColorType, bool, bool)
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_System_Boolean_
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Boolean)
-  name.vb: WriteProgress(Double, Integer, Integer, Integer, Integer, KernelColorType, KernelColorType, Boolean, Boolean)
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(double, int, int, int, int, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, bool, bool)
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(Double, Integer, Integer, Integer, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Boolean, Boolean)
-  nameWithType: TextFancyWriters.WriteProgress(double, int, int, int, int, KernelColorType, KernelColorType, bool, bool)
-  nameWithType.vb: TextFancyWriters.WriteProgress(Double, Integer, Integer, Integer, Integer, KernelColorType, KernelColorType, Boolean, Boolean)
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Boolean)
-  name: WriteProgress(double, int, int, int, int, KernelColorType, bool, bool)
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_System_Boolean_
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Boolean)
-  name.vb: WriteProgress(Double, Integer, Integer, Integer, Integer, KernelColorType, Boolean, Boolean)
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(double, int, int, int, int, Nitrocid.ConsoleBase.Colors.KernelColorType, bool, bool)
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(Double, Integer, Integer, Integer, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, Boolean, Boolean)
-  nameWithType: TextFancyWriters.WriteProgress(double, int, int, int, int, KernelColorType, bool, bool)
-  nameWithType.vb: TextFancyWriters.WriteProgress(Double, Integer, Integer, Integer, Integer, KernelColorType, Boolean, Boolean)
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)
+  name: WriteProgress(double, int, int, KernelColorType, KernelColorType, KernelColorType, bool)
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)
+  name.vb: WriteProgress(Double, Integer, Integer, KernelColorType, KernelColorType, KernelColorType, Boolean)
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(double, int, int, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, bool)
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(Double, Integer, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Boolean)
+  nameWithType: TextFancyWriters.WriteProgress(double, int, int, KernelColorType, KernelColorType, KernelColorType, bool)
+  nameWithType.vb: TextFancyWriters.WriteProgress(Double, Integer, Integer, KernelColorType, KernelColorType, KernelColorType, Boolean)
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)
+  name: WriteProgress(double, int, int, KernelColorType, KernelColorType, bool)
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)
+  name.vb: WriteProgress(Double, Integer, Integer, KernelColorType, KernelColorType, Boolean)
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(double, int, int, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, bool)
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(Double, Integer, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Boolean)
+  nameWithType: TextFancyWriters.WriteProgress(double, int, int, KernelColorType, KernelColorType, bool)
+  nameWithType.vb: TextFancyWriters.WriteProgress(Double, Integer, Integer, KernelColorType, KernelColorType, Boolean)
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)
+  name: WriteProgress(double, int, int, KernelColorType, bool)
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)
+  name.vb: WriteProgress(Double, Integer, Integer, KernelColorType, Boolean)
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(double, int, int, Nitrocid.ConsoleBase.Colors.KernelColorType, bool)
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(Double, Integer, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, Boolean)
+  nameWithType: TextFancyWriters.WriteProgress(double, int, int, KernelColorType, bool)
+  nameWithType.vb: TextFancyWriters.WriteProgress(Double, Integer, Integer, KernelColorType, Boolean)
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)
+  name: WriteProgress(double, int, int, int, KernelColorType, KernelColorType, KernelColorType, bool)
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)
+  name.vb: WriteProgress(Double, Integer, Integer, Integer, KernelColorType, KernelColorType, KernelColorType, Boolean)
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(double, int, int, int, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, bool)
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(Double, Integer, Integer, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Boolean)
+  nameWithType: TextFancyWriters.WriteProgress(double, int, int, int, KernelColorType, KernelColorType, KernelColorType, bool)
+  nameWithType.vb: TextFancyWriters.WriteProgress(Double, Integer, Integer, Integer, KernelColorType, KernelColorType, KernelColorType, Boolean)
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)
+  name: WriteProgress(double, int, int, int, KernelColorType, KernelColorType, bool)
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)
+  name.vb: WriteProgress(Double, Integer, Integer, Integer, KernelColorType, KernelColorType, Boolean)
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(double, int, int, int, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, bool)
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(Double, Integer, Integer, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Boolean)
+  nameWithType: TextFancyWriters.WriteProgress(double, int, int, int, KernelColorType, KernelColorType, bool)
+  nameWithType.vb: TextFancyWriters.WriteProgress(Double, Integer, Integer, Integer, KernelColorType, KernelColorType, Boolean)
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)
+  name: WriteProgress(double, int, int, int, KernelColorType, bool)
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)
+  name.vb: WriteProgress(Double, Integer, Integer, Integer, KernelColorType, Boolean)
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(double, int, int, int, Nitrocid.ConsoleBase.Colors.KernelColorType, bool)
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(Double, Integer, Integer, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, Boolean)
+  nameWithType: TextFancyWriters.WriteProgress(double, int, int, int, KernelColorType, bool)
+  nameWithType.vb: TextFancyWriters.WriteProgress(Double, Integer, Integer, Integer, KernelColorType, Boolean)
 - uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress*
   name: WriteProgress
   href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_
@@ -4390,24 +4350,6 @@ references:
   fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteSeparator(String, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
   nameWithType: TextFancyWriters.WriteSeparator(string, KernelColorType, params object[])
   nameWithType.vb: TextFancyWriters.WriteSeparator(String, KernelColorType, ParamArray Object())
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteSeparator(System.String,System.Boolean,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name: WriteSeparator(string, bool, KernelColorType, KernelColorType, params object[])
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteSeparator_System_String_System_Boolean_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteSeparator(System.String,System.Boolean,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name.vb: WriteSeparator(String, Boolean, KernelColorType, KernelColorType, ParamArray Object())
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteSeparator(string, bool, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteSeparator(String, Boolean, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
-  nameWithType: TextFancyWriters.WriteSeparator(string, bool, KernelColorType, KernelColorType, params object[])
-  nameWithType.vb: TextFancyWriters.WriteSeparator(String, Boolean, KernelColorType, KernelColorType, ParamArray Object())
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteSeparator(System.String,System.Boolean,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name: WriteSeparator(string, bool, KernelColorType, params object[])
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteSeparator_System_String_System_Boolean_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteSeparator(System.String,System.Boolean,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name.vb: WriteSeparator(String, Boolean, KernelColorType, ParamArray Object())
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteSeparator(string, bool, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteSeparator(String, Boolean, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
-  nameWithType: TextFancyWriters.WriteSeparator(string, bool, KernelColorType, params object[])
-  nameWithType.vb: TextFancyWriters.WriteSeparator(String, Boolean, KernelColorType, ParamArray Object())
 - uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteSeparator*
   name: WriteSeparator
   href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteSeparator_
@@ -4467,24 +4409,6 @@ references:
   fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteVerticalProgress(Double, Integer, Integer, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, Boolean)
   nameWithType: TextFancyWriters.WriteVerticalProgress(double, int, int, int, KernelColorType, bool)
   nameWithType.vb: TextFancyWriters.WriteVerticalProgress(Double, Integer, Integer, Integer, KernelColorType, Boolean)
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteVerticalProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)
-  name: WriteVerticalProgress(double, int, int, int, int, KernelColorType, KernelColorType, bool)
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteVerticalProgress_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteVerticalProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)
-  name.vb: WriteVerticalProgress(Double, Integer, Integer, Integer, Integer, KernelColorType, KernelColorType, Boolean)
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteVerticalProgress(double, int, int, int, int, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, bool)
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteVerticalProgress(Double, Integer, Integer, Integer, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Boolean)
-  nameWithType: TextFancyWriters.WriteVerticalProgress(double, int, int, int, int, KernelColorType, KernelColorType, bool)
-  nameWithType.vb: TextFancyWriters.WriteVerticalProgress(Double, Integer, Integer, Integer, Integer, KernelColorType, KernelColorType, Boolean)
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteVerticalProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)
-  name: WriteVerticalProgress(double, int, int, int, int, KernelColorType, bool)
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteVerticalProgress_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteVerticalProgress(System.Double,System.Int32,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)
-  name.vb: WriteVerticalProgress(Double, Integer, Integer, Integer, Integer, KernelColorType, Boolean)
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteVerticalProgress(double, int, int, int, int, Nitrocid.ConsoleBase.Colors.KernelColorType, bool)
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteVerticalProgress(Double, Integer, Integer, Integer, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, Boolean)
-  nameWithType: TextFancyWriters.WriteVerticalProgress(double, int, int, int, int, KernelColorType, bool)
-  nameWithType.vb: TextFancyWriters.WriteVerticalProgress(Double, Integer, Integer, Integer, Integer, KernelColorType, Boolean)
 - uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteVerticalProgress*
   name: WriteVerticalProgress
   href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteVerticalProgress_
@@ -19825,19 +19749,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ColorBlind
   nameWithType: KernelMainConfig.ColorBlind
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ColorBlindSimple
-  name: ColorBlindSimple
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ColorBlindSimple
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ColorBlindSimple
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ColorBlindSimple
-  nameWithType: KernelMainConfig.ColorBlindSimple
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ColorBlindSimple*
-  name: ColorBlindSimple
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ColorBlindSimple_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ColorBlindSimple
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ColorBlindSimple
-  nameWithType: KernelMainConfig.ColorBlindSimple
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ConsoleSupportsTrueColor
   name: ConsoleSupportsTrueColor
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ConsoleSupportsTrueColor
