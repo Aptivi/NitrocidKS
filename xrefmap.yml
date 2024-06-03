@@ -5099,6 +5099,54 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Drivers.Console.BaseConsoleDriver.ResetColor
   nameWithType: BaseConsoleDriver.ResetColor
+- uid: Nitrocid.Drivers.Console.BaseConsoleDriver.SetBufferDimensions(System.Int32,System.Int32)
+  name: SetBufferDimensions(int, int)
+  href: api/Nitrocid.Drivers.Console.BaseConsoleDriver.html#Nitrocid_Drivers_Console_BaseConsoleDriver_SetBufferDimensions_System_Int32_System_Int32_
+  commentId: M:Nitrocid.Drivers.Console.BaseConsoleDriver.SetBufferDimensions(System.Int32,System.Int32)
+  name.vb: SetBufferDimensions(Integer, Integer)
+  fullName: Nitrocid.Drivers.Console.BaseConsoleDriver.SetBufferDimensions(int, int)
+  fullName.vb: Nitrocid.Drivers.Console.BaseConsoleDriver.SetBufferDimensions(Integer, Integer)
+  nameWithType: BaseConsoleDriver.SetBufferDimensions(int, int)
+  nameWithType.vb: BaseConsoleDriver.SetBufferDimensions(Integer, Integer)
+- uid: Nitrocid.Drivers.Console.BaseConsoleDriver.SetBufferDimensions*
+  name: SetBufferDimensions
+  href: api/Nitrocid.Drivers.Console.BaseConsoleDriver.html#Nitrocid_Drivers_Console_BaseConsoleDriver_SetBufferDimensions_
+  commentId: Overload:Nitrocid.Drivers.Console.BaseConsoleDriver.SetBufferDimensions
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Console.BaseConsoleDriver.SetBufferDimensions
+  nameWithType: BaseConsoleDriver.SetBufferDimensions
+- uid: Nitrocid.Drivers.Console.BaseConsoleDriver.SetBufferHeight(System.Int32)
+  name: SetBufferHeight(int)
+  href: api/Nitrocid.Drivers.Console.BaseConsoleDriver.html#Nitrocid_Drivers_Console_BaseConsoleDriver_SetBufferHeight_System_Int32_
+  commentId: M:Nitrocid.Drivers.Console.BaseConsoleDriver.SetBufferHeight(System.Int32)
+  name.vb: SetBufferHeight(Integer)
+  fullName: Nitrocid.Drivers.Console.BaseConsoleDriver.SetBufferHeight(int)
+  fullName.vb: Nitrocid.Drivers.Console.BaseConsoleDriver.SetBufferHeight(Integer)
+  nameWithType: BaseConsoleDriver.SetBufferHeight(int)
+  nameWithType.vb: BaseConsoleDriver.SetBufferHeight(Integer)
+- uid: Nitrocid.Drivers.Console.BaseConsoleDriver.SetBufferHeight*
+  name: SetBufferHeight
+  href: api/Nitrocid.Drivers.Console.BaseConsoleDriver.html#Nitrocid_Drivers_Console_BaseConsoleDriver_SetBufferHeight_
+  commentId: Overload:Nitrocid.Drivers.Console.BaseConsoleDriver.SetBufferHeight
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Console.BaseConsoleDriver.SetBufferHeight
+  nameWithType: BaseConsoleDriver.SetBufferHeight
+- uid: Nitrocid.Drivers.Console.BaseConsoleDriver.SetBufferWidth(System.Int32)
+  name: SetBufferWidth(int)
+  href: api/Nitrocid.Drivers.Console.BaseConsoleDriver.html#Nitrocid_Drivers_Console_BaseConsoleDriver_SetBufferWidth_System_Int32_
+  commentId: M:Nitrocid.Drivers.Console.BaseConsoleDriver.SetBufferWidth(System.Int32)
+  name.vb: SetBufferWidth(Integer)
+  fullName: Nitrocid.Drivers.Console.BaseConsoleDriver.SetBufferWidth(int)
+  fullName.vb: Nitrocid.Drivers.Console.BaseConsoleDriver.SetBufferWidth(Integer)
+  nameWithType: BaseConsoleDriver.SetBufferWidth(int)
+  nameWithType.vb: BaseConsoleDriver.SetBufferWidth(Integer)
+- uid: Nitrocid.Drivers.Console.BaseConsoleDriver.SetBufferWidth*
+  name: SetBufferWidth
+  href: api/Nitrocid.Drivers.Console.BaseConsoleDriver.html#Nitrocid_Drivers_Console_BaseConsoleDriver_SetBufferWidth_
+  commentId: Overload:Nitrocid.Drivers.Console.BaseConsoleDriver.SetBufferWidth
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Console.BaseConsoleDriver.SetBufferWidth
+  nameWithType: BaseConsoleDriver.SetBufferWidth
 - uid: Nitrocid.Drivers.Console.BaseConsoleDriver.SetCursorPosition(System.Int32,System.Int32)
   name: SetCursorPosition(int, int)
   href: api/Nitrocid.Drivers.Console.BaseConsoleDriver.html#Nitrocid_Drivers_Console_BaseConsoleDriver_SetCursorPosition_System_Int32_System_Int32_
@@ -5128,6 +5176,54 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Drivers.Console.BaseConsoleDriver.SetOut
   nameWithType: BaseConsoleDriver.SetOut
+- uid: Nitrocid.Drivers.Console.BaseConsoleDriver.SetWindowDimensions(System.Int32,System.Int32)
+  name: SetWindowDimensions(int, int)
+  href: api/Nitrocid.Drivers.Console.BaseConsoleDriver.html#Nitrocid_Drivers_Console_BaseConsoleDriver_SetWindowDimensions_System_Int32_System_Int32_
+  commentId: M:Nitrocid.Drivers.Console.BaseConsoleDriver.SetWindowDimensions(System.Int32,System.Int32)
+  name.vb: SetWindowDimensions(Integer, Integer)
+  fullName: Nitrocid.Drivers.Console.BaseConsoleDriver.SetWindowDimensions(int, int)
+  fullName.vb: Nitrocid.Drivers.Console.BaseConsoleDriver.SetWindowDimensions(Integer, Integer)
+  nameWithType: BaseConsoleDriver.SetWindowDimensions(int, int)
+  nameWithType.vb: BaseConsoleDriver.SetWindowDimensions(Integer, Integer)
+- uid: Nitrocid.Drivers.Console.BaseConsoleDriver.SetWindowDimensions*
+  name: SetWindowDimensions
+  href: api/Nitrocid.Drivers.Console.BaseConsoleDriver.html#Nitrocid_Drivers_Console_BaseConsoleDriver_SetWindowDimensions_
+  commentId: Overload:Nitrocid.Drivers.Console.BaseConsoleDriver.SetWindowDimensions
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Console.BaseConsoleDriver.SetWindowDimensions
+  nameWithType: BaseConsoleDriver.SetWindowDimensions
+- uid: Nitrocid.Drivers.Console.BaseConsoleDriver.SetWindowHeight(System.Int32)
+  name: SetWindowHeight(int)
+  href: api/Nitrocid.Drivers.Console.BaseConsoleDriver.html#Nitrocid_Drivers_Console_BaseConsoleDriver_SetWindowHeight_System_Int32_
+  commentId: M:Nitrocid.Drivers.Console.BaseConsoleDriver.SetWindowHeight(System.Int32)
+  name.vb: SetWindowHeight(Integer)
+  fullName: Nitrocid.Drivers.Console.BaseConsoleDriver.SetWindowHeight(int)
+  fullName.vb: Nitrocid.Drivers.Console.BaseConsoleDriver.SetWindowHeight(Integer)
+  nameWithType: BaseConsoleDriver.SetWindowHeight(int)
+  nameWithType.vb: BaseConsoleDriver.SetWindowHeight(Integer)
+- uid: Nitrocid.Drivers.Console.BaseConsoleDriver.SetWindowHeight*
+  name: SetWindowHeight
+  href: api/Nitrocid.Drivers.Console.BaseConsoleDriver.html#Nitrocid_Drivers_Console_BaseConsoleDriver_SetWindowHeight_
+  commentId: Overload:Nitrocid.Drivers.Console.BaseConsoleDriver.SetWindowHeight
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Console.BaseConsoleDriver.SetWindowHeight
+  nameWithType: BaseConsoleDriver.SetWindowHeight
+- uid: Nitrocid.Drivers.Console.BaseConsoleDriver.SetWindowWidth(System.Int32)
+  name: SetWindowWidth(int)
+  href: api/Nitrocid.Drivers.Console.BaseConsoleDriver.html#Nitrocid_Drivers_Console_BaseConsoleDriver_SetWindowWidth_System_Int32_
+  commentId: M:Nitrocid.Drivers.Console.BaseConsoleDriver.SetWindowWidth(System.Int32)
+  name.vb: SetWindowWidth(Integer)
+  fullName: Nitrocid.Drivers.Console.BaseConsoleDriver.SetWindowWidth(int)
+  fullName.vb: Nitrocid.Drivers.Console.BaseConsoleDriver.SetWindowWidth(Integer)
+  nameWithType: BaseConsoleDriver.SetWindowWidth(int)
+  nameWithType.vb: BaseConsoleDriver.SetWindowWidth(Integer)
+- uid: Nitrocid.Drivers.Console.BaseConsoleDriver.SetWindowWidth*
+  name: SetWindowWidth
+  href: api/Nitrocid.Drivers.Console.BaseConsoleDriver.html#Nitrocid_Drivers_Console_BaseConsoleDriver_SetWindowWidth_
+  commentId: Overload:Nitrocid.Drivers.Console.BaseConsoleDriver.SetWindowWidth
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Console.BaseConsoleDriver.SetWindowWidth
+  nameWithType: BaseConsoleDriver.SetWindowWidth
 - uid: Nitrocid.Drivers.Console.BaseConsoleDriver.TreatCtrlCAsInput
   name: TreatCtrlCAsInput
   href: api/Nitrocid.Drivers.Console.BaseConsoleDriver.html#Nitrocid_Drivers_Console_BaseConsoleDriver_TreatCtrlCAsInput
@@ -5688,6 +5784,54 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Drivers.Console.IConsoleDriver.ResetColor
   nameWithType: IConsoleDriver.ResetColor
+- uid: Nitrocid.Drivers.Console.IConsoleDriver.SetBufferDimensions(System.Int32,System.Int32)
+  name: SetBufferDimensions(int, int)
+  href: api/Nitrocid.Drivers.Console.IConsoleDriver.html#Nitrocid_Drivers_Console_IConsoleDriver_SetBufferDimensions_System_Int32_System_Int32_
+  commentId: M:Nitrocid.Drivers.Console.IConsoleDriver.SetBufferDimensions(System.Int32,System.Int32)
+  name.vb: SetBufferDimensions(Integer, Integer)
+  fullName: Nitrocid.Drivers.Console.IConsoleDriver.SetBufferDimensions(int, int)
+  fullName.vb: Nitrocid.Drivers.Console.IConsoleDriver.SetBufferDimensions(Integer, Integer)
+  nameWithType: IConsoleDriver.SetBufferDimensions(int, int)
+  nameWithType.vb: IConsoleDriver.SetBufferDimensions(Integer, Integer)
+- uid: Nitrocid.Drivers.Console.IConsoleDriver.SetBufferDimensions*
+  name: SetBufferDimensions
+  href: api/Nitrocid.Drivers.Console.IConsoleDriver.html#Nitrocid_Drivers_Console_IConsoleDriver_SetBufferDimensions_
+  commentId: Overload:Nitrocid.Drivers.Console.IConsoleDriver.SetBufferDimensions
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Console.IConsoleDriver.SetBufferDimensions
+  nameWithType: IConsoleDriver.SetBufferDimensions
+- uid: Nitrocid.Drivers.Console.IConsoleDriver.SetBufferHeight(System.Int32)
+  name: SetBufferHeight(int)
+  href: api/Nitrocid.Drivers.Console.IConsoleDriver.html#Nitrocid_Drivers_Console_IConsoleDriver_SetBufferHeight_System_Int32_
+  commentId: M:Nitrocid.Drivers.Console.IConsoleDriver.SetBufferHeight(System.Int32)
+  name.vb: SetBufferHeight(Integer)
+  fullName: Nitrocid.Drivers.Console.IConsoleDriver.SetBufferHeight(int)
+  fullName.vb: Nitrocid.Drivers.Console.IConsoleDriver.SetBufferHeight(Integer)
+  nameWithType: IConsoleDriver.SetBufferHeight(int)
+  nameWithType.vb: IConsoleDriver.SetBufferHeight(Integer)
+- uid: Nitrocid.Drivers.Console.IConsoleDriver.SetBufferHeight*
+  name: SetBufferHeight
+  href: api/Nitrocid.Drivers.Console.IConsoleDriver.html#Nitrocid_Drivers_Console_IConsoleDriver_SetBufferHeight_
+  commentId: Overload:Nitrocid.Drivers.Console.IConsoleDriver.SetBufferHeight
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Console.IConsoleDriver.SetBufferHeight
+  nameWithType: IConsoleDriver.SetBufferHeight
+- uid: Nitrocid.Drivers.Console.IConsoleDriver.SetBufferWidth(System.Int32)
+  name: SetBufferWidth(int)
+  href: api/Nitrocid.Drivers.Console.IConsoleDriver.html#Nitrocid_Drivers_Console_IConsoleDriver_SetBufferWidth_System_Int32_
+  commentId: M:Nitrocid.Drivers.Console.IConsoleDriver.SetBufferWidth(System.Int32)
+  name.vb: SetBufferWidth(Integer)
+  fullName: Nitrocid.Drivers.Console.IConsoleDriver.SetBufferWidth(int)
+  fullName.vb: Nitrocid.Drivers.Console.IConsoleDriver.SetBufferWidth(Integer)
+  nameWithType: IConsoleDriver.SetBufferWidth(int)
+  nameWithType.vb: IConsoleDriver.SetBufferWidth(Integer)
+- uid: Nitrocid.Drivers.Console.IConsoleDriver.SetBufferWidth*
+  name: SetBufferWidth
+  href: api/Nitrocid.Drivers.Console.IConsoleDriver.html#Nitrocid_Drivers_Console_IConsoleDriver_SetBufferWidth_
+  commentId: Overload:Nitrocid.Drivers.Console.IConsoleDriver.SetBufferWidth
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Console.IConsoleDriver.SetBufferWidth
+  nameWithType: IConsoleDriver.SetBufferWidth
 - uid: Nitrocid.Drivers.Console.IConsoleDriver.SetCursorPosition(System.Int32,System.Int32)
   name: SetCursorPosition(int, int)
   href: api/Nitrocid.Drivers.Console.IConsoleDriver.html#Nitrocid_Drivers_Console_IConsoleDriver_SetCursorPosition_System_Int32_System_Int32_
@@ -5717,6 +5861,54 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Drivers.Console.IConsoleDriver.SetOut
   nameWithType: IConsoleDriver.SetOut
+- uid: Nitrocid.Drivers.Console.IConsoleDriver.SetWindowDimensions(System.Int32,System.Int32)
+  name: SetWindowDimensions(int, int)
+  href: api/Nitrocid.Drivers.Console.IConsoleDriver.html#Nitrocid_Drivers_Console_IConsoleDriver_SetWindowDimensions_System_Int32_System_Int32_
+  commentId: M:Nitrocid.Drivers.Console.IConsoleDriver.SetWindowDimensions(System.Int32,System.Int32)
+  name.vb: SetWindowDimensions(Integer, Integer)
+  fullName: Nitrocid.Drivers.Console.IConsoleDriver.SetWindowDimensions(int, int)
+  fullName.vb: Nitrocid.Drivers.Console.IConsoleDriver.SetWindowDimensions(Integer, Integer)
+  nameWithType: IConsoleDriver.SetWindowDimensions(int, int)
+  nameWithType.vb: IConsoleDriver.SetWindowDimensions(Integer, Integer)
+- uid: Nitrocid.Drivers.Console.IConsoleDriver.SetWindowDimensions*
+  name: SetWindowDimensions
+  href: api/Nitrocid.Drivers.Console.IConsoleDriver.html#Nitrocid_Drivers_Console_IConsoleDriver_SetWindowDimensions_
+  commentId: Overload:Nitrocid.Drivers.Console.IConsoleDriver.SetWindowDimensions
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Console.IConsoleDriver.SetWindowDimensions
+  nameWithType: IConsoleDriver.SetWindowDimensions
+- uid: Nitrocid.Drivers.Console.IConsoleDriver.SetWindowHeight(System.Int32)
+  name: SetWindowHeight(int)
+  href: api/Nitrocid.Drivers.Console.IConsoleDriver.html#Nitrocid_Drivers_Console_IConsoleDriver_SetWindowHeight_System_Int32_
+  commentId: M:Nitrocid.Drivers.Console.IConsoleDriver.SetWindowHeight(System.Int32)
+  name.vb: SetWindowHeight(Integer)
+  fullName: Nitrocid.Drivers.Console.IConsoleDriver.SetWindowHeight(int)
+  fullName.vb: Nitrocid.Drivers.Console.IConsoleDriver.SetWindowHeight(Integer)
+  nameWithType: IConsoleDriver.SetWindowHeight(int)
+  nameWithType.vb: IConsoleDriver.SetWindowHeight(Integer)
+- uid: Nitrocid.Drivers.Console.IConsoleDriver.SetWindowHeight*
+  name: SetWindowHeight
+  href: api/Nitrocid.Drivers.Console.IConsoleDriver.html#Nitrocid_Drivers_Console_IConsoleDriver_SetWindowHeight_
+  commentId: Overload:Nitrocid.Drivers.Console.IConsoleDriver.SetWindowHeight
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Console.IConsoleDriver.SetWindowHeight
+  nameWithType: IConsoleDriver.SetWindowHeight
+- uid: Nitrocid.Drivers.Console.IConsoleDriver.SetWindowWidth(System.Int32)
+  name: SetWindowWidth(int)
+  href: api/Nitrocid.Drivers.Console.IConsoleDriver.html#Nitrocid_Drivers_Console_IConsoleDriver_SetWindowWidth_System_Int32_
+  commentId: M:Nitrocid.Drivers.Console.IConsoleDriver.SetWindowWidth(System.Int32)
+  name.vb: SetWindowWidth(Integer)
+  fullName: Nitrocid.Drivers.Console.IConsoleDriver.SetWindowWidth(int)
+  fullName.vb: Nitrocid.Drivers.Console.IConsoleDriver.SetWindowWidth(Integer)
+  nameWithType: IConsoleDriver.SetWindowWidth(int)
+  nameWithType.vb: IConsoleDriver.SetWindowWidth(Integer)
+- uid: Nitrocid.Drivers.Console.IConsoleDriver.SetWindowWidth*
+  name: SetWindowWidth
+  href: api/Nitrocid.Drivers.Console.IConsoleDriver.html#Nitrocid_Drivers_Console_IConsoleDriver_SetWindowWidth_
+  commentId: Overload:Nitrocid.Drivers.Console.IConsoleDriver.SetWindowWidth
+  isSpec: "True"
+  fullName: Nitrocid.Drivers.Console.IConsoleDriver.SetWindowWidth
+  nameWithType: IConsoleDriver.SetWindowWidth
 - uid: Nitrocid.Drivers.Console.IConsoleDriver.TreatCtrlCAsInput
   name: TreatCtrlCAsInput
   href: api/Nitrocid.Drivers.Console.IConsoleDriver.html#Nitrocid_Drivers_Console_IConsoleDriver_TreatCtrlCAsInput
