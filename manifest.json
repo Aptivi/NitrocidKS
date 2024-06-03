@@ -2025,6 +2025,126 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Kernel.Starting.Bootloader.Apps.BootManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Kernel.Starting.Bootloader.Apps.BootManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Kernel.Starting.Bootloader.Apps.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Kernel.Starting.Bootloader.Apps.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Kernel.Starting.Bootloader.BootloaderState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Kernel.Starting.Bootloader.BootloaderState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Kernel.Starting.Bootloader.Style.BaseBootStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Kernel.Starting.Bootloader.Style.BaseBootStyle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Kernel.Starting.Bootloader.Style.BootStyleManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Kernel.Starting.Bootloader.Style.BootStyleManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Kernel.Starting.Bootloader.Style.IBootStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Kernel.Starting.Bootloader.Style.IBootStyle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Kernel.Starting.Bootloader.Style.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Kernel.Starting.Bootloader.Style.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Kernel.Starting.Bootloader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Kernel.Starting.Bootloader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Kernel.Starting.Environment.BaseEnvironment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Kernel.Starting.Environment.BaseEnvironment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Kernel.Starting.Environment.EnvironmentTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Kernel.Starting.Environment.EnvironmentTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Kernel.Starting.Environment.IEnvironment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Kernel.Starting.Environment.IEnvironment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Kernel.Starting.Environment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Kernel.Starting.Environment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.Kernel.Threading.KernelThread.yml",
       "output": {
         ".html": {
