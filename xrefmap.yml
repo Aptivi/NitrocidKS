@@ -3530,37 +3530,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.GetThemeInfo
   nameWithType: ThemeTools.GetThemeInfo
-- uid: Nitrocid.ConsoleBase.Themes.ThemeTools.Is255ColorsRequired(Nitrocid.ConsoleBase.Themes.ThemeInfo)
-  name: Is255ColorsRequired(ThemeInfo)
-  href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_Is255ColorsRequired_Nitrocid_ConsoleBase_Themes_ThemeInfo_
-  commentId: M:Nitrocid.ConsoleBase.Themes.ThemeTools.Is255ColorsRequired(Nitrocid.ConsoleBase.Themes.ThemeInfo)
-  fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.Is255ColorsRequired(Nitrocid.ConsoleBase.Themes.ThemeInfo)
-  nameWithType: ThemeTools.Is255ColorsRequired(ThemeInfo)
-- uid: Nitrocid.ConsoleBase.Themes.ThemeTools.Is255ColorsRequired(System.Collections.Generic.Dictionary{Nitrocid.ConsoleBase.Colors.KernelColorType,Terminaux.Colors.Color})
-  name: Is255ColorsRequired(Dictionary<KernelColorType, Color>)
-  href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_Is255ColorsRequired_System_Collections_Generic_Dictionary_Nitrocid_ConsoleBase_Colors_KernelColorType_Terminaux_Colors_Color__
-  commentId: M:Nitrocid.ConsoleBase.Themes.ThemeTools.Is255ColorsRequired(System.Collections.Generic.Dictionary{Nitrocid.ConsoleBase.Colors.KernelColorType,Terminaux.Colors.Color})
-  name.vb: Is255ColorsRequired(Dictionary(Of KernelColorType, Color))
-  fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.Is255ColorsRequired(System.Collections.Generic.Dictionary<Nitrocid.ConsoleBase.Colors.KernelColorType, Terminaux.Colors.Color>)
-  fullName.vb: Nitrocid.ConsoleBase.Themes.ThemeTools.Is255ColorsRequired(System.Collections.Generic.Dictionary(Of Nitrocid.ConsoleBase.Colors.KernelColorType, Terminaux.Colors.Color))
-  nameWithType: ThemeTools.Is255ColorsRequired(Dictionary<KernelColorType, Color>)
-  nameWithType.vb: ThemeTools.Is255ColorsRequired(Dictionary(Of KernelColorType, Color))
-- uid: Nitrocid.ConsoleBase.Themes.ThemeTools.Is255ColorsRequired(System.String)
-  name: Is255ColorsRequired(string)
-  href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_Is255ColorsRequired_System_String_
-  commentId: M:Nitrocid.ConsoleBase.Themes.ThemeTools.Is255ColorsRequired(System.String)
-  name.vb: Is255ColorsRequired(String)
-  fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.Is255ColorsRequired(string)
-  fullName.vb: Nitrocid.ConsoleBase.Themes.ThemeTools.Is255ColorsRequired(String)
-  nameWithType: ThemeTools.Is255ColorsRequired(string)
-  nameWithType.vb: ThemeTools.Is255ColorsRequired(String)
-- uid: Nitrocid.ConsoleBase.Themes.ThemeTools.Is255ColorsRequired*
-  name: Is255ColorsRequired
-  href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_Is255ColorsRequired_
-  commentId: Overload:Nitrocid.ConsoleBase.Themes.ThemeTools.Is255ColorsRequired
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.Is255ColorsRequired
-  nameWithType: ThemeTools.Is255ColorsRequired
 - uid: Nitrocid.ConsoleBase.Themes.ThemeTools.IsThemeFound(System.String)
   name: IsThemeFound(string)
   href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_IsThemeFound_System_String_
@@ -3577,37 +3546,37 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.IsThemeFound
   nameWithType: ThemeTools.IsThemeFound
-- uid: Nitrocid.ConsoleBase.Themes.ThemeTools.IsTrueColorRequired(Nitrocid.ConsoleBase.Themes.ThemeInfo)
-  name: IsTrueColorRequired(ThemeInfo)
-  href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_IsTrueColorRequired_Nitrocid_ConsoleBase_Themes_ThemeInfo_
-  commentId: M:Nitrocid.ConsoleBase.Themes.ThemeTools.IsTrueColorRequired(Nitrocid.ConsoleBase.Themes.ThemeInfo)
-  fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.IsTrueColorRequired(Nitrocid.ConsoleBase.Themes.ThemeInfo)
-  nameWithType: ThemeTools.IsTrueColorRequired(ThemeInfo)
-- uid: Nitrocid.ConsoleBase.Themes.ThemeTools.IsTrueColorRequired(System.Collections.Generic.Dictionary{Nitrocid.ConsoleBase.Colors.KernelColorType,Terminaux.Colors.Color})
-  name: IsTrueColorRequired(Dictionary<KernelColorType, Color>)
-  href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_IsTrueColorRequired_System_Collections_Generic_Dictionary_Nitrocid_ConsoleBase_Colors_KernelColorType_Terminaux_Colors_Color__
-  commentId: M:Nitrocid.ConsoleBase.Themes.ThemeTools.IsTrueColorRequired(System.Collections.Generic.Dictionary{Nitrocid.ConsoleBase.Colors.KernelColorType,Terminaux.Colors.Color})
-  name.vb: IsTrueColorRequired(Dictionary(Of KernelColorType, Color))
-  fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.IsTrueColorRequired(System.Collections.Generic.Dictionary<Nitrocid.ConsoleBase.Colors.KernelColorType, Terminaux.Colors.Color>)
-  fullName.vb: Nitrocid.ConsoleBase.Themes.ThemeTools.IsTrueColorRequired(System.Collections.Generic.Dictionary(Of Nitrocid.ConsoleBase.Colors.KernelColorType, Terminaux.Colors.Color))
-  nameWithType: ThemeTools.IsTrueColorRequired(Dictionary<KernelColorType, Color>)
-  nameWithType.vb: ThemeTools.IsTrueColorRequired(Dictionary(Of KernelColorType, Color))
-- uid: Nitrocid.ConsoleBase.Themes.ThemeTools.IsTrueColorRequired(System.String)
-  name: IsTrueColorRequired(string)
-  href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_IsTrueColorRequired_System_String_
-  commentId: M:Nitrocid.ConsoleBase.Themes.ThemeTools.IsTrueColorRequired(System.String)
-  name.vb: IsTrueColorRequired(String)
-  fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.IsTrueColorRequired(string)
-  fullName.vb: Nitrocid.ConsoleBase.Themes.ThemeTools.IsTrueColorRequired(String)
-  nameWithType: ThemeTools.IsTrueColorRequired(string)
-  nameWithType.vb: ThemeTools.IsTrueColorRequired(String)
-- uid: Nitrocid.ConsoleBase.Themes.ThemeTools.IsTrueColorRequired*
-  name: IsTrueColorRequired
-  href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_IsTrueColorRequired_
-  commentId: Overload:Nitrocid.ConsoleBase.Themes.ThemeTools.IsTrueColorRequired
+- uid: Nitrocid.ConsoleBase.Themes.ThemeTools.MinimumTypeRequired(Nitrocid.ConsoleBase.Themes.ThemeInfo,Terminaux.Colors.ColorType)
+  name: MinimumTypeRequired(ThemeInfo, ColorType)
+  href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_MinimumTypeRequired_Nitrocid_ConsoleBase_Themes_ThemeInfo_Terminaux_Colors_ColorType_
+  commentId: M:Nitrocid.ConsoleBase.Themes.ThemeTools.MinimumTypeRequired(Nitrocid.ConsoleBase.Themes.ThemeInfo,Terminaux.Colors.ColorType)
+  fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.MinimumTypeRequired(Nitrocid.ConsoleBase.Themes.ThemeInfo, Terminaux.Colors.ColorType)
+  nameWithType: ThemeTools.MinimumTypeRequired(ThemeInfo, ColorType)
+- uid: Nitrocid.ConsoleBase.Themes.ThemeTools.MinimumTypeRequired(System.Collections.Generic.Dictionary{Nitrocid.ConsoleBase.Colors.KernelColorType,Terminaux.Colors.Color},Terminaux.Colors.ColorType)
+  name: MinimumTypeRequired(Dictionary<KernelColorType, Color>, ColorType)
+  href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_MinimumTypeRequired_System_Collections_Generic_Dictionary_Nitrocid_ConsoleBase_Colors_KernelColorType_Terminaux_Colors_Color__Terminaux_Colors_ColorType_
+  commentId: M:Nitrocid.ConsoleBase.Themes.ThemeTools.MinimumTypeRequired(System.Collections.Generic.Dictionary{Nitrocid.ConsoleBase.Colors.KernelColorType,Terminaux.Colors.Color},Terminaux.Colors.ColorType)
+  name.vb: MinimumTypeRequired(Dictionary(Of KernelColorType, Color), ColorType)
+  fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.MinimumTypeRequired(System.Collections.Generic.Dictionary<Nitrocid.ConsoleBase.Colors.KernelColorType, Terminaux.Colors.Color>, Terminaux.Colors.ColorType)
+  fullName.vb: Nitrocid.ConsoleBase.Themes.ThemeTools.MinimumTypeRequired(System.Collections.Generic.Dictionary(Of Nitrocid.ConsoleBase.Colors.KernelColorType, Terminaux.Colors.Color), Terminaux.Colors.ColorType)
+  nameWithType: ThemeTools.MinimumTypeRequired(Dictionary<KernelColorType, Color>, ColorType)
+  nameWithType.vb: ThemeTools.MinimumTypeRequired(Dictionary(Of KernelColorType, Color), ColorType)
+- uid: Nitrocid.ConsoleBase.Themes.ThemeTools.MinimumTypeRequired(System.String,Terminaux.Colors.ColorType)
+  name: MinimumTypeRequired(string, ColorType)
+  href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_MinimumTypeRequired_System_String_Terminaux_Colors_ColorType_
+  commentId: M:Nitrocid.ConsoleBase.Themes.ThemeTools.MinimumTypeRequired(System.String,Terminaux.Colors.ColorType)
+  name.vb: MinimumTypeRequired(String, ColorType)
+  fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.MinimumTypeRequired(string, Terminaux.Colors.ColorType)
+  fullName.vb: Nitrocid.ConsoleBase.Themes.ThemeTools.MinimumTypeRequired(String, Terminaux.Colors.ColorType)
+  nameWithType: ThemeTools.MinimumTypeRequired(string, ColorType)
+  nameWithType.vb: ThemeTools.MinimumTypeRequired(String, ColorType)
+- uid: Nitrocid.ConsoleBase.Themes.ThemeTools.MinimumTypeRequired*
+  name: MinimumTypeRequired
+  href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_MinimumTypeRequired_
+  commentId: Overload:Nitrocid.ConsoleBase.Themes.ThemeTools.MinimumTypeRequired
   isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.IsTrueColorRequired
-  nameWithType: ThemeTools.IsTrueColorRequired
+  fullName: Nitrocid.ConsoleBase.Themes.ThemeTools.MinimumTypeRequired
+  nameWithType: ThemeTools.MinimumTypeRequired
 - uid: Nitrocid.ConsoleBase.Themes.ThemeTools.SetColorsTheme(Nitrocid.ConsoleBase.Themes.ThemeInfo,System.Boolean)
   name: SetColorsTheme(ThemeInfo, bool)
   href: api/Nitrocid.ConsoleBase.Themes.ThemeTools.html#Nitrocid_ConsoleBase_Themes_ThemeTools_SetColorsTheme_Nitrocid_ConsoleBase_Themes_ThemeInfo_System_Boolean_
