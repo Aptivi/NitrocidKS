@@ -3882,24 +3882,24 @@ references:
   fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorder(Integer, Integer, Integer, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType)
   nameWithType: TextFancyWriters.WriteBorder(int, int, int, int, KernelColorType, KernelColorType)
   nameWithType.vb: TextFancyWriters.WriteBorder(Integer, Integer, Integer, Integer, KernelColorType, KernelColorType)
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorder(System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Nitrocid.ConsoleBase.Colors.KernelColorType)
-  name: WriteBorder(int, int, int, int, char, char, char, char, char, char, char, char, KernelColorType)
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteBorder_System_Int32_System_Int32_System_Int32_System_Int32_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Nitrocid_ConsoleBase_Colors_KernelColorType_
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorder(System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Nitrocid.ConsoleBase.Colors.KernelColorType)
-  name.vb: WriteBorder(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType)
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorder(int, int, int, int, char, char, char, char, char, char, char, char, Nitrocid.ConsoleBase.Colors.KernelColorType)
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorder(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, Nitrocid.ConsoleBase.Colors.KernelColorType)
-  nameWithType: TextFancyWriters.WriteBorder(int, int, int, int, char, char, char, char, char, char, char, char, KernelColorType)
-  nameWithType.vb: TextFancyWriters.WriteBorder(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType)
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorder(System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType)
-  name: WriteBorder(int, int, int, int, char, char, char, char, char, char, char, char, KernelColorType, KernelColorType)
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteBorder_System_Int32_System_Int32_System_Int32_System_Int32_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorder(System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType)
-  name.vb: WriteBorder(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, KernelColorType)
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorder(int, int, int, int, char, char, char, char, char, char, char, char, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType)
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorder(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType)
-  nameWithType: TextFancyWriters.WriteBorder(int, int, int, int, char, char, char, char, char, char, char, char, KernelColorType, KernelColorType)
-  nameWithType.vb: TextFancyWriters.WriteBorder(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, KernelColorType)
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorder(System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Writer.FancyWriters.Tools.BorderSettings,Nitrocid.ConsoleBase.Colors.KernelColorType)
+  name: WriteBorder(int, int, int, int, BorderSettings, KernelColorType)
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteBorder_System_Int32_System_Int32_System_Int32_System_Int32_Terminaux_Writer_FancyWriters_Tools_BorderSettings_Nitrocid_ConsoleBase_Colors_KernelColorType_
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorder(System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Writer.FancyWriters.Tools.BorderSettings,Nitrocid.ConsoleBase.Colors.KernelColorType)
+  name.vb: WriteBorder(Integer, Integer, Integer, Integer, BorderSettings, KernelColorType)
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorder(int, int, int, int, Terminaux.Writer.FancyWriters.Tools.BorderSettings, Nitrocid.ConsoleBase.Colors.KernelColorType)
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorder(Integer, Integer, Integer, Integer, Terminaux.Writer.FancyWriters.Tools.BorderSettings, Nitrocid.ConsoleBase.Colors.KernelColorType)
+  nameWithType: TextFancyWriters.WriteBorder(int, int, int, int, BorderSettings, KernelColorType)
+  nameWithType.vb: TextFancyWriters.WriteBorder(Integer, Integer, Integer, Integer, BorderSettings, KernelColorType)
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorder(System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Writer.FancyWriters.Tools.BorderSettings,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType)
+  name: WriteBorder(int, int, int, int, BorderSettings, KernelColorType, KernelColorType)
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteBorder_System_Int32_System_Int32_System_Int32_System_Int32_Terminaux_Writer_FancyWriters_Tools_BorderSettings_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorder(System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Writer.FancyWriters.Tools.BorderSettings,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType)
+  name.vb: WriteBorder(Integer, Integer, Integer, Integer, BorderSettings, KernelColorType, KernelColorType)
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorder(int, int, int, int, Terminaux.Writer.FancyWriters.Tools.BorderSettings, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType)
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorder(Integer, Integer, Integer, Integer, Terminaux.Writer.FancyWriters.Tools.BorderSettings, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType)
+  nameWithType: TextFancyWriters.WriteBorder(int, int, int, int, BorderSettings, KernelColorType, KernelColorType)
+  nameWithType.vb: TextFancyWriters.WriteBorder(Integer, Integer, Integer, Integer, BorderSettings, KernelColorType, KernelColorType)
 - uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorder*
   name: WriteBorder
   href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteBorder_
@@ -3925,24 +3925,24 @@ references:
   fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorderText(String, Integer, Integer, Integer, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
   nameWithType: TextFancyWriters.WriteBorderText(string, int, int, int, int, KernelColorType, params object[])
   nameWithType.vb: TextFancyWriters.WriteBorderText(String, Integer, Integer, Integer, Integer, KernelColorType, ParamArray Object())
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorderText(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name: WriteBorderText(string, int, int, int, int, char, char, char, char, char, char, char, char, KernelColorType, KernelColorType, params object[])
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteBorderText_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorderText(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name.vb: WriteBorderText(String, Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, KernelColorType, ParamArray Object())
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorderText(string, int, int, int, int, char, char, char, char, char, char, char, char, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorderText(String, Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
-  nameWithType: TextFancyWriters.WriteBorderText(string, int, int, int, int, char, char, char, char, char, char, char, char, KernelColorType, KernelColorType, params object[])
-  nameWithType.vb: TextFancyWriters.WriteBorderText(String, Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, KernelColorType, ParamArray Object())
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorderText(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name: WriteBorderText(string, int, int, int, int, char, char, char, char, char, char, char, char, KernelColorType, params object[])
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteBorderText_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorderText(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name.vb: WriteBorderText(String, Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, ParamArray Object())
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorderText(string, int, int, int, int, char, char, char, char, char, char, char, char, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorderText(String, Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
-  nameWithType: TextFancyWriters.WriteBorderText(string, int, int, int, int, char, char, char, char, char, char, char, char, KernelColorType, params object[])
-  nameWithType.vb: TextFancyWriters.WriteBorderText(String, Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, ParamArray Object())
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorderText(System.String,System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Writer.FancyWriters.Tools.BorderSettings,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteBorderText(string, int, int, int, int, BorderSettings, KernelColorType, KernelColorType, params object[])
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteBorderText_System_String_System_Int32_System_Int32_System_Int32_System_Int32_Terminaux_Writer_FancyWriters_Tools_BorderSettings_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorderText(System.String,System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Writer.FancyWriters.Tools.BorderSettings,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteBorderText(String, Integer, Integer, Integer, Integer, BorderSettings, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorderText(string, int, int, int, int, Terminaux.Writer.FancyWriters.Tools.BorderSettings, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorderText(String, Integer, Integer, Integer, Integer, Terminaux.Writer.FancyWriters.Tools.BorderSettings, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextFancyWriters.WriteBorderText(string, int, int, int, int, BorderSettings, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: TextFancyWriters.WriteBorderText(String, Integer, Integer, Integer, Integer, BorderSettings, KernelColorType, KernelColorType, ParamArray Object())
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorderText(System.String,System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Writer.FancyWriters.Tools.BorderSettings,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteBorderText(string, int, int, int, int, BorderSettings, KernelColorType, params object[])
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteBorderText_System_String_System_Int32_System_Int32_System_Int32_System_Int32_Terminaux_Writer_FancyWriters_Tools_BorderSettings_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorderText(System.String,System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Writer.FancyWriters.Tools.BorderSettings,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteBorderText(String, Integer, Integer, Integer, Integer, BorderSettings, KernelColorType, ParamArray Object())
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorderText(string, int, int, int, int, Terminaux.Writer.FancyWriters.Tools.BorderSettings, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorderText(String, Integer, Integer, Integer, Integer, Terminaux.Writer.FancyWriters.Tools.BorderSettings, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextFancyWriters.WriteBorderText(string, int, int, int, int, BorderSettings, KernelColorType, params object[])
+  nameWithType.vb: TextFancyWriters.WriteBorderText(String, Integer, Integer, Integer, Integer, BorderSettings, KernelColorType, ParamArray Object())
 - uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBorderText*
   name: WriteBorderText
   href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteBorderText_
@@ -3984,24 +3984,24 @@ references:
   fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(Integer, Integer, Integer, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType)
   nameWithType: TextFancyWriters.WriteBoxFrame(int, int, int, int, KernelColorType, KernelColorType)
   nameWithType.vb: TextFancyWriters.WriteBoxFrame(Integer, Integer, Integer, Integer, KernelColorType, KernelColorType)
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Nitrocid.ConsoleBase.Colors.KernelColorType)
-  name: WriteBoxFrame(int, int, int, int, char, char, char, char, char, char, char, char, KernelColorType)
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteBoxFrame_System_Int32_System_Int32_System_Int32_System_Int32_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Nitrocid_ConsoleBase_Colors_KernelColorType_
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Nitrocid.ConsoleBase.Colors.KernelColorType)
-  name.vb: WriteBoxFrame(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType)
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(int, int, int, int, char, char, char, char, char, char, char, char, Nitrocid.ConsoleBase.Colors.KernelColorType)
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, Nitrocid.ConsoleBase.Colors.KernelColorType)
-  nameWithType: TextFancyWriters.WriteBoxFrame(int, int, int, int, char, char, char, char, char, char, char, char, KernelColorType)
-  nameWithType.vb: TextFancyWriters.WriteBoxFrame(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType)
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType)
-  name: WriteBoxFrame(int, int, int, int, char, char, char, char, char, char, char, char, KernelColorType, KernelColorType)
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteBoxFrame_System_Int32_System_Int32_System_Int32_System_Int32_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType)
-  name.vb: WriteBoxFrame(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, KernelColorType)
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(int, int, int, int, char, char, char, char, char, char, char, char, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType)
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType)
-  nameWithType: TextFancyWriters.WriteBoxFrame(int, int, int, int, char, char, char, char, char, char, char, char, KernelColorType, KernelColorType)
-  nameWithType.vb: TextFancyWriters.WriteBoxFrame(Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, KernelColorType)
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Writer.FancyWriters.Tools.BorderSettings,Nitrocid.ConsoleBase.Colors.KernelColorType)
+  name: WriteBoxFrame(int, int, int, int, BorderSettings, KernelColorType)
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteBoxFrame_System_Int32_System_Int32_System_Int32_System_Int32_Terminaux_Writer_FancyWriters_Tools_BorderSettings_Nitrocid_ConsoleBase_Colors_KernelColorType_
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Writer.FancyWriters.Tools.BorderSettings,Nitrocid.ConsoleBase.Colors.KernelColorType)
+  name.vb: WriteBoxFrame(Integer, Integer, Integer, Integer, BorderSettings, KernelColorType)
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(int, int, int, int, Terminaux.Writer.FancyWriters.Tools.BorderSettings, Nitrocid.ConsoleBase.Colors.KernelColorType)
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(Integer, Integer, Integer, Integer, Terminaux.Writer.FancyWriters.Tools.BorderSettings, Nitrocid.ConsoleBase.Colors.KernelColorType)
+  nameWithType: TextFancyWriters.WriteBoxFrame(int, int, int, int, BorderSettings, KernelColorType)
+  nameWithType.vb: TextFancyWriters.WriteBoxFrame(Integer, Integer, Integer, Integer, BorderSettings, KernelColorType)
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Writer.FancyWriters.Tools.BorderSettings,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType)
+  name: WriteBoxFrame(int, int, int, int, BorderSettings, KernelColorType, KernelColorType)
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteBoxFrame_System_Int32_System_Int32_System_Int32_System_Int32_Terminaux_Writer_FancyWriters_Tools_BorderSettings_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Writer.FancyWriters.Tools.BorderSettings,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType)
+  name.vb: WriteBoxFrame(Integer, Integer, Integer, Integer, BorderSettings, KernelColorType, KernelColorType)
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(int, int, int, int, Terminaux.Writer.FancyWriters.Tools.BorderSettings, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType)
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(Integer, Integer, Integer, Integer, Terminaux.Writer.FancyWriters.Tools.BorderSettings, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType)
+  nameWithType: TextFancyWriters.WriteBoxFrame(int, int, int, int, BorderSettings, KernelColorType, KernelColorType)
+  nameWithType.vb: TextFancyWriters.WriteBoxFrame(Integer, Integer, Integer, Integer, BorderSettings, KernelColorType, KernelColorType)
 - uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(System.String,System.Int32,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
   name: WriteBoxFrame(string, int, int, int, int, KernelColorType, KernelColorType, params object[])
   href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteBoxFrame_System_String_System_Int32_System_Int32_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
@@ -4020,24 +4020,24 @@ references:
   fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(String, Integer, Integer, Integer, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
   nameWithType: TextFancyWriters.WriteBoxFrame(string, int, int, int, int, KernelColorType, params object[])
   nameWithType.vb: TextFancyWriters.WriteBoxFrame(String, Integer, Integer, Integer, Integer, KernelColorType, ParamArray Object())
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name: WriteBoxFrame(string, int, int, int, int, char, char, char, char, char, char, char, char, KernelColorType, KernelColorType, params object[])
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteBoxFrame_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name.vb: WriteBoxFrame(String, Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, KernelColorType, ParamArray Object())
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(string, int, int, int, int, char, char, char, char, char, char, char, char, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(String, Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
-  nameWithType: TextFancyWriters.WriteBoxFrame(string, int, int, int, int, char, char, char, char, char, char, char, char, KernelColorType, KernelColorType, params object[])
-  nameWithType.vb: TextFancyWriters.WriteBoxFrame(String, Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, KernelColorType, ParamArray Object())
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name: WriteBoxFrame(string, int, int, int, int, char, char, char, char, char, char, char, char, KernelColorType, params object[])
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteBoxFrame_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_System_Char_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name.vb: WriteBoxFrame(String, Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, ParamArray Object())
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(string, int, int, int, int, char, char, char, char, char, char, char, char, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(String, Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
-  nameWithType: TextFancyWriters.WriteBoxFrame(string, int, int, int, int, char, char, char, char, char, char, char, char, KernelColorType, params object[])
-  nameWithType.vb: TextFancyWriters.WriteBoxFrame(String, Integer, Integer, Integer, Integer, Char, Char, Char, Char, Char, Char, Char, Char, KernelColorType, ParamArray Object())
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(System.String,System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Writer.FancyWriters.Tools.BorderSettings,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteBoxFrame(string, int, int, int, int, BorderSettings, KernelColorType, KernelColorType, params object[])
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteBoxFrame_System_String_System_Int32_System_Int32_System_Int32_System_Int32_Terminaux_Writer_FancyWriters_Tools_BorderSettings_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(System.String,System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Writer.FancyWriters.Tools.BorderSettings,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteBoxFrame(String, Integer, Integer, Integer, Integer, BorderSettings, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(string, int, int, int, int, Terminaux.Writer.FancyWriters.Tools.BorderSettings, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(String, Integer, Integer, Integer, Integer, Terminaux.Writer.FancyWriters.Tools.BorderSettings, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextFancyWriters.WriteBoxFrame(string, int, int, int, int, BorderSettings, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: TextFancyWriters.WriteBoxFrame(String, Integer, Integer, Integer, Integer, BorderSettings, KernelColorType, KernelColorType, ParamArray Object())
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(System.String,System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Writer.FancyWriters.Tools.BorderSettings,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteBoxFrame(string, int, int, int, int, BorderSettings, KernelColorType, params object[])
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteBoxFrame_System_String_System_Int32_System_Int32_System_Int32_System_Int32_Terminaux_Writer_FancyWriters_Tools_BorderSettings_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(System.String,System.Int32,System.Int32,System.Int32,System.Int32,Terminaux.Writer.FancyWriters.Tools.BorderSettings,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteBoxFrame(String, Integer, Integer, Integer, Integer, BorderSettings, KernelColorType, ParamArray Object())
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(string, int, int, int, int, Terminaux.Writer.FancyWriters.Tools.BorderSettings, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame(String, Integer, Integer, Integer, Integer, Terminaux.Writer.FancyWriters.Tools.BorderSettings, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextFancyWriters.WriteBoxFrame(string, int, int, int, int, BorderSettings, KernelColorType, params object[])
+  nameWithType.vb: TextFancyWriters.WriteBoxFrame(String, Integer, Integer, Integer, Integer, BorderSettings, KernelColorType, ParamArray Object())
 - uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteBoxFrame*
   name: WriteBoxFrame
   href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteBoxFrame_
@@ -19611,19 +19611,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowBackgroundColor
   nameWithType: KernelMainConfig.AllowBackgroundColor
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowForegroundColor
-  name: AllowForegroundColor
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_AllowForegroundColor
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowForegroundColor
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowForegroundColor
-  nameWithType: KernelMainConfig.AllowForegroundColor
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowForegroundColor*
-  name: AllowForegroundColor
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_AllowForegroundColor_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowForegroundColor
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowForegroundColor
-  nameWithType: KernelMainConfig.AllowForegroundColor
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowUntrustedMods
   name: AllowUntrustedMods
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_AllowUntrustedMods
@@ -21028,110 +21015,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressColor
   nameWithType: KernelMainConfig.ProgressColor
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLeftFrameChar
-  name: ProgressLeftFrameChar
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ProgressLeftFrameChar
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLeftFrameChar
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLeftFrameChar
-  nameWithType: KernelMainConfig.ProgressLeftFrameChar
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLeftFrameChar*
-  name: ProgressLeftFrameChar
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ProgressLeftFrameChar_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLeftFrameChar
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLeftFrameChar
-  nameWithType: KernelMainConfig.ProgressLeftFrameChar
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLowerFrameChar
-  name: ProgressLowerFrameChar
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ProgressLowerFrameChar
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLowerFrameChar
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLowerFrameChar
-  nameWithType: KernelMainConfig.ProgressLowerFrameChar
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLowerFrameChar*
-  name: ProgressLowerFrameChar
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ProgressLowerFrameChar_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLowerFrameChar
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLowerFrameChar
-  nameWithType: KernelMainConfig.ProgressLowerFrameChar
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLowerLeftCornerChar
-  name: ProgressLowerLeftCornerChar
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ProgressLowerLeftCornerChar
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLowerLeftCornerChar
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLowerLeftCornerChar
-  nameWithType: KernelMainConfig.ProgressLowerLeftCornerChar
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLowerLeftCornerChar*
-  name: ProgressLowerLeftCornerChar
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ProgressLowerLeftCornerChar_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLowerLeftCornerChar
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLowerLeftCornerChar
-  nameWithType: KernelMainConfig.ProgressLowerLeftCornerChar
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLowerRightCornerChar
-  name: ProgressLowerRightCornerChar
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ProgressLowerRightCornerChar
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLowerRightCornerChar
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLowerRightCornerChar
-  nameWithType: KernelMainConfig.ProgressLowerRightCornerChar
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLowerRightCornerChar*
-  name: ProgressLowerRightCornerChar
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ProgressLowerRightCornerChar_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLowerRightCornerChar
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressLowerRightCornerChar
-  nameWithType: KernelMainConfig.ProgressLowerRightCornerChar
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressRightFrameChar
-  name: ProgressRightFrameChar
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ProgressRightFrameChar
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressRightFrameChar
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressRightFrameChar
-  nameWithType: KernelMainConfig.ProgressRightFrameChar
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressRightFrameChar*
-  name: ProgressRightFrameChar
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ProgressRightFrameChar_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressRightFrameChar
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressRightFrameChar
-  nameWithType: KernelMainConfig.ProgressRightFrameChar
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressUpperFrameChar
-  name: ProgressUpperFrameChar
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ProgressUpperFrameChar
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressUpperFrameChar
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressUpperFrameChar
-  nameWithType: KernelMainConfig.ProgressUpperFrameChar
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressUpperFrameChar*
-  name: ProgressUpperFrameChar
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ProgressUpperFrameChar_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressUpperFrameChar
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressUpperFrameChar
-  nameWithType: KernelMainConfig.ProgressUpperFrameChar
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressUpperLeftCornerChar
-  name: ProgressUpperLeftCornerChar
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ProgressUpperLeftCornerChar
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressUpperLeftCornerChar
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressUpperLeftCornerChar
-  nameWithType: KernelMainConfig.ProgressUpperLeftCornerChar
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressUpperLeftCornerChar*
-  name: ProgressUpperLeftCornerChar
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ProgressUpperLeftCornerChar_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressUpperLeftCornerChar
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressUpperLeftCornerChar
-  nameWithType: KernelMainConfig.ProgressUpperLeftCornerChar
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressUpperRightCornerChar
-  name: ProgressUpperRightCornerChar
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ProgressUpperRightCornerChar
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressUpperRightCornerChar
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressUpperRightCornerChar
-  nameWithType: KernelMainConfig.ProgressUpperRightCornerChar
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressUpperRightCornerChar*
-  name: ProgressUpperRightCornerChar
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ProgressUpperRightCornerChar_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressUpperRightCornerChar
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ProgressUpperRightCornerChar
-  nameWithType: KernelMainConfig.ProgressUpperRightCornerChar
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.PromptPreset
   name: PromptPreset
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_PromptPreset
