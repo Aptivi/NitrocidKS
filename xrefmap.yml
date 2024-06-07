@@ -39143,15 +39143,15 @@ references:
   fullName.vb: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.New(Boolean, String, Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPartOptions)
   nameWithType: CommandArgumentPart.CommandArgumentPart(bool, string, CommandArgumentPartOptions)
   nameWithType.vb: CommandArgumentPart.New(Boolean, String, CommandArgumentPartOptions)
-- uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor(System.Boolean,System.String,System.Func{System.String[],System.String[]},System.Boolean,System.String[])
-  name: CommandArgumentPart(bool, string, Func<string[], string[]>, bool, string[])
-  href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentPart__ctor_System_Boolean_System_String_System_Func_System_String___System_String____System_Boolean_System_String___
-  commentId: M:Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor(System.Boolean,System.String,System.Func{System.String[],System.String[]},System.Boolean,System.String[])
-  name.vb: New(Boolean, String, Func(Of String(), String()), Boolean, String())
-  fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.CommandArgumentPart(bool, string, System.Func<string[], string[]>, bool, string[])
-  fullName.vb: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.New(Boolean, String, System.Func(Of String(), String()), Boolean, String())
-  nameWithType: CommandArgumentPart.CommandArgumentPart(bool, string, Func<string[], string[]>, bool, string[])
-  nameWithType.vb: CommandArgumentPart.New(Boolean, String, Func(Of String(), String()), Boolean, String())
+- uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor(System.Boolean,System.String,System.Func{System.String[],System.String[]},System.Boolean,System.String[],System.String)
+  name: CommandArgumentPart(bool, string, Func<string[], string[]>, bool, string[], string)
+  href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentPart__ctor_System_Boolean_System_String_System_Func_System_String___System_String____System_Boolean_System_String___System_String_
+  commentId: M:Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor(System.Boolean,System.String,System.Func{System.String[],System.String[]},System.Boolean,System.String[],System.String)
+  name.vb: New(Boolean, String, Func(Of String(), String()), Boolean, String(), String)
+  fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.CommandArgumentPart(bool, string, System.Func<string[], string[]>, bool, string[], string)
+  fullName.vb: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.New(Boolean, String, System.Func(Of String(), String()), Boolean, String(), String)
+  nameWithType: CommandArgumentPart.CommandArgumentPart(bool, string, Func<string[], string[]>, bool, string[], string)
+  nameWithType.vb: CommandArgumentPart.New(Boolean, String, Func(Of String(), String()), Boolean, String(), String)
 - uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.#ctor*
   name: CommandArgumentPart
   href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentPart__ctor_
@@ -39188,45 +39188,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.ArgumentRequired
   nameWithType: CommandArgumentPart.ArgumentRequired
-- uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.AutoCompleter
-  name: AutoCompleter
-  href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentPart_AutoCompleter
-  commentId: P:Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.AutoCompleter
-  fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.AutoCompleter
-  nameWithType: CommandArgumentPart.AutoCompleter
-- uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.AutoCompleter*
-  name: AutoCompleter
-  href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentPart_AutoCompleter_
-  commentId: Overload:Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.AutoCompleter
+- uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.Options
+  name: Options
+  href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentPart_Options
+  commentId: P:Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.Options
+  fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.Options
+  nameWithType: CommandArgumentPart.Options
+- uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.Options*
+  name: Options
+  href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentPart_Options_
+  commentId: Overload:Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.Options
   isSpec: "True"
-  fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.AutoCompleter
-  nameWithType: CommandArgumentPart.AutoCompleter
-- uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.ExactWording
-  name: ExactWording
-  href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentPart_ExactWording
-  commentId: P:Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.ExactWording
-  fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.ExactWording
-  nameWithType: CommandArgumentPart.ExactWording
-- uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.ExactWording*
-  name: ExactWording
-  href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentPart_ExactWording_
-  commentId: Overload:Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.ExactWording
-  isSpec: "True"
-  fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.ExactWording
-  nameWithType: CommandArgumentPart.ExactWording
-- uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.IsNumeric
-  name: IsNumeric
-  href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentPart_IsNumeric
-  commentId: P:Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.IsNumeric
-  fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.IsNumeric
-  nameWithType: CommandArgumentPart.IsNumeric
-- uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.IsNumeric*
-  name: IsNumeric
-  href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentPart_IsNumeric_
-  commentId: Overload:Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.IsNumeric
-  isSpec: "True"
-  fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.IsNumeric
-  nameWithType: CommandArgumentPart.IsNumeric
+  fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPart.Options
+  nameWithType: CommandArgumentPart.Options
 - uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPartOptions
   name: CommandArgumentPartOptions
   href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPartOptions.html
@@ -39252,6 +39226,19 @@ references:
   fullName.vb: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPartOptions.New
   nameWithType: CommandArgumentPartOptions.CommandArgumentPartOptions
   nameWithType.vb: CommandArgumentPartOptions.New
+- uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPartOptions.ArgumentDescription
+  name: ArgumentDescription
+  href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPartOptions.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentPartOptions_ArgumentDescription
+  commentId: P:Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPartOptions.ArgumentDescription
+  fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPartOptions.ArgumentDescription
+  nameWithType: CommandArgumentPartOptions.ArgumentDescription
+- uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPartOptions.ArgumentDescription*
+  name: ArgumentDescription
+  href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPartOptions.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentPartOptions_ArgumentDescription_
+  commentId: Overload:Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPartOptions.ArgumentDescription
+  isSpec: "True"
+  fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPartOptions.ArgumentDescription
+  nameWithType: CommandArgumentPartOptions.ArgumentDescription
 - uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPartOptions.AutoCompleter
   name: AutoCompleter
   href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentPartOptions.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentPartOptions_AutoCompleter
