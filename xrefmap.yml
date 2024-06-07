@@ -26787,19 +26787,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.KernelPlatform.IsOnWindows
   nameWithType: KernelPlatform.IsOnWindows
-- uid: Nitrocid.Kernel.KernelPlatform.IsRunningFromGrilo
-  name: IsRunningFromGrilo()
-  href: api/Nitrocid.Kernel.KernelPlatform.html#Nitrocid_Kernel_KernelPlatform_IsRunningFromGrilo
-  commentId: M:Nitrocid.Kernel.KernelPlatform.IsRunningFromGrilo
-  fullName: Nitrocid.Kernel.KernelPlatform.IsRunningFromGrilo()
-  nameWithType: KernelPlatform.IsRunningFromGrilo()
-- uid: Nitrocid.Kernel.KernelPlatform.IsRunningFromGrilo*
-  name: IsRunningFromGrilo
-  href: api/Nitrocid.Kernel.KernelPlatform.html#Nitrocid_Kernel_KernelPlatform_IsRunningFromGrilo_
-  commentId: Overload:Nitrocid.Kernel.KernelPlatform.IsRunningFromGrilo
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.KernelPlatform.IsRunningFromGrilo
-  nameWithType: KernelPlatform.IsRunningFromGrilo
 - uid: Nitrocid.Kernel.KernelPlatform.IsRunningFromScreen
   name: IsRunningFromScreen()
   href: api/Nitrocid.Kernel.KernelPlatform.html#Nitrocid_Kernel_KernelPlatform_IsRunningFromScreen
@@ -27181,22 +27168,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Starting.Bootloader.Style.BaseBootStyle.Render
   nameWithType: BaseBootStyle.Render
-- uid: Nitrocid.Kernel.Starting.Bootloader.Style.BaseBootStyle.RenderBootFailedMessage(System.String)
-  name: RenderBootFailedMessage(string)
-  href: api/Nitrocid.Kernel.Starting.Bootloader.Style.BaseBootStyle.html#Nitrocid_Kernel_Starting_Bootloader_Style_BaseBootStyle_RenderBootFailedMessage_System_String_
-  commentId: M:Nitrocid.Kernel.Starting.Bootloader.Style.BaseBootStyle.RenderBootFailedMessage(System.String)
-  name.vb: RenderBootFailedMessage(String)
-  fullName: Nitrocid.Kernel.Starting.Bootloader.Style.BaseBootStyle.RenderBootFailedMessage(string)
-  fullName.vb: Nitrocid.Kernel.Starting.Bootloader.Style.BaseBootStyle.RenderBootFailedMessage(String)
-  nameWithType: BaseBootStyle.RenderBootFailedMessage(string)
-  nameWithType.vb: BaseBootStyle.RenderBootFailedMessage(String)
-- uid: Nitrocid.Kernel.Starting.Bootloader.Style.BaseBootStyle.RenderBootFailedMessage*
-  name: RenderBootFailedMessage
-  href: api/Nitrocid.Kernel.Starting.Bootloader.Style.BaseBootStyle.html#Nitrocid_Kernel_Starting_Bootloader_Style_BaseBootStyle_RenderBootFailedMessage_
-  commentId: Overload:Nitrocid.Kernel.Starting.Bootloader.Style.BaseBootStyle.RenderBootFailedMessage
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Starting.Bootloader.Style.BaseBootStyle.RenderBootFailedMessage
-  nameWithType: BaseBootStyle.RenderBootFailedMessage
 - uid: Nitrocid.Kernel.Starting.Bootloader.Style.BaseBootStyle.RenderBootingMessage(System.String)
   name: RenderBootingMessage(string)
   href: api/Nitrocid.Kernel.Starting.Bootloader.Style.BaseBootStyle.html#Nitrocid_Kernel_Starting_Bootloader_Style_BaseBootStyle_RenderBootingMessage_System_String_
@@ -27296,22 +27267,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Starting.Bootloader.Style.BootStyleManager.GetCurrentBootStyle
   nameWithType: BootStyleManager.GetCurrentBootStyle
-- uid: Nitrocid.Kernel.Starting.Bootloader.Style.BootStyleManager.RenderBootFailedMessage(System.String)
-  name: RenderBootFailedMessage(string)
-  href: api/Nitrocid.Kernel.Starting.Bootloader.Style.BootStyleManager.html#Nitrocid_Kernel_Starting_Bootloader_Style_BootStyleManager_RenderBootFailedMessage_System_String_
-  commentId: M:Nitrocid.Kernel.Starting.Bootloader.Style.BootStyleManager.RenderBootFailedMessage(System.String)
-  name.vb: RenderBootFailedMessage(String)
-  fullName: Nitrocid.Kernel.Starting.Bootloader.Style.BootStyleManager.RenderBootFailedMessage(string)
-  fullName.vb: Nitrocid.Kernel.Starting.Bootloader.Style.BootStyleManager.RenderBootFailedMessage(String)
-  nameWithType: BootStyleManager.RenderBootFailedMessage(string)
-  nameWithType.vb: BootStyleManager.RenderBootFailedMessage(String)
-- uid: Nitrocid.Kernel.Starting.Bootloader.Style.BootStyleManager.RenderBootFailedMessage*
-  name: RenderBootFailedMessage
-  href: api/Nitrocid.Kernel.Starting.Bootloader.Style.BootStyleManager.html#Nitrocid_Kernel_Starting_Bootloader_Style_BootStyleManager_RenderBootFailedMessage_
-  commentId: Overload:Nitrocid.Kernel.Starting.Bootloader.Style.BootStyleManager.RenderBootFailedMessage
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Starting.Bootloader.Style.BootStyleManager.RenderBootFailedMessage
-  nameWithType: BootStyleManager.RenderBootFailedMessage
 - uid: Nitrocid.Kernel.Starting.Bootloader.Style.BootStyleManager.RenderBootingMessage(System.String)
   name: RenderBootingMessage(string)
   href: api/Nitrocid.Kernel.Starting.Bootloader.Style.BootStyleManager.html#Nitrocid_Kernel_Starting_Bootloader_Style_BootStyleManager_RenderBootingMessage_System_String_
@@ -27421,22 +27376,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Starting.Bootloader.Style.IBootStyle.Render
   nameWithType: IBootStyle.Render
-- uid: Nitrocid.Kernel.Starting.Bootloader.Style.IBootStyle.RenderBootFailedMessage(System.String)
-  name: RenderBootFailedMessage(string)
-  href: api/Nitrocid.Kernel.Starting.Bootloader.Style.IBootStyle.html#Nitrocid_Kernel_Starting_Bootloader_Style_IBootStyle_RenderBootFailedMessage_System_String_
-  commentId: M:Nitrocid.Kernel.Starting.Bootloader.Style.IBootStyle.RenderBootFailedMessage(System.String)
-  name.vb: RenderBootFailedMessage(String)
-  fullName: Nitrocid.Kernel.Starting.Bootloader.Style.IBootStyle.RenderBootFailedMessage(string)
-  fullName.vb: Nitrocid.Kernel.Starting.Bootloader.Style.IBootStyle.RenderBootFailedMessage(String)
-  nameWithType: IBootStyle.RenderBootFailedMessage(string)
-  nameWithType.vb: IBootStyle.RenderBootFailedMessage(String)
-- uid: Nitrocid.Kernel.Starting.Bootloader.Style.IBootStyle.RenderBootFailedMessage*
-  name: RenderBootFailedMessage
-  href: api/Nitrocid.Kernel.Starting.Bootloader.Style.IBootStyle.html#Nitrocid_Kernel_Starting_Bootloader_Style_IBootStyle_RenderBootFailedMessage_
-  commentId: Overload:Nitrocid.Kernel.Starting.Bootloader.Style.IBootStyle.RenderBootFailedMessage
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Starting.Bootloader.Style.IBootStyle.RenderBootFailedMessage
-  nameWithType: IBootStyle.RenderBootFailedMessage
 - uid: Nitrocid.Kernel.Starting.Bootloader.Style.IBootStyle.RenderBootingMessage(System.String)
   name: RenderBootingMessage(string)
   href: api/Nitrocid.Kernel.Starting.Bootloader.Style.IBootStyle.html#Nitrocid_Kernel_Starting_Bootloader_Style_IBootStyle_RenderBootingMessage_System_String_
