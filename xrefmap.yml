@@ -25167,6 +25167,12 @@ references:
   commentId: F:Nitrocid.Kernel.Exceptions.KernelExceptionType.AddonManagement
   fullName: Nitrocid.Kernel.Exceptions.KernelExceptionType.AddonManagement
   nameWithType: KernelExceptionType.AddonManagement
+- uid: Nitrocid.Kernel.Exceptions.KernelExceptionType.Alarm
+  name: Alarm
+  href: api/Nitrocid.Kernel.Exceptions.KernelExceptionType.html#Nitrocid_Kernel_Exceptions_KernelExceptionType_Alarm
+  commentId: F:Nitrocid.Kernel.Exceptions.KernelExceptionType.Alarm
+  fullName: Nitrocid.Kernel.Exceptions.KernelExceptionType.Alarm
+  nameWithType: KernelExceptionType.Alarm
 - uid: Nitrocid.Kernel.Exceptions.KernelExceptionType.AliasAlreadyExists
   name: AliasAlreadyExists
   href: api/Nitrocid.Kernel.Exceptions.KernelExceptionType.html#Nitrocid_Kernel_Exceptions_KernelExceptionType_AliasAlreadyExists
@@ -28048,6 +28054,51 @@ references:
   commentId: N:Nitrocid.Kernel.Time.Alarm
   fullName: Nitrocid.Kernel.Time.Alarm
   nameWithType: Nitrocid.Kernel.Time.Alarm
+- uid: Nitrocid.Kernel.Time.Alarm.AlarmEntry
+  name: AlarmEntry
+  href: api/Nitrocid.Kernel.Time.Alarm.AlarmEntry.html
+  commentId: T:Nitrocid.Kernel.Time.Alarm.AlarmEntry
+  fullName: Nitrocid.Kernel.Time.Alarm.AlarmEntry
+  nameWithType: AlarmEntry
+- uid: Nitrocid.Kernel.Time.Alarm.AlarmEntry.Description
+  name: Description
+  href: api/Nitrocid.Kernel.Time.Alarm.AlarmEntry.html#Nitrocid_Kernel_Time_Alarm_AlarmEntry_Description
+  commentId: P:Nitrocid.Kernel.Time.Alarm.AlarmEntry.Description
+  fullName: Nitrocid.Kernel.Time.Alarm.AlarmEntry.Description
+  nameWithType: AlarmEntry.Description
+- uid: Nitrocid.Kernel.Time.Alarm.AlarmEntry.Description*
+  name: Description
+  href: api/Nitrocid.Kernel.Time.Alarm.AlarmEntry.html#Nitrocid_Kernel_Time_Alarm_AlarmEntry_Description_
+  commentId: Overload:Nitrocid.Kernel.Time.Alarm.AlarmEntry.Description
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Time.Alarm.AlarmEntry.Description
+  nameWithType: AlarmEntry.Description
+- uid: Nitrocid.Kernel.Time.Alarm.AlarmEntry.Length
+  name: Length
+  href: api/Nitrocid.Kernel.Time.Alarm.AlarmEntry.html#Nitrocid_Kernel_Time_Alarm_AlarmEntry_Length
+  commentId: P:Nitrocid.Kernel.Time.Alarm.AlarmEntry.Length
+  fullName: Nitrocid.Kernel.Time.Alarm.AlarmEntry.Length
+  nameWithType: AlarmEntry.Length
+- uid: Nitrocid.Kernel.Time.Alarm.AlarmEntry.Length*
+  name: Length
+  href: api/Nitrocid.Kernel.Time.Alarm.AlarmEntry.html#Nitrocid_Kernel_Time_Alarm_AlarmEntry_Length_
+  commentId: Overload:Nitrocid.Kernel.Time.Alarm.AlarmEntry.Length
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Time.Alarm.AlarmEntry.Length
+  nameWithType: AlarmEntry.Length
+- uid: Nitrocid.Kernel.Time.Alarm.AlarmEntry.Name
+  name: Name
+  href: api/Nitrocid.Kernel.Time.Alarm.AlarmEntry.html#Nitrocid_Kernel_Time_Alarm_AlarmEntry_Name
+  commentId: P:Nitrocid.Kernel.Time.Alarm.AlarmEntry.Name
+  fullName: Nitrocid.Kernel.Time.Alarm.AlarmEntry.Name
+  nameWithType: AlarmEntry.Name
+- uid: Nitrocid.Kernel.Time.Alarm.AlarmEntry.Name*
+  name: Name
+  href: api/Nitrocid.Kernel.Time.Alarm.AlarmEntry.html#Nitrocid_Kernel_Time_Alarm_AlarmEntry_Name_
+  commentId: Overload:Nitrocid.Kernel.Time.Alarm.AlarmEntry.Name
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Time.Alarm.AlarmEntry.Name
+  nameWithType: AlarmEntry.Name
 - uid: Nitrocid.Kernel.Time.Alarm.AlarmTools
   name: AlarmTools
   href: api/Nitrocid.Kernel.Time.Alarm.AlarmTools.html
@@ -28086,15 +28137,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Time.Alarm.AlarmTools.IsAlarmRegistered
   nameWithType: AlarmTools.IsAlarmRegistered
-- uid: Nitrocid.Kernel.Time.Alarm.AlarmTools.StartAlarm(System.String,System.String,System.Int32)
-  name: StartAlarm(string, string, int)
-  href: api/Nitrocid.Kernel.Time.Alarm.AlarmTools.html#Nitrocid_Kernel_Time_Alarm_AlarmTools_StartAlarm_System_String_System_String_System_Int32_
-  commentId: M:Nitrocid.Kernel.Time.Alarm.AlarmTools.StartAlarm(System.String,System.String,System.Int32)
-  name.vb: StartAlarm(String, String, Integer)
-  fullName: Nitrocid.Kernel.Time.Alarm.AlarmTools.StartAlarm(string, string, int)
-  fullName.vb: Nitrocid.Kernel.Time.Alarm.AlarmTools.StartAlarm(String, String, Integer)
-  nameWithType: AlarmTools.StartAlarm(string, string, int)
-  nameWithType.vb: AlarmTools.StartAlarm(String, String, Integer)
+- uid: Nitrocid.Kernel.Time.Alarm.AlarmTools.StartAlarm(System.String,System.String,System.Int32,System.String)
+  name: StartAlarm(string, string, int, string)
+  href: api/Nitrocid.Kernel.Time.Alarm.AlarmTools.html#Nitrocid_Kernel_Time_Alarm_AlarmTools_StartAlarm_System_String_System_String_System_Int32_System_String_
+  commentId: M:Nitrocid.Kernel.Time.Alarm.AlarmTools.StartAlarm(System.String,System.String,System.Int32,System.String)
+  name.vb: StartAlarm(String, String, Integer, String)
+  fullName: Nitrocid.Kernel.Time.Alarm.AlarmTools.StartAlarm(string, string, int, string)
+  fullName.vb: Nitrocid.Kernel.Time.Alarm.AlarmTools.StartAlarm(String, String, Integer, String)
+  nameWithType: AlarmTools.StartAlarm(string, string, int, string)
+  nameWithType.vb: AlarmTools.StartAlarm(String, String, Integer, String)
 - uid: Nitrocid.Kernel.Time.Alarm.AlarmTools.StartAlarm*
   name: StartAlarm
   href: api/Nitrocid.Kernel.Time.Alarm.AlarmTools.html#Nitrocid_Kernel_Time_Alarm_AlarmTools_StartAlarm_

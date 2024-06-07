@@ -111,7 +111,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static KeyValuePair&lt;(string, string), DateTime&gt; GetAlarmFromId(string alarmId)</code></pre>
+    <pre><code class="lang-csharp hljs">public static KeyValuePair&lt;string, AlarmEntry&gt; GetAlarmFromId(string alarmId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -141,7 +141,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>), <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Nitrocid.Kernel.Time.Alarm.AlarmEntry.html">AlarmEntry</a>&gt;</td>
         <td><p>A key value pair instance of the whole alarm.</p>
 </td>
       </tr>
@@ -199,19 +199,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Time_Alarm_AlarmTools_StartAlarm_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Time.Alarm.AlarmTools.StartAlarm(System.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Time_Alarm_AlarmTools_StartAlarm_System_String_System_String_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Time.Alarm.AlarmTools.StartAlarm(System.String%2CSystem.String%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Time/Alarm/AlarmTools.cs/#L73">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Time/Alarm/AlarmTools.cs/#L74">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Time_Alarm_AlarmTools_StartAlarm_" data-uid="Nitrocid.Kernel.Time.Alarm.AlarmTools.StartAlarm*"></a>
-  <h4 id="Nitrocid_Kernel_Time_Alarm_AlarmTools_StartAlarm_System_String_System_String_System_Int32_" data-uid="Nitrocid.Kernel.Time.Alarm.AlarmTools.StartAlarm(System.String,System.String,System.Int32)">StartAlarm(string, string, int)</h4>
+  <h4 id="Nitrocid_Kernel_Time_Alarm_AlarmTools_StartAlarm_System_String_System_String_System_Int32_System_String_" data-uid="Nitrocid.Kernel.Time.Alarm.AlarmTools.StartAlarm(System.String,System.String,System.Int32,System.String)">StartAlarm(string, string, int, string)</h4>
   <div class="markdown level1 summary"><p>Starts an alarm</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void StartAlarm(string alarmId, string alarmName, int alarmValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void StartAlarm(string alarmId, string alarmName, int alarmValue, string alarmDesc = &quot;&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -241,6 +241,12 @@
         <td><p>Alarm value</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">alarmDesc</span></td>
+        <td><p>Description of the alarm</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
@@ -248,7 +254,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Time_Alarm_AlarmTools_StopAlarm_System_Int32_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Time.Alarm.AlarmTools.StopAlarm(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Time/Alarm/AlarmTools.cs/#L90">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Time/Alarm/AlarmTools.cs/#L94">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Time_Alarm_AlarmTools_StopAlarm_" data-uid="Nitrocid.Kernel.Time.Alarm.AlarmTools.StopAlarm*"></a>
   <h4 id="Nitrocid_Kernel_Time_Alarm_AlarmTools_StopAlarm_System_Int32_" data-uid="Nitrocid.Kernel.Time.Alarm.AlarmTools.StopAlarm(System.Int32)">StopAlarm(int)</h4>
@@ -282,7 +288,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Time_Alarm_AlarmTools_StopAlarm_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Time.Alarm.AlarmTools.StopAlarm(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Time/Alarm/AlarmTools.cs/#L107">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Time/Alarm/AlarmTools.cs/#L111">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Time_Alarm_AlarmTools_StopAlarm_" data-uid="Nitrocid.Kernel.Time.Alarm.AlarmTools.StopAlarm*"></a>
   <h4 id="Nitrocid_Kernel_Time_Alarm_AlarmTools_StopAlarm_System_String_" data-uid="Nitrocid.Kernel.Time.Alarm.AlarmTools.StopAlarm(System.String)">StopAlarm(string)</h4>
