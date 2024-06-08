@@ -2655,6 +2655,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Misc.Interactives.SettingsCli.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Misc.Interactives.SettingsCli.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.Misc.Interactives.TaskManagerCli.yml",
       "output": {
         ".html": {

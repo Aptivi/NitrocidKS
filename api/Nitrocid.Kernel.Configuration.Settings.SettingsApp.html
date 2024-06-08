@@ -102,7 +102,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Configuration_Settings_SettingsApp_OpenKey_System_Int32_Nitrocid_Kernel_Configuration_Settings_SettingsEntry_Nitrocid_Kernel_Configuration_Instances_BaseKernelConfig_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenKey(System.Int32%2CNitrocid.Kernel.Configuration.Settings.SettingsEntry%2CNitrocid.Kernel.Configuration.Instances.BaseKernelConfig)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L266">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L280">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Configuration_Settings_SettingsApp_OpenKey_" data-uid="Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenKey*"></a>
   <h4 id="Nitrocid_Kernel_Configuration_Settings_SettingsApp_OpenKey_System_Int32_Nitrocid_Kernel_Configuration_Settings_SettingsEntry_Nitrocid_Kernel_Configuration_Instances_BaseKernelConfig_" data-uid="Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenKey(System.Int32,Nitrocid.Kernel.Configuration.Settings.SettingsEntry,Nitrocid.Kernel.Configuration.Instances.BaseKernelConfig)">OpenKey(int, SettingsEntry, BaseKernelConfig)</h4>
@@ -145,19 +145,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_Nitrocid_Kernel_Configuration_Instances_BaseKernelConfig_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(Nitrocid.Kernel.Configuration.Instances.BaseKernelConfig)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_Nitrocid_Kernel_Configuration_Instances_BaseKernelConfig_System_Boolean_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(Nitrocid.Kernel.Configuration.Instances.BaseKernelConfig%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L56">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L60">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_" data-uid="Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage*"></a>
-  <h4 id="Nitrocid_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_Nitrocid_Kernel_Configuration_Instances_BaseKernelConfig_" data-uid="Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(Nitrocid.Kernel.Configuration.Instances.BaseKernelConfig)">OpenMainPage(BaseKernelConfig)</h4>
+  <h4 id="Nitrocid_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_Nitrocid_Kernel_Configuration_Instances_BaseKernelConfig_System_Boolean_" data-uid="Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(Nitrocid.Kernel.Configuration.Instances.BaseKernelConfig,System.Boolean)">OpenMainPage(BaseKernelConfig, bool)</h4>
   <div class="markdown level1 summary"><p>Opens the main page for settings, listing all the sections that are configurable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void OpenMainPage(BaseKernelConfig settingsType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void OpenMainPage(BaseKernelConfig settingsType, bool useSelection = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -175,23 +175,29 @@
         <td><p>Type of settings</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">useSelection</span></td>
+        <td><p>Whether to use the selection style or the interactive TUI</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(System.String%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L49">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L52">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_" data-uid="Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage*"></a>
-  <h4 id="Nitrocid_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_System_String_" data-uid="Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(System.String)">OpenMainPage(string)</h4>
+  <h4 id="Nitrocid_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_System_String_System_Boolean_" data-uid="Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(System.String,System.Boolean)">OpenMainPage(string, bool)</h4>
   <div class="markdown level1 summary"><p>Opens the main page for settings, listing all the sections that are configurable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void OpenMainPage(string settingsType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void OpenMainPage(string settingsType, bool useSelection = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -209,6 +215,12 @@
         <td><p>Type of settings</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">useSelection</span></td>
+        <td><p>Whether to use the selection style or the interactive TUI</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
@@ -216,7 +228,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Configuration_Settings_SettingsApp_OpenSection_System_String_Nitrocid_Kernel_Configuration_Settings_SettingsEntry_Nitrocid_Kernel_Configuration_Instances_BaseKernelConfig_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenSection(System.String%2CNitrocid.Kernel.Configuration.Settings.SettingsEntry%2CNitrocid.Kernel.Configuration.Instances.BaseKernelConfig)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L163">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L177">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Configuration_Settings_SettingsApp_OpenSection_" data-uid="Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenSection*"></a>
   <h4 id="Nitrocid_Kernel_Configuration_Settings_SettingsApp_OpenSection_System_String_Nitrocid_Kernel_Configuration_Settings_SettingsEntry_Nitrocid_Kernel_Configuration_Instances_BaseKernelConfig_" data-uid="Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenSection(System.String,Nitrocid.Kernel.Configuration.Settings.SettingsEntry,Nitrocid.Kernel.Configuration.Instances.BaseKernelConfig)">OpenSection(string, SettingsEntry, BaseKernelConfig)</h4>
@@ -262,7 +274,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Configuration_Settings_SettingsApp_VariableFinder_Nitrocid_Kernel_Configuration_Instances_BaseKernelConfig_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Configuration.Settings.SettingsApp.VariableFinder(Nitrocid.Kernel.Configuration.Instances.BaseKernelConfig)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L310">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L324">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Configuration_Settings_SettingsApp_VariableFinder_" data-uid="Nitrocid.Kernel.Configuration.Settings.SettingsApp.VariableFinder*"></a>
   <h4 id="Nitrocid_Kernel_Configuration_Settings_SettingsApp_VariableFinder_Nitrocid_Kernel_Configuration_Instances_BaseKernelConfig_" data-uid="Nitrocid.Kernel.Configuration.Settings.SettingsApp.VariableFinder(Nitrocid.Kernel.Configuration.Instances.BaseKernelConfig)">VariableFinder(BaseKernelConfig)</h4>
@@ -302,7 +314,7 @@
                     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Configuration_Settings_SettingsApp.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Configuration.Settings.SettingsApp%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L42" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Configuration/Settings/SettingsApp.cs/#L44" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

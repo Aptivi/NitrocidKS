@@ -22258,21 +22258,24 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenKey
   nameWithType: SettingsApp.OpenKey
-- uid: Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(Nitrocid.Kernel.Configuration.Instances.BaseKernelConfig)
-  name: OpenMainPage(BaseKernelConfig)
-  href: api/Nitrocid.Kernel.Configuration.Settings.SettingsApp.html#Nitrocid_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_Nitrocid_Kernel_Configuration_Instances_BaseKernelConfig_
-  commentId: M:Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(Nitrocid.Kernel.Configuration.Instances.BaseKernelConfig)
-  fullName: Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(Nitrocid.Kernel.Configuration.Instances.BaseKernelConfig)
-  nameWithType: SettingsApp.OpenMainPage(BaseKernelConfig)
-- uid: Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(System.String)
-  name: OpenMainPage(string)
-  href: api/Nitrocid.Kernel.Configuration.Settings.SettingsApp.html#Nitrocid_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_System_String_
-  commentId: M:Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(System.String)
-  name.vb: OpenMainPage(String)
-  fullName: Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(string)
-  fullName.vb: Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(String)
-  nameWithType: SettingsApp.OpenMainPage(string)
-  nameWithType.vb: SettingsApp.OpenMainPage(String)
+- uid: Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(Nitrocid.Kernel.Configuration.Instances.BaseKernelConfig,System.Boolean)
+  name: OpenMainPage(BaseKernelConfig, bool)
+  href: api/Nitrocid.Kernel.Configuration.Settings.SettingsApp.html#Nitrocid_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_Nitrocid_Kernel_Configuration_Instances_BaseKernelConfig_System_Boolean_
+  commentId: M:Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(Nitrocid.Kernel.Configuration.Instances.BaseKernelConfig,System.Boolean)
+  name.vb: OpenMainPage(BaseKernelConfig, Boolean)
+  fullName: Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(Nitrocid.Kernel.Configuration.Instances.BaseKernelConfig, bool)
+  fullName.vb: Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(Nitrocid.Kernel.Configuration.Instances.BaseKernelConfig, Boolean)
+  nameWithType: SettingsApp.OpenMainPage(BaseKernelConfig, bool)
+  nameWithType.vb: SettingsApp.OpenMainPage(BaseKernelConfig, Boolean)
+- uid: Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(System.String,System.Boolean)
+  name: OpenMainPage(string, bool)
+  href: api/Nitrocid.Kernel.Configuration.Settings.SettingsApp.html#Nitrocid_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_System_String_System_Boolean_
+  commentId: M:Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(System.String,System.Boolean)
+  name.vb: OpenMainPage(String, Boolean)
+  fullName: Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(string, bool)
+  fullName.vb: Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage(String, Boolean)
+  nameWithType: SettingsApp.OpenMainPage(string, bool)
+  nameWithType.vb: SettingsApp.OpenMainPage(String, Boolean)
 - uid: Nitrocid.Kernel.Configuration.Settings.SettingsApp.OpenMainPage*
   name: OpenMainPage
   href: api/Nitrocid.Kernel.Configuration.Settings.SettingsApp.html#Nitrocid_Kernel_Configuration_Settings_SettingsApp_OpenMainPage_
@@ -31437,6 +31440,125 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.ManualViewerCli.PrimaryDataSource
   nameWithType: ManualViewerCli.PrimaryDataSource
+- uid: Nitrocid.Misc.Interactives.SettingsCli
+  name: SettingsCli
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html
+  commentId: T:Nitrocid.Misc.Interactives.SettingsCli
+  fullName: Nitrocid.Misc.Interactives.SettingsCli
+  nameWithType: SettingsCli
+- uid: Nitrocid.Misc.Interactives.SettingsCli.AcceptsEmptyData
+  name: AcceptsEmptyData
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_AcceptsEmptyData
+  commentId: P:Nitrocid.Misc.Interactives.SettingsCli.AcceptsEmptyData
+  fullName: Nitrocid.Misc.Interactives.SettingsCli.AcceptsEmptyData
+  nameWithType: SettingsCli.AcceptsEmptyData
+- uid: Nitrocid.Misc.Interactives.SettingsCli.AcceptsEmptyData*
+  name: AcceptsEmptyData
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_AcceptsEmptyData_
+  commentId: Overload:Nitrocid.Misc.Interactives.SettingsCli.AcceptsEmptyData
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Interactives.SettingsCli.AcceptsEmptyData
+  nameWithType: SettingsCli.AcceptsEmptyData
+- uid: Nitrocid.Misc.Interactives.SettingsCli.Bindings
+  name: Bindings
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_Bindings
+  commentId: P:Nitrocid.Misc.Interactives.SettingsCli.Bindings
+  fullName: Nitrocid.Misc.Interactives.SettingsCli.Bindings
+  nameWithType: SettingsCli.Bindings
+- uid: Nitrocid.Misc.Interactives.SettingsCli.Bindings*
+  name: Bindings
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_Bindings_
+  commentId: Overload:Nitrocid.Misc.Interactives.SettingsCli.Bindings
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Interactives.SettingsCli.Bindings
+  nameWithType: SettingsCli.Bindings
+- uid: Nitrocid.Misc.Interactives.SettingsCli.GetEntryFromItem(System.ValueTuple{System.String,System.Int32})
+  name: GetEntryFromItem((string, int))
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_GetEntryFromItem_System_ValueTuple_System_String_System_Int32__
+  commentId: M:Nitrocid.Misc.Interactives.SettingsCli.GetEntryFromItem(System.ValueTuple{System.String,System.Int32})
+  name.vb: GetEntryFromItem((String, Integer))
+  fullName: Nitrocid.Misc.Interactives.SettingsCli.GetEntryFromItem((string, int))
+  fullName.vb: Nitrocid.Misc.Interactives.SettingsCli.GetEntryFromItem((String, Integer))
+  nameWithType: SettingsCli.GetEntryFromItem((string, int))
+  nameWithType.vb: SettingsCli.GetEntryFromItem((String, Integer))
+- uid: Nitrocid.Misc.Interactives.SettingsCli.GetEntryFromItem*
+  name: GetEntryFromItem
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_GetEntryFromItem_
+  commentId: Overload:Nitrocid.Misc.Interactives.SettingsCli.GetEntryFromItem
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Interactives.SettingsCli.GetEntryFromItem
+  nameWithType: SettingsCli.GetEntryFromItem
+- uid: Nitrocid.Misc.Interactives.SettingsCli.GetInfoFromItem(System.ValueTuple{System.String,System.Int32})
+  name: GetInfoFromItem((string, int))
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_GetInfoFromItem_System_ValueTuple_System_String_System_Int32__
+  commentId: M:Nitrocid.Misc.Interactives.SettingsCli.GetInfoFromItem(System.ValueTuple{System.String,System.Int32})
+  name.vb: GetInfoFromItem((String, Integer))
+  fullName: Nitrocid.Misc.Interactives.SettingsCli.GetInfoFromItem((string, int))
+  fullName.vb: Nitrocid.Misc.Interactives.SettingsCli.GetInfoFromItem((String, Integer))
+  nameWithType: SettingsCli.GetInfoFromItem((string, int))
+  nameWithType.vb: SettingsCli.GetInfoFromItem((String, Integer))
+- uid: Nitrocid.Misc.Interactives.SettingsCli.GetInfoFromItem*
+  name: GetInfoFromItem
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_GetInfoFromItem_
+  commentId: Overload:Nitrocid.Misc.Interactives.SettingsCli.GetInfoFromItem
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Interactives.SettingsCli.GetInfoFromItem
+  nameWithType: SettingsCli.GetInfoFromItem
+- uid: Nitrocid.Misc.Interactives.SettingsCli.GetStatusFromItem(System.ValueTuple{System.String,System.Int32})
+  name: GetStatusFromItem((string, int))
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_GetStatusFromItem_System_ValueTuple_System_String_System_Int32__
+  commentId: M:Nitrocid.Misc.Interactives.SettingsCli.GetStatusFromItem(System.ValueTuple{System.String,System.Int32})
+  name.vb: GetStatusFromItem((String, Integer))
+  fullName: Nitrocid.Misc.Interactives.SettingsCli.GetStatusFromItem((string, int))
+  fullName.vb: Nitrocid.Misc.Interactives.SettingsCli.GetStatusFromItem((String, Integer))
+  nameWithType: SettingsCli.GetStatusFromItem((string, int))
+  nameWithType.vb: SettingsCli.GetStatusFromItem((String, Integer))
+- uid: Nitrocid.Misc.Interactives.SettingsCli.GetStatusFromItem*
+  name: GetStatusFromItem
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_GetStatusFromItem_
+  commentId: Overload:Nitrocid.Misc.Interactives.SettingsCli.GetStatusFromItem
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Interactives.SettingsCli.GetStatusFromItem
+  nameWithType: SettingsCli.GetStatusFromItem
+- uid: Nitrocid.Misc.Interactives.SettingsCli.PrimaryDataSource
+  name: PrimaryDataSource
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_PrimaryDataSource
+  commentId: P:Nitrocid.Misc.Interactives.SettingsCli.PrimaryDataSource
+  fullName: Nitrocid.Misc.Interactives.SettingsCli.PrimaryDataSource
+  nameWithType: SettingsCli.PrimaryDataSource
+- uid: Nitrocid.Misc.Interactives.SettingsCli.PrimaryDataSource*
+  name: PrimaryDataSource
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_PrimaryDataSource_
+  commentId: Overload:Nitrocid.Misc.Interactives.SettingsCli.PrimaryDataSource
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Interactives.SettingsCli.PrimaryDataSource
+  nameWithType: SettingsCli.PrimaryDataSource
+- uid: Nitrocid.Misc.Interactives.SettingsCli.SecondPaneInteractable
+  name: SecondPaneInteractable
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_SecondPaneInteractable
+  commentId: P:Nitrocid.Misc.Interactives.SettingsCli.SecondPaneInteractable
+  fullName: Nitrocid.Misc.Interactives.SettingsCli.SecondPaneInteractable
+  nameWithType: SettingsCli.SecondPaneInteractable
+- uid: Nitrocid.Misc.Interactives.SettingsCli.SecondPaneInteractable*
+  name: SecondPaneInteractable
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_SecondPaneInteractable_
+  commentId: Overload:Nitrocid.Misc.Interactives.SettingsCli.SecondPaneInteractable
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Interactives.SettingsCli.SecondPaneInteractable
+  nameWithType: SettingsCli.SecondPaneInteractable
+- uid: Nitrocid.Misc.Interactives.SettingsCli.SecondaryDataSource
+  name: SecondaryDataSource
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_SecondaryDataSource
+  commentId: P:Nitrocid.Misc.Interactives.SettingsCli.SecondaryDataSource
+  fullName: Nitrocid.Misc.Interactives.SettingsCli.SecondaryDataSource
+  nameWithType: SettingsCli.SecondaryDataSource
+- uid: Nitrocid.Misc.Interactives.SettingsCli.SecondaryDataSource*
+  name: SecondaryDataSource
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_SecondaryDataSource_
+  commentId: Overload:Nitrocid.Misc.Interactives.SettingsCli.SecondaryDataSource
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Interactives.SettingsCli.SecondaryDataSource
+  nameWithType: SettingsCli.SecondaryDataSource
 - uid: Nitrocid.Misc.Interactives.TaskManagerCli
   name: TaskManagerCli
   href: api/Nitrocid.Misc.Interactives.TaskManagerCli.html
