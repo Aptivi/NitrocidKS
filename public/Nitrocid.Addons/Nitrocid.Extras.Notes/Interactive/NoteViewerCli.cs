@@ -34,6 +34,10 @@ namespace Nitrocid.Extras.Notes.Interactive
             NoteManagement.ListNotes();
 
         /// <inheritdoc/>
+        public override bool AcceptsEmptyData =>
+            true;
+
+        /// <inheritdoc/>
         public override string GetInfoFromItem(string item)
         {
             // Get some info from the note
