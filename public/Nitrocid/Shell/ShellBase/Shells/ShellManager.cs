@@ -557,7 +557,7 @@ namespace Nitrocid.Shell.ShellBase.Shells
                                     TextWriters.Write(Translate.DoTranslation("Failed to start \"{0}\": {1}"), true, KernelColorType.Error, commandName, ex.Message);
                                     DebugWriter.WriteDebugStackTrace(ex);
                                     if (ex is KernelException kex)
-                                        UESHVariables.SetVariable("UESHErrorCode", $"{10000 + (int)kex.ExceptionType}");
+                                        UESHVariables.SetVariable("UESHErrorCode", $"{KernelExceptionTools.GetErrorCode(kex)}");
                                     else
                                         UESHVariables.SetVariable("UESHErrorCode", $"{ex.GetHashCode()}");
                                 }
@@ -576,7 +576,7 @@ namespace Nitrocid.Shell.ShellBase.Shells
                                     TextWriters.Write(Translate.DoTranslation("Error trying to execute script: {0}"), true, KernelColorType.Error, ex.Message);
                                     DebugWriter.WriteDebugStackTrace(ex);
                                     if (ex is KernelException kex)
-                                        UESHVariables.SetVariable("UESHErrorCode", $"{10000 + (int)kex.ExceptionType}");
+                                        UESHVariables.SetVariable("UESHErrorCode", $"{KernelExceptionTools.GetErrorCode(kex)}");
                                     else
                                         UESHVariables.SetVariable("UESHErrorCode", $"{ex.GetHashCode()}");
                                 }
@@ -600,7 +600,7 @@ namespace Nitrocid.Shell.ShellBase.Shells
                         DebugWriter.WriteDebugStackTrace(ex);
                         TextWriters.Write(Translate.DoTranslation("Error trying to execute command.") + CharManager.NewLine + Translate.DoTranslation("Error {0}: {1}"), true, KernelColorType.Error, ex.GetType().FullName, ex.Message);
                         if (ex is KernelException kex)
-                            UESHVariables.SetVariable("UESHErrorCode", $"{10000 + (int)kex.ExceptionType}");
+                            UESHVariables.SetVariable("UESHErrorCode", $"{KernelExceptionTools.GetErrorCode(kex)}");
                         else
                             UESHVariables.SetVariable("UESHErrorCode", $"{ex.GetHashCode()}");
                     }
