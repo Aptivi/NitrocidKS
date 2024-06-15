@@ -20384,6 +20384,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableSplash
   nameWithType: KernelMainConfig.EnableSplash
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableWidgets
+  name: EnableWidgets
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_EnableWidgets
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableWidgets
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableWidgets
+  nameWithType: KernelMainConfig.EnableWidgets
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableWidgets*
+  name: EnableWidgets
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_EnableWidgets_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableWidgets
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableWidgets
+  nameWithType: KernelMainConfig.EnableWidgets
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ErrorTextColor
   name: ErrorTextColor
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ErrorTextColor
@@ -20423,6 +20436,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EventDebug
   nameWithType: KernelMainConfig.EventDebug
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.FirstWidget
+  name: FirstWidget
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_FirstWidget
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.FirstWidget
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.FirstWidget
+  nameWithType: KernelMainConfig.FirstWidget
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.FirstWidget*
+  name: FirstWidget
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_FirstWidget_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.FirstWidget
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.FirstWidget
+  nameWithType: KernelMainConfig.FirstWidget
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.FullParseMode
   name: FullParseMode
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_FullParseMode
@@ -21229,6 +21255,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ScreensaverSeizureAcknowledged
   nameWithType: KernelMainConfig.ScreensaverSeizureAcknowledged
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.SecondWidget
+  name: SecondWidget
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_SecondWidget
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.SecondWidget
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.SecondWidget
+  nameWithType: KernelMainConfig.SecondWidget
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.SecondWidget*
+  name: SecondWidget
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_SecondWidget_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.SecondWidget
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.SecondWidget
+  nameWithType: KernelMainConfig.SecondWidget
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.SelectedOptionColor
   name: SelectedOptionColor
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_SelectedOptionColor
@@ -22268,123 +22307,6 @@ references:
   commentId: T:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig
   nameWithType: KernelWidgetsConfig
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogDelay
-  name: AnalogDelay
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_AnalogDelay
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogDelay
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogDelay
-  nameWithType: KernelWidgetsConfig.AnalogDelay
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogDelay*
-  name: AnalogDelay
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_AnalogDelay_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogDelay
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogDelay
-  nameWithType: KernelWidgetsConfig.AnalogDelay
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumBlueColorLevel
-  name: AnalogMaximumBlueColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_AnalogMaximumBlueColorLevel
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumBlueColorLevel
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumBlueColorLevel
-  nameWithType: KernelWidgetsConfig.AnalogMaximumBlueColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumBlueColorLevel*
-  name: AnalogMaximumBlueColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_AnalogMaximumBlueColorLevel_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumBlueColorLevel
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumBlueColorLevel
-  nameWithType: KernelWidgetsConfig.AnalogMaximumBlueColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumColorLevel
-  name: AnalogMaximumColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_AnalogMaximumColorLevel
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumColorLevel
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumColorLevel
-  nameWithType: KernelWidgetsConfig.AnalogMaximumColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumColorLevel*
-  name: AnalogMaximumColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_AnalogMaximumColorLevel_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumColorLevel
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumColorLevel
-  nameWithType: KernelWidgetsConfig.AnalogMaximumColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumGreenColorLevel
-  name: AnalogMaximumGreenColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_AnalogMaximumGreenColorLevel
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumGreenColorLevel
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumGreenColorLevel
-  nameWithType: KernelWidgetsConfig.AnalogMaximumGreenColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumGreenColorLevel*
-  name: AnalogMaximumGreenColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_AnalogMaximumGreenColorLevel_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumGreenColorLevel
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumGreenColorLevel
-  nameWithType: KernelWidgetsConfig.AnalogMaximumGreenColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumRedColorLevel
-  name: AnalogMaximumRedColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_AnalogMaximumRedColorLevel
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumRedColorLevel
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumRedColorLevel
-  nameWithType: KernelWidgetsConfig.AnalogMaximumRedColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumRedColorLevel*
-  name: AnalogMaximumRedColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_AnalogMaximumRedColorLevel_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumRedColorLevel
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMaximumRedColorLevel
-  nameWithType: KernelWidgetsConfig.AnalogMaximumRedColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumBlueColorLevel
-  name: AnalogMinimumBlueColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_AnalogMinimumBlueColorLevel
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumBlueColorLevel
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumBlueColorLevel
-  nameWithType: KernelWidgetsConfig.AnalogMinimumBlueColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumBlueColorLevel*
-  name: AnalogMinimumBlueColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_AnalogMinimumBlueColorLevel_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumBlueColorLevel
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumBlueColorLevel
-  nameWithType: KernelWidgetsConfig.AnalogMinimumBlueColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumColorLevel
-  name: AnalogMinimumColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_AnalogMinimumColorLevel
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumColorLevel
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumColorLevel
-  nameWithType: KernelWidgetsConfig.AnalogMinimumColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumColorLevel*
-  name: AnalogMinimumColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_AnalogMinimumColorLevel_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumColorLevel
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumColorLevel
-  nameWithType: KernelWidgetsConfig.AnalogMinimumColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumGreenColorLevel
-  name: AnalogMinimumGreenColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_AnalogMinimumGreenColorLevel
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumGreenColorLevel
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumGreenColorLevel
-  nameWithType: KernelWidgetsConfig.AnalogMinimumGreenColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumGreenColorLevel*
-  name: AnalogMinimumGreenColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_AnalogMinimumGreenColorLevel_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumGreenColorLevel
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumGreenColorLevel
-  nameWithType: KernelWidgetsConfig.AnalogMinimumGreenColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumRedColorLevel
-  name: AnalogMinimumRedColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_AnalogMinimumRedColorLevel
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumRedColorLevel
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumRedColorLevel
-  nameWithType: KernelWidgetsConfig.AnalogMinimumRedColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumRedColorLevel*
-  name: AnalogMinimumRedColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_AnalogMinimumRedColorLevel_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumRedColorLevel
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogMinimumRedColorLevel
-  nameWithType: KernelWidgetsConfig.AnalogMinimumRedColorLevel
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogShowSecondsHand
   name: AnalogShowSecondsHand
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_AnalogShowSecondsHand
@@ -22398,149 +22320,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogShowSecondsHand
   nameWithType: KernelWidgetsConfig.AnalogShowSecondsHand
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogTrueColor
-  name: AnalogTrueColor
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_AnalogTrueColor
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogTrueColor
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogTrueColor
-  nameWithType: KernelWidgetsConfig.AnalogTrueColor
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogTrueColor*
-  name: AnalogTrueColor
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_AnalogTrueColor_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogTrueColor
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalDisplayDate
+  name: DigitalDisplayDate
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_DigitalDisplayDate
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalDisplayDate
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalDisplayDate
+  nameWithType: KernelWidgetsConfig.DigitalDisplayDate
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalDisplayDate*
+  name: DigitalDisplayDate
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_DigitalDisplayDate_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalDisplayDate
   isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.AnalogTrueColor
-  nameWithType: KernelWidgetsConfig.AnalogTrueColor
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalDelay
-  name: DigitalDelay
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_DigitalDelay
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalDelay
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalDelay
-  nameWithType: KernelWidgetsConfig.DigitalDelay
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalDelay*
-  name: DigitalDelay
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_DigitalDelay_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalDelay
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalDelay
-  nameWithType: KernelWidgetsConfig.DigitalDelay
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumBlueColorLevel
-  name: DigitalMaximumBlueColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_DigitalMaximumBlueColorLevel
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumBlueColorLevel
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumBlueColorLevel
-  nameWithType: KernelWidgetsConfig.DigitalMaximumBlueColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumBlueColorLevel*
-  name: DigitalMaximumBlueColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_DigitalMaximumBlueColorLevel_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumBlueColorLevel
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumBlueColorLevel
-  nameWithType: KernelWidgetsConfig.DigitalMaximumBlueColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumColorLevel
-  name: DigitalMaximumColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_DigitalMaximumColorLevel
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumColorLevel
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumColorLevel
-  nameWithType: KernelWidgetsConfig.DigitalMaximumColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumColorLevel*
-  name: DigitalMaximumColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_DigitalMaximumColorLevel_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumColorLevel
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumColorLevel
-  nameWithType: KernelWidgetsConfig.DigitalMaximumColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumGreenColorLevel
-  name: DigitalMaximumGreenColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_DigitalMaximumGreenColorLevel
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumGreenColorLevel
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumGreenColorLevel
-  nameWithType: KernelWidgetsConfig.DigitalMaximumGreenColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumGreenColorLevel*
-  name: DigitalMaximumGreenColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_DigitalMaximumGreenColorLevel_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumGreenColorLevel
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumGreenColorLevel
-  nameWithType: KernelWidgetsConfig.DigitalMaximumGreenColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumRedColorLevel
-  name: DigitalMaximumRedColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_DigitalMaximumRedColorLevel
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumRedColorLevel
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumRedColorLevel
-  nameWithType: KernelWidgetsConfig.DigitalMaximumRedColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumRedColorLevel*
-  name: DigitalMaximumRedColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_DigitalMaximumRedColorLevel_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumRedColorLevel
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMaximumRedColorLevel
-  nameWithType: KernelWidgetsConfig.DigitalMaximumRedColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumBlueColorLevel
-  name: DigitalMinimumBlueColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_DigitalMinimumBlueColorLevel
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumBlueColorLevel
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumBlueColorLevel
-  nameWithType: KernelWidgetsConfig.DigitalMinimumBlueColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumBlueColorLevel*
-  name: DigitalMinimumBlueColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_DigitalMinimumBlueColorLevel_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumBlueColorLevel
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumBlueColorLevel
-  nameWithType: KernelWidgetsConfig.DigitalMinimumBlueColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumColorLevel
-  name: DigitalMinimumColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_DigitalMinimumColorLevel
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumColorLevel
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumColorLevel
-  nameWithType: KernelWidgetsConfig.DigitalMinimumColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumColorLevel*
-  name: DigitalMinimumColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_DigitalMinimumColorLevel_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumColorLevel
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumColorLevel
-  nameWithType: KernelWidgetsConfig.DigitalMinimumColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumGreenColorLevel
-  name: DigitalMinimumGreenColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_DigitalMinimumGreenColorLevel
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumGreenColorLevel
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumGreenColorLevel
-  nameWithType: KernelWidgetsConfig.DigitalMinimumGreenColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumGreenColorLevel*
-  name: DigitalMinimumGreenColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_DigitalMinimumGreenColorLevel_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumGreenColorLevel
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumGreenColorLevel
-  nameWithType: KernelWidgetsConfig.DigitalMinimumGreenColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumRedColorLevel
-  name: DigitalMinimumRedColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_DigitalMinimumRedColorLevel
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumRedColorLevel
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumRedColorLevel
-  nameWithType: KernelWidgetsConfig.DigitalMinimumRedColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumRedColorLevel*
-  name: DigitalMinimumRedColorLevel
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_DigitalMinimumRedColorLevel_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumRedColorLevel
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalMinimumRedColorLevel
-  nameWithType: KernelWidgetsConfig.DigitalMinimumRedColorLevel
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalTrueColor
-  name: DigitalTrueColor
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_DigitalTrueColor
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalTrueColor
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalTrueColor
-  nameWithType: KernelWidgetsConfig.DigitalTrueColor
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalTrueColor*
-  name: DigitalTrueColor
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_DigitalTrueColor_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalTrueColor
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalTrueColor
-  nameWithType: KernelWidgetsConfig.DigitalTrueColor
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalDisplayDate
+  nameWithType: KernelWidgetsConfig.DigitalDisplayDate
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.SettingsEntries
   name: SettingsEntries
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_SettingsEntries
@@ -26190,6 +25982,12 @@ references:
   commentId: F:Nitrocid.Kernel.Exceptions.KernelExceptionType.UserManagement
   fullName: Nitrocid.Kernel.Exceptions.KernelExceptionType.UserManagement
   nameWithType: KernelExceptionType.UserManagement
+- uid: Nitrocid.Kernel.Exceptions.KernelExceptionType.Widget
+  name: Widget
+  href: api/Nitrocid.Kernel.Exceptions.KernelExceptionType.html#Nitrocid_Kernel_Exceptions_KernelExceptionType_Widget
+  commentId: F:Nitrocid.Kernel.Exceptions.KernelExceptionType.Widget
+  fullName: Nitrocid.Kernel.Exceptions.KernelExceptionType.Widget
+  nameWithType: KernelExceptionType.Widget
 - uid: Nitrocid.Kernel.Extensions
   name: Nitrocid.Kernel.Extensions
   href: api/Nitrocid.Kernel.Extensions.html
@@ -48079,6 +47877,127 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Users.Login.Widgets.IWidget.Render
   nameWithType: IWidget.Render
+- uid: Nitrocid.Users.Login.Widgets.WidgetTools
+  name: WidgetTools
+  href: api/Nitrocid.Users.Login.Widgets.WidgetTools.html
+  commentId: T:Nitrocid.Users.Login.Widgets.WidgetTools
+  fullName: Nitrocid.Users.Login.Widgets.WidgetTools
+  nameWithType: WidgetTools
+- uid: Nitrocid.Users.Login.Widgets.WidgetTools.AddWidget(Nitrocid.Users.Login.Widgets.BaseWidget)
+  name: AddWidget(BaseWidget)
+  href: api/Nitrocid.Users.Login.Widgets.WidgetTools.html#Nitrocid_Users_Login_Widgets_WidgetTools_AddWidget_Nitrocid_Users_Login_Widgets_BaseWidget_
+  commentId: M:Nitrocid.Users.Login.Widgets.WidgetTools.AddWidget(Nitrocid.Users.Login.Widgets.BaseWidget)
+  fullName: Nitrocid.Users.Login.Widgets.WidgetTools.AddWidget(Nitrocid.Users.Login.Widgets.BaseWidget)
+  nameWithType: WidgetTools.AddWidget(BaseWidget)
+- uid: Nitrocid.Users.Login.Widgets.WidgetTools.AddWidget*
+  name: AddWidget
+  href: api/Nitrocid.Users.Login.Widgets.WidgetTools.html#Nitrocid_Users_Login_Widgets_WidgetTools_AddWidget_
+  commentId: Overload:Nitrocid.Users.Login.Widgets.WidgetTools.AddWidget
+  isSpec: "True"
+  fullName: Nitrocid.Users.Login.Widgets.WidgetTools.AddWidget
+  nameWithType: WidgetTools.AddWidget
+- uid: Nitrocid.Users.Login.Widgets.WidgetTools.CheckWidget(System.String)
+  name: CheckWidget(string)
+  href: api/Nitrocid.Users.Login.Widgets.WidgetTools.html#Nitrocid_Users_Login_Widgets_WidgetTools_CheckWidget_System_String_
+  commentId: M:Nitrocid.Users.Login.Widgets.WidgetTools.CheckWidget(System.String)
+  name.vb: CheckWidget(String)
+  fullName: Nitrocid.Users.Login.Widgets.WidgetTools.CheckWidget(string)
+  fullName.vb: Nitrocid.Users.Login.Widgets.WidgetTools.CheckWidget(String)
+  nameWithType: WidgetTools.CheckWidget(string)
+  nameWithType.vb: WidgetTools.CheckWidget(String)
+- uid: Nitrocid.Users.Login.Widgets.WidgetTools.CheckWidget*
+  name: CheckWidget
+  href: api/Nitrocid.Users.Login.Widgets.WidgetTools.html#Nitrocid_Users_Login_Widgets_WidgetTools_CheckWidget_
+  commentId: Overload:Nitrocid.Users.Login.Widgets.WidgetTools.CheckWidget
+  isSpec: "True"
+  fullName: Nitrocid.Users.Login.Widgets.WidgetTools.CheckWidget
+  nameWithType: WidgetTools.CheckWidget
+- uid: Nitrocid.Users.Login.Widgets.WidgetTools.GetWidget(System.String)
+  name: GetWidget(string)
+  href: api/Nitrocid.Users.Login.Widgets.WidgetTools.html#Nitrocid_Users_Login_Widgets_WidgetTools_GetWidget_System_String_
+  commentId: M:Nitrocid.Users.Login.Widgets.WidgetTools.GetWidget(System.String)
+  name.vb: GetWidget(String)
+  fullName: Nitrocid.Users.Login.Widgets.WidgetTools.GetWidget(string)
+  fullName.vb: Nitrocid.Users.Login.Widgets.WidgetTools.GetWidget(String)
+  nameWithType: WidgetTools.GetWidget(string)
+  nameWithType.vb: WidgetTools.GetWidget(String)
+- uid: Nitrocid.Users.Login.Widgets.WidgetTools.GetWidget*
+  name: GetWidget
+  href: api/Nitrocid.Users.Login.Widgets.WidgetTools.html#Nitrocid_Users_Login_Widgets_WidgetTools_GetWidget_
+  commentId: Overload:Nitrocid.Users.Login.Widgets.WidgetTools.GetWidget
+  isSpec: "True"
+  fullName: Nitrocid.Users.Login.Widgets.WidgetTools.GetWidget
+  nameWithType: WidgetTools.GetWidget
+- uid: Nitrocid.Users.Login.Widgets.WidgetTools.GetWidgetName(Nitrocid.Users.Login.Widgets.BaseWidget)
+  name: GetWidgetName(BaseWidget)
+  href: api/Nitrocid.Users.Login.Widgets.WidgetTools.html#Nitrocid_Users_Login_Widgets_WidgetTools_GetWidgetName_Nitrocid_Users_Login_Widgets_BaseWidget_
+  commentId: M:Nitrocid.Users.Login.Widgets.WidgetTools.GetWidgetName(Nitrocid.Users.Login.Widgets.BaseWidget)
+  fullName: Nitrocid.Users.Login.Widgets.WidgetTools.GetWidgetName(Nitrocid.Users.Login.Widgets.BaseWidget)
+  nameWithType: WidgetTools.GetWidgetName(BaseWidget)
+- uid: Nitrocid.Users.Login.Widgets.WidgetTools.GetWidgetName*
+  name: GetWidgetName
+  href: api/Nitrocid.Users.Login.Widgets.WidgetTools.html#Nitrocid_Users_Login_Widgets_WidgetTools_GetWidgetName_
+  commentId: Overload:Nitrocid.Users.Login.Widgets.WidgetTools.GetWidgetName
+  isSpec: "True"
+  fullName: Nitrocid.Users.Login.Widgets.WidgetTools.GetWidgetName
+  nameWithType: WidgetTools.GetWidgetName
+- uid: Nitrocid.Users.Login.Widgets.WidgetTools.IsWidgetBuiltin(System.String)
+  name: IsWidgetBuiltin(string)
+  href: api/Nitrocid.Users.Login.Widgets.WidgetTools.html#Nitrocid_Users_Login_Widgets_WidgetTools_IsWidgetBuiltin_System_String_
+  commentId: M:Nitrocid.Users.Login.Widgets.WidgetTools.IsWidgetBuiltin(System.String)
+  name.vb: IsWidgetBuiltin(String)
+  fullName: Nitrocid.Users.Login.Widgets.WidgetTools.IsWidgetBuiltin(string)
+  fullName.vb: Nitrocid.Users.Login.Widgets.WidgetTools.IsWidgetBuiltin(String)
+  nameWithType: WidgetTools.IsWidgetBuiltin(string)
+  nameWithType.vb: WidgetTools.IsWidgetBuiltin(String)
+- uid: Nitrocid.Users.Login.Widgets.WidgetTools.IsWidgetBuiltin*
+  name: IsWidgetBuiltin
+  href: api/Nitrocid.Users.Login.Widgets.WidgetTools.html#Nitrocid_Users_Login_Widgets_WidgetTools_IsWidgetBuiltin_
+  commentId: Overload:Nitrocid.Users.Login.Widgets.WidgetTools.IsWidgetBuiltin
+  isSpec: "True"
+  fullName: Nitrocid.Users.Login.Widgets.WidgetTools.IsWidgetBuiltin
+  nameWithType: WidgetTools.IsWidgetBuiltin
+- uid: Nitrocid.Users.Login.Widgets.WidgetTools.RemoveWidget(System.String)
+  name: RemoveWidget(string)
+  href: api/Nitrocid.Users.Login.Widgets.WidgetTools.html#Nitrocid_Users_Login_Widgets_WidgetTools_RemoveWidget_System_String_
+  commentId: M:Nitrocid.Users.Login.Widgets.WidgetTools.RemoveWidget(System.String)
+  name.vb: RemoveWidget(String)
+  fullName: Nitrocid.Users.Login.Widgets.WidgetTools.RemoveWidget(string)
+  fullName.vb: Nitrocid.Users.Login.Widgets.WidgetTools.RemoveWidget(String)
+  nameWithType: WidgetTools.RemoveWidget(string)
+  nameWithType.vb: WidgetTools.RemoveWidget(String)
+- uid: Nitrocid.Users.Login.Widgets.WidgetTools.RemoveWidget*
+  name: RemoveWidget
+  href: api/Nitrocid.Users.Login.Widgets.WidgetTools.html#Nitrocid_Users_Login_Widgets_WidgetTools_RemoveWidget_
+  commentId: Overload:Nitrocid.Users.Login.Widgets.WidgetTools.RemoveWidget
+  isSpec: "True"
+  fullName: Nitrocid.Users.Login.Widgets.WidgetTools.RemoveWidget
+  nameWithType: WidgetTools.RemoveWidget
+- uid: Nitrocid.Users.Login.Widgets.WidgetTools.RenderWidget(System.String)
+  name: RenderWidget(string)
+  href: api/Nitrocid.Users.Login.Widgets.WidgetTools.html#Nitrocid_Users_Login_Widgets_WidgetTools_RenderWidget_System_String_
+  commentId: M:Nitrocid.Users.Login.Widgets.WidgetTools.RenderWidget(System.String)
+  name.vb: RenderWidget(String)
+  fullName: Nitrocid.Users.Login.Widgets.WidgetTools.RenderWidget(string)
+  fullName.vb: Nitrocid.Users.Login.Widgets.WidgetTools.RenderWidget(String)
+  nameWithType: WidgetTools.RenderWidget(string)
+  nameWithType.vb: WidgetTools.RenderWidget(String)
+- uid: Nitrocid.Users.Login.Widgets.WidgetTools.RenderWidget(System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+  name: RenderWidget(string, int, int, int, int)
+  href: api/Nitrocid.Users.Login.Widgets.WidgetTools.html#Nitrocid_Users_Login_Widgets_WidgetTools_RenderWidget_System_String_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:Nitrocid.Users.Login.Widgets.WidgetTools.RenderWidget(System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+  name.vb: RenderWidget(String, Integer, Integer, Integer, Integer)
+  fullName: Nitrocid.Users.Login.Widgets.WidgetTools.RenderWidget(string, int, int, int, int)
+  fullName.vb: Nitrocid.Users.Login.Widgets.WidgetTools.RenderWidget(String, Integer, Integer, Integer, Integer)
+  nameWithType: WidgetTools.RenderWidget(string, int, int, int, int)
+  nameWithType.vb: WidgetTools.RenderWidget(String, Integer, Integer, Integer, Integer)
+- uid: Nitrocid.Users.Login.Widgets.WidgetTools.RenderWidget*
+  name: RenderWidget
+  href: api/Nitrocid.Users.Login.Widgets.WidgetTools.html#Nitrocid_Users_Login_Widgets_WidgetTools_RenderWidget_
+  commentId: Overload:Nitrocid.Users.Login.Widgets.WidgetTools.RenderWidget
+  isSpec: "True"
+  fullName: Nitrocid.Users.Login.Widgets.WidgetTools.RenderWidget
+  nameWithType: WidgetTools.RenderWidget
 - uid: Nitrocid.Users.Settings
   name: Nitrocid.Users.Settings
   href: api/Nitrocid.Users.Settings.html
