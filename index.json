@@ -2429,6 +2429,21 @@
     "title": "Namespace Nitrocid.Users.Login.Motd | Nitrocid KS API - Aptivi",
     "keywords": "Namespace Nitrocid.Users.Login.Motd Classes MalParse Message of the Day After Login (MAL) parsing module MotdParse Message of the Day (MOTD) parsing module"
   },
+  "api/Nitrocid.Users.Login.Widgets.BaseWidget.html": {
+    "href": "api/Nitrocid.Users.Login.Widgets.BaseWidget.html",
+    "title": "Class BaseWidget | Nitrocid KS API - Aptivi",
+    "keywords": "Class BaseWidget Abstract base widget class for implementation Inheritance object BaseWidget Implements IWidget Namespace: Nitrocid.Users.Login.Widgets Assembly: Nitrocid.dll Syntax public abstract class BaseWidget : IWidget Methods | Edit this page View Source Render() Renders this widget in the upper left corner of the console with the width and height of the console window Declaration public virtual string Render() Returns Type Description string A string that represents the rendered widget with VT sequences and other console control sequences. | Edit this page View Source Render(int, int, int, int) Renders this widget in a specified location Declaration public abstract string Render(int left, int top, int width, int height) Parameters Type Name Description int left Left position of the widget int top Top position of the widget int width Width of a widget int height Height of a widget Returns Type Description string A string that represents the rendered widget with VT sequences and other console control sequences. Implements IWidget"
+  },
+  "api/Nitrocid.Users.Login.Widgets.IWidget.html": {
+    "href": "api/Nitrocid.Users.Login.Widgets.IWidget.html",
+    "title": "Interface IWidget | Nitrocid KS API - Aptivi",
+    "keywords": "Interface IWidget Widget interface for the modern logon handler (built-in) Namespace: Nitrocid.Users.Login.Widgets Assembly: Nitrocid.dll Syntax public interface IWidget Methods | Edit this page View Source Render(int, int, int, int) Renders this widget in a specified location Declaration string Render(int left, int top, int width, int height) Parameters Type Name Description int left Left position of the widget int top Top position of the widget int width Width of a widget int height Height of a widget Returns Type Description string A string that represents the rendered widget with VT sequences and other console control sequences."
+  },
+  "api/Nitrocid.Users.Login.Widgets.html": {
+    "href": "api/Nitrocid.Users.Login.Widgets.html",
+    "title": "Namespace Nitrocid.Users.Login.Widgets | Nitrocid KS API - Aptivi",
+    "keywords": "Namespace Nitrocid.Users.Login.Widgets Classes BaseWidget Abstract base widget class for implementation Interfaces IWidget Widget interface for the modern logon handler (built-in)"
+  },
   "api/Nitrocid.Users.Login.html": {
     "href": "api/Nitrocid.Users.Login.html",
     "title": "Namespace Nitrocid.Users.Login | Nitrocid KS API - Aptivi",

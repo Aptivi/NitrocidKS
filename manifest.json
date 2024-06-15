@@ -4875,6 +4875,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Users.Login.Widgets.BaseWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Users.Login.Widgets.BaseWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Users.Login.Widgets.IWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Users.Login.Widgets.IWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Users.Login.Widgets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Users.Login.Widgets.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.Users.Login.yml",
       "output": {
         ".html": {

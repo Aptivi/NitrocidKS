@@ -48023,6 +48023,62 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Users.Login.Motd.MotdParse.UnregisterDynamicMotd
   nameWithType: MotdParse.UnregisterDynamicMotd
+- uid: Nitrocid.Users.Login.Widgets
+  name: Nitrocid.Users.Login.Widgets
+  href: api/Nitrocid.Users.Login.Widgets.html
+  commentId: N:Nitrocid.Users.Login.Widgets
+  fullName: Nitrocid.Users.Login.Widgets
+  nameWithType: Nitrocid.Users.Login.Widgets
+- uid: Nitrocid.Users.Login.Widgets.BaseWidget
+  name: BaseWidget
+  href: api/Nitrocid.Users.Login.Widgets.BaseWidget.html
+  commentId: T:Nitrocid.Users.Login.Widgets.BaseWidget
+  fullName: Nitrocid.Users.Login.Widgets.BaseWidget
+  nameWithType: BaseWidget
+- uid: Nitrocid.Users.Login.Widgets.BaseWidget.Render
+  name: Render()
+  href: api/Nitrocid.Users.Login.Widgets.BaseWidget.html#Nitrocid_Users_Login_Widgets_BaseWidget_Render
+  commentId: M:Nitrocid.Users.Login.Widgets.BaseWidget.Render
+  fullName: Nitrocid.Users.Login.Widgets.BaseWidget.Render()
+  nameWithType: BaseWidget.Render()
+- uid: Nitrocid.Users.Login.Widgets.BaseWidget.Render(System.Int32,System.Int32,System.Int32,System.Int32)
+  name: Render(int, int, int, int)
+  href: api/Nitrocid.Users.Login.Widgets.BaseWidget.html#Nitrocid_Users_Login_Widgets_BaseWidget_Render_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:Nitrocid.Users.Login.Widgets.BaseWidget.Render(System.Int32,System.Int32,System.Int32,System.Int32)
+  name.vb: Render(Integer, Integer, Integer, Integer)
+  fullName: Nitrocid.Users.Login.Widgets.BaseWidget.Render(int, int, int, int)
+  fullName.vb: Nitrocid.Users.Login.Widgets.BaseWidget.Render(Integer, Integer, Integer, Integer)
+  nameWithType: BaseWidget.Render(int, int, int, int)
+  nameWithType.vb: BaseWidget.Render(Integer, Integer, Integer, Integer)
+- uid: Nitrocid.Users.Login.Widgets.BaseWidget.Render*
+  name: Render
+  href: api/Nitrocid.Users.Login.Widgets.BaseWidget.html#Nitrocid_Users_Login_Widgets_BaseWidget_Render_
+  commentId: Overload:Nitrocid.Users.Login.Widgets.BaseWidget.Render
+  isSpec: "True"
+  fullName: Nitrocid.Users.Login.Widgets.BaseWidget.Render
+  nameWithType: BaseWidget.Render
+- uid: Nitrocid.Users.Login.Widgets.IWidget
+  name: IWidget
+  href: api/Nitrocid.Users.Login.Widgets.IWidget.html
+  commentId: T:Nitrocid.Users.Login.Widgets.IWidget
+  fullName: Nitrocid.Users.Login.Widgets.IWidget
+  nameWithType: IWidget
+- uid: Nitrocid.Users.Login.Widgets.IWidget.Render(System.Int32,System.Int32,System.Int32,System.Int32)
+  name: Render(int, int, int, int)
+  href: api/Nitrocid.Users.Login.Widgets.IWidget.html#Nitrocid_Users_Login_Widgets_IWidget_Render_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:Nitrocid.Users.Login.Widgets.IWidget.Render(System.Int32,System.Int32,System.Int32,System.Int32)
+  name.vb: Render(Integer, Integer, Integer, Integer)
+  fullName: Nitrocid.Users.Login.Widgets.IWidget.Render(int, int, int, int)
+  fullName.vb: Nitrocid.Users.Login.Widgets.IWidget.Render(Integer, Integer, Integer, Integer)
+  nameWithType: IWidget.Render(int, int, int, int)
+  nameWithType.vb: IWidget.Render(Integer, Integer, Integer, Integer)
+- uid: Nitrocid.Users.Login.Widgets.IWidget.Render*
+  name: Render
+  href: api/Nitrocid.Users.Login.Widgets.IWidget.html#Nitrocid_Users_Login_Widgets_IWidget_Render_
+  commentId: Overload:Nitrocid.Users.Login.Widgets.IWidget.Render
+  isSpec: "True"
+  fullName: Nitrocid.Users.Login.Widgets.IWidget.Render
+  nameWithType: IWidget.Render
 - uid: Nitrocid.Users.Settings
   name: Nitrocid.Users.Settings
   href: api/Nitrocid.Users.Settings.html
