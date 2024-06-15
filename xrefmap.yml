@@ -47941,6 +47941,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Users.Login.Widgets.WidgetTools.GetWidgetName
   nameWithType: WidgetTools.GetWidgetName
+- uid: Nitrocid.Users.Login.Widgets.WidgetTools.GetWidgetNames
+  name: GetWidgetNames()
+  href: api/Nitrocid.Users.Login.Widgets.WidgetTools.html#Nitrocid_Users_Login_Widgets_WidgetTools_GetWidgetNames
+  commentId: M:Nitrocid.Users.Login.Widgets.WidgetTools.GetWidgetNames
+  fullName: Nitrocid.Users.Login.Widgets.WidgetTools.GetWidgetNames()
+  nameWithType: WidgetTools.GetWidgetNames()
+- uid: Nitrocid.Users.Login.Widgets.WidgetTools.GetWidgetNames*
+  name: GetWidgetNames
+  href: api/Nitrocid.Users.Login.Widgets.WidgetTools.html#Nitrocid_Users_Login_Widgets_WidgetTools_GetWidgetNames_
+  commentId: Overload:Nitrocid.Users.Login.Widgets.WidgetTools.GetWidgetNames
+  isSpec: "True"
+  fullName: Nitrocid.Users.Login.Widgets.WidgetTools.GetWidgetNames
+  nameWithType: WidgetTools.GetWidgetNames
 - uid: Nitrocid.Users.Login.Widgets.WidgetTools.IsWidgetBuiltin(System.String)
   name: IsWidgetBuiltin(string)
   href: api/Nitrocid.Users.Login.Widgets.WidgetTools.html#Nitrocid_Users_Login_Widgets_WidgetTools_IsWidgetBuiltin_System_String_
