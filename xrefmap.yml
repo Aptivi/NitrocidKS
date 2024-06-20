@@ -35293,57 +35293,6 @@ references:
   commentId: N:Nitrocid.Misc.Text
   fullName: Nitrocid.Misc.Text
   nameWithType: Nitrocid.Misc.Text
-- uid: Nitrocid.Misc.Text.JsonTextTools
-  name: JsonTextTools
-  href: api/Nitrocid.Misc.Text.JsonTextTools.html
-  commentId: T:Nitrocid.Misc.Text.JsonTextTools
-  fullName: Nitrocid.Misc.Text.JsonTextTools
-  nameWithType: JsonTextTools
-- uid: Nitrocid.Misc.Text.JsonTextTools.BeautifyJson(System.String)
-  name: BeautifyJson(string)
-  href: api/Nitrocid.Misc.Text.JsonTextTools.html#Nitrocid_Misc_Text_JsonTextTools_BeautifyJson_System_String_
-  commentId: M:Nitrocid.Misc.Text.JsonTextTools.BeautifyJson(System.String)
-  name.vb: BeautifyJson(String)
-  fullName: Nitrocid.Misc.Text.JsonTextTools.BeautifyJson(string)
-  fullName.vb: Nitrocid.Misc.Text.JsonTextTools.BeautifyJson(String)
-  nameWithType: JsonTextTools.BeautifyJson(string)
-  nameWithType.vb: JsonTextTools.BeautifyJson(String)
-- uid: Nitrocid.Misc.Text.JsonTextTools.BeautifyJson*
-  name: BeautifyJson
-  href: api/Nitrocid.Misc.Text.JsonTextTools.html#Nitrocid_Misc_Text_JsonTextTools_BeautifyJson_
-  commentId: Overload:Nitrocid.Misc.Text.JsonTextTools.BeautifyJson
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Text.JsonTextTools.BeautifyJson
-  nameWithType: JsonTextTools.BeautifyJson
-- uid: Nitrocid.Misc.Text.JsonTextTools.FindDifferences(Newtonsoft.Json.Linq.JToken,Newtonsoft.Json.Linq.JToken)
-  name: FindDifferences(JToken, JToken)
-  href: api/Nitrocid.Misc.Text.JsonTextTools.html#Nitrocid_Misc_Text_JsonTextTools_FindDifferences_Newtonsoft_Json_Linq_JToken_Newtonsoft_Json_Linq_JToken_
-  commentId: M:Nitrocid.Misc.Text.JsonTextTools.FindDifferences(Newtonsoft.Json.Linq.JToken,Newtonsoft.Json.Linq.JToken)
-  fullName: Nitrocid.Misc.Text.JsonTextTools.FindDifferences(Newtonsoft.Json.Linq.JToken, Newtonsoft.Json.Linq.JToken)
-  nameWithType: JsonTextTools.FindDifferences(JToken, JToken)
-- uid: Nitrocid.Misc.Text.JsonTextTools.FindDifferences*
-  name: FindDifferences
-  href: api/Nitrocid.Misc.Text.JsonTextTools.html#Nitrocid_Misc_Text_JsonTextTools_FindDifferences_
-  commentId: Overload:Nitrocid.Misc.Text.JsonTextTools.FindDifferences
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Text.JsonTextTools.FindDifferences
-  nameWithType: JsonTextTools.FindDifferences
-- uid: Nitrocid.Misc.Text.JsonTextTools.MinifyJson(System.String)
-  name: MinifyJson(string)
-  href: api/Nitrocid.Misc.Text.JsonTextTools.html#Nitrocid_Misc_Text_JsonTextTools_MinifyJson_System_String_
-  commentId: M:Nitrocid.Misc.Text.JsonTextTools.MinifyJson(System.String)
-  name.vb: MinifyJson(String)
-  fullName: Nitrocid.Misc.Text.JsonTextTools.MinifyJson(string)
-  fullName.vb: Nitrocid.Misc.Text.JsonTextTools.MinifyJson(String)
-  nameWithType: JsonTextTools.MinifyJson(string)
-  nameWithType.vb: JsonTextTools.MinifyJson(String)
-- uid: Nitrocid.Misc.Text.JsonTextTools.MinifyJson*
-  name: MinifyJson
-  href: api/Nitrocid.Misc.Text.JsonTextTools.html#Nitrocid_Misc_Text_JsonTextTools_MinifyJson_
-  commentId: Overload:Nitrocid.Misc.Text.JsonTextTools.MinifyJson
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Text.JsonTextTools.MinifyJson
-  nameWithType: JsonTextTools.MinifyJson
 - uid: Nitrocid.Misc.Text.Probers.Placeholder
   name: Nitrocid.Misc.Text.Probers.Placeholder
   href: api/Nitrocid.Misc.Text.Probers.Placeholder.html
