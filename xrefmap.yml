@@ -2562,6 +2562,24 @@ references:
   commentId: F:Nitrocid.ConsoleBase.Colors.KernelColorType.TuiForeground
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorType.TuiForeground
   nameWithType: KernelColorType.TuiForeground
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorType.TuiKeyBindingBuiltin
+  name: TuiKeyBindingBuiltin
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorType.html#Nitrocid_ConsoleBase_Colors_KernelColorType_TuiKeyBindingBuiltin
+  commentId: F:Nitrocid.ConsoleBase.Colors.KernelColorType.TuiKeyBindingBuiltin
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorType.TuiKeyBindingBuiltin
+  nameWithType: KernelColorType.TuiKeyBindingBuiltin
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorType.TuiKeyBindingBuiltinBackground
+  name: TuiKeyBindingBuiltinBackground
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorType.html#Nitrocid_ConsoleBase_Colors_KernelColorType_TuiKeyBindingBuiltinBackground
+  commentId: F:Nitrocid.ConsoleBase.Colors.KernelColorType.TuiKeyBindingBuiltinBackground
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorType.TuiKeyBindingBuiltinBackground
+  nameWithType: KernelColorType.TuiKeyBindingBuiltinBackground
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorType.TuiKeyBindingBuiltinForeground
+  name: TuiKeyBindingBuiltinForeground
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorType.html#Nitrocid_ConsoleBase_Colors_KernelColorType_TuiKeyBindingBuiltinForeground
+  commentId: F:Nitrocid.ConsoleBase.Colors.KernelColorType.TuiKeyBindingBuiltinForeground
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorType.TuiKeyBindingBuiltinForeground
+  nameWithType: KernelColorType.TuiKeyBindingBuiltinForeground
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorType.TuiKeyBindingOption
   name: TuiKeyBindingOption
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorType.html#Nitrocid_ConsoleBase_Colors_KernelColorType_TuiKeyBindingOption
@@ -21931,6 +21949,45 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.TuiForegroundColor
   nameWithType: KernelMainConfig.TuiForegroundColor
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.TuiKeyBindingBuiltinBackgroundColor
+  name: TuiKeyBindingBuiltinBackgroundColor
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_TuiKeyBindingBuiltinBackgroundColor
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.TuiKeyBindingBuiltinBackgroundColor
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.TuiKeyBindingBuiltinBackgroundColor
+  nameWithType: KernelMainConfig.TuiKeyBindingBuiltinBackgroundColor
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.TuiKeyBindingBuiltinBackgroundColor*
+  name: TuiKeyBindingBuiltinBackgroundColor
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_TuiKeyBindingBuiltinBackgroundColor_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.TuiKeyBindingBuiltinBackgroundColor
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.TuiKeyBindingBuiltinBackgroundColor
+  nameWithType: KernelMainConfig.TuiKeyBindingBuiltinBackgroundColor
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.TuiKeyBindingBuiltinColor
+  name: TuiKeyBindingBuiltinColor
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_TuiKeyBindingBuiltinColor
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.TuiKeyBindingBuiltinColor
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.TuiKeyBindingBuiltinColor
+  nameWithType: KernelMainConfig.TuiKeyBindingBuiltinColor
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.TuiKeyBindingBuiltinColor*
+  name: TuiKeyBindingBuiltinColor
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_TuiKeyBindingBuiltinColor_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.TuiKeyBindingBuiltinColor
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.TuiKeyBindingBuiltinColor
+  nameWithType: KernelMainConfig.TuiKeyBindingBuiltinColor
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.TuiKeyBindingBuiltinForegroundColor
+  name: TuiKeyBindingBuiltinForegroundColor
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_TuiKeyBindingBuiltinForegroundColor
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.TuiKeyBindingBuiltinForegroundColor
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.TuiKeyBindingBuiltinForegroundColor
+  nameWithType: KernelMainConfig.TuiKeyBindingBuiltinForegroundColor
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.TuiKeyBindingBuiltinForegroundColor*
+  name: TuiKeyBindingBuiltinForegroundColor
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_TuiKeyBindingBuiltinForegroundColor_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.TuiKeyBindingBuiltinForegroundColor
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.TuiKeyBindingBuiltinForegroundColor
+  nameWithType: KernelMainConfig.TuiKeyBindingBuiltinForegroundColor
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.TuiKeyBindingOptionColor
   name: TuiKeyBindingOptionColor
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_TuiKeyBindingOptionColor
