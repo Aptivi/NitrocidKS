@@ -1277,19 +1277,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCentered_System_Int32_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCentered(System.Int32%2CSystem.String%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCentered_System_Int32_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Int32_System_Int32_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCentered(System.Int32%2CSystem.String%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Int32%2CSystem.Int32%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L380">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L384">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCentered_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCentered*"></a>
-  <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCentered_System_Int32_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCentered(System.Int32,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteCentered(int, string, KernelColorType, KernelColorType, params object[])</h4>
+  <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCentered_System_Int32_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Int32_System_Int32_System_Object___" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCentered(System.Int32,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Int32,System.Int32,System.Object[])">WriteCentered(int, string, KernelColorType, KernelColorType, int, int, params object[])</h4>
   <div class="markdown level1 summary"><p>Draws a centered text</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteCentered(int top, string Text, KernelColorType colorTypeForeground, KernelColorType colorTypeBackground, params object[] Vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteCentered(int top, string Text, KernelColorType colorTypeForeground, KernelColorType colorTypeBackground, int leftMargin = 0, int rightMargin = 0, params object[] Vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1326,6 +1326,18 @@
 </td>
       </tr>
       <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">leftMargin</span></td>
+        <td><p>The left margin</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">rightMargin</span></td>
+        <td><p>The right margin</p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
         <td><span class="parametername">Vars</span></td>
         <td><p>Variables to format the message before it's written.</p>
@@ -1335,19 +1347,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCentered_System_Int32_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCentered(System.Int32%2CSystem.String%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCentered_System_Int32_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Int32_System_Int32_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCentered(System.Int32%2CSystem.String%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Int32%2CSystem.Int32%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L369">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L371">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCentered_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCentered*"></a>
-  <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCentered_System_Int32_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCentered(System.Int32,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteCentered(int, string, KernelColorType, params object[])</h4>
+  <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCentered_System_Int32_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Int32_System_Int32_System_Object___" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCentered(System.Int32,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Int32,System.Int32,System.Object[])">WriteCentered(int, string, KernelColorType, int, int, params object[])</h4>
   <div class="markdown level1 summary"><p>Draws a centered text</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteCentered(int top, string Text, KernelColorType ColTypes, params object[] Vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteCentered(int top, string Text, KernelColorType ColTypes, int leftMargin = 0, int rightMargin = 0, params object[] Vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1378,6 +1390,18 @@
 </td>
       </tr>
       <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">leftMargin</span></td>
+        <td><p>The left margin</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">rightMargin</span></td>
+        <td><p>The right margin</p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
         <td><span class="parametername">Vars</span></td>
         <td><p>Variables to format the message before it's written.</p>
@@ -1387,19 +1411,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCentered_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCentered(System.String%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCentered_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Int32_System_Int32_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCentered(System.String%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Int32%2CSystem.Int32%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L399">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L407">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCentered_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCentered*"></a>
-  <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCentered_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCentered(System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteCentered(string, KernelColorType, KernelColorType, params object[])</h4>
+  <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCentered_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Int32_System_Int32_System_Object___" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCentered(System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Int32,System.Int32,System.Object[])">WriteCentered(string, KernelColorType, KernelColorType, int, int, params object[])</h4>
   <div class="markdown level1 summary"><p>Draws a centered text</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteCentered(string Text, KernelColorType colorTypeForeground, KernelColorType colorTypeBackground, params object[] Vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteCentered(string Text, KernelColorType colorTypeForeground, KernelColorType colorTypeBackground, int leftMargin = 0, int rightMargin = 0, params object[] Vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1430,6 +1454,18 @@
 </td>
       </tr>
       <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">leftMargin</span></td>
+        <td><p>The left margin</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">rightMargin</span></td>
+        <td><p>The right margin</p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
         <td><span class="parametername">Vars</span></td>
         <td><p>Variables to format the message before it's written.</p>
@@ -1439,19 +1475,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCentered_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCentered(System.String%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCentered_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Int32_System_Int32_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCentered(System.String%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Int32%2CSystem.Int32%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L389">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L395">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCentered_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCentered*"></a>
-  <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCentered_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCentered(System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteCentered(string, KernelColorType, params object[])</h4>
+  <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCentered_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Int32_System_Int32_System_Object___" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCentered(System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Int32,System.Int32,System.Object[])">WriteCentered(string, KernelColorType, int, int, params object[])</h4>
   <div class="markdown level1 summary"><p>Draws a centered text</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteCentered(string Text, KernelColorType ColTypes, params object[] Vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteCentered(string Text, KernelColorType ColTypes, int leftMargin = 0, int rightMargin = 0, params object[] Vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1473,6 +1509,18 @@
         <td><a class="xref" href="Nitrocid.ConsoleBase.Colors.KernelColorType.html">KernelColorType</a></td>
         <td><span class="parametername">ColTypes</span></td>
         <td><p>A type of colors that will be changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">leftMargin</span></td>
+        <td><p>The left margin</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">rightMargin</span></td>
+        <td><p>The right margin</p>
 </td>
       </tr>
       <tr>
@@ -1717,19 +1765,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredOneLine_System_Int32_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredOneLine(System.Int32%2CSystem.String%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredOneLine_System_Int32_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Int32_System_Int32_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredOneLine(System.Int32%2CSystem.String%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Int32%2CSystem.Int32%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L420">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L432">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredOneLine_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredOneLine*"></a>
-  <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredOneLine_System_Int32_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredOneLine(System.Int32,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteCenteredOneLine(int, string, KernelColorType, KernelColorType, params object[])</h4>
+  <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredOneLine_System_Int32_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Int32_System_Int32_System_Object___" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredOneLine(System.Int32,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Int32,System.Int32,System.Object[])">WriteCenteredOneLine(int, string, KernelColorType, KernelColorType, int, int, params object[])</h4>
   <div class="markdown level1 summary"><p>Draws a centered text (just the first line)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteCenteredOneLine(int top, string Text, KernelColorType colorTypeForeground, KernelColorType colorTypeBackground, params object[] Vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteCenteredOneLine(int top, string Text, KernelColorType colorTypeForeground, KernelColorType colorTypeBackground, int leftMargin = 0, int rightMargin = 0, params object[] Vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1766,6 +1814,18 @@
 </td>
       </tr>
       <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">leftMargin</span></td>
+        <td><p>The left margin</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">rightMargin</span></td>
+        <td><p>The right margin</p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
         <td><span class="parametername">Vars</span></td>
         <td><p>Variables to format the message before it's written.</p>
@@ -1775,19 +1835,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredOneLine_System_Int32_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredOneLine(System.Int32%2CSystem.String%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredOneLine_System_Int32_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Int32_System_Int32_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredOneLine(System.Int32%2CSystem.String%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Int32%2CSystem.Int32%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L409">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L419">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredOneLine_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredOneLine*"></a>
-  <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredOneLine_System_Int32_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredOneLine(System.Int32,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteCenteredOneLine(int, string, KernelColorType, params object[])</h4>
+  <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredOneLine_System_Int32_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Int32_System_Int32_System_Object___" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredOneLine(System.Int32,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Int32,System.Int32,System.Object[])">WriteCenteredOneLine(int, string, KernelColorType, int, int, params object[])</h4>
   <div class="markdown level1 summary"><p>Draws a centered text (just the first line)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteCenteredOneLine(int top, string Text, KernelColorType ColTypes, params object[] Vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteCenteredOneLine(int top, string Text, KernelColorType ColTypes, int leftMargin = 0, int rightMargin = 0, params object[] Vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1818,6 +1878,18 @@
 </td>
       </tr>
       <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">leftMargin</span></td>
+        <td><p>The left margin</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">rightMargin</span></td>
+        <td><p>The right margin</p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
         <td><span class="parametername">Vars</span></td>
         <td><p>Variables to format the message before it's written.</p>
@@ -1827,19 +1899,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredOneLine_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredOneLine(System.String%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredOneLine_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Int32_System_Int32_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredOneLine(System.String%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Int32%2CSystem.Int32%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L439">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L455">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredOneLine_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredOneLine*"></a>
-  <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredOneLine_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredOneLine(System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteCenteredOneLine(string, KernelColorType, KernelColorType, params object[])</h4>
+  <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredOneLine_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Int32_System_Int32_System_Object___" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredOneLine(System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Int32,System.Int32,System.Object[])">WriteCenteredOneLine(string, KernelColorType, KernelColorType, int, int, params object[])</h4>
   <div class="markdown level1 summary"><p>Draws a centered text (just the first line)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteCenteredOneLine(string Text, KernelColorType colorTypeForeground, KernelColorType colorTypeBackground, params object[] Vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteCenteredOneLine(string Text, KernelColorType colorTypeForeground, KernelColorType colorTypeBackground, int leftMargin = 0, int rightMargin = 0, params object[] Vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1870,6 +1942,18 @@
 </td>
       </tr>
       <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">leftMargin</span></td>
+        <td><p>The left margin</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">rightMargin</span></td>
+        <td><p>The right margin</p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
         <td><span class="parametername">Vars</span></td>
         <td><p>Variables to format the message before it's written.</p>
@@ -1879,19 +1963,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredOneLine_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredOneLine(System.String%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredOneLine_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Int32_System_Int32_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredOneLine(System.String%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Int32%2CSystem.Int32%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L429">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L443">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredOneLine_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredOneLine*"></a>
-  <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredOneLine_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredOneLine(System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteCenteredOneLine(string, KernelColorType, params object[])</h4>
+  <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteCenteredOneLine_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Int32_System_Int32_System_Object___" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteCenteredOneLine(System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Int32,System.Int32,System.Object[])">WriteCenteredOneLine(string, KernelColorType, int, int, params object[])</h4>
   <div class="markdown level1 summary"><p>Draws a centered text (just the first line)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WriteCenteredOneLine(string Text, KernelColorType ColTypes, params object[] Vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WriteCenteredOneLine(string Text, KernelColorType ColTypes, int leftMargin = 0, int rightMargin = 0, params object[] Vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1913,6 +1997,18 @@
         <td><a class="xref" href="Nitrocid.ConsoleBase.Colors.KernelColorType.html">KernelColorType</a></td>
         <td><span class="parametername">ColTypes</span></td>
         <td><p>A type of colors that will be changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">leftMargin</span></td>
+        <td><p>The left margin</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">rightMargin</span></td>
+        <td><p>The right margin</p>
 </td>
       </tr>
       <tr>
@@ -1928,7 +2024,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteFiglet_System_String_Textify_Figlet_Utilities_Lines_FigletFont_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet(System.String%2CTextify.Figlet.Utilities.Lines.FigletFont%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L470">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L486">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteFiglet_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet*"></a>
   <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteFiglet_System_String_Textify_Figlet_Utilities_Lines_FigletFont_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet(System.String,Textify.Figlet.Utilities.Lines.FigletFont,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteFiglet(string, FigletFont, KernelColorType, KernelColorType, params object[])</h4>
@@ -1986,7 +2082,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteFiglet_System_String_Textify_Figlet_Utilities_Lines_FigletFont_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet(System.String%2CTextify.Figlet.Utilities.Lines.FigletFont%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L449">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L465">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteFiglet_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet*"></a>
   <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteFiglet_System_String_Textify_Figlet_Utilities_Lines_FigletFont_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFiglet(System.String,Textify.Figlet.Utilities.Lines.FigletFont,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteFiglet(string, FigletFont, KernelColorType, params object[])</h4>
@@ -2038,7 +2134,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteFigletWhere_System_String_System_Int32_System_Int32_System_Boolean_Textify_Figlet_Utilities_Lines_FigletFont_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere(System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%2CTextify.Figlet.Utilities.Lines.FigletFont%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L521">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L537">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteFigletWhere_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere*"></a>
   <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteFigletWhere_System_String_System_Int32_System_Int32_System_Boolean_Textify_Figlet_Utilities_Lines_FigletFont_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere(System.String,System.Int32,System.Int32,System.Boolean,Textify.Figlet.Utilities.Lines.FigletFont,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteFigletWhere(string, int, int, bool, FigletFont, KernelColorType, KernelColorType, params object[])</h4>
@@ -2114,7 +2210,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteFigletWhere_System_String_System_Int32_System_Int32_System_Boolean_Textify_Figlet_Utilities_Lines_FigletFont_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere(System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%2CTextify.Figlet.Utilities.Lines.FigletFont%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L493">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L509">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteFigletWhere_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere*"></a>
   <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteFigletWhere_System_String_System_Int32_System_Int32_System_Boolean_Textify_Figlet_Utilities_Lines_FigletFont_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteFigletWhere(System.String,System.Int32,System.Int32,System.Boolean,Textify.Figlet.Utilities.Lines.FigletFont,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteFigletWhere(string, int, int, bool, FigletFont, KernelColorType, params object[])</h4>
@@ -2184,7 +2280,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WritePowerLine_System_Collections_Generic_List_Terminaux_Writer_FancyWriters_Tools_PowerLineSegment__Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WritePowerLine(System.Collections.Generic.List%7BTerminaux.Writer.FancyWriters.Tools.PowerLineSegment%7D%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L545">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L561">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WritePowerLine_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WritePowerLine*"></a>
   <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WritePowerLine_System_Collections_Generic_List_Terminaux_Writer_FancyWriters_Tools_PowerLineSegment__Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WritePowerLine(System.Collections.Generic.List{Terminaux.Writer.FancyWriters.Tools.PowerLineSegment},Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)">WritePowerLine(List&lt;PowerLineSegment&gt;, KernelColorType, bool)</h4>
@@ -2230,7 +2326,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double%2CSystem.Int32%2CSystem.Int32%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L606">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L622">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress*"></a>
   <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)">WriteProgress(double, int, int, KernelColorType, KernelColorType, KernelColorType, bool)</h4>
@@ -2300,7 +2396,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double%2CSystem.Int32%2CSystem.Int32%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L580">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L596">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress*"></a>
   <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)">WriteProgress(double, int, int, KernelColorType, KernelColorType, bool)</h4>
@@ -2364,7 +2460,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double%2CSystem.Int32%2CSystem.Int32%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L556">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L572">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress*"></a>
   <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)">WriteProgress(double, int, int, KernelColorType, bool)</h4>
@@ -2422,7 +2518,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L620">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L636">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress*"></a>
   <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)">WriteProgress(double, int, int, int, KernelColorType, KernelColorType, KernelColorType, bool)</h4>
@@ -2498,7 +2594,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L593">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L609">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress*"></a>
   <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)">WriteProgress(double, int, int, int, KernelColorType, KernelColorType, bool)</h4>
@@ -2568,7 +2664,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L568">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L584">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress*"></a>
   <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteProgress_System_Double_System_Int32_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteProgress(System.Double,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)">WriteProgress(double, int, int, int, KernelColorType, bool)</h4>
@@ -2632,7 +2728,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteSeparator_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteSeparator(System.String%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L707">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L723">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteSeparator_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteSeparator*"></a>
   <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteSeparator_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteSeparator(System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteSeparator(string, KernelColorType, KernelColorType, params object[])</h4>
@@ -2684,7 +2780,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteSeparator_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteSeparator(System.String%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L697">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L713">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteSeparator_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteSeparator*"></a>
   <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteSeparator_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteSeparator(System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])">WriteSeparator(string, KernelColorType, params object[])</h4>
@@ -2730,7 +2826,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteTable_System_String___System_String_0__0___System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_System_Collections_Generic_List_Terminaux_Writer_FancyWriters_Tools_CellOptions__.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteTable(System.String%5B%5D%2CSystem.String%5B0%3A%2C0%3A%5D%2CSystem.Int32%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Boolean%2CSystem.Collections.Generic.List%7BTerminaux.Writer.FancyWriters.Tools.CellOptions%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L722">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L738">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteTable_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteTable*"></a>
   <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteTable_System_String___System_String_0__0___System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_System_Collections_Generic_List_Terminaux_Writer_FancyWriters_Tools_CellOptions__" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteTable(System.String[],System.String[0:,0:],System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Collections.Generic.List{Terminaux.Writer.FancyWriters.Tools.CellOptions})">WriteTable(string[], string[,], int, KernelColorType, KernelColorType, KernelColorType, KernelColorType, bool, List&lt;CellOptions&gt;)</h4>
@@ -2812,7 +2908,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteVerticalProgress_System_Double_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteVerticalProgress(System.Double%2CSystem.Int32%2CSystem.Int32%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L665">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L681">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteVerticalProgress_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteVerticalProgress*"></a>
   <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteVerticalProgress_System_Double_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteVerticalProgress(System.Double,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)">WriteVerticalProgress(double, int, int, KernelColorType, KernelColorType, bool)</h4>
@@ -2876,7 +2972,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteVerticalProgress_System_Double_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteVerticalProgress(System.Double%2CSystem.Int32%2CSystem.Int32%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L641">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L657">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteVerticalProgress_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteVerticalProgress*"></a>
   <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteVerticalProgress_System_Double_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteVerticalProgress(System.Double,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)">WriteVerticalProgress(double, int, int, KernelColorType, bool)</h4>
@@ -2934,7 +3030,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteVerticalProgress_System_Double_System_Int32_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteVerticalProgress(System.Double%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L678">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L694">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteVerticalProgress_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteVerticalProgress*"></a>
   <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteVerticalProgress_System_Double_System_Int32_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteVerticalProgress(System.Double,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)">WriteVerticalProgress(double, int, int, int, KernelColorType, KernelColorType, bool)</h4>
@@ -3004,7 +3100,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteVerticalProgress_System_Double_System_Int32_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_.md&amp;value=---%0Auid%3A%20Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteVerticalProgress(System.Double%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CNitrocid.ConsoleBase.Colors.KernelColorType%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L653">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/ConsoleBase/Writers/TextFancyWriters.cs/#L669">View Source</a>
   </span>
   <a id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteVerticalProgress_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteVerticalProgress*"></a>
   <h4 id="Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteVerticalProgress_System_Double_System_Int32_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_" data-uid="Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteVerticalProgress(System.Double,System.Int32,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean)">WriteVerticalProgress(double, int, int, int, KernelColorType, bool)</h4>
