@@ -15904,6 +15904,28 @@ references:
   fullName.vb: Nitrocid.Files.Editors.TextEdit.TextEditorBinding.<>
   nameWithType: TextEditorBinding.operator !=
   nameWithType.vb: TextEditorBinding.<>
+- uid: Nitrocid.Files.Editors.TextEdit.TextViewInteractive
+  name: TextViewInteractive
+  href: api/Nitrocid.Files.Editors.TextEdit.TextViewInteractive.html
+  commentId: T:Nitrocid.Files.Editors.TextEdit.TextViewInteractive
+  fullName: Nitrocid.Files.Editors.TextEdit.TextViewInteractive
+  nameWithType: TextViewInteractive
+- uid: Nitrocid.Files.Editors.TextEdit.TextViewInteractive.OpenInteractive(System.String)
+  name: OpenInteractive(string)
+  href: api/Nitrocid.Files.Editors.TextEdit.TextViewInteractive.html#Nitrocid_Files_Editors_TextEdit_TextViewInteractive_OpenInteractive_System_String_
+  commentId: M:Nitrocid.Files.Editors.TextEdit.TextViewInteractive.OpenInteractive(System.String)
+  name.vb: OpenInteractive(String)
+  fullName: Nitrocid.Files.Editors.TextEdit.TextViewInteractive.OpenInteractive(string)
+  fullName.vb: Nitrocid.Files.Editors.TextEdit.TextViewInteractive.OpenInteractive(String)
+  nameWithType: TextViewInteractive.OpenInteractive(string)
+  nameWithType.vb: TextViewInteractive.OpenInteractive(String)
+- uid: Nitrocid.Files.Editors.TextEdit.TextViewInteractive.OpenInteractive*
+  name: OpenInteractive
+  href: api/Nitrocid.Files.Editors.TextEdit.TextViewInteractive.html#Nitrocid_Files_Editors_TextEdit_TextViewInteractive_OpenInteractive_
+  commentId: Overload:Nitrocid.Files.Editors.TextEdit.TextViewInteractive.OpenInteractive
+  isSpec: "True"
+  fullName: Nitrocid.Files.Editors.TextEdit.TextViewInteractive.OpenInteractive
+  nameWithType: TextViewInteractive.OpenInteractive
 - uid: Nitrocid.Files.Extensions
   name: Nitrocid.Files.Extensions
   href: api/Nitrocid.Files.Extensions.html
