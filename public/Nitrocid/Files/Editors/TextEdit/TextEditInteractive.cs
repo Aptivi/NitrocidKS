@@ -288,21 +288,13 @@ namespace Nitrocid.Files.Editors.TextEdit
                     var lineBuilder = new StringBuilder();
                     if (i == lineIdx + 1)
                     {
-                        if (lineColIdx + 1 > lineBuilder.Length)
-                        {
-                            lineBuilder.Append(ColorTools.RenderSetConsoleColor(unhighlightedColorBackground));
-                            lineBuilder.Append(ColorTools.RenderSetConsoleColor(highlightedColorBackground, true, true));
-                            lineBuilder.Append(' ');
-                            lineBuilder.Append(ColorTools.RenderSetConsoleColor(unhighlightedColorBackground, true));
-                            lineBuilder.Append(ColorTools.RenderSetConsoleColor(highlightedColorBackground));
-                        }
-                        else
-                        {
-                            lineBuilder.Insert(lineColIdx + 1, ColorTools.RenderSetConsoleColor(unhighlightedColorBackground, true));
-                            lineBuilder.Insert(lineColIdx + 1, ColorTools.RenderSetConsoleColor(highlightedColorBackground));
-                            lineBuilder.Insert(lineColIdx, ColorTools.RenderSetConsoleColor(unhighlightedColorBackground));
-                            lineBuilder.Insert(lineColIdx, ColorTools.RenderSetConsoleColor(highlightedColorBackground, true, true));
-                        }
+                        lineBuilder.Append(CsiSequences.GenerateCsiCursorPosition(lineColIdx % SeparatorConsoleWidthInterior + 2, SeparatorMinimumHeightInterior + count + 1));
+                        lineBuilder.Append(ColorTools.RenderSetConsoleColor(unhighlightedColorBackground));
+                        lineBuilder.Append(ColorTools.RenderSetConsoleColor(highlightedColorBackground, true, true));
+                        lineBuilder.Append(' ');
+                        lineBuilder.Append(ColorTools.RenderSetConsoleColor(unhighlightedColorBackground, true));
+                        lineBuilder.Append(ColorTools.RenderSetConsoleColor(highlightedColorBackground));
+                        lineBuilder.Append(CsiSequences.GenerateCsiCursorPosition(SeparatorConsoleWidthInterior + 3 - (SeparatorConsoleWidthInterior - ConsoleChar.EstimateCellWidth(source)), SeparatorMinimumHeightInterior + count + 1));
                     }
 
                     // Now, get the line range
@@ -322,7 +314,7 @@ namespace Nitrocid.Files.Editors.TextEdit
                         for (int a = startLineIndex; a < endLineIndex; a++)
                             source += absolutes[a].Item2;
                     }
-                    line = source + line + ColorTools.RenderRevertForeground() + ColorTools.RenderRevertBackground();
+                    line = source + line + ColorTools.RenderRevertForeground() + ColorTools.RenderRevertBackground() + new string(' ', SeparatorConsoleWidthInterior - ConsoleChar.EstimateCellWidth(source) - 1);
 
                     // Change the color depending on the highlighted line and column
                     sels.Append(
@@ -412,7 +404,11 @@ namespace Nitrocid.Files.Editors.TextEdit
             // Delete a character
             if (lineColIdx > 0)
             {
-                lines[lineIdx] = lines[lineIdx].Remove(lineColIdx - 1, 1);
+                var sequencesCollections = VtSequenceTools.MatchVTSequences(lines[lineIdx]);
+                var absolutes = GetAbsoluteSequences(lines[lineIdx], sequencesCollections);
+                int colIdx = absolutes[lineColIdx - 1].Item1;
+                int seqLength = absolutes[lineColIdx - 1].Item2.Length;
+                lines[lineIdx] = lines[lineIdx].Remove(colIdx, seqLength);
                 MoveBackward(lines);
             }
             else if (lineIdx > 0)
@@ -437,7 +433,11 @@ namespace Nitrocid.Files.Editors.TextEdit
             // Delete a character
             if (lines[lineIdx].Length > 0)
             {
-                lines[lineIdx] = lines[lineIdx].Remove(lineColIdx, 1);
+                var sequencesCollections = VtSequenceTools.MatchVTSequences(lines[lineIdx]);
+                var absolutes = GetAbsoluteSequences(lines[lineIdx], sequencesCollections);
+                int colIdx = absolutes[lineColIdx].Item1;
+                int seqLength = absolutes[lineColIdx].Item2.Length;
+                lines[lineIdx] = lines[lineIdx].Remove(colIdx, seqLength);
                 UpdateLineIndex(lineIdx, lines);
             }
             else
@@ -495,8 +495,11 @@ namespace Nitrocid.Files.Editors.TextEdit
             else
             {
                 // Check to see if the current position is not at the end of the line
-                string substringNewLine = lines[lineIdx][lineColIdx..];
-                string substringOldLine = lines[lineIdx][..lineColIdx];
+                var sequencesCollections = VtSequenceTools.MatchVTSequences(lines[lineIdx]);
+                var absolutes = GetAbsoluteSequences(lines[lineIdx], sequencesCollections);
+                int colIdx = absolutes[lineColIdx].Item1;
+                string substringNewLine = lines[lineIdx][colIdx..];
+                string substringOldLine = lines[lineIdx][..colIdx];
                 lines[lineIdx] = substringOldLine;
                 lines.Insert(lineIdx + 1, substringNewLine);
             }
@@ -586,11 +589,13 @@ namespace Nitrocid.Files.Editors.TextEdit
                 return;
             if (entering)
                 return;
-            var currChar = lines[lineIdx][lineColIdx];
-            if (CharManager.IsControlChar(currChar) || currChar == '\0' || currChar == (char)0xAD)
-                status += " | " + Translate.DoTranslation("Bin") + $": {(int)currChar}";
-            if (currChar == '\t')
-                status += " | " + Translate.DoTranslation("Tab") + $": {(int)currChar}";
+            var sequencesCollections = VtSequenceTools.MatchVTSequences(lines[lineIdx]);
+            var absolutes = GetAbsoluteSequences(lines[lineIdx], sequencesCollections);
+            var currChar = absolutes[lineColIdx].Item2;
+            if (ConsoleChar.EstimateCellWidth(currChar) == 0)
+                status += " | " + Translate.DoTranslation("Bin");
+            if (currChar == "\t")
+                status += " | " + Translate.DoTranslation("Tab") + $": {(int)currChar[0]}";
         }
 
         private static void PreviousPage(List<string> lines)
@@ -637,7 +642,7 @@ namespace Nitrocid.Files.Editors.TextEdit
                 lineColIdx = 0;
                 return;
             }
-            int maxLen = lines[lineIdx].Length;
+            int maxLen = ConsoleChar.EstimateCellWidth(lines[lineIdx]);
             maxLen -= entering ? 0 : 1;
             if (lineColIdx > maxLen)
                 lineColIdx = maxLen;
