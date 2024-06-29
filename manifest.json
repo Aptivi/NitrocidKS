@@ -3005,6 +3005,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Misc.Splash.SplashReportInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Misc.Splash.SplashReportInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.Misc.Splash.SplashReportSeverity.yml",
       "output": {
         ".html": {
