@@ -2670,6 +2670,38 @@ references:
   commentId: F:Nitrocid.ConsoleBase.Colors.KernelColorType.WeekendDay
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorType.WeekendDay
   nameWithType: KernelColorType.WeekendDay
+- uid: Nitrocid.ConsoleBase.ConsolePointerHandler
+  name: ConsolePointerHandler
+  href: api/Nitrocid.ConsoleBase.ConsolePointerHandler.html
+  commentId: T:Nitrocid.ConsoleBase.ConsolePointerHandler
+  fullName: Nitrocid.ConsoleBase.ConsolePointerHandler
+  nameWithType: ConsolePointerHandler
+- uid: Nitrocid.ConsoleBase.ConsolePointerHandler.StartHandler
+  name: StartHandler()
+  href: api/Nitrocid.ConsoleBase.ConsolePointerHandler.html#Nitrocid_ConsoleBase_ConsolePointerHandler_StartHandler
+  commentId: M:Nitrocid.ConsoleBase.ConsolePointerHandler.StartHandler
+  fullName: Nitrocid.ConsoleBase.ConsolePointerHandler.StartHandler()
+  nameWithType: ConsolePointerHandler.StartHandler()
+- uid: Nitrocid.ConsoleBase.ConsolePointerHandler.StartHandler*
+  name: StartHandler
+  href: api/Nitrocid.ConsoleBase.ConsolePointerHandler.html#Nitrocid_ConsoleBase_ConsolePointerHandler_StartHandler_
+  commentId: Overload:Nitrocid.ConsoleBase.ConsolePointerHandler.StartHandler
+  isSpec: "True"
+  fullName: Nitrocid.ConsoleBase.ConsolePointerHandler.StartHandler
+  nameWithType: ConsolePointerHandler.StartHandler
+- uid: Nitrocid.ConsoleBase.ConsolePointerHandler.StopHandler
+  name: StopHandler()
+  href: api/Nitrocid.ConsoleBase.ConsolePointerHandler.html#Nitrocid_ConsoleBase_ConsolePointerHandler_StopHandler
+  commentId: M:Nitrocid.ConsoleBase.ConsolePointerHandler.StopHandler
+  fullName: Nitrocid.ConsoleBase.ConsolePointerHandler.StopHandler()
+  nameWithType: ConsolePointerHandler.StopHandler()
+- uid: Nitrocid.ConsoleBase.ConsolePointerHandler.StopHandler*
+  name: StopHandler
+  href: api/Nitrocid.ConsoleBase.ConsolePointerHandler.html#Nitrocid_ConsoleBase_ConsolePointerHandler_StopHandler_
+  commentId: Overload:Nitrocid.ConsoleBase.ConsolePointerHandler.StopHandler
+  isSpec: "True"
+  fullName: Nitrocid.ConsoleBase.ConsolePointerHandler.StopHandler
+  nameWithType: ConsolePointerHandler.StopHandler
 - uid: Nitrocid.ConsoleBase.ConsoleTools
   name: ConsoleTools
   href: api/Nitrocid.ConsoleBase.ConsoleTools.html
@@ -21134,6 +21166,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.FullParseMode
   nameWithType: KernelMainConfig.FullParseMode
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.HandleCursorMovement
+  name: HandleCursorMovement
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_HandleCursorMovement
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.HandleCursorMovement
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.HandleCursorMovement
+  nameWithType: KernelMainConfig.HandleCursorMovement
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.HandleCursorMovement*
+  name: HandleCursorMovement
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_HandleCursorMovement_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.HandleCursorMovement
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.HandleCursorMovement
+  nameWithType: KernelMainConfig.HandleCursorMovement
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.HexEditAutoSaveFlag
   name: HexEditAutoSaveFlag
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_HexEditAutoSaveFlag
@@ -21264,6 +21309,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.IncludeDisabled
   nameWithType: KernelMainConfig.IncludeDisabled
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.InitializeCursorHandler
+  name: InitializeCursorHandler
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_InitializeCursorHandler
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.InitializeCursorHandler
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.InitializeCursorHandler
+  nameWithType: KernelMainConfig.InitializeCursorHandler
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.InitializeCursorHandler*
+  name: InitializeCursorHandler
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_InitializeCursorHandler_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.InitializeCursorHandler
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.InitializeCursorHandler
+  nameWithType: KernelMainConfig.InitializeCursorHandler
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.InputColor
   name: InputColor
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_InputColor
