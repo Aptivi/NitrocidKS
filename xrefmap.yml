@@ -8324,19 +8324,6 @@ references:
   commentId: T:Nitrocid.Drivers.EncodingAsymmetric.Bases.Base64Encoding
   fullName: Nitrocid.Drivers.EncodingAsymmetric.Bases.Base64Encoding
   nameWithType: Base64Encoding
-- uid: Nitrocid.Drivers.EncodingAsymmetric.Bases.Base64Encoding.DriverName
-  name: DriverName
-  href: api/Nitrocid.Drivers.EncodingAsymmetric.Bases.Base64Encoding.html#Nitrocid_Drivers_EncodingAsymmetric_Bases_Base64Encoding_DriverName
-  commentId: P:Nitrocid.Drivers.EncodingAsymmetric.Bases.Base64Encoding.DriverName
-  fullName: Nitrocid.Drivers.EncodingAsymmetric.Bases.Base64Encoding.DriverName
-  nameWithType: Base64Encoding.DriverName
-- uid: Nitrocid.Drivers.EncodingAsymmetric.Bases.Base64Encoding.DriverName*
-  name: DriverName
-  href: api/Nitrocid.Drivers.EncodingAsymmetric.Bases.Base64Encoding.html#Nitrocid_Drivers_EncodingAsymmetric_Bases_Base64Encoding_DriverName_
-  commentId: Overload:Nitrocid.Drivers.EncodingAsymmetric.Bases.Base64Encoding.DriverName
-  isSpec: "True"
-  fullName: Nitrocid.Drivers.EncodingAsymmetric.Bases.Base64Encoding.DriverName
-  nameWithType: Base64Encoding.DriverName
 - uid: Nitrocid.Drivers.EncodingAsymmetric.Bases.RsaEncoding
   name: RsaEncoding
   href: api/Nitrocid.Drivers.EncodingAsymmetric.Bases.RsaEncoding.html
