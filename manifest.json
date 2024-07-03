@@ -3575,6 +3575,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Shell.Homepage.HomepageTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Shell.Homepage.HomepageTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Shell.Homepage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Shell.Homepage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.Shell.Prompts.IPromptPreset.yml",
       "output": {
         ".html": {

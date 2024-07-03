@@ -39443,6 +39443,31 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Security.Signing.AssemblySigning.PublicKeyToken
   nameWithType: AssemblySigning.PublicKeyToken
+- uid: Nitrocid.Shell.Homepage
+  name: Nitrocid.Shell.Homepage
+  href: api/Nitrocid.Shell.Homepage.html
+  commentId: N:Nitrocid.Shell.Homepage
+  fullName: Nitrocid.Shell.Homepage
+  nameWithType: Nitrocid.Shell.Homepage
+- uid: Nitrocid.Shell.Homepage.HomepageTools
+  name: HomepageTools
+  href: api/Nitrocid.Shell.Homepage.HomepageTools.html
+  commentId: T:Nitrocid.Shell.Homepage.HomepageTools
+  fullName: Nitrocid.Shell.Homepage.HomepageTools
+  nameWithType: HomepageTools
+- uid: Nitrocid.Shell.Homepage.HomepageTools.OpenHomepage
+  name: OpenHomepage()
+  href: api/Nitrocid.Shell.Homepage.HomepageTools.html#Nitrocid_Shell_Homepage_HomepageTools_OpenHomepage
+  commentId: M:Nitrocid.Shell.Homepage.HomepageTools.OpenHomepage
+  fullName: Nitrocid.Shell.Homepage.HomepageTools.OpenHomepage()
+  nameWithType: HomepageTools.OpenHomepage()
+- uid: Nitrocid.Shell.Homepage.HomepageTools.OpenHomepage*
+  name: OpenHomepage
+  href: api/Nitrocid.Shell.Homepage.HomepageTools.html#Nitrocid_Shell_Homepage_HomepageTools_OpenHomepage_
+  commentId: Overload:Nitrocid.Shell.Homepage.HomepageTools.OpenHomepage
+  isSpec: "True"
+  fullName: Nitrocid.Shell.Homepage.HomepageTools.OpenHomepage
+  nameWithType: HomepageTools.OpenHomepage
 - uid: Nitrocid.Shell.Prompts
   name: Nitrocid.Shell.Prompts
   href: api/Nitrocid.Shell.Prompts.html
