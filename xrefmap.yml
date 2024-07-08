@@ -31059,15 +31059,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.TaskManagerCli.Bindings
   nameWithType: TaskManagerCli.Bindings
-- uid: Nitrocid.Misc.Interactives.TaskManagerCli.GetEntryFromItem(System.Object)
-  name: GetEntryFromItem(object)
-  href: api/Nitrocid.Misc.Interactives.TaskManagerCli.html#Nitrocid_Misc_Interactives_TaskManagerCli_GetEntryFromItem_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.TaskManagerCli.GetEntryFromItem(System.Object)
-  name.vb: GetEntryFromItem(Object)
-  fullName: Nitrocid.Misc.Interactives.TaskManagerCli.GetEntryFromItem(object)
-  fullName.vb: Nitrocid.Misc.Interactives.TaskManagerCli.GetEntryFromItem(Object)
-  nameWithType: TaskManagerCli.GetEntryFromItem(object)
-  nameWithType.vb: TaskManagerCli.GetEntryFromItem(Object)
+- uid: Nitrocid.Misc.Interactives.TaskManagerCli.GetEntryFromItem(System.ValueTuple{System.Int32,System.Object})
+  name: GetEntryFromItem((int, object))
+  href: api/Nitrocid.Misc.Interactives.TaskManagerCli.html#Nitrocid_Misc_Interactives_TaskManagerCli_GetEntryFromItem_System_ValueTuple_System_Int32_System_Object__
+  commentId: M:Nitrocid.Misc.Interactives.TaskManagerCli.GetEntryFromItem(System.ValueTuple{System.Int32,System.Object})
+  name.vb: GetEntryFromItem((Integer, Object))
+  fullName: Nitrocid.Misc.Interactives.TaskManagerCli.GetEntryFromItem((int, object))
+  fullName.vb: Nitrocid.Misc.Interactives.TaskManagerCli.GetEntryFromItem((Integer, Object))
+  nameWithType: TaskManagerCli.GetEntryFromItem((int, object))
+  nameWithType.vb: TaskManagerCli.GetEntryFromItem((Integer, Object))
 - uid: Nitrocid.Misc.Interactives.TaskManagerCli.GetEntryFromItem*
   name: GetEntryFromItem
   href: api/Nitrocid.Misc.Interactives.TaskManagerCli.html#Nitrocid_Misc_Interactives_TaskManagerCli_GetEntryFromItem_
@@ -31075,15 +31075,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.TaskManagerCli.GetEntryFromItem
   nameWithType: TaskManagerCli.GetEntryFromItem
-- uid: Nitrocid.Misc.Interactives.TaskManagerCli.GetInfoFromItem(System.Object)
-  name: GetInfoFromItem(object)
-  href: api/Nitrocid.Misc.Interactives.TaskManagerCli.html#Nitrocid_Misc_Interactives_TaskManagerCli_GetInfoFromItem_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.TaskManagerCli.GetInfoFromItem(System.Object)
-  name.vb: GetInfoFromItem(Object)
-  fullName: Nitrocid.Misc.Interactives.TaskManagerCli.GetInfoFromItem(object)
-  fullName.vb: Nitrocid.Misc.Interactives.TaskManagerCli.GetInfoFromItem(Object)
-  nameWithType: TaskManagerCli.GetInfoFromItem(object)
-  nameWithType.vb: TaskManagerCli.GetInfoFromItem(Object)
+- uid: Nitrocid.Misc.Interactives.TaskManagerCli.GetInfoFromItem(System.ValueTuple{System.Int32,System.Object})
+  name: GetInfoFromItem((int, object))
+  href: api/Nitrocid.Misc.Interactives.TaskManagerCli.html#Nitrocid_Misc_Interactives_TaskManagerCli_GetInfoFromItem_System_ValueTuple_System_Int32_System_Object__
+  commentId: M:Nitrocid.Misc.Interactives.TaskManagerCli.GetInfoFromItem(System.ValueTuple{System.Int32,System.Object})
+  name.vb: GetInfoFromItem((Integer, Object))
+  fullName: Nitrocid.Misc.Interactives.TaskManagerCli.GetInfoFromItem((int, object))
+  fullName.vb: Nitrocid.Misc.Interactives.TaskManagerCli.GetInfoFromItem((Integer, Object))
+  nameWithType: TaskManagerCli.GetInfoFromItem((int, object))
+  nameWithType.vb: TaskManagerCli.GetInfoFromItem((Integer, Object))
 - uid: Nitrocid.Misc.Interactives.TaskManagerCli.GetInfoFromItem*
   name: GetInfoFromItem
   href: api/Nitrocid.Misc.Interactives.TaskManagerCli.html#Nitrocid_Misc_Interactives_TaskManagerCli_GetInfoFromItem_
@@ -31091,15 +31091,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.TaskManagerCli.GetInfoFromItem
   nameWithType: TaskManagerCli.GetInfoFromItem
-- uid: Nitrocid.Misc.Interactives.TaskManagerCli.GetStatusFromItem(System.Object)
-  name: GetStatusFromItem(object)
-  href: api/Nitrocid.Misc.Interactives.TaskManagerCli.html#Nitrocid_Misc_Interactives_TaskManagerCli_GetStatusFromItem_System_Object_
-  commentId: M:Nitrocid.Misc.Interactives.TaskManagerCli.GetStatusFromItem(System.Object)
-  name.vb: GetStatusFromItem(Object)
-  fullName: Nitrocid.Misc.Interactives.TaskManagerCli.GetStatusFromItem(object)
-  fullName.vb: Nitrocid.Misc.Interactives.TaskManagerCli.GetStatusFromItem(Object)
-  nameWithType: TaskManagerCli.GetStatusFromItem(object)
-  nameWithType.vb: TaskManagerCli.GetStatusFromItem(Object)
+- uid: Nitrocid.Misc.Interactives.TaskManagerCli.GetStatusFromItem(System.ValueTuple{System.Int32,System.Object})
+  name: GetStatusFromItem((int, object))
+  href: api/Nitrocid.Misc.Interactives.TaskManagerCli.html#Nitrocid_Misc_Interactives_TaskManagerCli_GetStatusFromItem_System_ValueTuple_System_Int32_System_Object__
+  commentId: M:Nitrocid.Misc.Interactives.TaskManagerCli.GetStatusFromItem(System.ValueTuple{System.Int32,System.Object})
+  name.vb: GetStatusFromItem((Integer, Object))
+  fullName: Nitrocid.Misc.Interactives.TaskManagerCli.GetStatusFromItem((int, object))
+  fullName.vb: Nitrocid.Misc.Interactives.TaskManagerCli.GetStatusFromItem((Integer, Object))
+  nameWithType: TaskManagerCli.GetStatusFromItem((int, object))
+  nameWithType.vb: TaskManagerCli.GetStatusFromItem((Integer, Object))
 - uid: Nitrocid.Misc.Interactives.TaskManagerCli.GetStatusFromItem*
   name: GetStatusFromItem
   href: api/Nitrocid.Misc.Interactives.TaskManagerCli.html#Nitrocid_Misc_Interactives_TaskManagerCli_GetStatusFromItem_
