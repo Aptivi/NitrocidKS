@@ -27091,6 +27091,35 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Threading.KernelThread.AddChild
   nameWithType: KernelThread.AddChild
+- uid: Nitrocid.Kernel.Threading.KernelThread.ChildThreadCount
+  name: ChildThreadCount
+  href: api/Nitrocid.Kernel.Threading.KernelThread.html#Nitrocid_Kernel_Threading_KernelThread_ChildThreadCount
+  commentId: P:Nitrocid.Kernel.Threading.KernelThread.ChildThreadCount
+  fullName: Nitrocid.Kernel.Threading.KernelThread.ChildThreadCount
+  nameWithType: KernelThread.ChildThreadCount
+- uid: Nitrocid.Kernel.Threading.KernelThread.ChildThreadCount*
+  name: ChildThreadCount
+  href: api/Nitrocid.Kernel.Threading.KernelThread.html#Nitrocid_Kernel_Threading_KernelThread_ChildThreadCount_
+  commentId: Overload:Nitrocid.Kernel.Threading.KernelThread.ChildThreadCount
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Threading.KernelThread.ChildThreadCount
+  nameWithType: KernelThread.ChildThreadCount
+- uid: Nitrocid.Kernel.Threading.KernelThread.GetChild(System.Int32)
+  name: GetChild(int)
+  href: api/Nitrocid.Kernel.Threading.KernelThread.html#Nitrocid_Kernel_Threading_KernelThread_GetChild_System_Int32_
+  commentId: M:Nitrocid.Kernel.Threading.KernelThread.GetChild(System.Int32)
+  name.vb: GetChild(Integer)
+  fullName: Nitrocid.Kernel.Threading.KernelThread.GetChild(int)
+  fullName.vb: Nitrocid.Kernel.Threading.KernelThread.GetChild(Integer)
+  nameWithType: KernelThread.GetChild(int)
+  nameWithType.vb: KernelThread.GetChild(Integer)
+- uid: Nitrocid.Kernel.Threading.KernelThread.GetChild*
+  name: GetChild
+  href: api/Nitrocid.Kernel.Threading.KernelThread.html#Nitrocid_Kernel_Threading_KernelThread_GetChild_
+  commentId: Overload:Nitrocid.Kernel.Threading.KernelThread.GetChild
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Threading.KernelThread.GetChild
+  nameWithType: KernelThread.GetChild
 - uid: Nitrocid.Kernel.Threading.KernelThread.IsAlive
   name: IsAlive
   href: api/Nitrocid.Kernel.Threading.KernelThread.html#Nitrocid_Kernel_Threading_KernelThread_IsAlive
