@@ -21628,6 +21628,32 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.DigitalTrueColor
   nameWithType: KernelWidgetsConfig.DigitalTrueColor
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.EmojiWidgetCycleEmoticons
+  name: EmojiWidgetCycleEmoticons
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_EmojiWidgetCycleEmoticons
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.EmojiWidgetCycleEmoticons
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.EmojiWidgetCycleEmoticons
+  nameWithType: KernelWidgetsConfig.EmojiWidgetCycleEmoticons
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.EmojiWidgetCycleEmoticons*
+  name: EmojiWidgetCycleEmoticons
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_EmojiWidgetCycleEmoticons_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.EmojiWidgetCycleEmoticons
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.EmojiWidgetCycleEmoticons
+  nameWithType: KernelWidgetsConfig.EmojiWidgetCycleEmoticons
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.EmojiWidgetEmoticonName
+  name: EmojiWidgetEmoticonName
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_EmojiWidgetEmoticonName
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.EmojiWidgetEmoticonName
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.EmojiWidgetEmoticonName
+  nameWithType: KernelWidgetsConfig.EmojiWidgetEmoticonName
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.EmojiWidgetEmoticonName*
+  name: EmojiWidgetEmoticonName
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_EmojiWidgetEmoticonName_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.EmojiWidgetEmoticonName
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.EmojiWidgetEmoticonName
+  nameWithType: KernelWidgetsConfig.EmojiWidgetEmoticonName
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.SettingsEntries
   name: SettingsEntries
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelWidgetsConfig_SettingsEntries
@@ -22135,6 +22161,12 @@ references:
   commentId: F:Nitrocid.Kernel.Configuration.Settings.SettingsKeyType.SFiglet
   fullName: Nitrocid.Kernel.Configuration.Settings.SettingsKeyType.SFiglet
   nameWithType: SettingsKeyType.SFiglet
+- uid: Nitrocid.Kernel.Configuration.Settings.SettingsKeyType.SIcon
+  name: SIcon
+  href: api/Nitrocid.Kernel.Configuration.Settings.SettingsKeyType.html#Nitrocid_Kernel_Configuration_Settings_SettingsKeyType_SIcon
+  commentId: F:Nitrocid.Kernel.Configuration.Settings.SettingsKeyType.SIcon
+  fullName: Nitrocid.Kernel.Configuration.Settings.SettingsKeyType.SIcon
+  nameWithType: SettingsKeyType.SIcon
 - uid: Nitrocid.Kernel.Configuration.Settings.SettingsKeyType.SInt
   name: SInt
   href: api/Nitrocid.Kernel.Configuration.Settings.SettingsKeyType.html#Nitrocid_Kernel_Configuration_Settings_SettingsKeyType_SInt
