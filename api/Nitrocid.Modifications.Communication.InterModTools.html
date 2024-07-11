@@ -218,7 +218,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Modifications_Communication_InterModTools_GetCustomModFieldValue_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Modifications/Communication/InterModTools.cs/#L259">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Modifications/Communication/InterModTools.cs/#L211">View Source</a>
   </span>
   <a id="Nitrocid_Modifications_Communication_InterModTools_GetCustomModFieldValue_" data-uid="Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue*"></a>
   <h4 id="Nitrocid_Modifications_Communication_InterModTools_GetCustomModFieldValue_System_String_System_String_" data-uid="Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue(System.String,System.String)">GetCustomModFieldValue(string, string)</h4>
@@ -273,7 +273,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Modifications_Communication_InterModTools_GetCustomModPropertyValue_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Modifications/Communication/InterModTools.cs/#L178">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Modifications/Communication/InterModTools.cs/#L162">View Source</a>
   </span>
   <a id="Nitrocid_Modifications_Communication_InterModTools_GetCustomModPropertyValue_" data-uid="Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue*"></a>
   <h4 id="Nitrocid_Modifications_Communication_InterModTools_GetCustomModPropertyValue_System_String_System_String_" data-uid="Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue(System.String,System.String)">GetCustomModPropertyValue(string, string)</h4>
@@ -320,6 +320,118 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Modifications_Communication_InterModTools_GetFunctionParameters_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Modifications/Communication/InterModTools.cs/#L246">View Source</a>
+  </span>
+  <a id="Nitrocid_Modifications_Communication_InterModTools_GetFunctionParameters_" data-uid="Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters*"></a>
+  <h4 id="Nitrocid_Modifications_Communication_InterModTools_GetFunctionParameters_System_String_System_String_" data-uid="Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(System.String,System.String)">GetFunctionParameters(string, string)</h4>
+  <div class="markdown level1 summary"><p>Gets the function parameters from a function</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ParameterInfo[] GetFunctionParameters(string modName, string functionName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">modName</span></td>
+        <td><p>The mod name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">functionName</span></td>
+        <td><p>Function name defined in the <a class="xref" href="Nitrocid.Modifications.IMod.html#Nitrocid_Modifications_IMod_PubliclyAvailableFunctions">PubliclyAvailableFunctions</a> dictionary to query</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo">ParameterInfo</a>[]</td>
+        <td><p>An array of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo">ParameterInfo</a> if there are any; null if there is no function</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Modifications_Communication_InterModTools_GetSetPropertyParameters_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Modifications/Communication/InterModTools.cs/#L262">View Source</a>
+  </span>
+  <a id="Nitrocid_Modifications_Communication_InterModTools_GetSetPropertyParameters_" data-uid="Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters*"></a>
+  <h4 id="Nitrocid_Modifications_Communication_InterModTools_GetSetPropertyParameters_System_String_System_String_" data-uid="Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(System.String,System.String)">GetSetPropertyParameters(string, string)</h4>
+  <div class="markdown level1 summary"><p>Gets the property setter parameters from a property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ParameterInfo[] GetSetPropertyParameters(string modName, string propertyName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">modName</span></td>
+        <td><p>The mod name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>Property name defined in the <a class="xref" href="Nitrocid.Modifications.IMod.html#Nitrocid_Modifications_IMod_PubliclyAvailableProperties">PubliclyAvailableProperties</a> dictionary to query</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo">ParameterInfo</a>[]</td>
+        <td><p>An array of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo">ParameterInfo</a> if there are any; null if there is no property</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -523,7 +635,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Modifications_Communication_InterModTools_SetCustomModFieldValue_System_String_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue(System.String%2CSystem.String%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Modifications/Communication/InterModTools.cs/#L300">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Modifications/Communication/InterModTools.cs/#L230">View Source</a>
   </span>
   <a id="Nitrocid_Modifications_Communication_InterModTools_SetCustomModFieldValue_" data-uid="Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue*"></a>
   <h4 id="Nitrocid_Modifications_Communication_InterModTools_SetCustomModFieldValue_System_String_System_String_System_Object_" data-uid="Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue(System.String,System.String,System.Object)">SetCustomModFieldValue(string, string, object)</h4>
@@ -569,7 +681,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Modifications_Communication_InterModTools_SetCustomModPropertyValue_System_String_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue(System.String%2CSystem.String%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Modifications/Communication/InterModTools.cs/#L219">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Modifications/Communication/InterModTools.cs/#L187">View Source</a>
   </span>
   <a id="Nitrocid_Modifications_Communication_InterModTools_SetCustomModPropertyValue_" data-uid="Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue*"></a>
   <h4 id="Nitrocid_Modifications_Communication_InterModTools_SetCustomModPropertyValue_System_String_System_String_System_Object_" data-uid="Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue(System.String,System.String,System.Object)">SetCustomModPropertyValue(string, string, object)</h4>

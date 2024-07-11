@@ -25420,6 +25420,38 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue
   nameWithType: InterAddonTools.GetCustomAddonPropertyValue
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(System.String,System.String)
+  name: GetFunctionParameters(string, string)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetFunctionParameters_System_String_System_String_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(System.String,System.String)
+  name.vb: GetFunctionParameters(String, String)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(string, string)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(String, String)
+  nameWithType: InterAddonTools.GetFunctionParameters(string, string)
+  nameWithType.vb: InterAddonTools.GetFunctionParameters(String, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters*
+  name: GetFunctionParameters
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetFunctionParameters_
+  commentId: Overload:Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters
+  nameWithType: InterAddonTools.GetFunctionParameters
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(System.String,System.String)
+  name: GetSetPropertyParameters(string, string)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_System_String_System_String_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(System.String,System.String)
+  name.vb: GetSetPropertyParameters(String, String)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(string, string)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(String, String)
+  nameWithType: InterAddonTools.GetSetPropertyParameters(string, string)
+  nameWithType.vb: InterAddonTools.GetSetPropertyParameters(String, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters*
+  name: GetSetPropertyParameters
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_
+  commentId: Overload:Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters
+  nameWithType: InterAddonTools.GetSetPropertyParameters
 - uid: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(System.String)
   name: ListAvailableFields(string)
   href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_System_String_
@@ -35195,6 +35227,38 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue
   nameWithType: InterModTools.GetCustomModPropertyValue
+- uid: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(System.String,System.String)
+  name: GetFunctionParameters(string, string)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetFunctionParameters_System_String_System_String_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(System.String,System.String)
+  name.vb: GetFunctionParameters(String, String)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(string, string)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(String, String)
+  nameWithType: InterModTools.GetFunctionParameters(string, string)
+  nameWithType.vb: InterModTools.GetFunctionParameters(String, String)
+- uid: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters*
+  name: GetFunctionParameters
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetFunctionParameters_
+  commentId: Overload:Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters
+  isSpec: "True"
+  fullName: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters
+  nameWithType: InterModTools.GetFunctionParameters
+- uid: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(System.String,System.String)
+  name: GetSetPropertyParameters(string, string)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetSetPropertyParameters_System_String_System_String_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(System.String,System.String)
+  name.vb: GetSetPropertyParameters(String, String)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(string, string)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(String, String)
+  nameWithType: InterModTools.GetSetPropertyParameters(string, string)
+  nameWithType.vb: InterModTools.GetSetPropertyParameters(String, String)
+- uid: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters*
+  name: GetSetPropertyParameters
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetSetPropertyParameters_
+  commentId: Overload:Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters
+  isSpec: "True"
+  fullName: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters
+  nameWithType: InterModTools.GetSetPropertyParameters
 - uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields(System.String)
   name: ListAvailableFields(string)
   href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableFields_System_String_
