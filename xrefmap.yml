@@ -34267,6 +34267,12 @@ references:
   commentId: T:Nitrocid.Misc.Splash.SplashManager
   fullName: Nitrocid.Misc.Splash.SplashManager
   nameWithType: SplashManager
+- uid: Nitrocid.Misc.Splash.SplashManager.BeginSplashOut
+  name: BeginSplashOut()
+  href: api/Nitrocid.Misc.Splash.SplashManager.html#Nitrocid_Misc_Splash_SplashManager_BeginSplashOut
+  commentId: M:Nitrocid.Misc.Splash.SplashManager.BeginSplashOut
+  fullName: Nitrocid.Misc.Splash.SplashManager.BeginSplashOut()
+  nameWithType: SplashManager.BeginSplashOut()
 - uid: Nitrocid.Misc.Splash.SplashManager.BeginSplashOut(Nitrocid.Misc.Splash.SplashContext)
   name: BeginSplashOut(SplashContext)
   href: api/Nitrocid.Misc.Splash.SplashManager.html#Nitrocid_Misc_Splash_SplashManager_BeginSplashOut_Nitrocid_Misc_Splash_SplashContext_
@@ -34280,6 +34286,18 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Splash.SplashManager.BeginSplashOut
   nameWithType: SplashManager.BeginSplashOut
+- uid: Nitrocid.Misc.Splash.SplashManager.CloseSplash
+  name: CloseSplash()
+  href: api/Nitrocid.Misc.Splash.SplashManager.html#Nitrocid_Misc_Splash_SplashManager_CloseSplash
+  commentId: M:Nitrocid.Misc.Splash.SplashManager.CloseSplash
+  fullName: Nitrocid.Misc.Splash.SplashManager.CloseSplash()
+  nameWithType: SplashManager.CloseSplash()
+- uid: Nitrocid.Misc.Splash.SplashManager.CloseSplash(Nitrocid.Misc.Splash.ISplash)
+  name: CloseSplash(ISplash)
+  href: api/Nitrocid.Misc.Splash.SplashManager.html#Nitrocid_Misc_Splash_SplashManager_CloseSplash_Nitrocid_Misc_Splash_ISplash_
+  commentId: M:Nitrocid.Misc.Splash.SplashManager.CloseSplash(Nitrocid.Misc.Splash.ISplash)
+  fullName: Nitrocid.Misc.Splash.SplashManager.CloseSplash(Nitrocid.Misc.Splash.ISplash)
+  nameWithType: SplashManager.CloseSplash(ISplash)
 - uid: Nitrocid.Misc.Splash.SplashManager.CloseSplash(Nitrocid.Misc.Splash.ISplash,Nitrocid.Misc.Splash.SplashContext)
   name: CloseSplash(ISplash, SplashContext)
   href: api/Nitrocid.Misc.Splash.SplashManager.html#Nitrocid_Misc_Splash_SplashManager_CloseSplash_Nitrocid_Misc_Splash_ISplash_Nitrocid_Misc_Splash_SplashContext_
@@ -34292,6 +34310,15 @@ references:
   commentId: M:Nitrocid.Misc.Splash.SplashManager.CloseSplash(Nitrocid.Misc.Splash.SplashContext)
   fullName: Nitrocid.Misc.Splash.SplashManager.CloseSplash(Nitrocid.Misc.Splash.SplashContext)
   nameWithType: SplashManager.CloseSplash(SplashContext)
+- uid: Nitrocid.Misc.Splash.SplashManager.CloseSplash(System.String)
+  name: CloseSplash(string)
+  href: api/Nitrocid.Misc.Splash.SplashManager.html#Nitrocid_Misc_Splash_SplashManager_CloseSplash_System_String_
+  commentId: M:Nitrocid.Misc.Splash.SplashManager.CloseSplash(System.String)
+  name.vb: CloseSplash(String)
+  fullName: Nitrocid.Misc.Splash.SplashManager.CloseSplash(string)
+  fullName.vb: Nitrocid.Misc.Splash.SplashManager.CloseSplash(String)
+  nameWithType: SplashManager.CloseSplash(string)
+  nameWithType.vb: SplashManager.CloseSplash(String)
 - uid: Nitrocid.Misc.Splash.SplashManager.CloseSplash(System.String,Nitrocid.Misc.Splash.SplashContext)
   name: CloseSplash(string, SplashContext)
   href: api/Nitrocid.Misc.Splash.SplashManager.html#Nitrocid_Misc_Splash_SplashManager_CloseSplash_System_String_Nitrocid_Misc_Splash_SplashContext_
@@ -34360,6 +34387,12 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Splash.SplashManager.EnableSplash
   nameWithType: SplashManager.EnableSplash
+- uid: Nitrocid.Misc.Splash.SplashManager.EndSplashOut
+  name: EndSplashOut()
+  href: api/Nitrocid.Misc.Splash.SplashManager.html#Nitrocid_Misc_Splash_SplashManager_EndSplashOut
+  commentId: M:Nitrocid.Misc.Splash.SplashManager.EndSplashOut
+  fullName: Nitrocid.Misc.Splash.SplashManager.EndSplashOut()
+  nameWithType: SplashManager.EndSplashOut()
 - uid: Nitrocid.Misc.Splash.SplashManager.EndSplashOut(Nitrocid.Misc.Splash.SplashContext)
   name: EndSplashOut(SplashContext)
   href: api/Nitrocid.Misc.Splash.SplashManager.html#Nitrocid_Misc_Splash_SplashManager_EndSplashOut_Nitrocid_Misc_Splash_SplashContext_
@@ -34418,6 +34451,18 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Splash.SplashManager.IsSplashRegistered
   nameWithType: SplashManager.IsSplashRegistered
+- uid: Nitrocid.Misc.Splash.SplashManager.OpenSplash
+  name: OpenSplash()
+  href: api/Nitrocid.Misc.Splash.SplashManager.html#Nitrocid_Misc_Splash_SplashManager_OpenSplash
+  commentId: M:Nitrocid.Misc.Splash.SplashManager.OpenSplash
+  fullName: Nitrocid.Misc.Splash.SplashManager.OpenSplash()
+  nameWithType: SplashManager.OpenSplash()
+- uid: Nitrocid.Misc.Splash.SplashManager.OpenSplash(Nitrocid.Misc.Splash.ISplash)
+  name: OpenSplash(ISplash)
+  href: api/Nitrocid.Misc.Splash.SplashManager.html#Nitrocid_Misc_Splash_SplashManager_OpenSplash_Nitrocid_Misc_Splash_ISplash_
+  commentId: M:Nitrocid.Misc.Splash.SplashManager.OpenSplash(Nitrocid.Misc.Splash.ISplash)
+  fullName: Nitrocid.Misc.Splash.SplashManager.OpenSplash(Nitrocid.Misc.Splash.ISplash)
+  nameWithType: SplashManager.OpenSplash(ISplash)
 - uid: Nitrocid.Misc.Splash.SplashManager.OpenSplash(Nitrocid.Misc.Splash.ISplash,Nitrocid.Misc.Splash.SplashContext)
   name: OpenSplash(ISplash, SplashContext)
   href: api/Nitrocid.Misc.Splash.SplashManager.html#Nitrocid_Misc_Splash_SplashManager_OpenSplash_Nitrocid_Misc_Splash_ISplash_Nitrocid_Misc_Splash_SplashContext_
@@ -34430,6 +34475,15 @@ references:
   commentId: M:Nitrocid.Misc.Splash.SplashManager.OpenSplash(Nitrocid.Misc.Splash.SplashContext)
   fullName: Nitrocid.Misc.Splash.SplashManager.OpenSplash(Nitrocid.Misc.Splash.SplashContext)
   nameWithType: SplashManager.OpenSplash(SplashContext)
+- uid: Nitrocid.Misc.Splash.SplashManager.OpenSplash(System.String)
+  name: OpenSplash(string)
+  href: api/Nitrocid.Misc.Splash.SplashManager.html#Nitrocid_Misc_Splash_SplashManager_OpenSplash_System_String_
+  commentId: M:Nitrocid.Misc.Splash.SplashManager.OpenSplash(System.String)
+  name.vb: OpenSplash(String)
+  fullName: Nitrocid.Misc.Splash.SplashManager.OpenSplash(string)
+  fullName.vb: Nitrocid.Misc.Splash.SplashManager.OpenSplash(String)
+  nameWithType: SplashManager.OpenSplash(string)
+  nameWithType.vb: SplashManager.OpenSplash(String)
 - uid: Nitrocid.Misc.Splash.SplashManager.OpenSplash(System.String,Nitrocid.Misc.Splash.SplashContext)
   name: OpenSplash(string, SplashContext)
   href: api/Nitrocid.Misc.Splash.SplashManager.html#Nitrocid_Misc_Splash_SplashManager_OpenSplash_System_String_Nitrocid_Misc_Splash_SplashContext_
