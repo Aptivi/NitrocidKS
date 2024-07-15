@@ -974,45 +974,6 @@ references:
   commentId: T:Nitrocid.ConsoleBase.ConsoleTools
   fullName: Nitrocid.ConsoleBase.ConsoleTools
   nameWithType: ConsoleTools
-- uid: Nitrocid.ConsoleBase.ConsoleTools.ConsoleSupportsTrueColor
-  name: ConsoleSupportsTrueColor
-  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_ConsoleSupportsTrueColor
-  commentId: P:Nitrocid.ConsoleBase.ConsoleTools.ConsoleSupportsTrueColor
-  fullName: Nitrocid.ConsoleBase.ConsoleTools.ConsoleSupportsTrueColor
-  nameWithType: ConsoleTools.ConsoleSupportsTrueColor
-- uid: Nitrocid.ConsoleBase.ConsoleTools.ConsoleSupportsTrueColor*
-  name: ConsoleSupportsTrueColor
-  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_ConsoleSupportsTrueColor_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleTools.ConsoleSupportsTrueColor
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleTools.ConsoleSupportsTrueColor
-  nameWithType: ConsoleTools.ConsoleSupportsTrueColor
-- uid: Nitrocid.ConsoleBase.ConsoleTools.EnableScrollBarInSelection
-  name: EnableScrollBarInSelection
-  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_EnableScrollBarInSelection
-  commentId: P:Nitrocid.ConsoleBase.ConsoleTools.EnableScrollBarInSelection
-  fullName: Nitrocid.ConsoleBase.ConsoleTools.EnableScrollBarInSelection
-  nameWithType: ConsoleTools.EnableScrollBarInSelection
-- uid: Nitrocid.ConsoleBase.ConsoleTools.EnableScrollBarInSelection*
-  name: EnableScrollBarInSelection
-  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_EnableScrollBarInSelection_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleTools.EnableScrollBarInSelection
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleTools.EnableScrollBarInSelection
-  nameWithType: ConsoleTools.EnableScrollBarInSelection
-- uid: Nitrocid.ConsoleBase.ConsoleTools.InputHistoryEnabled
-  name: InputHistoryEnabled
-  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_InputHistoryEnabled
-  commentId: P:Nitrocid.ConsoleBase.ConsoleTools.InputHistoryEnabled
-  fullName: Nitrocid.ConsoleBase.ConsoleTools.InputHistoryEnabled
-  nameWithType: ConsoleTools.InputHistoryEnabled
-- uid: Nitrocid.ConsoleBase.ConsoleTools.InputHistoryEnabled*
-  name: InputHistoryEnabled
-  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_InputHistoryEnabled_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleTools.InputHistoryEnabled
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleTools.InputHistoryEnabled
-  nameWithType: ConsoleTools.InputHistoryEnabled
 - uid: Nitrocid.ConsoleBase.ConsoleTools.ResetBackground(System.Boolean)
   name: ResetBackground(bool)
   href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_ResetBackground_System_Boolean_
@@ -1061,19 +1022,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.ConsoleTools.ResetForeground
   nameWithType: ConsoleTools.ResetForeground
-- uid: Nitrocid.ConsoleBase.ConsoleTools.WrapListOutputs
-  name: WrapListOutputs
-  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_WrapListOutputs
-  commentId: P:Nitrocid.ConsoleBase.ConsoleTools.WrapListOutputs
-  fullName: Nitrocid.ConsoleBase.ConsoleTools.WrapListOutputs
-  nameWithType: ConsoleTools.WrapListOutputs
-- uid: Nitrocid.ConsoleBase.ConsoleTools.WrapListOutputs*
-  name: WrapListOutputs
-  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_WrapListOutputs_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleTools.WrapListOutputs
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleTools.WrapListOutputs
-  nameWithType: ConsoleTools.WrapListOutputs
 - uid: Nitrocid.ConsoleBase.Inputs
   name: Nitrocid.ConsoleBase.Inputs
   href: api/Nitrocid.ConsoleBase.Inputs.html
@@ -1086,32 +1034,6 @@ references:
   commentId: T:Nitrocid.ConsoleBase.Inputs.InputTools
   fullName: Nitrocid.ConsoleBase.Inputs.InputTools
   nameWithType: InputTools
-- uid: Nitrocid.ConsoleBase.Inputs.InputTools.CurrentMask
-  name: CurrentMask
-  href: api/Nitrocid.ConsoleBase.Inputs.InputTools.html#Nitrocid_ConsoleBase_Inputs_InputTools_CurrentMask
-  commentId: P:Nitrocid.ConsoleBase.Inputs.InputTools.CurrentMask
-  fullName: Nitrocid.ConsoleBase.Inputs.InputTools.CurrentMask
-  nameWithType: InputTools.CurrentMask
-- uid: Nitrocid.ConsoleBase.Inputs.InputTools.CurrentMask*
-  name: CurrentMask
-  href: api/Nitrocid.ConsoleBase.Inputs.InputTools.html#Nitrocid_ConsoleBase_Inputs_InputTools_CurrentMask_
-  commentId: Overload:Nitrocid.ConsoleBase.Inputs.InputTools.CurrentMask
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.Inputs.InputTools.CurrentMask
-  nameWithType: InputTools.CurrentMask
-- uid: Nitrocid.ConsoleBase.Inputs.InputTools.DefaultChoiceOutputType
-  name: DefaultChoiceOutputType
-  href: api/Nitrocid.ConsoleBase.Inputs.InputTools.html#Nitrocid_ConsoleBase_Inputs_InputTools_DefaultChoiceOutputType
-  commentId: P:Nitrocid.ConsoleBase.Inputs.InputTools.DefaultChoiceOutputType
-  fullName: Nitrocid.ConsoleBase.Inputs.InputTools.DefaultChoiceOutputType
-  nameWithType: InputTools.DefaultChoiceOutputType
-- uid: Nitrocid.ConsoleBase.Inputs.InputTools.DefaultChoiceOutputType*
-  name: DefaultChoiceOutputType
-  href: api/Nitrocid.ConsoleBase.Inputs.InputTools.html#Nitrocid_ConsoleBase_Inputs_InputTools_DefaultChoiceOutputType_
-  commentId: Overload:Nitrocid.ConsoleBase.Inputs.InputTools.DefaultChoiceOutputType
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.Inputs.InputTools.DefaultChoiceOutputType
-  nameWithType: InputTools.DefaultChoiceOutputType
 - uid: Nitrocid.ConsoleBase.Inputs.InputTools.DetectKeypress
   name: DetectKeypress()
   href: api/Nitrocid.ConsoleBase.Inputs.InputTools.html#Nitrocid_ConsoleBase_Inputs_InputTools_DetectKeypress
@@ -1940,32 +1862,6 @@ references:
   commentId: T:Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage
   fullName: Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage
   nameWithType: WelcomeMessage
-- uid: Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.CustomBanner
-  name: CustomBanner
-  href: api/Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#Nitrocid_ConsoleBase_Writers_MiscWriters_WelcomeMessage_CustomBanner
-  commentId: P:Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.CustomBanner
-  fullName: Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.CustomBanner
-  nameWithType: WelcomeMessage.CustomBanner
-- uid: Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.CustomBanner*
-  name: CustomBanner
-  href: api/Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#Nitrocid_ConsoleBase_Writers_MiscWriters_WelcomeMessage_CustomBanner_
-  commentId: Overload:Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.CustomBanner
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.CustomBanner
-  nameWithType: WelcomeMessage.CustomBanner
-- uid: Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.DevNoticeConsented
-  name: DevNoticeConsented
-  href: api/Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#Nitrocid_ConsoleBase_Writers_MiscWriters_WelcomeMessage_DevNoticeConsented
-  commentId: P:Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.DevNoticeConsented
-  fullName: Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.DevNoticeConsented
-  nameWithType: WelcomeMessage.DevNoticeConsented
-- uid: Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.DevNoticeConsented*
-  name: DevNoticeConsented
-  href: api/Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#Nitrocid_ConsoleBase_Writers_MiscWriters_WelcomeMessage_DevNoticeConsented_
-  commentId: Overload:Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.DevNoticeConsented
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.DevNoticeConsented
-  nameWithType: WelcomeMessage.DevNoticeConsented
 - uid: Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.GetCustomBanner
   name: GetCustomBanner()
   href: api/Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#Nitrocid_ConsoleBase_Writers_MiscWriters_WelcomeMessage_GetCustomBanner
@@ -1992,19 +1888,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.GetLicenseString
   nameWithType: WelcomeMessage.GetLicenseString
-- uid: Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.ShowAppInfoOnBoot
-  name: ShowAppInfoOnBoot
-  href: api/Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#Nitrocid_ConsoleBase_Writers_MiscWriters_WelcomeMessage_ShowAppInfoOnBoot
-  commentId: P:Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.ShowAppInfoOnBoot
-  fullName: Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.ShowAppInfoOnBoot
-  nameWithType: WelcomeMessage.ShowAppInfoOnBoot
-- uid: Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.ShowAppInfoOnBoot*
-  name: ShowAppInfoOnBoot
-  href: api/Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#Nitrocid_ConsoleBase_Writers_MiscWriters_WelcomeMessage_ShowAppInfoOnBoot_
-  commentId: Overload:Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.ShowAppInfoOnBoot
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.ShowAppInfoOnBoot
-  nameWithType: WelcomeMessage.ShowAppInfoOnBoot
 - uid: Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.ShowTip
   name: ShowTip
   href: api/Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#Nitrocid_ConsoleBase_Writers_MiscWriters_WelcomeMessage_ShowTip
@@ -2018,19 +1901,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.ShowTip
   nameWithType: WelcomeMessage.ShowTip
-- uid: Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.StartScroll
-  name: StartScroll
-  href: api/Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#Nitrocid_ConsoleBase_Writers_MiscWriters_WelcomeMessage_StartScroll
-  commentId: P:Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.StartScroll
-  fullName: Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.StartScroll
-  nameWithType: WelcomeMessage.StartScroll
-- uid: Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.StartScroll*
-  name: StartScroll
-  href: api/Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#Nitrocid_ConsoleBase_Writers_MiscWriters_WelcomeMessage_StartScroll_
-  commentId: Overload:Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.StartScroll
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.StartScroll
-  nameWithType: WelcomeMessage.StartScroll
 - uid: Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.WriteLicense
   name: WriteLicense()
   href: api/Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html#Nitrocid_ConsoleBase_Writers_MiscWriters_WelcomeMessage_WriteLicense
@@ -14745,32 +14615,6 @@ references:
   commentId: T:Nitrocid.Files.FilesystemTools
   fullName: Nitrocid.Files.FilesystemTools
   nameWithType: FilesystemTools
-- uid: Nitrocid.Files.FilesystemTools.FullParseMode
-  name: FullParseMode
-  href: api/Nitrocid.Files.FilesystemTools.html#Nitrocid_Files_FilesystemTools_FullParseMode
-  commentId: P:Nitrocid.Files.FilesystemTools.FullParseMode
-  fullName: Nitrocid.Files.FilesystemTools.FullParseMode
-  nameWithType: FilesystemTools.FullParseMode
-- uid: Nitrocid.Files.FilesystemTools.FullParseMode*
-  name: FullParseMode
-  href: api/Nitrocid.Files.FilesystemTools.html#Nitrocid_Files_FilesystemTools_FullParseMode_
-  commentId: Overload:Nitrocid.Files.FilesystemTools.FullParseMode
-  isSpec: "True"
-  fullName: Nitrocid.Files.FilesystemTools.FullParseMode
-  nameWithType: FilesystemTools.FullParseMode
-- uid: Nitrocid.Files.FilesystemTools.HiddenFiles
-  name: HiddenFiles
-  href: api/Nitrocid.Files.FilesystemTools.html#Nitrocid_Files_FilesystemTools_HiddenFiles
-  commentId: P:Nitrocid.Files.FilesystemTools.HiddenFiles
-  fullName: Nitrocid.Files.FilesystemTools.HiddenFiles
-  nameWithType: FilesystemTools.HiddenFiles
-- uid: Nitrocid.Files.FilesystemTools.HiddenFiles*
-  name: HiddenFiles
-  href: api/Nitrocid.Files.FilesystemTools.html#Nitrocid_Files_FilesystemTools_HiddenFiles_
-  commentId: Overload:Nitrocid.Files.FilesystemTools.HiddenFiles
-  isSpec: "True"
-  fullName: Nitrocid.Files.FilesystemTools.HiddenFiles
-  nameWithType: FilesystemTools.HiddenFiles
 - uid: Nitrocid.Files.FilesystemTools.IsFileLocked(System.String)
   name: IsFileLocked(string)
   href: api/Nitrocid.Files.FilesystemTools.html#Nitrocid_Files_FilesystemTools_IsFileLocked_System_String_
@@ -14844,45 +14688,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Files.FilesystemTools.NeutralizePath
   nameWithType: FilesystemTools.NeutralizePath
-- uid: Nitrocid.Files.FilesystemTools.PrintLineNumbers
-  name: PrintLineNumbers
-  href: api/Nitrocid.Files.FilesystemTools.html#Nitrocid_Files_FilesystemTools_PrintLineNumbers
-  commentId: P:Nitrocid.Files.FilesystemTools.PrintLineNumbers
-  fullName: Nitrocid.Files.FilesystemTools.PrintLineNumbers
-  nameWithType: FilesystemTools.PrintLineNumbers
-- uid: Nitrocid.Files.FilesystemTools.PrintLineNumbers*
-  name: PrintLineNumbers
-  href: api/Nitrocid.Files.FilesystemTools.html#Nitrocid_Files_FilesystemTools_PrintLineNumbers_
-  commentId: Overload:Nitrocid.Files.FilesystemTools.PrintLineNumbers
-  isSpec: "True"
-  fullName: Nitrocid.Files.FilesystemTools.PrintLineNumbers
-  nameWithType: FilesystemTools.PrintLineNumbers
-- uid: Nitrocid.Files.FilesystemTools.ShowFilesystemProgress
-  name: ShowFilesystemProgress
-  href: api/Nitrocid.Files.FilesystemTools.html#Nitrocid_Files_FilesystemTools_ShowFilesystemProgress
-  commentId: P:Nitrocid.Files.FilesystemTools.ShowFilesystemProgress
-  fullName: Nitrocid.Files.FilesystemTools.ShowFilesystemProgress
-  nameWithType: FilesystemTools.ShowFilesystemProgress
-- uid: Nitrocid.Files.FilesystemTools.ShowFilesystemProgress*
-  name: ShowFilesystemProgress
-  href: api/Nitrocid.Files.FilesystemTools.html#Nitrocid_Files_FilesystemTools_ShowFilesystemProgress_
-  commentId: Overload:Nitrocid.Files.FilesystemTools.ShowFilesystemProgress
-  isSpec: "True"
-  fullName: Nitrocid.Files.FilesystemTools.ShowFilesystemProgress
-  nameWithType: FilesystemTools.ShowFilesystemProgress
-- uid: Nitrocid.Files.FilesystemTools.SuppressUnauthorizedMessages
-  name: SuppressUnauthorizedMessages
-  href: api/Nitrocid.Files.FilesystemTools.html#Nitrocid_Files_FilesystemTools_SuppressUnauthorizedMessages
-  commentId: P:Nitrocid.Files.FilesystemTools.SuppressUnauthorizedMessages
-  fullName: Nitrocid.Files.FilesystemTools.SuppressUnauthorizedMessages
-  nameWithType: FilesystemTools.SuppressUnauthorizedMessages
-- uid: Nitrocid.Files.FilesystemTools.SuppressUnauthorizedMessages*
-  name: SuppressUnauthorizedMessages
-  href: api/Nitrocid.Files.FilesystemTools.html#Nitrocid_Files_FilesystemTools_SuppressUnauthorizedMessages_
-  commentId: Overload:Nitrocid.Files.FilesystemTools.SuppressUnauthorizedMessages
-  isSpec: "True"
-  fullName: Nitrocid.Files.FilesystemTools.SuppressUnauthorizedMessages
-  nameWithType: FilesystemTools.SuppressUnauthorizedMessages
 - uid: Nitrocid.Files.FilesystemTools.ThrowOnInvalidPath(System.String)
   name: ThrowOnInvalidPath(string)
   href: api/Nitrocid.Files.FilesystemTools.html#Nitrocid_Files_FilesystemTools_ThrowOnInvalidPath_System_String_
@@ -15206,71 +15011,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Files.Folders.Listing.ListTree
   nameWithType: Listing.ListTree
-- uid: Nitrocid.Files.Folders.Listing.ShowFileDetailsList
-  name: ShowFileDetailsList
-  href: api/Nitrocid.Files.Folders.Listing.html#Nitrocid_Files_Folders_Listing_ShowFileDetailsList
-  commentId: P:Nitrocid.Files.Folders.Listing.ShowFileDetailsList
-  fullName: Nitrocid.Files.Folders.Listing.ShowFileDetailsList
-  nameWithType: Listing.ShowFileDetailsList
-- uid: Nitrocid.Files.Folders.Listing.ShowFileDetailsList*
-  name: ShowFileDetailsList
-  href: api/Nitrocid.Files.Folders.Listing.html#Nitrocid_Files_Folders_Listing_ShowFileDetailsList_
-  commentId: Overload:Nitrocid.Files.Folders.Listing.ShowFileDetailsList
-  isSpec: "True"
-  fullName: Nitrocid.Files.Folders.Listing.ShowFileDetailsList
-  nameWithType: Listing.ShowFileDetailsList
-- uid: Nitrocid.Files.Folders.Listing.ShowTotalSizeInList
-  name: ShowTotalSizeInList
-  href: api/Nitrocid.Files.Folders.Listing.html#Nitrocid_Files_Folders_Listing_ShowTotalSizeInList
-  commentId: P:Nitrocid.Files.Folders.Listing.ShowTotalSizeInList
-  fullName: Nitrocid.Files.Folders.Listing.ShowTotalSizeInList
-  nameWithType: Listing.ShowTotalSizeInList
-- uid: Nitrocid.Files.Folders.Listing.ShowTotalSizeInList*
-  name: ShowTotalSizeInList
-  href: api/Nitrocid.Files.Folders.Listing.html#Nitrocid_Files_Folders_Listing_ShowTotalSizeInList_
-  commentId: Overload:Nitrocid.Files.Folders.Listing.ShowTotalSizeInList
-  isSpec: "True"
-  fullName: Nitrocid.Files.Folders.Listing.ShowTotalSizeInList
-  nameWithType: Listing.ShowTotalSizeInList
-- uid: Nitrocid.Files.Folders.Listing.SortDirection
-  name: SortDirection
-  href: api/Nitrocid.Files.Folders.Listing.html#Nitrocid_Files_Folders_Listing_SortDirection
-  commentId: P:Nitrocid.Files.Folders.Listing.SortDirection
-  fullName: Nitrocid.Files.Folders.Listing.SortDirection
-  nameWithType: Listing.SortDirection
-- uid: Nitrocid.Files.Folders.Listing.SortDirection*
-  name: SortDirection
-  href: api/Nitrocid.Files.Folders.Listing.html#Nitrocid_Files_Folders_Listing_SortDirection_
-  commentId: Overload:Nitrocid.Files.Folders.Listing.SortDirection
-  isSpec: "True"
-  fullName: Nitrocid.Files.Folders.Listing.SortDirection
-  nameWithType: Listing.SortDirection
-- uid: Nitrocid.Files.Folders.Listing.SortList
-  name: SortList
-  href: api/Nitrocid.Files.Folders.Listing.html#Nitrocid_Files_Folders_Listing_SortList
-  commentId: P:Nitrocid.Files.Folders.Listing.SortList
-  fullName: Nitrocid.Files.Folders.Listing.SortList
-  nameWithType: Listing.SortList
-- uid: Nitrocid.Files.Folders.Listing.SortList*
-  name: SortList
-  href: api/Nitrocid.Files.Folders.Listing.html#Nitrocid_Files_Folders_Listing_SortList_
-  commentId: Overload:Nitrocid.Files.Folders.Listing.SortList
-  isSpec: "True"
-  fullName: Nitrocid.Files.Folders.Listing.SortList
-  nameWithType: Listing.SortList
-- uid: Nitrocid.Files.Folders.Listing.SortMode
-  name: SortMode
-  href: api/Nitrocid.Files.Folders.Listing.html#Nitrocid_Files_Folders_Listing_SortMode
-  commentId: P:Nitrocid.Files.Folders.Listing.SortMode
-  fullName: Nitrocid.Files.Folders.Listing.SortMode
-  nameWithType: Listing.SortMode
-- uid: Nitrocid.Files.Folders.Listing.SortMode*
-  name: SortMode
-  href: api/Nitrocid.Files.Folders.Listing.html#Nitrocid_Files_Folders_Listing_SortMode_
-  commentId: Overload:Nitrocid.Files.Folders.Listing.SortMode
-  isSpec: "True"
-  fullName: Nitrocid.Files.Folders.Listing.SortMode
-  nameWithType: Listing.SortMode
 - uid: Nitrocid.Files.Instances
   name: Nitrocid.Files.Instances
   href: api/Nitrocid.Files.Instances.html
@@ -17209,19 +16949,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Files.Paths.PathLookupTools.PathLookupDelimiter
   nameWithType: PathLookupTools.PathLookupDelimiter
-- uid: Nitrocid.Files.Paths.PathLookupTools.PathsToLookup
-  name: PathsToLookup
-  href: api/Nitrocid.Files.Paths.PathLookupTools.html#Nitrocid_Files_Paths_PathLookupTools_PathsToLookup
-  commentId: P:Nitrocid.Files.Paths.PathLookupTools.PathsToLookup
-  fullName: Nitrocid.Files.Paths.PathLookupTools.PathsToLookup
-  nameWithType: PathLookupTools.PathsToLookup
-- uid: Nitrocid.Files.Paths.PathLookupTools.PathsToLookup*
-  name: PathsToLookup
-  href: api/Nitrocid.Files.Paths.PathLookupTools.html#Nitrocid_Files_Paths_PathLookupTools_PathsToLookup_
-  commentId: Overload:Nitrocid.Files.Paths.PathLookupTools.PathsToLookup
-  isSpec: "True"
-  fullName: Nitrocid.Files.Paths.PathLookupTools.PathsToLookup
-  nameWithType: PathLookupTools.PathsToLookup
 - uid: Nitrocid.Files.Paths.PathLookupTools.RemoveFromPathLookup(System.String)
   name: RemoveFromPathLookup(string)
   href: api/Nitrocid.Files.Paths.PathLookupTools.html#Nitrocid_Files_Paths_PathLookupTools_RemoveFromPathLookup_System_String_
@@ -22430,58 +22157,6 @@ references:
   commentId: T:Nitrocid.Kernel.Debugging.DebugWriter
   fullName: Nitrocid.Kernel.Debugging.DebugWriter
   nameWithType: DebugWriter
-- uid: Nitrocid.Kernel.Debugging.DebugWriter.DebugCensorPrivateInfo
-  name: DebugCensorPrivateInfo
-  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_DebugCensorPrivateInfo
-  commentId: P:Nitrocid.Kernel.Debugging.DebugWriter.DebugCensorPrivateInfo
-  fullName: Nitrocid.Kernel.Debugging.DebugWriter.DebugCensorPrivateInfo
-  nameWithType: DebugWriter.DebugCensorPrivateInfo
-- uid: Nitrocid.Kernel.Debugging.DebugWriter.DebugCensorPrivateInfo*
-  name: DebugCensorPrivateInfo
-  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_DebugCensorPrivateInfo_
-  commentId: Overload:Nitrocid.Kernel.Debugging.DebugWriter.DebugCensorPrivateInfo
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Debugging.DebugWriter.DebugCensorPrivateInfo
-  nameWithType: DebugWriter.DebugCensorPrivateInfo
-- uid: Nitrocid.Kernel.Debugging.DebugWriter.DebugLegacyLogStyle
-  name: DebugLegacyLogStyle
-  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_DebugLegacyLogStyle
-  commentId: P:Nitrocid.Kernel.Debugging.DebugWriter.DebugLegacyLogStyle
-  fullName: Nitrocid.Kernel.Debugging.DebugWriter.DebugLegacyLogStyle
-  nameWithType: DebugWriter.DebugLegacyLogStyle
-- uid: Nitrocid.Kernel.Debugging.DebugWriter.DebugLegacyLogStyle*
-  name: DebugLegacyLogStyle
-  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_DebugLegacyLogStyle_
-  commentId: Overload:Nitrocid.Kernel.Debugging.DebugWriter.DebugLegacyLogStyle
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Debugging.DebugWriter.DebugLegacyLogStyle
-  nameWithType: DebugWriter.DebugLegacyLogStyle
-- uid: Nitrocid.Kernel.Debugging.DebugWriter.DebugQuotaCheck
-  name: DebugQuotaCheck
-  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_DebugQuotaCheck
-  commentId: P:Nitrocid.Kernel.Debugging.DebugWriter.DebugQuotaCheck
-  fullName: Nitrocid.Kernel.Debugging.DebugWriter.DebugQuotaCheck
-  nameWithType: DebugWriter.DebugQuotaCheck
-- uid: Nitrocid.Kernel.Debugging.DebugWriter.DebugQuotaCheck*
-  name: DebugQuotaCheck
-  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_DebugQuotaCheck_
-  commentId: Overload:Nitrocid.Kernel.Debugging.DebugWriter.DebugQuotaCheck
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Debugging.DebugWriter.DebugQuotaCheck
-  nameWithType: DebugWriter.DebugQuotaCheck
-- uid: Nitrocid.Kernel.Debugging.DebugWriter.DebugQuotaLines
-  name: DebugQuotaLines
-  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_DebugQuotaLines
-  commentId: P:Nitrocid.Kernel.Debugging.DebugWriter.DebugQuotaLines
-  fullName: Nitrocid.Kernel.Debugging.DebugWriter.DebugQuotaLines
-  nameWithType: DebugWriter.DebugQuotaLines
-- uid: Nitrocid.Kernel.Debugging.DebugWriter.DebugQuotaLines*
-  name: DebugQuotaLines
-  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_DebugQuotaLines_
-  commentId: Overload:Nitrocid.Kernel.Debugging.DebugWriter.DebugQuotaLines
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Debugging.DebugWriter.DebugQuotaLines
-  nameWithType: DebugWriter.DebugQuotaLines
 - uid: Nitrocid.Kernel.Debugging.DebugWriter.DebugStackTraces
   name: DebugStackTraces
   href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_DebugStackTraces
@@ -22495,19 +22170,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Debugging.DebugWriter.DebugStackTraces
   nameWithType: DebugWriter.DebugStackTraces
-- uid: Nitrocid.Kernel.Debugging.DebugWriter.EventDebug
-  name: EventDebug
-  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_EventDebug
-  commentId: P:Nitrocid.Kernel.Debugging.DebugWriter.EventDebug
-  fullName: Nitrocid.Kernel.Debugging.DebugWriter.EventDebug
-  nameWithType: DebugWriter.EventDebug
-- uid: Nitrocid.Kernel.Debugging.DebugWriter.EventDebug*
-  name: EventDebug
-  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_EventDebug_
-  commentId: Overload:Nitrocid.Kernel.Debugging.DebugWriter.EventDebug
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Debugging.DebugWriter.EventDebug
-  nameWithType: DebugWriter.EventDebug
 - uid: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebug(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Object[])
   name: WriteDebug(DebugLevel, string, params object[])
   href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_WriteDebug_Nitrocid_Kernel_Debugging_DebugLevel_System_String_System_Object___
@@ -23124,19 +22786,6 @@ references:
   commentId: T:Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools
   fullName: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools
   nameWithType: RemoteChatTools
-- uid: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.DebugChatPort
-  name: DebugChatPort
-  href: api/Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.html#Nitrocid_Kernel_Debugging_RemoteDebug_RemoteChat_RemoteChatTools_DebugChatPort
-  commentId: P:Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.DebugChatPort
-  fullName: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.DebugChatPort
-  nameWithType: RemoteChatTools.DebugChatPort
-- uid: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.DebugChatPort*
-  name: DebugChatPort
-  href: api/Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.html#Nitrocid_Kernel_Debugging_RemoteDebug_RemoteChat_RemoteChatTools_DebugChatPort_
-  commentId: Overload:Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.DebugChatPort
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.DebugChatPort
-  nameWithType: RemoteChatTools.DebugChatPort
 - uid: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.RDebugChatStopping
   name: RDebugChatStopping
   href: api/Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.html#Nitrocid_Kernel_Debugging_RemoteDebug_RemoteChat_RemoteChatTools_RDebugChatStopping
@@ -23150,19 +22799,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.RDebugChatStopping
   nameWithType: RemoteChatTools.RDebugChatStopping
-- uid: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.RDebugMessageFormat
-  name: RDebugMessageFormat
-  href: api/Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.html#Nitrocid_Kernel_Debugging_RemoteDebug_RemoteChat_RemoteChatTools_RDebugMessageFormat
-  commentId: P:Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.RDebugMessageFormat
-  fullName: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.RDebugMessageFormat
-  nameWithType: RemoteChatTools.RDebugMessageFormat
-- uid: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.RDebugMessageFormat*
-  name: RDebugMessageFormat
-  href: api/Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.html#Nitrocid_Kernel_Debugging_RemoteDebug_RemoteChat_RemoteChatTools_RDebugMessageFormat_
-  commentId: Overload:Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.RDebugMessageFormat
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.RDebugMessageFormat
-  nameWithType: RemoteChatTools.RDebugMessageFormat
 - uid: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.StartRDebugger
   name: StartRDebugger()
   href: api/Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat.RemoteChatTools.html#Nitrocid_Kernel_Debugging_RemoteDebug_RemoteChat_RemoteChatTools_StartRDebugger
@@ -23440,19 +23076,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugTools.ListDevices
   nameWithType: RemoteDebugTools.ListDevices
-- uid: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugTools.NotifyOnRemoteDebugConnectionError
-  name: NotifyOnRemoteDebugConnectionError
-  href: api/Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugTools.html#Nitrocid_Kernel_Debugging_RemoteDebug_RemoteDebugTools_NotifyOnRemoteDebugConnectionError
-  commentId: P:Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugTools.NotifyOnRemoteDebugConnectionError
-  fullName: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugTools.NotifyOnRemoteDebugConnectionError
-  nameWithType: RemoteDebugTools.NotifyOnRemoteDebugConnectionError
-- uid: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugTools.NotifyOnRemoteDebugConnectionError*
-  name: NotifyOnRemoteDebugConnectionError
-  href: api/Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugTools.html#Nitrocid_Kernel_Debugging_RemoteDebug_RemoteDebugTools_NotifyOnRemoteDebugConnectionError_
-  commentId: Overload:Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugTools.NotifyOnRemoteDebugConnectionError
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugTools.NotifyOnRemoteDebugConnectionError
-  nameWithType: RemoteDebugTools.NotifyOnRemoteDebugConnectionError
 - uid: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugTools.PopulateBlockedDevices
   name: PopulateBlockedDevices()
   href: api/Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugTools.html#Nitrocid_Kernel_Debugging_RemoteDebug_RemoteDebugTools_PopulateBlockedDevices
@@ -23466,19 +23089,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugTools.PopulateBlockedDevices
   nameWithType: RemoteDebugTools.PopulateBlockedDevices
-- uid: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RecordChatToDebugLog
-  name: RecordChatToDebugLog
-  href: api/Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugTools.html#Nitrocid_Kernel_Debugging_RemoteDebug_RemoteDebugTools_RecordChatToDebugLog
-  commentId: P:Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RecordChatToDebugLog
-  fullName: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RecordChatToDebugLog
-  nameWithType: RemoteDebugTools.RecordChatToDebugLog
-- uid: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RecordChatToDebugLog*
-  name: RecordChatToDebugLog
-  href: api/Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugTools.html#Nitrocid_Kernel_Debugging_RemoteDebug_RemoteDebugTools_RecordChatToDebugLog_
-  commentId: Overload:Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RecordChatToDebugLog
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RecordChatToDebugLog
-  nameWithType: RemoteDebugTools.RecordChatToDebugLog
 - uid: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugTools.RemoveDevice(System.String)
   name: RemoveDevice(string)
   href: api/Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugTools.html#Nitrocid_Kernel_Debugging_RemoteDebug_RemoteDebugTools_RemoveDevice_System_String_
@@ -23565,32 +23175,6 @@ references:
   commentId: T:Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugger
   fullName: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugger
   nameWithType: RemoteDebugger
-- uid: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugger.DebugPort
-  name: DebugPort
-  href: api/Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugger.html#Nitrocid_Kernel_Debugging_RemoteDebug_RemoteDebugger_DebugPort
-  commentId: P:Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugger.DebugPort
-  fullName: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugger.DebugPort
-  nameWithType: RemoteDebugger.DebugPort
-- uid: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugger.DebugPort*
-  name: DebugPort
-  href: api/Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugger.html#Nitrocid_Kernel_Debugging_RemoteDebug_RemoteDebugger_DebugPort_
-  commentId: Overload:Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugger.DebugPort
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugger.DebugPort
-  nameWithType: RemoteDebugger.DebugPort
-- uid: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugger.RDebugAutoStart
-  name: RDebugAutoStart
-  href: api/Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugger.html#Nitrocid_Kernel_Debugging_RemoteDebug_RemoteDebugger_RDebugAutoStart
-  commentId: P:Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugger.RDebugAutoStart
-  fullName: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugger.RDebugAutoStart
-  nameWithType: RemoteDebugger.RDebugAutoStart
-- uid: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugger.RDebugAutoStart*
-  name: RDebugAutoStart
-  href: api/Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugger.html#Nitrocid_Kernel_Debugging_RemoteDebug_RemoteDebugger_RDebugAutoStart_
-  commentId: Overload:Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugger.RDebugAutoStart
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugger.RDebugAutoStart
-  nameWithType: RemoteDebugger.RDebugAutoStart
 - uid: Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugger.RDebugStopping
   name: RDebugStopping
   href: api/Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugger.html#Nitrocid_Kernel_Debugging_RemoteDebug_RemoteDebugger_RDebugStopping
@@ -25726,12 +25310,6 @@ references:
   commentId: F:Nitrocid.Kernel.Extensions.KnownAddons.ExtrasImages
   fullName: Nitrocid.Kernel.Extensions.KnownAddons.ExtrasImages
   nameWithType: KnownAddons.ExtrasImages
-- uid: Nitrocid.Kernel.Extensions.KnownAddons.ExtrasInternetRadioInfo
-  name: ExtrasInternetRadioInfo
-  href: api/Nitrocid.Kernel.Extensions.KnownAddons.html#Nitrocid_Kernel_Extensions_KnownAddons_ExtrasInternetRadioInfo
-  commentId: F:Nitrocid.Kernel.Extensions.KnownAddons.ExtrasInternetRadioInfo
-  fullName: Nitrocid.Kernel.Extensions.KnownAddons.ExtrasInternetRadioInfo
-  nameWithType: KnownAddons.ExtrasInternetRadioInfo
 - uid: Nitrocid.Kernel.Extensions.KnownAddons.ExtrasJsonShell
   name: ExtrasJsonShell
   href: api/Nitrocid.Kernel.Extensions.KnownAddons.html#Nitrocid_Kernel_Extensions_KnownAddons_ExtrasJsonShell
@@ -25904,19 +25482,6 @@ references:
   commentId: T:Nitrocid.Kernel.Hardware.HardwareProbe
   fullName: Nitrocid.Kernel.Hardware.HardwareProbe
   nameWithType: HardwareProbe
-- uid: Nitrocid.Kernel.Hardware.HardwareProbe.QuietHardwareProbe
-  name: QuietHardwareProbe
-  href: api/Nitrocid.Kernel.Hardware.HardwareProbe.html#Nitrocid_Kernel_Hardware_HardwareProbe_QuietHardwareProbe
-  commentId: P:Nitrocid.Kernel.Hardware.HardwareProbe.QuietHardwareProbe
-  fullName: Nitrocid.Kernel.Hardware.HardwareProbe.QuietHardwareProbe
-  nameWithType: HardwareProbe.QuietHardwareProbe
-- uid: Nitrocid.Kernel.Hardware.HardwareProbe.QuietHardwareProbe*
-  name: QuietHardwareProbe
-  href: api/Nitrocid.Kernel.Hardware.HardwareProbe.html#Nitrocid_Kernel_Hardware_HardwareProbe_QuietHardwareProbe_
-  commentId: Overload:Nitrocid.Kernel.Hardware.HardwareProbe.QuietHardwareProbe
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Hardware.HardwareProbe.QuietHardwareProbe
-  nameWithType: HardwareProbe.QuietHardwareProbe
 - uid: Nitrocid.Kernel.Hardware.HardwareProbe.StartProbing
   name: StartProbing()
   href: api/Nitrocid.Kernel.Hardware.HardwareProbe.html#Nitrocid_Kernel_Hardware_HardwareProbe_StartProbing
@@ -25930,19 +25495,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Hardware.HardwareProbe.StartProbing
   nameWithType: HardwareProbe.StartProbing
-- uid: Nitrocid.Kernel.Hardware.HardwareProbe.VerboseHardwareProbe
-  name: VerboseHardwareProbe
-  href: api/Nitrocid.Kernel.Hardware.HardwareProbe.html#Nitrocid_Kernel_Hardware_HardwareProbe_VerboseHardwareProbe
-  commentId: P:Nitrocid.Kernel.Hardware.HardwareProbe.VerboseHardwareProbe
-  fullName: Nitrocid.Kernel.Hardware.HardwareProbe.VerboseHardwareProbe
-  nameWithType: HardwareProbe.VerboseHardwareProbe
-- uid: Nitrocid.Kernel.Hardware.HardwareProbe.VerboseHardwareProbe*
-  name: VerboseHardwareProbe
-  href: api/Nitrocid.Kernel.Hardware.HardwareProbe.html#Nitrocid_Kernel_Hardware_HardwareProbe_VerboseHardwareProbe_
-  commentId: Overload:Nitrocid.Kernel.Hardware.HardwareProbe.VerboseHardwareProbe
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Hardware.HardwareProbe.VerboseHardwareProbe
-  nameWithType: HardwareProbe.VerboseHardwareProbe
 - uid: Nitrocid.Kernel.Journaling
   name: Nitrocid.Kernel.Journaling
   href: api/Nitrocid.Kernel.Journaling.html
@@ -26357,32 +25909,6 @@ references:
   commentId: T:Nitrocid.Kernel.Power.PowerManager
   fullName: Nitrocid.Kernel.Power.PowerManager
   nameWithType: PowerManager
-- uid: Nitrocid.Kernel.Power.PowerManager.BeepOnShutdown
-  name: BeepOnShutdown
-  href: api/Nitrocid.Kernel.Power.PowerManager.html#Nitrocid_Kernel_Power_PowerManager_BeepOnShutdown
-  commentId: P:Nitrocid.Kernel.Power.PowerManager.BeepOnShutdown
-  fullName: Nitrocid.Kernel.Power.PowerManager.BeepOnShutdown
-  nameWithType: PowerManager.BeepOnShutdown
-- uid: Nitrocid.Kernel.Power.PowerManager.BeepOnShutdown*
-  name: BeepOnShutdown
-  href: api/Nitrocid.Kernel.Power.PowerManager.html#Nitrocid_Kernel_Power_PowerManager_BeepOnShutdown_
-  commentId: Overload:Nitrocid.Kernel.Power.PowerManager.BeepOnShutdown
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Power.PowerManager.BeepOnShutdown
-  nameWithType: PowerManager.BeepOnShutdown
-- uid: Nitrocid.Kernel.Power.PowerManager.DelayOnShutdown
-  name: DelayOnShutdown
-  href: api/Nitrocid.Kernel.Power.PowerManager.html#Nitrocid_Kernel_Power_PowerManager_DelayOnShutdown
-  commentId: P:Nitrocid.Kernel.Power.PowerManager.DelayOnShutdown
-  fullName: Nitrocid.Kernel.Power.PowerManager.DelayOnShutdown
-  nameWithType: PowerManager.DelayOnShutdown
-- uid: Nitrocid.Kernel.Power.PowerManager.DelayOnShutdown*
-  name: DelayOnShutdown
-  href: api/Nitrocid.Kernel.Power.PowerManager.html#Nitrocid_Kernel_Power_PowerManager_DelayOnShutdown_
-  commentId: Overload:Nitrocid.Kernel.Power.PowerManager.DelayOnShutdown
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Power.PowerManager.DelayOnShutdown
-  nameWithType: PowerManager.DelayOnShutdown
 - uid: Nitrocid.Kernel.Power.PowerManager.KernelUptime
   name: KernelUptime
   href: api/Nitrocid.Kernel.Power.PowerManager.html#Nitrocid_Kernel_Power_PowerManager_KernelUptime
@@ -26427,19 +25953,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Power.PowerManager.PowerManage
   nameWithType: PowerManager.PowerManage
-- uid: Nitrocid.Kernel.Power.PowerManager.SimulateNoAPM
-  name: SimulateNoAPM
-  href: api/Nitrocid.Kernel.Power.PowerManager.html#Nitrocid_Kernel_Power_PowerManager_SimulateNoAPM
-  commentId: P:Nitrocid.Kernel.Power.PowerManager.SimulateNoAPM
-  fullName: Nitrocid.Kernel.Power.PowerManager.SimulateNoAPM
-  nameWithType: PowerManager.SimulateNoAPM
-- uid: Nitrocid.Kernel.Power.PowerManager.SimulateNoAPM*
-  name: SimulateNoAPM
-  href: api/Nitrocid.Kernel.Power.PowerManager.html#Nitrocid_Kernel_Power_PowerManager_SimulateNoAPM_
-  commentId: Overload:Nitrocid.Kernel.Power.PowerManager.SimulateNoAPM
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Power.PowerManager.SimulateNoAPM
-  nameWithType: PowerManager.SimulateNoAPM
 - uid: Nitrocid.Kernel.Power.PowerMode
   name: PowerMode
   href: api/Nitrocid.Kernel.Power.PowerMode.html
@@ -29211,19 +28724,6 @@ references:
   commentId: T:Nitrocid.Kernel.Time.TimeDateTools
   fullName: Nitrocid.Kernel.Time.TimeDateTools
   nameWithType: TimeDateTools
-- uid: Nitrocid.Kernel.Time.TimeDateTools.CornerTimeDate
-  name: CornerTimeDate
-  href: api/Nitrocid.Kernel.Time.TimeDateTools.html#Nitrocid_Kernel_Time_TimeDateTools_CornerTimeDate
-  commentId: P:Nitrocid.Kernel.Time.TimeDateTools.CornerTimeDate
-  fullName: Nitrocid.Kernel.Time.TimeDateTools.CornerTimeDate
-  nameWithType: TimeDateTools.CornerTimeDate
-- uid: Nitrocid.Kernel.Time.TimeDateTools.CornerTimeDate*
-  name: CornerTimeDate
-  href: api/Nitrocid.Kernel.Time.TimeDateTools.html#Nitrocid_Kernel_Time_TimeDateTools_CornerTimeDate_
-  commentId: Overload:Nitrocid.Kernel.Time.TimeDateTools.CornerTimeDate
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Time.TimeDateTools.CornerTimeDate
-  nameWithType: TimeDateTools.CornerTimeDate
 - uid: Nitrocid.Kernel.Time.TimeDateTools.GetRemainingTimeFrom(System.DateTime,System.Int32)
   name: GetRemainingTimeFrom(DateTime, int)
   href: api/Nitrocid.Kernel.Time.TimeDateTools.html#Nitrocid_Kernel_Time_TimeDateTools_GetRemainingTimeFrom_System_DateTime_System_Int32_
@@ -29282,32 +28782,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Time.TimeDateTools.KernelDateTimeUtc
   nameWithType: TimeDateTools.KernelDateTimeUtc
-- uid: Nitrocid.Kernel.Time.TimeDateTools.LongTimeDate
-  name: LongTimeDate
-  href: api/Nitrocid.Kernel.Time.TimeDateTools.html#Nitrocid_Kernel_Time_TimeDateTools_LongTimeDate
-  commentId: P:Nitrocid.Kernel.Time.TimeDateTools.LongTimeDate
-  fullName: Nitrocid.Kernel.Time.TimeDateTools.LongTimeDate
-  nameWithType: TimeDateTools.LongTimeDate
-- uid: Nitrocid.Kernel.Time.TimeDateTools.LongTimeDate*
-  name: LongTimeDate
-  href: api/Nitrocid.Kernel.Time.TimeDateTools.html#Nitrocid_Kernel_Time_TimeDateTools_LongTimeDate_
-  commentId: Overload:Nitrocid.Kernel.Time.TimeDateTools.LongTimeDate
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Time.TimeDateTools.LongTimeDate
-  nameWithType: TimeDateTools.LongTimeDate
-- uid: Nitrocid.Kernel.Time.TimeDateTools.ShowCurrentTimeBeforeLogin
-  name: ShowCurrentTimeBeforeLogin
-  href: api/Nitrocid.Kernel.Time.TimeDateTools.html#Nitrocid_Kernel_Time_TimeDateTools_ShowCurrentTimeBeforeLogin
-  commentId: P:Nitrocid.Kernel.Time.TimeDateTools.ShowCurrentTimeBeforeLogin
-  fullName: Nitrocid.Kernel.Time.TimeDateTools.ShowCurrentTimeBeforeLogin
-  nameWithType: TimeDateTools.ShowCurrentTimeBeforeLogin
-- uid: Nitrocid.Kernel.Time.TimeDateTools.ShowCurrentTimeBeforeLogin*
-  name: ShowCurrentTimeBeforeLogin
-  href: api/Nitrocid.Kernel.Time.TimeDateTools.html#Nitrocid_Kernel_Time_TimeDateTools_ShowCurrentTimeBeforeLogin_
-  commentId: Overload:Nitrocid.Kernel.Time.TimeDateTools.ShowCurrentTimeBeforeLogin
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Time.TimeDateTools.ShowCurrentTimeBeforeLogin
-  nameWithType: TimeDateTools.ShowCurrentTimeBeforeLogin
 - uid: Nitrocid.Kernel.Time.Timezones
   name: Nitrocid.Kernel.Time.Timezones
   href: api/Nitrocid.Kernel.Time.Timezones.html
@@ -29737,19 +29211,6 @@ references:
   commentId: T:Nitrocid.Kernel.Updates.UpdateManager
   fullName: Nitrocid.Kernel.Updates.UpdateManager
   nameWithType: UpdateManager
-- uid: Nitrocid.Kernel.Updates.UpdateManager.AutoDownloadUpdate
-  name: AutoDownloadUpdate
-  href: api/Nitrocid.Kernel.Updates.UpdateManager.html#Nitrocid_Kernel_Updates_UpdateManager_AutoDownloadUpdate
-  commentId: P:Nitrocid.Kernel.Updates.UpdateManager.AutoDownloadUpdate
-  fullName: Nitrocid.Kernel.Updates.UpdateManager.AutoDownloadUpdate
-  nameWithType: UpdateManager.AutoDownloadUpdate
-- uid: Nitrocid.Kernel.Updates.UpdateManager.AutoDownloadUpdate*
-  name: AutoDownloadUpdate
-  href: api/Nitrocid.Kernel.Updates.UpdateManager.html#Nitrocid_Kernel_Updates_UpdateManager_AutoDownloadUpdate_
-  commentId: Overload:Nitrocid.Kernel.Updates.UpdateManager.AutoDownloadUpdate
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Updates.UpdateManager.AutoDownloadUpdate
-  nameWithType: UpdateManager.AutoDownloadUpdate
 - uid: Nitrocid.Kernel.Updates.UpdateManager.CheckKernelUpdates
   name: CheckKernelUpdates()
   href: api/Nitrocid.Kernel.Updates.UpdateManager.html#Nitrocid_Kernel_Updates_UpdateManager_CheckKernelUpdates
@@ -29763,19 +29224,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Updates.UpdateManager.CheckKernelUpdates
   nameWithType: UpdateManager.CheckKernelUpdates
-- uid: Nitrocid.Kernel.Updates.UpdateManager.CheckUpdateStart
-  name: CheckUpdateStart
-  href: api/Nitrocid.Kernel.Updates.UpdateManager.html#Nitrocid_Kernel_Updates_UpdateManager_CheckUpdateStart
-  commentId: P:Nitrocid.Kernel.Updates.UpdateManager.CheckUpdateStart
-  fullName: Nitrocid.Kernel.Updates.UpdateManager.CheckUpdateStart
-  nameWithType: UpdateManager.CheckUpdateStart
-- uid: Nitrocid.Kernel.Updates.UpdateManager.CheckUpdateStart*
-  name: CheckUpdateStart
-  href: api/Nitrocid.Kernel.Updates.UpdateManager.html#Nitrocid_Kernel_Updates_UpdateManager_CheckUpdateStart_
-  commentId: Overload:Nitrocid.Kernel.Updates.UpdateManager.CheckUpdateStart
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Updates.UpdateManager.CheckUpdateStart
-  nameWithType: UpdateManager.CheckUpdateStart
 - uid: Nitrocid.Kernel.Updates.UpdateManager.FetchAddonPack
   name: FetchAddonPack()
   href: api/Nitrocid.Kernel.Updates.UpdateManager.html#Nitrocid_Kernel_Updates_UpdateManager_FetchAddonPack
@@ -29866,19 +29314,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Languages.CultureManager.CurrentCult
   nameWithType: CultureManager.CurrentCult
-- uid: Nitrocid.Languages.CultureManager.CurrentCultStr
-  name: CurrentCultStr
-  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_CurrentCultStr
-  commentId: P:Nitrocid.Languages.CultureManager.CurrentCultStr
-  fullName: Nitrocid.Languages.CultureManager.CurrentCultStr
-  nameWithType: CultureManager.CurrentCultStr
-- uid: Nitrocid.Languages.CultureManager.CurrentCultStr*
-  name: CurrentCultStr
-  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_CurrentCultStr_
-  commentId: Overload:Nitrocid.Languages.CultureManager.CurrentCultStr
-  isSpec: "True"
-  fullName: Nitrocid.Languages.CultureManager.CurrentCultStr
-  nameWithType: CultureManager.CurrentCultStr
 - uid: Nitrocid.Languages.CultureManager.GetCultureNamesFromCurrentLang
   name: GetCultureNamesFromCurrentLang()
   href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_GetCultureNamesFromCurrentLang
@@ -30138,19 +29573,6 @@ references:
   commentId: T:Nitrocid.Languages.LanguageManager
   fullName: Nitrocid.Languages.LanguageManager
   nameWithType: LanguageManager
-- uid: Nitrocid.Languages.LanguageManager.CurrentLanguage
-  name: CurrentLanguage
-  href: api/Nitrocid.Languages.LanguageManager.html#Nitrocid_Languages_LanguageManager_CurrentLanguage
-  commentId: P:Nitrocid.Languages.LanguageManager.CurrentLanguage
-  fullName: Nitrocid.Languages.LanguageManager.CurrentLanguage
-  nameWithType: LanguageManager.CurrentLanguage
-- uid: Nitrocid.Languages.LanguageManager.CurrentLanguage*
-  name: CurrentLanguage
-  href: api/Nitrocid.Languages.LanguageManager.html#Nitrocid_Languages_LanguageManager_CurrentLanguage_
-  commentId: Overload:Nitrocid.Languages.LanguageManager.CurrentLanguage
-  isSpec: "True"
-  fullName: Nitrocid.Languages.LanguageManager.CurrentLanguage
-  nameWithType: LanguageManager.CurrentLanguage
 - uid: Nitrocid.Languages.LanguageManager.CurrentLanguageInfo
   name: CurrentLanguageInfo
   href: api/Nitrocid.Languages.LanguageManager.html#Nitrocid_Languages_LanguageManager_CurrentLanguageInfo
@@ -30222,19 +29644,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Languages.LanguageManager.InstallCustomLanguages
   nameWithType: LanguageManager.InstallCustomLanguages
-- uid: Nitrocid.Languages.LanguageManager.LangChangeCulture
-  name: LangChangeCulture
-  href: api/Nitrocid.Languages.LanguageManager.html#Nitrocid_Languages_LanguageManager_LangChangeCulture
-  commentId: P:Nitrocid.Languages.LanguageManager.LangChangeCulture
-  fullName: Nitrocid.Languages.LanguageManager.LangChangeCulture
-  nameWithType: LanguageManager.LangChangeCulture
-- uid: Nitrocid.Languages.LanguageManager.LangChangeCulture*
-  name: LangChangeCulture
-  href: api/Nitrocid.Languages.LanguageManager.html#Nitrocid_Languages_LanguageManager_LangChangeCulture_
-  commentId: Overload:Nitrocid.Languages.LanguageManager.LangChangeCulture
-  isSpec: "True"
-  fullName: Nitrocid.Languages.LanguageManager.LangChangeCulture
-  nameWithType: LanguageManager.LangChangeCulture
 - uid: Nitrocid.Languages.LanguageManager.Languages
   name: Languages
   href: api/Nitrocid.Languages.LanguageManager.html#Nitrocid_Languages_LanguageManager_Languages
@@ -30306,19 +29715,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Languages.LanguageManager.ListLanguagesWithCountry
   nameWithType: LanguageManager.ListLanguagesWithCountry
-- uid: Nitrocid.Languages.LanguageManager.SetCodepage
-  name: SetCodepage
-  href: api/Nitrocid.Languages.LanguageManager.html#Nitrocid_Languages_LanguageManager_SetCodepage
-  commentId: P:Nitrocid.Languages.LanguageManager.SetCodepage
-  fullName: Nitrocid.Languages.LanguageManager.SetCodepage
-  nameWithType: LanguageManager.SetCodepage
-- uid: Nitrocid.Languages.LanguageManager.SetCodepage*
-  name: SetCodepage
-  href: api/Nitrocid.Languages.LanguageManager.html#Nitrocid_Languages_LanguageManager_SetCodepage_
-  commentId: Overload:Nitrocid.Languages.LanguageManager.SetCodepage
-  isSpec: "True"
-  fullName: Nitrocid.Languages.LanguageManager.SetCodepage
-  nameWithType: LanguageManager.SetCodepage
 - uid: Nitrocid.Languages.LanguageManager.SetLang(System.String)
   name: SetLang(string)
   href: api/Nitrocid.Languages.LanguageManager.html#Nitrocid_Languages_LanguageManager_SetLang_System_String_
@@ -31751,32 +31147,6 @@ references:
   commentId: T:Nitrocid.Misc.Notifications.NotificationManager
   fullName: Nitrocid.Misc.Notifications.NotificationManager
   nameWithType: NotificationManager
-- uid: Nitrocid.Misc.Notifications.NotificationManager.DoNotDisturb
-  name: DoNotDisturb
-  href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_DoNotDisturb
-  commentId: P:Nitrocid.Misc.Notifications.NotificationManager.DoNotDisturb
-  fullName: Nitrocid.Misc.Notifications.NotificationManager.DoNotDisturb
-  nameWithType: NotificationManager.DoNotDisturb
-- uid: Nitrocid.Misc.Notifications.NotificationManager.DoNotDisturb*
-  name: DoNotDisturb
-  href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_DoNotDisturb_
-  commentId: Overload:Nitrocid.Misc.Notifications.NotificationManager.DoNotDisturb
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Notifications.NotificationManager.DoNotDisturb
-  nameWithType: NotificationManager.DoNotDisturb
-- uid: Nitrocid.Misc.Notifications.NotificationManager.DrawBorderNotification
-  name: DrawBorderNotification
-  href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_DrawBorderNotification
-  commentId: P:Nitrocid.Misc.Notifications.NotificationManager.DrawBorderNotification
-  fullName: Nitrocid.Misc.Notifications.NotificationManager.DrawBorderNotification
-  nameWithType: NotificationManager.DrawBorderNotification
-- uid: Nitrocid.Misc.Notifications.NotificationManager.DrawBorderNotification*
-  name: DrawBorderNotification
-  href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_DrawBorderNotification_
-  commentId: Overload:Nitrocid.Misc.Notifications.NotificationManager.DrawBorderNotification
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Notifications.NotificationManager.DrawBorderNotification
-  nameWithType: NotificationManager.DrawBorderNotification
 - uid: Nitrocid.Misc.Notifications.NotificationManager.NotifDismiss(System.Int32)
   name: NotifDismiss(int)
   href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_NotifDismiss_System_Int32_
@@ -31819,84 +31189,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Notifications.NotificationManager.NotifRecents
   nameWithType: NotificationManager.NotifRecents
-- uid: Nitrocid.Misc.Notifications.NotificationManager.NotifyDisplayAsAsterisk
-  name: NotifyDisplayAsAsterisk
-  href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_NotifyDisplayAsAsterisk
-  commentId: P:Nitrocid.Misc.Notifications.NotificationManager.NotifyDisplayAsAsterisk
-  fullName: Nitrocid.Misc.Notifications.NotificationManager.NotifyDisplayAsAsterisk
-  nameWithType: NotificationManager.NotifyDisplayAsAsterisk
-- uid: Nitrocid.Misc.Notifications.NotificationManager.NotifyDisplayAsAsterisk*
-  name: NotifyDisplayAsAsterisk
-  href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_NotifyDisplayAsAsterisk_
-  commentId: Overload:Nitrocid.Misc.Notifications.NotificationManager.NotifyDisplayAsAsterisk
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Notifications.NotificationManager.NotifyDisplayAsAsterisk
-  nameWithType: NotificationManager.NotifyDisplayAsAsterisk
-- uid: Nitrocid.Misc.Notifications.NotificationManager.NotifyLeftFrameChar
-  name: NotifyLeftFrameChar
-  href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_NotifyLeftFrameChar
-  commentId: P:Nitrocid.Misc.Notifications.NotificationManager.NotifyLeftFrameChar
-  fullName: Nitrocid.Misc.Notifications.NotificationManager.NotifyLeftFrameChar
-  nameWithType: NotificationManager.NotifyLeftFrameChar
-- uid: Nitrocid.Misc.Notifications.NotificationManager.NotifyLeftFrameChar*
-  name: NotifyLeftFrameChar
-  href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_NotifyLeftFrameChar_
-  commentId: Overload:Nitrocid.Misc.Notifications.NotificationManager.NotifyLeftFrameChar
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Notifications.NotificationManager.NotifyLeftFrameChar
-  nameWithType: NotificationManager.NotifyLeftFrameChar
-- uid: Nitrocid.Misc.Notifications.NotificationManager.NotifyLowerFrameChar
-  name: NotifyLowerFrameChar
-  href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_NotifyLowerFrameChar
-  commentId: P:Nitrocid.Misc.Notifications.NotificationManager.NotifyLowerFrameChar
-  fullName: Nitrocid.Misc.Notifications.NotificationManager.NotifyLowerFrameChar
-  nameWithType: NotificationManager.NotifyLowerFrameChar
-- uid: Nitrocid.Misc.Notifications.NotificationManager.NotifyLowerFrameChar*
-  name: NotifyLowerFrameChar
-  href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_NotifyLowerFrameChar_
-  commentId: Overload:Nitrocid.Misc.Notifications.NotificationManager.NotifyLowerFrameChar
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Notifications.NotificationManager.NotifyLowerFrameChar
-  nameWithType: NotificationManager.NotifyLowerFrameChar
-- uid: Nitrocid.Misc.Notifications.NotificationManager.NotifyLowerLeftCornerChar
-  name: NotifyLowerLeftCornerChar
-  href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_NotifyLowerLeftCornerChar
-  commentId: P:Nitrocid.Misc.Notifications.NotificationManager.NotifyLowerLeftCornerChar
-  fullName: Nitrocid.Misc.Notifications.NotificationManager.NotifyLowerLeftCornerChar
-  nameWithType: NotificationManager.NotifyLowerLeftCornerChar
-- uid: Nitrocid.Misc.Notifications.NotificationManager.NotifyLowerLeftCornerChar*
-  name: NotifyLowerLeftCornerChar
-  href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_NotifyLowerLeftCornerChar_
-  commentId: Overload:Nitrocid.Misc.Notifications.NotificationManager.NotifyLowerLeftCornerChar
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Notifications.NotificationManager.NotifyLowerLeftCornerChar
-  nameWithType: NotificationManager.NotifyLowerLeftCornerChar
-- uid: Nitrocid.Misc.Notifications.NotificationManager.NotifyLowerRightCornerChar
-  name: NotifyLowerRightCornerChar
-  href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_NotifyLowerRightCornerChar
-  commentId: P:Nitrocid.Misc.Notifications.NotificationManager.NotifyLowerRightCornerChar
-  fullName: Nitrocid.Misc.Notifications.NotificationManager.NotifyLowerRightCornerChar
-  nameWithType: NotificationManager.NotifyLowerRightCornerChar
-- uid: Nitrocid.Misc.Notifications.NotificationManager.NotifyLowerRightCornerChar*
-  name: NotifyLowerRightCornerChar
-  href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_NotifyLowerRightCornerChar_
-  commentId: Overload:Nitrocid.Misc.Notifications.NotificationManager.NotifyLowerRightCornerChar
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Notifications.NotificationManager.NotifyLowerRightCornerChar
-  nameWithType: NotificationManager.NotifyLowerRightCornerChar
-- uid: Nitrocid.Misc.Notifications.NotificationManager.NotifyRightFrameChar
-  name: NotifyRightFrameChar
-  href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_NotifyRightFrameChar
-  commentId: P:Nitrocid.Misc.Notifications.NotificationManager.NotifyRightFrameChar
-  fullName: Nitrocid.Misc.Notifications.NotificationManager.NotifyRightFrameChar
-  nameWithType: NotificationManager.NotifyRightFrameChar
-- uid: Nitrocid.Misc.Notifications.NotificationManager.NotifyRightFrameChar*
-  name: NotifyRightFrameChar
-  href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_NotifyRightFrameChar_
-  commentId: Overload:Nitrocid.Misc.Notifications.NotificationManager.NotifyRightFrameChar
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Notifications.NotificationManager.NotifyRightFrameChar
-  nameWithType: NotificationManager.NotifyRightFrameChar
 - uid: Nitrocid.Misc.Notifications.NotificationManager.NotifySend(Nitrocid.Misc.Notifications.Notification)
   name: NotifySend(Notification)
   href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_NotifySend_Nitrocid_Misc_Notifications_Notification_
@@ -31926,45 +31218,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Notifications.NotificationManager.NotifySendRange
   nameWithType: NotificationManager.NotifySendRange
-- uid: Nitrocid.Misc.Notifications.NotificationManager.NotifyUpperFrameChar
-  name: NotifyUpperFrameChar
-  href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_NotifyUpperFrameChar
-  commentId: P:Nitrocid.Misc.Notifications.NotificationManager.NotifyUpperFrameChar
-  fullName: Nitrocid.Misc.Notifications.NotificationManager.NotifyUpperFrameChar
-  nameWithType: NotificationManager.NotifyUpperFrameChar
-- uid: Nitrocid.Misc.Notifications.NotificationManager.NotifyUpperFrameChar*
-  name: NotifyUpperFrameChar
-  href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_NotifyUpperFrameChar_
-  commentId: Overload:Nitrocid.Misc.Notifications.NotificationManager.NotifyUpperFrameChar
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Notifications.NotificationManager.NotifyUpperFrameChar
-  nameWithType: NotificationManager.NotifyUpperFrameChar
-- uid: Nitrocid.Misc.Notifications.NotificationManager.NotifyUpperLeftCornerChar
-  name: NotifyUpperLeftCornerChar
-  href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_NotifyUpperLeftCornerChar
-  commentId: P:Nitrocid.Misc.Notifications.NotificationManager.NotifyUpperLeftCornerChar
-  fullName: Nitrocid.Misc.Notifications.NotificationManager.NotifyUpperLeftCornerChar
-  nameWithType: NotificationManager.NotifyUpperLeftCornerChar
-- uid: Nitrocid.Misc.Notifications.NotificationManager.NotifyUpperLeftCornerChar*
-  name: NotifyUpperLeftCornerChar
-  href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_NotifyUpperLeftCornerChar_
-  commentId: Overload:Nitrocid.Misc.Notifications.NotificationManager.NotifyUpperLeftCornerChar
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Notifications.NotificationManager.NotifyUpperLeftCornerChar
-  nameWithType: NotificationManager.NotifyUpperLeftCornerChar
-- uid: Nitrocid.Misc.Notifications.NotificationManager.NotifyUpperRightCornerChar
-  name: NotifyUpperRightCornerChar
-  href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_NotifyUpperRightCornerChar
-  commentId: P:Nitrocid.Misc.Notifications.NotificationManager.NotifyUpperRightCornerChar
-  fullName: Nitrocid.Misc.Notifications.NotificationManager.NotifyUpperRightCornerChar
-  nameWithType: NotificationManager.NotifyUpperRightCornerChar
-- uid: Nitrocid.Misc.Notifications.NotificationManager.NotifyUpperRightCornerChar*
-  name: NotifyUpperRightCornerChar
-  href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_NotifyUpperRightCornerChar_
-  commentId: Overload:Nitrocid.Misc.Notifications.NotificationManager.NotifyUpperRightCornerChar
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Notifications.NotificationManager.NotifyUpperRightCornerChar
-  nameWithType: NotificationManager.NotifyUpperRightCornerChar
 - uid: Nitrocid.Misc.Notifications.NotificationManager.SaveRecents
   name: SaveRecents()
   href: api/Nitrocid.Misc.Notifications.NotificationManager.html#Nitrocid_Misc_Notifications_NotificationManager_SaveRecents
@@ -33741,19 +32994,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Screensaver.ScreensaverManager.LockScreen
   nameWithType: ScreensaverManager.LockScreen
-- uid: Nitrocid.Misc.Screensaver.ScreensaverManager.PasswordLock
-  name: PasswordLock
-  href: api/Nitrocid.Misc.Screensaver.ScreensaverManager.html#Nitrocid_Misc_Screensaver_ScreensaverManager_PasswordLock
-  commentId: P:Nitrocid.Misc.Screensaver.ScreensaverManager.PasswordLock
-  fullName: Nitrocid.Misc.Screensaver.ScreensaverManager.PasswordLock
-  nameWithType: ScreensaverManager.PasswordLock
-- uid: Nitrocid.Misc.Screensaver.ScreensaverManager.PasswordLock*
-  name: PasswordLock
-  href: api/Nitrocid.Misc.Screensaver.ScreensaverManager.html#Nitrocid_Misc_Screensaver_ScreensaverManager_PasswordLock_
-  commentId: Overload:Nitrocid.Misc.Screensaver.ScreensaverManager.PasswordLock
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Screensaver.ScreensaverManager.PasswordLock
-  nameWithType: ScreensaverManager.PasswordLock
 - uid: Nitrocid.Misc.Screensaver.ScreensaverManager.PreventLock
   name: PreventLock()
   href: api/Nitrocid.Misc.Screensaver.ScreensaverManager.html#Nitrocid_Misc_Screensaver_ScreensaverManager_PreventLock
@@ -33809,19 +33049,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Screensaver.ScreensaverManager.ScreenTimeout
   nameWithType: ScreensaverManager.ScreenTimeout
-- uid: Nitrocid.Misc.Screensaver.ScreensaverManager.ScreensaverDebug
-  name: ScreensaverDebug
-  href: api/Nitrocid.Misc.Screensaver.ScreensaverManager.html#Nitrocid_Misc_Screensaver_ScreensaverManager_ScreensaverDebug
-  commentId: P:Nitrocid.Misc.Screensaver.ScreensaverManager.ScreensaverDebug
-  fullName: Nitrocid.Misc.Screensaver.ScreensaverManager.ScreensaverDebug
-  nameWithType: ScreensaverManager.ScreensaverDebug
-- uid: Nitrocid.Misc.Screensaver.ScreensaverManager.ScreensaverDebug*
-  name: ScreensaverDebug
-  href: api/Nitrocid.Misc.Screensaver.ScreensaverManager.html#Nitrocid_Misc_Screensaver_ScreensaverManager_ScreensaverDebug_
-  commentId: Overload:Nitrocid.Misc.Screensaver.ScreensaverManager.ScreensaverDebug
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Screensaver.ScreensaverManager.ScreensaverDebug
-  nameWithType: ScreensaverManager.ScreensaverDebug
 - uid: Nitrocid.Misc.Screensaver.ScreensaverManager.SetDefaultScreensaver(System.String)
   name: SetDefaultScreensaver(string)
   href: api/Nitrocid.Misc.Screensaver.ScreensaverManager.html#Nitrocid_Misc_Screensaver_ScreensaverManager_SetDefaultScreensaver_System_String_
@@ -34374,19 +33601,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Splash.SplashManager.CurrentSplashInfo
   nameWithType: SplashManager.CurrentSplashInfo
-- uid: Nitrocid.Misc.Splash.SplashManager.EnableSplash
-  name: EnableSplash
-  href: api/Nitrocid.Misc.Splash.SplashManager.html#Nitrocid_Misc_Splash_SplashManager_EnableSplash
-  commentId: P:Nitrocid.Misc.Splash.SplashManager.EnableSplash
-  fullName: Nitrocid.Misc.Splash.SplashManager.EnableSplash
-  nameWithType: SplashManager.EnableSplash
-- uid: Nitrocid.Misc.Splash.SplashManager.EnableSplash*
-  name: EnableSplash
-  href: api/Nitrocid.Misc.Splash.SplashManager.html#Nitrocid_Misc_Splash_SplashManager_EnableSplash_
-  commentId: Overload:Nitrocid.Misc.Splash.SplashManager.EnableSplash
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Splash.SplashManager.EnableSplash
-  nameWithType: SplashManager.EnableSplash
 - uid: Nitrocid.Misc.Splash.SplashManager.EndSplashOut
   name: EndSplashOut()
   href: api/Nitrocid.Misc.Splash.SplashManager.html#Nitrocid_Misc_Splash_SplashManager_EndSplashOut
@@ -34513,19 +33727,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Splash.SplashManager.RegisterSplash
   nameWithType: SplashManager.RegisterSplash
-- uid: Nitrocid.Misc.Splash.SplashManager.SplashName
-  name: SplashName
-  href: api/Nitrocid.Misc.Splash.SplashManager.html#Nitrocid_Misc_Splash_SplashManager_SplashName
-  commentId: P:Nitrocid.Misc.Splash.SplashManager.SplashName
-  fullName: Nitrocid.Misc.Splash.SplashManager.SplashName
-  nameWithType: SplashManager.SplashName
-- uid: Nitrocid.Misc.Splash.SplashManager.SplashName*
-  name: SplashName
-  href: api/Nitrocid.Misc.Splash.SplashManager.html#Nitrocid_Misc_Splash_SplashManager_SplashName_
-  commentId: Overload:Nitrocid.Misc.Splash.SplashManager.SplashName
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Splash.SplashManager.SplashName
-  nameWithType: SplashManager.SplashName
 - uid: Nitrocid.Misc.Splash.SplashManager.Splashes
   name: Splashes
   href: api/Nitrocid.Misc.Splash.SplashManager.html#Nitrocid_Misc_Splash_SplashManager_Splashes
@@ -35841,32 +35042,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Modifications.ModManager.AddModToBlacklist
   nameWithType: ModManager.AddModToBlacklist
-- uid: Nitrocid.Modifications.ModManager.AllowUntrustedMods
-  name: AllowUntrustedMods
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_AllowUntrustedMods
-  commentId: P:Nitrocid.Modifications.ModManager.AllowUntrustedMods
-  fullName: Nitrocid.Modifications.ModManager.AllowUntrustedMods
-  nameWithType: ModManager.AllowUntrustedMods
-- uid: Nitrocid.Modifications.ModManager.AllowUntrustedMods*
-  name: AllowUntrustedMods
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_AllowUntrustedMods_
-  commentId: Overload:Nitrocid.Modifications.ModManager.AllowUntrustedMods
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModManager.AllowUntrustedMods
-  nameWithType: ModManager.AllowUntrustedMods
-- uid: Nitrocid.Modifications.ModManager.BlacklistedModsString
-  name: BlacklistedModsString
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_BlacklistedModsString
-  commentId: P:Nitrocid.Modifications.ModManager.BlacklistedModsString
-  fullName: Nitrocid.Modifications.ModManager.BlacklistedModsString
-  nameWithType: ModManager.BlacklistedModsString
-- uid: Nitrocid.Modifications.ModManager.BlacklistedModsString*
-  name: BlacklistedModsString
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_BlacklistedModsString_
-  commentId: Overload:Nitrocid.Modifications.ModManager.BlacklistedModsString
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModManager.BlacklistedModsString
-  nameWithType: ModManager.BlacklistedModsString
 - uid: Nitrocid.Modifications.ModManager.GetBlacklistedMods
   name: GetBlacklistedMods()
   href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_GetBlacklistedMods
@@ -36017,19 +35192,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Modifications.ModManager.RemoveModFromBlacklist
   nameWithType: ModManager.RemoveModFromBlacklist
-- uid: Nitrocid.Modifications.ModManager.StartKernelMods
-  name: StartKernelMods
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_StartKernelMods
-  commentId: P:Nitrocid.Modifications.ModManager.StartKernelMods
-  fullName: Nitrocid.Modifications.ModManager.StartKernelMods
-  nameWithType: ModManager.StartKernelMods
-- uid: Nitrocid.Modifications.ModManager.StartKernelMods*
-  name: StartKernelMods
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_StartKernelMods_
-  commentId: Overload:Nitrocid.Modifications.ModManager.StartKernelMods
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModManager.StartKernelMods
-  nameWithType: ModManager.StartKernelMods
 - uid: Nitrocid.Modifications.ModManager.StartMod(System.String,Nitrocid.Modifications.ModLoadPriority)
   name: StartMod(string, ModLoadPriority)
   href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_StartMod_System_String_Nitrocid_Modifications_ModLoadPriority_
@@ -36600,19 +35762,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Network.NetworkTools.ChangeHostname
   nameWithType: NetworkTools.ChangeHostname
-- uid: Nitrocid.Network.NetworkTools.DownloadRetries
-  name: DownloadRetries
-  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_DownloadRetries
-  commentId: P:Nitrocid.Network.NetworkTools.DownloadRetries
-  fullName: Nitrocid.Network.NetworkTools.DownloadRetries
-  nameWithType: NetworkTools.DownloadRetries
-- uid: Nitrocid.Network.NetworkTools.DownloadRetries*
-  name: DownloadRetries
-  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_DownloadRetries_
-  commentId: Overload:Nitrocid.Network.NetworkTools.DownloadRetries
-  isSpec: "True"
-  fullName: Nitrocid.Network.NetworkTools.DownloadRetries
-  nameWithType: NetworkTools.DownloadRetries
 - uid: Nitrocid.Network.NetworkTools.GetFilenameFromUrl(System.String)
   name: GetFilenameFromUrl(string)
   href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_GetFilenameFromUrl_System_String_
@@ -36642,19 +35791,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Network.NetworkTools.GetOnlineDevicesInNetwork
   nameWithType: NetworkTools.GetOnlineDevicesInNetwork
-- uid: Nitrocid.Network.NetworkTools.HostName
-  name: HostName
-  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_HostName
-  commentId: P:Nitrocid.Network.NetworkTools.HostName
-  fullName: Nitrocid.Network.NetworkTools.HostName
-  nameWithType: NetworkTools.HostName
-- uid: Nitrocid.Network.NetworkTools.HostName*
-  name: HostName
-  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_HostName_
-  commentId: Overload:Nitrocid.Network.NetworkTools.HostName
-  isSpec: "True"
-  fullName: Nitrocid.Network.NetworkTools.HostName
-  nameWithType: NetworkTools.HostName
 - uid: Nitrocid.Network.NetworkTools.InternetAvailable
   name: InternetAvailable
   href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_InternetAvailable
@@ -36724,32 +35860,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Network.NetworkTools.PingAddress
   nameWithType: NetworkTools.PingAddress
-- uid: Nitrocid.Network.NetworkTools.PingTimeout
-  name: PingTimeout
-  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_PingTimeout
-  commentId: P:Nitrocid.Network.NetworkTools.PingTimeout
-  fullName: Nitrocid.Network.NetworkTools.PingTimeout
-  nameWithType: NetworkTools.PingTimeout
-- uid: Nitrocid.Network.NetworkTools.PingTimeout*
-  name: PingTimeout
-  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_PingTimeout_
-  commentId: Overload:Nitrocid.Network.NetworkTools.PingTimeout
-  isSpec: "True"
-  fullName: Nitrocid.Network.NetworkTools.PingTimeout
-  nameWithType: NetworkTools.PingTimeout
-- uid: Nitrocid.Network.NetworkTools.ShowProgress
-  name: ShowProgress
-  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_ShowProgress
-  commentId: P:Nitrocid.Network.NetworkTools.ShowProgress
-  fullName: Nitrocid.Network.NetworkTools.ShowProgress
-  nameWithType: NetworkTools.ShowProgress
-- uid: Nitrocid.Network.NetworkTools.ShowProgress*
-  name: ShowProgress
-  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_ShowProgress_
-  commentId: Overload:Nitrocid.Network.NetworkTools.ShowProgress
-  isSpec: "True"
-  fullName: Nitrocid.Network.NetworkTools.ShowProgress
-  nameWithType: NetworkTools.ShowProgress
 - uid: Nitrocid.Network.NetworkTools.TryChangeHostname(System.String)
   name: TryChangeHostname(string)
   href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_TryChangeHostname_System_String_
@@ -36766,19 +35876,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Network.NetworkTools.TryChangeHostname
   nameWithType: NetworkTools.TryChangeHostname
-- uid: Nitrocid.Network.NetworkTools.UploadRetries
-  name: UploadRetries
-  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_UploadRetries
-  commentId: P:Nitrocid.Network.NetworkTools.UploadRetries
-  fullName: Nitrocid.Network.NetworkTools.UploadRetries
-  nameWithType: NetworkTools.UploadRetries
-- uid: Nitrocid.Network.NetworkTools.UploadRetries*
-  name: UploadRetries
-  href: api/Nitrocid.Network.NetworkTools.html#Nitrocid_Network_NetworkTools_UploadRetries_
-  commentId: Overload:Nitrocid.Network.NetworkTools.UploadRetries
-  isSpec: "True"
-  fullName: Nitrocid.Network.NetworkTools.UploadRetries
-  nameWithType: NetworkTools.UploadRetries
 - uid: Nitrocid.Network.SpeedDial
   name: Nitrocid.Network.SpeedDial
   href: api/Nitrocid.Network.SpeedDial.html
@@ -37058,32 +36155,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Network.Transfer.NetworkTransfer.DownloadFile
   nameWithType: NetworkTransfer.DownloadFile
-- uid: Nitrocid.Network.Transfer.NetworkTransfer.DownloadNotificationProvoke
-  name: DownloadNotificationProvoke
-  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_DownloadNotificationProvoke
-  commentId: P:Nitrocid.Network.Transfer.NetworkTransfer.DownloadNotificationProvoke
-  fullName: Nitrocid.Network.Transfer.NetworkTransfer.DownloadNotificationProvoke
-  nameWithType: NetworkTransfer.DownloadNotificationProvoke
-- uid: Nitrocid.Network.Transfer.NetworkTransfer.DownloadNotificationProvoke*
-  name: DownloadNotificationProvoke
-  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_DownloadNotificationProvoke_
-  commentId: Overload:Nitrocid.Network.Transfer.NetworkTransfer.DownloadNotificationProvoke
-  isSpec: "True"
-  fullName: Nitrocid.Network.Transfer.NetworkTransfer.DownloadNotificationProvoke
-  nameWithType: NetworkTransfer.DownloadNotificationProvoke
-- uid: Nitrocid.Network.Transfer.NetworkTransfer.DownloadPercentagePrint
-  name: DownloadPercentagePrint
-  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_DownloadPercentagePrint
-  commentId: P:Nitrocid.Network.Transfer.NetworkTransfer.DownloadPercentagePrint
-  fullName: Nitrocid.Network.Transfer.NetworkTransfer.DownloadPercentagePrint
-  nameWithType: NetworkTransfer.DownloadPercentagePrint
-- uid: Nitrocid.Network.Transfer.NetworkTransfer.DownloadPercentagePrint*
-  name: DownloadPercentagePrint
-  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_DownloadPercentagePrint_
-  commentId: Overload:Nitrocid.Network.Transfer.NetworkTransfer.DownloadPercentagePrint
-  isSpec: "True"
-  fullName: Nitrocid.Network.Transfer.NetworkTransfer.DownloadPercentagePrint
-  nameWithType: NetworkTransfer.DownloadPercentagePrint
 - uid: Nitrocid.Network.Transfer.NetworkTransfer.DownloadString(System.String)
   name: DownloadString(string)
   href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_DownloadString_System_String_
@@ -37134,32 +36205,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Network.Transfer.NetworkTransfer.UploadFile
   nameWithType: NetworkTransfer.UploadFile
-- uid: Nitrocid.Network.Transfer.NetworkTransfer.UploadNotificationProvoke
-  name: UploadNotificationProvoke
-  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_UploadNotificationProvoke
-  commentId: P:Nitrocid.Network.Transfer.NetworkTransfer.UploadNotificationProvoke
-  fullName: Nitrocid.Network.Transfer.NetworkTransfer.UploadNotificationProvoke
-  nameWithType: NetworkTransfer.UploadNotificationProvoke
-- uid: Nitrocid.Network.Transfer.NetworkTransfer.UploadNotificationProvoke*
-  name: UploadNotificationProvoke
-  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_UploadNotificationProvoke_
-  commentId: Overload:Nitrocid.Network.Transfer.NetworkTransfer.UploadNotificationProvoke
-  isSpec: "True"
-  fullName: Nitrocid.Network.Transfer.NetworkTransfer.UploadNotificationProvoke
-  nameWithType: NetworkTransfer.UploadNotificationProvoke
-- uid: Nitrocid.Network.Transfer.NetworkTransfer.UploadPercentagePrint
-  name: UploadPercentagePrint
-  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_UploadPercentagePrint
-  commentId: P:Nitrocid.Network.Transfer.NetworkTransfer.UploadPercentagePrint
-  fullName: Nitrocid.Network.Transfer.NetworkTransfer.UploadPercentagePrint
-  nameWithType: NetworkTransfer.UploadPercentagePrint
-- uid: Nitrocid.Network.Transfer.NetworkTransfer.UploadPercentagePrint*
-  name: UploadPercentagePrint
-  href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_UploadPercentagePrint_
-  commentId: Overload:Nitrocid.Network.Transfer.NetworkTransfer.UploadPercentagePrint
-  isSpec: "True"
-  fullName: Nitrocid.Network.Transfer.NetworkTransfer.UploadPercentagePrint
-  nameWithType: NetworkTransfer.UploadPercentagePrint
 - uid: Nitrocid.Network.Transfer.NetworkTransfer.UploadString(System.String,System.String)
   name: UploadString(string, string)
   href: api/Nitrocid.Network.Transfer.NetworkTransfer.html#Nitrocid_Network_Transfer_NetworkTransfer_UploadString_System_String_System_String_
@@ -37336,32 +36381,6 @@ references:
   commentId: T:Nitrocid.Network.Types.RPC.RemoteProcedure
   fullName: Nitrocid.Network.Types.RPC.RemoteProcedure
   nameWithType: RemoteProcedure
-- uid: Nitrocid.Network.Types.RPC.RemoteProcedure.RPCEnabled
-  name: RPCEnabled
-  href: api/Nitrocid.Network.Types.RPC.RemoteProcedure.html#Nitrocid_Network_Types_RPC_RemoteProcedure_RPCEnabled
-  commentId: P:Nitrocid.Network.Types.RPC.RemoteProcedure.RPCEnabled
-  fullName: Nitrocid.Network.Types.RPC.RemoteProcedure.RPCEnabled
-  nameWithType: RemoteProcedure.RPCEnabled
-- uid: Nitrocid.Network.Types.RPC.RemoteProcedure.RPCEnabled*
-  name: RPCEnabled
-  href: api/Nitrocid.Network.Types.RPC.RemoteProcedure.html#Nitrocid_Network_Types_RPC_RemoteProcedure_RPCEnabled_
-  commentId: Overload:Nitrocid.Network.Types.RPC.RemoteProcedure.RPCEnabled
-  isSpec: "True"
-  fullName: Nitrocid.Network.Types.RPC.RemoteProcedure.RPCEnabled
-  nameWithType: RemoteProcedure.RPCEnabled
-- uid: Nitrocid.Network.Types.RPC.RemoteProcedure.RPCPort
-  name: RPCPort
-  href: api/Nitrocid.Network.Types.RPC.RemoteProcedure.html#Nitrocid_Network_Types_RPC_RemoteProcedure_RPCPort
-  commentId: P:Nitrocid.Network.Types.RPC.RemoteProcedure.RPCPort
-  fullName: Nitrocid.Network.Types.RPC.RemoteProcedure.RPCPort
-  nameWithType: RemoteProcedure.RPCPort
-- uid: Nitrocid.Network.Types.RPC.RemoteProcedure.RPCPort*
-  name: RPCPort
-  href: api/Nitrocid.Network.Types.RPC.RemoteProcedure.html#Nitrocid_Network_Types_RPC_RemoteProcedure_RPCPort_
-  commentId: Overload:Nitrocid.Network.Types.RPC.RemoteProcedure.RPCPort
-  isSpec: "True"
-  fullName: Nitrocid.Network.Types.RPC.RemoteProcedure.RPCPort
-  nameWithType: RemoteProcedure.RPCPort
 - uid: Nitrocid.Network.Types.RPC.RemoteProcedure.RPCStarted
   name: RPCStarted
   href: api/Nitrocid.Network.Types.RPC.RemoteProcedure.html#Nitrocid_Network_Types_RPC_RemoteProcedure_RPCStarted
@@ -37426,19 +36445,6 @@ references:
   commentId: T:Nitrocid.Network.Types.RSS.RSSTools
   fullName: Nitrocid.Network.Types.RSS.RSSTools
   nameWithType: RSSTools
-- uid: Nitrocid.Network.Types.RSS.RSSTools.RssHeadlineUrl
-  name: RssHeadlineUrl
-  href: api/Nitrocid.Network.Types.RSS.RSSTools.html#Nitrocid_Network_Types_RSS_RSSTools_RssHeadlineUrl
-  commentId: P:Nitrocid.Network.Types.RSS.RSSTools.RssHeadlineUrl
-  fullName: Nitrocid.Network.Types.RSS.RSSTools.RssHeadlineUrl
-  nameWithType: RSSTools.RssHeadlineUrl
-- uid: Nitrocid.Network.Types.RSS.RSSTools.RssHeadlineUrl*
-  name: RssHeadlineUrl
-  href: api/Nitrocid.Network.Types.RSS.RSSTools.html#Nitrocid_Network_Types_RSS_RSSTools_RssHeadlineUrl_
-  commentId: Overload:Nitrocid.Network.Types.RSS.RSSTools.RssHeadlineUrl
-  isSpec: "True"
-  fullName: Nitrocid.Network.Types.RSS.RSSTools.RssHeadlineUrl
-  nameWithType: RSSTools.RssHeadlineUrl
 - uid: Nitrocid.Network.Types.RSS.RSSTools.ShowHeadlineLogin
   name: ShowHeadlineLogin()
   href: api/Nitrocid.Network.Types.RSS.RSSTools.html#Nitrocid_Network_Types_RSS_RSSTools_ShowHeadlineLogin
@@ -37452,19 +36458,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Network.Types.RSS.RSSTools.ShowHeadlineLogin
   nameWithType: RSSTools.ShowHeadlineLogin
-- uid: Nitrocid.Network.Types.RSS.RSSTools.ShowHeadlineOnLogin
-  name: ShowHeadlineOnLogin
-  href: api/Nitrocid.Network.Types.RSS.RSSTools.html#Nitrocid_Network_Types_RSS_RSSTools_ShowHeadlineOnLogin
-  commentId: P:Nitrocid.Network.Types.RSS.RSSTools.ShowHeadlineOnLogin
-  fullName: Nitrocid.Network.Types.RSS.RSSTools.ShowHeadlineOnLogin
-  nameWithType: RSSTools.ShowHeadlineOnLogin
-- uid: Nitrocid.Network.Types.RSS.RSSTools.ShowHeadlineOnLogin*
-  name: ShowHeadlineOnLogin
-  href: api/Nitrocid.Network.Types.RSS.RSSTools.html#Nitrocid_Network_Types_RSS_RSSTools_ShowHeadlineOnLogin_
-  commentId: Overload:Nitrocid.Network.Types.RSS.RSSTools.ShowHeadlineOnLogin
-  isSpec: "True"
-  fullName: Nitrocid.Network.Types.RSS.RSSTools.ShowHeadlineOnLogin
-  nameWithType: RSSTools.ShowHeadlineOnLogin
 - uid: Nitrocid.Security.Permissions
   name: Nitrocid.Security.Permissions
   href: api/Nitrocid.Security.Permissions.html
@@ -44749,38 +43742,6 @@ references:
   commentId: N:Nitrocid.Shell.Shells.Hex
   fullName: Nitrocid.Shell.Shells.Hex
   nameWithType: Nitrocid.Shell.Shells.Hex
-- uid: Nitrocid.Shell.Shells.Hex.HexEditShellCommon
-  name: HexEditShellCommon
-  href: api/Nitrocid.Shell.Shells.Hex.HexEditShellCommon.html
-  commentId: T:Nitrocid.Shell.Shells.Hex.HexEditShellCommon
-  fullName: Nitrocid.Shell.Shells.Hex.HexEditShellCommon
-  nameWithType: HexEditShellCommon
-- uid: Nitrocid.Shell.Shells.Hex.HexEditShellCommon.AutoSaveFlag
-  name: AutoSaveFlag
-  href: api/Nitrocid.Shell.Shells.Hex.HexEditShellCommon.html#Nitrocid_Shell_Shells_Hex_HexEditShellCommon_AutoSaveFlag
-  commentId: P:Nitrocid.Shell.Shells.Hex.HexEditShellCommon.AutoSaveFlag
-  fullName: Nitrocid.Shell.Shells.Hex.HexEditShellCommon.AutoSaveFlag
-  nameWithType: HexEditShellCommon.AutoSaveFlag
-- uid: Nitrocid.Shell.Shells.Hex.HexEditShellCommon.AutoSaveFlag*
-  name: AutoSaveFlag
-  href: api/Nitrocid.Shell.Shells.Hex.HexEditShellCommon.html#Nitrocid_Shell_Shells_Hex_HexEditShellCommon_AutoSaveFlag_
-  commentId: Overload:Nitrocid.Shell.Shells.Hex.HexEditShellCommon.AutoSaveFlag
-  isSpec: "True"
-  fullName: Nitrocid.Shell.Shells.Hex.HexEditShellCommon.AutoSaveFlag
-  nameWithType: HexEditShellCommon.AutoSaveFlag
-- uid: Nitrocid.Shell.Shells.Hex.HexEditShellCommon.AutoSaveInterval
-  name: AutoSaveInterval
-  href: api/Nitrocid.Shell.Shells.Hex.HexEditShellCommon.html#Nitrocid_Shell_Shells_Hex_HexEditShellCommon_AutoSaveInterval
-  commentId: P:Nitrocid.Shell.Shells.Hex.HexEditShellCommon.AutoSaveInterval
-  fullName: Nitrocid.Shell.Shells.Hex.HexEditShellCommon.AutoSaveInterval
-  nameWithType: HexEditShellCommon.AutoSaveInterval
-- uid: Nitrocid.Shell.Shells.Hex.HexEditShellCommon.AutoSaveInterval*
-  name: AutoSaveInterval
-  href: api/Nitrocid.Shell.Shells.Hex.HexEditShellCommon.html#Nitrocid_Shell_Shells_Hex_HexEditShellCommon_AutoSaveInterval_
-  commentId: Overload:Nitrocid.Shell.Shells.Hex.HexEditShellCommon.AutoSaveInterval
-  isSpec: "True"
-  fullName: Nitrocid.Shell.Shells.Hex.HexEditShellCommon.AutoSaveInterval
-  nameWithType: HexEditShellCommon.AutoSaveInterval
 - uid: Nitrocid.Shell.Shells.Hex.HexShell
   name: HexShell
   href: api/Nitrocid.Shell.Shells.Hex.HexShell.html
@@ -45977,32 +44938,6 @@ references:
   commentId: T:Nitrocid.Shell.Shells.Text.TextEditShellCommon
   fullName: Nitrocid.Shell.Shells.Text.TextEditShellCommon
   nameWithType: TextEditShellCommon
-- uid: Nitrocid.Shell.Shells.Text.TextEditShellCommon.AutoSaveFlag
-  name: AutoSaveFlag
-  href: api/Nitrocid.Shell.Shells.Text.TextEditShellCommon.html#Nitrocid_Shell_Shells_Text_TextEditShellCommon_AutoSaveFlag
-  commentId: P:Nitrocid.Shell.Shells.Text.TextEditShellCommon.AutoSaveFlag
-  fullName: Nitrocid.Shell.Shells.Text.TextEditShellCommon.AutoSaveFlag
-  nameWithType: TextEditShellCommon.AutoSaveFlag
-- uid: Nitrocid.Shell.Shells.Text.TextEditShellCommon.AutoSaveFlag*
-  name: AutoSaveFlag
-  href: api/Nitrocid.Shell.Shells.Text.TextEditShellCommon.html#Nitrocid_Shell_Shells_Text_TextEditShellCommon_AutoSaveFlag_
-  commentId: Overload:Nitrocid.Shell.Shells.Text.TextEditShellCommon.AutoSaveFlag
-  isSpec: "True"
-  fullName: Nitrocid.Shell.Shells.Text.TextEditShellCommon.AutoSaveFlag
-  nameWithType: TextEditShellCommon.AutoSaveFlag
-- uid: Nitrocid.Shell.Shells.Text.TextEditShellCommon.AutoSaveInterval
-  name: AutoSaveInterval
-  href: api/Nitrocid.Shell.Shells.Text.TextEditShellCommon.html#Nitrocid_Shell_Shells_Text_TextEditShellCommon_AutoSaveInterval
-  commentId: P:Nitrocid.Shell.Shells.Text.TextEditShellCommon.AutoSaveInterval
-  fullName: Nitrocid.Shell.Shells.Text.TextEditShellCommon.AutoSaveInterval
-  nameWithType: TextEditShellCommon.AutoSaveInterval
-- uid: Nitrocid.Shell.Shells.Text.TextEditShellCommon.AutoSaveInterval*
-  name: AutoSaveInterval
-  href: api/Nitrocid.Shell.Shells.Text.TextEditShellCommon.html#Nitrocid_Shell_Shells_Text_TextEditShellCommon_AutoSaveInterval_
-  commentId: Overload:Nitrocid.Shell.Shells.Text.TextEditShellCommon.AutoSaveInterval
-  isSpec: "True"
-  fullName: Nitrocid.Shell.Shells.Text.TextEditShellCommon.AutoSaveInterval
-  nameWithType: TextEditShellCommon.AutoSaveInterval
 - uid: Nitrocid.Shell.Shells.Text.TextEditShellCommon.FileLines
   name: FileLines
   href: api/Nitrocid.Shell.Shells.Text.TextEditShellCommon.html#Nitrocid_Shell_Shells_Text_TextEditShellCommon_FileLines
@@ -46781,19 +45716,6 @@ references:
   commentId: T:Nitrocid.Users.Login.Handlers.BaseLoginHandler
   fullName: Nitrocid.Users.Login.Handlers.BaseLoginHandler
   nameWithType: BaseLoginHandler
-- uid: Nitrocid.Users.Login.Handlers.BaseLoginHandler.ClearOnLogin
-  name: ClearOnLogin
-  href: api/Nitrocid.Users.Login.Handlers.BaseLoginHandler.html#Nitrocid_Users_Login_Handlers_BaseLoginHandler_ClearOnLogin
-  commentId: P:Nitrocid.Users.Login.Handlers.BaseLoginHandler.ClearOnLogin
-  fullName: Nitrocid.Users.Login.Handlers.BaseLoginHandler.ClearOnLogin
-  nameWithType: BaseLoginHandler.ClearOnLogin
-- uid: Nitrocid.Users.Login.Handlers.BaseLoginHandler.ClearOnLogin*
-  name: ClearOnLogin
-  href: api/Nitrocid.Users.Login.Handlers.BaseLoginHandler.html#Nitrocid_Users_Login_Handlers_BaseLoginHandler_ClearOnLogin_
-  commentId: Overload:Nitrocid.Users.Login.Handlers.BaseLoginHandler.ClearOnLogin
-  isSpec: "True"
-  fullName: Nitrocid.Users.Login.Handlers.BaseLoginHandler.ClearOnLogin
-  nameWithType: BaseLoginHandler.ClearOnLogin
 - uid: Nitrocid.Users.Login.Handlers.BaseLoginHandler.LoginScreen
   name: LoginScreen()
   href: api/Nitrocid.Users.Login.Handlers.BaseLoginHandler.html#Nitrocid_Users_Login_Handlers_BaseLoginHandler_LoginScreen
@@ -46823,45 +45745,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Users.Login.Handlers.BaseLoginHandler.PasswordHandler
   nameWithType: BaseLoginHandler.PasswordHandler
-- uid: Nitrocid.Users.Login.Handlers.BaseLoginHandler.ShowAvailableUsers
-  name: ShowAvailableUsers
-  href: api/Nitrocid.Users.Login.Handlers.BaseLoginHandler.html#Nitrocid_Users_Login_Handlers_BaseLoginHandler_ShowAvailableUsers
-  commentId: P:Nitrocid.Users.Login.Handlers.BaseLoginHandler.ShowAvailableUsers
-  fullName: Nitrocid.Users.Login.Handlers.BaseLoginHandler.ShowAvailableUsers
-  nameWithType: BaseLoginHandler.ShowAvailableUsers
-- uid: Nitrocid.Users.Login.Handlers.BaseLoginHandler.ShowAvailableUsers*
-  name: ShowAvailableUsers
-  href: api/Nitrocid.Users.Login.Handlers.BaseLoginHandler.html#Nitrocid_Users_Login_Handlers_BaseLoginHandler_ShowAvailableUsers_
-  commentId: Overload:Nitrocid.Users.Login.Handlers.BaseLoginHandler.ShowAvailableUsers
-  isSpec: "True"
-  fullName: Nitrocid.Users.Login.Handlers.BaseLoginHandler.ShowAvailableUsers
-  nameWithType: BaseLoginHandler.ShowAvailableUsers
-- uid: Nitrocid.Users.Login.Handlers.BaseLoginHandler.ShowMAL
-  name: ShowMAL
-  href: api/Nitrocid.Users.Login.Handlers.BaseLoginHandler.html#Nitrocid_Users_Login_Handlers_BaseLoginHandler_ShowMAL
-  commentId: P:Nitrocid.Users.Login.Handlers.BaseLoginHandler.ShowMAL
-  fullName: Nitrocid.Users.Login.Handlers.BaseLoginHandler.ShowMAL
-  nameWithType: BaseLoginHandler.ShowMAL
-- uid: Nitrocid.Users.Login.Handlers.BaseLoginHandler.ShowMAL*
-  name: ShowMAL
-  href: api/Nitrocid.Users.Login.Handlers.BaseLoginHandler.html#Nitrocid_Users_Login_Handlers_BaseLoginHandler_ShowMAL_
-  commentId: Overload:Nitrocid.Users.Login.Handlers.BaseLoginHandler.ShowMAL
-  isSpec: "True"
-  fullName: Nitrocid.Users.Login.Handlers.BaseLoginHandler.ShowMAL
-  nameWithType: BaseLoginHandler.ShowMAL
-- uid: Nitrocid.Users.Login.Handlers.BaseLoginHandler.ShowMOTD
-  name: ShowMOTD
-  href: api/Nitrocid.Users.Login.Handlers.BaseLoginHandler.html#Nitrocid_Users_Login_Handlers_BaseLoginHandler_ShowMOTD
-  commentId: P:Nitrocid.Users.Login.Handlers.BaseLoginHandler.ShowMOTD
-  fullName: Nitrocid.Users.Login.Handlers.BaseLoginHandler.ShowMOTD
-  nameWithType: BaseLoginHandler.ShowMOTD
-- uid: Nitrocid.Users.Login.Handlers.BaseLoginHandler.ShowMOTD*
-  name: ShowMOTD
-  href: api/Nitrocid.Users.Login.Handlers.BaseLoginHandler.html#Nitrocid_Users_Login_Handlers_BaseLoginHandler_ShowMOTD_
-  commentId: Overload:Nitrocid.Users.Login.Handlers.BaseLoginHandler.ShowMOTD
-  isSpec: "True"
-  fullName: Nitrocid.Users.Login.Handlers.BaseLoginHandler.ShowMOTD
-  nameWithType: BaseLoginHandler.ShowMOTD
 - uid: Nitrocid.Users.Login.Handlers.BaseLoginHandler.UserSelector
   name: UserSelector()
   href: api/Nitrocid.Users.Login.Handlers.BaseLoginHandler.html#Nitrocid_Users_Login_Handlers_BaseLoginHandler_UserSelector
@@ -47067,19 +45950,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Users.Login.Login.LoginPrompt
   nameWithType: Login.LoginPrompt
-- uid: Nitrocid.Users.Login.Login.PasswordPrompt
-  name: PasswordPrompt
-  href: api/Nitrocid.Users.Login.Login.html#Nitrocid_Users_Login_Login_PasswordPrompt
-  commentId: P:Nitrocid.Users.Login.Login.PasswordPrompt
-  fullName: Nitrocid.Users.Login.Login.PasswordPrompt
-  nameWithType: Login.PasswordPrompt
-- uid: Nitrocid.Users.Login.Login.PasswordPrompt*
-  name: PasswordPrompt
-  href: api/Nitrocid.Users.Login.Login.html#Nitrocid_Users_Login_Login_PasswordPrompt_
-  commentId: Overload:Nitrocid.Users.Login.Login.PasswordPrompt
-  isSpec: "True"
-  fullName: Nitrocid.Users.Login.Login.PasswordPrompt
-  nameWithType: Login.PasswordPrompt
 - uid: Nitrocid.Users.Login.Login.ShowPasswordPrompt(System.String)
   name: ShowPasswordPrompt(string)
   href: api/Nitrocid.Users.Login.Login.html#Nitrocid_Users_Login_Login_ShowPasswordPrompt_System_String_
@@ -47096,19 +45966,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Users.Login.Login.ShowPasswordPrompt
   nameWithType: Login.ShowPasswordPrompt
-- uid: Nitrocid.Users.Login.Login.UsernamePrompt
-  name: UsernamePrompt
-  href: api/Nitrocid.Users.Login.Login.html#Nitrocid_Users_Login_Login_UsernamePrompt
-  commentId: P:Nitrocid.Users.Login.Login.UsernamePrompt
-  fullName: Nitrocid.Users.Login.Login.UsernamePrompt
-  nameWithType: Login.UsernamePrompt
-- uid: Nitrocid.Users.Login.Login.UsernamePrompt*
-  name: UsernamePrompt
-  href: api/Nitrocid.Users.Login.Login.html#Nitrocid_Users_Login_Login_UsernamePrompt_
-  commentId: Overload:Nitrocid.Users.Login.Login.UsernamePrompt
-  isSpec: "True"
-  fullName: Nitrocid.Users.Login.Login.UsernamePrompt
-  nameWithType: Login.UsernamePrompt
 - uid: Nitrocid.Users.Login.LoginErrorReasons
   name: LoginErrorReasons
   href: api/Nitrocid.Users.Login.LoginErrorReasons.html
@@ -47176,19 +46033,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Users.Login.Motd.MalParse.InitMal
   nameWithType: MalParse.InitMal
-- uid: Nitrocid.Users.Login.Motd.MalParse.MalFilePath
-  name: MalFilePath
-  href: api/Nitrocid.Users.Login.Motd.MalParse.html#Nitrocid_Users_Login_Motd_MalParse_MalFilePath
-  commentId: P:Nitrocid.Users.Login.Motd.MalParse.MalFilePath
-  fullName: Nitrocid.Users.Login.Motd.MalParse.MalFilePath
-  nameWithType: MalParse.MalFilePath
-- uid: Nitrocid.Users.Login.Motd.MalParse.MalFilePath*
-  name: MalFilePath
-  href: api/Nitrocid.Users.Login.Motd.MalParse.html#Nitrocid_Users_Login_Motd_MalParse_MalFilePath_
-  commentId: Overload:Nitrocid.Users.Login.Motd.MalParse.MalFilePath
-  isSpec: "True"
-  fullName: Nitrocid.Users.Login.Motd.MalParse.MalFilePath
-  nameWithType: MalParse.MalFilePath
 - uid: Nitrocid.Users.Login.Motd.MalParse.MalMessage
   name: MalMessage
   href: api/Nitrocid.Users.Login.Motd.MalParse.html#Nitrocid_Users_Login_Motd_MalParse_MalMessage
@@ -47282,19 +46126,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Users.Login.Motd.MotdParse.InitMotd
   nameWithType: MotdParse.InitMotd
-- uid: Nitrocid.Users.Login.Motd.MotdParse.MotdFilePath
-  name: MotdFilePath
-  href: api/Nitrocid.Users.Login.Motd.MotdParse.html#Nitrocid_Users_Login_Motd_MotdParse_MotdFilePath
-  commentId: P:Nitrocid.Users.Login.Motd.MotdParse.MotdFilePath
-  fullName: Nitrocid.Users.Login.Motd.MotdParse.MotdFilePath
-  nameWithType: MotdParse.MotdFilePath
-- uid: Nitrocid.Users.Login.Motd.MotdParse.MotdFilePath*
-  name: MotdFilePath
-  href: api/Nitrocid.Users.Login.Motd.MotdParse.html#Nitrocid_Users_Login_Motd_MotdParse_MotdFilePath_
-  commentId: Overload:Nitrocid.Users.Login.Motd.MotdParse.MotdFilePath
-  isSpec: "True"
-  fullName: Nitrocid.Users.Login.Motd.MotdParse.MotdFilePath
-  nameWithType: MotdParse.MotdFilePath
 - uid: Nitrocid.Users.Login.Motd.MotdParse.MotdMessage
   name: MotdMessage
   href: api/Nitrocid.Users.Login.Motd.MotdParse.html#Nitrocid_Users_Login_Motd_MotdParse_MotdMessage
@@ -47973,32 +46804,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Users.UserManagement.GetUserIndex
   nameWithType: UserManagement.GetUserIndex
-- uid: Nitrocid.Users.UserManagement.IncludeAnonymous
-  name: IncludeAnonymous
-  href: api/Nitrocid.Users.UserManagement.html#Nitrocid_Users_UserManagement_IncludeAnonymous
-  commentId: P:Nitrocid.Users.UserManagement.IncludeAnonymous
-  fullName: Nitrocid.Users.UserManagement.IncludeAnonymous
-  nameWithType: UserManagement.IncludeAnonymous
-- uid: Nitrocid.Users.UserManagement.IncludeAnonymous*
-  name: IncludeAnonymous
-  href: api/Nitrocid.Users.UserManagement.html#Nitrocid_Users_UserManagement_IncludeAnonymous_
-  commentId: Overload:Nitrocid.Users.UserManagement.IncludeAnonymous
-  isSpec: "True"
-  fullName: Nitrocid.Users.UserManagement.IncludeAnonymous
-  nameWithType: UserManagement.IncludeAnonymous
-- uid: Nitrocid.Users.UserManagement.IncludeDisabled
-  name: IncludeDisabled
-  href: api/Nitrocid.Users.UserManagement.html#Nitrocid_Users_UserManagement_IncludeDisabled
-  commentId: P:Nitrocid.Users.UserManagement.IncludeDisabled
-  fullName: Nitrocid.Users.UserManagement.IncludeDisabled
-  nameWithType: UserManagement.IncludeDisabled
-- uid: Nitrocid.Users.UserManagement.IncludeDisabled*
-  name: IncludeDisabled
-  href: api/Nitrocid.Users.UserManagement.html#Nitrocid_Users_UserManagement_IncludeDisabled_
-  commentId: Overload:Nitrocid.Users.UserManagement.IncludeDisabled
-  isSpec: "True"
-  fullName: Nitrocid.Users.UserManagement.IncludeDisabled
-  nameWithType: UserManagement.IncludeDisabled
 - uid: Nitrocid.Users.UserManagement.InitializeUser(System.String,System.String,System.Boolean,System.Boolean)
   name: InitializeUser(string, string, bool, bool)
   href: api/Nitrocid.Users.UserManagement.html#Nitrocid_Users_UserManagement_InitializeUser_System_String_System_String_System_Boolean_System_Boolean_
