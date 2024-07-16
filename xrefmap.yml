@@ -18678,19 +18678,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ContinuableKernelErrorColor
   nameWithType: KernelMainConfig.ContinuableKernelErrorColor
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.CornerTimeDate
-  name: CornerTimeDate
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_CornerTimeDate
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.CornerTimeDate
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.CornerTimeDate
-  nameWithType: KernelMainConfig.CornerTimeDate
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.CornerTimeDate*
-  name: CornerTimeDate
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_CornerTimeDate_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.CornerTimeDate
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.CornerTimeDate
-  nameWithType: KernelMainConfig.CornerTimeDate
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.CpuUsageDebugEnabled
   name: CpuUsageDebugEnabled
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_CpuUsageDebugEnabled
@@ -28686,38 +28673,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Time.Renderers.TimeDateRenderersUtc.RenderUtc
   nameWithType: TimeDateRenderersUtc.RenderUtc
-- uid: Nitrocid.Kernel.Time.Renderers.TimeDateTopRight
-  name: TimeDateTopRight
-  href: api/Nitrocid.Kernel.Time.Renderers.TimeDateTopRight.html
-  commentId: T:Nitrocid.Kernel.Time.Renderers.TimeDateTopRight
-  fullName: Nitrocid.Kernel.Time.Renderers.TimeDateTopRight
-  nameWithType: TimeDateTopRight
-- uid: Nitrocid.Kernel.Time.Renderers.TimeDateTopRight.InitTopRightDate
-  name: InitTopRightDate()
-  href: api/Nitrocid.Kernel.Time.Renderers.TimeDateTopRight.html#Nitrocid_Kernel_Time_Renderers_TimeDateTopRight_InitTopRightDate
-  commentId: M:Nitrocid.Kernel.Time.Renderers.TimeDateTopRight.InitTopRightDate
-  fullName: Nitrocid.Kernel.Time.Renderers.TimeDateTopRight.InitTopRightDate()
-  nameWithType: TimeDateTopRight.InitTopRightDate()
-- uid: Nitrocid.Kernel.Time.Renderers.TimeDateTopRight.InitTopRightDate*
-  name: InitTopRightDate
-  href: api/Nitrocid.Kernel.Time.Renderers.TimeDateTopRight.html#Nitrocid_Kernel_Time_Renderers_TimeDateTopRight_InitTopRightDate_
-  commentId: Overload:Nitrocid.Kernel.Time.Renderers.TimeDateTopRight.InitTopRightDate
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Time.Renderers.TimeDateTopRight.InitTopRightDate
-  nameWithType: TimeDateTopRight.InitTopRightDate
-- uid: Nitrocid.Kernel.Time.Renderers.TimeDateTopRight.TimeTopRightChange_DoWork
-  name: TimeTopRightChange_DoWork()
-  href: api/Nitrocid.Kernel.Time.Renderers.TimeDateTopRight.html#Nitrocid_Kernel_Time_Renderers_TimeDateTopRight_TimeTopRightChange_DoWork
-  commentId: M:Nitrocid.Kernel.Time.Renderers.TimeDateTopRight.TimeTopRightChange_DoWork
-  fullName: Nitrocid.Kernel.Time.Renderers.TimeDateTopRight.TimeTopRightChange_DoWork()
-  nameWithType: TimeDateTopRight.TimeTopRightChange_DoWork()
-- uid: Nitrocid.Kernel.Time.Renderers.TimeDateTopRight.TimeTopRightChange_DoWork*
-  name: TimeTopRightChange_DoWork
-  href: api/Nitrocid.Kernel.Time.Renderers.TimeDateTopRight.html#Nitrocid_Kernel_Time_Renderers_TimeDateTopRight_TimeTopRightChange_DoWork_
-  commentId: Overload:Nitrocid.Kernel.Time.Renderers.TimeDateTopRight.TimeTopRightChange_DoWork
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Time.Renderers.TimeDateTopRight.TimeTopRightChange_DoWork
-  nameWithType: TimeDateTopRight.TimeTopRightChange_DoWork
 - uid: Nitrocid.Kernel.Time.TimeDateTools
   name: TimeDateTools
   href: api/Nitrocid.Kernel.Time.TimeDateTools.html
