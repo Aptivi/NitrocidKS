@@ -48,6 +48,7 @@ using Terminaux.Base;
 using KS.Misc.Notifiers;
 using SpecProbe.Platform;
 using Terminaux.Colors;
+using Terminaux.Inputs.Styles.Infobox;
 
 #if SPECIFIERREL
 using KS.Network;
@@ -322,7 +323,7 @@ namespace KS.Kernel
             // If "No APM" is enabled, simply print the text
             if (Flags.SimulateNoAPM && !Flags.rebootingElevated)
             {
-                Console.WriteLine(Translate.DoTranslation("It's now safe to turn off your computer."));
+                InfoBoxColor.WriteInfoBoxColor(Translate.DoTranslation("It's now safe to turn off your computer."), KernelColorTools.SuccessColor);
                 Input.DetectKeypress();
             }
 
