@@ -20,7 +20,7 @@
           releases that only increment the mod API version when needed.
         -->
         <NitrocidModAPIVersionMajor>2.1.24</NitrocidModAPIVersionMajor>
-        <NitrocidModAPIVersionChangeset>25</NitrocidModAPIVersionChangeset>
+        <NitrocidModAPIVersionChangeset>27</NitrocidModAPIVersionChangeset>
 
         <!-- The above two properties are to be installed to the file version -->
         <NitrocidModAPIVersion>$(NitrocidModAPIVersionMajor).$(NitrocidModAPIVersionChangeset)</NitrocidModAPIVersion>
