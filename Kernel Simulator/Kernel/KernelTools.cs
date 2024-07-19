@@ -388,7 +388,6 @@ namespace KS.Kernel
             EventManager.CalendarEvents.Clear();
             Flags.ArgsOnBoot = false;
             Flags.SafeMode = false;
-            Flags.QuietKernel = false;
             Flags.Maintenance = false;
             SplashReport._Progress = 0;
             SplashReport._ProgressText = "";
@@ -427,6 +426,9 @@ namespace KS.Kernel
 
             // Stop the time/date change thread
             TimeDate.TimeDate.TimeDateChange.Stop();
+
+            // Reset quiet state
+            Flags.QuietKernel = false;
         }
 
         /// <summary>
