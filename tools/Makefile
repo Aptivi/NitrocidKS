@@ -11,11 +11,3 @@ invoke-build:
 invoke-doc-build: invoke-build
 	chmod +x ./docgen.sh
 	./docgen.sh || (echo Retrying with heap limit 0x$(DOTNET_HEAP_LIMIT)... && DOTNET_GCHeapHardLimit=$(DOTNET_HEAP_LIMIT) ./docgen.sh)
-
-invoke-build-offline:
-	chmod +x ./build.sh
-	HOME=`pwd`"/debian/homedir" ./build.sh Release -p:NitrocidFlags=PACKAGEMANAGERBUILD || (echo Retrying with heap limit 0x$(DOTNET_HEAP_LIMIT)... && DOTNET_GCHeapHardLimit=$(DOTNET_HEAP_LIMIT) HOME=`pwd`"/debian/homedir" ./build.sh Release -p:NitrocidFlags=PACKAGEMANAGERBUILD)
-
-debian-invoke-init-offline:
-	chmod +x ./initializeoffline.sh
-	cd .. && ./tools/initializeoffline.sh || (echo Retrying with heap limit 0x$(DOTNET_HEAP_LIMIT)... && DOTNET_GCHeapHardLimit=$(DOTNET_HEAP_LIMIT) ./tools/initializeoffline.sh)
