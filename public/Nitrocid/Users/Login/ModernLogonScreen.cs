@@ -67,8 +67,6 @@ namespace Nitrocid.Users.Login
                 {
                     try
                     {
-                        if (!RSSTools.ShowHeadlineOnLogin)
-                            return "";
                         var Feed = InterAddonTools.ExecuteCustomAddonFunction(KnownAddons.ExtrasRssShell, "GetFirstArticle", RSSTools.RssHeadlineUrl);
                         if (Feed is (string feedTitle, string articleTitle))
                             return Translate.DoTranslation("From") + $" {feedTitle}: {articleTitle}";
@@ -88,7 +86,7 @@ namespace Nitrocid.Users.Login
                     }
                 }
 
-                string headlineStr = UpdateHeadline();
+                string headlineStr = "";
                 while (true)
                 {
                     // Print the time
@@ -125,6 +123,8 @@ namespace Nitrocid.Users.Login
                             // Print the headline
                             if (RSSTools.ShowHeadlineOnLogin)
                             {
+                                if (string.IsNullOrEmpty(headlineStr))
+                                    headlineStr = UpdateHeadline();
                                 int consoleHeadlineInfoY =
                                     MotdHeadlineBottom ?
                                     ConsoleWrapper.WindowHeight / 2 + figHeight + 3 :
