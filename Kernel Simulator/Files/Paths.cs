@@ -25,6 +25,7 @@ namespace KS.Files
 {
     public static class Paths
     {
+        internal static bool isTest = false;
 
         /// <summary>
         /// Platform-dependent home path
@@ -33,14 +34,15 @@ namespace KS.Files
         {
             get
             {
-                if (PlatformDetector.IsOnUnix())
+                if (!isTest)
                 {
-                    return Environment.GetEnvironmentVariable("HOME");
+                    if (PlatformDetector.IsOnUnix())
+                        return Environment.GetEnvironmentVariable("HOME") + "/.config/ks";
+                    else
+                        return (Environment.GetEnvironmentVariable("LOCALAPPDATA") + "/KS").Replace("\\", "/");
                 }
                 else
-                {
-                    return Environment.GetEnvironmentVariable("USERPROFILE").Replace(@"\", "/");
-                }
+                    return TempPath + "/kstest";
             }
         }
 

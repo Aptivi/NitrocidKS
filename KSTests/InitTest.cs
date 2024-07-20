@@ -21,6 +21,7 @@ using System;
 using System.IO;
 using System.Reflection;
 using KS.Files;
+using KS.Files.Operations;
 using KS.Files.Querying;
 using KS.Login;
 using KS.Misc.Configuration;
@@ -43,7 +44,13 @@ namespace KSTests
             var asm = Assembly.GetEntryAssembly();
             if (asm is not null)
                 ConsoleChecker.AddToCheckWhitelist(asm);
+
+            // We need not to use real user config directory
+            Paths.isTest = true;
             Paths.InitPaths();
+            if (Checking.FolderExists(Paths.HomePath))
+                Removing.RemoveDirectory(Paths.HomePath);
+            Making.MakeDirectory(Paths.HomePath, false);
             if (!Checking.FileExists(Paths.GetKernelPath(KernelPathType.Configuration)))
             {
                 Config.CreateConfig();
@@ -86,12 +93,6 @@ namespace KSTests
                 Directory.Delete(Paths.HomePath + "/TestDir", true);
             if (Checking.FolderExists(Paths.HomePath + "/TestDir2"))
                 Directory.Delete(Paths.HomePath + "/TestDir2", true);
-            if (Checking.FileExists(Paths.GetKernelPath(KernelPathType.Configuration) + ".old"))
-            {
-                if (Checking.FileExists(Paths.GetKernelPath(KernelPathType.Configuration)))
-                    File.Delete(Paths.HomePath + "/KernelConfig.json");
-                File.Move(Paths.GetKernelPath(KernelPathType.Configuration) + ".old", Paths.GetKernelPath(KernelPathType.Configuration));
-            }
         }
 
     }
