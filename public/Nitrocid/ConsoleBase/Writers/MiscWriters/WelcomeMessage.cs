@@ -17,7 +17,6 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using Figletize;
 using Nitrocid.ConsoleBase.Colors;
 using Terminaux.Inputs.Styles.Infobox;
 using Terminaux.Writer.ConsoleWriters;
@@ -30,6 +29,7 @@ using Nitrocid.Misc.Text.Probers.Placeholder;
 using Textify.General;
 using Terminaux.Base;
 using Terminaux.Inputs;
+using Textify.Figlet;
 
 namespace Nitrocid.ConsoleBase.Writers.MiscWriters
 {
@@ -116,7 +116,7 @@ namespace Nitrocid.ConsoleBase.Writers.MiscWriters
         /// </summary>
         public static void WriteLicense()
         {
-            TextFancyWriters.WriteSeparator(Translate.DoTranslation("License information"), true, KernelColorType.Stage);
+            TextFancyWriters.WriteSeparator(Translate.DoTranslation("License information"), KernelColorType.Stage);
             TextWriters.Write("\n" + GetLicenseString(), true, KernelColorType.License);
         }
 
