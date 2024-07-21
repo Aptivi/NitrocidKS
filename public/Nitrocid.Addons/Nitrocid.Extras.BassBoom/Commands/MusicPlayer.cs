@@ -44,25 +44,19 @@ namespace Nitrocid.Extras.BassBoom.Commands
                 // First, prompt for the music path if no arguments are provided.
                 if (parameters.ArgumentsList.Length != 0)
                 {
-                    string musicPath = FilesystemTools.NeutralizePath(parameters.ArgumentsList[0]);
+                    string musicPath = parameters.ArgumentsList[0];
 
                     // Check for existence.
-                    if (string.IsNullOrEmpty(musicPath))
-                    {
-                        TextWriterColor.Write(Translate.DoTranslation("Music file not specified."));
-                        return 30;
-                    }
-                    if (!Checking.FileExists(musicPath))
+                    if (string.IsNullOrEmpty(musicPath) || !Checking.FileExists(musicPath))
                     {
                         TextWriterColor.Write(Translate.DoTranslation("Music file '{0}' doesn't exist."), musicPath);
                         return 31;
                     }
-                    if (!PlayerTui.musicFiles.Contains(musicPath))
-                        PlayerTui.musicFiles.Add(musicPath);
-                    PlayerControls.PopulateMusicFileInfo(musicPath);
+                    PlayerTui.passedMusicPaths.Add(musicPath);
                 }
 
                 // Now, open an interactive TUI
+                Common.exiting = false;
                 PlayerTui.PlayerLoop();
             }
             catch (Exception ex)

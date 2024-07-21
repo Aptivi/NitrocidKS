@@ -39,6 +39,8 @@ using Terminaux.Colors;
 using Terminaux.Base;
 using Terminaux.Reader;
 using Terminaux.Base.Extensions;
+using Nitrocid.ConsoleBase;
+using System.Text.RegularExpressions;
 
 namespace Nitrocid.Files.Editors.TextEdit
 {
@@ -264,64 +266,58 @@ namespace Nitrocid.Files.Editors.TextEdit
                     string source = lines[i - 1].Replace("\t", ">");
                     if (source.Length == 0)
                         source = " ";
+                    var sequencesCollections = VtSequenceTools.MatchVTSequences(source);
+                    int vtSeqIdx = 0;
 
                     // Seek through the whole string to find unprintable characters
                     var sourceBuilder = new StringBuilder();
+                    int width = ConsoleChar.EstimateCellWidth(source);
                     for (int l = 0; l < source.Length; l++)
                     {
-                        bool unprintable = CharManager.IsControlChar(source[l]) || source[l] == '\0' || source[l] == (char)0xAD;
-                        string rendered = unprintable ? "." : source[l].ToString();
+                        string sequence = ConsoleTools.BufferChar(source, sequencesCollections, ref l, ref vtSeqIdx, out bool isVtSequence);
+                        bool unprintable = ConsoleChar.EstimateCellWidth(sequence) == 0;
+                        string rendered = unprintable && !isVtSequence ? "." : sequence;
                         sourceBuilder.Append(rendered);
                     }
                     source = sourceBuilder.ToString();
 
                     // Highlight the selection
-                    var lineBuilder = new StringBuilder(source);
+                    var lineBuilder = new StringBuilder();
                     if (i == lineIdx + 1)
                     {
-                        if (lineColIdx + 1 > lineBuilder.Length)
-                        {
-                            lineBuilder.Append(unhighlightedColorBackground.VTSequenceForeground);
-                            lineBuilder.Append(highlightedColorBackground.VTSequenceBackground);
-                            lineBuilder.Append(' ');
-                            lineBuilder.Append(unhighlightedColorBackground.VTSequenceBackground);
-                            lineBuilder.Append(highlightedColorBackground.VTSequenceForeground);
-                        }
-                        else
-                        {
-                            lineBuilder.Insert(lineColIdx + 1, unhighlightedColorBackground.VTSequenceBackground);
-                            lineBuilder.Insert(lineColIdx + 1, highlightedColorBackground.VTSequenceForeground);
-                            lineBuilder.Insert(lineColIdx, unhighlightedColorBackground.VTSequenceForeground);
-                            lineBuilder.Insert(lineColIdx, highlightedColorBackground.VTSequenceBackground);
-                        }
+                        lineBuilder.Append(CsiSequences.GenerateCsiCursorPosition(lineColIdx % SeparatorConsoleWidthInterior + 2, SeparatorMinimumHeightInterior + count + 1));
+                        lineBuilder.Append(ColorTools.RenderSetConsoleColor(unhighlightedColorBackground));
+                        lineBuilder.Append(ColorTools.RenderSetConsoleColor(highlightedColorBackground, true, true));
+                        lineBuilder.Append(' ');
+                        lineBuilder.Append(ColorTools.RenderSetConsoleColor(unhighlightedColorBackground, true));
+                        lineBuilder.Append(ColorTools.RenderSetConsoleColor(highlightedColorBackground));
+                        lineBuilder.Append(CsiSequences.GenerateCsiCursorPosition(SeparatorConsoleWidthInterior + 3 - (SeparatorConsoleWidthInterior - ConsoleChar.EstimateCellWidth(source)), SeparatorMinimumHeightInterior + count + 1));
                     }
 
                     // Now, get the line range
                     string line = lineBuilder.ToString();
+                    var absolutes = GetAbsoluteSequences(source, sequencesCollections);
                     if (source.Length > 0)
                     {
                         int charsPerPage = SeparatorConsoleWidthInterior;
                         int currentCharPage = lineColIdx / charsPerPage;
                         int startLineIndex = charsPerPage * currentCharPage;
                         int endLineIndex = charsPerPage * (currentCharPage + 1);
-                        if (startLineIndex > source.Length)
-                            startLineIndex = source.Length;
-                        if (endLineIndex > source.Length)
-                            endLineIndex = source.Length;
-                        int vtSeqLength = 0;
-                        var vtSeqMatches = VtSequenceTools.MatchVTSequences(line);
-                        foreach (var match in vtSeqMatches)
-                            vtSeqLength += match.Sum((mat) => mat.Length);
-                        source = source[startLineIndex..endLineIndex];
-                        line = line[startLineIndex..(endLineIndex + vtSeqLength)];
+                        if (startLineIndex > absolutes.Length)
+                            startLineIndex = absolutes.Length;
+                        if (endLineIndex > absolutes.Length)
+                            endLineIndex = absolutes.Length;
+                        source = "";
+                        for (int a = startLineIndex; a < endLineIndex; a++)
+                            source += absolutes[a].Item2;
                     }
-                    line += new string(' ', SeparatorConsoleWidthInterior - source.Length);
+                    line = source + line + ColorTools.RenderRevertForeground() + ColorTools.RenderRevertBackground();
 
                     // Change the color depending on the highlighted line and column
                     sels.Append(
                         $"{CsiSequences.GenerateCsiCursorPosition(2, SeparatorMinimumHeightInterior + count + 1)}" +
-                        $"{highlightedColorBackground.VTSequenceForeground}" +
-                        $"{unhighlightedColorBackground.VTSequenceBackground}" +
+                        $"{ColorTools.RenderSetConsoleColor(highlightedColorBackground)}" +
+                        $"{ColorTools.RenderSetConsoleColor(unhighlightedColorBackground, true)}" +
                         line
                     );
                     count++;
@@ -643,6 +639,22 @@ namespace Nitrocid.Files.Editors.TextEdit
             entering = !entering;
             UpdateLineIndex(lineIdx, lines);
             return lines;
+        }
+
+        private static (int, string)[] GetAbsoluteSequences(string source, (VtSequenceType type, Match[] sequences)[] sequencesCollections)
+        {
+            int vtSeqIdx = 0;
+            List<(int, string)> sequences = [];
+            string sequence = "";
+            for (int l = 0; l < source.Length; l++)
+            {
+                sequence += ConsoleTools.BufferChar(source, sequencesCollections, ref l, ref vtSeqIdx, out bool isVtSequence);
+                if (isVtSequence)
+                    continue;
+                sequences.Add((l, sequence));
+                sequence = "";
+            }
+            return [.. sequences];
         }
     }
 }

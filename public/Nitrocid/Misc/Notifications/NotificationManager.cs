@@ -42,6 +42,7 @@ using Nitrocid.Files.Operations.Querying;
 using Nitrocid.Kernel.Power;
 using Terminaux.Base;
 using Terminaux.Base.Extensions;
+using Terminaux.Writer.FancyWriters.Tools;
 
 namespace Nitrocid.Misc.Notifications
 {
@@ -269,15 +270,23 @@ namespace Nitrocid.Misc.Notifications
                                     CurrentNotifyRightFrameChar = NewNotification.CustomRightFrameChar;
                                 }
 
+                                // Make a border instance
+                                var border = new BorderSettings()
+                                {
+                                    BorderUpperLeftCornerChar = CurrentNotifyUpperLeftCornerChar,
+                                    BorderLowerLeftCornerChar = CurrentNotifyLowerLeftCornerChar,
+                                    BorderUpperRightCornerChar = CurrentNotifyUpperRightCornerChar,
+                                    BorderLowerRightCornerChar = CurrentNotifyLowerRightCornerChar,
+                                    BorderUpperFrameChar = CurrentNotifyUpperFrameChar,
+                                    BorderLowerFrameChar = CurrentNotifyLowerFrameChar,
+                                    BorderLeftFrameChar = CurrentNotifyLeftFrameChar,
+                                    BorderRightFrameChar = CurrentNotifyRightFrameChar
+                                };
+
                                 // Just draw the border!
                                 printBuffer.Append(
                                     BorderColor.RenderBorder(
-                                        notifLeftAgnostic - 1, notifTopAgnostic, notifWidth, 3,
-                                        CurrentNotifyUpperLeftCornerChar, CurrentNotifyLowerLeftCornerChar,
-                                        CurrentNotifyUpperRightCornerChar, CurrentNotifyLowerRightCornerChar,
-                                        CurrentNotifyUpperFrameChar, CurrentNotifyLowerFrameChar,
-                                        CurrentNotifyLeftFrameChar, CurrentNotifyRightFrameChar,
-                                        NotifyBorderColor, background
+                                        notifLeftAgnostic - 1, notifTopAgnostic, notifWidth, 3, border, NotifyBorderColor, background
                                     )
                                 );
                             }
@@ -337,7 +346,7 @@ namespace Nitrocid.Misc.Notifications
                                     printBuffer.Append(TextWriterWhereColor.RenderWhereColorBack(Desc, notifLeftAgnostic, notifDescTop, NotifyDescColor, background));
 
                                     // For indeterminate progresses, flash the box inside the progress bar
-                                    ProgressBarColor.WriteProgress(indeterminate ? 100 * indeterminateStep : NewNotification.Progress, notifLeftAgnostic, notifTipTop, notifLeftAgnostic, 6, NotifyProgressColor, NotifyBorderColor, KernelColorTools.GetColor(KernelColorType.Background), DrawBorderNotification);
+                                    ProgressBarColor.WriteProgress(indeterminate ? 100 * indeterminateStep : NewNotification.Progress, notifLeftAgnostic, notifTipTop, 42, NotifyProgressColor, NotifyBorderColor, KernelColorTools.GetColor(KernelColorType.Background), DrawBorderNotification);
                                     indeterminateStep++;
                                     if (indeterminateStep > 1)
                                         indeterminateStep = 0;

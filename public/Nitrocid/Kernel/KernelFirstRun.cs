@@ -28,23 +28,21 @@ using System;
 using Textify.General;
 using Terminaux.Base;
 using Terminaux.Reader;
+using Terminaux.Inputs.Presentation.Inputs;
+using Terminaux.Inputs;
+using System.Linq;
+using Terminaux.Inputs.Styles.Infobox;
 
 namespace Nitrocid.Kernel
 {
     internal static class KernelFirstRun
     {
-        internal static void PresentFirstRun()
+        internal static void PresentFirstRunIntro()
         {
             try
             {
-                // Some variables
-                string user = "owner";
-                string stepFailureReason = "";
-                string langCode = "eng";
-                bool moveOn = false;
-
                 // Populate the first run presentations in case language changed during the first start-up
-                Slideshow firstRunPresIntro = new(
+                Slideshow firstRunPres = new(
                     // Presentation name
                     Translate.DoTranslation("Kernel first-run"),
 
@@ -61,7 +59,7 @@ namespace Nitrocid.Kernel
                                 {
                                     Arguments =
                                     [
-                                        Translate.DoTranslation("Welcome to Nitrocid Kernel! Thank you for trying it out!") + "\n"
+                                        Translate.DoTranslation("Welcome to Nitrocid Kernel! Thank you for trying it out!")
                                     ]
                                 },
                                 new TextElement()
@@ -71,56 +69,58 @@ namespace Nitrocid.Kernel
                                         Translate.DoTranslation("To get started, press ENTER.")
                                     ]
                                 }
-                            ]
-                        )
-                    ]
-                );
+                            ],
 
-                Slideshow firstRunPresStep1 = new(
-                    // Presentation name
-                    Translate.DoTranslation("Kernel first-run"),
-
-                    // Presentation list
-                    [
-                        // Third page - language selection
-                        new PresentationPage(
-                            // Page name
-                            Translate.DoTranslation("Select your language"),
-
-                            // Page elements
+                            // Page inputs
                             [
-                                new ChoiceInputElement()
-                                {
-                                    Arguments =
-                                    [
-                                        Translate.DoTranslation("Select your language. By default, the kernel uses the English language, but you can select any other language here.") + " " +
-                                        Translate.DoTranslation("Based on your language settings on your system, the appropriate language is") + $" {LanguageManager.InferLanguageFromSystem()}. " +
-                                        Translate.DoTranslation("Write the language code listed below:"),
-                                        LanguageManager.Languages.Keys,
-                                    ],
-                                    InvokeActionInput =
-                                        (args) =>
-                                        {
-                                            langCode = (string)args[0];
-                                            DebugWriter.WriteDebug(DebugLevel.I, "Got langCode {0}.", langCode);
-                                            LanguageManager.SetLang(langCode);
-                                            moveOn = true;
-                                            DebugWriter.WriteDebug(DebugLevel.I, "Let's move on!");
-                                        }
-                                },
-                                new TextElement()
-                                {
-                                    Arguments =
-                                    [
-                                        Translate.DoTranslation("Press the ENTER key to continue.") + "\n"
-                                    ]
-                                }
+                                new InputInfo(
+                                    Translate.DoTranslation("Language"), Translate.DoTranslation("Select your language."),
+                                    new SelectionInputMethod()
+                                    {
+                                        Question = Translate.DoTranslation("Select your language. By default, the kernel uses the English language, but you can select any other language here.") + " " +
+                                                   Translate.DoTranslation("Based on your language settings on your system, the appropriate language is") + $" {LanguageManager.InferLanguageFromSystem()}. ",
+                                        Choices = LanguageManager.Languages.Select((kvp) => new InputChoiceInfo(kvp.Key, kvp.Value.FullLanguageName)).ToArray()
+                                    }, true
+                                )
                             ]
                         )
                     ]
                 );
 
-                Slideshow firstRunPresStep2 = new(
+                // Present all presentations
+                PresentationTools.Present(firstRunPres, true, true);
+                DebugWriter.WriteDebug(DebugLevel.I, "Out of introductory run. Going straight to the rest once language configuration has been saved.");
+
+                // Save all the changes
+                InfoBoxColor.WriteInfoBoxPlain(Translate.DoTranslation("Saving settings..."), false);
+                int selectedLanguageIdx = (int)firstRunPres.Pages[0].Inputs[0].InputMethod.Input;
+                string selectedLanguage = LanguageManager.Languages.ElementAt(selectedLanguageIdx).Key;
+                DebugWriter.WriteDebug(DebugLevel.I, "Got selectedLanguage {0}.", selectedLanguage);
+                LanguageManager.SetLang(selectedLanguage);
+
+                // Now, go to the first-run.
+                PresentFirstRun();
+            }
+            catch (Exception ex)
+            {
+                DebugWriter.WriteDebug(DebugLevel.E, "Error in introductory run: {0}", ex.Message);
+                DebugWriter.WriteDebugStackTrace(ex);
+                ConsoleWrapper.Clear();
+                TextWriterColor.Write(Translate.DoTranslation("We apologize for your inconvenience, but the out-of-box experience has crashed. If you're sure that this is a defect in the experience, please report the crash to us with debugging logs.") + " {0}", ex.Message);
+                TextWriterColor.Write(Translate.DoTranslation("Press any key to start the shell anyways, but please note that you may have to create your new user manually."));
+                TermReader.ReadKey();
+            }
+        }
+
+        internal static void PresentFirstRun()
+        {
+            try
+            {
+                // Some variables
+                string userStepFailureReason = "";
+                bool moveOn = false;
+
+                Slideshow firstRunPresUser = new(
                     // Presentation name
                     Translate.DoTranslation("Kernel first-run"),
 
@@ -137,7 +137,7 @@ namespace Nitrocid.Kernel
                                 {
                                     Arguments =
                                     [
-                                        Translate.DoTranslation("We'll help you create your own username. Select any name you want. This could be your nickname or your short name, as long as your username doesn't contain spaces and special characters and that it doesn't already exist. The following usernames are registered:") + '\n'
+                                        Translate.DoTranslation("We'll help you create your own username. Select any name you want. This could be your nickname or your short name, as long as your username doesn't contain spaces and special characters and that it doesn't already exist. The following usernames are registered:")
                                     ]
                                 },
                                 new DynamicTextElement()
@@ -148,60 +148,58 @@ namespace Nitrocid.Kernel
                                         {
                                             var userList = UserManagement.ListAllUsers();
                                             string list = string.Join(", ", userList);
-                                            if (string.IsNullOrEmpty(stepFailureReason))
+                                            if (string.IsNullOrEmpty(userStepFailureReason))
                                                 return $"{list}\n";
-                                            return $"{list}\n{stepFailureReason}\n";
+                                            return $"{list}\n{userStepFailureReason}";
                                         }
-                                    ]
-                                },
-                                new InputElement()
-                                {
-                                    Arguments =
-                                    [
-                                        Translate.DoTranslation("Enter the username") + ": "
-                                    ],
-                                    InvokeActionInput =
-                                        (args) =>
-                                            user = string.IsNullOrWhiteSpace((string)args[0]) ? "owner" : (string)args[0]
-                                },
-                                new MaskedInputElement()
-                                {
-                                    Arguments =
-                                    [
-                                        Translate.DoTranslation("Enter the password") + ": "
-                                    ],
-                                    InvokeActionInput =
-                                        (args) =>
-                                        {
-                                            try
-                                            {
-                                                UserManagement.AddUser(user, (string)args[0]);
-                                                DebugWriter.WriteDebug(DebugLevel.I, "We shall move on.");
-                                                stepFailureReason = "";
-                                                moveOn = true;
-                                                DebugWriter.WriteDebug(DebugLevel.I, "Let's move on!");
-                                            }
-                                            catch (Exception ex)
-                                            {
-                                                DebugWriter.WriteDebug(DebugLevel.I, "We shouldn't move on. Failed to create username. {0}", ex.Message);
-                                                DebugWriter.WriteDebugStackTrace(ex);
-                                                stepFailureReason = Translate.DoTranslation("Failed to create username. Please ensure that your username doesn't contain spaces and special characters.");
-                                            }
-                                        }
-                                },
-                                new TextElement()
-                                {
-                                    Arguments =
-                                    [
-                                        Translate.DoTranslation("Press the ENTER key to continue.") + "\n"
                                     ]
                                 }
+                            ],
+
+                            // Page inputs
+                            [
+                                new InputInfo(
+                                    Translate.DoTranslation("Username"), Translate.DoTranslation("Enter the username"),
+                                    new TextInputMethod()
+                                    {
+                                        Question = Translate.DoTranslation("Enter your new username. You should enter a new username that doesn't already exist."),
+                                    }, true
+                                ),
+                                new InputInfo(
+                                    Translate.DoTranslation("Password"), Translate.DoTranslation("Enter the password"),
+                                    new TextInputMethod()
+                                    {
+                                        Question = Translate.DoTranslation("Enter your user password. You should choose a strong password for increased security."),
+                                    }
+                                )
                             ]
                         )
                     ]
                 );
+                string user = "owner";
+                while (!moveOn)
+                {
+                    PresentationTools.Present(firstRunPresUser, true, true);
+                    string inputUser = (string)firstRunPresUser.Pages[0].Inputs[0].InputMethod.Input;
+                    user = string.IsNullOrEmpty(inputUser) ? user : inputUser;
+                    string pass = (string)firstRunPresUser.Pages[0].Inputs[1].InputMethod.Input ?? "";
+                    try
+                    {
+                        UserManagement.AddUser(user, pass);
+                        DebugWriter.WriteDebug(DebugLevel.I, "We shall move on.");
+                        userStepFailureReason = "";
+                        moveOn = true;
+                        DebugWriter.WriteDebug(DebugLevel.I, "Let's move on!");
+                    }
+                    catch (Exception ex)
+                    {
+                        DebugWriter.WriteDebug(DebugLevel.I, "We shouldn't move on. Failed to create username. {0}", ex.Message);
+                        DebugWriter.WriteDebugStackTrace(ex);
+                        userStepFailureReason = Translate.DoTranslation("Failed to create username. Please ensure that your username doesn't contain spaces and special characters.");
+                    }
+                }
 
-                Slideshow firstRunPresStep3 = new(
+                Slideshow firstRunPresUpdates = new(
                     // Presentation name
                     Translate.DoTranslation("Kernel first-run"),
 
@@ -218,64 +216,48 @@ namespace Nitrocid.Kernel
                                 {
                                     Arguments =
                                     [
-                                        Translate.DoTranslation("Nitrocid KS currently updates itself to get the most recent version that includes general improvements and bug fixes. New major versions usually include breaking changes and new exciting features.")
-                                    ]
-                                },
-                                new ChoiceInputElement()
-                                {
-                                    Arguments =
-                                    [
-                                        Translate.DoTranslation("Do you want Nitrocid KS to automatically check for updates?"),
-                                        "y",
-                                        "n"
-                                    ],
-                                    InvokeActionInput =
-                                        (args) =>
-                                        {
-                                            Config.MainConfig.CheckUpdateStart = (string)args[0] == "y";
-                                        }
-                                },
-                                new TextElement()
-                                {
-                                    Arguments =
-                                    [
-                                        Translate.DoTranslation("In addition to automatically checking for updates, Nitrocid KS can also download the update file automatically.")
-                                    ]
-                                },
-                                new ChoiceInputElement()
-                                {
-                                    Arguments =
-                                    [
-                                        Translate.DoTranslation("Do you want Nitrocid KS to automatically download updates?"),
-                                        "y",
-                                        "n"
-                                    ],
-                                    InvokeActionInput =
-                                        (args) =>
-                                        {
-                                            Config.MainConfig.AutoDownloadUpdate = (string)args[0] == "y";
-                                            moveOn = true;
-                                            DebugWriter.WriteDebug(DebugLevel.I, "Let's move on!");
-                                        }
-                                },
-                                new TextElement()
-                                {
-                                    Arguments =
-                                    [
-                                        Translate.DoTranslation("You can always check for kernel updates using the \"update\" command.") + "\n"
-                                    ]
-                                },
-                                new TextElement()
-                                {
-                                    Arguments =
-                                    [
-                                        Translate.DoTranslation("Press the ENTER key to continue.") + "\n"
+                                        Translate.DoTranslation("Nitrocid KS currently updates itself to get the most recent version that includes general improvements and bug fixes. New major versions usually include breaking changes and new exciting features.") + " " +
+                                        Translate.DoTranslation("In addition to automatically checking for updates, Nitrocid KS can also download the update file automatically.") + " " +
+                                        Translate.DoTranslation("You can always check for kernel updates using the \"update\" command.")
                                     ]
                                 }
+                            ],
+
+                            // Page inputs
+                            [
+                                new InputInfo(
+                                    Translate.DoTranslation("Automatic Update Check"), Translate.DoTranslation("Automatic Update Check"),
+                                    new SelectionInputMethod()
+                                    {
+                                        Question = Translate.DoTranslation("Do you want Nitrocid KS to automatically check for updates?"),
+                                        Choices =
+                                        [
+                                            new InputChoiceInfo("y", Translate.DoTranslation("Yes, I do!")),
+                                            new InputChoiceInfo("n", Translate.DoTranslation("No, thanks.")),
+                                        ]
+                                    }
+                                ),
+                                new InputInfo(
+                                    Translate.DoTranslation("Automatic Update Download"), Translate.DoTranslation("Automatic Update Download"),
+                                    new SelectionInputMethod()
+                                    {
+                                        Question = Translate.DoTranslation("Do you want Nitrocid KS to automatically download updates?"),
+                                        Choices =
+                                        [
+                                            new InputChoiceInfo("y", Translate.DoTranslation("Yes, I do!")),
+                                            new InputChoiceInfo("n", Translate.DoTranslation("No, thanks.")),
+                                        ]
+                                    }
+                                )
                             ]
                         )
                     ]
                 );
+                PresentationTools.Present(firstRunPresUpdates, true, true);
+                bool needsAutoCheck = (int)firstRunPresUpdates.Pages[0].Inputs[0].InputMethod.Input == 0;
+                bool needsAutoDownload = (int)firstRunPresUpdates.Pages[0].Inputs[1].InputMethod.Input == 0;
+                Config.MainConfig.CheckUpdateStart = needsAutoCheck;
+                Config.MainConfig.AutoDownloadUpdate = needsAutoDownload;
 
                 Slideshow firstRunPresOutro = new(
                     // Presentation name
@@ -294,55 +276,21 @@ namespace Nitrocid.Kernel
                                 {
                                     Arguments =
                                     [
-                                        () => TextTools.FormatString(Translate.DoTranslation("Congratulations! You now have a user account, {0}!"), user) + "\n"
+                                        () => TextTools.FormatString(Translate.DoTranslation("Congratulations! You now have a user account, {0}!"), user)
                                     ]
                                 },
                                 new TextElement()
                                 {
                                     Arguments =
                                     [
-                                        Translate.DoTranslation("Press the ENTER key to get started using the kernel and log-in to your new account. Good luck!") + "\n"
+                                        Translate.DoTranslation("Press the ENTER key to get started using the kernel and log-in to your new account. Good luck!")
                                     ]
                                 }
                             ]
                         )
                     ]
                 );
-
-                // Assign all first runs
-                Slideshow[] firstRuns = [
-                    // Introduction
-                    firstRunPresIntro,
-
-                    // Steps
-                    firstRunPresStep1,
-                    firstRunPresStep2,
-                    firstRunPresStep3,
-
-                    // Outro
-                    firstRunPresOutro
-                ];
-
-                // Present all presentations
-                for (int step = 0; step < firstRuns.Length; step++)
-                {
-                    // Put in loop if the presentation contains input
-                    var firstRun = firstRuns[step];
-                    DebugWriter.WriteDebug(DebugLevel.I, "First run: step {0}", step);
-                    if (PresentationTools.PresentationContainsInput(firstRun))
-                    {
-                        // Contains input.
-                        DebugWriter.WriteDebug(DebugLevel.I, "Presentation contains input.");
-                        while (!moveOn)
-                            PresentationTools.Present(firstRun, true, true);
-                        moveOn = false;
-                    }
-                    else
-                    {
-                        DebugWriter.WriteDebug(DebugLevel.I, "Presentation doesn't contain input.");
-                        PresentationTools.Present(firstRun, true, true);
-                    }
-                }
+                PresentationTools.Present(firstRunPresOutro, true, true);
                 DebugWriter.WriteDebug(DebugLevel.I, "Out of first run");
             }
             catch (Exception ex)

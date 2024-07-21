@@ -55,11 +55,14 @@ using Nitrocid.Misc.Screensaver;
 using Nitrocid.Files.Paths;
 using Nitrocid.Modifications;
 using System.Linq;
+using Terminaux.Colors;
+using Terminaux.Colors.Data;
 
 namespace Nitrocid.Extras.BassBoom
 {
     internal class BassBoomInit : IAddon
     {
+        internal static Color white = new(ConsoleColors.White);
         private readonly ExtensionHandler[] handlers = [
             new(".mp3", "Mp3BassBoom", PlayerHandler.Handle, PlayerHandler.InfoHandle),
             new(".mp2", "Mp3BassBoom", PlayerHandler.Handle, PlayerHandler.InfoHandle),

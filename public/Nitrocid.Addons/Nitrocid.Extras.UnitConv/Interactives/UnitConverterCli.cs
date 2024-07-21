@@ -26,7 +26,7 @@ using FluentFTP.Helpers;
 using Terminaux.Inputs.Interactive;
 using Terminaux.Inputs.Styles.Infobox;
 using Nitrocid.Languages;
-using EnumMagic;
+using Terminaux.Extensions.Enumerations;
 
 namespace Nitrocid.Extras.UnitConv.Interactives
 {

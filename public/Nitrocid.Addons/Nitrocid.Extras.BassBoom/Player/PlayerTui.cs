@@ -17,157 +17,90 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-// This file was taken from BassBoom. License notes below:
-
-//   BassBoom  Copyright (C) 2023  Aptivi
-// 
-//   This file is part of BassBoom
-// 
-//   BassBoom is free software: you can redistribute it and/or modify
-//   it under the terms of the GNU General Public License as published by
-//   the Free Software Foundation, either version 3 of the License, or
-//   (at your option) any later version.
-// 
-//   BassBoom is distributed in the hope that it will be useful,
-//   but WITHOUT ANY WARRANTY; without even the implied warranty of
-//   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//   GNU General Public License for more details.
-// 
-//   You should have received a copy of the GNU General Public License
-//   along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 using BassBoom.Basolia;
 using BassBoom.Basolia.File;
-using BassBoom.Basolia.Format;
-using BassBoom.Basolia.Format.Cache;
-using BassBoom.Basolia.Lyrics;
 using BassBoom.Basolia.Playback;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
+using Terminaux.Base;
+using Terminaux.Base.Buffered;
 using Terminaux.Colors;
-using Terminaux.Sequences.Builder.Types;
+using Terminaux.Colors.Data;
 using Terminaux.Inputs.Styles.Infobox;
 using Terminaux.Writer.ConsoleWriters;
-using Nitrocid.ConsoleBase.Colors;
-using Terminaux.Base.Buffered;
-using Nitrocid.Misc.Screensaver;
-using Nitrocid.Languages;
 using Terminaux.Writer.FancyWriters;
-using Terminaux.Base;
-using Terminaux.Colors.Data;
-using Terminaux.Base.Extensions;
 using Terminaux.Reader;
+using Terminaux.Inputs.Styles.Selection;
+using Terminaux.Inputs;
+using Nitrocid.Languages;
 
 namespace Nitrocid.Extras.BassBoom.Player
 {
     internal static class PlayerTui
     {
         internal static Thread playerThread;
-        internal static Lyric lyricInstance = null;
-        internal static FrameInfo frameInfo = null;
-        internal static Id3V1Metadata managedV1 = null;
-        internal static Id3V2Metadata managedV2 = null;
-        internal static TimeSpan totalSpan = new();
-        internal static int total = 0;
-        internal static (long rate, int channels, int encoding) formatInfo = new();
-        internal static int currentSong = 1;
-        internal static double volume = 1.0;
-        internal static bool exiting = false;
         internal static int position = 0;
-        internal static bool advance = false;
-        internal static bool populate = true;
-        internal static bool paused = false;
-        internal static bool failedToPlay = false;
-        internal static string cachedLyric = "";
-        internal static readonly List<string> musicFiles = [];
-        internal static readonly List<CachedSongInfo> cachedInfos = [];
+        internal static readonly List<string> passedMusicPaths = [];
 
         public static void PlayerLoop()
         {
-            // Prevent screensaver lock
-            ScreensaverManager.PreventLock();
-
-            volume = PlaybackTools.GetVolume().baseLinear;
-            exiting = false;
-            paused = false;
-            populate = true;
-            advance = false;
+            Common.volume = PlaybackTools.GetVolume().baseLinear;
 
             // Populate the screen
             Screen playerScreen = new();
             ScreenTools.SetCurrent(playerScreen);
 
-            // First, make a screen part to draw our TUI
+            // Make a screen part to draw our TUI
             ScreenPart screenPart = new();
 
-            // Redraw if necessary
-            bool wasRerendered = true;
+            // Handle drawing
             screenPart.AddDynamicText(HandleDraw);
 
             // Current duration
+            int hue = 0;
             screenPart.AddDynamicText(() =>
             {
+                if (Common.CurrentCachedInfo is null)
+                    return "";
                 var buffer = new StringBuilder();
                 position = FileTools.IsOpened ? PlaybackPositioningTools.GetCurrentDuration() : 0;
                 var posSpan = FileTools.IsOpened ? PlaybackPositioningTools.GetCurrentDurationSpan() : new();
-                string indicator =
-                    Translate.DoTranslation("Seek") + $": {PlayerControls.seekRate:0.00} | " +
-                    Translate.DoTranslation("Volume") + $": {volume:0.00}";
-                buffer.Append(
-                    ProgressBarColor.RenderProgress(100 * (position / (double)total), 2, ConsoleWrapper.WindowHeight - 8, 3, 3, KernelColorTools.GetColor(KernelColorType.Progress), ColorTools.GetGray(), KernelColorTools.GetColor(KernelColorType.Background)) +
-                    TextWriterWhereColor.RenderWhere($"{posSpan} / {totalSpan}", 3, ConsoleWrapper.WindowHeight - 9, KernelColorTools.GetColor(KernelColorType.NeutralText), KernelColorTools.GetColor(KernelColorType.Background)) +
-                    TextWriterWhereColor.RenderWhere(indicator, ConsoleWrapper.WindowWidth - indicator.Length - 3, ConsoleWrapper.WindowHeight - 9, KernelColorTools.GetColor(KernelColorType.NeutralText), KernelColorTools.GetColor(KernelColorType.Background))
-                );
-                return buffer.ToString();
-            });
-
-            // Get the lyrics
-            screenPart.AddDynamicText(() =>
-            {
-                var buffer = new StringBuilder();
+                var disco = PlaybackTools.Playing && Common.enableDisco ? new Color($"hsl:{hue};50;50") : BassBoomInit.white;
                 if (PlaybackTools.Playing)
                 {
-                    // Print the lyrics, if any
-                    if (lyricInstance is not null)
-                    {
-                        string current = lyricInstance.GetLastLineCurrent();
-                        if (current != cachedLyric || wasRerendered)
-                        {
-                            cachedLyric = current;
-                            buffer.Append(
-                                TextWriterWhereColor.RenderWhere(ConsoleClearing.GetClearLineToRightSequence(), 0, ConsoleWrapper.WindowHeight - 10, KernelColorTools.GetColor(KernelColorType.NeutralText), KernelColorTools.GetColor(KernelColorType.Background)) +
-                                CenteredTextColor.RenderCentered(ConsoleWrapper.WindowHeight - 10, lyricInstance.GetLastLineCurrent(), KernelColorTools.GetColor(KernelColorType.NeutralText), KernelColorTools.GetColor(KernelColorType.Background))
-                            );
-                        }
-                    }
-                    else
-                        cachedLyric = "";
+                    hue++;
+                    if (hue >= 360)
+                        hue = 0;
                 }
-                else
-                {
-                    cachedLyric = "";
-                    buffer.Append(
-                        TextWriterWhereColor.RenderWhere(ConsoleClearing.GetClearLineToRightSequence(), 0, ConsoleWrapper.WindowHeight - 10, KernelColorTools.GetColor(KernelColorType.NeutralText), KernelColorTools.GetColor(KernelColorType.Background))
-                    );
-                }
+                string indicator =
+                    $"╣ {Translate.DoTranslation("Seek")}: {PlayerControls.seekRate:0.00} | " +
+                    $"{Translate.DoTranslation("Volume")}: {Common.volume:0.00} ╠";
+                string lyric = Common.CurrentCachedInfo.LyricInstance is not null ? Common.CurrentCachedInfo.LyricInstance.GetLastLineCurrent() : "";
+                string finalLyric = string.IsNullOrWhiteSpace(lyric) ? "..." : lyric;
+                buffer.Append(
+                    ProgressBarColor.RenderProgress(100 * (position / (double)Common.CurrentCachedInfo.Duration), 2, ConsoleWrapper.WindowHeight - 8, ConsoleWrapper.WindowWidth - 6, disco, disco) +
+                    TextWriterWhereColor.RenderWhereColor($"╣ {posSpan} / {Common.CurrentCachedInfo.DurationSpan} ╠", 4, ConsoleWrapper.WindowHeight - 8, disco) +
+                    TextWriterWhereColor.RenderWhereColor(indicator, ConsoleWrapper.WindowWidth - indicator.Length - 4, ConsoleWrapper.WindowHeight - 8, disco) +
+                    CenteredTextColor.RenderCentered(ConsoleWrapper.WindowHeight - 6, Common.CurrentCachedInfo.LyricInstance is not null && PlaybackTools.Playing ? $"╣ {finalLyric} ╠" : "", disco)
+                );
                 return buffer.ToString();
             });
 
             // Render the buffer
             playerScreen.AddBufferedPart("BassBoom Player", screenPart);
+            playerScreen.ResetResize = false;
 
             // Then, the main loop
-            while (!exiting)
+            while (!Common.exiting)
             {
                 Thread.Sleep(1);
                 try
                 {
                     if (!playerScreen.CheckBufferedPart("BassBoom Player"))
                         playerScreen.AddBufferedPart("BassBoom Player", screenPart);
-                    wasRerendered = ConsoleResizeHandler.WasResized(false);
                     ScreenTools.Render();
 
                     // Handle the keystroke
@@ -210,7 +143,6 @@ namespace Nitrocid.Extras.BassBoom.Player
             // Restore state
             ConsoleWrapper.CursorVisible = true;
             ColorTools.LoadBack();
-            ScreensaverManager.AllowLock();
             playerScreen.RemoveBufferedParts();
             ScreenTools.UnsetCurrent(playerScreen);
         }
@@ -219,12 +151,6 @@ namespace Nitrocid.Extras.BassBoom.Player
         {
             switch (keystroke.Key)
             {
-                case ConsoleKey.UpArrow:
-                    PlayerControls.RaiseVolume();
-                    break;
-                case ConsoleKey.DownArrow:
-                    PlayerControls.LowerVolume();
-                    break;
                 case ConsoleKey.Spacebar:
                     playerThread = new(HandlePlay);
                     PlayerControls.Play();
@@ -232,18 +158,10 @@ namespace Nitrocid.Extras.BassBoom.Player
                 case ConsoleKey.B:
                     PlayerControls.SeekBeginning();
                     PlayerControls.PreviousSong();
-                    playerThread = new(HandlePlay);
-                    PlayerControls.Play();
                     break;
                 case ConsoleKey.N:
                     PlayerControls.SeekBeginning();
                     PlayerControls.NextSong();
-                    playerThread = new(HandlePlay);
-                    PlayerControls.Play();
-                    break;
-                case ConsoleKey.H:
-                    PlayerControls.ShowHelp();
-                    playerScreen.RequireRefresh();
                     break;
                 case ConsoleKey.I:
                     PlayerControls.ShowSongInfo();
@@ -265,12 +183,16 @@ namespace Nitrocid.Extras.BassBoom.Player
                     else
                         PlayerControls.RemoveCurrentSong();
                     break;
-                case ConsoleKey.E:
-                    Equalizer.OpenEqualizer(playerScreen);
-                    playerScreen.RequireRefresh();
+                case ConsoleKey.C:
+                    if (Common.CurrentCachedInfo is null)
+                        return;
+                    if (keystroke.Modifiers == ConsoleModifiers.Shift)
+                        PlayerControls.SeekTo(Common.CurrentCachedInfo.RepeatCheckpoint);
+                    else
+                        Common.CurrentCachedInfo.RepeatCheckpoint = PlaybackPositioningTools.GetCurrentDurationSpan();
                     break;
-                case ConsoleKey.Q:
-                    PlayerControls.Exit();
+                default:
+                    Common.HandleKeypressCommon(keystroke, playerScreen, false);
                     break;
             }
         }
@@ -279,12 +201,6 @@ namespace Nitrocid.Extras.BassBoom.Player
         {
             switch (keystroke.Key)
             {
-                case ConsoleKey.UpArrow:
-                    PlayerControls.RaiseVolume();
-                    break;
-                case ConsoleKey.DownArrow:
-                    PlayerControls.LowerVolume();
-                    break;
                 case ConsoleKey.RightArrow:
                     if (keystroke.Modifiers == ConsoleModifiers.Control)
                         PlayerControls.seekRate += 0.05d;
@@ -303,6 +219,19 @@ namespace Nitrocid.Extras.BassBoom.Player
                     PlayerControls.PreviousSong();
                     playerThread = new(HandlePlay);
                     PlayerControls.Play();
+                    break;
+                case ConsoleKey.F:
+                    PlayerControls.SeekPreviousLyric();
+                    break;
+                case ConsoleKey.G:
+                    PlayerControls.SeekNextLyric();
+                    break;
+                case ConsoleKey.J:
+                    PlayerControls.SeekCurrentLyric();
+                    break;
+                case ConsoleKey.K:
+                    PlayerControls.SeekWhichLyric();
+                    playerScreen.RequireRefresh();
                     break;
                 case ConsoleKey.N:
                     PlayerControls.Stop(false);
@@ -325,10 +254,6 @@ namespace Nitrocid.Extras.BassBoom.Player
                 case ConsoleKey.Escape:
                     PlayerControls.Stop();
                     break;
-                case ConsoleKey.H:
-                    PlayerControls.ShowHelp();
-                    playerScreen.RequireRefresh();
-                    break;
                 case ConsoleKey.I:
                     PlayerControls.ShowSongInfo();
                     playerScreen.RequireRefresh();
@@ -337,12 +262,23 @@ namespace Nitrocid.Extras.BassBoom.Player
                     PlayerControls.PromptSeek();
                     playerScreen.RequireRefresh();
                     break;
-                case ConsoleKey.E:
-                    Equalizer.OpenEqualizer(playerScreen);
+                case ConsoleKey.D:
+                    PlayerControls.Pause();
+                    Common.HandleKeypressCommon(keystroke, playerScreen, false);
+                    playerThread = new(HandlePlay);
+                    PlayerControls.Play();
                     playerScreen.RequireRefresh();
                     break;
-                case ConsoleKey.Q:
-                    PlayerControls.Exit();
+                case ConsoleKey.C:
+                    if (Common.CurrentCachedInfo is null)
+                        return;
+                    if (keystroke.Modifiers == ConsoleModifiers.Shift)
+                        PlayerControls.SeekTo(Common.CurrentCachedInfo.RepeatCheckpoint);
+                    else
+                        Common.CurrentCachedInfo.RepeatCheckpoint = PlaybackPositioningTools.GetCurrentDurationSpan();
+                    break;
+                default:
+                    Common.HandleKeypressCommon(keystroke, playerScreen, false);
                     break;
             }
         }
@@ -351,18 +287,18 @@ namespace Nitrocid.Extras.BassBoom.Player
         {
             try
             {
-                foreach (var musicFile in musicFiles.Skip(currentSong - 1))
+                foreach (var musicFile in Common.cachedInfos.Skip(Common.currentPos - 1))
                 {
-                    if (!advance || exiting)
+                    if (!Common.advance || Common.exiting)
                         return;
                     else
-                        populate = true;
-                    currentSong = musicFiles.IndexOf(musicFile) + 1;
-                    PlayerControls.PopulateMusicFileInfo(musicFile);
-                    TextWriterRaw.WritePlain(PlayerControls.RenderSongName(musicFile), false);
-                    if (paused)
+                        Common.populate = true;
+                    Common.currentPos = Common.cachedInfos.IndexOf(musicFile) + 1;
+                    PlayerControls.PopulateMusicFileInfo(musicFile.MusicPath);
+                    TextWriterRaw.WritePlain(PlayerControls.RenderSongName(musicFile.MusicPath), false);
+                    if (Common.paused)
                     {
-                        paused = false;
+                        Common.paused = false;
                         PlaybackPositioningTools.SeekToFrame(position);
                     }
                     PlaybackTools.Play();
@@ -371,11 +307,7 @@ namespace Nitrocid.Extras.BassBoom.Player
             catch (Exception ex)
             {
                 InfoBoxColor.WriteInfoBox(Translate.DoTranslation("Playback failure") + $": {ex.Message}");
-                failedToPlay = true;
-            }
-            finally
-            {
-                lyricInstance = null;
+                Common.failedToPlay = true;
             }
         }
 
@@ -394,59 +326,55 @@ namespace Nitrocid.Extras.BassBoom.Player
             drawn.Append(CenteredTextColor.RenderCentered(ConsoleWrapper.WindowHeight - 2, keystrokes));
 
             // Print the separator and the music file info
-            string separator = new('=', ConsoleWrapper.WindowWidth);
+            string separator = new('═', ConsoleWrapper.WindowWidth);
             drawn.Append(CenteredTextColor.RenderCentered(ConsoleWrapper.WindowHeight - 4, separator));
 
             // Write powered by...
-            drawn.Append(TextWriterWhereColor.RenderWhere($"[ {Translate.DoTranslation("Powered by BassBoom")} ]", 2, ConsoleWrapper.WindowHeight - 4));
+            drawn.Append(TextWriterWhereColor.RenderWhere($"╣ {Translate.DoTranslation("Powered by BassBoom")} ╠", 2, ConsoleWrapper.WindowHeight - 4));
 
             // In case we have no songs in the playlist...
-            if (musicFiles.Count == 0)
+            if (Common.cachedInfos.Count == 0)
             {
-                int height = (ConsoleWrapper.WindowHeight - 10) / 2;
-                drawn.Append(CenteredTextColor.RenderCentered(height, Translate.DoTranslation("Press 'A' to insert a single song to the playlist, or 'S' to insert the whole music library.")));
-                return drawn.ToString();
+                if (passedMusicPaths.Count > 0)
+                {
+                    foreach (string path in passedMusicPaths)
+                    {
+                        PlayerControls.PopulateMusicFileInfo(path);
+                        Common.populate = true;
+                    }
+                    passedMusicPaths.Clear();
+                }
+                else
+                {
+                    int height = (ConsoleWrapper.WindowHeight - 6) / 2;
+                    drawn.Append(CenteredTextColor.RenderCentered(height, Translate.DoTranslation("Press 'A' to insert a single song to the playlist, or 'S' to insert the whole music library.")));
+                    return drawn.ToString();
+                }
             }
 
             // Populate music file info, as necessary
-            if (populate)
-                PlayerControls.PopulateMusicFileInfo(musicFiles[currentSong - 1]);
-            drawn.Append(PlayerControls.RenderSongName(musicFiles[currentSong - 1]));
+            if (Common.populate)
+                PlayerControls.PopulateMusicFileInfo(Common.CurrentCachedInfo.MusicPath);
+            drawn.Append(PlayerControls.RenderSongName(Common.CurrentCachedInfo.MusicPath));
 
             // Now, print the list of songs.
-            int startPos = 3;
+            var choices = new List<InputChoiceInfo>();
+            int startPos = 4;
             int endPos = ConsoleWrapper.WindowHeight - 10;
             int songsPerPage = endPos - startPos;
-            int currentPage = (currentSong - 1) / songsPerPage;
-            int startIndex = songsPerPage * currentPage;
-            var playlist = new StringBuilder();
-            for (int i = 0; i <= songsPerPage - 1; i++)
+            int max = Common.cachedInfos.Select((_, idx) => idx).Max((idx) => $"  {idx + 1}) ".Length);
+            for (int i = 0; i < Common.cachedInfos.Count; i++)
             {
                 // Populate the first pane
-                string finalEntry = "";
-                int finalIndex = i + startIndex;
-                if (finalIndex <= musicFiles.Count - 1)
-                {
-                    // Here, it's getting uglier as we don't have ElementAt() in IEnumerable, too!
-                    var (musicName, musicArtist, _) = PlayerControls.GetMusicNameArtistGenre(finalIndex);
-                    string duration = cachedInfos[finalIndex].DurationSpan;
-                    string renderedDuration = $"[{duration}]";
-                    string dataObject = $"  {musicArtist} - {musicName}".Truncate(ConsoleWrapper.WindowWidth - renderedDuration.Length - 5);
-                    string spaces = new(' ', ConsoleWrapper.WindowWidth - 4 - duration.Length - dataObject.Length);
-                    finalEntry = dataObject + spaces + renderedDuration;
-                }
-
-                // Render an entry
-                var finalForeColor = finalIndex == currentSong - 1 ? new Color(ConsoleColors.Green) : new Color(ConsoleColors.Silver);
-                int top = startPos + finalIndex - startIndex;
-                playlist.Append(
-                    $"{CsiSequences.GenerateCsiCursorPosition(1, top + 1)}" +
-                    $"{finalForeColor.VTSequenceForeground}" +
-                    finalEntry +
-                    new string(' ', ConsoleWrapper.WindowWidth - finalEntry.Length)
-                );
+                var (musicName, musicArtist, _) = PlayerControls.GetMusicNameArtistGenre(i);
+                string duration = Common.cachedInfos[i].DurationSpan;
+                string songPreview = $"[{duration}] {musicArtist} - {musicName}";
+                choices.Add(new($"{i + 1}", songPreview));
             }
-            drawn.Append(playlist);
+            drawn.Append(
+                BoxFrameColor.RenderBoxFrame(2, 3, ConsoleWrapper.WindowWidth - 6, songsPerPage) +
+                SelectionInputTools.RenderSelections([.. choices], 3, 4, Common.currentPos - 1, songsPerPage, ConsoleWrapper.WindowWidth - 6, selectedForegroundColor: new Color(ConsoleColors.Green), foregroundColor: new Color(ConsoleColors.Silver))
+            );
             return drawn.ToString();
         }
     }

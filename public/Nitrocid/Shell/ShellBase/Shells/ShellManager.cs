@@ -64,6 +64,7 @@ using Textify.General;
 using Terminaux.Base;
 using Nitrocid.ConsoleBase.Inputs;
 using Terminaux.Base.Extensions;
+using Terminaux.Reader.History;
 
 namespace Nitrocid.Shell.ShellBase.Shells
 {
@@ -332,8 +333,9 @@ namespace Nitrocid.Shell.ShellBase.Shells
                 SuggestionsDelimiters = [' '],
                 TreatCtrlCAsInput = true,
                 InputForegroundColor = KernelColorTools.GetColor(KernelColorType.Input),
+                HistoryName = ShellType,
+                HistoryEnabled = Config.MainConfig.InputHistoryEnabled,
             };
-            TermReaderTools.SetHistory(histories[ShellType]);
 
             // Check to see if the full command string ends with the semicolon
             while (FullCommand.EndsWith(";") || string.IsNullOrEmpty(FullCommand))
@@ -390,7 +392,6 @@ namespace Nitrocid.Shell.ShellBase.Shells
 
             // Check for a type of command
             CancellationHandlers.AllowCancel();
-            TermReaderTools.SetHistory(histories["General"]);
             var SplitCommands = FullCommand.Split(new[] { " ; " }, StringSplitOptions.RemoveEmptyEntries);
             var Commands = CommandManager.GetCommands(ShellType);
             for (int i = 0; i < SplitCommands.Length; i++)
@@ -842,8 +843,15 @@ namespace Nitrocid.Shell.ShellBase.Shells
             }
         }
 
-        internal static void SaveHistories() =>
+        internal static void SaveHistories()
+        {
+            foreach (string history in histories.Keys)
+            {
+                if (HistoryTools.IsHistoryRegistered(history))
+                    histories[history] = [.. HistoryTools.GetHistoryEntries(history)];
+            }
             FileIO.WriteAllText(PathsManagement.ShellHistoriesPath, JsonConvert.SerializeObject(histories, Formatting.Indented));
+        }
 
         internal static void LoadHistories()
         {
@@ -851,6 +859,13 @@ namespace Nitrocid.Shell.ShellBase.Shells
             if (!Checking.FileExists(path))
                 return;
             histories = JsonConvert.DeserializeObject<Dictionary<string, List<string>>>(FileIO.ReadAllText(path));
+            foreach (string history in histories.Keys)
+            {
+                if (!HistoryTools.IsHistoryRegistered(history))
+                    HistoryTools.LoadFromInstance(new HistoryInfo(history, histories[history]));
+                else
+                    HistoryTools.Switch(history, [.. histories[history]]);
+            }
         }
 
         /// <summary>
@@ -909,7 +924,10 @@ namespace Nitrocid.Shell.ShellBase.Shells
                 DebugWriter.WriteDebug(DebugLevel.I, "Purge: newShellCount: {0} shells, shellCount: {1} shells", newShellCount, shellCount);
                 if (newShellCount > shellCount)
                     KillShellInternal();
-                TermReaderTools.SetHistory(histories[LastShellType]);
+
+                // Terminaux has introduced recent changes surrounding the history feature of the reader that allows it to save and load custom histories, so we
+                // need to make use of it to be able to save histories in one file.
+                SaveHistories();
             }
         }
 

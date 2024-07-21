@@ -36,13 +36,13 @@ namespace Nitrocid.Kernel.Configuration.Settings.KeyInputs
 
         public object TranslateStringValue(SettingsKey key, string value)
         {
-            var figlet = FigletizeFonts.TryGetByName(value);
+            var figlet = FigletFonts.TryGetByName(value);
             return figlet.Name;
         }
 
         public object TranslateStringValueWithDefault(SettingsKey key, string value, object KeyDefaultValue)
         {
-            var figlet = FigletizeFonts.TryGetByName(value);
+            var figlet = FigletFonts.TryGetByName(value);
             return figlet.Name;
         }
 

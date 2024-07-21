@@ -109,7 +109,7 @@ namespace Nitrocid.Kernel.Starting
                 if (!SplashManager.EnableSplash & !KernelEntry.QuietKernel)
                 {
                     TextWriterRaw.Write();
-                    TextFancyWriters.WriteSeparator(StageText, false, KernelColorType.Stage);
+                    TextFancyWriters.WriteSeparator(StageText, KernelColorType.Stage);
                 }
                 DebugWriter.WriteDebug(DebugLevel.I, $"- Kernel stage {StageNumber} | Text: {StageText}");
             }

@@ -17,22 +17,30 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using Textify.Figlet;
 using Nitrocid.ConsoleBase.Colors;
 using Nitrocid.ConsoleBase.Writers;
-using Nitrocid.Languages;
+using Nitrocid.Shell.ShellBase.Commands;
+using Terminaux.Colors;
 
-namespace Nitrocid.Kernel.Debugging.Testing.Facades
+namespace Nitrocid.Extras.ColorConvert.Commands
 {
-    internal class PrintFigletCenteredF : TestFacade
+    /// <summary>
+    /// Converts the color specifier to hex.
+    /// </summary>
+    /// <remarks>
+    /// If you want to get the target color model representation in hex from the source color model specifier, you can use this command.
+    /// </remarks>
+    class ColorSpecToHexCommand : BaseCommand, ICommand
     {
-        public override string TestName => Translate.DoTranslation("Print a figlet string to console with formatting (centered)");
-        public override TestSection TestSection => TestSection.ConsoleBase;
-        public override int TestOptionalParameters => 1;
-        public override void Run(params string[] args)
+
+        public override int Execute(CommandParameters parameters, ref string variableValue)
         {
-            string rendered = args.Length > 0 ? args[0] : "Hi, {0}!";
-            TextFancyWriters.WriteCenteredFiglet(FigletFonts.TryGetByName("speed"), rendered, KernelColorType.Success, "Nitrocid KS");
+            // Do the job
+            var color = new Color(parameters.ArgumentsList[0]).ToString();
+            TextWriters.Write(color, KernelColorType.NeutralText);
+            variableValue = color;
+            return 0;
         }
+
     }
 }

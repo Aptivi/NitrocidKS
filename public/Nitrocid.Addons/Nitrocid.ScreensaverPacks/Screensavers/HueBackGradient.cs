@@ -27,6 +27,7 @@ using Terminaux.Colors;
 using Terminaux.Colors.Models.Conversion;
 using Terminaux.Sequences.Builder.Types;
 using Terminaux.Base;
+using Terminaux.Colors.Models;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
@@ -110,7 +111,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Prepare the color
             var color = new Color($"hsl:{currentHueAngle};{HueBackGradientSettings.HueBackGradientSaturation};{HueBackGradientSettings.HueBackGradientLuminance}");
-            var hsl = HslConversionTools.ConvertFrom(color.RGB);
+            var hsl = ConversionTools.ConvertFromRgb<HueSaturationLightness>(color.RGB);
             var reverseColor = new Color($"hsl:{hsl.ReverseHueWhole};{HueBackGradientSettings.HueBackGradientSaturation};{HueBackGradientSettings.HueBackGradientLuminance}");
 
             // Set thresholds for color ramp

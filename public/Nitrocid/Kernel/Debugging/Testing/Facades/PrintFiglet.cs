@@ -32,7 +32,7 @@ namespace Nitrocid.Kernel.Debugging.Testing.Facades
         public override void Run(params string[] args)
         {
             string rendered = args.Length > 0 ? args[0] : "Hello world!";
-            TextFancyWriters.WriteFiglet(rendered, FigletizeFonts.TryGetByName("small"), KernelColorType.Success);
+            TextFancyWriters.WriteFiglet(rendered, FigletFonts.TryGetByName("small"), KernelColorType.Success);
         }
     }
 }
