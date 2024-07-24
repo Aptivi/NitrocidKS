@@ -39,7 +39,7 @@
   <!-- KS Dependencies Information -->
   <ItemGroup>
     <PackageReference Include="Crc32.NET" Version="1.2.0" />
-    <PackageReference Include="FluentFTP" Version="50.0.1" />
+    <PackageReference Include="FluentFTP" Version="50.1.0" />
     <PackageReference Include="HtmlAgilityPack" Version="1.11.61" />
     <PackageReference Include="MailKit" Version="4.6.0" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0" />
