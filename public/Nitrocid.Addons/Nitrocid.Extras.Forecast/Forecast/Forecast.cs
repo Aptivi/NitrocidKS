@@ -47,7 +47,7 @@ namespace Nitrocid.Extras.Forecast.Forecast
         /// <param name="CityID">City ID</param>
         /// <returns>A class containing properties of weather information</returns>
         public static WeatherForecastInfo GetWeatherInfo(long CityID) =>
-            WeatherForecast.GetWeatherInfo(CityID: CityID, ApiKey, PreferredUnit);
+            WeatherForecastOwm.GetWeatherInfo(CityID: CityID, ApiKey, PreferredUnit);
 
         /// <summary>
         /// Gets current weather info from OpenWeatherMap
@@ -56,7 +56,7 @@ namespace Nitrocid.Extras.Forecast.Forecast
         /// <param name="APIKey">API key</param>
         /// <returns>A class containing properties of weather information</returns>
         public static WeatherForecastInfo GetWeatherInfo(long CityID, string APIKey) =>
-            WeatherForecast.GetWeatherInfo(CityID: CityID, APIKey, PreferredUnit);
+            WeatherForecastOwm.GetWeatherInfo(CityID: CityID, APIKey, PreferredUnit);
 
         /// <summary>
         /// Gets current weather info from OpenWeatherMap
@@ -64,7 +64,7 @@ namespace Nitrocid.Extras.Forecast.Forecast
         /// <param name="CityName">City name</param>
         /// <returns>A class containing properties of weather information</returns>
         public static WeatherForecastInfo GetWeatherInfo(string CityName) =>
-            WeatherForecast.GetWeatherInfo(CityName: CityName, ApiKey, PreferredUnit);
+            WeatherForecastOwm.GetWeatherInfo(CityName: CityName, ApiKey, PreferredUnit);
 
         /// <summary>
         /// Gets current weather info from OpenWeatherMap
@@ -73,7 +73,7 @@ namespace Nitrocid.Extras.Forecast.Forecast
         /// <param name="APIKey">API key</param>
         /// <returns>A class containing properties of weather information</returns>
         public static WeatherForecastInfo GetWeatherInfo(string CityName, string APIKey) =>
-            WeatherForecast.GetWeatherInfo(CityName: CityName, APIKey, PreferredUnit);
+            WeatherForecastOwm.GetWeatherInfo(CityName: CityName, APIKey, PreferredUnit);
 
         /// <summary>
         /// Prints the weather information to the console
@@ -93,15 +93,14 @@ namespace Nitrocid.Extras.Forecast.Forecast
             string WeatherSpecifier = "°";
             string WindSpeedSpecifier = "m.s";
             if (TextTools.IsStringNumeric(CityID))
-            {
                 WeatherInfo = GetWeatherInfo(Convert.ToInt64(CityID), APIKey);
-            }
             else
-            {
                 WeatherInfo = GetWeatherInfo(CityID, APIKey);
-            }
-            DebugWriter.WriteDebug(DebugLevel.I, "City name: {0}, City ID: {1}", WeatherInfo.CityName, WeatherInfo.CityID);
-            SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("-- Weather info for {0} --"), false, WeatherInfo.CityName);
+            string name = (string)WeatherInfo.WeatherToken["name"];
+            double feelsLike = (double)WeatherInfo.WeatherToken["main"]["feels_like"];
+            double pressure = (double)WeatherInfo.WeatherToken["main"]["pressure"];
+            DebugWriter.WriteDebug(DebugLevel.I, "City name: {0}, City ID: {1}", name, CityID);
+            SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("-- Weather info for {0} --"), false, name);
             TextWriterColor.Write(Translate.DoTranslation("Weather: {0}"), WeatherInfo.Weather);
             if (WeatherInfo.TemperatureMeasurement == UnitMeasurement.Metric)
             {
@@ -117,10 +116,10 @@ namespace Nitrocid.Extras.Forecast.Forecast
                 WindSpeedSpecifier = "mph";
             }
             TextWriterColor.Write(Translate.DoTranslation("Temperature: {0}") + WeatherSpecifier, WeatherInfo.Temperature.ToString("N2"));
-            TextWriterColor.Write(Translate.DoTranslation("Feels like: {0}") + WeatherSpecifier, WeatherInfo.FeelsLike.ToString("N2"));
+            TextWriterColor.Write(Translate.DoTranslation("Feels like: {0}") + WeatherSpecifier, feelsLike.ToString("N2"));
             TextWriterColor.Write(Translate.DoTranslation("Wind speed: {0}") + " {1}", WeatherInfo.WindSpeed.ToString("N2"), WindSpeedSpecifier);
             TextWriterColor.Write(Translate.DoTranslation("Wind direction: {0}") + "°", WeatherInfo.WindDirection.ToString("N2"));
-            TextWriterColor.Write(Translate.DoTranslation("Pressure: {0}") + " hPa", WeatherInfo.Pressure.ToString("N2"));
+            TextWriterColor.Write(Translate.DoTranslation("Pressure: {0}") + " hPa", pressure.ToString("N2"));
             TextWriterColor.Write(Translate.DoTranslation("Humidity: {0}") + "%", WeatherInfo.Humidity.ToString("N2"));
         }
 
