@@ -17,7 +17,8 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using SpecProbe.Platform;
+using SpecProbe.Software.Platform;
+using System.Diagnostics.CodeAnalysis;
 using System.Security.Principal;
 
 namespace KS.Login
@@ -30,6 +31,8 @@ namespace KS.Login
         /// <summary>
         /// Checks to see if the current user is an administrator
         /// </summary>
+        [SuppressMessage("CA1416", "CA1416")]
+        [SuppressMessage("CodeQuality", "IDE0079")]
         public static bool IsAdministrator()
         {
             if (PlatformHelper.IsOnWindows())

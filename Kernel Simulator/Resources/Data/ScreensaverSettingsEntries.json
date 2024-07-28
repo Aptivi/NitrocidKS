@@ -2829,7 +2829,7 @@
                 "Name": "Figlet font",
                 "Type": "SString",
                 "Variable": "FigletFont",
-                "Description": "Write a figlet font that is supported by the Figletize library. Consult the library documentation for more information"
+                "Description": "Write a figlet font that is supported by the Figlet library. Consult the library documentation for more information"
             },
             {
                 "Name": "Minimum red color level",

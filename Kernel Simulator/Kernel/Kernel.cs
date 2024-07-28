@@ -46,7 +46,7 @@ using KS.Network.RemoteDebug;
 using KS.Network.RPC;
 using Terminaux.Base;
 using KS.Misc.Notifiers;
-using SpecProbe.Platform;
+using SpecProbe.Software.Platform;
 using Terminaux.Colors;
 using Terminaux.Inputs.Styles.Infobox;
 
@@ -94,9 +94,8 @@ namespace KS.Kernel
             arguments = Args;
             Thread.CurrentThread.Name = "Main Kernel Thread";
 
-            // Turn on foreground and background
+            // Turn on background
             ColorTools.AllowBackground = true;
-            ColorTools.AllowForeground = true;
 
             // This is a kernel entry point
             while (!Flags.KernelShutdown)

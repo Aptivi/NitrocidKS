@@ -23,8 +23,8 @@ using KS.Misc.Splash;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 using KS.Misc.Writers.FancyWriters;
-using SpecProbe.Hardware;
-using SpecProbe.Hardware.Parts.Types;
+using SpecProbe;
+using SpecProbe.Parts.Types;
 
 namespace KS.Hardware
 {

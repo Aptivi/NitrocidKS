@@ -41,7 +41,7 @@ namespace KS.Misc.Forecast
         /// <returns>A class containing properties of weather information</returns>
         public static WeatherForecastInfo GetWeatherInfo(long CityID)
         {
-            return WeatherForecast.GetWeatherInfo(CityID: CityID, ApiKey, PreferredUnit);
+            return WeatherForecastOwm.GetWeatherInfo(CityID: CityID, ApiKey, PreferredUnit);
         }
 
         /// <summary>
@@ -52,7 +52,7 @@ namespace KS.Misc.Forecast
         /// <returns>A class containing properties of weather information</returns>
         public static WeatherForecastInfo GetWeatherInfo(long CityID, string APIKey)
         {
-            return WeatherForecast.GetWeatherInfo(CityID: CityID, APIKey, PreferredUnit);
+            return WeatherForecastOwm.GetWeatherInfo(CityID: CityID, APIKey, PreferredUnit);
         }
 
         /// <summary>
@@ -62,7 +62,7 @@ namespace KS.Misc.Forecast
         /// <returns>A class containing properties of weather information</returns>
         public static WeatherForecastInfo GetWeatherInfo(string CityName)
         {
-            return WeatherForecast.GetWeatherInfo(CityName: CityName, ApiKey, PreferredUnit);
+            return WeatherForecastOwm.GetWeatherInfo(CityName: CityName, ApiKey, PreferredUnit);
         }
 
         /// <summary>
@@ -73,7 +73,7 @@ namespace KS.Misc.Forecast
         /// <returns>A class containing properties of weather information</returns>
         public static WeatherForecastInfo GetWeatherInfo(string CityName, string APIKey)
         {
-            return WeatherForecast.GetWeatherInfo(CityName: CityName, APIKey, PreferredUnit);
+            return WeatherForecastOwm.GetWeatherInfo(CityName: CityName, APIKey, PreferredUnit);
         }
 
         /// <summary>
@@ -96,15 +96,14 @@ namespace KS.Misc.Forecast
             string WeatherSpecifier = "°";
             string WindSpeedSpecifier = "m.s";
             if (StringQuery.IsStringNumeric(CityID))
-            {
                 WeatherInfo = GetWeatherInfo(Convert.ToInt64(CityID), APIKey);
-            }
             else
-            {
                 WeatherInfo = GetWeatherInfo(CityID, APIKey);
-            }
-            DebugWriter.Wdbg(DebugLevel.I, "City name: {0}, City ID: {1}", WeatherInfo.CityName, WeatherInfo.CityID);
-            SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("-- Weather info for {0} --"), false, ColTypes: KernelColorTools.ColTypes.Separator, WeatherInfo.CityName);
+            string name = (string)WeatherInfo.WeatherToken["name"];
+            double feelsLike = (double)WeatherInfo.WeatherToken["main"]["feels_like"];
+            double pressure = (double)WeatherInfo.WeatherToken["main"]["pressure"];
+            DebugWriter.Wdbg(DebugLevel.I, "City name: {0}, City ID: {1}", name, CityID);
+            SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("-- Weather info for {0} --"), ColTypes: KernelColorTools.ColTypes.Separator, name);
             TextWriterColor.Write(Translate.DoTranslation("Weather: {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), WeatherInfo.Weather);
             if (WeatherInfo.TemperatureMeasurement == UnitMeasurement.Metric)
             {
@@ -120,10 +119,10 @@ namespace KS.Misc.Forecast
                 WindSpeedSpecifier = "mph";
             }
             TextWriterColor.Write(Translate.DoTranslation("Temperature: {0}") + WeatherSpecifier, true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), WeatherInfo.Temperature.ToString("N2"));
-            TextWriterColor.Write(Translate.DoTranslation("Feels like: {0}") + WeatherSpecifier, true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), WeatherInfo.FeelsLike.ToString("N2"));
+            TextWriterColor.Write(Translate.DoTranslation("Feels like: {0}") + WeatherSpecifier, true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), feelsLike.ToString("N2"));
             TextWriterColor.Write(Translate.DoTranslation("Wind speed: {0}") + " {1}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), WeatherInfo.WindSpeed.ToString("N2"), WindSpeedSpecifier);
             TextWriterColor.Write(Translate.DoTranslation("Wind direction: {0}") + "°", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), WeatherInfo.WindDirection.ToString("N2"));
-            TextWriterColor.Write(Translate.DoTranslation("Pressure: {0}") + " hPa", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), WeatherInfo.Pressure.ToString("N2"));
+            TextWriterColor.Write(Translate.DoTranslation("Pressure: {0}") + " hPa", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), pressure.ToString("N2"));
             TextWriterColor.Write(Translate.DoTranslation("Humidity: {0}") + "%", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), WeatherInfo.Humidity.ToString("N2"));
         }
 

@@ -25,8 +25,8 @@ using KS.Languages;
 using KS.Login;
 using KS.Misc.Splash;
 using KS.Misc.Writers.DebugWriters;
-using SpecProbe.Hardware;
-using SpecProbe.Platform;
+using SpecProbe;
+using SpecProbe.Software.Platform;
 
 namespace KS.Hardware
 {

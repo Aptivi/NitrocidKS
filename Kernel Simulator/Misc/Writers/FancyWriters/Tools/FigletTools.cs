@@ -18,10 +18,10 @@
 //
 
 using System.Collections.Generic;
-using Figletize;
-using Figletize.Utilities;
+using Textify.Figlet.Utilities.Lines;
 using KS.Misc.Reflection;
 using KS.Misc.Text;
+using Textify.Figlet;
 
 namespace KS.Misc.Writers.FancyWriters.Tools
 {
@@ -29,16 +29,16 @@ namespace KS.Misc.Writers.FancyWriters.Tools
     {
 
         /// <summary>
-        /// The figlet fonts dictionary. It lists all the Figlet fonts supported by the Figletize library.
+        /// The figlet fonts dictionary. It lists all the Figlet fonts supported by the Figlet library.
         /// </summary>
-        public static readonly Dictionary<string, object> FigletFonts = PropertyManager.GetProperties(typeof(FigletizeFonts));
+        public static readonly Dictionary<string, object> Fonts = PropertyManager.GetProperties(typeof(FigletFonts));
 
         /// <summary>
         /// Gets the figlet text height
         /// </summary>
         /// <param name="Text">Text</param>
         /// <param name="FigletFont">Target figlet font</param>
-        public static int GetFigletHeight(string Text, FigletizeFont FigletFont)
+        public static int GetFigletHeight(string Text, FigletFont FigletFont)
         {
             Text = FigletFont.Render(Text);
             string[] TextLines = Text.SplitNewLines();
@@ -50,7 +50,7 @@ namespace KS.Misc.Writers.FancyWriters.Tools
         /// </summary>
         /// <param name="Text">Text</param>
         /// <param name="FigletFont">Target figlet font</param>
-        public static int GetFigletWidth(string Text, FigletizeFont FigletFont)
+        public static int GetFigletWidth(string Text, FigletFont FigletFont)
         {
             Text = FigletFont.Render(Text);
             string[] TextLines = Text.SplitNewLines();
@@ -60,18 +60,14 @@ namespace KS.Misc.Writers.FancyWriters.Tools
         /// <summary>
         /// Gets the figlet font from font name
         /// </summary>
-        /// <param name="FontName">Font name that is supported by the Figletize library. Consult <see cref="FigletFonts"/> for more info.</param>
+        /// <param name="FontName">Font name that is supported by the Figlet library. Consult <see cref="Fonts"/> for more info.</param>
         /// <returns>Figlet font instance of your font, or Small if not found</returns>
-        public static FigletizeFont GetFigletFont(string FontName)
+        public static FigletFont GetFigletFont(string FontName)
         {
-            if (FigletFonts.ContainsKey(FontName))
-            {
-                return (FigletizeFont)FigletFonts[FontName];
-            }
+            if (Fonts.TryGetValue(FontName, out object fontObject))
+                return (FigletFont)fontObject;
             else
-            {
-                return FigletizeFonts.GetByName("small");
-            }
+                return FigletFonts.GetByName("small");
         }
 
     }

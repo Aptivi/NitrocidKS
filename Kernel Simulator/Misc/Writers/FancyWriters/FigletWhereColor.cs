@@ -18,7 +18,6 @@
 //
 
 using System;
-using Figletize.Utilities;
 using KS.ConsoleBase.Colors;
 using KS.Kernel;
 using KS.Languages;
@@ -26,6 +25,7 @@ using KS.Misc.Reflection;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Colors;
+using Textify.Figlet.Utilities.Lines;
 
 namespace KS.Misc.Writers.FancyWriters
 {
@@ -41,7 +41,7 @@ namespace KS.Misc.Writers.FancyWriters
         /// <param name="Return">Whether or not to return to old position</param>
         /// <param name="FigletFont">Figlet font to use in the text.</param>
         /// <param name="Vars">Variables to format the message before it's written.</param>
-        public static void WriteFigletWherePlain(string Text, int Left, int Top, bool Return, FigletizeFont FigletFont, params object[] Vars)
+        public static void WriteFigletWherePlain(string Text, int Left, int Top, bool Return, FigletFont FigletFont, params object[] Vars)
         {
             try
             {
@@ -70,7 +70,7 @@ namespace KS.Misc.Writers.FancyWriters
         /// <param name="FigletFont">Figlet font to use in the text.</param>
         /// <param name="ColTypes">A type of colors that will be changed.</param>
         /// <param name="Vars">Variables to format the message before it's written.</param>
-        public static void WriteFigletWhere(string Text, int Left, int Top, bool Return, FigletizeFont FigletFont, KernelColorTools.ColTypes ColTypes, params object[] Vars)
+        public static void WriteFigletWhere(string Text, int Left, int Top, bool Return, FigletFont FigletFont, KernelColorTools.ColTypes ColTypes, params object[] Vars)
         {
             try
             {
@@ -98,7 +98,7 @@ namespace KS.Misc.Writers.FancyWriters
         /// <param name="colorTypeForeground">A type of colors that will be changed for the foreground color.</param>
         /// <param name="colorTypeBackground">A type of colors that will be changed for the background color.</param>
         /// <param name="Vars">Variables to format the message before it's written.</param>
-        public static void WriteFigletWhere(string Text, int Left, int Top, bool Return, FigletizeFont FigletFont, KernelColorTools.ColTypes colorTypeForeground, KernelColorTools.ColTypes colorTypeBackground, params object[] Vars)
+        public static void WriteFigletWhere(string Text, int Left, int Top, bool Return, FigletFont FigletFont, KernelColorTools.ColTypes colorTypeForeground, KernelColorTools.ColTypes colorTypeBackground, params object[] Vars)
         {
             try
             {
@@ -126,7 +126,7 @@ namespace KS.Misc.Writers.FancyWriters
         /// <param name="FigletFont">Figlet font to use in the text.</param>
         /// <param name="Color">A color that will be changed to.</param>
         /// <param name="Vars">Variables to format the message before it's written.</param>
-        public static void WriteFigletWhere(string Text, int Left, int Top, bool Return, FigletizeFont FigletFont, ConsoleColor Color, params object[] Vars)
+        public static void WriteFigletWhere(string Text, int Left, int Top, bool Return, FigletFont FigletFont, ConsoleColor Color, params object[] Vars)
         {
             try
             {
@@ -154,7 +154,7 @@ namespace KS.Misc.Writers.FancyWriters
         /// <param name="ForegroundColor">A foreground color that will be changed to.</param>
         /// <param name="BackgroundColor">A background color that will be changed to.</param>
         /// <param name="Vars">Variables to format the message before it's written.</param>
-        public static void WriteFigletWhere(string Text, int Left, int Top, bool Return, FigletizeFont FigletFont, ConsoleColor ForegroundColor, ConsoleColor BackgroundColor, params object[] Vars)
+        public static void WriteFigletWhere(string Text, int Left, int Top, bool Return, FigletFont FigletFont, ConsoleColor ForegroundColor, ConsoleColor BackgroundColor, params object[] Vars)
         {
             try
             {
@@ -182,7 +182,7 @@ namespace KS.Misc.Writers.FancyWriters
         /// <param name="FigletFont">Figlet font to use in the text.</param>
         /// <param name="Color">A color that will be changed to.</param>
         /// <param name="Vars">Variables to format the message before it's written.</param>
-        public static void WriteFigletWhere(string Text, int Left, int Top, bool Return, FigletizeFont FigletFont, Color Color, params object[] Vars)
+        public static void WriteFigletWhere(string Text, int Left, int Top, bool Return, FigletFont FigletFont, Color Color, params object[] Vars)
         {
             try
             {
@@ -210,7 +210,7 @@ namespace KS.Misc.Writers.FancyWriters
         /// <param name="ForegroundColor">A foreground color that will be changed to.</param>
         /// <param name="BackgroundColor">A background color that will be changed to.</param>
         /// <param name="Vars">Variables to format the message before it's written.</param>
-        public static void WriteFigletWhere(string Text, int Left, int Top, bool Return, FigletizeFont FigletFont, Color ForegroundColor, Color BackgroundColor, params object[] Vars)
+        public static void WriteFigletWhere(string Text, int Left, int Top, bool Return, FigletFont FigletFont, Color ForegroundColor, Color BackgroundColor, params object[] Vars)
         {
             try
             {

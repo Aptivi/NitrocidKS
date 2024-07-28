@@ -39,7 +39,7 @@ namespace KS.Shell.Commands
                 ListMode = true;
             if (ListMode)
             {
-                var Cities = WeatherForecast.ListAllCities();
+                var Cities = WeatherForecastOwm.ListAllCities();
                 ListWriterColor.WriteList(Cities);
             }
             else

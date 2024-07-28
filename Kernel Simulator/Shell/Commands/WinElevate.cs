@@ -23,7 +23,7 @@ using KS.Languages;
 using KS.Login;
 using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell.ShellBase.Commands;
-using SpecProbe.Platform;
+using SpecProbe.Software.Platform;
 
 namespace KS.Shell.Commands
 {

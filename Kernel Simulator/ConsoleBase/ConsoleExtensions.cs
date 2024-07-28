@@ -17,8 +17,9 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using SpecProbe.Platform;
+using SpecProbe.Software.Platform;
 using Terminaux.Base.Extensions;
+
 namespace KS.ConsoleBase
 {
     public static class ConsoleExtensions

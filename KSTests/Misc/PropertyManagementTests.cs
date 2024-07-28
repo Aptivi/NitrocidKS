@@ -16,13 +16,14 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
+
 using System;
 using System.Reflection;
-using Figletize;
 using KS.Languages;
 using KS.Misc.Reflection;
 using NUnit.Framework;
 using Shouldly;
+using Textify.Figlet;
 
 namespace KSTests.Misc
 {
@@ -82,7 +83,7 @@ namespace KSTests.Misc
         [Description("Management")]
         public void TestGetProperties()
         {
-            var Properties = PropertyManager.GetProperties(typeof(FigletizeFonts));
+            var Properties = PropertyManager.GetProperties(typeof(FigletFonts));
             Properties.ShouldNotBeNull();
             Properties.ShouldNotBeEmpty();
         }
@@ -94,7 +95,7 @@ namespace KSTests.Misc
         [Description("Management")]
         public void TestGetPropertiesNoEvaluation()
         {
-            var Properties = PropertyManager.GetPropertiesNoEvaluation(typeof(FigletizeFonts));
+            var Properties = PropertyManager.GetPropertiesNoEvaluation(typeof(FigletFonts));
             Properties.ShouldNotBeNull();
             Properties.ShouldNotBeEmpty();
         }
