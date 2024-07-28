@@ -37,9 +37,9 @@ namespace KS.Files
                 if (!isTest)
                 {
                     if (PlatformDetector.IsOnUnix())
-                        return Environment.GetEnvironmentVariable("HOME") + "/.config/ks";
+                        return Environment.GetEnvironmentVariable("HOME");
                     else
-                        return (Environment.GetEnvironmentVariable("LOCALAPPDATA") + "/KS").Replace("\\", "/");
+                        return Environment.GetEnvironmentVariable("USERPROFILE").Replace(@"\", "/");
                 }
                 else
                     return TempPath + "/kstest";
