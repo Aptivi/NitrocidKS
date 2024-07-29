@@ -19,12 +19,12 @@
 
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Extras.BassBoom.Player;
-using Nitrocid.Files;
 using Nitrocid.Files.Operations.Querying;
 using Nitrocid.Kernel.Debugging;
 using Nitrocid.Languages;
 using Nitrocid.Shell.ShellBase.Commands;
 using System;
+using System.Linq;
 
 namespace Nitrocid.Extras.BassBoom.Commands
 {
@@ -42,22 +42,27 @@ namespace Nitrocid.Extras.BassBoom.Commands
             try
             {
                 // First, prompt for the music path if no arguments are provided.
+                bool isRadio = parameters.SwitchesList.Contains("-r");
                 if (parameters.ArgumentsList.Length != 0)
                 {
                     string musicPath = parameters.ArgumentsList[0];
 
                     // Check for existence.
-                    if (string.IsNullOrEmpty(musicPath) || !Checking.FileExists(musicPath))
+                    if (string.IsNullOrEmpty(musicPath) || (!isRadio && !Checking.FileExists(musicPath)))
                     {
                         TextWriterColor.Write(Translate.DoTranslation("Music file '{0}' doesn't exist."), musicPath);
                         return 31;
                     }
-                    PlayerTui.passedMusicPaths.Add(musicPath);
+                    if (!isRadio)
+                        PlayerTui.passedMusicPaths.Add(musicPath);
                 }
 
                 // Now, open an interactive TUI
                 Common.exiting = false;
-                PlayerTui.PlayerLoop();
+                if (isRadio)
+                    Radio.RadioLoop();
+                else
+                    PlayerTui.PlayerLoop();
             }
             catch (Exception ex)
             {

@@ -47,6 +47,7 @@ namespace Nitrocid.Extras.BassBoom.Player
         internal static bool populate = true;
         internal static bool paused = false;
         internal static bool failedToPlay = false;
+        internal static bool isRadioMode = false;
         internal static readonly List<CachedSongInfo> cachedInfos = [];
 
         internal static CachedSongInfo CurrentCachedInfo =>
@@ -80,7 +81,10 @@ namespace Nitrocid.Extras.BassBoom.Player
         {
             if (FileTools.IsOpened)
                 FileTools.CloseFile();
-            FileTools.OpenFile(musicPath);
+            if (isRadioMode)
+                FileTools.OpenUrl(musicPath);
+            else
+                FileTools.OpenFile(musicPath);
         }
 
         internal static void ShowDeviceDriver()

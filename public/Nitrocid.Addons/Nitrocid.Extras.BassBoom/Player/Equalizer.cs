@@ -143,7 +143,12 @@ namespace Nitrocid.Extras.BassBoom.Player
 
             // Write current song
             if (Common.cachedInfos.Count > 0)
-                drawn.Append(PlayerControls.RenderSongName(Common.CurrentCachedInfo.MusicPath));
+            {
+                if (Common.isRadioMode)
+                    drawn.Append(RadioControls.RenderStationName());
+                else
+                    drawn.Append(PlayerControls.RenderSongName(Common.CurrentCachedInfo.MusicPath));
+            }
             else
                 drawn.Append(
                     TextWriterWhereColor.RenderWhere(ConsoleClearing.GetClearLineToRightSequence(), 0, 1) +
