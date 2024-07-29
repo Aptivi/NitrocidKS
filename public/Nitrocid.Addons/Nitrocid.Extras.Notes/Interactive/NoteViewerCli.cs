@@ -25,8 +25,6 @@ using System;
 using Nitrocid.Files.Editors.TextEdit;
 using Textify.General;
 using System.Linq;
-using Terminaux.Inputs.Styles.Infobox;
-using Terminaux.Inputs.Styles.Infobox;
 
 namespace Nitrocid.Extras.Notes.Interactive
 {
@@ -34,6 +32,8 @@ namespace Nitrocid.Extras.Notes.Interactive
     /// Notes viewer class
     /// </summary>
     public class NoteViewerCli : BaseInteractiveTui<string>, IInteractiveTui<string>
+    {
+        /// <inheritdoc/>
         public override InteractiveTuiBinding[] Bindings { get; } =
         [
             // Operations
@@ -51,8 +51,6 @@ namespace Nitrocid.Extras.Notes.Interactive
                 (_, _) => Save()),
         ];
 
-        /// <inheritdoc/>
-        /// <inheritdoc/>
         /// <inheritdoc/>
         public override IEnumerable<string> PrimaryDataSource =>
             NoteManagement.ListNotes();
@@ -107,6 +105,7 @@ namespace Nitrocid.Extras.Notes.Interactive
 
             // Render them to the second pane
             return finalRenderedNote;
+        }
 
         private static void Add()
         {
@@ -142,6 +141,5 @@ namespace Nitrocid.Extras.Notes.Interactive
 
         private static void Save() =>
             NoteManagement.SaveNotes();
-        }
     }
 }
