@@ -18,7 +18,7 @@
 //
 
 using KS.ConsoleBase.Colors;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Network.Mail.Directory;
 using KS.Shell.ShellBase.Commands;
 
@@ -29,7 +29,7 @@ namespace KS.Network.Mail.Commands
 
         public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
         {
-            TextWriterColor.Write(MailDirectory.MailListDirectories(), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(MailDirectory.MailListDirectories(), false, KernelColorTools.ColTypes.Neutral);
         }
 
     }

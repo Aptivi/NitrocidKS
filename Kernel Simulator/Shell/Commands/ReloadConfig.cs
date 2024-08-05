@@ -20,7 +20,7 @@
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Configuration;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 
 namespace KS.Shell.Commands
@@ -31,12 +31,12 @@ namespace KS.Shell.Commands
         public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
         {
             ConfigTools.ReloadConfig();
-            TextWriterColor.Write(Translate.DoTranslation("Configuration reloaded. You might need to reboot the kernel for some changes to take effect."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(Translate.DoTranslation("Configuration reloaded. You might need to reboot the kernel for some changes to take effect."), true, KernelColorTools.ColTypes.Neutral);
         }
 
         public override void HelpHelper()
         {
-            TextWriterColor.Write(Translate.DoTranslation("Colors don't require a restart, but most of the settings require a restart."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(Translate.DoTranslation("Colors don't require a restart, but most of the settings require a restart."), true, KernelColorTools.ColTypes.Neutral);
         }
 
     }

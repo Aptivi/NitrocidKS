@@ -22,10 +22,11 @@ using System.Collections.Generic;
 using KS.ConsoleBase.Colors;
 using KS.Misc.Text;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 using Terminaux.Colors;
+using Terminaux.Writer.ConsoleWriters;
 namespace KS.Misc.Screensaver.Displays
 {
     public static class WipeSettings
@@ -311,7 +312,7 @@ namespace KS.Misc.Screensaver.Displays
                                 // Do the actual writing
                                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Setting Y position to {0}", Row);
                                 ConsoleWrapper.SetCursorPosition(0, Row);
-                                TextWriterColor.WritePlain(" ".Repeat(Column), false);
+                                TextWriterRaw.WritePlain(" ".Repeat(Column), false);
                                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", Column);
                             }
                             ThreadManager.SleepNoBlock(WipeSettings.WipeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
@@ -337,7 +338,7 @@ namespace KS.Misc.Screensaver.Displays
                                 // Do the actual writing
                                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Setting position to {0}", Column - 1, Row);
                                 ConsoleWrapper.SetCursorPosition(Column - 1, Row);
-                                TextWriterColor.WritePlain(" ".Repeat(ConsoleWrapper.WindowWidth - Column + 1), false);
+                                TextWriterRaw.WritePlain(" ".Repeat(ConsoleWrapper.WindowWidth - Column + 1), false);
                                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", ConsoleWrapper.WindowWidth - Column + 1);
                             }
                             ThreadManager.SleepNoBlock(WipeSettings.WipeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
@@ -357,7 +358,7 @@ namespace KS.Misc.Screensaver.Displays
                             // Do the actual writing
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Setting Y position to {0}", Row);
                             ConsoleWrapper.SetCursorPosition(0, Row);
-                            TextWriterColor.WritePlain(" ".Repeat(ConsoleWrapper.WindowWidth), false);
+                            TextWriterRaw.WritePlain(" ".Repeat(ConsoleWrapper.WindowWidth), false);
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", ConsoleWrapper.WindowWidth);
                             ThreadManager.SleepNoBlock(WipeSettings.WipeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
                         }
@@ -375,7 +376,7 @@ namespace KS.Misc.Screensaver.Displays
 
                             // Do the actual writing
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", ConsoleWrapper.WindowWidth);
-                            TextWriterColor.WritePlain(" ".Repeat(ConsoleWrapper.WindowWidth), false);
+                            TextWriterRaw.WritePlain(" ".Repeat(ConsoleWrapper.WindowWidth), false);
                             ThreadManager.SleepNoBlock(WipeSettings.WipeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
                         }
                         ConsoleWrapper.SetCursorPosition(0, 0);

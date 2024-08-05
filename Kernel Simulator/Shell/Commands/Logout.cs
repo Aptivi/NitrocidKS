@@ -20,7 +20,7 @@
 using KS.ConsoleBase.Colors;
 using KS.Kernel;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 using KS.Shell.ShellBase.Shells;
 namespace KS.Shell.Commands
@@ -36,7 +36,7 @@ namespace KS.Shell.Commands
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Cannot log out from the subshell."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("Cannot log out from the subshell."), true, KernelColorTools.ColTypes.Error);
             }
         }
 

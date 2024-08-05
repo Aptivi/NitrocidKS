@@ -18,7 +18,7 @@
 //
 
 using KS.ConsoleBase.Colors;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 using KS.TimeDate;
 
@@ -29,7 +29,7 @@ namespace KS.TestShell.Commands
 
         public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
         {
-            TextWriterColor.Write(TimeDateRenderersUtc.RenderTimeUtc(), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(TimeDateRenderersUtc.RenderTimeUtc(), true, KernelColorTools.ColTypes.Neutral);
         }
 
     }

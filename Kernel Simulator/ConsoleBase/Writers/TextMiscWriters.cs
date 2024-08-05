@@ -17,13 +17,14 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using Nitrocid.ConsoleBase.Colors;
+using KS.ConsoleBase.Colors;
 using Terminaux.Writer.MiscWriters;
+using static KS.ConsoleBase.Colors.KernelColorTools;
 
-namespace Nitrocid.ConsoleBase.Writers
+namespace KS.ConsoleBase.Writers
 {
     /// <summary>
-    /// Miscellaneous text writer wrapper for writing with <see cref="ColorType"/> (<see cref="Terminaux.Writer.MiscWriters"/>)
+    /// Miscellaneous text writer wrapper for writing with <see cref="ColTypes"/> (<see cref="Terminaux.Writer.MiscWriters"/>)
     /// </summary>
     public static class TextMiscWriters
     {
@@ -35,9 +36,9 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="LineNumber">Line number (not index)</param>
         /// <param name="startPos">Column number (not index). This tells the handle where to place itself</param>
         /// <param name="endPos">Column number (not index). This tells the handle where to place itself as the end. Should be bigger than the start position.</param>
-        /// <param name="ColorType">The type of color</param>
-        public static void PrintLineWithHandleConditional(bool Condition, string Filename, int LineNumber, int startPos, int endPos, ColorType ColorType) =>
-            LineHandleRangedWriter.PrintLineWithHandleConditional(Condition, Filename, LineNumber, startPos, endPos, KernelColorTools.GetColor(ColorType));
+        /// <param name="ColTypes">The type of color</param>
+        public static void PrintLineWithHandleConditional(bool Condition, string Filename, int LineNumber, int startPos, int endPos, ColTypes ColTypes) =>
+            LineHandleRangedWriter.PrintLineWithHandleConditional(Condition, Filename, LineNumber, startPos, endPos, KernelColorTools.GetConsoleColor(ColTypes));
 
         /// <summary>
         /// Prints the line of a text file with the specified line number and the column number if the specified condition is satisfied
@@ -47,9 +48,9 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="LineNumber">Line number (not index)</param>
         /// <param name="startPos">Column number (not index). This tells the handle where to place itself</param>
         /// <param name="endPos">Column number (not index). This tells the handle where to place itself as the end. Should be bigger than the start position.</param>
-        /// <param name="ColorType">The type of color</param>
-        public static void PrintLineWithHandleConditional(bool Condition, string[] Array, int LineNumber, int startPos, int endPos, ColorType ColorType) =>
-            LineHandleRangedWriter.PrintLineWithHandleConditional(Condition, Array, LineNumber, startPos, endPos, KernelColorTools.GetColor(ColorType));
+        /// <param name="ColTypes">The type of color</param>
+        public static void PrintLineWithHandleConditional(bool Condition, string[] Array, int LineNumber, int startPos, int endPos, ColTypes ColTypes) =>
+            LineHandleRangedWriter.PrintLineWithHandleConditional(Condition, Array, LineNumber, startPos, endPos, KernelColorTools.GetConsoleColor(ColTypes));
 
         /// <summary>
         /// Prints the line of a text file with the specified line number and the column number
@@ -58,9 +59,9 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="LineNumber">Line number (not index)</param>
         /// <param name="startPos">Column number (not index). This tells the handle where to place itself</param>
         /// <param name="endPos">Column number (not index). This tells the handle where to place itself as the end. Should be bigger than the start position.</param>
-        /// <param name="ColorType">The type of color</param>
-        public static void PrintLineWithHandle(string Filename, int LineNumber, int startPos, int endPos, ColorType ColorType) =>
-            LineHandleRangedWriter.PrintLineWithHandle(Filename, LineNumber, startPos, endPos, KernelColorTools.GetColor(ColorType));
+        /// <param name="ColTypes">The type of color</param>
+        public static void PrintLineWithHandle(string Filename, int LineNumber, int startPos, int endPos, ColTypes ColTypes) =>
+            LineHandleRangedWriter.PrintLineWithHandle(Filename, LineNumber, startPos, endPos, KernelColorTools.GetConsoleColor(ColTypes));
 
         /// <summary>
         /// Prints the line of a text file with the specified line number and the column number
@@ -69,9 +70,9 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="LineNumber">Line number (not index)</param>
         /// <param name="startPos">Column number (not index). This tells the handle where to place itself</param>
         /// <param name="endPos">Column number (not index). This tells the handle where to place itself as the end. Should be bigger than the start position.</param>
-        /// <param name="ColorType">The type of color</param>
-        public static void PrintLineWithHandle(string[] Array, int LineNumber, int startPos, int endPos, ColorType ColorType) =>
-            LineHandleRangedWriter.PrintLineWithHandle(Array, LineNumber, startPos, endPos, KernelColorTools.GetColor(ColorType));
+        /// <param name="ColTypes">The type of color</param>
+        public static void PrintLineWithHandle(string[] Array, int LineNumber, int startPos, int endPos, ColTypes ColTypes) =>
+            LineHandleRangedWriter.PrintLineWithHandle(Array, LineNumber, startPos, endPos, KernelColorTools.GetConsoleColor(ColTypes));
 
         /// <summary>
         /// Renders the line of a text file with the specified line number and the column number if the specified condition is satisfied
@@ -81,11 +82,11 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="LineNumber">Line number (not index)</param>
         /// <param name="startPos">Column number (not index). This tells the handle where to place itself</param>
         /// <param name="endPos">Column number (not index). This tells the handle where to place itself as the end. Should be bigger than the start position.</param>
-        /// <param name="ColorType">The type of color</param>
-        public static string RenderLineWithHandleConditional(bool Condition, string Filename, int LineNumber, int startPos, int endPos, ColorType ColorType)
+        /// <param name="ColTypes">The type of color</param>
+        public static string RenderLineWithHandleConditional(bool Condition, string Filename, int LineNumber, int startPos, int endPos, ColTypes ColTypes)
         {
             if (Condition)
-                return RenderLineWithHandle(Filename, LineNumber, startPos, endPos, ColorType);
+                return RenderLineWithHandle(Filename, LineNumber, startPos, endPos, ColTypes);
             return "";
         }
 
@@ -97,9 +98,9 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="LineNumber">Line number (not index)</param>
         /// <param name="startPos">Column number (not index). This tells the handle where to place itself</param>
         /// <param name="endPos">Column number (not index). This tells the handle where to place itself as the end. Should be bigger than the start position.</param>
-        /// <param name="ColorType">The type of color</param>
-        public static string RenderLineWithHandleConditional(bool Condition, string[] Array, int LineNumber, int startPos, int endPos, ColorType ColorType) =>
-            LineHandleRangedWriter.RenderLineWithHandleConditional(Condition, Array, LineNumber, startPos, endPos, KernelColorTools.GetColor(ColorType));
+        /// <param name="ColTypes">The type of color</param>
+        public static string RenderLineWithHandleConditional(bool Condition, string[] Array, int LineNumber, int startPos, int endPos, ColTypes ColTypes) =>
+            LineHandleRangedWriter.RenderLineWithHandleConditional(Condition, Array, LineNumber, startPos, endPos, KernelColorTools.GetConsoleColor(ColTypes));
 
         /// <summary>
         /// Renders the line of a text file with the specified line number and the column number
@@ -108,9 +109,9 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="LineNumber">Line number (not index)</param>
         /// <param name="startPos">Column number (not index). This tells the handle where to place itself</param>
         /// <param name="endPos">Column number (not index). This tells the handle where to place itself as the end. Should be bigger than the start position.</param>
-        /// <param name="ColorType">The type of color</param>
-        public static string RenderLineWithHandle(string Filename, int LineNumber, int startPos, int endPos, ColorType ColorType) =>
-            LineHandleRangedWriter.RenderLineWithHandle(Filename, LineNumber, startPos, endPos, KernelColorTools.GetColor(ColorType));
+        /// <param name="ColTypes">The type of color</param>
+        public static string RenderLineWithHandle(string Filename, int LineNumber, int startPos, int endPos, ColTypes ColTypes) =>
+            LineHandleRangedWriter.RenderLineWithHandle(Filename, LineNumber, startPos, endPos, KernelColorTools.GetConsoleColor(ColTypes));
 
         /// <summary>
         /// Renders the line of a text file with the specified line number and the column number
@@ -119,9 +120,9 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="LineNumber">Line number (not index)</param>
         /// <param name="startPos">Column number (not index). This tells the handle where to place itself</param>
         /// <param name="endPos">Column number (not index). This tells the handle where to place itself as the end. Should be bigger than the start position.</param>
-        /// <param name="ColorType">The type of color</param>
-        public static string RenderLineWithHandle(string[] Array, int LineNumber, int startPos, int endPos, ColorType ColorType) =>
-            LineHandleRangedWriter.RenderLineWithHandle(Array, LineNumber, startPos, endPos, KernelColorTools.GetColor(ColorType));
+        /// <param name="ColTypes">The type of color</param>
+        public static string RenderLineWithHandle(string[] Array, int LineNumber, int startPos, int endPos, ColTypes ColTypes) =>
+            LineHandleRangedWriter.RenderLineWithHandle(Array, LineNumber, startPos, endPos, KernelColorTools.GetConsoleColor(ColTypes));
 
         /// <summary>
         /// Prints the line of a text file with the specified line number and the column number if the specified condition is satisfied
@@ -130,9 +131,9 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="Filename">Path to text file</param>
         /// <param name="LineNumber">Line number (not index)</param>
         /// <param name="ColumnNumber">Column number (not index). This tells the handle where to place itself</param>
-        /// <param name="ColorType">The type of color</param>
-        public static void PrintLineWithHandleConditional(bool Condition, string Filename, int LineNumber, int ColumnNumber, ColorType ColorType) =>
-            LineHandleWriter.PrintLineWithHandleConditional(Condition, Filename, LineNumber, ColumnNumber, KernelColorTools.GetColor(ColorType));
+        /// <param name="ColTypes">The type of color</param>
+        public static void PrintLineWithHandleConditional(bool Condition, string Filename, int LineNumber, int ColumnNumber, ColTypes ColTypes) =>
+            LineHandleWriter.PrintLineWithHandleConditional(Condition, Filename, LineNumber, ColumnNumber, KernelColorTools.GetConsoleColor(ColTypes));
 
         /// <summary>
         /// Prints the line of a text file with the specified line number and the column number if the specified condition is satisfied
@@ -141,9 +142,9 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="Array">A string array containing the contents of the file</param>
         /// <param name="LineNumber">Line number (not index)</param>
         /// <param name="ColumnNumber">Column number (not index). This tells the handle where to place itself</param>
-        /// <param name="ColorType">The type of color</param>
-        public static void PrintLineWithHandleConditional(bool Condition, string[] Array, int LineNumber, int ColumnNumber, ColorType ColorType) =>
-            LineHandleWriter.PrintLineWithHandleConditional(Condition, Array, LineNumber, ColumnNumber, KernelColorTools.GetColor(ColorType));
+        /// <param name="ColTypes">The type of color</param>
+        public static void PrintLineWithHandleConditional(bool Condition, string[] Array, int LineNumber, int ColumnNumber, ColTypes ColTypes) =>
+            LineHandleWriter.PrintLineWithHandleConditional(Condition, Array, LineNumber, ColumnNumber, KernelColorTools.GetConsoleColor(ColTypes));
 
         /// <summary>
         /// Prints the line of a text file with the specified line number and the column number
@@ -151,9 +152,9 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="Filename">Path to text file</param>
         /// <param name="LineNumber">Line number (not index)</param>
         /// <param name="ColumnNumber">Column number (not index). This tells the handle where to place itself</param>
-        /// <param name="ColorType">The type of color</param>
-        public static void PrintLineWithHandle(string Filename, int LineNumber, int ColumnNumber, ColorType ColorType) =>
-            LineHandleWriter.PrintLineWithHandle(Filename, LineNumber, ColumnNumber, KernelColorTools.GetColor(ColorType));
+        /// <param name="ColTypes">The type of color</param>
+        public static void PrintLineWithHandle(string Filename, int LineNumber, int ColumnNumber, ColTypes ColTypes) =>
+            LineHandleWriter.PrintLineWithHandle(Filename, LineNumber, ColumnNumber, KernelColorTools.GetConsoleColor(ColTypes));
 
         /// <summary>
         /// Prints the line of a text file with the specified line number and the column number
@@ -161,9 +162,9 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="Array">A string array containing the contents of the file</param>
         /// <param name="LineNumber">Line number (not index)</param>
         /// <param name="ColumnNumber">Column number (not index). This tells the handle where to place itself</param>
-        /// <param name="ColorType">The type of color</param>
-        public static void PrintLineWithHandle(string[] Array, int LineNumber, int ColumnNumber, ColorType ColorType) =>
-            LineHandleWriter.PrintLineWithHandle(Array, LineNumber, ColumnNumber, KernelColorTools.GetColor(ColorType));
+        /// <param name="ColTypes">The type of color</param>
+        public static void PrintLineWithHandle(string[] Array, int LineNumber, int ColumnNumber, ColTypes ColTypes) =>
+            LineHandleWriter.PrintLineWithHandle(Array, LineNumber, ColumnNumber, KernelColorTools.GetConsoleColor(ColTypes));
 
         /// <summary>
         /// Renders the line of a text file with the specified line number and the column number if the specified condition is satisfied
@@ -172,11 +173,11 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="Filename">Path to text file</param>
         /// <param name="LineNumber">Line number (not index)</param>
         /// <param name="ColumnNumber">Column number (not index). This tells the handle where to place itself</param>
-        /// <param name="ColorType">The type of color</param>
-        public static string RenderLineWithHandleConditional(bool Condition, string Filename, int LineNumber, int ColumnNumber, ColorType ColorType)
+        /// <param name="ColTypes">The type of color</param>
+        public static string RenderLineWithHandleConditional(bool Condition, string Filename, int LineNumber, int ColumnNumber, ColTypes ColTypes)
         {
             if (Condition)
-                return RenderLineWithHandle(Filename, LineNumber, ColumnNumber, ColorType);
+                return RenderLineWithHandle(Filename, LineNumber, ColumnNumber, ColTypes);
             return "";
         }
 
@@ -187,9 +188,9 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="Array">A string array containing the contents of the file</param>
         /// <param name="LineNumber">Line number (not index)</param>
         /// <param name="ColumnNumber">Column number (not index). This tells the handle where to place itself</param>
-        /// <param name="ColorType">The type of color</param>
-        public static string RenderLineWithHandleConditional(bool Condition, string[] Array, int LineNumber, int ColumnNumber, ColorType ColorType) =>
-            LineHandleWriter.RenderLineWithHandleConditional(Condition, Array, LineNumber, ColumnNumber, KernelColorTools.GetColor(ColorType));
+        /// <param name="ColTypes">The type of color</param>
+        public static string RenderLineWithHandleConditional(bool Condition, string[] Array, int LineNumber, int ColumnNumber, ColTypes ColTypes) =>
+            LineHandleWriter.RenderLineWithHandleConditional(Condition, Array, LineNumber, ColumnNumber, KernelColorTools.GetConsoleColor(ColTypes));
 
         /// <summary>
         /// Renders the line of a text file with the specified line number and the column number
@@ -197,9 +198,9 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="Filename">Path to text file</param>
         /// <param name="LineNumber">Line number (not index)</param>
         /// <param name="ColumnNumber">Column number (not index). This tells the handle where to place itself</param>
-        /// <param name="ColorType">The type of color</param>
-        public static string RenderLineWithHandle(string Filename, int LineNumber, int ColumnNumber, ColorType ColorType) =>
-            LineHandleWriter.RenderLineWithHandle(Filename, LineNumber, ColumnNumber, KernelColorTools.GetColor(ColorType));
+        /// <param name="ColTypes">The type of color</param>
+        public static string RenderLineWithHandle(string Filename, int LineNumber, int ColumnNumber, ColTypes ColTypes) =>
+            LineHandleWriter.RenderLineWithHandle(Filename, LineNumber, ColumnNumber, KernelColorTools.GetConsoleColor(ColTypes));
 
         /// <summary>
         /// Renders the line of a text file with the specified line number and the column number
@@ -207,8 +208,8 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="Array">A string array containing the contents of the file</param>
         /// <param name="LineNumber">Line number (not index)</param>
         /// <param name="ColumnNumber">Column number (not index). This tells the handle where to place itself</param>
-        /// <param name="ColorType">The type of color</param>
-        public static string RenderLineWithHandle(string[] Array, int LineNumber, int ColumnNumber, ColorType ColorType) =>
-            LineHandleWriter.RenderLineWithHandle(Array, LineNumber, ColumnNumber, KernelColorTools.GetColor(ColorType));
+        /// <param name="ColTypes">The type of color</param>
+        public static string RenderLineWithHandle(string[] Array, int LineNumber, int ColumnNumber, ColTypes ColTypes) =>
+            LineHandleWriter.RenderLineWithHandle(Array, LineNumber, ColumnNumber, KernelColorTools.GetConsoleColor(ColTypes));
     }
 }

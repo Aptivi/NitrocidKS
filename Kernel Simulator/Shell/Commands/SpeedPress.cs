@@ -23,7 +23,7 @@ using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Games;
 using KS.Misc.Reflection;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 
 namespace KS.Shell.Commands
@@ -53,17 +53,17 @@ namespace KS.Shell.Commands
 
         public override void HelpHelper()
         {
-            TextWriterColor.Write(Translate.DoTranslation("This command has the below switches that change how it works:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-            TextWriterColor.Write("  -e: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Starts the game in easy difficulty"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-            TextWriterColor.Write("  -m: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Starts the game in medium difficulty"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-            TextWriterColor.Write("  -h: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Starts the game in hard difficulty"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-            TextWriterColor.Write("  -v: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Starts the game in very hard difficulty"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-            TextWriterColor.Write("  -c: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Starts the game in custom difficulty. Please note that the custom timeout in milliseconds should be written as argument."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+            TextWriters.Write(Translate.DoTranslation("This command has the below switches that change how it works:"), true, KernelColorTools.ColTypes.Neutral);
+            TextWriters.Write("  -e: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Starts the game in easy difficulty"), true, KernelColorTools.ColTypes.ListValue);
+            TextWriters.Write("  -m: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Starts the game in medium difficulty"), true, KernelColorTools.ColTypes.ListValue);
+            TextWriters.Write("  -h: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Starts the game in hard difficulty"), true, KernelColorTools.ColTypes.ListValue);
+            TextWriters.Write("  -v: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Starts the game in very hard difficulty"), true, KernelColorTools.ColTypes.ListValue);
+            TextWriters.Write("  -c: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Starts the game in custom difficulty. Please note that the custom timeout in milliseconds should be written as argument."), true, KernelColorTools.ColTypes.ListValue);
         }
 
     }

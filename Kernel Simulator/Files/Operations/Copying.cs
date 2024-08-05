@@ -23,7 +23,7 @@ using KS.ConsoleBase.Colors;
 using KS.Files.Querying;
 using KS.Languages;
 using KS.Misc.Text;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 
 namespace KS.Files.Operations
@@ -143,7 +143,7 @@ namespace KS.Files.Operations
                 string DestinationFilePath = Path.Combine(Destination, SourceFile.Name);
                 DebugWriter.Wdbg(DebugLevel.I, "Copying file {0} to destination...", DestinationFilePath);
                 if (ShowProgress)
-                    TextWriterColor.Write("-> {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), DestinationFilePath);
+                    TextWriters.Write("-> {0}", true, KernelColorTools.ColTypes.Neutral, DestinationFilePath);
                 SourceFile.CopyTo(DestinationFilePath, true);
             }
 
@@ -153,7 +153,7 @@ namespace KS.Files.Operations
                 string DestinationDirectoryPath = Path.Combine(Destination, SourceDirectory.Name);
                 DebugWriter.Wdbg(DebugLevel.I, "Calling CopyDirectory() with destination {0}...", DestinationDirectoryPath);
                 if (ShowProgress)
-                    TextWriterColor.Write("* {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), DestinationDirectoryPath);
+                    TextWriters.Write("* {0}", true, KernelColorTools.ColTypes.Neutral, DestinationDirectoryPath);
                 CopyDirectory(SourceDirectory.FullName, DestinationDirectoryPath);
             }
         }

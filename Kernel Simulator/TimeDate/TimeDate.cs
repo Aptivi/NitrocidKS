@@ -25,7 +25,7 @@ using KS.Languages;
 using KS.Misc.Screensaver;
 using KS.Misc.Text;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 
@@ -71,11 +71,11 @@ namespace KS.TimeDate
                     {
                         oldWid = ConsoleWrapper.WindowWidth - TimeString.Length - 1;
                         oldTop = Console.WindowTop;
-                        TextWriterWhereColor.WriteWhere(TimeString, ConsoleWrapper.WindowWidth - TimeString.Length - 1, Console.WindowTop, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                        TextWriters.WriteWhere(TimeString, ConsoleWrapper.WindowWidth - TimeString.Length - 1, Console.WindowTop, true, KernelColorTools.ColTypes.Neutral);
                     }
                     Thread.Sleep(1000);
                     if (oldWid != 0)
-                        TextWriterWhereColor.WriteWhere(" ".Repeat(TimeString.Length), oldWid, oldTop, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                        TextWriters.WriteWhere(" ".Repeat(TimeString.Length), oldWid, oldTop, true, KernelColorTools.ColTypes.Neutral);
                 }
             }
             catch (ThreadInterruptedException)
@@ -107,14 +107,14 @@ namespace KS.TimeDate
         /// </summary>
         public static void ShowCurrentTimes()
         {
-            TextWriterColor.Write("datetime: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Current time is {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), TimeDateRenderers.RenderTime());
-            TextWriterColor.Write("datetime: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Today is {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), TimeDateRenderers.RenderDate());
-            TextWriterColor.Write("datetime: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Time and date in UTC: {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), TimeDateRenderersUtc.RenderUtc());
-            TextWriterColor.Write("datetime: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Time Zone:") + " {0} ({1})", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), TimeZoneInfo.Local.StandardName, TimeZoneInfo.Local.GetUtcOffset(KernelDateTime).ToString((TimeZoneInfo.Local.GetUtcOffset(KernelDateTime) < TimeSpan.Zero ? @"\-" : @"\+") + @"hh\:mm\:ss"));
+            TextWriters.Write("datetime: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Current time is {0}"), true, KernelColorTools.ColTypes.ListValue, TimeDateRenderers.RenderTime());
+            TextWriters.Write("datetime: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Today is {0}"), true, KernelColorTools.ColTypes.ListValue, TimeDateRenderers.RenderDate());
+            TextWriters.Write("datetime: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Time and date in UTC: {0}"), true, KernelColorTools.ColTypes.ListValue, TimeDateRenderersUtc.RenderUtc());
+            TextWriters.Write("datetime: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Time Zone:") + " {0} ({1})", true, KernelColorTools.ColTypes.ListValue, TimeZoneInfo.Local.StandardName, TimeZoneInfo.Local.GetUtcOffset(KernelDateTime).ToString((TimeZoneInfo.Local.GetUtcOffset(KernelDateTime) < TimeSpan.Zero ? @"\-" : @"\+") + @"hh\:mm\:ss"));
         }
 
         /// <summary>

@@ -21,7 +21,7 @@ using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Reflection;
 using KS.Misc.Text;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
 using System;
@@ -49,17 +49,17 @@ namespace KS.Misc.Editors.TextEdit.Commands
                         {
                             string Line = TextEditShellCommon.TextEdit_FileLines[LineNumber - 1];
                             DebugWriter.Wdbg(DebugLevel.I, "Line number: {0} ({1})", LineNumber, Line);
-                            TextWriterColor.Write("- {0}: ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), LineNumber);
-                            TextWriterColor.Write(Line, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+                            TextWriters.Write("- {0}: ", false, KernelColorTools.ColTypes.ListEntry, LineNumber);
+                            TextWriters.Write(Line, true, KernelColorTools.ColTypes.ListValue);
                         }
                         else
                         {
-                            TextWriterColor.Write(Translate.DoTranslation("The specified line number may not be larger than the last file line number."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                            TextWriters.Write(Translate.DoTranslation("The specified line number may not be larger than the last file line number."), true, KernelColorTools.ColTypes.Error);
                         }
                     }
                     else
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("Specified line number {0} is not a valid number."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[0]);
+                        TextWriters.Write(Translate.DoTranslation("Specified line number {0} is not a valid number."), true, KernelColorTools.ColTypes.Error, ListArgs[0]);
                         DebugWriter.Wdbg(DebugLevel.E, "{0} is not a numeric value.", ListArgs[0]);
                     }
                 }
@@ -81,18 +81,18 @@ namespace KS.Misc.Editors.TextEdit.Commands
                             {
                                 string Line = TextEditShellCommon.TextEdit_FileLines[LineNumber - 1];
                                 DebugWriter.Wdbg(DebugLevel.I, "Line number: {0} ({1})", LineNumber, Line);
-                                TextWriterColor.Write("- {0}: ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), LineNumber);
-                                TextWriterColor.Write(Line, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+                                TextWriters.Write("- {0}: ", false, KernelColorTools.ColTypes.ListEntry, LineNumber);
+                                TextWriters.Write(Line, true, KernelColorTools.ColTypes.ListValue);
                             }
                         }
                         else
                         {
-                            TextWriterColor.Write(Translate.DoTranslation("The specified line number may not be larger than the last file line number."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                            TextWriters.Write(Translate.DoTranslation("The specified line number may not be larger than the last file line number."), true, KernelColorTools.ColTypes.Error);
                         }
                     }
                     else
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("Specified line number {0} is not a valid number."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[0]);
+                        TextWriters.Write(Translate.DoTranslation("Specified line number {0} is not a valid number."), true, KernelColorTools.ColTypes.Error, ListArgs[0]);
                         DebugWriter.Wdbg(DebugLevel.E, "{0} is not a numeric value.", ListArgs[0]);
                     }
                 }
@@ -102,8 +102,8 @@ namespace KS.Misc.Editors.TextEdit.Commands
                 foreach (string Line in TextEditShellCommon.TextEdit_FileLines)
                 {
                     DebugWriter.Wdbg(DebugLevel.I, "Line number: {0} ({1})", LineNumber, Line);
-                    TextWriterColor.Write("- {0}: ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), LineNumber);
-                    TextWriterColor.Write(Line, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+                    TextWriters.Write("- {0}: ", false, KernelColorTools.ColTypes.ListEntry, LineNumber);
+                    TextWriters.Write(Line, true, KernelColorTools.ColTypes.ListValue);
                     LineNumber += 1;
                 }
             }

@@ -17,12 +17,12 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
+using KS.ConsoleBase.Colors;
+using KS.ConsoleBase.Writers;
+using KS.Shell.ShellBase.Commands;
 using System;
 using System.Collections.Generic;
-using KS.ConsoleBase.Colors;
-using KS.Misc.Writers.FancyWriters;
-using KS.Misc.Writers.FancyWriters.Tools;
-using KS.Shell.ShellBase.Commands;
+using Textify.Figlet;
 
 namespace KS.TestShell.Commands
 {
@@ -36,7 +36,7 @@ namespace KS.TestShell.Commands
             var FigletFont = FigletTools.GetFigletFont(ListArgs[1]);
             object[] Vars = ListArgs[2].Split(';');
             string Text = ListArgs[3];
-            FigletColor.WriteFiglet(Text, FigletFont, Color, Vars);
+            TextFancyWriters.WriteFiglet(Text, FigletFont, Color, Vars: Vars);
         }
 
     }

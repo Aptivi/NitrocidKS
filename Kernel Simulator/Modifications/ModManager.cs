@@ -38,7 +38,7 @@ using KS.Misc.RarFile;
 using KS.Misc.Screensaver.Customized;
 using KS.Misc.Splash;
 using KS.Misc.Text;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Misc.ZipFile;
 using KS.Network.FTP;
@@ -173,7 +173,7 @@ namespace KS.Modifications
                 // Check to see if we have mods
                 if (count != 0)
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("mod: Stopping mods..."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                    TextWriters.Write(Translate.DoTranslation("mod: Stopping mods..."), true, KernelColorTools.ColTypes.Neutral);
                     DebugWriter.Wdbg(DebugLevel.I, "Mods are being stopped. Total mods with screensavers = {0}", count);
 
                     // Enumerate and delete the script as soon as the stopping is complete
@@ -193,7 +193,7 @@ namespace KS.Modifications
                             ScriptPartInfo.PartScript.StopMod();
                             if (!string.IsNullOrWhiteSpace(ScriptPartInfo.PartName) & !string.IsNullOrWhiteSpace(ScriptPartInfo.PartScript.Version))
                             {
-                                TextWriterColor.Write(Translate.DoTranslation("{0} v{1} stopped"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ScriptPartInfo.PartName, ScriptPartInfo.PartScript.Version);
+                                TextWriters.Write(Translate.DoTranslation("{0} v{1} stopped"), true, KernelColorTools.ColTypes.Neutral, ScriptPartInfo.PartName, ScriptPartInfo.PartScript.Version);
                             }
 
                             // Remove the part from the list
@@ -201,7 +201,7 @@ namespace KS.Modifications
                         }
 
                         // Remove the mod from the list
-                        TextWriterColor.Write(Translate.DoTranslation("Mod {0} stopped"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), TargetMod.ModName);
+                        TextWriters.Write(Translate.DoTranslation("Mod {0} stopped"), true, KernelColorTools.ColTypes.Neutral, TargetMod.ModName);
                         Mods.Remove(Mods.Keys.ElementAtOrDefault(ScriptIndex));
                     }
 
@@ -218,12 +218,12 @@ namespace KS.Modifications
                 }
                 else
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("mod: No mods detected."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                    TextWriters.Write(Translate.DoTranslation("mod: No mods detected."), true, KernelColorTools.ColTypes.Neutral);
                 }
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Stopping mods not allowed on safe mode."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("Stopping mods not allowed on safe mode."), true, KernelColorTools.ColTypes.Error);
             }
         }
 
@@ -244,7 +244,7 @@ namespace KS.Modifications
                 {
                     if (HasModStarted(PathToMod))
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("mod: Stopping mod {0}..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ModFilename);
+                        TextWriters.Write(Translate.DoTranslation("mod: Stopping mod {0}..."), true, KernelColorTools.ColTypes.Neutral, ModFilename);
                         DebugWriter.Wdbg(DebugLevel.I, "Mod {0} is being stopped.", ModFilename);
 
                         // Iterate through all the mods
@@ -279,7 +279,7 @@ namespace KS.Modifications
                                     ScriptPartInfo.PartScript.StopMod();
                                     if (!string.IsNullOrWhiteSpace(ScriptPartInfo.PartName) & !string.IsNullOrWhiteSpace(ScriptPartInfo.PartScript.Version))
                                     {
-                                        TextWriterColor.Write(Translate.DoTranslation("{0} v{1} stopped"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ScriptPartInfo.PartName, ScriptPartInfo.PartScript.Version);
+                                        TextWriters.Write(Translate.DoTranslation("{0} v{1} stopped"), true, KernelColorTools.ColTypes.Neutral, ScriptPartInfo.PartName, ScriptPartInfo.PartScript.Version);
                                     }
 
                                     // Remove the part from the list
@@ -287,24 +287,24 @@ namespace KS.Modifications
                                 }
 
                                 // Remove the mod from the list
-                                TextWriterColor.Write(Translate.DoTranslation("Mod {0} stopped"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), TargetMod.ModName);
+                                TextWriters.Write(Translate.DoTranslation("Mod {0} stopped"), true, KernelColorTools.ColTypes.Neutral, TargetMod.ModName);
                                 Mods.Remove(Mods.Keys.ElementAtOrDefault(ScriptIndex));
                             }
                         }
                     }
                     else
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("Mod hasn't started yet!"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(Translate.DoTranslation("Mod hasn't started yet!"), true, KernelColorTools.ColTypes.Error);
                     }
                 }
                 else
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Mod {0} not found."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ModFilename);
+                    TextWriters.Write(Translate.DoTranslation("Mod {0} not found."), true, KernelColorTools.ColTypes.Neutral, ModFilename);
                 }
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Stopping mods not allowed on safe mode."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("Stopping mods not allowed on safe mode."), true, KernelColorTools.ColTypes.Error);
             }
         }
 
@@ -417,7 +417,7 @@ namespace KS.Modifications
             // Check for upgrade
             if (Checking.FileExists(TargetModPath))
             {
-                TextWriterColor.Write(Translate.DoTranslation("Trying to install an already-installed mod. Updating mod..."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
+                TextWriters.Write(Translate.DoTranslation("Trying to install an already-installed mod. Updating mod..."), true, KernelColorTools.ColTypes.Warning);
                 StopMod(Path.GetFileName(TargetModPath));
             }
 
@@ -437,14 +437,14 @@ namespace KS.Modifications
                     {
                         DebugWriter.Wdbg(DebugLevel.E, "Error trying to load dynamic mod {0}: {1}", ModPath, ex.Message);
                         DebugWriter.WStkTrc(ex);
-                        TextWriterColor.Write(Translate.DoTranslation("Mod can't be loaded because of the following: "), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(Translate.DoTranslation("Mod can't be loaded because of the following: "), true, KernelColorTools.ColTypes.Error);
                         foreach (Exception LoaderException in ex.LoaderExceptions)
                         {
                             DebugWriter.Wdbg(DebugLevel.E, "Loader exception: {0}", LoaderException.Message);
                             DebugWriter.WStkTrc(LoaderException);
-                            TextWriterColor.Write(LoaderException.Message, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                            TextWriters.Write(LoaderException.Message, true, KernelColorTools.ColTypes.Error);
                         }
-                        TextWriterColor.Write(Translate.DoTranslation("Contact the vendor of the mod to upgrade the mod to the compatible version."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(Translate.DoTranslation("Contact the vendor of the mod to upgrade the mod to the compatible version."), true, KernelColorTools.ColTypes.Error);
                         throw;
                     }
                     catch (Kernel.Exceptions.ModInstallException)
@@ -472,14 +472,14 @@ namespace KS.Modifications
                 }
 
                 // Finally, start the mod
-                TextWriterColor.Write(Translate.DoTranslation("Starting mod") + " {0}...", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), Path.GetFileNameWithoutExtension(TargetModPath));
+                TextWriters.Write(Translate.DoTranslation("Starting mod") + " {0}...", true, KernelColorTools.ColTypes.Neutral, Path.GetFileNameWithoutExtension(TargetModPath));
                 StartMod(Path.GetFileName(TargetModPath));
             }
             catch (Exception ex)
             {
                 DebugWriter.Wdbg(DebugLevel.E, "Installation failed for {0}: {1}", ModPath, ex.Message);
                 DebugWriter.WStkTrc(ex);
-                TextWriterColor.Write(Translate.DoTranslation("Installation failed for") + " {0}: {1}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ModPath, ex.Message);
+                TextWriters.Write(Translate.DoTranslation("Installation failed for") + " {0}: {1}", true, KernelColorTools.ColTypes.Error, ModPath, ex.Message);
             }
         }
 
@@ -523,7 +523,7 @@ namespace KS.Modifications
             {
                 DebugWriter.Wdbg(DebugLevel.E, "Uninstallation failed for {0}: {1}", ModPath, ex.Message);
                 DebugWriter.WStkTrc(ex);
-                TextWriterColor.Write(Translate.DoTranslation("Uninstallation failed for") + " {0}: {1}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ModPath, ex.Message);
+                TextWriters.Write(Translate.DoTranslation("Uninstallation failed for") + " {0}: {1}", true, KernelColorTools.ColTypes.Error, ModPath, ex.Message);
             }
         }
 

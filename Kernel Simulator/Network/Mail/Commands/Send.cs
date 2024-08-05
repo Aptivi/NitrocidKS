@@ -22,7 +22,7 @@ using KS.ConsoleBase.Inputs;
 using KS.Files;
 using KS.Files.Querying;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Network.Mail.Transfer;
 using KS.Shell.ShellBase.Commands;
@@ -39,7 +39,7 @@ namespace KS.Network.Mail.Commands
             var Body = new BodyBuilder();
 
             // Prompt for receiver e-mail address
-            TextWriterColor.Write(Translate.DoTranslation("Enter recipient mail address:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+            TextWriters.Write(Translate.DoTranslation("Enter recipient mail address:") + " ", false, KernelColorTools.ColTypes.Input);
             Receiver = Input.ReadLine();
             DebugWriter.Wdbg(DebugLevel.I, "Recipient: {0}", Receiver);
 
@@ -49,12 +49,12 @@ namespace KS.Network.Mail.Commands
                 DebugWriter.Wdbg(DebugLevel.I, "Mail format satisfied. Contains \"@\" and contains \".\" in the second part after the \"@\" symbol.");
 
                 // Prompt for subject
-                TextWriterColor.Write(Translate.DoTranslation("Enter the subject:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                TextWriters.Write(Translate.DoTranslation("Enter the subject:") + " ", false, KernelColorTools.ColTypes.Input);
                 Subject = Input.ReadLine(false);
                 DebugWriter.Wdbg(DebugLevel.I, "Subject: {0} ({1} chars)", Subject, Subject.Length);
 
                 // Prompt for body
-                TextWriterColor.Write(Translate.DoTranslation("Enter your message below. Write \"EOF\" to confirm."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                TextWriters.Write(Translate.DoTranslation("Enter your message below. Write \"EOF\" to confirm."), true, KernelColorTools.ColTypes.Input);
                 string BodyLine = "";
                 while (!(BodyLine.ToUpper() == "EOF"))
                 {
@@ -67,11 +67,11 @@ namespace KS.Network.Mail.Commands
                     }
                 }
 
-                TextWriterColor.Write(Translate.DoTranslation("Enter file paths to attachments. Press ENTER on a blank path to confirm."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(Translate.DoTranslation("Enter file paths to attachments. Press ENTER on a blank path to confirm."), true, KernelColorTools.ColTypes.Neutral);
                 string PathLine = " ";
                 while (!string.IsNullOrEmpty(PathLine))
                 {
-                    TextWriterColor.Write("> ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                    TextWriters.Write("> ", false, KernelColorTools.ColTypes.Input);
                     PathLine = Input.ReadLine(false);
                     if (!string.IsNullOrEmpty(PathLine))
                     {
@@ -85,22 +85,22 @@ namespace KS.Network.Mail.Commands
                 }
 
                 // Send the message
-                TextWriterColor.Write(Translate.DoTranslation("Sending message..."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Progress));
+                TextWriters.Write(Translate.DoTranslation("Sending message..."), true, KernelColorTools.ColTypes.Progress);
                 if (MailTransfer.MailSendMessage(Receiver, Subject, Body.ToMessageBody()))
                 {
                     DebugWriter.Wdbg(DebugLevel.I, "Message sent.");
-                    TextWriterColor.Write(Translate.DoTranslation("Message sent."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success));
+                    TextWriters.Write(Translate.DoTranslation("Message sent."), true, KernelColorTools.ColTypes.Success);
                 }
                 else
                 {
                     DebugWriter.Wdbg(DebugLevel.E, "See debug output to find what's wrong.");
-                    TextWriterColor.Write(Translate.DoTranslation("Error sending message."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(Translate.DoTranslation("Error sending message."), true, KernelColorTools.ColTypes.Error);
                 }
             }
             else
             {
                 DebugWriter.Wdbg(DebugLevel.E, "Mail format unsatisfied." + Receiver);
-                TextWriterColor.Write(Translate.DoTranslation("Invalid e-mail address. Make sure you've written the address correctly and that it matches the format of the example shown:") + " john.s@example.com", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("Invalid e-mail address. Make sure you've written the address correctly and that it matches the format of the example shown:") + " john.s@example.com", true, KernelColorTools.ColTypes.Error);
             }
         }
 

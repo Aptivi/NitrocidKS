@@ -31,7 +31,7 @@ using KS.Kernel;
 using KS.Languages;
 using KS.Misc.Notifiers;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 
 namespace KS.Misc.Calendar.Reminders
@@ -135,8 +135,8 @@ namespace KS.Misc.Calendar.Reminders
         {
             foreach (ReminderInfo Reminder in Reminders)
             {
-                TextWriterColor.Write("- {0}: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), Reminder.ReminderDate);
-                TextWriterColor.Write(Reminder.ReminderTitle, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+                TextWriters.Write("- {0}: ", false, KernelColorTools.ColTypes.ListEntry, Reminder.ReminderDate);
+                TextWriters.Write(Reminder.ReminderTitle, true, KernelColorTools.ColTypes.ListValue);
             }
         }
 

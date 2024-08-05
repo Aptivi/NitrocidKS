@@ -27,7 +27,7 @@ using KS.Files.Querying;
 using KS.Languages;
 using KS.Misc.Platform;
 using KS.Misc.Text;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
 using Renci.SshNet;
@@ -78,10 +78,10 @@ namespace KS.Network.SSH
             while (true)
             {
                 // Ask for authentication method
-                TextWriterColor.Write(Translate.DoTranslation("How do you want to authenticate?") + Kernel.Kernel.NewLine, true, KernelColorTools.ColTypes.Question);
-                TextWriterColor.Write("1) " + Translate.DoTranslation("Private key file"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option));
-                TextWriterColor.Write("2) " + Translate.DoTranslation("Password") + Kernel.Kernel.NewLine, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option));
-                TextWriterColor.Write(">> ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                TextWriters.Write(Translate.DoTranslation("How do you want to authenticate?") + Kernel.Kernel.NewLine, true, KernelColorTools.ColTypes.Question);
+                TextWriters.Write("1) " + Translate.DoTranslation("Private key file"), true, KernelColorTools.ColTypes.Option);
+                TextWriters.Write("2) " + Translate.DoTranslation("Password") + Kernel.Kernel.NewLine, true, KernelColorTools.ColTypes.Option);
+                TextWriters.Write(">> ", false, KernelColorTools.ColTypes.Input);
                 if (int.TryParse(Input.ReadLine(false), out Answer))
                 {
                     // Check for answer
@@ -98,8 +98,8 @@ namespace KS.Network.SSH
                         default:
                             {
                                 DebugWriter.Wdbg(DebugLevel.W, "Option is not valid. Returning...");
-                                TextWriterColor.Write(Translate.DoTranslation("Specified option {0} is invalid."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), Answer);
-                                TextWriterColor.Write(Translate.DoTranslation("Press any key to go back."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                                TextWriters.Write(Translate.DoTranslation("Specified option {0} is invalid."), true, KernelColorTools.ColTypes.Error, Answer);
+                                TextWriters.Write(Translate.DoTranslation("Press any key to go back."), true, KernelColorTools.ColTypes.Error);
                                 Input.DetectKeypress();
                                 break;
                             }
@@ -113,8 +113,8 @@ namespace KS.Network.SSH
                 else
                 {
                     DebugWriter.Wdbg(DebugLevel.W, "Answer is not numeric.");
-                    TextWriterColor.Write(Translate.DoTranslation("The answer must be numeric."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
-                    TextWriterColor.Write(Translate.DoTranslation("Press any key to go back."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(Translate.DoTranslation("The answer must be numeric."), true, KernelColorTools.ColTypes.Error);
+                    TextWriters.Write(Translate.DoTranslation("Press any key to go back."), true, KernelColorTools.ColTypes.Error);
                     Input.DetectKeypress();
                 }
             }
@@ -132,13 +132,13 @@ namespace KS.Network.SSH
                             PrivateKeyFile PrivateKeyAuth;
 
                             // Ask for location
-                            TextWriterColor.Write(Translate.DoTranslation("Enter the location of the private key for {0}. Write \"q\" to finish adding keys: "), false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input), Username);
+                            TextWriters.Write(Translate.DoTranslation("Enter the location of the private key for {0}. Write \"q\" to finish adding keys: "), false, KernelColorTools.ColTypes.Input, Username);
                             PrivateKeyFile = Input.ReadLine(false);
                             PrivateKeyFile = Filesystem.NeutralizePath(PrivateKeyFile);
                             if (Checking.FileExists(PrivateKeyFile))
                             {
                                 // Ask for passphrase
-                                TextWriterColor.Write(Translate.DoTranslation("Enter the passphrase for key {0}: "), false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input), PrivateKeyFile);
+                                TextWriters.Write(Translate.DoTranslation("Enter the passphrase for key {0}: "), false, KernelColorTools.ColTypes.Input, PrivateKeyFile);
                                 PrivateKeyPassphrase = Input.ReadLineNoInput();
 
                                 // Add authentication method
@@ -158,7 +158,7 @@ namespace KS.Network.SSH
                                 {
                                     DebugWriter.WStkTrc(ex);
                                     DebugWriter.Wdbg(DebugLevel.E, "Error trying to add private key authentication method: {0}", ex.Message);
-                                    TextWriterColor.Write(Translate.DoTranslation("Error trying to add private key:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.Message);
+                                    TextWriters.Write(Translate.DoTranslation("Error trying to add private key:") + " {0}", true, KernelColorTools.ColTypes.Error, ex.Message);
                                 }
                             }
                             else if (PrivateKeyFile.EndsWith("/q"))
@@ -167,7 +167,7 @@ namespace KS.Network.SSH
                             }
                             else
                             {
-                                TextWriterColor.Write(Translate.DoTranslation("Key file {0} doesn't exist."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), PrivateKeyFile);
+                                TextWriters.Write(Translate.DoTranslation("Key file {0} doesn't exist."), true, KernelColorTools.ColTypes.Error, PrivateKeyFile);
                             }
                         }
 
@@ -180,7 +180,7 @@ namespace KS.Network.SSH
                         string Pass;
 
                         // Ask for password
-                        TextWriterColor.Write(Translate.DoTranslation("Enter the password for {0}: "), false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input), Username);
+                        TextWriters.Write(Translate.DoTranslation("Enter the password for {0}: "), false, KernelColorTools.ColTypes.Input, Username);
                         Pass = Input.ReadLineNoInput();
 
                         // Add authentication method
@@ -234,7 +234,7 @@ namespace KS.Network.SSH
             catch (Exception ex)
             {
                 Kernel.Kernel.KernelEventManager.RaiseSSHError(ex);
-                TextWriterColor.Write(Translate.DoTranslation("Error trying to connect to SSH server: {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.Message);
+                TextWriters.Write(Translate.DoTranslation("Error trying to connect to SSH server: {0}"), true, KernelColorTools.ColTypes.Error, ex.Message);
                 DebugWriter.WStkTrc(ex);
             }
         }
@@ -252,7 +252,7 @@ namespace KS.Network.SSH
             foreach (string BannerLine in BannerMessageLines)
             {
                 DebugWriter.Wdbg(DebugLevel.I, BannerLine);
-                TextWriterColor.Write(BannerLine, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(BannerLine, true, KernelColorTools.ColTypes.Neutral);
             }
         }
 
@@ -289,12 +289,12 @@ namespace KS.Network.SSH
             {
                 DebugWriter.Wdbg(DebugLevel.E, "Error on SSH shell in {0}: {1}", SSHClient.ConnectionInfo.Host, ex.Message);
                 DebugWriter.WStkTrc(ex);
-                TextWriterColor.Write(Translate.DoTranslation("Error on SSH shell") + ": {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.Message);
+                TextWriters.Write(Translate.DoTranslation("Error on SSH shell") + ": {0}", true, KernelColorTools.ColTypes.Error, ex.Message);
             }
             finally
             {
                 DebugWriter.Wdbg(DebugLevel.I, "Connected: {0}", SSHClient.IsConnected);
-                TextWriterColor.Write(Kernel.Kernel.NewLine + Translate.DoTranslation("SSH Disconnected."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(Kernel.Kernel.NewLine + Translate.DoTranslation("SSH Disconnected."), true, KernelColorTools.ColTypes.Neutral);
                 DisconnectionRequested = false;
 
                 // Remove handler for SSH
@@ -334,22 +334,22 @@ namespace KS.Network.SSH
                         SSHClient.Disconnect();
                     }
                     while (!SSHCErrorReader.EndOfStream)
-                        TextWriterColor.Write(SSHCErrorReader.ReadLine(), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                        TextWriters.Write(SSHCErrorReader.ReadLine(), true, KernelColorTools.ColTypes.Neutral);
                     while (!SSHCOutputReader.EndOfStream)
-                        TextWriterColor.Write(SSHCOutputReader.ReadLine(), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                        TextWriters.Write(SSHCOutputReader.ReadLine(), true, KernelColorTools.ColTypes.Neutral);
                 }
             }
             catch (Exception ex)
             {
                 DebugWriter.Wdbg(DebugLevel.E, "Error trying to execute SSH command \"{0}\" to {1}: {2}", Command, SSHClient.ConnectionInfo.Host, ex.Message);
                 DebugWriter.WStkTrc(ex);
-                TextWriterColor.Write(Translate.DoTranslation("Error executing SSH command") + " {0}: {1}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), Command, ex.Message);
+                TextWriters.Write(Translate.DoTranslation("Error executing SSH command") + " {0}: {1}", true, KernelColorTools.ColTypes.Error, Command, ex.Message);
                 Kernel.Kernel.KernelEventManager.RaiseSSHCommandError(SSHClient.ConnectionInfo.Host + ":" + SSHClient.ConnectionInfo.Port.ToString(), Command, ex);
             }
             finally
             {
                 DebugWriter.Wdbg(DebugLevel.I, "Connected: {0}", SSHClient.IsConnected);
-                TextWriterColor.Write(Kernel.Kernel.NewLine + Translate.DoTranslation("SSH Disconnected."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(Kernel.Kernel.NewLine + Translate.DoTranslation("SSH Disconnected."), true, KernelColorTools.ColTypes.Neutral);
                 DisconnectionRequested = false;
                 Kernel.Kernel.KernelEventManager.RaiseSSHPostExecuteCommand(SSHClient.ConnectionInfo.Host + ":" + SSHClient.ConnectionInfo.Port.ToString(), Command);
 

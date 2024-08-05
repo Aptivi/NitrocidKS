@@ -24,7 +24,7 @@ using System.Linq;
 using KS.ConsoleBase.Colors;
 using KS.Files;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -93,22 +93,22 @@ namespace KS.Login
                 if (PermissionMode == PermissionManagementMode.Allow)
                 {
                     AddPermission(PermType, Username);
-                    TextWriterColor.Write(Translate.DoTranslation("The user {0} has been added to the \"{1}\" list."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), Username, PermType.ToString());
+                    TextWriters.Write(Translate.DoTranslation("The user {0} has been added to the \"{1}\" list."), true, KernelColorTools.ColTypes.Neutral, Username, PermType.ToString());
                 }
                 else if (PermissionMode == PermissionManagementMode.Disallow)
                 {
                     RemovePermission(PermType, Username);
-                    TextWriterColor.Write(Translate.DoTranslation("The user {0} has been removed from the \"{1}\" list."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), Username, PermType.ToString());
+                    TextWriters.Write(Translate.DoTranslation("The user {0} has been removed from the \"{1}\" list."), true, KernelColorTools.ColTypes.Neutral, Username, PermType.ToString());
                 }
                 else
                 {
                     DebugWriter.Wdbg(DebugLevel.W, "Mode is invalid");
-                    TextWriterColor.Write(Translate.DoTranslation("Invalid mode {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), PermissionMode);
+                    TextWriters.Write(Translate.DoTranslation("Invalid mode {0}"), true, KernelColorTools.ColTypes.Error, PermissionMode);
                 }
             }
             catch (Exception ex)
             {
-                TextWriterColor.Write(Translate.DoTranslation("You have either found a bug, or the permission you tried to add or remove is already done, or other error.") + Kernel.Kernel.NewLine + Translate.DoTranslation("Error {0}: {1}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.GetType().FullName, ex.Message);
+                TextWriters.Write(Translate.DoTranslation("You have either found a bug, or the permission you tried to add or remove is already done, or other error.") + Kernel.Kernel.NewLine + Translate.DoTranslation("Error {0}: {1}"), true, KernelColorTools.ColTypes.Error, ex.GetType().FullName, ex.Message);
                 DebugWriter.WStkTrc(ex);
             }
         }

@@ -23,7 +23,7 @@ using KS.ConsoleBase.Colors;
 using KS.Files;
 using KS.Kernel;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
 
@@ -40,17 +40,17 @@ namespace KS.Shell.Commands
                 {
                     DebugWriter.DebugStreamWriter.Close();
                     DebugWriter.DebugStreamWriter = new StreamWriter(Paths.GetKernelPath(KernelPathType.Debugging)) { AutoFlush = true };
-                    TextWriterColor.Write(Translate.DoTranslation("Debug log removed. All connected debugging devices may still view messages."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                    TextWriters.Write(Translate.DoTranslation("Debug log removed. All connected debugging devices may still view messages."), true, KernelColorTools.ColTypes.Neutral);
                 }
                 catch (Exception ex)
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Debug log removal failed: {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.Message);
+                    TextWriters.Write(Translate.DoTranslation("Debug log removal failed: {0}"), true, KernelColorTools.ColTypes.Error, ex.Message);
                     DebugWriter.WStkTrc(ex);
                 }
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("You must turn on debug mode before you can clear debug log."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(Translate.DoTranslation("You must turn on debug mode before you can clear debug log."), true, KernelColorTools.ColTypes.Neutral);
             }
         }
 

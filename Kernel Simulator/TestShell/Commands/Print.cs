@@ -18,7 +18,7 @@
 //
 
 using KS.ConsoleBase.Colors;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 using System;
 namespace KS.TestShell.Commands
@@ -31,7 +31,7 @@ namespace KS.TestShell.Commands
             KernelColorTools.ColTypes Color = (KernelColorTools.ColTypes)Convert.ToInt32(ListArgs[0]);
             bool Line = Convert.ToBoolean(ListArgs[1]);
             string Text = ListArgs[2];
-            TextWriterColor.Write(Text, Line, Color);
+            TextWriters.Write(Text, Line, Color);
         }
 
     }

@@ -21,10 +21,11 @@ using System;
 using System.Collections.Generic;
 using KS.ConsoleBase.Colors;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 using Terminaux.Colors;
+using Terminaux.Writer.ConsoleWriters;
 namespace KS.Misc.Screensaver.Displays
 {
     public static class FallingLineSettings

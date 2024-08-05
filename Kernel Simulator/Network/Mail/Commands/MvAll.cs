@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Network.Mail.Directory;
 using KS.Shell.ShellBase.Commands;
 
@@ -32,11 +32,11 @@ namespace KS.Network.Mail.Commands
         {
             if (MailManager.MailMoveAllBySender(ListArgs[0], ListArgs[1]))
             {
-                TextWriterColor.Write(Translate.DoTranslation("All mail made by {0} are moved successfully."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success), ListArgs[0]);
+                TextWriters.Write(Translate.DoTranslation("All mail made by {0} are moved successfully."), true, KernelColorTools.ColTypes.Success, ListArgs[0]);
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Failed to move all mail made by {0}."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[0]);
+                TextWriters.Write(Translate.DoTranslation("Failed to move all mail made by {0}."), true, KernelColorTools.ColTypes.Error, ListArgs[0]);
             }
         }
 

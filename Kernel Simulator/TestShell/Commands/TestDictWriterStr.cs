@@ -20,8 +20,9 @@
 using System.Collections.Generic;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
+using Terminaux.Writer.ConsoleWriters;
 namespace KS.TestShell.Commands
 {
     class Test_TestDictWriterStrCommand : CommandExecutor, ICommand
@@ -31,9 +32,9 @@ namespace KS.TestShell.Commands
         {
             var NormalStringDict = new Dictionary<string, string>() { { "One", "String 1" }, { "Two", "String 2" }, { "Three", "String 3" } };
             var ArrayStringDict = new Dictionary<string, string[]>() { { "One", new string[] { "String 1", "String 2", "String 3" } }, { "Two", new string[] { "String 1", "String 2", "String 3" } }, { "Three", new string[] { "String 1", "String 2", "String 3" } } };
-            TextWriterColor.Write(Translate.DoTranslation("Normal string dictionary:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(Translate.DoTranslation("Normal string dictionary:"), true, KernelColorTools.ColTypes.Neutral);
             ListWriterColor.WriteList(NormalStringDict);
-            TextWriterColor.Write(Translate.DoTranslation("Array string dictionary:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(Translate.DoTranslation("Array string dictionary:"), true, KernelColorTools.ColTypes.Neutral);
             ListWriterColor.WriteList(ArrayStringDict);
         }
 

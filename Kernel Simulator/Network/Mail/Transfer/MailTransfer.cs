@@ -25,7 +25,7 @@ using System.Linq;
 using System.Text;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Network.Mail.Directory;
 using KS.Network.Mail.PGP;
@@ -53,13 +53,13 @@ namespace KS.Network.Mail.Transfer
             if (Message < 0)
             {
                 DebugWriter.Wdbg(DebugLevel.E, "Trying to access message 0 or less than 0.");
-                TextWriterColor.Write(Translate.DoTranslation("Message number may not be negative or zero."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("Message number may not be negative or zero."), true, KernelColorTools.ColTypes.Error);
                 return;
             }
             else if (Message > MaxMessagesIndex)
             {
                 DebugWriter.Wdbg(DebugLevel.E, "Message {0} not in list. It was larger than MaxMessagesIndex ({1})", Message, MaxMessagesIndex);
-                TextWriterColor.Write(Translate.DoTranslation("Message specified is not found."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("Message specified is not found."), true, KernelColorTools.ColTypes.Error);
                 return;
             }
 
@@ -79,14 +79,14 @@ namespace KS.Network.Mail.Transfer
                 }
 
                 // Prepare view
-                TextWriterColor.WritePlain("", true);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
 
                 // Print all the addresses that sent the mail
                 DebugWriter.Wdbg(DebugLevel.I, "{0} senders.", Msg.From.Count);
                 foreach (InternetAddress Address in Msg.From)
                 {
                     DebugWriter.Wdbg(DebugLevel.I, "Address: {0} ({1})", Address.Name, Address.Encoding.EncodingName);
-                    TextWriterColor.Write(Translate.DoTranslation("- From {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), Address.ToString());
+                    TextWriters.Write(Translate.DoTranslation("- From {0}"), true, KernelColorTools.ColTypes.ListEntry, Address.ToString());
                 }
 
                 // Print all the addresses that received the mail
@@ -94,31 +94,31 @@ namespace KS.Network.Mail.Transfer
                 foreach (InternetAddress Address in Msg.To)
                 {
                     DebugWriter.Wdbg(DebugLevel.I, "Address: {0} ({1})", Address.Name, Address.Encoding.EncodingName);
-                    TextWriterColor.Write(Translate.DoTranslation("- To {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), Address.ToString());
+                    TextWriters.Write(Translate.DoTranslation("- To {0}"), true, KernelColorTools.ColTypes.ListEntry, Address.ToString());
                 }
 
                 // Print the date and time when the user received the mail
                 DebugWriter.Wdbg(DebugLevel.I, "Rendering time and date of {0}.", Msg.Date.DateTime.ToString());
-                TextWriterColor.Write(Translate.DoTranslation("- Sent at {0} in {1}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), TimeDateRenderers.RenderTime(Msg.Date.DateTime), TimeDateRenderers.RenderDate(Msg.Date.DateTime));
+                TextWriters.Write(Translate.DoTranslation("- Sent at {0} in {1}"), true, KernelColorTools.ColTypes.ListEntry, TimeDateRenderers.RenderTime(Msg.Date.DateTime), TimeDateRenderers.RenderDate(Msg.Date.DateTime));
 
                 // Prepare subject
-                TextWriterColor.WritePlain("", true);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
                 DebugWriter.Wdbg(DebugLevel.I, "Subject length: {0}, {1}", Msg.Subject.Length, Msg.Subject);
-                TextWriterColor.Write($"- {Msg.Subject}", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
+                TextWriters.Write($"- {Msg.Subject}", false, KernelColorTools.ColTypes.ListEntry);
 
                 // Write a sign after the subject if attachments are found
                 DebugWriter.Wdbg(DebugLevel.I, "Attachments count: {0}", Msg.Attachments.Count());
                 if (Msg.Attachments.Count() > 0)
                 {
-                    TextWriterColor.Write(" - [*]", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
+                    TextWriters.Write(" - [*]", true, KernelColorTools.ColTypes.ListEntry);
                 }
                 else
                 {
-                    TextWriterColor.WritePlain("", true);
+                    TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
                 }
 
                 // Prepare body
-                TextWriterColor.WritePlain("", true);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
                 DebugWriter.Wdbg(DebugLevel.I, "Displaying body...");
                 var DecryptedMessage = default(Dictionary<string, MimeEntity>);
                 DebugWriter.Wdbg(DebugLevel.I, "To decrypt: {0}", Decrypt);
@@ -146,7 +146,7 @@ namespace KS.Network.Mail.Transfer
                                     var DecryptedByte = new byte[(int)(DecryptedStream.Length + 1)];
                                     DecryptedStream.Read(DecryptedByte, 0, (int)DecryptedStream.Length);
                                     DebugWriter.Wdbg(DebugLevel.I, "Written {0} bytes to buffer.", DecryptedByte.Length);
-                                    TextWriterColor.Write(Encoding.Default.GetString(DecryptedByte), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+                                    TextWriters.Write(Encoding.Default.GetString(DecryptedByte), true, KernelColorTools.ColTypes.ListValue);
                                 }
                             }
                         }
@@ -159,19 +159,19 @@ namespace KS.Network.Mail.Transfer
                         var DecryptedByte = new byte[(int)(DecryptedStream.Length + 1)];
                         DecryptedStream.Read(DecryptedByte, 0, (int)DecryptedStream.Length);
                         DebugWriter.Wdbg(DebugLevel.I, "Written {0} bytes to buffer.", DecryptedByte.Length);
-                        TextWriterColor.Write(Encoding.Default.GetString(DecryptedByte), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+                        TextWriters.Write(Encoding.Default.GetString(DecryptedByte), true, KernelColorTools.ColTypes.ListValue);
                     }
                 }
                 else
                 {
-                    TextWriterColor.Write(Msg.GetTextBody(MailShellCommon.Mail_TextFormat), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+                    TextWriters.Write(Msg.GetTextBody(MailShellCommon.Mail_TextFormat), true, KernelColorTools.ColTypes.ListValue);
                 }
-                TextWriterColor.WritePlain("", true);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
 
                 // Populate attachments
                 if (Msg.Attachments.Count() > 0)
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Attachments:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                    TextWriters.Write(Translate.DoTranslation("Attachments:"), true, KernelColorTools.ColTypes.Neutral);
                     var AttachmentEntities = new List<MimeEntity>();
                     if (Decrypt)
                     {
@@ -215,13 +215,13 @@ namespace KS.Network.Mail.Transfer
                         if (Attachment is MessagePart)
                         {
                             DebugWriter.Wdbg(DebugLevel.I, "Attachment is a message.");
-                            TextWriterColor.Write($"- {Attachment.ContentDisposition?.FileName}", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                            TextWriters.Write($"- {Attachment.ContentDisposition?.FileName}", true, KernelColorTools.ColTypes.Neutral);
                         }
                         else
                         {
                             DebugWriter.Wdbg(DebugLevel.I, "Attachment is a file.");
                             MimePart AttachmentPart = (MimePart)Attachment;
-                            TextWriterColor.Write($"- {AttachmentPart.FileName}", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                            TextWriters.Write($"- {AttachmentPart.FileName}", true, KernelColorTools.ColTypes.Neutral);
                         }
                     }
                 }

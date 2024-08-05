@@ -22,9 +22,10 @@ using System.Collections;
 using System.Collections.Generic;
 using KS.ConsoleBase.Colors;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using Terminaux.Base;
 using Terminaux.Colors;
+using Terminaux.Writer.ConsoleWriters;
 namespace KS.Misc.Screensaver.Displays
 {
     public static class GlitchSettings
@@ -127,8 +128,8 @@ namespace KS.Misc.Screensaver.Displays
                     char Symbol = Convert.ToChar(RandomDriver.Next(SymbolRangeStart, SymbolRangeEnd + 1));
 
                     // Select red, green, or blue background and foreground
-                    GlitchColorType GlitchBlockColorType = (GlitchColorType)Convert.ToInt32(Enum.Parse(typeof(GlitchColorType), RandomDriver.Next(3).ToString()));
-                    GlitchColorType GlitchLetterColorType = (GlitchColorType)Convert.ToInt32(Enum.Parse(typeof(GlitchColorType), RandomDriver.Next(3).ToString()));
+                    GlitchColTypes GlitchBlockColTypes = (GlitchColTypes)Convert.ToInt32(Enum.Parse(typeof(GlitchColTypes), RandomDriver.Next(3).ToString()));
+                    GlitchColTypes GlitchLetterColTypes = (GlitchColTypes)Convert.ToInt32(Enum.Parse(typeof(GlitchColTypes), RandomDriver.Next(3).ToString()));
                     bool ColorLetter = Convert.ToBoolean(RandomDriver.Next(2));
                     int ColorBlockNumber = RandomDriver.Next(0, 256);
                     int ColorLetterNumber = RandomDriver.Next(0, 256);
@@ -136,19 +137,19 @@ namespace KS.Misc.Screensaver.Displays
                     var ColorLetterInstance = Color.Empty;
 
                     // ...    for the block
-                    switch (GlitchBlockColorType)
+                    switch (GlitchBlockColTypes)
                     {
-                        case GlitchColorType.Red:
+                        case GlitchColTypes.Red:
                             {
                                 ColorBlockInstance = new Color(ColorBlockNumber, 0, 0);
                                 break;
                             }
-                        case GlitchColorType.Green:
+                        case GlitchColTypes.Green:
                             {
                                 ColorBlockInstance = new Color(0, ColorBlockNumber, 0);
                                 break;
                             }
-                        case GlitchColorType.Blue:
+                        case GlitchColTypes.Blue:
                             {
                                 ColorBlockInstance = new Color(0, 0, ColorBlockNumber);
                                 break;
@@ -156,19 +157,19 @@ namespace KS.Misc.Screensaver.Displays
                     }
 
                     // ...and for the letter
-                    switch (GlitchLetterColorType)
+                    switch (GlitchLetterColTypes)
                     {
-                        case GlitchColorType.Red:
+                        case GlitchColTypes.Red:
                             {
                                 ColorLetterInstance = new Color(ColorLetterNumber, 0, 0);
                                 break;
                             }
-                        case GlitchColorType.Green:
+                        case GlitchColTypes.Green:
                             {
                                 ColorLetterInstance = new Color(0, ColorLetterNumber, 0);
                                 break;
                             }
-                        case GlitchColorType.Blue:
+                        case GlitchColTypes.Blue:
                             {
                                 ColorLetterInstance = new Color(0, 0, ColorLetterNumber);
                                 break;
@@ -184,7 +185,7 @@ namespace KS.Misc.Screensaver.Displays
                                     KernelColorTools.SetConsoleColor(ColorLetterInstance);
                                 else
                                     Console.ForegroundColor = ConsoleColor.White;
-                                TextWriterColor.WritePlain(Convert.ToString(Letter), false);
+                                TextWriterRaw.WritePlain(Convert.ToString(Letter), false);
                                 break;
                             }
                         case Displays.GlitchType.RandomSymbol:
@@ -193,13 +194,13 @@ namespace KS.Misc.Screensaver.Displays
                                     KernelColorTools.SetConsoleColor(ColorLetterInstance);
                                 else
                                     Console.ForegroundColor = ConsoleColor.White;
-                                TextWriterColor.WritePlain(Convert.ToString(Symbol), false);
+                                TextWriterRaw.WritePlain(Convert.ToString(Symbol), false);
                                 break;
                             }
                         case Displays.GlitchType.RedGreenBlueColor:
                             {
                                 KernelColorTools.SetConsoleColor(ColorBlockInstance, true);
-                                TextWriterColor.WritePlain(" ", false);
+                                TextWriterRaw.WritePlain(" ", false);
                                 break;
                             }
                         case Displays.GlitchType.RedGreenBlueColorWithRandomLetter:
@@ -209,7 +210,7 @@ namespace KS.Misc.Screensaver.Displays
                                 else
                                     Console.ForegroundColor = ConsoleColor.White;
                                 KernelColorTools.SetConsoleColor(ColorBlockInstance, true);
-                                TextWriterColor.WritePlain(Convert.ToString(Letter), false);
+                                TextWriterRaw.WritePlain(Convert.ToString(Letter), false);
                                 break;
                             }
                         case Displays.GlitchType.RedGreenBlueColorWithRandomSymbol:
@@ -219,7 +220,7 @@ namespace KS.Misc.Screensaver.Displays
                                 else
                                     Console.ForegroundColor = ConsoleColor.White;
                                 KernelColorTools.SetConsoleColor(ColorBlockInstance, true);
-                                TextWriterColor.WritePlain(Convert.ToString(Symbol), false);
+                                TextWriterRaw.WritePlain(Convert.ToString(Symbol), false);
                                 break;
                             }
                     }
@@ -267,7 +268,7 @@ namespace KS.Misc.Screensaver.Displays
         RandomSymbol
     }
 
-    enum GlitchColorType
+    enum GlitchColTypes
     {
         /// <summary>
         /// The red color

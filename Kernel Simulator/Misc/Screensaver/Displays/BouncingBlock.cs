@@ -21,10 +21,11 @@ using System;
 using System.Collections.Generic;
 using KS.ConsoleBase.Colors;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 using Terminaux.Colors;
+using Terminaux.Writer.ConsoleWriters;
 namespace KS.Misc.Screensaver.Displays
 {
     public static class BouncingBlockSettings
@@ -308,7 +309,7 @@ namespace KS.Misc.Screensaver.Displays
                     ResizeSyncing = true;
                 if (!ResizeSyncing)
                 {
-                    TextWriterWhereColor.WriteWhere(" ", ColumnBlock, RowBlock, true, Color.Empty, new Color(RedColorNum, GreenColorNum, BlueColorNum));
+                    TextWriterWhereColor.WriteWhereColorBack(" ", ColumnBlock, RowBlock, true, Color.Empty, new Color(RedColorNum, GreenColorNum, BlueColorNum));
                 }
                 else
                 {
@@ -325,7 +326,7 @@ namespace KS.Misc.Screensaver.Displays
                     ResizeSyncing = true;
                 if (!ResizeSyncing)
                 {
-                    TextWriterWhereColor.WriteWhere(" ", ColumnBlock, RowBlock, true, Color.Empty, new Color(ColorNum));
+                    TextWriterWhereColor.WriteWhereColorBack(" ", ColumnBlock, RowBlock, true, Color.Empty, new Color(ColorNum));
                 }
                 else
                 {
@@ -345,10 +346,10 @@ namespace KS.Misc.Screensaver.Displays
                     Console.BackgroundColor = Screensaver.colors[RandomDriver.Next(BouncingBlockSettings.BouncingBlockMinimumColorLevel, BouncingBlockSettings.BouncingBlockMaximumColorLevel)];
                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", Console.BackgroundColor);
                     ConsoleWrapper.SetCursorPosition(ColumnBlock, RowBlock);
-                    TextWriterColor.WritePlain(" ", false);
+                    TextWriterRaw.WritePlain(" ", false);
                     ConsoleWrapper.SetCursorPosition(OldColumn, OldRow);
                     Console.BackgroundColor = ConsoleColor.Black;
-                    TextWriterColor.WritePlain(" ", false);
+                    TextWriterRaw.WritePlain(" ", false);
                 }
                 else
                 {

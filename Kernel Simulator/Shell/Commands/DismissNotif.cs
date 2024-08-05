@@ -21,7 +21,7 @@ using System;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Notifiers;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 
 namespace KS.Shell.Commands
@@ -34,11 +34,11 @@ namespace KS.Shell.Commands
             int NotifIndex = (int)Math.Round(Convert.ToDouble(ListArgs[0]) - 1d);
             if (Notifications.NotifDismiss(NotifIndex))
             {
-                TextWriterColor.Write(Translate.DoTranslation("Notification dismissed successfully."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(Translate.DoTranslation("Notification dismissed successfully."), true, KernelColorTools.ColTypes.Neutral);
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Error trying to dismiss notification."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("Error trying to dismiss notification."), true, KernelColorTools.ColTypes.Error);
             }
         }
 

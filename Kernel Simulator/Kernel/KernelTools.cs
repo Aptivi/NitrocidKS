@@ -26,6 +26,8 @@ using KS.Arguments;
 using KS.Arguments.ArgumentBase;
 using KS.ConsoleBase.Colors;
 using KS.ConsoleBase.Inputs;
+using KS.ConsoleBase.Writers;
+using KS.ConsoleBase.Writers.MiscWriters;
 using KS.Files;
 using KS.Files.Querying;
 using KS.Languages;
@@ -38,10 +40,7 @@ using KS.Misc.Notifiers;
 using KS.Misc.Reflection;
 using KS.Misc.Splash;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
-using KS.Misc.Writers.FancyWriters;
-using KS.Misc.Writers.MiscWriters;
 using KS.Modifications;
 using KS.Network.Mail;
 using KS.Network.RemoteDebug;
@@ -55,6 +54,7 @@ using Newtonsoft.Json.Linq;
 using Terminaux.Base;
 using Terminaux.Colors;
 using Terminaux.ResizeListener;
+using Terminaux.Writer.FancyWriters;
 
 namespace KS.Kernel
 {
@@ -107,7 +107,7 @@ namespace KS.Kernel
                             // If the error type is unrecoverable, or double, and the rebooting is false where it should
                             // not be false, then it can deal with this issue by enabling reboot.
                             DebugWriter.Wdbg(DebugLevel.W, "Errors that have type {0} enforced Reboot = True.", ErrorType);
-                            TextWriterColor.Write(Translate.DoTranslation("[{0}] panic: Reboot enabled due to error level being {0}."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Uncontinuable), ErrorType);
+                            TextWriters.Write(Translate.DoTranslation("[{0}] panic: Reboot enabled due to error level being {0}."), true, KernelColorTools.ColTypes.Uncontinuable, ErrorType);
                             Reboot = true;
                         }
                     }
@@ -115,7 +115,7 @@ namespace KS.Kernel
                     {
                         // If the reboot time exceeds 1 hour, then it will set the time to 1 minute.
                         DebugWriter.Wdbg(DebugLevel.W, "RebootTime shouldn't exceed 1 hour. Was {0} seconds", RebootTime);
-                        TextWriterColor.Write(Translate.DoTranslation("[{0}] panic: Time to reboot: {1} seconds, exceeds 1 hour. It is set to 1 minute."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Uncontinuable), ErrorType, RebootTime.ToString());
+                        TextWriters.Write(Translate.DoTranslation("[{0}] panic: Time to reboot: {1} seconds, exceeds 1 hour. It is set to 1 minute."), true, KernelColorTools.ColTypes.Uncontinuable, ErrorType, RebootTime.ToString());
                         RebootTime = 60L;
                     }
                 }
@@ -143,7 +143,7 @@ namespace KS.Kernel
                         {
                             // Double panic printed and reboot initiated
                             DebugWriter.Wdbg(DebugLevel.F, "Double panic caused by bug in kernel crash.");
-                            TextWriterColor.Write(Translate.DoTranslation("[{0}] dpanic: {1} -- Rebooting in {2} seconds..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Uncontinuable), ErrorType, Description, RebootTime.ToString());
+                            TextWriters.Write(Translate.DoTranslation("[{0}] dpanic: {1} -- Rebooting in {2} seconds..."), true, KernelColorTools.ColTypes.Uncontinuable, ErrorType, Description, RebootTime.ToString());
                             Thread.Sleep((int)(RebootTime * 1000L));
                             DebugWriter.Wdbg(DebugLevel.F, "Rebooting");
                             PowerManage(PowerMode.Reboot);
@@ -155,13 +155,13 @@ namespace KS.Kernel
                             {
                                 // Continuable kernel errors shouldn't cause the kernel to reboot.
                                 DebugWriter.Wdbg(DebugLevel.W, "Continuable kernel errors shouldn't have Reboot = True.");
-                                TextWriterColor.Write(Translate.DoTranslation("[{0}] panic: Reboot disabled due to error level being {0}."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning), ErrorType);
+                                TextWriters.Write(Translate.DoTranslation("[{0}] panic: Reboot disabled due to error level being {0}."), true, KernelColorTools.ColTypes.Warning, ErrorType);
                             }
                             // Print normally
                             Kernel.KernelEventManager.RaiseContKernelError(ErrorType, Reboot, RebootTime, Description, Exc, Variables);
-                            TextWriterColor.Write(Translate.DoTranslation("[{0}] panic: {1} -- Press any key to continue using the kernel."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Continuable), ErrorType, Description);
+                            TextWriters.Write(Translate.DoTranslation("[{0}] panic: {1} -- Press any key to continue using the kernel."), true, KernelColorTools.ColTypes.Continuable, ErrorType, Description);
                             if (Flags.ShowStackTraceOnKernelError & Exc is not null)
-                                TextWriterColor.Write(Exc.StackTrace, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Continuable));
+                                TextWriters.Write(Exc.StackTrace, true, KernelColorTools.ColTypes.Continuable);
                             Input.DetectKeypress();
                             break;
                         }
@@ -172,9 +172,9 @@ namespace KS.Kernel
                             {
                                 // Offer the user to wait for the set time interval before the kernel reboots.
                                 DebugWriter.Wdbg(DebugLevel.F, "Kernel panic initiated with reboot time: {0} seconds, Error Type: {1}", RebootTime, ErrorType);
-                                TextWriterColor.Write(Translate.DoTranslation("[{0}] panic: {1} -- Rebooting in {2} seconds..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Uncontinuable), ErrorType, Description, RebootTime.ToString());
+                                TextWriters.Write(Translate.DoTranslation("[{0}] panic: {1} -- Rebooting in {2} seconds..."), true, KernelColorTools.ColTypes.Uncontinuable, ErrorType, Description, RebootTime.ToString());
                                 if (Flags.ShowStackTraceOnKernelError & Exc is not null)
-                                    TextWriterColor.Write(Exc.StackTrace, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Uncontinuable));
+                                    TextWriters.Write(Exc.StackTrace, true, KernelColorTools.ColTypes.Uncontinuable);
                                 Thread.Sleep((int)(RebootTime * 1000L));
                                 PowerManage(PowerMode.Reboot);
                             }
@@ -182,9 +182,9 @@ namespace KS.Kernel
                             {
                                 // If rebooting is disabled, offer the user to shutdown the kernel
                                 DebugWriter.Wdbg(DebugLevel.W, "Reboot is False, ErrorType is not double or continuable.");
-                                TextWriterColor.Write(Translate.DoTranslation("[{0}] panic: {1} -- Press any key to shutdown."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Uncontinuable), ErrorType, Description);
+                                TextWriters.Write(Translate.DoTranslation("[{0}] panic: {1} -- Press any key to shutdown."), true, KernelColorTools.ColTypes.Uncontinuable, ErrorType, Description);
                                 if (Flags.ShowStackTraceOnKernelError & Exc is not null)
-                                    TextWriterColor.Write(Exc.StackTrace, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Uncontinuable));
+                                    TextWriters.Write(Exc.StackTrace, true, KernelColorTools.ColTypes.Uncontinuable);
                                 Input.DetectKeypress();
                                 PowerManage(PowerMode.Shutdown);
                             }
@@ -298,7 +298,7 @@ namespace KS.Kernel
             }
             catch (Exception ex)
             {
-                TextWriterColor.Write(Translate.DoTranslation("Dump information gatherer crashed when trying to get information about {0}: {1}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), Exc.GetType().FullName, ex.Message);
+                TextWriters.Write(Translate.DoTranslation("Dump information gatherer crashed when trying to get information about {0}: {1}"), true, KernelColorTools.ColTypes.Error, Exc.GetType().FullName, ex.Message);
                 DebugWriter.WStkTrc(ex);
             }
         }
@@ -335,7 +335,7 @@ namespace KS.Kernel
                 case PowerMode.Shutdown:
                     {
                         Kernel.KernelEventManager.RaisePreShutdown();
-                        TextWriterColor.Write(Translate.DoTranslation("Shutting down..."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                        TextWriters.Write(Translate.DoTranslation("Shutting down..."), true, KernelColorTools.ColTypes.Neutral);
                         Flags.RebootRequested = true;
                         Flags.LogoutRequested = true;
                         Flags.KernelShutdown = true;
@@ -347,7 +347,7 @@ namespace KS.Kernel
                 case PowerMode.RebootSafe:
                     {
                         Kernel.KernelEventManager.RaisePreReboot();
-                        TextWriterColor.Write(Translate.DoTranslation("Rebooting..."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                        TextWriters.Write(Translate.DoTranslation("Rebooting..."), true, KernelColorTools.ColTypes.Neutral);
                         Flags.RebootRequested = true;
                         Flags.LogoutRequested = true;
                         ResetEverything();
@@ -478,18 +478,18 @@ namespace KS.Kernel
             if (Flags.ShowAppInfoOnBoot & !Flags.EnableSplash)
             {
                 SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("App information"), true, KernelColorTools.ColTypes.Stage);
-                TextWriterColor.Write("OS: " + Translate.DoTranslation("Running on {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), Environment.OSVersion.ToString());
+                TextWriters.Write("OS: " + Translate.DoTranslation("Running on {0}"), true, KernelColorTools.ColTypes.Neutral, Environment.OSVersion.ToString());
             }
 
             // Show dev version notice
             if (!Flags.EnableSplash)
             {
 #if SPECIFIERDEV
-                TextWriterColor.Write(Translate.DoTranslation("Looks like you were running the development version of the kernel. While you can see the aspects, it is frequently updated and might introduce bugs. It is recommended that you stay on the stable version."), true, KernelColorTools.ColTypes.DevelopmentWarning);
+                TextWriters.Write(Translate.DoTranslation("Looks like you were running the development version of the kernel. While you can see the aspects, it is frequently updated and might introduce bugs. It is recommended that you stay on the stable version."), true, KernelColorTools.ColTypes.DevelopmentWarning);
 #elif SPECIFIERRC
-                TextWriterColor.Write(DoTranslation("Looks like you were running the release candidate version. It is recommended that you stay on the stable version."), true, KernelColorTools.ColTypes.DevelopmentWarning);
+                TextWriters.Write(DoTranslation("Looks like you were running the release candidate version. It is recommended that you stay on the stable version."), true, KernelColorTools.ColTypes.DevelopmentWarning);
 #elif !SPECIFIERREL
-                TextWriterColor.Write(DoTranslation("Looks like you were running an unsupported version. It's highly advisable not to use this version."), true, KernelColorTools.ColTypes.DevelopmentWarning);
+                TextWriters.Write(DoTranslation("Looks like you were running an unsupported version. It's highly advisable not to use this version."), true, KernelColorTools.ColTypes.DevelopmentWarning);
 #endif
             }
 
@@ -639,7 +639,7 @@ namespace KS.Kernel
                 {
                     SplashReport.ReportProgress(Translate.DoTranslation("Stage finished in") + $" {Kernel.StageTimer.Elapsed}", 10, KernelColorTools.ColTypes.StageTime);
                     Kernel.StageTimer.Reset();
-                    TextWriterColor.WritePlain("", true);
+                    TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
                 }
             }
             else if (Flags.ShowStageFinishTimes)
@@ -653,7 +653,7 @@ namespace KS.Kernel
             {
                 if (!Flags.EnableSplash & !Flags.QuietKernel)
                 {
-                    TextWriterColor.WritePlain("", true);
+                    TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
                     SeparatorWriterColor.WriteSeparator(StageText, false, KernelColorTools.ColTypes.Stage);
                 }
                 DebugWriter.Wdbg(DebugLevel.I, $"- Kernel stage {StageNumber} | Text: {StageText}");

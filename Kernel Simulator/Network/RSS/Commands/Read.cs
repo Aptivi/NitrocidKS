@@ -23,7 +23,7 @@ using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Execution;
 using KS.Misc.Platform;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Network.RSS.Commands
@@ -36,7 +36,7 @@ namespace KS.Network.RSS.Commands
             int ArticleIndex = (int)Math.Round(Convert.ToDouble(ListArgs[0]) - 1d);
             if (ArticleIndex > RSSShellCommon.RSSFeedInstance.FeedArticles.Count - 1)
             {
-                TextWriterColor.Write(Translate.DoTranslation("Article number couldn't be bigger than the available articles."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("Article number couldn't be bigger than the available articles."), true, KernelColorTools.ColTypes.Error);
                 DebugWriter.Wdbg(DebugLevel.E, "Tried to access article number {0}, but count is {1}.", ArticleIndex, RSSShellCommon.RSSFeedInstance.FeedArticles.Count - 1);
             }
             else if (!string.IsNullOrWhiteSpace(RSSShellCommon.RSSFeedInstance.FeedArticles[ArticleIndex].ArticleLink))
@@ -51,7 +51,7 @@ namespace KS.Network.RSS.Commands
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Article doesn't have a link!"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("Article doesn't have a link!"), true, KernelColorTools.ColTypes.Error);
                 DebugWriter.Wdbg(DebugLevel.E, "Tried to open a web browser to link of article number {0}, but it's empty. \"{1}\"", ArticleIndex, RSSShellCommon.RSSFeedInstance.FeedArticles[ArticleIndex].ArticleLink);
             }
         }

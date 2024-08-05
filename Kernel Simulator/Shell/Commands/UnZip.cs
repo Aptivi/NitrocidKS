@@ -25,7 +25,7 @@ using KS.ConsoleBase.Colors;
 using KS.Files;
 using KS.Files.Folders;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 
 namespace KS.Shell.Commands
@@ -56,9 +56,9 @@ namespace KS.Shell.Commands
 
         public override void HelpHelper()
         {
-            TextWriterColor.Write(Translate.DoTranslation("This command has the below switches that change how it works:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-            TextWriterColor.Write("  -createdir: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Creates a directory that contains the contents of the ZIP file"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+            TextWriters.Write(Translate.DoTranslation("This command has the below switches that change how it works:"), true, KernelColorTools.ColTypes.Neutral);
+            TextWriters.Write("  -createdir: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Creates a directory that contains the contents of the ZIP file"), true, KernelColorTools.ColTypes.ListValue);
         }
 
     }

@@ -24,7 +24,7 @@ using KS.Languages;
 using KS.Misc.Calendar;
 using KS.Misc.Calendar.Events;
 using KS.Misc.Calendar.Reminders;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
 
@@ -60,7 +60,7 @@ namespace KS.Shell.Commands
                             catch (Exception ex)
                             {
                                 DebugWriter.WStkTrc(ex);
-                                TextWriterColor.Write(Translate.DoTranslation("Failed to add or remove an event.") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.Message);
+                                TextWriters.Write(Translate.DoTranslation("Failed to add or remove an event.") + " {0}", true, KernelColorTools.ColTypes.Error, ex.Message);
                             }
                         }
                         else
@@ -96,12 +96,12 @@ namespace KS.Shell.Commands
                                             catch (Exception ex)
                                             {
                                                 DebugWriter.WStkTrc(ex);
-                                                TextWriterColor.Write(Translate.DoTranslation("Failed to add an event.") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.Message);
+                                                TextWriters.Write(Translate.DoTranslation("Failed to add an event.") + " {0}", true, KernelColorTools.ColTypes.Error, ex.Message);
                                             }
                                         }
                                         else
                                         {
-                                            TextWriterColor.Write(Translate.DoTranslation("Not enough arguments provided to add an event."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                                            TextWriters.Write(Translate.DoTranslation("Not enough arguments provided to add an event."), true, KernelColorTools.ColTypes.Error);
                                         }
 
                                         break;
@@ -122,12 +122,12 @@ namespace KS.Shell.Commands
                                             catch (Exception ex)
                                             {
                                                 DebugWriter.WStkTrc(ex);
-                                                TextWriterColor.Write(Translate.DoTranslation("Failed to remove an event.") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.Message);
+                                                TextWriters.Write(Translate.DoTranslation("Failed to remove an event.") + " {0}", true, KernelColorTools.ColTypes.Error, ex.Message);
                                             }
                                         }
                                         else
                                         {
-                                            TextWriterColor.Write(Translate.DoTranslation("Not enough arguments provided to remove an event."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                                            TextWriters.Write(Translate.DoTranslation("Not enough arguments provided to remove an event."), true, KernelColorTools.ColTypes.Error);
                                         }
 
                                         break;
@@ -148,14 +148,14 @@ namespace KS.Shell.Commands
                                 default:
                                     {
                                         // Invalid action.
-                                        TextWriterColor.Write(Translate.DoTranslation("Invalid action."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                                        TextWriters.Write(Translate.DoTranslation("Invalid action."), true, KernelColorTools.ColTypes.Error);
                                         break;
                                     }
                             }
                         }
                         else
                         {
-                            TextWriterColor.Write(Translate.DoTranslation("Not enough arguments provided for event manipulation."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                            TextWriters.Write(Translate.DoTranslation("Not enough arguments provided for event manipulation."), true, KernelColorTools.ColTypes.Error);
                         }
 
                         break;
@@ -186,12 +186,12 @@ namespace KS.Shell.Commands
                                             catch (Exception ex)
                                             {
                                                 DebugWriter.WStkTrc(ex);
-                                                TextWriterColor.Write(Translate.DoTranslation("Failed to add a reminder.") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.Message);
+                                                TextWriters.Write(Translate.DoTranslation("Failed to add a reminder.") + " {0}", true, KernelColorTools.ColTypes.Error, ex.Message);
                                             }
                                         }
                                         else
                                         {
-                                            TextWriterColor.Write(Translate.DoTranslation("Not enough arguments provided to add a reminder."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                                            TextWriters.Write(Translate.DoTranslation("Not enough arguments provided to add a reminder."), true, KernelColorTools.ColTypes.Error);
                                         }
 
                                         break;
@@ -212,12 +212,12 @@ namespace KS.Shell.Commands
                                             catch (Exception ex)
                                             {
                                                 DebugWriter.WStkTrc(ex);
-                                                TextWriterColor.Write(Translate.DoTranslation("Failed to remove a reminder.") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.Message);
+                                                TextWriters.Write(Translate.DoTranslation("Failed to remove a reminder.") + " {0}", true, KernelColorTools.ColTypes.Error, ex.Message);
                                             }
                                         }
                                         else
                                         {
-                                            TextWriterColor.Write(Translate.DoTranslation("Not enough arguments provided to remove a reminder."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                                            TextWriters.Write(Translate.DoTranslation("Not enough arguments provided to remove a reminder."), true, KernelColorTools.ColTypes.Error);
                                         }
 
                                         break;
@@ -238,14 +238,14 @@ namespace KS.Shell.Commands
                                 default:
                                     {
                                         // Invalid action.
-                                        TextWriterColor.Write(Translate.DoTranslation("Invalid action."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                                        TextWriters.Write(Translate.DoTranslation("Invalid action."), true, KernelColorTools.ColTypes.Error);
                                         break;
                                     }
                             }
                         }
                         else
                         {
-                            TextWriterColor.Write(Translate.DoTranslation("Not enough arguments provided for reminder manipulation."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                            TextWriters.Write(Translate.DoTranslation("Not enough arguments provided for reminder manipulation."), true, KernelColorTools.ColTypes.Error);
                         }
 
                         break;
@@ -254,7 +254,7 @@ namespace KS.Shell.Commands
                 default:
                     {
                         // Invalid action.
-                        TextWriterColor.Write(Translate.DoTranslation("Invalid action."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(Translate.DoTranslation("Invalid action."), true, KernelColorTools.ColTypes.Error);
                         break;
                     }
             }

@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Network.FTP;
 using KS.Shell.ShellBase.Commands;
 
@@ -35,7 +35,7 @@ namespace KS.Network.SFTP.Commands
                 // Set a connected flag to False
                 SFTPShellCommon.SFTPConnected = false;
                 SFTPShellCommon.ClientSFTP.Disconnect();
-                TextWriterColor.Write(Translate.DoTranslation("Disconnected from {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), FTPShellCommon.FtpSite);
+                TextWriters.Write(Translate.DoTranslation("Disconnected from {0}"), true, KernelColorTools.ColTypes.Neutral, FTPShellCommon.FtpSite);
 
                 // Clean up everything
                 SFTPShellCommon.SFTPSite = "";
@@ -45,7 +45,7 @@ namespace KS.Network.SFTP.Commands
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("You haven't connected to any server yet"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("You haven't connected to any server yet"), true, KernelColorTools.ColTypes.Error);
             }
         }
 

@@ -25,7 +25,7 @@ using KS.Kernel;
 using KS.Languages;
 using KS.Misc.Probers;
 using KS.Misc.Text;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Network.RSS;
 using KS.Network.RSS.Instance;
@@ -64,11 +64,11 @@ namespace KS.Shell.Shells
                         {
                             if (!string.IsNullOrWhiteSpace(RSSShellCommon.RSSFeedUrlPromptStyle))
                             {
-                                TextWriterColor.Write(PlaceParse.ProbePlaces(RSSShellCommon.RSSFeedUrlPromptStyle), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                                TextWriters.Write(PlaceParse.ProbePlaces(RSSShellCommon.RSSFeedUrlPromptStyle), false, KernelColorTools.ColTypes.Input);
                             }
                             else
                             {
-                                TextWriterColor.Write(Translate.DoTranslation("Enter an RSS feed URL:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                                TextWriters.Write(Translate.DoTranslation("Enter an RSS feed URL:") + " ", false, KernelColorTools.ColTypes.Input);
                             }
                             RSSShellCommon.RSSFeedLink = Input.ReadLine();
 
@@ -88,7 +88,7 @@ namespace KS.Shell.Shells
                         {
                             DebugWriter.Wdbg(DebugLevel.E, "Failed to parse RSS feed URL {0}: {1}", FeedUrl, ex.Message);
                             DebugWriter.WStkTrc(ex);
-                            TextWriterColor.Write(Translate.DoTranslation("Failed to parse feed URL:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.Message);
+                            TextWriters.Write(Translate.DoTranslation("Failed to parse feed URL:") + " {0}", true, KernelColorTools.ColTypes.Error, ex.Message);
                             RSSShellCommon.RSSFeedLink = "";
                         }
                     }
@@ -120,7 +120,7 @@ namespace KS.Shell.Shells
                     {
                         DebugWriter.Wdbg(DebugLevel.E, "Failed to parse RSS feed URL {0}: {1}", RSSShellCommon.RSSFeedLink, ex.Message);
                         DebugWriter.WStkTrc(ex);
-                        TextWriterColor.Write(Translate.DoTranslation("Failed to parse feed URL:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.Message);
+                        TextWriters.Write(Translate.DoTranslation("Failed to parse feed URL:") + " {0}", true, KernelColorTools.ColTypes.Error, ex.Message);
                         RSSShellCommon.RSSFeedLink = "";
                     }
                 }
@@ -166,7 +166,7 @@ namespace KS.Shell.Shells
                 catch (Exception ex)
                 {
                     DebugWriter.WStkTrc(ex);
-                    TextWriterColor.Write(Translate.DoTranslation("There was an error in the shell.") + Kernel.Kernel.NewLine + "Error {0}: {1}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.GetType().FullName, ex.Message);
+                    TextWriters.Write(Translate.DoTranslation("There was an error in the shell.") + Kernel.Kernel.NewLine + "Error {0}: {1}", true, KernelColorTools.ColTypes.Error, ex.GetType().FullName, ex.Message);
                     continue;
                 }
             }

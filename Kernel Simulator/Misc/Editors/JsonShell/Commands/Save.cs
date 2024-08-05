@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 using Newtonsoft.Json;
 namespace KS.Misc.Editors.JsonShell.Commands
@@ -42,11 +42,11 @@ namespace KS.Misc.Editors.JsonShell.Commands
 
         public override void HelpHelper()
         {
-            TextWriterColor.Write(Translate.DoTranslation("This command has the below switches that change how it works:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-            TextWriterColor.Write("  -b: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Saves the JSON file, beautifying it in the process"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-            TextWriterColor.Write("  -m: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Saves the JSON file, minifying it in the process"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+            TextWriters.Write(Translate.DoTranslation("This command has the below switches that change how it works:"), true, KernelColorTools.ColTypes.Neutral);
+            TextWriters.Write("  -b: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Saves the JSON file, beautifying it in the process"), true, KernelColorTools.ColTypes.ListValue);
+            TextWriters.Write("  -m: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Saves the JSON file, minifying it in the process"), true, KernelColorTools.ColTypes.ListValue);
         }
 
     }

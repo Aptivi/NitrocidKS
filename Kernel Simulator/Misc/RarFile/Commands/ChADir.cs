@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Misc.RarFile.Commands
 {
@@ -30,7 +30,7 @@ namespace KS.Misc.RarFile.Commands
         {
             if (!RarTools.ChangeWorkingArchiveDirectory(ListArgs[0]))
             {
-                TextWriterColor.Write(Translate.DoTranslation("Archive directory {0} doesn't exist"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[0]);
+                TextWriters.Write(Translate.DoTranslation("Archive directory {0} doesn't exist"), true, KernelColorTools.ColTypes.Error, ListArgs[0]);
             }
         }
 

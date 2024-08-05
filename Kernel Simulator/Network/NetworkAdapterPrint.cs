@@ -21,7 +21,7 @@ using System.Net.NetworkInformation;
 using KS.ConsoleBase.Colors;
 using KS.Kernel;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 
 namespace KS.Network
@@ -46,13 +46,13 @@ namespace KS.Network
             foreach (NetworkInterface adapter in adapters)
             {
                 adapterNumber += 1L;
-                TextWriterColor.Write("==========================================", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write("==========================================", true, KernelColorTools.ColTypes.Neutral);
 
                 // See if it supports IPv6
                 if (!adapter.Supports(NetworkInterfaceComponent.IPv6))
                 {
                     DebugWriter.Wdbg(DebugLevel.W, "{0} doesn't support IPv6. Trying to get information about IPv4.", adapter.Description);
-                    TextWriterColor.Write(Translate.DoTranslation("Adapter {0} doesn't support IPv6. Continuing..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), adapter.Description);
+                    TextWriters.Write(Translate.DoTranslation("Adapter {0} doesn't support IPv6. Continuing..."), true, KernelColorTools.ColTypes.Error, adapter.Description);
                     NoV6 = true;
                 }
 
@@ -60,7 +60,7 @@ namespace KS.Network
                 if (!adapter.Supports(NetworkInterfaceComponent.IPv4))
                 {
                     DebugWriter.Wdbg(DebugLevel.E, "{0} doesn't support IPv4.", adapter.Description);
-                    TextWriterColor.Write(Translate.DoTranslation("Adapter {0} doesn't support IPv4. Probe failed."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), adapter.Description);
+                    TextWriters.Write(Translate.DoTranslation("Adapter {0} doesn't support IPv4. Probe failed."), true, KernelColorTools.ColTypes.Error, adapter.Description);
                     NoV4 = true;
                 }
 
@@ -80,12 +80,12 @@ namespace KS.Network
                         if (p6 is null)
                         {
                             DebugWriter.Wdbg(DebugLevel.W, "Failed to get IPv6 properties.");
-                            TextWriterColor.Write(Translate.DoTranslation("Failed to get IPv6 properties for adapter {0}. Continuing..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), adapter.Description);
+                            TextWriters.Write(Translate.DoTranslation("Failed to get IPv6 properties for adapter {0}. Continuing..."), true, KernelColorTools.ColTypes.Error, adapter.Description);
                         }
                         if (p is null)
                         {
                             DebugWriter.Wdbg(DebugLevel.E, "Failed to get IPv4 properties.");
-                            TextWriterColor.Write(Translate.DoTranslation("Failed to get properties for adapter {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), adapter.Description);
+                            TextWriters.Write(Translate.DoTranslation("Failed to get properties for adapter {0}"), true, KernelColorTools.ColTypes.Error, adapter.Description);
                             Failed = true;
                         }
                         DebugWriter.WStkTrc(ex);
@@ -95,7 +95,7 @@ namespace KS.Network
                     if (s is null)
                     {
                         DebugWriter.Wdbg(DebugLevel.E, "Failed to get statistics.");
-                        TextWriterColor.Write(Translate.DoTranslation("Failed to get statistics for adapter {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), adapter.Description);
+                        TextWriters.Write(Translate.DoTranslation("Failed to get statistics for adapter {0}"), true, KernelColorTools.ColTypes.Error, adapter.Description);
                         Failed = true;
                     }
 
@@ -119,7 +119,7 @@ namespace KS.Network
             // Print general IPv4 and IPv6 information
             if (Flags.GeneralNetworkInformation)
             {
-                TextWriterColor.Write("==========================================", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write("==========================================", true, KernelColorTools.ColTypes.Neutral);
                 PrintGeneralNetInfo(gs4);
             }
         }
@@ -135,14 +135,14 @@ namespace KS.Network
         {
             if (Flags.ExtensiveAdapterInformation)
             {
-                TextWriterColor.Write(Translate.DoTranslation("IPv4 information:") + Kernel.Kernel.NewLine +
+                TextWriters.Write(Translate.DoTranslation("IPv4 information:") + Kernel.Kernel.NewLine +
                     Translate.DoTranslation("Adapter Number:") + " {0}" + Kernel.Kernel.NewLine +
                     Translate.DoTranslation("Adapter Name:") + " {1}" + Kernel.Kernel.NewLine +
                     Translate.DoTranslation("Maximum Transmission Unit: {2} Units") + Kernel.Kernel.NewLine +
                     Translate.DoTranslation("Non-unicast packets:") + " {3}/{4}" + Kernel.Kernel.NewLine +
                     Translate.DoTranslation("Unicast packets:") + " {5}/{6}" + Kernel.Kernel.NewLine +
                     Translate.DoTranslation("Error incoming/outgoing packets:") + " {7}/{8}",
-                    true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral),
+                    true, KernelColorTools.ColTypes.Neutral,
                     AdapterNumber, NInterface.Description, Properties.Mtu, Statistics.NonUnicastPacketsSent,
                     Statistics.NonUnicastPacketsReceived, Statistics.UnicastPacketsSent,
                     Statistics.UnicastPacketsReceived, Statistics.IncomingPacketsWithErrors,
@@ -151,10 +151,10 @@ namespace KS.Network
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("IPv4 information:") + Kernel.Kernel.NewLine +
+                TextWriters.Write(Translate.DoTranslation("IPv4 information:") + Kernel.Kernel.NewLine +
                     Translate.DoTranslation("Adapter Number:") + " {0}" + Kernel.Kernel.NewLine +
                     Translate.DoTranslation("Adapter Name:") + " {1}",
-                    true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral),
+                    true, KernelColorTools.ColTypes.Neutral,
                     AdapterNumber, NInterface.Description
                 );
             }
@@ -170,11 +170,11 @@ namespace KS.Network
         {
             if (Flags.ExtensiveAdapterInformation)
             {
-                TextWriterColor.Write(Translate.DoTranslation("IPv6 information:") + Kernel.Kernel.NewLine + Translate.DoTranslation("Adapter Number:") + " {0}" + Kernel.Kernel.NewLine + Translate.DoTranslation("Adapter Name:") + " {1}" + Kernel.Kernel.NewLine + Translate.DoTranslation("Maximum Transmission Unit: {2} Units"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), AdapterNumber, NInterface.Description, Properties.Mtu);
+                TextWriters.Write(Translate.DoTranslation("IPv6 information:") + Kernel.Kernel.NewLine + Translate.DoTranslation("Adapter Number:") + " {0}" + Kernel.Kernel.NewLine + Translate.DoTranslation("Adapter Name:") + " {1}" + Kernel.Kernel.NewLine + Translate.DoTranslation("Maximum Transmission Unit: {2} Units"), true, KernelColorTools.ColTypes.Neutral, AdapterNumber, NInterface.Description, Properties.Mtu);
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("IPv6 information:") + Kernel.Kernel.NewLine + Translate.DoTranslation("Adapter Number:") + " {0}" + Kernel.Kernel.NewLine + Translate.DoTranslation("Adapter Name:") + " {1}", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), AdapterNumber, NInterface.Description);
+                TextWriters.Write(Translate.DoTranslation("IPv6 information:") + Kernel.Kernel.NewLine + Translate.DoTranslation("Adapter Number:") + " {0}" + Kernel.Kernel.NewLine + Translate.DoTranslation("Adapter Name:") + " {1}", true, KernelColorTools.ColTypes.Neutral, AdapterNumber, NInterface.Description);
             }
         }
 
@@ -184,12 +184,12 @@ namespace KS.Network
         /// <param name="IPv4Stat">IPv4 general statistics</param>
         public static void PrintGeneralNetInfo(IPGlobalStatistics IPv4Stat)
         {
-            TextWriterColor.Write(
+            TextWriters.Write(
                 Translate.DoTranslation("General IPv4 properties") + Kernel.Kernel.NewLine +
                 Translate.DoTranslation("Packets (inbound):") + " {0}/{1}" + Kernel.Kernel.NewLine +
                 Translate.DoTranslation("Packets (outbound):") + " {2}/{3}" + Kernel.Kernel.NewLine +
                 Translate.DoTranslation("Errors in received packets:") + " {4}/{5}/{6}",
-                true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral),
+                true, KernelColorTools.ColTypes.Neutral,
                 IPv4Stat.ReceivedPackets, IPv4Stat.ReceivedPacketsDelivered,
                 IPv4Stat.OutputPacketRequests, IPv4Stat.OutputPacketsDiscarded,
                 IPv4Stat.ReceivedPacketsWithAddressErrors, IPv4Stat.ReceivedPacketsWithHeadersErrors,

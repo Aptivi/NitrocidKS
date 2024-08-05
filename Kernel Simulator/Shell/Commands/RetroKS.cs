@@ -27,7 +27,7 @@ using KS.Files.Operations;
 using KS.Files.Querying;
 using KS.Kernel;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Network.Transfer;
 using KS.Shell.ShellBase.Commands;
 using Newtonsoft.Json.Linq;
@@ -49,7 +49,7 @@ namespace KS.Shell.Commands
 #else
             string ExecutableName = "RetroKS.exe";
 #endif
-            TextWriterColor.Write(Translate.DoTranslation("Checking for updates..."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(Translate.DoTranslation("Checking for updates..."), true, KernelColorTools.ColTypes.Neutral);
 
             // Because api.github.com requires the UserAgent header to be put, else, 403 error occurs. Fortunately for us, "Aptivi" is enough.
             NetworkTransfer.WClient.DefaultRequestHeaders.Add("User-Agent", "Aptivi");
@@ -101,14 +101,14 @@ namespace KS.Shell.Commands
             // Check to see if we already have RetroKS installed and up-to-date
             if ((Checking.FileExists(RetroExecKSPath) && SemVer.ParseWithRev(AssemblyName.GetAssemblyName(RetroExecKSPath).Version.ToString()) < SortedVersions[0].UpdateVersion) | !Checking.FileExists(RetroExecKSPath))
             {
-                TextWriterColor.Write(Translate.DoTranslation("Downloading version") + " {0}...", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), SortedVersions[0].UpdateVersion.ToString());
+                TextWriters.Write(Translate.DoTranslation("Downloading version") + " {0}...", true, KernelColorTools.ColTypes.Neutral, SortedVersions[0].UpdateVersion.ToString());
 
                 // Download RetroKS
                 var RetroKSURI = SortedVersions[0].UpdateURL;
                 NetworkTransfer.DownloadFile(RetroKSURI.ToString(), RetroKSPath);
 
                 // Extract it
-                TextWriterColor.Write(Translate.DoTranslation("Installing version") + " {0}...", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), SortedVersions[0].UpdateVersion.ToString());
+                TextWriters.Write(Translate.DoTranslation("Installing version") + " {0}...", true, KernelColorTools.ColTypes.Neutral, SortedVersions[0].UpdateVersion.ToString());
                 using var archive = RarArchive.Open(RetroKSPath);
                 foreach (var entry in archive.Entries.Where(e => !e.IsDirectory))
                     entry.WriteToDirectory(Paths.RetroKSDownloadPath, new ExtractionOptions()
@@ -119,7 +119,7 @@ namespace KS.Shell.Commands
             }
 
             // Now, run the assembly
-            TextWriterColor.Write(Translate.DoTranslation("Going back to 2018..."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(Translate.DoTranslation("Going back to 2018..."), true, KernelColorTools.ColTypes.Neutral);
             Assembly.LoadFrom(RetroExecKSPath).EntryPoint.Invoke("", []);
 
             // Clear the console

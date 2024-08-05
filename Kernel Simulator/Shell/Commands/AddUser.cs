@@ -20,7 +20,7 @@
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Login;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Shell.Commands
 {
@@ -31,19 +31,19 @@ namespace KS.Shell.Commands
         {
             if ((ListArgs?.Length) is { } arg1 && arg1 == 1)
             {
-                TextWriterColor.Write(Translate.DoTranslation("usrmgr: Creating username {0}..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ListArgs[0]);
+                TextWriters.Write(Translate.DoTranslation("usrmgr: Creating username {0}..."), true, KernelColorTools.ColTypes.Neutral, ListArgs[0]);
                 UserManagement.AddUser(ListArgs[0]);
             }
             else if ((ListArgs?.Length) is { } arg2 && arg2 > 2)
             {
                 if ((ListArgs[1] ?? "") == (ListArgs[2] ?? ""))
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("usrmgr: Creating username {0}..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ListArgs[0]);
+                    TextWriters.Write(Translate.DoTranslation("usrmgr: Creating username {0}..."), true, KernelColorTools.ColTypes.Neutral, ListArgs[0]);
                     UserManagement.AddUser(ListArgs[0], ListArgs[1]);
                 }
                 else
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Passwords don't match."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(Translate.DoTranslation("Passwords don't match."), true, KernelColorTools.ColTypes.Error);
                 }
             }
         }

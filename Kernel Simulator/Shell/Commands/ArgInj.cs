@@ -23,7 +23,7 @@ using KS.Arguments.ArgumentBase;
 using KS.ConsoleBase.Colors;
 using KS.Kernel;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
 
@@ -46,24 +46,24 @@ namespace KS.Shell.Commands
                 else
                 {
                     DebugWriter.Wdbg(DebugLevel.W, "Argument {0} not found.", arg);
-                    TextWriterColor.Write(Translate.DoTranslation("Argument {0} not found to inject."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning), arg);
+                    TextWriters.Write(Translate.DoTranslation("Argument {0} not found to inject."), true, KernelColorTools.ColTypes.Warning, arg);
                 }
             }
             if (FinalArgs.Count == 0)
             {
-                TextWriterColor.Write(Translate.DoTranslation("No arguments specified. Hint: Specify multiple arguments separated by spaces"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("No arguments specified. Hint: Specify multiple arguments separated by spaces"), true, KernelColorTools.ColTypes.Error);
             }
             else
             {
                 ArgumentPrompt.EnteredArguments = new List<string>(FinalArgs);
                 Flags.ArgsInjected = true;
-                TextWriterColor.Write(Translate.DoTranslation("Injected arguments, {0}, will be scheduled to run at next reboot."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), string.Join(", ", ArgumentPrompt.EnteredArguments));
+                TextWriters.Write(Translate.DoTranslation("Injected arguments, {0}, will be scheduled to run at next reboot."), true, KernelColorTools.ColTypes.Neutral, string.Join(", ", ArgumentPrompt.EnteredArguments));
             }
         }
 
         public override void HelpHelper()
         {
-            TextWriterColor.Write(Translate.DoTranslation("where arguments will be {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), string.Join(", ", ArgumentParse.AvailableArgs.Keys));
+            TextWriters.Write(Translate.DoTranslation("where arguments will be {0}"), true, KernelColorTools.ColTypes.Neutral, string.Join(", ", ArgumentParse.AvailableArgs.Keys));
         }
 
     }

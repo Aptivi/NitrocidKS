@@ -25,10 +25,11 @@ using KS.ConsoleBase.Colors;
 using KS.Files.Querying;
 using KS.Misc.Text;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 using Terminaux.Colors;
+using Terminaux.Writer.ConsoleWriters;
 
 namespace KS.Misc.Screensaver.Displays
 {
@@ -237,8 +238,8 @@ namespace KS.Misc.Screensaver.Displays
                 // Prepare display (make a paragraph indentation)
                 if (!(ConsoleWrapper.CursorTop == ConsoleWrapper.WindowHeight - 2))
                 {
-                    TextWriterColor.WritePlain("", true);
-                    TextWriterColor.WritePlain("    ", false);
+                    TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
+                    TextWriterRaw.WritePlain("    ", false);
                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop);
                 }
 
@@ -268,14 +269,14 @@ namespace KS.Misc.Screensaver.Displays
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "We're at the end of the page! {0} = {1}", ConsoleWrapper.CursorTop, ConsoleWrapper.WindowHeight - 2);
                             ThreadManager.SleepNoBlock(TypewriterSettings.TypewriterNewScreenDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
                             ConsoleWrapper.Clear();
-                            TextWriterColor.WritePlain("", true);
+                            TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
                             if (SentenceIndex == 0)
                             {
-                                TextWriterColor.WritePlain("    ", false);
+                                TextWriterRaw.WritePlain("    ", false);
                             }
                             else
                             {
-                                TextWriterColor.WritePlain(" ", false);
+                                TextWriterRaw.WritePlain(" ", false);
                             }
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop);
                         }
@@ -287,17 +288,17 @@ namespace KS.Misc.Screensaver.Displays
                             int OldLeft = ConsoleWrapper.CursorLeft;
                             ConsoleWrapper.SetCursorPosition(OldLeft, ConsoleWrapper.WindowHeight - 1);
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Arrow drawn in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop);
-                            TextWriterColor.WritePlain(Convert.ToString(Color255.GetEsc()) + "[1K^" + Convert.ToString(Color255.GetEsc()) + "[K", false);
+                            TextWriterRaw.WritePlain(Convert.ToString(Color255.GetEsc()) + "[1K^" + Convert.ToString(Color255.GetEsc()) + "[K", false);
                             ConsoleWrapper.SetCursorPosition(OldLeft, OldTop);
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Returned to {0}, {1}", OldLeft, OldTop);
                         }
 
                         // Write the final character to the console and wait
-                        TextWriterColor.WritePlain(Convert.ToString(StruckChar), false);
+                        TextWriterRaw.WritePlain(Convert.ToString(StruckChar), false);
                         ThreadManager.SleepNoBlock(WriteMs, ScreensaverDisplayer.ScreensaverDisplayerThread);
                     }
-                    TextWriterColor.WritePlain("", true);
-                    TextWriterColor.WritePlain(" ", false);
+                    TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
+                    TextWriterRaw.WritePlain(" ", false);
                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop);
                 }
             }

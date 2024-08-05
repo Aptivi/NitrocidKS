@@ -24,7 +24,7 @@ using KS.Files;
 using KS.Files.Querying;
 using KS.Languages;
 using KS.Misc.Encryption;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
 
@@ -42,36 +42,36 @@ namespace KS.Shell.Commands
                 {
                     if (HashVerifier.VerifyHashFromHashesFile(ListArgs[3], (Encryption.Algorithms)Convert.ToInt32(Enum.Parse(typeof(Encryption.Algorithms), ListArgs[0])), ListArgs[2], ListArgs[1]))
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("Hashes match."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                        TextWriters.Write(Translate.DoTranslation("Hashes match."), true, KernelColorTools.ColTypes.Neutral);
                     }
                     else
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("Hashes don't match."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
+                        TextWriters.Write(Translate.DoTranslation("Hashes don't match."), true, KernelColorTools.ColTypes.Warning);
                     }
                 }
                 else if (HashVerifier.VerifyHashFromHash(ListArgs[3], (Encryption.Algorithms)Convert.ToInt32(Enum.Parse(typeof(Encryption.Algorithms), ListArgs[0])), ListArgs[2], ListArgs[1]))
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Hashes match."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                    TextWriters.Write(Translate.DoTranslation("Hashes match."), true, KernelColorTools.ColTypes.Neutral);
                 }
                 else
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Hashes don't match."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
+                    TextWriters.Write(Translate.DoTranslation("Hashes don't match."), true, KernelColorTools.ColTypes.Warning);
                 }
             }
             catch (Kernel.Exceptions.InvalidHashAlgorithmException ihae)
             {
                 DebugWriter.WStkTrc(ihae);
-                TextWriterColor.Write(Translate.DoTranslation("Invalid encryption algorithm."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("Invalid encryption algorithm."), true, KernelColorTools.ColTypes.Error);
             }
             catch (Kernel.Exceptions.InvalidHashException ihe)
             {
                 DebugWriter.WStkTrc(ihe);
-                TextWriterColor.Write(Translate.DoTranslation("Hashes are malformed."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("Hashes are malformed."), true, KernelColorTools.ColTypes.Error);
             }
             catch (FileNotFoundException fnfe)
             {
                 DebugWriter.WStkTrc(fnfe);
-                TextWriterColor.Write(Translate.DoTranslation("{0} is not found."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[3]);
+                TextWriters.Write(Translate.DoTranslation("{0} is not found."), true, KernelColorTools.ColTypes.Error, ListArgs[3]);
             }
         }
 

@@ -21,7 +21,7 @@ using KS.ConsoleBase.Colors;
 using KS.ConsoleBase.Inputs;
 using KS.Languages;
 using KS.Misc.Probers;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using MimeKit.Cryptography;
 using Org.BouncyCastle.Bcpg.OpenPgp;
 
@@ -39,11 +39,11 @@ namespace KS.Network.Mail.PGP
         {
             if (!string.IsNullOrWhiteSpace(MailLogin.Mail_GPGPromptStyle))
             {
-                TextWriterColor.Write(PlaceParse.ProbePlaces(MailLogin.Mail_GPGPromptStyle), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input), key.KeyId);
+                TextWriters.Write(PlaceParse.ProbePlaces(MailLogin.Mail_GPGPromptStyle), false, KernelColorTools.ColTypes.Input, key.KeyId);
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Write password for key ID {0}") + ": ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input), key.KeyId);
+                TextWriters.Write(Translate.DoTranslation("Write password for key ID {0}") + ": ", false, KernelColorTools.ColTypes.Input, key.KeyId);
             }
             string Password = Input.ReadLineNoInput();
             return Password;

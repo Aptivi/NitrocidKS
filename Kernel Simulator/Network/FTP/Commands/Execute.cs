@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Network.FTP.Commands
 {
@@ -30,23 +30,23 @@ namespace KS.Network.FTP.Commands
         {
             if (FTPShellCommon.FtpConnected)
             {
-                TextWriterColor.Write("<<< C: {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), StringArgs);
+                TextWriters.Write("<<< C: {0}", true, KernelColorTools.ColTypes.Neutral, StringArgs);
                 var ExecutedReply = FTPShellCommon.ClientFTP.Execute(StringArgs);
                 if (ExecutedReply.Success)
                 {
-                    TextWriterColor.Write(">>> [{0}] M: {1}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success), ExecutedReply.Code, ExecutedReply.Message);
-                    TextWriterColor.Write(">>> [{0}] I: {1}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success), ExecutedReply.Code, ExecutedReply.InfoMessages);
+                    TextWriters.Write(">>> [{0}] M: {1}", true, KernelColorTools.ColTypes.Success, ExecutedReply.Code, ExecutedReply.Message);
+                    TextWriters.Write(">>> [{0}] I: {1}", true, KernelColorTools.ColTypes.Success, ExecutedReply.Code, ExecutedReply.InfoMessages);
                 }
                 else
                 {
-                    TextWriterColor.Write(">>> [{0}] M: {1}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ExecutedReply.Code, ExecutedReply.Message);
-                    TextWriterColor.Write(">>> [{0}] I: {1}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ExecutedReply.Code, ExecutedReply.InfoMessages);
-                    TextWriterColor.Write(">>> [{0}] E: {1}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ExecutedReply.Code, ExecutedReply.ErrorMessage);
+                    TextWriters.Write(">>> [{0}] M: {1}", true, KernelColorTools.ColTypes.Error, ExecutedReply.Code, ExecutedReply.Message);
+                    TextWriters.Write(">>> [{0}] I: {1}", true, KernelColorTools.ColTypes.Error, ExecutedReply.Code, ExecutedReply.InfoMessages);
+                    TextWriters.Write(">>> [{0}] E: {1}", true, KernelColorTools.ColTypes.Error, ExecutedReply.Code, ExecutedReply.ErrorMessage);
                 }
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("You haven't connected to any server yet"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("You haven't connected to any server yet"), true, KernelColorTools.ColTypes.Error);
             }
         }
 

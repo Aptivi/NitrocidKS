@@ -24,7 +24,7 @@ using KS.Kernel;
 using KS.Languages;
 using KS.Misc.Screensaver;
 using KS.Misc.Screensaver.Customized;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 
 namespace KS.Shell.Commands
@@ -39,16 +39,16 @@ namespace KS.Shell.Commands
             if (Screensaver.Screensavers.ContainsKey(StringArgs) | CustomSaverTools.CustomSavers.ContainsKey(StringArgs))
             {
                 Screensaver.SetDefaultScreensaver(StringArgs);
-                TextWriterColor.Write(Translate.DoTranslation("{0} is set to default screensaver."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), StringArgs);
+                TextWriters.Write(Translate.DoTranslation("{0} is set to default screensaver."), true, KernelColorTools.ColTypes.Neutral, StringArgs);
             }
             else if (Checking.FileExists($"{modPath}{StringArgs}") & !Flags.SafeMode)
             {
                 Screensaver.SetDefaultScreensaver(StringArgs);
-                TextWriterColor.Write(Translate.DoTranslation("{0} is set to default screensaver."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), StringArgs);
+                TextWriters.Write(Translate.DoTranslation("{0} is set to default screensaver."), true, KernelColorTools.ColTypes.Neutral, StringArgs);
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Screensaver {0} not found."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), StringArgs);
+                TextWriters.Write(Translate.DoTranslation("Screensaver {0} not found."), true, KernelColorTools.ColTypes.Error, StringArgs);
             }
         }
 
@@ -56,9 +56,9 @@ namespace KS.Shell.Commands
         {
             if (CustomSaverTools.CustomSavers.Count > 0)
             {
-                TextWriterColor.Write(Translate.DoTranslation("where customsaver will be") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), string.Join(", ", CustomSaverTools.CustomSavers.Keys));
+                TextWriters.Write(Translate.DoTranslation("where customsaver will be") + " {0}", true, KernelColorTools.ColTypes.Neutral, string.Join(", ", CustomSaverTools.CustomSavers.Keys));
             }
-            TextWriterColor.Write(Translate.DoTranslation("where builtinsaver will be") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), string.Join(", ", Screensaver.Screensavers.Keys));
+            TextWriters.Write(Translate.DoTranslation("where builtinsaver will be") + " {0}", true, KernelColorTools.ColTypes.Neutral, string.Join(", ", Screensaver.Screensavers.Keys));
         }
 
     }

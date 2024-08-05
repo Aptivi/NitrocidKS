@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Misc.Editors.TextEdit.Commands
 {
@@ -29,7 +29,7 @@ namespace KS.Misc.Editors.TextEdit.Commands
         public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
         {
             TextEditTools.TextEdit_ReplaceRegex(ListArgs[0], ListArgs[1]);
-            TextWriterColor.Write(Translate.DoTranslation("String replaced."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success));
+            TextWriters.Write(Translate.DoTranslation("String replaced."), true, KernelColorTools.ColTypes.Success);
         }
 
     }

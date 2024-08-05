@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Network.FTP.Commands
 {
@@ -30,11 +30,11 @@ namespace KS.Network.FTP.Commands
         {
             if (FTPShellCommon.FtpConnected)
             {
-                TextWriterColor.Write(Translate.DoTranslation("Remote directory: {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), FTPShellCommon.FtpCurrentRemoteDir);
+                TextWriters.Write(Translate.DoTranslation("Remote directory: {0}"), true, KernelColorTools.ColTypes.Neutral, FTPShellCommon.FtpCurrentRemoteDir);
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("You must connect to server before getting current remote directory."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("You must connect to server before getting current remote directory."), true, KernelColorTools.ColTypes.Error);
             }
         }
 

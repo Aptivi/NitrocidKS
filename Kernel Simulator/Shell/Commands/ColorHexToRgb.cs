@@ -20,7 +20,7 @@
 using System;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Shell.Commands
@@ -34,12 +34,12 @@ namespace KS.Shell.Commands
 
             // Do the job
             string[] rgb = ConvertFromHexToRGB(Hex).Split(';');
-            TextWriterColor.Write("- " + Translate.DoTranslation("Red color level:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write($"{rgb[0]}", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-            TextWriterColor.Write("- " + Translate.DoTranslation("Green color level:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write($"{rgb[1]}", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-            TextWriterColor.Write("- " + Translate.DoTranslation("Blue color level:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write($"{rgb[2]}", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+            TextWriters.Write("- " + Translate.DoTranslation("Red color level:") + " ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write($"{rgb[0]}", true, KernelColorTools.ColTypes.ListValue);
+            TextWriters.Write("- " + Translate.DoTranslation("Green color level:") + " ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write($"{rgb[1]}", true, KernelColorTools.ColTypes.ListValue);
+            TextWriters.Write("- " + Translate.DoTranslation("Blue color level:") + " ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write($"{rgb[2]}", true, KernelColorTools.ColTypes.ListValue);
         }
 
         private static string ConvertFromHexToRGB(string Hex)

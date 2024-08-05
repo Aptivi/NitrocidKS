@@ -25,7 +25,7 @@ using KS.Kernel;
 using KS.Languages;
 using KS.Misc.Editors.TextEdit;
 using KS.Misc.Text;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.Prompts;
 using KS.Shell.ShellBase.Commands;
@@ -50,7 +50,7 @@ namespace KS.Shell.Shells
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("File not specified. Exiting shell..."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("File not specified. Exiting shell..."), true, KernelColorTools.ColTypes.Error);
                 Bail = true;
             }
 
@@ -65,7 +65,7 @@ namespace KS.Shell.Shells
                         DebugWriter.Wdbg(DebugLevel.W, "File not open yet. Trying to open {0}...", FilePath);
                         if (!TextEditTools.TextEdit_OpenTextFile(FilePath))
                         {
-                            TextWriterColor.Write(Translate.DoTranslation("Failed to open file. Exiting shell..."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                            TextWriters.Write(Translate.DoTranslation("Failed to open file. Exiting shell..."), true, KernelColorTools.ColTypes.Error);
                             Bail = true;
                             break;
                         }
@@ -103,7 +103,7 @@ namespace KS.Shell.Shells
                 catch (Exception ex)
                 {
                     DebugWriter.WStkTrc(ex);
-                    TextWriterColor.Write(Translate.DoTranslation("There was an error in the shell.") + Kernel.Kernel.NewLine + "Error {0}: {1}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.GetType().FullName, ex.Message);
+                    TextWriters.Write(Translate.DoTranslation("There was an error in the shell.") + Kernel.Kernel.NewLine + "Error {0}: {1}", true, KernelColorTools.ColTypes.Error, ex.GetType().FullName, ex.Message);
                     continue;
                 }
             }

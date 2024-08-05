@@ -21,10 +21,11 @@ using System;
 using System.Collections.Generic;
 using KS.ConsoleBase.Colors;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 using Terminaux.Colors;
+using Terminaux.Writer.ConsoleWriters;
 namespace KS.Misc.Screensaver.Displays
 {
     public class WindowsLogoDisplay : BaseScreensaver, IScreensaver
@@ -113,7 +114,7 @@ namespace KS.Misc.Screensaver.Displays
                         {
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Filling upper left box {0},{1}...", X, Y);
                             ConsoleWrapper.SetCursorPosition(X, Y);
-                            TextWriterColor.WritePlain(" ", false);
+                            TextWriterRaw.WritePlain(" ", false);
                         }
                     }
 
@@ -124,7 +125,7 @@ namespace KS.Misc.Screensaver.Displays
                         {
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Filling lower left box {0},{1}...", X, Y);
                             ConsoleWrapper.SetCursorPosition(X, Y);
-                            TextWriterColor.WritePlain(" ", false);
+                            TextWriterRaw.WritePlain(" ", false);
                         }
                     }
 
@@ -135,7 +136,7 @@ namespace KS.Misc.Screensaver.Displays
                         {
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Filling upper right box {0},{1}...", X, Y);
                             ConsoleWrapper.SetCursorPosition(X, Y);
-                            TextWriterColor.WritePlain(" ", false);
+                            TextWriterRaw.WritePlain(" ", false);
                         }
                     }
 
@@ -146,7 +147,7 @@ namespace KS.Misc.Screensaver.Displays
                         {
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Filling lower right box {0},{1}...", X, Y);
                             ConsoleWrapper.SetCursorPosition(X, Y);
-                            TextWriterColor.WritePlain(" ", false);
+                            TextWriterRaw.WritePlain(" ", false);
                         }
                     }
 

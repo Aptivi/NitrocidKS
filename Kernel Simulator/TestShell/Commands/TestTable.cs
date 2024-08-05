@@ -19,9 +19,10 @@
 
 using System;
 using System.Linq;
-using KS.Misc.Writers.FancyWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 using KS.TimeDate;
+using Terminaux.Writer.FancyWriters;
 
 namespace KS.TestShell.Commands
 {

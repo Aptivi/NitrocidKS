@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Network.RSS.Commands
 {
@@ -28,16 +28,16 @@ namespace KS.Network.RSS.Commands
 
         public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
         {
-            TextWriterColor.Write("- " + Translate.DoTranslation("Title:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(RSSShellCommon.RSSFeedInstance.FeedTitle, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-            TextWriterColor.Write("- " + Translate.DoTranslation("Link:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(RSSShellCommon.RSSFeedInstance.FeedUrl, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-            TextWriterColor.Write("- " + Translate.DoTranslation("Description:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(RSSShellCommon.RSSFeedInstance.FeedDescription, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-            TextWriterColor.Write("- " + Translate.DoTranslation("Feed type:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(RSSShellCommon.RSSFeedInstance.FeedType.ToString(), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-            TextWriterColor.Write("- " + Translate.DoTranslation("Number of articles:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(RSSShellCommon.RSSFeedInstance.FeedArticles.Count.ToString(), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+            TextWriters.Write("- " + Translate.DoTranslation("Title:") + " ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(RSSShellCommon.RSSFeedInstance.FeedTitle, true, KernelColorTools.ColTypes.ListValue);
+            TextWriters.Write("- " + Translate.DoTranslation("Link:") + " ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(RSSShellCommon.RSSFeedInstance.FeedUrl, true, KernelColorTools.ColTypes.ListValue);
+            TextWriters.Write("- " + Translate.DoTranslation("Description:") + " ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(RSSShellCommon.RSSFeedInstance.FeedDescription, true, KernelColorTools.ColTypes.ListValue);
+            TextWriters.Write("- " + Translate.DoTranslation("Feed type:") + " ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(RSSShellCommon.RSSFeedInstance.FeedType.ToString(), true, KernelColorTools.ColTypes.ListValue);
+            TextWriters.Write("- " + Translate.DoTranslation("Number of articles:") + " ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(RSSShellCommon.RSSFeedInstance.FeedArticles.Count.ToString(), true, KernelColorTools.ColTypes.ListValue);
         }
 
     }

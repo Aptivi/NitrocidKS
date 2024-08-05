@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Misc.Text;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Network.RSS.Instance;
 using KS.Shell.ShellBase.Commands;
 
@@ -32,9 +32,9 @@ namespace KS.Network.RSS.Commands
         {
             foreach (RSSArticle Article in RSSShellCommon.RSSFeedInstance.FeedArticles)
             {
-                TextWriterColor.Write("- {0}: ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), Article.ArticleTitle);
-                TextWriterColor.Write(Article.ArticleLink, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-                TextWriterColor.Write("    {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), TextTools.SplitNewLines(Article.ArticleDescription)[0].Truncate(200));
+                TextWriters.Write("- {0}: ", false, KernelColorTools.ColTypes.ListEntry, Article.ArticleTitle);
+                TextWriters.Write(Article.ArticleLink, true, KernelColorTools.ColTypes.ListValue);
+                TextWriters.Write("    {0}", true, KernelColorTools.ColTypes.Neutral, TextTools.SplitNewLines(Article.ArticleDescription)[0].Truncate(200));
             }
         }
 

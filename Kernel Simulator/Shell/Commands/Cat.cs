@@ -23,7 +23,7 @@ using KS.ConsoleBase.Colors;
 using KS.Files.Print;
 using KS.Kernel;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
 
@@ -46,17 +46,17 @@ namespace KS.Shell.Commands
             catch (Exception ex)
             {
                 DebugWriter.WStkTrc(ex);
-                TextWriterColor.Write(ex.Message, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(ex.Message, true, KernelColorTools.ColTypes.Error);
             }
         }
 
         public override void HelpHelper()
         {
-            TextWriterColor.Write(Translate.DoTranslation("This command has the below switches that change how it works:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-            TextWriterColor.Write("  -lines: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Prints the line numbers that follow the line being printed"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-            TextWriterColor.Write("  -nolines: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Prevents printing the line numbers"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+            TextWriters.Write(Translate.DoTranslation("This command has the below switches that change how it works:"), true, KernelColorTools.ColTypes.Neutral);
+            TextWriters.Write("  -lines: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Prints the line numbers that follow the line being printed"), true, KernelColorTools.ColTypes.ListValue);
+            TextWriters.Write("  -nolines: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Prevents printing the line numbers"), true, KernelColorTools.ColTypes.ListValue);
         }
 
     }

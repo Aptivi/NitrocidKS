@@ -21,11 +21,12 @@ using System;
 using KS.ConsoleBase.Colors;
 using KS.Misc.Screensaver;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 using Terminaux.Colors;
 using Terminaux.Colors.Data;
+using Terminaux.Writer.ConsoleWriters;
 
 namespace KS.Misc.Animations.BeatEdgePulse
 {
@@ -183,7 +184,7 @@ namespace KS.Misc.Animations.BeatEdgePulse
             {
                 ConsoleWrapper.SetCursorPosition(x, 0);
                 DebugWriter.Wdbg(DebugLevel.I, "Drawing floor top edge ({0}, {1})", x, 1);
-                TextWriterColor.WritePlain(" ", false);
+                TextWriterRaw.WritePlain(" ", false);
             }
 
             // Second, draw the floor bottom edge
@@ -191,7 +192,7 @@ namespace KS.Misc.Animations.BeatEdgePulse
             {
                 ConsoleWrapper.SetCursorPosition(x, FloorBottomEdge);
                 DebugWriter.Wdbg(DebugLevel.I, "Drawing floor bottom edge ({0}, {1})", x, FloorBottomEdge);
-                TextWriterColor.WritePlain(" ", false);
+                TextWriterRaw.WritePlain(" ", false);
             }
 
             // Third, draw the floor left edge
@@ -199,7 +200,7 @@ namespace KS.Misc.Animations.BeatEdgePulse
             {
                 ConsoleWrapper.SetCursorPosition(FloorLeftEdge, y);
                 DebugWriter.Wdbg(DebugLevel.I, "Drawing floor left edge ({0}, {1})", FloorLeftEdge, y);
-                TextWriterColor.WritePlain("  ", false);
+                TextWriterRaw.WritePlain("  ", false);
             }
 
             // Finally, draw the floor right edge
@@ -207,7 +208,7 @@ namespace KS.Misc.Animations.BeatEdgePulse
             {
                 ConsoleWrapper.SetCursorPosition(FloorRightEdge, y);
                 DebugWriter.Wdbg(DebugLevel.I, "Drawing floor right edge ({0}, {1})", FloorRightEdge, y);
-                TextWriterColor.WritePlain("  ", false);
+                TextWriterRaw.WritePlain("  ", false);
             }
         }
 

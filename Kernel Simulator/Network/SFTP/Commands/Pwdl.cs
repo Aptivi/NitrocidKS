@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Network.SFTP.Commands
 {
@@ -28,7 +28,7 @@ namespace KS.Network.SFTP.Commands
 
         public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
         {
-            TextWriterColor.Write(Translate.DoTranslation("Local directory: {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), SFTPShellCommon.SFTPCurrDirect);
+            TextWriters.Write(Translate.DoTranslation("Local directory: {0}"), true, KernelColorTools.ColTypes.Neutral, SFTPShellCommon.SFTPCurrDirect);
         }
 
     }

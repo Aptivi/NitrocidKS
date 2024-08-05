@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Network.RemoteDebug;
 using KS.Shell.ShellBase.Commands;
 
@@ -31,7 +31,7 @@ namespace KS.Shell.Commands
         public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
         {
             RemoteDebugTools.DisconnectDbgDev(ListArgs[0]);
-            TextWriterColor.Write(Translate.DoTranslation("Device {0} disconnected."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ListArgs[0]);
+            TextWriters.Write(Translate.DoTranslation("Device {0} disconnected."), true, KernelColorTools.ColTypes.Neutral, ListArgs[0]);
         }
 
     }

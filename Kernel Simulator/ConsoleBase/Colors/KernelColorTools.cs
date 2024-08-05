@@ -195,21 +195,6 @@ namespace KS.ConsoleBase.Colors
             AlternativeOption
         }
 
-        /// <summary>
-        /// Color type enumeration
-        /// </summary>
-        public enum ColorType
-        {
-            /// <summary>
-            /// Color is a true color
-            /// </summary>
-            TrueColor,
-            /// <summary>
-            /// Color is a 256-bit color
-            /// </summary>
-            _255Color
-        }
-
         // Variables for colors used by previous versions of the kernel.
         public static Color InputColor = new(ConsoleColors.White);
         public static Color LicenseColor = new(ConsoleColors.White);
@@ -922,9 +907,49 @@ namespace KS.ConsoleBase.Colors
         public static void SetConsoleColor(Color ColorSequence, bool Background = false)
         {
             if (Shell.Shell.ColoredShell)
-            {
                 TermColorTools.SetConsoleColor(ColorSequence, Background);
-            }
+        }
+
+        /// <summary>
+        /// Sets the console color
+        /// </summary>
+        /// <param name="colorType">A type of colors that will be changed.</param>
+        /// <param name="resetBack">If the color is not a background, do we reset the background color?</param>
+        public static void SetConsoleColorDry(ColTypes colorType, bool resetBack = true) =>
+            SetConsoleColorDry(colorType, false, resetBack);
+
+        /// <summary>
+        /// Sets the console color
+        /// </summary>
+        /// <param name="colorType">A type of colors that will be changed.</param>
+        /// <param name="Background">Is the color a background color?</param>
+        /// <param name="resetBack">If the color is not a background, do we reset the background color?</param>
+        public static void SetConsoleColorDry(ColTypes colorType, bool Background, bool resetBack = true)
+        {
+            TermColorTools.SetConsoleColorDry(GetConsoleColor(colorType), Background);
+            if (!Background && resetBack)
+                TermColorTools.SetConsoleColorDry(BackgroundColor, true);
+        }
+
+        /// <summary>
+        /// Sets the console color
+        /// </summary>
+        /// <param name="ColorSequence">The color instance</param>
+        /// <param name="resetBack">If the color is not a background, do we reset the background color?</param>
+        public static void SetConsoleColorDry(Color ColorSequence, bool resetBack = true) =>
+            SetConsoleColorDry(ColorSequence, false, resetBack);
+
+        /// <summary>
+        /// Sets the console color
+        /// </summary>
+        /// <param name="ColorSequence">The color instance</param>
+        /// <param name="Background">Whether to set background or not</param>
+        /// <param name="resetBack">If the color is not a background, do we reset the background color?</param>
+        public static void SetConsoleColorDry(Color ColorSequence, bool Background, bool resetBack = true)
+        {
+            TermColorTools.SetConsoleColorDry(ColorSequence, Background);
+            if (!Background && resetBack)
+                TermColorTools.SetConsoleColorDry(BackgroundColor, true);
         }
 
         /// <summary>

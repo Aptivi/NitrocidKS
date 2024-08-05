@@ -24,7 +24,7 @@ using KS.Kernel;
 #else
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 #endif
 
 namespace KS.Shell.Commands
@@ -37,7 +37,7 @@ namespace KS.Shell.Commands
 #if SPECIFIERREL
             KernelTools.CheckKernelUpdates();
 #else
-            TextWriterColor.Write(Translate.DoTranslation("Checking for updates is disabled because you're running a development version."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+            TextWriters.Write(Translate.DoTranslation("Checking for updates is disabled because you're running a development version."), true, KernelColorTools.ColTypes.Error);
 #endif
         }
 

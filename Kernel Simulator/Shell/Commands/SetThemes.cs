@@ -22,7 +22,7 @@ using KS.ConsoleBase.Themes;
 using KS.Files;
 using KS.Files.Querying;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 
 namespace KS.Shell.Commands
@@ -50,13 +50,13 @@ namespace KS.Shell.Commands
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Colors are not available. Turn on colored shell in the kernel config."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(Translate.DoTranslation("Colors are not available. Turn on colored shell in the kernel config."), true, KernelColorTools.ColTypes.Neutral);
             }
         }
 
         public override void HelpHelper()
         {
-            TextWriterColor.Write("<Theme>: ThemeName.json, " + string.Join(", ", ThemeTools.Themes.Keys), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write("<Theme>: ThemeName.json, " + string.Join(", ", ThemeTools.Themes.Keys), true, KernelColorTools.ColTypes.Neutral);
         }
 
     }

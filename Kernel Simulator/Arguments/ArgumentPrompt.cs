@@ -23,7 +23,7 @@ using KS.ConsoleBase.Colors;
 using KS.ConsoleBase.Inputs;
 using KS.Kernel;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 
 namespace KS.Arguments
 {
@@ -43,17 +43,17 @@ namespace KS.Arguments
             string AnswerArgs = "";
 
             // Shows available arguments
-            TextWriterColor.Write(Translate.DoTranslation("Available kernel arguments:"), true, KernelColorTools.ColTypes.ListTitle);
+            TextWriters.Write(Translate.DoTranslation("Available kernel arguments:"), true, KernelColorTools.ColTypes.ListTitle);
             ArgumentHelpSystem.ShowArgsHelp(ArgumentType.KernelArgs);
-            TextWriterColor.WritePlain("", true);
-            TextWriterColor.Write("* " + Translate.DoTranslation("Press \"q\" if you're done."), true, KernelColorTools.ColTypes.Tip);
-            TextWriterColor.Write("* " + Translate.DoTranslation("Multiple kernel arguments can be separated with commas without spaces, for example:") + " \"debug,safe\"", true, KernelColorTools.ColTypes.Tip);
-            TextWriterColor.Write("* " + Translate.DoTranslation("Multiple injected commands can be separated with colons with spaces, for example:") + " cmdinject \"beep 100 500 : echo Hello!\"", true, KernelColorTools.ColTypes.Tip);
+            TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
+            TextWriters.Write("* " + Translate.DoTranslation("Press \"q\" if you're done."), true, KernelColorTools.ColTypes.Tip);
+            TextWriters.Write("* " + Translate.DoTranslation("Multiple kernel arguments can be separated with commas without spaces, for example:") + " \"debug,safe\"", true, KernelColorTools.ColTypes.Tip);
+            TextWriters.Write("* " + Translate.DoTranslation("Multiple injected commands can be separated with colons with spaces, for example:") + " cmdinject \"beep 100 500 : echo Hello!\"", true, KernelColorTools.ColTypes.Tip);
 
             // Prompts for the arguments
             while (!(AnswerArgs == "q"))
             {
-                TextWriterColor.Write(">> ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                TextWriters.Write(">> ", false, KernelColorTools.ColTypes.Input);
                 AnswerArgs = Input.ReadLine();
 
                 // Add an argument to the entered arguments list
@@ -67,7 +67,7 @@ namespace KS.Arguments
                         }
                         else if (!string.IsNullOrWhiteSpace(AnswerArg.Split(' ')[0]))
                         {
-                            TextWriterColor.Write(Translate.DoTranslation("The requested argument {0} is not found."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), AnswerArg.Split(' ')[0]);
+                            TextWriters.Write(Translate.DoTranslation("The requested argument {0} is not found."), true, KernelColorTools.ColTypes.Error, AnswerArg.Split(' ')[0]);
                         }
                     }
                 }
@@ -75,11 +75,11 @@ namespace KS.Arguments
                 {
                     Flags.ArgsInjected = true;
                     Kernel.Kernel.KernelEventManager.RaiseArgumentsInjected(EnteredArguments);
-                    TextWriterColor.Write(Translate.DoTranslation("Injected arguments will be scheduled to run at next reboot."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                    TextWriters.Write(Translate.DoTranslation("Injected arguments will be scheduled to run at next reboot."), true, KernelColorTools.ColTypes.Neutral);
                 }
                 else if (EnteredArguments.Count != 0)
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Starting the kernel with:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), string.Join(", ", EnteredArguments));
+                    TextWriters.Write(Translate.DoTranslation("Starting the kernel with:") + " {0}", true, KernelColorTools.ColTypes.Neutral, string.Join(", ", EnteredArguments));
                     ArgumentParse.ParseArguments(EnteredArguments, ArgumentType.KernelArgs);
                 }
             }

@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Misc.ZipFile.Commands
 {
@@ -30,7 +30,7 @@ namespace KS.Misc.ZipFile.Commands
         {
             if (!ZipTools.ChangeWorkingZipLocalDirectory(ListArgs[0]))
             {
-                TextWriterColor.Write(Translate.DoTranslation("Directory {0} doesn't exist"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[0]);
+                TextWriters.Write(Translate.DoTranslation("Directory {0} doesn't exist"), true, KernelColorTools.ColTypes.Error, ListArgs[0]);
             }
         }
 

@@ -27,7 +27,7 @@ using KS.Files;
 using KS.Kernel;
 using KS.Languages;
 using KS.Misc.Probers;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Network.Mail.PGP;
 using KS.Shell.ShellBase.Shells;
@@ -77,11 +77,11 @@ namespace KS.Network.Mail
             // Username or mail address
             if (!string.IsNullOrWhiteSpace(Mail_UserPromptStyle))
             {
-                TextWriterColor.Write(PlaceParse.ProbePlaces(Mail_UserPromptStyle), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                TextWriters.Write(PlaceParse.ProbePlaces(Mail_UserPromptStyle), false, KernelColorTools.ColTypes.Input);
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Enter username or mail address: "), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                TextWriters.Write(Translate.DoTranslation("Enter username or mail address: "), false, KernelColorTools.ColTypes.Input);
             }
 
             // Try to get the username or e-mail address from the input
@@ -100,11 +100,11 @@ namespace KS.Network.Mail
             Mail_Authentication.UserName = Username;
             if (!string.IsNullOrWhiteSpace(Mail_PassPromptStyle))
             {
-                TextWriterColor.Write(PlaceParse.ProbePlaces(Mail_PassPromptStyle), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                TextWriters.Write(PlaceParse.ProbePlaces(Mail_PassPromptStyle), false, KernelColorTools.ColTypes.Input);
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Enter password: "), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                TextWriters.Write(Translate.DoTranslation("Enter password: "), false, KernelColorTools.ColTypes.Input);
             }
             Mail_Authentication.Password = Input.ReadLineNoInput();
 
@@ -132,11 +132,11 @@ namespace KS.Network.Mail
             // IMAP server address and port
             if (!string.IsNullOrWhiteSpace(Mail_IMAPPromptStyle))
             {
-                TextWriterColor.Write(PlaceParse.ProbePlaces(Mail_IMAPPromptStyle), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                TextWriters.Write(PlaceParse.ProbePlaces(Mail_IMAPPromptStyle), false, KernelColorTools.ColTypes.Input);
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Enter IMAP server address and port (<address> or <address>:[port]): "), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                TextWriters.Write(Translate.DoTranslation("Enter IMAP server address and port (<address> or <address>:[port]): "), false, KernelColorTools.ColTypes.Input);
             }
             IMAP_Address = Input.ReadLine(false);
             DebugWriter.Wdbg(DebugLevel.I, "IMAP Server: \"{0}\"", IMAP_Address);
@@ -144,11 +144,11 @@ namespace KS.Network.Mail
             // SMTP server address and port
             if (!string.IsNullOrWhiteSpace(Mail_SMTPPromptStyle))
             {
-                TextWriterColor.Write(PlaceParse.ProbePlaces(Mail_SMTPPromptStyle), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                TextWriters.Write(PlaceParse.ProbePlaces(Mail_SMTPPromptStyle), false, KernelColorTools.ColTypes.Input);
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Enter SMTP server address and port (<address> or <address>:[port]): "), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                TextWriters.Write(Translate.DoTranslation("Enter SMTP server address and port (<address> or <address>:[port]): "), false, KernelColorTools.ColTypes.Input);
             }
             string SMTP_Address = Input.ReadLine(false);
             SMTP_Port = 587;
@@ -244,18 +244,18 @@ namespace KS.Network.Mail
                 CryptographyContext.Register(typeof(PGPContext));
 
                 // IMAP Connection
-                TextWriterColor.Write(Translate.DoTranslation("Connecting to {0}..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), Address);
+                TextWriters.Write(Translate.DoTranslation("Connecting to {0}..."), true, KernelColorTools.ColTypes.Neutral, Address);
                 DebugWriter.Wdbg(DebugLevel.I, "Connecting to IMAP Server {0}:{1} with SSL...", Address, Port);
                 IMAP_Client.Connect(Address, Port, MailKit.Security.SecureSocketOptions.SslOnConnect);
                 IMAP_Client.WebAlert += MailHandlers.HandleWebAlert;
 
                 // SMTP Connection
-                TextWriterColor.Write(Translate.DoTranslation("Connecting to {0}..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), SmtpAddress);
+                TextWriters.Write(Translate.DoTranslation("Connecting to {0}..."), true, KernelColorTools.ColTypes.Neutral, SmtpAddress);
                 DebugWriter.Wdbg(DebugLevel.I, "Connecting to SMTP Server {0}:{1} with SSL...", Address, Port);
                 SMTP_Client.Connect(SmtpAddress, SmtpPort, MailKit.Security.SecureSocketOptions.StartTlsWhenAvailable);
 
                 // IMAP Authentication
-                TextWriterColor.Write(Translate.DoTranslation("Authenticating..."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(Translate.DoTranslation("Authenticating..."), true, KernelColorTools.ColTypes.Neutral);
                 DebugWriter.Wdbg(DebugLevel.I, "Authenticating {0} to IMAP server {1}...", Mail_Authentication.UserName, Address);
                 IMAP_Client.Authenticate(Mail_Authentication);
 
@@ -270,7 +270,7 @@ namespace KS.Network.Mail
             }
             catch (Exception ex)
             {
-                TextWriterColor.Write(Translate.DoTranslation("Error while connecting to {0}: {1}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), Address, ex.Message);
+                TextWriters.Write(Translate.DoTranslation("Error while connecting to {0}: {1}"), true, KernelColorTools.ColTypes.Error, Address, ex.Message);
                 DebugWriter.WStkTrc(ex);
                 IMAP_Client.Disconnect(true);
                 SMTP_Client.Disconnect(true);

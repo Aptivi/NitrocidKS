@@ -20,10 +20,11 @@
 using System.Linq;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
-using KS.Misc.Writers.FancyWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 using Nettify.EnglishDictionary;
+using Terminaux.Writer.FancyWriters;
+using Terminaux.Writer.ConsoleWriters;
 
 namespace KS.Shell.Commands
 {
@@ -39,41 +40,41 @@ namespace KS.Shell.Commands
             {
                 // First, print the license out
                 SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("License information"), true);
-                TextWriterColor.Write("dictionaryapi.dev " + Translate.DoTranslation("API is licensed under") + $" {Word.LicenseInfo.Name}: {Word.LicenseInfo.Url}", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write("dictionaryapi.dev " + Translate.DoTranslation("API is licensed under") + $" {Word.LicenseInfo.Name}: {Word.LicenseInfo.Url}", true, KernelColorTools.ColTypes.Neutral);
 
                 // Now, we can write the word information
                 SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("Word information for") + $" {ListArgs[0]}", true);
-                TextWriterColor.Write(Translate.DoTranslation("Word:"), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                TextWriterColor.Write($" {Word.Word}", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+                TextWriters.Write(Translate.DoTranslation("Word:"), false, KernelColorTools.ColTypes.ListEntry);
+                TextWriters.Write($" {Word.Word}", true, KernelColorTools.ColTypes.ListValue);
 
                 // Meanings...
                 SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("Word meanings for") + $" {ListArgs[0]}", true);
                 foreach (DictionaryWord.Meaning MeaningBase in Word.Meanings)
                 {
                     // Base part of speech
-                    TextWriterColor.Write(Translate.DoTranslation("Part of Speech:"), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                    TextWriterColor.Write($" {MeaningBase.PartOfSpeech}", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+                    TextWriters.Write(Translate.DoTranslation("Part of Speech:"), false, KernelColorTools.ColTypes.ListEntry);
+                    TextWriters.Write($" {MeaningBase.PartOfSpeech}", true, KernelColorTools.ColTypes.ListValue);
 
                     // Get the definitions
                     foreach (DictionaryWord.DefinitionType DefinitionBase in MeaningBase.Definitions)
                     {
                         // Write definition and, if applicable, example
-                        TextWriterColor.Write("  - " + Translate.DoTranslation("Definition:"), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                        TextWriterColor.Write($" {DefinitionBase.Definition}", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-                        TextWriterColor.Write("  - " + Translate.DoTranslation("Example in Sentence:"), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                        TextWriterColor.Write($" {DefinitionBase.Example}", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+                        TextWriters.Write("  - " + Translate.DoTranslation("Definition:"), false, KernelColorTools.ColTypes.ListEntry);
+                        TextWriters.Write($" {DefinitionBase.Definition}", true, KernelColorTools.ColTypes.ListValue);
+                        TextWriters.Write("  - " + Translate.DoTranslation("Example in Sentence:"), false, KernelColorTools.ColTypes.ListEntry);
+                        TextWriters.Write($" {DefinitionBase.Example}", true, KernelColorTools.ColTypes.ListValue);
 
                         // Now, write the specific synonyms (usually blank)
                         if (DefinitionBase.Synonyms.Any())
                         {
-                            TextWriterColor.Write("  - " + Translate.DoTranslation("Synonyms:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
+                            TextWriters.Write("  - " + Translate.DoTranslation("Synonyms:"), true, KernelColorTools.ColTypes.ListEntry);
                             ListWriterColor.WriteList(DefinitionBase.Synonyms);
                         }
 
                         // ...and the specific antonyms (usually blank)
                         if (DefinitionBase.Antonyms.Any())
                         {
-                            TextWriterColor.Write("  - " + Translate.DoTranslation("Antonyms:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
+                            TextWriters.Write("  - " + Translate.DoTranslation("Antonyms:"), true, KernelColorTools.ColTypes.ListEntry);
                             ListWriterColor.WriteList(DefinitionBase.Antonyms);
                         }
                     }
@@ -81,14 +82,14 @@ namespace KS.Shell.Commands
                     // Now, write the base synonyms (usually blank)
                     if (MeaningBase.Synonyms.Any())
                     {
-                        TextWriterColor.Write("  - " + Translate.DoTranslation("Synonyms:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
+                        TextWriters.Write("  - " + Translate.DoTranslation("Synonyms:"), true, KernelColorTools.ColTypes.ListEntry);
                         ListWriterColor.WriteList(MeaningBase.Synonyms);
                     }
 
                     // ...and the base antonyms (usually blank)
                     if (MeaningBase.Antonyms.Any())
                     {
-                        TextWriterColor.Write("  - " + Translate.DoTranslation("Antonyms:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
+                        TextWriters.Write("  - " + Translate.DoTranslation("Antonyms:"), true, KernelColorTools.ColTypes.ListEntry);
                         ListWriterColor.WriteList(MeaningBase.Antonyms);
                     }
                 }

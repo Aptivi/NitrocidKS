@@ -25,9 +25,9 @@ using KS.Kernel;
 using KS.Languages;
 using KS.Login;
 using KS.Misc.Probers;
-using KS.Misc.Writers.ConsoleWriters;
-using KS.Misc.Writers.FancyWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
+using Terminaux.Writer.FancyWriters;
 
 namespace KS.Shell.Commands
 {
@@ -60,21 +60,21 @@ namespace KS.Shell.Commands
             {
                 // Kernel section
                 SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("Kernel settings"), true);
-                TextWriterColor.Write(Translate.DoTranslation("Kernel Version:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                TextWriterColor.Write(Kernel.Kernel.KernelVersion, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-                TextWriterColor.Write(Translate.DoTranslation("Debug Mode:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                TextWriterColor.Write(Flags.DebugMode.ToString(), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-                TextWriterColor.Write(Translate.DoTranslation("Colored Shell:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                TextWriterColor.Write(Shell.ColoredShell.ToString(), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-                TextWriterColor.Write(Translate.DoTranslation("Arguments on Boot:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                TextWriterColor.Write(Flags.ArgsOnBoot.ToString(), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-                TextWriterColor.Write(Translate.DoTranslation("Help command simplified:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                TextWriterColor.Write(Flags.SimHelp.ToString(), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-                TextWriterColor.Write(Translate.DoTranslation("MOTD on Login:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                TextWriterColor.Write(Flags.ShowMOTD.ToString(), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-                TextWriterColor.Write(Translate.DoTranslation("Time/Date on corner:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                TextWriterColor.Write(Flags.CornerTimeDate.ToString(), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-                TextWriterColor.WritePlain("", true);
+                TextWriters.Write(Translate.DoTranslation("Kernel Version:") + " ", false, KernelColorTools.ColTypes.ListEntry);
+                TextWriters.Write(Kernel.Kernel.KernelVersion, true, KernelColorTools.ColTypes.ListValue);
+                TextWriters.Write(Translate.DoTranslation("Debug Mode:") + " ", false, KernelColorTools.ColTypes.ListEntry);
+                TextWriters.Write(Flags.DebugMode.ToString(), true, KernelColorTools.ColTypes.ListValue);
+                TextWriters.Write(Translate.DoTranslation("Colored Shell:") + " ", false, KernelColorTools.ColTypes.ListEntry);
+                TextWriters.Write(Shell.ColoredShell.ToString(), true, KernelColorTools.ColTypes.ListValue);
+                TextWriters.Write(Translate.DoTranslation("Arguments on Boot:") + " ", false, KernelColorTools.ColTypes.ListEntry);
+                TextWriters.Write(Flags.ArgsOnBoot.ToString(), true, KernelColorTools.ColTypes.ListValue);
+                TextWriters.Write(Translate.DoTranslation("Help command simplified:") + " ", false, KernelColorTools.ColTypes.ListEntry);
+                TextWriters.Write(Flags.SimHelp.ToString(), true, KernelColorTools.ColTypes.ListValue);
+                TextWriters.Write(Translate.DoTranslation("MOTD on Login:") + " ", false, KernelColorTools.ColTypes.ListEntry);
+                TextWriters.Write(Flags.ShowMOTD.ToString(), true, KernelColorTools.ColTypes.ListValue);
+                TextWriters.Write(Translate.DoTranslation("Time/Date on corner:") + " ", false, KernelColorTools.ColTypes.ListEntry);
+                TextWriters.Write(Flags.CornerTimeDate.ToString(), true, KernelColorTools.ColTypes.ListValue);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
             }
 
             if (ShowHardwareInfo)
@@ -82,53 +82,53 @@ namespace KS.Shell.Commands
                 // Hardware section
                 SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("Hardware settings"), true);
                 HardwareList.ListHardware();
-                TextWriterColor.Write(Translate.DoTranslation("Use \"hwinfo\" for extended information about hardware."), true, KernelColorTools.ColTypes.Tip);
-                TextWriterColor.WritePlain("", true);
+                TextWriters.Write(Translate.DoTranslation("Use \"hwinfo\" for extended information about hardware."), true, KernelColorTools.ColTypes.Tip);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
             }
 
             if (ShowUserInfo)
             {
                 // User section
                 SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("User settings"), true);
-                TextWriterColor.Write(Translate.DoTranslation("Current user name:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                TextWriterColor.Write(Login.Login.CurrentUser.Username, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-                TextWriterColor.Write(Translate.DoTranslation("Current host name:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                TextWriterColor.Write(Kernel.Kernel.HostName, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-                TextWriterColor.Write(Translate.DoTranslation("Available usernames:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                TextWriterColor.Write(string.Join(", ", UserManagement.ListAllUsers()), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-                TextWriterColor.WritePlain("", true);
+                TextWriters.Write(Translate.DoTranslation("Current user name:") + " ", false, KernelColorTools.ColTypes.ListEntry);
+                TextWriters.Write(Login.Login.CurrentUser.Username, true, KernelColorTools.ColTypes.ListValue);
+                TextWriters.Write(Translate.DoTranslation("Current host name:") + " ", false, KernelColorTools.ColTypes.ListEntry);
+                TextWriters.Write(Kernel.Kernel.HostName, true, KernelColorTools.ColTypes.ListValue);
+                TextWriters.Write(Translate.DoTranslation("Available usernames:") + " ", false, KernelColorTools.ColTypes.ListEntry);
+                TextWriters.Write(string.Join(", ", UserManagement.ListAllUsers()), true, KernelColorTools.ColTypes.ListValue);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
             }
 
             if (ShowMessageOfTheDay)
             {
                 // Show MOTD
                 SeparatorWriterColor.WriteSeparator("MOTD", true);
-                TextWriterColor.Write(PlaceParse.ProbePlaces(Kernel.Kernel.MOTDMessage), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(PlaceParse.ProbePlaces(Kernel.Kernel.MOTDMessage), true, KernelColorTools.ColTypes.Neutral);
             }
 
             if (ShowMal)
             {
                 // Show MAL
                 SeparatorWriterColor.WriteSeparator("MAL", true);
-                TextWriterColor.Write(PlaceParse.ProbePlaces(Kernel.Kernel.MAL), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(PlaceParse.ProbePlaces(Kernel.Kernel.MAL), true, KernelColorTools.ColTypes.Neutral);
             }
         }
 
         public override void HelpHelper()
         {
-            TextWriterColor.Write(Translate.DoTranslation("This command has the below switches that change how it works:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-            TextWriterColor.Write("  -s: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Shows the system information"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-            TextWriterColor.Write("  -h: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Shows the hardware information"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-            TextWriterColor.Write("  -u: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Shows the user information"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-            TextWriterColor.Write("  -m: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Shows the message of the day"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-            TextWriterColor.Write("  -l: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Shows the message of the day after login"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-            TextWriterColor.Write("  -a: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Shows all information"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+            TextWriters.Write(Translate.DoTranslation("This command has the below switches that change how it works:"), true, KernelColorTools.ColTypes.Neutral);
+            TextWriters.Write("  -s: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Shows the system information"), true, KernelColorTools.ColTypes.ListValue);
+            TextWriters.Write("  -h: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Shows the hardware information"), true, KernelColorTools.ColTypes.ListValue);
+            TextWriters.Write("  -u: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Shows the user information"), true, KernelColorTools.ColTypes.ListValue);
+            TextWriters.Write("  -m: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Shows the message of the day"), true, KernelColorTools.ColTypes.ListValue);
+            TextWriters.Write("  -l: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Shows the message of the day after login"), true, KernelColorTools.ColTypes.ListValue);
+            TextWriters.Write("  -a: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Shows all information"), true, KernelColorTools.ColTypes.ListValue);
         }
 
     }

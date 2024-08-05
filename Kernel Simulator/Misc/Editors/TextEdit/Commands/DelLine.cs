@@ -23,7 +23,7 @@ using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Reflection;
 using KS.Misc.Text;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
 
@@ -41,16 +41,16 @@ namespace KS.Misc.Editors.TextEdit.Commands
                     if (Convert.ToInt32(ListArgs[0]) <= TextEditShellCommon.TextEdit_FileLines.Count)
                     {
                         TextEditTools.TextEdit_RemoveLine(Convert.ToInt32(ListArgs[0]));
-                        TextWriterColor.Write(Translate.DoTranslation("Removed line."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success));
+                        TextWriters.Write(Translate.DoTranslation("Removed line."), true, KernelColorTools.ColTypes.Success);
                     }
                     else
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("The specified line number may not be larger than the last file line number."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(Translate.DoTranslation("The specified line number may not be larger than the last file line number."), true, KernelColorTools.ColTypes.Error);
                     }
                 }
                 else
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Specified line number {0} is not a valid number."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[0]);
+                    TextWriters.Write(Translate.DoTranslation("Specified line number {0} is not a valid number."), true, KernelColorTools.ColTypes.Error, ListArgs[0]);
                     DebugWriter.Wdbg(DebugLevel.E, "{0} is not a numeric value.", ListArgs[0]);
                 }
             }
@@ -66,17 +66,17 @@ namespace KS.Misc.Editors.TextEdit.Commands
                         for (int LineNumber = LineNumberStart, loopTo = LineNumberEnd; LineNumber <= loopTo; LineNumber++)
                         {
                             TextEditTools.TextEdit_RemoveLine(LineNumber);
-                            TextWriterColor.Write(Translate.DoTranslation("Removed line number {0}."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success), LineNumber);
+                            TextWriters.Write(Translate.DoTranslation("Removed line number {0}."), true, KernelColorTools.ColTypes.Success, LineNumber);
                         }
                     }
                     else
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("The specified line number may not be larger than the last file line number."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(Translate.DoTranslation("The specified line number may not be larger than the last file line number."), true, KernelColorTools.ColTypes.Error);
                     }
                 }
                 else
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Specified line number {0} is not a valid number."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[1]);
+                    TextWriters.Write(Translate.DoTranslation("Specified line number {0} is not a valid number."), true, KernelColorTools.ColTypes.Error, ListArgs[1]);
                     DebugWriter.Wdbg(DebugLevel.E, "{0} is not a numeric value.", ListArgs[1]);
                 }
             }

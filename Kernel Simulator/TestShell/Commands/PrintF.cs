@@ -20,7 +20,7 @@
 using System;
 using System.Collections.Generic;
 using KS.ConsoleBase.Colors;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.TestShell.Commands
 {
@@ -34,7 +34,7 @@ namespace KS.TestShell.Commands
             bool Line = Convert.ToBoolean(ListArgs[1]);
             object[] Vars = ListArgs[2].Split(';');
             string Text = ListArgs[3];
-            TextWriterColor.Write(Text, Line, Color, Vars);
+            TextWriters.Write(Text, Line, Color, Vars);
         }
 
     }

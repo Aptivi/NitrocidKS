@@ -26,7 +26,7 @@ using KS.ConsoleBase.Colors;
 using KS.Files.Folders;
 using KS.Kernel;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 
 namespace KS.Misc.Execution
@@ -117,7 +117,7 @@ namespace KS.Misc.Execution
             {
                 DebugWriter.Wdbg(DebugLevel.E, "Process error for {0}, {1}, {2}: {3}.", File, WorkingDirectory, Args, ex.Message);
                 DebugWriter.WStkTrc(ex);
-                TextWriterColor.Write(Translate.DoTranslation("Error trying to execute command") + " {2}.\n" + Translate.DoTranslation("Error {0}: {1}"), true, KernelColorTools.ColTypes.Error, ex.GetType().FullName, ex.Message, File);
+                TextWriters.Write(Translate.DoTranslation("Error trying to execute command") + " {2}.\n" + Translate.DoTranslation("Error {0}: {1}"), true, KernelColorTools.ColTypes.Error, ex.GetType().FullName, ex.Message, File);
             }
             return -1;
         }
@@ -214,7 +214,7 @@ namespace KS.Misc.Execution
                 Kernel.Kernel.KernelEventManager.RaiseProcessError(File + Args, ex);
                 DebugWriter.Wdbg(DebugLevel.E, "Process error for {0}, {1}, {2}: {3}.", File, WorkingDirectory, Args, ex.Message);
                 DebugWriter.WStkTrc(ex);
-                TextWriterColor.Write(Translate.DoTranslation("Error trying to execute command") + " {2}.\n" + Translate.DoTranslation("Error {0}: {1}"), true, KernelColorTools.ColTypes.Error, ex.GetType().FullName, ex.Message, File);
+                TextWriters.Write(Translate.DoTranslation("Error trying to execute command") + " {2}.\n" + Translate.DoTranslation("Error {0}: {1}"), true, KernelColorTools.ColTypes.Error, ex.GetType().FullName, ex.Message, File);
                 exitCode = -1;
             }
             return commandOutputBuilder.ToString();
@@ -269,7 +269,7 @@ namespace KS.Misc.Execution
                 Kernel.Kernel.KernelEventManager.RaiseProcessError(File + Args, ex);
                 DebugWriter.Wdbg(DebugLevel.E, "Process error for {0}, {1}, {2}: {3}.", File, WorkingDirectory, Args, ex.Message);
                 DebugWriter.WStkTrc(ex);
-                TextWriterColor.Write(Translate.DoTranslation("Error trying to execute command") + " {2}.\n" + Translate.DoTranslation("Error {0}: {1}"), true, KernelColorTools.ColTypes.Error, ex.GetType().FullName, ex.Message, File);
+                TextWriters.Write(Translate.DoTranslation("Error trying to execute command") + " {2}.\n" + Translate.DoTranslation("Error {0}: {1}"), true, KernelColorTools.ColTypes.Error, ex.GetType().FullName, ex.Message, File);
             }
         }
 
@@ -331,7 +331,7 @@ namespace KS.Misc.Execution
             if (outLine.Data is null)
                 return;
             DebugWriter.Wdbg(DebugLevel.I, outLine.Data);
-            TextWriterColor.Write(outLine.Data, true, KernelColorTools.ColTypes.Neutral);
+            TextWriters.Write(outLine.Data, true, KernelColorTools.ColTypes.Neutral);
         }
 
     }

@@ -21,7 +21,7 @@ using KS.ConsoleBase.Colors;
 using KS.Files;
 using KS.Languages;
 using KS.Misc.Probers;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 using KS.Shell.ShellBase.Shells;
 namespace KS.Shell.Commands
@@ -35,18 +35,18 @@ namespace KS.Shell.Commands
             {
                 if (string.IsNullOrEmpty(StringArgs))
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Blank message of the day."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(Translate.DoTranslation("Blank message of the day."), true, KernelColorTools.ColTypes.Error);
                 }
                 else
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Changing MOTD..."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                    TextWriters.Write(Translate.DoTranslation("Changing MOTD..."), true, KernelColorTools.ColTypes.Neutral);
                     MOTDParse.SetMOTD(StringArgs, MOTDParse.MessageType.MOTD);
                 }
             }
             else
             {
                 ShellStart.StartShell(ShellType.TextShell, Paths.GetKernelPath(KernelPathType.MOTD));
-                TextWriterColor.Write(Translate.DoTranslation("Changing MOTD..."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(Translate.DoTranslation("Changing MOTD..."), true, KernelColorTools.ColTypes.Neutral);
                 MOTDParse.ReadMOTD(MOTDParse.MessageType.MOTD);
             }
         }

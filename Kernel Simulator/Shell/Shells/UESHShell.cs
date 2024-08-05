@@ -24,7 +24,7 @@ using KS.ConsoleBase.Inputs;
 using KS.Kernel;
 using KS.Languages;
 using KS.Misc.Screensaver;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.Prompts;
 using KS.Shell.ShellBase.Commands;
@@ -113,7 +113,7 @@ namespace KS.Shell.Shells
                     catch (Exception ex)
                     {
                         DebugWriter.WStkTrc(ex);
-                        TextWriterColor.Write(Translate.DoTranslation("There was an error in the shell.") + Kernel.Kernel.NewLine + "Error {0}: {1}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.GetType().FullName, ex.Message);
+                        TextWriters.Write(Translate.DoTranslation("There was an error in the shell.") + Kernel.Kernel.NewLine + "Error {0}: {1}", true, KernelColorTools.ColTypes.Error, ex.GetType().FullName, ex.Message);
                         continue;
                     }
                 }

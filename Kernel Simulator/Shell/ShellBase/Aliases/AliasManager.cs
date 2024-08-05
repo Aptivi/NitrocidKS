@@ -26,7 +26,7 @@ using KS.ConsoleBase.Colors;
 using KS.Files;
 using KS.Files.Operations;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
 using KS.Shell.ShellBase.Shells;
@@ -131,13 +131,13 @@ namespace KS.Shell.ShellBase.Aliases
                     try
                     {
                         AddAlias(AliasCmd, DestCmd, Type);
-                        TextWriterColor.Write(Translate.DoTranslation("You can now run \"{0}\" as a command: \"{1}\"."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), AliasCmd, DestCmd);
+                        TextWriters.Write(Translate.DoTranslation("You can now run \"{0}\" as a command: \"{1}\"."), true, KernelColorTools.ColTypes.Neutral, AliasCmd, DestCmd);
                     }
                     catch (Exception ex)
                     {
                         DebugWriter.Wdbg(DebugLevel.E, "Failed to add alias. Stack trace written using WStkTrc(). {0}", ex.Message);
                         DebugWriter.WStkTrc(ex);
-                        TextWriterColor.Write(ex.Message, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(ex.Message, true, KernelColorTools.ColTypes.Error);
                     }
                 }
                 else if (mode == "rem")
@@ -147,19 +147,19 @@ namespace KS.Shell.ShellBase.Aliases
                     {
                         RemoveAlias(AliasCmd, Type);
                         PurgeAliases();
-                        TextWriterColor.Write(Translate.DoTranslation("Removed alias {0} successfully."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), AliasCmd);
+                        TextWriters.Write(Translate.DoTranslation("Removed alias {0} successfully."), true, KernelColorTools.ColTypes.Neutral, AliasCmd);
                     }
                     catch (Exception ex)
                     {
                         DebugWriter.Wdbg(DebugLevel.E, "Failed to remove alias. Stack trace written using WStkTrc(). {0}", ex.Message);
                         DebugWriter.WStkTrc(ex);
-                        TextWriterColor.Write(ex.Message, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(ex.Message, true, KernelColorTools.ColTypes.Error);
                     }
                 }
                 else
                 {
                     DebugWriter.Wdbg(DebugLevel.E, "Mode {0} was neither add nor rem.", mode);
-                    TextWriterColor.Write(Translate.DoTranslation("Invalid mode {0}."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), mode);
+                    TextWriters.Write(Translate.DoTranslation("Invalid mode {0}."), true, KernelColorTools.ColTypes.Error, mode);
                 }
 
                 // Save all aliases
@@ -168,7 +168,7 @@ namespace KS.Shell.ShellBase.Aliases
             else
             {
                 DebugWriter.Wdbg(DebugLevel.E, "Type {0} not found.", Type);
-                TextWriterColor.Write(Translate.DoTranslation("Invalid type {0}."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), Type);
+                TextWriters.Write(Translate.DoTranslation("Invalid type {0}."), true, KernelColorTools.ColTypes.Error, Type);
             }
         }
 

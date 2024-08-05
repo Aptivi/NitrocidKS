@@ -29,7 +29,7 @@ using KS.Languages;
 using KS.Misc.Notifiers;
 using KS.Misc.Probers;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Aliases;
 using KS.TimeDate;
@@ -190,7 +190,7 @@ namespace KS.Network.RemoteDebug
                     }
                     else
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("Remote debugger connection error") + ": {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.Message);
+                        TextWriters.Write(Translate.DoTranslation("Remote debugger connection error") + ": {0}", true, KernelColorTools.ColTypes.Error, ex.Message);
                     }
                     DebugWriter.WStkTrc(ex);
                 }

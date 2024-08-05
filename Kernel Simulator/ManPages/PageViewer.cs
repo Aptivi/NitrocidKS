@@ -44,9 +44,10 @@ using KS.Languages;
 using KS.Misc.Platform;
 using KS.Misc.Probers;
 using KS.Misc.Text;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
+using Terminaux.Writer.ConsoleWriters;
 
 namespace KS.ManPages
 {
@@ -78,9 +79,9 @@ namespace KS.ManPages
                 if (PageManager.Pages[ManualTitle].Todos.Count != 0)
                 {
                     DebugWriter.Wdbg(DebugLevel.I, "Todos are found in manpage.");
-                    TextWriterColor.Write(Translate.DoTranslation("This manual page needs work for:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
+                    TextWriters.Write(Translate.DoTranslation("This manual page needs work for:"), true, KernelColorTools.ColTypes.Warning);
                     ListWriterColor.WriteList(PageManager.Pages[ManualTitle].Todos, true);
-                    TextWriterColor.Write(Kernel.Kernel.NewLine + Translate.DoTranslation("Press any key to read the manual page..."), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
+                    TextWriters.Write(Kernel.Kernel.NewLine + Translate.DoTranslation("Press any key to read the manual page..."), false, KernelColorTools.ColTypes.Warning);
                     Input.DetectKeypress();
                 }
 
@@ -90,11 +91,11 @@ namespace KS.ManPages
                 // Write the information to the console
                 if (!string.IsNullOrWhiteSpace(ManpageInfoStyle))
                 {
-                    TextWriterWhereColor.WriteWhere(PlaceParse.ProbePlaces(ManpageInfoStyle), ConsoleWrapper.CursorLeft, InfoPlace, true, KernelColorTools.BackgroundColor, KernelColorTools.NeutralTextColor, PageManager.Pages[ManualTitle].Title, PageManager.Pages[ManualTitle].Revision);
+                    TextWriterWhereColor.WriteWhereColorBack(PlaceParse.ProbePlaces(ManpageInfoStyle), ConsoleWrapper.CursorLeft, InfoPlace, true, KernelColorTools.BackgroundColor, KernelColorTools.NeutralTextColor, PageManager.Pages[ManualTitle].Title, PageManager.Pages[ManualTitle].Revision);
                 }
                 else
                 {
-                    TextWriterWhereColor.WriteWhere(" {0} [v{1}] ", ConsoleWrapper.CursorLeft, InfoPlace, true, KernelColorTools.BackgroundColor, KernelColorTools.NeutralTextColor, PageManager.Pages[ManualTitle].Title, PageManager.Pages[ManualTitle].Revision);
+                    TextWriterWhereColor.WriteWhereColorBack(" {0} [v{1}] ", ConsoleWrapper.CursorLeft, InfoPlace, true, KernelColorTools.BackgroundColor, KernelColorTools.NeutralTextColor, PageManager.Pages[ManualTitle].Title, PageManager.Pages[ManualTitle].Revision);
                 }
 
                 // Disable blinking cursor
@@ -162,7 +163,7 @@ namespace KS.ManPages
                 {
                     // Write the line
                     int OldTop = ConsoleWrapper.CursorTop + 1;
-                    TextWriterColor.Write(line, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                    TextWriters.Write(line, true, KernelColorTools.ColTypes.Neutral);
                     if (OldTop != ConsoleWrapper.CursorTop)
                         ConsoleWrapper.CursorTop = OldTop;
 
@@ -180,11 +181,11 @@ namespace KS.ManPages
                             ConsoleWrapper.Clear();
                             if (!string.IsNullOrWhiteSpace(ManpageInfoStyle))
                             {
-                                TextWriterWhereColor.WriteWhere(PlaceParse.ProbePlaces(ManpageInfoStyle), ConsoleWrapper.CursorLeft, InfoPlace, true, KernelColorTools.BackgroundColor, KernelColorTools.NeutralTextColor, PageManager.Pages[ManualTitle].Title, PageManager.Pages[ManualTitle].Revision);
+                                TextWriterWhereColor.WriteWhereColorBack(PlaceParse.ProbePlaces(ManpageInfoStyle), ConsoleWrapper.CursorLeft, InfoPlace, true, KernelColorTools.BackgroundColor, KernelColorTools.NeutralTextColor, PageManager.Pages[ManualTitle].Title, PageManager.Pages[ManualTitle].Revision);
                             }
                             else
                             {
-                                TextWriterWhereColor.WriteWhere(" {0} (v{1}) ", ConsoleWrapper.CursorLeft, InfoPlace, true, KernelColorTools.BackgroundColor, KernelColorTools.NeutralTextColor, PageManager.Pages[ManualTitle].Title, PageManager.Pages[ManualTitle].Revision);
+                                TextWriterWhereColor.WriteWhereColorBack(" {0} (v{1}) ", ConsoleWrapper.CursorLeft, InfoPlace, true, KernelColorTools.BackgroundColor, KernelColorTools.NeutralTextColor, PageManager.Pages[ManualTitle].Title, PageManager.Pages[ManualTitle].Revision);
                             }
                         }
                     }
@@ -200,7 +201,7 @@ namespace KS.ManPages
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Manual page {0} not found."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ManualTitle);
+                TextWriters.Write(Translate.DoTranslation("Manual page {0} not found."), true, KernelColorTools.ColTypes.Neutral, ManualTitle);
             }
         }
 

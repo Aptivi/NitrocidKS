@@ -21,7 +21,7 @@ using KS.ConsoleBase.Colors;
 using KS.Kernel;
 using KS.Languages;
 using KS.Misc.Screensaver.Customized;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 
 namespace KS.Shell.Commands
@@ -37,14 +37,14 @@ namespace KS.Shell.Commands
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Reloading not allowed in safe mode."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("Reloading not allowed in safe mode."), true, KernelColorTools.ColTypes.Error);
             }
         }
 
         public override void HelpHelper()
         {
             // Print available screensavers
-            TextWriterColor.Write(Translate.DoTranslation("where customsaver will be") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), string.Join(", ", CustomSaverTools.CustomSavers.Keys));
+            TextWriters.Write(Translate.DoTranslation("where customsaver will be") + " {0}", true, KernelColorTools.ColTypes.Neutral, string.Join(", ", CustomSaverTools.CustomSavers.Keys));
         }
 
     }

@@ -20,7 +20,7 @@
 using System;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Aliases;
 using KS.Shell.ShellBase.Commands;
 using KS.Shell.ShellBase.Shells;
@@ -40,7 +40,7 @@ namespace KS.Shell.Commands
                 }
                 else
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Invalid type {0}."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[1]);
+                    TextWriters.Write(Translate.DoTranslation("Invalid type {0}."), true, KernelColorTools.ColTypes.Error, ListArgs[1]);
                 }
             }
             else if ((ListArgs?.Length) is { } arg2 && arg2 == 3)
@@ -51,7 +51,7 @@ namespace KS.Shell.Commands
                 }
                 else
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Invalid type {0}."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[1]);
+                    TextWriters.Write(Translate.DoTranslation("Invalid type {0}."), true, KernelColorTools.ColTypes.Error, ListArgs[1]);
                 }
             }
         }

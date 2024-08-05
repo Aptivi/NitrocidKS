@@ -26,7 +26,7 @@ using KS.Misc.Execution;
 using KS.Misc.Notifiers;
 using KS.Misc.Platform;
 using KS.Misc.Text;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using MailKit;
 using MailKit.Net.Imap;
@@ -58,8 +58,8 @@ namespace KS.Network.Mail
         public static void HandleWebAlert(object sender, WebAlertEventArgs e)
         {
             DebugWriter.Wdbg(DebugLevel.I, "WebAlert URI: {0}", e.WebUri.AbsoluteUri);
-            TextWriterColor.Write(e.Message, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
-            TextWriterColor.Write(Translate.DoTranslation("Opening URL... Make sure to follow the steps shown on the screen."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(e.Message, true, KernelColorTools.ColTypes.Warning);
+            TextWriters.Write(Translate.DoTranslation("Opening URL... Make sure to follow the steps shown on the screen."), true, KernelColorTools.ColTypes.Neutral);
             if (PlatformDetector.IsOnWindows())
                 ProcessExecutor.ExecuteProcess("cmd.exe", $"/c \"start {e.WebUri.AbsoluteUri}\"");
             else if (PlatformDetector.IsOnMacOS())

@@ -20,9 +20,10 @@
 using System;
 using System.Collections.Generic;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
+using Terminaux.Writer.ConsoleWriters;
 namespace KS.Misc.Screensaver.Displays
 {
     public static class MatrixSettings
@@ -79,7 +80,7 @@ namespace KS.Misc.Screensaver.Displays
                 ResizeSyncing = true;
             if (!ResizeSyncing)
             {
-                TextWriterColor.WritePlain(RandomDriver.Next(2).ToString(), false);
+                TextWriterRaw.WritePlain(RandomDriver.Next(2).ToString(), false);
             }
             else
             {

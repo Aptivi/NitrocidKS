@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Network;
 using KS.Shell.ShellBase.Commands;
 
@@ -32,15 +32,15 @@ namespace KS.Shell.Commands
         {
             if (string.IsNullOrEmpty(ListArgs[0]))
             {
-                TextWriterColor.Write(Translate.DoTranslation("Blank host name."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("Blank host name."), true, KernelColorTools.ColTypes.Error);
             }
             else if (ListArgs[0].IndexOfAny("[~`!@#$%^&*()-+=|{}':;.,<>/?]".ToCharArray()) != -1)
             {
-                TextWriterColor.Write(Translate.DoTranslation("Special characters are not allowed."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("Special characters are not allowed."), true, KernelColorTools.ColTypes.Error);
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Changing from: {0} to {1}..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), Kernel.Kernel.HostName, ListArgs[0]);
+                TextWriters.Write(Translate.DoTranslation("Changing from: {0} to {1}..."), true, KernelColorTools.ColTypes.Neutral, Kernel.Kernel.HostName, ListArgs[0]);
                 NetworkTools.ChangeHostname(ListArgs[0]);
             }
         }

@@ -21,7 +21,7 @@ using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Reflection;
 using KS.Misc.Text;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
 using System;
@@ -48,7 +48,7 @@ namespace KS.Misc.Editors.HexEdit.Commands
                     }
                     else
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("The byte number is not numeric."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(Translate.DoTranslation("The byte number is not numeric."), true, KernelColorTools.ColTypes.Error);
                         DebugWriter.Wdbg(DebugLevel.E, "{0} is not a numeric value.", ListArgs[0]);
                     }
                 }
@@ -66,7 +66,7 @@ namespace KS.Misc.Editors.HexEdit.Commands
                     }
                     else
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("The byte number is not numeric."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(Translate.DoTranslation("The byte number is not numeric."), true, KernelColorTools.ColTypes.Error);
                         DebugWriter.Wdbg(DebugLevel.E, "{0} is not a numeric value.", ListArgs[0]);
                     }
                 }

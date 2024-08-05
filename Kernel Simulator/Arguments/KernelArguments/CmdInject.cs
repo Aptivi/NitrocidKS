@@ -23,7 +23,7 @@ using KS.ConsoleBase.Colors;
 using KS.ConsoleBase.Inputs;
 using KS.Kernel;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 
 namespace KS.Arguments.KernelArguments
 {
@@ -42,8 +42,8 @@ namespace KS.Arguments.KernelArguments
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Available commands: {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), string.Join(", ", Shell.Shell.Commands.Keys));
-                TextWriterColor.Write(">> ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                TextWriters.Write(Translate.DoTranslation("Available commands: {0}"), true, KernelColorTools.ColTypes.Neutral, string.Join(", ", Shell.Shell.Commands.Keys));
+                TextWriters.Write(">> ", false, KernelColorTools.ColTypes.Input);
                 Shell.Shell.InjectedCommands.AddRange(Input.ReadLine().Split(new[] { " : " }, StringSplitOptions.RemoveEmptyEntries));
                 if (string.Join(", ", Shell.Shell.InjectedCommands) != "q")
                 {
@@ -51,7 +51,7 @@ namespace KS.Arguments.KernelArguments
                 }
                 else
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Command injection has been cancelled."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                    TextWriters.Write(Translate.DoTranslation("Command injection has been cancelled."), true, KernelColorTools.ColTypes.Neutral);
                 }
             }
         }

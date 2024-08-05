@@ -20,7 +20,7 @@
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Screensaver.Customized;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 using System;
 
@@ -33,12 +33,12 @@ namespace KS.TestShell.Commands
         {
             if (CustomSaverTools.CustomSavers.ContainsKey(ListArgs[0]))
             {
-                TextWriterColor.Write("- {0} -> {1}: ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), ListArgs[0], ListArgs[1]);
-                TextWriterColor.Write(Convert.ToString(CustomSaverTools.GetCustomSaverSettings(ListArgs[0], ListArgs[1])), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+                TextWriters.Write("- {0} -> {1}: ", false, KernelColorTools.ColTypes.ListEntry, ListArgs[0], ListArgs[1]);
+                TextWriters.Write(Convert.ToString(CustomSaverTools.GetCustomSaverSettings(ListArgs[0], ListArgs[1])), true, KernelColorTools.ColTypes.ListValue);
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Screensaver {0} not found."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[0]);
+                TextWriters.Write(Translate.DoTranslation("Screensaver {0} not found."), true, KernelColorTools.ColTypes.Error, ListArgs[0]);
             }
         }
 

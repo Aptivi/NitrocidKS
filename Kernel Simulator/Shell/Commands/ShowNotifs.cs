@@ -20,7 +20,7 @@
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Notifiers;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 
 namespace KS.Shell.Commands
@@ -35,19 +35,19 @@ namespace KS.Shell.Commands
             {
                 foreach (Notification Notif in Notifications.NotifRecents)
                 {
-                    TextWriterColor.Write($"[{Count}/{Notifications.NotifRecents.Count}] {Notif.Title}: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                    TextWriterColor.Write(Notif.Desc, false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+                    TextWriters.Write($"[{Count}/{Notifications.NotifRecents.Count}] {Notif.Title}: ", false, KernelColorTools.ColTypes.ListEntry);
+                    TextWriters.Write(Notif.Desc, false, KernelColorTools.ColTypes.ListValue);
                     if (Notif.Type == Notifications.NotifType.Progress)
                     {
-                        TextWriterColor.Write($" ({Notif.Progress}%)", false, Notif.ProgressFailed ? KernelColorTools.ColTypes.Error : KernelColorTools.ColTypes.Success);
+                        TextWriters.Write($" ({Notif.Progress}%)", false, Notif.ProgressFailed ? KernelColorTools.ColTypes.Error : KernelColorTools.ColTypes.Success);
                     }
-                    TextWriterColor.Write("", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                    TextWriters.Write("", true, KernelColorTools.ColTypes.Neutral);
                     Count += 1;
                 }
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("No recent notifications"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(Translate.DoTranslation("No recent notifications"), true, KernelColorTools.ColTypes.Neutral);
             }
         }
 

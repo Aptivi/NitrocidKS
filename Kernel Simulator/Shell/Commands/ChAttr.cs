@@ -25,7 +25,7 @@ using KS.Files.Attributes;
 
 using KS.Files.Querying;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 
 namespace KS.Shell.Commands
@@ -46,11 +46,11 @@ namespace KS.Shell.Commands
                         FileAttributes Attrib = (FileAttributes)Convert.ToInt32(Enum.Parse(typeof(FileAttributes), ListArgs[1].Remove(0, 1)));
                         if (AttributeManager.TryAddAttributeToFile(NeutralizedFilePath, Attrib))
                         {
-                            TextWriterColor.Write(Translate.DoTranslation("Attribute has been added successfully."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ListArgs[1]);
+                            TextWriters.Write(Translate.DoTranslation("Attribute has been added successfully."), true, KernelColorTools.ColTypes.Neutral, ListArgs[1]);
                         }
                         else
                         {
-                            TextWriterColor.Write(Translate.DoTranslation("Failed to add attribute."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ListArgs[1]);
+                            TextWriters.Write(Translate.DoTranslation("Failed to add attribute."), true, KernelColorTools.ColTypes.Neutral, ListArgs[1]);
                         }
                     }
                     else if (ListArgs[1].StartsWith("-"))
@@ -58,36 +58,36 @@ namespace KS.Shell.Commands
                         FileAttributes Attrib = (FileAttributes)Convert.ToInt32(Enum.Parse(typeof(FileAttributes), ListArgs[1].Remove(0, 1)));
                         if (AttributeManager.TryRemoveAttributeFromFile(NeutralizedFilePath, Attrib))
                         {
-                            TextWriterColor.Write(Translate.DoTranslation("Attribute has been removed successfully."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ListArgs[1]);
+                            TextWriters.Write(Translate.DoTranslation("Attribute has been removed successfully."), true, KernelColorTools.ColTypes.Neutral, ListArgs[1]);
                         }
                         else
                         {
-                            TextWriterColor.Write(Translate.DoTranslation("Failed to remove attribute."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ListArgs[1]);
+                            TextWriters.Write(Translate.DoTranslation("Failed to remove attribute."), true, KernelColorTools.ColTypes.Neutral, ListArgs[1]);
                         }
                     }
                 }
                 else
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Attribute \"{0}\" is invalid."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[1]);
+                    TextWriters.Write(Translate.DoTranslation("Attribute \"{0}\" is invalid."), true, KernelColorTools.ColTypes.Error, ListArgs[1]);
                 }
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("File not found."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("File not found."), true, KernelColorTools.ColTypes.Error);
             }
         }
 
         public override void HelpHelper()
         {
-            TextWriterColor.Write(Translate.DoTranslation("where <attributes> is one of the following:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-            TextWriterColor.Write("- Normal: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("The file is a normal file"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));                   // Normal   = 128
-            TextWriterColor.Write("- ReadOnly: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("The file is a read-only file"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));              // ReadOnly = 1
-            TextWriterColor.Write("- Hidden: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("The file is a hidden file"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));                   // Hidden   = 2
-            TextWriterColor.Write("- Archive: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("The file is an archive. Used for backups."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));  // Archive  = 32
+            TextWriters.Write(Translate.DoTranslation("where <attributes> is one of the following:"), true, KernelColorTools.ColTypes.Neutral);
+            TextWriters.Write("- Normal: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("The file is a normal file"), true, KernelColorTools.ColTypes.ListValue);                   // Normal   = 128
+            TextWriters.Write("- ReadOnly: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("The file is a read-only file"), true, KernelColorTools.ColTypes.ListValue);                // ReadOnly = 1
+            TextWriters.Write("- Hidden: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("The file is a hidden file"), true, KernelColorTools.ColTypes.ListValue);                   // Hidden   = 2
+            TextWriters.Write("- Archive: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("The file is an archive. Used for backups."), true, KernelColorTools.ColTypes.ListValue);   // Archive  = 32
         }
 
     }

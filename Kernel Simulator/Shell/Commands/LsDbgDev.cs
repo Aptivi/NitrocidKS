@@ -18,7 +18,7 @@
 //
 
 using KS.ConsoleBase.Colors;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Network.RemoteDebug;
 using KS.Shell.ShellBase.Commands;
 
@@ -31,8 +31,8 @@ namespace KS.Shell.Commands
         {
             foreach (RemoteDebugDevice DebugDevice in RemoteDebugger.DebugDevices)
             {
-                TextWriterColor.Write($"- {DebugDevice.ClientIP}: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                TextWriterColor.Write(DebugDevice.ClientName, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+                TextWriters.Write($"- {DebugDevice.ClientIP}: ", false, KernelColorTools.ColTypes.ListEntry);
+                TextWriters.Write(DebugDevice.ClientName, true, KernelColorTools.ColTypes.ListValue);
             }
         }
 

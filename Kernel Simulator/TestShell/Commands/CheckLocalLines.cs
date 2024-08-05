@@ -20,7 +20,7 @@
 using System.Linq;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Resources;
 using KS.Shell.ShellBase.Commands;
 using Newtonsoft.Json.Linq;
@@ -39,7 +39,7 @@ namespace KS.TestShell.Commands
                 LanguageJson = JToken.Parse(ResourcesManager.GetData($"{LanguageName}.json", ResourcesType.Languages));
                 if (LanguageJson.Count() != EnglishJson.Count())
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Line mismatch in") + " {0}: {1} <> {2}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning), LanguageName, LanguageJson.Count(), EnglishJson.Count());
+                    TextWriters.Write(Translate.DoTranslation("Line mismatch in") + " {0}: {1} <> {2}", true, KernelColorTools.ColTypes.Warning, LanguageName, LanguageJson.Count(), EnglishJson.Count());
                 }
             }
         }

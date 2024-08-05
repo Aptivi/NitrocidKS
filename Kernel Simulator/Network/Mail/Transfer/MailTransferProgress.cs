@@ -21,7 +21,7 @@ using FluentFTP.Helpers;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Probers;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using MailKit;
 using System;
 using Terminaux.Base;
@@ -37,11 +37,11 @@ namespace KS.Network.Mail.Transfer
             {
                 if (!string.IsNullOrWhiteSpace(MailShellCommon.Mail_ProgressStyle))
                 {
-                    TextWriterWhereColor.WriteWhere(PlaceParse.ProbePlaces(MailShellCommon.Mail_ProgressStyle) + Convert.ToString(Color255.GetEsc()) + "[0K", 0, ConsoleWrapper.CursorTop, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Progress), bytesTransferred.FileSizeToString(), totalSize.FileSizeToString());
+                    TextWriters.WriteWhere(PlaceParse.ProbePlaces(MailShellCommon.Mail_ProgressStyle) + Convert.ToString(Color255.GetEsc()) + "[0K", 0, ConsoleWrapper.CursorTop, true, KernelColorTools.ColTypes.Progress, bytesTransferred.FileSizeToString(), totalSize.FileSizeToString());
                 }
                 else
                 {
-                    TextWriterWhereColor.WriteWhere("{0}/{1} " + Translate.DoTranslation("of mail transferred...") + Convert.ToString(Color255.GetEsc()) + "[0K", 0, ConsoleWrapper.CursorTop, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Progress), bytesTransferred.FileSizeToString(), totalSize.FileSizeToString());
+                    TextWriters.WriteWhere("{0}/{1} " + Translate.DoTranslation("of mail transferred...") + Convert.ToString(Color255.GetEsc()) + "[0K", 0, ConsoleWrapper.CursorTop, true, KernelColorTools.ColTypes.Progress, bytesTransferred.FileSizeToString(), totalSize.FileSizeToString());
                 }
             }
         }
@@ -52,11 +52,11 @@ namespace KS.Network.Mail.Transfer
             {
                 if (!string.IsNullOrWhiteSpace(MailShellCommon.Mail_ProgressStyleSingle))
                 {
-                    TextWriterWhereColor.WriteWhere(PlaceParse.ProbePlaces(MailShellCommon.Mail_ProgressStyleSingle) + Convert.ToString(Color255.GetEsc()) + "[0K", 0, ConsoleWrapper.CursorTop, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Progress), bytesTransferred.FileSizeToString());
+                    TextWriters.WriteWhere(PlaceParse.ProbePlaces(MailShellCommon.Mail_ProgressStyleSingle) + Convert.ToString(Color255.GetEsc()) + "[0K", 0, ConsoleWrapper.CursorTop, true, KernelColorTools.ColTypes.Progress, bytesTransferred.FileSizeToString());
                 }
                 else
                 {
-                    TextWriterWhereColor.WriteWhere("{0} " + Translate.DoTranslation("of mail transferred...") + Convert.ToString(Color255.GetEsc()) + "[0K", 0, ConsoleWrapper.CursorTop, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Progress), bytesTransferred.FileSizeToString());
+                    TextWriters.WriteWhere("{0} " + Translate.DoTranslation("of mail transferred...") + Convert.ToString(Color255.GetEsc()) + "[0K", 0, ConsoleWrapper.CursorTop, true, KernelColorTools.ColTypes.Progress, bytesTransferred.FileSizeToString());
                 }
             }
         }

@@ -20,7 +20,7 @@
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Reflection;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Network.Mail.Transfer;
 using KS.Shell.ShellBase.Commands;
@@ -40,7 +40,7 @@ namespace KS.Network.Mail.Commands
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Message number is not a numeric value."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("Message number is not a numeric value."), true, KernelColorTools.ColTypes.Error);
             }
         }
 

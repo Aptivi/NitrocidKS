@@ -20,9 +20,10 @@
 using System;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 using Terminaux.Colors;
+using Terminaux.Writer.ConsoleWriters;
 namespace KS.TestShell.Commands
 {
     class Test_PowerLineTestCommand : CommandExecutor, ICommand
@@ -33,7 +34,7 @@ namespace KS.TestShell.Commands
             char TransitionChar = Convert.ToChar(0xE0B0);
             char PadlockChar = Convert.ToChar(0xE0A2);
             char GitBranchChar = Convert.ToChar(0xE0A0);
-            TextWriterColor.Write(Translate.DoTranslation("Be sure to use a console font supporting PowerLine glyphs, or the output may not render properly. We recommend") + " Cascadia Code/Mono PL", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
+            TextWriters.Write(Translate.DoTranslation("Be sure to use a console font supporting PowerLine glyphs, or the output may not render properly. We recommend") + " Cascadia Code/Mono PL", true, KernelColorTools.ColTypes.Warning);
             TextWriterColor.Write(" One ", false, new Color(ConsoleColor.Black), new Color(85, 255, 255));
             TextWriterColor.Write(Convert.ToString(TransitionChar), false, new Color(85, 255, 255), new Color(255, 85, 255));
             TextWriterColor.Write(" Two ", false, new Color(ConsoleColor.Black), new Color(255, 85, 255));

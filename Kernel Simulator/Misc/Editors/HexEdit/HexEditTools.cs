@@ -25,7 +25,7 @@ using KS.ConsoleBase.Colors;
 using KS.Files;
 using KS.Languages;
 using KS.Misc.Text;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 
@@ -295,7 +295,7 @@ namespace KS.Misc.Editors.HexEdit
                     // 0x00000020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
                     // 0x00000030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
                     // ... and so on.
-                    TextWriterColor.Write($"0x{StartByte - 1L:X8}", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
+                    TextWriters.Write($"0x{StartByte - 1L:X8}", false, KernelColorTools.ColTypes.ListEntry);
                     int ByteWritePositionX = ConsoleWrapper.CursorLeft + 2;
                     int ByteCharWritePositionX = 61 + (ByteWritePositionX - 12);
                     int ByteNumberEachSixteen = 1;
@@ -317,8 +317,8 @@ namespace KS.Misc.Editors.HexEdit
                             RenderedByteChar = ProjectedByteChar;
                         }
                         DebugWriter.Wdbg(DebugLevel.I, "Rendered byte char: {0}", ProjectedByteChar);
-                        TextWriterWhereColor.WriteWhere($"{CurrentByte:X2}", ByteWritePositionX + 3 * (ByteNumberEachSixteen - 1), ConsoleWrapper.CursorTop, false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-                        TextWriterWhereColor.WriteWhere($"{RenderedByteChar}", ByteCharWritePositionX + (ByteNumberEachSixteen - 1), ConsoleWrapper.CursorTop, false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+                        TextWriters.WriteWhere($"{CurrentByte:X2}", ByteWritePositionX + 3 * (ByteNumberEachSixteen - 1), ConsoleWrapper.CursorTop, false, KernelColorTools.ColTypes.ListValue);
+                        TextWriters.WriteWhere($"{RenderedByteChar}", ByteCharWritePositionX + (ByteNumberEachSixteen - 1), ConsoleWrapper.CursorTop, false, KernelColorTools.ColTypes.ListValue);
 
                         // Increase the byte number
                         ByteNumberEachSixteen += 1;
@@ -327,21 +327,21 @@ namespace KS.Misc.Editors.HexEdit
                         if (ByteNumberEachSixteen > 16)
                         {
                             // OK, let's increase the byte iteration and get the next line ready
-                            TextWriterColor.Write(Kernel.Kernel.NewLine + $"0x{CurrentByteNumber:X8}", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
+                            TextWriters.Write(Kernel.Kernel.NewLine + $"0x{CurrentByteNumber:X8}", false, KernelColorTools.ColTypes.ListEntry);
                             ByteWritePositionX = ConsoleWrapper.CursorLeft + 2;
                             ByteCharWritePositionX = 61 + (ByteWritePositionX - 12);
                             ByteNumberEachSixteen = 1;
                         }
                     }
-                    TextWriterColor.Write("", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                    TextWriters.Write("", true, KernelColorTools.ColTypes.Neutral);
                 }
                 else if (StartByte > HexEditShellCommon.HexEdit_FileBytes.LongCount())
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("The specified start byte number may not be larger than the file size."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(Translate.DoTranslation("The specified start byte number may not be larger than the file size."), true, KernelColorTools.ColTypes.Error);
                 }
                 else if (EndByte > HexEditShellCommon.HexEdit_FileBytes.LongCount())
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("The specified end byte number may not be larger than the file size."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(Translate.DoTranslation("The specified end byte number may not be larger than the file size."), true, KernelColorTools.ColTypes.Error);
                 }
             }
             else
@@ -382,7 +382,7 @@ namespace KS.Misc.Editors.HexEdit
                         {
                             long ByteRenderStart = ByteNumber - 2L;
                             long ByteRenderEnd = ByteNumber + 2L;
-                            TextWriterColor.Write($"- 0x{ByteNumber:X8}: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
+                            TextWriters.Write($"- 0x{ByteNumber:X8}: ", false, KernelColorTools.ColTypes.ListEntry);
                             for (long ByteRenderNumber = ByteRenderStart, loopTo1 = ByteRenderEnd; ByteRenderNumber <= loopTo1; ByteRenderNumber++)
                             {
                                 if (ByteRenderStart < 0L)
@@ -401,19 +401,19 @@ namespace KS.Misc.Editors.HexEdit
                                     DebugWriter.Wdbg(DebugLevel.I, "Char is not a whitespace.");
                                     RenderedByteChar = ProjectedByteChar;
                                 }
-                                TextWriterColor.Write($"0x{ByteRenderNumber:X2}({RenderedByteChar}) ", false, UseHighlight ? KernelColorTools.ColTypes.Success : KernelColorTools.ColTypes.ListValue);
+                                TextWriters.Write($"0x{ByteRenderNumber:X2}({RenderedByteChar}) ", false, UseHighlight ? KernelColorTools.ColTypes.Success : KernelColorTools.ColTypes.ListValue);
                             }
-                            TextWriterColor.Write("", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                            TextWriters.Write("", true, KernelColorTools.ColTypes.Neutral);
                         }
                     }
                 }
                 else if (StartByte > HexEditShellCommon.HexEdit_FileBytes.LongCount())
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("The specified start byte number may not be larger than the file size."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(Translate.DoTranslation("The specified start byte number may not be larger than the file size."), true, KernelColorTools.ColTypes.Error);
                 }
                 else if (EndByte > HexEditShellCommon.HexEdit_FileBytes.LongCount())
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("The specified end byte number may not be larger than the file size."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(Translate.DoTranslation("The specified end byte number may not be larger than the file size."), true, KernelColorTools.ColTypes.Error);
                 }
             }
             else
@@ -466,11 +466,11 @@ namespace KS.Misc.Editors.HexEdit
                 }
                 else if (StartByte > HexEditShellCommon.HexEdit_FileBytes.LongCount())
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("The specified start byte number may not be larger than the file size."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(Translate.DoTranslation("The specified start byte number may not be larger than the file size."), true, KernelColorTools.ColTypes.Error);
                 }
                 else if (EndByte > HexEditShellCommon.HexEdit_FileBytes.LongCount())
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("The specified end byte number may not be larger than the file size."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(Translate.DoTranslation("The specified end byte number may not be larger than the file size."), true, KernelColorTools.ColTypes.Error);
                 }
             }
             else

@@ -19,8 +19,9 @@
 
 using KS.Files;
 using KS.Files.Folders;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
+using Terminaux.Writer.ConsoleWriters;
 
 namespace KS.Shell.Commands
 {

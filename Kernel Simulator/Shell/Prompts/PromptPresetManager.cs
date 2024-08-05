@@ -25,7 +25,7 @@ using KS.Kernel.Exceptions;
 using KS.Languages;
 using KS.Misc.Configuration;
 using KS.Misc.Text;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.Prompts.Presets.FTP;
 using KS.Shell.Prompts.Presets.Hex;
@@ -401,7 +401,7 @@ namespace KS.Shell.Prompts
         public static void WriteShellPrompt(ShellType ShellType)
         {
             var CurrentPresetBase = GetCurrentPresetBaseFromShell(ShellType);
-            TextWriterColor.Write(CurrentPresetBase.PresetPrompt, false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+            TextWriters.Write(CurrentPresetBase.PresetPrompt, false, KernelColorTools.ColTypes.Input);
         }
 
         /// <summary>

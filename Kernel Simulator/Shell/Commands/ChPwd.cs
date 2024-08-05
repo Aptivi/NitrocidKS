@@ -21,7 +21,7 @@ using System;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Login;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Shell.Commands
@@ -35,7 +35,7 @@ namespace KS.Shell.Commands
             {
                 if (ListArgs[3].Contains(" "))
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Spaces are not allowed."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(Translate.DoTranslation("Spaces are not allowed."), true, KernelColorTools.ColTypes.Error);
                 }
                 else if ((ListArgs[3] ?? "") == (ListArgs[2] ?? ""))
                 {
@@ -43,12 +43,12 @@ namespace KS.Shell.Commands
                 }
                 else if ((ListArgs[3] ?? "") != (ListArgs[2] ?? ""))
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Passwords doesn't match."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(Translate.DoTranslation("Passwords doesn't match."), true, KernelColorTools.ColTypes.Error);
                 }
             }
             catch (Exception ex)
             {
-                TextWriterColor.Write(Translate.DoTranslation("Failed to change password of username: {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.Message);
+                TextWriters.Write(Translate.DoTranslation("Failed to change password of username: {0}"), true, KernelColorTools.ColTypes.Error, ex.Message);
                 DebugWriter.WStkTrc(ex);
             }
         }

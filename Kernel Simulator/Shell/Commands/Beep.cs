@@ -22,7 +22,7 @@ using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Platform;
 using KS.Misc.Reflection;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 
 namespace KS.Shell.Commands
@@ -48,12 +48,12 @@ namespace KS.Shell.Commands
                 }
                 else
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Time must be numeric."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(Translate.DoTranslation("Time must be numeric."), true, KernelColorTools.ColTypes.Error);
                 }
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Frequency must be numeric. If it's numeric, ensure that it is >= 37 and <= 32767."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("Frequency must be numeric. If it's numeric, ensure that it is >= 37 and <= 32767."), true, KernelColorTools.ColTypes.Error);
             }
         }
 

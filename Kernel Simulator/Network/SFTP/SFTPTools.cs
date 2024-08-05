@@ -27,9 +27,8 @@ using KS.Files.Querying;
 using KS.Languages;
 using KS.Misc.Probers;
 using KS.Misc.Reflection;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
-using KS.Misc.Writers.FancyWriters;
 using Renci.SshNet;
 
 namespace KS.Network.SFTP
@@ -45,7 +44,7 @@ namespace KS.Network.SFTP
         {
             if (SFTPShellCommon.SFTPConnected == true)
             {
-                TextWriterColor.Write(Translate.DoTranslation("You should disconnect from server before connecting to another server"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("You should disconnect from server before connecting to another server"), true, KernelColorTools.ColTypes.Error);
             }
             else
             {
@@ -64,11 +63,11 @@ namespace KS.Network.SFTP
                     // Prompt for username
                     if (!string.IsNullOrWhiteSpace(SFTPShellCommon.SFTPUserPromptStyle))
                     {
-                        TextWriterColor.Write(PlaceParse.ProbePlaces(SFTPShellCommon.SFTPUserPromptStyle), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input), address);
+                        TextWriters.Write(PlaceParse.ProbePlaces(SFTPShellCommon.SFTPUserPromptStyle), false, KernelColorTools.ColTypes.Input, address);
                     }
                     else
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("Username for {0}: "), false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input), address);
+                        TextWriters.Write(Translate.DoTranslation("Username for {0}: "), false, KernelColorTools.ColTypes.Input, address);
                     }
                     SFTPShellCommon.SFTPUser = Input.ReadLine();
                     if (string.IsNullOrEmpty(SFTPShellCommon.SFTPUser))
@@ -87,7 +86,7 @@ namespace KS.Network.SFTP
                 {
                     DebugWriter.Wdbg(DebugLevel.W, "Error connecting to {0}: {1}", address, ex.Message);
                     DebugWriter.WStkTrc(ex);
-                    TextWriterColor.Write(Translate.DoTranslation("Error when trying to connect to {0}: {1}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), address, ex.Message);
+                    TextWriters.Write(Translate.DoTranslation("Error when trying to connect to {0}: {1}"), true, KernelColorTools.ColTypes.Error, address, ex.Message);
                 }
             }
         }
@@ -98,12 +97,12 @@ namespace KS.Network.SFTP
         private static void ConnectSFTP()
         {
             // Connect
-            TextWriterColor.Write(Translate.DoTranslation("Trying to connect to {0}..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), SFTPShellCommon.ClientSFTP.ConnectionInfo.Host);
+            TextWriters.Write(Translate.DoTranslation("Trying to connect to {0}..."), true, KernelColorTools.ColTypes.Neutral, SFTPShellCommon.ClientSFTP.ConnectionInfo.Host);
             DebugWriter.Wdbg(DebugLevel.I, "Connecting to {0} with {1}...", SFTPShellCommon.ClientSFTP.ConnectionInfo.Host);
             SFTPShellCommon.ClientSFTP.Connect();
 
             // Show that it's connected
-            TextWriterColor.Write(Translate.DoTranslation("Connected to {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), SFTPShellCommon.ClientSFTP.ConnectionInfo.Host);
+            TextWriters.Write(Translate.DoTranslation("Connected to {0}"), true, KernelColorTools.ColTypes.Neutral, SFTPShellCommon.ClientSFTP.ConnectionInfo.Host);
             DebugWriter.Wdbg(DebugLevel.I, "Connected.");
             SFTPShellCommon.SFTPConnected = true;
 
@@ -142,7 +141,7 @@ namespace KS.Network.SFTP
                 var SpeedDialData = new string[SpeedDialLines.Count, 4];
                 if (!(SpeedDialLines.Count == 0))
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Select an address to connect to:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                    TextWriters.Write(Translate.DoTranslation("Select an address to connect to:"), true, KernelColorTools.ColTypes.Neutral);
                     for (int i = 0, loopTo = SpeedDialLines.Count - 1; i <= loopTo; i++)
                     {
                         string SpeedDialAddress = SpeedDialLines.Keys.ElementAtOrDefault(i);
@@ -152,11 +151,11 @@ namespace KS.Network.SFTP
                         SpeedDialData[i, 2] = (string)SpeedDialLines[SpeedDialAddress]["Port"];
                         SpeedDialData[i, 3] = (string)SpeedDialLines[SpeedDialAddress]["User"];
                     }
-                    TableColor.WriteTable(SpeedDialHeaders, SpeedDialData, 2, KernelColorTools.ColTypes.Option);
-                    TextWriterColor.WritePlain("", true);
+                    TextFancyWriters.WriteTable(SpeedDialHeaders, SpeedDialData, 2, KernelColorTools.ColTypes.Option, KernelColorTools.ColTypes.Option, KernelColorTools.ColTypes.Option, KernelColorTools.ColTypes.Option);
+                    TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
                     while (Answering)
                     {
-                        TextWriterColor.Write(">> ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                        TextWriters.Write(">> ", false, KernelColorTools.ColTypes.Input);
                         Answer = Input.ReadLine();
                         DebugWriter.Wdbg(DebugLevel.I, "Response: {0}", Answer);
                         if (StringQuery.IsStringNumeric(Answer))
@@ -179,26 +178,26 @@ namespace KS.Network.SFTP
                             else
                             {
                                 DebugWriter.Wdbg(DebugLevel.I, "Response is out-of-bounds. Retrying...");
-                                TextWriterColor.Write(Translate.DoTranslation("The selection is out of range. Select between 1-{0}. Try again."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), SpeedDialLines.Count);
+                                TextWriters.Write(Translate.DoTranslation("The selection is out of range. Select between 1-{0}. Try again."), true, KernelColorTools.ColTypes.Error, SpeedDialLines.Count);
                             }
                         }
                         else
                         {
                             DebugWriter.Wdbg(DebugLevel.W, "Response isn't numeric. IsStringNumeric(Answer) returned false.");
-                            TextWriterColor.Write(Translate.DoTranslation("The selection is not a number. Try again."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                            TextWriters.Write(Translate.DoTranslation("The selection is not a number. Try again."), true, KernelColorTools.ColTypes.Error);
                         }
                     }
                 }
                 else
                 {
                     DebugWriter.Wdbg(DebugLevel.E, "Speed dial is empty. Lines count is 0.");
-                    TextWriterColor.Write(Translate.DoTranslation("Speed dial is empty. Connect to a server to add an address to it."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(Translate.DoTranslation("Speed dial is empty. Connect to a server to add an address to it."), true, KernelColorTools.ColTypes.Error);
                 }
             }
             else
             {
                 DebugWriter.Wdbg(DebugLevel.E, "File doesn't exist.");
-                TextWriterColor.Write(Translate.DoTranslation("Speed dial doesn't exist. Connect to a server to add an address to it."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("Speed dial doesn't exist. Connect to a server to add an address to it."), true, KernelColorTools.ColTypes.Error);
             }
         }
 

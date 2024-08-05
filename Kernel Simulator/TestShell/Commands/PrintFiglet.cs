@@ -18,10 +18,10 @@
 //
 
 using KS.ConsoleBase.Colors;
-using KS.Misc.Writers.FancyWriters;
-using KS.Misc.Writers.FancyWriters.Tools;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 using System;
+using Textify.Figlet;
 
 namespace KS.TestShell.Commands
 {
@@ -33,7 +33,7 @@ namespace KS.TestShell.Commands
             KernelColorTools.ColTypes Color = (KernelColorTools.ColTypes)Convert.ToInt32(ListArgs[0]);
             var FigletFont = FigletTools.GetFigletFont(ListArgs[1]);
             string Text = ListArgs[2];
-            FigletColor.WriteFiglet(Text, FigletFont, Color);
+            TextFancyWriters.WriteFiglet(Text, FigletFont, Color);
         }
 
     }

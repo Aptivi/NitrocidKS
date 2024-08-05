@@ -22,7 +22,7 @@ using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Execution;
 using KS.Misc.Platform;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Shell.Commands
 {
@@ -31,7 +31,7 @@ namespace KS.Shell.Commands
 
         public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
         {
-            TextWriterColor.Write(Translate.DoTranslation("Thank you for reporting a bug to us! Please follow the instructions on the screen."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(Translate.DoTranslation("Thank you for reporting a bug to us! Please follow the instructions on the screen."), true, KernelColorTools.ColTypes.Neutral);
             if (PlatformDetector.IsOnWindows())
                 ProcessExecutor.ExecuteProcess("cmd.exe", $"/c \"start https://github.com/Aptivi/NitrocidKS/issues/new/choose\"");
             else if (PlatformDetector.IsOnMacOS())

@@ -23,9 +23,10 @@ using KS.ConsoleBase.Colors;
 using KS.ConsoleBase.Inputs;
 using KS.Languages;
 using KS.Misc.Forecast;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 using Nettify.Weather;
+using Terminaux.Writer.ConsoleWriters;
 
 namespace KS.Shell.Commands
 {
@@ -51,8 +52,8 @@ namespace KS.Shell.Commands
                 }
                 else if (string.IsNullOrEmpty(APIKey))
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("You can get your own API key at https://home.openweathermap.org/api_keys."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-                    TextWriterColor.Write(Translate.DoTranslation("Enter your API key:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                    TextWriters.Write(Translate.DoTranslation("You can get your own API key at https://home.openweathermap.org/api_keys."), true, KernelColorTools.ColTypes.Neutral);
+                    TextWriters.Write(Translate.DoTranslation("Enter your API key:") + " ", false, KernelColorTools.ColTypes.Input);
                     APIKey = Input.ReadLineNoInput();
                     Forecast.ApiKey = APIKey;
                 }
@@ -62,10 +63,10 @@ namespace KS.Shell.Commands
 
         public override void HelpHelper()
         {
-            TextWriterColor.Write(Translate.DoTranslation("You can always consult http://bulk.openweathermap.org/sample/city.list.json.gz for the list of cities with their IDs.") + " " + Translate.DoTranslation("Or, pass \"listcities\" to this command."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-            TextWriterColor.Write(Translate.DoTranslation("This command has the below switches that change how it works:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-            TextWriterColor.Write("  -list: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Shows all the available cities"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+            TextWriters.Write(Translate.DoTranslation("You can always consult http://bulk.openweathermap.org/sample/city.list.json.gz for the list of cities with their IDs.") + " " + Translate.DoTranslation("Or, pass \"listcities\" to this command."), true, KernelColorTools.ColTypes.Neutral);
+            TextWriters.Write(Translate.DoTranslation("This command has the below switches that change how it works:"), true, KernelColorTools.ColTypes.Neutral);
+            TextWriters.Write("  -list: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Shows all the available cities"), true, KernelColorTools.ColTypes.ListValue);
         }
 
     }

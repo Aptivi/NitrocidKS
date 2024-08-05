@@ -23,7 +23,7 @@ using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Reflection;
 using KS.Misc.Text;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
 
@@ -41,16 +41,16 @@ namespace KS.Misc.Editors.HexEdit.Commands
                     if (Convert.ToInt64(ListArgs[0]) <= HexEditShellCommon.HexEdit_FileBytes.LongCount())
                     {
                         HexEditTools.HexEdit_DeleteBytes(Convert.ToInt64(ListArgs[0]));
-                        TextWriterColor.Write(Translate.DoTranslation("Deleted bytes."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success));
+                        TextWriters.Write(Translate.DoTranslation("Deleted bytes."), true, KernelColorTools.ColTypes.Success);
                     }
                     else
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("The specified byte number may not be larger than the file size."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(Translate.DoTranslation("The specified byte number may not be larger than the file size."), true, KernelColorTools.ColTypes.Error);
                     }
                 }
                 else
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Specified Byte number {0} is not a valid number."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[0]);
+                    TextWriters.Write(Translate.DoTranslation("Specified Byte number {0} is not a valid number."), true, KernelColorTools.ColTypes.Error, ListArgs[0]);
                     DebugWriter.Wdbg(DebugLevel.E, "{0} is not a numeric value.", ListArgs[0]);
                 }
             }
@@ -67,12 +67,12 @@ namespace KS.Misc.Editors.HexEdit.Commands
                     }
                     else
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("The specified byte number may not be larger than the file size."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(Translate.DoTranslation("The specified byte number may not be larger than the file size."), true, KernelColorTools.ColTypes.Error);
                     }
                 }
                 else
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("The byte number is not numeric."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(Translate.DoTranslation("The byte number is not numeric."), true, KernelColorTools.ColTypes.Error);
                     DebugWriter.Wdbg(DebugLevel.E, "{0} is not a numeric value.", ListArgs[1]);
                 }
             }

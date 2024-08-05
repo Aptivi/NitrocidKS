@@ -24,12 +24,12 @@ using KS.ConsoleBase.Inputs;
 using KS.Kernel;
 using KS.Languages;
 using KS.Misc.Text;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
-using KS.Misc.Writers.FancyWriters;
 using KS.Shell.Prompts;
 using KS.Shell.ShellBase.Commands;
 using KS.Shell.ShellBase.Shells;
+using Terminaux.Writer.FancyWriters;
 
 namespace KS.Shell.Shells
 {
@@ -43,7 +43,7 @@ namespace KS.Shell.Shells
         public override void InitializeShell(params object[] ShellArgs)
         {
             // Show the welcome message
-            TextWriterColor.WritePlain("", true);
+            TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
             SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("Welcome to Test Shell!"), true);
 
             // Actual shell logic
@@ -82,7 +82,7 @@ namespace KS.Shell.Shells
                 }
                 catch (Exception ex)
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Error in test shell: {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.Message);
+                    TextWriters.Write(Translate.DoTranslation("Error in test shell: {0}"), true, KernelColorTools.ColTypes.Error, ex.Message);
                     DebugWriter.Wdbg(DebugLevel.E, "Error: {0}", ex.Message);
                     DebugWriter.WStkTrc(ex);
                 }

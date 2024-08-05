@@ -23,7 +23,7 @@ using KS.Files;
 using KS.Files.Querying;
 using KS.Languages;
 using KS.Misc.Beautifiers;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 
 namespace KS.Shell.Commands
@@ -41,7 +41,7 @@ namespace KS.Shell.Commands
             {
                 // Minify the JSON and display it on screen
                 MinifiedJson = JsonMinifier.MinifyJson(JsonFile);
-                TextWriterColor.Write(MinifiedJson, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(MinifiedJson, true, KernelColorTools.ColTypes.Neutral);
 
                 // Minify it to an output file specified (optional)
                 if (ListArgs.Count() > 1)
@@ -52,7 +52,7 @@ namespace KS.Shell.Commands
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("File {0} not found."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), JsonFile);
+                TextWriters.Write(Translate.DoTranslation("File {0} not found."), true, KernelColorTools.ColTypes.Error, JsonFile);
             }
         }
 

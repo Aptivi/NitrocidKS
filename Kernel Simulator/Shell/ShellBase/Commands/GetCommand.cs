@@ -99,7 +99,7 @@ namespace KS.Shell.ShellBase.Commands
                 if (TargetCommands[Command].Obsolete)
                 {
                     DebugWriter.Wdbg(DebugLevel.I, "The command requested {0} is obsolete", Command);
-                    Decisive.DecisiveWrite(ShellType, DebugDeviceSocket, Translate.DoTranslation("This command is obsolete and will be removed in a future release."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                    Decisive.DecisiveWrite(ShellType, DebugDeviceSocket, Translate.DoTranslation("This command is obsolete and will be removed in a future release."), true, KernelColorTools.ColTypes.Neutral);
                 }
 
                 // If there are enough arguments provided, execute. Otherwise, fail with not enough arguments.
@@ -114,7 +114,7 @@ namespace KS.Shell.ShellBase.Commands
                     else
                     {
                         DebugWriter.Wdbg(DebugLevel.W, "User hasn't provided enough arguments for {0}", Command);
-                        Decisive.DecisiveWrite(ShellType, DebugDeviceSocket, Translate.DoTranslation("There was not enough arguments. See below for usage:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                        Decisive.DecisiveWrite(ShellType, DebugDeviceSocket, Translate.DoTranslation("There was not enough arguments. See below for usage:"), true, KernelColorTools.ColTypes.Neutral);
                         HelpSystem.ShowHelp(Command, ShellType);
                     }
                 }
@@ -133,7 +133,7 @@ namespace KS.Shell.ShellBase.Commands
             {
                 Kernel.Kernel.KernelEventManager.RaiseCommandError(RequestedCommand, ex);
                 DebugWriter.WStkTrc(ex);
-                Decisive.DecisiveWrite(ShellType, DebugDeviceSocket, Translate.DoTranslation("Error trying to execute command") + " {2}." + Kernel.Kernel.NewLine + Translate.DoTranslation("Error {0}: {1}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.GetType().FullName, ex.Message, RequestedCommand);
+                Decisive.DecisiveWrite(ShellType, DebugDeviceSocket, Translate.DoTranslation("Error trying to execute command") + " {2}." + Kernel.Kernel.NewLine + Translate.DoTranslation("Error {0}: {1}"), true, KernelColorTools.ColTypes.Error, ex.GetType().FullName, ex.Message, RequestedCommand);
             }
         }
 

@@ -20,7 +20,7 @@
 using System.Linq;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Network.FTP.Transfer;
 using KS.Shell.ShellBase.Commands;
 
@@ -33,17 +33,17 @@ namespace KS.Network.FTP.Commands
         {
             string LocalFolder = ListArgs[0];
             string RemoteFolder = ListArgs.Count() > 1 ? ListArgs[1] : "";
-            TextWriterColor.Write(Translate.DoTranslation("Uploading folder {0}..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Progress), ListArgs[0]);
+            TextWriters.Write(Translate.DoTranslation("Uploading folder {0}..."), true, KernelColorTools.ColTypes.Progress, ListArgs[0]);
             bool Result = !string.IsNullOrWhiteSpace(LocalFolder) ? FTPTransfer.FTPUploadFolder(RemoteFolder, LocalFolder) : FTPTransfer.FTPUploadFolder(RemoteFolder);
             if (Result)
             {
-                TextWriterColor.WritePlain("", true);
-                TextWriterColor.Write(Kernel.Kernel.NewLine + Translate.DoTranslation("Uploaded folder {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success), ListArgs[0]);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
+                TextWriters.Write(Kernel.Kernel.NewLine + Translate.DoTranslation("Uploaded folder {0}"), true, KernelColorTools.ColTypes.Success, ListArgs[0]);
             }
             else
             {
-                TextWriterColor.WritePlain("", true);
-                TextWriterColor.Write(Kernel.Kernel.NewLine + Translate.DoTranslation("Failed to upload {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[0]);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
+                TextWriters.Write(Kernel.Kernel.NewLine + Translate.DoTranslation("Failed to upload {0}"), true, KernelColorTools.ColTypes.Error, ListArgs[0]);
             }
         }
 

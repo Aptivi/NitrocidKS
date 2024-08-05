@@ -21,7 +21,7 @@ using System.Collections.Generic;
 using KS.ConsoleBase.Colors;
 using KS.ConsoleBase.Inputs;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Misc.Editors.HexEdit.Commands
 {
@@ -34,10 +34,10 @@ namespace KS.Misc.Editors.HexEdit.Commands
             string FinalByte = "";
 
             // Keep prompting for bytes until the user finishes
-            TextWriterColor.Write(Translate.DoTranslation("Enter a byte on its own line that you want to append to the end of the file. When you're done, write \"EOF\" on its own line."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(Translate.DoTranslation("Enter a byte on its own line that you want to append to the end of the file. When you're done, write \"EOF\" on its own line."), true, KernelColorTools.ColTypes.Neutral);
             while (FinalByte != "EOF")
             {
-                TextWriterColor.Write(">> ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                TextWriters.Write(">> ", false, KernelColorTools.ColTypes.Input);
                 FinalByte = Input.ReadLine(false);
                 if (!(FinalByte == "EOF"))
                 {
@@ -47,7 +47,7 @@ namespace KS.Misc.Editors.HexEdit.Commands
                     }
                     else
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("Not a valid byte."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(Translate.DoTranslation("Not a valid byte."), true, KernelColorTools.ColTypes.Error);
                     }
                 }
             }

@@ -39,7 +39,7 @@ using KS.Arguments.ArgumentBase;
 using KS.ConsoleBase.Colors;
 using KS.ConsoleBase.Inputs;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using Terminaux.Base;
 using Terminaux.Colors;
 
@@ -51,17 +51,17 @@ namespace KS.Arguments.CommandLineArguments
         public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
         {
             // Command-line arguments
-            TextWriterColor.Write(Translate.DoTranslation("Command-line arguments:"), true, KernelColorTools.ColTypes.ListTitle);
+            TextWriters.Write(Translate.DoTranslation("Command-line arguments:"), true, KernelColorTools.ColTypes.ListTitle);
             ArgumentHelpSystem.ShowArgsHelp(ArgumentType.CommandLineArgs);
-            TextWriterColor.WritePlain("", true);
+            TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
 
             // Pre-boot command-line arguments
-            TextWriterColor.Write(Translate.DoTranslation("Pre-boot command-line arguments:"), true, KernelColorTools.ColTypes.ListTitle);
+            TextWriters.Write(Translate.DoTranslation("Pre-boot command-line arguments:"), true, KernelColorTools.ColTypes.ListTitle);
             ArgumentHelpSystem.ShowArgsHelp(ArgumentType.PreBootCommandLineArgs);
-            TextWriterColor.WritePlain("", true);
+            TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
 
             // Either start the kernel or exit it
-            TextWriterColor.Write(Translate.DoTranslation("* Press any key to start the kernel or ESC to exit."), true, KernelColorTools.ColTypes.Tip);
+            TextWriters.Write(Translate.DoTranslation("* Press any key to start the kernel or ESC to exit."), true, KernelColorTools.ColTypes.Tip);
             if (Input.DetectKeypress().Key == ConsoleKey.Escape)
             {
                 // Clear the console and reset the colors

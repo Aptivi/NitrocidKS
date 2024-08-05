@@ -22,7 +22,7 @@ using System.Data;
 using System.Linq;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 using UnitsNet;
 
@@ -40,20 +40,20 @@ namespace KS.Shell.Commands
             QuantityInfo[] QuantityInfos = Quantity.Infos.Where(x => (x.Name ?? "") == (UnitType ?? "")).ToArray();
             var TargetUnitInstance = UnitsNetSetup.Default.UnitParser.Parse(TargetUnit, QuantityInfos[0].UnitType);
             var ConvertedUnit = Quantity.Parse(QuantityInfos[0].ValueType, $"{QuantityNum} {SourceUnit}").ToUnit(TargetUnitInstance);
-            TextWriterColor.Write("- {0} => {1}: ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), SourceUnit, TargetUnit);
-            TextWriterColor.Write(ConvertedUnit.ToString(CultureManager.CurrentCult.NumberFormat), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+            TextWriters.Write("- {0} => {1}: ", false, KernelColorTools.ColTypes.ListEntry, SourceUnit, TargetUnit);
+            TextWriters.Write(ConvertedUnit.ToString(CultureManager.CurrentCult.NumberFormat), true, KernelColorTools.ColTypes.ListValue);
         }
 
         public override void HelpHelper()
         {
-            TextWriterColor.Write(Translate.DoTranslation("Available unit types and their units:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(Translate.DoTranslation("Available unit types and their units:"), true, KernelColorTools.ColTypes.Neutral);
             foreach (QuantityInfo QuantityInfo in Quantity.Infos)
             {
-                TextWriterColor.Write("- {0}:", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), QuantityInfo.Name);
+                TextWriters.Write("- {0}:", true, KernelColorTools.ColTypes.ListEntry, QuantityInfo.Name);
                 foreach (Enum UnitValues in QuantityInfo.UnitInfos.Select(x => x.Value))
                 {
-                    TextWriterColor.Write("  - {0}: ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), string.Join(", ", UnitsNetSetup.Default.UnitAbbreviations.GetDefaultAbbreviation(UnitValues.GetType(), Convert.ToInt32(UnitValues))));
-                    TextWriterColor.Write(UnitValues.ToString(), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+                    TextWriters.Write("  - {0}: ", false, KernelColorTools.ColTypes.ListEntry, string.Join(", ", UnitsNetSetup.Default.UnitAbbreviations.GetDefaultAbbreviation(UnitValues.GetType(), Convert.ToInt32(UnitValues))));
+                    TextWriters.Write(UnitValues.ToString(), true, KernelColorTools.ColTypes.ListValue);
                 }
             }
         }

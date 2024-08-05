@@ -20,8 +20,9 @@
 using System;
 using System.IO;
 using KS.Kernel;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Shells;
+using KS.ConsoleBase.Colors;
 
 namespace KS.Shell.ShellBase.Commands
 {
@@ -39,7 +40,7 @@ namespace KS.Shell.ShellBase.Commands
                 if (e.SpecialKey == ConsoleSpecialKey.ControlC)
                 {
                     Flags.CancelRequested = true;
-                    TextWriterColor.WritePlain("", true);
+                    TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
                     Kernel.Kernel.DefConsoleOut = Console.Out;
                     Console.SetOut(StreamWriter.Null);
                     e.Cancel = true;

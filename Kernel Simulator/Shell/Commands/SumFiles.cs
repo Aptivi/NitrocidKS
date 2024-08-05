@@ -27,9 +27,9 @@ using KS.Files;
 using KS.Files.Querying;
 using KS.Languages;
 using KS.Misc.Encryption;
-using KS.Misc.Writers.ConsoleWriters;
-using KS.Misc.Writers.FancyWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
+using Terminaux.Writer.FancyWriters;
 
 namespace KS.Shell.Commands
 {
@@ -61,8 +61,8 @@ namespace KS.Shell.Commands
                             var spent = new Stopwatch();
                             spent.Start(); // Time when you're on a breakpoint is counted
                             string encrypted = Encryption.GetEncryptedFile(finalfile, AlgorithmEnum);
-                            TextWriterColor.Write("{0} ({1})", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), encrypted, AlgorithmEnum);
-                            TextWriterColor.Write(Translate.DoTranslation("Time spent: {0} milliseconds"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), spent.ElapsedMilliseconds);
+                            TextWriters.Write("{0} ({1})", true, KernelColorTools.ColTypes.Neutral, encrypted, AlgorithmEnum);
+                            TextWriters.Write(Translate.DoTranslation("Time spent: {0} milliseconds"), true, KernelColorTools.ColTypes.Neutral, spent.ElapsedMilliseconds);
                             if (UseRelative)
                             {
                                 FileBuilder.AppendLine($"- {ListArgsOnly[1]}: {encrypted} ({AlgorithmEnum})");
@@ -79,8 +79,8 @@ namespace KS.Shell.Commands
                         var spent = new Stopwatch();
                         spent.Start(); // Time when you're on a breakpoint is counted
                         string encrypted = Encryption.GetEncryptedFile(finalfile, AlgorithmEnum);
-                        TextWriterColor.Write(encrypted, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-                        TextWriterColor.Write(Translate.DoTranslation("Time spent: {0} milliseconds"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), spent.ElapsedMilliseconds);
+                        TextWriters.Write(encrypted, true, KernelColorTools.ColTypes.Neutral);
+                        TextWriters.Write(Translate.DoTranslation("Time spent: {0} milliseconds"), true, KernelColorTools.ColTypes.Neutral, spent.ElapsedMilliseconds);
                         if (UseRelative)
                         {
                             FileBuilder.AppendLine($"- {ListArgsOnly[1]}: {encrypted} ({AlgorithmEnum})");
@@ -93,10 +93,10 @@ namespace KS.Shell.Commands
                     }
                     else
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("Invalid encryption algorithm."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(Translate.DoTranslation("Invalid encryption algorithm."), true, KernelColorTools.ColTypes.Error);
                         break;
                     }
-                    TextWriterColor.WritePlain("", true);
+                    TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
                 }
                 if (!string.IsNullOrEmpty(@out))
                 {
@@ -107,15 +107,15 @@ namespace KS.Shell.Commands
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("{0} is not found."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), folder);
+                TextWriters.Write(Translate.DoTranslation("{0} is not found."), true, KernelColorTools.ColTypes.Error, folder);
             }
         }
 
         public override void HelpHelper()
         {
-            TextWriterColor.Write(Translate.DoTranslation("This command has the below switches that change how it works:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-            TextWriterColor.Write("  -relative: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Uses relative path instead of absolute"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+            TextWriters.Write(Translate.DoTranslation("This command has the below switches that change how it works:"), true, KernelColorTools.ColTypes.Neutral);
+            TextWriters.Write("  -relative: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Uses relative path instead of absolute"), true, KernelColorTools.ColTypes.ListValue);
         }
 
     }

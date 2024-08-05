@@ -22,10 +22,11 @@ using System.Collections.Generic;
 using KS.ConsoleBase.Colors;
 using KS.Misc.Text;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 using Terminaux.Colors;
+using Terminaux.Writer.ConsoleWriters;
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
 // This file is part of Kernel Simulator
@@ -347,7 +348,7 @@ namespace KS.Misc.Screensaver.Displays
                         break;
                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Current position: {0}, {1}", CurrentX, CurrentY);
                     ConsoleWrapper.SetCursorPosition((int)Math.Round(CurrentX), CurrentY);
-                    TextWriterColor.WritePlain(" ", false);
+                    TextWriterRaw.WritePlain(" ", false);
 
                     // Delay writing
                     ThreadManager.SleepNoBlock(FireworksSettings.FireworksDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
@@ -387,25 +388,25 @@ namespace KS.Misc.Screensaver.Displays
                     {
                         DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Making upper particle at {0}, {1}", IgnitePositionX, UpperParticleY);
                         ConsoleWrapper.SetCursorPosition(IgnitePositionX, UpperParticleY);
-                        TextWriterColor.WritePlain(" ", false);
+                        TextWriterRaw.WritePlain(" ", false);
                     }
                     if (LowerParticleY < ConsoleWrapper.WindowHeight)
                     {
                         DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Making lower particle at {0}, {1}", IgnitePositionX, LowerParticleY);
                         ConsoleWrapper.SetCursorPosition(IgnitePositionX, LowerParticleY);
-                        TextWriterColor.WritePlain(" ", false);
+                        TextWriterRaw.WritePlain(" ", false);
                     }
                     if (LeftParticleX < ConsoleWrapper.WindowWidth)
                     {
                         DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Making left particle at {0}, {1}", LeftParticleX, IgnitePositionY);
                         ConsoleWrapper.SetCursorPosition(LeftParticleX, IgnitePositionY);
-                        TextWriterColor.WritePlain(" ", false);
+                        TextWriterRaw.WritePlain(" ", false);
                     }
                     if (RightParticleX < ConsoleWrapper.WindowWidth)
                     {
                         DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Making right particle at {0}, {1}", RightParticleX, IgnitePositionY);
                         ConsoleWrapper.SetCursorPosition(RightParticleX, IgnitePositionY);
-                        TextWriterColor.WritePlain(" ", false);
+                        TextWriterRaw.WritePlain(" ", false);
                     }
 
                     // Delay writing

@@ -23,7 +23,7 @@ using KS.ConsoleBase.Colors;
 using KS.Files;
 using KS.Files.Folders;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
 
@@ -41,18 +41,18 @@ namespace KS.Shell.Commands
             catch (System.Security.SecurityException sex)
             {
                 DebugWriter.Wdbg(DebugLevel.E, "Security error: {0} ({1})", sex.Message, sex.PermissionType);
-                TextWriterColor.Write(Translate.DoTranslation("You are unauthorized to set current directory to {0}: {1}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[0], sex.Message);
+                TextWriters.Write(Translate.DoTranslation("You are unauthorized to set current directory to {0}: {1}"), true, KernelColorTools.ColTypes.Error, ListArgs[0], sex.Message);
                 DebugWriter.WStkTrc(sex);
             }
             catch (PathTooLongException ptlex)
             {
                 DebugWriter.Wdbg(DebugLevel.I, "Directory length: {0}", Filesystem.NeutralizePath(ListArgs[0]).Length);
-                TextWriterColor.Write(Translate.DoTranslation("The path you've specified is too long."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("The path you've specified is too long."), true, KernelColorTools.ColTypes.Error);
                 DebugWriter.WStkTrc(ptlex);
             }
             catch (Exception ex)
             {
-                TextWriterColor.Write(Translate.DoTranslation("Changing directory has failed: {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.Message);
+                TextWriters.Write(Translate.DoTranslation("Changing directory has failed: {0}"), true, KernelColorTools.ColTypes.Error, ex.Message);
                 DebugWriter.WStkTrc(ex);
             }
         }

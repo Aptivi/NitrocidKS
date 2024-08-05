@@ -23,10 +23,11 @@ using System.Linq;
 using KS.ConsoleBase.Colors;
 using KS.ConsoleBase.Inputs;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
-using KS.Misc.Writers.FancyWriters;
 using Textify.Data.Analysis.NameGen;
+using Terminaux.Writer.FancyWriters;
+
 namespace KS.Misc.Games
 {
     public static class LoveHateRespond
@@ -65,7 +66,7 @@ namespace KS.Misc.Games
             long Score = default, CommentNumber = default;
 
             // Download the names list
-            TextWriterColor.Write(Translate.DoTranslation("Downloading names..."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Progress));
+            TextWriters.Write(Translate.DoTranslation("Downloading names..."), true, KernelColorTools.ColTypes.Progress);
             NameGenerator.PopulateNames();
             for (int NameNum = 1, loopTo = LoveOrHateUsersCount; NameNum <= loopTo; NameNum++)
             {
@@ -74,7 +75,7 @@ namespace KS.Misc.Games
             }
 
             // Game logic
-            TextWriterColor.Write(Translate.DoTranslation("Press A on hate comments to apologize. Press T on love comments to thank. Press Q to quit the game."), true, KernelColorTools.ColTypes.Tip);
+            TextWriters.Write(Translate.DoTranslation("Press A on hate comments to apologize. Press T on love comments to thank. Press Q to quit the game."), true, KernelColorTools.ColTypes.Tip);
             while (!ExitRequested)
             {
                 // Set necessary variables
@@ -88,12 +89,12 @@ namespace KS.Misc.Games
 
                 // Ask the user the question
                 SeparatorWriterColor.WriteSeparator("[S: {0} / C: {1}]", true, Score, CommentNumber);
-                TextWriterColor.Write(Translate.DoTranslation("If someone made this comment to your video:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-                TextWriterColor.Write("- {0}:", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), RandomUser);
-                TextWriterColor.Write(" {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), RandomComment);
-                TextWriterColor.Write(Translate.DoTranslation("How would you respond?") + " <A/T/Q> ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                TextWriters.Write(Translate.DoTranslation("If someone made this comment to your video:"), true, KernelColorTools.ColTypes.Neutral);
+                TextWriters.Write("- {0}:", false, KernelColorTools.ColTypes.ListEntry, RandomUser);
+                TextWriters.Write(" {0}", true, KernelColorTools.ColTypes.ListValue, RandomComment);
+                TextWriters.Write(Translate.DoTranslation("How would you respond?") + " <A/T/Q> ", false, KernelColorTools.ColTypes.Input);
                 Response = Convert.ToString(Input.DetectKeypress().KeyChar);
-                TextWriterColor.WritePlain("", true);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
                 DebugWriter.Wdbg(DebugLevel.I, "Response: {0}", Response);
 
                 // Parse response
@@ -106,14 +107,14 @@ namespace KS.Misc.Games
                                 case CommentType.Love:
                                     {
                                         DebugWriter.Wdbg(DebugLevel.I, "Apologized to love comment");
-                                        TextWriterColor.Write("[-1] " + Translate.DoTranslation("Apologized to love comment. Not good enough."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                                        TextWriters.Write("[-1] " + Translate.DoTranslation("Apologized to love comment. Not good enough."), true, KernelColorTools.ColTypes.Neutral);
                                         Score -= 1L;
                                         break;
                                     }
                                 case CommentType.Hate:
                                     {
                                         DebugWriter.Wdbg(DebugLevel.I, "Apologized to hate comment");
-                                        TextWriterColor.Write("[+1] " + Translate.DoTranslation("You've apologized to a hate comment! Excellent!"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                                        TextWriters.Write("[+1] " + Translate.DoTranslation("You've apologized to a hate comment! Excellent!"), true, KernelColorTools.ColTypes.Neutral);
                                         Score += 1L;
                                         break;
                                     }
@@ -128,14 +129,14 @@ namespace KS.Misc.Games
                                 case CommentType.Love:
                                     {
                                         DebugWriter.Wdbg(DebugLevel.I, "Thanked love comment");
-                                        TextWriterColor.Write("[+1] " + Translate.DoTranslation("Great! {0} will appreciate your thanks."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), RandomUser);
+                                        TextWriters.Write("[+1] " + Translate.DoTranslation("Great! {0} will appreciate your thanks."), true, KernelColorTools.ColTypes.Neutral, RandomUser);
                                         Score += 1L;
                                         break;
                                     }
                                 case CommentType.Hate:
                                     {
                                         DebugWriter.Wdbg(DebugLevel.I, "Thanked hate comment");
-                                        TextWriterColor.Write("[-1] " + Translate.DoTranslation("You just thanked the hater for the hate comment!"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                                        TextWriters.Write("[-1] " + Translate.DoTranslation("You just thanked the hater for the hate comment!"), true, KernelColorTools.ColTypes.Neutral);
                                         Score -= 1L;
                                         break;
                                     }
@@ -153,7 +154,7 @@ namespace KS.Misc.Games
                     default:
                         {
                             DebugWriter.Wdbg(DebugLevel.I, "No such selection");
-                            TextWriterColor.Write(Translate.DoTranslation("Invalid selection. Going to the next comment..."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                            TextWriters.Write(Translate.DoTranslation("Invalid selection. Going to the next comment..."), true, KernelColorTools.ColTypes.Error);
                             break;
                         }
                 }

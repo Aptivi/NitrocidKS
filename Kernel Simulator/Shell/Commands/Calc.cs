@@ -20,7 +20,7 @@
 using System;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
 using StringMath;
@@ -36,13 +36,13 @@ namespace KS.Shell.Commands
             {
                 string Res = ((MathExpr)StringArgs).Result.ToString();
                 DebugWriter.Wdbg(DebugLevel.I, "Res = {0}", Res);
-                TextWriterColor.Write(StringArgs + " = " + Res, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(StringArgs + " = " + Res, true, KernelColorTools.ColTypes.Neutral);
             }
             catch (Exception ex)
             {
                 DebugWriter.Wdbg(DebugLevel.I, "Error trying to calculate expression {0}: {1}", StringArgs, ex.Message);
                 DebugWriter.WStkTrc(ex);
-                TextWriterColor.Write(Translate.DoTranslation("Error in calculation.") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.Message);
+                TextWriters.Write(Translate.DoTranslation("Error in calculation.") + " {0}", true, KernelColorTools.ColTypes.Error, ex.Message);
             }
         }
 

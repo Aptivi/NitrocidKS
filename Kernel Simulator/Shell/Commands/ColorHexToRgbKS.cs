@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Shell.Commands
 {
@@ -33,8 +33,8 @@ namespace KS.Shell.Commands
 
             // Do the job
             RGB = KernelColorTools.ConvertFromHexToRGB(Hex);
-            TextWriterColor.Write("- " + Translate.DoTranslation("RGB color sequence:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(RGB, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+            TextWriters.Write("- " + Translate.DoTranslation("RGB color sequence:") + " ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(RGB, true, KernelColorTools.ColTypes.ListValue);
         }
 
     }

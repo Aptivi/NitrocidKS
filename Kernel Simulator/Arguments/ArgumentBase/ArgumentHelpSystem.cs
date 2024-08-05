@@ -20,7 +20,7 @@
 using KS.ConsoleBase.Colors;
 using KS.Kernel;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 namespace KS.Arguments.ArgumentBase
 {
     public static class ArgumentHelpSystem
@@ -79,7 +79,7 @@ namespace KS.Arguments.ArgumentBase
                 string HelpUsage = ArgumentList[Argument].HelpUsage;
 
                 // Print usage information
-                TextWriterColor.Write(Translate.DoTranslation("Usage:") + $" {Argument} {HelpUsage}: {HelpDefinition}", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(Translate.DoTranslation("Usage:") + $" {Argument} {HelpUsage}: {HelpDefinition}", true, KernelColorTools.ColTypes.Neutral);
 
                 // Extra help action for some arguments
                 if (ArgumentList[Argument].AdditionalHelpAction is not null)
@@ -94,19 +94,19 @@ namespace KS.Arguments.ArgumentBase
                 {
                     foreach (string cmd in ArgumentList.Keys)
                     {
-                        TextWriterColor.Write("- {0}: ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), cmd);
-                        TextWriterColor.Write("{0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), ArgumentList[cmd].GetTranslatedHelpEntry());
+                        TextWriters.Write("- {0}: ", false, KernelColorTools.ColTypes.ListEntry, cmd);
+                        TextWriters.Write("{0}", true, KernelColorTools.ColTypes.ListValue, ArgumentList[cmd].GetTranslatedHelpEntry());
                     }
                 }
                 else
                 {
                     foreach (string cmd in ArgumentList.Keys)
-                        TextWriterColor.Write("{0}, ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), cmd);
+                        TextWriters.Write("{0}, ", false, KernelColorTools.ColTypes.ListEntry, cmd);
                 }
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("No help for argument \"{0}\"."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), Argument);
+                TextWriters.Write(Translate.DoTranslation("No help for argument \"{0}\"."), true, KernelColorTools.ColTypes.Error, Argument);
             }
         }
 

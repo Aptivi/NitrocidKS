@@ -18,7 +18,7 @@
 //
 using System.Globalization;
 using KS.ConsoleBase.Colors;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 using KS.TimeDate;
 
@@ -31,25 +31,25 @@ namespace KS.TestShell.Commands
         {
             if (ListArgs[0] == "Gregorian")
             {
-                TextWriterColor.Write(TimeDateRenderers.RenderDate(new CultureInfo("en-US")), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(TimeDateRenderers.RenderDate(new CultureInfo("en-US")), true, KernelColorTools.ColTypes.Neutral);
             }
             else if (ListArgs[0] == "Hijri")
             {
                 var Cult = new CultureInfo("ar");
                 Cult.DateTimeFormat.Calendar = new HijriCalendar();
-                TextWriterColor.Write(TimeDateRenderers.RenderDate(Cult), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(TimeDateRenderers.RenderDate(Cult), true, KernelColorTools.ColTypes.Neutral);
             }
             else if (ListArgs[0] == "Persian")
             {
-                TextWriterColor.Write(TimeDateRenderers.RenderDate(new CultureInfo("fa")), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(TimeDateRenderers.RenderDate(new CultureInfo("fa")), true, KernelColorTools.ColTypes.Neutral);
             }
             else if (ListArgs[0] == "Saudi-Hijri")
             {
-                TextWriterColor.Write(TimeDateRenderers.RenderDate(new CultureInfo("ar-SA")), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(TimeDateRenderers.RenderDate(new CultureInfo("ar-SA")), true, KernelColorTools.ColTypes.Neutral);
             }
             else if (ListArgs[0] == "Thai-Buddhist")
             {
-                TextWriterColor.Write(TimeDateRenderers.RenderDate(new CultureInfo("th-TH")), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(TimeDateRenderers.RenderDate(new CultureInfo("th-TH")), true, KernelColorTools.ColTypes.Neutral);
             }
         }
 

@@ -19,7 +19,7 @@
 
 using System.Linq;
 using KS.ConsoleBase.Colors;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Misc.Editors.JsonShell.Commands
 {
@@ -30,11 +30,11 @@ namespace KS.Misc.Editors.JsonShell.Commands
         {
             if (ListArgs is not null && ((ListArgs?.Count()) is { } arg1 ? arg1 > 0 : (bool?)null).GetValueOrDefault())
             {
-                TextWriterColor.Write(JsonTools.JsonShell_SerializeToString(StringArgs), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(JsonTools.JsonShell_SerializeToString(StringArgs), true, KernelColorTools.ColTypes.Neutral);
             }
             else
             {
-                TextWriterColor.Write(JsonTools.JsonShell_SerializeToString("$"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(JsonTools.JsonShell_SerializeToString("$"), true, KernelColorTools.ColTypes.Neutral);
             }
         }
 

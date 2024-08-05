@@ -22,7 +22,7 @@ using System.Collections.Generic;
 using System.Linq;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Network.SFTP.Filesystem;
 using KS.Shell.ShellBase.Commands;
 
@@ -46,14 +46,14 @@ namespace KS.Network.SFTP.Commands
             }
             Entries.Sort();
             foreach (string Entry in Entries)
-                TextWriterColor.Write(Entry, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
+                TextWriters.Write(Entry, true, KernelColorTools.ColTypes.ListEntry);
         }
 
         public override void HelpHelper()
         {
-            TextWriterColor.Write(Translate.DoTranslation("This command has the below switches that change how it works:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-            TextWriterColor.Write("  -showdetails: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Shows the file details in the list"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+            TextWriters.Write(Translate.DoTranslation("This command has the below switches that change how it works:"), true, KernelColorTools.ColTypes.Neutral);
+            TextWriters.Write("  -showdetails: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Shows the file details in the list"), true, KernelColorTools.ColTypes.ListValue);
         }
 
     }

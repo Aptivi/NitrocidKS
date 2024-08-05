@@ -22,7 +22,7 @@ using KS.ConsoleBase.Inputs;
 using KS.Files.Folders;
 using KS.Languages;
 using KS.Misc.Reflection;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using System;
 using Terminaux.Base;
@@ -51,64 +51,64 @@ namespace KS.ConsoleBase.Themes.Studio
             {
                 DebugWriter.Wdbg(DebugLevel.I, "Studio not exiting yet. Populating {0} options...", MaximumOptions);
                 ConsoleWrapper.Clear();
-                TextWriterColor.Write(Translate.DoTranslation("Making a new theme \"{0}\".") + Kernel.Kernel.NewLine, true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ThemeName);
+                TextWriters.Write(Translate.DoTranslation("Making a new theme \"{0}\".") + Kernel.Kernel.NewLine, true, KernelColorTools.ColTypes.Neutral, ThemeName);
 
                 // List options
-                TextWriterColor.Write("1) " + Translate.DoTranslation("Input color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedInputColor.PlainSequence);
-                TextWriterColor.Write("2) " + Translate.DoTranslation("License color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedLicenseColor.PlainSequence);
-                TextWriterColor.Write("3) " + Translate.DoTranslation("Continuable kernel error color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedContKernelErrorColor.PlainSequence);
-                TextWriterColor.Write("4) " + Translate.DoTranslation("Uncontinuable kernel error color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedUncontKernelErrorColor.PlainSequence);
-                TextWriterColor.Write("5) " + Translate.DoTranslation("Host name color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedHostNameShellColor.PlainSequence);
-                TextWriterColor.Write("6) " + Translate.DoTranslation("User name color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedUserNameShellColor.PlainSequence);
-                TextWriterColor.Write("7) " + Translate.DoTranslation("Background color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedBackgroundColor.PlainSequence);
-                TextWriterColor.Write("8) " + Translate.DoTranslation("Neutral text color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedNeutralTextColor.PlainSequence);
-                TextWriterColor.Write("9) " + Translate.DoTranslation("List entry color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedListEntryColor.PlainSequence);
-                TextWriterColor.Write("10) " + Translate.DoTranslation("List value color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedListValueColor.PlainSequence);
-                TextWriterColor.Write("11) " + Translate.DoTranslation("Stage color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedStageColor.PlainSequence);
-                TextWriterColor.Write("12) " + Translate.DoTranslation("Error color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedErrorColor.PlainSequence);
-                TextWriterColor.Write("13) " + Translate.DoTranslation("Warning color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedWarningColor.PlainSequence);
-                TextWriterColor.Write("14) " + Translate.DoTranslation("Option color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools._SelectedOptionColor.PlainSequence);
-                TextWriterColor.Write("15) " + Translate.DoTranslation("Banner color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedBannerColor.PlainSequence);
-                TextWriterColor.Write("16) " + Translate.DoTranslation("Notification title color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedNotificationTitleColor.PlainSequence);
-                TextWriterColor.Write("17) " + Translate.DoTranslation("Notification description color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedNotificationDescriptionColor.PlainSequence);
-                TextWriterColor.Write("18) " + Translate.DoTranslation("Notification progress color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedNotificationProgressColor.PlainSequence);
-                TextWriterColor.Write("19) " + Translate.DoTranslation("Notification failure color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedNotificationFailureColor.PlainSequence);
-                TextWriterColor.Write("20) " + Translate.DoTranslation("Question color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedQuestionColor.PlainSequence);
-                TextWriterColor.Write("21) " + Translate.DoTranslation("Success color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedSuccessColor.PlainSequence);
-                TextWriterColor.Write("22) " + Translate.DoTranslation("User dollar color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedUserDollarColor.PlainSequence);
-                TextWriterColor.Write("23) " + Translate.DoTranslation("Tip color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedTipColor.PlainSequence);
-                TextWriterColor.Write("24) " + Translate.DoTranslation("Separator text color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedSeparatorTextColor.PlainSequence);
-                TextWriterColor.Write("25) " + Translate.DoTranslation("Separator color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedSeparatorColor.PlainSequence);
-                TextWriterColor.Write("26) " + Translate.DoTranslation("List title color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedListTitleColor.PlainSequence);
-                TextWriterColor.Write("27) " + Translate.DoTranslation("Development warning color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedDevelopmentWarningColor.PlainSequence);
-                TextWriterColor.Write("28) " + Translate.DoTranslation("Stage time color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedStageTimeColor.PlainSequence);
-                TextWriterColor.Write("29) " + Translate.DoTranslation("Progress color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedProgressColor.PlainSequence);
-                TextWriterColor.Write("30) " + Translate.DoTranslation("Back option color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedBackOptionColor.PlainSequence);
-                TextWriterColor.Write("31) " + Translate.DoTranslation("Low priority border color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedLowPriorityBorderColor.PlainSequence);
-                TextWriterColor.Write("32) " + Translate.DoTranslation("Medium priority border color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedMediumPriorityBorderColor.PlainSequence);
-                TextWriterColor.Write("33) " + Translate.DoTranslation("High priority border color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedHighPriorityBorderColor.PlainSequence);
-                TextWriterColor.Write("34) " + Translate.DoTranslation("Table separator color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedTableSeparatorColor.PlainSequence);
-                TextWriterColor.Write("35) " + Translate.DoTranslation("Table header color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedTableHeaderColor.PlainSequence);
-                TextWriterColor.Write("36) " + Translate.DoTranslation("Table value color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedTableValueColor.PlainSequence);
-                TextWriterColor.Write("37) " + Translate.DoTranslation("Selected option color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedSelectedOptionColor.PlainSequence);
-                TextWriterColor.Write("38) " + Translate.DoTranslation("Alternative option color") + ": [{0}] ", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option), ThemeStudioTools.SelectedAlternativeOptionColor.PlainSequence);
-                TextWriterColor.WritePlain("", true);
+                TextWriters.Write("1) " + Translate.DoTranslation("Input color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedInputColor.PlainSequence);
+                TextWriters.Write("2) " + Translate.DoTranslation("License color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedLicenseColor.PlainSequence);
+                TextWriters.Write("3) " + Translate.DoTranslation("Continuable kernel error color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedContKernelErrorColor.PlainSequence);
+                TextWriters.Write("4) " + Translate.DoTranslation("Uncontinuable kernel error color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedUncontKernelErrorColor.PlainSequence);
+                TextWriters.Write("5) " + Translate.DoTranslation("Host name color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedHostNameShellColor.PlainSequence);
+                TextWriters.Write("6) " + Translate.DoTranslation("User name color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedUserNameShellColor.PlainSequence);
+                TextWriters.Write("7) " + Translate.DoTranslation("Background color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedBackgroundColor.PlainSequence);
+                TextWriters.Write("8) " + Translate.DoTranslation("Neutral text color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedNeutralTextColor.PlainSequence);
+                TextWriters.Write("9) " + Translate.DoTranslation("List entry color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedListEntryColor.PlainSequence);
+                TextWriters.Write("10) " + Translate.DoTranslation("List value color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedListValueColor.PlainSequence);
+                TextWriters.Write("11) " + Translate.DoTranslation("Stage color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedStageColor.PlainSequence);
+                TextWriters.Write("12) " + Translate.DoTranslation("Error color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedErrorColor.PlainSequence);
+                TextWriters.Write("13) " + Translate.DoTranslation("Warning color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedWarningColor.PlainSequence);
+                TextWriters.Write("14) " + Translate.DoTranslation("Option color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools._SelectedOptionColor.PlainSequence);
+                TextWriters.Write("15) " + Translate.DoTranslation("Banner color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedBannerColor.PlainSequence);
+                TextWriters.Write("16) " + Translate.DoTranslation("Notification title color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedNotificationTitleColor.PlainSequence);
+                TextWriters.Write("17) " + Translate.DoTranslation("Notification description color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedNotificationDescriptionColor.PlainSequence);
+                TextWriters.Write("18) " + Translate.DoTranslation("Notification progress color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedNotificationProgressColor.PlainSequence);
+                TextWriters.Write("19) " + Translate.DoTranslation("Notification failure color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedNotificationFailureColor.PlainSequence);
+                TextWriters.Write("20) " + Translate.DoTranslation("Question color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedQuestionColor.PlainSequence);
+                TextWriters.Write("21) " + Translate.DoTranslation("Success color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedSuccessColor.PlainSequence);
+                TextWriters.Write("22) " + Translate.DoTranslation("User dollar color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedUserDollarColor.PlainSequence);
+                TextWriters.Write("23) " + Translate.DoTranslation("Tip color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedTipColor.PlainSequence);
+                TextWriters.Write("24) " + Translate.DoTranslation("Separator text color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedSeparatorTextColor.PlainSequence);
+                TextWriters.Write("25) " + Translate.DoTranslation("Separator color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedSeparatorColor.PlainSequence);
+                TextWriters.Write("26) " + Translate.DoTranslation("List title color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedListTitleColor.PlainSequence);
+                TextWriters.Write("27) " + Translate.DoTranslation("Development warning color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedDevelopmentWarningColor.PlainSequence);
+                TextWriters.Write("28) " + Translate.DoTranslation("Stage time color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedStageTimeColor.PlainSequence);
+                TextWriters.Write("29) " + Translate.DoTranslation("Progress color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedProgressColor.PlainSequence);
+                TextWriters.Write("30) " + Translate.DoTranslation("Back option color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedBackOptionColor.PlainSequence);
+                TextWriters.Write("31) " + Translate.DoTranslation("Low priority border color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedLowPriorityBorderColor.PlainSequence);
+                TextWriters.Write("32) " + Translate.DoTranslation("Medium priority border color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedMediumPriorityBorderColor.PlainSequence);
+                TextWriters.Write("33) " + Translate.DoTranslation("High priority border color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedHighPriorityBorderColor.PlainSequence);
+                TextWriters.Write("34) " + Translate.DoTranslation("Table separator color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedTableSeparatorColor.PlainSequence);
+                TextWriters.Write("35) " + Translate.DoTranslation("Table header color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedTableHeaderColor.PlainSequence);
+                TextWriters.Write("36) " + Translate.DoTranslation("Table value color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedTableValueColor.PlainSequence);
+                TextWriters.Write("37) " + Translate.DoTranslation("Selected option color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedSelectedOptionColor.PlainSequence);
+                TextWriters.Write("38) " + Translate.DoTranslation("Alternative option color") + ": [{0}] ", true, KernelColorTools.ColTypes.Option, ThemeStudioTools.SelectedAlternativeOptionColor.PlainSequence);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
 
                 // List saving and loading options
-                TextWriterColor.Write("39) " + Translate.DoTranslation("Save Theme to Current Directory"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.AlternativeOption));
-                TextWriterColor.Write("40) " + Translate.DoTranslation("Save Theme to Another Directory..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.AlternativeOption));
-                TextWriterColor.Write("41) " + Translate.DoTranslation("Save Theme to Current Directory as..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.AlternativeOption));
-                TextWriterColor.Write("42) " + Translate.DoTranslation("Save Theme to Another Directory as..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.AlternativeOption));
-                TextWriterColor.Write("43) " + Translate.DoTranslation("Load Theme From File..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.AlternativeOption));
-                TextWriterColor.Write("44) " + Translate.DoTranslation("Load Theme From Prebuilt Themes..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.AlternativeOption));
-                TextWriterColor.Write("45) " + Translate.DoTranslation("Load Current Colors"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.AlternativeOption));
-                TextWriterColor.Write("46) " + Translate.DoTranslation("Preview..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.AlternativeOption));
-                TextWriterColor.Write("47) " + Translate.DoTranslation("Exit"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.AlternativeOption));
-                TextWriterColor.WritePlain("", true);
+                TextWriters.Write("39) " + Translate.DoTranslation("Save Theme to Current Directory"), true, KernelColorTools.ColTypes.AlternativeOption);
+                TextWriters.Write("40) " + Translate.DoTranslation("Save Theme to Another Directory..."), true, KernelColorTools.ColTypes.AlternativeOption);
+                TextWriters.Write("41) " + Translate.DoTranslation("Save Theme to Current Directory as..."), true, KernelColorTools.ColTypes.AlternativeOption);
+                TextWriters.Write("42) " + Translate.DoTranslation("Save Theme to Another Directory as..."), true, KernelColorTools.ColTypes.AlternativeOption);
+                TextWriters.Write("43) " + Translate.DoTranslation("Load Theme From File..."), true, KernelColorTools.ColTypes.AlternativeOption);
+                TextWriters.Write("44) " + Translate.DoTranslation("Load Theme From Prebuilt Themes..."), true, KernelColorTools.ColTypes.AlternativeOption);
+                TextWriters.Write("45) " + Translate.DoTranslation("Load Current Colors"), true, KernelColorTools.ColTypes.AlternativeOption);
+                TextWriters.Write("46) " + Translate.DoTranslation("Preview..."), true, KernelColorTools.ColTypes.AlternativeOption);
+                TextWriters.Write("47) " + Translate.DoTranslation("Exit"), true, KernelColorTools.ColTypes.AlternativeOption);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
 
                 // Prompt user
                 DebugWriter.Wdbg(DebugLevel.I, "Waiting for user input...");
-                TextWriterColor.Write("> ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                TextWriters.Write("> ", false, KernelColorTools.ColTypes.Input);
                 Response = Input.ReadLine();
                 DebugWriter.Wdbg(DebugLevel.I, "Got response: {0}", Response);
 
@@ -398,7 +398,7 @@ namespace KS.ConsoleBase.Themes.Studio
                             case 40: // Save theme to another directory...
                                 {
                                     DebugWriter.Wdbg(DebugLevel.I, "Prompting user for directory name...");
-                                    TextWriterColor.Write(Translate.DoTranslation("Specify directory to save theme to:") + " [{0}] ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input), CurrentDirectory.CurrentDir);
+                                    TextWriters.Write(Translate.DoTranslation("Specify directory to save theme to:") + " [{0}] ", false, KernelColorTools.ColTypes.Input, CurrentDirectory.CurrentDir);
                                     string DirectoryName = Input.ReadLine(false);
                                     DirectoryName = string.IsNullOrWhiteSpace(DirectoryName) ? CurrentDirectory.CurrentDir : DirectoryName;
                                     DebugWriter.Wdbg(DebugLevel.I, "Got directory name {0}.", DirectoryName);
@@ -408,7 +408,7 @@ namespace KS.ConsoleBase.Themes.Studio
                             case 41: // Save theme to current directory as...
                                 {
                                     DebugWriter.Wdbg(DebugLevel.I, "Prompting user for theme name...");
-                                    TextWriterColor.Write(Translate.DoTranslation("Specify theme name:") + " [{0}] ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input), ThemeName);
+                                    TextWriters.Write(Translate.DoTranslation("Specify theme name:") + " [{0}] ", false, KernelColorTools.ColTypes.Input, ThemeName);
                                     string AltThemeName = Input.ReadLine(false);
                                     AltThemeName = string.IsNullOrWhiteSpace(AltThemeName) ? ThemeName : AltThemeName;
                                     DebugWriter.Wdbg(DebugLevel.I, "Got theme name {0}.", AltThemeName);
@@ -418,12 +418,12 @@ namespace KS.ConsoleBase.Themes.Studio
                             case 42: // Save theme to another directory as...
                                 {
                                     DebugWriter.Wdbg(DebugLevel.I, "Prompting user for theme and directory name...");
-                                    TextWriterColor.Write(Translate.DoTranslation("Specify directory to save theme to:") + " [{0}] ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input), CurrentDirectory.CurrentDir);
+                                    TextWriters.Write(Translate.DoTranslation("Specify directory to save theme to:") + " [{0}] ", false, KernelColorTools.ColTypes.Input, CurrentDirectory.CurrentDir);
                                     string DirectoryName = Input.ReadLine(false);
                                     DirectoryName = string.IsNullOrWhiteSpace(DirectoryName) ? CurrentDirectory.CurrentDir : DirectoryName;
                                     DebugWriter.Wdbg(DebugLevel.I, "Got directory name {0}.", DirectoryName);
                                     DebugWriter.Wdbg(DebugLevel.I, "Prompting user for theme name...");
-                                    TextWriterColor.Write(Translate.DoTranslation("Specify theme name:") + " [{0}] ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input), ThemeName);
+                                    TextWriters.Write(Translate.DoTranslation("Specify theme name:") + " [{0}] ", false, KernelColorTools.ColTypes.Input, ThemeName);
                                     string AltThemeName = Input.ReadLine(false);
                                     AltThemeName = string.IsNullOrWhiteSpace(AltThemeName) ? ThemeName : AltThemeName;
                                     DebugWriter.Wdbg(DebugLevel.I, "Got theme name {0}.", AltThemeName);
@@ -433,7 +433,7 @@ namespace KS.ConsoleBase.Themes.Studio
                             case 43: // Load Theme From File...
                                 {
                                     DebugWriter.Wdbg(DebugLevel.I, "Prompting user for theme name...");
-                                    TextWriterColor.Write(Translate.DoTranslation("Specify theme file name wihout the .json extension:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                                    TextWriters.Write(Translate.DoTranslation("Specify theme file name wihout the .json extension:") + " ", false, KernelColorTools.ColTypes.Input);
                                     string AltThemeName = Input.ReadLine(false) + ".json";
                                     DebugWriter.Wdbg(DebugLevel.I, "Got theme name {0}.", AltThemeName);
                                     ThemeStudioTools.LoadThemeFromFile(AltThemeName);
@@ -442,7 +442,7 @@ namespace KS.ConsoleBase.Themes.Studio
                             case 44: // Load Theme From Prebuilt Themes...
                                 {
                                     DebugWriter.Wdbg(DebugLevel.I, "Prompting user for theme name...");
-                                    TextWriterColor.Write(Translate.DoTranslation("Specify theme name:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                                    TextWriters.Write(Translate.DoTranslation("Specify theme name:") + " ", false, KernelColorTools.ColTypes.Input);
                                     string AltThemeName = Input.ReadLine(false);
                                     DebugWriter.Wdbg(DebugLevel.I, "Got theme name {0}.", AltThemeName);
                                     ThemeStudioTools.LoadThemeFromResource(AltThemeName);
@@ -471,16 +471,16 @@ namespace KS.ConsoleBase.Themes.Studio
                     else
                     {
                         DebugWriter.Wdbg(DebugLevel.W, "Option is not valid. Returning...");
-                        TextWriterColor.Write(Translate.DoTranslation("Specified option {0} is invalid."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), NumericResponse);
-                        TextWriterColor.Write(Translate.DoTranslation("Press any key to go back."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(Translate.DoTranslation("Specified option {0} is invalid."), true, KernelColorTools.ColTypes.Error, NumericResponse);
+                        TextWriters.Write(Translate.DoTranslation("Press any key to go back."), true, KernelColorTools.ColTypes.Error);
                         Input.DetectKeypress();
                     }
                 }
                 else
                 {
                     DebugWriter.Wdbg(DebugLevel.W, "Answer is not numeric.");
-                    TextWriterColor.Write(Translate.DoTranslation("The answer must be numeric."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
-                    TextWriterColor.Write(Translate.DoTranslation("Press any key to go back."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(Translate.DoTranslation("The answer must be numeric."), true, KernelColorTools.ColTypes.Error);
+                    TextWriters.Write(Translate.DoTranslation("Press any key to go back."), true, KernelColorTools.ColTypes.Error);
                     Input.DetectKeypress();
                 }
             }

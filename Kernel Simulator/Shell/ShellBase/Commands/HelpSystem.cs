@@ -161,7 +161,7 @@ namespace KS.Shell.ShellBase.Commands
                 {
                     // Print the usage information holder
                     var Indent = default(bool);
-                    Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, Translate.DoTranslation("Usage:"), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
+                    Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, Translate.DoTranslation("Usage:"), false, KernelColorTools.ColTypes.ListEntry);
 
                     // If remote debug, set the command to be prepended by the slash
                     if (CommandType == ShellType.RemoteDebugShell)
@@ -172,8 +172,8 @@ namespace KS.Shell.ShellBase.Commands
                     {
                         // Indent, if necessary
                         if (Indent)
-                            Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, " ".Repeat(UsageLength), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                        Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, $" {FinalCommand} {HelpUsage}", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
+                            Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, " ".Repeat(UsageLength), false, KernelColorTools.ColTypes.ListEntry);
+                        Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, $" {FinalCommand} {HelpUsage}", true, KernelColorTools.ColTypes.ListEntry);
                         Indent = true;
                     }
                 }
@@ -181,7 +181,7 @@ namespace KS.Shell.ShellBase.Commands
                 // Write the description now
                 if (string.IsNullOrEmpty(HelpDefinition))
                     HelpDefinition = Translate.DoTranslation("Command defined by ") + command;
-                Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, Translate.DoTranslation("Description:") + $" {HelpDefinition}", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+                Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, Translate.DoTranslation("Description:") + $" {HelpDefinition}", true, KernelColorTools.ColTypes.ListValue);
 
                 // Extra help action for some commands
                 FinalCommandList[FinalCommand].CommandBase?.HelpHelper();
@@ -196,34 +196,34 @@ namespace KS.Shell.ShellBase.Commands
 
                     // Check the command list count and print not implemented. This is an extremely rare situation.
                     if (CommandList.Count == 0)
-                        Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, "- " + Translate.DoTranslation("Shell commands not implemented!!!"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
+                        Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, "- " + Translate.DoTranslation("Shell commands not implemented!!!"), true, KernelColorTools.ColTypes.Warning);
                     foreach (string cmd in CommandList.Keys)
                     {
                         if ((!CommandList[cmd].Strict | CommandList[cmd].Strict & PermissionManagement.HasPermission(Login.Login.CurrentUser?.Username, PermissionManagement.PermissionType.Administrator)) & (Flags.Maintenance & !CommandList[cmd].NoMaintenance | !Flags.Maintenance))
                         {
                             Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, "- {0}: ", false, Shell.UnifiedCommandDict.ContainsKey(cmd) ? KernelColorTools.ColTypes.Success : KernelColorTools.ColTypes.ListEntry, cmd);
-                            Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, "{0}", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), CommandList[cmd].GetTranslatedHelpEntry());
+                            Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, "{0}", true, KernelColorTools.ColTypes.ListValue, CommandList[cmd].GetTranslatedHelpEntry());
                         }
                     }
 
                     // The mod commands
                     Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, Kernel.Kernel.NewLine + Translate.DoTranslation("Mod commands:") + (Flags.ShowCommandsCount & Flags.ShowModCommandsCount ? " [{0}]" : ""), true, KernelColorTools.ColTypes.ListTitle, ModCommandList.Count);
                     if (ModCommandList.Count == 0)
-                        Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, "- " + Translate.DoTranslation("No mod commands."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
+                        Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, "- " + Translate.DoTranslation("No mod commands."), true, KernelColorTools.ColTypes.Warning);
                     foreach (string cmd in ModCommandList.Keys)
                     {
-                        Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, "- {0}: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), cmd);
-                        Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, "{0}", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), ModCommandList[cmd].HelpDefinition);
+                        Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, "- {0}: ", false, KernelColorTools.ColTypes.ListEntry, cmd);
+                        Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, "{0}", true, KernelColorTools.ColTypes.ListValue, ModCommandList[cmd].HelpDefinition);
                     }
 
                     // The alias commands
                     Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, Kernel.Kernel.NewLine + Translate.DoTranslation("Alias commands:") + (Flags.ShowCommandsCount & Flags.ShowShellAliasesCount ? " [{0}]" : ""), true, KernelColorTools.ColTypes.ListTitle, AliasedCommandList.Count);
                     if (AliasedCommandList.Count == 0)
-                        Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, "- " + Translate.DoTranslation("No alias commands."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
+                        Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, "- " + Translate.DoTranslation("No alias commands."), true, KernelColorTools.ColTypes.Warning);
                     foreach (string cmd in AliasedCommandList.Keys)
                     {
-                        Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, "- {0}: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), cmd);
-                        Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, "{0}", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), CommandList[AliasedCommandList[cmd]].GetTranslatedHelpEntry());
+                        Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, "- {0}: ", false, KernelColorTools.ColTypes.ListEntry, cmd);
+                        Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, "{0}", true, KernelColorTools.ColTypes.ListValue, CommandList[AliasedCommandList[cmd]].GetTranslatedHelpEntry());
                     }
 
                     // A tip for you all
@@ -237,21 +237,21 @@ namespace KS.Shell.ShellBase.Commands
                     {
                         if ((!CommandList[cmd].Strict | CommandList[cmd].Strict & PermissionManagement.HasPermission(Login.Login.CurrentUser?.Username, PermissionManagement.PermissionType.Administrator)) & (Flags.Maintenance & !CommandList[cmd].NoMaintenance | !Flags.Maintenance))
                         {
-                            Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, "{0}, ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), cmd);
+                            Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, "{0}, ", false, KernelColorTools.ColTypes.ListEntry, cmd);
                         }
                     }
 
                     // The mod commands
                     foreach (string cmd in ModCommandList.Keys)
-                        Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, "{0}, ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), cmd);
+                        Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, "{0}, ", false, KernelColorTools.ColTypes.ListEntry, cmd);
 
                     // The alias commands
-                    Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, string.Join(", ", AliasedCommandList.Keys), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
+                    Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, string.Join(", ", AliasedCommandList.Keys), true, KernelColorTools.ColTypes.ListEntry);
                 }
             }
             else
             {
-                Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, Translate.DoTranslation("No help for command \"{0}\"."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), command);
+                Decisive.DecisiveWrite(CommandType, DebugDeviceSocket, Translate.DoTranslation("No help for command \"{0}\"."), true, KernelColorTools.ColTypes.Error, command);
             }
         }
 

@@ -18,7 +18,7 @@
 //
 using System.Globalization;
 using KS.ConsoleBase.Colors;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 
 namespace KS.TestShell.Commands
@@ -35,12 +35,12 @@ namespace KS.TestShell.Commands
                 {
                     if (Cult.Name.ToLower().Contains(ListArgs[0].ToLower()) | Cult.EnglishName.ToLower().Contains(ListArgs[0].ToLower()))
                     {
-                        TextWriterColor.Write("{0}: {1}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), Cult.Name, Cult.EnglishName);
+                        TextWriters.Write("{0}: {1}", true, KernelColorTools.ColTypes.Neutral, Cult.Name, Cult.EnglishName);
                     }
                 }
                 else
                 {
-                    TextWriterColor.Write("{0}: {1}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), Cult.Name, Cult.EnglishName);
+                    TextWriters.Write("{0}: {1}", true, KernelColorTools.ColTypes.Neutral, Cult.Name, Cult.EnglishName);
                 }
             }
         }

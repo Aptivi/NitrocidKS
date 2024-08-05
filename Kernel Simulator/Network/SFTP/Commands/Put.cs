@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Network.SFTP.Transfer;
 using KS.Shell.ShellBase.Commands;
 
@@ -30,18 +30,18 @@ namespace KS.Network.SFTP.Commands
 
         public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
         {
-            TextWriterColor.Write(Translate.DoTranslation("Uploading file {0}..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Progress), ListArgs[0]);
+            TextWriters.Write(Translate.DoTranslation("Uploading file {0}..."), true, KernelColorTools.ColTypes.Progress, ListArgs[0]);
 
             // Begin the uploading process
             if (SFTPTransfer.SFTPUploadFile(ListArgs[0]))
             {
-                TextWriterColor.WritePlain("", true);
-                TextWriterColor.Write(Kernel.Kernel.NewLine + Translate.DoTranslation("Uploaded file {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success), ListArgs[0]);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
+                TextWriters.Write(Kernel.Kernel.NewLine + Translate.DoTranslation("Uploaded file {0}"), true, KernelColorTools.ColTypes.Success, ListArgs[0]);
             }
             else
             {
-                TextWriterColor.WritePlain("", true);
-                TextWriterColor.Write(Kernel.Kernel.NewLine + Translate.DoTranslation("Failed to upload {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[0]);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
+                TextWriters.Write(Kernel.Kernel.NewLine + Translate.DoTranslation("Failed to upload {0}"), true, KernelColorTools.ColTypes.Error, ListArgs[0]);
             }
         }
 

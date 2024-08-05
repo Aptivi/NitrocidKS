@@ -33,7 +33,7 @@ using KS.Login;
 using KS.Misc.Execution;
 using KS.Misc.Text;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Modifications;
 using KS.Shell.ShellBase.Aliases;
@@ -326,7 +326,7 @@ namespace KS.Shell
                                         if ((PermissionManagement.HasPermission(Login.Login.CurrentUser.Username, PermissionManagement.PermissionType.Administrator) == false) & (Commands[finalCommand].Strict))
                                         {
                                             DebugWriter.Wdbg(DebugLevel.W, "Cmd exec {0} failed: adminList(signedinusrnm) is False, strictCmds.Contains({0}) is True", Command);
-                                            TextWriterColor.Write(Translate.DoTranslation("You don't have permission to use {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), Command);
+                                            TextWriters.Write(Translate.DoTranslation("You don't have permission to use {0}"), true, KernelColorTools.ColTypes.Error, Command);
                                             break;
                                         }
                                     }
@@ -334,12 +334,12 @@ namespace KS.Shell
                                     if ((Flags.Maintenance == true) & (Commands[finalCommand].NoMaintenance))
                                     {
                                         DebugWriter.Wdbg(DebugLevel.W, "Cmd exec {0} failed: In maintenance mode. {0} is in NoMaintenanceCmds", finalCommand);
-                                        TextWriterColor.Write(Translate.DoTranslation("Shell message: The requested command {0} is not allowed to run in maintenance mode."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), finalCommand);
+                                        TextWriters.Write(Translate.DoTranslation("Shell message: The requested command {0} is not allowed to run in maintenance mode."), true, KernelColorTools.ColTypes.Error, finalCommand);
                                     }
                                     else if ((IsInvokedByKernelArgument) & ((finalCommand.StartsWith("logout")) | (finalCommand.StartsWith("shutdown")) | (finalCommand.StartsWith("reboot"))))
                                     {
                                         DebugWriter.Wdbg(DebugLevel.W, "Cmd exec {0} failed: cmd is one of \"logout\" or \"shutdown\" or \"reboot\"", finalCommand);
-                                        TextWriterColor.Write(Translate.DoTranslation("Shell message: Command {0} is not allowed to run on log in."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), finalCommand);
+                                        TextWriters.Write(Translate.DoTranslation("Shell message: Command {0} is not allowed to run on log in."), true, KernelColorTools.ColTypes.Error, finalCommand);
                                     }
                                     else
                                     {
@@ -395,7 +395,7 @@ namespace KS.Shell
                                         catch (Exception ex)
                                         {
                                             DebugWriter.Wdbg(DebugLevel.E, "Failed to start process: {0}", ex.Message);
-                                            TextWriterColor.Write(Translate.DoTranslation("Failed to start \"{0}\": {1}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), finalCommand, ex.Message);
+                                            TextWriters.Write(Translate.DoTranslation("Failed to start \"{0}\": {1}"), true, KernelColorTools.ColTypes.Error, finalCommand, ex.Message);
                                             DebugWriter.WStkTrc(ex);
                                         }
                                     }
@@ -408,27 +408,27 @@ namespace KS.Shell
                                         }
                                         catch (Exception ex)
                                         {
-                                            TextWriterColor.Write(Translate.DoTranslation("Error trying to execute script: {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.Message);
+                                            TextWriters.Write(Translate.DoTranslation("Error trying to execute script: {0}"), true, KernelColorTools.ColTypes.Error, ex.Message);
                                             DebugWriter.WStkTrc(ex);
                                         }
                                     }
                                     else
                                     {
                                         DebugWriter.Wdbg(DebugLevel.W, "Cmd exec {0} failed: availableCmds.Cont({0}.Substring(0, {1})) = False", finalCommand, indexCmd);
-                                        TextWriterColor.Write(Translate.DoTranslation("Shell message: The requested command {0} is not found. See 'help' for available commands."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), finalCommand);
+                                        TextWriters.Write(Translate.DoTranslation("Shell message: The requested command {0} is not found. See 'help' for available commands."), true, KernelColorTools.ColTypes.Error, finalCommand);
                                     }
                                 }
                                 else
                                 {
                                     DebugWriter.Wdbg(DebugLevel.W, "Cmd exec {0} failed: availableCmds.Cont({0}.Substring(0, {1})) = False", finalCommand, indexCmd);
-                                    TextWriterColor.Write(Translate.DoTranslation("Shell message: The requested command {0} is not found. See 'help' for available commands."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), finalCommand);
+                                    TextWriters.Write(Translate.DoTranslation("Shell message: The requested command {0} is not found. See 'help' for available commands."), true, KernelColorTools.ColTypes.Error, finalCommand);
                                 }
                             }
                         }
                         catch (Exception ex)
                         {
                             DebugWriter.WStkTrc(ex);
-                            TextWriterColor.Write(Translate.DoTranslation("Error trying to execute command.") + Kernel.Kernel.NewLine + Translate.DoTranslation("Error {0}: {1}"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.GetType().FullName, ex.Message);
+                            TextWriters.Write(Translate.DoTranslation("Error trying to execute command.") + Kernel.Kernel.NewLine + Translate.DoTranslation("Error {0}: {1}"), true, KernelColorTools.ColTypes.Error, ex.GetType().FullName, ex.Message);
                         }
                     }
                 }

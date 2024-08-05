@@ -20,7 +20,7 @@
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Screensaver.Customized;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 
 namespace KS.TestShell.Commands
@@ -34,16 +34,16 @@ namespace KS.TestShell.Commands
             {
                 if (CustomSaverTools.SetCustomSaverSettings(ListArgs[0], ListArgs[1], ListArgs[2]))
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Settings set successfully for screensaver") + " {0}.", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ListArgs[0]);
+                    TextWriters.Write(Translate.DoTranslation("Settings set successfully for screensaver") + " {0}.", true, KernelColorTools.ColTypes.Neutral, ListArgs[0]);
                 }
                 else
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Failed to set a setting for screensaver") + " {0}.", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[0]);
+                    TextWriters.Write(Translate.DoTranslation("Failed to set a setting for screensaver") + " {0}.", true, KernelColorTools.ColTypes.Error, ListArgs[0]);
                 }
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Screensaver {0} not found."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[0]);
+                TextWriters.Write(Translate.DoTranslation("Screensaver {0} not found."), true, KernelColorTools.ColTypes.Error, ListArgs[0]);
             }
         }
 

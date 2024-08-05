@@ -20,10 +20,11 @@
 using System;
 using System.Threading;
 using KS.ConsoleBase.Colors;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 using Terminaux.Colors;
+using Terminaux.Writer.ConsoleWriters;
 
 namespace KS.Misc.Splash.Splashes
 {
@@ -54,7 +55,7 @@ namespace KS.Misc.Splash.Splashes
             Beginning = true;
             DebugWriter.Wdbg(DebugLevel.I, "Splash opening. Clearing console...");
             ConsoleWrapper.Clear();
-            TextWriterColor.Write(Kernel.Kernel.NewLine + $"   {OpenRCIndicatorColor.VTSequenceForeground}OpenRC {OpenRCVersionColor.VTSequenceForeground}0.13.11 {KernelColorTools.NeutralTextColor.VTSequenceForeground}is starting up {OpenRCPlaceholderColor.VTSequenceForeground}Kernel Simulator {Kernel.Kernel.KernelVersion}" + Kernel.Kernel.NewLine, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(Kernel.Kernel.NewLine + $"   {OpenRCIndicatorColor.VTSequenceForeground}OpenRC {OpenRCVersionColor.VTSequenceForeground}0.13.11 {KernelColorTools.NeutralTextColor.VTSequenceForeground}is starting up {OpenRCPlaceholderColor.VTSequenceForeground}Kernel Simulator {Kernel.Kernel.KernelVersion}" + Kernel.Kernel.NewLine, true, KernelColorTools.ColTypes.Neutral);
         }
 
         public void Display()
@@ -84,11 +85,11 @@ namespace KS.Misc.Splash.Splashes
         {
             if (!Beginning)
             {
-                TextWriterWhereColor.WriteWhere("[    ]", IndicatorLeft, IndicatorTop, true, OpenRCPlaceholderColor);
-                TextWriterWhereColor.WriteWhere(" ok ", IndicatorLeft + 1, IndicatorTop, true, OpenRCIndicatorColor);
+                TextWriterWhereColor.WriteWhereColor("[    ]", IndicatorLeft, IndicatorTop, true, OpenRCPlaceholderColor);
+                TextWriterWhereColor.WriteWhereColor(" ok ", IndicatorLeft + 1, IndicatorTop, true, OpenRCIndicatorColor);
             }
-            TextWriterColor.Write($" * ", false, OpenRCIndicatorColor);
-            TextWriterColor.Write(ProgressReport, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), Vars);
+            TextWriterColor.WriteColor($" * ", false, OpenRCIndicatorColor);
+            TextWriters.Write(ProgressReport, true, KernelColorTools.ColTypes.Neutral, Vars);
             if (!Beginning)
             {
                 IndicatorLeft = ConsoleWrapper.WindowWidth - 8;

@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Kernel;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 namespace KS.Misc.Splash
 {
     public static class SplashReport
@@ -69,13 +69,13 @@ namespace KS.Misc.Splash
                     }
                     else if (!Flags.QuietKernel)
                     {
-                        TextWriterColor.Write(Text, true, ColTypes, Vars);
+                        TextWriters.Write(Text, true, ColTypes, Vars);
                     }
                 }
             }
             else
             {
-                TextWriterColor.Write(Text, true, ColTypes, Vars);
+                TextWriters.Write(Text, true, ColTypes, Vars);
             }
         }
 

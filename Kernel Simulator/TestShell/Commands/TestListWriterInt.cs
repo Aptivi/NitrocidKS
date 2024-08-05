@@ -20,8 +20,9 @@
 using System.Collections.Generic;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
+using Terminaux.Writer.ConsoleWriters;
 namespace KS.TestShell.Commands
 {
     class Test_TestListWriterIntCommand : CommandExecutor, ICommand
@@ -31,9 +32,9 @@ namespace KS.TestShell.Commands
         {
             var NormalIntegerList = new List<int>() { 1, 2, 3 };
             var ArrayIntegerList = new List<int[]>() { { new int[] { 1, 2, 3 } }, { new int[] { 1, 2, 3 } }, { new int[] { 1, 2, 3 } } };
-            TextWriterColor.Write(Translate.DoTranslation("Normal integer list:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(Translate.DoTranslation("Normal integer list:"), true, KernelColorTools.ColTypes.Neutral);
             ListWriterColor.WriteList(NormalIntegerList);
-            TextWriterColor.Write(Translate.DoTranslation("Array integer list:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(Translate.DoTranslation("Array integer list:"), true, KernelColorTools.ColTypes.Neutral);
             ListWriterColor.WriteList(ArrayIntegerList);
         }
 

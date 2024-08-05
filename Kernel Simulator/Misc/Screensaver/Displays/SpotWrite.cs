@@ -25,10 +25,11 @@ using KS.ConsoleBase.Colors;
 using KS.Files.Querying;
 using KS.Misc.Text;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 using Terminaux.Colors;
+using Terminaux.Writer.ConsoleWriters;
 
 namespace KS.Misc.Screensaver.Displays
 {
@@ -185,7 +186,7 @@ namespace KS.Misc.Screensaver.Displays
                 if (!(ConsoleWrapper.CursorTop == ConsoleWrapper.WindowHeight - 2))
                 {
                     ConsoleWrapper.SetCursorPosition(0, ConsoleWrapper.CursorTop + 1);
-                    TextWriterColor.WritePlain("    ", false);
+                    TextWriterRaw.WritePlain("    ", false);
                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop);
                 }
 
@@ -210,23 +211,23 @@ namespace KS.Misc.Screensaver.Displays
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "We're at the end of the page! {0} = {1}", ConsoleWrapper.CursorTop, ConsoleWrapper.WindowHeight - 2);
                             ThreadManager.SleepNoBlock(SpotWriteSettings.SpotWriteNewScreenDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
                             ConsoleWrapper.Clear();
-                            TextWriterColor.WritePlain("", true);
+                            TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
                             if (SentenceIndex == 0)
                             {
-                                TextWriterColor.WritePlain("    ", false);
+                                TextWriterRaw.WritePlain("    ", false);
                             }
                             else
                             {
-                                TextWriterColor.WritePlain(" ", false);
+                                TextWriterRaw.WritePlain(" ", false);
                             }
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop);
                         }
 
                         // Write the final character to the console and wait
-                        TextWriterColor.WritePlain(Convert.ToString(Color255.GetEsc()) + "[1K" + Convert.ToString(StruckChar) + Convert.ToString(Color255.GetEsc()) + "[K", false);
+                        TextWriterRaw.WritePlain(Convert.ToString(Color255.GetEsc()) + "[1K" + Convert.ToString(StruckChar) + Convert.ToString(Color255.GetEsc()) + "[K", false);
                         ThreadManager.SleepNoBlock(SpotWriteSettings.SpotWriteDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
                     }
-                    TextWriterColor.WritePlain(Convert.ToString(Color255.GetEsc()) + "[1K", false);
+                    TextWriterRaw.WritePlain(Convert.ToString(Color255.GetEsc()) + "[1K", false);
                 }
             }
 

@@ -21,7 +21,7 @@ using System.Diagnostics;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Encryption;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 
 namespace KS.TestShell.Commands
@@ -33,8 +33,8 @@ namespace KS.TestShell.Commands
         {
             var spent = new Stopwatch();
             spent.Start(); // Time when you're on a breakpoint is counted
-            TextWriterColor.Write(Encryption.GetEncryptedString(ListArgs[0], Encryption.Algorithms.CRC32), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-            TextWriterColor.Write(Translate.DoTranslation("Time spent: {0} milliseconds"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), spent.ElapsedMilliseconds);
+            TextWriters.Write(Encryption.GetEncryptedString(ListArgs[0], Encryption.Algorithms.CRC32), true, KernelColorTools.ColTypes.Neutral);
+            TextWriters.Write(Translate.DoTranslation("Time spent: {0} milliseconds"), true, KernelColorTools.ColTypes.Neutral, spent.ElapsedMilliseconds);
             spent.Stop();
         }
 

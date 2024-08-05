@@ -22,7 +22,7 @@ using System.Linq;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.TestShell.Commands
 {
@@ -35,19 +35,19 @@ namespace KS.TestShell.Commands
             bool Ticks = ListSwitchesOnly.Contains("-t");
             if (Ticks)
             {
-                TextWriterColor.Write("{0} ms => {1} ticks", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), SleepMs, ThreadManager.GetActualTicks(SleepMs));
+                TextWriters.Write("{0} ms => {1} ticks", true, KernelColorTools.ColTypes.Neutral, SleepMs, ThreadManager.GetActualTicks(SleepMs));
             }
             else
             {
-                TextWriterColor.Write("{0} ms => {1} ms", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), SleepMs, ThreadManager.GetActualMilliseconds(SleepMs));
+                TextWriters.Write("{0} ms => {1} ms", true, KernelColorTools.ColTypes.Neutral, SleepMs, ThreadManager.GetActualMilliseconds(SleepMs));
             }
         }
 
         public override void HelpHelper()
         {
-            TextWriterColor.Write(Translate.DoTranslation("This command has the below switches that change how it works:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-            TextWriterColor.Write("  -t: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Unit in ticks"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+            TextWriters.Write(Translate.DoTranslation("This command has the below switches that change how it works:"), true, KernelColorTools.ColTypes.Neutral);
+            TextWriters.Write("  -t: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Unit in ticks"), true, KernelColorTools.ColTypes.ListValue);
         }
 
     }

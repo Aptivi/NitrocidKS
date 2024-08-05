@@ -23,7 +23,7 @@ using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Reflection;
 using KS.Misc.Text;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 
 namespace KS.Misc.Editors.TextEdit.Commands
@@ -42,13 +42,13 @@ namespace KS.Misc.Editors.TextEdit.Commands
                         var QueriedChars = TextEditTools.TextEdit_QueryWord(ListArgs[0], Convert.ToInt32(ListArgs[1]));
                         foreach (int WordIndex in QueriedChars.Keys)
                         {
-                            TextWriterColor.Write("- {0}: ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), WordIndex);
-                            TextWriterColor.Write("{0} ({1})", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), ListArgs[0], TextEditShellCommon.TextEdit_FileLines[Convert.ToInt32(ListArgs[1])]);
+                            TextWriters.Write("- {0}: ", false, KernelColorTools.ColTypes.ListEntry, WordIndex);
+                            TextWriters.Write("{0} ({1})", true, KernelColorTools.ColTypes.ListValue, ListArgs[0], TextEditShellCommon.TextEdit_FileLines[Convert.ToInt32(ListArgs[1])]);
                         }
                     }
                     else
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("The specified line number may not be larger than the last file line number."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(Translate.DoTranslation("The specified line number may not be larger than the last file line number."), true, KernelColorTools.ColTypes.Error);
                     }
                 }
                 else if (ListArgs[1].ToLower() == "all")
@@ -58,8 +58,8 @@ namespace KS.Misc.Editors.TextEdit.Commands
                     {
                         foreach (int WordIndex in QueriedWords[LineIndex].Keys)
                         {
-                            TextWriterColor.Write("- {0}:{1}: ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), LineIndex, WordIndex);
-                            TextWriterColor.Write("{0} ({1})", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), ListArgs[0], TextEditShellCommon.TextEdit_FileLines[LineIndex]);
+                            TextWriters.Write("- {0}:{1}: ", false, KernelColorTools.ColTypes.ListEntry, LineIndex, WordIndex);
+                            TextWriters.Write("{0} ({1})", true, KernelColorTools.ColTypes.ListValue, ListArgs[0], TextEditShellCommon.TextEdit_FileLines[LineIndex]);
                         }
                     }
                 }
@@ -78,14 +78,14 @@ namespace KS.Misc.Editors.TextEdit.Commands
                             var QueriedChars = TextEditTools.TextEdit_QueryWord(ListArgs[0], LineNumber);
                             foreach (int WordIndex in QueriedChars.Keys)
                             {
-                                TextWriterColor.Write("- {0}:{1}: ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), LineNumber, WordIndex);
-                                TextWriterColor.Write("{0} ({1})", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), ListArgs[0], TextEditShellCommon.TextEdit_FileLines[Convert.ToInt32(ListArgs[1])]);
+                                TextWriters.Write("- {0}:{1}: ", false, KernelColorTools.ColTypes.ListEntry, LineNumber, WordIndex);
+                                TextWriters.Write("{0} ({1})", true, KernelColorTools.ColTypes.ListValue, ListArgs[0], TextEditShellCommon.TextEdit_FileLines[Convert.ToInt32(ListArgs[1])]);
                             }
                         }
                     }
                     else
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("The specified line number may not be larger than the last file line number."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(Translate.DoTranslation("The specified line number may not be larger than the last file line number."), true, KernelColorTools.ColTypes.Error);
                     }
                 }
             }

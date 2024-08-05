@@ -20,7 +20,7 @@
 using System;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 using KS.TimeDate;
 
@@ -33,26 +33,26 @@ namespace KS.Shell.Commands
         {
             if (DateTime.TryParse(ListArgs[0], out DateTime DateTimeInfo))
             {
-                TextWriterColor.Write("-- " + Translate.DoTranslation("Information for") + " {0} --" + Kernel.Kernel.NewLine, true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), TimeDateRenderers.Render(DateTimeInfo));
-                TextWriterColor.Write(Translate.DoTranslation("Milliseconds:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), DateTimeInfo.Millisecond);
-                TextWriterColor.Write(Translate.DoTranslation("Seconds:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), DateTimeInfo.Second);
-                TextWriterColor.Write(Translate.DoTranslation("Minutes:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), DateTimeInfo.Minute);
-                TextWriterColor.Write(Translate.DoTranslation("Hours:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), DateTimeInfo.Hour);
-                TextWriterColor.Write(Translate.DoTranslation("Days:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), DateTimeInfo.Day);
-                TextWriterColor.Write(Translate.DoTranslation("Months:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), DateTimeInfo.Month);
-                TextWriterColor.Write(Translate.DoTranslation("Year:") + " {0}" + Kernel.Kernel.NewLine, true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), DateTimeInfo.Year);
-                TextWriterColor.Write(Translate.DoTranslation("Date:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), TimeDateRenderers.RenderDate(DateTimeInfo));
-                TextWriterColor.Write(Translate.DoTranslation("Time:") + " {0}" + Kernel.Kernel.NewLine, true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), TimeDateRenderers.RenderTime(DateTimeInfo));
-                TextWriterColor.Write(Translate.DoTranslation("Day of Year:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), DateTimeInfo.DayOfYear);
-                TextWriterColor.Write(Translate.DoTranslation("Day of Week:") + " {0}" + Kernel.Kernel.NewLine, true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), DateTimeInfo.DayOfWeek.ToString());
-                TextWriterColor.Write(Translate.DoTranslation("Binary:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), DateTimeInfo.ToBinary());
-                TextWriterColor.Write(Translate.DoTranslation("Local Time:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), TimeDateRenderers.Render(DateTimeInfo.ToLocalTime()));
-                TextWriterColor.Write(Translate.DoTranslation("Universal Time:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), TimeDateRenderers.Render(DateTimeInfo.ToUniversalTime()));
-                TextWriterColor.Write(Translate.DoTranslation("Unix Time:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), TimeDateConverters.DateToUnix(DateTimeInfo));
+                TextWriters.Write("-- " + Translate.DoTranslation("Information for") + " {0} --" + Kernel.Kernel.NewLine, true, KernelColorTools.ColTypes.Neutral, TimeDateRenderers.Render(DateTimeInfo));
+                TextWriters.Write(Translate.DoTranslation("Milliseconds:") + " {0}", true, KernelColorTools.ColTypes.Neutral, DateTimeInfo.Millisecond);
+                TextWriters.Write(Translate.DoTranslation("Seconds:") + " {0}", true, KernelColorTools.ColTypes.Neutral, DateTimeInfo.Second);
+                TextWriters.Write(Translate.DoTranslation("Minutes:") + " {0}", true, KernelColorTools.ColTypes.Neutral, DateTimeInfo.Minute);
+                TextWriters.Write(Translate.DoTranslation("Hours:") + " {0}", true, KernelColorTools.ColTypes.Neutral, DateTimeInfo.Hour);
+                TextWriters.Write(Translate.DoTranslation("Days:") + " {0}", true, KernelColorTools.ColTypes.Neutral, DateTimeInfo.Day);
+                TextWriters.Write(Translate.DoTranslation("Months:") + " {0}", true, KernelColorTools.ColTypes.Neutral, DateTimeInfo.Month);
+                TextWriters.Write(Translate.DoTranslation("Year:") + " {0}" + Kernel.Kernel.NewLine, true, KernelColorTools.ColTypes.Neutral, DateTimeInfo.Year);
+                TextWriters.Write(Translate.DoTranslation("Date:") + " {0}", true, KernelColorTools.ColTypes.Neutral, TimeDateRenderers.RenderDate(DateTimeInfo));
+                TextWriters.Write(Translate.DoTranslation("Time:") + " {0}" + Kernel.Kernel.NewLine, true, KernelColorTools.ColTypes.Neutral, TimeDateRenderers.RenderTime(DateTimeInfo));
+                TextWriters.Write(Translate.DoTranslation("Day of Year:") + " {0}", true, KernelColorTools.ColTypes.Neutral, DateTimeInfo.DayOfYear);
+                TextWriters.Write(Translate.DoTranslation("Day of Week:") + " {0}" + Kernel.Kernel.NewLine, true, KernelColorTools.ColTypes.Neutral, DateTimeInfo.DayOfWeek.ToString());
+                TextWriters.Write(Translate.DoTranslation("Binary:") + " {0}", true, KernelColorTools.ColTypes.Neutral, DateTimeInfo.ToBinary());
+                TextWriters.Write(Translate.DoTranslation("Local Time:") + " {0}", true, KernelColorTools.ColTypes.Neutral, TimeDateRenderers.Render(DateTimeInfo.ToLocalTime()));
+                TextWriters.Write(Translate.DoTranslation("Universal Time:") + " {0}", true, KernelColorTools.ColTypes.Neutral, TimeDateRenderers.Render(DateTimeInfo.ToUniversalTime()));
+                TextWriters.Write(Translate.DoTranslation("Unix Time:") + " {0}", true, KernelColorTools.ColTypes.Neutral, TimeDateConverters.DateToUnix(DateTimeInfo));
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Failed to parse date information for") + " {0}. " + Translate.DoTranslation("Ensure that the format is correct."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[0]);
+                TextWriters.Write(Translate.DoTranslation("Failed to parse date information for") + " {0}. " + Translate.DoTranslation("Ensure that the format is correct."), true, KernelColorTools.ColTypes.Error, ListArgs[0]);
             }
         }
 

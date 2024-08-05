@@ -24,6 +24,8 @@ using FluentFTP;
 using KS.ConsoleBase.Colors;
 using KS.ConsoleBase.Inputs;
 using KS.ConsoleBase.Themes;
+using KS.ConsoleBase.Writers;
+using KS.ConsoleBase.Writers.MiscWriters;
 using KS.Files;
 using KS.Files.Folders;
 using KS.Files.Querying;
@@ -40,10 +42,7 @@ using KS.Misc.Screensaver.Displays;
 using KS.Misc.Splash;
 using KS.Misc.Text;
 using KS.Misc.Timers;
-using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
-using KS.Misc.Writers.FancyWriters.Tools;
-using KS.Misc.Writers.MiscWriters;
 using KS.Modifications;
 using KS.Network;
 using KS.Network.FTP;
@@ -64,6 +63,7 @@ using Newtonsoft.Json.Linq;
 using Terminaux.Colors;
 using Terminaux.Colors.Data;
 using Terminaux.Inputs.Styles.Choice;
+using static KS.ConsoleBase.Colors.KernelColorTools;
 
 namespace KS.Misc.Configuration
 {
@@ -132,7 +132,7 @@ namespace KS.Misc.Configuration
                 { "Prompt for Arguments on Boot", Flags.ArgsOnBoot },
                 { "Maintenance Mode", Flags.Maintenance },
                 { "Check for Updates on Startup", Flags.CheckUpdateStart },
-                { "Custom Startup Banner", WelcomeMessage.CustomBanner },
+                { "Custom Startup Banner", WelcomeMessage.customBanner },
                 { "Change Culture when Switching Languages", Flags.LangChangeCulture },
                 { "Language", LanguageManager.CurrentLanguage },
                 { "Culture", CultureManager.CurrentCult.Name },
@@ -342,7 +342,7 @@ namespace KS.Misc.Configuration
                 { "Activate 255 Color Mode", ColorMixSettings.ColorMix255Colors },
                 { "Activate True Color Mode", ColorMixSettings.ColorMixTrueColor },
                 { "Delay in Milliseconds", ColorMixSettings.ColorMixDelay },
-                { "Background color", new Color(ColorMixSettings.ColorMixBackgroundColor).Type == ColorType.TrueColor ? $"\"{ColorMixSettings.ColorMixBackgroundColor}\"" : ColorMixSettings.ColorMixBackgroundColor },
+                { "Background color", new Color(ColorMixSettings.ColorMixBackgroundColor).Type == Terminaux.Colors.ColorType.TrueColor ? $"\"{ColorMixSettings.ColorMixBackgroundColor}\"" : ColorMixSettings.ColorMixBackgroundColor },
                 { "Minimum red color level", ColorMixSettings.ColorMixMinimumRedColorLevel },
                 { "Minimum green color level", ColorMixSettings.ColorMixMinimumGreenColorLevel },
                 { "Minimum blue color level", ColorMixSettings.ColorMixMinimumBlueColorLevel },
@@ -398,7 +398,7 @@ namespace KS.Misc.Configuration
                 { "Activate True Color Mode", LinesSettings.LinesTrueColor },
                 { "Delay in Milliseconds", LinesSettings.LinesDelay },
                 { "Line character", LinesSettings.LinesLineChar },
-                { "Background color", new Color(LinesSettings.LinesBackgroundColor).Type == ColorType.TrueColor ? $"\"{LinesSettings.LinesBackgroundColor}\"" : LinesSettings.LinesBackgroundColor },
+                { "Background color", new Color(LinesSettings.LinesBackgroundColor).Type == Terminaux.Colors.ColorType.TrueColor ? $"\"{LinesSettings.LinesBackgroundColor}\"" : LinesSettings.LinesBackgroundColor },
                 { "Minimum red color level", LinesSettings.LinesMinimumRedColorLevel },
                 { "Minimum green color level", LinesSettings.LinesMinimumGreenColorLevel },
                 { "Minimum blue color level", LinesSettings.LinesMinimumBlueColorLevel },
@@ -415,7 +415,7 @@ namespace KS.Misc.Configuration
             {
                 { "Activate 255 Color Mode", DissolveSettings.Dissolve255Colors },
                 { "Activate True Color Mode", DissolveSettings.DissolveTrueColor },
-                { "Background color", new Color(DissolveSettings.DissolveBackgroundColor).Type == ColorType.TrueColor ? $"\"{DissolveSettings.DissolveBackgroundColor}\"" : DissolveSettings.DissolveBackgroundColor },
+                { "Background color", new Color(DissolveSettings.DissolveBackgroundColor).Type == Terminaux.Colors.ColorType.TrueColor ? $"\"{DissolveSettings.DissolveBackgroundColor}\"" : DissolveSettings.DissolveBackgroundColor },
                 { "Minimum red color level", DissolveSettings.DissolveMinimumRedColorLevel },
                 { "Minimum green color level", DissolveSettings.DissolveMinimumGreenColorLevel },
                 { "Minimum blue color level", DissolveSettings.DissolveMinimumBlueColorLevel },
@@ -433,8 +433,8 @@ namespace KS.Misc.Configuration
                 { "Activate 255 Color Mode", BouncingBlockSettings.BouncingBlock255Colors },
                 { "Activate True Color Mode", BouncingBlockSettings.BouncingBlockTrueColor },
                 { "Delay in Milliseconds", BouncingBlockSettings.BouncingBlockDelay },
-                { "Background color", new Color(BouncingBlockSettings.BouncingBlockBackgroundColor).Type == ColorType.TrueColor ? $"\"{BouncingBlockSettings.BouncingBlockBackgroundColor}\"" : BouncingBlockSettings.BouncingBlockBackgroundColor },
-                { "Foreground color", new Color(BouncingBlockSettings.BouncingBlockForegroundColor).Type == ColorType.TrueColor ? $"\"{BouncingBlockSettings.BouncingBlockForegroundColor}\"" : BouncingBlockSettings.BouncingBlockForegroundColor },
+                { "Background color", new Color(BouncingBlockSettings.BouncingBlockBackgroundColor).Type == Terminaux.Colors.ColorType.TrueColor ? $"\"{BouncingBlockSettings.BouncingBlockBackgroundColor}\"" : BouncingBlockSettings.BouncingBlockBackgroundColor },
+                { "Foreground color", new Color(BouncingBlockSettings.BouncingBlockForegroundColor).Type == Terminaux.Colors.ColorType.TrueColor ? $"\"{BouncingBlockSettings.BouncingBlockForegroundColor}\"" : BouncingBlockSettings.BouncingBlockForegroundColor },
                 { "Minimum red color level", BouncingBlockSettings.BouncingBlockMinimumRedColorLevel },
                 { "Minimum green color level", BouncingBlockSettings.BouncingBlockMinimumGreenColorLevel },
                 { "Minimum blue color level", BouncingBlockSettings.BouncingBlockMinimumBlueColorLevel },
@@ -527,7 +527,7 @@ namespace KS.Misc.Configuration
                 { "Activate True Color Mode", LighterSettings.LighterTrueColor },
                 { "Delay in Milliseconds", LighterSettings.LighterDelay },
                 { "Max Positions Count", LighterSettings.LighterMaxPositions },
-                { "Background color", new Color(LighterSettings.LighterBackgroundColor).Type == ColorType.TrueColor ? $"\"{LighterSettings.LighterBackgroundColor}\"" : LighterSettings.LighterBackgroundColor },
+                { "Background color", new Color(LighterSettings.LighterBackgroundColor).Type == Terminaux.Colors.ColorType.TrueColor ? $"\"{LighterSettings.LighterBackgroundColor}\"" : LighterSettings.LighterBackgroundColor },
                 { "Minimum red color level", LighterSettings.LighterMinimumRedColorLevel },
                 { "Minimum green color level", LighterSettings.LighterMinimumGreenColorLevel },
                 { "Minimum blue color level", LighterSettings.LighterMinimumBlueColorLevel },
@@ -546,7 +546,7 @@ namespace KS.Misc.Configuration
                 { "Activate True Color Mode", WipeSettings.WipeTrueColor },
                 { "Delay in Milliseconds", WipeSettings.WipeDelay },
                 { "Wipes to change direction", WipeSettings.WipeWipesNeededToChangeDirection },
-                { "Background color", new Color(WipeSettings.WipeBackgroundColor).Type == ColorType.TrueColor ? $"\"{WipeSettings.WipeBackgroundColor}\"" : WipeSettings.WipeBackgroundColor },
+                { "Background color", new Color(WipeSettings.WipeBackgroundColor).Type == Terminaux.Colors.ColorType.TrueColor ? $"\"{WipeSettings.WipeBackgroundColor}\"" : WipeSettings.WipeBackgroundColor },
                 { "Minimum red color level", WipeSettings.WipeMinimumRedColorLevel },
                 { "Minimum green color level", WipeSettings.WipeMinimumGreenColorLevel },
                 { "Minimum blue color level", WipeSettings.WipeMinimumBlueColorLevel },
@@ -569,8 +569,8 @@ namespace KS.Misc.Configuration
             var GlitterMatrixConfig = new JObject()
             {
                 { "Delay in Milliseconds", GlitterMatrixSettings.GlitterMatrixDelay },
-                { "Background color", new Color(GlitterMatrixSettings.GlitterMatrixBackgroundColor).Type == ColorType.TrueColor ? $"\"{GlitterMatrixSettings.GlitterMatrixBackgroundColor}\"" : GlitterMatrixSettings.GlitterMatrixBackgroundColor },
-                { "Foreground color", new Color(GlitterMatrixSettings.GlitterMatrixForegroundColor).Type == ColorType.TrueColor ? $"\"{GlitterMatrixSettings.GlitterMatrixForegroundColor}\"" : GlitterMatrixSettings.GlitterMatrixForegroundColor }
+                { "Background color", new Color(GlitterMatrixSettings.GlitterMatrixBackgroundColor).Type == Terminaux.Colors.ColorType.TrueColor ? $"\"{GlitterMatrixSettings.GlitterMatrixBackgroundColor}\"" : GlitterMatrixSettings.GlitterMatrixBackgroundColor },
+                { "Foreground color", new Color(GlitterMatrixSettings.GlitterMatrixForegroundColor).Type == Terminaux.Colors.ColorType.TrueColor ? $"\"{GlitterMatrixSettings.GlitterMatrixForegroundColor}\"" : GlitterMatrixSettings.GlitterMatrixForegroundColor }
             };
             ScreensaverConfig.Add("GlitterMatrix", GlitterMatrixConfig);
 
@@ -581,8 +581,8 @@ namespace KS.Misc.Configuration
                 { "Activate True Color Mode", BouncingTextSettings.BouncingTextTrueColor },
                 { "Delay in Milliseconds", BouncingTextSettings.BouncingTextDelay },
                 { "Text Shown", BouncingTextSettings.BouncingTextWrite },
-                { "Background color", new Color(BouncingTextSettings.BouncingTextBackgroundColor).Type == ColorType.TrueColor ? $"\"{BouncingTextSettings.BouncingTextBackgroundColor}\"" : BouncingTextSettings.BouncingTextBackgroundColor },
-                { "Foreground color", new Color(BouncingTextSettings.BouncingTextForegroundColor).Type == ColorType.TrueColor ? $"\"{BouncingTextSettings.BouncingTextForegroundColor}\"" : BouncingTextSettings.BouncingTextForegroundColor },
+                { "Background color", new Color(BouncingTextSettings.BouncingTextBackgroundColor).Type == Terminaux.Colors.ColorType.TrueColor ? $"\"{BouncingTextSettings.BouncingTextBackgroundColor}\"" : BouncingTextSettings.BouncingTextBackgroundColor },
+                { "Foreground color", new Color(BouncingTextSettings.BouncingTextForegroundColor).Type == Terminaux.Colors.ColorType.TrueColor ? $"\"{BouncingTextSettings.BouncingTextForegroundColor}\"" : BouncingTextSettings.BouncingTextForegroundColor },
                 { "Minimum red color level", BouncingTextSettings.BouncingTextMinimumRedColorLevel },
                 { "Minimum green color level", BouncingTextSettings.BouncingTextMinimumGreenColorLevel },
                 { "Minimum blue color level", BouncingTextSettings.BouncingTextMinimumBlueColorLevel },
@@ -601,7 +601,7 @@ namespace KS.Misc.Configuration
                 { "Fade Out Delay in Milliseconds", FaderSettings.FaderFadeOutDelay },
                 { "Text Shown", FaderSettings.FaderWrite },
                 { "Max Fade Steps", FaderSettings.FaderMaxSteps },
-                { "Background color", new Color(FaderSettings.FaderBackgroundColor).Type == ColorType.TrueColor ? $"\"{FaderSettings.FaderBackgroundColor}\"" : FaderSettings.FaderBackgroundColor },
+                { "Background color", new Color(FaderSettings.FaderBackgroundColor).Type == Terminaux.Colors.ColorType.TrueColor ? $"\"{FaderSettings.FaderBackgroundColor}\"" : FaderSettings.FaderBackgroundColor },
                 { "Minimum red color level", FaderSettings.FaderMinimumRedColorLevel },
                 { "Minimum green color level", FaderSettings.FaderMinimumGreenColorLevel },
                 { "Minimum blue color level", FaderSettings.FaderMinimumBlueColorLevel },
@@ -656,7 +656,7 @@ namespace KS.Misc.Configuration
                 { "Maximum writing speed in WPM", TypoSettings.TypoWritingSpeedMax },
                 { "Probability of typo in percent", TypoSettings.TypoMissStrikePossibility },
                 { "Probability of miss in percent", TypoSettings.TypoMissPossibility },
-                { "Text color", new Color(TypoSettings.TypoTextColor).Type == ColorType.TrueColor ? $"\"{TypoSettings.TypoTextColor}\"" : TypoSettings.TypoTextColor }
+                { "Text color", new Color(TypoSettings.TypoTextColor).Type == Terminaux.Colors.ColorType.TrueColor ? $"\"{TypoSettings.TypoTextColor}\"" : TypoSettings.TypoTextColor }
             };
             ScreensaverConfig.Add("Typo", TypoConfig);
 
@@ -669,7 +669,7 @@ namespace KS.Misc.Configuration
                 { "Text Shown", MarqueeSettings.MarqueeWrite },
                 { "Always Centered", MarqueeSettings.MarqueeAlwaysCentered },
                 { "Use Console API", MarqueeSettings.MarqueeUseConsoleAPI },
-                { "Background color", new Color(MarqueeSettings.MarqueeBackgroundColor).Type == ColorType.TrueColor ? $"\"{MarqueeSettings.MarqueeBackgroundColor}\"" : MarqueeSettings.MarqueeBackgroundColor },
+                { "Background color", new Color(MarqueeSettings.MarqueeBackgroundColor).Type == Terminaux.Colors.ColorType.TrueColor ? $"\"{MarqueeSettings.MarqueeBackgroundColor}\"" : MarqueeSettings.MarqueeBackgroundColor },
                 { "Minimum red color level", MarqueeSettings.MarqueeMinimumRedColorLevel },
                 { "Minimum green color level", MarqueeSettings.MarqueeMinimumGreenColorLevel },
                 { "Minimum blue color level", MarqueeSettings.MarqueeMinimumBlueColorLevel },
@@ -695,7 +695,7 @@ namespace KS.Misc.Configuration
                 { "Line Fill Capping Probability in percent", LinotypoSettings.LinotypoEtaoinCappingPossibility },
                 { "Line Fill Type", (int)LinotypoSettings.LinotypoEtaoinType },
                 { "Probability of miss in percent", LinotypoSettings.LinotypoMissPossibility },
-                { "Text color", new Color(LinotypoSettings.LinotypoTextColor).Type == ColorType.TrueColor ? $"\"{LinotypoSettings.LinotypoTextColor}\"" : LinotypoSettings.LinotypoTextColor }
+                { "Text color", new Color(LinotypoSettings.LinotypoTextColor).Type == Terminaux.Colors.ColorType.TrueColor ? $"\"{LinotypoSettings.LinotypoTextColor}\"" : LinotypoSettings.LinotypoTextColor }
             };
             ScreensaverConfig.Add("Linotypo", LinotypoConfig);
 
@@ -707,7 +707,7 @@ namespace KS.Misc.Configuration
                 { "Text Shown", TypewriterSettings.TypewriterWrite },
                 { "Minimum writing speed in WPM", TypewriterSettings.TypewriterWritingSpeedMin },
                 { "Maximum writing speed in WPM", TypewriterSettings.TypewriterWritingSpeedMax },
-                { "Text color", new Color(TypewriterSettings.TypewriterTextColor).Type == ColorType.TrueColor ? $"\"{TypewriterSettings.TypewriterTextColor}\"" : TypewriterSettings.TypewriterTextColor }
+                { "Text color", new Color(TypewriterSettings.TypewriterTextColor).Type == Terminaux.Colors.ColorType.TrueColor ? $"\"{TypewriterSettings.TypewriterTextColor}\"" : TypewriterSettings.TypewriterTextColor }
             };
             ScreensaverConfig.Add("Typewriter", TypewriterConfig);
 
@@ -717,7 +717,7 @@ namespace KS.Misc.Configuration
                 { "Activate 255 Color Mode", FlashColorSettings.FlashColor255Colors },
                 { "Activate True Color Mode", FlashColorSettings.FlashColorTrueColor },
                 { "Delay in Milliseconds", FlashColorSettings.FlashColorDelay },
-                { "Background color", new Color(FlashColorSettings.FlashColorBackgroundColor).Type == ColorType.TrueColor ? $"\"{FlashColorSettings.FlashColorBackgroundColor}\"" : FlashColorSettings.FlashColorBackgroundColor },
+                { "Background color", new Color(FlashColorSettings.FlashColorBackgroundColor).Type == Terminaux.Colors.ColorType.TrueColor ? $"\"{FlashColorSettings.FlashColorBackgroundColor}\"" : FlashColorSettings.FlashColorBackgroundColor },
                 { "Minimum red color level", FlashColorSettings.FlashColorMinimumRedColorLevel },
                 { "Minimum green color level", FlashColorSettings.FlashColorMinimumGreenColorLevel },
                 { "Minimum blue color level", FlashColorSettings.FlashColorMinimumBlueColorLevel },
@@ -901,7 +901,7 @@ namespace KS.Misc.Configuration
                 { "Activate True Color Mode", FlashTextSettings.FlashTextTrueColor },
                 { "Delay in Milliseconds", FlashTextSettings.FlashTextDelay },
                 { "Text Shown", FlashTextSettings.FlashTextWrite },
-                { "Background color", new Color(FlashTextSettings.FlashTextBackgroundColor).Type == ColorType.TrueColor ? $"\"{FlashTextSettings.FlashTextBackgroundColor}\"" : FlashTextSettings.FlashTextBackgroundColor },
+                { "Background color", new Color(FlashTextSettings.FlashTextBackgroundColor).Type == Terminaux.Colors.ColorType.TrueColor ? $"\"{FlashTextSettings.FlashTextBackgroundColor}\"" : FlashTextSettings.FlashTextBackgroundColor },
                 { "Minimum red color level", FlashTextSettings.FlashTextMinimumRedColorLevel },
                 { "Minimum green color level", FlashTextSettings.FlashTextMinimumGreenColorLevel },
                 { "Minimum blue color level", FlashTextSettings.FlashTextMinimumBlueColorLevel },
@@ -1121,14 +1121,6 @@ namespace KS.Misc.Configuration
                 { "Show the mod commands count on help", Flags.ShowModCommandsCount },
                 { "Show the aliases count on help", Flags.ShowShellAliasesCount },
                 { "Password mask character", Input.CurrentMask },
-                { "Upper left corner character for progress bars", ProgressTools.ProgressUpperLeftCornerChar },
-                { "Upper right corner character for progress bars", ProgressTools.ProgressUpperRightCornerChar },
-                { "Lower left corner character for progress bars", ProgressTools.ProgressLowerLeftCornerChar },
-                { "Lower right corner character for progress bars", ProgressTools.ProgressLowerRightCornerChar },
-                { "Upper frame character for progress bars", ProgressTools.ProgressUpperFrameChar },
-                { "Lower frame character for progress bars", ProgressTools.ProgressLowerFrameChar },
-                { "Left frame character for progress bars", ProgressTools.ProgressLeftFrameChar },
-                { "Right frame character for progress bars", ProgressTools.ProgressRightFrameChar },
                 { "Users count for love or hate comments", LoveHateRespond.LoveOrHateUsersCount },
                 { "Input history enabled", Flags.InputHistoryEnabled },
                 { "Use PowerLine for rendering spaceship", MeteorShooter.MeteorUsePowerLine },
@@ -1283,7 +1275,7 @@ namespace KS.Misc.Configuration
             Flags.ArgsOnBoot = (bool)((ConfigToken["General"]?["Prompt for Arguments on Boot"]) ?? false);
             Flags.CheckUpdateStart = (bool)((ConfigToken["General"]?["Check for Updates on Startup"]) ?? true);
             if (!string.IsNullOrWhiteSpace((string)ConfigToken["General"]?["Custom Startup Banner"]))
-                WelcomeMessage.CustomBanner = (string)ConfigToken["General"]?["Custom Startup Banner"];
+                WelcomeMessage.customBanner = (string)ConfigToken["General"]?["Custom Startup Banner"];
             Flags.ShowAppInfoOnBoot = (bool)((ConfigToken["General"]?["Show app information during boot"]) ?? true);
             Flags.ParseCommandLineArguments = (bool)((ConfigToken["General"]?["Parse command-line arguments"]) ?? true);
             Flags.ShowStageFinishTimes = (bool)((ConfigToken["General"]?["Show stage finish times"]) ?? false);
@@ -2030,14 +2022,6 @@ namespace KS.Misc.Configuration
             Flags.ShowModCommandsCount = (bool)((ConfigToken["Misc"]?["Show the mod commands count on help"]) ?? true);
             Flags.ShowShellAliasesCount = (bool)((ConfigToken["Misc"]?["Show the aliases count on help"]) ?? true);
             Input.CurrentMask = (string)((ConfigToken["Misc"]?["Password mask character"]) ?? '*');
-            ProgressTools.ProgressUpperLeftCornerChar = (string)((ConfigToken["Misc"]?["Upper left corner character for progress bars"]) ?? "╔");
-            ProgressTools.ProgressUpperRightCornerChar = (string)((ConfigToken["Misc"]?["Upper right corner character for progress bars"]) ?? "╗");
-            ProgressTools.ProgressLowerLeftCornerChar = (string)((ConfigToken["Misc"]?["Lower left corner character for progress bars"]) ?? "╚");
-            ProgressTools.ProgressLowerRightCornerChar = (string)((ConfigToken["Misc"]?["Lower right corner character for progress bars"]) ?? "╝");
-            ProgressTools.ProgressUpperFrameChar = (string)((ConfigToken["Misc"]?["Upper frame character for progress bars"]) ?? "═");
-            ProgressTools.ProgressLowerFrameChar = (string)((ConfigToken["Misc"]?["Lower frame character for progress bars"]) ?? "═");
-            ProgressTools.ProgressLeftFrameChar = (string)((ConfigToken["Misc"]?["Left frame character for progress bars"]) ?? "║");
-            ProgressTools.ProgressRightFrameChar = (string)((ConfigToken["Misc"]?["Right frame character for progress bars"]) ?? "║");
             LoveHateRespond.LoveOrHateUsersCount = (int)(int.TryParse((string)ConfigToken["Misc"]?["Users count for love or hate comments"], out _) ? (ConfigToken["Misc"]?["Users count for love or hate comments"]) : 20);
             Flags.InputHistoryEnabled = (bool)((ConfigToken["Misc"]?["Input history enabled"]) ?? true);
             MeteorShooter.MeteorUsePowerLine = (bool)((ConfigToken["Misc"]?["Use PowerLine for rendering spaceship"]) ?? true);
@@ -2100,7 +2084,7 @@ namespace KS.Misc.Configuration
             }
             catch (Kernel.Exceptions.ConfigException cex)
             {
-                TextWriterColor.Write(cex.Message, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(cex.Message, true, KernelColorTools.ColTypes.Error);
                 DebugWriter.WStkTrc(cex);
             }
         }

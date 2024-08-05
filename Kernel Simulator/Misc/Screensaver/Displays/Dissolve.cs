@@ -22,10 +22,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using KS.ConsoleBase.Colors;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 using Terminaux.Colors;
+using Terminaux.Writer.ConsoleWriters;
 
 namespace KS.Misc.Screensaver.Displays
 {
@@ -291,7 +292,7 @@ namespace KS.Misc.Screensaver.Displays
                         {
                             KernelColorTools.SetConsoleColor(Color.Empty);
                             KernelColorTools.SetConsoleColor(new Color($"{RedColorNum};{GreenColorNum};{BlueColorNum}"), true);
-                            TextWriterColor.WritePlain(" ", false);
+                            TextWriterRaw.WritePlain(" ", false);
                         }
                         else
                         {
@@ -312,7 +313,7 @@ namespace KS.Misc.Screensaver.Displays
                         {
                             KernelColorTools.SetConsoleColor(Color.Empty);
                             KernelColorTools.SetConsoleColor(new Color(ColorNum), true);
-                            TextWriterColor.WritePlain(" ", false);
+                            TextWriterRaw.WritePlain(" ", false);
                         }
                         else
                         {
@@ -331,7 +332,7 @@ namespace KS.Misc.Screensaver.Displays
                         {
                             KernelColorTools.SetConsoleColor(new Color(DissolveSettings.DissolveBackgroundColor), true);
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", Console.BackgroundColor);
-                            TextWriterColor.WritePlain(" ", false);
+                            TextWriterRaw.WritePlain(" ", false);
                         }
                         else
                         {
@@ -363,7 +364,7 @@ namespace KS.Misc.Screensaver.Displays
                 {
                     ConsoleWrapper.SetCursorPosition(Left, Top);
                     KernelColorTools.SetConsoleColor(new Color(DissolveSettings.DissolveBackgroundColor), true);
-                    TextWriterColor.WritePlain(" ", false);
+                    TextWriterRaw.WritePlain(" ", false);
                     if (CoveredPositions.Count == (EndLeft + 1) * (EndTop + 1))
                     {
                         DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "We're refilling...");

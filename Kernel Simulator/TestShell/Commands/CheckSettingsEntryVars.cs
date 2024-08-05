@@ -21,8 +21,9 @@ using System.Collections.Generic;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Configuration;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
+using Terminaux.Writer.ConsoleWriters;
 
 namespace KS.TestShell.Commands
 {
@@ -47,7 +48,7 @@ namespace KS.TestShell.Commands
             // Warn if not found
             if (NotFound.Count > 0)
             {
-                TextWriterColor.Write(Translate.DoTranslation("These configuration entries have invalid variables or enumerations and need to be fixed:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
+                TextWriters.Write(Translate.DoTranslation("These configuration entries have invalid variables or enumerations and need to be fixed:"), true, KernelColorTools.ColTypes.Warning);
                 ListWriterColor.WriteList(NotFound);
             }
         }

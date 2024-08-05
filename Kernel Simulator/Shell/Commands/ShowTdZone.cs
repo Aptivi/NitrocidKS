@@ -21,7 +21,7 @@ using System;
 using System.Linq;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 using KS.TimeDate;
 
@@ -40,14 +40,14 @@ namespace KS.Shell.Commands
                 TimeZones.ShowAllTimeZones();
             }
             else if (!TimeZones.ShowTimeZones(ListArgsOnly[0]))
-                TextWriterColor.Write(Translate.DoTranslation("Timezone is specified incorrectly."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("Timezone is specified incorrectly."), true, KernelColorTools.ColTypes.Error);
         }
 
         public override void HelpHelper()
         {
-            TextWriterColor.Write(Translate.DoTranslation("This command has the below switches that change how it works:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-            TextWriterColor.Write("  -all: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Shows all the time zones"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+            TextWriters.Write(Translate.DoTranslation("This command has the below switches that change how it works:"), true, KernelColorTools.ColTypes.Neutral);
+            TextWriters.Write("  -all: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Shows all the time zones"), true, KernelColorTools.ColTypes.ListValue);
         }
 
     }

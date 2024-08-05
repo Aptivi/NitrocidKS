@@ -21,7 +21,7 @@ using System;
 using KS.ConsoleBase.Colors;
 using KS.ConsoleBase.Inputs;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 namespace KS.Misc.Games
 {
     public static class SpeedPress
@@ -111,7 +111,7 @@ namespace KS.Misc.Games
             }
 
             // Enter the loop until the user presses ESC
-            TextWriterColor.Write(Translate.DoTranslation("Press ESC to exit.") + Kernel.Kernel.NewLine, true, KernelColorTools.ColTypes.Tip);
+            TextWriters.Write(Translate.DoTranslation("Press ESC to exit.") + Kernel.Kernel.NewLine, true, KernelColorTools.ColTypes.Tip);
             while (!(WrittenChar.Key == ConsoleKey.Escape) | !(WrittenChar.Modifiers == ConsoleModifiers.Control) & WrittenChar.Key == ConsoleKey.C)
             {
                 // Select a random character
@@ -120,25 +120,25 @@ namespace KS.Misc.Games
                 // Prompt user for character
                 try
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Current character:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), SelectedChar);
-                    TextWriterColor.Write("> ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                    TextWriters.Write(Translate.DoTranslation("Current character:") + " {0}", true, KernelColorTools.ColTypes.Neutral, SelectedChar);
+                    TextWriters.Write("> ", false, KernelColorTools.ColTypes.Input);
                     WrittenChar = Input.ReadKeyTimeout(false, TimeSpan.FromMilliseconds(SpeedTimeout));
-                    TextWriterColor.WritePlain("", true);
+                    TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
 
                     // Check to see if the user has pressed the correct character
                     if (WrittenChar.KeyChar == SelectedChar)
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("You've pressed the right character!"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success));
+                        TextWriters.Write(Translate.DoTranslation("You've pressed the right character!"), true, KernelColorTools.ColTypes.Success);
                     }
                     else if (!(WrittenChar.Key == ConsoleKey.Escape) | !(WrittenChar.Modifiers == ConsoleModifiers.Control) & WrittenChar.Key == ConsoleKey.C)
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("You've pressed the wrong character."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
+                        TextWriters.Write(Translate.DoTranslation("You've pressed the wrong character."), true, KernelColorTools.ColTypes.Warning);
                     }
                 }
                 catch (Kernel.Exceptions.ConsoleReadTimeoutException)
                 {
-                    TextWriterColor.WritePlain("", true);
-                    TextWriterColor.Write(Translate.DoTranslation("Character not pressed on time."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
+                    TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
+                    TextWriters.Write(Translate.DoTranslation("Character not pressed on time."), true, KernelColorTools.ColTypes.Warning);
                 }
             }
         }

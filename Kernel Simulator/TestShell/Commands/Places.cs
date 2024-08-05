@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Misc.Probers;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.TestShell.Commands
 {
@@ -28,7 +28,7 @@ namespace KS.TestShell.Commands
 
         public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
         {
-            TextWriterColor.Write(PlaceParse.ProbePlaces(ListArgs[0]), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(PlaceParse.ProbePlaces(ListArgs[0]), true, KernelColorTools.ColTypes.Neutral);
         }
 
     }

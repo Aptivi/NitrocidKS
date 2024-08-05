@@ -21,7 +21,7 @@ using System;
 using FluentFTP;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Network.FTP.Filesystem;
 using KS.Shell.ShellBase.Commands;
 
@@ -39,11 +39,11 @@ namespace KS.Network.FTP.Commands
             if (Enum.IsDefined(typeof(FtpHashAlgorithm), Hash))
             {
                 var HashResult = FTPHashing.FTPGetHash(RemoteFile, (FtpHashAlgorithm)Convert.ToInt32(Enum.Parse(typeof(FtpHashAlgorithm), Hash)));
-                TextWriterColor.Write(HashResult.Value, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(HashResult.Value, true, KernelColorTools.ColTypes.Neutral);
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Invalid encryption algorithm."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("Invalid encryption algorithm."), true, KernelColorTools.ColTypes.Error);
             }
         }
 

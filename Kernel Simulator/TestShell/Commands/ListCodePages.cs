@@ -18,7 +18,7 @@
 //
 using System.Text;
 using KS.ConsoleBase.Colors;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 
 namespace KS.TestShell.Commands
@@ -30,7 +30,7 @@ namespace KS.TestShell.Commands
         {
             EncodingInfo[] Encodings = Encoding.GetEncodings();
             foreach (EncodingInfo Encoding in Encodings)
-                TextWriterColor.Write("{0}: {1} ({2})", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), Encoding.CodePage, Encoding.Name, Encoding.DisplayName);
+                TextWriters.Write("{0}: {1} ({2})", true, KernelColorTools.ColTypes.Neutral, Encoding.CodePage, Encoding.Name, Encoding.DisplayName);
         }
 
     }

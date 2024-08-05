@@ -22,10 +22,11 @@ using System.Collections.Generic;
 using System.Linq;
 using KS.ConsoleBase.Colors;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 using Terminaux.Colors;
+using Terminaux.Writer.ConsoleWriters;
 namespace KS.Misc.Screensaver.Displays
 {
     public static class LighterSettings
@@ -282,7 +283,7 @@ namespace KS.Misc.Screensaver.Displays
                 if (!ResizeSyncing)
                 {
                     KernelColorTools.SetConsoleColor(ColorStorage, true);
-                    TextWriterColor.WritePlain(" ", false);
+                    TextWriterRaw.WritePlain(" ", false);
                 }
                 else
                 {
@@ -299,7 +300,7 @@ namespace KS.Misc.Screensaver.Displays
                 if (!ResizeSyncing)
                 {
                     KernelColorTools.SetConsoleColor(new Color(ColorNum), true);
-                    TextWriterColor.WritePlain(" ", false);
+                    TextWriterRaw.WritePlain(" ", false);
                 }
                 else
                 {
@@ -315,7 +316,7 @@ namespace KS.Misc.Screensaver.Displays
                 {
                     Console.BackgroundColor = Screensaver.colors[RandomDriver.Next(LighterSettings.LighterMinimumColorLevel, LighterSettings.LighterMaximumColorLevel)];
                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", Console.BackgroundColor);
-                    TextWriterColor.WritePlain(" ", false);
+                    TextWriterRaw.WritePlain(" ", false);
                 }
                 else
                 {
@@ -337,7 +338,7 @@ namespace KS.Misc.Screensaver.Displays
                 {
                     ConsoleWrapper.SetCursorPosition(WipeLeft, WipeTop);
                     KernelColorTools.SetConsoleColor(new Color(LighterSettings.LighterBackgroundColor), true);
-                    TextWriterColor.WritePlain(" ", false);
+                    TextWriterRaw.WritePlain(" ", false);
                     CoveredPositions.RemoveAt(0);
                 }
                 else

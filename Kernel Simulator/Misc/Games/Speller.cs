@@ -24,7 +24,7 @@ using KS.ConsoleBase.Colors;
 using KS.ConsoleBase.Inputs;
 using KS.Languages;
 using KS.Misc.Text;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Network.Transfer;
 
@@ -43,7 +43,7 @@ namespace KS.Misc.Games
             var RandomDriver = new Random();
             string RandomWord;
             string SpeltWord;
-            TextWriterColor.Write(Translate.DoTranslation("Press CTRL+C to exit."), true, KernelColorTools.ColTypes.Tip);
+            TextWriters.Write(Translate.DoTranslation("Press CTRL+C to exit."), true, KernelColorTools.ColTypes.Tip);
             if (Words.Count == 0)
             {
                 DebugWriter.Wdbg(DebugLevel.I, "Downloading words...");
@@ -53,18 +53,18 @@ namespace KS.Misc.Games
             {
                 RandomWord = Words.ElementAt(RandomDriver.Next(Words.Count));
                 DebugWriter.Wdbg(DebugLevel.I, "Word: {0}", RandomWord);
-                TextWriterColor.Write(RandomWord, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                TextWriters.Write(RandomWord, true, KernelColorTools.ColTypes.Input);
                 SpeltWord = Input.ReadLineNoInput('\0');
 
                 if ((SpeltWord ?? "") == (RandomWord ?? ""))
                 {
                     DebugWriter.Wdbg(DebugLevel.I, "Spelt: {0} = {1}", SpeltWord, RandomWord);
-                    TextWriterColor.Write(Translate.DoTranslation("Spelt perfectly!"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success));
+                    TextWriters.Write(Translate.DoTranslation("Spelt perfectly!"), true, KernelColorTools.ColTypes.Success);
                 }
                 else
                 {
                     DebugWriter.Wdbg(DebugLevel.I, "Spelt: {0} != {1}", SpeltWord, RandomWord);
-                    TextWriterColor.Write(Translate.DoTranslation("Spelt incorrectly."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
+                    TextWriters.Write(Translate.DoTranslation("Spelt incorrectly."), true, KernelColorTools.ColTypes.Warning);
                 }
             }
         }

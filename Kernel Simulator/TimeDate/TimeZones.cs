@@ -22,7 +22,7 @@ using System.Collections.Generic;
 using static System.TimeZoneInfo;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 
 namespace KS.TimeDate
@@ -63,7 +63,7 @@ namespace KS.TimeDate
             bool ZoneFound = ZoneTimes.ContainsKey(Zone);
             if (ZoneFound)
             {
-                TextWriterColor.Write(Translate.DoTranslation("- Time of {0}: {1}") + " ({2})", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), Zone, ZoneTimes[Zone].ToString(), FindSystemTimeZoneById(Zone).GetUtcOffset(TimeDate.KernelDateTime).ToString());
+                TextWriters.Write(Translate.DoTranslation("- Time of {0}: {1}") + " ({2})", true, KernelColorTools.ColTypes.Neutral, Zone, ZoneTimes[Zone].ToString(), FindSystemTimeZoneById(Zone).GetUtcOffset(TimeDate.KernelDateTime).ToString());
             }
             return ZoneFound;
         }
@@ -82,7 +82,7 @@ namespace KS.TimeDate
                 if (ZoneName.Contains(Zone))
                 {
                     ZoneFound = true;
-                    TextWriterColor.Write(Translate.DoTranslation("- Time of {0}: {1}") + " ({2})", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ZoneName, ZoneTimes[ZoneName].ToString(), FindSystemTimeZoneById(ZoneName).GetUtcOffset(TimeDate.KernelDateTime).ToString());
+                    TextWriters.Write(Translate.DoTranslation("- Time of {0}: {1}") + " ({2})", true, KernelColorTools.ColTypes.Neutral, ZoneName, ZoneTimes[ZoneName].ToString(), FindSystemTimeZoneById(ZoneName).GetUtcOffset(TimeDate.KernelDateTime).ToString());
                 }
             }
             return ZoneFound;
@@ -95,7 +95,7 @@ namespace KS.TimeDate
         {
             var ZoneTimes = GetTimeZones();
             foreach (var TimeZone in ZoneTimes.Keys)
-                TextWriterColor.Write(Translate.DoTranslation("- Time of {0}: {1}") + " ({2})", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), TimeZone, ZoneTimes[TimeZone].ToString(), FindSystemTimeZoneById(TimeZone).GetUtcOffset(TimeDate.KernelDateTime).ToString());
+                TextWriters.Write(Translate.DoTranslation("- Time of {0}: {1}") + " ({2})", true, KernelColorTools.ColTypes.Neutral, TimeZone, ZoneTimes[TimeZone].ToString(), FindSystemTimeZoneById(TimeZone).GetUtcOffset(TimeDate.KernelDateTime).ToString());
         }
 
     }

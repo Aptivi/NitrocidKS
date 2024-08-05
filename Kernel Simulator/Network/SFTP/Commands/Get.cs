@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Network.SFTP.Transfer;
 using KS.Shell.ShellBase.Commands;
 
@@ -30,16 +30,16 @@ namespace KS.Network.SFTP.Commands
 
         public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
         {
-            TextWriterColor.Write(Translate.DoTranslation("Downloading file {0}..."), false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Progress), ListArgs[0]);
+            TextWriters.Write(Translate.DoTranslation("Downloading file {0}..."), false, KernelColorTools.ColTypes.Progress, ListArgs[0]);
             if (SFTPTransfer.SFTPGetFile(ListArgs[0]))
             {
-                TextWriterColor.WritePlain("", true);
-                TextWriterColor.Write(Translate.DoTranslation("Downloaded file {0}."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success), ListArgs[0]);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
+                TextWriters.Write(Translate.DoTranslation("Downloaded file {0}."), true, KernelColorTools.ColTypes.Success, ListArgs[0]);
             }
             else
             {
-                TextWriterColor.WritePlain("", true);
-                TextWriterColor.Write(Translate.DoTranslation("Download failed for file {0}."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[0]);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
+                TextWriters.Write(Translate.DoTranslation("Download failed for file {0}."), true, KernelColorTools.ColTypes.Error, ListArgs[0]);
             }
         }
 

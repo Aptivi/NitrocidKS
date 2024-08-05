@@ -28,7 +28,7 @@ using KS.Files;
 using KS.Files.Querying;
 using KS.Languages;
 using KS.Misc.Encryption;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -559,18 +559,18 @@ namespace KS.Login
             var AnswerType = default(int);
 
             // First, select user name
-            TextWriterColor.Write(Translate.DoTranslation("It looks like you've got no user except root. This is bad. We'll guide you how to create one."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(Translate.DoTranslation("It looks like you've got no user except root. This is bad. We'll guide you how to create one."), true, KernelColorTools.ColTypes.Neutral);
             while (Step == 1)
             {
-                TextWriterColor.Write(Translate.DoTranslation("Write your username."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-                TextWriterColor.Write(">> ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                TextWriters.Write(Translate.DoTranslation("Write your username."), true, KernelColorTools.ColTypes.Neutral);
+                TextWriters.Write(">> ", false, KernelColorTools.ColTypes.Input);
                 AnswerUsername = Input.ReadLine();
                 DebugWriter.Wdbg(DebugLevel.I, "Answer: {0}", AnswerUsername);
                 if (string.IsNullOrWhiteSpace(AnswerUsername))
                 {
                     DebugWriter.Wdbg(DebugLevel.W, "Username is not valid. Returning...");
-                    TextWriterColor.Write(Translate.DoTranslation("You must write your username."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
-                    TextWriterColor.Write(Translate.DoTranslation("Press any key to go back."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(Translate.DoTranslation("You must write your username."), true, KernelColorTools.ColTypes.Error);
+                    TextWriters.Write(Translate.DoTranslation("Press any key to go back."), true, KernelColorTools.ColTypes.Error);
                     Input.DetectKeypress();
                 }
                 else
@@ -582,15 +582,15 @@ namespace KS.Login
             // Second, write password
             while (Step == 2)
             {
-                TextWriterColor.Write(Translate.DoTranslation("Write your password."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-                TextWriterColor.Write(">> ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                TextWriters.Write(Translate.DoTranslation("Write your password."), true, KernelColorTools.ColTypes.Neutral);
+                TextWriters.Write(">> ", false, KernelColorTools.ColTypes.Input);
                 AnswerPassword = Input.ReadLineNoInput();
                 DebugWriter.Wdbg(DebugLevel.I, "Answer: {0}", AnswerPassword);
                 if (string.IsNullOrWhiteSpace(AnswerPassword))
                 {
                     DebugWriter.Wdbg(DebugLevel.W, "Password is not valid. Returning...");
-                    TextWriterColor.Write(Translate.DoTranslation("You must write your password."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
-                    TextWriterColor.Write(Translate.DoTranslation("Press any key to go back."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(Translate.DoTranslation("You must write your password."), true, KernelColorTools.ColTypes.Error);
+                    TextWriters.Write(Translate.DoTranslation("Press any key to go back."), true, KernelColorTools.ColTypes.Error);
                     Input.DetectKeypress();
                 }
                 else
@@ -602,10 +602,10 @@ namespace KS.Login
             // Third, select account type
             while (Step == 3)
             {
-                TextWriterColor.Write(Translate.DoTranslation("Select account type.") + Kernel.Kernel.NewLine, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-                TextWriterColor.Write(" 1) " + Translate.DoTranslation("Administrator: This account type has the most power in the kernel, allowing you to use system management programs."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option));
-                TextWriterColor.Write(" 2) " + Translate.DoTranslation("Normal User: This account type is slightly more restricted than administrators."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Option));
-                TextWriterColor.Write(Kernel.Kernel.NewLine + ">> ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                TextWriters.Write(Translate.DoTranslation("Select account type.") + Kernel.Kernel.NewLine, true, KernelColorTools.ColTypes.Neutral);
+                TextWriters.Write(" 1) " + Translate.DoTranslation("Administrator: This account type has the most power in the kernel, allowing you to use system management programs."), true, KernelColorTools.ColTypes.Option);
+                TextWriters.Write(" 2) " + Translate.DoTranslation("Normal User: This account type is slightly more restricted than administrators."), true, KernelColorTools.ColTypes.Option);
+                TextWriters.Write(Kernel.Kernel.NewLine + ">> ", false, KernelColorTools.ColTypes.Input);
                 if (int.TryParse(Input.ReadLine(), out AnswerType))
                 {
                     DebugWriter.Wdbg(DebugLevel.I, "Answer: {0}", AnswerType);
@@ -621,8 +621,8 @@ namespace KS.Login
                         default:
                             {
                                 DebugWriter.Wdbg(DebugLevel.W, "Option is not valid. Returning...");
-                                TextWriterColor.Write(Translate.DoTranslation("Specified option {0} is invalid."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), AnswerType);
-                                TextWriterColor.Write(Translate.DoTranslation("Press any key to go back."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                                TextWriters.Write(Translate.DoTranslation("Specified option {0} is invalid."), true, KernelColorTools.ColTypes.Error, AnswerType);
+                                TextWriters.Write(Translate.DoTranslation("Press any key to go back."), true, KernelColorTools.ColTypes.Error);
                                 Input.DetectKeypress();
                                 break;
                             }
@@ -631,8 +631,8 @@ namespace KS.Login
                 else
                 {
                     DebugWriter.Wdbg(DebugLevel.W, "Answer is not numeric.");
-                    TextWriterColor.Write(Translate.DoTranslation("The answer must be numeric."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
-                    TextWriterColor.Write(Translate.DoTranslation("Press any key to go back."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(Translate.DoTranslation("The answer must be numeric."), true, KernelColorTools.ColTypes.Error);
+                    TextWriters.Write(Translate.DoTranslation("Press any key to go back."), true, KernelColorTools.ColTypes.Error);
                     Input.DetectKeypress();
                 }
             }
@@ -642,15 +642,15 @@ namespace KS.Login
             {
                 if ((Login.Users["root"] ?? "") == (Encryption.GetEmptyHash(Encryption.Algorithms.SHA256) ?? ""))
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Write the administrator password. Make sure that you don't use this account unless you really know what you're doing."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-                    TextWriterColor.Write(">> ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                    TextWriters.Write(Translate.DoTranslation("Write the administrator password. Make sure that you don't use this account unless you really know what you're doing."), true, KernelColorTools.ColTypes.Neutral);
+                    TextWriters.Write(">> ", false, KernelColorTools.ColTypes.Input);
                     AnswerRootPassword = Input.ReadLineNoInput();
                     DebugWriter.Wdbg(DebugLevel.I, "Answer: {0}", AnswerPassword);
                     if (string.IsNullOrWhiteSpace(AnswerPassword))
                     {
                         DebugWriter.Wdbg(DebugLevel.W, "Password is not valid. Returning...");
-                        TextWriterColor.Write(Translate.DoTranslation("You must write the administrator password."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
-                        TextWriterColor.Write(Translate.DoTranslation("Press any key to go back."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(Translate.DoTranslation("You must write the administrator password."), true, KernelColorTools.ColTypes.Error);
+                        TextWriters.Write(Translate.DoTranslation("Press any key to go back."), true, KernelColorTools.ColTypes.Error);
                         Input.DetectKeypress();
                     }
                     else
@@ -678,7 +678,7 @@ namespace KS.Login
             }
 
             // Write a congratulating message
-            TextWriterColor.Write(Translate.DoTranslation("Congratulations! You've made a new account! To finish this off, log in as your new account."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(Translate.DoTranslation("Congratulations! You've made a new account! To finish this off, log in as your new account."), true, KernelColorTools.ColTypes.Neutral);
         }
 
         /// <summary>

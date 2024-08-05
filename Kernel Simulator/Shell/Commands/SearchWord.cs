@@ -21,7 +21,7 @@ using System;
 using KS.ConsoleBase.Colors;
 using KS.Files.Querying;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
 
@@ -36,13 +36,13 @@ namespace KS.Shell.Commands
             {
                 var Matches = Searching.SearchFileForString(ListArgs[1], ListArgs[0]);
                 foreach (string Match in Matches)
-                    TextWriterColor.Write(Match, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                    TextWriters.Write(Match, true, KernelColorTools.ColTypes.Neutral);
             }
             catch (Exception ex)
             {
                 DebugWriter.Wdbg(DebugLevel.E, "Error trying to search {0} for {1}", ListArgs[0], ListArgs[1]);
                 DebugWriter.WStkTrc(ex);
-                TextWriterColor.Write(Translate.DoTranslation("Searching {0} for {1} failed.") + " {2}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[0], ListArgs[1], ex.Message);
+                TextWriters.Write(Translate.DoTranslation("Searching {0} for {1} failed.") + " {2}", true, KernelColorTools.ColTypes.Error, ListArgs[0], ListArgs[1], ex.Message);
             }
         }
 

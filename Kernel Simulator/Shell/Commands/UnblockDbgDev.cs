@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Network.RemoteDebug;
 using KS.Shell.ShellBase.Commands;
 
@@ -34,16 +34,16 @@ namespace KS.Shell.Commands
             {
                 if (RemoteDebugTools.TryRemoveFromBlockList(ListArgs[0]))
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("{0} can now join remote debug again."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ListArgs[0]);
+                    TextWriters.Write(Translate.DoTranslation("{0} can now join remote debug again."), true, KernelColorTools.ColTypes.Neutral, ListArgs[0]);
                 }
                 else
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Failed to unblock {0}."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ListArgs[0]);
+                    TextWriters.Write(Translate.DoTranslation("Failed to unblock {0}."), true, KernelColorTools.ColTypes.Neutral, ListArgs[0]);
                 }
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("{0} is not blocked yet."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ListArgs[0]);
+                TextWriters.Write(Translate.DoTranslation("{0} is not blocked yet."), true, KernelColorTools.ColTypes.Neutral, ListArgs[0]);
             }
         }
 

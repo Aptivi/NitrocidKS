@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Network.Mail.Directory;
 using KS.Shell.ShellBase.Commands;
 
@@ -32,11 +32,11 @@ namespace KS.Network.Mail.Commands
         {
             if (MailManager.MailRemoveAllBySender(ListArgs[0]))
             {
-                TextWriterColor.Write(Translate.DoTranslation("All mail made by {0} are removed successfully."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success), ListArgs[0]);
+                TextWriters.Write(Translate.DoTranslation("All mail made by {0} are removed successfully."), true, KernelColorTools.ColTypes.Success, ListArgs[0]);
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Failed to remove all mail made by {0}."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[0]);
+                TextWriters.Write(Translate.DoTranslation("Failed to remove all mail made by {0}."), true, KernelColorTools.ColTypes.Error, ListArgs[0]);
             }
         }
 

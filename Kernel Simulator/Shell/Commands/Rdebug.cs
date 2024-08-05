@@ -20,7 +20,7 @@
 using KS.ConsoleBase.Colors;
 using KS.Kernel;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Network.RemoteDebug;
 using KS.Shell.ShellBase.Commands;
 
@@ -44,7 +44,7 @@ namespace KS.Shell.Commands
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Debugging not enabled."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("Debugging not enabled."), true, KernelColorTools.ColTypes.Error);
             }
         }
 

@@ -23,11 +23,11 @@ using System.Net.NetworkInformation;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Reflection;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
-using KS.Misc.Writers.FancyWriters;
 using KS.Network;
 using KS.Shell.ShellBase.Commands;
+using Terminaux.Writer.FancyWriters;
 
 namespace KS.Shell.Commands
 {
@@ -57,23 +57,23 @@ namespace KS.Shell.Commands
                             var PingReplied = NetworkTools.PingAddress(PingedAddress);
                             if (PingReplied.Status == IPStatus.Success)
                             {
-                                TextWriterColor.Write("[{1}] " + Translate.DoTranslation("Ping succeeded in {0} ms."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), PingReplied.RoundtripTime, CurrentTime);
+                                TextWriters.Write("[{1}] " + Translate.DoTranslation("Ping succeeded in {0} ms."), true, KernelColorTools.ColTypes.Neutral, PingReplied.RoundtripTime, CurrentTime);
                             }
                             else
                             {
-                                TextWriterColor.Write("[{2}] " + Translate.DoTranslation("Failed to ping {0}: {1}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), PingedAddress, PingReplied.Status, CurrentTime);
+                                TextWriters.Write("[{2}] " + Translate.DoTranslation("Failed to ping {0}: {1}"), true, KernelColorTools.ColTypes.Error, PingedAddress, PingReplied.Status, CurrentTime);
                             }
                         }
                         catch (Exception ex)
                         {
-                            TextWriterColor.Write("[{2}] " + Translate.DoTranslation("Failed to ping {0}: {1}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), PingedAddress, ex.Message, CurrentTime);
+                            TextWriters.Write("[{2}] " + Translate.DoTranslation("Failed to ping {0}: {1}"), true, KernelColorTools.ColTypes.Error, PingedAddress, ex.Message, CurrentTime);
                             DebugWriter.WStkTrc(ex);
                         }
                     }
                 }
                 else
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Address may not be empty."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(Translate.DoTranslation("Address may not be empty."), true, KernelColorTools.ColTypes.Error);
                 }
             }
         }

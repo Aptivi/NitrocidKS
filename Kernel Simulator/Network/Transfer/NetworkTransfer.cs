@@ -31,7 +31,7 @@ using KS.Kernel;
 using KS.Languages;
 using KS.Misc.Notifiers;
 using KS.Misc.Probers;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 
@@ -132,7 +132,7 @@ namespace KS.Network.Transfer
             // We're done downloading. Check to see if it's actually an error
             NetworkTools.TransferFinished = false;
             if (ShowProgress & !SuppressDownloadMessage)
-                TextWriterColor.WritePlain("", true);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
             SuppressDownloadMessage = false;
             if (IsError)
             {
@@ -202,7 +202,7 @@ namespace KS.Network.Transfer
             // We're done uploading. Check to see if it's actually an error
             NetworkTools.TransferFinished = false;
             if (ShowProgress & !SuppressUploadMessage)
-                TextWriterColor.WritePlain("", true);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
             SuppressUploadMessage = false;
             if (IsError)
             {
@@ -271,7 +271,7 @@ namespace KS.Network.Transfer
             // We're done downloading. Check to see if it's actually an error
             NetworkTools.TransferFinished = false;
             if (ShowProgress & !SuppressDownloadMessage)
-                TextWriterColor.WritePlain("", true);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
             SuppressDownloadMessage = false;
             if (IsError)
             {
@@ -338,7 +338,7 @@ namespace KS.Network.Transfer
             // We're done uploading. Check to see if it's actually an error
             NetworkTools.TransferFinished = false;
             if (ShowProgress & !SuppressUploadMessage)
-                TextWriterColor.WritePlain("", true);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
             SuppressUploadMessage = false;
             if (IsError)
             {
@@ -429,11 +429,11 @@ namespace KS.Network.Transfer
                         {
                             if (!string.IsNullOrWhiteSpace(DownloadPercentagePrint))
                             {
-                                TextWriterWhereColor.WriteWhere(PlaceParse.ProbePlaces(DownloadPercentagePrint), 0, ConsoleWrapper.CursorTop, false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), TransferInfo.DoneSize.FileSizeToString(), TransferInfo.FileSize.FileSizeToString(), Progress);
+                                TextWriters.WriteWhere(PlaceParse.ProbePlaces(DownloadPercentagePrint), 0, ConsoleWrapper.CursorTop, false, KernelColorTools.ColTypes.Neutral, TransferInfo.DoneSize.FileSizeToString(), TransferInfo.FileSize.FileSizeToString(), Progress);
                             }
                             else
                             {
-                                TextWriterWhereColor.WriteWhere(Translate.DoTranslation("{0} of {1} downloaded.") + " | {2}%", 0, ConsoleWrapper.CursorTop, false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), TransferInfo.DoneSize.FileSizeToString(), TransferInfo.FileSize.FileSizeToString(), Progress);
+                                TextWriters.WriteWhere(Translate.DoTranslation("{0} of {1} downloaded.") + " | {2}%", 0, ConsoleWrapper.CursorTop, false, KernelColorTools.ColTypes.Neutral, TransferInfo.DoneSize.FileSizeToString(), TransferInfo.FileSize.FileSizeToString(), Progress);
                             }
                             ConsoleBase.ConsoleExtensions.ClearLineToRight();
                         }

@@ -20,11 +20,11 @@
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Splash;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
-using KS.Misc.Writers.FancyWriters;
 using SpecProbe;
 using SpecProbe.Parts.Types;
+using Terminaux.Writer.FancyWriters;
 
 namespace KS.Hardware
 {
@@ -120,16 +120,16 @@ namespace KS.Hardware
                         {
                             foreach (var processor in hardwareList)
                             {
-                                TextWriterColor.Write(Translate.DoTranslation("Processor name:"), false, KernelColorTools.ColTypes.ListEntry);
-                                TextWriterColor.Write($" {processor.Name}", true, KernelColorTools.ColTypes.ListValue);
-                                TextWriterColor.Write(Translate.DoTranslation("Processor vendor:"), false, KernelColorTools.ColTypes.ListEntry);
-                                TextWriterColor.Write($" {processor.Vendor} [CPUID: {processor.CpuidVendor}]", true, KernelColorTools.ColTypes.ListValue);
-                                TextWriterColor.Write(Translate.DoTranslation("Clock speed:"), false, KernelColorTools.ColTypes.ListEntry);
-                                TextWriterColor.Write($" {processor.Speed} MHz", true, KernelColorTools.ColTypes.ListValue);
-                                TextWriterColor.Write(Translate.DoTranslation("Total cores:"), false, KernelColorTools.ColTypes.ListEntry);
-                                TextWriterColor.Write($" {processor.TotalCores} ({processor.ProcessorCores} x{processor.CoresForEachCore})", true, KernelColorTools.ColTypes.ListValue);
-                                TextWriterColor.Write(Translate.DoTranslation("Cache sizes:"), false, KernelColorTools.ColTypes.ListEntry);
-                                TextWriterColor.Write($" {processor.L1CacheSize} L1, {processor.L2CacheSize} L2, {processor.L3CacheSize} L3", true, KernelColorTools.ColTypes.ListValue);
+                                TextWriters.Write(Translate.DoTranslation("Processor name:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriters.Write($" {processor.Name}", true, KernelColorTools.ColTypes.ListValue);
+                                TextWriters.Write(Translate.DoTranslation("Processor vendor:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriters.Write($" {processor.Vendor} [CPUID: {processor.CpuidVendor}]", true, KernelColorTools.ColTypes.ListValue);
+                                TextWriters.Write(Translate.DoTranslation("Clock speed:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriters.Write($" {processor.Speed} MHz", true, KernelColorTools.ColTypes.ListValue);
+                                TextWriters.Write(Translate.DoTranslation("Total cores:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriters.Write($" {processor.TotalCores} ({processor.ProcessorCores} x{processor.CoresForEachCore})", true, KernelColorTools.ColTypes.ListValue);
+                                TextWriters.Write(Translate.DoTranslation("Cache sizes:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriters.Write($" {processor.L1CacheSize} L1, {processor.L2CacheSize} L2, {processor.L3CacheSize} L3", true, KernelColorTools.ColTypes.ListValue);
                             }
                         }
                         break;
@@ -141,12 +141,12 @@ namespace KS.Hardware
                         {
                             foreach (var ram in hardwareList)
                             {
-                                TextWriterColor.Write(Translate.DoTranslation("Total usable memory:"), false, KernelColorTools.ColTypes.ListEntry);
-                                TextWriterColor.Write($" {ram.TotalMemory}", true, KernelColorTools.ColTypes.ListValue);
-                                TextWriterColor.Write(Translate.DoTranslation("Total memory:"), false, KernelColorTools.ColTypes.ListEntry);
-                                TextWriterColor.Write($" {ram.TotalPhysicalMemory}", true, KernelColorTools.ColTypes.ListValue);
-                                TextWriterColor.Write(Translate.DoTranslation("Reserved memory:"), false, KernelColorTools.ColTypes.ListEntry);
-                                TextWriterColor.Write($" {ram.SystemReservedMemory}", true, KernelColorTools.ColTypes.ListValue);
+                                TextWriters.Write(Translate.DoTranslation("Total usable memory:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriters.Write($" {ram.TotalMemory}", true, KernelColorTools.ColTypes.ListValue);
+                                TextWriters.Write(Translate.DoTranslation("Total memory:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriters.Write($" {ram.TotalPhysicalMemory}", true, KernelColorTools.ColTypes.ListValue);
+                                TextWriters.Write(Translate.DoTranslation("Reserved memory:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriters.Write($" {ram.SystemReservedMemory}", true, KernelColorTools.ColTypes.ListValue);
                             }
                         }
                         break;
@@ -158,18 +158,18 @@ namespace KS.Hardware
                         {
                             foreach (var hdd in hardwareList)
                             {
-                                TextWriterColor.Write(Translate.DoTranslation("Disk number:"), false, KernelColorTools.ColTypes.ListEntry);
-                                TextWriterColor.Write($" {hdd.HardDiskNumber}", true, KernelColorTools.ColTypes.ListValue);
-                                TextWriterColor.Write(Translate.DoTranslation("Disk size:"), false, KernelColorTools.ColTypes.ListEntry);
-                                TextWriterColor.Write($" {hdd.HardDiskSize}", true, KernelColorTools.ColTypes.ListValue);
-                                TextWriterColor.Write(Translate.DoTranslation("Partitions:"), false, KernelColorTools.ColTypes.ListEntry);
-                                TextWriterColor.Write($" {hdd.PartitionCount}", true, KernelColorTools.ColTypes.ListValue);
+                                TextWriters.Write(Translate.DoTranslation("Disk number:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriters.Write($" {hdd.HardDiskNumber}", true, KernelColorTools.ColTypes.ListValue);
+                                TextWriters.Write(Translate.DoTranslation("Disk size:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriters.Write($" {hdd.HardDiskSize}", true, KernelColorTools.ColTypes.ListValue);
+                                TextWriters.Write(Translate.DoTranslation("Partitions:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriters.Write($" {hdd.PartitionCount}", true, KernelColorTools.ColTypes.ListValue);
                                 foreach (var part in hdd.Partitions)
                                 {
-                                    TextWriterColor.Write(Translate.DoTranslation("Partition number:"), false, KernelColorTools.ColTypes.ListEntry);
-                                    TextWriterColor.Write($" {part.PartitionNumber}", true, KernelColorTools.ColTypes.ListValue);
-                                    TextWriterColor.Write(Translate.DoTranslation("Partition size:"), false, KernelColorTools.ColTypes.ListEntry);
-                                    TextWriterColor.Write($" {part.PartitionSize}", true, KernelColorTools.ColTypes.ListValue);
+                                    TextWriters.Write(Translate.DoTranslation("Partition number:"), false, KernelColorTools.ColTypes.ListEntry);
+                                    TextWriters.Write($" {part.PartitionNumber}", true, KernelColorTools.ColTypes.ListValue);
+                                    TextWriters.Write(Translate.DoTranslation("Partition size:"), false, KernelColorTools.ColTypes.ListEntry);
+                                    TextWriters.Write($" {part.PartitionSize}", true, KernelColorTools.ColTypes.ListValue);
                                 }
                             }
                         }
@@ -182,14 +182,14 @@ namespace KS.Hardware
                         {
                             foreach (var gpu in hardwareList)
                             {
-                                TextWriterColor.Write(Translate.DoTranslation("Graphics card name:"), false, KernelColorTools.ColTypes.ListEntry);
-                                TextWriterColor.Write($" {gpu.VideoCardName}", true, KernelColorTools.ColTypes.ListValue);
+                                TextWriters.Write(Translate.DoTranslation("Graphics card name:"), false, KernelColorTools.ColTypes.ListEntry);
+                                TextWriters.Write($" {gpu.VideoCardName}", true, KernelColorTools.ColTypes.ListValue);
                             }
                         }
                         break;
                     }
                 default:
-                    TextWriterColor.Write(Translate.DoTranslation("Either the hardware type {0} is not probed, or is not valid."), true, KernelColorTools.ColTypes.Error, hardwareType);
+                    TextWriters.Write(Translate.DoTranslation("Either the hardware type {0} is not probed, or is not valid."), true, KernelColorTools.ColTypes.Error, hardwareType);
                     break;
             }
         }

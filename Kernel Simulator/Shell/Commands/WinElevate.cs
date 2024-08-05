@@ -21,7 +21,7 @@ using KS.ConsoleBase.Colors;
 using KS.Kernel;
 using KS.Languages;
 using KS.Login;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 using SpecProbe.Software.Platform;
 
@@ -36,16 +36,16 @@ namespace KS.Shell.Commands
             {
                 bool isAdmin = WindowsUserTools.IsAdministrator();
                 if (isAdmin)
-                    TextWriterColor.Write(Translate.DoTranslation("You're already running the elevated Nitrocid session!"), true, KernelColorTools.ColTypes.Neutral);
+                    TextWriters.Write(Translate.DoTranslation("You're already running the elevated Nitrocid session!"), true, KernelColorTools.ColTypes.Neutral);
                 else
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Elevating your Nitrocid session..."), true, KernelColorTools.ColTypes.Neutral);
+                    TextWriters.Write(Translate.DoTranslation("Elevating your Nitrocid session..."), true, KernelColorTools.ColTypes.Neutral);
                     Flags.rebootingElevated = true;
                     KernelTools.PowerManage(PowerMode.Shutdown);
                 }
             }
             else
-                TextWriterColor.Write(Translate.DoTranslation("This command is unavailable for your platform."), true, KernelColorTools.ColTypes.Neutral);
+                TextWriters.Write(Translate.DoTranslation("This command is unavailable for your platform."), true, KernelColorTools.ColTypes.Neutral);
         }
 
     }

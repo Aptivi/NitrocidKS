@@ -30,7 +30,7 @@ using KS.Files.Querying;
 using KS.Kernel;
 using KS.Languages;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 
 namespace KS.Misc.Calendar.Events
@@ -120,8 +120,8 @@ namespace KS.Misc.Calendar.Events
         {
             foreach (EventInfo EventInstance in CalendarEvents)
             {
-                TextWriterColor.Write("- {0}: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), EventInstance.EventDate);
-                TextWriterColor.Write(EventInstance.EventTitle, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+                TextWriters.Write("- {0}: ", false, KernelColorTools.ColTypes.ListEntry, EventInstance.EventDate);
+                TextWriters.Write(EventInstance.EventTitle, true, KernelColorTools.ColTypes.ListValue);
             }
         }
 

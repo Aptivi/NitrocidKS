@@ -20,8 +20,9 @@
 using System;
 using System.Linq;
 using KS.ManPages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
+using Terminaux.Writer.ConsoleWriters;
 
 namespace KS.Shell.Commands
 {

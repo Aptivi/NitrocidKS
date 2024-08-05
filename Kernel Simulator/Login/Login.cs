@@ -27,11 +27,12 @@ using KS.Languages;
 using KS.Misc.Encryption;
 using KS.Misc.Probers;
 using KS.Misc.Screensaver;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Network.RSS;
 using KS.Shell.ShellBase.Shells;
 using Terminaux.Base;
+using Terminaux.Writer.ConsoleWriters;
 
 namespace KS.Login
 {
@@ -111,7 +112,7 @@ namespace KS.Login
                 DebugWriter.Wdbg(DebugLevel.I, "showMOTDOnceFlag = {0}, showMOTD = {1}", Flags.ShowMOTDOnceFlag, Flags.ShowMOTD);
                 if (Flags.ShowMOTDOnceFlag == true & Flags.ShowMOTD == true)
                 {
-                    TextWriterColor.Write(Kernel.Kernel.NewLine + PlaceParse.ProbePlaces(Kernel.Kernel.MOTDMessage), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Banner));
+                    TextWriters.Write(Kernel.Kernel.NewLine + PlaceParse.ProbePlaces(Kernel.Kernel.MOTDMessage), true, KernelColorTools.ColTypes.Banner);
                 }
                 Flags.ShowMOTDOnceFlag = false;
 
@@ -126,7 +127,7 @@ namespace KS.Login
                     // Prompt user to choose a user
                     while (AnswerUserInt == 0)
                     {
-                        TextWriterColor.Write(">> ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                        TextWriters.Write(">> ", false, KernelColorTools.ColTypes.Input);
                         string AnswerUserString = Input.ReadLine();
 
                         // Parse input
@@ -144,18 +145,18 @@ namespace KS.Login
                                 else
                                 {
                                     DebugWriter.Wdbg(DebugLevel.W, "User can't log in. (User is in disabled list)");
-                                    TextWriterColor.Write(Translate.DoTranslation("User is disabled."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                                    TextWriters.Write(Translate.DoTranslation("User is disabled."), true, KernelColorTools.ColTypes.Error);
                                     Kernel.Kernel.KernelEventManager.RaiseLoginError(SelectedUser, LoginErrorReasons.Disabled);
                                 }
                             }
                             else
                             {
-                                TextWriterColor.Write(Translate.DoTranslation("The answer must be numeric."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                                TextWriters.Write(Translate.DoTranslation("The answer must be numeric."), true, KernelColorTools.ColTypes.Error);
                             }
                         }
                         else
                         {
-                            TextWriterColor.Write(Translate.DoTranslation("Please enter a user number."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                            TextWriters.Write(Translate.DoTranslation("Please enter a user number."), true, KernelColorTools.ColTypes.Error);
                         }
                     }
                 }
@@ -163,16 +164,16 @@ namespace KS.Login
                 {
                     // Generate user list
                     if (Flags.ShowAvailableUsers)
-                        TextWriterColor.Write(Translate.DoTranslation("Available usernames: {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), string.Join(", ", UsersList));
+                        TextWriters.Write(Translate.DoTranslation("Available usernames: {0}"), true, KernelColorTools.ColTypes.Neutral, string.Join(", ", UsersList));
 
                     // Prompt user to login
                     if (!string.IsNullOrWhiteSpace(UsernamePrompt))
                     {
-                        TextWriterColor.Write(PlaceParse.ProbePlaces(UsernamePrompt), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                        TextWriters.Write(PlaceParse.ProbePlaces(UsernamePrompt), false, KernelColorTools.ColTypes.Input);
                     }
                     else
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("Username: "), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                        TextWriters.Write(Translate.DoTranslation("Username: "), false, KernelColorTools.ColTypes.Input);
                     }
                     string answeruser = Input.ReadLine();
 
@@ -180,13 +181,13 @@ namespace KS.Login
                     if (answeruser.Contains(" "))
                     {
                         DebugWriter.Wdbg(DebugLevel.W, "Spaces found in username.");
-                        TextWriterColor.Write(Translate.DoTranslation("Spaces are not allowed."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(Translate.DoTranslation("Spaces are not allowed."), true, KernelColorTools.ColTypes.Error);
                         Kernel.Kernel.KernelEventManager.RaiseLoginError(answeruser, LoginErrorReasons.Spaces);
                     }
                     else if (answeruser.IndexOfAny("[~`!@#$%^&*()-+=|{}':;.,<>/?]".ToCharArray()) != -1)
                     {
                         DebugWriter.Wdbg(DebugLevel.W, "Unknown characters found in username.");
-                        TextWriterColor.Write(Translate.DoTranslation("Special characters are not allowed."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(Translate.DoTranslation("Special characters are not allowed."), true, KernelColorTools.ColTypes.Error);
                         Kernel.Kernel.KernelEventManager.RaiseLoginError(answeruser, LoginErrorReasons.SpecialCharacters);
                     }
                     else if (Users.ContainsKey(answeruser))
@@ -200,14 +201,14 @@ namespace KS.Login
                         else
                         {
                             DebugWriter.Wdbg(DebugLevel.W, "User can't log in. (User is in disabled list)");
-                            TextWriterColor.Write(Translate.DoTranslation("User is disabled."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                            TextWriters.Write(Translate.DoTranslation("User is disabled."), true, KernelColorTools.ColTypes.Error);
                             Kernel.Kernel.KernelEventManager.RaiseLoginError(answeruser, LoginErrorReasons.Disabled);
                         }
                     }
                     else
                     {
                         DebugWriter.Wdbg(DebugLevel.E, "Username not found.");
-                        TextWriterColor.Write(Translate.DoTranslation("Wrong username."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(Translate.DoTranslation("Wrong username."), true, KernelColorTools.ColTypes.Error);
                         Kernel.Kernel.KernelEventManager.RaiseLoginError(answeruser, LoginErrorReasons.NotFound);
                     }
                 }
@@ -241,11 +242,11 @@ namespace KS.Login
                     DebugWriter.Wdbg(DebugLevel.I, "Password not empty");
                     if (!string.IsNullOrWhiteSpace(PasswordPrompt))
                     {
-                        TextWriterColor.Write(PlaceParse.ProbePlaces(PasswordPrompt), false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                        TextWriters.Write(PlaceParse.ProbePlaces(PasswordPrompt), false, KernelColorTools.ColTypes.Input);
                     }
                     else
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("{0}'s password: "), false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input), usernamerequested);
+                        TextWriters.Write(Translate.DoTranslation("{0}'s password: "), false, KernelColorTools.ColTypes.Input, usernamerequested);
                     }
 
                     // Get input
@@ -266,7 +267,7 @@ namespace KS.Login
                     else
                     {
                         DebugWriter.Wdbg(DebugLevel.I, "Passowrd written wrong...");
-                        TextWriterColor.Write(Translate.DoTranslation("Wrong password."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(Translate.DoTranslation("Wrong password."), true, KernelColorTools.ColTypes.Error);
                         Kernel.Kernel.KernelEventManager.RaiseLoginError(usernamerequested, LoginErrorReasons.WrongPassword);
                         if (!Flags.Maintenance)
                         {
@@ -313,7 +314,7 @@ namespace KS.Login
             DebugWriter.Wdbg(DebugLevel.I, "Lock released.");
             Flags.ShowMOTDOnceFlag = true;
             if (Flags.ShowMAL)
-                TextWriterColor.Write(PlaceParse.ProbePlaces(Kernel.Kernel.MAL), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Banner));
+                TextWriters.Write(PlaceParse.ProbePlaces(Kernel.Kernel.MAL), true, KernelColorTools.ColTypes.Banner);
             RSSTools.ShowHeadlineLogin();
 
             // Fire event PostLogin

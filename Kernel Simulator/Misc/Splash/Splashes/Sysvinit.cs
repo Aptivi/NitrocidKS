@@ -18,7 +18,7 @@
 //
 using System.Threading;
 using KS.ConsoleBase.Colors;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 
@@ -72,8 +72,8 @@ namespace KS.Misc.Splash.Splashes
         public void Report(int Progress, string ProgressReport, params object[] Vars)
         {
             if (!Beginning)
-                TextWriterColor.Write(".", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-            TextWriterColor.Write($"{ProgressReport}:", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), Vars);
+                TextWriters.Write(".", true, KernelColorTools.ColTypes.Neutral);
+            TextWriters.Write($"{ProgressReport}:", false, KernelColorTools.ColTypes.Neutral, Vars);
             Beginning = false;
         }
 

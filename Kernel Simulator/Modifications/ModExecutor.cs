@@ -21,7 +21,7 @@ using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Login;
 using KS.Misc.Text;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
 using KS.Shell.ShellBase.Shells;
@@ -101,7 +101,7 @@ namespace KS.Modifications
                             {
                                 // User wasn't authorized.
                                 DebugWriter.Wdbg(DebugLevel.E, "User {0} doesn't have permission to use {1} from {2}!", Login.Login.CurrentUser.Username, parts[0], ModPart);
-                                TextWriterColor.Write(Translate.DoTranslation("You don't have permission to use {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), parts[0]);
+                                TextWriters.Write(Translate.DoTranslation("You don't have permission to use {0}"), true, KernelColorTools.ColTypes.Error, parts[0]);
                             }
                         }
                         else

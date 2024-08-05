@@ -21,7 +21,7 @@ using KS.ConsoleBase.Colors;
 using KS.Files.Folders;
 using KS.Files.Read;
 using KS.Kernel;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 
 namespace KS.Files.Print
 {
@@ -53,9 +53,9 @@ namespace KS.Files.Print
                 {
                     if (PrintLineNumbers)
                     {
-                        TextWriterColor.Write("{0,4}: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), ContentIndex + 1);
+                        TextWriters.Write("{0,4}: ", false, KernelColorTools.ColTypes.ListEntry, ContentIndex + 1);
                     }
-                    TextWriterColor.Write(Contents[ContentIndex], true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                    TextWriters.Write(Contents[ContentIndex], true, KernelColorTools.ColTypes.Neutral);
                 }
             }
         }

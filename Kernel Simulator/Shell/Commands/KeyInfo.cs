@@ -21,7 +21,7 @@ using System;
 using KS.ConsoleBase.Colors;
 using KS.ConsoleBase.Inputs;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Shell.Commands
 {
@@ -30,31 +30,31 @@ namespace KS.Shell.Commands
 
         public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
         {
-            TextWriterColor.Write(Translate.DoTranslation("Enter a key or a combination of keys to display its information."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(Translate.DoTranslation("Enter a key or a combination of keys to display its information."), true, KernelColorTools.ColTypes.Neutral);
             var KeyPress = Input.DetectKeypress();
 
             // Pressed key
-            TextWriterColor.Write("- " + Translate.DoTranslation("Pressed key") + ": ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(KeyPress.Key.ToString(), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+            TextWriters.Write("- " + Translate.DoTranslation("Pressed key") + ": ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(KeyPress.Key.ToString(), true, KernelColorTools.ColTypes.ListValue);
 
             // If the pressed key is a control key, don't write the actual key char so as not to corrupt the output
             if (!char.IsControl(KeyPress.KeyChar))
             {
-                TextWriterColor.Write("- " + Translate.DoTranslation("Pressed key character") + ": ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                TextWriterColor.Write(Convert.ToString(KeyPress.KeyChar), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+                TextWriters.Write("- " + Translate.DoTranslation("Pressed key character") + ": ", false, KernelColorTools.ColTypes.ListEntry);
+                TextWriters.Write(Convert.ToString(KeyPress.KeyChar), true, KernelColorTools.ColTypes.ListValue);
             }
 
             // Pressed key character code
-            TextWriterColor.Write("- " + Translate.DoTranslation("Pressed key character code") + ": ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write($"0x{Convert.ToInt32(KeyPress.KeyChar):X2} [{Convert.ToInt32(KeyPress.KeyChar)}]", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+            TextWriters.Write("- " + Translate.DoTranslation("Pressed key character code") + ": ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write($"0x{Convert.ToInt32(KeyPress.KeyChar):X2} [{Convert.ToInt32(KeyPress.KeyChar)}]", true, KernelColorTools.ColTypes.ListValue);
 
             // Pressed modifiers
-            TextWriterColor.Write("- " + Translate.DoTranslation("Pressed modifiers") + ": ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(KeyPress.Modifiers.ToString(), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+            TextWriters.Write("- " + Translate.DoTranslation("Pressed modifiers") + ": ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(KeyPress.Modifiers.ToString(), true, KernelColorTools.ColTypes.ListValue);
 
             // Keyboard shortcut
-            TextWriterColor.Write("- " + Translate.DoTranslation("Keyboard shortcut") + ": ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write($"{string.Join(" +", KeyPress.Modifiers.ToString().Split(Convert.ToChar(", ")))} + {KeyPress.Key}", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+            TextWriters.Write("- " + Translate.DoTranslation("Keyboard shortcut") + ": ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write($"{string.Join(" +", KeyPress.Modifiers.ToString().Split(Convert.ToChar(", ")))} + {KeyPress.Key}", true, KernelColorTools.ColTypes.ListValue);
         }
 
     }

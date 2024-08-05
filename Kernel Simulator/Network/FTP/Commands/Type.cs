@@ -20,7 +20,7 @@
 using FluentFTP;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Network.FTP.Commands
 {
@@ -34,19 +34,19 @@ namespace KS.Network.FTP.Commands
                 FTPShellCommon.ClientFTP.Config.DownloadDataType = FtpDataType.ASCII;
                 FTPShellCommon.ClientFTP.Config.ListingDataType = FtpDataType.ASCII;
                 FTPShellCommon.ClientFTP.Config.UploadDataType = FtpDataType.ASCII;
-                TextWriterColor.Write(Translate.DoTranslation("Data type set to ASCII!"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success));
-                TextWriterColor.Write(Translate.DoTranslation("Beware that most files won't download or upload properly using this mode, so we highly recommend using the Binary mode on most situations."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
+                TextWriters.Write(Translate.DoTranslation("Data type set to ASCII!"), true, KernelColorTools.ColTypes.Success);
+                TextWriters.Write(Translate.DoTranslation("Beware that most files won't download or upload properly using this mode, so we highly recommend using the Binary mode on most situations."), true, KernelColorTools.ColTypes.Warning);
             }
             else if (ListArgs[0].ToLower() == "b")
             {
                 FTPShellCommon.ClientFTP.Config.DownloadDataType = FtpDataType.Binary;
                 FTPShellCommon.ClientFTP.Config.ListingDataType = FtpDataType.Binary;
                 FTPShellCommon.ClientFTP.Config.UploadDataType = FtpDataType.Binary;
-                TextWriterColor.Write(Translate.DoTranslation("Data type set to Binary!"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success));
+                TextWriters.Write(Translate.DoTranslation("Data type set to Binary!"), true, KernelColorTools.ColTypes.Success);
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Invalid data type."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("Invalid data type."), true, KernelColorTools.ColTypes.Error);
             }
         }
 

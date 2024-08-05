@@ -17,8 +17,9 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using KS.Misc.Writers.FancyWriters;
 using KS.Shell.ShellBase.Commands;
+using Terminaux.Writer.FancyWriters;
+
 namespace KS.TestShell.Commands
 {
     class Test_PrintSepCommand : CommandExecutor, ICommand

@@ -21,7 +21,7 @@ using System;
 using System.Linq;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Shell.Commands
 {
@@ -32,11 +32,11 @@ namespace KS.Shell.Commands
         {
             if (ListSwitchesOnly.Contains("-list"))
             {
-                TextWriterColor.Write(Translate.DoTranslation("Available languages:"), true, KernelColorTools.ColTypes.ListTitle);
+                TextWriters.Write(Translate.DoTranslation("Available languages:"), true, KernelColorTools.ColTypes.ListTitle);
                 foreach (string Language in LanguageManager.Languages.Keys)
                 {
-                    TextWriterColor.Write("- {0}: ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), Language);
-                    TextWriterColor.Write(LanguageManager.Languages[Language].FullLanguageName, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+                    TextWriters.Write("- {0}: ", false, KernelColorTools.ColTypes.ListEntry, Language);
+                    TextWriters.Write(LanguageManager.Languages[Language].FullLanguageName, true, KernelColorTools.ColTypes.ListValue);
                 }
             }
             else
@@ -54,15 +54,15 @@ namespace KS.Shell.Commands
 
         public override void HelpHelper()
         {
-            TextWriterColor.Write(Translate.DoTranslation("This command has the below switches that change how it works:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-            TextWriterColor.Write("  -alwaystransliterated: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Always use the transliterated version"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-            TextWriterColor.Write("  -alwaystranslated: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Always use the translated version"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-            TextWriterColor.Write("  -force: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Force switching language"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
-            TextWriterColor.Write("  -list: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Translate.DoTranslation("Lists available languages"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+            TextWriters.Write(Translate.DoTranslation("This command has the below switches that change how it works:"), true, KernelColorTools.ColTypes.Neutral);
+            TextWriters.Write("  -alwaystransliterated: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Always use the transliterated version"), true, KernelColorTools.ColTypes.ListValue);
+            TextWriters.Write("  -alwaystranslated: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Always use the translated version"), true, KernelColorTools.ColTypes.ListValue);
+            TextWriters.Write("  -force: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Force switching language"), true, KernelColorTools.ColTypes.ListValue);
+            TextWriters.Write("  -list: ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Translate.DoTranslation("Lists available languages"), true, KernelColorTools.ColTypes.ListValue);
         }
 
     }

@@ -21,10 +21,11 @@ using System;
 using System.Collections.Generic;
 using KS.ConsoleBase.Colors;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 using Terminaux.Colors;
+using Terminaux.Writer.ConsoleWriters;
 namespace KS.Misc.Screensaver.Displays
 {
     public static class TypoSettings
@@ -200,8 +201,8 @@ namespace KS.Misc.Screensaver.Displays
             ConsoleWrapper.CursorVisible = false;
 
             // Prepare display (make a paragraph indentation)
-            TextWriterColor.WritePlain("", true);
-            TextWriterColor.WritePlain("    ", false);
+            TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
+            TextWriterRaw.WritePlain("    ", false);
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop);
 
             // Get struck character and write it
@@ -272,12 +273,12 @@ namespace KS.Misc.Screensaver.Displays
 
                 // Write the final character to the console and wait
                 if (!(Convert.ToString(finalChar) == "\0"))
-                    TextWriterColor.WritePlain(Convert.ToString(finalChar), false);
+                    TextWriterRaw.WritePlain(Convert.ToString(finalChar), false);
                 ThreadManager.SleepNoBlock(WriteMs, ScreensaverDisplayer.ScreensaverDisplayerThread);
             }
 
             // Wait until retry
-            TextWriterColor.WritePlain("", true);
+            TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
             if (!ResizeSyncing)
                 ThreadManager.SleepNoBlock(TypoSettings.TypoWriteAgainDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
 

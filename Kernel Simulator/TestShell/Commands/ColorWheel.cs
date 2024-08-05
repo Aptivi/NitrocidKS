@@ -17,9 +17,9 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using KS.Misc.Writers.ConsoleWriters;
 using KS.Shell.ShellBase.Commands;
 using Terminaux.Inputs.Styles;
+using Terminaux.Writer.ConsoleWriters;
 
 namespace KS.TestShell.Commands
 {

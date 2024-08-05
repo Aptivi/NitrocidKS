@@ -23,7 +23,7 @@ using System.Linq;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Text;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using MailKit;
 using MimeKit;
@@ -92,11 +92,11 @@ namespace KS.Network.Mail.Directory
                     DebugWriter.Wdbg(DebugLevel.I, "From {0}: {1}", MsgFrom, MsgSubject);
 
                     // Display them now.
-                    TextWriterColor.Write($"- [{i + 1}/{MaxMessagesIndex + 1}] {MsgFrom}: ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-                    TextWriterColor.Write(MsgSubject, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+                    TextWriters.Write($"- [{i + 1}/{MaxMessagesIndex + 1}] {MsgFrom}: ", false, KernelColorTools.ColTypes.ListEntry);
+                    TextWriters.Write(MsgSubject, true, KernelColorTools.ColTypes.ListValue);
                     if (ShowPreview & !string.IsNullOrWhiteSpace(MsgPreview))
                     {
-                        TextWriterColor.Write(MsgPreview, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+                        TextWriters.Write(MsgPreview, true, KernelColorTools.ColTypes.ListValue);
                     }
                 }
                 else
@@ -195,7 +195,7 @@ namespace KS.Network.Mail.Directory
                                     DebugWriter.Wdbg(DebugLevel.I, "Removed.");
                                     Dir.Expunge();
                                     DebugWriter.Wdbg(DebugLevel.I, "Message {0} from {1} deleted from {2}. {3} messages remaining to parse.", DeletedMsgNumber, Sender, MailShellCommon.IMAP_CurrentDirectory, MailShellCommon.IMAP_Messages.Count() - SteppedMsgNumber);
-                                    TextWriterColor.Write(Translate.DoTranslation("Message {0} from {1} deleted from {2}. {3} messages remaining to parse."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), DeletedMsgNumber, Sender, MailShellCommon.IMAP_CurrentDirectory, MailShellCommon.IMAP_Messages.Count() - SteppedMsgNumber);
+                                    TextWriters.Write(Translate.DoTranslation("Message {0} from {1} deleted from {2}. {3} messages remaining to parse."), true, KernelColorTools.ColTypes.Neutral, DeletedMsgNumber, Sender, MailShellCommon.IMAP_CurrentDirectory, MailShellCommon.IMAP_Messages.Count() - SteppedMsgNumber);
                                 }
                                 else
                                 {
@@ -206,7 +206,7 @@ namespace KS.Network.Mail.Directory
                                     DebugWriter.Wdbg(DebugLevel.I, "Removed.");
                                     MailLogin.IMAP_Client.Inbox.Expunge();
                                     DebugWriter.Wdbg(DebugLevel.I, "Message {0} from {1} deleted from inbox. {2} messages remaining to parse.", DeletedMsgNumber, Sender, MailShellCommon.IMAP_Messages.Count() - SteppedMsgNumber);
-                                    TextWriterColor.Write(Translate.DoTranslation("Message {0} from {1} deleted from inbox. {2} messages remaining to parse."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), DeletedMsgNumber, Sender, MailShellCommon.IMAP_Messages.Count() - SteppedMsgNumber);
+                                    TextWriters.Write(Translate.DoTranslation("Message {0} from {1} deleted from inbox. {2} messages remaining to parse."), true, KernelColorTools.ColTypes.Neutral, DeletedMsgNumber, Sender, MailShellCommon.IMAP_Messages.Count() - SteppedMsgNumber);
                                 }
                                 DeletedMsgNumber += 1;
                             }
@@ -312,7 +312,7 @@ namespace KS.Network.Mail.Directory
                                     Dir.MoveTo(MessageId, TargetF);
                                     DebugWriter.Wdbg(DebugLevel.I, "Moved.");
                                     DebugWriter.Wdbg(DebugLevel.I, "Message {0} from {1} moved from {2}. {3} messages remaining to parse.", DeletedMsgNumber, Sender, MailShellCommon.IMAP_CurrentDirectory, MailShellCommon.IMAP_Messages.Count() - SteppedMsgNumber);
-                                    TextWriterColor.Write(Translate.DoTranslation("Message {0} from {1} moved from {2}. {3} messages remaining to parse."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), DeletedMsgNumber, Sender, MailShellCommon.IMAP_CurrentDirectory, MailShellCommon.IMAP_Messages.Count() - SteppedMsgNumber);
+                                    TextWriters.Write(Translate.DoTranslation("Message {0} from {1} moved from {2}. {3} messages remaining to parse."), true, KernelColorTools.ColTypes.Neutral, DeletedMsgNumber, Sender, MailShellCommon.IMAP_CurrentDirectory, MailShellCommon.IMAP_Messages.Count() - SteppedMsgNumber);
                                 }
                                 else
                                 {
@@ -323,7 +323,7 @@ namespace KS.Network.Mail.Directory
                                     MailLogin.IMAP_Client.Inbox.MoveTo(MessageId, TargetF);
                                     DebugWriter.Wdbg(DebugLevel.I, "Moved.");
                                     DebugWriter.Wdbg(DebugLevel.I, "Message {0} from {1} moved. {2} messages remaining to parse.", DeletedMsgNumber, Sender, MailShellCommon.IMAP_Messages.Count() - SteppedMsgNumber);
-                                    TextWriterColor.Write(Translate.DoTranslation("Message {0} from {1} moved. {2} messages remaining to parse."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), DeletedMsgNumber, Sender, MailShellCommon.IMAP_Messages.Count() - SteppedMsgNumber);
+                                    TextWriters.Write(Translate.DoTranslation("Message {0} from {1} moved. {2} messages remaining to parse."), true, KernelColorTools.ColTypes.Neutral, DeletedMsgNumber, Sender, MailShellCommon.IMAP_Messages.Count() - SteppedMsgNumber);
                                 }
                                 DeletedMsgNumber += 1;
                             }

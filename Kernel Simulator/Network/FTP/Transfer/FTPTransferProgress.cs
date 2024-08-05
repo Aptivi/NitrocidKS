@@ -20,7 +20,7 @@
 using System;
 using FluentFTP;
 using KS.ConsoleBase.Colors;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using Terminaux.Base;
 namespace KS.Network.FTP.Transfer
 {
@@ -52,7 +52,7 @@ namespace KS.Network.FTP.Transfer
                 FTPTransfer.ConsoleOriginalPosition_TOP = ConsoleWrapper.CursorTop;
                 if (FTPTransfer.progressFlag == true & Percentage.Progress != 100d)
                 {
-                    TextWriterColor.Write(" {0}% (ETA: {1}d {2}:{3}:{4} @ {5})", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Progress), Percentage.Progress.ToString("N2"), Percentage.ETA.Days, Percentage.ETA.Hours, Percentage.ETA.Minutes, Percentage.ETA.Seconds, Percentage.TransferSpeedToString());
+                    TextWriters.Write(" {0}% (ETA: {1}d {2}:{3}:{4} @ {5})", false, KernelColorTools.ColTypes.Progress, Percentage.Progress.ToString("N2"), Percentage.ETA.Days, Percentage.ETA.Hours, Percentage.ETA.Minutes, Percentage.ETA.Seconds, Percentage.TransferSpeedToString());
                     ConsoleBase.ConsoleExtensions.ClearLineToRight();
                 }
                 ConsoleWrapper.SetCursorPosition(FTPTransfer.ConsoleOriginalPosition_LEFT, FTPTransfer.ConsoleOriginalPosition_TOP);
@@ -75,8 +75,8 @@ namespace KS.Network.FTP.Transfer
                 FTPTransfer.ConsoleOriginalPosition_TOP = ConsoleWrapper.CursorTop;
                 if (FTPTransfer.progressFlag == true & Percentage.Progress != 100d)
                 {
-                    TextWriterColor.Write("- [{0}/{1}] {2}: ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), Percentage.FileIndex + 1, Percentage.FileCount, Percentage.RemotePath);
-                    TextWriterColor.Write("{0}% (ETA: {1}d {2}:{3}:{4} @ {5})", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Progress), Percentage.Progress.ToString("N2"), Percentage.ETA.Days, Percentage.ETA.Hours, Percentage.ETA.Minutes, Percentage.ETA.Seconds, Percentage.TransferSpeedToString());
+                    TextWriters.Write("- [{0}/{1}] {2}: ", false, KernelColorTools.ColTypes.ListEntry, Percentage.FileIndex + 1, Percentage.FileCount, Percentage.RemotePath);
+                    TextWriters.Write("{0}% (ETA: {1}d {2}:{3}:{4} @ {5})", false, KernelColorTools.ColTypes.Progress, Percentage.Progress.ToString("N2"), Percentage.ETA.Days, Percentage.ETA.Hours, Percentage.ETA.Minutes, Percentage.ETA.Seconds, Percentage.TransferSpeedToString());
                     ConsoleBase.ConsoleExtensions.ClearLineToRight();
                 }
                 ConsoleWrapper.SetCursorPosition(FTPTransfer.ConsoleOriginalPosition_LEFT, FTPTransfer.ConsoleOriginalPosition_TOP);

@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Misc.Editors.JsonShell.Commands
 {
@@ -29,7 +29,7 @@ namespace KS.Misc.Editors.JsonShell.Commands
         public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
         {
             JsonTools.JsonShell_RemoveProperty(ListArgs[0]);
-            TextWriterColor.Write(Translate.DoTranslation("Removed property."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success));
+            TextWriters.Write(Translate.DoTranslation("Removed property."), true, KernelColorTools.ColTypes.Success);
         }
 
     }

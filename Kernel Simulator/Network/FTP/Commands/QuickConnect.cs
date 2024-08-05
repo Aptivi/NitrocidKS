@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Network.FTP.Commands
 {
@@ -34,7 +34,7 @@ namespace KS.Network.FTP.Commands
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("You should disconnect from server before connecting to another server"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("You should disconnect from server before connecting to another server"), true, KernelColorTools.ColTypes.Error);
             }
         }
 

@@ -20,7 +20,7 @@
 using KS.ConsoleBase.Colors;
 using KS.Files.LineEndings;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 
 namespace KS.TestShell.Commands
@@ -31,7 +31,7 @@ namespace KS.TestShell.Commands
         public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
         {
             var Style = LineEndingsTools.GetLineEndingFromFile(ListArgsOnly[0]);
-            TextWriterColor.Write(Translate.DoTranslation("Newline style:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), Style.ToString());
+            TextWriters.Write(Translate.DoTranslation("Newline style:") + " {0}", true, KernelColorTools.ColTypes.Neutral, Style.ToString());
         }
 
     }

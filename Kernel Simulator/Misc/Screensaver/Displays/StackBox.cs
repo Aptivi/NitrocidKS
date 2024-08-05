@@ -22,10 +22,11 @@ using System.Collections.Generic;
 using KS.ConsoleBase.Colors;
 using KS.Misc.Text;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 using Terminaux.Colors;
+using Terminaux.Writer.ConsoleWriters;
 // Kernel Simulator  Copyright (C) 2018-2022  Aptivi
 // 
 // This file is part of Kernel Simulator
@@ -361,7 +362,7 @@ namespace KS.Misc.Screensaver.Displays
                             {
                                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Filling {0},{1}...", X, Y);
                                 ConsoleWrapper.SetCursorPosition(X, Y);
-                                TextWriterColor.WritePlain(" ", false);
+                                TextWriterRaw.WritePlain(" ", false);
                             }
                         }
                     }
@@ -371,10 +372,10 @@ namespace KS.Misc.Screensaver.Displays
                         for (int X = BoxStartX, loopTo2 = BoxEndX; X <= loopTo2; X++)
                         {
                             ConsoleWrapper.SetCursorPosition(X, BoxStartY);
-                            TextWriterColor.WritePlain(" ", false);
+                            TextWriterRaw.WritePlain(" ", false);
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Drawn upper border at {0}", X);
                             ConsoleWrapper.SetCursorPosition(X, BoxEndY);
-                            TextWriterColor.WritePlain(" ", false);
+                            TextWriterRaw.WritePlain(" ", false);
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Drawn lower border at {0}", X);
                         }
 
@@ -382,14 +383,14 @@ namespace KS.Misc.Screensaver.Displays
                         for (int Y = BoxStartY, loopTo3 = BoxEndY; Y <= loopTo3; Y++)
                         {
                             ConsoleWrapper.SetCursorPosition(BoxStartX, Y);
-                            TextWriterColor.WritePlain(" ", false);
+                            TextWriterRaw.WritePlain(" ", false);
                             if (!(BoxStartX >= ConsoleWrapper.WindowWidth - 1))
-                                TextWriterColor.WritePlain(" ", false);
+                                TextWriterRaw.WritePlain(" ", false);
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Drawn left border at {0}", Y);
                             ConsoleWrapper.SetCursorPosition(BoxEndX, Y);
-                            TextWriterColor.WritePlain(" ", false);
+                            TextWriterRaw.WritePlain(" ", false);
                             if (!(BoxEndX >= ConsoleWrapper.WindowWidth - 1))
-                                TextWriterColor.WritePlain(" ", false);
+                                TextWriterRaw.WritePlain(" ", false);
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Drawn right border at {0}", Y);
                         }
                     }

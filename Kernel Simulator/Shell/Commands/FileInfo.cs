@@ -23,11 +23,11 @@ using KS.Files;
 using KS.Files.LineEndings;
 using KS.Files.Querying;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
-using KS.Misc.Writers.FancyWriters;
 using KS.Shell.ShellBase.Commands;
 using KS.TimeDate;
+using Terminaux.Writer.FancyWriters;
 
 namespace KS.Shell.Commands
 {
@@ -45,19 +45,19 @@ namespace KS.Shell.Commands
                 {
                     var FileInfo = new FileInfo(FilePath);
                     var Style = LineEndingsTools.GetLineEndingFromFile(FilePath);
-                    TextWriterColor.Write(Translate.DoTranslation("Name: {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), FileInfo.Name);
-                    TextWriterColor.Write(Translate.DoTranslation("Full name: {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), Filesystem.NeutralizePath(FileInfo.FullName));
-                    TextWriterColor.Write(Translate.DoTranslation("File size: {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), FileInfo.Length.FileSizeToString());
-                    TextWriterColor.Write(Translate.DoTranslation("Creation time: {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), TimeDateRenderers.Render(FileInfo.CreationTime));
-                    TextWriterColor.Write(Translate.DoTranslation("Last access time: {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), TimeDateRenderers.Render(FileInfo.LastAccessTime));
-                    TextWriterColor.Write(Translate.DoTranslation("Last write time: {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), TimeDateRenderers.Render(FileInfo.LastWriteTime));
-                    TextWriterColor.Write(Translate.DoTranslation("Attributes: {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), FileInfo.Attributes);
-                    TextWriterColor.Write(Translate.DoTranslation("Where to find: {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), Filesystem.NeutralizePath(FileInfo.DirectoryName));
-                    TextWriterColor.Write(Translate.DoTranslation("Newline style:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), Style.ToString());
+                    TextWriters.Write(Translate.DoTranslation("Name: {0}"), true, KernelColorTools.ColTypes.Neutral, FileInfo.Name);
+                    TextWriters.Write(Translate.DoTranslation("Full name: {0}"), true, KernelColorTools.ColTypes.Neutral, Filesystem.NeutralizePath(FileInfo.FullName));
+                    TextWriters.Write(Translate.DoTranslation("File size: {0}"), true, KernelColorTools.ColTypes.Neutral, FileInfo.Length.FileSizeToString());
+                    TextWriters.Write(Translate.DoTranslation("Creation time: {0}"), true, KernelColorTools.ColTypes.Neutral, TimeDateRenderers.Render(FileInfo.CreationTime));
+                    TextWriters.Write(Translate.DoTranslation("Last access time: {0}"), true, KernelColorTools.ColTypes.Neutral, TimeDateRenderers.Render(FileInfo.LastAccessTime));
+                    TextWriters.Write(Translate.DoTranslation("Last write time: {0}"), true, KernelColorTools.ColTypes.Neutral, TimeDateRenderers.Render(FileInfo.LastWriteTime));
+                    TextWriters.Write(Translate.DoTranslation("Attributes: {0}"), true, KernelColorTools.ColTypes.Neutral, FileInfo.Attributes);
+                    TextWriters.Write(Translate.DoTranslation("Where to find: {0}"), true, KernelColorTools.ColTypes.Neutral, Filesystem.NeutralizePath(FileInfo.DirectoryName));
+                    TextWriters.Write(Translate.DoTranslation("Newline style:") + " {0}", true, KernelColorTools.ColTypes.Neutral, Style.ToString());
                 }
                 else
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Can't get information about nonexistent file."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(Translate.DoTranslation("Can't get information about nonexistent file."), true, KernelColorTools.ColTypes.Error);
                 }
             }
         }

@@ -20,7 +20,7 @@
 using System;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
 using KS.Shell.ShellBase.Shells;
@@ -44,12 +44,12 @@ namespace KS.Shell.Commands
             }
             catch (Kernel.Exceptions.SFTPShellException sftpex)
             {
-                TextWriterColor.Write(sftpex.Message, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(sftpex.Message, true, KernelColorTools.ColTypes.Error);
             }
             catch (Exception ex)
             {
                 DebugWriter.WStkTrc(ex);
-                TextWriterColor.Write(Translate.DoTranslation("Unknown SFTP shell error:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.Message);
+                TextWriters.Write(Translate.DoTranslation("Unknown SFTP shell error:") + " {0}", true, KernelColorTools.ColTypes.Error, ex.Message);
             }
         }
 

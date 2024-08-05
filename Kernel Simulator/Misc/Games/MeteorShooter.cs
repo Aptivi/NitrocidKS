@@ -23,8 +23,9 @@ using System.Threading;
 using KS.ConsoleBase.Inputs;
 using KS.Languages;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using Terminaux.Base;
+using Terminaux.Writer.ConsoleWriters;
 
 namespace KS.Misc.Games
 {

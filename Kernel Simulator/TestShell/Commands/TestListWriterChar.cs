@@ -20,8 +20,9 @@
 using System.Collections.Generic;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
+using Terminaux.Writer.ConsoleWriters;
 namespace KS.TestShell.Commands
 {
     class Test_TestListWriterCharCommand : CommandExecutor, ICommand
@@ -31,9 +32,9 @@ namespace KS.TestShell.Commands
         {
             var NormalCharList = new List<char>() { '1', '2', '3' };
             var ArrayCharList = new List<char[]>() { { new char[] { '1', '2', '3' } }, { new char[] { '1', '2', '3' } }, { new char[] { '1', '2', '3' } } };
-            TextWriterColor.Write(Translate.DoTranslation("Normal char list:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(Translate.DoTranslation("Normal char list:"), true, KernelColorTools.ColTypes.Neutral);
             ListWriterColor.WriteList(NormalCharList);
-            TextWriterColor.Write(Translate.DoTranslation("Array char list:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(Translate.DoTranslation("Array char list:"), true, KernelColorTools.ColTypes.Neutral);
             ListWriterColor.WriteList(ArrayCharList);
         }
 

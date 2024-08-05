@@ -21,7 +21,7 @@ using System;
 using KS.ConsoleBase.Colors;
 using KS.Files;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Network;
 using KS.Network.Transfer;
@@ -46,27 +46,27 @@ namespace KS.Shell.Commands
                     {
                         if (!URL.StartsWith(" "))
                         {
-                            TextWriterColor.Write(Translate.DoTranslation("Uploading {0} to {1}..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), FileName, URL);
+                            TextWriters.Write(Translate.DoTranslation("Uploading {0} to {1}..."), true, KernelColorTools.ColTypes.Neutral, FileName, URL);
                             if (NetworkTransfer.UploadFile(FileName, URL))
                             {
-                                TextWriterColor.Write(Translate.DoTranslation("Upload has completed."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                                TextWriters.Write(Translate.DoTranslation("Upload has completed."), true, KernelColorTools.ColTypes.Neutral);
                             }
                         }
                         else
                         {
-                            TextWriterColor.Write(Translate.DoTranslation("Specify the address"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                            TextWriters.Write(Translate.DoTranslation("Specify the address"), true, KernelColorTools.ColTypes.Error);
                         }
                     }
                     else
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("Please use \"ftp\" if you are going to upload files to the FTP server."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write(Translate.DoTranslation("Please use \"ftp\" if you are going to upload files to the FTP server."), true, KernelColorTools.ColTypes.Error);
                     }
                     return;
                 }
                 catch (Exception ex)
                 {
                     NetworkTools.TransferFinished = false;
-                    TextWriterColor.Write(Translate.DoTranslation("Upload failed in try {0}: {1}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), RetryCount, ex.Message);
+                    TextWriters.Write(Translate.DoTranslation("Upload failed in try {0}: {1}"), true, KernelColorTools.ColTypes.Error, RetryCount, ex.Message);
                     RetryCount += 1;
                     DebugWriter.Wdbg(DebugLevel.I, "Try count: {0}", RetryCount);
                     DebugWriter.WStkTrc(ex);

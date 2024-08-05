@@ -20,7 +20,7 @@
 using KS.ConsoleBase.Colors;
 using KS.Files.Read;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 
 namespace KS.TestShell.Commands
@@ -37,11 +37,11 @@ namespace KS.TestShell.Commands
             {
                 if (LocalizedStrings.ContainsKey(Text))
                 {
-                    TextWriterColor.Write("[+] {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success), Text);
+                    TextWriters.Write("[+] {0}", true, KernelColorTools.ColTypes.Success, Text);
                 }
                 else
                 {
-                    TextWriterColor.Write("[-] {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), Text);
+                    TextWriters.Write("[-] {0}", true, KernelColorTools.ColTypes.Neutral, Text);
                 }
             }
         }

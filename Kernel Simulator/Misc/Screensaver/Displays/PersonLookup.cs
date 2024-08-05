@@ -20,10 +20,11 @@
 using System;
 using System.Collections.Generic;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.TimeDate;
 using Terminaux.Base;
 using Textify.Data.Analysis.NameGen;
+using Terminaux.Writer.ConsoleWriters;
 
 namespace KS.Misc.Screensaver.Displays
 {

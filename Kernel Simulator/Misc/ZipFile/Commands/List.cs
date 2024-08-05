@@ -20,7 +20,7 @@
 using System.Collections.Generic;
 using FluentFTP.Helpers;
 using KS.ConsoleBase.Colors;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
 using SharpCompress.Archives.Zip;
@@ -45,14 +45,14 @@ namespace KS.Misc.ZipFile.Commands
             }
             foreach (ZipArchiveEntry Entry in Entries)
             {
-                TextWriterColor.Write("- {0}: ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry), Entry.Key);
+                TextWriters.Write("- {0}: ", false, KernelColorTools.ColTypes.ListEntry, Entry.Key);
                 if (!Entry.IsDirectory) // Entry is a file
                 {
-                    TextWriterColor.Write("{0} ({1})", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), Entry.CompressedSize.FileSizeToString(), Entry.Size.FileSizeToString());
+                    TextWriters.Write("{0} ({1})", true, KernelColorTools.ColTypes.ListValue, Entry.CompressedSize.FileSizeToString(), Entry.Size.FileSizeToString());
                 }
                 else
                 {
-                    TextWriterColor.WritePlain("", true);
+                    TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
                 }
             }
         }

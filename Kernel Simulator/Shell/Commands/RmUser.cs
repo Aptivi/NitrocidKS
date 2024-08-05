@@ -20,7 +20,7 @@
 using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Login;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Shell.Commands
 {
@@ -30,7 +30,7 @@ namespace KS.Shell.Commands
         public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
         {
             UserManagement.RemoveUser(ListArgs[0]);
-            TextWriterColor.Write(Translate.DoTranslation("User {0} removed."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ListArgs[0]);
+            TextWriters.Write(Translate.DoTranslation("User {0} removed."), true, KernelColorTools.ColTypes.Neutral, ListArgs[0]);
         }
 
     }

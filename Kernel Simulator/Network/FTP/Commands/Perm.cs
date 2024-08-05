@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Network.FTP.Filesystem;
 using KS.Shell.ShellBase.Commands;
 using System;
@@ -35,16 +35,16 @@ namespace KS.Network.FTP.Commands
             {
                 if (FTPFilesystem.FTPChangePermissions(ListArgs[0], Convert.ToInt32(ListArgs[1])))
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Permissions set successfully for file") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success), ListArgs[0]);
+                    TextWriters.Write(Translate.DoTranslation("Permissions set successfully for file") + " {0}", true, KernelColorTools.ColTypes.Success, ListArgs[0]);
                 }
                 else
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Failed to set permissions of {0} to {1}."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[0], ListArgs[1]);
+                    TextWriters.Write(Translate.DoTranslation("Failed to set permissions of {0} to {1}."), true, KernelColorTools.ColTypes.Error, ListArgs[0], ListArgs[1]);
                 }
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("You must connect to server before performing filesystem operations."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("You must connect to server before performing filesystem operations."), true, KernelColorTools.ColTypes.Error);
             }
         }
 

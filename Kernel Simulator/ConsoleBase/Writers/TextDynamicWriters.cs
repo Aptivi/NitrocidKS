@@ -17,15 +17,15 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using Nitrocid.ConsoleBase.Colors;
-using Nitrocid.Drivers.Console;
-using Nitrocid.Kernel.Debugging;
-using Nitrocid.Languages;
+using KS.ConsoleBase.Colors;
+using KS.Languages;
+using KS.Misc.Writers.DebugWriters;
 using System;
 using System.Threading;
 using Terminaux.Writer.DynamicWriters;
+using static KS.ConsoleBase.Colors.KernelColorTools;
 
-namespace Nitrocid.ConsoleBase.Writers
+namespace KS.ConsoleBase.Writers
 {
     /// <summary>
     /// Dynamic writers with kernel color support
@@ -40,9 +40,9 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="MsEachLetter">Time in milliseconds to delay writing</param>
         /// <param name="colorType">A type of colors that will be changed.</param>
         /// <param name="vars">Variables to format the message before it's written.</param>
-        public static void WriteSlowly(string msg, bool Line, double MsEachLetter, ColorType colorType, params object[] vars)
+        public static void WriteSlowly(string msg, bool Line, double MsEachLetter, ColTypes colorType, params object[] vars)
         {
-            lock (BaseConsoleDriver.WriteLock)
+            lock (TextWriters.WriteLock)
             {
                 try
                 {
@@ -54,8 +54,8 @@ namespace Nitrocid.ConsoleBase.Writers
                 }
                 catch (Exception ex) when (ex.GetType().Name != nameof(ThreadInterruptedException))
                 {
-                    DebugWriter.WriteDebugStackTrace(ex);
-                    DebugWriter.WriteDebug(DebugLevel.E, Translate.DoTranslation("There is a serious error when printing text.") + " {0}", ex.Message);
+                    DebugWriter.WStkTrc(ex);
+                    DebugWriter.Wdbg(DebugLevel.E, Translate.DoTranslation("There is a serious error when printing text.") + " {0}", ex.Message);
                 }
             }
         }
@@ -69,9 +69,9 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="colorTypeForeground">A type of colors that will be changed for the foreground color.</param>
         /// <param name="colorTypeBackground">A type of colors that will be changed for the background color.</param>
         /// <param name="vars">Variables to format the message before it's written.</param>
-        public static void WriteSlowly(string msg, bool Line, double MsEachLetter, ColorType colorTypeForeground, ColorType colorTypeBackground, params object[] vars)
+        public static void WriteSlowly(string msg, bool Line, double MsEachLetter, ColTypes colorTypeForeground, ColTypes colorTypeBackground, params object[] vars)
         {
-            lock (BaseConsoleDriver.WriteLock)
+            lock (TextWriters.WriteLock)
             {
                 try
                 {
@@ -84,8 +84,8 @@ namespace Nitrocid.ConsoleBase.Writers
                 }
                 catch (Exception ex) when (ex.GetType().Name != nameof(ThreadInterruptedException))
                 {
-                    DebugWriter.WriteDebugStackTrace(ex);
-                    DebugWriter.WriteDebug(DebugLevel.E, Translate.DoTranslation("There is a serious error when printing text.") + " {0}", ex.Message);
+                    DebugWriter.WStkTrc(ex);
+                    DebugWriter.Wdbg(DebugLevel.E, Translate.DoTranslation("There is a serious error when printing text.") + " {0}", ex.Message);
                 }
             }
         }
@@ -100,7 +100,7 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="MsEachLetter">Time in milliseconds to delay writing</param>
         /// <param name="colorType">A type of colors that will be changed.</param>
         /// <param name="vars">Variables to format the message before it's written.</param>
-        public static void WriteWhereSlowly(string msg, bool Line, int Left, int Top, double MsEachLetter, ColorType colorType, params object[] vars) =>
+        public static void WriteWhereSlowly(string msg, bool Line, int Left, int Top, double MsEachLetter, ColTypes colorType, params object[] vars) =>
             WriteWhereSlowly(msg, Line, Left, Top, MsEachLetter, false, 0, colorType, vars);
 
         /// <summary>
@@ -114,7 +114,7 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="Return">Whether or not to return to old position</param>
         /// <param name="colorType">A type of colors that will be changed.</param>
         /// <param name="vars">Variables to format the message before it's written.</param>
-        public static void WriteWhereSlowly(string msg, bool Line, int Left, int Top, double MsEachLetter, bool Return, ColorType colorType, params object[] vars) =>
+        public static void WriteWhereSlowly(string msg, bool Line, int Left, int Top, double MsEachLetter, bool Return, ColTypes colorType, params object[] vars) =>
             WriteWhereSlowly(msg, Line, Left, Top, MsEachLetter, Return, 0, colorType, vars);
 
         /// <summary>
@@ -129,9 +129,9 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="RightMargin">The right margin</param>
         /// <param name="colorType">A type of colors that will be changed.</param>
         /// <param name="vars">Variables to format the message before it's written.</param>
-        public static void WriteWhereSlowly(string msg, bool Line, int Left, int Top, double MsEachLetter, bool Return, int RightMargin, ColorType colorType, params object[] vars)
+        public static void WriteWhereSlowly(string msg, bool Line, int Left, int Top, double MsEachLetter, bool Return, int RightMargin, ColTypes colorType, params object[] vars)
         {
-            lock (BaseConsoleDriver.WriteLock)
+            lock (TextWriters.WriteLock)
             {
                 try
                 {
@@ -143,8 +143,8 @@ namespace Nitrocid.ConsoleBase.Writers
                 }
                 catch (Exception ex) when (ex.GetType().Name != nameof(ThreadInterruptedException))
                 {
-                    DebugWriter.WriteDebugStackTrace(ex);
-                    DebugWriter.WriteDebug(DebugLevel.E, Translate.DoTranslation("There is a serious error when printing text.") + " {0}", ex.Message);
+                    DebugWriter.WStkTrc(ex);
+                    DebugWriter.Wdbg(DebugLevel.E, Translate.DoTranslation("There is a serious error when printing text.") + " {0}", ex.Message);
                 }
             }
         }
@@ -160,7 +160,7 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="colorTypeForeground">A type of colors that will be changed for the foreground color.</param>
         /// <param name="colorTypeBackground">A type of colors that will be changed for the background color.</param>
         /// <param name="vars">Variables to format the message before it's written.</param>
-        public static void WriteWhereSlowly(string msg, bool Line, int Left, int Top, double MsEachLetter, ColorType colorTypeForeground, ColorType colorTypeBackground, params object[] vars) =>
+        public static void WriteWhereSlowly(string msg, bool Line, int Left, int Top, double MsEachLetter, ColTypes colorTypeForeground, ColTypes colorTypeBackground, params object[] vars) =>
             WriteWhereSlowly(msg, Line, Left, Top, MsEachLetter, false, 0, colorTypeForeground, colorTypeBackground, vars);
 
         /// <summary>
@@ -175,7 +175,7 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="colorTypeForeground">A type of colors that will be changed for the foreground color.</param>
         /// <param name="colorTypeBackground">A type of colors that will be changed for the background color.</param>
         /// <param name="vars">Variables to format the message before it's written.</param>
-        public static void WriteWhereSlowly(string msg, bool Line, int Left, int Top, double MsEachLetter, bool Return, ColorType colorTypeForeground, ColorType colorTypeBackground, params object[] vars) =>
+        public static void WriteWhereSlowly(string msg, bool Line, int Left, int Top, double MsEachLetter, bool Return, ColTypes colorTypeForeground, ColTypes colorTypeBackground, params object[] vars) =>
             WriteWhereSlowly(msg, Line, Left, Top, MsEachLetter, Return, 0, colorTypeForeground, colorTypeBackground, vars);
 
         /// <summary>
@@ -191,9 +191,9 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="colorTypeForeground">A type of colors that will be changed for the foreground color.</param>
         /// <param name="colorTypeBackground">A type of colors that will be changed for the background color.</param>
         /// <param name="vars">Variables to format the message before it's written.</param>
-        public static void WriteWhereSlowly(string msg, bool Line, int Left, int Top, double MsEachLetter, bool Return, int RightMargin, ColorType colorTypeForeground, ColorType colorTypeBackground, params object[] vars)
+        public static void WriteWhereSlowly(string msg, bool Line, int Left, int Top, double MsEachLetter, bool Return, int RightMargin, ColTypes colorTypeForeground, ColTypes colorTypeBackground, params object[] vars)
         {
-            lock (BaseConsoleDriver.WriteLock)
+            lock (TextWriters.WriteLock)
             {
                 try
                 {
@@ -206,8 +206,8 @@ namespace Nitrocid.ConsoleBase.Writers
                 }
                 catch (Exception ex) when (ex.GetType().Name != nameof(ThreadInterruptedException))
                 {
-                    DebugWriter.WriteDebugStackTrace(ex);
-                    DebugWriter.WriteDebug(DebugLevel.E, Translate.DoTranslation("There is a serious error when printing text.") + " {0}", ex.Message);
+                    DebugWriter.WStkTrc(ex);
+                    DebugWriter.Wdbg(DebugLevel.E, Translate.DoTranslation("There is a serious error when printing text.") + " {0}", ex.Message);
                 }
             }
         }
@@ -219,9 +219,9 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="Line">Whether to print a new line or not</param>
         /// <param name="colorType">A type of colors that will be changed.</param>
         /// <param name="vars">Variables to format the message before it's written.</param>
-        public static void WriteWrapped(string Text, bool Line, ColorType colorType, params object[] vars)
+        public static void WriteWrapped(string Text, bool Line, ColTypes colorType, params object[] vars)
         {
-            lock (BaseConsoleDriver.WriteLock)
+            lock (TextWriters.WriteLock)
             {
                 try
                 {
@@ -233,8 +233,8 @@ namespace Nitrocid.ConsoleBase.Writers
                 }
                 catch (Exception ex) when (ex.GetType().Name != nameof(ThreadInterruptedException))
                 {
-                    DebugWriter.WriteDebugStackTrace(ex);
-                    DebugWriter.WriteDebug(DebugLevel.E, Translate.DoTranslation("There is a serious error when printing text.") + " {0}", ex.Message);
+                    DebugWriter.WStkTrc(ex);
+                    DebugWriter.Wdbg(DebugLevel.E, Translate.DoTranslation("There is a serious error when printing text.") + " {0}", ex.Message);
                 }
             }
         }
@@ -247,9 +247,9 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="colorTypeForeground">A type of colors that will be changed for the foreground color.</param>
         /// <param name="colorTypeBackground">A type of colors that will be changed for the background color.</param>
         /// <param name="vars">Variables to format the message before it's written.</param>
-        public static void WriteWrapped(string Text, bool Line, ColorType colorTypeForeground, ColorType colorTypeBackground, params object[] vars)
+        public static void WriteWrapped(string Text, bool Line, ColTypes colorTypeForeground, ColTypes colorTypeBackground, params object[] vars)
         {
-            lock (BaseConsoleDriver.WriteLock)
+            lock (TextWriters.WriteLock)
             {
                 try
                 {
@@ -262,8 +262,8 @@ namespace Nitrocid.ConsoleBase.Writers
                 }
                 catch (Exception ex) when (ex.GetType().Name != nameof(ThreadInterruptedException))
                 {
-                    DebugWriter.WriteDebugStackTrace(ex);
-                    DebugWriter.WriteDebug(DebugLevel.E, Translate.DoTranslation("There is a serious error when printing text.") + " {0}", ex.Message);
+                    DebugWriter.WStkTrc(ex);
+                    DebugWriter.Wdbg(DebugLevel.E, Translate.DoTranslation("There is a serious error when printing text.") + " {0}", ex.Message);
                 }
             }
         }

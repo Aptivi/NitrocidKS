@@ -23,7 +23,7 @@ using KS.ConsoleBase.Colors;
 using KS.Files;
 using KS.Languages;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 using KS.Shell.ShellBase.Shells;
 
@@ -49,9 +49,9 @@ namespace KS.Shell.Commands
                     Shell.GetLine(ListArgs[0], false, WrapOutputPath);
                     var WrapOutputStream = new StreamReader(WrapOutputPath);
                     string WrapOutput = WrapOutputStream.ReadToEnd();
-                    TextWriterWrappedColor.WriteWrapped(WrapOutput, false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                    TextDynamicWriters.WriteWrapped(WrapOutput, false, KernelColorTools.ColTypes.Neutral);
                     if (!WrapOutput.EndsWith(Kernel.Kernel.NewLine))
-                        TextWriterColor.WritePlain("", true);
+                        TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
                     WrapOutputStream.Close();
                     File.Delete(WrapOutputPath);
                 }
@@ -63,12 +63,12 @@ namespace KS.Shell.Commands
                         if (CommandInfo.Wrappable)
                             WrappableCmds.Add(CommandInfo.Command);
                     }
-                    TextWriterColor.Write(Translate.DoTranslation("The command is not wrappable. These commands are wrappable:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), string.Join(", ", WrappableCmds.ToArray()));
+                    TextWriters.Write(Translate.DoTranslation("The command is not wrappable. These commands are wrappable:") + " {0}", true, KernelColorTools.ColTypes.Error, string.Join(", ", WrappableCmds.ToArray()));
                 }
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("The wrappable command is not found."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("The wrappable command is not found."), true, KernelColorTools.ColTypes.Error);
             }
         }
 
@@ -83,7 +83,7 @@ namespace KS.Shell.Commands
             }
 
             // Print them along with help description
-            TextWriterColor.Write(Translate.DoTranslation("Wrappable commands:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), string.Join(", ", WrappableCmds.ToArray()));
+            TextWriters.Write(Translate.DoTranslation("Wrappable commands:") + " {0}", true, KernelColorTools.ColTypes.Neutral, string.Join(", ", WrappableCmds.ToArray()));
         }
 
     }

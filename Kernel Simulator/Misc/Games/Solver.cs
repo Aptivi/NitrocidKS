@@ -23,7 +23,7 @@ using System.Linq;
 using KS.ConsoleBase.Colors;
 using KS.ConsoleBase.Inputs;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 namespace KS.Misc.Games
 {
@@ -45,7 +45,7 @@ namespace KS.Misc.Games
             string[] Operations = ["+", "-", "*", "/"];
 
             // Show tip to exit
-            TextWriterColor.Write(Translate.DoTranslation("Press \"q\" to exit."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(Translate.DoTranslation("Press \"q\" to exit."), true, KernelColorTools.ColTypes.Neutral);
             DebugWriter.Wdbg(DebugLevel.I, "Initialized expressions.");
             while (true)
             {
@@ -57,7 +57,7 @@ namespace KS.Misc.Games
                 // Generate the expression
                 RandomExpression = FirstNumber.ToString() + Operations.ElementAt(OperationIndex) + SecondNumber.ToString();
                 DebugWriter.Wdbg(DebugLevel.I, "Expression to be solved: {0}", RandomExpression);
-                TextWriterColor.Write(RandomExpression, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input));
+                TextWriters.Write(RandomExpression, true, KernelColorTools.ColTypes.Input);
 
                 // Wait for response
                 UserEvaluated = SolverShowInput ? Input.ReadLine() : Input.ReadLineNoInput('\0');
@@ -70,12 +70,12 @@ namespace KS.Misc.Games
                     if (UserEvaluatedNumber == EvaluatedNumber)
                     {
                         DebugWriter.Wdbg(DebugLevel.I, "Expression is {0} and equals {1}", UserEvaluated, EvaluatedNumber);
-                        TextWriterColor.Write(Translate.DoTranslation("Solved perfectly!"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                        TextWriters.Write(Translate.DoTranslation("Solved perfectly!"), true, KernelColorTools.ColTypes.Neutral);
                     }
                     else
                     {
                         DebugWriter.Wdbg(DebugLevel.I, "Expression is {0} and equals {1}", UserEvaluated, EvaluatedNumber);
-                        TextWriterColor.Write(Translate.DoTranslation("Solved incorrectly."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                        TextWriters.Write(Translate.DoTranslation("Solved incorrectly."), true, KernelColorTools.ColTypes.Neutral);
                     }
                 }
                 else if (UserEvaluated == "q")
@@ -86,7 +86,7 @@ namespace KS.Misc.Games
                 else
                 {
                     DebugWriter.Wdbg(DebugLevel.E, "User evaluated \"{0}\". However, it's not numeric.", UserEvaluated);
-                    TextWriterColor.Write(Translate.DoTranslation("You can only write the numbers."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(Translate.DoTranslation("You can only write the numbers."), true, KernelColorTools.ColTypes.Error);
                 }
             }
         }

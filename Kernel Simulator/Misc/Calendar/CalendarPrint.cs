@@ -23,8 +23,7 @@ using KS.ConsoleBase.Colors;
 using KS.Languages;
 using KS.Misc.Calendar.Events;
 using KS.Misc.Calendar.Reminders;
-using KS.Misc.Writers.ConsoleWriters;
-using KS.Misc.Writers.FancyWriters;
+using KS.ConsoleBase.Writers;
 using Terminaux.Base;
 using Terminaux.Colors;
 using Terminaux.Writer.FancyWriters.Tools;
@@ -57,8 +56,8 @@ namespace KS.Misc.Calendar
             var CalendarCellOptions = new List<CellOptions>();
 
             // Populate the calendar data
-            TextWriterWhereColor.WriteWhere(CalendarTitle, (int)Math.Round((ConsoleWrapper.WindowWidth - CalendarTitle.Length) / 2d), ConsoleWrapper.CursorTop, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
-            TextWriterColor.WritePlain("", true);
+            TextWriters.WriteWhere(CalendarTitle, (int)Math.Round((ConsoleWrapper.WindowWidth - CalendarTitle.Length) / 2d), ConsoleWrapper.CursorTop, true, KernelColorTools.ColTypes.Neutral);
+            TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
             for (int CurrentDay = 1, loopTo = DateTo.Day; CurrentDay <= loopTo; CurrentDay++)
             {
                 var CurrentDate = new DateTime(Year, Month, CurrentDay, CultureManager.CurrentCult.DateTimeFormat.Calendar);
@@ -107,7 +106,7 @@ namespace KS.Misc.Calendar
                 }
                 CalendarData[CurrentWeekIndex, (int)CurrentDate.DayOfWeek] = CurrentDayMark;
             }
-            TableColor.WriteTable(CalendarDays, CalendarData, 2, true, CalendarCellOptions);
+            TextFancyWriters.WriteTable(CalendarDays, CalendarData, 2, KernelColorTools.ColTypes.Neutral, KernelColorTools.ColTypes.Neutral, KernelColorTools.ColTypes.Neutral, KernelColorTools.ColTypes.Neutral, true, CalendarCellOptions);
         }
 
     }

@@ -25,10 +25,11 @@ using KS.ConsoleBase.Colors;
 using KS.Files.Querying;
 using KS.Misc.Text;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 using Terminaux.Colors;
+using Terminaux.Writer.ConsoleWriters;
 
 namespace KS.Misc.Screensaver.Displays
 {
@@ -336,14 +337,14 @@ namespace KS.Misc.Screensaver.Displays
                 if (CurrentColumn == 1)
                 {
                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Column 1. Printing newline...");
-                    TextWriterColor.WritePlain("", true);
+                    TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
                 }
                 else
                 {
                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Column {0}. Setting left to {1}...", CurrentColumn, CurrentColumnRowConsole);
                     ConsoleWrapper.SetCursorPosition(CurrentColumnRowConsole, ConsoleWrapper.CursorTop + 1);
                 }
-                TextWriterColor.WritePlain("    ", false);
+                TextWriterRaw.WritePlain("    ", false);
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop);
                 bool NewLineDone = true;
 
@@ -397,7 +398,7 @@ namespace KS.Misc.Screensaver.Displays
                         if (CurrentColumn == 1)
                         {
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Column 1. Printing newline...");
-                            TextWriterColor.WritePlain("", true);
+                            TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
                         }
                         else
                         {
@@ -405,7 +406,7 @@ namespace KS.Misc.Screensaver.Displays
                             ConsoleWrapper.SetCursorPosition(CurrentColumnRowConsole, ConsoleWrapper.CursorTop + 1);
                         }
                     }
-                    TextWriterColor.WritePlain("  ", false);
+                    TextWriterRaw.WritePlain("  ", false);
                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop);
 
                     // We need to store which column and which key from the linotype keyboard layout is taken.
@@ -430,16 +431,16 @@ namespace KS.Misc.Screensaver.Displays
                             if (CurrentColumn == 1)
                             {
                                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Column 1. Printing newline...");
-                                TextWriterColor.WritePlain("", true);
+                                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
                             }
                             else
                             {
                                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Column {0}. Setting left to {1}...", CurrentColumn, CurrentColumnRowConsole);
                                 ConsoleWrapper.SetCursorPosition(CurrentColumnRowConsole, ConsoleWrapper.CursorTop + 1);
                             }
-                            TextWriterColor.WritePlain("  ", false);
+                            TextWriterRaw.WritePlain("  ", false);
                             if (IncompleteSentenceIndex == 0)
-                                TextWriterColor.WritePlain("    ", false);
+                                TextWriterRaw.WritePlain("    ", false);
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop);
                         }
 
@@ -569,7 +570,7 @@ namespace KS.Misc.Screensaver.Displays
 
                         // Write the final character to the console and wait
                         if (!(Convert.ToString(StruckChar) == "\0"))
-                            TextWriterColor.WritePlain(Convert.ToString(StruckChar), false);
+                            TextWriterRaw.WritePlain(Convert.ToString(StruckChar), false);
                         ThreadManager.SleepNoBlock(WriteMs, ScreensaverDisplayer.ScreensaverDisplayerThread);
 
                         // If we're on the character counter mode, increment this for every character until the "line fill" mode starts
@@ -603,14 +604,14 @@ namespace KS.Misc.Screensaver.Displays
                                 if (CurrentColumn == 1)
                                 {
                                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Column 1. Printing newline...");
-                                    TextWriterColor.WritePlain("", true);
+                                    TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
                                 }
                                 else
                                 {
                                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Column {0}. Setting left to {1}...", CurrentColumn, CurrentColumnRowConsole);
                                     ConsoleWrapper.SetCursorPosition(CurrentColumnRowConsole, ConsoleWrapper.CursorTop + 1);
                                 }
-                                TextWriterColor.WritePlain("  ", false);
+                                TextWriterRaw.WritePlain("  ", false);
                                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop);
                             }
                         }
@@ -659,7 +660,7 @@ namespace KS.Misc.Screensaver.Displays
                     {
                         // ...wait until retry
                         DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Drawn all columns. Waiting {0} ms...", LinotypoSettings.LinotypoNewScreenDelay);
-                        TextWriterColor.WritePlain("", true);
+                        TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
                         ThreadManager.SleepNoBlock(LinotypoSettings.LinotypoNewScreenDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
 
                         // ...and make a new screen
@@ -681,7 +682,7 @@ namespace KS.Misc.Screensaver.Displays
             {
                 // We're on the bottom, so wait until retry...
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Drawn all text. Waiting {0} ms...", LinotypoSettings.LinotypoNewScreenDelay);
-                TextWriterColor.WritePlain("", true);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
                 ThreadManager.SleepNoBlock(LinotypoSettings.LinotypoNewScreenDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
 
                 // ...and make a new screen

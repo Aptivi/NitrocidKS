@@ -21,7 +21,7 @@ using System.Collections.Generic;
 using System.Linq;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Scripting.Interaction;
 using KS.Shell.ShellBase.Commands;
 
@@ -46,7 +46,7 @@ namespace KS.Shell.Commands
 
         public override void HelpHelper()
         {
-            TextWriterColor.Write(Translate.DoTranslation("where <$variable> is any variable that will be used to store response") + Kernel.Kernel.NewLine + Translate.DoTranslation("where <answers> are one-lettered answers of the question separated in slashes"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(Translate.DoTranslation("where <$variable> is any variable that will be used to store response") + Kernel.Kernel.NewLine + Translate.DoTranslation("where <answers> are one-lettered answers of the question separated in slashes"), true, KernelColorTools.ColTypes.Neutral);
         }
 
     }

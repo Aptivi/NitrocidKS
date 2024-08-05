@@ -16,14 +16,15 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
+
 using System.Threading;
 using KS.ConsoleBase.Colors;
 using KS.Misc.Text;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
-using KS.Misc.Writers.FancyWriters;
 using Terminaux.Base;
 using Terminaux.Colors;
+using Terminaux.Writer.FancyWriters;
 
 namespace KS.Misc.Splash.Splashes
 {
@@ -137,8 +138,8 @@ namespace KS.Misc.Splash.Splashes
         {
             // Display the text and percentage
             string RenderedText = ProgressReport.Truncate(ConsoleWrapper.WindowWidth - ProgressReportWritePositionX - ProgressWritePositionX - 3);
-            TextWriterWhereColor.WriteWhere("{0}%", ProgressWritePositionX, ProgressWritePositionY, true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Progress), Progress.ToString().PadLeft(3));
-            TextWriterWhereColor.WriteWhere(RenderedText, ProgressReportWritePositionX, ProgressReportWritePositionY, false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), Vars);
+            TextWriters.WriteWhere("{0}%", ProgressWritePositionX, ProgressWritePositionY, true, KernelColorTools.ColTypes.Progress, Progress.ToString().PadLeft(3));
+            TextWriters.WriteWhere(RenderedText, ProgressReportWritePositionX, ProgressReportWritePositionY, false, KernelColorTools.ColTypes.Neutral, Vars);
             ConsoleBase.ConsoleExtensions.ClearLineToRight();
 
             // Display the progress bar
@@ -149,7 +150,7 @@ namespace KS.Misc.Splash.Splashes
             }
             else
             {
-                ProgressBarColor.WriteProgress(Progress, 4, ConsoleWrapper.WindowHeight - 4);
+                TextFancyWriters.WriteProgress(Progress, 4, ConsoleWrapper.WindowHeight - 4, KernelColorTools.ColTypes.Progress);
             }
         }
 

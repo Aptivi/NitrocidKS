@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Network.FTP.Filesystem;
 using KS.Shell.ShellBase.Commands;
 
@@ -32,19 +32,19 @@ namespace KS.Network.FTP.Commands
         {
             if (FTPShellCommon.FtpConnected)
             {
-                TextWriterColor.Write(Translate.DoTranslation("Copying {0} to {1}..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ListArgs[0], ListArgs[1]);
+                TextWriters.Write(Translate.DoTranslation("Copying {0} to {1}..."), true, KernelColorTools.ColTypes.Neutral, ListArgs[0], ListArgs[1]);
                 if (FTPFilesystem.FTPCopyItem(ListArgs[0], ListArgs[1]))
                 {
-                    TextWriterColor.Write(Kernel.Kernel.NewLine + Translate.DoTranslation("Copied successfully"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success));
+                    TextWriters.Write(Kernel.Kernel.NewLine + Translate.DoTranslation("Copied successfully"), true, KernelColorTools.ColTypes.Success);
                 }
                 else
                 {
-                    TextWriterColor.Write(Kernel.Kernel.NewLine + Translate.DoTranslation("Failed to copy {0} to {1}."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ListArgs[0], ListArgs[1]);
+                    TextWriters.Write(Kernel.Kernel.NewLine + Translate.DoTranslation("Failed to copy {0} to {1}."), true, KernelColorTools.ColTypes.Error, ListArgs[0], ListArgs[1]);
                 }
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("You must connect to server before performing transmission."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("You must connect to server before performing transmission."), true, KernelColorTools.ColTypes.Error);
             }
         }
 

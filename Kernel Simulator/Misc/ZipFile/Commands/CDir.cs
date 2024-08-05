@@ -18,7 +18,7 @@
 //
 
 using KS.ConsoleBase.Colors;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Misc.ZipFile.Commands
 {
@@ -27,7 +27,7 @@ namespace KS.Misc.ZipFile.Commands
 
         public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
         {
-            TextWriterColor.Write(ZipShellCommon.ZipShell_CurrentDirectory, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(ZipShellCommon.ZipShell_CurrentDirectory, true, KernelColorTools.ColTypes.Neutral);
         }
 
     }

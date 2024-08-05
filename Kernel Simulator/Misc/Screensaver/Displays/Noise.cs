@@ -21,8 +21,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using Terminaux.Base;
+using Terminaux.Writer.ConsoleWriters;
 namespace KS.Misc.Screensaver.Displays
 {
     public static class NoiseSettings
@@ -110,7 +111,7 @@ namespace KS.Misc.Screensaver.Displays
                     int CoverX = RandomDriver.Next(ConsoleWrapper.WindowWidth);
                     int CoverY = RandomDriver.Next(ConsoleWrapper.WindowHeight);
                     ConsoleWrapper.SetCursorPosition(CoverX, CoverY);
-                    TextWriterColor.WritePlain(" ", false);
+                    TextWriterRaw.WritePlain(" ", false);
                     if (!CoveredBlocks.Contains(CoverX.ToString() + ", " + CoverY.ToString()))
                         CoveredBlocks.Add(CoverX.ToString() + ", " + CoverY.ToString());
                 }

@@ -29,9 +29,9 @@ using KS.Files.Querying;
 using KS.Kernel;
 using KS.Languages;
 using KS.Misc.Text;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
-using KS.Misc.Writers.FancyWriters;
+using Terminaux.Writer.FancyWriters;
 
 namespace KS.Files.Folders
 {
@@ -209,7 +209,7 @@ namespace KS.Files.Folders
                 {
                     enumeration = CreateList(folder, Sort);
                     if (enumeration.Count == 0)
-                        TextWriterColor.Write(Translate.DoTranslation("Folder is empty."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
+                        TextWriters.Write(Translate.DoTranslation("Folder is empty."), true, KernelColorTools.ColTypes.Warning);
 
                     // Enumerate each entry
                     long TotalSize = 0L;
@@ -231,18 +231,18 @@ namespace KS.Files.Folders
                         catch (UnauthorizedAccessException ex)
                         {
                             if (!SuppressUnauthorizedMessage)
-                                TextWriterColor.Write("- " + Translate.DoTranslation("You are not authorized to get info for {0}."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), Entry.Name);
+                                TextWriters.Write("- " + Translate.DoTranslation("You are not authorized to get info for {0}."), true, KernelColorTools.ColTypes.Error, Entry.Name);
                             DebugWriter.WStkTrc(ex);
                         }
                     }
 
                     // Show total size in list optionally
                     if (ShowTotalSizeInList)
-                        TextWriterColor.Write(Kernel.Kernel.NewLine + Translate.DoTranslation("Total size in folder:") + " {0}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), TotalSize.FileSizeToString());
+                        TextWriters.Write(Kernel.Kernel.NewLine + Translate.DoTranslation("Total size in folder:") + " {0}", true, KernelColorTools.ColTypes.Neutral, TotalSize.FileSizeToString());
                 }
                 catch (Exception ex)
                 {
-                    TextWriterColor.Write(Translate.DoTranslation("Unknown error while listing in directory: {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), ex.Message);
+                    TextWriters.Write(Translate.DoTranslation("Unknown error while listing in directory: {0}"), true, KernelColorTools.ColTypes.Error, ex.Message);
                     DebugWriter.WStkTrc(ex);
                 }
             }
@@ -255,13 +255,13 @@ namespace KS.Files.Folders
                 catch (UnauthorizedAccessException ex)
                 {
                     if (!SuppressUnauthorizedMessage)
-                        TextWriterColor.Write("- " + Translate.DoTranslation("You are not authorized to get info for {0}."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), folder);
+                        TextWriters.Write("- " + Translate.DoTranslation("You are not authorized to get info for {0}."), true, KernelColorTools.ColTypes.Error, folder);
                     DebugWriter.WStkTrc(ex);
                 }
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("Directory {0} not found"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), folder);
+                TextWriters.Write(Translate.DoTranslation("Directory {0} not found"), true, KernelColorTools.ColTypes.Error, folder);
                 DebugWriter.Wdbg(DebugLevel.I, "IO.FolderExists = {0}", Checking.FolderExists(folder));
             }
         }

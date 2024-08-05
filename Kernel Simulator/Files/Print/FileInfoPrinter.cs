@@ -25,7 +25,7 @@ using KS.Files.Querying;
 using KS.Kernel;
 using KS.Languages;
 using KS.Misc.Platform;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 
 namespace KS.Files.Print
@@ -54,27 +54,27 @@ namespace KS.Files.Print
                     {
                         if (FileInfo.Name.EndsWith(".uesh"))
                         {
-                            TextWriterColor.Write("- " + FileInfo.Name, false, KernelColorTools.ColTypes.Stage);
+                            TextWriters.Write("- " + FileInfo.Name, false, KernelColorTools.ColTypes.Stage);
                             if (ShowFileDetails)
-                                TextWriterColor.Write(": ", false, KernelColorTools.ColTypes.Stage);
+                                TextWriters.Write(": ", false, KernelColorTools.ColTypes.Stage);
                         }
                         else
                         {
-                            TextWriterColor.Write("- " + FileInfo.Name, false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
+                            TextWriters.Write("- " + FileInfo.Name, false, KernelColorTools.ColTypes.ListEntry);
                             if (ShowFileDetails)
-                                TextWriterColor.Write(": ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
+                                TextWriters.Write(": ", false, KernelColorTools.ColTypes.ListEntry);
                         }
                         if (ShowFileDetails)
                         {
-                            TextWriterColor.Write(Translate.DoTranslation("{0}, Created in {1} {2}, Modified in {3} {4}"), false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue), ((FileInfo)FileInfo).Length.FileSizeToString(), FileInfo.CreationTime.ToShortDateString(), FileInfo.CreationTime.ToShortTimeString(), FileInfo.LastWriteTime.ToShortDateString(), FileInfo.LastWriteTime.ToShortTimeString());
+                            TextWriters.Write(Translate.DoTranslation("{0}, Created in {1} {2}, Modified in {3} {4}"), false, KernelColorTools.ColTypes.ListValue, ((FileInfo)FileInfo).Length.FileSizeToString(), FileInfo.CreationTime.ToShortDateString(), FileInfo.CreationTime.ToShortTimeString(), FileInfo.LastWriteTime.ToShortDateString(), FileInfo.LastWriteTime.ToShortTimeString());
                         }
-                        TextWriterColor.WritePlain("", true);
+                        TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
                     }
                 }
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("File {0} not found"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), FileInfo.FullName);
+                TextWriters.Write(Translate.DoTranslation("File {0} not found"), true, KernelColorTools.ColTypes.Error, FileInfo.FullName);
                 DebugWriter.Wdbg(DebugLevel.I, "IO.FileExists = {0}", Checking.FileExists(FileInfo.FullName));
             }
         }

@@ -19,7 +19,7 @@
 using System.Text.RegularExpressions;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 
 namespace KS.TestShell.Commands
@@ -35,7 +35,7 @@ namespace KS.TestShell.Commands
             int MatchNum = 1;
             foreach (Match Mat in Matches)
             {
-                TextWriterColor.Write(Translate.DoTranslation("Match {0} ({1}): {2}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), MatchNum, Exp, Mat);
+                TextWriters.Write(Translate.DoTranslation("Match {0} ({1}): {2}"), true, KernelColorTools.ColTypes.Neutral, MatchNum, Exp, Mat);
                 MatchNum += 1;
             }
         }

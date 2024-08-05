@@ -20,7 +20,7 @@
 using System.Linq;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Network.FTP.Transfer;
 using KS.Shell.ShellBase.Commands;
 
@@ -33,17 +33,17 @@ namespace KS.Network.FTP.Commands
         {
             string LocalFile = ListArgs[0];
             string RemoteFile = ListArgs.Count() > 1 ? ListArgs[1] : "";
-            TextWriterColor.Write(Translate.DoTranslation("Uploading file {0}..."), false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Progress), ListArgs[0]);
+            TextWriters.Write(Translate.DoTranslation("Uploading file {0}..."), false, KernelColorTools.ColTypes.Progress, ListArgs[0]);
             bool Result = !string.IsNullOrWhiteSpace(LocalFile) ? FTPTransfer.FTPUploadFile(RemoteFile, LocalFile) : FTPTransfer.FTPUploadFile(RemoteFile);
             if (Result)
             {
-                TextWriterColor.WritePlain("", true);
-                TextWriterColor.Write(Translate.DoTranslation("Uploaded file {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success), LocalFile);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
+                TextWriters.Write(Translate.DoTranslation("Uploaded file {0}"), true, KernelColorTools.ColTypes.Success, LocalFile);
             }
             else
             {
-                TextWriterColor.WritePlain("", true);
-                TextWriterColor.Write(Translate.DoTranslation("Failed to upload {0}"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), LocalFile);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
+                TextWriters.Write(Translate.DoTranslation("Failed to upload {0}"), true, KernelColorTools.ColTypes.Error, LocalFile);
             }
         }
 

@@ -20,8 +20,9 @@
 using System.Collections.Generic;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
+using Terminaux.Writer.ConsoleWriters;
 namespace KS.TestShell.Commands
 {
     class Test_TestDictWriterIntCommand : CommandExecutor, ICommand
@@ -31,9 +32,9 @@ namespace KS.TestShell.Commands
         {
             var NormalIntegerDict = new Dictionary<string, int>() { { "One", 1 }, { "Two", 2 }, { "Three", 3 } };
             var ArrayIntegerDict = new Dictionary<string, int[]>() { { "One", new int[] { 1, 2, 3 } }, { "Two", new int[] { 1, 2, 3 } }, { "Three", new int[] { 1, 2, 3 } } };
-            TextWriterColor.Write(Translate.DoTranslation("Normal integer dictionary:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(Translate.DoTranslation("Normal integer dictionary:"), true, KernelColorTools.ColTypes.Neutral);
             ListWriterColor.WriteList(NormalIntegerDict);
-            TextWriterColor.Write(Translate.DoTranslation("Array integer dictionary:"), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(Translate.DoTranslation("Array integer dictionary:"), true, KernelColorTools.ColTypes.Neutral);
             ListWriterColor.WriteList(ArrayIntegerDict);
         }
 

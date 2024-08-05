@@ -21,10 +21,11 @@ using System;
 using System.Collections.Generic;
 using KS.ConsoleBase.Colors;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 using Terminaux.Colors;
+using Terminaux.Writer.ConsoleWriters;
 namespace KS.Misc.Screensaver.Displays
 {
     public static class GlitterColorSettings
@@ -281,7 +282,7 @@ namespace KS.Misc.Screensaver.Displays
                 if (!ResizeSyncing)
                 {
                     KernelColorTools.SetConsoleColor(ColorStorage, true);
-                    TextWriterColor.WritePlain(" ", false);
+                    TextWriterRaw.WritePlain(" ", false);
                 }
             }
             else if (GlitterColorSettings.GlitterColor255Colors)
@@ -293,7 +294,7 @@ namespace KS.Misc.Screensaver.Displays
                 if (!ResizeSyncing)
                 {
                     KernelColorTools.SetConsoleColor(new Color(ColorNum), true);
-                    TextWriterColor.WritePlain(" ", false);
+                    TextWriterRaw.WritePlain(" ", false);
                 }
             }
             else
@@ -304,7 +305,7 @@ namespace KS.Misc.Screensaver.Displays
                 {
                     Console.BackgroundColor = Screensaver.colors[RandomDriver.Next(GlitterColorSettings.GlitterColorMinimumColorLevel, GlitterColorSettings.GlitterColorMaximumColorLevel)];
                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", Console.BackgroundColor);
-                    TextWriterColor.WritePlain(" ", false);
+                    TextWriterRaw.WritePlain(" ", false);
                 }
             }
 

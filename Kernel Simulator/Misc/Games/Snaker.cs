@@ -25,10 +25,11 @@ using KS.ConsoleBase.Inputs;
 using KS.Misc.Screensaver;
 using KS.Misc.Screensaver.Displays;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using Terminaux.Base;
 using Terminaux.Colors;
+using Terminaux.Writer.ConsoleWriters;
 
 namespace KS.Misc.Games
 {
@@ -81,7 +82,7 @@ namespace KS.Misc.Games
                 {
                     ConsoleWrapper.SetCursorPosition(x, 1);
                     DebugWriter.Wdbg(DebugLevel.I, "Drawing floor top edge ({0}, {1})", x, 1);
-                    TextWriterColor.WritePlain(" ", false);
+                    TextWriterRaw.WritePlain(" ", false);
                 }
 
                 // Second, draw the floor bottom edge
@@ -89,7 +90,7 @@ namespace KS.Misc.Games
                 {
                     ConsoleWrapper.SetCursorPosition(x, FloorBottomEdge);
                     DebugWriter.Wdbg(DebugLevel.I, "Drawing floor bottom edge ({0}, {1})", x, FloorBottomEdge);
-                    TextWriterColor.WritePlain(" ", false);
+                    TextWriterRaw.WritePlain(" ", false);
                 }
 
                 // Third, draw the floor left edge
@@ -97,7 +98,7 @@ namespace KS.Misc.Games
                 {
                     ConsoleWrapper.SetCursorPosition(FloorLeftEdge, y);
                     DebugWriter.Wdbg(DebugLevel.I, "Drawing floor left edge ({0}, {1})", FloorLeftEdge, y);
-                    TextWriterColor.WritePlain("  ", false);
+                    TextWriterRaw.WritePlain("  ", false);
                 }
 
                 // Finally, draw the floor right edge
@@ -105,7 +106,7 @@ namespace KS.Misc.Games
                 {
                     ConsoleWrapper.SetCursorPosition(FloorRightEdge, y);
                     DebugWriter.Wdbg(DebugLevel.I, "Drawing floor right edge ({0}, {1})", FloorRightEdge, y);
-                    TextWriterColor.WritePlain("  ", false);
+                    TextWriterRaw.WritePlain("  ", false);
                 }
             }
 
@@ -156,7 +157,7 @@ namespace KS.Misc.Games
                     // Remove excess mass
                     Console.BackgroundColor = ConsoleColor.Black;
                     ConsoleWrapper.SetCursorPosition(SnakeLastTailToWipeX, SnakeLastTailToWipeY);
-                    TextWriterColor.WritePlain(" ", false);
+                    TextWriterRaw.WritePlain(" ", false);
 
                     // Set the snake color
                     KernelColorTools.SetConsoleColor(SnakeColor, true);
@@ -166,7 +167,7 @@ namespace KS.Misc.Games
                     {
                         AppleDrawn = true;
                         ConsoleWrapper.SetCursorPosition(SnakeAppleX, SnakeAppleY);
-                        TextWriterColor.WritePlain("+", false);
+                        TextWriterRaw.WritePlain("+", false);
                         DebugWriter.Wdbg(DebugLevel.I, "Drawn apple at ({0}, {1})", SnakeAppleX, SnakeAppleY);
                     }
 
@@ -177,7 +178,7 @@ namespace KS.Misc.Games
                         int PositionX = Convert.ToInt32(PositionStrings[0]);
                         int PositionY = Convert.ToInt32(PositionStrings[1]);
                         ConsoleWrapper.SetCursorPosition(PositionX, PositionY);
-                        TextWriterColor.WritePlain(" ", false);
+                        TextWriterRaw.WritePlain(" ", false);
                         ConsoleWrapper.SetCursorPosition(PositionX, PositionY);
                         DebugWriter.Wdbg(DebugLevel.I, "Drawn snake at ({0}, {1}) for mass {2}/{3}", PositionX, PositionY, PositionIndex + 1, SnakeMassPositions.Count);
                     }
@@ -357,7 +358,7 @@ namespace KS.Misc.Games
                     if (Dead)
                     {
                         ConsoleWrapper.SetCursorPosition(SnakePreviousX, SnakePreviousY);
-                        TextWriterColor.WritePlain("X", false);
+                        TextWriterRaw.WritePlain("X", false);
                         DebugWriter.Wdbg(DebugLevel.I, "Snake dead at {0}/{1}.", SnakePreviousX, SnakePreviousY);
                     }
 

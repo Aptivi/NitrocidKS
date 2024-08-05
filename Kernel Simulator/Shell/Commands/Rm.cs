@@ -22,7 +22,7 @@ using KS.Files;
 using KS.Files.Operations;
 using KS.Files.Querying;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 using KS.Shell.ShellBase.Commands;
 
@@ -49,7 +49,7 @@ namespace KS.Shell.Commands
                 else
                 {
                     DebugWriter.Wdbg(DebugLevel.W, "Trying to remove {0} which is not found.", Path);
-                    TextWriterColor.Write(Translate.DoTranslation("Can't remove {0} because it doesn't exist."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), Path);
+                    TextWriters.Write(Translate.DoTranslation("Can't remove {0} because it doesn't exist."), true, KernelColorTools.ColTypes.Error, Path);
                 }
             }
         }

@@ -20,7 +20,7 @@
 using System;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Network.HTTP.Commands
 {
@@ -32,12 +32,12 @@ namespace KS.Network.HTTP.Commands
             try
             {
                 var SiteUri = new Uri(StringArgs);
-                TextWriterColor.Write(Translate.DoTranslation("Setting site to") + " {0}...", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Progress), SiteUri.ToString());
+                TextWriters.Write(Translate.DoTranslation("Setting site to") + " {0}...", true, KernelColorTools.ColTypes.Progress, SiteUri.ToString());
                 HTTPShellCommon.HTTPSite = SiteUri.ToString();
             }
             catch (Exception)
             {
-                TextWriterColor.Write(Translate.DoTranslation("The site URI format is invalid."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("The site URI format is invalid."), true, KernelColorTools.ColTypes.Error);
             }
         }
 

@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.TestShell.Commands
 {
@@ -30,7 +30,7 @@ namespace KS.TestShell.Commands
         {
             string Lang = ListArgs[0];
             string Message = ListArgs[1];
-            TextWriterColor.Write(Translate.DoTranslation(Message, Lang), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+            TextWriters.Write(Translate.DoTranslation(Message, Lang), true, KernelColorTools.ColTypes.Neutral);
         }
 
     }

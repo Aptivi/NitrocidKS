@@ -18,21 +18,20 @@
 //
 
 using Textify.Figlet;
-using Nitrocid.ConsoleBase.Colors;
+using KS.ConsoleBase.Colors;
 using Terminaux.Inputs.Styles.Infobox;
 using Terminaux.Writer.ConsoleWriters;
-using Nitrocid.Drivers.RNG;
-using Nitrocid.Kernel;
-using Nitrocid.Kernel.Configuration;
-using Nitrocid.Languages;
-using Nitrocid.Misc.Text.Probers.Placeholder;
+using KS.Languages;
 using Textify.General;
 using Terminaux.Base;
 using Terminaux.Inputs;
 using Terminaux.Reader;
 using System;
+using KS.Misc.Probers;
+using KS.Kernel;
+using static KS.ConsoleBase.Colors.KernelColorTools;
 
-namespace Nitrocid.ConsoleBase.Writers.MiscWriters
+namespace KS.ConsoleBase.Writers.MiscWriters
 {
     /// <summary>
     /// Welcome message writer
@@ -69,7 +68,7 @@ namespace Nitrocid.ConsoleBase.Writers.MiscWriters
         /// </summary>
         public static void WriteMessage()
         {
-            if (!Config.MainConfig.EnableSplash)
+            if (!Flags.EnableSplash)
             {
                 ConsoleWrapper.CursorVisible = false;
 
@@ -77,13 +76,13 @@ namespace Nitrocid.ConsoleBase.Writers.MiscWriters
                 string MessageWrite = GetCustomBanner();
 
                 // Finally, write the message
-                if (Config.MainConfig.StartScroll)
-                    TextDynamicWriters.WriteSlowly(MessageWrite, true, 10d, ColorType.Banner, KernelMain.VersionFullStr);
+                if (Flags.StartScroll)
+                    TextDynamicWriters.WriteSlowly(MessageWrite, true, 10d, ColTypes.Banner, Kernel.Kernel.KernelVersion);
                 else
-                    TextWriters.Write(MessageWrite, true, ColorType.Banner, KernelMain.VersionFullStr);
+                    TextWriters.Write(MessageWrite, true, ColTypes.Banner, Kernel.Kernel.KernelVersion);
 
-                string FigletRenderedBanner = FigletTools.RenderFiglet($"{KernelMain.VersionFullStr}", Config.MainConfig.DefaultFigletFontName);
-                TextWriterColor.Write(CharManager.NewLine + FigletRenderedBanner + CharManager.NewLine);
+                string FigletRenderedBanner = FigletTools.RenderFiglet($"{Kernel.Kernel.KernelVersion}", KernelTools.BannerFigletFont);
+                TextWriterRaw.WritePlain(CharManager.NewLine + FigletRenderedBanner + CharManager.NewLine);
                 ConsoleWrapper.CursorVisible = true;
             }
         }
@@ -93,8 +92,8 @@ namespace Nitrocid.ConsoleBase.Writers.MiscWriters
         /// </summary>
         public static void WriteLicense()
         {
-            TextFancyWriters.WriteSeparator(Translate.DoTranslation("License information"), ColorType.Stage);
-            TextWriters.Write(GetLicenseString(), true, ColorType.License);
+            TextFancyWriters.WriteSeparator(Translate.DoTranslation("License information"), ColTypes.Stage);
+            TextWriters.Write(GetLicenseString(), true, ColTypes.License);
         }
 
         /// <summary>
@@ -131,30 +130,20 @@ namespace Nitrocid.ConsoleBase.Writers.MiscWriters
             ;
 
             // Show development disclaimer
-            if (Config.MainConfig.EnableSplash)
+            if (Flags.EnableSplash)
             {
                 InputChoiceInfo[] answers = [
                     new InputChoiceInfo("ok", Translate.DoTranslation("OK")),
-                    new InputChoiceInfo("acknowledged", Translate.DoTranslation("Acknowledged")),
                 ];
                 int answer = InfoBoxButtonsColor.WriteInfoBoxButtonsColor(
                     Translate.DoTranslation("Development notice"),
                     answers,
-                    $"{message}\n\n" +
-                    $"{Translate.DoTranslation("To dismiss forever, either press ENTER on the \"Acknowledged\" button here by highlighting it using the left arrow on your keyboard, or enable \"Development notice acknowledged\" in the kernel settings.")}",
-                    KernelColorTools.GetColor(ColorType.DevelopmentWarning)
+                    $"{message}",
+                    KernelColorTools.GetConsoleColor(ColTypes.DevelopmentWarning)
                 );
-                if (answer == 1)
-                    Config.MainConfig.DevNoticeConsented = true;
             }
             else
-            {
-                TextWriters.Write($"  * {message}", true, ColorType.DevelopmentWarning);
-                TextWriters.Write($"  * {Translate.DoTranslation("To dismiss forever, either press ENTER on your keyboard, or enable \"Development notice acknowledged\" in the kernel settings. Any other key goes ahead without acknowledgement.")}", true, ColorType.DevelopmentWarning);
-                var key = TermReader.ReadKey(true);
-                if (key.Key == ConsoleKey.Enter)
-                    Config.MainConfig.DevNoticeConsented = true;
-            }
+                TextWriters.Write($"  * {message}", true, ColTypes.DevelopmentWarning);
 #endif
         }
 
@@ -164,7 +153,7 @@ namespace Nitrocid.ConsoleBase.Writers.MiscWriters
             string message2 = Translate.DoTranslation("Please note that running Nitrocid KS on an unusual environment means that some features are limited. You won't be able to load mods and configurations.");
 
             // Show unusual environment notice
-            if (Config.MainConfig.EnableSplash)
+            if (Flags.EnableSplash)
             {
                 InputChoiceInfo[] answers = [
                     new InputChoiceInfo("ok", Translate.DoTranslation("OK")),
@@ -173,13 +162,13 @@ namespace Nitrocid.ConsoleBase.Writers.MiscWriters
                     Translate.DoTranslation("Unusual environment notice"),
                     answers,
                     message + "\n\n" + message2,
-                    KernelColorTools.GetColor(ColorType.Warning)
+                    KernelColorTools.GetConsoleColor(ColTypes.Warning)
                 );
             }
             else
             {
-                TextWriters.Write($"* {message}", true, ColorType.Warning);
-                TextWriters.Write($"* {message2}", true, ColorType.Warning);
+                TextWriters.Write($"* {message}", true, ColTypes.Warning);
+                TextWriters.Write($"* {message2}", true, ColTypes.Warning);
             }
         }
 
@@ -189,7 +178,7 @@ namespace Nitrocid.ConsoleBase.Writers.MiscWriters
             string tip = Translate.DoTranslation("that you can get extra tips from the kernel addon shipped with the full build of Nitrocid?");
             if (tips.Length > 0)
             {
-                int tipIdx = RandomDriver.RandomIdx(tips.Length);
+                int tipIdx = new Random().Next(tips.Length);
                 tip = Translate.DoTranslation(tips[tipIdx]);
             }
             return tip;
@@ -199,7 +188,7 @@ namespace Nitrocid.ConsoleBase.Writers.MiscWriters
         {
             // Get a random tip and print it
             TextWriters.Write(
-                "* " + Translate.DoTranslation("Pro tip: Did you know") + " " + GetRandomTip(), true, ColorType.Tip);
+                "* " + Translate.DoTranslation("Pro tip: Did you know") + " " + GetRandomTip(), true, ColTypes.Tip);
         }
 
     }

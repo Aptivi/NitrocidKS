@@ -21,7 +21,7 @@ using System;
 using KS.ConsoleBase.Colors;
 using KS.ConsoleBase.Inputs;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 
 namespace KS.Network.HTTP.Commands
@@ -34,12 +34,12 @@ namespace KS.Network.HTTP.Commands
             if (HTTPShellCommon.HTTPConnected == true)
             {
                 // Print a message
-                TextWriterColor.Write(Translate.DoTranslation("Deleting {0}..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Progress), ListArgs[0]);
+                TextWriters.Write(Translate.DoTranslation("Deleting {0}..."), true, KernelColorTools.ColTypes.Progress, ListArgs[0]);
 
                 // Make a confirmation message so user will not accidentally delete a file or folder
-                TextWriterColor.Write(Translate.DoTranslation("Are you sure you want to delete {0} <y/n>?") + " ", false, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Input), ListArgs[0]);
+                TextWriters.Write(Translate.DoTranslation("Are you sure you want to delete {0} <y/n>?") + " ", false, KernelColorTools.ColTypes.Input, ListArgs[0]);
                 _ = Convert.ToString(Input.DetectKeypress().KeyChar);
-                TextWriterColor.WritePlain("", true);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
 
                 try
                 {
@@ -48,24 +48,24 @@ namespace KS.Network.HTTP.Commands
                 }
                 catch (AggregateException aex)
                 {
-                    TextWriterColor.Write(aex.Message + ":", true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(aex.Message + ":", true, KernelColorTools.ColTypes.Error);
                     foreach (Exception InnerException in aex.InnerExceptions)
                     {
-                        TextWriterColor.Write("- " + InnerException.Message, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                        TextWriters.Write("- " + InnerException.Message, true, KernelColorTools.ColTypes.Error);
                         if (InnerException.InnerException is not null)
                         {
-                            TextWriterColor.Write("- " + InnerException.InnerException.Message, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                            TextWriters.Write("- " + InnerException.InnerException.Message, true, KernelColorTools.ColTypes.Error);
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    TextWriterColor.Write(ex.Message, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                    TextWriters.Write(ex.Message, true, KernelColorTools.ColTypes.Error);
                 }
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("You must connect to server with administrative privileges before performing the deletion."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("You must connect to server with administrative privileges before performing the deletion."), true, KernelColorTools.ColTypes.Error);
             }
         }
 

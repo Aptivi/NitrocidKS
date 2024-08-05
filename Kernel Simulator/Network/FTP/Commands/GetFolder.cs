@@ -20,7 +20,7 @@
 using System.Linq;
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Network.FTP.Transfer;
 using KS.Shell.ShellBase.Commands;
 
@@ -33,17 +33,17 @@ namespace KS.Network.FTP.Commands
         {
             string RemoteFolder = ListArgs[0];
             string LocalFolder = ListArgs.Count() > 1 ? ListArgs[1] : "";
-            TextWriterColor.Write(Translate.DoTranslation("Downloading folder {0}..."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Progress), RemoteFolder);
+            TextWriters.Write(Translate.DoTranslation("Downloading folder {0}..."), true, KernelColorTools.ColTypes.Progress, RemoteFolder);
             bool Result = !string.IsNullOrWhiteSpace(LocalFolder) ? FTPTransfer.FTPGetFolder(RemoteFolder, LocalFolder) : FTPTransfer.FTPGetFolder(RemoteFolder);
             if (Result)
             {
-                TextWriterColor.WritePlain("", true);
-                TextWriterColor.Write(Translate.DoTranslation("Downloaded folder {0}."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success), RemoteFolder);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
+                TextWriters.Write(Translate.DoTranslation("Downloaded folder {0}."), true, KernelColorTools.ColTypes.Success, RemoteFolder);
             }
             else
             {
-                TextWriterColor.WritePlain("", true);
-                TextWriterColor.Write(Translate.DoTranslation("Download failed for folder {0}."), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error), RemoteFolder);
+                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
+                TextWriters.Write(Translate.DoTranslation("Download failed for folder {0}."), true, KernelColorTools.ColTypes.Error, RemoteFolder);
             }
         }
 

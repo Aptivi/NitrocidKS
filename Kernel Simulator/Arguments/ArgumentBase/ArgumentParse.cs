@@ -23,7 +23,7 @@ using KS.Arguments.KernelArguments;
 using KS.ConsoleBase.Colors;
 using KS.Kernel;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
 
 namespace KS.Arguments.ArgumentBase
@@ -82,7 +82,7 @@ namespace KS.Arguments.ArgumentBase
                         else
                         {
                             DebugWriter.Wdbg(DebugLevel.W, "User hasn't provided enough arguments for {0}", Argument);
-                            TextWriterColor.Write(Translate.DoTranslation("There was not enough arguments."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                            TextWriters.Write(Translate.DoTranslation("There was not enough arguments."), true, KernelColorTools.ColTypes.Neutral);
                         }
                     }
                 }

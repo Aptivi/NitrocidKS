@@ -37,10 +37,7 @@ using KS.Misc.Probers;
 using KS.Misc.Reflection;
 using KS.Misc.Splash;
 using KS.Misc.Text;
-using KS.Misc.Writers.ConsoleWriters;
 using KS.Misc.Writers.DebugWriters;
-using KS.Misc.Writers.FancyWriters;
-using KS.Misc.Writers.MiscWriters;
 using KS.Modifications;
 using KS.Network.RemoteDebug;
 using KS.Network.RPC;
@@ -49,6 +46,8 @@ using KS.Misc.Notifiers;
 using SpecProbe.Software.Platform;
 using Terminaux.Colors;
 using Terminaux.Inputs.Styles.Infobox;
+using KS.ConsoleBase.Writers;
+using KS.ConsoleBase.Writers.MiscWriters;
 
 #if SPECIFIERREL
 using KS.Network;
@@ -93,9 +92,6 @@ namespace KS.Kernel
             // Set main thread name
             arguments = Args;
             Thread.CurrentThread.Name = "Main Kernel Thread";
-
-            // Turn on background
-            ColorTools.AllowBackground = true;
 
             // This is a kernel entry point
             while (!Flags.KernelShutdown)
@@ -162,14 +158,14 @@ namespace KS.Kernel
                         // Check for the minimum console window requirements (80x24)
                         while (ConsoleWrapper.WindowWidth < 80 | ConsoleWrapper.WindowHeight < 24)
                         {
-                            TextWriterColor.Write(Translate.DoTranslation("Your console is too small to run properly:") + " {0}x{1}", true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning), ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
-                            TextWriterColor.Write(Translate.DoTranslation("To have a better experience, resize your console window while still being on this screen. Press any key to continue..."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
+                            TextWriters.Write(Translate.DoTranslation("Your console is too small to run properly:") + " {0}x{1}", true, KernelColorTools.ColTypes.Warning, ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
+                            TextWriters.Write(Translate.DoTranslation("To have a better experience, resize your console window while still being on this screen. Press any key to continue..."), true, KernelColorTools.ColTypes.Warning);
                             Input.DetectKeypress();
                         }
                     }
                     else
                     {
-                        TextWriterColor.Write(Translate.DoTranslation("Looks like you're bypassing the console size detection. Things may not work properly on small screens.") + NewLine + Translate.DoTranslation("To have a better experience, resize your console window while still being on this screen. Press any key to continue..."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Warning));
+                        TextWriters.Write(Translate.DoTranslation("Looks like you're bypassing the console size detection. Things may not work properly on small screens.") + NewLine + Translate.DoTranslation("To have a better experience, resize your console window while still being on this screen. Press any key to continue..."), true, KernelColorTools.ColTypes.Warning);
                         Input.DetectKeypress();
                         Flags.CheckingForConsoleSize = true;
                     }
@@ -266,9 +262,9 @@ namespace KS.Kernel
                     // Show license if new style used
                     if (Flags.NewWelcomeStyle | Flags.EnableSplash)
                     {
-                        TextWriterColor.WritePlain("", true);
-                        SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("License information"), true, KernelColorTools.ColTypes.Stage);
-                        WelcomeMessage.WriteLicense(false);
+                        TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
+                        TextFancyWriters.WriteSeparator(Translate.DoTranslation("License information"), KernelColorTools.ColTypes.Stage);
+                        WelcomeMessage.WriteLicense();
                     }
 
                     // Initialize login prompt
@@ -280,7 +276,7 @@ namespace KS.Kernel
                     {
                         MOTDParse.ReadMOTD(MOTDParse.MessageType.MOTD);
                         MOTDParse.ReadMOTD(MOTDParse.MessageType.MAL);
-                        TextWriterColor.Write(Translate.DoTranslation("Enter the admin password for maintenance."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                        TextWriters.Write(Translate.DoTranslation("Enter the admin password for maintenance."), true, KernelColorTools.ColTypes.Neutral);
                         if (Login.Login.Users.ContainsKey("root"))
                         {
                             DebugWriter.Wdbg(DebugLevel.I, "Root account found. Prompting for password...");

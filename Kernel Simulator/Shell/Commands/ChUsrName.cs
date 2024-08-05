@@ -21,7 +21,7 @@ using KS.ConsoleBase.Colors;
 using KS.Kernel;
 using KS.Languages;
 using KS.Login;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Shell.Commands
 {
@@ -31,7 +31,7 @@ namespace KS.Shell.Commands
         public override void Execute(string StringArgs, string[] ListArgs, string[] ListArgsOnly, string[] ListSwitchesOnly)
         {
             UserManagement.ChangeUsername(ListArgs[0], ListArgs[1]);
-            TextWriterColor.Write(Translate.DoTranslation("Username has been changed to {0}!"), true, color: KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral), ListArgs[1]);
+            TextWriters.Write(Translate.DoTranslation("Username has been changed to {0}!"), true, KernelColorTools.ColTypes.Neutral, ListArgs[1]);
             if ((ListArgs[0] ?? "") == (Login.Login.CurrentUser.Username ?? ""))
             {
                 Flags.LogoutRequested = true;

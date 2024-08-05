@@ -22,11 +22,12 @@ using System.Collections.Generic;
 using System.Linq;
 using KS.Misc.Text;
 using KS.Misc.Threading;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
-using KS.Misc.Writers.FancyWriters.Tools;
 using Terminaux.Base;
 using Terminaux.Colors;
+using Textify.Figlet;
+using Terminaux.Writer.ConsoleWriters;
 
 namespace KS.Misc.Screensaver.Displays
 {
@@ -339,7 +340,7 @@ namespace KS.Misc.Screensaver.Displays
                 }
                 else
                 {
-                    TextWriterWhereColor.WriteWherePlain(FigletWrite, FigletWidth, FigletHeight, true);
+                    TextWriterWhereColor.WriteWhere(FigletWrite, FigletWidth, FigletHeight, true);
                 }
             }
             ThreadManager.SleepNoBlock(FigletSettings.FigletDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);

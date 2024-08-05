@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.Shell.Commands
 {
@@ -33,24 +33,24 @@ namespace KS.Shell.Commands
             // Check to see if we have the numeric arguments
             if (!int.TryParse(ListArgsOnly[0], out int R))
             {
-                TextWriterColor.Write(Translate.DoTranslation("The red color level must be numeric."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("The red color level must be numeric."), true, KernelColorTools.ColTypes.Error);
                 return;
             }
             if (!int.TryParse(ListArgsOnly[1], out int G))
             {
-                TextWriterColor.Write(Translate.DoTranslation("The green color level must be numeric."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("The green color level must be numeric."), true, KernelColorTools.ColTypes.Error);
                 return;
             }
             if (!int.TryParse(ListArgsOnly[2], out int B))
             {
-                TextWriterColor.Write(Translate.DoTranslation("The blue color level must be numeric."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Error));
+                TextWriters.Write(Translate.DoTranslation("The blue color level must be numeric."), true, KernelColorTools.ColTypes.Error);
                 return;
             }
 
             // Do the job
             Hex = KernelColorTools.ConvertFromRGBToHex(R, G, B);
-            TextWriterColor.Write("- " + Translate.DoTranslation("Color hexadecimal representation:") + " ", false, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListEntry));
-            TextWriterColor.Write(Hex, true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.ListValue));
+            TextWriters.Write("- " + Translate.DoTranslation("Color hexadecimal representation:") + " ", false, KernelColorTools.ColTypes.ListEntry);
+            TextWriters.Write(Hex, true, KernelColorTools.ColTypes.ListValue);
         }
 
     }

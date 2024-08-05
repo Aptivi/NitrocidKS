@@ -19,7 +19,7 @@
 
 using KS.ConsoleBase.Colors;
 using KS.Languages;
-using KS.Misc.Writers.ConsoleWriters;
+using KS.ConsoleBase.Writers;
 using KS.Shell.ShellBase.Commands;
 namespace KS.TestShell.Commands
 {
@@ -32,11 +32,11 @@ namespace KS.TestShell.Commands
             var LocalizedStrings = Translate.PrepareDict("eng");
             if (LocalizedStrings.ContainsKey(Text))
             {
-                TextWriterColor.Write(Translate.DoTranslation("String found in the localization resources."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Success));
+                TextWriters.Write(Translate.DoTranslation("String found in the localization resources."), true, KernelColorTools.ColTypes.Success);
             }
             else
             {
-                TextWriterColor.Write(Translate.DoTranslation("String not found in the localization resources."), true, KernelColorTools.GetConsoleColor(KernelColorTools.ColTypes.Neutral));
+                TextWriters.Write(Translate.DoTranslation("String not found in the localization resources."), true, KernelColorTools.ColTypes.Neutral);
             }
         }
 
