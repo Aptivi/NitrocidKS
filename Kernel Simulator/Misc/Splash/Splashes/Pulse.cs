@@ -60,7 +60,6 @@ namespace KS.Misc.Splash.Splashes
             Console.BackgroundColor = ConsoleColor.Black;
             ConsoleWrapper.Clear();
             RandomDriver = new Random();
-            PulseSettings.RandomDriver = RandomDriver;
         }
 
         public void Display()

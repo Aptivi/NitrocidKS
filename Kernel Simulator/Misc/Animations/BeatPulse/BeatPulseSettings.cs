@@ -17,20 +17,21 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using System;
 using Terminaux.Colors;
+
 namespace KS.Misc.Animations.BeatPulse
 {
+    /// <summary>
+    /// Beat pulse settings
+    /// </summary>
     public class BeatPulseSettings
     {
 
-        internal Random RandomDriver;
-        private bool _beatpulse255Colors;
         private bool _beatpulseTrueColor = true;
         private int _beatpulseDelay = 120;
         private int _beatpulseMaxSteps = 30;
         private bool _beatpulseCycleColors = true;
-        private string _beatpulseBeatColor = 17.ToString();
+        private string _beatpulseBeatColor = "17";
         private int _beatpulseMinimumRedColorLevel = 0;
         private int _beatpulseMinimumGreenColorLevel = 0;
         private int _beatpulseMinimumBlueColorLevel = 0;
@@ -40,20 +41,6 @@ namespace KS.Misc.Animations.BeatPulse
         private int _beatpulseMaximumBlueColorLevel = 255;
         private int _beatpulseMaximumColorLevel = 255;
 
-        /// <summary>
-        /// [BeatPulse] Enable 255 color support. Has a higher priority than 16 color support. Please note that it only works if color cycling is enabled.
-        /// </summary>
-        public bool BeatPulse255Colors
-        {
-            get
-            {
-                return _beatpulse255Colors;
-            }
-            set
-            {
-                _beatpulse255Colors = value;
-            }
-        }
         /// <summary>
         /// [BeatPulse] Enable truecolor support. Has a higher priority than 255 color support. Please note that it only works if color cycling is enabled.
         /// </summary>
@@ -193,7 +180,7 @@ namespace KS.Misc.Animations.BeatPulse
             }
             set
             {
-                int FinalMinimumLevel = _beatpulse255Colors | _beatpulseTrueColor ? 255 : 15;
+                int FinalMinimumLevel = 255;
                 if (value <= 0)
                     value = 0;
                 if (value > FinalMinimumLevel)
@@ -266,7 +253,7 @@ namespace KS.Misc.Animations.BeatPulse
             }
             set
             {
-                int FinalMaximumLevel = _beatpulse255Colors | _beatpulseTrueColor ? 255 : 15;
+                int FinalMaximumLevel = 255;
                 if (value <= _beatpulseMinimumColorLevel)
                     value = _beatpulseMinimumColorLevel;
                 if (value > FinalMaximumLevel)

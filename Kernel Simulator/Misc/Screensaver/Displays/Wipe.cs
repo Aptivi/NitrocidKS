@@ -18,20 +18,19 @@
 //
 
 using System;
-using System.Collections.Generic;
-using KS.ConsoleBase.Colors;
-using KS.Misc.Text;
-using KS.Misc.Threading;
-using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Threading;
 using Terminaux.Base;
 using Terminaux.Colors;
-using Terminaux.Writer.ConsoleWriters;
+using KS.Misc.Reflection;
+
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for Wipe
+    /// </summary>
     public static class WipeSettings
     {
-
         private static bool _wipe255Colors;
         private static bool _wipeTrueColor = true;
         private static int _wipeDelay = 10;
@@ -228,65 +227,54 @@ namespace KS.Misc.Screensaver.Displays
                 _wipeMaximumColorLevel = value;
             }
         }
-
     }
+
+    /// <summary>
+    /// Display code for Wipe
+    /// </summary>
     public class WipeDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Random RandomDriver;
-        private int CurrentWindowWidth;
-        private int CurrentWindowHeight;
-        private bool ResizeSyncing;
         private WipeDirections ToDirection = WipeDirections.Right;
         private int TimesWiped = 0;
 
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "Wipe";
 
-        public override Dictionary<string, object> ScreensaverSettings { get; set; }
-
+        /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
             // Variable preparations
-            RandomDriver = new Random();
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
-            KernelColorTools.SetConsoleColor(new Color(WipeSettings.WipeBackgroundColor), true);
-            Console.ForegroundColor = ConsoleColor.White;
-            ConsoleWrapper.Clear();
+            ColorTools.LoadBackDry(new Color(WipeSettings.WipeBackgroundColor));
             ConsoleWrapper.CursorVisible = false;
+            TimesWiped = 0;
+            ToDirection = WipeDirections.Right;
         }
 
+        /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
             ConsoleWrapper.CursorVisible = false;
-            if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                ResizeSyncing = true;
 
             // Select a color
             if (WipeSettings.WipeTrueColor)
             {
-                int RedColorNum = RandomDriver.Next(WipeSettings.WipeMinimumRedColorLevel, WipeSettings.WipeMaximumRedColorLevel);
-                int GreenColorNum = RandomDriver.Next(WipeSettings.WipeMinimumGreenColorLevel, WipeSettings.WipeMaximumGreenColorLevel);
-                int BlueColorNum = RandomDriver.Next(WipeSettings.WipeMinimumBlueColorLevel, WipeSettings.WipeMaximumBlueColorLevel);
+                int RedColorNum = RandomDriver.Random(WipeSettings.WipeMinimumRedColorLevel, WipeSettings.WipeMaximumRedColorLevel);
+                int GreenColorNum = RandomDriver.Random(WipeSettings.WipeMinimumGreenColorLevel, WipeSettings.WipeMaximumGreenColorLevel);
+                int BlueColorNum = RandomDriver.Random(WipeSettings.WipeMinimumBlueColorLevel, WipeSettings.WipeMaximumBlueColorLevel);
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
-                if (!ResizeSyncing)
-                    KernelColorTools.SetConsoleColor(new Color($"{RedColorNum};{GreenColorNum};{BlueColorNum}"), true);
-            }
-            else if (WipeSettings.Wipe255Colors)
-            {
-                int ColorNum = RandomDriver.Next(WipeSettings.WipeMinimumColorLevel, WipeSettings.WipeMaximumColorLevel);
-                DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
-                if (!ResizeSyncing)
-                    KernelColorTools.SetConsoleColor(new Color(ColorNum), true);
+                if (!ConsoleResizeHandler.WasResized(false))
+                    ColorTools.SetConsoleColorDry(new Color($"{RedColorNum};{GreenColorNum};{BlueColorNum}"), true);
             }
             else
             {
-                if (!ResizeSyncing)
-                    Console.BackgroundColor = Screensaver.colors[RandomDriver.Next(WipeSettings.WipeMinimumColorLevel, WipeSettings.WipeMaximumColorLevel)];
-                DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", Console.BackgroundColor);
+                int ColorNum = RandomDriver.Random(WipeSettings.WipeMinimumColorLevel, WipeSettings.WipeMaximumColorLevel);
+                DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
+                if (!ConsoleResizeHandler.WasResized(false))
+                    ColorTools.SetConsoleColorDry(new Color(ColorNum), true);
             }
 
-            // Set max height according to platform
+            // Set max height
             int MaxWindowHeight = ConsoleWrapper.WindowHeight - 1;
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Max height {0}", MaxWindowHeight);
 
@@ -296,23 +284,19 @@ namespace KS.Misc.Screensaver.Displays
             {
                 case WipeDirections.Right:
                     {
-                        for (int Column = 0, loopTo = ConsoleWrapper.WindowWidth; Column <= loopTo; Column++)
+                        for (int Column = 0; Column <= ConsoleWrapper.WindowWidth; Column++)
                         {
-                            if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                                ResizeSyncing = true;
-                            if (ResizeSyncing)
+                            if (ConsoleResizeHandler.WasResized(false))
                                 break;
-                            for (int Row = 0, loopTo1 = MaxWindowHeight; Row <= loopTo1; Row++)
+                            for (int Row = 0; Row <= MaxWindowHeight; Row++)
                             {
-                                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                                    ResizeSyncing = true;
-                                if (ResizeSyncing)
+                                if (ConsoleResizeHandler.WasResized(false))
                                     break;
 
                                 // Do the actual writing
                                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Setting Y position to {0}", Row);
                                 ConsoleWrapper.SetCursorPosition(0, Row);
-                                TextWriterRaw.WritePlain(" ".Repeat(Column), false);
+                                ConsoleWrapper.Write(new string(' ', Column));
                                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", Column);
                             }
                             ThreadManager.SleepNoBlock(WipeSettings.WipeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
@@ -324,21 +308,17 @@ namespace KS.Misc.Screensaver.Displays
                     {
                         for (int Column = ConsoleWrapper.WindowWidth; Column >= 1; Column -= 1)
                         {
-                            if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                                ResizeSyncing = true;
-                            if (ResizeSyncing)
+                            if (ConsoleResizeHandler.WasResized(false))
                                 break;
-                            for (int Row = 0, loopTo2 = MaxWindowHeight; Row <= loopTo2; Row++)
+                            for (int Row = 0; Row <= MaxWindowHeight; Row++)
                             {
-                                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                                    ResizeSyncing = true;
-                                if (ResizeSyncing)
+                                if (ConsoleResizeHandler.WasResized(false))
                                     break;
 
                                 // Do the actual writing
                                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Setting position to {0}", Column - 1, Row);
                                 ConsoleWrapper.SetCursorPosition(Column - 1, Row);
-                                TextWriterRaw.WritePlain(" ".Repeat(ConsoleWrapper.WindowWidth - Column + 1), false);
+                                ConsoleWrapper.Write(new string(' ', ConsoleWrapper.WindowWidth - Column + 1));
                                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", ConsoleWrapper.WindowWidth - Column + 1);
                             }
                             ThreadManager.SleepNoBlock(WipeSettings.WipeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
@@ -350,15 +330,13 @@ namespace KS.Misc.Screensaver.Displays
                     {
                         for (int Row = MaxWindowHeight; Row >= 0; Row -= 1)
                         {
-                            if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                                ResizeSyncing = true;
-                            if (ResizeSyncing)
+                            if (ConsoleResizeHandler.WasResized(false))
                                 break;
 
                             // Do the actual writing
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Setting Y position to {0}", Row);
                             ConsoleWrapper.SetCursorPosition(0, Row);
-                            TextWriterRaw.WritePlain(" ".Repeat(ConsoleWrapper.WindowWidth), false);
+                            ConsoleWrapper.Write(new string(' ', ConsoleWrapper.WindowWidth));
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", ConsoleWrapper.WindowWidth);
                             ThreadManager.SleepNoBlock(WipeSettings.WipeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
                         }
@@ -367,16 +345,14 @@ namespace KS.Misc.Screensaver.Displays
                     }
                 case WipeDirections.Bottom:
                     {
-                        for (int Row = 0, loopTo3 = MaxWindowHeight; Row <= loopTo3; Row++)
+                        for (int Row = 0; Row <= MaxWindowHeight; Row++)
                         {
-                            if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                                ResizeSyncing = true;
-                            if (ResizeSyncing)
+                            if (ConsoleResizeHandler.WasResized(false))
                                 break;
 
                             // Do the actual writing
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", ConsoleWrapper.WindowWidth);
-                            TextWriterRaw.WritePlain(" ".Repeat(ConsoleWrapper.WindowWidth), false);
+                            ConsoleWrapper.Write(new string(' ', ConsoleWrapper.WindowWidth));
                             ThreadManager.SleepNoBlock(WipeSettings.WipeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
                         }
                         ConsoleWrapper.SetCursorPosition(0, 0);
@@ -384,7 +360,7 @@ namespace KS.Misc.Screensaver.Displays
                     }
             }
 
-            if (!ResizeSyncing)
+            if (!ConsoleResizeHandler.WasResized(false))
             {
                 TimesWiped += 1;
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Wiped {0} times out of {1}", TimesWiped, WipeSettings.WipeWipesNeededToChangeDirection);
@@ -393,20 +369,17 @@ namespace KS.Misc.Screensaver.Displays
                 if (TimesWiped == WipeSettings.WipeWipesNeededToChangeDirection)
                 {
                     TimesWiped = 0;
-                    ToDirection = (WipeDirections)Convert.ToInt32(Enum.Parse(typeof(WipeDirections), RandomDriver.Next(0, 3).ToString()));
+                    ToDirection = (WipeDirections)Convert.ToInt32(Enum.Parse(typeof(WipeDirections), RandomDriver.Random(3).ToString()));
                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Changed direction to {0}", ToDirection.ToString());
                 }
             }
             else
             {
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.W, "Resize-syncing. Clearing...");
-                KernelColorTools.SetConsoleColor(new Color(WipeSettings.WipeBackgroundColor), true);
-                ConsoleWrapper.Clear();
+                ColorTools.LoadBackDry(new Color(WipeSettings.WipeBackgroundColor));
             }
 
-            ResizeSyncing = false;
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+            ConsoleResizeHandler.WasResized();
             ThreadManager.SleepNoBlock(WipeSettings.WipeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
         }
 

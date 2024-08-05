@@ -17,15 +17,17 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using System;
-using System.Collections.Generic;
 using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Screensaver;
 using Terminaux.Base;
+
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for FaderBack
+    /// </summary>
     public static class FaderBackSettings
     {
-
         private static int _faderBackDelay = 10;
         private static int _faderBackFadeOutDelay = 3000;
         private static int _faderBackMaxSteps = 25;
@@ -192,29 +194,22 @@ namespace KS.Misc.Screensaver.Displays
                 _faderBackMaximumBlueColorLevel = value;
             }
         }
-
     }
 
+    /// <summary>
+    /// Display code for FaderBack
+    /// </summary>
     public class FaderBackDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Random RandomDriver;
-        private int CurrentWindowWidth;
-        private int CurrentWindowHeight;
         private Animations.FaderBack.FaderBackSettings FaderBackSettingsInstance;
 
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "FaderBack";
 
-        public override Dictionary<string, object> ScreensaverSettings { get; set; }
-
+        /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
-            // Variable preparations
-            RandomDriver = new Random();
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
-            Console.BackgroundColor = ConsoleColor.Black;
-            ConsoleWrapper.Clear();
             DebugWriter.Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
             FaderBackSettingsInstance = new Animations.FaderBack.FaderBackSettings()
             {
@@ -226,15 +221,13 @@ namespace KS.Misc.Screensaver.Displays
                 FaderBackMinimumBlueColorLevel = FaderBackSettings.FaderBackMinimumBlueColorLevel,
                 FaderBackMaximumRedColorLevel = FaderBackSettings.FaderBackMaximumRedColorLevel,
                 FaderBackMaximumGreenColorLevel = FaderBackSettings.FaderBackMaximumGreenColorLevel,
-                FaderBackMaximumBlueColorLevel = FaderBackSettings.FaderBackMaximumBlueColorLevel,
-                RandomDriver = RandomDriver
+                FaderBackMaximumBlueColorLevel = FaderBackSettings.FaderBackMaximumBlueColorLevel
             };
+            base.ScreensaverPreparation();
         }
 
-        public override void ScreensaverLogic()
-        {
-            Animations.FaderBack.FaderBack.Simulate(FaderBackSettingsInstance);
-        }
+        /// <inheritdoc/>
+        public override void ScreensaverLogic() => Animations.FaderBack.FaderBack.Simulate(FaderBackSettingsInstance);
 
     }
 }

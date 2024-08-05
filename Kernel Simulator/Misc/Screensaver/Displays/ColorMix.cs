@@ -17,20 +17,21 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using System;
-using System.Collections.Generic;
-using KS.ConsoleBase.Colors;
-using KS.Misc.Threading;
-using KS.ConsoleBase.Writers;
-using KS.Misc.Writers.DebugWriters;
-using Terminaux.Base;
-using Terminaux.Colors;
 using Terminaux.Writer.ConsoleWriters;
+using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Threading;
+using Terminaux.Colors;
+using Terminaux.Base;
+using KS.Misc.Reflection;
+using System;
+
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for ColorMix
+    /// </summary>
     public static class ColorMixSettings
     {
-
         private static bool _colorMix255Colors;
         private static bool _colorMixTrueColor = true;
         private static int _colorMixDelay = 1;
@@ -248,79 +249,71 @@ namespace KS.Misc.Screensaver.Displays
                 _colorMixMaximumColorLevel = value;
             }
         }
-
     }
 
+    /// <summary>
+    /// Display code for ColorMix
+    /// </summary>
     public class ColorMixDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Random RandomDriver;
-        private int CurrentWindowWidth;
-        private int CurrentWindowHeight;
-        private bool ResizeSyncing;
-
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "ColorMix";
 
-        public override Dictionary<string, object> ScreensaverSettings { get; set; }
-
+        /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
             // Variable preparations
-            RandomDriver = new Random();
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
-            KernelColorTools.SetConsoleColor(new Color(ColorMixSettings.ColorMixBackgroundColor), true);
-            Console.ForegroundColor = ConsoleColor.White;
-            ConsoleWrapper.Clear();
+            ColorTools.LoadBackDry(new Color(ColorMixSettings.ColorMixBackgroundColor));
+            ConsoleWrapper.CursorVisible = false;
         }
 
+        /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
-            ConsoleWrapper.CursorVisible = false;
-            // Set colors
-            if (ColorMixSettings.ColorMixTrueColor)
-            {
-                int RedColorNum = RandomDriver.Next(ColorMixSettings.ColorMixMinimumRedColorLevel, ColorMixSettings.ColorMixMaximumRedColorLevel);
-                int GreenColorNum = RandomDriver.Next(ColorMixSettings.ColorMixMinimumGreenColorLevel, ColorMixSettings.ColorMixMaximumGreenColorLevel);
-                int BlueColorNum = RandomDriver.Next(ColorMixSettings.ColorMixMinimumBlueColorLevel, ColorMixSettings.ColorMixMaximumBlueColorLevel);
-                DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
-                var ColorStorage = new Color(RedColorNum, GreenColorNum, BlueColorNum);
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (!ResizeSyncing)
-                {
-                    KernelColorTools.SetConsoleColor(ColorStorage, true);
-                    TextWriterRaw.WritePlain(" ", false);
-                }
-            }
-            else if (ColorMixSettings.ColorMix255Colors)
-            {
-                int ColorNum = RandomDriver.Next(ColorMixSettings.ColorMixMinimumColorLevel, ColorMixSettings.ColorMixMaximumColorLevel);
-                DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (!ResizeSyncing)
-                {
-                    KernelColorTools.SetConsoleColor(new Color(ColorNum), true);
-                    TextWriterRaw.WritePlain(" ", false);
-                }
-            }
+            int EndLeft = ConsoleWrapper.WindowWidth - 1;
+            int EndTop = ConsoleWrapper.WindowHeight - 1;
+            int Left = RandomDriver.RandomIdx(ConsoleWrapper.WindowWidth);
+            int Top = RandomDriver.RandomIdx(ConsoleWrapper.WindowHeight);
+            DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "End left: {0} | End top: {1}", EndLeft, EndTop);
+            DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got left: {0} | Got top: {1}", Left, Top);
+
+            // Fill the color if not filled
+            if (ConsoleWrapper.CursorLeft >= EndLeft && ConsoleWrapper.CursorTop >= EndTop)
+                ConsoleWrapper.SetCursorPosition(0, 0);
             else
             {
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (!ResizeSyncing)
+                Color colorStorage;
+                if (ColorMixSettings.ColorMixTrueColor)
                 {
-                    Console.BackgroundColor = (ConsoleColor)RandomDriver.Next(ColorMixSettings.ColorMixMinimumColorLevel, ColorMixSettings.ColorMixMaximumColorLevel);
-                    DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", Console.BackgroundColor);
+                    int RedColorNum = RandomDriver.Random(ColorMixSettings.ColorMixMinimumRedColorLevel, ColorMixSettings.ColorMixMaximumRedColorLevel);
+                    int GreenColorNum = RandomDriver.Random(ColorMixSettings.ColorMixMinimumGreenColorLevel, ColorMixSettings.ColorMixMaximumGreenColorLevel);
+                    int BlueColorNum = RandomDriver.Random(ColorMixSettings.ColorMixMinimumBlueColorLevel, ColorMixSettings.ColorMixMaximumBlueColorLevel);
+                    DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
+                    colorStorage = new Color($"{RedColorNum};{GreenColorNum};{BlueColorNum}");
+                }
+                else
+                {
+                    int ColorNum = RandomDriver.Random(ColorMixSettings.ColorMixMinimumColorLevel, ColorMixSettings.ColorMixMaximumColorLevel);
+                    DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
+                    colorStorage = new Color(ColorNum);
+                }
+
+                if (!ConsoleResizeHandler.WasResized(false))
+                {
+                    ColorTools.SetConsoleColorDry(Color.Empty);
+                    ColorTools.SetConsoleColorDry(colorStorage, true);
                     TextWriterRaw.WritePlain(" ", false);
+                }
+                else
+                {
+                    DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "We're refilling...");
+                    ColorTools.LoadBackDry(new Color(ColorMixSettings.ColorMixBackgroundColor));
                 }
             }
 
             // Reset resize sync
-            ResizeSyncing = false;
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+            ConsoleResizeHandler.WasResized();
             ThreadManager.SleepNoBlock(ColorMixSettings.ColorMixDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
         }
 

@@ -19,23 +19,22 @@
 
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using KS.ConsoleBase.Colors;
-using KS.Files.Querying;
-using KS.Misc.Text;
-using KS.Misc.Threading;
-using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Threading;
 using Terminaux.Base;
 using Terminaux.Colors;
-using Terminaux.Writer.ConsoleWriters;
+using Textify.General;
+using KS.Files.Querying;
+using System.IO;
+using KS.Misc.Reflection;
 
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for Linotypo
+    /// </summary>
     public static class LinotypoSettings
     {
-
         private static int _linotypoDelay = 50;
         private static int _linotypoNewScreenDelay = 3000;
         private static string _linotypoWrite = "Kernel Simulator";
@@ -242,6 +241,9 @@ namespace KS.Misc.Screensaver.Displays
             }
         }
 
+        /// <summary>
+        /// Etaoin fill type
+        /// </summary>
         public enum FillType
         {
             /// <summary>
@@ -260,27 +262,25 @@ namespace KS.Misc.Screensaver.Displays
 
     }
 
+    /// <summary>
+    /// Display code for Linotypo
+    /// </summary>
     internal class LinotypoDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Random RandomDriver;
-        private int CurrentWindowWidth;
-        private int CurrentWindowHeight;
-        private bool ResizeSyncing;
+        private int CurrentColumn = 1;
+        private int CurrentColumnRowConsole = 0;
 
         public override string ScreensaverName { get; set; } = "Linotypo";
-
-        public override Dictionary<string, object> ScreensaverSettings { get; set; }
 
         public override void ScreensaverPreparation()
         {
             // Variable preparations
-            RandomDriver = new Random();
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
-            KernelColorTools.SetConsoleColor(new Color(LinotypoSettings.LinotypoTextColor));
+            ColorTools.SetConsoleColor(new Color(LinotypoSettings.LinotypoTextColor));
             ConsoleWrapper.Clear();
             ConsoleWrapper.CursorVisible = false;
+            CurrentColumn = 1;
+            CurrentColumnRowConsole = 0;
             DebugWriter.Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
         }
 
@@ -289,8 +289,6 @@ namespace KS.Misc.Screensaver.Displays
             int CpmSpeedMin = LinotypoSettings.LinotypoWritingSpeedMin * 5;
             int CpmSpeedMax = LinotypoSettings.LinotypoWritingSpeedMax * 5;
             int MaxCharacters = (int)Math.Round((ConsoleWrapper.WindowWidth - 2) / (double)LinotypoSettings.LinotypoTextColumns - 3d);
-            int CurrentColumn = 1;
-            int CurrentColumnRowConsole = ConsoleWrapper.CursorLeft;
             int ColumnRowConsoleThreshold = (int)Math.Round(ConsoleWrapper.WindowWidth / (double)LinotypoSettings.LinotypoTextColumns);
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Minimum speed from {0} WPM: {1} CPM", LinotypoSettings.LinotypoWritingSpeedMin, CpmSpeedMin);
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Maximum speed from {0} WPM: {1} CPM", LinotypoSettings.LinotypoWritingSpeedMax, CpmSpeedMax);
@@ -301,13 +299,21 @@ namespace KS.Misc.Screensaver.Displays
             var Strikes = new List<string>() { "q`12wsa", "r43edfgt5", "u76yhjki8", @"p09ol;'[-=]\", "/';. ", "m,lkjn ", "vbhgfc ", "zxdsa " };
             var CapStrikes = new List<string>() { "Q~!@WSA", "R$#EDFGT%", "U&^YHJKI*", "P)(OL:\"{_+}|", "?\":> ", "M<LKJN ", "VBHGFC ", "ZXDSA " };
             string CapSymbols = "~!@$#%&^*)(:\"{_+}|?><";
-            string[,] LinotypeLayout = new string[,] { { "e", "t", "a", "o", "i", "n", " " }, { "s", "h", "r", "d", "l", "u", " " }, { "c", "m", "f", "w", "y", "p", " " }, { "v", "b", "g", "k", "q", "j", " " }, { "x", "z", " ", " ", " ", " ", " " }, { " ", " ", " ", " ", " ", " ", " " } };
+            var LinotypeLayout = new string[,]
+            {
+                { "e", "t", "a", "o", "i", "n", " " },
+                { "s", "h", "r", "d", "l", "u", " " },
+                { "c", "m", "f", "w", "y", "p", " " },
+                { "v", "b", "g", "k", "q", "j", " " },
+                { "x", "z", " ", " ", " ", " ", " " },
+                { " ", " ", " ", " ", " ", " ", " " }
+            };
 
             // Other variables
-            var CountingCharacters = default(bool);
-            var CharacterCounter = default(int);
-            var EtaoinMode = default(bool);
-            var CappedEtaoin = default(bool);
+            var CountingCharacters = false;
+            var CharacterCounter = 0;
+            var EtaoinMode = false;
+            var CappedEtaoin = false;
             string LinotypeWrite = LinotypoSettings.LinotypoWrite;
 
             // Linotypo can also deal with files written on the field that is used for storing text, so check to see if the path exists.
@@ -320,12 +326,10 @@ namespace KS.Misc.Screensaver.Displays
             }
 
             // For each line, write four spaces, and extra two spaces if paragraph starts.
-            var StrikeCharsIndex = default(int);
+            var StrikeCharsIndex1 = 0;
             foreach (string Paragraph in LinotypeWrite.SplitNewLines())
             {
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (ResizeSyncing)
+                if (ConsoleResizeHandler.WasResized(false))
                     break;
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "New paragraph: {0}", Paragraph);
 
@@ -337,14 +341,14 @@ namespace KS.Misc.Screensaver.Displays
                 if (CurrentColumn == 1)
                 {
                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Column 1. Printing newline...");
-                    TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
+                    ConsoleWrapper.WriteLine();
                 }
                 else
                 {
                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Column {0}. Setting left to {1}...", CurrentColumn, CurrentColumnRowConsole);
                     ConsoleWrapper.SetCursorPosition(CurrentColumnRowConsole, ConsoleWrapper.CursorTop + 1);
                 }
-                TextWriterRaw.WritePlain("    ", false);
+                ConsoleWrapper.Write("    ");
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop);
                 bool NewLineDone = true;
 
@@ -352,44 +356,13 @@ namespace KS.Misc.Screensaver.Displays
                 // in various terminal sizes. This enables us to easily tell if we're going to re-write the line after a typo and the
                 // line completion that consists of "Etaoin shrdlu" and other nonsense written sometimes on newspapers or ads back in
                 // the early 20th century.
-                var IncompleteSentences = new List<string>();
-                var IncompleteSentenceBuilder = new StringBuilder();
-                int CharactersParsed = 0;
-
-                // This reserved characters count tells us how many spaces are used for indenting the paragraph. This is only four for
-                // the first time and will be reverted back to zero after the incomplete sentence is formed.
-                int ReservedCharacters = 4;
-                foreach (char ParagraphChar in Paragraph)
-                {
-                    if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                        ResizeSyncing = true;
-                    if (ResizeSyncing)
-                        break;
-
-                    // Append the character into the incomplete sentence builder.
-                    IncompleteSentenceBuilder.Append(ParagraphChar);
-                    CharactersParsed += 1;
-
-                    // Check to see if we're at the maximum character number
-                    if (IncompleteSentenceBuilder.Length == MaxCharacters - ReservedCharacters | Paragraph.Length == CharactersParsed)
-                    {
-                        // We're at the character number of maximum character. Add the sentence to the list for "wrapping" in columns.
-                        DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Adding {0} to the list... Incomplete sentences: {1}", IncompleteSentenceBuilder.ToString(), IncompleteSentences.Count);
-                        IncompleteSentences.Add(IncompleteSentenceBuilder.ToString());
-
-                        // Clean everything up
-                        IncompleteSentenceBuilder.Clear();
-                        ReservedCharacters = 0;
-                    }
-                }
+                var IncompleteSentences = TextTools.GetWrappedSentences(Paragraph, MaxCharacters, 4);
 
                 // Get struck character and write it
-                for (int IncompleteSentenceIndex = 0, loopTo = IncompleteSentences.Count - 1; IncompleteSentenceIndex <= loopTo; IncompleteSentenceIndex++)
+                for (int IncompleteSentenceIndex = 0; IncompleteSentenceIndex <= IncompleteSentences.Length - 1; IncompleteSentenceIndex++)
                 {
                     string IncompleteSentence = IncompleteSentences[IncompleteSentenceIndex];
-                    if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                        ResizeSyncing = true;
-                    if (ResizeSyncing)
+                    if (ConsoleResizeHandler.WasResized(false))
                         break;
 
                     // Check if we need to indent a sentence
@@ -398,7 +371,7 @@ namespace KS.Misc.Screensaver.Displays
                         if (CurrentColumn == 1)
                         {
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Column 1. Printing newline...");
-                            TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
+                            ConsoleWrapper.WriteLine();
                         }
                         else
                         {
@@ -406,7 +379,7 @@ namespace KS.Misc.Screensaver.Displays
                             ConsoleWrapper.SetCursorPosition(CurrentColumnRowConsole, ConsoleWrapper.CursorTop + 1);
                         }
                     }
-                    TextWriterRaw.WritePlain("  ", false);
+                    ConsoleWrapper.Write("  ");
                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop);
 
                     // We need to store which column and which key from the linotype keyboard layout is taken.
@@ -415,11 +388,9 @@ namespace KS.Misc.Screensaver.Displays
                     int LinotypeMaxColumnIndex = 5;
 
                     // Process the incomplete sentences
-                    for (int StruckCharIndex = 0, loopTo1 = IncompleteSentence.Length - 1; StruckCharIndex <= loopTo1; StruckCharIndex++)
+                    for (int StruckCharIndex = 0; StruckCharIndex <= IncompleteSentence.Length - 1; StruckCharIndex++)
                     {
-                        if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                            ResizeSyncing = true;
-                        if (ResizeSyncing)
+                        if (ConsoleResizeHandler.WasResized(false))
                             break;
 
                         // Sometimes, typing error can be made in the last line and the line is repeated on the first line in the different
@@ -431,16 +402,16 @@ namespace KS.Misc.Screensaver.Displays
                             if (CurrentColumn == 1)
                             {
                                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Column 1. Printing newline...");
-                                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
+                                ConsoleWrapper.WriteLine();
                             }
                             else
                             {
                                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Column {0}. Setting left to {1}...", CurrentColumn, CurrentColumnRowConsole);
                                 ConsoleWrapper.SetCursorPosition(CurrentColumnRowConsole, ConsoleWrapper.CursorTop + 1);
                             }
-                            TextWriterRaw.WritePlain("  ", false);
+                            ConsoleWrapper.Write("  ");
                             if (IncompleteSentenceIndex == 0)
-                                TextWriterRaw.WritePlain("    ", false);
+                                ConsoleWrapper.Write("    ");
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop);
                         }
 
@@ -449,7 +420,7 @@ namespace KS.Misc.Screensaver.Displays
                         DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Struck character: {0}", StruckChar);
 
                         // Calculate needed milliseconds from two WPM speeds (minimum and maximum)
-                        int SelectedCpm = RandomDriver.Next(CpmSpeedMin, CpmSpeedMax);
+                        int SelectedCpm = RandomDriver.Random(CpmSpeedMin, CpmSpeedMax);
                         int WriteMs = (int)Math.Round(60d / SelectedCpm * 1000d);
                         DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Delay for {0} CPM: {1} ms", SelectedCpm, WriteMs);
 
@@ -458,7 +429,7 @@ namespace KS.Misc.Screensaver.Displays
                         {
                             // Doing this in linotype machines after spotting an error usually triggers a speed boost, because the authors
                             // that used this machine back then considered it as a quick way to fill the faulty line.
-                            WriteMs = (int)Math.Round(WriteMs / (1d + RandomDriver.NextDouble()));
+                            WriteMs = (int)Math.Round(WriteMs / (1d + RandomDriver.RandomDouble()));
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Etaoin mode on. Delaying {0} ms...", WriteMs);
 
                             // Get the character
@@ -499,8 +470,8 @@ namespace KS.Misc.Screensaver.Displays
                                 case LinotypoSettings.FillType.RandomChars:
                                     {
                                         // Randomly select the linotype indexes
-                                        LinotypeColumnIndex = RandomDriver.Next(0, 5);
-                                        LinotypeKeyIndex = RandomDriver.Next(0, 6);
+                                        LinotypeColumnIndex = RandomDriver.Random(0, 5);
+                                        LinotypeKeyIndex = RandomDriver.Random(0, 6);
                                         break;
                                     }
                             }
@@ -510,19 +481,19 @@ namespace KS.Misc.Screensaver.Displays
                         {
                             // See if the typo is guaranteed
                             double Probability = (LinotypoSettings.LinotypoMissStrikePossibility >= 5 ? 5 : LinotypoSettings.LinotypoMissStrikePossibility) / 100d;
-                            bool LinotypoGuaranteed = RandomDriver.NextDouble() < Probability;
+                            bool LinotypoGuaranteed = RandomDriver.RandomChance(Probability);
                             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Probability: {0} Guarantee: {1}", Probability, LinotypoGuaranteed);
                             if (LinotypoGuaranteed)
                             {
                                 // Sometimes, a typo is generated by missing a character.
                                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Made a typo!");
                                 double MissProbability = (LinotypoSettings.LinotypoMissPossibility >= 10 ? 10 : LinotypoSettings.LinotypoMissPossibility) / 100d;
-                                bool MissGuaranteed = RandomDriver.NextDouble() < MissProbability;
+                                bool MissGuaranteed = RandomDriver.RandomChance(MissProbability);
                                 if (MissGuaranteed)
                                 {
                                     // Miss is guaranteed. Simulate the missed character
                                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Missed a character!");
-                                    StruckChar = '\0';
+                                    StruckChar = Convert.ToChar("\0");
                                 }
                                 // Typo is guaranteed. Select a strike string randomly until the struck key is found in between the characters
                                 else
@@ -533,11 +504,11 @@ namespace KS.Misc.Screensaver.Displays
                                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Bruteforcing...");
                                     while (!StruckFound)
                                     {
-                                        StrikeCharsIndex = RandomDriver.Next(0, Strikes.Count - 1);
-                                        CappedStrike = char.IsUpper(StruckChar) | CapSymbols.Contains(Convert.ToString(StruckChar));
-                                        StrikesString = CappedStrike ? CapStrikes[StrikeCharsIndex] : Strikes[StrikeCharsIndex];
-                                        StruckFound = !string.IsNullOrEmpty(StrikesString) && StrikesString.Contains(Convert.ToString(StruckChar));
-                                        DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Strike chars index: {0}", StrikeCharsIndex);
+                                        StrikeCharsIndex1 = RandomDriver.RandomIdx(0, Strikes.Count);
+                                        CappedStrike = char.IsUpper(StruckChar) | CapSymbols.Contains($"{StruckChar}");
+                                        StrikesString = CappedStrike ? CapStrikes[StrikeCharsIndex1] : Strikes[StrikeCharsIndex1];
+                                        StruckFound = !string.IsNullOrEmpty(StrikesString) && StrikesString.Contains($"{StruckChar}");
+                                        DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Strike chars index: {0}", StrikeCharsIndex1);
                                         DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Capped strike: {0}", CappedStrike);
                                         DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Strikes pattern: {0}", StrikesString);
                                         DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Found? {0}", StruckFound);
@@ -545,13 +516,13 @@ namespace KS.Misc.Screensaver.Displays
                                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Found!");
 
                                     // Select a random character that is a typo from the selected strike index
-                                    int RandomStrikeIndex = RandomDriver.Next(0, StrikesString.Length - 1);
+                                    int RandomStrikeIndex = RandomDriver.RandomIdx(0, StrikesString.Length);
                                     char MistypedChar = StrikesString[RandomStrikeIndex];
-                                    if (@"`-=\][';/.,".Contains(Convert.ToString(MistypedChar)) & CappedStrike)
+                                    if (@"`-=\][';/.,".Contains($"{MistypedChar}") & CappedStrike)
                                     {
                                         // The mistyped character is a symbol and the strike is capped. Select a symbol from CapStrikes.
                                         DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Mistyped character is a symbol and the strike is capped.");
-                                        MistypedChar = CapStrikes[StrikeCharsIndex][RandomStrikeIndex];
+                                        MistypedChar = CapStrikes[StrikeCharsIndex1][RandomStrikeIndex];
                                     }
                                     StruckChar = MistypedChar;
                                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Struck character: {0}", StruckChar);
@@ -559,7 +530,7 @@ namespace KS.Misc.Screensaver.Displays
 
                                 // Randomly select whether or not to turn on the capped Etaoin
                                 double CappingProbability = (LinotypoSettings.LinotypoEtaoinCappingPossibility >= 10 ? 10 : LinotypoSettings.LinotypoEtaoinCappingPossibility) / 100d;
-                                CappedEtaoin = RandomDriver.NextDouble() < CappingProbability;
+                                CappedEtaoin = RandomDriver.RandomChance(CappingProbability);
                                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Capped Etaoin: {0}", CappedEtaoin);
 
                                 // Trigger character counter mode
@@ -569,8 +540,8 @@ namespace KS.Misc.Screensaver.Displays
                         }
 
                         // Write the final character to the console and wait
-                        if (!(Convert.ToString(StruckChar) == "\0"))
-                            TextWriterRaw.WritePlain(Convert.ToString(StruckChar), false);
+                        if (StruckChar != Convert.ToChar(0))
+                            ConsoleWrapper.Write(StruckChar);
                         ThreadManager.SleepNoBlock(WriteMs, ScreensaverDisplayer.ScreensaverDisplayerThread);
 
                         // If we're on the character counter mode, increment this for every character until the "line fill" mode starts
@@ -604,14 +575,14 @@ namespace KS.Misc.Screensaver.Displays
                                 if (CurrentColumn == 1)
                                 {
                                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Column 1. Printing newline...");
-                                    TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
+                                    ConsoleWrapper.WriteLine();
                                 }
                                 else
                                 {
                                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Column {0}. Setting left to {1}...", CurrentColumn, CurrentColumnRowConsole);
                                     ConsoleWrapper.SetCursorPosition(CurrentColumnRowConsole, ConsoleWrapper.CursorTop + 1);
                                 }
-                                TextWriterRaw.WritePlain("  ", false);
+                                ConsoleWrapper.Write("  ");
                                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop);
                             }
                         }
@@ -637,19 +608,14 @@ namespace KS.Misc.Screensaver.Displays
             }
 
             // Reset resize sync
-            ResizeSyncing = false;
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+            ConsoleResizeHandler.WasResized();
             ThreadManager.SleepNoBlock(LinotypoSettings.LinotypoDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
         }
 
         /// <summary>
         /// Instructs the Linotypo screensaver to go to the next column
         /// </summary>
-        /// <param name="CurrentColumn"></param>
-        /// <param name="CurrentColumnRowConsole"></param>
-        /// <param name="ColumnRowConsoleThreshold"></param>
-        public void HandleNextColumn(ref int CurrentColumn, ref int CurrentColumnRowConsole, int ColumnRowConsoleThreshold)
+        private void HandleNextColumn(ref int CurrentColumn, ref int CurrentColumnRowConsole, int ColumnRowConsoleThreshold)
         {
             if (LinotypoSettings.LinotypoTextColumns > 1)
             {
@@ -660,7 +626,7 @@ namespace KS.Misc.Screensaver.Displays
                     {
                         // ...wait until retry
                         DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Drawn all columns. Waiting {0} ms...", LinotypoSettings.LinotypoNewScreenDelay);
-                        TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
+                        ConsoleWrapper.WriteLine();
                         ThreadManager.SleepNoBlock(LinotypoSettings.LinotypoNewScreenDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
 
                         // ...and make a new screen
@@ -682,7 +648,7 @@ namespace KS.Misc.Screensaver.Displays
             {
                 // We're on the bottom, so wait until retry...
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Drawn all text. Waiting {0} ms...", LinotypoSettings.LinotypoNewScreenDelay);
-                TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
+                ConsoleWrapper.WriteLine();
                 ThreadManager.SleepNoBlock(LinotypoSettings.LinotypoNewScreenDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
 
                 // ...and make a new screen

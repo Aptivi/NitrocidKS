@@ -16,11 +16,16 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
+
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Display for Plain
+    /// </summary>
     public class PlainDisplay : BaseScreensaver, IScreensaver
     {
 
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "Plain";
 
     }

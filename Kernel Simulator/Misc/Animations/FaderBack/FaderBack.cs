@@ -18,33 +18,29 @@
 //
 
 using System;
-using KS.ConsoleBase.Colors;
-using KS.Misc.Screensaver;
-using KS.Misc.Threading;
+using KS.Misc.Reflection;
 using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Threading;
+using KS.Misc.Screensaver;
 using Terminaux.Base;
 using Terminaux.Colors;
 
 namespace KS.Misc.Animations.FaderBack
 {
+    /// <summary>
+    /// Background fader animation module
+    /// </summary>
     public static class FaderBack
     {
-
-        private static int CurrentWindowWidth;
-        private static int CurrentWindowHeight;
-        private static bool ResizeSyncing;
 
         /// <summary>
         /// Simulates the background fading animation
         /// </summary>
         public static void Simulate(FaderBackSettings Settings)
         {
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
-            var RandomDriver = Settings.RandomDriver;
-            int RedColorNum = RandomDriver.Next(Settings.FaderBackMinimumRedColorLevel, Settings.FaderBackMaximumRedColorLevel);
-            int GreenColorNum = RandomDriver.Next(Settings.FaderBackMinimumGreenColorLevel, Settings.FaderBackMaximumGreenColorLevel);
-            int BlueColorNum = RandomDriver.Next(Settings.FaderBackMinimumBlueColorLevel, Settings.FaderBackMaximumBlueColorLevel);
+            int RedColorNum = RandomDriver.Random(Settings.FaderBackMinimumRedColorLevel, Settings.FaderBackMaximumRedColorLevel);
+            int GreenColorNum = RandomDriver.Random(Settings.FaderBackMinimumGreenColorLevel, Settings.FaderBackMaximumGreenColorLevel);
+            int BlueColorNum = RandomDriver.Random(Settings.FaderBackMinimumBlueColorLevel, Settings.FaderBackMaximumBlueColorLevel);
             ConsoleWrapper.CursorVisible = false;
 
             // Set thresholds
@@ -59,9 +55,7 @@ namespace KS.Misc.Animations.FaderBack
             int CurrentColorBlueIn = 0;
             for (int CurrentStep = Settings.FaderBackMaxSteps; CurrentStep >= 1; CurrentStep -= 1)
             {
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (ResizeSyncing)
+                if (ConsoleResizeHandler.WasResized(false))
                     break;
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Step {0}/{1}", CurrentStep, Settings.FaderBackMaxSteps);
                 ThreadManager.SleepNoBlock(Settings.FaderBackDelay, System.Threading.Thread.CurrentThread);
@@ -69,23 +63,20 @@ namespace KS.Misc.Animations.FaderBack
                 CurrentColorGreenIn = (int)Math.Round(CurrentColorGreenIn + ThresholdGreen);
                 CurrentColorBlueIn = (int)Math.Round(CurrentColorBlueIn + ThresholdBlue);
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Color in (R;G;B: {0};{1};{2})", CurrentColorRedIn, CurrentColorGreenIn, CurrentColorBlueIn);
-                KernelColorTools.SetConsoleColor(new Color($"{CurrentColorRedIn};{CurrentColorGreenIn};{CurrentColorBlueIn}"), true);
-                ConsoleWrapper.Clear();
+                ColorTools.LoadBackDry(new Color($"{CurrentColorRedIn};{CurrentColorGreenIn};{CurrentColorBlueIn}"));
             }
 
             // Wait until fade out
-            if (!ResizeSyncing)
+            if (!ConsoleResizeHandler.WasResized(false))
             {
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Waiting {0} ms...", Settings.FaderBackFadeOutDelay);
                 ThreadManager.SleepNoBlock(Settings.FaderBackFadeOutDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
             }
 
             // Fade out
-            for (int CurrentStep = 1, loopTo = Settings.FaderBackMaxSteps; CurrentStep <= loopTo; CurrentStep++)
+            for (int CurrentStep = 1; CurrentStep <= Settings.FaderBackMaxSteps; CurrentStep++)
             {
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (ResizeSyncing)
+                if (ConsoleResizeHandler.WasResized(false))
                     break;
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Step {0}/{1}", CurrentStep, Settings.FaderBackMaxSteps);
                 ThreadManager.SleepNoBlock(Settings.FaderBackDelay, System.Threading.Thread.CurrentThread);
@@ -93,14 +84,11 @@ namespace KS.Misc.Animations.FaderBack
                 int CurrentColorGreenOut = (int)Math.Round(GreenColorNum - ThresholdGreen * CurrentStep);
                 int CurrentColorBlueOut = (int)Math.Round(BlueColorNum - ThresholdBlue * CurrentStep);
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Color out (R;G;B: {0};{1};{2})", CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut);
-                KernelColorTools.SetConsoleColor(new Color($"{CurrentColorRedOut};{CurrentColorGreenOut};{CurrentColorBlueOut}"), true);
-                ConsoleWrapper.Clear();
+                ColorTools.LoadBackDry(new Color($"{CurrentColorRedOut};{CurrentColorGreenOut};{CurrentColorBlueOut}"));
             }
 
             // Reset resize sync
-            ResizeSyncing = false;
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+            ConsoleResizeHandler.WasResized();
             ThreadManager.SleepNoBlock(Settings.FaderBackDelay, System.Threading.Thread.CurrentThread);
         }
 

@@ -18,55 +18,46 @@
 //
 
 using System;
-using System.Collections.Generic;
-using KS.ConsoleBase.Colors;
-using KS.Misc.Threading;
-using KS.ConsoleBase.Writers;
+using Terminaux.Writer.FancyWriters;
 using KS.Misc.Writers.DebugWriters;
-using Terminaux.Base;
+using KS.Misc.Threading;
+using KS.Misc.Screensaver;
 using Terminaux.Colors;
-using Terminaux.Writer.ConsoleWriters;
+using Terminaux.Base;
+using Terminaux.Colors.Data;
+
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Display for WindowsLogo
+    /// </summary>
     public class WindowsLogoDisplay : BaseScreensaver, IScreensaver
     {
 
-        private int CurrentWindowWidth;
-        private int CurrentWindowHeight;
-        private bool ResizeSyncing;
         private bool Drawn;
 
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "WindowsLogo";
-
-        public override Dictionary<string, object> ScreensaverSettings { get; set; }
 
         public override void ScreensaverPreparation()
         {
-            // Variable preparations
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
-            Console.BackgroundColor = ConsoleColor.Black;
-            ConsoleWrapper.Clear();
-            DebugWriter.Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
+            Drawn = false;
+            base.ScreensaverPreparation();
         }
 
+        /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
             ConsoleWrapper.CursorVisible = false;
-            if (ResizeSyncing)
+            if (ConsoleResizeHandler.WasResized(false))
             {
                 Drawn = false;
 
                 // Reset resize sync
-                ResizeSyncing = false;
-                CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-                CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+                ConsoleResizeHandler.WasResized();
             }
             else
             {
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-
                 // Get the required positions for the four boxes
                 int UpperLeftBoxEndX = (int)Math.Round(ConsoleWrapper.WindowWidth / 2d - 1d);
                 int UpperLeftBoxStartX = (int)Math.Round(UpperLeftBoxEndX / 2d);
@@ -103,53 +94,20 @@ namespace KS.Misc.Screensaver.Displays
                 // Draw the Windows 11 logo
                 if (!Drawn)
                 {
-                    Console.BackgroundColor = ConsoleColor.Black;
-                    ConsoleWrapper.Clear();
-                    KernelColorTools.SetConsoleColor(new Color("0;120;212"), true);
+                    ColorTools.LoadBackDry(new Color(ConsoleColors.Black));
+                    var windows11Color = new Color($"0;120;212");
 
                     // First, draw the upper left box
-                    for (int X = UpperLeftBoxStartX, loopTo = UpperLeftBoxEndX; X <= loopTo; X++)
-                    {
-                        for (int Y = UpperLeftBoxStartY, loopTo1 = UpperLeftBoxEndY; Y <= loopTo1; Y++)
-                        {
-                            DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Filling upper left box {0},{1}...", X, Y);
-                            ConsoleWrapper.SetCursorPosition(X, Y);
-                            TextWriterRaw.WritePlain(" ", false);
-                        }
-                    }
+                    BoxColor.WriteBox(UpperLeftBoxStartX, UpperLeftBoxStartY, UpperLeftBoxEndX - UpperLeftBoxStartX, UpperLeftBoxEndY - UpperLeftBoxStartY, windows11Color);
 
                     // Second, draw the lower left box
-                    for (int X = LowerLeftBoxStartX, loopTo2 = LowerLeftBoxEndX; X <= loopTo2; X++)
-                    {
-                        for (int Y = LowerLeftBoxStartY, loopTo3 = LowerLeftBoxEndY; Y <= loopTo3; Y++)
-                        {
-                            DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Filling lower left box {0},{1}...", X, Y);
-                            ConsoleWrapper.SetCursorPosition(X, Y);
-                            TextWriterRaw.WritePlain(" ", false);
-                        }
-                    }
+                    BoxColor.WriteBox(LowerLeftBoxStartX, LowerLeftBoxStartY, LowerLeftBoxEndX - LowerLeftBoxStartX, LowerLeftBoxEndY - LowerLeftBoxStartY, windows11Color);
 
                     // Third, draw the upper right box
-                    for (int X = UpperRightBoxStartX, loopTo4 = UpperRightBoxEndX; X <= loopTo4; X++)
-                    {
-                        for (int Y = UpperRightBoxStartY, loopTo5 = UpperRightBoxEndY; Y <= loopTo5; Y++)
-                        {
-                            DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Filling upper right box {0},{1}...", X, Y);
-                            ConsoleWrapper.SetCursorPosition(X, Y);
-                            TextWriterRaw.WritePlain(" ", false);
-                        }
-                    }
+                    BoxColor.WriteBox(UpperRightBoxStartX, UpperRightBoxStartY, UpperRightBoxEndX - UpperRightBoxStartX, UpperRightBoxEndY - UpperRightBoxStartY, windows11Color);
 
                     // Fourth, draw the lower right box
-                    for (int X = LowerRightBoxStartX, loopTo6 = LowerRightBoxEndX; X <= loopTo6; X++)
-                    {
-                        for (int Y = LowerRightBoxStartY, loopTo7 = LowerRightBoxEndY; Y <= loopTo7; Y++)
-                        {
-                            DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Filling lower right box {0},{1}...", X, Y);
-                            ConsoleWrapper.SetCursorPosition(X, Y);
-                            TextWriterRaw.WritePlain(" ", false);
-                        }
-                    }
+                    BoxColor.WriteBox(LowerRightBoxStartX, LowerRightBoxStartY, LowerRightBoxEndX - LowerRightBoxStartX, LowerRightBoxEndY - LowerRightBoxStartY, windows11Color);
 
                     // Set drawn
                     Drawn = true;

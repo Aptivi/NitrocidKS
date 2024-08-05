@@ -54,7 +54,6 @@ namespace KS.Misc.Splash.Splashes
                 FaderBackMaximumRedColorLevel = 255,
                 FaderBackMaximumGreenColorLevel = 255,
                 FaderBackMaximumBlueColorLevel = 255,
-                RandomDriver = RandomDriver
             };
         }
 

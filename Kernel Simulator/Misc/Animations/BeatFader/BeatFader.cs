@@ -18,31 +18,27 @@
 //
 
 using System;
-using KS.ConsoleBase.Colors;
-using KS.Misc.Screensaver;
-using KS.Misc.Threading;
 using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Threading;
+using KS.Misc.Screensaver;
 using Terminaux.Base;
 using Terminaux.Colors;
 using Terminaux.Colors.Data;
+using KS.Misc.Reflection;
 
 namespace KS.Misc.Animations.BeatFader
 {
+    /// <summary>
+    /// Beat fader animation module
+    /// </summary>
     public static class BeatFader
     {
-
-        private static int CurrentWindowWidth;
-        private static int CurrentWindowHeight;
-        private static bool ResizeSyncing;
 
         /// <summary>
         /// Simulates the beat fading animation
         /// </summary>
         public static void Simulate(BeatFaderSettings Settings)
         {
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
-            var RandomDriver = Settings.RandomDriver;
             ConsoleWrapper.CursorVisible = false;
             int BeatInterval = (int)Math.Round(60000d / Settings.BeatFaderDelay);
             int BeatIntervalStep = (int)Math.Round(BeatInterval / (double)Settings.BeatFaderMaxSteps);
@@ -51,27 +47,22 @@ namespace KS.Misc.Animations.BeatFader
             ThreadManager.SleepNoBlock(BeatIntervalStep, ScreensaverDisplayer.ScreensaverDisplayerThread);
 
             // If we're cycling colors, set them. Else, use the user-provided color
-            int RedColorNum = default, GreenColorNum = default, BlueColorNum = default;
+            int RedColorNum;
+            int GreenColorNum;
+            int BlueColorNum;
             if (Settings.BeatFaderCycleColors)
             {
                 // We're cycling. Select the color mode, starting from true color
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Cycling colors...");
                 if (Settings.BeatFaderTrueColor)
                 {
-                    RedColorNum = RandomDriver.Next(Settings.BeatFaderMinimumRedColorLevel, Settings.BeatFaderMinimumRedColorLevel);
-                    GreenColorNum = RandomDriver.Next(Settings.BeatFaderMinimumGreenColorLevel, Settings.BeatFaderMaximumGreenColorLevel);
-                    BlueColorNum = RandomDriver.Next(Settings.BeatFaderMinimumBlueColorLevel, Settings.BeatFaderMaximumBlueColorLevel);
-                }
-                else if (Settings.BeatFader255Colors)
-                {
-                    var ConsoleColor = new Color((ConsoleColors)RandomDriver.Next(Settings.BeatFaderMinimumColorLevel, Settings.BeatFaderMaximumColorLevel));
-                    RedColorNum = ConsoleColor.RGB.R;
-                    GreenColorNum = ConsoleColor.RGB.G;
-                    BlueColorNum = ConsoleColor.RGB.B;
+                    RedColorNum = RandomDriver.Random(Settings.BeatFaderMinimumRedColorLevel, Settings.BeatFaderMaximumRedColorLevel);
+                    GreenColorNum = RandomDriver.Random(Settings.BeatFaderMinimumGreenColorLevel, Settings.BeatFaderMaximumGreenColorLevel);
+                    BlueColorNum = RandomDriver.Random(Settings.BeatFaderMinimumBlueColorLevel, Settings.BeatFaderMaximumBlueColorLevel);
                 }
                 else
                 {
-                    var ConsoleColor = new Color((ConsoleColors)RandomDriver.Next(Settings.BeatFaderMinimumColorLevel, Settings.BeatFaderMaximumColorLevel));
+                    var ConsoleColor = new Color((ConsoleColors)RandomDriver.Random(Settings.BeatFaderMinimumColorLevel, Settings.BeatFaderMaximumColorLevel));
                     RedColorNum = ConsoleColor.RGB.R;
                     GreenColorNum = ConsoleColor.RGB.G;
                     BlueColorNum = ConsoleColor.RGB.B;
@@ -89,7 +80,7 @@ namespace KS.Misc.Animations.BeatFader
                     GreenColorNum = UserColor.RGB.G;
                     BlueColorNum = UserColor.RGB.B;
                 }
-                else if (UserColor.Type == ColorType.EightBitColor)
+                else
                 {
                     var ConsoleColor = new Color((ConsoleColors)Convert.ToInt32(UserColor.PlainSequence));
                     RedColorNum = ConsoleColor.RGB.R;
@@ -106,11 +97,9 @@ namespace KS.Misc.Animations.BeatFader
             DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Color threshold (R;G;B: {0};{1};{2})", ThresholdRed, ThresholdGreen, ThresholdBlue);
 
             // Fade out
-            for (int CurrentStep = 1, loopTo = Settings.BeatFaderMaxSteps; CurrentStep <= loopTo; CurrentStep++)
+            for (int CurrentStep = 1; CurrentStep <= Settings.BeatFaderMaxSteps; CurrentStep++)
             {
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (ResizeSyncing)
+                if (ConsoleResizeHandler.WasResized(false))
                     break;
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Step {0}/{1} each {2} ms", CurrentStep, Settings.BeatFaderMaxSteps, BeatIntervalStep);
                 ThreadManager.SleepNoBlock(BeatIntervalStep, System.Threading.Thread.CurrentThread);
@@ -118,19 +107,12 @@ namespace KS.Misc.Animations.BeatFader
                 int CurrentColorGreenOut = (int)Math.Round(GreenColorNum - ThresholdGreen * CurrentStep);
                 int CurrentColorBlueOut = (int)Math.Round(BlueColorNum - ThresholdBlue * CurrentStep);
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Color out (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (!ResizeSyncing)
-                {
-                    KernelColorTools.SetConsoleColor(new Color($"{CurrentColorRedOut};{CurrentColorGreenOut};{CurrentColorBlueOut}"), true);
-                    ConsoleWrapper.Clear();
-                }
+                if (!ConsoleResizeHandler.WasResized(false))
+                    ColorTools.LoadBackDry(new Color($"{CurrentColorRedOut};{CurrentColorGreenOut};{CurrentColorBlueOut}"));
             }
 
             // Reset resize sync
-            ResizeSyncing = false;
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+            ConsoleResizeHandler.WasResized();
             ThreadManager.SleepNoBlock(Settings.BeatFaderDelay, System.Threading.Thread.CurrentThread);
         }
 

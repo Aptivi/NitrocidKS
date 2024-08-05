@@ -19,16 +19,19 @@
 
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using KS.Misc.Threading;
-using KS.ConsoleBase.Writers;
 using Terminaux.Base;
-using Terminaux.Writer.ConsoleWriters;
+using Terminaux.Colors;
+using Terminaux.Colors.Data;
+using KS.Misc.Reflection;
+
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for Noise
+    /// </summary>
     public static class NoiseSettings
     {
-
         private static int _noiseNewScreenDelay = 5000;
         private static int _noiseDensity = 40;
 
@@ -66,52 +69,39 @@ namespace KS.Misc.Screensaver.Displays
                 _noiseDensity = value;
             }
         }
-
     }
 
+    /// <summary>
+    /// Display code for Noise
+    /// </summary>
     public class NoiseDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Random RandomDriver;
-        private int CurrentWindowWidth;
-        private int CurrentWindowHeight;
-        private bool ResizeSyncing;
-
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "Noise";
 
-        public override Dictionary<string, object> ScreensaverSettings { get; set; }
-
-        public override void ScreensaverPreparation()
-        {
-            // Variable preparations
-            RandomDriver = new Random();
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
-        }
-
+        /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
             double NoiseDense = (NoiseSettings.NoiseDensity > 100 ? 100 : NoiseSettings.NoiseDensity) / 100d;
 
-            Console.BackgroundColor = ConsoleColor.DarkGray;
             ConsoleWrapper.CursorVisible = false;
+            ColorTools.LoadBackDry(new Color(ConsoleColors.Grey));
             ConsoleWrapper.Clear();
-            Console.BackgroundColor = ConsoleColor.Black;
+            ColorTools.SetConsoleColorDry(ConsoleColors.Black, true);
 
             // Select random positions to generate noise
             int AmountOfBlocks = ConsoleWrapper.WindowWidth * ConsoleWrapper.WindowHeight;
             int BlocksToCover = (int)Math.Round(AmountOfBlocks * NoiseDense);
             var CoveredBlocks = new ArrayList();
-            while (!(CoveredBlocks.Count == BlocksToCover | ResizeSyncing))
+            while (CoveredBlocks.Count < BlocksToCover)
             {
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (!ResizeSyncing)
+                if (!ConsoleResizeHandler.WasResized(false))
                 {
-                    int CoverX = RandomDriver.Next(ConsoleWrapper.WindowWidth);
-                    int CoverY = RandomDriver.Next(ConsoleWrapper.WindowHeight);
+                    int CoverX = RandomDriver.RandomIdx(ConsoleWrapper.WindowWidth);
+                    int CoverY = RandomDriver.RandomIdx(ConsoleWrapper.WindowHeight);
                     ConsoleWrapper.SetCursorPosition(CoverX, CoverY);
-                    TextWriterRaw.WritePlain(" ", false);
+                    ConsoleWrapper.Write(" ");
                     if (!CoveredBlocks.Contains(CoverX.ToString() + ", " + CoverY.ToString()))
                         CoveredBlocks.Add(CoverX.ToString() + ", " + CoverY.ToString());
                 }
@@ -123,9 +113,7 @@ namespace KS.Misc.Screensaver.Displays
             }
 
             // Reset resize sync
-            ResizeSyncing = false;
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+            ConsoleResizeHandler.WasResized();
             ThreadManager.SleepNoBlock(NoiseSettings.NoiseNewScreenDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
         }
 

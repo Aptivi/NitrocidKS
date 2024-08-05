@@ -17,13 +17,14 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using System;
 namespace KS.Misc.Animations.FaderBack
 {
+    /// <summary>
+    /// Background fader settings
+    /// </summary>
     public class FaderBackSettings
     {
 
-        internal Random RandomDriver;
         private int _faderBackDelay = 50;
         private int _faderBackFadeOutDelay = 3000;
         private int _faderBackMaxSteps = 25;

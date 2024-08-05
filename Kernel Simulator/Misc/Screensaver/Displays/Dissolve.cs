@@ -21,18 +21,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
-using KS.ConsoleBase.Colors;
-using KS.ConsoleBase.Writers;
-using KS.Misc.Writers.DebugWriters;
-using Terminaux.Base;
-using Terminaux.Colors;
 using Terminaux.Writer.ConsoleWriters;
+using KS.Misc.Writers.DebugWriters;
+using Terminaux.Colors;
+using Terminaux.Base;
+using KS.Misc.Reflection;
 
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for Dissolve
+    /// </summary>
     public static class DissolveSettings
     {
-
         private static bool _dissolve255Colors;
         private static bool _dissolveTrueColor = true;
         private static string _dissolveBackgroundColor = new Color(ConsoleColor.Black).PlainSequence;
@@ -233,121 +234,91 @@ namespace KS.Misc.Screensaver.Displays
                 _dissolveMaximumColorLevel = value;
             }
         }
-
     }
 
+    /// <summary>
+    /// Display code for Dissolve
+    /// </summary>
     public class DissolveDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Random RandomDriver;
         private bool ColorFilled;
-        private int CurrentWindowWidth;
-        private int CurrentWindowHeight;
-        private bool ResizeSyncing;
         private readonly List<Tuple<int, int>> CoveredPositions = [];
 
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "Dissolve";
 
-        public override Dictionary<string, object> ScreensaverSettings { get; set; }
-
+        /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
             // Variable preparations
-            RandomDriver = new Random();
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
-            KernelColorTools.SetConsoleColor(new Color(DissolveSettings.DissolveBackgroundColor), true);
-            ConsoleWrapper.Clear();
+            ColorFilled = false;
+            CoveredPositions.Clear();
+            ColorTools.LoadBackDry(new Color(DissolveSettings.DissolveBackgroundColor));
+            ConsoleWrapper.CursorVisible = false;
             DebugWriter.Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
         }
 
+        /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
-            ConsoleWrapper.CursorVisible = false;
             if (ColorFilled)
                 Thread.Sleep(1);
             int EndLeft = ConsoleWrapper.WindowWidth - 1;
             int EndTop = ConsoleWrapper.WindowHeight - 1;
-            int Left = RandomDriver.Next(ConsoleWrapper.WindowWidth);
-            int Top = RandomDriver.Next(ConsoleWrapper.WindowHeight);
+            int Left = RandomDriver.RandomIdx(ConsoleWrapper.WindowWidth);
+            int Top = RandomDriver.RandomIdx(ConsoleWrapper.WindowHeight);
+            bool goAhead = true;
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Dissolving: {0}", ColorFilled);
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "End left: {0} | End top: {1}", EndLeft, EndTop);
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got left: {0} | Got top: {1}", Left, Top);
 
+            // Populate color
+            Color colorStorage = Color.Empty;
+            if (DissolveSettings.DissolveTrueColor)
+            {
+                int RedColorNum = RandomDriver.Random(DissolveSettings.DissolveMinimumRedColorLevel, DissolveSettings.DissolveMaximumRedColorLevel);
+                int GreenColorNum = RandomDriver.Random(DissolveSettings.DissolveMinimumGreenColorLevel, DissolveSettings.DissolveMaximumGreenColorLevel);
+                int BlueColorNum = RandomDriver.Random(DissolveSettings.DissolveMinimumBlueColorLevel, DissolveSettings.DissolveMaximumBlueColorLevel);
+                DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
+                colorStorage = new Color($"{RedColorNum};{GreenColorNum};{BlueColorNum}");
+            }
+            else
+            {
+                int ColorNum = RandomDriver.Random(DissolveSettings.DissolveMinimumColorLevel, DissolveSettings.DissolveMaximumColorLevel);
+                DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
+                colorStorage = new Color(ColorNum);
+            }
+
             // Fill the color if not filled
             if (!ColorFilled)
             {
-                // NOTICE: Mono seems to have a bug in ConsoleWrapper.CursorLeft and ConsoleWrapper.CursorTop when printing with VT escape sequences. For info, seek EB#2:7.
-                if (!(ConsoleWrapper.CursorLeft >= EndLeft & ConsoleWrapper.CursorTop >= EndTop))
+                if (ConsoleResizeHandler.WasResized(false))
                 {
-                    if (DissolveSettings.DissolveTrueColor)
+                    // Refill, because the console is resized
+                    DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "We're refilling...");
+                    ColorFilled = false;
+                    goAhead = false;
+                    ColorTools.LoadBackDry(new Color(DissolveSettings.DissolveBackgroundColor));
+                    CoveredPositions.Clear();
+                }
+
+                if (goAhead)
+                {
+                    if (ConsoleWrapper.CursorLeft >= EndLeft && ConsoleWrapper.CursorTop >= EndTop)
                     {
-                        int RedColorNum = RandomDriver.Next(DissolveSettings.DissolveMinimumRedColorLevel, DissolveSettings.DissolveMaximumRedColorLevel);
-                        int GreenColorNum = RandomDriver.Next(DissolveSettings.DissolveMinimumGreenColorLevel, DissolveSettings.DissolveMaximumGreenColorLevel);
-                        int BlueColorNum = RandomDriver.Next(DissolveSettings.DissolveMinimumBlueColorLevel, DissolveSettings.DissolveMaximumBlueColorLevel);
-                        DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
-                        if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                            ResizeSyncing = true;
-                        if (!ResizeSyncing)
-                        {
-                            KernelColorTools.SetConsoleColor(Color.Empty);
-                            KernelColorTools.SetConsoleColor(new Color($"{RedColorNum};{GreenColorNum};{BlueColorNum}"), true);
-                            TextWriterRaw.WritePlain(" ", false);
-                        }
-                        else
-                        {
-                            DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "We're refilling...");
-                            ColorFilled = false;
-                            KernelColorTools.SetConsoleColor(new Color(DissolveSettings.DissolveBackgroundColor), true);
-                            ConsoleWrapper.Clear();
-                            CoveredPositions.Clear();
-                        }
-                    }
-                    else if (DissolveSettings.Dissolve255Colors)
-                    {
-                        int ColorNum = RandomDriver.Next(DissolveSettings.DissolveMinimumColorLevel, DissolveSettings.DissolveMaximumColorLevel);
-                        DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
-                        if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                            ResizeSyncing = true;
-                        if (!ResizeSyncing)
-                        {
-                            KernelColorTools.SetConsoleColor(Color.Empty);
-                            KernelColorTools.SetConsoleColor(new Color(ColorNum), true);
-                            TextWriterRaw.WritePlain(" ", false);
-                        }
-                        else
-                        {
-                            DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "We're refilling...");
-                            ColorFilled = false;
-                            KernelColorTools.SetConsoleColor(new Color(DissolveSettings.DissolveBackgroundColor), true);
-                            ConsoleWrapper.Clear();
-                            CoveredPositions.Clear();
-                        }
+                        ColorTools.SetConsoleColorDry(Color.Empty);
+                        ColorTools.SetConsoleColorDry(colorStorage, true);
+                        TextWriterRaw.WritePlain(" ", false);
+                        DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "We're now dissolving... L: {0} = {1} | T: {2} = {3}", ConsoleWrapper.CursorLeft, EndLeft, ConsoleWrapper.CursorTop, EndTop);
+                        ColorFilled = true;
                     }
                     else
                     {
-                        if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                            ResizeSyncing = true;
-                        if (!ResizeSyncing)
-                        {
-                            KernelColorTools.SetConsoleColor(new Color(DissolveSettings.DissolveBackgroundColor), true);
-                            DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", Console.BackgroundColor);
-                            TextWriterRaw.WritePlain(" ", false);
-                        }
-                        else
-                        {
-                            DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "We're refilling...");
-                            ColorFilled = false;
-                            KernelColorTools.SetConsoleColor(new Color(DissolveSettings.DissolveBackgroundColor), true);
-                            ConsoleWrapper.Clear();
-                            CoveredPositions.Clear();
-                        }
+                        ColorTools.SetConsoleColorDry(Color.Empty);
+                        ColorTools.SetConsoleColorDry(colorStorage, true);
+                        TextWriterRaw.WritePlain(" ", false);
                     }
-                }
-                else
-                {
-                    DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "We're now dissolving... L: {0} = {1} | T: {2} = {3}", ConsoleWrapper.CursorLeft, EndLeft, ConsoleWrapper.CursorTop, EndTop);
-                    ColorFilled = true;
                 }
             }
             else
@@ -358,19 +329,16 @@ namespace KS.Misc.Screensaver.Displays
                     CoveredPositions.Add(new Tuple<int, int>(Left, Top));
                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Covered positions: {0}/{1}", CoveredPositions.Count, (EndLeft + 1) * (EndTop + 1));
                 }
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (!ResizeSyncing)
+                if (!ConsoleResizeHandler.WasResized(false))
                 {
                     ConsoleWrapper.SetCursorPosition(Left, Top);
-                    KernelColorTools.SetConsoleColor(new Color(DissolveSettings.DissolveBackgroundColor), true);
-                    TextWriterRaw.WritePlain(" ", false);
+                    ColorTools.SetConsoleColorDry(new Color(DissolveSettings.DissolveBackgroundColor), true);
+                    ConsoleWrapper.Write(" ");
                     if (CoveredPositions.Count == (EndLeft + 1) * (EndTop + 1))
                     {
                         DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "We're refilling...");
                         ColorFilled = false;
-                        KernelColorTools.SetConsoleColor(new Color(DissolveSettings.DissolveBackgroundColor), true);
-                        ConsoleWrapper.Clear();
+                        ColorTools.LoadBackDry(new Color(DissolveSettings.DissolveBackgroundColor));
                         CoveredPositions.Clear();
                     }
                 }
@@ -378,16 +346,13 @@ namespace KS.Misc.Screensaver.Displays
                 {
                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "We're refilling...");
                     ColorFilled = false;
-                    KernelColorTools.SetConsoleColor(new Color(DissolveSettings.DissolveBackgroundColor), true);
-                    ConsoleWrapper.Clear();
+                    ColorTools.LoadBackDry(new Color(DissolveSettings.DissolveBackgroundColor));
                     CoveredPositions.Clear();
                 }
             }
 
             // Reset resize sync
-            ResizeSyncing = false;
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+            ConsoleResizeHandler.WasResized();
         }
 
     }

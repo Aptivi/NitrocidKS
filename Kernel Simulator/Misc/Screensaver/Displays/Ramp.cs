@@ -18,20 +18,20 @@
 //
 
 using System;
-using System.Collections.Generic;
-using KS.ConsoleBase.Colors;
-using KS.Misc.Text;
-using KS.Misc.Threading;
-using KS.ConsoleBase.Writers;
+using Terminaux.Writer.FancyWriters;
+using KS.Misc.Reflection;
 using KS.Misc.Writers.DebugWriters;
-using Terminaux.Base;
+using KS.Misc.Threading;
 using Terminaux.Colors;
-using Terminaux.Writer.ConsoleWriters;
+using Terminaux.Base;
+
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for Ramp
+    /// </summary>
     public static class RampSettings
     {
-
         private static bool _ramp255Colors;
         private static bool _rampTrueColor = true;
         private static int _rampDelay = 20;
@@ -676,51 +676,36 @@ namespace KS.Misc.Screensaver.Displays
                 _rampUseBorderColors = value;
             }
         }
-
     }
+
+    /// <summary>
+    /// Display code for Ramp
+    /// </summary>
     public class RampDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Random RandomDriver;
-        private int CurrentWindowWidth;
-        private int CurrentWindowHeight;
-        private bool ResizeSyncing;
-
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "Ramp";
 
-        public override Dictionary<string, object> ScreensaverSettings { get; set; }
-
-        public override void ScreensaverPreparation()
-        {
-            // Variable preparations
-            RandomDriver = new Random();
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
-            Console.BackgroundColor = ConsoleColor.Black;
-            ConsoleWrapper.Clear();
-            DebugWriter.Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
-        }
-
+        /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
-            int RedColorNumFrom = RandomDriver.Next(RampSettings.RampMinimumRedColorLevelStart, RampSettings.RampMaximumRedColorLevelStart);
-            int GreenColorNumFrom = RandomDriver.Next(RampSettings.RampMinimumGreenColorLevelStart, RampSettings.RampMaximumGreenColorLevelStart);
-            int BlueColorNumFrom = RandomDriver.Next(RampSettings.RampMinimumBlueColorLevelStart, RampSettings.RampMaximumBlueColorLevelStart);
-            int ColorNumFrom = RandomDriver.Next(RampSettings.RampMinimumColorLevelStart, RampSettings.RampMaximumColorLevelStart);
-            int RedColorNumTo = RandomDriver.Next(RampSettings.RampMinimumRedColorLevelEnd, RampSettings.RampMaximumRedColorLevelEnd);
-            int GreenColorNumTo = RandomDriver.Next(RampSettings.RampMinimumGreenColorLevelEnd, RampSettings.RampMaximumGreenColorLevelEnd);
-            int BlueColorNumTo = RandomDriver.Next(RampSettings.RampMinimumBlueColorLevelEnd, RampSettings.RampMaximumBlueColorLevelEnd);
-            int ColorNumTo = RandomDriver.Next(RampSettings.RampMinimumColorLevelEnd, RampSettings.RampMaximumColorLevelEnd);
+            int RedColorNumFrom = RandomDriver.Random(RampSettings.RampMinimumRedColorLevelStart, RampSettings.RampMaximumRedColorLevelStart);
+            int GreenColorNumFrom = RandomDriver.Random(RampSettings.RampMinimumGreenColorLevelStart, RampSettings.RampMaximumGreenColorLevelStart);
+            int BlueColorNumFrom = RandomDriver.Random(RampSettings.RampMinimumBlueColorLevelStart, RampSettings.RampMaximumBlueColorLevelStart);
+            int ColorNumFrom = RandomDriver.Random(RampSettings.RampMinimumColorLevelStart, RampSettings.RampMaximumColorLevelStart);
+            int RedColorNumTo = RandomDriver.Random(RampSettings.RampMinimumRedColorLevelEnd, RampSettings.RampMaximumRedColorLevelEnd);
+            int GreenColorNumTo = RandomDriver.Random(RampSettings.RampMinimumGreenColorLevelEnd, RampSettings.RampMaximumGreenColorLevelEnd);
+            int BlueColorNumTo = RandomDriver.Random(RampSettings.RampMinimumBlueColorLevelEnd, RampSettings.RampMaximumBlueColorLevelEnd);
+            int ColorNumTo = RandomDriver.Random(RampSettings.RampMinimumColorLevelEnd, RampSettings.RampMaximumColorLevelEnd);
 
             // Console resizing can sometimes cause the cursor to remain visible. This happens on Windows 10's terminal.
             ConsoleWrapper.CursorVisible = false;
-            if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                ResizeSyncing = true;
 
             // Set start and end widths for the ramp frame
             int RampFrameStartWidth = 4;
             int RampFrameEndWidth = ConsoleWrapper.WindowWidth - RampFrameStartWidth;
-            int RampFrameSpaces = RampFrameEndWidth - RampFrameStartWidth;
+            int RampFrameSpaces = RampFrameEndWidth - RampFrameStartWidth - 1;
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Start width: {0}, End width: {1}, Spaces: {2}", RampFrameStartWidth, RampFrameEndWidth, RampFrameSpaces);
 
             // Set thresholds for color ramps
@@ -744,21 +729,8 @@ namespace KS.Misc.Screensaver.Displays
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Current left position: {0}", RampCurrentPositionLeft);
 
             // Draw the frame
-            if (!ResizeSyncing)
-            {
-                TextWriterWhereColor.WriteWhere(RampSettings.RampUpperLeftCornerChar, RampFrameStartWidth, RampCenterPosition - 2, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampUpperLeftCornerColor) : new Color(ConsoleColor.Gray));
-                TextWriterColor.Write(RampSettings.RampUpperFrameChar.Repeat(RampFrameSpaces), false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampUpperFrameColor) : new Color(ConsoleColor.Gray));
-                TextWriterColor.Write(RampSettings.RampUpperRightCornerChar, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampUpperRightCornerColor) : new Color(ConsoleColor.Gray));
-                TextWriterWhereColor.WriteWhere(RampSettings.RampLeftFrameChar, RampFrameStartWidth, RampCenterPosition - 1, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLeftFrameColor) : new Color(ConsoleColor.Gray));
-                TextWriterWhereColor.WriteWhere(RampSettings.RampLeftFrameChar, RampFrameStartWidth, RampCenterPosition, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLeftFrameColor) : new Color(ConsoleColor.Gray));
-                TextWriterWhereColor.WriteWhere(RampSettings.RampLeftFrameChar, RampFrameStartWidth, RampCenterPosition + 1, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLeftFrameColor) : new Color(ConsoleColor.Gray));
-                TextWriterWhereColor.WriteWhere(RampSettings.RampRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition - 1, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLeftFrameColor) : new Color(ConsoleColor.Gray));
-                TextWriterWhereColor.WriteWhere(RampSettings.RampRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLeftFrameColor) : new Color(ConsoleColor.Gray));
-                TextWriterWhereColor.WriteWhere(RampSettings.RampRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition + 1, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLeftFrameColor) : new Color(ConsoleColor.Gray));
-                TextWriterWhereColor.WriteWhere(RampSettings.RampLowerLeftCornerChar, RampFrameStartWidth, RampCenterPosition + 2, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLowerLeftCornerColor) : new Color(ConsoleColor.Gray));
-                TextWriterColor.Write(RampSettings.RampLowerFrameChar.Repeat(RampFrameSpaces), false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLowerFrameColor) : new Color(ConsoleColor.Gray));
-                TextWriterColor.Write(RampSettings.RampLowerRightCornerChar, false, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLowerRightCornerColor) : new Color(ConsoleColor.Gray));
-            }
+            if (!ConsoleResizeHandler.WasResized(false))
+                BorderColor.WriteBorder(RampFrameStartWidth, RampCenterPosition - 2, RampFrameSpaces, 3, RampSettings.RampUseBorderColors ? new Color(RampSettings.RampLeftFrameColor) : ColorTools.GetGray());
 
             // Draw the ramp
             if (RampSettings.RampTrueColor)
@@ -770,19 +742,18 @@ namespace KS.Misc.Screensaver.Displays
                 var RampCurrentColorInstance = new Color($"{Convert.ToInt32(RampCurrentColorRed)};{Convert.ToInt32(RampCurrentColorGreen)};{Convert.ToInt32(RampCurrentColorBlue)}");
 
                 // Set the console color and fill the ramp!
-                KernelColorTools.SetConsoleColor(RampCurrentColorInstance, true);
-                while (!(Convert.ToInt32(RampCurrentColorRed) == RedColorNumTo & Convert.ToInt32(RampCurrentColorGreen) == GreenColorNumTo & Convert.ToInt32(RampCurrentColorBlue) == BlueColorNumTo))
+                ColorTools.SetConsoleColorDry(RampCurrentColorInstance, true);
+                int step = 1;
+                while (step <= RampFrameSpaces)
                 {
-                    if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                        ResizeSyncing = true;
-                    if (ResizeSyncing)
+                    if (ConsoleResizeHandler.WasResized(false))
                         break;
                     ConsoleWrapper.SetCursorPosition(RampCurrentPositionLeft, RampCenterPosition - 1);
-                    TextWriterRaw.WritePlain(" ", false);
+                    ConsoleWrapper.Write(' ');
                     ConsoleWrapper.SetCursorPosition(RampCurrentPositionLeft, RampCenterPosition);
-                    TextWriterRaw.WritePlain(" ", false);
+                    ConsoleWrapper.Write(' ');
                     ConsoleWrapper.SetCursorPosition(RampCurrentPositionLeft, RampCenterPosition + 1);
-                    TextWriterRaw.WritePlain(" ", false);
+                    ConsoleWrapper.Write(' ');
                     RampCurrentPositionLeft = ConsoleWrapper.CursorLeft;
 
                     // Change the colors
@@ -791,9 +762,10 @@ namespace KS.Misc.Screensaver.Displays
                     RampCurrentColorBlue -= RampColorBlueSteps;
                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got new current colors (R;G;B: {0};{1};{2}) subtracting from {3};{4};{5}", RampCurrentColorRed, RampCurrentColorGreen, RampCurrentColorBlue, RampColorRedSteps, RampColorGreenSteps, RampColorBlueSteps);
                     RampCurrentColorInstance = new Color($"{Convert.ToInt32(RampCurrentColorRed)};{Convert.ToInt32(RampCurrentColorGreen)};{Convert.ToInt32(RampCurrentColorBlue)}");
-                    KernelColorTools.SetConsoleColor(RampCurrentColorInstance, true);
+                    ColorTools.SetConsoleColorDry(RampCurrentColorInstance, true);
 
                     // Delay writing
+                    step++;
                     ThreadManager.SleepNoBlock(RampSettings.RampDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
                 }
             }
@@ -804,37 +776,32 @@ namespace KS.Misc.Screensaver.Displays
                 var RampCurrentColorInstance = new Color(Convert.ToInt32(RampCurrentColor));
 
                 // Set the console color and fill the ramp!
-                KernelColorTools.SetConsoleColor(RampCurrentColorInstance, true);
+                ColorTools.SetConsoleColorDry(RampCurrentColorInstance, true);
                 while (Convert.ToInt32(RampCurrentColor) != ColorNumTo)
                 {
-                    if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                        ResizeSyncing = true;
-                    if (ResizeSyncing)
+                    if (ConsoleResizeHandler.WasResized(false))
                         break;
                     ConsoleWrapper.SetCursorPosition(RampCurrentPositionLeft, RampCenterPosition - 1);
-                    TextWriterRaw.WritePlain(" ", false);
+                    ConsoleWrapper.Write(' ');
                     ConsoleWrapper.SetCursorPosition(RampCurrentPositionLeft, RampCenterPosition);
-                    TextWriterRaw.WritePlain(" ", false);
+                    ConsoleWrapper.Write(' ');
                     ConsoleWrapper.SetCursorPosition(RampCurrentPositionLeft, RampCenterPosition + 1);
-                    TextWriterRaw.WritePlain(" ", false);
+                    ConsoleWrapper.Write(' ');
                     RampCurrentPositionLeft = ConsoleWrapper.CursorLeft;
 
                     // Change the colors
                     RampCurrentColor -= RampColorSteps;
                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got new current colors (Normal: {0}) subtracting from {1}", RampCurrentColor, RampColorSteps);
                     RampCurrentColorInstance = new Color(Convert.ToInt32(RampCurrentColor));
-                    KernelColorTools.SetConsoleColor(RampCurrentColorInstance, true);
+                    ColorTools.SetConsoleColorDry(RampCurrentColorInstance, true);
 
                     // Delay writing
                     ThreadManager.SleepNoBlock(RampSettings.RampDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
                 }
             }
             ThreadManager.SleepNoBlock(RampSettings.RampNextRampDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
-            Console.BackgroundColor = ConsoleColor.Black;
-            ConsoleWrapper.Clear();
-            ResizeSyncing = false;
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+            ColorTools.LoadBack();
+            ConsoleResizeHandler.WasResized();
             ThreadManager.SleepNoBlock(RampSettings.RampDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
         }
 

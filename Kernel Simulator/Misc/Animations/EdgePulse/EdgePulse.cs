@@ -18,36 +18,29 @@
 //
 
 using System;
-using KS.ConsoleBase.Colors;
-using KS.Misc.Threading;
-using KS.ConsoleBase.Writers;
+using KS.Misc.Reflection;
 using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Threading;
 using Terminaux.Base;
 using Terminaux.Colors;
-using Terminaux.Writer.ConsoleWriters;
 
 namespace KS.Misc.Animations.EdgePulse
 {
+    /// <summary>
+    /// Edge pulse animation module
+    /// </summary>
     public static class EdgePulse
     {
-
-        private static int CurrentWindowWidth;
-        private static int CurrentWindowHeight;
-        private static bool ResizeSyncing;
 
         /// <summary>
         /// Simulates the edge pulsing animation
         /// </summary>
         public static void Simulate(EdgePulseSettings Settings)
         {
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
-
             // Now, do the rest
-            var RandomDriver = Settings.RandomDriver;
-            int RedColorNum = RandomDriver.Next(Settings.EdgePulseMinimumRedColorLevel, Settings.EdgePulseMaximumRedColorLevel);
-            int GreenColorNum = RandomDriver.Next(Settings.EdgePulseMinimumGreenColorLevel, Settings.EdgePulseMaximumGreenColorLevel);
-            int BlueColorNum = RandomDriver.Next(Settings.EdgePulseMinimumBlueColorLevel, Settings.EdgePulseMaximumBlueColorLevel);
+            int RedColorNum = RandomDriver.Random(Settings.EdgePulseMinimumRedColorLevel, Settings.EdgePulseMaximumRedColorLevel);
+            int GreenColorNum = RandomDriver.Random(Settings.EdgePulseMinimumGreenColorLevel, Settings.EdgePulseMaximumGreenColorLevel);
+            int BlueColorNum = RandomDriver.Random(Settings.EdgePulseMinimumBlueColorLevel, Settings.EdgePulseMaximumBlueColorLevel);
             ConsoleWrapper.CursorVisible = false;
 
             // Set thresholds
@@ -62,9 +55,7 @@ namespace KS.Misc.Animations.EdgePulse
             int CurrentColorBlueIn = 0;
             for (int CurrentStep = Settings.EdgePulseMaxSteps; CurrentStep >= 1; CurrentStep -= 1)
             {
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (ResizeSyncing)
+                if (ConsoleResizeHandler.WasResized(false))
                     break;
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Step {0}/{1}", CurrentStep, Settings.EdgePulseMaxSteps);
                 ThreadManager.SleepNoBlock(Settings.EdgePulseDelay, System.Threading.Thread.CurrentThread);
@@ -72,21 +63,17 @@ namespace KS.Misc.Animations.EdgePulse
                 CurrentColorGreenIn = (int)Math.Round(CurrentColorGreenIn + ThresholdGreen);
                 CurrentColorBlueIn = (int)Math.Round(CurrentColorBlueIn + ThresholdBlue);
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Color in (R;G;B: {0};{1};{2})", CurrentColorRedIn, CurrentColorGreenIn, CurrentColorBlueIn);
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (!ResizeSyncing)
+                if (!ConsoleResizeHandler.WasResized(false))
                 {
-                    KernelColorTools.SetConsoleColor(new Color(CurrentColorRedIn, CurrentColorGreenIn, CurrentColorBlueIn), true);
+                    ColorTools.SetConsoleColorDry(new Color(CurrentColorRedIn, CurrentColorGreenIn, CurrentColorBlueIn), true);
                     FillIn();
                 }
             }
 
             // Fade out
-            for (int CurrentStep = 1, loopTo = Settings.EdgePulseMaxSteps; CurrentStep <= loopTo; CurrentStep++)
+            for (int CurrentStep = 1; CurrentStep <= Settings.EdgePulseMaxSteps; CurrentStep++)
             {
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (ResizeSyncing)
+                if (ConsoleResizeHandler.WasResized(false))
                     break;
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Step {0}/{1}", CurrentStep, Settings.EdgePulseMaxSteps);
                 ThreadManager.SleepNoBlock(Settings.EdgePulseDelay, System.Threading.Thread.CurrentThread);
@@ -94,17 +81,15 @@ namespace KS.Misc.Animations.EdgePulse
                 int CurrentColorGreenOut = (int)Math.Round(GreenColorNum - ThresholdGreen * CurrentStep);
                 int CurrentColorBlueOut = (int)Math.Round(BlueColorNum - ThresholdBlue * CurrentStep);
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Color out (R;G;B: {0};{1};{2})", CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut);
-                if (!ResizeSyncing)
+                if (!ConsoleResizeHandler.WasResized(false))
                 {
-                    KernelColorTools.SetConsoleColor(new Color(CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut), true);
+                    ColorTools.SetConsoleColorDry(new Color(CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut), true);
                     FillIn();
                 }
             }
 
             // Reset resize sync
-            ResizeSyncing = false;
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+            ConsoleResizeHandler.WasResized();
             ThreadManager.SleepNoBlock(Settings.EdgePulseDelay, System.Threading.Thread.CurrentThread);
         }
 
@@ -127,35 +112,35 @@ namespace KS.Misc.Animations.EdgePulse
             DebugWriter.Wdbg(DebugLevel.I, "Left edge: {0}, Right edge: {1}", FloorLeftEdge, FloorRightEdge);
 
             // First, draw the floor top edge
-            for (int x = FloorTopLeftEdge, loopTo = FloorTopRightEdge; x <= loopTo; x++)
+            for (int x = FloorTopLeftEdge; x <= FloorTopRightEdge; x++)
             {
                 ConsoleWrapper.SetCursorPosition(x, 0);
                 DebugWriter.Wdbg(DebugLevel.I, "Drawing floor top edge ({0}, {1})", x, 1);
-                TextWriterRaw.WritePlain(" ", false);
+                ConsoleWrapper.Write(" ");
             }
 
             // Second, draw the floor bottom edge
-            for (int x = FloorBottomLeftEdge, loopTo1 = FloorBottomRightEdge; x <= loopTo1; x++)
+            for (int x = FloorBottomLeftEdge; x <= FloorBottomRightEdge; x++)
             {
                 ConsoleWrapper.SetCursorPosition(x, FloorBottomEdge);
                 DebugWriter.Wdbg(DebugLevel.I, "Drawing floor bottom edge ({0}, {1})", x, FloorBottomEdge);
-                TextWriterRaw.WritePlain(" ", false);
+                ConsoleWrapper.Write(" ");
             }
 
             // Third, draw the floor left edge
-            for (int y = FloorTopEdge, loopTo2 = FloorBottomEdge; y <= loopTo2; y++)
+            for (int y = FloorTopEdge; y <= FloorBottomEdge; y++)
             {
                 ConsoleWrapper.SetCursorPosition(FloorLeftEdge, y);
                 DebugWriter.Wdbg(DebugLevel.I, "Drawing floor left edge ({0}, {1})", FloorLeftEdge, y);
-                TextWriterRaw.WritePlain("  ", false);
+                ConsoleWrapper.Write("  ");
             }
 
             // Finally, draw the floor right edge
-            for (int y = FloorTopEdge, loopTo3 = FloorBottomEdge; y <= loopTo3; y++)
+            for (int y = FloorTopEdge; y <= FloorBottomEdge; y++)
             {
                 ConsoleWrapper.SetCursorPosition(FloorRightEdge, y);
                 DebugWriter.Wdbg(DebugLevel.I, "Drawing floor right edge ({0}, {1})", FloorRightEdge, y);
-                TextWriterRaw.WritePlain("  ", false);
+                ConsoleWrapper.Write("  ");
             }
         }
 

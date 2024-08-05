@@ -19,18 +19,22 @@
 
 using System;
 using System.Collections.Generic;
-using KS.ConsoleBase.Colors;
-using KS.Misc.Threading;
-using KS.ConsoleBase.Writers;
-using KS.Misc.Writers.DebugWriters;
-using Terminaux.Base;
-using Terminaux.Colors;
+using System.Text;
 using Terminaux.Writer.ConsoleWriters;
+using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Threading;
+using Terminaux.Colors;
+using Terminaux.Sequences.Builder.Types;
+using Terminaux.Base;
+using KS.Misc.Reflection;
+
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for FallingLine
+    /// </summary>
     public static class FallingLineSettings
     {
-
         private static bool _fallingLine255Colors;
         private static bool _fallingLineTrueColor = true;
         private static int _fallingLineDelay = 10;
@@ -250,39 +254,34 @@ namespace KS.Misc.Screensaver.Displays
                 _fallingLineMaximumColorLevel = value;
             }
         }
-
     }
 
+    /// <summary>
+    /// Display code for FallingLine
+    /// </summary>
     public class FallingLineDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Random RandomDriver;
         private int ColumnLine;
-        private int CurrentWindowWidth;
-        private int CurrentWindowHeight;
-        private bool ResizeSyncing;
         private readonly List<Tuple<int, int>> CoveredPositions = [];
 
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "FallingLine";
 
-        public override Dictionary<string, object> ScreensaverSettings { get; set; }
-
+        /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
-            // Variable preparations
-            RandomDriver = new Random();
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
-            Console.BackgroundColor = ConsoleColor.Black;
-            Console.ForegroundColor = ConsoleColor.White;
+            CoveredPositions.Clear();
+            ColorTools.LoadBackDry("0;0;0");
             ConsoleWrapper.Clear();
             ConsoleWrapper.CursorVisible = false;
         }
 
+        /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
             // Choose the column for the falling line
-            ColumnLine = RandomDriver.Next(ConsoleWrapper.WindowWidth);
+            ColumnLine = RandomDriver.RandomIdx(ConsoleWrapper.WindowWidth);
 
             // Now, determine the fall start and end position
             int FallStart = 0;
@@ -292,38 +291,30 @@ namespace KS.Misc.Screensaver.Displays
             Color ColorStorage;
             if (FallingLineSettings.FallingLineTrueColor)
             {
-                int RedColorNum = RandomDriver.Next(FallingLineSettings.FallingLineMinimumRedColorLevel, FallingLineSettings.FallingLineMaximumRedColorLevel);
-                int GreenColorNum = RandomDriver.Next(FallingLineSettings.FallingLineMinimumGreenColorLevel, FallingLineSettings.FallingLineMaximumGreenColorLevel);
-                int BlueColorNum = RandomDriver.Next(FallingLineSettings.FallingLineMinimumBlueColorLevel, FallingLineSettings.FallingLineMaximumBlueColorLevel);
+                int RedColorNum = RandomDriver.Random(FallingLineSettings.FallingLineMinimumRedColorLevel, FallingLineSettings.FallingLineMaximumRedColorLevel);
+                int GreenColorNum = RandomDriver.Random(FallingLineSettings.FallingLineMinimumGreenColorLevel, FallingLineSettings.FallingLineMaximumGreenColorLevel);
+                int BlueColorNum = RandomDriver.Random(FallingLineSettings.FallingLineMinimumBlueColorLevel, FallingLineSettings.FallingLineMaximumBlueColorLevel);
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
                 ColorStorage = new Color(RedColorNum, GreenColorNum, BlueColorNum);
-                KernelColorTools.SetConsoleColor(ColorStorage, true);
-            }
-            else if (FallingLineSettings.FallingLine255Colors)
-            {
-                int ColorNum = RandomDriver.Next(FallingLineSettings.FallingLineMinimumColorLevel, FallingLineSettings.FallingLineMaximumColorLevel);
-                DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
-                ColorStorage = new Color(ColorNum);
-                KernelColorTools.SetConsoleColor(ColorStorage, true);
+                ColorTools.SetConsoleColorDry(ColorStorage, true);
             }
             else
             {
-                Console.BackgroundColor = Screensaver.colors[RandomDriver.Next(FallingLineSettings.FallingLineMinimumColorLevel, FallingLineSettings.FallingLineMaximumColorLevel)];
-                DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", Console.BackgroundColor);
-                ColorStorage = new Color(Console.BackgroundColor);
+                int ColorNum = RandomDriver.Random(FallingLineSettings.FallingLineMinimumColorLevel, FallingLineSettings.FallingLineMaximumColorLevel);
+                DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
+                ColorStorage = new Color(ColorNum);
+                ColorTools.SetConsoleColorDry(ColorStorage, true);
             }
 
             // Make the line fall down
-            for (int Fall = FallStart, loopTo = FallEnd; Fall <= loopTo; Fall++)
+            for (int Fall = FallStart; Fall <= FallEnd; Fall++)
             {
                 // Check to see if user decided to resize
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (ResizeSyncing)
+                if (ConsoleResizeHandler.WasResized(false))
                     break;
 
                 // Print a block and add the covered position to the list so fading down can be done
-                TextWriterWhereColor.WriteWherePlain(" ", ColumnLine, Fall, false);
+                TextWriterWhereColor.WriteWhere(" ", ColumnLine, Fall, false);
                 var PositionTuple = new Tuple<int, int>(ColumnLine, Fall);
                 CoveredPositions.Add(PositionTuple);
 
@@ -332,12 +323,10 @@ namespace KS.Misc.Screensaver.Displays
             }
 
             // Fade the line down. Please note that this requires true-color support in the terminal to work properly.
-            for (int StepNum = 0, loopTo1 = FallingLineSettings.FallingLineMaxSteps; StepNum <= loopTo1; StepNum++)
+            for (int StepNum = 0; StepNum <= FallingLineSettings.FallingLineMaxSteps; StepNum++)
             {
                 // Check to see if user decided to resize
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (ResizeSyncing)
+                if (ConsoleResizeHandler.WasResized(false))
                     break;
 
                 // Set thresholds
@@ -354,29 +343,29 @@ namespace KS.Misc.Screensaver.Displays
 
                 // Get the positions and write the block with new color
                 var CurrentFadeColor = new Color(CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut);
+                var bleedBuilder = new StringBuilder();
                 foreach (Tuple<int, int> PositionTuple in CoveredPositions)
                 {
                     // Check to see if user decided to resize
-                    if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                        ResizeSyncing = true;
-                    if (ResizeSyncing)
+                    if (ConsoleResizeHandler.WasResized(false))
                         break;
 
                     // Actually fade the line out
                     int PositionLeft = PositionTuple.Item1;
                     int PositionTop = PositionTuple.Item2;
-                    TextWriterWhereColor.WriteWhere(" ", PositionLeft, PositionTop, false, Color.Empty, CurrentFadeColor);
+                    bleedBuilder.Append($"{CsiSequences.GenerateCsiCursorPosition(PositionLeft + 1, PositionTop + 1)} ");
                 }
+                TextWriterWhereColor.WriteWhereColorBack(bleedBuilder.ToString(), ColumnLine, 0, false, Color.Empty, CurrentFadeColor);
 
                 // Delay
                 ThreadManager.SleepNoBlock(FallingLineSettings.FallingLineDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
             }
 
-            // Reset resize sync
+            // Reset covered positions
             CoveredPositions.Clear();
-            ResizeSyncing = false;
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+
+            // Reset resize sync
+            ConsoleResizeHandler.WasResized();
             ThreadManager.SleepNoBlock(FallingLineSettings.FallingLineDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
         }
 

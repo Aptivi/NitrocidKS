@@ -18,19 +18,24 @@
 //
 
 using System;
-using System.Collections.Generic;
-using KS.Misc.Probers;
-using KS.Misc.Text;
-using KS.Misc.Threading;
+using Terminaux.Colors;
+using Terminaux.Writer.FancyWriters;
+using Terminaux.Writer.ConsoleWriters;
 using KS.ConsoleBase.Writers;
+using Terminaux.Base;
+using Terminaux.Base.Extensions;
+using Terminaux.Writer.FancyWriters.Tools;
 using KS.Misc.Writers.DebugWriters;
 using KS.TimeDate;
-using Terminaux.Base;
-using Terminaux.Colors;
-using Terminaux.Writer.ConsoleWriters;
+using static KS.ConsoleBase.Colors.KernelColorTools;
+using KS.Misc.Probers;
+using KS.Misc.Threading;
 
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for ProgressClock
+    /// </summary>
     public static class ProgressClockSettings
     {
 
@@ -1245,42 +1250,39 @@ namespace KS.Misc.Screensaver.Displays
         }
 
     }
+
+    /// <summary>
+    /// Display code for ProgressClock
+    /// </summary>
     public class ProgressClockDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Random RandomDriver;
-        private int CurrentWindowWidth;
-        private int CurrentWindowHeight;
-        private bool ResizeSyncing;
+        private Color ColorStorageHours = Color.Empty,
+                      ColorStorageMinutes = Color.Empty,
+                      ColorStorageSeconds = Color.Empty,
+                      ColorStorage = Color.Empty;
         private long CurrentTicks;
+        private string lastDate = "";
 
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "ProgressClock";
 
-        public override Dictionary<string, object> ScreensaverSettings { get; set; }
-
+        /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
             // Variable preparations
-            RandomDriver = new Random();
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
             CurrentTicks = ProgressClockSettings.ProgressClockCycleColorsTicks;
+            base.ScreensaverPreparation();
         }
 
+        /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
             ConsoleWrapper.CursorVisible = false;
-            ConsoleWrapper.Clear();
 
             // Prepare colors
-            int RedColorNumHours, GreenColorNumHours, BlueColorNumHours;
-            int RedColorNumMinutes, GreenColorNumMinutes, BlueColorNumMinutes;
-            int RedColorNumSeconds, GreenColorNumSeconds, BlueColorNumSeconds;
-            int RedColorNum, GreenColorNum, BlueColorNum;
-            int ColorNumHours, ColorNumMinutes, ColorNumSeconds, ColorNum;
             int ProgressFillPositionHours, ProgressFillPositionMinutes, ProgressFillPositionSeconds;
             int InformationPositionHours, InformationPositionMinutes, InformationPositionSeconds;
-            Color ColorStorageHours = default, ColorStorageMinutes = default, ColorStorageSeconds = default;
 
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Current tick: {0}", CurrentTicks);
             if (ProgressClockSettings.ProgressClockCycleColors)
@@ -1288,45 +1290,32 @@ namespace KS.Misc.Screensaver.Displays
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Cycling colors...");
                 if (CurrentTicks >= ProgressClockSettings.ProgressClockCycleColorsTicks)
                 {
-                    if (ProgressClockSettings.ProgressClockTrueColor)
-                    {
-                        DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Current tick equals the maximum ticks to change color.");
-                        RedColorNumHours = RandomDriver.Next(ProgressClockSettings.ProgressClockMinimumRedColorLevelHours, ProgressClockSettings.ProgressClockMaximumRedColorLevelHours);
-                        GreenColorNumHours = RandomDriver.Next(ProgressClockSettings.ProgressClockMinimumGreenColorLevelHours, ProgressClockSettings.ProgressClockMaximumGreenColorLevelHours);
-                        BlueColorNumHours = RandomDriver.Next(ProgressClockSettings.ProgressClockMinimumBlueColorLevelHours, ProgressClockSettings.ProgressClockMaximumBlueColorLevelHours);
-                        DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (Hours) (R;G;B: {0};{1};{2})", RedColorNumHours, GreenColorNumHours, BlueColorNumHours);
-                        RedColorNumMinutes = RandomDriver.Next(ProgressClockSettings.ProgressClockMinimumRedColorLevelMinutes, ProgressClockSettings.ProgressClockMaximumRedColorLevelMinutes);
-                        GreenColorNumMinutes = RandomDriver.Next(ProgressClockSettings.ProgressClockMinimumGreenColorLevelMinutes, ProgressClockSettings.ProgressClockMaximumGreenColorLevelMinutes);
-                        BlueColorNumMinutes = RandomDriver.Next(ProgressClockSettings.ProgressClockMinimumBlueColorLevelMinutes, ProgressClockSettings.ProgressClockMaximumBlueColorLevelMinutes);
-                        DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (Minutes) (R;G;B: {0};{1};{2})", RedColorNumMinutes, GreenColorNumMinutes, BlueColorNumMinutes);
-                        RedColorNumSeconds = RandomDriver.Next(ProgressClockSettings.ProgressClockMinimumRedColorLevelSeconds, ProgressClockSettings.ProgressClockMaximumRedColorLevelSeconds);
-                        GreenColorNumSeconds = RandomDriver.Next(ProgressClockSettings.ProgressClockMinimumGreenColorLevelSeconds, ProgressClockSettings.ProgressClockMaximumGreenColorLevelSeconds);
-                        BlueColorNumSeconds = RandomDriver.Next(ProgressClockSettings.ProgressClockMinimumBlueColorLevelSeconds, ProgressClockSettings.ProgressClockMaximumBlueColorLevelSeconds);
-                        DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (Seconds) (R;G;B: {0};{1};{2})", RedColorNumSeconds, GreenColorNumSeconds, BlueColorNumSeconds);
-                        RedColorNum = RandomDriver.Next(ProgressClockSettings.ProgressClockMinimumRedColorLevel, ProgressClockSettings.ProgressClockMaximumRedColorLevel);
-                        GreenColorNum = RandomDriver.Next(ProgressClockSettings.ProgressClockMinimumGreenColorLevel, ProgressClockSettings.ProgressClockMaximumGreenColorLevel);
-                        BlueColorNum = RandomDriver.Next(ProgressClockSettings.ProgressClockMinimumBlueColorLevel, ProgressClockSettings.ProgressClockMaximumBlueColorLevel);
-                        DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
-                        ColorStorageHours = new Color(RedColorNumHours, GreenColorNumHours, BlueColorNumHours);
-                        ColorStorageMinutes = new Color(RedColorNumMinutes, GreenColorNumMinutes, BlueColorNumMinutes);
-                        ColorStorageSeconds = new Color(RedColorNumSeconds, GreenColorNumSeconds, BlueColorNumSeconds);
-                        _ = new Color(RedColorNum, GreenColorNum, BlueColorNum);
-                    }
-                    else
-                    {
-                        ColorNumHours = RandomDriver.Next(ProgressClockSettings.ProgressClockMinimumColorLevelHours, ProgressClockSettings.ProgressClockMaximumColorLevelHours);
-                        DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (Hours) ({0})", ColorNumHours);
-                        ColorNumMinutes = RandomDriver.Next(ProgressClockSettings.ProgressClockMinimumColorLevelMinutes, ProgressClockSettings.ProgressClockMaximumColorLevelMinutes);
-                        DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (Minutes) ({0})", ColorNumMinutes);
-                        ColorNumSeconds = RandomDriver.Next(ProgressClockSettings.ProgressClockMinimumColorLevelSeconds, ProgressClockSettings.ProgressClockMaximumColorLevelSeconds);
-                        DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (Seconds) ({0})", ColorNumSeconds);
-                        ColorNum = RandomDriver.Next(ProgressClockSettings.ProgressClockMinimumColorLevel, ProgressClockSettings.ProgressClockMaximumColorLevel);
-                        DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
-                        ColorStorageHours = new Color(ColorNumHours);
-                        ColorStorageMinutes = new Color(ColorNumMinutes);
-                        ColorStorageSeconds = new Color(ColorNumSeconds);
-                        _ = new Color(ColorNum);
-                    }
+                    var type = ProgressClockSettings.ProgressClockTrueColor ? ColorType.TrueColor : ColorType.EightBitColor;
+                    DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Current tick equals the maximum ticks to change color.");
+                    ColorStorageHours =
+                        ColorTools.GetRandomColor(type, ProgressClockSettings.ProgressClockMinimumColorLevelHours, ProgressClockSettings.ProgressClockMaximumColorLevelHours,
+                                                        ProgressClockSettings.ProgressClockMinimumRedColorLevelHours, ProgressClockSettings.ProgressClockMaximumRedColorLevelHours,
+                                                        ProgressClockSettings.ProgressClockMinimumGreenColorLevelHours, ProgressClockSettings.ProgressClockMaximumGreenColorLevelHours,
+                                                        ProgressClockSettings.ProgressClockMinimumBlueColorLevelHours, ProgressClockSettings.ProgressClockMaximumBlueColorLevelHours);
+                    DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (Hours) (R;G;B: {0};{1};{2})", ColorStorageHours.RGB.R, ColorStorageHours.RGB.G, ColorStorageHours.RGB.B);
+                    ColorStorageMinutes =
+                        ColorTools.GetRandomColor(type, ProgressClockSettings.ProgressClockMinimumColorLevelMinutes, ProgressClockSettings.ProgressClockMaximumColorLevelMinutes,
+                                                        ProgressClockSettings.ProgressClockMinimumRedColorLevelMinutes, ProgressClockSettings.ProgressClockMaximumRedColorLevelMinutes,
+                                                        ProgressClockSettings.ProgressClockMinimumGreenColorLevelMinutes, ProgressClockSettings.ProgressClockMaximumGreenColorLevelMinutes,
+                                                        ProgressClockSettings.ProgressClockMinimumBlueColorLevelMinutes, ProgressClockSettings.ProgressClockMaximumBlueColorLevelMinutes);
+                    DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (Minutes) (R;G;B: {0};{1};{2})", ColorStorageMinutes.RGB.R, ColorStorageMinutes.RGB.G, ColorStorageMinutes.RGB.B);
+                    ColorStorageSeconds =
+                        ColorTools.GetRandomColor(type, ProgressClockSettings.ProgressClockMinimumColorLevelSeconds, ProgressClockSettings.ProgressClockMaximumColorLevelSeconds,
+                                                        ProgressClockSettings.ProgressClockMinimumRedColorLevelSeconds, ProgressClockSettings.ProgressClockMaximumRedColorLevelSeconds,
+                                                        ProgressClockSettings.ProgressClockMinimumGreenColorLevelSeconds, ProgressClockSettings.ProgressClockMaximumGreenColorLevelSeconds,
+                                                        ProgressClockSettings.ProgressClockMinimumBlueColorLevelSeconds, ProgressClockSettings.ProgressClockMaximumBlueColorLevelSeconds);
+                    DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (Seconds) (R;G;B: {0};{1};{2})", ColorStorageSeconds.RGB.R, ColorStorageSeconds.RGB.G, ColorStorageSeconds.RGB.B);
+                    ColorStorage =
+                        ColorTools.GetRandomColor(type, ProgressClockSettings.ProgressClockMinimumColorLevel, ProgressClockSettings.ProgressClockMaximumColorLevel,
+                                                        ProgressClockSettings.ProgressClockMinimumRedColorLevel, ProgressClockSettings.ProgressClockMaximumRedColorLevel,
+                                                        ProgressClockSettings.ProgressClockMinimumGreenColorLevel, ProgressClockSettings.ProgressClockMaximumGreenColorLevel,
+                                                        ProgressClockSettings.ProgressClockMinimumBlueColorLevel, ProgressClockSettings.ProgressClockMaximumBlueColorLevel);
+                    DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", ColorStorage.RGB.R, ColorStorage.RGB.G, ColorStorage.RGB.B);
                     CurrentTicks = 0L;
                 }
             }
@@ -1336,7 +1325,7 @@ namespace KS.Misc.Screensaver.Displays
                 ColorStorageHours = new Color(ProgressClockSettings.ProgressClockHoursProgressColor);
                 ColorStorageMinutes = new Color(ProgressClockSettings.ProgressClockMinutesProgressColor);
                 ColorStorageSeconds = new Color(ProgressClockSettings.ProgressClockSecondsProgressColor);
-                _ = new Color(ProgressClockSettings.ProgressClockProgressColor);
+                ColorStorage = new Color(ProgressClockSettings.ProgressClockProgressColor);
             }
             ProgressFillPositionHours = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d) - 10;
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Fill position for progress (Hours) {0}", ProgressFillPositionHours);
@@ -1351,69 +1340,95 @@ namespace KS.Misc.Screensaver.Displays
             InformationPositionSeconds = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d) + 6;
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Fill position for info (Seconds) {0}", InformationPositionSeconds);
 
-            if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                ResizeSyncing = true;
-            if (!ResizeSyncing)
+            // Populate the border settings
+            var hoursBorder = new BorderSettings()
+            {
+                BorderUpperLeftCornerChar = ProgressClockSettings.ProgressClockUpperLeftCornerCharHours[0],
+                BorderLowerLeftCornerChar = ProgressClockSettings.ProgressClockLowerLeftCornerCharHours[0],
+                BorderUpperRightCornerChar = ProgressClockSettings.ProgressClockUpperRightCornerCharHours[0],
+                BorderLowerRightCornerChar = ProgressClockSettings.ProgressClockLowerRightCornerCharHours[0],
+                BorderUpperFrameChar = ProgressClockSettings.ProgressClockUpperFrameCharHours[0],
+                BorderLowerFrameChar = ProgressClockSettings.ProgressClockLowerFrameCharHours[0],
+                BorderLeftFrameChar = ProgressClockSettings.ProgressClockLeftFrameCharHours[0],
+                BorderRightFrameChar = ProgressClockSettings.ProgressClockRightFrameCharHours[0],
+            };
+            var minutesBorder = new BorderSettings()
+            {
+                BorderUpperLeftCornerChar = ProgressClockSettings.ProgressClockUpperLeftCornerCharMinutes[0],
+                BorderLowerLeftCornerChar = ProgressClockSettings.ProgressClockLowerLeftCornerCharMinutes[0],
+                BorderUpperRightCornerChar = ProgressClockSettings.ProgressClockUpperRightCornerCharMinutes[0],
+                BorderLowerRightCornerChar = ProgressClockSettings.ProgressClockLowerRightCornerCharMinutes[0],
+                BorderUpperFrameChar = ProgressClockSettings.ProgressClockUpperFrameCharMinutes[0],
+                BorderLowerFrameChar = ProgressClockSettings.ProgressClockLowerFrameCharMinutes[0],
+                BorderLeftFrameChar = ProgressClockSettings.ProgressClockLeftFrameCharMinutes[0],
+                BorderRightFrameChar = ProgressClockSettings.ProgressClockRightFrameCharMinutes[0],
+            };
+            var secondsBorder = new BorderSettings()
+            {
+                BorderUpperLeftCornerChar = ProgressClockSettings.ProgressClockUpperLeftCornerCharSeconds[0],
+                BorderLowerLeftCornerChar = ProgressClockSettings.ProgressClockLowerLeftCornerCharSeconds[0],
+                BorderUpperRightCornerChar = ProgressClockSettings.ProgressClockUpperRightCornerCharSeconds[0],
+                BorderLowerRightCornerChar = ProgressClockSettings.ProgressClockLowerRightCornerCharSeconds[0],
+                BorderUpperFrameChar = ProgressClockSettings.ProgressClockUpperFrameCharSeconds[0],
+                BorderLowerFrameChar = ProgressClockSettings.ProgressClockLowerFrameCharSeconds[0],
+                BorderLeftFrameChar = ProgressClockSettings.ProgressClockLeftFrameCharSeconds[0],
+                BorderRightFrameChar = ProgressClockSettings.ProgressClockRightFrameCharSeconds[0],
+            };
+
+            // Render the progress clock bars
+            if (!ConsoleResizeHandler.WasResized(false))
             {
                 // Hours
-                TextWriterWhereColor.WriteWhere(ProgressClockSettings.ProgressClockLowerLeftCornerCharHours + ProgressClockSettings.ProgressClockLowerFrameCharHours.Repeat(ConsoleWrapper.WindowWidth - 10) + ProgressClockSettings.ProgressClockLowerRightCornerCharHours, 4, (int)Math.Round(ConsoleWrapper.WindowHeight / 2d) - 9, true, ColorStorageHours);         // Bottom of Hours
-                TextWriterWhereColor.WriteWhere(ProgressClockSettings.ProgressClockLeftFrameCharHours + " ".Repeat(ConsoleWrapper.WindowWidth - 10) + ProgressClockSettings.ProgressClockRightFrameCharHours, 4, ProgressFillPositionHours, true, ColorStorageHours);                                                           // Medium of Hours
-                TextWriterWhereColor.WriteWhere(ProgressClockSettings.ProgressClockUpperLeftCornerCharHours + ProgressClockSettings.ProgressClockUpperFrameCharHours.Repeat(ConsoleWrapper.WindowWidth - 10) + ProgressClockSettings.ProgressClockUpperRightCornerCharHours, 4, (int)Math.Round(ConsoleWrapper.WindowHeight / 2d) - 11, true, ColorStorageHours);        // Top of Hours
+                BoxFrameColor.WriteBoxFrame(4, (int)Math.Round(ConsoleWrapper.WindowHeight / 2d) - 11, ConsoleWrapper.WindowWidth - 10, 1, hoursBorder, ColorStorageHours);
 
                 // Minutes
-                TextWriterWhereColor.WriteWhere(ProgressClockSettings.ProgressClockLowerLeftCornerCharMinutes + ProgressClockSettings.ProgressClockLowerFrameCharMinutes.Repeat(ConsoleWrapper.WindowWidth - 10) + ProgressClockSettings.ProgressClockLowerRightCornerCharMinutes, 4, (int)Math.Round(ConsoleWrapper.WindowHeight / 2d), true, ColorStorageMinutes);     // Bottom of Minutes
-                TextWriterWhereColor.WriteWhere(ProgressClockSettings.ProgressClockLeftFrameCharMinutes + " ".Repeat(ConsoleWrapper.WindowWidth - 10) + ProgressClockSettings.ProgressClockRightFrameCharMinutes, 4, ProgressFillPositionMinutes, true, ColorStorageMinutes);                                                   // Medium of Minutes
-                TextWriterWhereColor.WriteWhere(ProgressClockSettings.ProgressClockUpperLeftCornerCharMinutes + ProgressClockSettings.ProgressClockUpperFrameCharMinutes.Repeat(ConsoleWrapper.WindowWidth - 10) + ProgressClockSettings.ProgressClockUpperRightCornerCharMinutes, 4, (int)Math.Round(ConsoleWrapper.WindowHeight / 2d) - 2, true, ColorStorageMinutes); // Top of Minutes
+                BoxFrameColor.WriteBoxFrame(4, (int)Math.Round(ConsoleWrapper.WindowHeight / 2d) - 2, ConsoleWrapper.WindowWidth - 10, 1, minutesBorder, ColorStorageMinutes);
 
                 // Seconds
-                TextWriterWhereColor.WriteWhere(ProgressClockSettings.ProgressClockLowerLeftCornerCharSeconds + ProgressClockSettings.ProgressClockLowerFrameCharSeconds.Repeat(ConsoleWrapper.WindowWidth - 10) + ProgressClockSettings.ProgressClockLowerRightCornerCharSeconds, 4, (int)Math.Round(ConsoleWrapper.WindowHeight / 2d) + 9, true, ColorStorageSeconds); // Bottom of Seconds
-                TextWriterWhereColor.WriteWhere(ProgressClockSettings.ProgressClockLeftFrameCharSeconds + " ".Repeat(ConsoleWrapper.WindowWidth - 10) + ProgressClockSettings.ProgressClockRightFrameCharSeconds, 4, ProgressFillPositionSeconds, true, ColorStorageSeconds);                                                   // Medium of Seconds
-                TextWriterWhereColor.WriteWhere(ProgressClockSettings.ProgressClockUpperLeftCornerCharSeconds + ProgressClockSettings.ProgressClockUpperFrameCharSeconds.Repeat(ConsoleWrapper.WindowWidth - 10) + ProgressClockSettings.ProgressClockUpperRightCornerCharSeconds, 4, (int)Math.Round(ConsoleWrapper.WindowHeight / 2d) + 7, true, ColorStorageSeconds); // Top of Seconds
+                BoxFrameColor.WriteBoxFrame(4, (int)Math.Round(ConsoleWrapper.WindowHeight / 2d) + 7, ConsoleWrapper.WindowWidth - 10, 1, secondsBorder, ColorStorageSeconds);
 
                 // Fill progress for hours, minutes, and seconds
-                if (!(TimeDate.TimeDate.KernelDateTime.Hour == 0))
-                    TextWriterWhereColor.WriteWhere(" ".Repeat(ConsoleBase.ConsoleExtensions.PercentRepeat(TimeDate.TimeDate.KernelDateTime.Hour, 24, 10)), 5, ProgressFillPositionHours, true, Color.Empty, ColorStorageHours);
-                if (!(TimeDate.TimeDate.KernelDateTime.Minute == 0))
-                    TextWriterWhereColor.WriteWhere(" ".Repeat(ConsoleBase.ConsoleExtensions.PercentRepeat(TimeDate.TimeDate.KernelDateTime.Minute, 60, 10)), 5, ProgressFillPositionMinutes, true, Color.Empty, ColorStorageMinutes);
-                if (!(TimeDate.TimeDate.KernelDateTime.Second == 0))
-                    TextWriterWhereColor.WriteWhere(" ".Repeat(ConsoleBase.ConsoleExtensions.PercentRepeat(TimeDate.TimeDate.KernelDateTime.Second, 60, 10)), 5, ProgressFillPositionSeconds, true, Color.Empty, ColorStorageSeconds);
+                if (TimeDate.TimeDate.KernelDateTime.Hour != 0)
+                {
+                    TextWriters.WriteWhere(new string(' ', ConsoleWrapper.WindowWidth - 10), 5, ProgressFillPositionHours, true, ColTypes.Neutral);
+                    TextWriterWhereColor.WriteWhereColorBack(new string(' ', ConsoleMisc.PercentRepeat(TimeDate.TimeDate.KernelDateTime.Hour, 24, 10)), 5, ProgressFillPositionHours, true, Color.Empty, ColorStorageHours);
+                }
+                if (TimeDate.TimeDate.KernelDateTime.Minute != 0)
+                {
+                    TextWriters.WriteWhere(new string(' ', ConsoleWrapper.WindowWidth - 10), 5, ProgressFillPositionMinutes, true, ColTypes.Neutral);
+                    TextWriterWhereColor.WriteWhereColorBack(new string(' ', ConsoleMisc.PercentRepeat(TimeDate.TimeDate.KernelDateTime.Minute, 60, 10)), 5, ProgressFillPositionMinutes, true, Color.Empty, ColorStorageMinutes);
+                }
+                if (TimeDate.TimeDate.KernelDateTime.Second != 0)
+                {
+                    TextWriters.WriteWhere(new string(' ', ConsoleWrapper.WindowWidth - 10), 5, ProgressFillPositionSeconds, true, ColTypes.Neutral);
+                    TextWriterWhereColor.WriteWhereColorBack(new string(' ', ConsoleMisc.PercentRepeat(TimeDate.TimeDate.KernelDateTime.Second, 60, 10)), 5, ProgressFillPositionSeconds, true, Color.Empty, ColorStorageSeconds);
+                }
 
                 // Print information
                 if (!string.IsNullOrEmpty(ProgressClockSettings.ProgressClockInfoTextHours))
-                {
-                    TextWriterWhereColor.WriteWhere(PlaceParse.ProbePlaces(ProgressClockSettings.ProgressClockInfoTextHours), 4, InformationPositionHours, true, ColorStorageHours, TimeDate.TimeDate.KernelDateTime.Hour);
-                }
+                    TextWriterWhereColor.WriteWhereColor(PlaceParse.ProbePlaces(ProgressClockSettings.ProgressClockInfoTextHours), 4, InformationPositionHours, true, ColorStorageHours, TimeDate.TimeDate.KernelDateTime.Hour);
                 else
-                {
-                    TextWriterWhereColor.WriteWhere("H: {0}/24", 4, InformationPositionHours, true, ColorStorageHours, TimeDate.TimeDate.KernelDateTime.Hour);
-                }
+                    TextWriterWhereColor.WriteWhereColor("H: {0}/24  ", 4, InformationPositionHours, true, ColorStorageHours, TimeDate.TimeDate.KernelDateTime.Hour);
                 if (!string.IsNullOrEmpty(ProgressClockSettings.ProgressClockInfoTextMinutes))
-                {
-                    TextWriterWhereColor.WriteWhere(PlaceParse.ProbePlaces(ProgressClockSettings.ProgressClockInfoTextMinutes), 4, InformationPositionMinutes, true, ColorStorageMinutes, TimeDate.TimeDate.KernelDateTime.Minute);
-                }
+                    TextWriterWhereColor.WriteWhereColor(PlaceParse.ProbePlaces(ProgressClockSettings.ProgressClockInfoTextMinutes), 4, InformationPositionMinutes, true, ColorStorageMinutes, TimeDate.TimeDate.KernelDateTime.Minute);
                 else
-                {
-                    TextWriterWhereColor.WriteWhere("M: {0}/60", 4, InformationPositionMinutes, true, ColorStorageMinutes, TimeDate.TimeDate.KernelDateTime.Minute);
-                }
+                    TextWriterWhereColor.WriteWhereColor("M: {0}/60  ", 4, InformationPositionMinutes, true, ColorStorageMinutes, TimeDate.TimeDate.KernelDateTime.Minute);
                 if (!string.IsNullOrEmpty(ProgressClockSettings.ProgressClockInfoTextHours))
-                {
-                    TextWriterWhereColor.WriteWhere(PlaceParse.ProbePlaces(ProgressClockSettings.ProgressClockInfoTextSeconds), 4, InformationPositionSeconds, true, ColorStorageSeconds, TimeDate.TimeDate.KernelDateTime.Second);
-                }
+                    TextWriterWhereColor.WriteWhereColor(PlaceParse.ProbePlaces(ProgressClockSettings.ProgressClockInfoTextSeconds), 4, InformationPositionSeconds, true, ColorStorageSeconds, TimeDate.TimeDate.KernelDateTime.Second);
                 else
-                {
-                    TextWriterWhereColor.WriteWhere("S: {0}/60", 4, InformationPositionSeconds, true, ColorStorageSeconds, TimeDate.TimeDate.KernelDateTime.Second);
-                }
+                    TextWriterWhereColor.WriteWhereColor("S: {0}/60  ", 4, InformationPositionSeconds, true, ColorStorageSeconds, TimeDate.TimeDate.KernelDateTime.Second);
 
                 // Print date information
-                TextWriterWhereColor.WriteWhere(TimeDateRenderers.Render(), (int)Math.Round(ConsoleWrapper.WindowWidth / 2d - TimeDateRenderers.Render().Length / 2d), ConsoleWrapper.WindowHeight - 2, ColorStorageSeconds);
+                TextWriterWhereColor.WriteWhereColor(new string(' ', lastDate.Length), (int)Math.Round(ConsoleWrapper.WindowWidth / 2d - lastDate.Length / 2d), ConsoleWrapper.WindowHeight - 2, ColorStorage);
+                string currentDate = TimeDateRenderers.Render();
+                TextWriterWhereColor.WriteWhereColor(currentDate, (int)Math.Round(ConsoleWrapper.WindowWidth / 2d - currentDate.Length / 2d), ConsoleWrapper.WindowHeight - 2, ColorStorage);
+                lastDate = currentDate;
             }
             if (ProgressClockSettings.ProgressClockCycleColors)
                 CurrentTicks += 1L;
 
             // Reset resize sync
-            ResizeSyncing = false;
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+            ConsoleResizeHandler.WasResized();
             ThreadManager.SleepNoBlock(ProgressClockSettings.ProgressClockDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
         }
 

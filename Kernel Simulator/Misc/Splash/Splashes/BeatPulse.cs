@@ -42,7 +42,6 @@ namespace KS.Misc.Splash.Splashes
         // BeatPulse-specific variables
         internal BeatPulseSettings BeatPulseSettings = new()
         {
-            BeatPulse255Colors = false,
             BeatPulseTrueColor = true,
             BeatPulseBeatColor = 17.ToString(),
             BeatPulseCycleColors = true,
@@ -66,7 +65,6 @@ namespace KS.Misc.Splash.Splashes
             Console.BackgroundColor = ConsoleColor.Black;
             ConsoleWrapper.Clear();
             RandomDriver = new Random();
-            BeatPulseSettings.RandomDriver = RandomDriver;
         }
 
         public void Display()

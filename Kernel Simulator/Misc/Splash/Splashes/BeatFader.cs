@@ -46,7 +46,6 @@ namespace KS.Misc.Splash.Splashes
         {
             BeatFaderSettingsInstance = new Animations.BeatFader.BeatFaderSettings()
             {
-                BeatFader255Colors = false,
                 BeatFaderTrueColor = true,
                 BeatFaderCycleColors = true,
                 BeatFaderBeatColor = 17.ToString(),
@@ -60,7 +59,6 @@ namespace KS.Misc.Splash.Splashes
                 BeatFaderMaximumGreenColorLevel = 255,
                 BeatFaderMaximumBlueColorLevel = 255,
                 BeatFaderMaximumColorLevel = 255,
-                RandomDriver = RandomDriver
             };
         }
 

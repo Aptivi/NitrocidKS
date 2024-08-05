@@ -17,20 +17,21 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using System;
 using Terminaux.Colors;
+
 namespace KS.Misc.Animations.BeatFader
 {
+    /// <summary>
+    /// Beat fader settings
+    /// </summary>
     public class BeatFaderSettings
     {
 
-        internal Random RandomDriver;
-        private bool _beatFader255Colors;
         private bool _beatFaderTrueColor = true;
         private int _beatFaderDelay = 120;
         private int _beatFaderMaxSteps = 30;
         private bool _beatFaderCycleColors = true;
-        private string _beatFaderBeatColor = 17.ToString();
+        private string _beatFaderBeatColor = "17";
         private int _beatFaderMinimumRedColorLevel = 0;
         private int _beatFaderMinimumGreenColorLevel = 0;
         private int _beatFaderMinimumBlueColorLevel = 0;
@@ -40,20 +41,6 @@ namespace KS.Misc.Animations.BeatFader
         private int _beatFaderMaximumBlueColorLevel = 255;
         private int _beatFaderMaximumColorLevel = 255;
 
-        /// <summary>
-        /// [BeatFader] Enable 255 color support. Has a higher priority than 16 color support. Please note that it only works if color cycling is enabled.
-        /// </summary>
-        public bool BeatFader255Colors
-        {
-            get
-            {
-                return _beatFader255Colors;
-            }
-            set
-            {
-                _beatFader255Colors = value;
-            }
-        }
         /// <summary>
         /// [BeatFader] Enable truecolor support. Has a higher priority than 255 color support. Please note that it only works if color cycling is enabled.
         /// </summary>
@@ -193,7 +180,7 @@ namespace KS.Misc.Animations.BeatFader
             }
             set
             {
-                int FinalMinimumLevel = _beatFader255Colors | _beatFaderTrueColor ? 255 : 15;
+                int FinalMinimumLevel = 255;
                 if (value <= 0)
                     value = 0;
                 if (value > FinalMinimumLevel)
@@ -266,7 +253,7 @@ namespace KS.Misc.Animations.BeatFader
             }
             set
             {
-                int FinalMaximumLevel = _beatFader255Colors | _beatFaderTrueColor ? 255 : 15;
+                int FinalMaximumLevel = 255;
                 if (value <= _beatFaderMinimumColorLevel)
                     value = _beatFaderMinimumColorLevel;
                 if (value > FinalMaximumLevel)

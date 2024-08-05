@@ -17,38 +17,22 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using System;
-using System.Collections.Generic;
-using KS.ConsoleBase.Colors;
-using KS.Misc.Text;
-using KS.Misc.Threading;
-using KS.ConsoleBase.Writers;
+using Terminaux.Writer.FancyWriters;
+using KS.Misc.Reflection;
 using KS.Misc.Writers.DebugWriters;
-using Terminaux.Base;
+using KS.Misc.Threading;
 using Terminaux.Colors;
-using Terminaux.Writer.ConsoleWriters;
-// Kernel Simulator  Copyright (C) 2018-2022  Aptivi
-// 
-// This file is part of Kernel Simulator
-// 
-// Kernel Simulator is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-// 
-// Kernel Simulator is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-// 
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+using Terminaux.Base;
+using Terminaux.Colors.Data;
+using KS.Misc.Text;
 
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for StackBox
+    /// </summary>
     public static class StackBoxSettings
     {
-
         private static bool _stackBox255Colors;
         private static bool _stackBoxTrueColor = true;
         private static int _stackBoxDelay = 10;
@@ -266,57 +250,38 @@ namespace KS.Misc.Screensaver.Displays
                 _stackBoxMaximumColorLevel = value;
             }
         }
-
     }
 
+    /// <summary>
+    /// Display code for StackBox
+    /// </summary>
     public class StackBoxDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Random RandomDriver;
-        private int CurrentWindowWidth;
-        private int CurrentWindowHeight;
-        private bool ResizeSyncing;
-
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "StackBox";
 
-        public override Dictionary<string, object> ScreensaverSettings { get; set; }
-
-        public override void ScreensaverPreparation()
-        {
-            // Variable preparations
-            RandomDriver = new Random();
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
-            Console.BackgroundColor = ConsoleColor.Black;
-            ConsoleWrapper.Clear();
-            DebugWriter.Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
-        }
-
+        /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
             ConsoleWrapper.CursorVisible = false;
-            if (ResizeSyncing)
+            if (ConsoleResizeHandler.WasResized(false))
             {
-                Console.BackgroundColor = ConsoleColor.Black;
-                ConsoleWrapper.Clear();
+                ColorTools.LoadBackDry(new Color(ConsoleColors.Black));
 
                 // Reset resize sync
-                ResizeSyncing = false;
-                CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-                CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+                ConsoleResizeHandler.WasResized();
             }
             else
             {
                 bool Drawable = true;
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
 
                 // Get the required positions for the box
-                int BoxStartX = RandomDriver.Next(ConsoleWrapper.WindowWidth);
-                int BoxEndX = RandomDriver.Next(ConsoleWrapper.WindowWidth);
+                int BoxStartX = RandomDriver.RandomIdx(ConsoleWrapper.WindowWidth);
+                int BoxEndX = RandomDriver.RandomIdx(ConsoleWrapper.WindowWidth);
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Box X position {0} -> {1}", BoxStartX, BoxEndX);
-                int BoxStartY = RandomDriver.Next(ConsoleWrapper.WindowHeight);
-                int BoxEndY = RandomDriver.Next(ConsoleWrapper.WindowHeight);
+                int BoxStartY = RandomDriver.RandomIdx(ConsoleWrapper.WindowHeight);
+                int BoxEndY = RandomDriver.RandomIdx(ConsoleWrapper.WindowHeight);
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Box Y position {0} -> {1}", BoxStartY, BoxEndY);
 
                 // Check to see if start is less than or equal to end
@@ -331,69 +296,29 @@ namespace KS.Misc.Screensaver.Displays
 
                 if (Drawable)
                 {
+                    Color color;
+
                     // Select color
                     if (StackBoxSettings.StackBoxTrueColor)
                     {
-                        int RedColorNum = RandomDriver.Next(StackBoxSettings.StackBoxMinimumRedColorLevel, StackBoxSettings.StackBoxMaximumRedColorLevel);
-                        int GreenColorNum = RandomDriver.Next(StackBoxSettings.StackBoxMinimumGreenColorLevel, StackBoxSettings.StackBoxMaximumGreenColorLevel);
-                        int BlueColorNum = RandomDriver.Next(StackBoxSettings.StackBoxMinimumBlueColorLevel, StackBoxSettings.StackBoxMaximumBlueColorLevel);
+                        int RedColorNum = RandomDriver.Random(StackBoxSettings.StackBoxMinimumRedColorLevel, StackBoxSettings.StackBoxMaximumRedColorLevel);
+                        int GreenColorNum = RandomDriver.Random(StackBoxSettings.StackBoxMinimumGreenColorLevel, StackBoxSettings.StackBoxMaximumGreenColorLevel);
+                        int BlueColorNum = RandomDriver.Random(StackBoxSettings.StackBoxMinimumBlueColorLevel, StackBoxSettings.StackBoxMaximumBlueColorLevel);
                         DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
-                        KernelColorTools.SetConsoleColor(new Color($"{RedColorNum};{GreenColorNum};{BlueColorNum}"), true);
-                    }
-                    else if (StackBoxSettings.StackBox255Colors)
-                    {
-                        int ColorNum = RandomDriver.Next(StackBoxSettings.StackBoxMinimumColorLevel, StackBoxSettings.StackBoxMaximumColorLevel);
-                        DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
-                        KernelColorTools.SetConsoleColor(new Color(ColorNum), true);
+                        color = new Color($"{RedColorNum};{GreenColorNum};{BlueColorNum}");
                     }
                     else
                     {
-                        Console.BackgroundColor = Screensaver.colors[RandomDriver.Next(StackBoxSettings.StackBoxMinimumColorLevel, StackBoxSettings.StackBoxMaximumColorLevel)];
-                        DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", Console.BackgroundColor);
+                        int ColorNum = RandomDriver.Random(StackBoxSettings.StackBoxMinimumColorLevel, StackBoxSettings.StackBoxMaximumColorLevel);
+                        DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
+                        color = new Color(ColorNum);
                     }
 
                     // Draw the box
                     if (StackBoxSettings.StackBoxFill)
-                    {
-                        // Cover all the positions
-                        for (int X = BoxStartX, loopTo = BoxEndX; X <= loopTo; X++)
-                        {
-                            for (int Y = BoxStartY, loopTo1 = BoxEndY; Y <= loopTo1; Y++)
-                            {
-                                DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Filling {0},{1}...", X, Y);
-                                ConsoleWrapper.SetCursorPosition(X, Y);
-                                TextWriterRaw.WritePlain(" ", false);
-                            }
-                        }
-                    }
+                        BoxColor.WriteBox(BoxStartX, BoxStartY, BoxEndX - BoxStartX, BoxEndY - BoxStartY, color);
                     else
-                    {
-                        // Draw the upper and lower borders
-                        for (int X = BoxStartX, loopTo2 = BoxEndX; X <= loopTo2; X++)
-                        {
-                            ConsoleWrapper.SetCursorPosition(X, BoxStartY);
-                            TextWriterRaw.WritePlain(" ", false);
-                            DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Drawn upper border at {0}", X);
-                            ConsoleWrapper.SetCursorPosition(X, BoxEndY);
-                            TextWriterRaw.WritePlain(" ", false);
-                            DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Drawn lower border at {0}", X);
-                        }
-
-                        // Draw the left and right borders
-                        for (int Y = BoxStartY, loopTo3 = BoxEndY; Y <= loopTo3; Y++)
-                        {
-                            ConsoleWrapper.SetCursorPosition(BoxStartX, Y);
-                            TextWriterRaw.WritePlain(" ", false);
-                            if (!(BoxStartX >= ConsoleWrapper.WindowWidth - 1))
-                                TextWriterRaw.WritePlain(" ", false);
-                            DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Drawn left border at {0}", Y);
-                            ConsoleWrapper.SetCursorPosition(BoxEndX, Y);
-                            TextWriterRaw.WritePlain(" ", false);
-                            if (!(BoxEndX >= ConsoleWrapper.WindowWidth - 1))
-                                TextWriterRaw.WritePlain(" ", false);
-                            DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Drawn right border at {0}", Y);
-                        }
-                    }
+                        BoxFrameColor.WriteBoxFrame(BoxStartX, BoxStartY, BoxEndX - BoxStartX, BoxEndY - BoxStartY, color);
                 }
             }
             ThreadManager.SleepNoBlock(StackBoxSettings.StackBoxDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);

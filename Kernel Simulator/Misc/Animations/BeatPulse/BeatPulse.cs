@@ -18,31 +18,27 @@
 //
 
 using System;
-using KS.ConsoleBase.Colors;
-using KS.Misc.Screensaver;
-using KS.Misc.Threading;
 using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Threading;
+using KS.Misc.Screensaver;
 using Terminaux.Base;
 using Terminaux.Colors;
 using Terminaux.Colors.Data;
+using KS.Misc.Reflection;
 
 namespace KS.Misc.Animations.BeatPulse
 {
+    /// <summary>
+    /// Beat pulse animation module
+    /// </summary>
     public static class BeatPulse
     {
-
-        private static int CurrentWindowWidth;
-        private static int CurrentWindowHeight;
-        private static bool ResizeSyncing;
 
         /// <summary>
         /// Simulates the beat pulsing animation
         /// </summary>
         public static void Simulate(BeatPulseSettings Settings)
         {
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
-            var RandomDriver = Settings.RandomDriver;
             ConsoleWrapper.CursorVisible = false;
             int BeatInterval = (int)Math.Round(60000d / Settings.BeatPulseDelay);
             int BeatIntervalStep = (int)Math.Round(BeatInterval / (double)Settings.BeatPulseMaxSteps);
@@ -51,27 +47,20 @@ namespace KS.Misc.Animations.BeatPulse
             ThreadManager.SleepNoBlock(BeatIntervalStep, ScreensaverDisplayer.ScreensaverDisplayerThread);
 
             // If we're cycling colors, set them. Else, use the user-provided color
-            int RedColorNum = default, GreenColorNum = default, BlueColorNum = default;
+            int RedColorNum, GreenColorNum, BlueColorNum;
             if (Settings.BeatPulseCycleColors)
             {
                 // We're cycling. Select the color mode, starting from true color
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Cycling colors...");
                 if (Settings.BeatPulseTrueColor)
                 {
-                    RedColorNum = RandomDriver.Next(Settings.BeatPulseMinimumRedColorLevel, Settings.BeatPulseMinimumRedColorLevel);
-                    GreenColorNum = RandomDriver.Next(Settings.BeatPulseMinimumGreenColorLevel, Settings.BeatPulseMaximumGreenColorLevel);
-                    BlueColorNum = RandomDriver.Next(Settings.BeatPulseMinimumBlueColorLevel, Settings.BeatPulseMaximumBlueColorLevel);
-                }
-                else if (Settings.BeatPulse255Colors)
-                {
-                    var ConsoleColor = new Color((ConsoleColors)RandomDriver.Next(Settings.BeatPulseMinimumColorLevel, Settings.BeatPulseMaximumColorLevel));
-                    RedColorNum = ConsoleColor.RGB.R;
-                    GreenColorNum = ConsoleColor.RGB.G;
-                    BlueColorNum = ConsoleColor.RGB.B;
+                    RedColorNum = RandomDriver.Random(Settings.BeatPulseMinimumRedColorLevel, Settings.BeatPulseMaximumRedColorLevel);
+                    GreenColorNum = RandomDriver.Random(Settings.BeatPulseMinimumGreenColorLevel, Settings.BeatPulseMaximumGreenColorLevel);
+                    BlueColorNum = RandomDriver.Random(Settings.BeatPulseMinimumBlueColorLevel, Settings.BeatPulseMaximumBlueColorLevel);
                 }
                 else
                 {
-                    var ConsoleColor = new Color((ConsoleColors)RandomDriver.Next(Settings.BeatPulseMinimumColorLevel, Settings.BeatPulseMaximumColorLevel));
+                    var ConsoleColor = new Color((ConsoleColors)RandomDriver.Random(Settings.BeatPulseMinimumColorLevel, Settings.BeatPulseMaximumColorLevel));
                     RedColorNum = ConsoleColor.RGB.R;
                     GreenColorNum = ConsoleColor.RGB.G;
                     BlueColorNum = ConsoleColor.RGB.B;
@@ -89,7 +78,7 @@ namespace KS.Misc.Animations.BeatPulse
                     GreenColorNum = UserColor.RGB.G;
                     BlueColorNum = UserColor.RGB.B;
                 }
-                else if (UserColor.Type == ColorType.EightBitColor)
+                else
                 {
                     var ConsoleColor = new Color((ConsoleColors)Convert.ToInt32(UserColor.PlainSequence));
                     RedColorNum = ConsoleColor.RGB.R;
@@ -111,9 +100,7 @@ namespace KS.Misc.Animations.BeatPulse
             int CurrentColorBlueIn = 0;
             for (int CurrentStep = Settings.BeatPulseMaxSteps; CurrentStep >= 1; CurrentStep -= 1)
             {
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (ResizeSyncing)
+                if (ConsoleResizeHandler.WasResized(false))
                     break;
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Step {0}/{1}", CurrentStep, BeatIntervalStep);
                 ThreadManager.SleepNoBlock(BeatIntervalStep, System.Threading.Thread.CurrentThread);
@@ -121,21 +108,14 @@ namespace KS.Misc.Animations.BeatPulse
                 CurrentColorGreenIn = (int)Math.Round(CurrentColorGreenIn + ThresholdGreen);
                 CurrentColorBlueIn = (int)Math.Round(CurrentColorBlueIn + ThresholdBlue);
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Color in (R;G;B: {0};{1};{2})", CurrentColorRedIn, CurrentColorGreenIn, CurrentColorBlueIn);
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (!ResizeSyncing)
-                {
-                    KernelColorTools.SetConsoleColor(new Color(CurrentColorRedIn, CurrentColorGreenIn, CurrentColorBlueIn), true);
-                    ConsoleWrapper.Clear();
-                }
+                if (!ConsoleResizeHandler.WasResized(false))
+                    ColorTools.LoadBackDry(new Color(CurrentColorRedIn, CurrentColorGreenIn, CurrentColorBlueIn));
             }
 
             // Fade out
-            for (int CurrentStep = 1, loopTo = Settings.BeatPulseMaxSteps; CurrentStep <= loopTo; CurrentStep++)
+            for (int CurrentStep = 1; CurrentStep <= Settings.BeatPulseMaxSteps; CurrentStep++)
             {
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (ResizeSyncing)
+                if (ConsoleResizeHandler.WasResized(false))
                     break;
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Step {0}/{1} each {2} ms", CurrentStep, Settings.BeatPulseMaxSteps, BeatIntervalStep);
                 ThreadManager.SleepNoBlock(BeatIntervalStep, System.Threading.Thread.CurrentThread);
@@ -143,19 +123,12 @@ namespace KS.Misc.Animations.BeatPulse
                 int CurrentColorGreenOut = (int)Math.Round(GreenColorNum - ThresholdGreen * CurrentStep);
                 int CurrentColorBlueOut = (int)Math.Round(BlueColorNum - ThresholdBlue * CurrentStep);
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Color out (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (!ResizeSyncing)
-                {
-                    KernelColorTools.SetConsoleColor(new Color($"{CurrentColorRedOut};{CurrentColorGreenOut};{CurrentColorBlueOut}"), true);
-                    ConsoleWrapper.Clear();
-                }
+                if (!ConsoleResizeHandler.WasResized(false))
+                    ColorTools.LoadBackDry(new Color(CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut));
             }
 
             // Reset resize sync
-            ResizeSyncing = false;
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+            ConsoleResizeHandler.WasResized();
             ThreadManager.SleepNoBlock(Settings.BeatPulseDelay, System.Threading.Thread.CurrentThread);
         }
 

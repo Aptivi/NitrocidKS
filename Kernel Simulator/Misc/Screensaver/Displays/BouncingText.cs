@@ -18,19 +18,20 @@
 //
 
 using System;
-using System.Collections.Generic;
-using KS.ConsoleBase.Colors;
-using KS.Misc.Threading;
-using KS.ConsoleBase.Writers;
-using KS.Misc.Writers.DebugWriters;
-using Terminaux.Base;
-using Terminaux.Colors;
 using Terminaux.Writer.ConsoleWriters;
+using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Threading;
+using Terminaux.Colors;
+using Terminaux.Base;
+using KS.Misc.Reflection;
+
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for BouncingText
+    /// </summary>
     public static class BouncingTextSettings
     {
-
         private static bool _bouncingText255Colors;
         private static bool _bouncingTextTrueColor = true;
         private static int _bouncingTextDelay = 10;
@@ -280,40 +281,41 @@ namespace KS.Misc.Screensaver.Displays
                 _bouncingTextMaximumColorLevel = value;
             }
         }
-
     }
 
+    /// <summary>
+    /// Display code for BouncingText
+    /// </summary>
     public class BouncingTextDisplay : BaseScreensaver, IScreensaver
     {
 
         private string Direction = "BottomRight";
         private int RowText, ColumnFirstLetter, ColumnLastLetter;
-        private int CurrentWindowWidth;
-        private int CurrentWindowHeight;
-        private bool ResizeSyncing;
+        private int lastLeft, lastTop;
         private Color BouncingColor;
 
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "BouncingText";
 
-        public override Dictionary<string, object> ScreensaverSettings { get; set; }
-
+        /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
             // Variable preparations
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
-            KernelColorTools.SetConsoleColor(new Color(BouncingTextSettings.BouncingTextBackgroundColor), true);
-            KernelColorTools.SetConsoleColor(new Color(BouncingTextSettings.BouncingTextForegroundColor));
-            ConsoleWrapper.Clear();
+            ColorTools.SetConsoleColor(new Color(BouncingTextSettings.BouncingTextForegroundColor));
+            ColorTools.LoadBackDry(new Color(BouncingTextSettings.BouncingTextBackgroundColor));
             RowText = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d);
             ColumnFirstLetter = (int)Math.Round(ConsoleWrapper.WindowWidth / 2d - BouncingTextSettings.BouncingTextWrite.Length / 2d);
             ColumnLastLetter = (int)Math.Round(ConsoleWrapper.WindowWidth / 2d + BouncingTextSettings.BouncingTextWrite.Length / 2d);
         }
 
+        /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
             ConsoleWrapper.CursorVisible = false;
-            ConsoleWrapper.Clear();
+
+            // Clear the old text position
+            int diff = ColumnLastLetter - ColumnFirstLetter + 1;
+            TextWriterWhereColor.WriteWhereColorBack(new string(' ', diff), lastLeft, lastTop, true, Color.Empty, BouncingTextSettings.BouncingTextBackgroundColor);
 
             // Define the color
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Row text: {0}", RowText);
@@ -324,11 +326,9 @@ namespace KS.Misc.Screensaver.Displays
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Defining color...");
                 BouncingColor = ChangeBouncingTextColor();
             }
-            if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                ResizeSyncing = true;
-            if (!ResizeSyncing)
+            if (!ConsoleResizeHandler.WasResized(false))
             {
-                TextWriterWhereColor.WriteWhereColor(BouncingTextSettings.BouncingTextWrite, ColumnFirstLetter, RowText, true, BouncingColor);
+                TextWriterWhereColor.WriteWhereColorBack(BouncingTextSettings.BouncingTextWrite, ColumnFirstLetter, RowText, true, BouncingColor, BouncingTextSettings.BouncingTextBackgroundColor);
             }
             else
             {
@@ -337,6 +337,10 @@ namespace KS.Misc.Screensaver.Displays
                 ColumnFirstLetter = (int)Math.Round(ConsoleWrapper.WindowWidth / 2d - BouncingTextSettings.BouncingTextWrite.Length / 2d);
                 ColumnLastLetter = (int)Math.Round(ConsoleWrapper.WindowWidth / 2d + BouncingTextSettings.BouncingTextWrite.Length / 2d);
             }
+
+            // Set the old positions to clear
+            lastLeft = ColumnFirstLetter;
+            lastTop = RowText;
 
             // Change the direction of text
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Text is facing {0}.", Direction);
@@ -370,26 +374,26 @@ namespace KS.Misc.Screensaver.Displays
             }
 
             // Check to see if the text is on the edge
-            if (RowText == ConsoleWrapper.WindowHeight - 2)
+            if (RowText == ConsoleWrapper.WindowHeight - 1)
             {
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "We're on the bottom.");
                 Direction = Direction.Replace("Bottom", "Top");
                 BouncingColor = ChangeBouncingTextColor();
             }
-            else if (RowText == 1)
+            else if (RowText == 0)
             {
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "We're on the top.");
                 Direction = Direction.Replace("Top", "Bottom");
                 BouncingColor = ChangeBouncingTextColor();
             }
 
-            if (ColumnLastLetter == ConsoleWrapper.WindowWidth - 1)
+            if (ColumnLastLetter == ConsoleWrapper.WindowWidth + 1)
             {
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "We're on the right.");
                 Direction = Direction.Replace("Right", "Left");
                 BouncingColor = ChangeBouncingTextColor();
             }
-            else if (ColumnFirstLetter == 1)
+            else if (ColumnFirstLetter == 0)
             {
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "We're on the left.");
                 Direction = Direction.Replace("Left", "Right");
@@ -397,9 +401,7 @@ namespace KS.Misc.Screensaver.Displays
             }
 
             // Reset resize sync
-            ResizeSyncing = false;
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+            ConsoleResizeHandler.WasResized();
             ThreadManager.SleepNoBlock(BouncingTextSettings.BouncingTextDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
         }
 
@@ -408,23 +410,18 @@ namespace KS.Misc.Screensaver.Displays
         /// </summary>
         public Color ChangeBouncingTextColor()
         {
-            var RandomDriver = new Random();
             Color ColorInstance;
             if (BouncingTextSettings.BouncingTextTrueColor)
             {
-                int RedColorNum = RandomDriver.Next(BouncingTextSettings.BouncingTextMinimumRedColorLevel, BouncingTextSettings.BouncingTextMaximumRedColorLevel);
-                int GreenColorNum = RandomDriver.Next(BouncingTextSettings.BouncingTextMinimumGreenColorLevel, BouncingTextSettings.BouncingTextMaximumGreenColorLevel);
-                int BlueColorNum = RandomDriver.Next(BouncingTextSettings.BouncingTextMinimumBlueColorLevel, BouncingTextSettings.BouncingTextMaximumBlueColorLevel);
+                int RedColorNum = RandomDriver.Random(BouncingTextSettings.BouncingTextMinimumRedColorLevel, BouncingTextSettings.BouncingTextMaximumRedColorLevel);
+                int GreenColorNum = RandomDriver.Random(BouncingTextSettings.BouncingTextMinimumGreenColorLevel, BouncingTextSettings.BouncingTextMaximumGreenColorLevel);
+                int BlueColorNum = RandomDriver.Random(BouncingTextSettings.BouncingTextMinimumBlueColorLevel, BouncingTextSettings.BouncingTextMaximumBlueColorLevel);
                 ColorInstance = new Color(RedColorNum, GreenColorNum, BlueColorNum);
-            }
-            else if (BouncingTextSettings.BouncingText255Colors)
-            {
-                int ColorNum = RandomDriver.Next(BouncingTextSettings.BouncingTextMinimumColorLevel, BouncingTextSettings.BouncingTextMaximumColorLevel);
-                ColorInstance = new Color(ColorNum);
             }
             else
             {
-                ColorInstance = new Color(Screensaver.colors[RandomDriver.Next(BouncingTextSettings.BouncingTextMinimumColorLevel, BouncingTextSettings.BouncingTextMaximumColorLevel)]);
+                int ColorNum = RandomDriver.Random(BouncingTextSettings.BouncingTextMinimumColorLevel, BouncingTextSettings.BouncingTextMaximumColorLevel);
+                ColorInstance = new Color(ColorNum);
             }
             return ColorInstance;
         }

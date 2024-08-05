@@ -18,20 +18,21 @@
 //
 
 using System;
-using System.Collections.Generic;
-using KS.ConsoleBase.Colors;
-using KS.Misc.Text;
-using KS.Misc.Threading;
-using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Reflection;
+using KS.Misc.Threading;
 using Terminaux.Base;
+using Terminaux.Base.Extensions;
 using Terminaux.Colors;
-using Terminaux.Writer.ConsoleWriters;
+using Textify.General;
+
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for Marquee
+    /// </summary>
     public static class MarqueeSettings
     {
-
         private static bool _marquee255Colors;
         private static bool _marqueeTrueColor = true;
         private static int _marqueeDelay = 10;
@@ -258,32 +259,26 @@ namespace KS.Misc.Screensaver.Displays
                 _marqueeMaximumColorLevel = value;
             }
         }
-
     }
+
+    /// <summary>
+    /// Display code for Marquee
+    /// </summary>
     public class MarqueeDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Random RandomDriver;
-        private int CurrentWindowWidth;
-        private int CurrentWindowHeight;
-        private bool ResizeSyncing;
-
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "Marquee";
 
-        public override Dictionary<string, object> ScreensaverSettings { get; set; }
-
+        /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
             // Variable preparations
-            RandomDriver = new Random();
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
-            KernelColorTools.SetConsoleColor(new Color(MarqueeSettings.MarqueeBackgroundColor), true);
-            Console.ForegroundColor = ConsoleColor.White;
-            ConsoleWrapper.Clear();
-            MarqueeSettings.MarqueeWrite = MarqueeSettings.MarqueeWrite.ReplaceAll(["\r", "\n"], " - ");
+            ColorTools.LoadBackDry(new Color(MarqueeSettings.MarqueeBackgroundColor));
+            MarqueeSettings.MarqueeWrite = MarqueeSettings.MarqueeWrite.ReplaceAll([Convert.ToChar(13).ToString(), Convert.ToChar(10).ToString()], " - ");
         }
 
+        /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
             ConsoleWrapper.CursorVisible = false;
@@ -293,7 +288,7 @@ namespace KS.Misc.Screensaver.Displays
             int TopPrinted = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d);
             if (!MarqueeSettings.MarqueeAlwaysCentered)
             {
-                TopPrinted = RandomDriver.Next(ConsoleWrapper.WindowHeight - 1);
+                TopPrinted = RandomDriver.RandomIdx(ConsoleWrapper.WindowHeight);
             }
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Top position: {0}", TopPrinted);
 
@@ -305,31 +300,24 @@ namespace KS.Misc.Screensaver.Displays
             // We need to set colors for the text.
             if (MarqueeSettings.MarqueeTrueColor)
             {
-                int RedColorNum = RandomDriver.Next(MarqueeSettings.MarqueeMinimumRedColorLevel, MarqueeSettings.MarqueeMaximumRedColorLevel);
-                int GreenColorNum = RandomDriver.Next(MarqueeSettings.MarqueeMinimumGreenColorLevel, MarqueeSettings.MarqueeMaximumGreenColorLevel);
-                int BlueColorNum = RandomDriver.Next(MarqueeSettings.MarqueeMinimumBlueColorLevel, MarqueeSettings.MarqueeMaximumBlueColorLevel);
+                int RedColorNum = RandomDriver.Random(MarqueeSettings.MarqueeMinimumRedColorLevel, MarqueeSettings.MarqueeMaximumRedColorLevel);
+                int GreenColorNum = RandomDriver.Random(MarqueeSettings.MarqueeMinimumGreenColorLevel, MarqueeSettings.MarqueeMaximumGreenColorLevel);
+                int BlueColorNum = RandomDriver.Random(MarqueeSettings.MarqueeMinimumBlueColorLevel, MarqueeSettings.MarqueeMaximumBlueColorLevel);
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
-                KernelColorTools.SetConsoleColor(new Color($"{RedColorNum};{GreenColorNum};{BlueColorNum}"));
-            }
-            else if (MarqueeSettings.Marquee255Colors)
-            {
-                int color = RandomDriver.Next(MarqueeSettings.MarqueeMinimumColorLevel, MarqueeSettings.MarqueeMaximumColorLevel);
-                DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", color);
-                KernelColorTools.SetConsoleColor(new Color(color));
+                ColorTools.SetConsoleColor(new Color($"{RedColorNum};{GreenColorNum};{BlueColorNum}"));
             }
             else
             {
-                Console.ForegroundColor = Screensaver.colors[RandomDriver.Next(MarqueeSettings.MarqueeMinimumColorLevel, MarqueeSettings.MarqueeMaximumColorLevel)];
-                DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", Console.ForegroundColor);
+                int color = RandomDriver.Random(MarqueeSettings.MarqueeMinimumColorLevel, MarqueeSettings.MarqueeMaximumColorLevel);
+                DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", color);
+                ColorTools.SetConsoleColor(new Color(color));
             }
 
             // If the text is at the right and is longer than the console width, crop it until it's complete.
             while (CurrentLeftOtherEnd != 0)
             {
                 ThreadManager.SleepNoBlock(MarqueeSettings.MarqueeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (ResizeSyncing)
+                if (ConsoleResizeHandler.WasResized(false))
                     break;
                 if (MarqueeSettings.MarqueeUseConsoleAPI)
                     ConsoleWrapper.Clear();
@@ -343,7 +331,7 @@ namespace KS.Misc.Screensaver.Displays
                 // If the current left position is not zero (not on the left), take the substring starting from the beginning of the string until the
                 // written variable equals the base text variable. However, if we're on the left, take the substring so that the character which was
                 // shown previously won't be shown again.
-                if (!(CurrentLeft == 0))
+                if (CurrentLeft != 0)
                 {
                     MarqueeWritten = MarqueeWritten.Substring(0, CurrentLeftOtherEnd - CurrentLeft);
                 }
@@ -357,16 +345,16 @@ namespace KS.Misc.Screensaver.Displays
                 }
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Written result: {0}", MarqueeWritten);
                 if (!MarqueeSettings.MarqueeUseConsoleAPI)
-                    MarqueeWritten += Convert.ToString(Color255.GetEsc()) + "[0K";
+                    MarqueeWritten += $"{ConsoleClearing.GetClearLineToRightSequence()}";
 
                 // Set the appropriate cursor position and write the results
                 ConsoleWrapper.SetCursorPosition(CurrentLeft, TopPrinted);
-                TextWriterRaw.WritePlain(MarqueeWritten, false);
+                ConsoleWrapper.Write(MarqueeWritten);
                 if (Middle)
                     CurrentCharacterNum += 1;
 
                 // If we're not on the left, decrement the current left position
-                if (!(CurrentLeft == 0))
+                if (CurrentLeft != 0)
                 {
                     CurrentLeft -= 1;
                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Not on left. Decremented left position {0}", CurrentLeft);
@@ -381,9 +369,7 @@ namespace KS.Misc.Screensaver.Displays
             }
 
             // Reset resize sync
-            ResizeSyncing = false;
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+            ConsoleResizeHandler.WasResized();
             ThreadManager.SleepNoBlock(MarqueeSettings.MarqueeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
         }
 

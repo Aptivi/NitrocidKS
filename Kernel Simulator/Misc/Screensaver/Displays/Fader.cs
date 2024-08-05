@@ -17,17 +17,19 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using System;
-using System.Collections.Generic;
-using KS.ConsoleBase.Colors;
 using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Screensaver;
 using Terminaux.Base;
 using Terminaux.Colors;
+using System;
+
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for Fader
+    /// </summary>
     public static class FaderSettings
     {
-
         private static int _faderDelay = 50;
         private static int _faderFadeOutDelay = 3000;
         private static string _faderWrite = "Kernel Simulator";
@@ -226,25 +228,24 @@ namespace KS.Misc.Screensaver.Displays
                 _faderMaximumBlueColorLevel = value;
             }
         }
-
     }
 
+    /// <summary>
+    /// Display code for Fader
+    /// </summary>
     public class FaderDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Random RandomDriver;
         private Animations.Fader.FaderSettings FaderSettingsInstance;
 
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "Fader";
 
-        public override Dictionary<string, object> ScreensaverSettings { get; set; }
-
+        /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
-            // Variable preparations
-            RandomDriver = new Random();
-            KernelColorTools.SetConsoleColor(new Color(FaderSettings.FaderBackgroundColor), true);
-            ConsoleWrapper.Clear();
+            base.ScreensaverPreparation();
+            ColorTools.LoadBackDry(new Color(FaderSettings.FaderBackgroundColor));
             DebugWriter.Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
             FaderSettingsInstance = new Animations.Fader.FaderSettings()
             {
@@ -258,15 +259,12 @@ namespace KS.Misc.Screensaver.Displays
                 FaderMinimumBlueColorLevel = FaderSettings.FaderMinimumBlueColorLevel,
                 FaderMaximumRedColorLevel = FaderSettings.FaderMaximumRedColorLevel,
                 FaderMaximumGreenColorLevel = FaderSettings.FaderMaximumGreenColorLevel,
-                FaderMaximumBlueColorLevel = FaderSettings.FaderMaximumBlueColorLevel,
-                RandomDriver = RandomDriver
+                FaderMaximumBlueColorLevel = FaderSettings.FaderMaximumBlueColorLevel
             };
         }
 
-        public override void ScreensaverLogic()
-        {
-            Animations.Fader.Fader.Simulate(FaderSettingsInstance);
-        }
+        /// <inheritdoc/>
+        public override void ScreensaverLogic() => Animations.Fader.Fader.Simulate(FaderSettingsInstance);
 
     }
 }

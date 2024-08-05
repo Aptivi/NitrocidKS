@@ -18,32 +18,28 @@
 //
 
 using System;
-using KS.ConsoleBase.Colors;
-using KS.Misc.Threading;
+using KS.Misc.Reflection;
 using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Threading;
 using Terminaux.Base;
 using Terminaux.Colors;
 
 namespace KS.Misc.Animations.Pulse
 {
+    /// <summary>
+    /// Pulse animation module
+    /// </summary>
     public static class Pulse
     {
-
-        private static int CurrentWindowWidth;
-        private static int CurrentWindowHeight;
-        private static bool ResizeSyncing;
 
         /// <summary>
         /// Simulates the pulsing animation
         /// </summary>
         public static void Simulate(PulseSettings Settings)
         {
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
-            var RandomDriver = Settings.RandomDriver;
-            int RedColorNum = RandomDriver.Next(Settings.PulseMinimumRedColorLevel, Settings.PulseMaximumRedColorLevel);
-            int GreenColorNum = RandomDriver.Next(Settings.PulseMinimumGreenColorLevel, Settings.PulseMaximumGreenColorLevel);
-            int BlueColorNum = RandomDriver.Next(Settings.PulseMinimumBlueColorLevel, Settings.PulseMaximumBlueColorLevel);
+            int RedColorNum = RandomDriver.Random(Settings.PulseMinimumRedColorLevel, Settings.PulseMaximumRedColorLevel);
+            int GreenColorNum = RandomDriver.Random(Settings.PulseMinimumGreenColorLevel, Settings.PulseMaximumGreenColorLevel);
+            int BlueColorNum = RandomDriver.Random(Settings.PulseMinimumBlueColorLevel, Settings.PulseMaximumBlueColorLevel);
             ConsoleWrapper.CursorVisible = false;
 
             // Set thresholds
@@ -58,9 +54,7 @@ namespace KS.Misc.Animations.Pulse
             int CurrentColorBlueIn = 0;
             for (int CurrentStep = Settings.PulseMaxSteps; CurrentStep >= 1; CurrentStep -= 1)
             {
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (ResizeSyncing)
+                if (ConsoleResizeHandler.WasResized(false))
                     break;
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Step {0}/{1}", CurrentStep, Settings.PulseMaxSteps);
                 ThreadManager.SleepNoBlock(Settings.PulseDelay, System.Threading.Thread.CurrentThread);
@@ -68,21 +62,14 @@ namespace KS.Misc.Animations.Pulse
                 CurrentColorGreenIn = (int)Math.Round(CurrentColorGreenIn + ThresholdGreen);
                 CurrentColorBlueIn = (int)Math.Round(CurrentColorBlueIn + ThresholdBlue);
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Color in (R;G;B: {0};{1};{2})", CurrentColorRedIn, CurrentColorGreenIn, CurrentColorBlueIn);
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (!ResizeSyncing)
-                {
-                    KernelColorTools.SetConsoleColor(new Color(CurrentColorRedIn, CurrentColorGreenIn, CurrentColorBlueIn), true);
-                    ConsoleWrapper.Clear();
-                }
+                if (!ConsoleResizeHandler.WasResized(false))
+                    ColorTools.LoadBackDry(new Color(CurrentColorRedIn, CurrentColorGreenIn, CurrentColorBlueIn));
             }
 
             // Fade out
-            for (int CurrentStep = 1, loopTo = Settings.PulseMaxSteps; CurrentStep <= loopTo; CurrentStep++)
+            for (int CurrentStep = 1; CurrentStep <= Settings.PulseMaxSteps; CurrentStep++)
             {
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (ResizeSyncing)
+                if (ConsoleResizeHandler.WasResized(false))
                     break;
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Step {0}/{1}", CurrentStep, Settings.PulseMaxSteps);
                 ThreadManager.SleepNoBlock(Settings.PulseDelay, System.Threading.Thread.CurrentThread);
@@ -90,17 +77,12 @@ namespace KS.Misc.Animations.Pulse
                 int CurrentColorGreenOut = (int)Math.Round(GreenColorNum - ThresholdGreen * CurrentStep);
                 int CurrentColorBlueOut = (int)Math.Round(BlueColorNum - ThresholdBlue * CurrentStep);
                 DebugWriter.WdbgConditional(ref Screensaver.Screensaver.ScreensaverDebug, DebugLevel.I, "Color out (R;G;B: {0};{1};{2})", CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut);
-                if (!ResizeSyncing)
-                {
-                    KernelColorTools.SetConsoleColor(new Color(CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut), true);
-                    ConsoleWrapper.Clear();
-                }
+                if (!ConsoleResizeHandler.WasResized(false))
+                    ColorTools.LoadBackDry(new Color(CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut));
             }
 
             // Reset resize sync
-            ResizeSyncing = false;
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+            ConsoleResizeHandler.WasResized();
             ThreadManager.SleepNoBlock(Settings.PulseDelay, System.Threading.Thread.CurrentThread);
         }
 

@@ -17,16 +17,19 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using System;
-using KS.Misc.Threading;
 using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Threading;
+using KS.Misc.Reflection;
 using Terminaux.Base;
 using Terminaux.Colors;
+
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for BeatPulse
+    /// </summary>
     public static class BeatPulseSettings
     {
-
         private static bool _beatpulse255Colors;
         private static bool _beatpulseTrueColor = true;
         private static bool _beatpulseCycleColors = true;
@@ -276,28 +279,25 @@ namespace KS.Misc.Screensaver.Displays
                 _beatpulseMaximumColorLevel = value;
             }
         }
-
     }
 
+    /// <summary>
+    /// Display code for BeatPulse
+    /// </summary>
     public class BeatPulseDisplay : BaseScreensaver, IScreensaver
     {
 
         private Animations.BeatPulse.BeatPulseSettings BeatPulseSettingsInstance;
-        private Random RandomDriver;
 
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "BeatPulse";
 
+        /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
-            // Variable preparations
-            RandomDriver = new Random();
-            Console.BackgroundColor = ConsoleColor.Black;
-            Console.ForegroundColor = ConsoleColor.White;
-            ConsoleWrapper.Clear();
             DebugWriter.Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
             BeatPulseSettingsInstance = new Animations.BeatPulse.BeatPulseSettings()
             {
-                BeatPulse255Colors = BeatPulseSettings.BeatPulse255Colors,
                 BeatPulseTrueColor = BeatPulseSettings.BeatPulseTrueColor,
                 BeatPulseBeatColor = BeatPulseSettings.BeatPulseBeatColor,
                 BeatPulseDelay = BeatPulseSettings.BeatPulseDelay,
@@ -310,11 +310,12 @@ namespace KS.Misc.Screensaver.Displays
                 BeatPulseMaximumRedColorLevel = BeatPulseSettings.BeatPulseMaximumRedColorLevel,
                 BeatPulseMaximumGreenColorLevel = BeatPulseSettings.BeatPulseMaximumGreenColorLevel,
                 BeatPulseMaximumBlueColorLevel = BeatPulseSettings.BeatPulseMaximumBlueColorLevel,
-                BeatPulseMaximumColorLevel = BeatPulseSettings.BeatPulseMaximumColorLevel,
-                RandomDriver = RandomDriver
+                BeatPulseMaximumColorLevel = BeatPulseSettings.BeatPulseMaximumColorLevel
             };
+            base.ScreensaverPreparation();
         }
 
+        /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
             Animations.BeatPulse.BeatPulse.Simulate(BeatPulseSettingsInstance);

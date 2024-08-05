@@ -17,15 +17,19 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using System;
-using KS.Misc.Threading;
 using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Threading;
+using KS.Misc.Screensaver;
 using Terminaux.Base;
+using Terminaux.Colors;
+
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for EdgePulse
+    /// </summary>
     public static class EdgePulseSettings
     {
-
         private static int _edgepulseDelay = 50;
         private static int _edgepulseMaxSteps = 25;
         private static int _edgepulseMinimumRedColorLevel = 0;
@@ -175,24 +179,22 @@ namespace KS.Misc.Screensaver.Displays
                 _edgepulseMaximumBlueColorLevel = value;
             }
         }
-
     }
 
+    /// <summary>
+    /// Display code for EdgePulse
+    /// </summary>
     public class EdgePulseDisplay : BaseScreensaver, IScreensaver
     {
 
         private Animations.EdgePulse.EdgePulseSettings EdgePulseSettingsInstance;
-        private Random RandomDriver;
 
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "EdgePulse";
 
+        /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
-            // Variable preparations
-            RandomDriver = new Random();
-            Console.BackgroundColor = ConsoleColor.Black;
-            Console.ForegroundColor = ConsoleColor.White;
-            ConsoleWrapper.Clear();
             DebugWriter.Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
             EdgePulseSettingsInstance = new Animations.EdgePulse.EdgePulseSettings()
             {
@@ -203,11 +205,13 @@ namespace KS.Misc.Screensaver.Displays
                 EdgePulseMinimumBlueColorLevel = EdgePulseSettings.EdgePulseMinimumBlueColorLevel,
                 EdgePulseMaximumRedColorLevel = EdgePulseSettings.EdgePulseMaximumRedColorLevel,
                 EdgePulseMaximumGreenColorLevel = EdgePulseSettings.EdgePulseMaximumGreenColorLevel,
-                EdgePulseMaximumBlueColorLevel = EdgePulseSettings.EdgePulseMaximumBlueColorLevel,
-                RandomDriver = RandomDriver
+                EdgePulseMaximumBlueColorLevel = EdgePulseSettings.EdgePulseMaximumBlueColorLevel
             };
+            ColorTools.LoadBackDry("0;0;0");
+            ConsoleWrapper.Clear();
         }
 
+        /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
             Animations.EdgePulse.EdgePulse.Simulate(EdgePulseSettingsInstance);

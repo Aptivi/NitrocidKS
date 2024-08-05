@@ -17,19 +17,22 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using System;
 using Terminaux.Colors;
+using Terminaux.Colors.Data;
+
 namespace KS.Misc.Animations.Fader
 {
+    /// <summary>
+    /// Fader settings
+    /// </summary>
     public class FaderSettings
     {
 
-        internal Random RandomDriver;
         private int _faderDelay = 50;
         private int _faderFadeOutDelay = 3000;
-        private string _faderWrite = "Kernel Simulator";
+        private string _faderWrite = "Nitrocid KS";
         private int _faderMaxSteps = 25;
-        private string _faderBackgroundColor = new Color(ConsoleColor.Black).PlainSequence;
+        private string _faderBackgroundColor = new Color(ConsoleColors.Black).PlainSequence;
         private int _faderMinimumRedColorLevel = 0;
         private int _faderMinimumGreenColorLevel = 0;
         private int _faderMinimumBlueColorLevel = 0;
@@ -81,7 +84,7 @@ namespace KS.Misc.Animations.Fader
             set
             {
                 if (string.IsNullOrEmpty(value))
-                    value = "Kernel Simulator";
+                    value = "Nitrocid KS";
                 _faderWrite = value;
             }
         }

@@ -17,15 +17,18 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using System;
-using KS.Misc.Threading;
 using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Threading;
+using KS.Misc.Screensaver;
 using Terminaux.Base;
+
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for Pulse
+    /// </summary>
     public static class PulseSettings
     {
-
         private static int _pulseDelay = 50;
         private static int _pulseMaxSteps = 25;
         private static int _pulseMinimumRedColorLevel = 0;
@@ -175,24 +178,22 @@ namespace KS.Misc.Screensaver.Displays
                 _pulseMaximumBlueColorLevel = value;
             }
         }
-
     }
 
+    /// <summary>
+    /// Display code for Pulse
+    /// </summary>
     public class PulseDisplay : BaseScreensaver, IScreensaver
     {
 
         private Animations.Pulse.PulseSettings PulseSettingsInstance;
-        private Random RandomDriver;
 
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "Pulse";
 
+        /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
-            // Variable preparations
-            RandomDriver = new Random();
-            Console.BackgroundColor = ConsoleColor.Black;
-            Console.ForegroundColor = ConsoleColor.White;
-            ConsoleWrapper.Clear();
             DebugWriter.Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
             PulseSettingsInstance = new Animations.Pulse.PulseSettings()
             {
@@ -203,11 +204,12 @@ namespace KS.Misc.Screensaver.Displays
                 PulseMinimumBlueColorLevel = PulseSettings.PulseMinimumBlueColorLevel,
                 PulseMaximumRedColorLevel = PulseSettings.PulseMaximumRedColorLevel,
                 PulseMaximumGreenColorLevel = PulseSettings.PulseMaximumGreenColorLevel,
-                PulseMaximumBlueColorLevel = PulseSettings.PulseMaximumBlueColorLevel,
-                RandomDriver = RandomDriver
+                PulseMaximumBlueColorLevel = PulseSettings.PulseMaximumBlueColorLevel
             };
+            base.ScreensaverPreparation();
         }
 
+        /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
             Animations.Pulse.Pulse.Simulate(PulseSettingsInstance);

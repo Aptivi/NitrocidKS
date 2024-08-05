@@ -17,16 +17,19 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using System;
-using KS.Misc.Threading;
 using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Threading;
+using KS.Misc.Reflection;
 using Terminaux.Base;
 using Terminaux.Colors;
+
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for BeatEdgePulse
+    /// </summary>
     public static class BeatEdgePulseSettings
     {
-
         private static bool _beatedgepulse255Colors;
         private static bool _beatedgepulseTrueColor = true;
         private static bool _beatedgepulseCycleColors = true;
@@ -276,28 +279,25 @@ namespace KS.Misc.Screensaver.Displays
                 _beatedgepulseMaximumColorLevel = value;
             }
         }
-
     }
 
+    /// <summary>
+    /// Display code for BeatEdgePulse
+    /// </summary>
     public class BeatEdgePulseDisplay : BaseScreensaver, IScreensaver
     {
 
         private Animations.BeatEdgePulse.BeatEdgePulseSettings BeatEdgePulseSettingsInstance;
-        private Random RandomDriver;
 
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "BeatEdgePulse";
 
+        /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
-            // Variable preparations
-            RandomDriver = new Random();
-            Console.BackgroundColor = ConsoleColor.Black;
-            Console.ForegroundColor = ConsoleColor.White;
-            ConsoleWrapper.Clear();
             DebugWriter.Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
             BeatEdgePulseSettingsInstance = new Animations.BeatEdgePulse.BeatEdgePulseSettings()
             {
-                BeatEdgePulse255Colors = BeatEdgePulseSettings.BeatEdgePulse255Colors,
                 BeatEdgePulseTrueColor = BeatEdgePulseSettings.BeatEdgePulseTrueColor,
                 BeatEdgePulseBeatColor = BeatEdgePulseSettings.BeatEdgePulseBeatColor,
                 BeatEdgePulseDelay = BeatEdgePulseSettings.BeatEdgePulseDelay,
@@ -310,11 +310,13 @@ namespace KS.Misc.Screensaver.Displays
                 BeatEdgePulseMaximumRedColorLevel = BeatEdgePulseSettings.BeatEdgePulseMaximumRedColorLevel,
                 BeatEdgePulseMaximumGreenColorLevel = BeatEdgePulseSettings.BeatEdgePulseMaximumGreenColorLevel,
                 BeatEdgePulseMaximumBlueColorLevel = BeatEdgePulseSettings.BeatEdgePulseMaximumBlueColorLevel,
-                BeatEdgePulseMaximumColorLevel = BeatEdgePulseSettings.BeatEdgePulseMaximumColorLevel,
-                RandomDriver = RandomDriver
+                BeatEdgePulseMaximumColorLevel = BeatEdgePulseSettings.BeatEdgePulseMaximumColorLevel
             };
+            ColorTools.LoadBackDry("0;0;0");
+            ConsoleWrapper.CursorVisible = false;
         }
 
+        /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
             Animations.BeatEdgePulse.BeatEdgePulse.Simulate(BeatEdgePulseSettingsInstance);

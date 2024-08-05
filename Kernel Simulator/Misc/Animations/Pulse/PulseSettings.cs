@@ -17,13 +17,14 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using System;
 namespace KS.Misc.Animations.Pulse
 {
+    /// <summary>
+    /// Pulse settings
+    /// </summary>
     public class PulseSettings
     {
 
-        internal Random RandomDriver;
         private int _pulseDelay = 50;
         private int _pulseMaxSteps = 25;
         private int _pulseMinimumRedColorLevel = 0;

@@ -17,20 +17,20 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using System;
-using System.Collections.Generic;
-using KS.ConsoleBase.Colors;
-using KS.Misc.Threading;
-using KS.ConsoleBase.Writers;
 using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Reflection;
+using KS.Misc.Threading;
 using Terminaux.Base;
 using Terminaux.Colors;
-using Terminaux.Writer.ConsoleWriters;
+using System;
+
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for GlitterMatrix
+    /// </summary>
     public static class GlitterMatrixSettings
     {
-
         private static int _glitterMatrixDelay = 1;
         private static string _glitterMatrixBackgroundColor = new Color(ConsoleColor.Black).PlainSequence;
         private static string _glitterMatrixForegroundColor = new Color(ConsoleColor.Green).PlainSequence;
@@ -79,44 +79,37 @@ namespace KS.Misc.Screensaver.Displays
                 _glitterMatrixForegroundColor = new Color(value).PlainSequence;
             }
         }
-
     }
+
+    /// <summary>
+    /// Display code for GlitterMatrix
+    /// </summary>
     public class GlitterMatrixDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Random RandomDriver;
-        private int CurrentWindowWidth;
-        private int CurrentWindowHeight;
-        private bool ResizeSyncing;
-
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "GlitterMatrix";
 
-        public override Dictionary<string, object> ScreensaverSettings { get; set; }
-
+        /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
             // Variable preparations
-            RandomDriver = new Random();
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
-            KernelColorTools.SetConsoleColor(new Color(GlitterMatrixSettings.GlitterMatrixBackgroundColor), true);
-            KernelColorTools.SetConsoleColor(new Color(GlitterMatrixSettings.GlitterMatrixForegroundColor));
-            ConsoleWrapper.Clear();
+            ColorTools.SetConsoleColor(new Color(GlitterMatrixSettings.GlitterMatrixForegroundColor));
+            ColorTools.LoadBackDry(new Color(GlitterMatrixSettings.GlitterMatrixBackgroundColor));
             DebugWriter.Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
         }
 
+        /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
             ConsoleWrapper.CursorVisible = false;
-            int Left = RandomDriver.Next(ConsoleWrapper.WindowWidth);
-            int Top = RandomDriver.Next(ConsoleWrapper.WindowHeight);
+            int Left = RandomDriver.RandomIdx(ConsoleWrapper.WindowWidth);
+            int Top = RandomDriver.RandomIdx(ConsoleWrapper.WindowHeight);
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Selected left and top: {0}, {1}", Left, Top);
             ConsoleWrapper.SetCursorPosition(Left, Top);
-            if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                ResizeSyncing = true;
-            if (!ResizeSyncing)
+            if (!ConsoleResizeHandler.WasResized(false))
             {
-                TextWriterRaw.WritePlain(RandomDriver.Next(2).ToString(), false);
+                ConsoleWrapper.Write(RandomDriver.Random(1).ToString());
             }
             else
             {
@@ -125,9 +118,7 @@ namespace KS.Misc.Screensaver.Displays
             }
 
             // Reset resize sync
-            ResizeSyncing = false;
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+            ConsoleResizeHandler.WasResized();
             ThreadManager.SleepNoBlock(GlitterMatrixSettings.GlitterMatrixDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
         }
 

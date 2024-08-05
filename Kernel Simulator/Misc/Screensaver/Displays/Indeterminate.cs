@@ -18,20 +18,22 @@
 //
 
 using System;
-using System.Collections.Generic;
-using KS.ConsoleBase.Colors;
-using KS.Misc.Text;
-using KS.Misc.Threading;
-using KS.ConsoleBase.Writers;
-using KS.Misc.Writers.DebugWriters;
-using Terminaux.Base;
 using Terminaux.Colors;
+using KS.Misc.Writers.DebugWriters;
 using Terminaux.Writer.ConsoleWriters;
+using KS.ConsoleBase.Colors;
+using Terminaux.Writer.FancyWriters;
+using KS.Misc.Threading;
+using Terminaux.Base;
+using KS.Misc.Reflection;
+
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for Indeterminate
+    /// </summary>
     public static class IndeterminateSettings
     {
-
         private static bool _indeterminate255Colors;
         private static bool _indeterminateTrueColor = true;
         private static int _indeterminateDelay = 20;
@@ -505,8 +507,11 @@ namespace KS.Misc.Screensaver.Displays
                 _indeterminateUseBorderColors = value;
             }
         }
-
     }
+
+    /// <summary>
+    /// Display code for Indeterminate
+    /// </summary>
     public class IndeterminateDisplay : BaseScreensaver, IScreensaver
     {
 
@@ -515,43 +520,27 @@ namespace KS.Misc.Screensaver.Displays
         private int IndeterminateCurrentBlockStart;
         private int IndeterminateCurrentBlockEnd;
         private IndeterminateDirection IndeterminateCurrentBlockDirection = IndeterminateDirection.LeftToRight;
-        private Random RandomDriver;
-        private int CurrentWindowWidth;
-        private int CurrentWindowHeight;
-        private bool ResizeSyncing;
 
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "Indeterminate";
 
-        public override Dictionary<string, object> ScreensaverSettings { get; set; }
-
+        /// <inheritdoc/>
         public IndeterminateDisplay()
         {
             IndeterminateCurrentBlockStart = RampFrameBlockStartWidth;
             IndeterminateCurrentBlockEnd = IndeterminateCurrentBlockStart + RampFrameBlockWidth;
         }
 
-        public override void ScreensaverPreparation()
-        {
-            // Variable preparations
-            RandomDriver = new Random();
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
-            Console.BackgroundColor = ConsoleColor.Black;
-            ConsoleWrapper.Clear();
-            DebugWriter.Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
-        }
-
+        /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
-            int RedColorNum = RandomDriver.Next(IndeterminateSettings.IndeterminateMinimumRedColorLevel, IndeterminateSettings.IndeterminateMaximumRedColorLevel);
-            int GreenColorNum = RandomDriver.Next(IndeterminateSettings.IndeterminateMinimumGreenColorLevel, IndeterminateSettings.IndeterminateMaximumGreenColorLevel);
-            int BlueColorNum = RandomDriver.Next(IndeterminateSettings.IndeterminateMinimumBlueColorLevel, IndeterminateSettings.IndeterminateMaximumBlueColorLevel);
-            int ColorNum = RandomDriver.Next(IndeterminateSettings.IndeterminateMinimumColorLevel, IndeterminateSettings.IndeterminateMaximumColorLevel);
+            int RedColorNum = RandomDriver.Random(IndeterminateSettings.IndeterminateMinimumRedColorLevel, IndeterminateSettings.IndeterminateMaximumRedColorLevel);
+            int GreenColorNum = RandomDriver.Random(IndeterminateSettings.IndeterminateMinimumGreenColorLevel, IndeterminateSettings.IndeterminateMaximumGreenColorLevel);
+            int BlueColorNum = RandomDriver.Random(IndeterminateSettings.IndeterminateMinimumBlueColorLevel, IndeterminateSettings.IndeterminateMaximumBlueColorLevel);
+            int ColorNum = RandomDriver.Random(IndeterminateSettings.IndeterminateMinimumColorLevel, IndeterminateSettings.IndeterminateMaximumColorLevel);
 
             // Console resizing can sometimes cause the cursor to remain visible. This happens on Windows 10's terminal.
             ConsoleWrapper.CursorVisible = false;
-            if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                ResizeSyncing = true;
 
             // Set start and end widths for the ramp frame
             int RampFrameStartWidth = 4;
@@ -564,89 +553,70 @@ namespace KS.Misc.Screensaver.Displays
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Center position: {0}", RampCenterPosition);
 
             // Draw the frame
-            if (!ResizeSyncing)
-            {
-                TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateUpperLeftCornerChar, RampFrameStartWidth, RampCenterPosition - 2, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateUpperLeftCornerColor) : new Color(ConsoleColor.Gray));
-                TextWriterColor.Write(IndeterminateSettings.IndeterminateUpperFrameChar.Repeat(RampFrameSpaces), false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateUpperFrameColor) : new Color(ConsoleColor.Gray));
-                TextWriterColor.Write(IndeterminateSettings.IndeterminateUpperRightCornerChar, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateUpperRightCornerColor) : new Color(ConsoleColor.Gray));
-                TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateLeftFrameChar, RampFrameStartWidth, RampCenterPosition - 1, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLeftFrameColor) : new Color(ConsoleColor.Gray));
-                TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateLeftFrameChar, RampFrameStartWidth, RampCenterPosition, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLeftFrameColor) : new Color(ConsoleColor.Gray));
-                TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateLeftFrameChar, RampFrameStartWidth, RampCenterPosition + 1, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLeftFrameColor) : new Color(ConsoleColor.Gray));
-                TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition - 1, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLeftFrameColor) : new Color(ConsoleColor.Gray));
-                TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLeftFrameColor) : new Color(ConsoleColor.Gray));
-                TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateRightFrameChar, RampFrameEndWidth + 1, RampCenterPosition + 1, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLeftFrameColor) : new Color(ConsoleColor.Gray));
-                TextWriterWhereColor.WriteWhere(IndeterminateSettings.IndeterminateLowerLeftCornerChar, RampFrameStartWidth, RampCenterPosition + 2, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLowerLeftCornerColor) : new Color(ConsoleColor.Gray));
-                TextWriterColor.Write(IndeterminateSettings.IndeterminateLowerFrameChar.Repeat(RampFrameSpaces), false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLowerFrameColor) : new Color(ConsoleColor.Gray));
-                TextWriterColor.Write(IndeterminateSettings.IndeterminateLowerRightCornerChar, false, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLowerRightCornerColor) : new Color(ConsoleColor.Gray));
-            }
+            if (!ConsoleResizeHandler.WasResized(false))
+                BorderColor.WriteBorder(RampFrameStartWidth, RampCenterPosition - 2, RampFrameSpaces, 3, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLeftFrameColor) : ColorTools.GetGray());
 
             // Draw the ramp
             int RampFrameBlockEndWidth = RampFrameEndWidth;
             Color RampCurrentColorInstance;
             if (IndeterminateSettings.IndeterminateTrueColor)
-            {
                 // Set the current colors
-                RampCurrentColorInstance = new Color($"{Convert.ToInt32(RedColorNum)};{Convert.ToInt32(GreenColorNum)};{Convert.ToInt32(BlueColorNum)}");
-            }
+                RampCurrentColorInstance = new Color(RedColorNum, GreenColorNum, BlueColorNum);
             else
-            {
                 // Set the current colors
-                RampCurrentColorInstance = new Color(Convert.ToInt32(ColorNum));
-            }
+                RampCurrentColorInstance = new Color(ColorNum);
 
             // Fill the ramp!
-            while (!(IndeterminateCurrentBlockEnd == RampFrameBlockEndWidth & IndeterminateCurrentBlockDirection == IndeterminateDirection.LeftToRight | IndeterminateCurrentBlockStart == RampFrameBlockStartWidth & IndeterminateCurrentBlockDirection == IndeterminateDirection.RightToLeft))
+            while (
+                (IndeterminateCurrentBlockEnd != RampFrameBlockEndWidth && IndeterminateCurrentBlockDirection == IndeterminateDirection.LeftToRight) ||
+                (IndeterminateCurrentBlockStart != RampFrameBlockStartWidth && IndeterminateCurrentBlockDirection == IndeterminateDirection.RightToLeft)
+            )
             {
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (ResizeSyncing)
+                if (ConsoleResizeHandler.WasResized(false))
                     break;
 
                 // Clear the ramp
-                Console.BackgroundColor = ConsoleColor.Black;
                 if (IndeterminateCurrentBlockDirection == IndeterminateDirection.LeftToRight)
                 {
-                    for (int BlockPos = RampFrameBlockStartWidth, loopTo = IndeterminateCurrentBlockStart; BlockPos <= loopTo; BlockPos++)
+                    int start = IndeterminateCurrentBlockStart == RampFrameStartWidth + 1 ? IndeterminateCurrentBlockStart : IndeterminateCurrentBlockStart - 1;
+                    for (int BlockPos = start; BlockPos <= IndeterminateCurrentBlockEnd; BlockPos++)
                     {
-                        TextWriterWhereColor.WriteWherePlain(" ", BlockPos, RampCenterPosition - 1, true);
-                        TextWriterWhereColor.WriteWherePlain(" ", BlockPos, RampCenterPosition, true);
-                        TextWriterWhereColor.WriteWherePlain(" ", BlockPos, RampCenterPosition + 1, true);
+                        TextWriterWhereColor.WriteWhereColorBack(" ", BlockPos, RampCenterPosition - 1, true, Color.Empty, KernelColorTools.BackgroundColor);
+                        TextWriterWhereColor.WriteWhereColorBack(" ", BlockPos, RampCenterPosition, true, Color.Empty, KernelColorTools.BackgroundColor);
+                        TextWriterWhereColor.WriteWhereColorBack(" ", BlockPos, RampCenterPosition + 1, true, Color.Empty, KernelColorTools.BackgroundColor);
                     }
                 }
                 else
                 {
-                    for (int BlockPos = IndeterminateCurrentBlockEnd, loopTo1 = RampFrameBlockEndWidth; BlockPos <= loopTo1; BlockPos++)
+                    int end = IndeterminateCurrentBlockEnd == RampFrameEndWidth ? IndeterminateCurrentBlockEnd : IndeterminateCurrentBlockEnd + 1;
+                    for (int BlockPos = IndeterminateCurrentBlockStart; BlockPos <= end; BlockPos++)
                     {
-                        TextWriterWhereColor.WriteWherePlain(" ", BlockPos, RampCenterPosition - 1, true);
-                        TextWriterWhereColor.WriteWherePlain(" ", BlockPos, RampCenterPosition, true);
-                        TextWriterWhereColor.WriteWherePlain(" ", BlockPos, RampCenterPosition + 1, true);
+                        TextWriterWhereColor.WriteWhereColorBack(" ", BlockPos, RampCenterPosition - 1, true, Color.Empty, KernelColorTools.BackgroundColor);
+                        TextWriterWhereColor.WriteWhereColorBack(" ", BlockPos, RampCenterPosition, true, Color.Empty, KernelColorTools.BackgroundColor);
+                        TextWriterWhereColor.WriteWhereColorBack(" ", BlockPos, RampCenterPosition + 1, true, Color.Empty, KernelColorTools.BackgroundColor);
                     }
                 }
 
                 // Fill the ramp
-                KernelColorTools.SetConsoleColor(RampCurrentColorInstance, true);
-                for (int BlockPos = IndeterminateCurrentBlockStart, loopTo2 = IndeterminateCurrentBlockEnd; BlockPos <= loopTo2; BlockPos++)
+                ColorTools.SetConsoleColorDry(RampCurrentColorInstance, true);
+                for (int BlockPos = IndeterminateCurrentBlockStart; BlockPos <= IndeterminateCurrentBlockEnd; BlockPos++)
                 {
-                    TextWriterWhereColor.WriteWherePlain(" ", BlockPos, RampCenterPosition - 1, true);
-                    TextWriterWhereColor.WriteWherePlain(" ", BlockPos, RampCenterPosition, true);
-                    TextWriterWhereColor.WriteWherePlain(" ", BlockPos, RampCenterPosition + 1, true);
+                    TextWriterWhereColor.WriteWhere(" ", BlockPos, RampCenterPosition - 1, true);
+                    TextWriterWhereColor.WriteWhere(" ", BlockPos, RampCenterPosition, true);
+                    TextWriterWhereColor.WriteWhere(" ", BlockPos, RampCenterPosition + 1, true);
                 }
 
                 // Change the start and end positions
                 switch (IndeterminateCurrentBlockDirection)
                 {
                     case IndeterminateDirection.LeftToRight:
-                        {
-                            IndeterminateCurrentBlockStart += 1;
-                            IndeterminateCurrentBlockEnd += 1;
-                            break;
-                        }
+                        IndeterminateCurrentBlockStart += 1;
+                        IndeterminateCurrentBlockEnd += 1;
+                        break;
                     case IndeterminateDirection.RightToLeft:
-                        {
-                            IndeterminateCurrentBlockStart -= 1;
-                            IndeterminateCurrentBlockEnd -= 1;
-                            break;
-                        }
+                        IndeterminateCurrentBlockStart -= 1;
+                        IndeterminateCurrentBlockEnd -= 1;
+                        break;
                 }
 
                 // Delay writing
@@ -657,22 +627,16 @@ namespace KS.Misc.Screensaver.Displays
             switch (IndeterminateCurrentBlockDirection)
             {
                 case IndeterminateDirection.LeftToRight:
-                    {
-                        IndeterminateCurrentBlockDirection = IndeterminateDirection.RightToLeft;
-                        break;
-                    }
+                    IndeterminateCurrentBlockDirection = IndeterminateDirection.RightToLeft;
+                    break;
                 case IndeterminateDirection.RightToLeft:
-                    {
-                        IndeterminateCurrentBlockDirection = IndeterminateDirection.LeftToRight;
-                        break;
-                    }
+                    IndeterminateCurrentBlockDirection = IndeterminateDirection.LeftToRight;
+                    break;
             }
 
-            Console.BackgroundColor = ConsoleColor.Black;
-            ConsoleWrapper.Clear();
-            ResizeSyncing = false;
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+            // Reset the background
+            ColorTools.LoadBack();
+            ConsoleResizeHandler.WasResized();
             ThreadManager.SleepNoBlock(IndeterminateSettings.IndeterminateDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
         }
 

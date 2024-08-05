@@ -42,7 +42,6 @@ namespace KS.Misc.Splash.Splashes
         // BeatEdgePulse-specific variables
         internal BeatEdgePulseSettings BeatEdgePulseSettings = new()
         {
-            BeatEdgePulse255Colors = false,
             BeatEdgePulseTrueColor = true,
             BeatEdgePulseBeatColor = 17.ToString(),
             BeatEdgePulseCycleColors = true,
@@ -66,7 +65,6 @@ namespace KS.Misc.Splash.Splashes
             Console.BackgroundColor = ConsoleColor.Black;
             ConsoleWrapper.Clear();
             RandomDriver = new Random();
-            BeatEdgePulseSettings.RandomDriver = RandomDriver;
         }
 
         public void Display()

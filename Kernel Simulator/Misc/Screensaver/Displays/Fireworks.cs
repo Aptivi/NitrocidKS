@@ -18,37 +18,20 @@
 //
 
 using System;
-using System.Collections.Generic;
-using KS.ConsoleBase.Colors;
-using KS.Misc.Text;
-using KS.Misc.Threading;
-using KS.ConsoleBase.Writers;
-using KS.Misc.Writers.DebugWriters;
-using Terminaux.Base;
 using Terminaux.Colors;
-using Terminaux.Writer.ConsoleWriters;
-// Kernel Simulator  Copyright (C) 2018-2022  Aptivi
-// 
-// This file is part of Kernel Simulator
-// 
-// Kernel Simulator is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-// 
-// Kernel Simulator is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-// 
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Threading;
+using Terminaux.Base;
+using Terminaux.Colors.Data;
+using KS.Misc.Reflection;
 
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for Fireworks
+    /// </summary>
     public static class FireworksSettings
     {
-
         private static bool _fireworks255Colors;
         private static bool _fireworksTrueColor = true;
         private static int _fireworksDelay = 10;
@@ -268,43 +251,28 @@ namespace KS.Misc.Screensaver.Displays
                 _fireworksMaximumColorLevel = value;
             }
         }
-
     }
 
+    /// <summary>
+    /// Display code for Fireworks
+    /// </summary>
     public class FireworksDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Random RandomDriver;
-        private int CurrentWindowWidth;
-        private int CurrentWindowHeight;
-        private bool ResizeSyncing;
-
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "Fireworks";
 
-        public override Dictionary<string, object> ScreensaverSettings { get; set; }
-
-        public override void ScreensaverPreparation()
-        {
-            // Variable preparations
-            RandomDriver = new Random();
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
-            Console.BackgroundColor = ConsoleColor.Black;
-            Console.ForegroundColor = ConsoleColor.White;
-            ConsoleWrapper.Clear();
-            DebugWriter.Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
-        }
-
+        /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
             ConsoleWrapper.CursorVisible = false;
+
             // Variables
             int HalfHeight = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d);
-            int LaunchPositionX = RandomDriver.Next(ConsoleWrapper.WindowWidth);
+            int LaunchPositionX = RandomDriver.RandomIdx(ConsoleWrapper.WindowWidth);
             int LaunchPositionY = ConsoleWrapper.WindowHeight - 1;
-            int IgnitePositionX = RandomDriver.Next(ConsoleWrapper.WindowWidth);
-            int IgnitePositionY = RandomDriver.Next(HalfHeight, (int)Math.Round(HalfHeight * 1.5d));
-            LaunchPositionX.SwapIfSourceLarger(ref IgnitePositionX);
+            int IgnitePositionX = RandomDriver.RandomIdx(ConsoleWrapper.WindowWidth);
+            int IgnitePositionY = RandomDriver.Random(HalfHeight, (int)Math.Round(HalfHeight * 1.5d));
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Launch position {0}, {1}", LaunchPositionX, LaunchPositionY);
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Ignite position {0}, {1}", IgnitePositionX, IgnitePositionY);
 
@@ -316,45 +284,42 @@ namespace KS.Misc.Screensaver.Displays
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "{0} steps", FireworkStepsX);
             int FireworkRadius = FireworksSettings.FireworksRadius >= 0 & FireworksSettings.FireworksRadius <= 10 ? FireworksSettings.FireworksRadius : 5;
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Radius: {0} blocks", FireworkRadius);
-            var IgniteColor = new Color(255, 255, 255);
+            Color IgniteColor;
 
             // Select a color
             ConsoleWrapper.Clear();
             if (FireworksSettings.FireworksTrueColor)
             {
-                int RedColorNum = RandomDriver.Next(FireworksSettings.FireworksMinimumRedColorLevel, FireworksSettings.FireworksMaximumRedColorLevel);
-                int GreenColorNum = RandomDriver.Next(FireworksSettings.FireworksMinimumGreenColorLevel, FireworksSettings.FireworksMaximumGreenColorLevel);
-                int BlueColorNum = RandomDriver.Next(FireworksSettings.FireworksMinimumBlueColorLevel, FireworksSettings.FireworksMaximumBlueColorLevel);
+                int RedColorNum = RandomDriver.Random(FireworksSettings.FireworksMinimumRedColorLevel, FireworksSettings.FireworksMaximumRedColorLevel);
+                int GreenColorNum = RandomDriver.Random(FireworksSettings.FireworksMinimumGreenColorLevel, FireworksSettings.FireworksMaximumGreenColorLevel);
+                int BlueColorNum = RandomDriver.Random(FireworksSettings.FireworksMinimumBlueColorLevel, FireworksSettings.FireworksMaximumBlueColorLevel);
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
                 IgniteColor = new Color(RedColorNum, GreenColorNum, BlueColorNum);
             }
-            else if (FireworksSettings.Fireworks255Colors)
+            else
             {
-                int color = RandomDriver.Next(FireworksSettings.FireworksMinimumColorLevel, FireworksSettings.FireworksMaximumColorLevel);
+                int color = RandomDriver.Random(FireworksSettings.FireworksMinimumColorLevel, FireworksSettings.FireworksMaximumColorLevel);
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", color);
                 IgniteColor = new Color(color);
             }
 
             // Launch the rocket
-            if (!ResizeSyncing)
+            if (!ConsoleResizeHandler.WasResized(false))
             {
                 double CurrentX = LaunchPositionX;
                 int CurrentY = LaunchPositionY;
-                while (!(CurrentX >= IgnitePositionX & CurrentY <= IgnitePositionY))
+                while (CurrentX != IgnitePositionX && CurrentY != IgnitePositionY)
                 {
-                    if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                        ResizeSyncing = true;
-                    if (ResizeSyncing)
+                    if (ConsoleResizeHandler.WasResized(false))
                         break;
                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Current position: {0}, {1}", CurrentX, CurrentY);
                     ConsoleWrapper.SetCursorPosition((int)Math.Round(CurrentX), CurrentY);
-                    TextWriterRaw.WritePlain(" ", false);
+                    ConsoleWrapper.Write(" ");
 
                     // Delay writing
                     ThreadManager.SleepNoBlock(FireworksSettings.FireworksDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
-                    Console.BackgroundColor = ConsoleColor.Black;
-                    ConsoleWrapper.Clear();
-                    KernelColorTools.SetConsoleColor(new Color(255, 255, 255), true);
+                    ColorTools.LoadBackDry(new Color(ConsoleColors.Black));
+                    ColorTools.SetConsoleColorDry(new Color(255, 255, 255), true);
 
                     // Change positions
                     CurrentX += FireworkStepsX;
@@ -363,13 +328,11 @@ namespace KS.Misc.Screensaver.Displays
             }
 
             // Blow it up!
-            if (!ResizeSyncing)
+            if (!ConsoleResizeHandler.WasResized(false))
             {
-                for (int Radius = 0, loopTo = FireworkRadius; Radius <= loopTo; Radius++)
+                for (int Radius = 0; Radius <= FireworkRadius; Radius++)
                 {
-                    if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                        ResizeSyncing = true;
-                    if (ResizeSyncing)
+                    if (ConsoleResizeHandler.WasResized(false))
                         break;
 
                     // Variables
@@ -383,43 +346,40 @@ namespace KS.Misc.Screensaver.Displays
                     DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Right particle position: {0}", RightParticleX);
 
                     // Draw the explosion
-                    KernelColorTools.SetConsoleColor(IgniteColor, true);
-                    if (UpperParticleY < ConsoleWrapper.WindowHeight)
+                    ColorTools.SetConsoleColorDry(IgniteColor, true);
+                    if (UpperParticleY < ConsoleWrapper.WindowHeight && UpperParticleY >= 0)
                     {
                         DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Making upper particle at {0}, {1}", IgnitePositionX, UpperParticleY);
                         ConsoleWrapper.SetCursorPosition(IgnitePositionX, UpperParticleY);
-                        TextWriterRaw.WritePlain(" ", false);
+                        ConsoleWrapper.Write(" ");
                     }
-                    if (LowerParticleY < ConsoleWrapper.WindowHeight)
+                    if (LowerParticleY < ConsoleWrapper.WindowHeight && LowerParticleY >= 0)
                     {
                         DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Making lower particle at {0}, {1}", IgnitePositionX, LowerParticleY);
                         ConsoleWrapper.SetCursorPosition(IgnitePositionX, LowerParticleY);
-                        TextWriterRaw.WritePlain(" ", false);
+                        ConsoleWrapper.Write(" ");
                     }
-                    if (LeftParticleX < ConsoleWrapper.WindowWidth)
+                    if (LeftParticleX < ConsoleWrapper.WindowWidth && LeftParticleX >= 0)
                     {
                         DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Making left particle at {0}, {1}", LeftParticleX, IgnitePositionY);
                         ConsoleWrapper.SetCursorPosition(LeftParticleX, IgnitePositionY);
-                        TextWriterRaw.WritePlain(" ", false);
+                        ConsoleWrapper.Write(" ");
                     }
-                    if (RightParticleX < ConsoleWrapper.WindowWidth)
+                    if (RightParticleX < ConsoleWrapper.WindowWidth && RightParticleX >= 0)
                     {
                         DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Making right particle at {0}, {1}", RightParticleX, IgnitePositionY);
                         ConsoleWrapper.SetCursorPosition(RightParticleX, IgnitePositionY);
-                        TextWriterRaw.WritePlain(" ", false);
+                        ConsoleWrapper.Write(" ");
                     }
 
                     // Delay writing
                     ThreadManager.SleepNoBlock(FireworksSettings.FireworksDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
-                    Console.BackgroundColor = ConsoleColor.Black;
-                    ConsoleWrapper.Clear();
+                    ColorTools.LoadBackDry(new Color(ConsoleColors.Black));
                 }
             }
 
             // Reset resize sync
-            ResizeSyncing = false;
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+            ConsoleResizeHandler.WasResized();
         }
 
     }

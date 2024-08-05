@@ -17,21 +17,20 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using System;
-using System.Collections.Generic;
-using KS.ConsoleBase.Colors;
-using KS.Misc.Threading;
-using KS.ConsoleBase.Writers;
-using KS.TimeDate;
-using Terminaux.Base;
-using Terminaux.Colors;
 using Terminaux.Writer.ConsoleWriters;
+using KS.Misc.Threading;
+using Terminaux.Colors;
+using Terminaux.Base;
+using KS.TimeDate;
+using KS.Misc.Reflection;
 
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for DateAndTime
+    /// </summary>
     public static class DateAndTimeSettings
     {
-
         private static bool _dateAndTime255Colors;
         private static bool _dateAndTimeTrueColor = true;
         private static int _dateAndTimeDelay = 1000;
@@ -234,37 +233,44 @@ namespace KS.Misc.Screensaver.Displays
                 _dateAndTimeMaximumColorLevel = value;
             }
         }
-
     }
 
+    /// <summary>
+    /// Display code for DateAndTime
+    /// </summary>
     public class DateAndTimeDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Random RandomDriver;
+        private string lastRenderedDate = "";
+        private string lastRenderedTime = "";
 
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "DateAndTime";
 
-        public override Dictionary<string, object> ScreensaverSettings { get; set; }
-
-        public override void ScreensaverPreparation()
-        {
-            // Variable preparations
-            RandomDriver = new Random();
-            Console.BackgroundColor = ConsoleColor.Black;
-            ConsoleWrapper.Clear();
-        }
-
+        /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
-            ConsoleWrapper.CursorVisible = false;
-            ConsoleWrapper.Clear();
+            // Get the color and positions
+            Color timeColor = ChangeDateAndTimeColor();
+            string renderedDate = TimeDateRenderers.RenderDate();
+            string renderedTime = TimeDateRenderers.RenderTime();
+            int halfConsoleY = (int)(ConsoleWrapper.WindowHeight / 2d);
+            int datePosX = ConsoleWrapper.WindowWidth / 2 - renderedDate.Length / 2;
+            int timePosX = ConsoleWrapper.WindowWidth / 2 - renderedTime.Length / 2;
+
+            // Clear old date/time
+            int oldDatePosX = ConsoleWrapper.WindowWidth / 2 - lastRenderedDate.Length / 2;
+            int oldTimePosX = ConsoleWrapper.WindowWidth / 2 - lastRenderedTime.Length / 2;
+            TextWriterWhereColor.WriteWhereColor(new string(' ', lastRenderedDate.Length), oldDatePosX, halfConsoleY, timeColor);
+            TextWriterWhereColor.WriteWhereColor(new string(' ', lastRenderedTime.Length), oldTimePosX, halfConsoleY + 1, timeColor);
 
             // Write date and time
-            KernelColorTools.SetConsoleColor(ChangeDateAndTimeColor());
-            TextWriterWhereColor.WriteWherePlain(TimeDateRenderers.RenderDate(), (int)Math.Round(ConsoleWrapper.WindowWidth / 2d - TimeDateRenderers.RenderDate().Length / 2d), (int)Math.Round(ConsoleWrapper.WindowHeight / 2d - 1d));
-            TextWriterWhereColor.WriteWherePlain(TimeDateRenderers.RenderTime(), (int)Math.Round(ConsoleWrapper.WindowWidth / 2d - TimeDateRenderers.RenderTime().Length / 2d), (int)Math.Round(ConsoleWrapper.WindowHeight / 2d));
+            TextWriterWhereColor.WriteWhereColor(renderedDate, datePosX, halfConsoleY, timeColor);
+            TextWriterWhereColor.WriteWhereColor(renderedTime, timePosX, halfConsoleY + 1, timeColor);
 
             // Delay
+            lastRenderedDate = renderedDate;
+            lastRenderedTime = renderedTime;
             ThreadManager.SleepNoBlock(DateAndTimeSettings.DateAndTimeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
         }
 
@@ -276,19 +282,15 @@ namespace KS.Misc.Screensaver.Displays
             Color ColorInstance;
             if (DateAndTimeSettings.DateAndTimeTrueColor)
             {
-                int RedColorNum = RandomDriver.Next(DateAndTimeSettings.DateAndTimeMinimumRedColorLevel, DateAndTimeSettings.DateAndTimeMaximumRedColorLevel);
-                int GreenColorNum = RandomDriver.Next(DateAndTimeSettings.DateAndTimeMinimumGreenColorLevel, DateAndTimeSettings.DateAndTimeMaximumGreenColorLevel);
-                int BlueColorNum = RandomDriver.Next(DateAndTimeSettings.DateAndTimeMinimumBlueColorLevel, DateAndTimeSettings.DateAndTimeMaximumBlueColorLevel);
+                int RedColorNum = RandomDriver.Random(DateAndTimeSettings.DateAndTimeMinimumRedColorLevel, DateAndTimeSettings.DateAndTimeMaximumRedColorLevel);
+                int GreenColorNum = RandomDriver.Random(DateAndTimeSettings.DateAndTimeMinimumGreenColorLevel, DateAndTimeSettings.DateAndTimeMaximumGreenColorLevel);
+                int BlueColorNum = RandomDriver.Random(DateAndTimeSettings.DateAndTimeMinimumBlueColorLevel, DateAndTimeSettings.DateAndTimeMaximumBlueColorLevel);
                 ColorInstance = new Color(RedColorNum, GreenColorNum, BlueColorNum);
-            }
-            else if (DateAndTimeSettings.DateAndTime255Colors)
-            {
-                int ColorNum = RandomDriver.Next(DateAndTimeSettings.DateAndTimeMinimumColorLevel, DateAndTimeSettings.DateAndTimeMaximumColorLevel);
-                ColorInstance = new Color(ColorNum);
             }
             else
             {
-                ColorInstance = new Color(Screensaver.colors[RandomDriver.Next(DateAndTimeSettings.DateAndTimeMinimumColorLevel, DateAndTimeSettings.DateAndTimeMaximumColorLevel)]);
+                int ColorNum = RandomDriver.Random(DateAndTimeSettings.DateAndTimeMinimumColorLevel, DateAndTimeSettings.DateAndTimeMaximumColorLevel);
+                ColorInstance = new Color(ColorNum);
             }
             return ColorInstance;
         }

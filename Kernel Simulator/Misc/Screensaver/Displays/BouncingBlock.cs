@@ -18,19 +18,20 @@
 //
 
 using System;
-using System.Collections.Generic;
-using KS.ConsoleBase.Colors;
-using KS.Misc.Threading;
-using KS.ConsoleBase.Writers;
-using KS.Misc.Writers.DebugWriters;
-using Terminaux.Base;
-using Terminaux.Colors;
 using Terminaux.Writer.ConsoleWriters;
+using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Threading;
+using Terminaux.Colors;
+using Terminaux.Base;
+using KS.Misc.Reflection;
+
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for BouncingBlock
+    /// </summary>
     public static class BouncingBlockSettings
     {
-
         private static bool _bouncingBlock255Colors;
         private static bool _bouncingBlockTrueColor = true;
         private static int _bouncingBlockDelay = 10;
@@ -263,122 +264,79 @@ namespace KS.Misc.Screensaver.Displays
                 _bouncingBlockMaximumColorLevel = value;
             }
         }
-
     }
 
+    /// <summary>
+    /// Display code for BouncingBlock
+    /// </summary>
     public class BouncingBlockDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Random RandomDriver;
         private string Direction = "BottomRight";
         private int RowBlock, ColumnBlock;
-        private int CurrentWindowWidth;
-        private int CurrentWindowHeight;
-        private bool ResizeSyncing;
+        private Color blockColor = null;
 
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "BouncingBlock";
 
-        public override Dictionary<string, object> ScreensaverSettings { get; set; }
-
+        /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
             // Variable preparations
-            RandomDriver = new Random();
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
             RowBlock = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d);
             ColumnBlock = (int)Math.Round(ConsoleWrapper.WindowWidth / 2d);
         }
 
+        /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
             ConsoleWrapper.CursorVisible = false;
-            KernelColorTools.SetConsoleColor(new Color(BouncingBlockSettings.BouncingBlockBackgroundColor), true);
-            KernelColorTools.SetConsoleColor(new Color(BouncingBlockSettings.BouncingBlockForegroundColor));
-            ConsoleWrapper.Clear();
+            ColorTools.SetConsoleColor(new Color(BouncingBlockSettings.BouncingBlockForegroundColor));
+            ColorTools.LoadBackDry(new Color(BouncingBlockSettings.BouncingBlockBackgroundColor));
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Row block: {0} | Column block: {1}", RowBlock, ColumnBlock);
 
-            // Change the color
-            if (BouncingBlockSettings.BouncingBlockTrueColor)
+            // Initialize the color
+            blockColor ??= GetRandomBlockColor();
+
+            // Render a block
+            if (!ConsoleResizeHandler.WasResized(false))
             {
-                int RedColorNum = RandomDriver.Next(BouncingBlockSettings.BouncingBlockMinimumRedColorLevel, BouncingBlockSettings.BouncingBlockMaximumRedColorLevel);
-                int GreenColorNum = RandomDriver.Next(BouncingBlockSettings.BouncingBlockMinimumGreenColorLevel, BouncingBlockSettings.BouncingBlockMaximumGreenColorLevel);
-                int BlueColorNum = RandomDriver.Next(BouncingBlockSettings.BouncingBlockMinimumBlueColorLevel, BouncingBlockSettings.BouncingBlockMaximumBlueColorLevel);
-                DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (!ResizeSyncing)
-                {
-                    TextWriterWhereColor.WriteWhereColorBack(" ", ColumnBlock, RowBlock, true, Color.Empty, new Color(RedColorNum, GreenColorNum, BlueColorNum));
-                }
-                else
-                {
-                    DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.W, "We're resize-syncing! Setting RowBlock and ColumnBlock to its original position...");
-                    RowBlock = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d);
-                    ColumnBlock = (int)Math.Round(ConsoleWrapper.WindowWidth / 2d);
-                }
-            }
-            else if (BouncingBlockSettings.BouncingBlock255Colors)
-            {
-                int ColorNum = RandomDriver.Next(BouncingBlockSettings.BouncingBlockMinimumColorLevel, BouncingBlockSettings.BouncingBlockMaximumColorLevel);
-                DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (!ResizeSyncing)
-                {
-                    TextWriterWhereColor.WriteWhereColorBack(" ", ColumnBlock, RowBlock, true, Color.Empty, new Color(ColorNum));
-                }
-                else
-                {
-                    DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.W, "We're resize-syncing! Setting RowBlock and ColumnBlock to its original position...");
-                    RowBlock = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d);
-                    ColumnBlock = (int)Math.Round(ConsoleWrapper.WindowWidth / 2d);
-                }
+                TextWriterWhereColor.WriteWhereColorBack(" ", ColumnBlock, RowBlock, true, Color.Empty, blockColor);
             }
             else
             {
-                int OldColumn = ConsoleWrapper.CursorLeft;
-                int OldRow = ConsoleWrapper.CursorTop;
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (!ResizeSyncing)
-                {
-                    Console.BackgroundColor = Screensaver.colors[RandomDriver.Next(BouncingBlockSettings.BouncingBlockMinimumColorLevel, BouncingBlockSettings.BouncingBlockMaximumColorLevel)];
-                    DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", Console.BackgroundColor);
-                    ConsoleWrapper.SetCursorPosition(ColumnBlock, RowBlock);
-                    TextWriterRaw.WritePlain(" ", false);
-                    ConsoleWrapper.SetCursorPosition(OldColumn, OldRow);
-                    Console.BackgroundColor = ConsoleColor.Black;
-                    TextWriterRaw.WritePlain(" ", false);
-                }
-                else
-                {
-                    DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.W, "We're resize-syncing! Setting RowBlock and ColumnBlock to its original position...");
-                    RowBlock = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d);
-                    ColumnBlock = (int)Math.Round(ConsoleWrapper.WindowWidth / 2d);
-                }
+                DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.W, "We're resize-syncing! Setting RowBlock and ColumnBlock to its original position...");
+                RowBlock = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d);
+                ColumnBlock = (int)Math.Round(ConsoleWrapper.WindowWidth / 2d);
+                ConsoleResizeHandler.WasResized();
+                ThreadManager.SleepNoBlock(BouncingBlockSettings.BouncingBlockDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                return;
             }
 
-            if (RowBlock == ConsoleWrapper.WindowHeight - 2)
+            if (RowBlock == ConsoleWrapper.WindowHeight - 1)
             {
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "We're on the bottom.");
                 Direction = Direction.Replace("Bottom", "Top");
+                blockColor = GetRandomBlockColor();
             }
-            else if (RowBlock == 1)
+            else if (RowBlock == 0)
             {
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "We're on the top.");
                 Direction = Direction.Replace("Top", "Bottom");
+                blockColor = GetRandomBlockColor();
             }
 
             if (ColumnBlock == ConsoleWrapper.WindowWidth - 1)
             {
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "We're on the right.");
                 Direction = Direction.Replace("Right", "Left");
+                blockColor = GetRandomBlockColor();
             }
-            else if (ColumnBlock == 1)
+            else if (ColumnBlock == 0)
             {
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "We're on the left.");
                 Direction = Direction.Replace("Left", "Right");
+                blockColor = GetRandomBlockColor();
             }
 
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Block is facing {0}.", Direction);
@@ -408,10 +366,26 @@ namespace KS.Misc.Screensaver.Displays
             }
 
             // Reset resize sync
-            ResizeSyncing = false;
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+            ConsoleResizeHandler.WasResized();
             ThreadManager.SleepNoBlock(BouncingBlockSettings.BouncingBlockDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+        }
+
+        private static Color GetRandomBlockColor()
+        {
+            if (BouncingBlockSettings.BouncingBlockTrueColor)
+            {
+                int RedColorNum = RandomDriver.Random(BouncingBlockSettings.BouncingBlockMinimumRedColorLevel, BouncingBlockSettings.BouncingBlockMaximumRedColorLevel);
+                int GreenColorNum = RandomDriver.Random(BouncingBlockSettings.BouncingBlockMinimumGreenColorLevel, BouncingBlockSettings.BouncingBlockMaximumGreenColorLevel);
+                int BlueColorNum = RandomDriver.Random(BouncingBlockSettings.BouncingBlockMinimumBlueColorLevel, BouncingBlockSettings.BouncingBlockMaximumBlueColorLevel);
+                DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
+                return new Color(RedColorNum, GreenColorNum, BlueColorNum);
+            }
+            else
+            {
+                int ColorNum = RandomDriver.Random(BouncingBlockSettings.BouncingBlockMinimumColorLevel, BouncingBlockSettings.BouncingBlockMaximumColorLevel);
+                DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
+                return new Color(ColorNum);
+            }
         }
 
     }

@@ -17,13 +17,14 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using System;
 namespace KS.Misc.Animations.EdgePulse
 {
+    /// <summary>
+    /// Edge pulse settings
+    /// </summary>
     public class EdgePulseSettings
     {
 
-        internal Random RandomDriver;
         private int _edgepulseDelay = 50;
         private int _edgepulseMaxSteps = 25;
         private int _edgepulseMinimumRedColorLevel = 0;

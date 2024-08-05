@@ -18,24 +18,26 @@
 //
 
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using KS.Misc.Text;
-using KS.Misc.Threading;
-using KS.ConsoleBase.Writers;
-using KS.Misc.Writers.DebugWriters;
-using Terminaux.Base;
-using Terminaux.Colors;
 using Textify.Figlet;
 using Terminaux.Writer.ConsoleWriters;
+using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Threading;
+using Terminaux.Colors;
+using Textify.General;
+using Terminaux.Base;
+using KS.Misc.Reflection;
 
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for Figlet
+    /// </summary>
     public static class FigletSettings
     {
-
         private static bool _figlet255Colors;
         private static bool _figletTrueColor = true;
+        private static bool _figletRainbowMode = false;
         private static int _figletDelay = 1000;
         private static string _figletText = "Kernel Simulator";
         private static string _figletFont = "Small";
@@ -74,6 +76,20 @@ namespace KS.Misc.Screensaver.Displays
             set
             {
                 _figletTrueColor = value;
+            }
+        }
+        /// <summary>
+        /// [Figlet] Enable rainbow mode.
+        /// </summary>
+        public static bool FigletRainbowMode
+        {
+            get
+            {
+                return _figletRainbowMode;
+            }
+            set
+            {
+                _figletRainbowMode = value;
             }
         }
         /// <summary>
@@ -268,30 +284,27 @@ namespace KS.Misc.Screensaver.Displays
                 _figletMaximumColorLevel = value;
             }
         }
-
     }
+
+    /// <summary>
+    /// Display code for Figlet
+    /// </summary>
     public class FigletDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Random RandomDriver;
-        private int CurrentWindowWidth;
-        private int CurrentWindowHeight;
-        private bool ResizeSyncing;
+        private int currentHueAngle = 0;
 
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "Figlet";
 
-        public override Dictionary<string, object> ScreensaverSettings { get; set; }
-
+        /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
-            // Variable preparations
-            RandomDriver = new Random();
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
-            Console.BackgroundColor = ConsoleColor.Black;
-            Console.ForegroundColor = ConsoleColor.White;
+            currentHueAngle = 0;
+            ColorTools.LoadBack();
         }
 
+        /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
             int ConsoleMiddleWidth = (int)Math.Round(ConsoleWrapper.WindowWidth / 2d);
@@ -304,51 +317,41 @@ namespace KS.Misc.Screensaver.Displays
             var ColorStorage = new Color(255, 255, 255);
             if (FigletSettings.FigletTrueColor)
             {
-                int RedColorNum = RandomDriver.Next(FigletSettings.FigletMinimumRedColorLevel, FigletSettings.FigletMaximumRedColorLevel);
-                int GreenColorNum = RandomDriver.Next(FigletSettings.FigletMinimumGreenColorLevel, FigletSettings.FigletMaximumGreenColorLevel);
-                int BlueColorNum = RandomDriver.Next(FigletSettings.FigletMinimumBlueColorLevel, FigletSettings.FigletMaximumBlueColorLevel);
+                int RedColorNum = RandomDriver.Random(FigletSettings.FigletMinimumRedColorLevel, FigletSettings.FigletMaximumRedColorLevel);
+                int GreenColorNum = RandomDriver.Random(FigletSettings.FigletMinimumGreenColorLevel, FigletSettings.FigletMaximumGreenColorLevel);
+                int BlueColorNum = RandomDriver.Random(FigletSettings.FigletMinimumBlueColorLevel, FigletSettings.FigletMaximumBlueColorLevel);
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
                 ColorStorage = new Color(RedColorNum, GreenColorNum, BlueColorNum);
             }
-            else if (FigletSettings.Figlet255Colors)
+            else
             {
-                int ColorNum = RandomDriver.Next(FigletSettings.FigletMinimumColorLevel, FigletSettings.FigletMaximumColorLevel);
+                int ColorNum = RandomDriver.Random(FigletSettings.FigletMinimumColorLevel, FigletSettings.FigletMaximumColorLevel);
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
                 ColorStorage = new Color(ColorNum);
             }
-            else
+            if (FigletSettings.FigletRainbowMode)
             {
-                Console.BackgroundColor = (ConsoleColor)RandomDriver.Next(FigletSettings.FigletMinimumColorLevel, FigletSettings.FigletMaximumColorLevel);
-                DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", Console.BackgroundColor);
+                ColorStorage = new($"hsl:{currentHueAngle};100;50");
+                currentHueAngle++;
+                if (currentHueAngle > 360)
+                    currentHueAngle = 0;
             }
 
             // Prepare the figlet font for writing
-            string FigletWrite = FigletSettings.FigletText.ReplaceAll(["\r", "\n"], " - ");
+            string FigletWrite = FigletSettings.FigletText.ReplaceAll([Convert.ToChar(13).ToString(), Convert.ToChar(10).ToString()], " - ");
             FigletWrite = FigletFontUsed.Render(FigletWrite);
-            string[] FigletWriteLines = FigletWrite.SplitNewLines().SkipWhile(x => string.IsNullOrEmpty(x)).ToArray();
+            var FigletWriteLines = FigletWrite.SplitNewLines().SkipWhile(string.IsNullOrEmpty).ToArray();
             int FigletHeight = (int)Math.Round(ConsoleMiddleHeight - FigletWriteLines.Length / 2d);
             int FigletWidth = (int)Math.Round(ConsoleMiddleWidth - FigletWriteLines[0].Length / 2d);
 
             // Actually write it
-            if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                ResizeSyncing = true;
-            if (!ResizeSyncing)
-            {
-                if (FigletSettings.Figlet255Colors | FigletSettings.FigletTrueColor)
-                {
-                    TextWriterWhereColor.WriteWhere(FigletWrite, FigletWidth, FigletHeight, true, ColorStorage);
-                }
-                else
-                {
-                    TextWriterWhereColor.WriteWhere(FigletWrite, FigletWidth, FigletHeight, true);
-                }
-            }
-            ThreadManager.SleepNoBlock(FigletSettings.FigletDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            if (!ConsoleResizeHandler.WasResized(false))
+                TextWriterWhereColor.WriteWhereColor(FigletWrite, FigletWidth, FigletHeight, true, ColorStorage);
 
             // Reset resize sync
-            ResizeSyncing = false;
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+            ConsoleResizeHandler.WasResized();
+            int delay = FigletSettings.FigletRainbowMode ? 16 : FigletSettings.FigletDelay;
+            ThreadManager.SleepNoBlock(delay, ScreensaverDisplayer.ScreensaverDisplayerThread);
         }
 
     }

@@ -20,18 +20,19 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using KS.ConsoleBase.Colors;
-using KS.Misc.Threading;
-using KS.ConsoleBase.Writers;
+using KS.Misc.Reflection;
 using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Threading;
 using Terminaux.Base;
 using Terminaux.Colors;
-using Terminaux.Writer.ConsoleWriters;
+
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for Lighter
+    /// </summary>
     public static class LighterSettings
     {
-
         private static bool _lighter255Colors;
         private static bool _lighterTrueColor = true;
         private static int _lighterDelay = 100;
@@ -228,39 +229,36 @@ namespace KS.Misc.Screensaver.Displays
                 _lighterMaximumColorLevel = value;
             }
         }
-
     }
+
+    /// <summary>
+    /// Display code for Lighter
+    /// </summary>
     public class LighterDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Random RandomDriver;
-        private int CurrentWindowWidth;
-        private int CurrentWindowHeight;
-        private bool ResizeSyncing;
         private readonly List<Tuple<int, int>> CoveredPositions = [];
 
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "Lighter";
 
-        public override Dictionary<string, object> ScreensaverSettings { get; set; }
-
+        /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
             // Variable preparations
-            RandomDriver = new Random();
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
-            KernelColorTools.SetConsoleColor(new Color(LighterSettings.LighterBackgroundColor), true);
-            ConsoleWrapper.Clear();
+            CoveredPositions.Clear();
+            ColorTools.LoadBackDry(new Color(LighterSettings.LighterBackgroundColor));
             DebugWriter.Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
         }
 
+        /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
             ConsoleWrapper.CursorVisible = false;
 
             // Select a position
-            int Left = RandomDriver.Next(ConsoleWrapper.WindowWidth);
-            int Top = RandomDriver.Next(ConsoleWrapper.WindowHeight);
+            int Left = RandomDriver.RandomIdx(ConsoleWrapper.WindowWidth);
+            int Top = RandomDriver.RandomIdx(ConsoleWrapper.WindowHeight);
             DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Selected left and top: {0}, {1}", Left, Top);
             ConsoleWrapper.SetCursorPosition(Left, Top);
             if (!CoveredPositions.Any(t => t.Item1 == Left & t.Item2 == Top))
@@ -273,34 +271,15 @@ namespace KS.Misc.Screensaver.Displays
             // Select a color and write the space
             if (LighterSettings.LighterTrueColor)
             {
-                int RedColorNum = RandomDriver.Next(LighterSettings.LighterMinimumRedColorLevel, LighterSettings.LighterMaximumRedColorLevel);
-                int GreenColorNum = RandomDriver.Next(LighterSettings.LighterMinimumGreenColorLevel, LighterSettings.LighterMaximumGreenColorLevel);
-                int BlueColorNum = RandomDriver.Next(LighterSettings.LighterMinimumBlueColorLevel, LighterSettings.LighterMaximumBlueColorLevel);
+                int RedColorNum = RandomDriver.Random(LighterSettings.LighterMinimumRedColorLevel, LighterSettings.LighterMaximumRedColorLevel);
+                int GreenColorNum = RandomDriver.Random(LighterSettings.LighterMinimumGreenColorLevel, LighterSettings.LighterMaximumGreenColorLevel);
+                int BlueColorNum = RandomDriver.Random(LighterSettings.LighterMinimumBlueColorLevel, LighterSettings.LighterMaximumBlueColorLevel);
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
                 var ColorStorage = new Color(RedColorNum, GreenColorNum, BlueColorNum);
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (!ResizeSyncing)
+                if (!ConsoleResizeHandler.WasResized(false))
                 {
-                    KernelColorTools.SetConsoleColor(ColorStorage, true);
-                    TextWriterRaw.WritePlain(" ", false);
-                }
-                else
-                {
-                    DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.W, "Resize-syncing. Clearing covered positions...");
-                    CoveredPositions.Clear();
-                }
-            }
-            else if (LighterSettings.Lighter255Colors)
-            {
-                int ColorNum = RandomDriver.Next(LighterSettings.LighterMinimumColorLevel, LighterSettings.LighterMaximumColorLevel);
-                DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (!ResizeSyncing)
-                {
-                    KernelColorTools.SetConsoleColor(new Color(ColorNum), true);
-                    TextWriterRaw.WritePlain(" ", false);
+                    ColorTools.SetConsoleColorDry(ColorStorage, true);
+                    ConsoleWrapper.Write(" ");
                 }
                 else
                 {
@@ -310,13 +289,12 @@ namespace KS.Misc.Screensaver.Displays
             }
             else
             {
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (!ResizeSyncing)
+                int ColorNum = RandomDriver.Random(LighterSettings.LighterMinimumColorLevel, LighterSettings.LighterMaximumColorLevel);
+                DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
+                if (!ConsoleResizeHandler.WasResized(false))
                 {
-                    Console.BackgroundColor = Screensaver.colors[RandomDriver.Next(LighterSettings.LighterMinimumColorLevel, LighterSettings.LighterMaximumColorLevel)];
-                    DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Got color ({0})", Console.BackgroundColor);
-                    TextWriterRaw.WritePlain(" ", false);
+                    ColorTools.SetConsoleColorDry(new Color(ColorNum), true);
+                    ConsoleWrapper.Write(" ");
                 }
                 else
                 {
@@ -329,16 +307,14 @@ namespace KS.Misc.Screensaver.Displays
             if (CoveredPositions.Count == LighterSettings.LighterMaxPositions)
             {
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Covered positions exceeded max positions of {0}", LighterSettings.LighterMaxPositions);
-                int WipeLeft = Convert.ToInt32(CoveredPositions[0].ToString().Substring(0, CoveredPositions[0].ToString().IndexOf(";")));
-                int WipeTop = Convert.ToInt32(CoveredPositions[0].ToString().Substring(CoveredPositions[0].ToString().IndexOf(";") + 1));
+                int WipeLeft = CoveredPositions[0].Item1;
+                int WipeTop = CoveredPositions[0].Item2;
                 DebugWriter.WdbgConditional(ref Screensaver.ScreensaverDebug, DebugLevel.I, "Wiping in {0}, {1}...", WipeLeft, WipeTop);
-                if (CurrentWindowHeight != ConsoleWrapper.WindowHeight | CurrentWindowWidth != ConsoleWrapper.WindowWidth)
-                    ResizeSyncing = true;
-                if (!ResizeSyncing)
+                if (!ConsoleResizeHandler.WasResized(false))
                 {
                     ConsoleWrapper.SetCursorPosition(WipeLeft, WipeTop);
-                    KernelColorTools.SetConsoleColor(new Color(LighterSettings.LighterBackgroundColor), true);
-                    TextWriterRaw.WritePlain(" ", false);
+                    ColorTools.SetConsoleColorDry(new Color(LighterSettings.LighterBackgroundColor), true);
+                    ConsoleWrapper.Write(" ");
                     CoveredPositions.RemoveAt(0);
                 }
                 else
@@ -349,9 +325,7 @@ namespace KS.Misc.Screensaver.Displays
             }
 
             // Reset resize sync
-            ResizeSyncing = false;
-            CurrentWindowWidth = ConsoleWrapper.WindowWidth;
-            CurrentWindowHeight = ConsoleWrapper.WindowHeight;
+            ConsoleResizeHandler.WasResized();
             ThreadManager.SleepNoBlock(LighterSettings.LighterDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
         }
 

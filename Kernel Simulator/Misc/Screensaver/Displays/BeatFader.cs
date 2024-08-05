@@ -17,16 +17,18 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using System;
-using System.Collections.Generic;
 using KS.Misc.Writers.DebugWriters;
+using KS.Misc.Reflection;
 using Terminaux.Base;
 using Terminaux.Colors;
+
 namespace KS.Misc.Screensaver.Displays
 {
+    /// <summary>
+    /// Settings for BeatFader
+    /// </summary>
     public static class BeatFaderSettings
     {
-
         private static bool _beatFader255Colors;
         private static bool _beatFaderTrueColor = true;
         private static bool _beatFaderCycleColors = true;
@@ -276,29 +278,25 @@ namespace KS.Misc.Screensaver.Displays
                 _beatFaderMaximumColorLevel = value;
             }
         }
-
     }
 
+    /// <summary>
+    /// Display code for BeatFader
+    /// </summary>
     public class BeatFaderDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Random RandomDriver;
         private Animations.BeatFader.BeatFaderSettings BeatFaderSettingsInstance;
 
+        /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "BeatFader";
 
-        public override Dictionary<string, object> ScreensaverSettings { get; set; }
-
+        /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
-            // Variable preparations
-            RandomDriver = new Random();
-            Console.BackgroundColor = ConsoleColor.Black;
-            ConsoleWrapper.Clear();
             DebugWriter.Wdbg(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
             BeatFaderSettingsInstance = new Animations.BeatFader.BeatFaderSettings()
             {
-                BeatFader255Colors = BeatFaderSettings.BeatFader255Colors,
                 BeatFaderTrueColor = BeatFaderSettings.BeatFaderTrueColor,
                 BeatFaderBeatColor = BeatFaderSettings.BeatFaderBeatColor,
                 BeatFaderDelay = BeatFaderSettings.BeatFaderDelay,
@@ -311,15 +309,13 @@ namespace KS.Misc.Screensaver.Displays
                 BeatFaderMaximumRedColorLevel = BeatFaderSettings.BeatFaderMaximumRedColorLevel,
                 BeatFaderMaximumGreenColorLevel = BeatFaderSettings.BeatFaderMaximumGreenColorLevel,
                 BeatFaderMaximumBlueColorLevel = BeatFaderSettings.BeatFaderMaximumBlueColorLevel,
-                BeatFaderMaximumColorLevel = BeatFaderSettings.BeatFaderMaximumColorLevel,
-                RandomDriver = RandomDriver
+                BeatFaderMaximumColorLevel = BeatFaderSettings.BeatFaderMaximumColorLevel
             };
+            base.ScreensaverPreparation();
         }
 
-        public override void ScreensaverLogic()
-        {
-            Animations.BeatFader.BeatFader.Simulate(BeatFaderSettingsInstance);
-        }
+        /// <inheritdoc/>
+        public override void ScreensaverLogic() => Animations.BeatFader.BeatFader.Simulate(BeatFaderSettingsInstance);
 
     }
 }
