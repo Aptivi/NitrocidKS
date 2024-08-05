@@ -263,7 +263,6 @@ namespace KS.Kernel
                     if (Flags.NewWelcomeStyle | Flags.EnableSplash)
                     {
                         TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
-                        TextFancyWriters.WriteSeparator(Translate.DoTranslation("License information"), KernelColorTools.ColTypes.Stage);
                         WelcomeMessage.WriteLicense();
                     }
 
