@@ -68,7 +68,7 @@ namespace KS.Hardware
             {
                 SplashReport.ReportProgress("CPU: " + Translate.DoTranslation("Processor name:") + " {0}", 0, KernelColorTools.ColTypes.Neutral, cpu.Name);
                 SplashReport.ReportProgress("CPU: " + Translate.DoTranslation("Processor clock speed:") + " {0} MHz", 0, KernelColorTools.ColTypes.Neutral, $"{cpu.Speed}");
-                SplashReport.ReportProgress("CPU: " + Translate.DoTranslation("Total number of processors:") + $" {cpu.TotalCores}", 3, KernelColorTools.ColTypes.Neutral);
+                SplashReport.ReportProgress("CPU: " + Translate.DoTranslation("Total number of processors:") + $" {cpu.LogicalCores} ({cpu.ProcessorCores} x{cpu.Cores})", 3, KernelColorTools.ColTypes.Neutral);
             }
 
             // Print RAM info
@@ -127,7 +127,7 @@ namespace KS.Hardware
                                 TextWriters.Write(Translate.DoTranslation("Clock speed:"), false, KernelColorTools.ColTypes.ListEntry);
                                 TextWriters.Write($" {processor.Speed} MHz", true, KernelColorTools.ColTypes.ListValue);
                                 TextWriters.Write(Translate.DoTranslation("Total cores:"), false, KernelColorTools.ColTypes.ListEntry);
-                                TextWriters.Write($" {processor.TotalCores} ({processor.ProcessorCores} x{processor.CoresForEachCore})", true, KernelColorTools.ColTypes.ListValue);
+                                TextWriters.Write($" {processor.LogicalCores} ({processor.ProcessorCores} x{processor.Cores})", true, KernelColorTools.ColTypes.ListValue);
                                 TextWriters.Write(Translate.DoTranslation("Cache sizes:"), false, KernelColorTools.ColTypes.ListEntry);
                                 TextWriters.Write($" {processor.L1CacheSize} L1, {processor.L2CacheSize} L2, {processor.L3CacheSize} L3", true, KernelColorTools.ColTypes.ListValue);
                             }
