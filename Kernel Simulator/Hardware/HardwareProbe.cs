@@ -26,6 +26,7 @@ using KS.Login;
 using KS.Misc.Splash;
 using KS.Misc.Writers.DebugWriters;
 using SpecProbe;
+using SpecProbe.Parts;
 using SpecProbe.Software.Platform;
 
 namespace KS.Hardware
@@ -39,19 +40,19 @@ namespace KS.Hardware
 
         /// <inheritdoc/>
         public static IEnumerable ProbeGraphics() =>
-            HardwareProber.Video;
+            HardwareProber.GetVideos();
 
         /// <inheritdoc/>
         public static IEnumerable ProbeHardDrive() =>
-            HardwareProber.HardDisk;
+            HardwareProber.GetHardDisks();
 
         /// <inheritdoc/>
         public static IEnumerable ProbePcMemory() =>
-            HardwareProber.Memory;
+            new BaseHardwarePartInfo[] { HardwareProber.GetMemory() };
 
         /// <inheritdoc/>
         public static IEnumerable ProbeProcessor() =>
-            HardwareProber.Processors;
+            new BaseHardwarePartInfo[] { HardwareProber.GetProcessor() };
 
         /// <summary>
         /// Starts probing hardware

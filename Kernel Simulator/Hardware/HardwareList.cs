@@ -25,6 +25,7 @@ using KS.Misc.Writers.DebugWriters;
 using SpecProbe;
 using SpecProbe.Parts.Types;
 using Terminaux.Writer.FancyWriters;
+using SpecProbe.Parts;
 
 namespace KS.Hardware
 {
@@ -70,14 +71,17 @@ namespace KS.Hardware
                 SplashReport.ReportProgress("CPU: " + Translate.DoTranslation("Processor clock speed:") + " {0} MHz", 0, KernelColorTools.ColTypes.Neutral, $"{cpu.Speed}");
                 SplashReport.ReportProgress("CPU: " + Translate.DoTranslation("Total number of processors:") + $" {cpu.LogicalCores} ({cpu.ProcessorCores} x{cpu.Cores})", 3, KernelColorTools.ColTypes.Neutral);
             }
+            PrintErrors(HardwarePartType.Processor);
 
             // Print RAM info
             var mem = memList[0];
             SplashReport.ReportProgress("RAM: " + Translate.DoTranslation("Total memory:") + " {0}", 2, KernelColorTools.ColTypes.Neutral, $"{mem.TotalMemory}");
+            PrintErrors(HardwarePartType.Memory);
 
             // GPU info
             foreach (var gpu in gpuDict)
                 SplashReport.ReportProgress("GPU: " + Translate.DoTranslation("Graphics card:") + " {0}", 0, KernelColorTools.ColTypes.Neutral, gpu.VideoCardName);
+            PrintErrors(HardwarePartType.Video);
 
             // Drive Info
             foreach (var hdd in hddDict)
@@ -88,24 +92,36 @@ namespace KS.Hardware
                 foreach (var part in hdd.Partitions)
                     SplashReport.ReportProgress("HDD [{0}]: " + Translate.DoTranslation("Partition size:") + " {1}", 0, KernelColorTools.ColTypes.Neutral, $"{hdd.HardDiskNumber}", $"{part.PartitionSize}");
             }
-            PrintErrors();
+            PrintErrors(HardwarePartType.HardDisk);
         }
 
         /// <summary>
         /// Lists information about hardware
         /// </summary>
-        /// <param name="HardwareType">Hadrware type defined by Inxi.NET. If "all", prints all information.</param>
+        /// <param name="HardwareType">Hadrware type defined by SpecProbe. If "all", prints all information.</param>
         public static void ListHardware(string HardwareType)
         {
-            string[] supportedTypes = ["CPU", "RAM", "HDD", "GPU"];
+            (string, HardwarePartType)[] supportedTypes =
+            [
+                ("CPU", HardwarePartType.Processor),
+                ("RAM", HardwarePartType.Memory),
+                ("HDD", HardwarePartType.HardDisk),
+                ("GPU", HardwarePartType.Video)
+            ];
             if (HardwareType == "all")
             {
-                foreach (string supportedType in supportedTypes)
-                    ListHardwareInternal(supportedType);
+                foreach (var supportedType in supportedTypes)
+                {
+                    ListHardwareInternal(supportedType.Item1);
+                    PrintErrors(supportedType.Item2);
+                }
             }
             else
+            {
                 ListHardwareInternal(HardwareType);
-            PrintErrors();
+                foreach (var supportedType in supportedTypes)
+                    PrintErrors(supportedType.Item2);
+            }
         }
 
         private static void ListHardwareInternal(string hardwareType)
@@ -194,13 +210,14 @@ namespace KS.Hardware
             }
         }
 
-        private static void PrintErrors()
+        private static void PrintErrors(HardwarePartType type)
         {
-            if (HardwareProber.Errors.Length > 0)
+            var errors = HardwareProber.GetParseExceptions(type);
+            if (errors.Length > 0)
             {
                 SplashReport.ReportProgress(Translate.DoTranslation("SpecProbe failed to parse some of the hardware. Below are the errors reported by SpecProbe:"), 0, KernelColorTools.ColTypes.Error);
                 DebugWriter.Wdbg(DebugLevel.E, "SpecProbe failed to parse hardware due to the following errors:");
-                foreach (var error in HardwareProber.Errors)
+                foreach (var error in errors)
                 {
                     DebugWriter.Wdbg(DebugLevel.E, $"- {error.Message}");
                     DebugWriter.WStkTrc(error);
