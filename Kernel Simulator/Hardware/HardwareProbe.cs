@@ -27,6 +27,7 @@ using KS.Misc.Splash;
 using KS.Misc.Writers.DebugWriters;
 using SpecProbe;
 using SpecProbe.Parts;
+using SpecProbe.Parts.Types;
 using SpecProbe.Software.Platform;
 
 namespace KS.Hardware
@@ -48,11 +49,11 @@ namespace KS.Hardware
 
         /// <inheritdoc/>
         public static IEnumerable ProbePcMemory() =>
-            new BaseHardwarePartInfo[] { HardwareProber.GetMemory() };
+            new MemoryPart[] { HardwareProber.GetMemory() };
 
         /// <inheritdoc/>
         public static IEnumerable ProbeProcessor() =>
-            new BaseHardwarePartInfo[] { HardwareProber.GetProcessor() };
+            new ProcessorPart[] { HardwareProber.GetProcessor() };
 
         /// <summary>
         /// Starts probing hardware
