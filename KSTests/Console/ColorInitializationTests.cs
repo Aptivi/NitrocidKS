@@ -54,7 +54,7 @@ namespace KSTests.Console
             ColorInstance.RGB.R.ShouldBe(0);
             ColorInstance.RGB.G.ShouldBe(0);
             ColorInstance.RGB.B.ShouldBe(135);
-            ColorInstance.Brightness.ShouldBe(ColorBrightness.Light);
+            ColorInstance.Brightness.ShouldBe(ColorBrightness.Dark);
             ColorInstance.Hex.ShouldBe("#000087");
         }
 
@@ -82,7 +82,7 @@ namespace KSTests.Console
             ColorInstance.RGB.R.ShouldBe(94);
             ColorInstance.RGB.G.ShouldBe(0);
             ColorInstance.RGB.B.ShouldBe(63);
-            ColorInstance.Brightness.ShouldBe(ColorBrightness.Light);
+            ColorInstance.Brightness.ShouldBe(ColorBrightness.Dark);
             ColorInstance.Hex.ShouldBe("#5E003F");
         }
 

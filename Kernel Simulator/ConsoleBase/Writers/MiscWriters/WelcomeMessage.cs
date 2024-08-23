@@ -45,6 +45,11 @@ namespace KS.ConsoleBase.Writers.MiscWriters
         /// <summary>
         /// Show tips on log-in
         /// </summary>
+        public static string CustomBanner { get; set; }
+
+        /// <summary>
+        /// Show tips on log-in
+        /// </summary>
         public static bool ShowTip { get; internal set; }
 
         /// <summary>
@@ -56,8 +61,8 @@ namespace KS.ConsoleBase.Writers.MiscWriters
             string MessageWrite = "     --> " + Translate.DoTranslation("Welcome to Nitrocid Kernel! - Version") + " v{0} <--     ";
 
             // Check to see if user specified custom message
-            if (!string.IsNullOrWhiteSpace(customBanner))
-                MessageWrite = PlaceParse.ProbePlaces(customBanner);
+            if (!string.IsNullOrWhiteSpace(CustomBanner))
+                MessageWrite = PlaceParse.ProbePlaces(CustomBanner);
 
             // Just return the result
             return MessageWrite;

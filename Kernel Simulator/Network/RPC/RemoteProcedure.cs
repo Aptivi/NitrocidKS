@@ -31,11 +31,17 @@ namespace KS.Network.RPC
     public static class RemoteProcedure
     {
 
-        internal static int RPCPort = 12345;
+        internal static int rpcPort = 12345;
         internal static UdpClient RPCListen;
         public static bool RPCEnabled = true;
         internal static KernelThread RPCThread = new("RPC Thread", true, RPCCommands.ReceiveCommand);
         internal static bool rpcStopping = false;
+
+        public static int RPCPort
+        {
+            get => rpcPort;
+            set => rpcPort = value;
+        }
 
         /// <summary>
         /// Whether the RPC started

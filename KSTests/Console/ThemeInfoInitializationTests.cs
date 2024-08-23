@@ -87,25 +87,8 @@ namespace KSTests.Console
         {
             foreach (string ResourceName in ThemeTools.Themes.Keys)
             {
-
-                // Special naming cases
-                string ThemeName = ResourceName.Replace("-", "_").Replace(" ", "_");
-                switch (ResourceName ?? "")
-                {
-                    case "Default":
-                        {
-                            ThemeName = "_Default";
-                            break;
-                        }
-                    case "3Y-Diamond":
-                        {
-                            ThemeName = "_3Y_Diamond";
-                            break;
-                        }
-                }
-
                 // Create instance
-                var ThemeInfoInstance = new ThemeInfo(ThemeName);
+                var ThemeInfoInstance = new ThemeInfo(ResourceName);
 
                 // Check for null
                 ThemeInfoInstance.ThemeBackgroundColor.ShouldNotBeNull();

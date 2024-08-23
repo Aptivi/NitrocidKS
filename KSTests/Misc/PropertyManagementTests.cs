@@ -21,8 +21,10 @@ using System;
 using System.Reflection;
 using KS.Languages;
 using KS.Misc.Reflection;
+using KSTests.Misc.Demonstration;
 using NUnit.Framework;
 using Shouldly;
+using Terminaux.Colors.Data;
 using Textify.Figlet;
 
 namespace KSTests.Misc
@@ -83,7 +85,7 @@ namespace KSTests.Misc
         [Description("Management")]
         public void TestGetProperties()
         {
-            var Properties = PropertyManager.GetProperties(typeof(FigletFonts));
+            var Properties = PropertyManager.GetProperties(typeof(PropertyTable));
             Properties.ShouldNotBeNull();
             Properties.ShouldNotBeEmpty();
         }
@@ -95,7 +97,7 @@ namespace KSTests.Misc
         [Description("Management")]
         public void TestGetPropertiesNoEvaluation()
         {
-            var Properties = PropertyManager.GetPropertiesNoEvaluation(typeof(FigletFonts));
+            var Properties = PropertyManager.GetPropertiesNoEvaluation(typeof(PropertyTable));
             Properties.ShouldNotBeNull();
             Properties.ShouldNotBeEmpty();
         }

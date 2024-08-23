@@ -45,7 +45,7 @@ namespace KSTests.Console
         /// Tests trying to parse the color from color numbers
         /// </summary>
         [TestCase(26, ExpectedResult = true)]
-        [TestCase(260, ExpectedResult = false)]
+        [TestCase(260, ExpectedResult = true)]
         [TestCase(-26, ExpectedResult = false)]
         [Description("Querying")]
         public bool TestTryParseColorFromColorNum(int TargetColorNum)

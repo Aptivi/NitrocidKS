@@ -249,8 +249,8 @@ namespace KS.Misc.Reflection
         /// <returns>Dictionary containing all properties</returns>
         public static Dictionary<string, object> GetProperties(Type VariableType)
         {
-            // Get field for specified variable
-            PropertyInfo[] Properties = VariableType.GetProperties();
+            // Get property for specified variable
+            var Properties = VariableType.GetProperties();
             var PropertyDict = new Dictionary<string, object>();
 
             // Get the properties and get their values

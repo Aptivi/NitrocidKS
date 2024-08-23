@@ -132,7 +132,7 @@ namespace KS.Misc.Configuration
                 { "Prompt for Arguments on Boot", Flags.ArgsOnBoot },
                 { "Maintenance Mode", Flags.Maintenance },
                 { "Check for Updates on Startup", Flags.CheckUpdateStart },
-                { "Custom Startup Banner", WelcomeMessage.customBanner },
+                { "Custom Startup Banner", WelcomeMessage.CustomBanner },
                 { "Change Culture when Switching Languages", Flags.LangChangeCulture },
                 { "Language", LanguageManager.CurrentLanguage },
                 { "Culture", CultureManager.CurrentCult.Name },
@@ -1275,7 +1275,7 @@ namespace KS.Misc.Configuration
             Flags.ArgsOnBoot = (bool)((ConfigToken["General"]?["Prompt for Arguments on Boot"]) ?? false);
             Flags.CheckUpdateStart = (bool)((ConfigToken["General"]?["Check for Updates on Startup"]) ?? true);
             if (!string.IsNullOrWhiteSpace((string)ConfigToken["General"]?["Custom Startup Banner"]))
-                WelcomeMessage.customBanner = (string)ConfigToken["General"]?["Custom Startup Banner"];
+                WelcomeMessage.CustomBanner = (string)ConfigToken["General"]?["Custom Startup Banner"];
             Flags.ShowAppInfoOnBoot = (bool)((ConfigToken["General"]?["Show app information during boot"]) ?? true);
             Flags.ParseCommandLineArguments = (bool)((ConfigToken["General"]?["Parse command-line arguments"]) ?? true);
             Flags.ShowStageFinishTimes = (bool)((ConfigToken["General"]?["Show stage finish times"]) ?? false);
