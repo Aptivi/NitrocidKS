@@ -1,0 +1,28 @@
+name: Build Project (Release)
+
+on:
+  push:
+    branches: [ "main", "v0.1.0.x-saas", "v0.0.24.x-saas" ]
+  pull_request:
+    branches: [ "main", "v0.1.0.x-saas", "v0.0.24.x-saas" ]
+    
+jobs:
+  build:
+    strategy:
+      matrix:
+        runs-on: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.runs-on }}
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        ref: ${{ github.ref }}
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+    - name: Solution Compilation
+      run: dotnet build -maxCpuCount:1 --configuration Release
+    - name: Testing
+      run: dotnet test --no-build --configuration Release
+        

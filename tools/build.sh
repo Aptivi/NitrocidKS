@@ -32,7 +32,7 @@ fi
 
 # Download packages
 echo Downloading packages...
-"$dotnetpath" msbuild "../Kernel Simulator.sln" -t:restore -p:Configuration=$ksreleaseconf ${@:2}
+"$dotnetpath" restore "../Kernel Simulator.sln" -p:Configuration=$ksreleaseconf ${@:2}
 if [ ! $? == 0 ]; then
 	echo Download failed.
 	exit 1
@@ -40,7 +40,7 @@ fi
 
 # Build KS
 echo Building KS...
-"$dotnetpath" msbuild "../Kernel Simulator.sln" -p:Configuration=$ksreleaseconf -maxCpuCount:1 ${@:2}
+"$dotnetpath" build "../Kernel Simulator.sln" -p:Configuration=$ksreleaseconf -maxCpuCount:1 ${@:2}
 if [ ! $? == 0 ]; then
 	echo Build failed.
 	exit 1
