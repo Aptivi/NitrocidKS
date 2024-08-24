@@ -206,7 +206,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Misc_Reflection_FieldManager_GetAllFields.md&amp;value=---%0Auid%3A%20Nitrocid.Misc.Reflection.FieldManager.GetAllFields%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Reflection/FieldManager.cs/#L409">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Reflection/FieldManager.cs/#L438">View Source</a>
   </span>
   <a id="Nitrocid_Misc_Reflection_FieldManager_GetAllFields_" data-uid="Nitrocid.Misc.Reflection.FieldManager.GetAllFields*"></a>
   <h4 id="Nitrocid_Misc_Reflection_FieldManager_GetAllFields" data-uid="Nitrocid.Misc.Reflection.FieldManager.GetAllFields">GetAllFields()</h4>
@@ -238,7 +238,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Misc_Reflection_FieldManager_GetAllFieldsNoEvaluation.md&amp;value=---%0Auid%3A%20Nitrocid.Misc.Reflection.FieldManager.GetAllFieldsNoEvaluation%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Reflection/FieldManager.cs/#L434">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Reflection/FieldManager.cs/#L463">View Source</a>
   </span>
   <a id="Nitrocid_Misc_Reflection_FieldManager_GetAllFieldsNoEvaluation_" data-uid="Nitrocid.Misc.Reflection.FieldManager.GetAllFieldsNoEvaluation*"></a>
   <h4 id="Nitrocid_Misc_Reflection_FieldManager_GetAllFieldsNoEvaluation" data-uid="Nitrocid.Misc.Reflection.FieldManager.GetAllFieldsNoEvaluation">GetAllFieldsNoEvaluation()</h4>
@@ -262,6 +262,71 @@
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>&gt;</td>
         <td><p>Dictionary containing all fields</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Misc_Reflection_FieldManager_GetAllFields__1___0_.md&amp;value=---%0Auid%3A%20Nitrocid.Misc.Reflection.FieldManager.GetAllFields%60%601(%60%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Reflection/FieldManager.cs/#L489">View Source</a>
+  </span>
+  <a id="Nitrocid_Misc_Reflection_FieldManager_GetAllFields_" data-uid="Nitrocid.Misc.Reflection.FieldManager.GetAllFields*"></a>
+  <h4 id="Nitrocid_Misc_Reflection_FieldManager_GetAllFields__1___0_" data-uid="Nitrocid.Misc.Reflection.FieldManager.GetAllFields``1(``0)">GetAllFields&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Gets all the fields from the type dynamically</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, object&gt; GetAllFields&lt;T&gt;(T instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>Instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
+        <td><p>Dictionary containing all fields</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -798,7 +863,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Misc_Reflection_FieldManager_GetFieldsNoEvaluation_System_Type_.md&amp;value=---%0Auid%3A%20Nitrocid.Misc.Reflection.FieldManager.GetFieldsNoEvaluation(System.Type)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Reflection/FieldManager.cs/#L393">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Reflection/FieldManager.cs/#L422">View Source</a>
   </span>
   <a id="Nitrocid_Misc_Reflection_FieldManager_GetFieldsNoEvaluation_" data-uid="Nitrocid.Misc.Reflection.FieldManager.GetFieldsNoEvaluation*"></a>
   <h4 id="Nitrocid_Misc_Reflection_FieldManager_GetFieldsNoEvaluation_System_Type_" data-uid="Nitrocid.Misc.Reflection.FieldManager.GetFieldsNoEvaluation(System.Type)">GetFieldsNoEvaluation(Type)</h4>
@@ -840,6 +905,77 @@
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>&gt;</td>
         <td><p>Dictionary containing all fields</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Misc_Reflection_FieldManager_GetFields__1___0_System_Type_.md&amp;value=---%0Auid%3A%20Nitrocid.Misc.Reflection.FieldManager.GetFields%60%601(%60%600%2CSystem.Type)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Reflection/FieldManager.cs/#L394">View Source</a>
+  </span>
+  <a id="Nitrocid_Misc_Reflection_FieldManager_GetFields_" data-uid="Nitrocid.Misc.Reflection.FieldManager.GetFields*"></a>
+  <h4 id="Nitrocid_Misc_Reflection_FieldManager_GetFields__1___0_System_Type_" data-uid="Nitrocid.Misc.Reflection.FieldManager.GetFields``1(``0,System.Type)">GetFields&lt;T&gt;(T, Type)</h4>
+  <div class="markdown level1 summary"><p>Gets the fields from the type dynamically</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, object&gt; GetFields&lt;T&gt;(T instance, Type VariableType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>Instance</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">VariableType</span></td>
+        <td><p>Variable type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
+        <td><p>Dictionary containing all fields</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

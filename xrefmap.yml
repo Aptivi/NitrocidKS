@@ -31666,6 +31666,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Reflection.FieldManager.GetAllFieldsNoEvaluation
   nameWithType: FieldManager.GetAllFieldsNoEvaluation
+- uid: Nitrocid.Misc.Reflection.FieldManager.GetAllFields``1(``0)
+  name: GetAllFields<T>(T)
+  href: api/Nitrocid.Misc.Reflection.FieldManager.html#Nitrocid_Misc_Reflection_FieldManager_GetAllFields__1___0_
+  commentId: M:Nitrocid.Misc.Reflection.FieldManager.GetAllFields``1(``0)
+  name.vb: GetAllFields(Of T)(T)
+  fullName: Nitrocid.Misc.Reflection.FieldManager.GetAllFields<T>(T)
+  fullName.vb: Nitrocid.Misc.Reflection.FieldManager.GetAllFields(Of T)(T)
+  nameWithType: FieldManager.GetAllFields<T>(T)
+  nameWithType.vb: FieldManager.GetAllFields(Of T)(T)
 - uid: Nitrocid.Misc.Reflection.FieldManager.GetField(System.String)
   name: GetField(string)
   href: api/Nitrocid.Misc.Reflection.FieldManager.html#Nitrocid_Misc_Reflection_FieldManager_GetField_System_String_
@@ -31799,6 +31808,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Reflection.FieldManager.GetFieldsNoEvaluation
   nameWithType: FieldManager.GetFieldsNoEvaluation
+- uid: Nitrocid.Misc.Reflection.FieldManager.GetFields``1(``0,System.Type)
+  name: GetFields<T>(T, Type)
+  href: api/Nitrocid.Misc.Reflection.FieldManager.html#Nitrocid_Misc_Reflection_FieldManager_GetFields__1___0_System_Type_
+  commentId: M:Nitrocid.Misc.Reflection.FieldManager.GetFields``1(``0,System.Type)
+  name.vb: GetFields(Of T)(T, Type)
+  fullName: Nitrocid.Misc.Reflection.FieldManager.GetFields<T>(T, System.Type)
+  fullName.vb: Nitrocid.Misc.Reflection.FieldManager.GetFields(Of T)(T, System.Type)
+  nameWithType: FieldManager.GetFields<T>(T, Type)
+  nameWithType.vb: FieldManager.GetFields(Of T)(T, Type)
 - uid: Nitrocid.Misc.Reflection.FieldManager.SetFieldValue(System.String,System.Object)
   name: SetFieldValue(string, object)
   href: api/Nitrocid.Misc.Reflection.FieldManager.html#Nitrocid_Misc_Reflection_FieldManager_SetFieldValue_System_String_System_Object_
@@ -32364,6 +32382,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Reflection.PropertyManager.GetAllPropertiesNoEvaluation
   nameWithType: PropertyManager.GetAllPropertiesNoEvaluation
+- uid: Nitrocid.Misc.Reflection.PropertyManager.GetAllProperties``1(``0)
+  name: GetAllProperties<T>(T)
+  href: api/Nitrocid.Misc.Reflection.PropertyManager.html#Nitrocid_Misc_Reflection_PropertyManager_GetAllProperties__1___0_
+  commentId: M:Nitrocid.Misc.Reflection.PropertyManager.GetAllProperties``1(``0)
+  name.vb: GetAllProperties(Of T)(T)
+  fullName: Nitrocid.Misc.Reflection.PropertyManager.GetAllProperties<T>(T)
+  fullName.vb: Nitrocid.Misc.Reflection.PropertyManager.GetAllProperties(Of T)(T)
+  nameWithType: PropertyManager.GetAllProperties<T>(T)
+  nameWithType.vb: PropertyManager.GetAllProperties(Of T)(T)
 - uid: Nitrocid.Misc.Reflection.PropertyManager.GetProperties(System.Type)
   name: GetProperties(Type)
   href: api/Nitrocid.Misc.Reflection.PropertyManager.html#Nitrocid_Misc_Reflection_PropertyManager_GetProperties_System_Type_
@@ -32390,6 +32417,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Reflection.PropertyManager.GetPropertiesNoEvaluation
   nameWithType: PropertyManager.GetPropertiesNoEvaluation
+- uid: Nitrocid.Misc.Reflection.PropertyManager.GetProperties``1(``0,System.Type)
+  name: GetProperties<T>(T, Type)
+  href: api/Nitrocid.Misc.Reflection.PropertyManager.html#Nitrocid_Misc_Reflection_PropertyManager_GetProperties__1___0_System_Type_
+  commentId: M:Nitrocid.Misc.Reflection.PropertyManager.GetProperties``1(``0,System.Type)
+  name.vb: GetProperties(Of T)(T, Type)
+  fullName: Nitrocid.Misc.Reflection.PropertyManager.GetProperties<T>(T, System.Type)
+  fullName.vb: Nitrocid.Misc.Reflection.PropertyManager.GetProperties(Of T)(T, System.Type)
+  nameWithType: PropertyManager.GetProperties<T>(T, Type)
+  nameWithType.vb: PropertyManager.GetProperties(Of T)(T, Type)
 - uid: Nitrocid.Misc.Reflection.PropertyManager.GetProperty(System.String)
   name: GetProperty(string)
   href: api/Nitrocid.Misc.Reflection.PropertyManager.html#Nitrocid_Misc_Reflection_PropertyManager_GetProperty_System_String_
