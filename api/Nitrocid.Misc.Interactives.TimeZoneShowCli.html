@@ -87,90 +87,89 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">BaseInteractiveTui</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</div>
-    <div class="level2"><span class="xref">TimeZoneShowCli</span></div>
+    <div class="level1"><span class="xref">BaseInteractiveTui</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</div>
+    <div class="level2"><span class="xref">BaseInteractiveTui</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</div>
+    <div class="level3"><span class="xref">TimeZoneShowCli</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
     <div><span class="xref">IInteractiveTui</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</div>
+    <div><span class="xref">IInteractiveTui</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">BaseInteractiveTui&lt;string&gt;.HandleExit()</span>
+      <span class="xref">BaseInteractiveTui&lt;string, string&gt;.GetEntryFromItem(string)</span>
     </div>
     <div>
-      <span class="xref">BaseInteractiveTui&lt;string&gt;.LastOnOverflow()</span>
+      <span class="xref">BaseInteractiveTui&lt;string, string&gt;.GetInfoFromItem(string)</span>
     </div>
     <div>
-      <span class="xref">BaseInteractiveTui&lt;string&gt;.FirstOnUnderflow()</span>
+      <span class="xref">BaseInteractiveTui&lt;string, string&gt;.GetStatusFromItem(string)</span>
     </div>
     <div>
-      <span class="xref">BaseInteractiveTui&lt;string&gt;.SecondPaneInteractable</span>
+      <span class="xref">BaseInteractiveTui&lt;string, string&gt;.GetEntryFromItemSecondary(string)</span>
     </div>
     <div>
-      <span class="xref">BaseInteractiveTui&lt;string&gt;.AcceptsEmptyData</span>
+      <span class="xref">BaseInteractiveTui&lt;string, string&gt;.GetInfoFromItemSecondary(string)</span>
     </div>
     <div>
-      <span class="xref">BaseInteractiveTui&lt;string&gt;.SecondaryDataSource</span>
+      <span class="xref">BaseInteractiveTui&lt;string, string&gt;.GetStatusFromItemSecondary(string)</span>
     </div>
     <div>
-      <span class="xref">BaseInteractiveTui&lt;string&gt;.DataSource</span>
+      <span class="xref">BaseInteractiveTui&lt;string, string&gt;.HandleExit()</span>
     </div>
     <div>
-      <span class="xref">BaseInteractiveTui&lt;string&gt;.Instance</span>
+      <span class="xref">BaseInteractiveTui&lt;string, string&gt;.FirstPaneCurrentSelection</span>
     </div>
     <div>
-      <span class="xref">BaseInteractiveTui&lt;string&gt;.Screen</span>
+      <span class="xref">BaseInteractiveTui&lt;string, string&gt;.SecondPaneCurrentSelection</span>
+    </div>
+    <div>
+      <span class="xref">BaseInteractiveTui&lt;string, string&gt;.Status</span>
+    </div>
+    <div>
+      <span class="xref">BaseInteractiveTui&lt;string, string&gt;.CurrentPane</span>
+    </div>
+    <div>
+      <span class="xref">BaseInteractiveTui&lt;string, string&gt;.CurrentInfoLine</span>
+    </div>
+    <div>
+      <span class="xref">BaseInteractiveTui&lt;string, string&gt;.Settings</span>
+    </div>
+    <div>
+      <span class="xref">BaseInteractiveTui&lt;string, string&gt;.Bindings</span>
+    </div>
+    <div>
+      <span class="xref">BaseInteractiveTui&lt;string, string&gt;.SecondPaneInteractable</span>
+    </div>
+    <div>
+      <span class="xref">BaseInteractiveTui&lt;string, string&gt;.RefreshInterval</span>
+    </div>
+    <div>
+      <span class="xref">BaseInteractiveTui&lt;string, string&gt;.AcceptsEmptyData</span>
+    </div>
+    <div>
+      <span class="xref">BaseInteractiveTui&lt;string, string&gt;.PrimaryDataSource</span>
+    </div>
+    <div>
+      <span class="xref">BaseInteractiveTui&lt;string, string&gt;.SecondaryDataSource</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Nitrocid.html">Nitrocid</a>.<a class="xref" href="Nitrocid.Misc.html">Misc</a>.<a class="xref" href="Nitrocid.Misc.Interactives.html">Interactives</a></h6>
   <h6><strong>Assembly</strong>: Nitrocid.dll</h6>
   <h5 id="Nitrocid_Misc_Interactives_TimeZoneShowCli_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TimeZoneShowCli : BaseInteractiveTui&lt;string&gt;, IInteractiveTui&lt;string&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class TimeZoneShowCli : BaseInteractiveTui&lt;string&gt;, IInteractiveTui&lt;string&gt;, IInteractiveTui&lt;string, string&gt;</code></pre>
   </div>
   <h3 id="properties">Properties
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Misc_Interactives_TimeZoneShowCli_Bindings.md&amp;value=---%0Auid%3A%20Nitrocid.Misc.Interactives.TimeZoneShowCli.Bindings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/TimeZoneShowCli.cs/#L39">View Source</a>
-  </span>
-  <a id="Nitrocid_Misc_Interactives_TimeZoneShowCli_Bindings_" data-uid="Nitrocid.Misc.Interactives.TimeZoneShowCli.Bindings*"></a>
-  <h4 id="Nitrocid_Misc_Interactives_TimeZoneShowCli_Bindings" data-uid="Nitrocid.Misc.Interactives.TimeZoneShowCli.Bindings">Bindings</h4>
-  <div class="markdown level1 summary"><p>Time zone showing CLI bindings</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override InteractiveTuiBinding[] Bindings { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">InteractiveTuiBinding</span>[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">Terminaux.Inputs.Interactive.BaseInteractiveTui&lt;string&gt;.Bindings</span></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Misc_Interactives_TimeZoneShowCli_PrimaryDataSource.md&amp;value=---%0Auid%3A%20Nitrocid.Misc.Interactives.TimeZoneShowCli.PrimaryDataSource%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/TimeZoneShowCli.cs/#L42">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/TimeZoneShowCli.cs/#L37">View Source</a>
   </span>
   <a id="Nitrocid_Misc_Interactives_TimeZoneShowCli_PrimaryDataSource_" data-uid="Nitrocid.Misc.Interactives.TimeZoneShowCli.PrimaryDataSource*"></a>
   <h4 id="Nitrocid_Misc_Interactives_TimeZoneShowCli_PrimaryDataSource" data-uid="Nitrocid.Misc.Interactives.TimeZoneShowCli.PrimaryDataSource">PrimaryDataSource</h4>
@@ -197,13 +196,13 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">Terminaux.Inputs.Interactive.BaseInteractiveTui&lt;string&gt;.PrimaryDataSource</span></div>
+  <div><span class="xref">Terminaux.Inputs.Interactive.BaseInteractiveTui&lt;string, string&gt;.PrimaryDataSource</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Misc_Interactives_TimeZoneShowCli_RefreshInterval.md&amp;value=---%0Auid%3A%20Nitrocid.Misc.Interactives.TimeZoneShowCli.RefreshInterval%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/TimeZoneShowCli.cs/#L46">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/TimeZoneShowCli.cs/#L41">View Source</a>
   </span>
   <a id="Nitrocid_Misc_Interactives_TimeZoneShowCli_RefreshInterval_" data-uid="Nitrocid.Misc.Interactives.TimeZoneShowCli.RefreshInterval*"></a>
   <h4 id="Nitrocid_Misc_Interactives_TimeZoneShowCli_RefreshInterval" data-uid="Nitrocid.Misc.Interactives.TimeZoneShowCli.RefreshInterval">RefreshInterval</h4>
@@ -230,7 +229,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">Terminaux.Inputs.Interactive.BaseInteractiveTui&lt;string&gt;.RefreshInterval</span></div>
+  <div><span class="xref">Terminaux.Inputs.Interactive.BaseInteractiveTui&lt;string, string&gt;.RefreshInterval</span></div>
   <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
@@ -238,7 +237,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Misc_Interactives_TimeZoneShowCli_GetEntryFromItem_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Misc.Interactives.TimeZoneShowCli.GetEntryFromItem(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/TimeZoneShowCli.cs/#L71">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/TimeZoneShowCli.cs/#L66">View Source</a>
   </span>
   <a id="Nitrocid_Misc_Interactives_TimeZoneShowCli_GetEntryFromItem_" data-uid="Nitrocid.Misc.Interactives.TimeZoneShowCli.GetEntryFromItem*"></a>
   <h4 id="Nitrocid_Misc_Interactives_TimeZoneShowCli_GetEntryFromItem_System_String_" data-uid="Nitrocid.Misc.Interactives.TimeZoneShowCli.GetEntryFromItem(System.String)">GetEntryFromItem(string)</h4>
@@ -283,13 +282,13 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">BaseInteractiveTui&lt;string&gt;.GetEntryFromItem(string)</a></div>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">BaseInteractiveTui&lt;string, string&gt;.GetEntryFromItem(string)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Misc_Interactives_TimeZoneShowCli_GetInfoFromItem_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Misc.Interactives.TimeZoneShowCli.GetInfoFromItem(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/TimeZoneShowCli.cs/#L50">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/TimeZoneShowCli.cs/#L45">View Source</a>
   </span>
   <a id="Nitrocid_Misc_Interactives_TimeZoneShowCli_GetInfoFromItem_" data-uid="Nitrocid.Misc.Interactives.TimeZoneShowCli.GetInfoFromItem*"></a>
   <h4 id="Nitrocid_Misc_Interactives_TimeZoneShowCli_GetInfoFromItem_System_String_" data-uid="Nitrocid.Misc.Interactives.TimeZoneShowCli.GetInfoFromItem(System.String)">GetInfoFromItem(string)</h4>
@@ -335,13 +334,13 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">BaseInteractiveTui&lt;string&gt;.GetInfoFromItem(string)</a></div>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">BaseInteractiveTui&lt;string, string&gt;.GetInfoFromItem(string)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Misc_Interactives_TimeZoneShowCli_GetStatusFromItem_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Misc.Interactives.TimeZoneShowCli.GetStatusFromItem(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/TimeZoneShowCli.cs/#L63">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/TimeZoneShowCli.cs/#L58">View Source</a>
   </span>
   <a id="Nitrocid_Misc_Interactives_TimeZoneShowCli_GetStatusFromItem_" data-uid="Nitrocid.Misc.Interactives.TimeZoneShowCli.GetStatusFromItem*"></a>
   <h4 id="Nitrocid_Misc_Interactives_TimeZoneShowCli_GetStatusFromItem_System_String_" data-uid="Nitrocid.Misc.Interactives.TimeZoneShowCli.GetStatusFromItem(System.String)">GetStatusFromItem(string)</h4>
@@ -386,10 +385,13 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">BaseInteractiveTui&lt;string&gt;.GetStatusFromItem(string)</a></div>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">BaseInteractiveTui&lt;string, string&gt;.GetStatusFromItem(string)</a></div>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">Terminaux.Inputs.Interactive.IInteractiveTui&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Terminaux.Inputs.Interactive.IInteractiveTui&lt;TPrimary, TSecondary&gt;</span>
   </div>
 
 </article>

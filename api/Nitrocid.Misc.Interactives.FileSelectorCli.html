@@ -87,48 +87,80 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">BaseInteractiveTui</span>&lt;<a class="xref" href="Nitrocid.Files.Instances.FileSystemEntry.html">FileSystemEntry</a>&gt;</div>
-    <div class="level2"><span class="xref">FileSelectorCli</span></div>
+    <div class="level1"><span class="xref">BaseInteractiveTui</span>&lt;<a class="xref" href="Nitrocid.Files.Instances.FileSystemEntry.html">FileSystemEntry</a>, <a class="xref" href="Nitrocid.Files.Instances.FileSystemEntry.html">FileSystemEntry</a>&gt;</div>
+    <div class="level2"><span class="xref">BaseInteractiveTui</span>&lt;<a class="xref" href="Nitrocid.Files.Instances.FileSystemEntry.html">FileSystemEntry</a>&gt;</div>
+    <div class="level3"><span class="xref">FileSelectorCli</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
     <div><span class="xref">IInteractiveTui</span>&lt;<a class="xref" href="Nitrocid.Files.Instances.FileSystemEntry.html">FileSystemEntry</a>&gt;</div>
+    <div><span class="xref">IInteractiveTui</span>&lt;<a class="xref" href="Nitrocid.Files.Instances.FileSystemEntry.html">FileSystemEntry</a>, <a class="xref" href="Nitrocid.Files.Instances.FileSystemEntry.html">FileSystemEntry</a>&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry&gt;.HandleExit()</span>
+      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;.GetEntryFromItem(FileSystemEntry)</span>
     </div>
     <div>
-      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry&gt;.LastOnOverflow()</span>
+      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;.GetInfoFromItem(FileSystemEntry)</span>
     </div>
     <div>
-      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry&gt;.FirstOnUnderflow()</span>
+      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;.GetStatusFromItem(FileSystemEntry)</span>
     </div>
     <div>
-      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry&gt;.SecondPaneInteractable</span>
+      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;.GetEntryFromItemSecondary(FileSystemEntry)</span>
     </div>
     <div>
-      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry&gt;.RefreshInterval</span>
+      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;.GetInfoFromItemSecondary(FileSystemEntry)</span>
     </div>
     <div>
-      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry&gt;.SecondaryDataSource</span>
+      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;.GetStatusFromItemSecondary(FileSystemEntry)</span>
     </div>
     <div>
-      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry&gt;.DataSource</span>
+      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;.HandleExit()</span>
     </div>
     <div>
-      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry&gt;.Instance</span>
+      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;.FirstPaneCurrentSelection</span>
     </div>
     <div>
-      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry&gt;.Screen</span>
+      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;.SecondPaneCurrentSelection</span>
+    </div>
+    <div>
+      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;.Status</span>
+    </div>
+    <div>
+      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;.CurrentPane</span>
+    </div>
+    <div>
+      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;.CurrentInfoLine</span>
+    </div>
+    <div>
+      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;.Settings</span>
+    </div>
+    <div>
+      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;.Bindings</span>
+    </div>
+    <div>
+      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;.SecondPaneInteractable</span>
+    </div>
+    <div>
+      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;.RefreshInterval</span>
+    </div>
+    <div>
+      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;.AcceptsEmptyData</span>
+    </div>
+    <div>
+      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;.PrimaryDataSource</span>
+    </div>
+    <div>
+      <span class="xref">BaseInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;.SecondaryDataSource</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Nitrocid.html">Nitrocid</a>.<a class="xref" href="Nitrocid.Misc.html">Misc</a>.<a class="xref" href="Nitrocid.Misc.Interactives.html">Interactives</a></h6>
   <h6><strong>Assembly</strong>: Nitrocid.dll</h6>
   <h5 id="Nitrocid_Misc_Interactives_FileSelectorCli_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FileSelectorCli : BaseInteractiveTui&lt;FileSystemEntry&gt;, IInteractiveTui&lt;FileSystemEntry&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class FileSelectorCli : BaseInteractiveTui&lt;FileSystemEntry&gt;, IInteractiveTui&lt;FileSystemEntry&gt;, IInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;</code></pre>
   </div>
   <h3 id="properties">Properties
 </h3>
@@ -137,7 +169,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Misc_Interactives_FileSelectorCli_AcceptsEmptyData.md&amp;value=---%0Auid%3A%20Nitrocid.Misc.Interactives.FileSelectorCli.AcceptsEmptyData%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/FileSelectorCli.cs/#L115">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/FileSelectorCli.cs/#L83">View Source</a>
   </span>
   <a id="Nitrocid_Misc_Interactives_FileSelectorCli_AcceptsEmptyData_" data-uid="Nitrocid.Misc.Interactives.FileSelectorCli.AcceptsEmptyData*"></a>
   <h4 id="Nitrocid_Misc_Interactives_FileSelectorCli_AcceptsEmptyData" data-uid="Nitrocid.Misc.Interactives.FileSelectorCli.AcceptsEmptyData">AcceptsEmptyData</h4>
@@ -164,46 +196,13 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">Terminaux.Inputs.Interactive.BaseInteractiveTui&lt;Nitrocid.Files.Instances.FileSystemEntry&gt;.AcceptsEmptyData</span></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Misc_Interactives_FileSelectorCli_Bindings.md&amp;value=---%0Auid%3A%20Nitrocid.Misc.Interactives.FileSelectorCli.Bindings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/FileSelectorCli.cs/#L62">View Source</a>
-  </span>
-  <a id="Nitrocid_Misc_Interactives_FileSelectorCli_Bindings_" data-uid="Nitrocid.Misc.Interactives.FileSelectorCli.Bindings*"></a>
-  <h4 id="Nitrocid_Misc_Interactives_FileSelectorCli_Bindings" data-uid="Nitrocid.Misc.Interactives.FileSelectorCli.Bindings">Bindings</h4>
-  <div class="markdown level1 summary"><p>File Selector bindings</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override InteractiveTuiBinding[] Bindings { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">InteractiveTuiBinding</span>[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">Terminaux.Inputs.Interactive.BaseInteractiveTui&lt;Nitrocid.Files.Instances.FileSystemEntry&gt;.Bindings</span></div>
+  <div><span class="xref">Terminaux.Inputs.Interactive.BaseInteractiveTui&lt;Nitrocid.Files.Instances.FileSystemEntry, Nitrocid.Files.Instances.FileSystemEntry&gt;.AcceptsEmptyData</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Misc_Interactives_FileSelectorCli_PrimaryDataSource.md&amp;value=---%0Auid%3A%20Nitrocid.Misc.Interactives.FileSelectorCli.PrimaryDataSource%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/FileSelectorCli.cs/#L92">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/FileSelectorCli.cs/#L60">View Source</a>
   </span>
   <a id="Nitrocid_Misc_Interactives_FileSelectorCli_PrimaryDataSource_" data-uid="Nitrocid.Misc.Interactives.FileSelectorCli.PrimaryDataSource*"></a>
   <h4 id="Nitrocid_Misc_Interactives_FileSelectorCli_PrimaryDataSource" data-uid="Nitrocid.Misc.Interactives.FileSelectorCli.PrimaryDataSource">PrimaryDataSource</h4>
@@ -230,13 +229,13 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">Terminaux.Inputs.Interactive.BaseInteractiveTui&lt;Nitrocid.Files.Instances.FileSystemEntry&gt;.PrimaryDataSource</span></div>
+  <div><span class="xref">Terminaux.Inputs.Interactive.BaseInteractiveTui&lt;Nitrocid.Files.Instances.FileSystemEntry, Nitrocid.Files.Instances.FileSystemEntry&gt;.PrimaryDataSource</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Misc_Interactives_FileSelectorCli_SelectedFile.md&amp;value=---%0Auid%3A%20Nitrocid.Misc.Interactives.FileSelectorCli.SelectedFile%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/FileSelectorCli.cs/#L203">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/FileSelectorCli.cs/#L171">View Source</a>
   </span>
   <a id="Nitrocid_Misc_Interactives_FileSelectorCli_SelectedFile_" data-uid="Nitrocid.Misc.Interactives.FileSelectorCli.SelectedFile*"></a>
   <h4 id="Nitrocid_Misc_Interactives_FileSelectorCli_SelectedFile" data-uid="Nitrocid.Misc.Interactives.FileSelectorCli.SelectedFile">SelectedFile</h4>
@@ -269,7 +268,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Misc_Interactives_FileSelectorCli_GetEntryFromItem_Nitrocid_Files_Instances_FileSystemEntry_.md&amp;value=---%0Auid%3A%20Nitrocid.Misc.Interactives.FileSelectorCli.GetEntryFromItem(Nitrocid.Files.Instances.FileSystemEntry)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/FileSelectorCli.cs/#L174">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/FileSelectorCli.cs/#L142">View Source</a>
   </span>
   <a id="Nitrocid_Misc_Interactives_FileSelectorCli_GetEntryFromItem_" data-uid="Nitrocid.Misc.Interactives.FileSelectorCli.GetEntryFromItem*"></a>
   <h4 id="Nitrocid_Misc_Interactives_FileSelectorCli_GetEntryFromItem_Nitrocid_Files_Instances_FileSystemEntry_" data-uid="Nitrocid.Misc.Interactives.FileSelectorCli.GetEntryFromItem(Nitrocid.Files.Instances.FileSystemEntry)">GetEntryFromItem(FileSystemEntry)</h4>
@@ -314,13 +313,13 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Nitrocid.Files.Instances.FileSystemEntry.html">BaseInteractiveTui&lt;FileSystemEntry&gt;.GetEntryFromItem(FileSystemEntry)</a></div>
+  <div><a class="xref" href="Nitrocid.Files.Instances.FileSystemEntry.html">BaseInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;.GetEntryFromItem(FileSystemEntry)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Misc_Interactives_FileSelectorCli_GetInfoFromItem_Nitrocid_Files_Instances_FileSystemEntry_.md&amp;value=---%0Auid%3A%20Nitrocid.Misc.Interactives.FileSelectorCli.GetInfoFromItem(Nitrocid.Files.Instances.FileSystemEntry)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/FileSelectorCli.cs/#L143">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/FileSelectorCli.cs/#L111">View Source</a>
   </span>
   <a id="Nitrocid_Misc_Interactives_FileSelectorCli_GetInfoFromItem_" data-uid="Nitrocid.Misc.Interactives.FileSelectorCli.GetInfoFromItem*"></a>
   <h4 id="Nitrocid_Misc_Interactives_FileSelectorCli_GetInfoFromItem_Nitrocid_Files_Instances_FileSystemEntry_" data-uid="Nitrocid.Misc.Interactives.FileSelectorCli.GetInfoFromItem(Nitrocid.Files.Instances.FileSystemEntry)">GetInfoFromItem(FileSystemEntry)</h4>
@@ -366,13 +365,13 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Nitrocid.Files.Instances.FileSystemEntry.html">BaseInteractiveTui&lt;FileSystemEntry&gt;.GetInfoFromItem(FileSystemEntry)</a></div>
+  <div><a class="xref" href="Nitrocid.Files.Instances.FileSystemEntry.html">BaseInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;.GetInfoFromItem(FileSystemEntry)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Misc_Interactives_FileSelectorCli_GetStatusFromItem_Nitrocid_Files_Instances_FileSystemEntry_.md&amp;value=---%0Auid%3A%20Nitrocid.Misc.Interactives.FileSelectorCli.GetStatusFromItem(Nitrocid.Files.Instances.FileSystemEntry)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/FileSelectorCli.cs/#L119">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Interactives/FileSelectorCli.cs/#L87">View Source</a>
   </span>
   <a id="Nitrocid_Misc_Interactives_FileSelectorCli_GetStatusFromItem_" data-uid="Nitrocid.Misc.Interactives.FileSelectorCli.GetStatusFromItem*"></a>
   <h4 id="Nitrocid_Misc_Interactives_FileSelectorCli_GetStatusFromItem_Nitrocid_Files_Instances_FileSystemEntry_" data-uid="Nitrocid.Misc.Interactives.FileSelectorCli.GetStatusFromItem(Nitrocid.Files.Instances.FileSystemEntry)">GetStatusFromItem(FileSystemEntry)</h4>
@@ -417,10 +416,13 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Nitrocid.Files.Instances.FileSystemEntry.html">BaseInteractiveTui&lt;FileSystemEntry&gt;.GetStatusFromItem(FileSystemEntry)</a></div>
+  <div><a class="xref" href="Nitrocid.Files.Instances.FileSystemEntry.html">BaseInteractiveTui&lt;FileSystemEntry, FileSystemEntry&gt;.GetStatusFromItem(FileSystemEntry)</a></div>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">Terminaux.Inputs.Interactive.IInteractiveTui&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Terminaux.Inputs.Interactive.IInteractiveTui&lt;TPrimary, TSecondary&gt;</span>
   </div>
 
 </article>

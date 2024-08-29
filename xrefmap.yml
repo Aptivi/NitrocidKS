@@ -2742,15 +2742,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteSliderAbsolute
   nameWithType: TextFancyWriters.WriteSliderAbsolute
-- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteTable(System.String[],System.String[0:,0:],System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Collections.Generic.List{Terminaux.Writer.FancyWriters.Tools.CellOptions})
-  name: WriteTable(string[], string[,], int, KernelColorType, KernelColorType, KernelColorType, KernelColorType, bool, List<CellOptions>)
-  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteTable_System_String___System_String_0__0___System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Boolean_System_Collections_Generic_List_Terminaux_Writer_FancyWriters_Tools_CellOptions__
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteTable(System.String[],System.String[0:,0:],System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Boolean,System.Collections.Generic.List{Terminaux.Writer.FancyWriters.Tools.CellOptions})
-  name.vb: WriteTable(String(), String(,), Integer, KernelColorType, KernelColorType, KernelColorType, KernelColorType, Boolean, List(Of CellOptions))
-  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteTable(string[], string[,], int, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, bool, System.Collections.Generic.List<Terminaux.Writer.FancyWriters.Tools.CellOptions>)
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteTable(String(), String(,), Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Boolean, System.Collections.Generic.List(Of Terminaux.Writer.FancyWriters.Tools.CellOptions))
-  nameWithType: TextFancyWriters.WriteTable(string[], string[,], int, KernelColorType, KernelColorType, KernelColorType, KernelColorType, bool, List<CellOptions>)
-  nameWithType.vb: TextFancyWriters.WriteTable(String(), String(,), Integer, KernelColorType, KernelColorType, KernelColorType, KernelColorType, Boolean, List(Of CellOptions))
+- uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteTable(System.String[0:,0:],System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Collections.Generic.List{Terminaux.Writer.FancyWriters.Tools.CellOptions},Terminaux.Writer.FancyWriters.Tools.BorderSettings)
+  name: WriteTable(string[,], int, int, int, int, bool, KernelColorType, KernelColorType, KernelColorType, KernelColorType, List<CellOptions>, BorderSettings)
+  href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteTable_System_String_0__0___System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Collections_Generic_List_Terminaux_Writer_FancyWriters_Tools_CellOptions__Terminaux_Writer_FancyWriters_Tools_BorderSettings_
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteTable(System.String[0:,0:],System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Collections.Generic.List{Terminaux.Writer.FancyWriters.Tools.CellOptions},Terminaux.Writer.FancyWriters.Tools.BorderSettings)
+  name.vb: WriteTable(String(,), Integer, Integer, Integer, Integer, Boolean, KernelColorType, KernelColorType, KernelColorType, KernelColorType, List(Of CellOptions), BorderSettings)
+  fullName: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteTable(string[,], int, int, int, int, bool, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, System.Collections.Generic.List<Terminaux.Writer.FancyWriters.Tools.CellOptions>, Terminaux.Writer.FancyWriters.Tools.BorderSettings)
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteTable(String(,), Integer, Integer, Integer, Integer, Boolean, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, System.Collections.Generic.List(Of Terminaux.Writer.FancyWriters.Tools.CellOptions), Terminaux.Writer.FancyWriters.Tools.BorderSettings)
+  nameWithType: TextFancyWriters.WriteTable(string[,], int, int, int, int, bool, KernelColorType, KernelColorType, KernelColorType, KernelColorType, List<CellOptions>, BorderSettings)
+  nameWithType.vb: TextFancyWriters.WriteTable(String(,), Integer, Integer, Integer, Integer, Boolean, KernelColorType, KernelColorType, KernelColorType, KernelColorType, List(Of CellOptions), BorderSettings)
 - uid: Nitrocid.ConsoleBase.Writers.TextFancyWriters.WriteTable*
   name: WriteTable
   href: api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html#Nitrocid_ConsoleBase_Writers_TextFancyWriters_WriteTable_
@@ -29825,19 +29825,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FileManagerCli.AcceptsEmptyData
   nameWithType: FileManagerCli.AcceptsEmptyData
-- uid: Nitrocid.Misc.Interactives.FileManagerCli.Bindings
-  name: Bindings
-  href: api/Nitrocid.Misc.Interactives.FileManagerCli.html#Nitrocid_Misc_Interactives_FileManagerCli_Bindings
-  commentId: P:Nitrocid.Misc.Interactives.FileManagerCli.Bindings
-  fullName: Nitrocid.Misc.Interactives.FileManagerCli.Bindings
-  nameWithType: FileManagerCli.Bindings
-- uid: Nitrocid.Misc.Interactives.FileManagerCli.Bindings*
-  name: Bindings
-  href: api/Nitrocid.Misc.Interactives.FileManagerCli.html#Nitrocid_Misc_Interactives_FileManagerCli_Bindings_
-  commentId: Overload:Nitrocid.Misc.Interactives.FileManagerCli.Bindings
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Interactives.FileManagerCli.Bindings
-  nameWithType: FileManagerCli.Bindings
 - uid: Nitrocid.Misc.Interactives.FileManagerCli.GetEntryFromItem(Nitrocid.Files.Instances.FileSystemEntry)
   name: GetEntryFromItem(FileSystemEntry)
   href: api/Nitrocid.Misc.Interactives.FileManagerCli.html#Nitrocid_Misc_Interactives_FileManagerCli_GetEntryFromItem_Nitrocid_Files_Instances_FileSystemEntry_
@@ -29922,19 +29909,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FileSelectorCli.AcceptsEmptyData
   nameWithType: FileSelectorCli.AcceptsEmptyData
-- uid: Nitrocid.Misc.Interactives.FileSelectorCli.Bindings
-  name: Bindings
-  href: api/Nitrocid.Misc.Interactives.FileSelectorCli.html#Nitrocid_Misc_Interactives_FileSelectorCli_Bindings
-  commentId: P:Nitrocid.Misc.Interactives.FileSelectorCli.Bindings
-  fullName: Nitrocid.Misc.Interactives.FileSelectorCli.Bindings
-  nameWithType: FileSelectorCli.Bindings
-- uid: Nitrocid.Misc.Interactives.FileSelectorCli.Bindings*
-  name: Bindings
-  href: api/Nitrocid.Misc.Interactives.FileSelectorCli.html#Nitrocid_Misc_Interactives_FileSelectorCli_Bindings_
-  commentId: Overload:Nitrocid.Misc.Interactives.FileSelectorCli.Bindings
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Interactives.FileSelectorCli.Bindings
-  nameWithType: FileSelectorCli.Bindings
 - uid: Nitrocid.Misc.Interactives.FileSelectorCli.GetEntryFromItem(Nitrocid.Files.Instances.FileSystemEntry)
   name: GetEntryFromItem(FileSystemEntry)
   href: api/Nitrocid.Misc.Interactives.FileSelectorCli.html#Nitrocid_Misc_Interactives_FileSelectorCli_GetEntryFromItem_Nitrocid_Files_Instances_FileSystemEntry_
@@ -30019,19 +29993,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FilesSelectorCli.AcceptsEmptyData
   nameWithType: FilesSelectorCli.AcceptsEmptyData
-- uid: Nitrocid.Misc.Interactives.FilesSelectorCli.Bindings
-  name: Bindings
-  href: api/Nitrocid.Misc.Interactives.FilesSelectorCli.html#Nitrocid_Misc_Interactives_FilesSelectorCli_Bindings
-  commentId: P:Nitrocid.Misc.Interactives.FilesSelectorCli.Bindings
-  fullName: Nitrocid.Misc.Interactives.FilesSelectorCli.Bindings
-  nameWithType: FilesSelectorCli.Bindings
-- uid: Nitrocid.Misc.Interactives.FilesSelectorCli.Bindings*
-  name: Bindings
-  href: api/Nitrocid.Misc.Interactives.FilesSelectorCli.html#Nitrocid_Misc_Interactives_FilesSelectorCli_Bindings_
-  commentId: Overload:Nitrocid.Misc.Interactives.FilesSelectorCli.Bindings
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Interactives.FilesSelectorCli.Bindings
-  nameWithType: FilesSelectorCli.Bindings
 - uid: Nitrocid.Misc.Interactives.FilesSelectorCli.GetEntryFromItem(Nitrocid.Files.Instances.FileSystemEntry)
   name: GetEntryFromItem(FileSystemEntry)
   href: api/Nitrocid.Misc.Interactives.FilesSelectorCli.html#Nitrocid_Misc_Interactives_FilesSelectorCli_GetEntryFromItem_Nitrocid_Files_Instances_FileSystemEntry_
@@ -30116,19 +30077,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FolderSelectorCli.AcceptsEmptyData
   nameWithType: FolderSelectorCli.AcceptsEmptyData
-- uid: Nitrocid.Misc.Interactives.FolderSelectorCli.Bindings
-  name: Bindings
-  href: api/Nitrocid.Misc.Interactives.FolderSelectorCli.html#Nitrocid_Misc_Interactives_FolderSelectorCli_Bindings
-  commentId: P:Nitrocid.Misc.Interactives.FolderSelectorCli.Bindings
-  fullName: Nitrocid.Misc.Interactives.FolderSelectorCli.Bindings
-  nameWithType: FolderSelectorCli.Bindings
-- uid: Nitrocid.Misc.Interactives.FolderSelectorCli.Bindings*
-  name: Bindings
-  href: api/Nitrocid.Misc.Interactives.FolderSelectorCli.html#Nitrocid_Misc_Interactives_FolderSelectorCli_Bindings_
-  commentId: Overload:Nitrocid.Misc.Interactives.FolderSelectorCli.Bindings
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Interactives.FolderSelectorCli.Bindings
-  nameWithType: FolderSelectorCli.Bindings
 - uid: Nitrocid.Misc.Interactives.FolderSelectorCli.GetEntryFromItem(Nitrocid.Files.Instances.FileSystemEntry)
   name: GetEntryFromItem(FileSystemEntry)
   href: api/Nitrocid.Misc.Interactives.FolderSelectorCli.html#Nitrocid_Misc_Interactives_FolderSelectorCli_GetEntryFromItem_Nitrocid_Files_Instances_FileSystemEntry_
@@ -30213,19 +30161,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FoldersSelectorCli.AcceptsEmptyData
   nameWithType: FoldersSelectorCli.AcceptsEmptyData
-- uid: Nitrocid.Misc.Interactives.FoldersSelectorCli.Bindings
-  name: Bindings
-  href: api/Nitrocid.Misc.Interactives.FoldersSelectorCli.html#Nitrocid_Misc_Interactives_FoldersSelectorCli_Bindings
-  commentId: P:Nitrocid.Misc.Interactives.FoldersSelectorCli.Bindings
-  fullName: Nitrocid.Misc.Interactives.FoldersSelectorCli.Bindings
-  nameWithType: FoldersSelectorCli.Bindings
-- uid: Nitrocid.Misc.Interactives.FoldersSelectorCli.Bindings*
-  name: Bindings
-  href: api/Nitrocid.Misc.Interactives.FoldersSelectorCli.html#Nitrocid_Misc_Interactives_FoldersSelectorCli_Bindings_
-  commentId: Overload:Nitrocid.Misc.Interactives.FoldersSelectorCli.Bindings
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Interactives.FoldersSelectorCli.Bindings
-  nameWithType: FoldersSelectorCli.Bindings
 - uid: Nitrocid.Misc.Interactives.FoldersSelectorCli.GetEntryFromItem(Nitrocid.Files.Instances.FileSystemEntry)
   name: GetEntryFromItem(FileSystemEntry)
   href: api/Nitrocid.Misc.Interactives.FoldersSelectorCli.html#Nitrocid_Misc_Interactives_FoldersSelectorCli_GetEntryFromItem_Nitrocid_Files_Instances_FileSystemEntry_
@@ -30297,19 +30232,6 @@ references:
   commentId: T:Nitrocid.Misc.Interactives.ManualViewerCli
   fullName: Nitrocid.Misc.Interactives.ManualViewerCli
   nameWithType: ManualViewerCli
-- uid: Nitrocid.Misc.Interactives.ManualViewerCli.Bindings
-  name: Bindings
-  href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_Bindings
-  commentId: P:Nitrocid.Misc.Interactives.ManualViewerCli.Bindings
-  fullName: Nitrocid.Misc.Interactives.ManualViewerCli.Bindings
-  nameWithType: ManualViewerCli.Bindings
-- uid: Nitrocid.Misc.Interactives.ManualViewerCli.Bindings*
-  name: Bindings
-  href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_Bindings_
-  commentId: Overload:Nitrocid.Misc.Interactives.ManualViewerCli.Bindings
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Interactives.ManualViewerCli.Bindings
-  nameWithType: ManualViewerCli.Bindings
 - uid: Nitrocid.Misc.Interactives.ManualViewerCli.GetEntryFromItem(Nitrocid.Modifications.ManPages.Manual)
   name: GetEntryFromItem(Manual)
   href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_GetEntryFromItem_Nitrocid_Modifications_ManPages_Manual_
@@ -30381,19 +30303,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.SettingsCli.AcceptsEmptyData
   nameWithType: SettingsCli.AcceptsEmptyData
-- uid: Nitrocid.Misc.Interactives.SettingsCli.Bindings
-  name: Bindings
-  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_Bindings
-  commentId: P:Nitrocid.Misc.Interactives.SettingsCli.Bindings
-  fullName: Nitrocid.Misc.Interactives.SettingsCli.Bindings
-  nameWithType: SettingsCli.Bindings
-- uid: Nitrocid.Misc.Interactives.SettingsCli.Bindings*
-  name: Bindings
-  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_Bindings_
-  commentId: Overload:Nitrocid.Misc.Interactives.SettingsCli.Bindings
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Interactives.SettingsCli.Bindings
-  nameWithType: SettingsCli.Bindings
 - uid: Nitrocid.Misc.Interactives.SettingsCli.GetEntryFromItem(System.ValueTuple{System.String,System.Int32})
   name: GetEntryFromItem((string, int))
   href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_GetEntryFromItem_System_ValueTuple_System_String_System_Int32__
@@ -30487,19 +30396,6 @@ references:
   commentId: T:Nitrocid.Misc.Interactives.TaskManagerCli
   fullName: Nitrocid.Misc.Interactives.TaskManagerCli
   nameWithType: TaskManagerCli
-- uid: Nitrocid.Misc.Interactives.TaskManagerCli.Bindings
-  name: Bindings
-  href: api/Nitrocid.Misc.Interactives.TaskManagerCli.html#Nitrocid_Misc_Interactives_TaskManagerCli_Bindings
-  commentId: P:Nitrocid.Misc.Interactives.TaskManagerCli.Bindings
-  fullName: Nitrocid.Misc.Interactives.TaskManagerCli.Bindings
-  nameWithType: TaskManagerCli.Bindings
-- uid: Nitrocid.Misc.Interactives.TaskManagerCli.Bindings*
-  name: Bindings
-  href: api/Nitrocid.Misc.Interactives.TaskManagerCli.html#Nitrocid_Misc_Interactives_TaskManagerCli_Bindings_
-  commentId: Overload:Nitrocid.Misc.Interactives.TaskManagerCli.Bindings
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Interactives.TaskManagerCli.Bindings
-  nameWithType: TaskManagerCli.Bindings
 - uid: Nitrocid.Misc.Interactives.TaskManagerCli.GetEntryFromItem(System.ValueTuple{System.Int32,System.Object})
   name: GetEntryFromItem((int, object))
   href: api/Nitrocid.Misc.Interactives.TaskManagerCli.html#Nitrocid_Misc_Interactives_TaskManagerCli_GetEntryFromItem_System_ValueTuple_System_Int32_System_Object__
@@ -30580,19 +30476,6 @@ references:
   commentId: T:Nitrocid.Misc.Interactives.TimeZoneShowCli
   fullName: Nitrocid.Misc.Interactives.TimeZoneShowCli
   nameWithType: TimeZoneShowCli
-- uid: Nitrocid.Misc.Interactives.TimeZoneShowCli.Bindings
-  name: Bindings
-  href: api/Nitrocid.Misc.Interactives.TimeZoneShowCli.html#Nitrocid_Misc_Interactives_TimeZoneShowCli_Bindings
-  commentId: P:Nitrocid.Misc.Interactives.TimeZoneShowCli.Bindings
-  fullName: Nitrocid.Misc.Interactives.TimeZoneShowCli.Bindings
-  nameWithType: TimeZoneShowCli.Bindings
-- uid: Nitrocid.Misc.Interactives.TimeZoneShowCli.Bindings*
-  name: Bindings
-  href: api/Nitrocid.Misc.Interactives.TimeZoneShowCli.html#Nitrocid_Misc_Interactives_TimeZoneShowCli_Bindings_
-  commentId: Overload:Nitrocid.Misc.Interactives.TimeZoneShowCli.Bindings
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Interactives.TimeZoneShowCli.Bindings
-  nameWithType: TimeZoneShowCli.Bindings
 - uid: Nitrocid.Misc.Interactives.TimeZoneShowCli.GetEntryFromItem(System.String)
   name: GetEntryFromItem(string)
   href: api/Nitrocid.Misc.Interactives.TimeZoneShowCli.html#Nitrocid_Misc_Interactives_TimeZoneShowCli_GetEntryFromItem_System_String_
