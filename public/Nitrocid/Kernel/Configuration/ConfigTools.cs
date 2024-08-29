@@ -39,6 +39,7 @@ using Nitrocid.ConsoleBase.Colors;
 using Nitrocid.Files.Operations.Querying;
 using Terminaux.Inputs;
 using Nitrocid.Misc.Reflection.Internal;
+using Terminaux.Inputs.Styles;
 
 namespace Nitrocid.Kernel.Configuration
 {

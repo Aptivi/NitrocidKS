@@ -22,9 +22,10 @@ using Nitrocid.Languages;
 using Nitrocid.Misc.Screensaver;
 using Nitrocid.Shell.ShellBase.Commands;
 using Nitrocid.Shell.ShellBase.Switches;
-using Terminaux.Reader;
 using Terminaux.Inputs.Interactive;
 using Nitrocid.Misc.Interactives;
+using System;
+using Terminaux.Inputs;
 
 namespace Nitrocid.Shell.Shells.UESH.Commands
 {
@@ -41,7 +42,11 @@ namespace Nitrocid.Shell.Shells.UESH.Commands
         {
             bool selectionMode = SwitchManager.ContainsSwitch(parameters.SwitchesList, "-select");
             if (selectionMode)
-                InteractiveTuiTools.OpenInteractiveTui(new ScreensaverTui());
+            {
+                var tui = new ScreensaverCli();
+                tui.Bindings.Add(new InteractiveTuiBinding<string>(Translate.DoTranslation("Preview"), ConsoleKey.Enter, (saver, _, _, _) => tui.PressAndBailHelper(saver)));
+                InteractiveTuiTools.OpenInteractiveTui(tui);
+            }
             else
             {
                 if (parameters.ArgumentsList.Length != 0)
@@ -63,7 +68,7 @@ namespace Nitrocid.Shell.Shells.UESH.Commands
         {
             if (ScreensaverManager.inSaver)
             {
-                TermReader.ReadKey();
+                Input.ReadKey();
                 ScreensaverDisplayer.BailFromScreensaver();
             }
         }

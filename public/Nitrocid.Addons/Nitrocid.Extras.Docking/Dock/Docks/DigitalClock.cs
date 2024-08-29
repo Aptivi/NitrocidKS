@@ -39,6 +39,7 @@ using Nitrocid.Users.Login.Motd;
 using Nitrocid.Network.Types.RSS;
 using Nitrocid.Kernel.Configuration;
 using Terminaux.Reader;
+using Terminaux.Inputs;
 
 namespace Nitrocid.Extras.Docking.Dock.Docks
 {
@@ -171,7 +172,7 @@ namespace Nitrocid.Extras.Docking.Dock.Docks
                 ThreadManager.SleepNoBlock(1);
             }
             if (ConsoleWrapper.KeyAvailable)
-                TermReader.ReadKey();
+                Input.ReadKey();
             ScreenTools.UnsetCurrent(screen);
         }
     }

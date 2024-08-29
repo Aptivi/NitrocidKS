@@ -35,6 +35,7 @@ using Terminaux.Base;
 using Terminaux.Inputs;
 using Terminaux.Reader;
 using Nitrocid.Kernel.Configuration.Migration;
+using Terminaux.Inputs.Styles;
 
 namespace Nitrocid.Kernel.Configuration.Settings
 {
@@ -249,7 +250,7 @@ namespace Nitrocid.Kernel.Configuration.Settings
                         DebugWriter.WriteDebug(DebugLevel.W, "Option is not valid. Returning...");
                         TextWriters.Write(Translate.DoTranslation("Specified option {0} is invalid."), true, KernelColorType.Error, Answer);
                         TextWriters.Write(Translate.DoTranslation("Press any key to go back."), true, KernelColorType.Error);
-                        TermReader.ReadKey();
+                        Input.ReadKey();
                     }
                 }
             }

@@ -25,6 +25,7 @@ using Terminaux.Base;
 using Nitrocid.ConsoleBase.Inputs;
 using Terminaux.Base.Extensions;
 using Terminaux.Reader;
+using Terminaux.Inputs;
 
 namespace Nitrocid.Legacy.HddUncleaner
 {
@@ -44,7 +45,7 @@ namespace Nitrocid.Legacy.HddUncleaner
         {
             // Disclaimer
             TextWriters.Write(Translate.DoTranslation("This \"mock app\" mocks \"HDD Cleaner 2.1,\" which was released on November 24th, 2015. We'll call it \"HDD Uncleaner 2015.\" It'll basically do nothing except display messages to the console using the Nitrocid KS API. It'll try to simulate how this archived program looks like. Please don't take this too literally as it's just a joke program intended to amuse you. It also doesn't simulate extraneous features, like the \"AutoRecovery\" routine. Please note that we don't intend to localize this. Press any key to start."), true, KernelColorType.Warning);
-            TermReader.ReadKey();
+            Input.ReadKey();
 
             while (!exiting)
                 TagMain();
@@ -100,7 +101,7 @@ namespace Nitrocid.Legacy.HddUncleaner
                     // User selected the Manual option. Translate this to the :explor tag
                     // :explor (line 228)
                     ConsoleMisc.SetTitle("-----==++==----- Explorer -----==++==-----");
-                    TermReader.ReadKey();
+                    Input.ReadKey();
                     break;
                 case "4":
                     // User selected the Reinstall option. Translate this to the :format tag
@@ -108,7 +109,7 @@ namespace Nitrocid.Legacy.HddUncleaner
                     ConsoleMisc.SetTitle("-----==++==----- WARNING!! -----==++==-----");
                     TextWriterRaw.Write();
                     TextWriterColor.Write("IMPORTANT, YOU MUST BACKUP FILES TO FLOPPY, USB OR EXTERNAL HDD OTHERWISE YOU'LL LOSE YOUR IMPORTANT FILES, APPS AND GAMES!");
-                    TermReader.ReadKey();
+                    Input.ReadKey();
                     ConsoleWrapper.Clear();
                     OsSelect();
                     break;
@@ -116,7 +117,7 @@ namespace Nitrocid.Legacy.HddUncleaner
                     // User selected the Programs option. Translate this to the :progra tag
                     // :progra (line 333)
                     ConsoleMisc.SetTitle("-----==++==----- Add or remove programs -----==++==-----");
-                    TermReader.ReadKey();
+                    Input.ReadKey();
                     break;
                 case "6":
                     // User selected the SysRestore option. Translate this to the :sysres tag
@@ -146,7 +147,7 @@ namespace Nitrocid.Legacy.HddUncleaner
                     ConsoleMisc.SetTitle("-----==++==----- Wrong Parameter! -----==++==-----");
                     TextWriterRaw.Write();
                     TextWriterColor.Write($"The option {option} is not found, We will add soon.");
-                    TermReader.ReadKey();
+                    Input.ReadKey();
                     break;
             }
         }

@@ -31,6 +31,7 @@ using Terminaux.Inputs;
 using Terminaux.Inputs.Styles.Selection;
 using Terminaux.Base.Extensions;
 using Terminaux.Reader;
+using Terminaux.Inputs.Styles;
 
 namespace Nitrocid.ConsoleBase.Themes
 {
@@ -155,7 +156,7 @@ namespace Nitrocid.ConsoleBase.Themes
                 BoxColor.WriteBox(startExteriorX + 1, startExteriorY, diffInteriorX, diffInteriorY, colorInstance);
 
                 // Wait for input
-                var input = TermReader.ReadKey();
+                var input = Input.ReadKey();
                 switch (input.Key)
                 {
                     case ConsoleKey.Enter:

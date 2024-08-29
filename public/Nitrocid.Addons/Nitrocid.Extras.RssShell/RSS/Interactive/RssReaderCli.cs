@@ -30,6 +30,7 @@ using Textify.General;
 using Nitrocid.Network.Connections;
 using Nitrocid.Shell.ShellBase.Commands.ProcessExecution;
 using Nitrocid.Kernel;
+using Nitrocid.ConsoleBase.Colors;
 
 namespace Nitrocid.Extras.RssShell.RSS.Interactive
 {
@@ -38,9 +39,9 @@ namespace Nitrocid.Extras.RssShell.RSS.Interactive
     /// </summary>
     public class RssReaderCli : BaseInteractiveTui<RSSArticle>, IInteractiveTui<RSSArticle>
     {
-        internal static NetworkConnection rssConnection;
+        internal NetworkConnection rssConnection;
 
-        private static RSSFeed Feed
+        private RSSFeed Feed
         {
             get
             {
@@ -49,17 +50,6 @@ namespace Nitrocid.Extras.RssShell.RSS.Interactive
                 return feed;
             }
         }
-
-        /// <summary>
-        /// Article viewer keybindings
-        /// </summary>
-        public override InteractiveTuiBinding[] Bindings { get; } =
-        [
-            // Operations
-            new InteractiveTuiBinding("Info", ConsoleKey.F1, (article, _) => ShowArticleInfo(article)),
-            new InteractiveTuiBinding("Read More", ConsoleKey.F2, (article, _) => OpenArticleLink(article)),
-            new InteractiveTuiBinding("Refresh", ConsoleKey.F3, (article, _) => RefreshFeed())
-        ];
 
         /// <inheritdoc/>
         public override IEnumerable<RSSArticle> PrimaryDataSource =>
@@ -105,7 +95,7 @@ namespace Nitrocid.Extras.RssShell.RSS.Interactive
             return article.ArticleTitle;
         }
 
-        private static void ShowArticleInfo(object item)
+        internal void ShowArticleInfo(object item)
         {
             // Render the final information string
             var finalInfoRendered = new StringBuilder();
@@ -132,16 +122,16 @@ namespace Nitrocid.Extras.RssShell.RSS.Interactive
             finalInfoRendered.AppendLine("\n" + Translate.DoTranslation("Press any key to close this window."));
 
             // Now, render the info box
-            InfoBoxColor.WriteInfoBoxColorBack(finalInfoRendered.ToString(), InteractiveTuiStatus.BoxForegroundColor, InteractiveTuiStatus.BoxBackgroundColor);
+            InfoBoxColor.WriteInfoBoxColorBack(finalInfoRendered.ToString(), KernelColorTools.GetColor(KernelColorType.TuiBoxForeground), KernelColorTools.GetColor(KernelColorType.TuiBoxBackground));
         }
 
-        private static void OpenArticleLink(object item)
+        internal void OpenArticleLink(object item)
         {
             // Check to see if we have a link
             RSSArticle article = (RSSArticle)item;
             bool hasLink = !string.IsNullOrEmpty(article.ArticleLink);
             if (!hasLink)
-                InfoBoxColor.WriteInfoBoxColorBack(Translate.DoTranslation("This article doesn't have a link."), InteractiveTuiStatus.BoxForegroundColor, InteractiveTuiStatus.BoxBackgroundColor);
+                InfoBoxColor.WriteInfoBoxColorBack(Translate.DoTranslation("This article doesn't have a link."), KernelColorTools.GetColor(KernelColorType.TuiBoxForeground), KernelColorTools.GetColor(KernelColorType.TuiBoxBackground));
 
             // Now, open the host browser
             try
@@ -155,11 +145,11 @@ namespace Nitrocid.Extras.RssShell.RSS.Interactive
             }
             catch (Exception e)
             {
-                InfoBoxColor.WriteInfoBoxColorBack(Translate.DoTranslation("Can't open the host browser to the article link.") + $" {e.Message}", InteractiveTuiStatus.BoxForegroundColor, InteractiveTuiStatus.BoxBackgroundColor);
+                InfoBoxColor.WriteInfoBoxColorBack(Translate.DoTranslation("Can't open the host browser to the article link.") + $" {e.Message}", KernelColorTools.GetColor(KernelColorType.TuiBoxForeground), KernelColorTools.GetColor(KernelColorType.TuiBoxBackground));
             }
         }
 
-        private static void RefreshFeed() =>
+        internal void RefreshFeed() =>
             Feed.Refresh();
 
     }

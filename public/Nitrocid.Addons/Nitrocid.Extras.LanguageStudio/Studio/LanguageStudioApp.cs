@@ -36,6 +36,7 @@ using System.Linq;
 using Textify.General;
 using Terminaux.Base;
 using Nitrocid.ConsoleBase.Inputs;
+using Terminaux.Inputs.Styles;
 
 namespace Nitrocid.Extras.LanguageStudio.Studio
 {

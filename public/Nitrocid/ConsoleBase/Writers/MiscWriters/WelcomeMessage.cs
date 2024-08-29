@@ -30,6 +30,7 @@ using Textify.General;
 using Terminaux.Base;
 using Terminaux.Inputs;
 using Textify.Figlet;
+using Terminaux.Inputs.Styles;
 
 namespace Nitrocid.ConsoleBase.Writers.MiscWriters
 {

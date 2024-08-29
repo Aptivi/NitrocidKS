@@ -639,12 +639,7 @@ namespace Nitrocid.Kernel.Configuration.Instances
         public string TuiBackgroundColor
         {
             get => KernelColorTools.GetColor(KernelColorType.TuiBackground).PlainSequence;
-            set
-            {
-				var color = new Color(value);
-				KernelColorTools.SetColor(KernelColorType.TuiBackground, color);
-                InteractiveTuiStatus.BackgroundColor = color;
-            }
+            set => KernelColorTools.SetColor(KernelColorType.TuiBackground, new Color(value));
         }
         /// <summary>
         /// Interactive TUI foreground color
@@ -652,12 +647,7 @@ namespace Nitrocid.Kernel.Configuration.Instances
         public string TuiForegroundColor
         {
             get => KernelColorTools.GetColor(KernelColorType.TuiForeground).PlainSequence;
-            set
-            {
-                var color = new Color(value);
-                KernelColorTools.SetColor(KernelColorType.TuiBoxForeground, color);
-                InteractiveTuiStatus.ForegroundColor = color;
-            }
+            set => KernelColorTools.SetColor(KernelColorType.TuiForeground, new Color(value));
         }
         /// <summary>
         /// Interactive TUI pane background color
@@ -665,12 +655,7 @@ namespace Nitrocid.Kernel.Configuration.Instances
         public string TuiPaneBackgroundColor
         {
             get => KernelColorTools.GetColor(KernelColorType.TuiPaneBackground).PlainSequence;
-            set
-            {
-                var color = new Color(value);
-                KernelColorTools.SetColor(KernelColorType.TuiPaneBackground, color);
-                InteractiveTuiStatus.PaneBackgroundColor = color;
-            }
+            set => KernelColorTools.SetColor(KernelColorType.TuiPaneBackground, new Color(value));
         }
         /// <summary>
         /// Interactive TUI pane separator color
@@ -678,12 +663,7 @@ namespace Nitrocid.Kernel.Configuration.Instances
         public string TuiPaneSeparatorColor
         {
             get => KernelColorTools.GetColor(KernelColorType.TuiPaneSeparator).PlainSequence;
-            set
-            {
-                var color = new Color(value);
-                KernelColorTools.SetColor(KernelColorType.TuiPaneSeparator, color);
-                InteractiveTuiStatus.PaneSeparatorColor = color;
-            }
+            set => KernelColorTools.SetColor(KernelColorType.TuiPaneSeparator, new Color(value));
         }
         /// <summary>
         /// Interactive TUI selected pane separator color
@@ -691,12 +671,7 @@ namespace Nitrocid.Kernel.Configuration.Instances
         public string TuiPaneSelectedSeparatorColor
         {
             get => KernelColorTools.GetColor(KernelColorType.TuiPaneSelectedSeparator).PlainSequence;
-            set
-            {
-                var color = new Color(value);
-                KernelColorTools.SetColor(KernelColorType.TuiPaneSelectedSeparator, color);
-                InteractiveTuiStatus.PaneSelectedSeparatorColor = color;
-            }
+            set => KernelColorTools.SetColor(KernelColorType.TuiPaneSelectedSeparator, new Color(value));
         }
         /// <summary>
         /// Interactive TUI selected pane item foreground color
@@ -704,12 +679,7 @@ namespace Nitrocid.Kernel.Configuration.Instances
         public string TuiPaneSelectedItemForeColor
         {
             get => KernelColorTools.GetColor(KernelColorType.TuiPaneSelectedItemFore).PlainSequence;
-            set
-            {
-                var color = new Color(value);
-                KernelColorTools.SetColor(KernelColorType.TuiPaneSelectedItemFore, color);
-                InteractiveTuiStatus.PaneSelectedItemForeColor = color;
-            }
+            set => KernelColorTools.SetColor(KernelColorType.TuiPaneSelectedItemFore, new Color(value));
         }
         /// <summary>
         /// Interactive TUI selected pane item background color
@@ -717,12 +687,7 @@ namespace Nitrocid.Kernel.Configuration.Instances
         public string TuiPaneSelectedItemBackColor
         {
             get => KernelColorTools.GetColor(KernelColorType.TuiPaneSelectedItemBack).PlainSequence;
-            set
-            {
-                var color = new Color(value);
-                KernelColorTools.SetColor(KernelColorType.TuiPaneSelectedItemBack, color);
-                InteractiveTuiStatus.PaneSelectedItemBackColor = color;
-            }
+            set => KernelColorTools.SetColor(KernelColorType.TuiPaneSelectedItemBack, new Color(value));
         }
         /// <summary>
         /// Interactive TUI pane item foreground color
@@ -730,12 +695,7 @@ namespace Nitrocid.Kernel.Configuration.Instances
         public string TuiPaneItemForeColor
         {
             get => KernelColorTools.GetColor(KernelColorType.TuiPaneItemFore).PlainSequence;
-            set
-            {
-                var color = new Color(value);
-                KernelColorTools.SetColor(KernelColorType.TuiPaneItemFore, color);
-                InteractiveTuiStatus.PaneItemForeColor = color;
-            }
+            set => KernelColorTools.SetColor(KernelColorType.TuiPaneItemFore, new Color(value));
         }
         /// <summary>
         /// Interactive TUI pane item background color
@@ -743,12 +703,7 @@ namespace Nitrocid.Kernel.Configuration.Instances
         public string TuiPaneItemBackColor
         {
             get => KernelColorTools.GetColor(KernelColorType.TuiPaneItemBack).PlainSequence;
-            set
-            {
-                var color = new Color(value);
-                KernelColorTools.SetColor(KernelColorType.TuiPaneItemBack, color);
-                InteractiveTuiStatus.PaneItemBackColor = color;
-            }
+            set => KernelColorTools.SetColor(KernelColorType.TuiPaneItemBack, new Color(value));
         }
         /// <summary>
         /// Interactive TUI option background color
@@ -756,12 +711,7 @@ namespace Nitrocid.Kernel.Configuration.Instances
         public string TuiOptionBackgroundColor
         {
             get => KernelColorTools.GetColor(KernelColorType.TuiOptionBackground).PlainSequence;
-            set
-            {
-                var color = new Color(value);
-                KernelColorTools.SetColor(KernelColorType.TuiOptionBackground, color);
-                InteractiveTuiStatus.OptionBackgroundColor = color;
-            }
+            set => KernelColorTools.SetColor(KernelColorType.TuiOptionBackground, new Color(value));
         }
         /// <summary>
         /// Interactive TUI option foreground color
@@ -769,12 +719,7 @@ namespace Nitrocid.Kernel.Configuration.Instances
         public string TuiOptionForegroundColor
         {
             get => KernelColorTools.GetColor(KernelColorType.TuiOptionForeground).PlainSequence;
-            set
-            {
-                var color = new Color(value);
-                KernelColorTools.SetColor(KernelColorType.TuiOptionForeground, color);
-                InteractiveTuiStatus.OptionForegroundColor = color;
-            }
+            set => KernelColorTools.SetColor(KernelColorType.TuiOptionForeground, new Color(value));
         }
         /// <summary>
         /// Interactive TUI option binding name color
@@ -782,12 +727,7 @@ namespace Nitrocid.Kernel.Configuration.Instances
         public string TuiKeyBindingOptionColor
         {
             get => KernelColorTools.GetColor(KernelColorType.TuiKeyBindingOption).PlainSequence;
-            set
-            {
-                var color = new Color(value);
-                KernelColorTools.SetColor(KernelColorType.TuiKeyBindingOption, color);
-                InteractiveTuiStatus.KeyBindingOptionColor = color;
-            }
+            set => KernelColorTools.SetColor(KernelColorType.TuiKeyBindingOption, new Color(value));
         }
         /// <summary>
         /// Interactive TUI box background color
@@ -795,12 +735,7 @@ namespace Nitrocid.Kernel.Configuration.Instances
         public string TuiBoxBackgroundColor
         {
             get => KernelColorTools.GetColor(KernelColorType.TuiBoxBackground).PlainSequence;
-            set
-            {
-                var color = new Color(value);
-                KernelColorTools.SetColor(KernelColorType.TuiBoxBackground, color);
-                InteractiveTuiStatus.BoxBackgroundColor = color;
-            }
+            set => KernelColorTools.SetColor(KernelColorType.TuiBoxBackground, new Color(value));
         }
         /// <summary>
         /// Interactive TUI box foreground color
@@ -808,12 +743,7 @@ namespace Nitrocid.Kernel.Configuration.Instances
         public string TuiBoxForegroundColor
         {
             get => KernelColorTools.GetColor(KernelColorType.TuiBoxForeground).PlainSequence;
-            set
-            {
-                var color = new Color(value);
-                KernelColorTools.SetColor(KernelColorType.TuiBoxForeground, color);
-                InteractiveTuiStatus.BoxForegroundColor = color;
-            }
+            set => KernelColorTools.SetColor(KernelColorType.TuiBoxForeground, new Color(value));
         }
         /// <summary>
         /// Disabled option color
@@ -821,12 +751,7 @@ namespace Nitrocid.Kernel.Configuration.Instances
         public string DisabledOptionColor
         {
             get => KernelColorTools.GetColor(KernelColorType.DisabledOption).PlainSequence;
-            set
-            {
-                var color = new Color(value);
-                KernelColorTools.SetColor(KernelColorType.DisabledOption, color);
-                SelectionStyleSettings.GlobalSettings.DisabledOptionColor = color;
-            }
+            set => KernelColorTools.SetColor(KernelColorType.DisabledOption, new Color(value));
         }
         #endregion
 
