@@ -29838,6 +29838,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FileManagerCli.GetEntryFromItem
   nameWithType: FileManagerCli.GetEntryFromItem
+- uid: Nitrocid.Misc.Interactives.FileManagerCli.GetEntryFromItemSecondary(Nitrocid.Files.Instances.FileSystemEntry)
+  name: GetEntryFromItemSecondary(FileSystemEntry)
+  href: api/Nitrocid.Misc.Interactives.FileManagerCli.html#Nitrocid_Misc_Interactives_FileManagerCli_GetEntryFromItemSecondary_Nitrocid_Files_Instances_FileSystemEntry_
+  commentId: M:Nitrocid.Misc.Interactives.FileManagerCli.GetEntryFromItemSecondary(Nitrocid.Files.Instances.FileSystemEntry)
+  fullName: Nitrocid.Misc.Interactives.FileManagerCli.GetEntryFromItemSecondary(Nitrocid.Files.Instances.FileSystemEntry)
+  nameWithType: FileManagerCli.GetEntryFromItemSecondary(FileSystemEntry)
+- uid: Nitrocid.Misc.Interactives.FileManagerCli.GetEntryFromItemSecondary*
+  name: GetEntryFromItemSecondary
+  href: api/Nitrocid.Misc.Interactives.FileManagerCli.html#Nitrocid_Misc_Interactives_FileManagerCli_GetEntryFromItemSecondary_
+  commentId: Overload:Nitrocid.Misc.Interactives.FileManagerCli.GetEntryFromItemSecondary
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Interactives.FileManagerCli.GetEntryFromItemSecondary
+  nameWithType: FileManagerCli.GetEntryFromItemSecondary
 - uid: Nitrocid.Misc.Interactives.FileManagerCli.GetStatusFromItem(Nitrocid.Files.Instances.FileSystemEntry)
   name: GetStatusFromItem(FileSystemEntry)
   href: api/Nitrocid.Misc.Interactives.FileManagerCli.html#Nitrocid_Misc_Interactives_FileManagerCli_GetStatusFromItem_Nitrocid_Files_Instances_FileSystemEntry_
@@ -29851,6 +29864,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FileManagerCli.GetStatusFromItem
   nameWithType: FileManagerCli.GetStatusFromItem
+- uid: Nitrocid.Misc.Interactives.FileManagerCli.GetStatusFromItemSecondary(Nitrocid.Files.Instances.FileSystemEntry)
+  name: GetStatusFromItemSecondary(FileSystemEntry)
+  href: api/Nitrocid.Misc.Interactives.FileManagerCli.html#Nitrocid_Misc_Interactives_FileManagerCli_GetStatusFromItemSecondary_Nitrocid_Files_Instances_FileSystemEntry_
+  commentId: M:Nitrocid.Misc.Interactives.FileManagerCli.GetStatusFromItemSecondary(Nitrocid.Files.Instances.FileSystemEntry)
+  fullName: Nitrocid.Misc.Interactives.FileManagerCli.GetStatusFromItemSecondary(Nitrocid.Files.Instances.FileSystemEntry)
+  nameWithType: FileManagerCli.GetStatusFromItemSecondary(FileSystemEntry)
+- uid: Nitrocid.Misc.Interactives.FileManagerCli.GetStatusFromItemSecondary*
+  name: GetStatusFromItemSecondary
+  href: api/Nitrocid.Misc.Interactives.FileManagerCli.html#Nitrocid_Misc_Interactives_FileManagerCli_GetStatusFromItemSecondary_
+  commentId: Overload:Nitrocid.Misc.Interactives.FileManagerCli.GetStatusFromItemSecondary
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Interactives.FileManagerCli.GetStatusFromItemSecondary
+  nameWithType: FileManagerCli.GetStatusFromItemSecondary
 - uid: Nitrocid.Misc.Interactives.FileManagerCli.PrimaryDataSource
   name: PrimaryDataSource
   href: api/Nitrocid.Misc.Interactives.FileManagerCli.html#Nitrocid_Misc_Interactives_FileManagerCli_PrimaryDataSource
@@ -30319,6 +30345,22 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.SettingsCli.GetEntryFromItem
   nameWithType: SettingsCli.GetEntryFromItem
+- uid: Nitrocid.Misc.Interactives.SettingsCli.GetEntryFromItemSecondary(System.ValueTuple{System.String,System.Int32})
+  name: GetEntryFromItemSecondary((string, int))
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_GetEntryFromItemSecondary_System_ValueTuple_System_String_System_Int32__
+  commentId: M:Nitrocid.Misc.Interactives.SettingsCli.GetEntryFromItemSecondary(System.ValueTuple{System.String,System.Int32})
+  name.vb: GetEntryFromItemSecondary((String, Integer))
+  fullName: Nitrocid.Misc.Interactives.SettingsCli.GetEntryFromItemSecondary((string, int))
+  fullName.vb: Nitrocid.Misc.Interactives.SettingsCli.GetEntryFromItemSecondary((String, Integer))
+  nameWithType: SettingsCli.GetEntryFromItemSecondary((string, int))
+  nameWithType.vb: SettingsCli.GetEntryFromItemSecondary((String, Integer))
+- uid: Nitrocid.Misc.Interactives.SettingsCli.GetEntryFromItemSecondary*
+  name: GetEntryFromItemSecondary
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_GetEntryFromItemSecondary_
+  commentId: Overload:Nitrocid.Misc.Interactives.SettingsCli.GetEntryFromItemSecondary
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Interactives.SettingsCli.GetEntryFromItemSecondary
+  nameWithType: SettingsCli.GetEntryFromItemSecondary
 - uid: Nitrocid.Misc.Interactives.SettingsCli.GetInfoFromItem(System.ValueTuple{System.String,System.Int32})
   name: GetInfoFromItem((string, int))
   href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_GetInfoFromItem_System_ValueTuple_System_String_System_Int32__
@@ -30335,6 +30377,22 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.SettingsCli.GetInfoFromItem
   nameWithType: SettingsCli.GetInfoFromItem
+- uid: Nitrocid.Misc.Interactives.SettingsCli.GetInfoFromItemSecondary(System.ValueTuple{System.String,System.Int32})
+  name: GetInfoFromItemSecondary((string, int))
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_GetInfoFromItemSecondary_System_ValueTuple_System_String_System_Int32__
+  commentId: M:Nitrocid.Misc.Interactives.SettingsCli.GetInfoFromItemSecondary(System.ValueTuple{System.String,System.Int32})
+  name.vb: GetInfoFromItemSecondary((String, Integer))
+  fullName: Nitrocid.Misc.Interactives.SettingsCli.GetInfoFromItemSecondary((string, int))
+  fullName.vb: Nitrocid.Misc.Interactives.SettingsCli.GetInfoFromItemSecondary((String, Integer))
+  nameWithType: SettingsCli.GetInfoFromItemSecondary((string, int))
+  nameWithType.vb: SettingsCli.GetInfoFromItemSecondary((String, Integer))
+- uid: Nitrocid.Misc.Interactives.SettingsCli.GetInfoFromItemSecondary*
+  name: GetInfoFromItemSecondary
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_GetInfoFromItemSecondary_
+  commentId: Overload:Nitrocid.Misc.Interactives.SettingsCli.GetInfoFromItemSecondary
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Interactives.SettingsCli.GetInfoFromItemSecondary
+  nameWithType: SettingsCli.GetInfoFromItemSecondary
 - uid: Nitrocid.Misc.Interactives.SettingsCli.GetStatusFromItem(System.ValueTuple{System.String,System.Int32})
   name: GetStatusFromItem((string, int))
   href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_GetStatusFromItem_System_ValueTuple_System_String_System_Int32__
@@ -30351,6 +30409,22 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.SettingsCli.GetStatusFromItem
   nameWithType: SettingsCli.GetStatusFromItem
+- uid: Nitrocid.Misc.Interactives.SettingsCli.GetStatusFromItemSecondary(System.ValueTuple{System.String,System.Int32})
+  name: GetStatusFromItemSecondary((string, int))
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_GetStatusFromItemSecondary_System_ValueTuple_System_String_System_Int32__
+  commentId: M:Nitrocid.Misc.Interactives.SettingsCli.GetStatusFromItemSecondary(System.ValueTuple{System.String,System.Int32})
+  name.vb: GetStatusFromItemSecondary((String, Integer))
+  fullName: Nitrocid.Misc.Interactives.SettingsCli.GetStatusFromItemSecondary((string, int))
+  fullName.vb: Nitrocid.Misc.Interactives.SettingsCli.GetStatusFromItemSecondary((String, Integer))
+  nameWithType: SettingsCli.GetStatusFromItemSecondary((string, int))
+  nameWithType.vb: SettingsCli.GetStatusFromItemSecondary((String, Integer))
+- uid: Nitrocid.Misc.Interactives.SettingsCli.GetStatusFromItemSecondary*
+  name: GetStatusFromItemSecondary
+  href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_GetStatusFromItemSecondary_
+  commentId: Overload:Nitrocid.Misc.Interactives.SettingsCli.GetStatusFromItemSecondary
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Interactives.SettingsCli.GetStatusFromItemSecondary
+  nameWithType: SettingsCli.GetStatusFromItemSecondary
 - uid: Nitrocid.Misc.Interactives.SettingsCli.PrimaryDataSource
   name: PrimaryDataSource
   href: api/Nitrocid.Misc.Interactives.SettingsCli.html#Nitrocid_Misc_Interactives_SettingsCli_PrimaryDataSource
