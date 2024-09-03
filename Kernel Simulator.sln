@@ -45,6 +45,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kernel Simulator Source", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KSCleanUnusedLocales", "KSCleanUnusedLocales\KSCleanUnusedLocales.csproj", "{22744969-682D-4974-895E-53079DA9EA3C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{22D4D597-2887-4E38-AE03-9671F1B83B4D}"
+	ProjectSection(SolutionItems) = preProject
+		CHANGES = CHANGES
+		CHANGES.TITLE = CHANGES.TITLE
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -96,6 +103,7 @@ Global
 		{A32F9CED-BCDB-48A7-A42D-E98E33BD6E65} = {6A7CBCC5-37B9-402E-8590-DBD4D3B93579}
 		{61916ED1-66D6-4938-9F1A-D0DF38D16E20} = {6A7CBCC5-37B9-402E-8590-DBD4D3B93579}
 		{22744969-682D-4974-895E-53079DA9EA3C} = {61916ED1-66D6-4938-9F1A-D0DF38D16E20}
+		{22D4D597-2887-4E38-AE03-9671F1B83B4D} = {6A7CBCC5-37B9-402E-8590-DBD4D3B93579}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {424D8E7A-CFEB-40AE-A79C-437D603177FD}
