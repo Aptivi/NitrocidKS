@@ -1,4 +1,4 @@
-# Contributing guidelines
+# Contribution guidelines
 
 First of all, thank you for contributing to our project! This kind of act is the most welcome act to help us keep running our projects the way we want them to run. All your contributions are valuable, but you need to follow these simple rules to get your contribution accepted.
 
@@ -146,8 +146,6 @@ We follow this conventional Git commit scheme:
 ```
 Type - Attributes - Summary
 
-Extended Summary
-
 ---
 
 Description
@@ -156,39 +154,91 @@ Description
 
 Type: Type
 Breaking: Yes/No
-Documentation Required: Yes/No
+Doc Required: Yes/No
+Backport Required: Yes/No
 Part: 1/1
 ```
 
 For types, you should select exactly one type from the following types:
 
-```
-add: for additions
-fix: for fixes
-rem: for removals
-imp: for improvements
-ref: for refactors
-upd: for library updates
-doc: for documentation updates
-```
+* `add`: for additions
+* `fix`: for fixes
+* `rem`: for removals
+* `imp`: for improvements
+* `ref`: for refactors
+* `upd`: for library updates
+* `doc`: for documentation updates
+* `dev`: for development checkpoints (version bump, etc.)
+* `fin`: for development finish points
+* `chg`: for minor changes to previous commits
+* `und`: for other changes that don't apply
 
 Additionally, attributes are optional and can be specified. Multiple attributes should be separated with the pipe character (`|`). However, there are special cases that you may need to handle when you're committing your changes to your pull request:
 
-* If documentation is required (i.e. your commit requires documentation on GitBook and you've specified `doc`), change the `Documentation Required` part to `Yes`, otherwise, `No`.
+* If documentation is required (i.e. your commit requires documentation on GitBook and you've specified `doc`), change the `Doc Required` part to `Yes`, otherwise, `No`.
+* If backport is required (i.e. your commit introduces a fix that needs to be backported to previous version series that don't have a fix), change the `Backport Required` part to `Yes`, otherwise, `No`.
 * If this commit includes breaking changes (i.e. you've specified `brk`), change the `Breaking` part to `Yes`, otherwise, `No`.
-* If this commit is a part of the commit series, specify `prt` and change the `Part` field where it says `1/1` to the current and the total parts in this format: `current/total`. Total parts must be accurate, and the title should stay the same as any former commits in the series.
+* If this commit is a part of the commit series, specify `prt` and change the `Part` field where it says `1/1` to the current and the total parts in this format: `current/total`. Total parts must be accurate, the title should stay the same as any former commits in the series, and the current part must not be larger than the total part number.
 
 These are the attributes we officially support:
 
+* `brk`: for breaking changes
+* `sec`: for security
+* `prf`: for performance improvements
+* `reg`: for regression fixes
+* `doc`: for documentation requirement
+* `ptp`: for prototyping
+* `prt`: for commit series (PartNum is required)
+* `bkp`: for backports
+
+Take note that if you've set a commit that is a backport, make sure that the type is not one of the following types:
+
+* Incompatible types with `bkp`
+  * `rem`: for removals
+  * `dev`: for development checkpoints (version bump, etc.)
+  * `fin`: for development finish points
+* Incompatible attributes with `bkp`
+  * `ptp`: for prototyping
+  * `brk`: for breaking changes
+
+## Releases
+
+When planning for a new version, always start the development of the next version by changing the version found in all the relevant files (usually `Directory.Build.props` for C# projects) before starting to push commits that add new features and everything else. When development finishes, before the release tag can be pushed, the `CHANGES` file should be changed to reflect the new release, as long as it follows this convention:
+
 ```
-brk: for breaking changes
-sec: for security
-prf: for performance improvements
-reg: for regression fixes
-doc: for documentation requirement
-ptp: for prototyping
-prt: for commit series (PartNum is required)
+Long description of the release
+
+### Changes
+
+This release contains a variety of changes, including, but not limited to:
+
+- `[+]` Added X
+- `[*]` Improved Y
+- `[-]` Removed Z
+
+Review the commit history if you want to get a deep insight about the changes.
+
+### Feedback?
+
+If you have issues with this version, report to us by [making a new issue ticket](https://github.com/Aptivi/PROJECT/issues/new).
 ```
+
+Also, the `CHANGES.TITLE` file should be changed to match the version whose development finished but tag not pushed, as long as it follows this format:
+
+```
+[servicing] PROJECT v1.0.0: Release Name
+```
+
+The type at the beginning is necessary as it can tell us and the users in what stage this release belongs to. Currently, this list of releases should be used:
+
+  * `alpha`: Indicates that this release is an alpha version
+  * `beta`: Indicates that this release is a beta version
+  * `release`: Indicates that this release is a major release (i.e. changes the major part and/or the minor part)
+  * `servicing`: Indicates that this release is a minore release (i.e. changes the build part and/or the patch part)
+
+## Assistance of AI
+
+Although artifical intelligence (AI) is a next-gen technology that every company are leaning to, which we are proud of, but when contributing code or other things to this project, we rely on human work to ensure maximum quality. This means that you are not allowed to use any kind of AI assistance to generate code and non-code contributions, such as ChatGPT and others, in fear of licensing issues, potential security issues, and current hallucination issues. Any usage of such tools when contributing will be immediately rejected.
 
 ## Engagement with the Community
 
