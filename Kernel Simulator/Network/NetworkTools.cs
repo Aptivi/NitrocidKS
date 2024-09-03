@@ -67,11 +67,8 @@ namespace KS.Network
         /// <returns>A ping reply status</returns>
         public static PingReply PingAddress(string Address)
         {
-            _ = new Ping();
-            _ = new PingOptions() { DontFragment = true };
-            byte[] PingBuffer = Encoding.ASCII.GetBytes("Kernel Simulator");
-            int Timeout = PingTimeout; // 60 seconds = 1 minute. timeout of Pinger.Send() takes milliseconds.
-            return PingAddress(Address, Timeout, PingBuffer);
+            int Timeout = PingTimeout;
+            return PingAddress(Address, Timeout);
         }
 
         /// <summary>
@@ -81,10 +78,8 @@ namespace KS.Network
         /// <returns>A ping reply status</returns>
         public static PingReply PingAddress(string Address, int Timeout)
         {
-            _ = new Ping();
-            _ = new PingOptions() { DontFragment = true };
-            byte[] PingBuffer = Encoding.ASCII.GetBytes("Kernel Simulator");
-            return PingAddress(Address, Timeout, PingBuffer);
+            var Pinger = new Ping();
+            return Pinger.Send(Address, Timeout);
         }
 
         /// <summary>
