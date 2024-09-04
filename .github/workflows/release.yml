@@ -39,6 +39,10 @@ jobs:
           cd tools ; cmd.exe /c "pack.cmd" ; cd ..
           cd tools ; cmd.exe /c "docgen.cmd" ; cd ..
           cd tools ; cmd.exe /c "docgen-pack.cmd" ; cd ..
+      - name: Release Preparation
+        id: release-asset
+        shell: bash
+        run: |
           echo "SUBJECT=$(cat CHANGES.TITLE)" >> "$GITHUB_OUTPUT"
           echo 'BODY<<EOF' >> "$GITHUB_OUTPUT"
           cat CHANGES >> "$GITHUB_OUTPUT"
