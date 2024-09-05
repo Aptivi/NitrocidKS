@@ -180,7 +180,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     public class EdgePulseDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Animations.EdgePulse.EdgePulseSettings EdgePulseSettingsInstance;
+        private Animations.EdgePulse.EdgePulseSettings? EdgePulseSettingsInstance;
 
         /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "EdgePulse";

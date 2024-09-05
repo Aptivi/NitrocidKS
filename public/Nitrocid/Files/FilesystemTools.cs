@@ -80,7 +80,7 @@ namespace Nitrocid.Files
         /// <param name="Strict">If path is not found, throw exception. Otherwise, neutralize anyway.</param>
         /// <returns>Absolute path</returns>
         /// <exception cref="FileNotFoundException"></exception>
-        public static string NeutralizePath(string Path, bool Strict = false) =>
+        public static string NeutralizePath(string? Path, bool Strict = false) =>
             NeutralizePath(Path, CurrentDirectory.CurrentDir, Strict);
 
         /// <summary>
@@ -91,7 +91,7 @@ namespace Nitrocid.Files
         /// <param name="Strict">If path is not found, throw exception. Otherwise, neutralize anyway.</param>
         /// <returns>Absolute path</returns>
         /// <exception cref="FileNotFoundException"></exception>
-        public static string NeutralizePath(string Path, string Source, bool Strict = false)
+        public static string NeutralizePath(string? Path, string? Source, bool Strict = false)
         {
             // Warning: There should be no debug statements until the strict check point.
             Path ??= "";
@@ -137,7 +137,7 @@ namespace Nitrocid.Files
         /// - When we try to access the <b>kernelconnect</b> secret device from the system partition root path, we'll trigger the BSOD.<br></br><br></br>
         /// This sub will try to prevent access to these paths on unpatched systems and patched systems by throwing <see cref="ArgumentException"/>
         /// </remarks>
-        public static void ThrowOnInvalidPath(string Path)
+        public static void ThrowOnInvalidPath(string? Path)
         {
             if (string.IsNullOrEmpty(Path))
                 return;

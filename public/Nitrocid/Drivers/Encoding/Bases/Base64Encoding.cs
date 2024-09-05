@@ -39,7 +39,7 @@ namespace Nitrocid.Drivers.Encoding.Bases
         public override DriverTypes DriverType => DriverTypes.Encoding;
 
         /// <inheritdoc/>
-        public override object Instance =>
+        public virtual object? Instance =>
             null;
 
         /// <inheritdoc/>
@@ -126,7 +126,18 @@ namespace Nitrocid.Drivers.Encoding.Bases
             EncodeFile(path);
 
         /// <inheritdoc/>
-        public override void DecodeFile(string path, byte[] key, byte[] iv) =>
-            DecodeFile(path);
+        public bool TryRepresentAsText(byte[] encoded, out string strEncoded)
+        {
+            strEncoded = null;
+            string text = TextEncoding.Default.GetString(encoded);
+            for (int i = 0; i < text.Length; i++)
+            {
+                char textChar = text[i];
+                if (char.IsControl(textChar))
+                    return false;
+            }
+            strEncoded = text;
+            return true;
+        }
     }
 }

@@ -293,7 +293,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     public class ExcaliBeatsDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Animations.ExcaliBeats.ExcaliBeatsSettings ExcaliBeatsSettingsInstance;
+        private Animations.ExcaliBeats.ExcaliBeatsSettings? ExcaliBeatsSettingsInstance;
 
         /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "ExcaliBeats";

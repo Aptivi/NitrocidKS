@@ -21,6 +21,7 @@ using Nitrocid.Extras.FtpShell.FTP;
 using Nitrocid.Extras.FtpShell.Settings;
 using Nitrocid.Kernel.Configuration;
 using Nitrocid.Kernel.Extensions;
+using Nitrocid.Languages;
 using Nitrocid.Modifications;
 using Nitrocid.Shell.ShellBase.Arguments;
 using Nitrocid.Shell.ShellBase.Commands;
@@ -54,11 +55,11 @@ namespace Nitrocid.Extras.FtpShell
         internal static FtpConfig FtpConfig =>
             (FtpConfig)Config.baseConfigurations[nameof(FtpConfig)];
 
-        ReadOnlyDictionary<string, Delegate> IAddon.PubliclyAvailableFunctions => null;
+        ReadOnlyDictionary<string, Delegate>? IAddon.PubliclyAvailableFunctions => null;
 
-        ReadOnlyDictionary<string, PropertyInfo> IAddon.PubliclyAvailableProperties => null;
+        ReadOnlyDictionary<string, PropertyInfo>? IAddon.PubliclyAvailableProperties => null;
 
-        ReadOnlyDictionary<string, FieldInfo> IAddon.PubliclyAvailableFields => null;
+        ReadOnlyDictionary<string, FieldInfo>? IAddon.PubliclyAvailableFields => null;
 
         void IAddon.FinalizeAddon()
         {

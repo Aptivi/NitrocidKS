@@ -35,10 +35,10 @@ namespace Nitrocid.Kernel.Hardware
     /// </summary>
     public static class HardwareProbe
     {
-        internal static IEnumerable processors;
-        internal static IEnumerable pcMemory;
-        internal static IEnumerable hardDrive;
-        internal static IEnumerable graphics;
+        internal static IEnumerable? processors;
+        internal static IEnumerable? pcMemory;
+        internal static IEnumerable? hardDrive;
+        internal static IEnumerable? graphics;
 
         /// <summary>
         /// Probe the hardware quietly. This overrides the <see cref="VerboseHardwareProbe"/> flag.

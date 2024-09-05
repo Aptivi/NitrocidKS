@@ -59,9 +59,11 @@ namespace Nitrocid.Kernel.Starting
                 SplashReport.ReportProgress(Translate.DoTranslation("Starting the remote debugger..."), 3);
                 RemoteDebugger.StartRDebugThread();
                 if (!RemoteDebugger.RDebugFailed)
-                    SplashReport.ReportProgress(Translate.DoTranslation("Debug listening on all addresses using port {0}."), 5, RemoteDebugger.DebugPort);
-                else
+                    SplashReport.ReportProgress(Translate.DoTranslation("Debug listening on all addresses using port {0}."), 5, Config.MainConfig.DebugPort);
+                else if (RemoteDebugger.RDebugFailedReason is not null)
                     SplashReport.ReportProgressError(Translate.DoTranslation("Remote debug failed to start: {0}"), RemoteDebugger.RDebugFailedReason.Message);
+                else
+                    SplashReport.ReportProgressError(Translate.DoTranslation("Remote debug failed to start for unknown reasons."));
             }
 
             // Try to start the remote procedure call server

@@ -37,7 +37,7 @@ namespace Nitrocid.Drivers.Encoding
     [DataContract]
     public abstract class BaseEncodingDriver : IEncodingDriver
     {
-        private Aes aes;
+        private Aes? aes;
 
         /// <inheritdoc/>
         public virtual string DriverName => "Default";
@@ -49,7 +49,7 @@ namespace Nitrocid.Drivers.Encoding
         public virtual bool DriverInternal => false;
 
         /// <inheritdoc/>
-        public virtual object Instance =>
+        public virtual object? Instance =>
             aes;
 
         /// <inheritdoc/>
@@ -58,11 +58,11 @@ namespace Nitrocid.Drivers.Encoding
 
         /// <inheritdoc/>
         public virtual byte[] Key =>
-            aes.Key;
+            aes?.Key ?? [];
 
         /// <inheritdoc/>
         public virtual byte[] Iv =>
-            aes.IV;
+            aes?.IV ?? [];
 
         /// <inheritdoc/>
         public virtual void Initialize() =>
@@ -70,11 +70,11 @@ namespace Nitrocid.Drivers.Encoding
 
         /// <inheritdoc/>
         public virtual byte[] GetEncodedString(string text) =>
-            GetEncodedString(text, aes.Key, aes.IV);
+            GetEncodedString(text, Key, Iv);
 
         /// <inheritdoc/>
         public virtual string GetDecodedString(byte[] encoded) =>
-            GetDecodedString(encoded, aes.Key, aes.IV);
+            GetDecodedString(encoded, Key, Iv);
 
         /// <inheritdoc/>
         public virtual byte[] GetEncodedString(string text, byte[] key, byte[] iv)
@@ -111,7 +111,7 @@ namespace Nitrocid.Drivers.Encoding
                 throw new KernelException(KernelExceptionType.Encoding, Translate.DoTranslation("The encoded text must not be empty."));
 
             // Try to get the decoded string
-            string plaintext = null;
+            string? plaintext = null;
             using (Aes aesDecryptor = Aes.Create())
             {
                 // Populate the key and the initialization vector
@@ -158,12 +158,27 @@ namespace Nitrocid.Drivers.Encoding
         }
 
         /// <inheritdoc/>
+        public bool TryRepresentAsText(byte[] encoded, out string? strEncoded)
+        {
+            strEncoded = null;
+            string text = TextEncoding.Default.GetString(encoded);
+            for (int i = 0; i < text.Length; i++)
+            {
+                char textChar = text[i];
+                if (char.IsControl(textChar))
+                    return false;
+            }
+            strEncoded = text;
+            return true;
+        }
+
+        /// <inheritdoc/>
         public virtual void EncodeFile(string path) =>
-            EncodeFile(path, aes.Key, aes.IV);
+            EncodeFile(path, Key, Iv);
 
         /// <inheritdoc/>
         public virtual void DecodeFile(string path) =>
-            DecodeFile(path, aes.Key, aes.IV);
+            DecodeFile(path, Key, Iv);
 
         /// <inheritdoc/>
         public virtual void EncodeFile(string path, byte[] key, byte[] iv)

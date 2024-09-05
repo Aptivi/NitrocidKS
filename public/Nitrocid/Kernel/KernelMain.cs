@@ -46,17 +46,19 @@ namespace Nitrocid.Kernel
     /// </summary>
     public static class KernelMain
     {
-        private static readonly Version kernelVersion =
+        internal static readonly string rootNameSpace =
+            (typeof(KernelMain).Namespace?.Split('.')[0]) ?? "";
+        private static readonly Version? kernelVersion =
             Assembly.GetExecutingAssembly().GetName().Version;
-        private static readonly SemVer kernelVersionFull =
+        private static readonly SemVer? kernelVersionFull =
             SemVer.ParseWithRev($"{kernelVersion}");
         private static readonly Version kernelApiVersion =
-            new(FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FileVersion);
+            new(FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FileVersion ?? "0.0.0.0");
 
         /// <summary>
         /// Kernel version
         /// </summary>
-        public static Version Version =>
+        public static Version? Version =>
             kernelVersion;
         /// <summary>
         /// Kernel API version
@@ -67,13 +69,13 @@ namespace Nitrocid.Kernel
         /// <summary>
         /// Kernel version (full)
         /// </summary>
-        public static SemVer VersionFull =>
+        public static SemVer? VersionFull =>
             kernelVersionFull;
         /// <summary>
         /// Kernel version (full)
         /// </summary>
         public static string VersionFullStr =>
-            kernelVersionFull.ToString();
+            kernelVersionFull?.ToString() ?? "0.0.0.0";
 
         /// <summary>
         /// Entry point

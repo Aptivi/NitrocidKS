@@ -194,7 +194,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     public class FaderBackDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Animations.FaderBack.FaderBackSettings FaderBackSettingsInstance;
+        private Animations.FaderBack.FaderBackSettings? FaderBackSettingsInstance;
 
         /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "FaderBack";

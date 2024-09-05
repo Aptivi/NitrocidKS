@@ -88,10 +88,10 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     public class GradientBloomDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Color nextColorLeft;
-        private Color currentColorLeft;
-        private Color nextColorRight;
-        private Color currentColorRight;
+        private Color? nextColorLeft;
+        private Color? currentColorLeft;
+        private Color? nextColorRight;
+        private Color? currentColorRight;
 
         private static int MaxLevel =>
             GradientBloomSettings.GradientBloomDarkColors ? 32 : 255;
@@ -113,6 +113,10 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         public override void ScreensaverLogic()
         {
             ConsoleWrapper.CursorVisible = false;
+            if (currentColorLeft is null || nextColorLeft is null)
+                return;
+            if (currentColorRight is null || nextColorRight is null)
+                return;
 
             // Prepare the colors
             int steps = GradientBloomSettings.GradientBloomSteps;

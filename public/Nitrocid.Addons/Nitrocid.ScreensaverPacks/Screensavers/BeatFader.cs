@@ -259,7 +259,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     public class BeatFaderDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Animations.BeatFader.BeatFaderSettings BeatFaderSettingsInstance;
+        private Animations.BeatFader.BeatFaderSettings? BeatFaderSettingsInstance;
 
         /// <inheritdoc/>
         public override string ScreensaverName { get; set; } = "BeatFader";

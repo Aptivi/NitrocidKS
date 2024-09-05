@@ -24,6 +24,11 @@ namespace Nitrocid.Kernel.Starting.Environment
 {
     internal abstract class BaseEnvironment : IEnvironment
     {
+        /// <summary>
+        /// Arguments to provide this environment
+        /// </summary>
+        public string[]? Arguments { get; internal set; }
+
         /// <inheritdoc/>
         public virtual string Name =>
             Translate.DoTranslation("Nitrocid KS");

@@ -157,14 +157,15 @@ namespace Nitrocid.Drivers.Network
             NetworkTransfer.SuppressDownloadMessage = false;
             if (NetworkTransfer.IsError)
             {
-                if (NetworkTransfer.DownloadNotificationProvoke)
+                if (Config.MainConfig.DownloadNotificationProvoke && NetworkTransfer.DownloadNotif is not null)
                     NetworkTransfer.DownloadNotif.ProgressState = NotificationProgressState.Failure;
                 NetworkTransfer.CancellationToken.Cancel();
-                throw NetworkTransfer.ReasonError;
+                throw NetworkTransfer.ReasonError ??
+                    new KernelException(KernelExceptionType.Network, Translate.DoTranslation("General network transfer failure"));
             }
             else
             {
-                if (NetworkTransfer.DownloadNotificationProvoke)
+                if (Config.MainConfig.DownloadNotificationProvoke && NetworkTransfer.DownloadNotif is not null)
                 {
                     NetworkTransfer.DownloadNotif.Progress = 100;
                     NetworkTransfer.DownloadNotif.ProgressState = NotificationProgressState.Success;
@@ -256,14 +257,15 @@ namespace Nitrocid.Drivers.Network
             NetworkTransfer.SuppressDownloadMessage = false;
             if (NetworkTransfer.IsError)
             {
-                if (NetworkTransfer.DownloadNotificationProvoke)
+                if (Config.MainConfig.DownloadNotificationProvoke && NetworkTransfer.DownloadNotif is not null)
                     NetworkTransfer.DownloadNotif.ProgressState = NotificationProgressState.Failure;
                 NetworkTransfer.CancellationToken.Cancel();
-                throw NetworkTransfer.ReasonError;
+                throw NetworkTransfer.ReasonError ??
+                    new KernelException(KernelExceptionType.Network, Translate.DoTranslation("General network transfer failure"));
             }
             else
             {
-                if (NetworkTransfer.DownloadNotificationProvoke)
+                if (Config.MainConfig.DownloadNotificationProvoke && NetworkTransfer.DownloadNotif is not null)
                 {
                     NetworkTransfer.DownloadNotif.Progress = 100;
                     NetworkTransfer.DownloadNotif.ProgressState = NotificationProgressState.Success;
@@ -288,7 +290,7 @@ namespace Nitrocid.Drivers.Network
             var builtinHandler = new ProgressHandler((_, message) => NetworkTransfer.HttpSendProgressWatch(message), "Upload");
 
             // Initialize the progress bar indicator and the file completed event handler
-            if (NetworkTransfer.UploadNotificationProvoke)
+            if (Config.MainConfig.UploadNotificationProvoke && NetworkTransfer.DownloadNotif is not null)
             {
                 NetworkTransfer.UploadNotif = new Notification(Translate.DoTranslation("Uploading..."), FileUri.AbsoluteUri, NotificationPriority.Low, NotificationType.Progress);
                 NotificationManager.NotifySend(NetworkTransfer.DownloadNotif);
@@ -329,14 +331,15 @@ namespace Nitrocid.Drivers.Network
             NetworkTransfer.SuppressUploadMessage = false;
             if (NetworkTransfer.IsError)
             {
-                if (NetworkTransfer.UploadNotificationProvoke)
+                if (Config.MainConfig.UploadNotificationProvoke && NetworkTransfer.UploadNotif is not null)
                     NetworkTransfer.UploadNotif.ProgressState = NotificationProgressState.Failure;
                 NetworkTransfer.CancellationToken.Cancel();
-                throw NetworkTransfer.ReasonError;
+                throw NetworkTransfer.ReasonError ??
+                    new KernelException(KernelExceptionType.Network, Translate.DoTranslation("General network transfer failure"));
             }
             else
             {
-                if (NetworkTransfer.UploadNotificationProvoke)
+                if (Config.MainConfig.UploadNotificationProvoke && NetworkTransfer.UploadNotif is not null)
                 {
                     NetworkTransfer.UploadNotif.Progress = 100;
                     NetworkTransfer.UploadNotif.ProgressState = NotificationProgressState.Success;
@@ -396,14 +399,15 @@ namespace Nitrocid.Drivers.Network
             NetworkTransfer.SuppressUploadMessage = false;
             if (NetworkTransfer.IsError)
             {
-                if (NetworkTransfer.UploadNotificationProvoke)
+                if (Config.MainConfig.UploadNotificationProvoke && NetworkTransfer.UploadNotif is not null)
                     NetworkTransfer.UploadNotif.ProgressState = NotificationProgressState.Failure;
                 NetworkTransfer.CancellationToken.Cancel();
-                throw NetworkTransfer.ReasonError;
+                throw NetworkTransfer.ReasonError ??
+                    new KernelException(KernelExceptionType.Network, Translate.DoTranslation("General network transfer failure"));
             }
             else
             {
-                if (NetworkTransfer.UploadNotificationProvoke)
+                if (Config.MainConfig.UploadNotificationProvoke && NetworkTransfer.UploadNotif is not null)
                 {
                     NetworkTransfer.UploadNotif.Progress = 100;
                     NetworkTransfer.UploadNotif.ProgressState = NotificationProgressState.Success;

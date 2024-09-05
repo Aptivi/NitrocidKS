@@ -26,11 +26,10 @@ namespace Nitrocid.Shell.ShellBase.Arguments
     /// </summary>
     public class CommandArgumentPartOptions
     {
-
         /// <summary>
         /// Auto completion function delegate
         /// </summary>
-        public Func<string[], string[]> AutoCompleter { get; set; }
+        public Func<string[], string[]>? AutoCompleter { get; set; }
         /// <summary>
         /// Command argument expression
         /// </summary>
@@ -38,7 +37,7 @@ namespace Nitrocid.Shell.ShellBase.Arguments
         /// <summary>
         /// User is required to provide one of the exact wordings
         /// </summary>
-        public string[] ExactWording { get; set; }
+        public string[] ExactWording { get; set; } = [];
 
         /// <summary>
         /// Makes a new instance of the command argument part options

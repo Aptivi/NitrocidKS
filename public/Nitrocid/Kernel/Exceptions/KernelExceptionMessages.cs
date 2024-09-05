@@ -147,7 +147,7 @@ namespace Nitrocid.Kernel.Exceptions
                 { KernelExceptionType.DriverManagement,                 Translate.DoTranslation("There was an error when trying to perform an operation for the kernel driver management.") },
             };
 
-        internal static string GetFinalExceptionMessage(KernelExceptionType exceptionType, string message, Exception e, params object[] vars)
+        internal static string GetFinalExceptionMessage(KernelExceptionType exceptionType, string message, Exception? e, params object[] vars)
         {
             StringBuilder builder = new();
 
@@ -196,8 +196,8 @@ namespace Nitrocid.Kernel.Exceptions
             while (e is not null)
             {
                 DebugWriter.WriteDebug(DebugLevel.I, "Inner exception {0} is not null: {1}", exceptionIndex, e is not null);
-                builder.AppendLine("  " + $"[{exceptionIndex}] {e.GetType().Name}: {(e is KernelException kex ? kex.OriginalExceptionMessage : e.Message)}");
-                e = e.InnerException;
+                builder.AppendLine("  " + $"[{exceptionIndex}] {e?.GetType().Name}: {(e is KernelException kex ? kex.OriginalExceptionMessage : e?.Message)}");
+                e = e?.InnerException;
                 exceptionIndex++;
             }
 
@@ -207,7 +207,7 @@ namespace Nitrocid.Kernel.Exceptions
         }
 
         internal static string GetMessageFromType(KernelExceptionType exceptionType) =>
-            Messages.TryGetValue(exceptionType, out string type) ?
+            Messages.TryGetValue(exceptionType, out string? type) ?
             type :
             Translate.DoTranslation("Unfortunately, an invalid message type was given, so it's possible that something is messed up. Try turning on the debugger and reproducing the problem.");
     }

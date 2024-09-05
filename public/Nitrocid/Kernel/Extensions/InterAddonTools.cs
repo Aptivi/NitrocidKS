@@ -119,7 +119,7 @@ namespace Nitrocid.Kernel.Extensions
         /// </summary>
         /// <param name="addonName">The addon name to query</param>
         /// <param name="functionName">Function name defined in the <see cref="IAddon.PubliclyAvailableFunctions"/> dictionary to query</param>
-        public static object ExecuteCustomAddonFunction(KnownAddons addonName, string functionName) =>
+        public static object? ExecuteCustomAddonFunction(KnownAddons addonName, string functionName) =>
             ExecuteCustomAddonFunction(InterAddonTranslations.GetAddonName(addonName), functionName, null);
 
         /// <summary>
@@ -128,7 +128,7 @@ namespace Nitrocid.Kernel.Extensions
         /// <param name="addonName">The addon name to query</param>
         /// <param name="functionName">Function name defined in the <see cref="IAddon.PubliclyAvailableFunctions"/> dictionary to query</param>
         /// <param name="parameters">Parameters to execute the function with</param>
-        public static object ExecuteCustomAddonFunction(KnownAddons addonName, string functionName, params object[] parameters) =>
+        public static object? ExecuteCustomAddonFunction(KnownAddons addonName, string functionName, params object?[]? parameters) =>
             ExecuteCustomAddonFunction(InterAddonTranslations.GetAddonName(addonName), functionName, parameters);
 
         /// <summary>
@@ -136,7 +136,7 @@ namespace Nitrocid.Kernel.Extensions
         /// </summary>
         /// <param name="addonName">The addon name to query</param>
         /// <param name="functionName">Function name defined in the <see cref="IAddon.PubliclyAvailableFunctions"/> dictionary to query</param>
-        public static object ExecuteCustomAddonFunction(string addonName, string functionName) =>
+        public static object? ExecuteCustomAddonFunction(string addonName, string functionName) =>
             ExecuteCustomAddonFunction(addonName, functionName, null);
 
         /// <summary>
@@ -145,7 +145,7 @@ namespace Nitrocid.Kernel.Extensions
         /// <param name="addonName">The addon name to query</param>
         /// <param name="functionName">Function name defined in the <see cref="IAddon.PubliclyAvailableFunctions"/> dictionary to query</param>
         /// <param name="parameters">Parameters to execute the function with</param>
-        public static object ExecuteCustomAddonFunction(string addonName, string functionName, params object[] parameters)
+        public static object? ExecuteCustomAddonFunction(string addonName, string functionName, params object?[]? parameters)
         {
             // Check the user permission
             PermissionsTools.Demand(PermissionTypes.InteraddonCommunication);
@@ -181,7 +181,7 @@ namespace Nitrocid.Kernel.Extensions
         /// </summary>
         /// <param name="addonName">The addon name to query</param>
         /// <param name="propertyName">Property name defined in the <see cref="IAddon.PubliclyAvailableProperties"/> dictionary to query</param>
-        public static object GetCustomAddonPropertyValue(KnownAddons addonName, string propertyName) =>
+        public static object? GetCustomAddonPropertyValue(KnownAddons addonName, string propertyName) =>
             GetCustomAddonPropertyValue(InterAddonTranslations.GetAddonName(addonName), propertyName);
 
         /// <summary>
@@ -189,7 +189,7 @@ namespace Nitrocid.Kernel.Extensions
         /// </summary>
         /// <param name="addonName">The addon name to query</param>
         /// <param name="propertyName">Property name defined in the <see cref="IAddon.PubliclyAvailableProperties"/> dictionary to query</param>
-        public static object GetCustomAddonPropertyValue(string addonName, string propertyName)
+        public static object? GetCustomAddonPropertyValue(string addonName, string propertyName)
         {
             // Check the user permission
             PermissionsTools.Demand(PermissionTypes.InteraddonCommunication);
@@ -231,7 +231,7 @@ namespace Nitrocid.Kernel.Extensions
         /// <param name="addonName">The addon name to query</param>
         /// <param name="propertyName">Property name defined in the <see cref="IAddon.PubliclyAvailableProperties"/> dictionary to query</param>
         /// <param name="value">Value to set the property to</param>
-        public static void SetCustomAddonPropertyValue(KnownAddons addonName, string propertyName, object value) =>
+        public static void SetCustomAddonPropertyValue(KnownAddons addonName, string propertyName, object? value) =>
             SetCustomAddonPropertyValue(InterAddonTranslations.GetAddonName(addonName), propertyName, value);
 
         /// <summary>
@@ -240,7 +240,7 @@ namespace Nitrocid.Kernel.Extensions
         /// <param name="addonName">The addon name to query</param>
         /// <param name="propertyName">Property name defined in the <see cref="IAddon.PubliclyAvailableProperties"/> dictionary to query</param>
         /// <param name="value">Value to set the property to</param>
-        public static void SetCustomAddonPropertyValue(string addonName, string propertyName, object value)
+        public static void SetCustomAddonPropertyValue(string addonName, string propertyName, object? value)
         {
             // Check the user permission
             PermissionsTools.Demand(PermissionTypes.InteraddonCommunication);
@@ -281,7 +281,7 @@ namespace Nitrocid.Kernel.Extensions
         /// </summary>
         /// <param name="addonName">The addon name to query</param>
         /// <param name="fieldName">Field name defined in the <see cref="IAddon.PubliclyAvailableFields"/> dictionary to query</param>
-        public static object GetCustomAddonFieldValue(KnownAddons addonName, string fieldName) =>
+        public static object? GetCustomAddonFieldValue(KnownAddons addonName, string fieldName) =>
             GetCustomAddonFieldValue(InterAddonTranslations.GetAddonName(addonName), fieldName);
 
         /// <summary>
@@ -289,7 +289,7 @@ namespace Nitrocid.Kernel.Extensions
         /// </summary>
         /// <param name="addonName">The addon name to query</param>
         /// <param name="fieldName">Field name defined in the <see cref="IAddon.PubliclyAvailableFields"/> dictionary to query</param>
-        public static object GetCustomAddonFieldValue(string addonName, string fieldName)
+        public static object? GetCustomAddonFieldValue(string addonName, string fieldName)
         {
             // Check the user permission
             PermissionsTools.Demand(PermissionTypes.InteraddonCommunication);
@@ -329,7 +329,7 @@ namespace Nitrocid.Kernel.Extensions
         /// <param name="addonName">The addon name to query</param>
         /// <param name="fieldName">Field name defined in the <see cref="IAddon.PubliclyAvailableFields"/> dictionary to query</param>
         /// <param name="value">Value to set the field to</param>
-        public static void SetCustomAddonFieldValue(KnownAddons addonName, string fieldName, object value) =>
+        public static void SetCustomAddonFieldValue(KnownAddons addonName, string fieldName, object? value) =>
             SetCustomAddonFieldValue(InterAddonTranslations.GetAddonName(addonName), fieldName, value);
 
         /// <summary>
@@ -338,7 +338,7 @@ namespace Nitrocid.Kernel.Extensions
         /// <param name="addonName">The addon name to query</param>
         /// <param name="fieldName">Field name defined in the <see cref="IAddon.PubliclyAvailableFields"/> dictionary to query</param>
         /// <param name="value">Value to set the field to</param>
-        public static void SetCustomAddonFieldValue(string addonName, string fieldName, object value)
+        public static void SetCustomAddonFieldValue(string addonName, string fieldName, object? value)
         {
             // Check the user permission
             PermissionsTools.Demand(PermissionTypes.InteraddonCommunication);
@@ -357,7 +357,7 @@ namespace Nitrocid.Kernel.Extensions
                 return;
 
             // Assuming that we have fields, get a single field containing that name
-            if (!fields.TryGetValue(fieldName, out FieldInfo fieldInfo))
+            if (!fields.TryGetValue(fieldName, out FieldInfo? fieldInfo))
                 throw new KernelException(KernelExceptionType.AddonManagement, Translate.DoTranslation("Can't find field '{0}' in addon '{1}'."), fieldName, addonInfo.AddonName);
 
             // Assuming that we have that field, get a single field delegate

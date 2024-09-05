@@ -79,7 +79,7 @@ namespace Nitrocid.Files.Editors.HexEdit
             try
             {
                 DebugWriter.WriteDebug(DebugLevel.I, "Trying to close file...");
-                HexEditShellCommon.FileStream.Close();
+                HexEditShellCommon.FileStream?.Close();
                 HexEditShellCommon.FileStream = null;
                 DebugWriter.WriteDebug(DebugLevel.I, "File is no longer open.");
                 HexEditShellCommon.FileBytes = [];
@@ -102,7 +102,10 @@ namespace Nitrocid.Files.Editors.HexEdit
         {
             try
             {
-                var FileBytes = HexEditShellCommon.FileBytes;
+                if (HexEditShellCommon.FileStream is null)
+                    throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Hex file is not open yet."));
+                var FileBytes = HexEditShellCommon.FileBytes ??
+                    throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Hex file is not open yet."));
                 DebugWriter.WriteDebug(DebugLevel.I, "Trying to save file...");
                 HexEditShellCommon.FileStream.SetLength(0L);
                 DebugWriter.WriteDebug(DebugLevel.I, "Length set to 0.");
@@ -131,9 +134,7 @@ namespace Nitrocid.Files.Editors.HexEdit
                 {
                     Thread.Sleep(HexEditShellCommon.AutoSaveInterval * 1000);
                     if (HexEditShellCommon.FileStream is not null)
-                    {
                         SaveBinaryFile();
-                    }
                 }
                 catch (Exception ex)
                 {
@@ -147,10 +148,8 @@ namespace Nitrocid.Files.Editors.HexEdit
         /// </summary>
         public static bool WasHexEdited()
         {
-            if (HexEditShellCommon.FileBytes is not null & HexEditShellCommon.FileBytesOrig is not null)
-            {
+            if (HexEditShellCommon.FileBytes is not null && HexEditShellCommon.FileBytesOrig is not null)
                 return !HexEditShellCommon.FileBytes.SequenceEqual(HexEditShellCommon.FileBytesOrig);
-            }
             return false;
         }
 
@@ -160,15 +159,13 @@ namespace Nitrocid.Files.Editors.HexEdit
         /// <param name="Content">New byte content</param>
         public static void AddNewByte(byte Content)
         {
-            if (HexEditShellCommon.FileStream is not null)
+            if (HexEditShellCommon.FileStream is not null && HexEditShellCommon.FileBytes is not null)
             {
                 Array.Resize(ref HexEditShellCommon.FileBytes, HexEditShellCommon.FileBytes.Length + 1);
                 HexEditShellCommon.FileBytes[^1] = Content;
             }
             else
-            {
                 throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("The hex editor hasn't opened a file stream yet."));
-            }
         }
 
         /// <summary>
@@ -181,6 +178,8 @@ namespace Nitrocid.Files.Editors.HexEdit
             if (HexEditShellCommon.FileStream is not null)
             {
                 // Check the position
+                if (HexEditShellCommon.FileBytes is null)
+                    throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Hex file is not open yet."));
                 if (pos < 1 || pos > HexEditShellCommon.FileBytes.Length)
                     throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("The specified byte number may not be larger than the file size."));
 
@@ -197,14 +196,10 @@ namespace Nitrocid.Files.Editors.HexEdit
                     HexEditShellCommon.FileBytes = [.. FileBytesList];
                 }
                 else
-                {
                     throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("The specified byte number may not be larger than the file size."));
-                }
             }
             else
-            {
                 throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("The hex editor hasn't opened a file stream yet."));
-            }
         }
 
         /// <summary>
@@ -219,9 +214,7 @@ namespace Nitrocid.Files.Editors.HexEdit
                     AddNewByte(ByteContent);
             }
             else
-            {
                 throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("The hex editor hasn't opened a file stream yet."));
-            }
         }
 
         /// <summary>
@@ -232,6 +225,8 @@ namespace Nitrocid.Files.Editors.HexEdit
         {
             if (HexEditShellCommon.FileStream is not null)
             {
+                if (HexEditShellCommon.FileBytes is null)
+                    throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Hex file is not open yet."));
                 if (ByteNumber < 1)
                     throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Byte number must start with 1."));
                 var FileBytesList = HexEditShellCommon.FileBytes.ToList();
@@ -247,22 +242,22 @@ namespace Nitrocid.Files.Editors.HexEdit
                     HexEditShellCommon.FileBytes = [.. FileBytesList];
                 }
                 else
-                {
                     throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("The specified byte number may not be larger than the file size."));
-                }
             }
             else
-            {
                 throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("The hex editor hasn't opened a file stream yet."));
-            }
         }
 
         /// <summary>
         /// Deletes the bytes
         /// </summary>
         /// <param name="StartByteNumber">Start from the byte number</param>
-        public static void DeleteBytes(long StartByteNumber) =>
+        public static void DeleteBytes(long StartByteNumber)
+        {
+            if (HexEditShellCommon.FileBytes is null)
+                throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Hex file is not open yet."));
             DeleteBytes(StartByteNumber, HexEditShellCommon.FileBytes.LongLength);
+        }
 
         /// <summary>
         /// Deletes the bytes
@@ -273,6 +268,8 @@ namespace Nitrocid.Files.Editors.HexEdit
         {
             if (HexEditShellCommon.FileStream is not null)
             {
+                if (HexEditShellCommon.FileBytes is null)
+                    throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Hex file is not open yet."));
                 if (StartByteNumber < 1)
                     throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Byte number must start with 1."));
                 StartByteNumber.SwapIfSourceLarger(ref EndByteNumber);
@@ -293,31 +290,33 @@ namespace Nitrocid.Files.Editors.HexEdit
                     HexEditShellCommon.FileBytes = [.. FileBytesList];
                 }
                 else if (StartByteNumber > HexEditShellCommon.FileBytes.LongLength)
-                {
                     throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("The specified start byte number may not be larger than the file size."));
-                }
                 else if (EndByteNumber > HexEditShellCommon.FileBytes.LongLength)
-                {
                     throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("The specified end byte number may not be larger than the file size."));
-                }
             }
             else
-            {
                 throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("The hex editor hasn't opened a file stream yet."));
-            }
         }
 
         /// <summary>
         /// Renders the file in hex
         /// </summary>
-        public static void DisplayHex() =>
+        public static void DisplayHex()
+        {
+            if (HexEditShellCommon.FileBytes is null)
+                throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Hex file is not open yet."));
             DisplayHex(1L, HexEditShellCommon.FileBytes.LongLength);
+        }
 
         /// <summary>
         /// Renders the file in hex
         /// </summary>
-        public static void DisplayHex(long Start) =>
+        public static void DisplayHex(long Start)
+        {
+            if (HexEditShellCommon.FileBytes is null)
+                throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Hex file is not open yet."));
             DisplayHex(Start, HexEditShellCommon.FileBytes.LongLength);
+        }
 
         /// <summary>
         /// Renders the file in hex
@@ -326,6 +325,8 @@ namespace Nitrocid.Files.Editors.HexEdit
         {
             if (HexEditShellCommon.FileStream is not null)
             {
+                if (HexEditShellCommon.FileBytes is null)
+                    throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Hex file is not open yet."));
                 if (StartByte < 1)
                     throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Byte number must start with 1."));
                 FileContentPrinter.DisplayInHex(StartByte, EndByte, HexEditShellCommon.FileBytes);
@@ -337,14 +338,22 @@ namespace Nitrocid.Files.Editors.HexEdit
         /// <summary>
         /// Queries the byte and displays the results
         /// </summary>
-        public static void QueryByteAndDisplay(byte ByteContent) =>
+        public static void QueryByteAndDisplay(byte ByteContent)
+        {
+            if (HexEditShellCommon.FileBytes is null)
+                throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Hex file is not open yet."));
             QueryByteAndDisplay(ByteContent, 1L, HexEditShellCommon.FileBytes.LongLength);
+        }
 
         /// <summary>
         /// Queries the byte and displays the results
         /// </summary>
-        public static void QueryByteAndDisplay(byte ByteContent, long Start) =>
+        public static void QueryByteAndDisplay(byte ByteContent, long Start)
+        {
+            if (HexEditShellCommon.FileBytes is null)
+                throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Hex file is not open yet."));
             QueryByteAndDisplay(ByteContent, Start, HexEditShellCommon.FileBytes.LongLength);
+        }
 
         /// <summary>
         /// Queries the byte and displays the results
@@ -353,6 +362,8 @@ namespace Nitrocid.Files.Editors.HexEdit
         {
             if (HexEditShellCommon.FileStream is not null)
             {
+                if (HexEditShellCommon.FileBytes is null)
+                    throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Hex file is not open yet."));
                 DebugWriter.WriteDebug(DebugLevel.I, "File Bytes: {0}", HexEditShellCommon.FileBytes.LongLength);
                 if (StartByte < 1)
                     throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Byte number must start with 1."));
@@ -380,8 +391,12 @@ namespace Nitrocid.Files.Editors.HexEdit
         /// </summary>
         /// <param name="FromByte">Byte to be replaced</param>
         /// <param name="WithByte">Byte to replace with</param>
-        public static void Replace(byte FromByte, byte WithByte) =>
+        public static void Replace(byte FromByte, byte WithByte)
+        {
+            if (HexEditShellCommon.FileBytes is null)
+                throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Hex file is not open yet."));
             Replace(FromByte, WithByte, 1L, HexEditShellCommon.FileBytes.LongLength);
+        }
 
         /// <summary>
         /// Replaces every occurrence of a byte with the replacement
@@ -389,8 +404,12 @@ namespace Nitrocid.Files.Editors.HexEdit
         /// <param name="FromByte">Byte to be replaced</param>
         /// <param name="WithByte">Byte to replace with</param>
         /// <param name="Start">Start byte number</param>
-        public static void Replace(byte FromByte, byte WithByte, long Start) =>
+        public static void Replace(byte FromByte, byte WithByte, long Start)
+        {
+            if (HexEditShellCommon.FileBytes is null)
+                throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Hex file is not open yet."));
             Replace(FromByte, WithByte, Start, HexEditShellCommon.FileBytes.LongLength);
+        }
 
         /// <summary>
         /// Replaces every occurrence of a byte with the replacement
@@ -403,6 +422,8 @@ namespace Nitrocid.Files.Editors.HexEdit
         {
             if (HexEditShellCommon.FileStream is not null)
             {
+                if (HexEditShellCommon.FileBytes is null)
+                    throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Hex file is not open yet."));
                 if (StartByte < 1)
                     throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Byte number must start with 1."));
                 DebugWriter.WriteDebug(DebugLevel.I, "Source: {0}, Target: {1}", FromByte, WithByte);
@@ -419,18 +440,12 @@ namespace Nitrocid.Files.Editors.HexEdit
                     }
                 }
                 else if (StartByte > HexEditShellCommon.FileBytes.LongLength)
-                {
                     TextWriters.Write(Translate.DoTranslation("The specified start byte number may not be larger than the file size."), true, KernelColorType.Error);
-                }
                 else if (EndByte > HexEditShellCommon.FileBytes.LongLength)
-                {
                     TextWriters.Write(Translate.DoTranslation("The specified end byte number may not be larger than the file size."), true, KernelColorType.Error);
-                }
             }
             else
-            {
                 throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("The hex editor hasn't opened a file stream yet."));
-            }
         }
 
         /// <summary>
@@ -446,9 +461,7 @@ namespace Nitrocid.Files.Editors.HexEdit
                 bytes[^1] = Content;
             }
             else
-            {
                 throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Can't perform this operation on a null array."));
-            }
             return bytes;
         }
 
@@ -479,14 +492,10 @@ namespace Nitrocid.Files.Editors.HexEdit
                     bytes = [.. FileBytesList];
                 }
                 else
-                {
                     throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("The specified byte number may not be larger than the file size."));
-                }
             }
             else
-            {
                 throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Can't perform this operation on a null array."));
-            }
             return bytes;
         }
 
@@ -503,9 +512,7 @@ namespace Nitrocid.Files.Editors.HexEdit
                     bytes = AddNewByte(bytes, ByteContent);
             }
             else
-            {
                 throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Can't perform this operation on a null array."));
-            }
             return bytes;
         }
 
@@ -533,14 +540,10 @@ namespace Nitrocid.Files.Editors.HexEdit
                     bytes = [.. FileBytesList];
                 }
                 else
-                {
                     throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("The specified byte number may not be larger than the file size."));
-                }
             }
             else
-            {
                 throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Can't perform this operation on a null array."));
-            }
             return bytes;
         }
 
@@ -582,18 +585,12 @@ namespace Nitrocid.Files.Editors.HexEdit
                     bytes = [.. FileBytesList];
                 }
                 else if (StartByteNumber > bytes.LongLength)
-                {
                     throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("The specified start byte number may not be larger than the file size."));
-                }
                 else if (EndByteNumber > bytes.LongLength)
-                {
                     throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("The specified end byte number may not be larger than the file size."));
-                }
             }
             else
-            {
                 throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Can't perform this operation on a null array."));
-            }
             return bytes;
         }
 
@@ -662,22 +659,14 @@ namespace Nitrocid.Files.Editors.HexEdit
                 if (StartByte < 1)
                     throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Byte number must start with 1."));
                 if (StartByte <= bytes.LongLength & EndByte <= bytes.LongLength)
-                {
                     DriverHandler.CurrentFilesystemDriverLocal.DisplayInHex(ByteContent, true, StartByte, EndByte, bytes);
-                }
                 else if (StartByte > bytes.LongLength)
-                {
                     TextWriters.Write(Translate.DoTranslation("The specified start byte number may not be larger than the file size."), true, KernelColorType.Error);
-                }
                 else if (EndByte > bytes.LongLength)
-                {
                     TextWriters.Write(Translate.DoTranslation("The specified end byte number may not be larger than the file size."), true, KernelColorType.Error);
-                }
             }
             else
-            {
                 throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Can't perform this operation on a null array."));
-            }
         }
 
         /// <summary>
@@ -727,18 +716,12 @@ namespace Nitrocid.Files.Editors.HexEdit
                     }
                 }
                 else if (StartByte > bytes.LongLength)
-                {
                     TextWriters.Write(Translate.DoTranslation("The specified start byte number may not be larger than the file size."), true, KernelColorType.Error);
-                }
                 else if (EndByte > bytes.LongLength)
-                {
                     TextWriters.Write(Translate.DoTranslation("The specified end byte number may not be larger than the file size."), true, KernelColorType.Error);
-                }
             }
             else
-            {
                 throw new KernelException(KernelExceptionType.HexEditor, Translate.DoTranslation("Can't perform this operation on a null array."));
-            }
             return bytes;
         }
 

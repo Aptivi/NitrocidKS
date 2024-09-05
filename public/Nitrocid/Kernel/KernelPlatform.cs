@@ -36,7 +36,7 @@ namespace Nitrocid.Kernel
         /// Checks to see if the kernel is running normally, from GRILO, or from somewhere else
         /// </summary>
         public static bool IsOnUsualEnvironment() =>
-            (Assembly.GetEntryAssembly().FullName == Assembly.GetExecutingAssembly().FullName && !IsRunningFromGrilo()) || IsRunningFromGrilo();
+            Assembly.GetEntryAssembly()?.FullName == Assembly.GetExecutingAssembly().FullName;
 
         /// <summary>
         /// Is this system a Windows system?

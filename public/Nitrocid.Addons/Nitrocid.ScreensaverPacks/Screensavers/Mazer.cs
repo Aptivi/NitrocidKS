@@ -248,7 +248,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
     internal class MazeTree
     {
-        internal MazeTree parent = null;
+        internal MazeTree? parent = null;
 
         internal MazeTree Root =>
             parent is not null ? parent.Root : this;

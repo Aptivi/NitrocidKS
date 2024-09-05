@@ -85,8 +85,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     public class BloomDisplay : BaseScreensaver, IScreensaver
     {
 
-        private Color nextColor;
-        private Color currentColor;
+        private Color? nextColor;
+        private Color? currentColor;
 
         private static int MaxLevel =>
             BloomSettings.BloomDarkColors ? 32 : 255;
@@ -106,6 +106,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         public override void ScreensaverLogic()
         {
             ConsoleWrapper.CursorVisible = false;
+            if (currentColor is null || nextColor is null)
+                return;
 
             // Prepare the colors
             int steps = BloomSettings.BloomSteps;

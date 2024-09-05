@@ -70,7 +70,9 @@ namespace Nitrocid.Files.Paths
         {
             get
             {
-                string dirName = Path.GetDirectoryName(typeof(PathsManagement).Assembly.Location);
+                string? dirName = Path.GetDirectoryName(typeof(PathsManagement).Assembly.Location);
+                if (dirName is null)
+                    return "";
                 return KernelPlatform.IsOnUnix() ? dirName : dirName.Replace(@"\", "/");
             }
         }
@@ -83,9 +85,9 @@ namespace Nitrocid.Files.Paths
             get
             {
                 if (KernelPlatform.IsOnUnix())
-                    return Environment.GetEnvironmentVariable("HOME");
+                    return Environment.GetEnvironmentVariable("HOME") ?? "";
                 else
-                    return Environment.GetEnvironmentVariable("USERPROFILE").Replace(@"\", "/");
+                    return (Environment.GetEnvironmentVariable("USERPROFILE") ?? "").Replace(@"\", "/");
             }
         }
 
@@ -118,7 +120,7 @@ namespace Nitrocid.Files.Paths
                 if (KernelPlatform.IsOnUnix())
                     return "/tmp";
                 else
-                    return Environment.GetEnvironmentVariable("TEMP").Replace(@"\", "/");
+                    return (Environment.GetEnvironmentVariable("TEMP") ?? "").Replace(@"\", "/");
             }
         }
 
@@ -323,7 +325,7 @@ namespace Nitrocid.Files.Paths
         {
             if (knownPaths.TryGetValue(PathType, out (Func<string>, bool) pathDelegate))
                 return pathDelegate.Item1();
-            if (customPaths.TryGetValue(PathType, out string path))
+            if (customPaths.TryGetValue(PathType, out string? path))
                 return path;
             throw new KernelException(KernelExceptionType.InvalidKernelPath, Translate.DoTranslation("Invalid kernel path type."));
         }

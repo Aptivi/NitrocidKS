@@ -131,7 +131,7 @@ namespace Nitrocid.Modifications.Communication
         /// </summary>
         /// <param name="modName">The mod name to query</param>
         /// <param name="functionName">Function name defined in the <see cref="IMod.PubliclyAvailableFunctions"/> dictionary to query</param>
-        public static object ExecuteCustomModFunction(string modName, string functionName) =>
+        public static object? ExecuteCustomModFunction(string modName, string functionName) =>
             ExecuteCustomModFunction(modName, functionName, null);
 
         /// <summary>
@@ -140,7 +140,7 @@ namespace Nitrocid.Modifications.Communication
         /// <param name="modName">The mod name to query</param>
         /// <param name="functionName">Function name defined in the <see cref="IMod.PubliclyAvailableFunctions"/> dictionary to query</param>
         /// <param name="parameters">Parameters to execute the function with</param>
-        public static object ExecuteCustomModFunction(string modName, string functionName, params object[] parameters)
+        public static object? ExecuteCustomModFunction(string modName, string functionName, params object?[]? parameters)
         {
             // Check the user permission
             PermissionsTools.Demand(PermissionTypes.IntermodCommunication);
@@ -175,7 +175,7 @@ namespace Nitrocid.Modifications.Communication
         /// </summary>
         /// <param name="modName">The mod name to query</param>
         /// <param name="propertyName">Property name defined in the <see cref="IMod.PubliclyAvailableProperties"/> dictionary to query</param>
-        public static object GetCustomModPropertyValue(string modName, string propertyName)
+        public static object? GetCustomModPropertyValue(string modName, string propertyName)
         {
             // Check the user permission
             PermissionsTools.Demand(PermissionTypes.IntermodCommunication);
@@ -256,7 +256,7 @@ namespace Nitrocid.Modifications.Communication
         /// </summary>
         /// <param name="modName">The mod name to query</param>
         /// <param name="fieldName">Field name defined in the <see cref="IMod.PubliclyAvailableFields"/> dictionary to query</param>
-        public static object GetCustomModFieldValue(string modName, string fieldName)
+        public static object? GetCustomModFieldValue(string modName, string fieldName)
         {
             // Check the user permission
             PermissionsTools.Demand(PermissionTypes.IntermodCommunication);
@@ -279,13 +279,8 @@ namespace Nitrocid.Modifications.Communication
                 return null;
 
             // Assuming that we have that field, get a single field delegate
-            if (field is null)
-                return null;
-
-            // Check to see if this field is static
-            if (!field.IsStatic)
-                return null;
-            var get = field.GetValue(null);
+            var field = GetFieldInfo(modName, fieldName);
+            var get = field?.GetValue(null);
             if (get is null)
                 return null;
             return get;
@@ -297,7 +292,7 @@ namespace Nitrocid.Modifications.Communication
         /// <param name="modName">The mod name to query</param>
         /// <param name="fieldName">Field name defined in the <see cref="IMod.PubliclyAvailableFields"/> dictionary to query</param>
         /// <param name="value">Value to set the field to</param>
-        public static void SetCustomModFieldValue(string modName, string fieldName, object value)
+        public static void SetCustomModFieldValue(string modName, string fieldName, object? value)
         {
             // Check the user permission
             PermissionsTools.Demand(PermissionTypes.IntermodCommunication);
@@ -316,7 +311,7 @@ namespace Nitrocid.Modifications.Communication
                 return;
 
             // Assuming that we have fields, get a single field containing that name
-            if (!fields.TryGetValue(fieldName, out FieldInfo field))
+            if (!fields.TryGetValue(fieldName, out FieldInfo? field))
                 return;
 
             // Assuming that we have that field, get a single field delegate

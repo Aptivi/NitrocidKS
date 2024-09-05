@@ -138,7 +138,7 @@ namespace Nitrocid.Drivers.Input
         /// <param name="DefaultValue">Default value</param>
         /// <param name="OneLineWrap">Whether to wrap the input to one line</param>
         /// <param name="settings">Reader settings</param>
-        public virtual string ReadLineUnsafe(string InputText, string DefaultValue, bool OneLineWrap = false, TermReaderSettings settings = null)
+        public virtual string ReadLineUnsafe(string InputText, string DefaultValue, bool OneLineWrap = false, TermReaderSettings? settings = null)
         {
             bool cursorState = ConsoleWrapper.CursorVisible;
             ConsoleWrapper.CursorVisible = true;
@@ -244,7 +244,7 @@ namespace Nitrocid.Drivers.Input
             ConsoleWrapper.CursorVisible = true;
             TermReaderSettings finalSettings = settings is null ? In.globalSettings : settings;
             finalSettings.PasswordMaskChar = MaskChar;
-            string pass = TermReader.Read("", "", settings, true, false, true);
+            string pass = TermReader.Read("", "", finalSettings, true, false, true);
             ConsoleWrapper.CursorVisible = cursorState;
 
             // For some reason, Terminaux tends to forget to restore the below property to the state before the read.

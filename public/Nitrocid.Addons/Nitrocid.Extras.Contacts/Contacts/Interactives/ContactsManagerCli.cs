@@ -236,7 +236,7 @@ namespace Nitrocid.Extras.Contacts.Contacts.Interactives
             UpdateIndex(foundCard);
         }
 
-        internal void UpdateIndex(Card foundCard)
+        internal void UpdateIndex(Card? foundCard)
         {
             var contacts = ContactsManager.GetContacts();
             if (foundCard is not null)

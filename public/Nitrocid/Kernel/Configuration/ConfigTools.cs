@@ -86,9 +86,9 @@ namespace Nitrocid.Kernel.Configuration
         /// <param name="Setting">An entry to get the value from</param>
         /// <param name="configType">Settings type</param>
         /// <returns>The value</returns>
-        public static object GetValueFromEntry(SettingsKey Setting, BaseKernelConfig configType)
+        public static object? GetValueFromEntry(SettingsKey Setting, BaseKernelConfig configType)
         {
-            object CurrentValue = "Unknown";
+            object? CurrentValue = "Unknown";
             string Variable = Setting.Variable;
             var configTypeInstance = configType.GetType();
             string configTypeName = configTypeInstance.Name;
@@ -111,7 +111,7 @@ namespace Nitrocid.Kernel.Configuration
             if (CurrentValue is LanguageInfo lang)
                 CurrentValue = lang.ThreeLetterLanguageName;
 
-            DebugWriter.WriteDebug(DebugLevel.I, "Got current value! {0} [{1}], found under {2}...", CurrentValue, CurrentValue.GetType().Name, Variable);
+            DebugWriter.WriteDebug(DebugLevel.I, "Got current value! {0} [{1}], found under {2}...", CurrentValue, CurrentValue?.GetType().Name, Variable);
             return CurrentValue;
         }
 
@@ -125,7 +125,7 @@ namespace Nitrocid.Kernel.Configuration
             // Search the settings for the given pattern
             try
             {
-                var settingsEntries = configType.SettingsEntries;
+                var settingsEntries = configType.SettingsEntries ?? [];
                 for (int SectionIndex = 0; SectionIndex <= settingsEntries.Length - 1; SectionIndex++)
                 {
                     var SectionToken = settingsEntries[SectionIndex];
@@ -133,7 +133,7 @@ namespace Nitrocid.Kernel.Configuration
                     for (int SettingIndex = 0; SettingIndex <= keys.Length - 1; SettingIndex++)
                     {
                         var Setting = keys[SettingIndex];
-                        object CurrentValue = GetValueFromEntry(Setting, configType);
+                        object? CurrentValue = GetValueFromEntry(Setting, configType);
                         string KeyName = Translate.DoTranslation(Setting.Name) + $" [{CurrentValue}]";
                         if (Regex.IsMatch(KeyName, Pattern, RegexOptions.IgnoreCase))
                         {
@@ -165,7 +165,7 @@ namespace Nitrocid.Kernel.Configuration
             var Results = new Dictionary<string, bool>();
             var entries = new Dictionary<SettingsEntry[], BaseKernelConfig>();
             foreach (var config in Config.GetKernelConfigs())
-                entries.Add(config.SettingsEntries, config);
+                entries.Add(config.SettingsEntries ?? [], config);
             foreach (var entry in entries)
             {
                 var variables = CheckConfigVariables(entry.Key, entry.Value);
@@ -182,7 +182,8 @@ namespace Nitrocid.Kernel.Configuration
         {
             if (string.IsNullOrEmpty(configTypeName))
                 throw new KernelException(KernelExceptionType.Config, Translate.DoTranslation("Can't check configuration variables when no type specified."));
-            var config = Config.GetKernelConfig(configTypeName);
+            var config = Config.GetKernelConfig(configTypeName) ??
+                throw new KernelException(KernelExceptionType.Config, Translate.DoTranslation("Can't check configuration variables when the kernel config is not specified."));
             return CheckConfigVariables(config);
         }
 
@@ -193,7 +194,7 @@ namespace Nitrocid.Kernel.Configuration
         {
             if (entries is null)
                 throw new KernelException(KernelExceptionType.Config, Translate.DoTranslation("Can't check configuration variables when no entries are specified."));
-            return CheckConfigVariables(entries.SettingsEntries, entries);
+            return CheckConfigVariables(entries.SettingsEntries ?? [], entries);
         }
 
         /// <summary>
@@ -332,7 +333,8 @@ namespace Nitrocid.Kernel.Configuration
             if (IsCustomSettingRegistered(setting))
             {
                 DebugWriter.WriteDebug(DebugLevel.I, "Custom settings type {0} registered. Getting path...", setting);
-                var config = Config.GetKernelConfig(setting);
+                var config = Config.GetKernelConfig(setting) ??
+                throw new KernelException(KernelExceptionType.Config, Translate.DoTranslation("Can't check configuration variables when the kernel config is not specified."));
                 return GetPathToCustomSettingsFile(config);
             }
             else
@@ -365,7 +367,7 @@ namespace Nitrocid.Kernel.Configuration
         /// <exception cref="KernelException"></exception>
         public static SettingsKey[] GetSettingsKeys(BaseKernelConfig settings)
         {
-            var entries = settings.SettingsEntries;
+            var entries = settings.SettingsEntries ?? [];
             List<SettingsKey> keys = [];
             foreach (var entry in entries)
                 keys.AddRange(entry.Keys);
@@ -426,13 +428,15 @@ namespace Nitrocid.Kernel.Configuration
                 throw new KernelException(KernelExceptionType.Config, Translate.DoTranslation("The settings entries JSON value is empty."));
 
             // Verify that the configuration is of a valid format
-            string schemaStr = ResourcesManager.GetData("SettingsSchema.json", ResourcesType.Schemas);
+            string? schemaStr = ResourcesManager.GetData("SettingsSchema.json", ResourcesType.Schemas) ??
+                throw new KernelException(KernelExceptionType.Config, Translate.DoTranslation("Can't get base settings schema."));
             var schema = JSchema.Parse(schemaStr);
             var configObj = JArray.Parse(entriesText);
             configObj.Validate(schema);
 
             // Now, try to get the settings entry array.
-            return JsonConvert.DeserializeObject<SettingsEntry[]>(entriesText);
+            return JsonConvert.DeserializeObject<SettingsEntry[]>(entriesText) ??
+                throw new KernelException(KernelExceptionType.Config, Translate.DoTranslation("Can't get settings entries."));
         }
 
         /// <summary>

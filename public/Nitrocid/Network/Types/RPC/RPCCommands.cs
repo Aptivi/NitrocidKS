@@ -156,7 +156,7 @@ namespace Nitrocid.Network.Types.RPC
                 }
                 catch (Exception ex)
                 {
-                    SocketException SE = (SocketException)ex.InnerException;
+                    var SE = (SocketException?)ex.InnerException;
                     if (SE is not null)
                     {
                         if (SE.SocketErrorCode != SocketError.TimedOut)
@@ -202,10 +202,10 @@ namespace Nitrocid.Network.Types.RPC
                 if (!string.IsNullOrEmpty(Message))
                 {
                     DebugWriter.WriteDebug(DebugLevel.I, "RPC: Received message {0}", Message);
-                    EventsManager.FireEvent(EventType.RPCCommandReceived, Message, endpoint.Address.ToString(), endpoint.Port);
+                    EventsManager.FireEvent(EventType.RPCCommandReceived, Message, endpoint?.Address.ToString(), endpoint?.Port);
 
                     // Invoke the action based on message
-                    if (RPCCommandReplyActions.TryGetValue(Cmd, out Action<string> replyAction))
+                    if (RPCCommandReplyActions.TryGetValue(Cmd, out Action<string>? replyAction))
                         replyAction.Invoke(Arg);
                     else
                         DebugWriter.WriteDebug(DebugLevel.W, "Not found. Message was {0}", Message);

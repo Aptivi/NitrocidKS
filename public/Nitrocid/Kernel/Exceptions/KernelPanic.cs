@@ -47,7 +47,7 @@ namespace Nitrocid.Kernel.Exceptions
 {
     internal class KernelPanic
     {
-        internal static Exception LastKernelErrorException;
+        internal static Exception? LastKernelErrorException;
         internal static bool KernelErrored;
         internal static bool NotifyKernelError;
 
@@ -73,7 +73,7 @@ namespace Nitrocid.Kernel.Exceptions
         /// <param name="Description">Explanation of what happened when it errored.</param>
         /// <param name="Exc">An exception to get stack traces, etc. Used for dump files currently.</param>
         /// <param name="Variables">Optional. Specifies variables to get on text that will be printed.</param>
-        internal static void KernelError(KernelErrorLevel ErrorType, bool Reboot, long RebootTime, string Description, Exception Exc, params object[] Variables)
+        internal static void KernelError(KernelErrorLevel ErrorType, bool Reboot, long RebootTime, string Description, Exception? Exc, params object[] Variables)
         {
             KernelErrored = true;
             LastKernelErrorException = Exc ??
@@ -140,7 +140,7 @@ namespace Nitrocid.Kernel.Exceptions
                     // Offer the user to wait for the set time interval before the kernel reboots.
                     DebugWriter.WriteDebug(DebugLevel.F, "Kernel panic initiated with reboot time: {0} seconds, Error Type: {1}", RebootTime, ErrorType);
                     SplashReport.ReportProgressError(Translate.DoTranslation("[{0}] panic: {1} -- Rebooting in {2} seconds..."), Exc, ErrorType, Description, RebootTime);
-                    if (ShowStackTraceOnKernelError & Exc is not null)
+                    if (Config.MainConfig.ShowStackTraceOnKernelError && Exc is not null && Exc.StackTrace is not null)
                         SplashReport.ReportProgressError(Exc.StackTrace);
                     Thread.Sleep((int)(RebootTime * 1000L));
                     PowerManager.PowerManage(PowerMode.Reboot);
@@ -151,7 +151,7 @@ namespace Nitrocid.Kernel.Exceptions
                     DebugWriter.WriteDebug(DebugLevel.W, "Reboot is False, ErrorType is not double or continuable.");
                     DebugWriter.WriteDebug(DebugLevel.F, "Shutdown panic initiated with reboot time: {0} seconds, Error Type: {1}", RebootTime, ErrorType);
                     SplashReport.ReportProgressError(Translate.DoTranslation("[{0}] panic: {1} -- Press any key to shutdown."), Exc, ErrorType, Description);
-                    if (ShowStackTraceOnKernelError & Exc is not null)
+                    if (Config.MainConfig.ShowStackTraceOnKernelError && Exc is not null && Exc.StackTrace is not null)
                         SplashReport.ReportProgressError(Exc.StackTrace);
                     Input.ReadKey();
                     PowerManager.PowerManage(PowerMode.Shutdown);
@@ -172,7 +172,7 @@ namespace Nitrocid.Kernel.Exceptions
         /// <param name="Description">Explanation of what happened when it errored.</param>
         /// <param name="Exc">An exception to get stack traces, etc. Used for dump files currently.</param>
         /// <param name="Variables">Optional. Specifies variables to get on text that will be printed.</param>
-        private static void KernelErrorDouble(string Description, Exception Exc, params object[] Variables)
+        private static void KernelErrorDouble(string Description, Exception? Exc, params object[] Variables)
         {
             KernelErrored = true;
             LastKernelErrorException = Exc ??
@@ -207,7 +207,7 @@ namespace Nitrocid.Kernel.Exceptions
         /// <param name="Description">Explanation of what happened when it errored.</param>
         /// <param name="Exc">An exception to get stack traces, etc. Used for dump files currently.</param>
         /// <param name="Variables">Optional. Specifies variables to get on text that will be printed.</param>
-        internal static void KernelErrorContinuable(string Description, Exception Exc, params object[] Variables)
+        internal static void KernelErrorContinuable(string Description, Exception? Exc, params object[] Variables)
         {
             try
             {
@@ -218,7 +218,7 @@ namespace Nitrocid.Kernel.Exceptions
                 EventsManager.FireEvent(EventType.ContKernelError, Description, Exc, Variables);
                 DebugWriter.WriteDebug(DebugLevel.W, "Continuable kernel error occurred: {0}. {1}.", Description, Exc?.Message);
                 SplashReport.ReportProgressWarning(Translate.DoTranslation("Continuable kernel error occurred:") + " {0}", Exc, Description);
-                if (ShowStackTraceOnKernelError && Exc is not null)
+                if (Config.MainConfig.ShowStackTraceOnKernelError && Exc is not null && Exc.StackTrace is not null)
                     SplashReport.ReportProgressWarning(Exc.StackTrace);
                 SplashReport.ReportProgressWarning(Translate.DoTranslation("This error may cause instabilities to the kernel or to the applications. You can continue using the kernel at your own risk."));
             }
@@ -237,7 +237,7 @@ namespace Nitrocid.Kernel.Exceptions
         /// <param name="Description">Error description</param>
         /// <param name="ErrorType">Error type</param>
         /// <param name="Exc">Exception</param>
-        internal static void GeneratePanicDump(string Description, KernelErrorLevel ErrorType, Exception Exc)
+        internal static void GeneratePanicDump(string Description, KernelErrorLevel ErrorType, Exception? Exc)
         {
             try
             {
@@ -250,8 +250,11 @@ namespace Nitrocid.Kernel.Exceptions
                 }
 
                 // Local function to write...
-                static void WriteInDepthAnalysis(StringBuilder dumpBuilder, Exception Exc)
+                static void WriteInDepthAnalysis(StringBuilder dumpBuilder, Exception? Exc)
                 {
+                    if (Exc is null)
+                        return;
+
                     // Write an in-depth analysis of the error
                     WriteHeader(dumpBuilder, Translate.DoTranslation("In-depth analysis of the error"));
                     dumpBuilder.AppendLine(
@@ -314,13 +317,13 @@ namespace Nitrocid.Kernel.Exceptions
                         {
                             // Get the max lengths for rendering
                             var frames = ExcTrace.GetFrames();
-                            int maxFileLength = frames.Where((sf) => !string.IsNullOrEmpty(sf.GetFileName())).Max((sf) => sf.GetFileName().Length);
+                            int maxFileLength = frames.Where((sf) => !string.IsNullOrEmpty(sf.GetFileName())).Select((sf) => sf.GetFileName() ?? "").Max((sf) => sf.Length);
                             int maxFileLineNumber = frames.Max((sf) => sf.GetFileLineNumber().GetDigits());
                             int maxFileColumnNumber = frames.Max((sf) => sf.GetFileColumnNumber().GetDigits());
                             foreach (StackFrame Frame in frames)
                             {
                                 // Get information about each stack frame
-                                string fileName = Frame.GetFileName();
+                                string fileName = Frame.GetFileName() ?? "";
                                 int fileLineNumber = Frame.GetFileLineNumber();
                                 int fileColumnNumber = Frame.GetFileColumnNumber();
 
@@ -432,7 +435,7 @@ namespace Nitrocid.Kernel.Exceptions
             }
             catch (Exception ex)
             {
-                TextWriters.Write(Translate.DoTranslation("Dump generator failed to dump a kernel error caused by") + " {0}: {1}", true, KernelColorType.Error, Exc.GetType().FullName, ex.Message);
+                TextWriters.Write(Translate.DoTranslation("Dump generator failed to dump a kernel error caused by") + " {0}: {1}", true, KernelColorType.Error, Exc?.GetType()?.FullName ?? "<null>", ex.Message);
                 DebugWriter.WriteDebugStackTrace(ex);
             }
         }
@@ -444,11 +447,15 @@ namespace Nitrocid.Kernel.Exceptions
                 string translated = Translate.DoTranslation("Previous boot failed");
                 var failureBuilder = new StringBuilder();
                 NotifyKernelError = false;
+                string finalMessage =
+                    LastKernelErrorException is not null ?
+                    LastKernelErrorException.Message :
+                    Translate.DoTranslation("Unfortunately, the last failure is unknown, so we don't exactly know what went wrong. However, it could be helpful if you've consulted the kernel debug logs.");
                 SplashManager.BeginSplashOut(SplashManager.CurrentSplashContext);
                 failureBuilder.AppendLine(translated);
                 failureBuilder.AppendLine(new string('=', translated.Length) + "\n");
                 failureBuilder.AppendLine(Translate.DoTranslation("We apologize for your inconvenience, but it looks like that the kernel was having trouble booting. The below error message might help:") + "\n");
-                failureBuilder.AppendLine(LastKernelErrorException.Message + "\n");
+                failureBuilder.AppendLine(finalMessage + "\n");
                 failureBuilder.AppendLine(Translate.DoTranslation("For further investigation, enable debugging mode on the kernel and try to reproduce the issue. Also, try to investigate the latest dump file created."));
                 InfoBoxColor.WriteInfoBoxColor(failureBuilder.ToString(), KernelColorTools.GetColor(KernelColorType.Error));
                 SplashManager.EndSplashOut(SplashManager.CurrentSplashContext);

@@ -31,6 +31,9 @@ using Nitrocid.Kernel.Extensions;
 using Nitrocid.Shell.ShellBase.Shells;
 using Nitrocid.Modifications;
 using System.Linq;
+using Nettify.Weather;
+using Nitrocid.Kernel.Exceptions;
+using Nitrocid.Languages;
 
 namespace Nitrocid.Extras.Forecast
 {
@@ -63,11 +66,11 @@ namespace Nitrocid.Extras.Forecast
         internal static ForecastConfig ForecastConfig =>
             (ForecastConfig)Config.baseConfigurations[nameof(ForecastConfig)];
 
-        ReadOnlyDictionary<string, Delegate> IAddon.PubliclyAvailableFunctions => null;
+        ReadOnlyDictionary<string, Delegate>? IAddon.PubliclyAvailableFunctions => null;
 
-        ReadOnlyDictionary<string, PropertyInfo> IAddon.PubliclyAvailableProperties => null;
+        ReadOnlyDictionary<string, PropertyInfo>? IAddon.PubliclyAvailableProperties => null;
 
-        ReadOnlyDictionary<string, FieldInfo> IAddon.PubliclyAvailableFields => null;
+        ReadOnlyDictionary<string, FieldInfo>? IAddon.PubliclyAvailableFields => null;
 
         void IAddon.FinalizeAddon()
         { }

@@ -47,9 +47,9 @@ namespace Nitrocid.Kernel.Extensions
         internal static List<AddonInfo> ListAddons() =>
             new(addons);
 
-        internal static AddonInfo GetAddon(string addonName)
+        internal static AddonInfo? GetAddon(string addonName)
         {
-            AddonInfo addon = addons.Find((ai) => ai.AddonName == addonName);
+            AddonInfo? addon = addons.Find((ai) => ai.AddonName == addonName);
             return addon;
         }
 
@@ -108,10 +108,11 @@ namespace Nitrocid.Kernel.Extensions
                 // Read the metadata
                 DebugWriter.WriteDebug(DebugLevel.I, "Metadata {0} found!", metadataPath);
                 string metadataContents = Reading.ReadContentsText(metadataPath);
-                JToken metadataToken = JToken.Parse(metadataContents);
+                JToken metadataToken = JToken.Parse(metadataContents) ??
+                    throw new KernelException(KernelExceptionType.AddonManagement, Translate.DoTranslation("Failed to get addon metadata"));
 
                 // Check the metadata value
-                string addonPath = $"{addon}/{(string)(metadataToken["DllPath"] ?? Path.GetFileName($"{addon}.dll"))}";
+                string addonPath = $"{addon}/{(string?)(metadataToken["DllPath"] ?? Path.GetFileName($"{addon}.dll"))}";
 
                 // Now, check the addon path
                 if (!Checking.FileExists(addonPath))
@@ -235,12 +236,12 @@ namespace Nitrocid.Kernel.Extensions
         /// Gets the addon instance from compiled assembly
         /// </summary>
         /// <param name="Assembly">An assembly</param>
-        private static IAddon GetAddonInstance(Assembly Assembly)
+        private static IAddon? GetAddonInstance(Assembly Assembly)
         {
             foreach (Type t in Assembly.GetTypes())
             {
                 if (t.GetInterface(typeof(IAddon).Name) is not null)
-                    return (IAddon)Assembly.CreateInstance(t.FullName);
+                    return (IAddon?)Assembly.CreateInstance(t.FullName ?? "");
             }
             return null;
         }
