@@ -58,7 +58,7 @@ namespace Nitrocid.Extras.SftpShell.SFTP.Commands
             bool SuppressUnauthorizedMessage = parameters.SwitchesList.Contains("-suppressmessages") || FilesystemTools.SuppressUnauthorizedMessages;
             if (parameters.ArgumentsList?.Length == 0)
             {
-                Listing.List(SFTPShellCommon.SFTPCurrDirect, ShowFileDetails, SuppressUnauthorizedMessage);
+                Listing.List(SFTPShellCommon.SFTPCurrDirect ?? "", ShowFileDetails, SuppressUnauthorizedMessage);
             }
             else
             {

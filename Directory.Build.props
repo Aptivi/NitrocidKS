@@ -22,7 +22,7 @@
           changes!
         -->
         <NitrocidModAPIVersionMajor>3.0.25</NitrocidModAPIVersionMajor>
-        <NitrocidModAPIVersionChangeset>446</NitrocidModAPIVersionChangeset>
+        <NitrocidModAPIVersionChangeset>447</NitrocidModAPIVersionChangeset>
 
         <!-- The above two properties are to be installed to the file version -->
         <NitrocidModAPIVersion>$(NitrocidModAPIVersionMajor).$(NitrocidModAPIVersionChangeset)</NitrocidModAPIVersion>
@@ -38,6 +38,7 @@
 
       Supported constants (NitrocidFlags):
           - PACKAGEMANAGERBUILD: Indicates that this build is a package manager build suitable for Launchpad PPA
+          - VSDEBUG: Enables immediate window debug in the "Output" pane
 
       Possible specifiers (NitrocidReleaseSpecifier):
           - REL: Final release
@@ -57,4 +58,14 @@
         <DefineConstants>SPECIFIER$(NitrocidReleaseSpecifier);$(NitrocidFlags.Replace(",",";"))</DefineConstants>
     </PropertyGroup>
     <!-- KS Platform Information End -->
+
+    <!-- KS SourceLink -->
+    <ItemGroup>
+        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="all" />
+    </ItemGroup>
+    <PropertyGroup>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    </PropertyGroup>
+    <!-- KS SourceLink End -->
 </Project>

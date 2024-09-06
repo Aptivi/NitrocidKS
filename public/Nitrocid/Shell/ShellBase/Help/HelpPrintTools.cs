@@ -249,17 +249,19 @@ namespace Nitrocid.Shell.ShellBase.Help
                 {
                     var Arguments = Array.Empty<CommandArgumentPart>();
                     var Switches = Array.Empty<SwitchInfo>();
+                    string renderedUsage = "";
 
                     // Populate help usages
                     if (argumentInfo is not null)
                     {
                         Arguments = argumentInfo.Arguments;
                         Switches = argumentInfo.Switches;
+                        renderedUsage = argumentInfo.RenderedUsage;
                     }
 
                     // Print usage information
                     TextWriters.Write(Translate.DoTranslation("Usage:"), false, KernelColorType.ListEntry);
-                    TextWriters.Write($" {FinalCommand} {argumentInfo.RenderedUsage}", KernelColorType.ListValue);
+                    TextWriters.Write($" {FinalCommand} {renderedUsage}", KernelColorType.ListValue);
 
                     // If we have switches, print their descriptions
                     if (Switches.Length != 0)

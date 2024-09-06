@@ -167,6 +167,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 MazerSettings.MazerUseSchwartzian ?
                 edgesArray.RandomizeArray() :
                 edgesArray.RandomizeArraySystem();
+            if (edges is null)
+                return;
 
             // Iterate through all the edges to display the maze in a spectacular way
             foreach (var (x, y, direction) in edges)
