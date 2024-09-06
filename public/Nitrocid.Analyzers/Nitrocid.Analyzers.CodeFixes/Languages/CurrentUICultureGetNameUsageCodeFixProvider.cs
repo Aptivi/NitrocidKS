@@ -82,10 +82,8 @@ namespace Nitrocid.Analyzers.Languages
                 if (compilation.Usings.Any(u => u.Name?.ToString() == $"{AnalysisTools.rootNameSpace}.Kernel.Configuration") == false)
                 {
                     var name = SyntaxFactory.QualifiedName(
-                        SyntaxFactory.QualifiedName(
-                            SyntaxFactory.IdentifierName(AnalysisTools.rootNameSpace),
-                            SyntaxFactory.IdentifierName("Kernel")),
-                        SyntaxFactory.IdentifierName("Configuration"));
+                        SyntaxFactory.IdentifierName(AnalysisTools.rootNameSpace),
+                        SyntaxFactory.IdentifierName("Languages"));
                     compilation = compilation
                         .AddUsings(SyntaxFactory.UsingDirective(name));
                 }
