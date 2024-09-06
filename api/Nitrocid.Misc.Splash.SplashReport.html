@@ -262,13 +262,13 @@
     <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/SplashReport.cs/#L196">View Source</a>
   </span>
   <a id="Nitrocid_Misc_Splash_SplashReport_ReportProgress_" data-uid="Nitrocid.Misc.Splash.SplashReport.ReportProgress*"></a>
-  <h4 id="Nitrocid_Misc_Splash_SplashReport_ReportProgress_System_String_System_Int32_System_Boolean_System_Exception_Nitrocid_Misc_Splash_SplashReportSeverity_Nitrocid_Misc_Splash_ISplash_System_Object___" data-uid="Nitrocid.Misc.Splash.SplashReport.ReportProgress(System.String,System.Int32,System.Boolean,System.Exception,Nitrocid.Misc.Splash.SplashReportSeverity,Nitrocid.Misc.Splash.ISplash,System.Object[])">ReportProgress(string, int, bool, Exception, SplashReportSeverity, ISplash, params object[])</h4>
+  <h4 id="Nitrocid_Misc_Splash_SplashReport_ReportProgress_System_String_System_Int32_System_Boolean_System_Exception_Nitrocid_Misc_Splash_SplashReportSeverity_Nitrocid_Misc_Splash_ISplash_System_Object___" data-uid="Nitrocid.Misc.Splash.SplashReport.ReportProgress(System.String,System.Int32,System.Boolean,System.Exception,Nitrocid.Misc.Splash.SplashReportSeverity,Nitrocid.Misc.Splash.ISplash,System.Object[])">ReportProgress(string, int, bool, Exception?, SplashReportSeverity, ISplash?, params object[])</h4>
   <div class="markdown level1 summary"><p>Reports the progress for the splash screen while the kernel is booting.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ReportProgress(string Text, int Progress, bool force = false, Exception exception = null, SplashReportSeverity severity = SplashReportSeverity.Info, ISplash splash = null, params object[] Vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ReportProgress(string Text, int Progress, bool force = false, Exception? exception = null, SplashReportSeverity severity = SplashReportSeverity.Info, ISplash? splash = null, params object[] Vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -430,13 +430,13 @@ it will report the progress to the splash system. You can force it to report the
     <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/SplashReport.cs/#L179">View Source</a>
   </span>
   <a id="Nitrocid_Misc_Splash_SplashReport_ReportProgressError_" data-uid="Nitrocid.Misc.Splash.SplashReport.ReportProgressError*"></a>
-  <h4 id="Nitrocid_Misc_Splash_SplashReport_ReportProgressError_System_String_System_Boolean_Nitrocid_Misc_Splash_ISplash_System_Exception_System_Object___" data-uid="Nitrocid.Misc.Splash.SplashReport.ReportProgressError(System.String,System.Boolean,Nitrocid.Misc.Splash.ISplash,System.Exception,System.Object[])">ReportProgressError(string, bool, ISplash, Exception, params object[])</h4>
+  <h4 id="Nitrocid_Misc_Splash_SplashReport_ReportProgressError_System_String_System_Boolean_Nitrocid_Misc_Splash_ISplash_System_Exception_System_Object___" data-uid="Nitrocid.Misc.Splash.SplashReport.ReportProgressError(System.String,System.Boolean,Nitrocid.Misc.Splash.ISplash,System.Exception,System.Object[])">ReportProgressError(string, bool, ISplash?, Exception?, params object[])</h4>
   <div class="markdown level1 summary"><p>Reports the progress for the splash screen while the kernel is booting.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ReportProgressError(string Text, bool force = false, ISplash splash = null, Exception exception = null, params object[] Vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ReportProgressError(string Text, bool force = false, ISplash? splash = null, Exception? exception = null, params object[] Vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -492,13 +492,13 @@ it will report the progress to the splash system. You can force it to report the
     <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/SplashReport.cs/#L164">View Source</a>
   </span>
   <a id="Nitrocid_Misc_Splash_SplashReport_ReportProgressError_" data-uid="Nitrocid.Misc.Splash.SplashReport.ReportProgressError*"></a>
-  <h4 id="Nitrocid_Misc_Splash_SplashReport_ReportProgressError_System_String_System_Exception_System_Object___" data-uid="Nitrocid.Misc.Splash.SplashReport.ReportProgressError(System.String,System.Exception,System.Object[])">ReportProgressError(string, Exception, params object[])</h4>
+  <h4 id="Nitrocid_Misc_Splash_SplashReport_ReportProgressError_System_String_System_Exception_System_Object___" data-uid="Nitrocid.Misc.Splash.SplashReport.ReportProgressError(System.String,System.Exception,System.Object[])">ReportProgressError(string, Exception?, params object[])</h4>
   <div class="markdown level1 summary"><p>Reports the progress for the splash screen while the kernel is booting.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ReportProgressError(string Text, Exception exception, params object[] Vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ReportProgressError(string Text, Exception? exception, params object[] Vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -586,13 +586,13 @@ it will report the progress to the splash system. You can force it to report the
     <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/SplashReport.cs/#L139">View Source</a>
   </span>
   <a id="Nitrocid_Misc_Splash_SplashReport_ReportProgressWarning_" data-uid="Nitrocid.Misc.Splash.SplashReport.ReportProgressWarning*"></a>
-  <h4 id="Nitrocid_Misc_Splash_SplashReport_ReportProgressWarning_System_String_System_Boolean_Nitrocid_Misc_Splash_ISplash_System_Exception_System_Object___" data-uid="Nitrocid.Misc.Splash.SplashReport.ReportProgressWarning(System.String,System.Boolean,Nitrocid.Misc.Splash.ISplash,System.Exception,System.Object[])">ReportProgressWarning(string, bool, ISplash, Exception, params object[])</h4>
+  <h4 id="Nitrocid_Misc_Splash_SplashReport_ReportProgressWarning_System_String_System_Boolean_Nitrocid_Misc_Splash_ISplash_System_Exception_System_Object___" data-uid="Nitrocid.Misc.Splash.SplashReport.ReportProgressWarning(System.String,System.Boolean,Nitrocid.Misc.Splash.ISplash,System.Exception,System.Object[])">ReportProgressWarning(string, bool, ISplash?, Exception?, params object[])</h4>
   <div class="markdown level1 summary"><p>Reports the progress for the splash screen while the kernel is booting.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ReportProgressWarning(string Text, bool force = false, ISplash splash = null, Exception exception = null, params object[] Vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ReportProgressWarning(string Text, bool force = false, ISplash? splash = null, Exception? exception = null, params object[] Vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -648,13 +648,13 @@ it will report the progress to the splash system. You can force it to report the
     <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/SplashReport.cs/#L124">View Source</a>
   </span>
   <a id="Nitrocid_Misc_Splash_SplashReport_ReportProgressWarning_" data-uid="Nitrocid.Misc.Splash.SplashReport.ReportProgressWarning*"></a>
-  <h4 id="Nitrocid_Misc_Splash_SplashReport_ReportProgressWarning_System_String_System_Exception_System_Object___" data-uid="Nitrocid.Misc.Splash.SplashReport.ReportProgressWarning(System.String,System.Exception,System.Object[])">ReportProgressWarning(string, Exception, params object[])</h4>
+  <h4 id="Nitrocid_Misc_Splash_SplashReport_ReportProgressWarning_System_String_System_Exception_System_Object___" data-uid="Nitrocid.Misc.Splash.SplashReport.ReportProgressWarning(System.String,System.Exception,System.Object[])">ReportProgressWarning(string, Exception?, params object[])</h4>
   <div class="markdown level1 summary"><p>Reports the progress for the splash screen while the kernel is booting.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ReportProgressWarning(string Text, Exception exception, params object[] Vars)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ReportProgressWarning(string Text, Exception? exception, params object[] Vars)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -758,13 +758,13 @@ it will report the progress to the splash system. You can force it to report the
     <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Misc/Splash/SplashReport.cs/#L270">View Source</a>
   </span>
   <a id="Nitrocid_Misc_Splash_SplashReport_ResetProgressReportArea_" data-uid="Nitrocid.Misc.Splash.SplashReport.ResetProgressReportArea*"></a>
-  <h4 id="Nitrocid_Misc_Splash_SplashReport_ResetProgressReportArea_Nitrocid_Misc_Splash_ISplash_" data-uid="Nitrocid.Misc.Splash.SplashReport.ResetProgressReportArea(Nitrocid.Misc.Splash.ISplash)">ResetProgressReportArea(ISplash)</h4>
+  <h4 id="Nitrocid_Misc_Splash_SplashReport_ResetProgressReportArea_Nitrocid_Misc_Splash_ISplash_" data-uid="Nitrocid.Misc.Splash.SplashReport.ResetProgressReportArea(Nitrocid.Misc.Splash.ISplash)">ResetProgressReportArea(ISplash?)</h4>
   <div class="markdown level1 summary"><p>Resets the splash progress report area with the generic loading text</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ResetProgressReportArea(ISplash splash = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ResetProgressReportArea(ISplash? splash = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">

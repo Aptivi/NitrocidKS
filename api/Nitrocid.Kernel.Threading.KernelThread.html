@@ -422,7 +422,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public KernelThread ParentThread { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public KernelThread? ParentThread { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -477,7 +477,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Threading_KernelThread_AddChild_System_String_System_Boolean_System_Threading_ParameterizedThreadStart_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Threading.KernelThread.AddChild(System.String%2CSystem.Boolean%2CSystem.Threading.ParameterizedThreadStart)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Threading/KernelThread.cs/#L339">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Threading/KernelThread.cs/#L341">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Threading_KernelThread_AddChild_" data-uid="Nitrocid.Kernel.Threading.KernelThread.AddChild*"></a>
   <h4 id="Nitrocid_Kernel_Threading_KernelThread_AddChild_System_String_System_Boolean_System_Threading_ParameterizedThreadStart_" data-uid="Nitrocid.Kernel.Threading.KernelThread.AddChild(System.String,System.Boolean,System.Threading.ParameterizedThreadStart)">AddChild(string, bool, ParameterizedThreadStart)</h4>
@@ -538,7 +538,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Threading_KernelThread_AddChild_System_String_System_Boolean_System_Threading_ThreadStart_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Threading.KernelThread.AddChild(System.String%2CSystem.Boolean%2CSystem.Threading.ThreadStart)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Threading/KernelThread.cs/#L320">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Threading/KernelThread.cs/#L322">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Threading_KernelThread_AddChild_" data-uid="Nitrocid.Kernel.Threading.KernelThread.AddChild*"></a>
   <h4 id="Nitrocid_Kernel_Threading_KernelThread_AddChild_System_String_System_Boolean_System_Threading_ThreadStart_" data-uid="Nitrocid.Kernel.Threading.KernelThread.AddChild(System.String,System.Boolean,System.Threading.ThreadStart)">AddChild(string, bool, ThreadStart)</h4>
@@ -599,7 +599,7 @@
     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Threading_KernelThread_GetChild_System_Int32_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Threading.KernelThread.GetChild(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Threading/KernelThread.cs/#L357">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Threading/KernelThread.cs/#L359">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Threading_KernelThread_GetChild_" data-uid="Nitrocid.Kernel.Threading.KernelThread.GetChild*"></a>
   <h4 id="Nitrocid_Kernel_Threading_KernelThread_GetChild_System_Int32_" data-uid="Nitrocid.Kernel.Threading.KernelThread.GetChild(System.Int32)">GetChild(int)</h4>
@@ -699,13 +699,13 @@
     <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Threading/KernelThread.cs/#L194">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Threading_KernelThread_Start_" data-uid="Nitrocid.Kernel.Threading.KernelThread.Start*"></a>
-  <h4 id="Nitrocid_Kernel_Threading_KernelThread_Start_System_Object_" data-uid="Nitrocid.Kernel.Threading.KernelThread.Start(System.Object)">Start(object)</h4>
+  <h4 id="Nitrocid_Kernel_Threading_KernelThread_Start_System_Object_" data-uid="Nitrocid.Kernel.Threading.KernelThread.Start(System.Object)">Start(object?)</h4>
   <div class="markdown level1 summary"><p>Starts the kernel thread</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Start(object Parameter)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Start(object? Parameter)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">

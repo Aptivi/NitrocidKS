@@ -345,13 +345,13 @@
     <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Drivers/HardwareProber/IHardwareProberDriver.cs/#L71">View Source</a>
   </span>
   <a id="Nitrocid_Drivers_HardwareProber_IHardwareProberDriver_ListHardware_" data-uid="Nitrocid.Drivers.HardwareProber.IHardwareProberDriver.ListHardware*"></a>
-  <h4 id="Nitrocid_Drivers_HardwareProber_IHardwareProberDriver_ListHardware_System_Collections_IEnumerable_System_Collections_IEnumerable_System_Collections_IEnumerable_System_Collections_IEnumerable_" data-uid="Nitrocid.Drivers.HardwareProber.IHardwareProberDriver.ListHardware(System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IEnumerable)">ListHardware(IEnumerable, IEnumerable, IEnumerable, IEnumerable)</h4>
+  <h4 id="Nitrocid_Drivers_HardwareProber_IHardwareProberDriver_ListHardware_System_Collections_IEnumerable_System_Collections_IEnumerable_System_Collections_IEnumerable_System_Collections_IEnumerable_" data-uid="Nitrocid.Drivers.HardwareProber.IHardwareProberDriver.ListHardware(System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IEnumerable)">ListHardware(IEnumerable?, IEnumerable?, IEnumerable?, IEnumerable?)</h4>
   <div class="markdown level1 summary"><p>Lists all the probed hardware.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ListHardware(IEnumerable processors, IEnumerable memory, IEnumerable graphics, IEnumerable hardDrives)</code></pre>
+    <pre><code class="lang-csharp hljs">void ListHardware(IEnumerable? processors, IEnumerable? memory, IEnumerable? graphics, IEnumerable? hardDrives)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -437,7 +437,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IEnumerable ProbeGraphics()</code></pre>
+    <pre><code class="lang-csharp hljs">IEnumerable? ProbeGraphics()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -469,7 +469,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IEnumerable ProbeHardDrive()</code></pre>
+    <pre><code class="lang-csharp hljs">IEnumerable? ProbeHardDrive()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">

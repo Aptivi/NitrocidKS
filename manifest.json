@@ -975,30 +975,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Files.Editors.HexEdit.HexEditInteractive.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Files.Editors.HexEdit.HexEditInteractive.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.Files.Editors.HexEdit.HexEditTools.yml",
       "output": {
         ".html": {
           "relative_path": "api/Nitrocid.Files.Editors.HexEdit.HexEditTools.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Files.Editors.HexEdit.HexEditorBinding.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Files.Editors.HexEdit.HexEditorBinding.html"
         }
       },
       "version": ""
@@ -1015,40 +995,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Files.Editors.TextEdit.TextEditInteractive.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Files.Editors.TextEdit.TextEditInteractive.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.Files.Editors.TextEdit.TextEditTools.yml",
       "output": {
         ".html": {
           "relative_path": "api/Nitrocid.Files.Editors.TextEdit.TextEditTools.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Files.Editors.TextEdit.TextEditorBinding.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Files.Editors.TextEdit.TextEditorBinding.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Files.Editors.TextEdit.TextViewInteractive.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Files.Editors.TextEdit.TextViewInteractive.html"
         }
       },
       "version": ""
