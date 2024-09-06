@@ -18,6 +18,7 @@
 //
 
 using Nitrocid.Files.Operations.Querying;
+using Nitrocid.Kernel;
 using Nitrocid.Kernel.Configuration.Instances;
 using Nitrocid.Kernel.Exceptions;
 using System;

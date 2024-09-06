@@ -1805,15 +1805,15 @@ namespace Nitrocid.Drivers.Filesystem
         public virtual string SortSelector(FileSystemEntry FileSystemEntry, int MaxLength) =>
             Listing.SortMode switch
             {
-                (int)FilesystemSortOptions.FullName => FileSystemEntry.FilePath,
-                (int)FilesystemSortOptions.Length => (FileSystemEntry.BaseEntry is FileInfo fileInfo ? fileInfo.Length : 0L).ToString().PadLeft(MaxLength, '0'),
-                (int)FilesystemSortOptions.CreationTime => Convert.ToString(FileSystemEntry.BaseEntry.CreationTime),
-                (int)FilesystemSortOptions.LastAccessTime => Convert.ToString(FileSystemEntry.BaseEntry.LastAccessTime),
-                (int)FilesystemSortOptions.LastWriteTime => Convert.ToString(FileSystemEntry.BaseEntry.LastWriteTime),
-                (int)FilesystemSortOptions.Extension => FileSystemEntry.BaseEntry.Extension,
-                (int)FilesystemSortOptions.CreationTimeUtc => Convert.ToString(FileSystemEntry.BaseEntry.CreationTimeUtc),
-                (int)FilesystemSortOptions.LastAccessTimeUtc => Convert.ToString(FileSystemEntry.BaseEntry.LastAccessTimeUtc),
-                (int)FilesystemSortOptions.LastWriteTimeUtc => Convert.ToString(FileSystemEntry.BaseEntry.LastWriteTimeUtc),
+                FilesystemSortOptions.FullName => FileSystemEntry.FilePath,
+                FilesystemSortOptions.Length => (FileSystemEntry.BaseEntry is FileInfo fileInfo ? fileInfo.Length : 0L).ToString().PadLeft(MaxLength, '0'),
+                FilesystemSortOptions.CreationTime => Convert.ToString(FileSystemEntry.BaseEntry.CreationTime),
+                FilesystemSortOptions.LastAccessTime => Convert.ToString(FileSystemEntry.BaseEntry.LastAccessTime),
+                FilesystemSortOptions.LastWriteTime => Convert.ToString(FileSystemEntry.BaseEntry.LastWriteTime),
+                FilesystemSortOptions.Extension => FileSystemEntry.BaseEntry.Extension,
+                FilesystemSortOptions.CreationTimeUtc => Convert.ToString(FileSystemEntry.BaseEntry.CreationTimeUtc),
+                FilesystemSortOptions.LastAccessTimeUtc => Convert.ToString(FileSystemEntry.BaseEntry.LastAccessTimeUtc),
+                FilesystemSortOptions.LastWriteTimeUtc => Convert.ToString(FileSystemEntry.BaseEntry.LastWriteTimeUtc),
                 _ => FileSystemEntry.FilePath,
             };
 

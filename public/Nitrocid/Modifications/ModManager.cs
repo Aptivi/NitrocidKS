@@ -182,7 +182,7 @@ namespace Nitrocid.Modifications
                     // Enumerate and delete the script as soon as the stopping is complete
                     for (int ScriptIndex = Mods.Count - 1; ScriptIndex >= 0; ScriptIndex -= 1)
                     {
-                        var TargetMod = Mods.Values.ElementAtOrDefault(ScriptIndex);
+                        var TargetMod = Mods.Values.ElementAt(ScriptIndex);
                         var Script = TargetMod.ModScript;
 
                         // Try to stop the mod
@@ -195,7 +195,7 @@ namespace Nitrocid.Modifications
 
                         // Remove the mod from the list
                         TextWriterColor.Write(Translate.DoTranslation("Mod {0} stopped"), TargetMod.ModName);
-                        Mods.Remove(Mods.Keys.ElementAtOrDefault(ScriptIndex));
+                        Mods.Remove(Mods.Keys.ElementAt(ScriptIndex));
 
                         // Remove the mod dependency from the lookup
                         string ModDepPath = ModPath + "Deps/" + Path.GetFileNameWithoutExtension(TargetMod.ModFilePath) + "-" + FileVersionInfo.GetVersionInfo(TargetMod.ModFilePath).FileVersion + "/";

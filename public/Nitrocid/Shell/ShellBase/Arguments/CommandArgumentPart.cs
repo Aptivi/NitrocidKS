@@ -38,7 +38,7 @@ namespace Nitrocid.Shell.ShellBase.Arguments
         /// <summary>
         /// Auto completion function delegate
         /// </summary>
-        public Func<string[], string[]> AutoCompleter { get; private set; }
+        public Func<string[], string[]>? AutoCompleter { get; private set; }
         /// <summary>
         /// Command argument expression
         /// </summary>

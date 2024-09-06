@@ -164,7 +164,7 @@ namespace Nitrocid.Kernel.Extensions
                 return null;
 
             // Assuming that we have functions, get a single function containing that name
-            if (!functions.TryGetValue(functionName, out Delegate @delegate))
+            if (!functions.TryGetValue(functionName, out Delegate? @delegate))
                 throw new KernelException(KernelExceptionType.AddonManagement, Translate.DoTranslation("Can't find function '{0}' in addon '{1}'."), functionName, addonInfo.AddonName);
 
             // Assuming that we have that function, get a single function delegate
@@ -208,7 +208,7 @@ namespace Nitrocid.Kernel.Extensions
                 return null;
 
             // Assuming that we have properties, get a single property containing that name
-            if (!properties.TryGetValue(propertyName, out PropertyInfo propertyInfo))
+            if (!properties.TryGetValue(propertyName, out PropertyInfo? propertyInfo))
                 throw new KernelException(KernelExceptionType.AddonManagement, Translate.DoTranslation("Can't find property '{0}' in addon '{1}'."), propertyName, addonInfo.AddonName);
 
             // Assuming that we have that property, get a single property delegate
@@ -259,7 +259,7 @@ namespace Nitrocid.Kernel.Extensions
                 return;
 
             // Assuming that we have properties, get a single property containing that name
-            if (!properties.TryGetValue(propertyName, out PropertyInfo propertyInfo))
+            if (!properties.TryGetValue(propertyName, out PropertyInfo? propertyInfo))
                 throw new KernelException(KernelExceptionType.AddonManagement, Translate.DoTranslation("Can't find property '{0}' in addon '{1}'."), propertyName, addonInfo.AddonName);
 
             // Assuming that we have that property, get a single property delegate
@@ -308,7 +308,7 @@ namespace Nitrocid.Kernel.Extensions
                 return null;
 
             // Assuming that we have fields, get a single field containing that name
-            if (!fields.TryGetValue(fieldName, out FieldInfo fieldInfo))
+            if (!fields.TryGetValue(fieldName, out FieldInfo? fieldInfo))
                 throw new KernelException(KernelExceptionType.AddonManagement, Translate.DoTranslation("Can't find field '{0}' in addon '{1}'."), fieldName, addonInfo.AddonName);
 
             // Assuming that we have that field, get a single field delegate

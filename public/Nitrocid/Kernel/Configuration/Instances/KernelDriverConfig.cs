@@ -32,7 +32,6 @@ using Nitrocid.Drivers.Regexp;
 using Nitrocid.Drivers.Console;
 using Nitrocid.Drivers.Input;
 using Nitrocid.Misc.Reflection.Internal;
-using Nitrocid.Drivers.EncodingAsymmetric;
 using Nitrocid.Kernel.Exceptions;
 using Nitrocid.Languages;
 

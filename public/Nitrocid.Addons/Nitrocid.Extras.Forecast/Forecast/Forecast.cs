@@ -93,9 +93,9 @@ namespace Nitrocid.Extras.Forecast.Forecast
             string WeatherSpecifier = "°";
             string WindSpeedSpecifier = "m.s";
             if (TextTools.IsStringNumeric(CityID))
-                WeatherInfo = GetWeatherInfoOwm(Convert.ToInt64(CityID), APIKey);
+                WeatherInfo = GetWeatherInfo(Convert.ToInt64(CityID), APIKey);
             else
-                WeatherInfo = GetWeatherInfoOwm(CityID, APIKey);
+                WeatherInfo = GetWeatherInfo(CityID, APIKey);
             string name = (string?)WeatherInfo.WeatherToken["name"] ?? "";
             double feelsLike = (double?)WeatherInfo.WeatherToken?["main"]?["feels_like"] ?? 0d;
             double pressure = (double?)WeatherInfo.WeatherToken?["main"]?["pressure"] ?? 0d;

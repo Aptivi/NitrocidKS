@@ -49,7 +49,7 @@ namespace Nitrocid.Extras.Docking.Dock
         public static void DockScreen(string dockName)
         {
             // Check to see if there is a dock by this name
-            if (!DoesDockScreenExist(dockName, out BaseWidget? dock))
+            if (!DoesDockScreenExist(dockName, out IDock? dock))
                 throw new KernelException(KernelExceptionType.Docking, Translate.DoTranslation("There is no screen dock by this name."));
 
             // Now, dock the screen
@@ -62,7 +62,7 @@ namespace Nitrocid.Extras.Docking.Dock
         /// </summary>
         /// <param name="dockInstance">Screen dock instance</param>
         /// <exception cref="KernelException"></exception>
-        public static void DockScreen(BaseWidget? dockInstance)
+        public static void DockScreen(IDock? dockInstance)
         {
             // Check to see if there is a dock
             if (dockInstance is null)
@@ -99,12 +99,12 @@ namespace Nitrocid.Extras.Docking.Dock
         /// <param name="dockName">Screen dock class name</param>
         /// <param name="dockInstance">Screen dock instance output</param>
         /// <returns>True if found; false otherwise.</returns>
-        public static bool DoesDockScreenExist(string dockName, out BaseWidget? dockInstance)
+        public static bool DoesDockScreenExist(string dockName, out IDock? dockInstance)
         {
-            bool result = docks.TryGetValue(dockName, out BaseWidget? dock);
+            bool result = docks.TryGetValue(dockName, out IDock? dock);
             DebugWriter.WriteDebug(DebugLevel.I, $"Result: {dockName}, {result}");
             if (result)
-                DebugWriter.WriteDebug(DebugLevel.I, $"Got dock: {dock?.GetType().Name ?? "null"}");
+                DebugWriter.WriteDebug(DebugLevel.I, $"Got dock: {dock?.DockName ?? "null"}");
             dockInstance = dock;
             return result;
         }

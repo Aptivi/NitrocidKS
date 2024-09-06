@@ -38,6 +38,7 @@ using Nitrocid.Misc.Progress;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Network;
 using Nitrocid.Network.Transfer;
+using Nitrocid.Kernel.Configuration;
 
 namespace Nitrocid.Drivers.Network
 {

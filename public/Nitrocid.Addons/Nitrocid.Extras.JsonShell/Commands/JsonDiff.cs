@@ -24,6 +24,7 @@ using Nitrocid.ConsoleBase.Writers;
 using Nitrocid.Files.Operations;
 using Nitrocid.Misc.Text;
 using Nitrocid.Shell.ShellBase.Commands;
+using Textify.Json;
 
 namespace Nitrocid.Extras.JsonShell.Commands
 {
@@ -37,7 +38,7 @@ namespace Nitrocid.Extras.JsonShell.Commands
         {
             var source = JToken.Parse(Reading.ReadContentsText(parameters.ArgumentsList[0]));
             var target = JToken.Parse(Reading.ReadContentsText(parameters.ArgumentsList[1]));
-            var diff = JsonTextTools.FindDifferences(source, target);
+            var diff = JsonTools.FindDifferences(source, target);
             TextWriters.Write(diff.ToString(Formatting.Indented), KernelColorType.NeutralText);
             return 0;
         }

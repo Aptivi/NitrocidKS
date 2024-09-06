@@ -159,7 +159,7 @@ namespace Nitrocid.Modifications.Communication
                 return null;
 
             // Assuming that we have functions, get a single function containing that name
-            if (!functions.TryGetValue(functionName, out Delegate function))
+            if (!functions.TryGetValue(functionName, out Delegate? function))
                 return null;
 
             // Assuming that we have that function, get a single function delegate
@@ -194,7 +194,7 @@ namespace Nitrocid.Modifications.Communication
                 return null;
 
             // Assuming that we have properties, get a single property containing that name
-            if (!properties.TryGetValue(propertyName, out PropertyInfo property))
+            if (!properties.TryGetValue(propertyName, out PropertyInfo? property))
                 return null;
 
             // Assuming that we have that property, get a single property delegate
@@ -235,7 +235,7 @@ namespace Nitrocid.Modifications.Communication
                 return;
 
             // Assuming that we have properties, get a single property containing that name
-            if (!properties.TryGetValue(propertyName, out PropertyInfo property))
+            if (!properties.TryGetValue(propertyName, out PropertyInfo? property))
                 return;
 
             // Assuming that we have that property, get a single property delegate
@@ -275,11 +275,10 @@ namespace Nitrocid.Modifications.Communication
                 return null;
 
             // Assuming that we have fields, get a single field containing that name
-            if (!fields.TryGetValue(fieldName, out FieldInfo field))
+            if (!fields.TryGetValue(fieldName, out FieldInfo? field))
                 return null;
 
             // Assuming that we have that field, get a single field delegate
-            var field = GetFieldInfo(modName, fieldName);
             var get = field?.GetValue(null);
             if (get is null)
                 return null;

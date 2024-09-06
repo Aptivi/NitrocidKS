@@ -342,10 +342,11 @@ namespace Nitrocid.Shell.ShellBase.Arguments
                         string arg = EnclosedArgs[i];
                         var argPart = argInfo.Arguments[i];
 
-                    // Check to see if the argument expects a number and that the provided argument is numeric
-                    // or if the argument allows string values
-                    if (argPart.IsNumeric && !double.TryParse(arg, out _))
-                        numberProvided = false;
+                        // Check to see if the argument expects a number and that the provided argument is numeric
+                        // or if the argument allows string values
+                        if (argPart.IsNumeric && !double.TryParse(arg, out _))
+                            numberProvided = false;
+                    }
                 }
 
                 // Check to see if the caller has provided a wording other than the expected exact wording if found
@@ -357,10 +358,11 @@ namespace Nitrocid.Shell.ShellBase.Arguments
                         string arg = EnclosedArgs[i];
                         var argPart = argInfo.Arguments[i];
 
-                    // Check to see if the argument expects a number and that the provided argument is numeric
-                    // or if the argument allows string values
-                    if (argPart.ExactWording.Length > 0 && !argPart.ExactWording.Contains(arg))
-                        exactWordingProvided = false;
+                        // Check to see if the argument expects a number and that the provided argument is numeric
+                        // or if the argument allows string values
+                        if (argPart.ExactWording.Length > 0 && !argPart.ExactWording.Contains(arg))
+                            exactWordingProvided = false;
+                    }
                 }
 
                 // Check to see if the caller has provided a non-numeric value to a switch that expects numbers
