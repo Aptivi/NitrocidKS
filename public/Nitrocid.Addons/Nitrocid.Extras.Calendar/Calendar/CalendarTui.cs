@@ -621,6 +621,7 @@ namespace Nitrocid.Extras.Calendar.Calendar
             var (year, month, _, _) = TimeDateConverters.GetDateFromCalendar(selectedDate, state.calendar);
             var DateTo = new DateTime(year, month, calendarInstance.Calendar.GetDaysInMonth(year, month));
             bool found = false;
+            Dictionary<string, List<string>> remindersString = [];
             for (int CurrentDay = 1; CurrentDay <= DateTo.Day; CurrentDay++)
             {
                 // Populate some variables
@@ -635,13 +636,27 @@ namespace Nitrocid.Extras.Calendar.Calendar
                     if (rDate == CurrentDate)
                     {
                         found = true;
-                        builder.AppendLine($"{month}/{CurrentDay}/{year}");
-                        builder.AppendLine($"  {Reminder.ReminderTitle}");
+                        string reminderDate = $"{month}/{CurrentDay}/{year}";
+                        string reminderTitle = $"[{Reminder.ReminderImportance}] {Reminder.ReminderTitle}";
+                        if (remindersString.TryGetValue(reminderDate, out List<string>? reminderList))
+                            reminderList.Add(reminderTitle);
+                        else
+                            remindersString.Add(reminderDate, [reminderTitle]);
                     }
                 }
             }
             if (!found)
                 builder.AppendLine(Translate.DoTranslation("No reminders found for the selected month"));
+            else
+            {
+                foreach (string date in remindersString.Keys)
+                {
+                    var reminders = remindersString[date];
+                    builder.AppendLine(date);
+                    foreach (string reminderName in reminders)
+                        builder.AppendLine($"    {reminderName}");
+                }
+            }
             InfoBoxColor.WriteInfoBox(builder.ToString());
         }
 
@@ -654,6 +669,7 @@ namespace Nitrocid.Extras.Calendar.Calendar
             var (year, month, _, _) = TimeDateConverters.GetDateFromCalendar(selectedDate, state.calendar);
             var DateTo = new DateTime(year, month, calendarInstance.Calendar.GetDaysInMonth(year, month));
             bool found = false;
+            Dictionary<string, List<string>> eventsString = [];
             for (int CurrentDay = 1; CurrentDay <= DateTo.Day; CurrentDay++)
             {
                 // Populate some variables
@@ -672,17 +688,38 @@ namespace Nitrocid.Extras.Calendar.Calendar
                     nDate = new(nYear, nMonth, nDay);
                     sDate = new(sYear, sMonth, sDay);
                     eDate = new(eYear, eMonth, eDay);
-                    if (((EventInstance.IsYearly && CurrentDate >= sDate && CurrentDate <= eDate) ||
-                         (!EventInstance.IsYearly && CurrentDate == nDate)))
+                    if (EventInstance.IsYearly && CurrentDate >= sDate && CurrentDate <= eDate)
                     {
                         found = true;
-                        builder.AppendLine($"{month}/{CurrentDay}/{year}");
-                        builder.AppendLine($"  {EventInstance.EventTitle}");
+                        string eventDate = $"{sDate.Month}/{sDate.Day}/{sDate.Year} -> {eDate.Month}/{eDate.Day}/{eDate.Year}";
+                        string eventTitle = EventInstance.EventTitle;
+                        if (!eventsString.ContainsKey(eventDate))
+                            eventsString.Add(eventDate, [eventTitle]);
+                    }
+                    else if (!EventInstance.IsYearly && CurrentDate == nDate)
+                    {
+                        found = true;
+                        string eventDate = $"{month}/{CurrentDay}/{year}";
+                        string eventTitle = EventInstance.EventTitle;
+                        if (eventsString.TryGetValue(eventDate, out List<string>? eventList))
+                            eventList.Add(eventTitle);
+                        else
+                            eventsString.Add(eventDate, [eventTitle]);
                     }
                 }
             }
             if (!found)
                 builder.AppendLine(Translate.DoTranslation("No events found for the selected month"));
+            else
+            {
+                foreach (string date in eventsString.Keys)
+                {
+                    var events = eventsString[date];
+                    builder.AppendLine(date);
+                    foreach (string eventName in events)
+                        builder.AppendLine($"    {eventName}");
+                }
+            }
             InfoBoxColor.WriteInfoBox(builder.ToString());
         }
 
@@ -693,6 +730,7 @@ namespace Nitrocid.Extras.Calendar.Calendar
             // Populate some variables
             bool found = false;
             var CurrentDate = new DateTime(state.Year, state.Month, state.Day);
+            List<string> reminderNames = [];
 
             // Render the reminders
             foreach (ReminderInfo Reminder in ReminderManager.Reminders)
@@ -703,12 +741,17 @@ namespace Nitrocid.Extras.Calendar.Calendar
                 if (rDate == CurrentDate)
                 {
                     found = true;
-                    builder.AppendLine($"{state.Month}/{state.Day}/{state.Year}");
-                    builder.AppendLine($"  {Reminder.ReminderTitle}");
+                    reminderNames.Add($"[{Reminder.ReminderImportance}] {Reminder.ReminderTitle}");
                 }
             }
             if (!found)
                 builder.AppendLine(Translate.DoTranslation("No reminders found for the selected day"));
+            else
+            {
+                builder.AppendLine($"{state.Month}/{state.Day}/{state.Year}");
+                foreach (string reminderName in reminderNames)
+                    builder.AppendLine($"    {reminderName}");
+            }
             InfoBoxColor.WriteInfoBox(builder.ToString());
         }
 
@@ -719,6 +762,7 @@ namespace Nitrocid.Extras.Calendar.Calendar
             // Populate some variables
             bool found = false;
             var CurrentDate = new DateTime(state.Year, state.Month, state.Day);
+            List<string> eventNames = [];
 
             // Render the events
             foreach (EventInfo EventInstance in EventManager.CalendarEvents.Union(EventManager.baseEvents))
@@ -733,16 +777,21 @@ namespace Nitrocid.Extras.Calendar.Calendar
                 nDate = new(nYear, nMonth, nDay);
                 sDate = new(sYear, sMonth, sDay);
                 eDate = new(eYear, eMonth, eDay);
-                if (((EventInstance.IsYearly && CurrentDate >= sDate && CurrentDate <= eDate) ||
-                        (!EventInstance.IsYearly && CurrentDate == nDate)))
+                if ((EventInstance.IsYearly && CurrentDate >= sDate && CurrentDate <= eDate) ||
+                    (!EventInstance.IsYearly && CurrentDate == nDate))
                 {
                     found = true;
-                    builder.AppendLine($"{state.Month}/{state.Day}/{state.Year}");
-                    builder.AppendLine($"  {EventInstance.EventTitle}");
+                    eventNames.Add(EventInstance.EventTitle);
                 }
             }
             if (!found)
                 builder.AppendLine(Translate.DoTranslation("No events found for the selected day"));
+            else
+            {
+                builder.AppendLine($"{state.Month}/{state.Day}/{state.Year}");
+                foreach (string eventName in eventNames)
+                    builder.AppendLine($"    {eventName}");
+            }
             InfoBoxColor.WriteInfoBox(builder.ToString());
         }
     }
