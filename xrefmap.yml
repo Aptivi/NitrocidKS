@@ -24097,6 +24097,12 @@ references:
   commentId: F:Nitrocid.Kernel.Exceptions.KernelExceptionType.HexEditor
   fullName: Nitrocid.Kernel.Exceptions.KernelExceptionType.HexEditor
   nameWithType: KernelExceptionType.HexEditor
+- uid: Nitrocid.Kernel.Exceptions.KernelExceptionType.Homepage
+  name: Homepage
+  href: api/Nitrocid.Kernel.Exceptions.KernelExceptionType.html#Nitrocid_Kernel_Exceptions_KernelExceptionType_Homepage
+  commentId: F:Nitrocid.Kernel.Exceptions.KernelExceptionType.Homepage
+  fullName: Nitrocid.Kernel.Exceptions.KernelExceptionType.Homepage
+  nameWithType: KernelExceptionType.Homepage
 - uid: Nitrocid.Kernel.Exceptions.KernelExceptionType.Hostname
   name: Hostname
   href: api/Nitrocid.Kernel.Exceptions.KernelExceptionType.html#Nitrocid_Kernel_Exceptions_KernelExceptionType_Hostname
@@ -36629,6 +36635,38 @@ references:
   commentId: T:Nitrocid.Shell.Homepage.HomepageTools
   fullName: Nitrocid.Shell.Homepage.HomepageTools
   nameWithType: HomepageTools
+- uid: Nitrocid.Shell.Homepage.HomepageTools.IsHomepageActionBuiltin(System.String)
+  name: IsHomepageActionBuiltin(string)
+  href: api/Nitrocid.Shell.Homepage.HomepageTools.html#Nitrocid_Shell_Homepage_HomepageTools_IsHomepageActionBuiltin_System_String_
+  commentId: M:Nitrocid.Shell.Homepage.HomepageTools.IsHomepageActionBuiltin(System.String)
+  name.vb: IsHomepageActionBuiltin(String)
+  fullName: Nitrocid.Shell.Homepage.HomepageTools.IsHomepageActionBuiltin(string)
+  fullName.vb: Nitrocid.Shell.Homepage.HomepageTools.IsHomepageActionBuiltin(String)
+  nameWithType: HomepageTools.IsHomepageActionBuiltin(string)
+  nameWithType.vb: HomepageTools.IsHomepageActionBuiltin(String)
+- uid: Nitrocid.Shell.Homepage.HomepageTools.IsHomepageActionBuiltin*
+  name: IsHomepageActionBuiltin
+  href: api/Nitrocid.Shell.Homepage.HomepageTools.html#Nitrocid_Shell_Homepage_HomepageTools_IsHomepageActionBuiltin_
+  commentId: Overload:Nitrocid.Shell.Homepage.HomepageTools.IsHomepageActionBuiltin
+  isSpec: "True"
+  fullName: Nitrocid.Shell.Homepage.HomepageTools.IsHomepageActionBuiltin
+  nameWithType: HomepageTools.IsHomepageActionBuiltin
+- uid: Nitrocid.Shell.Homepage.HomepageTools.IsHomepageActionRegistered(System.String)
+  name: IsHomepageActionRegistered(string)
+  href: api/Nitrocid.Shell.Homepage.HomepageTools.html#Nitrocid_Shell_Homepage_HomepageTools_IsHomepageActionRegistered_System_String_
+  commentId: M:Nitrocid.Shell.Homepage.HomepageTools.IsHomepageActionRegistered(System.String)
+  name.vb: IsHomepageActionRegistered(String)
+  fullName: Nitrocid.Shell.Homepage.HomepageTools.IsHomepageActionRegistered(string)
+  fullName.vb: Nitrocid.Shell.Homepage.HomepageTools.IsHomepageActionRegistered(String)
+  nameWithType: HomepageTools.IsHomepageActionRegistered(string)
+  nameWithType.vb: HomepageTools.IsHomepageActionRegistered(String)
+- uid: Nitrocid.Shell.Homepage.HomepageTools.IsHomepageActionRegistered*
+  name: IsHomepageActionRegistered
+  href: api/Nitrocid.Shell.Homepage.HomepageTools.html#Nitrocid_Shell_Homepage_HomepageTools_IsHomepageActionRegistered_
+  commentId: Overload:Nitrocid.Shell.Homepage.HomepageTools.IsHomepageActionRegistered
+  isSpec: "True"
+  fullName: Nitrocid.Shell.Homepage.HomepageTools.IsHomepageActionRegistered
+  nameWithType: HomepageTools.IsHomepageActionRegistered
 - uid: Nitrocid.Shell.Homepage.HomepageTools.OpenHomepage
   name: OpenHomepage()
   href: api/Nitrocid.Shell.Homepage.HomepageTools.html#Nitrocid_Shell_Homepage_HomepageTools_OpenHomepage
@@ -36642,6 +36680,38 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Shell.Homepage.HomepageTools.OpenHomepage
   nameWithType: HomepageTools.OpenHomepage
+- uid: Nitrocid.Shell.Homepage.HomepageTools.RegisterAction(System.String,System.Action)
+  name: RegisterAction(string, Action?)
+  href: api/Nitrocid.Shell.Homepage.HomepageTools.html#Nitrocid_Shell_Homepage_HomepageTools_RegisterAction_System_String_System_Action_
+  commentId: M:Nitrocid.Shell.Homepage.HomepageTools.RegisterAction(System.String,System.Action)
+  name.vb: RegisterAction(String, Action)
+  fullName: Nitrocid.Shell.Homepage.HomepageTools.RegisterAction(string, System.Action?)
+  fullName.vb: Nitrocid.Shell.Homepage.HomepageTools.RegisterAction(String, System.Action)
+  nameWithType: HomepageTools.RegisterAction(string, Action?)
+  nameWithType.vb: HomepageTools.RegisterAction(String, Action)
+- uid: Nitrocid.Shell.Homepage.HomepageTools.RegisterAction*
+  name: RegisterAction
+  href: api/Nitrocid.Shell.Homepage.HomepageTools.html#Nitrocid_Shell_Homepage_HomepageTools_RegisterAction_
+  commentId: Overload:Nitrocid.Shell.Homepage.HomepageTools.RegisterAction
+  isSpec: "True"
+  fullName: Nitrocid.Shell.Homepage.HomepageTools.RegisterAction
+  nameWithType: HomepageTools.RegisterAction
+- uid: Nitrocid.Shell.Homepage.HomepageTools.UnregisterAction(System.String)
+  name: UnregisterAction(string)
+  href: api/Nitrocid.Shell.Homepage.HomepageTools.html#Nitrocid_Shell_Homepage_HomepageTools_UnregisterAction_System_String_
+  commentId: M:Nitrocid.Shell.Homepage.HomepageTools.UnregisterAction(System.String)
+  name.vb: UnregisterAction(String)
+  fullName: Nitrocid.Shell.Homepage.HomepageTools.UnregisterAction(string)
+  fullName.vb: Nitrocid.Shell.Homepage.HomepageTools.UnregisterAction(String)
+  nameWithType: HomepageTools.UnregisterAction(string)
+  nameWithType.vb: HomepageTools.UnregisterAction(String)
+- uid: Nitrocid.Shell.Homepage.HomepageTools.UnregisterAction*
+  name: UnregisterAction
+  href: api/Nitrocid.Shell.Homepage.HomepageTools.html#Nitrocid_Shell_Homepage_HomepageTools_UnregisterAction_
+  commentId: Overload:Nitrocid.Shell.Homepage.HomepageTools.UnregisterAction
+  isSpec: "True"
+  fullName: Nitrocid.Shell.Homepage.HomepageTools.UnregisterAction
+  nameWithType: HomepageTools.UnregisterAction
 - uid: Nitrocid.Shell.Prompts
   name: Nitrocid.Shell.Prompts
   href: api/Nitrocid.Shell.Prompts.html
