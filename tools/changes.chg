@@ -1,31 +1,65 @@
 Nitrocid KS 0.1.0 changes
 =========================
 
-Released March 11th, 2024; codename Magic Bloom - Revision 22 (0.1.0.22)
+Released March 11th, 2024; codename Magic Bloom - Revision 23 (0.1.0.23)
 
 =============================================================================
 
-From 0.1.0.5 onwards
+0.1.0.23 - Service Pack 1 (September 10th, 2024)
+================================================
+
+This service pack release is a long-awaited release that enhances your Nitrocid
+KS experience by adding some new features and fixing bugs left and right.
+
+Timers and Stopwatches
+----------------------
+
+We've made the UI of both the timer and the stopwatch applications more modern
+then before by utilizing the latest design language that Terminaux 5.0
+introduced using the rounded corners. In addition to that, you can now see the
+full list of all the laps in the stopwatch application, as well as fixed some
+issues.
+
+Events and Reminders
 --------------------
+
+The list of events and reminders in the calendar textual user interface (TUI)
+is now less cluttered, with grouping of all the events in a single day,
+including annual events that last two or more days. You'll now see a much
+cleaner interface then before when looking for events and reminders. You can
+also see events and reminders in a single day by a single key press.
+
+Security Improvements
+---------------------
+
+In the login screen, you are now required to sign in to your account before
+being able to shut down or reboot the simulated kernel to avoid unwanted
+disruptions. This account must either be an administrator or have power
+management permissions in order to be able to initiate a shut down or a reboot.
+
+Nitrocid LIVE!
+--------------
+
+Initially introduced in 0.1.1.6, you can now try out Nitrocid in a minimal
+Windows environment distribution, called Nitrocid LIVE! Based on Windows 11
+24H2 Preinstallation Environment (PE), you can try the Windows version of
+Nitrocid out without having to install Windows.
+
+Second-gen Configuration Migration
+----------------------------------
 
 You can now migrate your old second-gen configuration files, such as those
 that 0.0.24.0 or older generates. It supports migrating configurations that
 are as old as 0.0.16.0, released on June 12th, 2021!
 
-=============================================================================
-
-=============================================================================
-
-From 0.1.0.2 onwards
---------------------
+LibGit2Sharp Security Update
+----------------------------
 
 Security notice: LibGit2Sharp has been updated to version 0.30.0 due to a
 security bug found in earlier libgit2 versions. For more information, visit
 this URL:
 
 https://github.com/libgit2/libgit2/security/advisories/GHSA-j2v7-4f6v-gpg8
-
-It's recommended to ditch 0.1.0.0 and 0.1.0.1 to keep your system secure!
 
 =============================================================================
 
