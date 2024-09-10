@@ -1114,11 +1114,6 @@ Aktivieren Sie den Schwarz-Weiß-Modus
 Macht die Disco schwarz auf weiß. Wird Ihre Augen wirklich verletzen, wenn es zu schnell war, also nicht empfohlen, wenn Sie einen Anfall von schnellen Bildern erleben.
 Aktuelle Farben laden
 Aktueller Wert:
-Ungültiger Hex-Farbbezeichner.
-Ungültiger RGB-Farbbezeichner.
-Ungültiger roter Farbbezeichner.
-Ungültiger grüner Farbbezeichner.
-Ungültiger blauer Farbbezeichner.
 Fügt am Ende der Datei ein neues Byte hinzu
 Fügt die neuen Bytes am Ende der Datei hinzu
 Löscht die Binärdatei
@@ -1172,17 +1167,9 @@ Maximal zu generierende Altersjahre
 Unbenannte Handbuchseite
 Eingabeverlauf aktiviert
 Ob der Eingabeverlauf aktiviert ist oder nicht. Wenn diese Option aktiviert ist, können Sie mit den Aufwärts- oder Abwärtspfeiltasten auf kürzlich eingegebene Befehle zugreifen.
-Konvertiert die Farb-RGB-Zahlen in Hex.
-Konvertiert die hexadezimale Darstellung der Farbe in RGB-Zahlen.
-Konvertiert die hexadezimale Darstellung der Farbe in RGB-Zahlen im KS-Format.
 Rote Farbstufe:
 Grüne Farbstufe:
 Blaue Farbstufe:
-RGB-Farbfolge:
-Die rote Farbstufe muss numerisch sein.
-Die grüne Farbstufe muss numerisch sein.
-Die blaue Farbstufe muss numerisch sein.
-Hexadezimale Farbdarstellung:
 Sie können Ihren Computer jetzt sicher ausschalten.
 Simulieren Sie keinen APM-Modus
 Ob eine Situation simuliert werden soll, in der kein APM verfügbar ist. Wenn aktiviert, informiert es den Benutzer, dass es jetzt sicher ist, den Computer beim Herunterfahren auszuschalten.
@@ -1236,11 +1223,8 @@ Führen Sie „Lizenz“ aus, um die Lizenzinformationen anzuzeigen.
 Kernel wird zum ersten Mal ausgeführt
 Willkommen bei Nitrocid Kernel! Vielen Dank, dass Sie es ausprobiert haben!
 Um zu beginnen, drücken Sie die EINGABETASTE.
-Wähle deine Sprache
 Wähle deine Sprache. Standardmäßig verwendet der Kernel die englische Sprache, Sie können hier jedoch jede andere Sprache auswählen.
 Basierend auf Ihren Spracheinstellungen auf Ihrem System ist die entsprechende Sprache
-Schreiben Sie den unten aufgeführten Sprachcode:
-Drücken Sie die ENTER-Taste, um fortzufahren.
 Erstellen Sie Ihren ersten Benutzer
 Wir helfen Ihnen bei der Erstellung Ihres eigenen Benutzernamens. Wählen Sie einen beliebigen Namen aus. Dies kann Ihr Spitzname oder Ihr Kurzname sein, sofern Ihr Benutzername keine Leer- und Sonderzeichen enthält und dieser nicht bereits existiert. Folgende Benutzernamen sind registriert:
 Geben Sie den Benutzernamen ein
@@ -1287,13 +1271,6 @@ Die folgenden Dateien werden nicht gelöscht:
 Möchten Sie diese Dateien wirklich löschen?
 Verschiedene Dateien können nicht gelöscht werden
 Keine Argumenthilfebeschreibung
-Ungültiger RYB-Farbspezifizierer.
-Ungültiger CMY-Farbspezifizierer.
-Ungültiger CMYK-Farbspezifizierer.
-Ungültiger HSL-Farbspezifizierer.
-Ungültiger HSV-Farbspezifizierer.
-Ungültiger YIQ-Farbspezifizierer.
-Ungültiger YUV-Farbspezifizierer.
 Um dieses Design verwenden zu können, muss Ihre Konsole True Color unterstützen.
 Verlassen Sie die Vorschau
 Erledigt
@@ -1586,7 +1563,6 @@ Extras – JSON-Shell
 Extras - Sprachstudio
 Extras – Mail-Shell
 Extras - MD5
-Extras - NameGen
 Extras – Notizen
 Extras - RSS-Shell
 Extras – SFTP-Shell
@@ -1809,37 +1785,8 @@ BASE64 unterstützt keine Initialisierungsvektoren
 RSA unterstützt keine Schlüssel
 RSA unterstützt keine Initialisierungsvektoren
 Tastenbelegungen
-Einfügen
 Entfernen
-Ersetzen
-Alles ersetzen
-Ersetzen Sie alles, was
-Nummerninfo
-Der Hex-Editor ist fehlgeschlagen:
-Verfügbare Schlüssel
-Schreiben Sie die Bytenummer mit dem Hexadezimalwert.
-Die angegebene Bytenummer ist ungültig.
-Schreiben Sie die Bytenummer mit dem Hexadezimalwert, durch den {0} ersetzt werden soll.
-Schreiben Sie die Bytenummer mit dem zu ersetzenden Hexadezimalwert.
-Nummerninformationen:
-Hexadezimal
-Oktal
-Nummer
-Binär
-Diese Tastenkombination enthält keine Aktion.
 Dieser Vorgang kann nicht für ein Null-Array ausgeführt werden.
-Eingeben...
-Linie entfernen
-Hören Sie auf, einzutreten
-Neue Zeile
-Der Texteditor ist fehlgeschlagen:
-Schreiben Sie die zu findende Zeichenfolge
-Schreiben Sie die Ersatzzeichenfolge
-Linien
-Spalte
-Reihe
-Behälter
-Tab
 Dieser Vorgang kann nicht für eine Nullzeilenliste ausgeführt werden.
 Der Einstellungstyp wurde nicht gefunden.
 Finden Sie eine Option
@@ -1866,7 +1813,6 @@ Einstellungen speichern...
 Einstellungen speichern unter
 Einstellungen werden geladen...
 Einstellungen werden neu geladen...
-Die Suche nach Updates ist bei Entwicklungsversionen deaktiviert.
 Kernelversion
 Kernel-API-Version
 Host-ID
@@ -1943,7 +1889,6 @@ Die folgenden Schalter akzeptieren keine Werte.
 Mindestens eines der Argumente erwartet einen numerischen Wert, aber Sie haben eine ungültige Zahl angegeben.
 Eines oder mehrere der Argumente erfordern einen genauen Wortlaut, aber Sie haben ein ungültiges Wort angegeben.
 Einer oder mehrere Schalter erwarten einen numerischen Wert, aber Sie haben eine ungültige Zahl angegeben.
-Weitere Informationen finden Sie in diesem Befehl
 Der Befehl wurde abgebrochen.
 Sie dürfen diesen Befehl nicht direkt im umschlossenen Modus ausführen.
 Beim Versuch, eine Befehlsausgabe zu umbrechen, ist ein Fehler aufgetreten
@@ -2036,7 +1981,6 @@ Verwendet die Systemspracheneinstellungen, um zu versuchen, die Sprache abzuleit
 Einzeiliger Auswahlstil
 Zweizeiliger Auswahlstil
 Moderner Wahlstil
-Stil der Tischauswahl
 Die Ausgabe kann nur ein Zeichen sein
 Die Ausgabe kann mehr als ein Zeichen umfassen
 Kombiniert die zwei oder mehr Textdateien in der Konsole.
@@ -2234,7 +2178,6 @@ Testet den Eingabeauswahlstil
 Testet den Listeneintragsschreiber
 Gedankenstrich 1:
 Gedankenstrich 2:
-Testet das Präsentationssystem
 Testet den Fortschrittshandler
 Initialisierung...
 Schreiben Sie eine Zeichenfolge zur Überprüfung:
@@ -2432,139 +2375,6 @@ Zeigt Informationen über die imaginäre Zahlenformel an, die durch eine bestimm
 Kalender-, Ereignis- und Erinnerungsmanager
 Kalendertyp, an dem gearbeitet werden soll
 Nutzen Sie den tabellenbasierten Kalender-Viewer
-Konvertiert die hexadezimale Darstellung der Farbe in RYB-Zahlen.
-Konvertiert die hexadezimale Darstellung der Farbe in RYB-Zahlen im KS-Format.
-Konvertiert die hexadezimale Darstellung der Farbe in CMYK-Zahlen.
-Konvertiert die hexadezimale Darstellung der Farbe in CMYK-Zahlen im KS-Format.
-Konvertiert die hexadezimale Darstellung der Farbe in CMY-Zahlen.
-Konvertiert die hexadezimale Darstellung der Farbe in CMY-Zahlen im KS-Format.
-Konvertiert die hexadezimale Darstellung der Farbe in HSL-Zahlen.
-Konvertiert die hexadezimale Darstellung der Farbe in HSL-Zahlen im KS-Format.
-Konvertiert die hexadezimale Darstellung der Farbe in HSV-Zahlen.
-Konvertiert die hexadezimale Darstellung der Farbe in HSV-Zahlen im KS-Format.
-Konvertiert die hexadezimale Darstellung der Farbe in YIQ-Zahlen.
-Konvertiert die hexadezimale Darstellung der Farbe in YIQ-Zahlen im KS-Format.
-Konvertiert die hexadezimale Darstellung der Farbe in YUV-Zahlen.
-Konvertiert die hexadezimale Darstellung der Farbe in YUV-Zahlen im KS-Format.
-Konvertiert die Farb-RGB-Zahlen in CMYK.
-Konvertiert die Farb-RGB-Zahlen in CMYK im KS-Format.
-Konvertiert die Farb-RGB-Zahlen in CMY.
-Konvertiert die Farb-RGB-Zahlen in CMY im KS-Format.
-Konvertiert die Farb-RGB-Zahlen in HSL.
-Konvertiert die Farb-RGB-Zahlen in HSL im KS-Format.
-Konvertiert die Farb-RGB-Zahlen in HSV.
-Konvertiert die Farb-RGB-Zahlen in HSV im KS-Format.
-Konvertiert die Farb-RGB-Zahlen in RYB.
-Konvertiert die Farb-RGB-Zahlen in RYB im KS-Format.
-Konvertiert die Farb-RGB-Zahlen in YIQ.
-Konvertiert die Farb-RGB-Zahlen in YIQ im KS-Format.
-Konvertiert die Farb-RGB-Zahlen in YUV.
-Konvertiert die Farb-RGB-Zahlen in YUV im KS-Format.
-Konvertiert die Farb-RYB-Zahlen in Hex.
-Konvertiert die Farb-RYB-Zahlen in CMYK.
-Konvertiert die Farb-RYB-Zahlen in CMYK im KS-Format.
-Konvertiert die Farb-RYB-Zahlen in CMY.
-Konvertiert die Farb-RYB-Zahlen in CMY im KS-Format.
-Konvertiert die Farb-RYB-Zahlen in HSL.
-Konvertiert die Farb-RYB-Zahlen in HSL im KS-Format.
-Konvertiert die Farb-RYB-Zahlen in HSV.
-Konvertiert die Farb-RYB-Zahlen in HSV im KS-Format.
-Konvertiert die Farb-RYB-Zahlen in RGB.
-Konvertiert die Farb-RYB-Zahlen in RGB im KS-Format.
-Konvertiert die Farb-RYB-Zahlen in YIQ.
-Konvertiert die Farb-RYB-Zahlen in YIQ im KS-Format.
-Konvertiert die Farb-RYB-Zahlen in YUV.
-Konvertiert die Farb-RYB-Zahlen in YUV im KS-Format.
-Konvertiert die farbigen HSL-Zahlen in Hexadezimalwerte.
-Konvertiert die Farb-HSL-Zahlen in CMYK.
-Konvertiert die Farb-HSL-Zahlen in CMYK im KS-Format.
-Konvertiert die Farb-HSL-Zahlen in CMY.
-Konvertiert die Farb-HSL-Zahlen in CMY im KS-Format.
-Konvertiert die Farb-HSL-Zahlen in HSV.
-Konvertiert die farbigen HSL-Zahlen in HSV im KS-Format.
-Konvertiert die Farb-HSL-Zahlen in RGB.
-Konvertiert die Farb-HSL-Zahlen in RGB im KS-Format.
-Konvertiert die Farb-HSL-Zahlen in RYB.
-Konvertiert die farbigen HSL-Zahlen in RYB im KS-Format.
-Konvertiert die Farb-HSL-Zahlen in YIQ.
-Konvertiert die farbigen HSL-Zahlen in YIQ im KS-Format.
-Konvertiert die Farb-HSL-Zahlen in YUV.
-Konvertiert die farbigen HSL-Zahlen in YUV im KS-Format.
-Konvertiert die Farb-HSV-Zahlen in Hex.
-Konvertiert die Farb-HSV-Zahlen in CMYK.
-Konvertiert die Farb-HSV-Zahlen in CMYK im KS-Format.
-Konvertiert die Farb-HSV-Zahlen in CMY.
-Konvertiert die Farb-HSV-Zahlen in CMY im KS-Format.
-Konvertiert die Farb-HSV-Zahlen in HSL.
-Konvertiert die farbigen HSV-Zahlen in HSL im KS-Format.
-Konvertiert die Farb-HSV-Zahlen in RGB.
-Konvertiert die Farb-HSV-Zahlen in RGB im KS-Format.
-Konvertiert die Farb-HSV-Zahlen in RYB.
-Konvertiert die farbigen HSV-Zahlen in RYB im KS-Format.
-Konvertiert die Farb-HSV-Zahlen in YIQ.
-Konvertiert die farbigen HSV-Zahlen in YIQ im KS-Format.
-Konvertiert die Farb-HSV-Zahlen in YUV.
-Konvertiert die Farb-HSV-Zahlen in YUV im KS-Format.
-Konvertiert die Farb-CMYK-Zahlen in Hexadezimalwerte.
-Konvertiert die Farb-CMYK-Zahlen in RGB.
-Konvertiert die Farb-CMYK-Zahlen in RGB im KS-Format.
-Konvertiert die Farb-CMYK-Zahlen in RYB.
-Konvertiert die Farb-CMYK-Zahlen in RYB im KS-Format.
-Konvertiert die Farb-CMYK-Zahlen in HSL.
-Konvertiert die Farb-CMYK-Zahlen in HSL im KS-Format.
-Konvertiert die Farb-CMYK-Zahlen in HSV.
-Konvertiert die Farb-CMYK-Zahlen in HSV im KS-Format.
-Konvertiert die Farb-CMYK-Zahlen in CMY.
-Konvertiert die Farb-CMYK-Zahlen in CMY im KS-Format.
-Konvertiert die Farb-CMYK-Zahlen in YIQ.
-Konvertiert die Farb-CMYK-Zahlen in YIQ im KS-Format.
-Konvertiert die Farb-CMYK-Zahlen in YUV.
-Konvertiert die Farb-CMYK-Zahlen in YUV im KS-Format.
-Konvertiert die Farb-CMY-Zahlen in Hexadezimalwerte.
-Konvertiert die Farb-CMY-Zahlen in CMYK.
-Konvertiert die Farb-CMY-Zahlen in CMYK im KS-Format.
-Konvertiert die Farb-CMY-Zahlen in HSL.
-Konvertiert die Farb-CMY-Zahlen in HSL im KS-Format.
-Konvertiert die Farb-CMY-Zahlen in HSV.
-Konvertiert die Farb-CMY-Zahlen in HSV im KS-Format.
-Konvertiert die Farb-CMY-Zahlen in RGB.
-Konvertiert die Farb-CMY-Zahlen in RGB im KS-Format.
-Konvertiert die Farb-CMY-Zahlen in RYB.
-Konvertiert die Farb-CMY-Zahlen in RYB im KS-Format.
-Konvertiert die Farb-CMY-Zahlen in YIQ.
-Konvertiert die Farb-CMY-Zahlen in YIQ im KS-Format.
-Konvertiert die Farb-CMY-Zahlen in YUV.
-Konvertiert die Farb-CMY-Zahlen in YUV im KS-Format.
-Wandelt die Farb-YIQ-Zahlen in Hex um.
-Konvertiert die Farb-YIQ-Zahlen in CMYK.
-Konvertiert die Farb-YIQ-Zahlen in CMYK im KS-Format.
-Konvertiert die Farb-YIQ-Zahlen in CMY.
-Konvertiert die Farb-YIQ-Zahlen in CMY im KS-Format.
-Konvertiert die Farb-YIQ-Zahlen in HSL.
-Konvertiert die Farb-YIQ-Zahlen in HSL im KS-Format.
-Konvertiert die Farb-YIQ-Zahlen in HSV.
-Konvertiert die Farb-YIQ-Zahlen in HSV im KS-Format.
-Konvertiert die Farb-YIQ-Zahlen in RGB.
-Konvertiert die Farb-YIQ-Zahlen in RGB im KS-Format.
-Konvertiert die Farb-YIQ-Zahlen in RYB.
-Konvertiert die Farb-YIQ-Zahlen in RYB im KS-Format.
-Konvertiert die Farb-YIQ-Zahlen in YUV.
-Konvertiert die Farb-YIQ-Zahlen in YUV im KS-Format.
-Konvertiert die Farb-YUV-Zahlen in Hex.
-Konvertiert die YUV-Farbzahlen in CMYK.
-Konvertiert die YUV-Farbzahlen in CMYK im KS-Format.
-Konvertiert die Farb-YUV-Zahlen in CMY.
-Konvertiert die YUV-Farbzahlen in CMY im KS-Format.
-Konvertiert die Farb-YUV-Zahlen in HSL.
-Konvertiert die Farb-YUV-Zahlen in HSL im KS-Format.
-Konvertiert die Farb-YUV-Zahlen in HSV.
-Konvertiert die Farb-YUV-Zahlen in HSV im KS-Format.
-Konvertiert die Farb-YUV-Zahlen in RGB.
-Konvertiert die Farb-YUV-Zahlen in RGB im KS-Format.
-Konvertiert die Farb-YUV-Zahlen in RYB.
-Konvertiert die Farb-YUV-Zahlen in RYB im KS-Format.
-Konvertiert die Farb-YUV-Zahlen in YUV.
-Konvertiert die Farb-YUV-Zahlen in YIQ im KS-Format.
 Verwaltet Ihre Kontakte
 Ruft den Backtrace für alle Threads ab
 Zeigt Ihnen eine Vollbildübersicht über eine ausgewählte Dockansicht, um diese als Infopanel nutzen zu können
@@ -2680,7 +2490,6 @@ Alles Gute zum 5-jährigen Jubiläum!
 Kann nichts extrahieren.
 Das Archiv ist aufgrund des Typs nicht beschreibbar
 Stellen Sie sicher, dass Sie den Pfad zu einer LRC-Datei angeben.
-Musikdatei nicht angegeben.
 Die Musikdatei „{0}“ existiert nicht.
 Schwerwiegender Fehler im BassBoom CLI-Addon.
 Der Ton kann nicht abgespielt werden, da die Datei nicht gefunden wurde.
@@ -2705,7 +2514,6 @@ Geben Sie einen Pfad zur Musikdatei ein
 Datei „{0}“ existiert nicht.
 Geben Sie einen Pfad zum Musikbibliotheksverzeichnis ein
 Das Verzeichnis der Musikbibliothek wurde nicht gefunden.
-{0} kann nicht geöffnet werden: {1}
 BassBoom wird geladen, um {0} zu öffnen...
 Läuft gerade
 Ich versuche, die Liedtextdatei zu öffnen
@@ -2719,13 +2527,10 @@ Suche Kontrolle
 Suchen Sie nach einer Dauerkontrolle
 Songinfo
 Fügen Sie eine Musikdatei hinzu
-Fügen Sie der Wiedergabeliste ein Musikverzeichnis hinzu
 Vorheriges Lied
 Nächstes Lied
 Aktuelles Lied entfernen
 Alle Lieder entfernen
-Selektiv suchen
-Offener Equalizer
 Unbekannt
 Titel
 Album
@@ -2780,39 +2585,18 @@ Lange Form
 Kalendertyp
 Für den ausgewählten Monat wurden keine Erinnerungen gefunden
 Für den ausgewählten Monat wurden keine Veranstaltungen gefunden
-Die Cyan-Farbstufe muss numerisch sein.
-Die Magenta-Farbstufe muss numerisch sein.
-Die gelbe Farbstufe muss numerisch sein.
-Die Ebene der schwarzen Taste muss numerisch sein.
 Cyan-Pegel:
 Magenta-Stufe:
 Gelbstufe:
-CMY-Farbfolge:
 Farbton:
 Sättigung:
-HSL-Farbfolge:
 Wert:
-HSV-Farbfolge:
 Farbstufe Gelb:
-RYB-Farbfolge:
 Luma:
 In-Phase:
 Quadratur:
-YIQ-Farbreihenfolge:
 U-Chroma:
 V-Chroma:
-YUV-Farbsequenz:
-Schwarzer Schlüssel:
-CMYK-Farbfolge:
-Der Farbtonwert muss numerisch sein.
-Der Sättigungsgrad muss numerisch sein.
-Die Leuchtdichte oder Beleuchtungsstärke muss numerisch sein.
-Die Werteebene muss numerisch sein.
-Die Y-Komponentenebene muss numerisch sein.
-Die I-Komponentenebene muss numerisch sein.
-Die Q-Komponentenebene muss numerisch sein.
-Die U-Komponentenebene muss numerisch sein.
-Die V-Komponentenebene muss numerisch sein.
 Die Datei „{0}“ kann nicht geöffnet werden, da sie nicht gefunden wurde.
 Kontakte erfolgreich importiert.
 Die Datei „{0}“ kann nicht geöffnet werden, da die Kartendatei ungültig ist.
@@ -2820,7 +2604,6 @@ Die Kontaktdatei ist nicht vorhanden.
 Kontakte gefunden
 Die Kontaktdatei ist ungültig.
 Die MeCard-Syntax darf nicht leer sein.
-Einige Kontakte können nicht hinzugefügt werden. Nur {0} von {1} Kontakten wurden hinzugefügt.
 Entweder enthält die bereitgestellte Kontaktdatei keine Informationen zu einem Kontakt oder ist ungültig.
 Kontakte konnten nicht analysiert werden. Weitere Informationen finden Sie in den Fehlerdetails.
 Der Kontaktindex liegt außerhalb des zulässigen Bereichs. Der maximale Index ist {0}, während der bereitgestellte Index {1} ist.
@@ -2885,8 +2668,6 @@ Die Portnummer Ihres Online-Radios ist ungültig.
 Vollständige URL
 Aktuelle Zuhörer
 Spitzenzuhörer
-Maximale Zuhörer
-Einzigartige Zuhörer
 Streams
 Aktive Streams
 Stream-Info für ID
@@ -2989,8 +2770,6 @@ Es konnte keine Erinnerung hinzugefügt werden.
 Es wurden nicht genügend Argumente angegeben, um eine Erinnerung hinzuzufügen.
 Eine Erinnerung konnte nicht entfernt werden.
 Es wurden nicht genügend Argumente angegeben, um eine Erinnerung zu entfernen.
-Nitrocid KS Release Anniversary\", true, 2, 22, 2, 22, \"Gregorian
-Ramadan\", wahr, 9, 1, 10, 1, \"Hijri
 Es gibt keine Veranstaltung.
 Es gibt keine Erinnerung.
 Es besteht kein Kontakt. Wenn Sie Kontakte importieren möchten, nutzen Sie bitte die Importoptionen über die am unteren Bildschirmrand definierten Tastenkombinationen.
@@ -3177,8 +2956,6 @@ Signalton beim Herunterfahren oder Neustarten
 Aktiviert einen Signalton beim Herunterfahren des Kernels.
 Verzögerung beim Herunterfahren oder Neustart
 Aktiviert die Verzögerung beim Herunterfahren des Kernels.
-Ermöglichen Sie einfache Farbenblindheit
-Wenn Sie möchten, dass die Simulation von Farbenblindheit einfach ist, aktivieren Sie diese Option. Bitte beachten Sie, dass die in dieser Simulationsmethode verwendete Formel möglicherweise nicht korrekt ist.
 Die Konsole unterstützt True Color
 Wenn Sie sicher sind, dass die Konsole True Color unterstützt, oder wenn Sie Ihr Terminal auf ein Terminal umstellen möchten, das True Color unterstützt, ändern Sie diesen Wert.
 Codepage festlegen
@@ -3209,8 +2986,6 @@ Hintergrundakzentfarbe
 Bei Themen, die Akzente unterstützen, ist dies die akzentuierte Hintergrundfarbe.
 Verwenden Sie die Farbpalette der Konsole
 Wenn dies auf „true“ gesetzt ist, wird die vom Terminal definierte Farbpalette verwendet.
-Vordergrundfarbe zulassen
-Wenn dies auf „true“ gesetzt ist, wird die aktuelle Vordergrundfarbe berücksichtigt. Andernfalls werden die Standardfarben Ihres Terminals verwendet.
 Hintergrundfarbe zulassen
 Wenn dies auf „true“ gesetzt ist, wird die aktuelle Hintergrundfarbe berücksichtigt. Andernfalls werden die Standardfarben Ihres Terminals verwendet.
 Shell-Farbe des Benutzernamens
@@ -3324,14 +3099,6 @@ Zeigen Sie die Anzahl der einheitlichen Befehle in der Hilfe an
 Zeigt die Anzahl der Unified-Shell-Befehle an, wenn sie im Hilfebefehl aufgelistet werden
 Zeigt die Anzahl der Add-on-Befehle in der Hilfe an
 Zeigt die Anzahl der Kernel-Add-On-Befehle an, wenn sie im Hilfebefehl aufgelistet werden
-Zeichen in der oberen linken Ecke für Fortschrittsbalken
-Zeichen in der oberen rechten Ecke für Fortschrittsbalken
-Zeichen in der unteren linken Ecke für Fortschrittsbalken
-Zeichen in der unteren rechten Ecke für Fortschrittsbalken
-Oberes Rahmenzeichen für Fortschrittsbalken
-Unteres Rahmenzeichen für Fortschrittsbalken
-Linkes Rahmenzeichen für Fortschrittsbalken
-Rechtes Rahmenzeichen für Fortschrittsbalken
 Bildlaufleiste in der Auswahl aktivieren
 Aktiviert die Bildlaufleiste in Auswahlbildschirmen
 Bitte nicht stören

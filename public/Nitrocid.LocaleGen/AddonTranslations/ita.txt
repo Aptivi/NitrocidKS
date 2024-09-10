@@ -1114,11 +1114,6 @@ Abilita la modalità bianco e nero
 Rende la discoteca in bianco e nero. Ti farà davvero male agli occhi se è stato troppo veloce, quindi non consigliato se stai riscontrando un sequestro di immagini veloci.
 Carica i colori correnti
 Valore corrente:
-Identificatore di colore esadecimale non valido.
-Identificatore di colore RGB non valido.
-Identificatore di colore rosso non valido.
-Identificatore di colore verde non valido.
-Identificatore di colore blu non valido.
 Aggiunge un nuovo byte alla fine del file
 Aggiunge i nuovi byte alla fine del file
 Cancella il file binario
@@ -1172,17 +1167,9 @@ Quantità massima di anni di età da generare
 Pagina di manuale senza titolo
 Cronologia di input abilitata
 Se la cronologia di input è abilitata o meno. Se abilitato, puoi accedere ai comandi digitati di recente utilizzando i tasti freccia su o giù.
-Converte i numeri RGB dei colori in esadecimali.
-Converte la rappresentazione esadecimale del colore in numeri RGB.
-Converte la rappresentazione esadecimale del colore in numeri RGB in formato KS.
 Livello di colore rosso:
 Livello di colore verde:
 Livello di colore blu:
-Sequenza di colori RGB:
-Il livello di colore rosso deve essere numerico.
-Il livello di colore verde deve essere numerico.
-Il livello di colore blu deve essere numerico.
-Rappresentazione esadecimale del colore:
 Ora è possibile spegnere il computer.
 Simula la modalità senza APM
 Se simulare una situazione in cui non è disponibile APM. Se abilitato, informa l'utente che ora è possibile spegnere il computer allo spegnimento.
@@ -1236,11 +1223,8 @@ Eseguire "licenza" per visualizzare le informazioni sulla licenza.
 Prima esecuzione del kernel
 Benvenuti nel Nitrocid Kernel! Grazie per averlo provato!
 Per iniziare, premere INVIO.
-seleziona la tua lingua
 Seleziona la tua lingua. Per impostazione predefinita, il kernel utilizza la lingua inglese, ma qui puoi selezionare qualsiasi altra lingua.
 In base alle impostazioni della lingua sul sistema, la lingua appropriata è
-Scrivi il codice della lingua elencato di seguito:
-Premere il tasto INVIO per continuare.
 Crea il tuo primo utente
 Ti aiuteremo a creare il tuo nome utente. Seleziona il nome che desideri. Potrebbe essere il tuo nickname o il tuo nome breve, a patto che il tuo nome utente non contenga spazi e caratteri speciali e che non esista già. Sono registrati i seguenti nomi utente:
 Inserisci il nome utente
@@ -1287,13 +1271,6 @@ I seguenti file non vengono cancellati:
 Cancellare questi file?
 Impossibile cancellare file vari
 Nessun argomento aiuta la descrizione
-Identificatore di colore RYB non valido.
-Identificatore di colore CMY non valido.
-Identificatore di colore CMYK non valido.
-Identificatore di colore HSL non valido.
-Identificatore di colore HSV non valido.
-Identificatore di colore YIQ non valido.
-Identificatore di colore YUV non valido.
 La tua console deve supportare True Color per utilizzare questo tema.
 Esci dall'anteprima
 Fatto
@@ -1586,7 +1563,6 @@ Extra: shell JSON
 Extra - Studio linguistico
 Extra: Mail Shell
 Extra - MD5
-Extra - NomeGen
 Extra - Note
 Extra - Shell RSS
 Extra: shell SFTP
@@ -1809,37 +1785,8 @@ BASE64 non supporta i vettori di inizializzazione
 RSA non supporta le chiavi
 RSA non supporta i vettori di inizializzazione
 Associazioni di tasti
-Inserire
 Rimuovere
-Sostituire
-Sostituisci tutto
-Sostituisci tutto cosa
-Informazioni sul numero
-L'editor esadecimale non è riuscito:
-Chiavi disponibili
-Scrivere il numero di byte con il valore esadecimale.
-Il numero di byte specificato non è valido.
-Scrivere il numero di byte con il valore esadecimale con cui sostituire {0}.
-Scrivere il numero di byte con il valore esadecimale da sostituire.
-Informazioni sul numero:
-Esadecimale
-Ottale
-Numero
-Binario
-Questa combinazione di tasti non contiene alcuna azione.
 Impossibile eseguire questa operazione su un array null.
-Accedere...
-Rimuovi linea
-Smettere di entrare
-Nuova linea
-L'editor di testo non è riuscito:
-Scrivi la stringa da trovare
-Scrivi la stringa sostitutiva
-Linee
-Colonna
-Riga
-Bidone
-Tab
 Impossibile eseguire questa operazione su un elenco di righe nulle.
 Tipo di impostazioni non trovato.
 Trova un'opzione
@@ -1866,7 +1813,6 @@ Salvataggio delle impostazioni...
 Salvataggio delle impostazioni in
 Caricamento impostazioni...
 Ricaricamento impostazioni...
-Il controllo degli aggiornamenti è disabilitato nelle versioni di sviluppo.
 Versione del kernel
 Versione dell'API del kernel
 ID dell'ospite
@@ -1943,7 +1889,6 @@ Le opzioni seguenti non accettano valori.
 Uno o più argomenti prevedono un valore numerico, ma hai fornito un numero non valido.
 Uno o più argomenti richiedono una formulazione esatta, ma hai fornito una parola non valida.
 Uno o più parametri prevedono un valore numerico, ma hai fornito un numero non valido.
-Consulta questo comando per maggiori informazioni
 Il comando è stato interrotto.
 Non è necessario eseguire direttamente questo comando in modalità wrapper.
 Si è verificato un errore durante il tentativo di racchiudere l'output di un comando
@@ -2036,7 +1981,6 @@ Cambia la lingua dell'utente invece della lingua del sistema
 Stile con scelta di una riga
 Stile di scelta di due linee
 Stile di scelta moderna
-Stile di scelta della tavola
 L'output può contenere un solo carattere
 L'output può essere più di un carattere
 Combina i due file di testo o più nella console.
@@ -2234,7 +2178,6 @@ Verifica lo stile di selezione dell'input
 Verifica lo scrittore della voce di elenco
 trattino 1:
 trattino 2:
-Testa il sistema di presentazione
 Testa il gestore dell'avanzamento
 Inizializzazione...
 Scrivi una stringa per verificare:
@@ -2432,139 +2375,6 @@ Mostra informazioni sulla formula del numero immaginario specificata da un numer
 Gestore di calendari, eventi e promemoria
 Tipo di calendario su cui lavorare
 Utilizza il visualizzatore di calendari basato su tabelle
-Converte la rappresentazione esadecimale del colore in numeri RYB.
-Converte la rappresentazione esadecimale del colore in numeri RYB in formato KS.
-Converte la rappresentazione esadecimale del colore in numeri CMYK.
-Converte la rappresentazione esadecimale del colore in numeri CMYK in formato KS.
-Converte la rappresentazione esadecimale del colore in numeri CMY.
-Converte la rappresentazione esadecimale del colore in numeri CMY in formato KS.
-Converte la rappresentazione esadecimale del colore in numeri HSL.
-Converte la rappresentazione esadecimale del colore in numeri HSL in formato KS.
-Converte la rappresentazione esadecimale del colore in numeri HSV.
-Converte la rappresentazione esadecimale del colore in numeri HSV in formato KS.
-Converte la rappresentazione esadecimale del colore in numeri YIQ.
-Converte la rappresentazione esadecimale del colore in numeri YIQ in formato KS.
-Converte la rappresentazione esadecimale del colore in numeri YUV.
-Converte la rappresentazione esadecimale del colore in numeri YUV in formato KS.
-Converte i numeri di colore RGB in CMYK.
-Converte i numeri di colore RGB in CMYK nel formato KS.
-Converte i numeri di colore RGB in CMY.
-Converte i numeri di colore RGB in CMY nel formato KS.
-Converte i numeri di colore RGB in HSL.
-Converte i numeri RGB dei colori in HSL nel formato KS.
-Converte i numeri di colore RGB in HSV.
-Converte i numeri RGB dei colori in HSV in formato KS.
-Converte i numeri dei colori RGB in RYB.
-Converte i numeri RGB dei colori in RYB nel formato KS.
-Converte i numeri RGB dei colori in YIQ.
-Converte i numeri RGB dei colori in YIQ nel formato KS.
-Converte i numeri dei colori RGB in YUV.
-Converte i numeri RGB dei colori in YUV nel formato KS.
-Converte i numeri RYB dei colori in esadecimali.
-Converte i numeri di colore RYB in CMYK.
-Converte i numeri di colore RYB in CMYK nel formato KS.
-Converte i numeri di colore RYB in CMY.
-Converte i numeri di colore RYB in CMY nel formato KS.
-Converte i numeri di colore RYB in HSL.
-Converte i numeri RYB dei colori in HSL nel formato KS.
-Converte i numeri di colore RYB in HSV.
-Converte i numeri RYB dei colori in HSV nel formato KS.
-Converte i numeri di colore RYB in RGB.
-Converte i numeri di colore RYB in RGB nel formato KS.
-Converte i numeri di colore RYB in YIQ.
-Converte i numeri di colore RYB in YIQ nel formato KS.
-Converte i numeri di colore RYB in YUV.
-Converte i numeri di colore RYB in YUV nel formato KS.
-Converte i numeri HSL dei colori in esadecimali.
-Converte i numeri HSL dei colori in CMYK.
-Converte i numeri HSL dei colori in CMYK nel formato KS.
-Converte i numeri HSL dei colori in CMY.
-Converte i numeri HSL dei colori in CMY nel formato KS.
-Converte i numeri HSL dei colori in HSV.
-Converte i numeri HSL a colori in HSV in formato KS.
-Converte i numeri HSL dei colori in RGB.
-Converte i numeri HSL dei colori in RGB nel formato KS.
-Converte i numeri HSL dei colori in RYB.
-Converte i numeri HSL dei colori in RYB nel formato KS.
-Converte i numeri HSL dei colori in YIQ.
-Converte i numeri HSL dei colori in YIQ nel formato KS.
-Converte i numeri HSL dei colori in YUV.
-Converte i numeri HSL dei colori in YUV nel formato KS.
-Converte i numeri HSV dei colori in esadecimali.
-Converte i numeri HSV dei colori in CMYK.
-Converte i numeri HSV dei colori in CMYK nel formato KS.
-Converte i numeri HSV dei colori in CMY.
-Converte i numeri HSV dei colori in CMY nel formato KS.
-Converte i numeri HSV dei colori in HSL.
-Converte i numeri HSV a colori in HSL in formato KS.
-Converte i numeri HSV dei colori in RGB.
-Converte i numeri HSV dei colori in RGB nel formato KS.
-Converte i numeri HSV dei colori in RYB.
-Converte i numeri HSV dei colori in RYB nel formato KS.
-Converte i numeri HSV dei colori in YIQ.
-Converte i numeri HSV dei colori in YIQ nel formato KS.
-Converte i numeri HSV dei colori in YUV.
-Converte i numeri HSV dei colori in YUV nel formato KS.
-Converte i numeri dei colori CMYK in esadecimali.
-Converte i numeri di colore CMYK in RGB.
-Converte i numeri di colore CMYK in RGB nel formato KS.
-Converte i numeri di colore CMYK in RYB.
-Converte i numeri di colore CMYK in RYB nel formato KS.
-Converte i numeri di colore CMYK in HSL.
-Converte i numeri di colore CMYK in HSL nel formato KS.
-Converte i numeri di colore CMYK in HSV.
-Converte i numeri di colore CMYK in HSV nel formato KS.
-Converte i numeri di colore CMYK in CMY.
-Converte i numeri di colore CMYK in CMY nel formato KS.
-Converte i numeri di colore CMYK in YIQ.
-Converte i numeri di colore CMYK in YIQ nel formato KS.
-Converte i numeri di colore CMYK in YUV.
-Converte i numeri di colore CMYK in YUV nel formato KS.
-Converte i numeri CMY dei colori in esadecimali.
-Converte i numeri CMY dei colori in CMYK.
-Converte i numeri CMY dei colori in CMYK nel formato KS.
-Converte i numeri CMY dei colori in HSL.
-Converte i numeri CMY dei colori in HSL nel formato KS.
-Converte i numeri di colore CMY in HSV.
-Converte i numeri CMY dei colori in HSV nel formato KS.
-Converte i numeri dei colori CMY in RGB.
-Converte i numeri di colore CMY in RGB nel formato KS.
-Converte i numeri dei colori CMY in RYB.
-Converte i numeri CMY dei colori in RYB nel formato KS.
-Converte i numeri dei colori CMY in YIQ.
-Converte i numeri CMY dei colori in YIQ nel formato KS.
-Converte i numeri dei colori CMY in YUV.
-Converte i numeri CMY dei colori in YUV nel formato KS.
-Converte i numeri YIQ del colore in esadecimali.
-Converte i numeri YIQ dei colori in CMYK.
-Converte i numeri YIQ dei colori in CMYK nel formato KS.
-Converte i numeri YIQ dei colori in CMY.
-Converte i numeri YIQ dei colori in CMY nel formato KS.
-Converte i numeri YIQ dei colori in HSL.
-Converte i numeri YIQ dei colori in HSL nel formato KS.
-Converte i numeri YIQ dei colori in HSV.
-Converte i numeri YIQ dei colori in HSV nel formato KS.
-Converte i numeri YIQ dei colori in RGB.
-Converte i numeri YIQ dei colori in RGB nel formato KS.
-Converte i numeri YIQ dei colori in RYB.
-Converte i numeri YIQ dei colori in RYB nel formato KS.
-Converte i numeri di colore YIQ in YUV.
-Converte i numeri YIQ dei colori in YUV nel formato KS.
-Converte i numeri YUV dei colori in esadecimali.
-Converte i numeri YUV dei colori in CMYK.
-Converte i numeri YUV dei colori in CMYK nel formato KS.
-Converte i numeri YUV dei colori in CMY.
-Converte i numeri YUV dei colori in CMY nel formato KS.
-Converte i numeri YUV dei colori in HSL.
-Converte i numeri YUV dei colori in HSL nel formato KS.
-Converte i numeri YUV dei colori in HSV.
-Converte i numeri YUV dei colori in HSV nel formato KS.
-Converte i numeri YUV dei colori in RGB.
-Converte i numeri YUV dei colori in RGB nel formato KS.
-Converte i numeri YUV dei colori in RYB.
-Converte i numeri YUV dei colori in RYB nel formato KS.
-Converte i numeri YUV dei colori in YUV.
-Converte i numeri YUV dei colori in YIQ nel formato KS.
 Gestisce i tuoi contatti
 Ottiene il backtrace per tutti i thread
 Mostra una panoramica a schermo intero su una visualizzazione dock selezionata per poterla utilizzare come pannello informativo
@@ -2680,7 +2490,6 @@ Buon 5° anniversario!
 Impossibile estrarre nulla.
 L'archivio non è scrivibile perché il tipo lo è
 Assicurati di specificare il percorso di un file LRC.
-File musicale non specificato.
 Il file musicale '{0}' non esiste.
 Errore irreversibile nel componente aggiuntivo CLI di BassBoom.
 Impossibile riprodurre l'audio perché il file non è stato trovato.
@@ -2705,7 +2514,6 @@ Immettere un percorso per il file musicale
 Il file "{0}" non esiste.
 Immettere un percorso per la directory della libreria musicale
 Impossibile trovare la directory della libreria musicale.
-Impossibile aprire {0}: {1}
 Caricamento di BassBoom per aprire {0}...
 Adesso sto giocando
 Tentativo di aprire il file dei testi
@@ -2719,13 +2527,10 @@ Cerca il controllo
 Cerca il controllo della durata
 Informazioni sulla canzone
 Aggiungi un file musicale
-Aggiungi una directory musicale alla playlist
 Canzone precedente
 Prossima canzone
 Rimuovi il brano corrente
 Rimuovi tutte le canzoni
-Cerca selettivamente
-Equalizzatore aperto
 Sconosciuto
 Titolo
 Album
@@ -2780,39 +2585,18 @@ Forma lunga
 Tipo di calendario
 Nessun promemoria trovato per il mese selezionato
 Nessun evento trovato per il mese selezionato
-Il livello del colore ciano deve essere numerico.
-Il livello del colore magenta deve essere numerico.
-Il livello di colore giallo deve essere numerico.
-Il livello della chiave nera deve essere numerico.
 Livello ciano:
 Livello magenta:
 Livello giallo:
-Sequenza colori CMY:
 Tinta:
 Saturazione:
-Sequenza colori HSL:
 Valore:
-Sequenza colori HSV:
 Livello di colore giallo:
-Sequenza colori RYB:
 Luma:
 In fase:
 Quadratura:
-Sequenza di colori YIQ:
 Crominanza U:
 Crominanza V:
-Sequenza colori YUV:
-Chiave nera:
-Sequenza di colori CMYK:
-Il livello di tonalità deve essere numerico.
-Il livello di saturazione deve essere numerico.
-La luminanza o il livello di illuminazione deve essere numerico.
-Il livello del valore deve essere numerico.
-Il livello del componente Y deve essere numerico.
-Il livello del componente I deve essere numerico.
-Il livello del componente Q deve essere numerico.
-Il livello del componente U deve essere numerico.
-Il livello del componente V deve essere numerico.
 Impossibile aprire il file '{0}' perché non è stato trovato.
 Contatti importati correttamente.
 Impossibile aprire il file '{0}' perché il file della carta non è valido.
@@ -2820,7 +2604,6 @@ Il file dei contatti non esiste.
 contatti trovati
 Il file dei contatti non è valido.
 La sintassi di MeCard non può essere vuota.
-Impossibile aggiungere alcuni contatti. Sono stati aggiunti solo {0} contatti su {1}.
 Il file dei contatti fornito non contiene informazioni su alcun contatto oppure non è valido.
 Impossibile analizzare i contatti. Per ulteriori informazioni, vedere i dettagli dell'errore.
 L'indice dei contatti è fuori portata. L'indice massimo è {0} mentre l'indice fornito è {1}.
@@ -2885,8 +2668,6 @@ Il numero di porta della tua radio online non è valido.
 URL completo
 Ascoltatori attuali
 Ascoltatori di punta
-Max ascoltatori
-Ascoltatori unici
 Flussi
 Flussi attivi
 Trasmetti informazioni per l'ID
@@ -2989,8 +2770,6 @@ Impossibile aggiungere un promemoria.
 Argomenti forniti non sufficienti per aggiungere un promemoria.
 Impossibile rimuovere un promemoria.
 Argomenti forniti insufficienti per rimuovere un promemoria.
-Anniversario del rilascio di Nitrocid KS\", true, 2, 22, 2, 22, \"Gregoriano
-Ramadan\", vero, 9, 1, 10, 1, \"Hijri
 Non c'è nessun evento.
 Non c'è nessun promemoria.
 Non c'è contatto. Se desideri importare i contatti, utilizza le opzioni di importazione utilizzando i tasti definiti nella parte inferiore dello schermo.
@@ -3177,8 +2956,6 @@ Segnale acustico allo spegnimento o al riavvio
 Abilita il segnale acustico allo spegnimento del kernel.
 Ritardo allo spegnimento o al riavvio
 Abilita il ritardo allo spegnimento del kernel.
-Abilita il daltonismo semplice
-Se vuoi che la simulazione del daltonismo sia semplice, abilita questa opzione. Tieni presente che la formula utilizzata in questo metodo di simulazione potrebbe non essere accurata.
 La console supporta i colori reali
 Se sei sicuro che la console supporti True Color o se desideri cambiare il tuo terminale con un terminale che supporti True Color, modifica questo valore.
 Imposta la tabella codici
@@ -3209,8 +2986,6 @@ Colore in risalto sullo sfondo
 Per i temi che supportano gli accenti, questo è il colore di sfondo accentato.
 Utilizza la tavolozza dei colori della console
 Quando è impostato su true, viene utilizzata la tavolozza dei colori definita dal terminale.
-Consenti colore di primo piano
-Quando è impostato su true, viene rispettato il colore di primo piano corrente. Altrimenti, utilizza i colori predefiniti del tuo terminale.
 Consenti colore di sfondo
 Quando è impostato su true, viene rispettato il colore di sfondo corrente. Altrimenti, utilizza i colori predefiniti del tuo terminale.
 Nome utente Colore guscio
@@ -3324,14 +3099,6 @@ Mostra che i comandi unificati contano sull'aiuto
 Mostra il conteggio dei comandi della shell unificata quando li elenchi nel comando di aiuto
 Mostra che i comandi aggiuntivi contano sull'aiuto
 Mostra il conteggio dei comandi aggiuntivi del kernel quando li elenchi nel comando di aiuto
-Carattere nell'angolo in alto a sinistra per le barre di avanzamento
-Carattere nell'angolo in alto a destra per le barre di avanzamento
-Carattere nell'angolo inferiore sinistro per le barre di avanzamento
-Carattere nell'angolo in basso a destra per le barre di avanzamento
-Carattere del frame superiore per le barre di avanzamento
-Carattere del frame inferiore per le barre di avanzamento
-Carattere del frame sinistro per le barre di avanzamento
-Carattere del frame destro per le barre di avanzamento
 Abilita la barra di scorrimento nella selezione
 Abilita la barra di scorrimento nelle schermate di selezione
 Non disturbare

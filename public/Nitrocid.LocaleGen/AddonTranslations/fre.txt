@@ -1114,11 +1114,6 @@ Activer le mode noir et blanc
 Rend la discothèque en noir et blanc. Cela vous fera vraiment mal aux yeux si c'était trop rapide, donc déconseillé si vous rencontrez une crise d'images rapides.
 Charger les couleurs actuelles
 Valeur actuelle:
-Spécificateur de couleur hexadécimal non valide.
-Spécificateur de couleur RVB non valide.
-Spécificateur de couleur rouge non valide.
-Spécificateur de couleur verte non valide.
-Spécificateur de couleur bleue non valide.
 Ajoute un nouvel octet à la fin du fichier
 Ajoute les nouveaux octets à la fin du fichier
 Efface le fichier binaire
@@ -1172,17 +1167,9 @@ Nombre maximal d'années d'âge à générer
 Page de manuel sans titre
 Historique des saisies activé
 Si l'historique des entrées est activé ou non. Si cette option est activée, vous pouvez accéder aux commandes récemment saisies à l'aide des touches fléchées vers le haut ou vers le bas.
-Convertit les nombres RVB de couleur en hexadécimal.
-Convertit la représentation hexadécimale de la couleur en nombres RVB.
-Convertit la représentation hexadécimale de la couleur en nombres RVB au format KS.
 Niveau de couleur rouge :
 Niveau de couleur verte :
 Niveau de couleur bleu :
-Séquence de couleurs RVB :
-Le niveau de couleur rouge doit être numérique.
-Le niveau de couleur verte doit être numérique.
-Le niveau de couleur bleu doit être numérique.
-Représentation hexadécimale en couleur :
 Vous pouvez maintenant éteindre votre ordinateur en toute sécurité.
 Simuler aucun mode APM
 S'il faut simuler une situation où il n'y a pas d'APM disponible. S'il est activé, il informe l'utilisateur qu'il est maintenant sûr d'éteindre l'ordinateur lors de l'arrêt.
@@ -1236,11 +1223,8 @@ Exécutez « licence » pour voir les informations sur la licence.
 Première exécution du noyau
 Bienvenue sur Nitrocid Kernel ! Merci de l'avoir essayé !
 Pour commencer, appuyez sur ENTRÉE.
-choisissez votre langue
 Choisissez votre langue. Par défaut, le noyau utilise la langue anglaise, mais vous pouvez sélectionner n'importe quelle autre langue ici.
 En fonction des paramètres de langue de votre système, la langue appropriée est
-Écrivez le code de langue ci-dessous :
-Appuyez sur la touche ENTRÉE pour continuer.
 Créez votre premier utilisateur
 Nous vous aiderons à créer votre propre nom d'utilisateur. Sélectionnez le nom de votre choix. Il peut s'agir de votre pseudo ou de votre nom court, à condition que votre nom d'utilisateur ne contienne pas d'espaces ni de caractères spéciaux et qu'il n'existe pas déjà. Les noms d'utilisateur suivants sont enregistrés :
 Entrez le nom d'utilisateur
@@ -1287,13 +1271,6 @@ Les fichiers suivants ne sont pas effacés :
 Êtes-vous sûr d'effacer ces fichiers ?
 Impossible d'effacer les fichiers divers
 Description de l'aide sans argument
-Spécificateur de couleur RYB non valide.
-Spécificateur de couleur CMJ non valide.
-Spécificateur de couleur CMJN non valide.
-Spécificateur de couleur HSL non valide.
-Spécificateur de couleur HSV non valide.
-Spécificateur de couleur YIQ non valide.
-Spécificateur de couleur YUV non valide.
 Votre console doit prendre en charge les vraies couleurs pour utiliser ce thème.
 Quitter l'aperçu
 Fait
@@ -1586,7 +1563,6 @@ Extras - Shell JSON
 Extras - Studio de langues
 Extras - Mail Shell
 Suppléments - MD5
-Extras - NameGen
 Extras - Remarques
 Extras - RSS Shell
 Extras - Shell SFTP
@@ -1809,37 +1785,8 @@ BASE64 ne prend pas en charge les vecteurs d'initialisation
 RSA ne prend pas en charge les clés
 RSA ne prend pas en charge les vecteurs d'initialisation
 Raccourcis clavier
-Insérer
 Retirer
-Remplacer
-Remplace tout
-Remplacer tout quoi
-Informations sur le numéro
-L'éditeur hexadécimal a échoué :
-Clés disponibles
-Écrivez le numéro d'octet avec la valeur hexadécimale.
-Le numéro d'octet spécifié n'est pas valide.
-Écrivez le numéro d'octet avec la valeur hexadécimale par laquelle remplacer {0}.
-Écrivez le numéro d'octet avec la valeur hexadécimale à remplacer.
-Informations sur le numéro :
-Hexadécimal
-Octal
-Nombre
-Binaire
-Cette combinaison de touches ne contient aucune action.
 Impossible d'effectuer cette opération sur un tableau nul.
-Entrer...
-Supprimer la ligne
-Arrêter d'entrer
-Nouvelle ligne
-L'éditeur de texte a échoué :
-Écrivez la chaîne pour trouver
-Écrivez la chaîne de remplacement
-Lignes
-Colonne
-Rangée
-Poubelle
-Languette
 Impossible d'effectuer cette opération sur une liste de lignes nulles.
 Le type de paramètres est introuvable.
 Trouver une option
@@ -1866,7 +1813,6 @@ Enregistrement des paramètres...
 Enregistrement des paramètres dans
 Chargement des paramètres...
 Rechargement des paramètres...
-La vérification des mises à jour est désactivée sur les versions de développement.
 Version du noyau
 Version de l'API du noyau
 ID d'hôte
@@ -1943,7 +1889,6 @@ Les commutateurs ci-dessous n'acceptent pas les valeurs.
 Un ou plusieurs arguments attendent une valeur numérique, mais vous avez fourni un nombre non valide.
 Un ou plusieurs arguments attendent une formulation exacte, mais vous avez fourni un mot non valide.
 Un ou plusieurs commutateurs attendent une valeur numérique, mais vous avez fourni un nombre non valide.
-Consultez cette commande pour plus d'informations
 La commande a été interrompue.
 Vous ne devez pas exécuter directement cette commande en mode encapsulé.
 Une erreur s'est produite lors de la tentative d'encapsulage du résultat d'une commande
@@ -2036,7 +1981,6 @@ Change la langue de l'utilisateur au lieu de la langue du système
 Style de choix d'une ligne
 Style de choix à deux lignes
 Style de choix moderne
-Style de choix de table
 La sortie ne peut être qu'un seul caractère
 La sortie peut être plus qu'un caractère
 Combine les deux fichiers texte ou plus dans la console.
@@ -2234,7 +2178,6 @@ Teste le style de sélection d'entrée
 Teste le rédacteur d'entrée de liste
 Retrait 1 :
 Retrait 2 :
-Teste le système de présentation
 Teste le gestionnaire de progression
 Initialisation...
 Écrivez une chaîne pour vérifier :
@@ -2432,139 +2375,6 @@ Afficher des informations sur la formule du nombre imaginaire spécifiée par un
 Gestionnaire de calendrier, d'événements et de rappels
 Type de calendrier sur lequel travailler
 Utiliser la visionneuse de calendrier basée sur un tableau
-Convertit la représentation hexadécimale de la couleur en nombres RYB.
-Convertit la représentation hexadécimale de la couleur en nombres RYB au format KS.
-Convertit la représentation hexadécimale de la couleur en nombres CMJN.
-Convertit la représentation hexadécimale de la couleur en nombres CMJN au format KS.
-Convertit la représentation hexadécimale de la couleur en nombres CMJ.
-Convertit la représentation hexadécimale de la couleur en nombres CMJ au format KS.
-Convertit la représentation hexadécimale de la couleur en nombres HSL.
-Convertit la représentation hexadécimale de la couleur en nombres HSL au format KS.
-Convertit la représentation hexadécimale de la couleur en nombres HSV.
-Convertit la représentation hexadécimale de la couleur en nombres HSV au format KS.
-Convertit la représentation hexadécimale de la couleur en nombres YIQ.
-Convertit la représentation hexadécimale de la couleur en nombres YIQ au format KS.
-Convertit la représentation hexadécimale de la couleur en nombres YUV.
-Convertit la représentation hexadécimale de la couleur en nombres YUV au format KS.
-Convertit les numéros de couleur RVB en CMJN.
-Convertit les numéros de couleur RVB en CMJN au format KS.
-Convertit les numéros de couleur RVB en CMJ.
-Convertit les numéros de couleur RVB en CMJ au format KS.
-Convertit les numéros de couleur RVB en HSL.
-Convertit les numéros de couleur RVB en HSL au format KS.
-Convertit les numéros de couleur RVB en HSV.
-Convertit les numéros de couleur RVB en HSV au format KS.
-Convertit les numéros de couleur RVB en RYB.
-Convertit les numéros de couleur RVB en RYB au format KS.
-Convertit les numéros de couleur RVB en YIQ.
-Convertit les numéros de couleur RVB en YIQ au format KS.
-Convertit les numéros de couleur RVB en YUV.
-Convertit les numéros de couleur RVB en YUV au format KS.
-Convertit les numéros de couleur RYB en hexadécimal.
-Convertit les numéros de couleur RYB en CMJN.
-Convertit les numéros de couleur RYB en CMJN au format KS.
-Convertit les numéros de couleur RYB en CMJ.
-Convertit les numéros de couleur RYB en CMJ au format KS.
-Convertit les numéros de couleur RYB en HSL.
-Convertit les numéros de couleur RYB en HSL au format KS.
-Convertit les numéros de couleur RYB en HSV.
-Convertit les numéros de couleur RYB en HSV au format KS.
-Convertit les numéros de couleur RYB en RVB.
-Convertit les numéros de couleur RYB en RVB au format KS.
-Convertit les numéros de couleur RYB en YIQ.
-Convertit les numéros de couleur RYB en YIQ au format KS.
-Convertit les numéros de couleur RYB en YUV.
-Convertit les numéros de couleur RYB en YUV au format KS.
-Convertit les numéros HSL de couleur en hexadécimal.
-Convertit les numéros de couleur HSL en CMJN.
-Convertit les numéros de couleur HSL en CMJN au format KS.
-Convertit les numéros de couleur HSL en CMJ.
-Convertit les numéros de couleur HSL en CMJ au format KS.
-Convertit les numéros HSL de couleur en HSV.
-Convertit les numéros HSL de couleur en HSV au format KS.
-Convertit les numéros de couleur HSL en RVB.
-Convertit les numéros de couleur HSL en RVB au format KS.
-Convertit les numéros HSL de couleur en RYB.
-Convertit les numéros HSL de couleur en RYB au format KS.
-Convertit les numéros HSL de couleur en YIQ.
-Convertit les numéros HSL de couleur en YIQ au format KS.
-Convertit les numéros HSL de couleur en YUV.
-Convertit les numéros HSL de couleur en YUV au format KS.
-Convertit les numéros de couleur HSV en hexadécimal.
-Convertit les numéros de couleur HSV en CMJN.
-Convertit les numéros de couleur HSV en CMJN au format KS.
-Convertit les numéros de couleur HSV en CMJ.
-Convertit les numéros de couleur HSV en CMJ au format KS.
-Convertit les numéros de couleur HSV en HSL.
-Convertit les numéros de couleur HSV en HSL au format KS.
-Convertit les numéros de couleur HSV en RVB.
-Convertit les numéros de couleur HSV en RVB au format KS.
-Convertit les numéros HSV de couleur en RYB.
-Convertit les numéros de couleur HSV en RYB au format KS.
-Convertit les numéros HSV de couleur en YIQ.
-Convertit les numéros HSV de couleur en YIQ au format KS.
-Convertit les numéros de couleur HSV en YUV.
-Convertit les numéros de couleur HSV en YUV au format KS.
-Convertit les numéros de couleur CMJN en hexadécimal.
-Convertit les numéros de couleur CMJN en RVB.
-Convertit les numéros de couleur CMJN en RVB au format KS.
-Convertit les numéros de couleur CMJN en RYB.
-Convertit les numéros de couleur CMJN en RYB au format KS.
-Convertit les numéros de couleur CMJN en HSL.
-Convertit les numéros de couleur CMJN en HSL au format KS.
-Convertit les numéros de couleur CMJN en HSV.
-Convertit les numéros de couleur CMJN en HSV au format KS.
-Convertit les numéros de couleur CMJN en CMJ.
-Convertit les numéros de couleur CMJN en CMJ au format KS.
-Convertit les numéros de couleur CMJN en YIQ.
-Convertit les numéros de couleur CMJN en YIQ au format KS.
-Convertit les numéros de couleur CMJN en YUV.
-Convertit les numéros de couleur CMJN en YUV au format KS.
-Convertit les numéros de couleur CMJ en hexadécimal.
-Convertit les numéros de couleur CMJ en CMJN.
-Convertit les numéros de couleur CMJ en CMJN au format KS.
-Convertit les numéros de couleur CMJ en HSL.
-Convertit les numéros de couleur CMJ en HSL au format KS.
-Convertit les numéros de couleur CMJ en HSV.
-Convertit les numéros de couleur CMJ en HSV au format KS.
-Convertit les numéros de couleur CMJ en RVB.
-Convertit les numéros de couleur CMJ en RVB au format KS.
-Convertit les numéros de couleur CMJ en RYB.
-Convertit les numéros de couleur CMJ en RYB au format KS.
-Convertit les numéros de couleur CMJ en YIQ.
-Convertit les numéros de couleur CMJ en YIQ au format KS.
-Convertit les numéros de couleur CMJ en YUV.
-Convertit les numéros de couleur CMJ en YUV au format KS.
-Convertit les numéros de couleur YIQ en hexadécimal.
-Convertit les numéros de couleur YIQ en CMJN.
-Convertit les numéros de couleur YIQ en CMJN au format KS.
-Convertit les numéros de couleur YIQ en CMJ.
-Convertit les numéros de couleur YIQ en CMJ au format KS.
-Convertit les numéros de couleur YIQ en HSL.
-Convertit les numéros de couleur YIQ en HSL au format KS.
-Convertit les numéros de couleur YIQ en HSV.
-Convertit les numéros de couleur YIQ en HSV au format KS.
-Convertit les numéros de couleur YIQ en RVB.
-Convertit les numéros de couleur YIQ en RVB au format KS.
-Convertit les numéros de couleur YIQ en RYB.
-Convertit les numéros de couleur YIQ en RYB au format KS.
-Convertit les numéros de couleur YIQ en YUV.
-Convertit les numéros de couleur YIQ en YUV au format KS.
-Convertit les numéros de couleur YUV en hexadécimal.
-Convertit les numéros de couleur YUV en CMJN.
-Convertit les numéros de couleur YUV en CMJN au format KS.
-Convertit les numéros de couleur YUV en CMJ.
-Convertit les numéros de couleur YUV en CMJ au format KS.
-Convertit les numéros de couleur YUV en HSL.
-Convertit les numéros de couleur YUV en HSL au format KS.
-Convertit les numéros de couleur YUV en HSV.
-Convertit les numéros de couleur YUV en HSV au format KS.
-Convertit les numéros de couleur YUV en RVB.
-Convertit les numéros de couleur YUV en RVB au format KS.
-Convertit les numéros de couleur YUV en RYB.
-Convertit les numéros de couleur YUV en RYB au format KS.
-Convertit les numéros de couleur YUV en YUV.
-Convertit les numéros de couleur YUV en YIQ au format KS.
 Gère vos contacts
 Obtient une trace pour tous les threads
 Vous montre un aperçu en plein écran d'une vue du Dock sélectionnée pour pouvoir l'utiliser comme panneau d'informations
@@ -2680,7 +2490,6 @@ Joyeux 5ème anniversaire !
 Je ne peux rien extraire.
 L'archive n'est pas accessible en écriture car le type est
 Assurez-vous de spécifier le chemin d'accès à un fichier LRC.
-Fichier musical non spécifié.
 Le fichier musical « {0} » n'existe pas.
 Erreur fatale dans le module complémentaire BassBoom CLI.
 Impossible de lire le son car le fichier est introuvable.
@@ -2705,7 +2514,6 @@ Entrez un chemin vers le fichier musical
 Le fichier "{0}" n'existe pas.
 Entrez un chemin vers le répertoire de la bibliothèque musicale
 Le répertoire de la bibliothèque musicale est introuvable.
-Impossible d'ouvrir {0} : {1}
 Chargement de BassBoom pour ouvrir {0}...
 Lecture en cours
 J'essaie d'ouvrir le fichier de paroles
@@ -2719,13 +2527,10 @@ Rechercher le contrôle
 Rechercher un contrôle de durée
 Informations sur la chanson
 Ajouter un fichier musical
-Ajouter un répertoire musical à la playlist
 Chanson précédente
 Prochaine chanson
 Supprimer la chanson actuelle
 Supprimer toutes les chansons
-Rechercher sélectivement
-Égaliseur ouvert
 Inconnu
 Titre
 Album
@@ -2780,39 +2585,18 @@ Forme longue
 Type de calendrier
 Aucun rappel trouvé pour le mois sélectionné
 Aucun événement trouvé pour le mois sélectionné
-Le niveau de couleur cyan doit être numérique.
-Le niveau de couleur magenta doit être numérique.
-Le niveau de couleur jaune doit être numérique.
-Le niveau de la touche noire doit être numérique.
 Niveau cyan :
 Niveau magenta :
 Niveau jaune :
-Séquence de couleurs CMJ :
 Teinte:
 Saturation:
-Séquence de couleurs HSL :
 Valeur:
-Séquence de couleurs HSV :
 Niveau de couleur jaune :
-Séquence de couleurs RYB :
 Lumia :
 En phase:
 Quadrature:
-Séquence de couleurs YIQ :
 U-Chroma :
 V-Chroma :
-Séquence de couleurs YUV :
-Clé noire :
-Séquence de couleurs CMJN :
-Le niveau de teinte doit être numérique.
-Le niveau de saturation doit être numérique.
-La luminance ou le niveau d’éclairage doit être numérique.
-Le niveau de valeur doit être numérique.
-Le niveau du composant Y doit être numérique.
-Le niveau du composant I doit être numérique.
-Le niveau du composant Q doit être numérique.
-Le niveau du composant U doit être numérique.
-Le niveau du composant V doit être numérique.
 Impossible d'ouvrir le fichier « {0} », car il est introuvable.
 Contacts importés avec succès.
 Impossible d'ouvrir le fichier « {0} », car le fichier de la carte n'est pas valide.
@@ -2820,7 +2604,6 @@ Le fichier de contact n'existe pas.
 contacts trouvés
 Le fichier de contact n'est pas valide.
 La syntaxe MeCard ne peut pas être vide.
-Certains contacts ne peuvent pas être ajoutés. Seuls {0} contacts sur {1} ont été ajoutés.
 Soit le fichier de contacts fourni ne contient aucune information sur aucun contact, soit il n'est pas valide.
 Échec de l'analyse des contacts. Consultez les détails de l’erreur pour plus d’informations.
 L'indice de contact est hors plage. L'index maximum est {0} tandis que l'index fourni est {1}.
@@ -2885,8 +2668,6 @@ Le numéro de port de votre radio en ligne n'est pas valide.
 URL complète
 Auditeurs actuels
 Les auditeurs de pointe
-Nombre maximum d'auditeurs
-Des auditeurs uniques
 Ruisseaux
 Flux actifs
 Diffusez des informations pour l'identification
@@ -2989,8 +2770,6 @@ La culture n'est pas trouvée.
 Pas assez d'arguments fournis pour ajouter un rappel.
 Échec de la suppression d'un rappel.
 Pas assez d'arguments fournis pour supprimer un rappel.
-Anniversaire de sortie de Nitrocid KS\", true, 2, 22, 2, 22, \"Gregorian
-Ramadan\", vrai, 9, 1, 10, 1, \"Hijri
 Il n'y a aucun événement.
 Il n'y a pas de rappel.
 Il n'y a aucun contact. Si vous souhaitez importer des contacts, veuillez utiliser les options d'importation en utilisant les touches définies en bas de l'écran.
@@ -3177,8 +2956,6 @@ Bip à l'arrêt ou au redémarrage
 Permet d'émettre un bip lors de l'arrêt du noyau.
 Retard à l'arrêt ou au redémarrage
 Permet de retarder l'arrêt du noyau.
-Activer le daltonisme simple
-Si vous souhaitez que la simulation du daltonisme soit simple, activez cette option. Veuillez noter que la formule utilisée dans cette méthode de simulation peut ne pas être exacte.
 La console prend en charge les vraies couleurs
 Si vous êtes sûr que la console prend en charge les vraies couleurs, ou si vous souhaitez remplacer votre terminal par un terminal prenant en charge les vraies couleurs, modifiez cette valeur.
 Définir la page de codes
@@ -3209,8 +2986,6 @@ Couleur d'accentuation de l'arrière-plan
 Pour les thèmes prenant en charge les accents, il s’agit de la couleur de fond accentuée.
 Utiliser la palette de couleurs de la console
 Lorsque cela est défini sur true, la palette de couleurs définie par le terminal est utilisée.
-Autoriser la couleur de premier plan
-Lorsque la valeur est true, la couleur de premier plan actuelle est honorée. Sinon, il utilise les couleurs par défaut de votre terminal.
 Autoriser la couleur d'arrière-plan
 Lorsque la valeur est true, la couleur d'arrière-plan actuelle est honorée. Sinon, il utilise les couleurs par défaut de votre terminal.
 Nom d'utilisateur Couleur de la coque
@@ -3324,14 +3099,6 @@ Afficher les commandes unifiées et compter sur l'aide
 Afficher le nombre de commandes shell unifiées lors de leur liste dans la commande d'aide
 Afficher les commandes du module complémentaire et compter sur l'aide
 Afficher le nombre de commandes du module complémentaire du noyau lors de leur liste dans la commande d'aide
-Caractère du coin supérieur gauche pour les barres de progression
-Caractère du coin supérieur droit pour les barres de progression
-Caractère du coin inférieur gauche pour les barres de progression
-Caractère du coin inférieur droit pour les barres de progression
-Caractère du cadre supérieur pour les barres de progression
-Caractère du cadre inférieur pour les barres de progression
-Caractère du cadre gauche pour les barres de progression
-Caractère du cadre droit pour les barres de progression
 Activer la barre de défilement dans la sélection
 Active la barre de défilement dans les écrans de sélection
 Ne pas déranger

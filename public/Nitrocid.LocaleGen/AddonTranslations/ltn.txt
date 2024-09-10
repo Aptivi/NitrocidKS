@@ -1114,11 +1114,6 @@ Admitte Black and White Modus
 Disco nigrum et album facit. Vere nocebit oculis tuis si nimis celeriter fuit, ita non commendatur si imaginum ieiuniorum occupationem experieris.
 Current Colores onus
 Current valorem:
-Invalida hex speciem.
-Aliquam RGB color speciem.
-Irritum color ruber speciem.
-Irritum viridis coloris speciem.
-Irritum caeruleum efficit speciem.
 Byte adiungit novum in fine tabella
 Novos addit bytes in fine tabella
 Purgat binarii lima
@@ -1172,17 +1167,9 @@ Maximum amount of annis generate
 Untitled paginam manualem
 Input historiae enabled
 Utrum input historia possit vel non. Si enabled, nuper mandata typum accedere potes utentibus clavibus sagittariis sursum vel deorsum.
-Colorem RGB numeros ad hex vertit.
-Repraesentationem coloris hexadecimali ad numeros RGB convertit.
-In KS forma hexadecimali coloris ad RGB numeros repraesentatio vertit.
 Color ruber gradu:
 Color viridis gradus:
 Color caeruleus planus;
-RGB color sequentia:
-Color ruber gradu numerorum esse oportet.
-Color viridis gradus debet esse numerorum.
-Color caeruleus gradus numerorum esse debet.
-Color repraesentatio hexadecimalis;
 Nunc tutum est ut computatrum tuum averte.
 Simulate non APM Modus
 Utrum simulare condicionem ubi APM praesto non est. Si enabled, usorem informat iam tutum est ut computatrum in shutdown avertat.
@@ -1236,11 +1223,8 @@ Curre 'licentiam' ad videndi informationem.
 Kernel primo-run
 Welcome to Nitrocid Kernel! Gratias ago tibi, quia experior!
 Ut incipiat, press Penetro.
-Linguam tuam eligere
 Linguam tuam elige. nucleus defaltam lingua Anglica utitur, sed aliam quamlibet linguam hic eligere potes.
 Fundatur in lingua tua occasus in systemate tuo, apta lingua est
-Scribere lingua codice infra enumerantur:
-Penetro key Preme pergere.
 Primum user crea
 Nos adiuvet te creare tuum cap. Elige quodlibet nomen quod vis. Hoc cognomen tuum esse potest vel nomen breve tuum, modo nomen usoris tui non continet spatia ac notas speciales et quod iam non est. Donec sequentia commemorantur:
 Intrant usoris
@@ -1287,13 +1271,6 @@ Documenta sequentia non sunt deleta:
 Certus esne has tabulas abstergere?
 Non extergimus conicere
 Non argumentum Auxilium Description
-Aliquam Ryb color specifier.
-Aliquam CMY color specifier.
-Irritum CMYK speciem coloris.
-Aliquam HSL color specifier.
-Aliquam HSV color specifier.
-Aliquam Yiq color specifier.
-Aliquam Yuv color specifier.
 Tuum consolatorium verum colorem adiuvandum ut hoc themate utatur.
 Exit preview
 Done
@@ -1586,7 +1563,6 @@ Extras - JSON Shell
 Extras - Lingua Studio
 Re - Mail Shell
 Extras - MD5
-Extras - NameGen
 Extras - Notes
 Extras - RSS Shell
 Extras - SFTP Shell
@@ -1809,37 +1785,8 @@ BASE64 non support initialization vector
 RSA non support claves
 RSA non support initialization vector
 Keybindings
-Inserere
 Aufer
-Restituo
-Repone All
-Reponere omnes quid
-Numerus Info
-Editor defecit in hex:
-Praesto claves
-Scribe in byte numero cum hexadecimali valore.
-Quod numerus byte certa non valet.
-Numerum byte scribe cum valore hexadecimali in locum {0} cum.
-Scribe byte numerum cum hexadecimali valore reponi.
-Numerus notitiarum:
-Hexadecimal
-Octal
-Numerus
-Binarii
-Hoc keybinding non habet actum.
 Hanc operationem in nullo apparatu praestare non potest.
-Intra...
-Aufer linea
-Subsisto intrantes
-Novae Lineae
-Defecit textus editor:
-Scribere filum invenire
-Scribere postea filum
-Lineae
-Columna
-Row
-Bin
-Tab
 Hanc operationem in nulli linearum indice conficere non potest.
 Occasus genus non invenitur.
 Invenire optionem
@@ -1866,7 +1813,6 @@ Salvis occasus...
 Salvis occasus to
 Loading occasus...
 Reloading occasus...
-Reperiens pro updates erret in versionibus evolutionis.
 Kernel version
 Kernel API version
 Hostia ID
@@ -1943,7 +1889,6 @@ Quod inferius virgas non accipit values.
 Una vel plura argumentorum valorem numerorum exspectant, sed numerum invalidum praebes.
 Unum vel ex argumentis expecto exigere verbis, sed provisum est invalidum est.
 Una vel plures e permutationibus valorem numericum exspectant, sed numerum invalidum praebes.
-Consule hoc mandatum pro more info
 Abortum imperium.
 Tibi non directe exequi mandatum per involutum.
 Error occurrit trying ut involvent imperium output
@@ -2036,7 +1981,6 @@ Mutat user lingua pro systema lingua
 Una linea optio style
 Duae lineae arbitrium style
 Genus electionis modernae
-Mensam style arbitrium
 In output potest esse una tantum charactere
 Output plus quam character
 Componit duos fasciculos textus vel plus in consolatorium.
@@ -2234,7 +2178,6 @@ Probat input lectio style
 Testis album ingressum scriptor
 Pelle I;
 Pelle II;
-Probat praesentationis ratio
 Progressus autem probat tracto
 Initializing...
 Scribere filum sisto:
@@ -2432,139 +2375,6 @@ Monstrare informationes de numero imaginario formulae certae per certum numerum 
 Calendarium, eventum et admonitio procurator
 Calendarium genus ad operandum
 Utere tabula-fundatur calendarium videntium
-Repraesentatio hexadecimali coloris ad numeros RYB convertit.
-Vertit hexadecimalem repraesentationem coloris ad RYB numeros in KS format.
-Versat hexadecimalem repraesentationem coloris ad CMYK numeros.
-Vertit hexadecimalem repraesentationem coloris ad CMYK numeros in KS format.
-Repraesentationem coloris hexadecimali ad CMY numeros convertit.
-In KS forma hexadecimali coloris ad CMY numeros repraesentatio vertit.
-Repraesentatio hexadecimali coloris ad numeros HSL convertit.
-Numeros in KS forma hexadecimali coloris ad HSL vertit repraesentatio.
-Repraesentationem coloris hexadecimali ad numeros HSV convertit.
-In KS format hexadecimalem repraesentationem coloris ad numeros HSV convertit.
-Numeros hexadecimales coloris ad YIQ convertimus repraesentatio.
-Numeros in KS forma hexadecimali coloris ad YIQ vertit repraesentatio.
-Repraesentationem coloris hexadecimali ad numeros YUV convertit.
-Versat hexadecimalem repraesentationem coloris ad YUV numeros in KS format.
-Colorem RGB numeros ad CMYK convertit.
-Colorem RGB numeros ad CMYK in KS format convertit.
-Colorem RGB numeros ad CMY convertit.
-Colorem RGB numeros ad CMY in KS format convertit.
-Colorem RGB numeros ad HSL convertit.
-Colorem RGB numeros ad HSL in KS format convertit.
-Colorem RGB numeros ad HSV vertit.
-Colorem RGB numeros ad HSV in KS format convertit.
-Colorem RGB numeros ad RYB convertit.
-Colorem RGB numeros ad RYB in KS format convertit.
-Colorem RGB convertit numeros ad YIQ.
-Color RGB convertit numeros ad YIQ in forma KS.
-Color RGB numeros ad YUV vertit.
-Color RGB numeros ad YUV in KS format convertit.
-Colorem RYB numeros ad hex vertit.
-Numeros color RYB ad CMYK convertit.
-Color RYB numeros ad CMYK in KS format convertit.
-Numeros color RYB ad CMY convertit.
-Numeros color RYB convertit ad CMY in forma KS.
-Colorem RYB numeros ad HSL convertit.
-Color RYB numeros ad HSL in KS format convertit.
-Colorem RYB numeros ad HSV vertit.
-Color RYB numeros ad HSV in KS format convertit.
-Color RYB numeros ad RGB convertit.
-Color RYB numeros ad RGB in KS format convertit.
-Colorem RYB numeros ad YIQ convertit.
-Color RYB numeros ad YIQ convertit in forma KS.
-Color RYB numeros ad YUV convertit.
-Color RYB numeros ad YUV in KS format convertit.
-Colorem HSL numeros ad hex vertit.
-Colorem HSL numeros ad CMYK converterit.
-Numeros color HSL ad CMYK in KS format convertit.
-Colorem HSL numeros ad CMY convertit.
-Numeros color HSL ad CMY in KS format convertit.
-Colorem HSL numeros ad HSV vertit.
-Colorem HSL numeros ad HSV in KS format convertit.
-Colorem HSL numeros ad RGB convertit.
-Colorem HSL numeros ad RGB in KS format convertit.
-Colorem HSL numeros ad RYB convertit.
-Colorem HSL numeros ad RYB in KS format convertit.
-Color HSL numeros ad YIQ vertit.
-Numeros color HSL ad YIQ in KS format convertit.
-Color HSL numeros ad YUV vertit.
-Colorem HSL numeros ad YUV in KS format convertit.
-Colorem HSV numeros ad hex vertit.
-Colorem HSV numeros ad CMYK converterit.
-Color HSV numeros ad CMYK in KS format convertit.
-Colorem HSV numeros ad CMY convertit.
-Color HSV numeros ad CMY in KS format convertit.
-Colorem HSV numeros ad HSL vertit.
-Color HSV numeros ad HSL in KS format convertit.
-Color HSV numeros ad RGB convertit.
-Color HSV numeros ad RGB in KS format convertit.
-Colorem HSV numeros ad RYB convertit.
-Color HSV numeros ad RYB in KS format convertit.
-Colorem HSV numeri vertit ad YIQ.
-Color HSV numeros ad YIQ in KS format convertit.
-Color HSV numeros ad YUV vertit.
-Color HSV numeros ad YUV in KS format convertit.
-Mutat colorem CMYK numeros ad hex.
-Color CMYK numeros ad RGB convertit.
-Color CMYK numeros ad RGB in KS format convertit.
-Colorem CMYK numeros ad RYB convertit.
-Colorem CMYK numeros ad RYB in KS format convertit.
-Colorem CMYK numeros ad HSL convertit.
-Colorem CMYK numeros ad HSL in KS format convertit.
-Colorem CMYK numeros ad HSV vertit.
-Colorem CMYK numeros ad HSV in KS format convertit.
-Colorem CMYK numeros ad CMY convertit.
-Colorem CMYK numeros ad CMY in KS format convertit.
-Colorem CMYK convertit numeros ad YIQ.
-Colorem CMYK numeros ad YIQ in KS format convertit.
-Color CMYK numeros ad YUV vertit.
-Colorem CMYK numeros ad YUV in KS format convertit.
-Colorem CMY numeros ad hex vertit.
-Mutat colorem CMY numeros ad CMYK.
-Colorem CMY numeros ad CMYK in KS format convertit.
-Colorem CMY numeros ad HSL vertit.
-Colorem CMY numeros ad HSL in KS format convertit.
-Colorem CMY numeros ad HSV vertit.
-Colorem CMY numeros ad HSV in KS format convertit.
-Color CMY numeros ad RGB convertit.
-Color CMY numeros ad RGB in KS format convertit.
-Colorem CMY numeros ad RYB convertit.
-Colorem CMY numeros ad RYB in KS format convertit.
-Colorem CMY numeros ad YIQ vertit.
-Color CMY numeros vertit ad YIQ in forma KS.
-Color CMY numeros ad YUV vertit.
-Color CMY numeros ad YUV in KS format convertit.
-Colorem YIQ numeros ad hex vertit.
-Numeros color YIQ ad CMYK vertit.
-Numeros color YIQ convertit ad CMYK in forma KS.
-Numeros color YIQ ad CMY vertit.
-Numeros color YIQ ad CMY in KS format convertit.
-Numeros color YIQ ad HSL vertit.
-Numeros color YIQ ad HSL in KS format convertit.
-Numeros color YIQ ad HSV vertit.
-Numeros color YIQ ad HSV in KS format convertit.
-Color YIQ numeros ad RGB convertit.
-Color YIQ numeros ad RGB in KS format convertit.
-Numeros color YIQ ad RYB convertit.
-Numeros color YIQ ad RYB in KS format convertit.
-Numeros color YIQ ad YUV vertit.
-Color YIQ numeros ad YUV in KS format convertit.
-Colorem YUV numeros ad hex vertit.
-Colorem YUV numeros ad CMYK convertit.
-Colorem YUV numeros ad CMYK in KS format convertit.
-Colorem YUV numeros ad CMY convertit.
-Colorem YUV numeros ad CMY in KS format convertit.
-Colorem YUV numeros ad HSL vertit.
-Colorem YUV numeros ad HSL in KS format convertit.
-Colorem YUV numeros ad HSV vertit.
-Colorem YUV numeros ad HSV in KS format convertit.
-Colorem YUV numeros ad RGB convertit.
-Colorem YUV numeros ad RGB in KS format convertit.
-Colorem YUV numeros ad RYB convertit.
-Colorem YUV numeros ad RYB in KS format convertit.
-Color YUV numeros ad YUV vertit.
-Colorem YUV numeros ad YIQ in KS format convertit.
 Contactus tua manages
 Accipit LABOR omnibus relatorum
 Monstrat tibi plenum screen overview visum navale delectum eo uti posse ut tabula info
@@ -2680,7 +2490,6 @@ Felix dies anniversarius V!
 Nihil extrahi potest.
 Archive non writable quod genus est
 Fac ut iter limae LRC definias.
-Musica file non mundabitur sanctuarium.
 Fasciculus musicus '{0}' non est.
 Fatalem errorem apud BassBoom cli addon.
 Sonus ludere non potest quia tabella non invenitur.
@@ -2705,7 +2514,6 @@ Ingreditur iter ad musicam lima
 Fasciculus "{0}" non est.
 Intra viam ad bibliotheca musica directorium
 Directorium bibliothecae musicae non invenitur.
-Aperire non potest {0}: {1}
 Loading BassBoom aperire {0}...
 Nunc ludens
 Conatur aperire lyrics file
@@ -2719,13 +2527,10 @@ Quaere imperium
 Quaerite tempus imperium
 Canticum info
 Addere file musicam
-Musicam directorium addere ad playlist
 Prioris carminis
 Proximum carmen
 Aufer current canticum
 Remove omnia carmina
-Selectas quaerere
-Apertum coaequatorem
 Ignota
 Titulus
 Album
@@ -2780,39 +2585,18 @@ Longa forma
 Calendarium genus
 Nulla memoria pro lectus mensis
 Nulla certe pro lectus mensis
-Cyanus color gradus numerorum esse debet.
-Magenta color graduum numerorum esse debet.
-Color flavus gradu numerorum esse debet.
-Gradus clavis nigricans oportet esse numerorum.
 Cyan planities;
 Magenta planities;
 Flavo gradu:
-CMY color sequence:
 Hue:
 Saturatio:
-HSL color sequentis;
 Precium:
-HSV color sequentium:
 Flavus color planus;
-RYB color sequentis:
 Luma:
 In- dam;
 Quadratura:
-YIQ color sequentis;
 U-Chroma:
 V-Chroma:
-YUV color sequentia:
-Clavis nigra:
-CMYK color sequence:
-Hue gradus debet esse numerorum.
-Gradus satietatem numerorum esse oportet.
-Lumen seu gradus illuminationis numerorum esse oportet.
-Valor ordo numerorum esse debet.
-Y gradus componentium numerorum esse debet.
-Gradus I componentia numerorum esse debet.
-Q gradus componentium numerorum esse debet.
-Gradus U componentium numerorum esse debet.
-V gradus componentium numerorum esse debet.
 Scapus '{0}' aperire non potest quia' non invenitur.
 Importari contactus feliciter.
 Scapus "{0}" aperire non potest quia fasciculus chartarum invalidus est.
@@ -2820,7 +2604,6 @@ Contactus fasciculus non est.
 contactus invenerunt
 Contactus lima invalidum est.
 MeCard syntaxin vacua esse non potest.
-Aliqua ex contactibus addi non possunt. Tantum {0} ex {1} contactibus additi sunt.
 Aut file contactus provisum non informationem de aliquo contactu habet vel non valet.
 Deficio ad parse contactus. Errorem details vide pro magis notitia.
 Contactus index feriunt. Maximus index est {0}, dum index {1}provisum est.
@@ -2885,8 +2668,6 @@ Portus numerus pro radiophonico tuo invalidus est.
 Plena URL
 Current auditores
 Apicem auditores
-Max auditores
-unique auditores
 rivi
 Active fluminum
 Amnis info ad ID
@@ -2989,8 +2770,6 @@ Defecit monimentum addere.
 Non satis argumentis cautum est admonitionem addere.
 Defecit commonitorium tollere.
 Non satis argumentis cautum est ad commonitionem tollendam.
-Nitrocid KS, Anniversarium dimittere, 2, 22, 2, 22, \"Gregorian
-Ramadan, verum, 9, 1, 10, 1, Hijri .
 Nulla elit.
 Nulla commemoratio.
 Contactus non est. Si contactus importare velis, optionibus importatis utere quaeso utentibus keystros definitos in fundo scrinii.
@@ -3177,8 +2956,6 @@ Custodi in shutdown vel reboot
 Dat beeping in nucleo claudendi.
 Mora in shutdown vel reboot
 Cunctando claudendi nucleum efficit.
-Admitte simplex color caecitas
-Si vis simplex esse coloris caecitatis simulatio, hoc da. Quaeso note formulam huius simulationis adhibitam accuratam esse non posse.
 Color verus sustinet Console
 Si certus es quod consolatorium verum colorem sustinet, vel si vis mutare terminum tuum ad terminum qui verum colorem sustinet, hunc valorem muta.
 Set codepage
@@ -3209,8 +2986,6 @@ Color accentus background
 Themata quae accentum sustinent, hoc est color acui.
 Usus consolatorium color palette
 Cum hoc verum ponitur, color palette definito termino adhibetur.
-Patitur corporis fabrica color
-Cum hoc ad verum positum est, color antica vena colitur. Alioquin colores defectus terminalis tuo utitur.
 Patitur background color
 Cum hoc verum est, color background color colitur. Alioquin colores defectus terminalis tuo utitur.
 User Nomen Testa Color
@@ -3324,14 +3099,6 @@ Monstra unum imperium numerare in auxilium
 Ostende comitem unitatis testa imperium cum listing in auxilium imperium
 Ostende addon imperium numerare in auxilium
 Ostende comitem Kernel Addon imperium cum listing in auxilium imperium
-Superioris sinistram rationem progressus vectes
-Superioris recti anguli mores ad profectum vectes
-Inferiores sinistram mores progressus vectes
-Deteriores recti anguli mores ad profectum vectes
-Superiores mores ad profectum vectes
-Infra tabulam mores progressus vectes
-Sinistra indoles progressus vectes
-Recta indoles progressus vectes
 Admitte volumen talea in delectu
 Dat volumen talea in electione screens
 Non perturbare
