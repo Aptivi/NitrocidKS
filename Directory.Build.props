@@ -9,7 +9,7 @@
         <LangVersion>latest</LangVersion>
         <Deterministic>true</Deterministic>
         <TargetFrameworks>net48;net8.0</TargetFrameworks>
-        <WarningsAsErrors>CS8002,nullable</WarningsAsErrors>
+        <WarningsAsErrors>CS9057,CS8002,nullable</WarningsAsErrors>
         <DebugType>portable</DebugType>
         <SignAssembly>True</SignAssembly>
         <RootPath>$(MSBuildThisFileDirectory)</RootPath>
