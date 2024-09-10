@@ -34,6 +34,7 @@ using Nitrocid.Kernel.Power;
 using Terminaux.Colors;
 using Nitrocid.Security.Permissions;
 using Terminaux.Inputs.Styles.Infobox;
+using Nitrocid.Misc.Splash;
 
 namespace Nitrocid.Users.Login
 {

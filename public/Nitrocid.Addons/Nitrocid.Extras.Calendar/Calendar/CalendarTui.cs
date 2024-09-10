@@ -131,9 +131,9 @@ namespace Nitrocid.Extras.Calendar.Calendar
             // Make a screen part
             var part = new ScreenPart();
             part.AddDynamicText(() => KeybindingsWriter.RenderKeybindings(bindings,
-                KernelColorTools.GetColor(KernelColorType.TuiKeyBindingBuiltin),
-                KernelColorTools.GetColor(KernelColorType.TuiKeyBindingBuiltinForeground),
-                KernelColorTools.GetColor(KernelColorType.TuiKeyBindingBuiltinBackground),
+                KernelColorTools.GetColor(KernelColorType.TuiKeyBindingOption),
+                KernelColorTools.GetColor(KernelColorType.TuiOptionForeground),
+                KernelColorTools.GetColor(KernelColorType.TuiOptionBackground),
                 KernelColorTools.GetColor(KernelColorType.TuiKeyBindingOption),
                 KernelColorTools.GetColor(KernelColorType.TuiOptionForeground),
                 KernelColorTools.GetColor(KernelColorType.TuiOptionBackground),

@@ -31,6 +31,7 @@ using Terminaux.Base;
 using Terminaux.Inputs;
 using Textify.Figlet;
 using Terminaux.Inputs.Styles;
+using System;
 
 namespace Nitrocid.ConsoleBase.Writers.MiscWriters
 {
