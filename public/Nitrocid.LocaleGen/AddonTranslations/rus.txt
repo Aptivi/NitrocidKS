@@ -3298,3 +3298,327 @@ Kakoy drayver vvoda vy by khoteli ispol'zovat'?
 Perenos staroy konfiguratsii
 Perenosit chast' vashey staroy konfiguratsii iz starykh versiy yadra.
 Vozmozhno, migratsiya konfiguratsii ne zavershilas' uspeshno. Yesli vy uvereny, chto vashi fayly konfiguratsii deystvitel'ny, izuchite zhurnaly otladki dlya polucheniya dopolnitel'noy informatsii.
+Ne udalos' zapolnit' temu po umolchaniyu
+Ne opredeleny metadannyye temy.
+Nevozmozhno deserializovat' metadannyye.
+Chtoby zakryt' navsegda, nazhmite klavishu ENTER na klaviature ili vklyuchite «Podtverzhdeno uvedomleniye o razrabotke» v nastroykakh yadra. Lyubaya drugaya klavisha budet nazhata bez podtverzhdeniya.
+Eta kodirovka dolzhna byt' initsializirovana.
+Informatsiya o kataloge ne ukazana.
+Informatsiya o fayle ne ukazana.
+Obshchaya oshibka setevoy peredachi
+Hex-fayl yeshche ne otkryt.
+Tekstovyy fayl yeshche ne otkryt.
+Obrabotchik dlya rasshireniya ne ukazan.
+Ne udalos' poluchit' obrabotchik po umolchaniyu
+Ne udalos' zagruzit' obrabotchiki po umolchaniyu.
+Popytka dostupa k nedopustimomu puti. Eta proverka byla vypolnena dlya predotvrashcheniya dostupa k etim putyam v starykh sistemakh Windows 10, kotoryye ne byli obnovleny do ispravleniya ot aprelya 2021 goda ili vyshe, kotoryye, kak izvestno, vyzyvayut povrezhdeniye faylovoy sistemy NTFS ili problemu sinego ekrana smerti (BSOD). Eto oznachayet, chto vyzyvayushchiy pytayetsya vyzvat' otkaz v obsluzhivanii (DoS) i dolzhen byt' ispravlen, ili chto pol'zovatel'skiy vvod yavlyayetsya vredonosnym.
+Vybrat'
+Kopirovat'
+Peremestit'
+Udalit'
+Vverkh
+Informatsiya
+Pereyti k
+Pereimenovat'
+Novaya papka
+Khesh...
+Proverit'...
+Predvaritel'nyy prosmotr
+Predvaritel'nyy prosmotr vybrannogo
+Otkryt'
+Nevozmozhno proverit' peremennyye konfiguratsii, yesli ne ukazana konfiguratsiya yadra.
+Nevozmozhno poluchit' skhemu bazovykh nastroyek.
+Nevozmozhno poluchit' zapisi nastroyek.
+Ne udalos' poluchit' zapisi nastroyek drayvera.
+Ne udalos' poluchit' osnovnyye zapisi nastroyek.
+Ne udalos' poluchit' zapisi nastroyek zastavki.
+Ne udalos' poluchit' informatsiyu o psevdonime
+Ne iz chego vybirat'.
+Nevozmozhno poluchit' tip iz
+Zapisi nastroyek ne naydeny.
+Proveryayet nalichiye obnovleniy sistemy (trebuyetsya aktivnoye podklyucheniye k Internetu).
+Pokazyvayet osnovnuyu informatsiyu o sisteme (dopolnitel'naya informatsiya dostupna v komande 'sysinfo').
+Nevozmozhno poluchit' razdel
+Udalennoye otladochnoye ustroystvo, pokhozhe, ne sushchestvuyet.
+Nevozmozhno poluchit' udalennyye otladochnyye ustroystva iz
+Nevozmozhno otkryt' resurs lokalizatsii na angliyskom yazyke
+Nevozmozhno otkryt' resurs lokalizatsii dlya
+Ne udalos' poluchit' shrift figlet
+Vyvesti stroku figlet na konsol' (po tsentru)
+Vyvesti stroku figlet na konsol' s formatirovaniyem (po tsentru)
+Vyvesti stroku figlet na konsol' (po tsentru, pozitsionno)
+Vyvesti stroku figlet na konsol' s formatirovaniyem (po tsentru, pozitsionno)
+Ne udalos' poluchit' tochku vkhoda.
+Testiruyet knopki v informatsionnom pole (titled)
+Testiruyet tsvetnoye pole vvoda v informatsionnom pole (titled)
+Testiruyet pole vvoda v informatsionnom pole (titled)
+Testiruyet stil' mnozhestvennogo vybora vvoda v informatsionnom pole (titled)
+Testiruyet stil' vybora vvoda v informatsionnom pole (bol'shoye kolichestvo elementov dlya proverki prokrutki i listaniya)
+Testiruyet stil' mnozhestvennogo vybora vvoda v informatsionnom pole (bol'shoye kolichestvo elementov dlya proverki prokrutki i listaniya)
+Testiruyet stil' mnozhestvennogo vybora vvoda v informatsionnom pole (bol'shoye kolichestvo elementov dlya proverki prokrutki i listaniya) (titled)
+Testiruyet stil' vybora vvoda v informatsionnom pole (bol'shoye kolichestvo elementov dlya proverki prokrutki i listaniya) (titled)
+Testiruyet stil' vybora vvoda v informatsionnom pole (titled)
+Testiruyet stil' vybora vvoda (bol'shoye kolichestvo elementov dlya proverki prokrutki i listaniya)
+Testiruyet stil' mnozhestvennogo vybora vvoda (bol'shoye kolichestvo elementov dlya proverki prokrutki i listaniya) paging)
+Nevozmozhno poluchit' freym
+Nevozmozhno poluchit' metod
+Vo vremya obrabotki teksta proizoshla oshibka regulyarnogo vyrazheniya. Prover'te sintaksis regulyarnogo vyrazheniya i povtorite popytku. Yesli proizoshlo prevysheniye vremeni ozhidaniya, ubedites', chto vy ne slishkom mnogo rekursiruyete (ne bud'te zhadnymi).
+K sozhaleniyu, poslednyaya oshibka neizvestna, poetomu my tochno ne znayem, chto poshlo ne tak. Odnako mozhet byt' polezno, yesli vy prokonsul'tirovalis' s zhurnalami otladki yadra.
+Ne udalos' poluchit' metadannyye dopolneniya
+Nevozmozhno poluchit' zapisi zhurnala
+Vyberite yazyk.
+Vvedite novoye imya pol'zovatelya. Vam sleduyet vvesti novoye imya pol'zovatelya, kotorogo yeshche ne sushchestvuyet.
+Vvedite parol' pol'zovatelya. Vam sleduyet vybrat' nadezhnyy parol' dlya povysheniya bezopasnosti.
+Avtomaticheskaya proverka obnovleniy
+Da, ya delayu eto!
+Net, spasibo.
+Avtomaticheskaya zagruzka obnovleniy
+Udalennaya otladka ne nachalas' po neizvestnym prichinam.
+Nevozmozhno vosstanovit' potok
+Nevozmozhno poluchit' zhurnaly izmeneniy.
+Ne udalos' zagruzit' yazykovoy resurs dlya
+Nevozmozhno poluchit' lokalizovannyy tekst
+Nevozmozhno poluchit' angliyskiye lokalizatsii
+Nevozmozhno poluchit' angliyskiy tekst
+Neobkhodimo ukazat' yazykovoy token
+Nevozmozhno poluchit' yazykovyye metadannyye
+Nevozmozhno poluchit' massiv yazykovykh metadannykh
+Obrabotchik zaregistrirovan, no po kakoy-to prichine ne udalos' poluchit' obrabotchik rasshireniya dlya
+Ekzemplyar zastavki ne ukazan
+Parametry potoka Splash ne ukazany
+Nevozmozhno opredelit' versiyu moda
+Neizvestnoye isklyucheniye zagruzchika
+Nevozmozhno zagruzit' lokalizatsii moda
+Nevozmozhno poluchit' metod iz poslednikh dvukh kadrov.
+Nevozmozhno poluchit' informatsiyu ob argumente dlya komandy ili argumenta
+Parametry potoka ne ukazany.
+Dopolnitel'nuyu informatsiyu sm. v spravke po etoy komande
+Nevozmozhno poluchit' parametry potoka dlya vypolneniya protsessa.
+Nevozmozhno poluchit' vnutrenneye pole dlya peremennykh sredy
+Nevozmozhno poluchit' ispolnyayushchego protsessora obolochki dlya
+Pokazyvayet obshchiye komandy (po umolchaniyu)
+Izmenyayet polnoye imya pol'zovatelya (otobrazhayemoye imya)
+Pokazyvayet osnovnoy bufer, kotoryy byl na ekrane pered zapuskom Nitrocid KS (tol'ko dlya sistem Unix)
+Nevozmozhno poluchit' paket dopolneniy.
+Kopirovat' v
+Peremestit' v
+Khesh
+Proverit'
+Nevozmozhno poluchit' informatsiyu o pol'zovatele dlya sistemnogo pol'zovatelya
+Nevozmozhno poluchit' informatsiyu o pol'zovatele dlya
+Ubit'
+Pereklyuchit'
+Perezapuskayet Nitrocid s povyshennymi razresheniyami (tol'ko dlya Windows)
+Nevozmozhno deserializovat' massiv informatsii o gruppe
+Nevozmozhno deserializovat' informatsiyu o gruppe
+Nevozmozhno zadat' uchetnuyu zapis' root.
+U vas net razresheniya na zapros perezagruzki ili vyklyucheniya.
+Nevozmozhno deserializovat' massiv informatsii o pol'zovatele
+Nevozmozhno deserializovat' ekzemplyar informatsii o pol'zovatele
+Ne udalos' poluchit' pol'zovatelya
+Ne udalos' poluchit' tekushchego pol'zovatelya
+Nevozmozhno poluchit' neobkhodimyye dannyye dlya initsializatsii etogo dopolneniya.
+Ne udalos' zagruzit' metadannyye yazyka
+Ne udalos' deserializovat' metadannyye yazyka
+Ne udalos' zagruzit' metadannyye yazyka dlya
+Ne udalos' deserializovat' metadannyye yazyka dlya
+Dobavit'
+Izmenit'
+Udalit' vse
+Zagruzit'
+Sokhranit'
+Ne udalos' poluchit' zapisi nastroyek.
+chto Nitrocid (Kernel Simulator 0.0.2) nazval vstroyennuyu obolochku obolochkoy 'UESH'?
+chto zastavki reklamirovalis' kak resheniye protiv vygoraniya ekrana na elektronno-luchevykh trubkakh (ELT) ili plazmennykh displeyakh?
+Neizvestnaya tsitata.
+Neizvestnyy avtor.
+Nevozmozhno poluchit' zapisi arkhiva
+Arkhiv yeshche ne zagruzhen.
+Nevozmozhno opredelit' tekushchiy katalog arkhiva.
+Napominaniya dlya vybrannogo dnya ne naydeny
+Sobytiya dlya vybrannogo dnya ne naydeny
+Godovshchina vypuska Nitrocid KS
+Ramadan
+Udalit' vse
+Import
+Import iz
+Poisk
+Sleduyushchiy poisk
+Nazad
+Neobrabotannaya informatsiya
+Import iz MeCard
+Nevozmozhno poluchit' spisok zadach
+Poka net krugov...
+Spisok krugov
+Sozdat' tegi imen (umlyauty v nastoyashcheye vremya ne podderzhivayutsya)
+Preobrazovat'...
+Vmesto etogo otkryvayetsya proigryvatel' radiostantsiy
+Ustroystvo
+Drayver
+Ustroystvo (keshirovano)
+Drayver (keshirovano)
+Nevozmozhno zaprosit' tekushchiye ustroystva, poka ne vosproizvoditsya.
+Ustroystvo i drayver
+Dostupnyye ustroystva i drayvery
+Kharakteristiki BassBoom
+Dekodery
+Kharakteristiki sistemy
+Versiya Basolia
+Versiya MPG123
+Versiya OUT123
+Podderzhivayemyye dekodery
+Vse dekodery
+Sistema
+Arkhitektura sistemy
+Arkhitektura protsessa
+Opisaniye sistemy
+Opisaniye .NET
+(pri bezdeystvii) Dobavit' muzykal'nyy katalog v pleylist
+(pri vosproizvedenii) Vyborochnyy poisk
+(pri vosproizvedenii) Poisk predydushchego teksta
+(pri vosproizvedenii) Poisk sleduyushchego teksta
+(pri vosproizvedenii) Poisk tekushchego teksta
+(pri vosproizvedenii) Poisk teksta
+Ustanovit' kontrol'nuyu tochku povtora
+Iskat' kontrol'nuyu tochku povtora
+Otkryvayet ekvalayzer
+Informatsiya ob ustroystve i drayvere
+Ustanovit' ustroystvo i drayver
+Sbros ustroystva i drayvera
+Sistemnaya informatsiya
+Informatsiya o radiostantsii
+Rasshirennaya informatsiya o radiostantsii
+Dobavit' radiostantsiyu
+Predydushchaya radiostantsiya
+Sleduyushchaya radiostantsiya
+Udalit' tekushchuyu radiostantsiyu
+Udalit' vse radiostantsii
+Vyberite drayver. ESC dlya vykhoda.
+Vyberite ustroystvo. Tekushchiy drayver — {0}. ESC dlya vykhoda.
+Ne vosproizvoditsya. Muzykal'nyy proigryvatel' nakhoditsya v rezhime ozhidaniya.
+Bass
+Upper Mid
+Treble
+Unknown band type
+Equalizer Band
+Vyberite tekst dlya poiska
+Native State
+Accurate rendering
+Buffer fill
+Decoding delay
+Encoding delay
+Encoding padding
+Frankenstein stream
+Fresh decoder
+Nazhmite «A», chtoby vstavit' radiostantsiyu v pleylist.
+Vvedite put' k radiostantsii. URL-adres stantsii dolzhen soderzhat' radiostantsiyu MPEG. AAC poka ne podderzhivayutsya.
+Informatsiya o stantsii
+URL-adres radiostantsii
+Nazvaniye radiostantsii
+Tekushchaya pesnya radiostantsii
+Glavnaya stranitsa
+Put' potoka
+Slushateli: {0} s {1} na pike
+Skorost' peredachi dannykh
+Tip nositelya
+Informatsiya o radioservere
+Informatsiya o potoke
+Radiostantsiya ispol'zuyet HTTPS
+Tip servera radiostantsii
+Potoki radiostantsii: {0} s {1} aktivny
+Slushateli radiostantsii: {0} s {1} na pike
+Preobrazuyet iskhodnuyu tsvetovuyu model' v tselevuyu tsvetovuyu model' v chislakh.
+Preobrazuyet iskhodnuyu tsvetovuyu model' v tselevuyu tsvetovuyu model' v formate KS.
+Preobrazuyet iskhodnuyu tsvetovuyu model' v shestnadtsaterichnyy format.
+Preobrazuyet iskhodnuyu tsvetovuyu model' s pomoshch'yu spetsifikatora tsveta v tselevuyu tsvetovuyu model'.
+Preobrazuyet iskhodnuyu tsvetovuyu model' s pomoshch'yu spetsifikatora tsveta v tselevuyu tsvetovuyu model' v formate KS.
+Preobrazuyet iskhodnuyu tsvetovuyu model' s pomoshch'yu spetsifikatora tsveta v tselevuyu tsvetovuyu model' v shestnadtsaterichnom formate.
+Spetsifikatsiya modeli nedeystvitel'na.
+Uroven' chernogo klyucha:
+Yarkost' (Lightness):
+Pervyy uroven' tsveta dolzhen byt' chislovym.
+Vtoroy uroven' tsveta dolzhen byt' chislovym.
+Tretiy uroven' tsveta dolzhen byt' chislovym.
+Chetvertyy uroven' klyucha dolzhen byt' chislovym.
+Informatsiya ob internet-radio (FM) dlya
+Tipa stantsii
+Nevozmozhno poluchit' informatsiyu ob internet-radio.
+Poslednyaya obolochka — eto ne eta obolochka dlya otsoyedineniya.
+Kliyent ne zapolnen.
+Poka net kliyenta FTP.
+Kliyent yeshche ne podklyuchen.
+Nevozmozhno poluchit' konfiguratsiyu servera IMAP
+Nevozmozhno poluchit' konfiguratsiyu servera SMTP
+SSH podklyuchen, no bez kliyenta.
+Kliyent yeshche ne podklyuchen
+Podrobneye
+Obnovit'
+Net stat'i.
+Net lenty.
+Vypolnyayet poisk lenty v biblioteke lent
+Ne udayetsya poluchit' soyedineniye
+Faylovyy potok yeshche ne otkryt.
+Fayl JSON yeshche ne otkryt.
+Pokazyvayet kolichestvo obolochek v obychnoy obolochke UESH (v zavisimosti ot predustanovki)
+Minimal'nyy interval prostoya dlya zapuska zastavki. Yedinitsa izmereniya — v formate vremennogo intervala (HH:MM:SS).
+Tema po umolchaniyu dlya yadra
+Aktsenty vezde!
+Bestsvetnaya, dymyashchayasya i ochen' yedkaya zhidkost'
+Vyberite predpochtitel'nuyu yedinitsu izmereniya temperatury (eto primenimo tol'ko k komande «weather»). 1 — Kel'vin, 2 — metricheskaya sistema, 3 — imperskaya sistema.
+Ottenok tsveta yarkost' (svetlost')
+Fioletovaya garmoniya
+Eto tsvet talismana Android na perednem plane
+Nasha firmennaya garmoniya
+Temnaya versiya populyarnoy temy VIM, Ayu
+Svetlaya versiya populyarnoy temy VIM, Ayu
+Versiya Mirage populyarnoy temy VIM, Ayu
+Eto pervyy den' novogo uchebnogo goda
+Samyy svetlyy terminal iz vozmozhnykh
+Eto chernaya roza
+Tsvetovaya skhema dlya Breeze, temy KDE Plasma 5
+Populyarnaya tsvetovaya skhema dlya IDE, takikh kak IntelliJ
+Tsvetovyye skhemy dlya Debian
+Yarkaya tema po umolchaniyu dlya yadra
+Fonovyye aktsenty v vashem yadre!
+Bol'she aktsentov vezde!
+Ispol'zuyte, yesli vy poklonnik EDM
+Ognennyye ottenki
+Vash epicheskiy zolotoy dvorets na temno-sinem fone
+Vinograd i kivi v smesi
+Tsvetovaya skhema dlya vinograda
+Yarkiye i oshtukaturennyye zelenyye, siniye i fioletovyye tsveta
+My dobavili zelenyy i krasnyy v kachestve tsvetov.
+Zelenyy i rozovyy v smesi
+Odna iz izvestnykh tsvetovykh skhem terminala
+Zelenyy tekst na serom
+Sdelayte svoy terminal polnym limonnoy kisloty
+Svetlyye derevyannyye doski
+Standartnyye tsveta terminala Linux
+Seryy terminal
+Nekotoryy tekst Material Design na vashem terminale
+Ottenki oranzhevogo i korichnevogo
+Tema Melange, vdokhnovlennaya odnoimennoy temoy VIM
+Sdelayte svoy terminal polnym myaty
+Tema, vdokhnovlennaya odnoimennoy temoy VIM
+Vam nravyatsya neonovyye siniye i rozovyye tsveta?
+Eta tema dolzhna byt' dlya vas neytral'noy.
+Eto vashe nochnoye nebo v nachale nochi!
+Skoro nastupit oktyabr', tak chto bud'te gotovy!
+More apel'sina
+Fosfornyy terminal, kotoryy vse okrashivayet v oranzhevyy tsvet
+Darit vam legkiy briz krasnogo.
+Krovavyy krasnyy pul't upravleniya
+Derev'ya sakury podaryat vam nemnogo kitayskogo briza
+Vse tsveta biryuzy
+Tema dlya lyubiteley tekhnologiy
+Poklonnik trans-muzyki? Eto tema dlya vas!
+Tsvetovyye skhemy iz populyarnoy operatsionnoy sistemy Linux, Ubuntu
+Darit vam ideal'nuyu atmosferu Vice City
+Eto vash rassvet Vice City.
+Tsvetovaya skhema dlya Visual Studio, odnoy iz samykh moshchnykh IDE
+Tsvetovaya skhema dlya Windows 11, posledney versii Windows
+Vernite nostal'giyu s etoy temoy!
+Vash terminal sostoit iz derevyannykh dosok
+Vdokhnovleno kitayskim uzorom iz raznykh fruktov
+Dopolnitel'no - Generator imen
+Proverka obnovleniy otklyuchena v versiyakh, nakhodyashchikhsya v razrabotke.
