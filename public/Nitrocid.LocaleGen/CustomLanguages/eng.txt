@@ -1114,11 +1114,6 @@ Enable Black and White Mode
 Makes the disco black and white. Will really hurt your eyes if it was too fast, so not recommended if you're experiencing a seizure of fast images.
 Load Current Colors
 Current value:
-Invalid hex color specifier.
-Invalid RGB color specifier.
-Invalid red color specifier.
-Invalid green color specifier.
-Invalid blue color specifier.
 Adds a new byte at the end of the file
 Adds the new bytes at the end of the file
 Clears the binary file
@@ -1172,17 +1167,9 @@ Maximum amount of age years to generate
 Untitled manual page
 Input history enabled
 Whether the input history is enabled or not. If enabled, you can access recently typed commands using the up or down arrow keys.
-Converts the color RGB numbers to hex.
-Converts the hexadecimal representation of the color to RGB numbers.
-Converts the hexadecimal representation of the color to RGB numbers in KS format.
 Red color level:
 Green color level:
 Blue color level:
-RGB color sequence:
-The red color level must be numeric.
-The green color level must be numeric.
-The blue color level must be numeric.
-Color hexadecimal representation:
 It's now safe to turn off your computer.
 Simulate No APM Mode
 Whether to simulate a situation where there is no APM available. If enabled, it informs the user that it's now safe to turn off the computer upon shutdown.
@@ -1236,11 +1223,8 @@ Run 'license' to see the license information.
 Kernel first-run
 Welcome to Nitrocid Kernel! Thank you for trying it out!
 To get started, press ENTER.
-Select your language
 Select your language. By default, the kernel uses the English language, but you can select any other language here.
 Based on your language settings on your system, the appropriate language is
-Write the language code listed below:
-Press the ENTER key to continue.
 Create your first user
 We'll help you create your own username. Select any name you want. This could be your nickname or your short name, as long as your username doesn't contain spaces and special characters and that it doesn't already exist. The following usernames are registered:
 Enter the username
@@ -1287,13 +1271,6 @@ The following files are not wiped:
 Are you sure to wipe these files?
 Can't wipe miscellaneous file
 No argument help description
-Invalid RYB color specifier.
-Invalid CMY color specifier.
-Invalid CMYK color specifier.
-Invalid HSL color specifier.
-Invalid HSV color specifier.
-Invalid YIQ color specifier.
-Invalid YUV color specifier.
 Your console must support true color to use this theme.
 Exit the preview
 Done
@@ -1586,7 +1563,6 @@ Extras - JSON Shell
 Extras - Language Studio
 Extras - Mail Shell
 Extras - MD5
-Extras - NameGen
 Extras - Notes
 Extras - RSS Shell
 Extras - SFTP Shell
@@ -1809,37 +1785,8 @@ BASE64 doesn't support initialization vectors
 RSA doesn't support keys
 RSA doesn't support initialization vectors
 Keybindings
-Insert
 Remove
-Replace
-Replace All
-Replace All What
-Number Info
-The hex editor failed:
-Available keys
-Write the byte number with the hexadecimal value.
-The byte number specified is not valid.
-Write the byte number with the hexadecimal value to replace {0} with.
-Write the byte number with the hexadecimal value to be replaced.
-Number information:
-Hexadecimal
-Octal
-Number
-Binary
-This keybinding contains no action.
 Can't perform this operation on a null array.
-Enter...
-Remove Line
-Stop Entering
-New Line
-The text editor failed:
-Write the string to find
-Write the replacement string
-Lines
-Column
-Row
-Bin
-Tab
 Can't perform this operation on a null lines list.
 Settings type is not found.
 Find an option
@@ -1866,7 +1813,6 @@ Saving settings...
 Saving settings to
 Loading settings...
 Reloading settings...
-Checking for updates is disabled on development versions.
 Kernel version
 Kernel API version
 Host ID
@@ -1943,7 +1889,6 @@ The below switches don't accept values.
 One or more of the arguments expect a numeric value, but you provided an invalid number.
 One or more of the arguments expect an exact wording, but you provided an invalid word.
 One or more of the switches expect a numeric value, but you provided an invalid number.
-Consult this command for more info
 Command has been aborted.
 You must not directly execute this command in a wrapped mode.
 An error occurred while trying to wrap a command output
@@ -2036,7 +1981,6 @@ Changes the user language instead of the system language
 One line choice style
 Two lines choice style
 Modern choice style
-Table choice style
 The output can be only one character
 The output can be more than a character
 Combines the two text files or more into the console.
@@ -2234,7 +2178,6 @@ Tests the input selection style
 Tests the list entry writer
 Indent 1:
 Indent 2:
-Tests the presentation system
 Tests the progress handler
 Initializing...
 Write a string to check:
@@ -2432,139 +2375,6 @@ Show information about the imaginary number formula specified by a specified rea
 Calendar, event, and reminder manager
 Calendar type to work on
 Use the table-based calendar viewer
-Converts the hexadecimal representation of the color to RYB numbers.
-Converts the hexadecimal representation of the color to RYB numbers in KS format.
-Converts the hexadecimal representation of the color to CMYK numbers.
-Converts the hexadecimal representation of the color to CMYK numbers in KS format.
-Converts the hexadecimal representation of the color to CMY numbers.
-Converts the hexadecimal representation of the color to CMY numbers in KS format.
-Converts the hexadecimal representation of the color to HSL numbers.
-Converts the hexadecimal representation of the color to HSL numbers in KS format.
-Converts the hexadecimal representation of the color to HSV numbers.
-Converts the hexadecimal representation of the color to HSV numbers in KS format.
-Converts the hexadecimal representation of the color to YIQ numbers.
-Converts the hexadecimal representation of the color to YIQ numbers in KS format.
-Converts the hexadecimal representation of the color to YUV numbers.
-Converts the hexadecimal representation of the color to YUV numbers in KS format.
-Converts the color RGB numbers to CMYK.
-Converts the color RGB numbers to CMYK in KS format.
-Converts the color RGB numbers to CMY.
-Converts the color RGB numbers to CMY in KS format.
-Converts the color RGB numbers to HSL.
-Converts the color RGB numbers to HSL in KS format.
-Converts the color RGB numbers to HSV.
-Converts the color RGB numbers to HSV in KS format.
-Converts the color RGB numbers to RYB.
-Converts the color RGB numbers to RYB in KS format.
-Converts the color RGB numbers to YIQ.
-Converts the color RGB numbers to YIQ in KS format.
-Converts the color RGB numbers to YUV.
-Converts the color RGB numbers to YUV in KS format.
-Converts the color RYB numbers to hex.
-Converts the color RYB numbers to CMYK.
-Converts the color RYB numbers to CMYK in KS format.
-Converts the color RYB numbers to CMY.
-Converts the color RYB numbers to CMY in KS format.
-Converts the color RYB numbers to HSL.
-Converts the color RYB numbers to HSL in KS format.
-Converts the color RYB numbers to HSV.
-Converts the color RYB numbers to HSV in KS format.
-Converts the color RYB numbers to RGB.
-Converts the color RYB numbers to RGB in KS format.
-Converts the color RYB numbers to YIQ.
-Converts the color RYB numbers to YIQ in KS format.
-Converts the color RYB numbers to YUV.
-Converts the color RYB numbers to YUV in KS format.
-Converts the color HSL numbers to hex.
-Converts the color HSL numbers to CMYK.
-Converts the color HSL numbers to CMYK in KS format.
-Converts the color HSL numbers to CMY.
-Converts the color HSL numbers to CMY in KS format.
-Converts the color HSL numbers to HSV.
-Converts the color HSL numbers to HSV in KS format.
-Converts the color HSL numbers to RGB.
-Converts the color HSL numbers to RGB in KS format.
-Converts the color HSL numbers to RYB.
-Converts the color HSL numbers to RYB in KS format.
-Converts the color HSL numbers to YIQ.
-Converts the color HSL numbers to YIQ in KS format.
-Converts the color HSL numbers to YUV.
-Converts the color HSL numbers to YUV in KS format.
-Converts the color HSV numbers to hex.
-Converts the color HSV numbers to CMYK.
-Converts the color HSV numbers to CMYK in KS format.
-Converts the color HSV numbers to CMY.
-Converts the color HSV numbers to CMY in KS format.
-Converts the color HSV numbers to HSL.
-Converts the color HSV numbers to HSL in KS format.
-Converts the color HSV numbers to RGB.
-Converts the color HSV numbers to RGB in KS format.
-Converts the color HSV numbers to RYB.
-Converts the color HSV numbers to RYB in KS format.
-Converts the color HSV numbers to YIQ.
-Converts the color HSV numbers to YIQ in KS format.
-Converts the color HSV numbers to YUV.
-Converts the color HSV numbers to YUV in KS format.
-Converts the color CMYK numbers to hex.
-Converts the color CMYK numbers to RGB.
-Converts the color CMYK numbers to RGB in KS format.
-Converts the color CMYK numbers to RYB.
-Converts the color CMYK numbers to RYB in KS format.
-Converts the color CMYK numbers to HSL.
-Converts the color CMYK numbers to HSL in KS format.
-Converts the color CMYK numbers to HSV.
-Converts the color CMYK numbers to HSV in KS format.
-Converts the color CMYK numbers to CMY.
-Converts the color CMYK numbers to CMY in KS format.
-Converts the color CMYK numbers to YIQ.
-Converts the color CMYK numbers to YIQ in KS format.
-Converts the color CMYK numbers to YUV.
-Converts the color CMYK numbers to YUV in KS format.
-Converts the color CMY numbers to hex.
-Converts the color CMY numbers to CMYK.
-Converts the color CMY numbers to CMYK in KS format.
-Converts the color CMY numbers to HSL.
-Converts the color CMY numbers to HSL in KS format.
-Converts the color CMY numbers to HSV.
-Converts the color CMY numbers to HSV in KS format.
-Converts the color CMY numbers to RGB.
-Converts the color CMY numbers to RGB in KS format.
-Converts the color CMY numbers to RYB.
-Converts the color CMY numbers to RYB in KS format.
-Converts the color CMY numbers to YIQ.
-Converts the color CMY numbers to YIQ in KS format.
-Converts the color CMY numbers to YUV.
-Converts the color CMY numbers to YUV in KS format.
-Converts the color YIQ numbers to hex.
-Converts the color YIQ numbers to CMYK.
-Converts the color YIQ numbers to CMYK in KS format.
-Converts the color YIQ numbers to CMY.
-Converts the color YIQ numbers to CMY in KS format.
-Converts the color YIQ numbers to HSL.
-Converts the color YIQ numbers to HSL in KS format.
-Converts the color YIQ numbers to HSV.
-Converts the color YIQ numbers to HSV in KS format.
-Converts the color YIQ numbers to RGB.
-Converts the color YIQ numbers to RGB in KS format.
-Converts the color YIQ numbers to RYB.
-Converts the color YIQ numbers to RYB in KS format.
-Converts the color YIQ numbers to YUV.
-Converts the color YIQ numbers to YUV in KS format.
-Converts the color YUV numbers to hex.
-Converts the color YUV numbers to CMYK.
-Converts the color YUV numbers to CMYK in KS format.
-Converts the color YUV numbers to CMY.
-Converts the color YUV numbers to CMY in KS format.
-Converts the color YUV numbers to HSL.
-Converts the color YUV numbers to HSL in KS format.
-Converts the color YUV numbers to HSV.
-Converts the color YUV numbers to HSV in KS format.
-Converts the color YUV numbers to RGB.
-Converts the color YUV numbers to RGB in KS format.
-Converts the color YUV numbers to RYB.
-Converts the color YUV numbers to RYB in KS format.
-Converts the color YUV numbers to YUV.
-Converts the color YUV numbers to YIQ in KS format.
 Manages your contacts
 Gets backtrace for all threads
 Shows you a full-screen overview about a selected dock view to be able to use it as an info panel
@@ -2680,7 +2490,6 @@ Happy 5-year anniversary!
 Can't extract nothing.
 Archive is not writable because type is
 Make sure to specify the path to an LRC file.
-Music file not specified.
 Music file '{0}' doesn't exist.
 Fatal error in the BassBoom CLI addon.
 Can't play sound because the file is not found.
@@ -2705,7 +2514,6 @@ Enter a path to the music file
 File "{0}" doesn't exist.
 Enter a path to the music library directory
 Music library directory is not found.
-Can't open {0}: {1}
 Loading BassBoom to open {0}...
 Now playing
 Trying to open lyrics file
@@ -2719,13 +2527,10 @@ Seek control
 Seek duration control
 Song info
 Add a music file
-Add a music directory to the playlist
 Previous song
 Next song
 Remove current song
 Remove all songs
-Selectively seek
-Open equalizer
 Unknown
 Title
 Album
@@ -2780,39 +2585,18 @@ Long form
 Calendar type
 No reminders found for the selected month
 No events found for the selected month
-The cyan color level must be numeric.
-The magenta color level must be numeric.
-The yellow color level must be numeric.
-The black key level must be numeric.
 Cyan level:
 Magenta level:
 Yellow level:
-CMY color sequence:
 Hue:
 Saturation:
-HSL color sequence:
 Value:
-HSV color sequence:
 Yellow color level:
-RYB color sequence:
 Luma:
 In-phase:
 Quadrature:
-YIQ color sequence:
 U-Chroma:
 V-Chroma:
-YUV color sequence:
-Black key:
-CMYK color sequence:
-The hue level must be numeric.
-The saturation level must be numeric.
-The luminance or lighting level must be numeric.
-The value level must be numeric.
-The Y component level must be numeric.
-The I component level must be numeric.
-The Q component level must be numeric.
-The U component level must be numeric.
-The V component level must be numeric.
 Can't open file '{0}' because it's not found.
 Imported contacts successfully.
 Can't open file '{0}' because the card file is invalid.
@@ -2820,7 +2604,6 @@ Contact file doesn't exist.
 contacts found
 Contact file is invalid.
 The MeCard syntax can't be empty.
-Some of the contacts can't be added. Only {0} out of {1} contacts were added.
 Either the provided contacts file doesn't have information about any contact or isn't valid.
 Failed to parse contacts. See the error details for more information.
 Contact index is out of range. Maximum index is {0} while provided index is {1}.
@@ -2885,8 +2668,6 @@ The port number for your online radio is invalid.
 Full URL
 Current listeners
 Peak listeners
-Max listeners
-Unique listeners
 Streams
 Active streams
 Stream info for ID
@@ -2989,8 +2770,6 @@ Failed to add a reminder.
 Not enough arguments provided to add a reminder.
 Failed to remove a reminder.
 Not enough arguments provided to remove a reminder.
-Nitrocid KS Release Anniversary\", true, 2, 22, 2, 22, \"Gregorian
-Ramadan\", true, 9, 1, 10, 1, \"Hijri
 There is no event.
 There is no reminder.
 There is no contact. If you'd like to import contacts, please use the import options using the keystrokes defined at the bottom of the screen.
@@ -3177,8 +2956,6 @@ Beep on shutdown or reboot
 Enables beeping upon shutting down the kernel.
 Delay on shutdown or reboot
 Enables delaying upon shutting down the kernel.
-Enable simple color blindness
-If you want the simulation of color blindness to be simple, enable this. Please note that the formula used in this simulation method may not be accurate.
 Console supports true color
 If you are sure that the console supports true color, or if you want to change your terminal to a terminal that supports true color, change this value.
 Set codepage
@@ -3209,8 +2986,6 @@ Background accent color
 For themes that support accents, this is the accented backgound color.
 Use console color palette
 When this is set to true, the color palette defined by the terminal is used.
-Allow foreground color
-When this is set to true, the current foreground color is honored. Else, it uses your terminal's default colors.
 Allow background color
 When this is set to true, the current background color is honored. Else, it uses your terminal's default colors.
 User Name Shell Color
@@ -3324,14 +3099,6 @@ Show the unified commands count on help
 Show the count of unified shell commands when listing them in the help command
 Show the addon commands count on help
 Show the count of kernel addon commands when listing them in the help command
-Upper left corner character for progress bars
-Upper right corner character for progress bars
-Lower left corner character for progress bars
-Lower right corner character for progress bars
-Upper frame character for progress bars
-Lower frame character for progress bars
-Left frame character for progress bars
-Right frame character for progress bars
 Enable scroll bar in selection
 Enables the scroll bar in selection screens
 Do Not Disturb
