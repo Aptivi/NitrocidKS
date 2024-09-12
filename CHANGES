@@ -1,10 +1,10 @@
-After Service Pack 1, we've updated VisualCard for better card parsing!
+This version of Nitrocid KS is here to fix a regression by updating Terminaux!
 
 ### Changes
 
 This release contains a variety of changes, including, but not limited to:
 
-- `[*]` Updated libraries
+- `[*]` Updated Terminaux to fix a regression regarding the single selection style
 
 Review the commit history if you want to get a deep insight about the changes.
 
