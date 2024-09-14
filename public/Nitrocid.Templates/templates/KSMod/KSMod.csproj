@@ -1,10 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="KS" Version="0.1.0.25" />
+    <PackageReference Include="KS" Version="0.1.0.26" />
   </ItemGroup>
 
 </Project>
