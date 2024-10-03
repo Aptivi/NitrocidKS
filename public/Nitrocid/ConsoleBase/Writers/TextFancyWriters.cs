@@ -27,7 +27,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 using Terminaux.Colors;
-using Textify.Figlet.Utilities.Lines;
+using Textify.Data.Figlet.Utilities.Lines;
 using Terminaux.Base;
 
 namespace Nitrocid.ConsoleBase.Writers

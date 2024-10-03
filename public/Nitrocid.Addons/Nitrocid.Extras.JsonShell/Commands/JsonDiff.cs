@@ -24,7 +24,7 @@ using Nitrocid.ConsoleBase.Writers;
 using Nitrocid.Files.Operations;
 using Nitrocid.Misc.Text;
 using Nitrocid.Shell.ShellBase.Commands;
-using Textify.Json;
+using Textify.Tools;
 
 namespace Nitrocid.Extras.JsonShell.Commands
 {

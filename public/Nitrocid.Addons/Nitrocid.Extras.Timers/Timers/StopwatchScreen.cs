@@ -199,7 +199,7 @@ namespace Nitrocid.Extras.Timers.Timers
                             {
                                 if (KeysKeypress.Modifiers == ConsoleModifiers.Shift)
                                 {
-                                    InfoBoxColor.WriteInfoBox(GenerateLapList());
+                                    InfoBoxModalColor.WriteInfoBoxModal(GenerateLapList());
                                     watchScreen.RequireRefresh();
                                     break;
                                 }

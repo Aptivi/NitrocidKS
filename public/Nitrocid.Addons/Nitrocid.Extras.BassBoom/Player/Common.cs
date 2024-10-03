@@ -125,7 +125,7 @@ namespace Nitrocid.Extras.BassBoom.Player
             }
             string section1 = Translate.DoTranslation("Device and Driver");
             string section2 = Translate.DoTranslation("Available devices and drivers");
-            InfoBoxColor.WriteInfoBox(
+            InfoBoxModalColor.WriteInfoBoxModal(
                 $$"""
                 {{section1}}
                 {{new string('=', ConsoleChar.EstimateCellWidth(section1))}}
@@ -145,7 +145,7 @@ namespace Nitrocid.Extras.BassBoom.Player
             string section1 = Translate.DoTranslation("BassBoom specifications");
             string section2 = Translate.DoTranslation("Decoders");
             string section3 = Translate.DoTranslation("System specifications");
-            InfoBoxColor.WriteInfoBox(
+            InfoBoxModalColor.WriteInfoBoxModal(
                 $$"""
                 {{section1}}
                 {{new string('=', ConsoleChar.EstimateCellWidth(section1))}}
@@ -178,7 +178,7 @@ namespace Nitrocid.Extras.BassBoom.Player
         internal static void ShowHelp()
         {
             string section1 = Translate.DoTranslation("Available keystrokes");
-            InfoBoxColor.WriteInfoBox(
+            InfoBoxModalColor.WriteInfoBoxModal(
                 $$"""
                 {{section1}}
                 {{new string('=', ConsoleChar.EstimateCellWidth(section1))}}
@@ -215,7 +215,7 @@ namespace Nitrocid.Extras.BassBoom.Player
         internal static void ShowHelpRadio()
         {
             string section1 = Translate.DoTranslation("Available keystrokes");
-            InfoBoxColor.WriteInfoBox(
+            InfoBoxModalColor.WriteInfoBoxModal(
                 $$"""
                 {{section1}}
                 {{new string('=', ConsoleChar.EstimateCellWidth(section1))}}

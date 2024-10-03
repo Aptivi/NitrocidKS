@@ -29,7 +29,7 @@ using Nitrocid.Misc.Text.Probers.Placeholder;
 using Textify.General;
 using Terminaux.Base;
 using Terminaux.Inputs;
-using Textify.Figlet;
+using Textify.Data.Figlet;
 using Terminaux.Inputs.Styles;
 using System;
 
