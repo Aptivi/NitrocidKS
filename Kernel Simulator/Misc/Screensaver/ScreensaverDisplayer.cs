@@ -20,6 +20,8 @@
 using System;
 using System.Threading;
 using KS.Misc.Threading;
+using Terminaux.Base;
+using Terminaux.Colors;
 
 namespace KS.Misc.Screensaver
 {
@@ -35,24 +37,40 @@ namespace KS.Misc.Screensaver
         /// <param name="Screensaver">Screensaver base containing information about the screensaver</param>
         public static void DisplayScreensaver(BaseScreensaver Screensaver)
         {
+            bool initialVisible = ConsoleWrapper.CursorVisible;
+            bool initialBack = ColorTools.AllowBackground;
+            bool initialPalette = ColorTools.GlobalSettings.UseTerminalPalette;
             try
             {
                 // Preparations
                 OutOfRandom = false;
+                ColorTools.AllowBackground = true;
+                ColorTools.GlobalSettings.UseTerminalPalette = false;
                 Screensaver.ScreensaverPreparation();
 
                 // Execute the actual screensaver logic
                 while (!OutOfRandom)
+                {
+                    if (ConsoleWrapper.CursorVisible)
+                        ConsoleWrapper.CursorVisible = false;
                     Screensaver.ScreensaverLogic();
+                }
             }
             catch (ThreadInterruptedException)
             {
                 Misc.Screensaver.Screensaver.HandleSaverCancel();
-                OutOfRandom = true;
             }
             catch (Exception ex)
             {
                 Misc.Screensaver.Screensaver.HandleSaverError(ex);
+            }
+            finally
+            {
+                OutOfRandom = true;
+                ColorTools.AllowBackground = initialBack;
+                ColorTools.GlobalSettings.UseTerminalPalette = initialPalette;
+                ConsoleWrapper.CursorVisible = initialVisible;
+                ColorTools.LoadBack();
             }
         }
 
