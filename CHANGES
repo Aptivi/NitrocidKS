@@ -1,10 +1,12 @@
-We've made an emergency release to fix data loss regarding uncompressing some archives.
+We've made this emergency release to fix color palette issues causing some screensavers to look ugly.
+
+NOTICE: There won't be any updates until the end of December 2024, but we promise that we'll come up with something amazing in the next update!
 
 ### Changes
 
 This release contains a variety of changes, including, but not limited to:
 
-- `[*]` Updated SharpCompress to mitigate data loss
+- `[*]` Prevent color palette from being used on screensavers
 
 Review the commit history if you want to get a deep insight about the changes.
 
