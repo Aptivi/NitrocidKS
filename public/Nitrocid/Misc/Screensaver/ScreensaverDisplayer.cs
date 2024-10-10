@@ -48,11 +48,15 @@ namespace Nitrocid.Misc.Screensaver
             if (Screensaver is null)
                 throw new KernelException(KernelExceptionType.ScreensaverManagement, Translate.DoTranslation("Screensaver instance is not specified"));
             bool initialVisible = ConsoleWrapper.CursorVisible;
+            bool initialBack = ColorTools.AllowBackground;
+            bool initialPalette = ColorTools.GlobalSettings.UseTerminalPalette;
             try
             {
                 // Preparations
                 OutOfSaver = false;
                 displayingSaver = Screensaver;
+                ColorTools.AllowBackground = true;
+                ColorTools.GlobalSettings.UseTerminalPalette = false;
                 Screensaver.ScreensaverPreparation();
 
                 // Execute the actual screensaver logic
@@ -75,6 +79,9 @@ namespace Nitrocid.Misc.Screensaver
             {
                 OutOfSaver = true;
                 Screensaver.ScreensaverOutro();
+                ColorTools.AllowBackground = initialBack;
+                ColorTools.GlobalSettings.UseTerminalPalette = initialPalette;
+                ColorTools.LoadBack();
             }
         }
 
