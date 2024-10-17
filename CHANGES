@@ -1,12 +1,12 @@
-We've made this emergency release to fix color palette issues causing some screensavers to look ugly.
+We've made this emergency release to fix a security issue concerning System.Text.Json.
 
-NOTICE: There won't be any updates until the end of December 2024, but we promise that we'll come up with something amazing in the next update!
+NOTICE: There won't be any updates for the v0.0.24.x series after this release, but we'll keep this version supported until January 1st, 2025.
 
 ### Changes
 
 This release contains a variety of changes, including, but not limited to:
 
-- `[*]` Prevent color palette from being used on screensavers
+- `[*]` Fixed a security issue concerning System.Text.Json
 
 Review the commit history if you want to get a deep insight about the changes.
 
