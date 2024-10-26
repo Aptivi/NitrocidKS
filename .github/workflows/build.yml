@@ -11,6 +11,7 @@ jobs:
     strategy:
       matrix:
         runs-on: [ubuntu-latest, windows-latest, macos-latest]
+      fail-fast: false
     runs-on: ${{ matrix.runs-on }}
 
     steps:
@@ -21,8 +22,12 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: '8.0.x'
-    - name: Solution Compilation
-      run: dotnet build -maxCpuCount:1 --configuration Debug
+    - name: Solution Compilation (Windows)
+      if: matrix.runs-on == 'windows-latest'
+      run: cd tools ; ./build.cmd Debug ; cd ..
+    - name: Solution Compilation (Unix)
+      if: matrix.runs-on != 'windows-latest'
+      run: make dbg
     - name: Testing
       run: dotnet test --no-build --configuration Debug
     - uses: actions/upload-artifact@v4
