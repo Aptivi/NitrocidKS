@@ -37,6 +37,7 @@
 
       Supported constants (NitrocidFlags):
           - PACKAGEMANAGERBUILD: Indicates that this build is a package manager build suitable for Launchpad PPA
+          - SUPPRESSDEPRECATIONWARNING: Suppresses the deprecation warning (unsupported option)
 
       Possible specifiers (NitrocidReleaseSpecifier):
           - REL: Final release

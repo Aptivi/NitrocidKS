@@ -48,6 +48,7 @@ using Terminaux.Colors;
 using Terminaux.Inputs.Styles.Infobox;
 using KS.ConsoleBase.Writers;
 using KS.ConsoleBase.Writers.MiscWriters;
+using KS.TimeDate;
 
 #if SPECIFIERREL
 using KS.Network;
@@ -265,6 +266,14 @@ namespace KS.Kernel
                         TextWriters.Write("", KernelColorTools.ColTypes.Neutral);
                         WelcomeMessage.WriteLicense();
                     }
+
+#if !SUPPRESSDEPRECATIONWARNING
+                    // Show deprecation warning
+                    if (TimeDate.TimeDate.KernelDateTime >= new DateTime(2025, 1, 1))
+                        TextWriters.Write("This generation of Nitrocid KS is no longer be supported. It will no longer receive security updates. Please update to the latest version to continue.", KernelColorTools.ColTypes.Error);
+                    else if (TimeDate.TimeDate.KernelDateTime >= new DateTime(2024, 12, 1))
+                        TextWriters.Write("This generation of Nitrocid KS will no longer be supported after January 1st, 2025. It will no longer receive security updates. Please update to the latest version to continue.", KernelColorTools.ColTypes.Warning);
+#endif
 
                     // Initialize login prompt
                     if (!Flags.Maintenance)
