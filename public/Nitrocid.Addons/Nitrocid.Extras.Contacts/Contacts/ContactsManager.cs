@@ -23,7 +23,6 @@ using VisualCard;
 using System;
 using System.Linq;
 using System.IO;
-using VisualCard.Converters;
 using Nitrocid.Kernel.Debugging;
 using Nitrocid.Files.Folders;
 using Nitrocid.Kernel.Exceptions;
@@ -34,6 +33,8 @@ using Nitrocid.Languages;
 using Nitrocid.Drivers.Encryption;
 using Nitrocid.Misc.Text.Probers.Regexp;
 using VisualCard.Parts.Implementations;
+using VisualCard.Extras.Converters;
+using VisualCard.Parts.Enums;
 
 namespace Nitrocid.Extras.Contacts.Contacts
 {
@@ -178,7 +179,7 @@ namespace Nitrocid.Extras.Contacts.Contacts
                     DebugWriter.WriteDebugPrivacy(DebugLevel.D, "{0}", [0], vcard.ToString());
                     if (!ContactsManager.cards.Contains(vcard))
                         ContactsManager.cards.Add(vcard);
-                    DebugWriter.WriteDebugPrivacy(DebugLevel.I, "Parser successfully processed contact {0}.", [0], vcard.GetPartsArray<FullNameInfo>()[0].FullName);
+                    DebugWriter.WriteDebugPrivacy(DebugLevel.I, "Parser successfully processed contact {0}.", [0], vcard.GetString(StringsEnum.FullName)[0].Value);
                 }
                 DebugWriter.WriteDebug(DebugLevel.I, "Cards: {0}", cards.Length);
 
@@ -334,7 +335,7 @@ namespace Nitrocid.Extras.Contacts.Contacts
                 cachedSearchExpression = expression;
 
                 // Get the list of cards satisfying the expression
-                var satisfiedCards = cards.Where((card) => RegexpTools.IsMatch(card.GetPartsArray<FullNameInfo>()[0].FullName ?? "", expression)).ToArray();
+                var satisfiedCards = cards.Where((card) => RegexpTools.IsMatch(card.GetString(StringsEnum.FullName)[0].Value ?? "", expression)).ToArray();
 
                 // Return a card if the index is valid
                 if (satisfiedCards.Length > 0)
@@ -379,7 +380,7 @@ namespace Nitrocid.Extras.Contacts.Contacts
                     throw new KernelException(KernelExceptionType.Contacts, Translate.DoTranslation("Regular expression is invalid."));
 
                 // Get the list of cards satisfying the expression
-                var satisfiedCards = cards.Where((card) => RegexpTools.IsMatch(card.GetPartsArray<FullNameInfo>()[0].FullName ?? "", expression)).ToArray();
+                var satisfiedCards = cards.Where((card) => RegexpTools.IsMatch(card.GetString(StringsEnum.FullName)[0].Value ?? "", expression)).ToArray();
 
                 // Compare between the cached expression and the given expression
                 if (expression == cachedSearchExpression)

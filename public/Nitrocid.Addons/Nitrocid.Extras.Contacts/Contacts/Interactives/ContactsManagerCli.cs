@@ -30,6 +30,7 @@ using Nitrocid.Files.Operations.Querying;
 using Textify.General;
 using VisualCard.Parts.Implementations;
 using Nitrocid.ConsoleBase.Colors;
+using VisualCard.Parts.Enums;
 
 namespace Nitrocid.Extras.Contacts.Contacts.Interactives
 {
@@ -94,7 +95,7 @@ namespace Nitrocid.Extras.Contacts.Contacts.Interactives
             Card contact = item;
             if (contact is null)
                 return "";
-            return contact.GetPartsArray<FullNameInfo>()[0].FullName ?? "";
+            return contact.GetString(StringsEnum.FullName)[0].Value ?? "";
         }
 
         internal void RemoveContact(int index) =>
@@ -262,7 +263,7 @@ namespace Nitrocid.Extras.Contacts.Contacts.Interactives
             bool hasName = card.GetPartsArray<NameInfo>().Length != 0;
 
             if (hasName)
-                finalInfoRendered.Append(Translate.DoTranslation("Contact name") + $": {card.GetPartsArray<FullNameInfo>()[0].FullName}");
+                finalInfoRendered.Append(Translate.DoTranslation("Contact name") + $": {card.GetString(StringsEnum.FullName)[0].Value}");
             else
                 finalInfoRendered.Append(Translate.DoTranslation("No contact name"));
 
@@ -330,10 +331,10 @@ namespace Nitrocid.Extras.Contacts.Contacts.Interactives
         {
             // Render the final information string
             var finalInfoRendered = new StringBuilder();
-            bool hasMail = card.GetPartsArray<EmailInfo>().Length != 0;
+            bool hasMail = card.GetString(StringsEnum.Mails).Length != 0;
 
             if (hasMail)
-                finalInfoRendered.Append(Translate.DoTranslation("Contact mail") + $": {card.GetPartsArray<EmailInfo>()[0].ContactEmailAddress}");
+                finalInfoRendered.Append(Translate.DoTranslation("Contact mail") + $": {card.GetString(StringsEnum.Mails)[0].Value}");
             else
                 finalInfoRendered.Append(Translate.DoTranslation("No contact mail"));
 
@@ -389,10 +390,10 @@ namespace Nitrocid.Extras.Contacts.Contacts.Interactives
         {
             // Render the final information string
             var finalInfoRendered = new StringBuilder();
-            bool hasTelephone = card.GetPartsArray<TelephoneInfo>().Length != 0;
+            bool hasTelephone = card.GetString(StringsEnum.Telephones).Length != 0;
 
             if (hasTelephone)
-                finalInfoRendered.Append(Translate.DoTranslation("Contact telephone") + $": {card.GetPartsArray<TelephoneInfo>()[0].ContactPhoneNumber}");
+                finalInfoRendered.Append(Translate.DoTranslation("Contact telephone") + $": {card.GetString(StringsEnum.Telephones)[0].Value}");
             else
                 finalInfoRendered.Append(Translate.DoTranslation("No contact telephone"));
 
@@ -411,10 +412,10 @@ namespace Nitrocid.Extras.Contacts.Contacts.Interactives
         {
             // Render the final information string
             var finalInfoRendered = new StringBuilder();
-            bool hasURL = card.GetPartsArray<UrlInfo>().Length != 0;
+            bool hasURL = card.GetString(StringsEnum.Url).Length != 0;
 
             if (hasURL)
-                finalInfoRendered.Append(Translate.DoTranslation("Contact URL") + $": {card.GetPartsArray<UrlInfo>()[0]}");
+                finalInfoRendered.Append(Translate.DoTranslation("Contact URL") + $": {card.GetString(StringsEnum.Url)[0]}");
             else
                 finalInfoRendered.Append(Translate.DoTranslation("No contact URL"));
 
@@ -433,10 +434,10 @@ namespace Nitrocid.Extras.Contacts.Contacts.Interactives
         {
             // Render the final information string
             var finalInfoRendered = new StringBuilder();
-            bool hasGeo = card.GetPartsArray<GeoInfo>().Length != 0;
+            bool hasGeo = card.GetString(StringsEnum.Geo).Length != 0;
 
             if (hasGeo)
-                finalInfoRendered.Append(Translate.DoTranslation("Contact geo") + $": {card.GetPartsArray<GeoInfo>()[0].Geo}");
+                finalInfoRendered.Append(Translate.DoTranslation("Contact geo") + $": {card.GetString(StringsEnum.Geo)[0].Value}");
             else
                 finalInfoRendered.Append(Translate.DoTranslation("No contact geo"));
 
@@ -455,10 +456,10 @@ namespace Nitrocid.Extras.Contacts.Contacts.Interactives
         {
             // Render the final information string
             var finalInfoRendered = new StringBuilder();
-            bool hasImpp = card.GetPartsArray<ImppInfo>().Length != 0;
+            bool hasImpp = card.GetString(StringsEnum.Impps).Length != 0;
 
             if (hasImpp)
-                finalInfoRendered.Append(Translate.DoTranslation("Contact IMPP") + $": {card.GetPartsArray<ImppInfo>()[0].ContactIMPP}");
+                finalInfoRendered.Append(Translate.DoTranslation("Contact IMPP") + $": {card.GetString(StringsEnum.Impps)[0].Value}");
             else
                 finalInfoRendered.Append(Translate.DoTranslation("No contact IMPP"));
 
@@ -477,10 +478,10 @@ namespace Nitrocid.Extras.Contacts.Contacts.Interactives
         {
             // Render the final information string
             var finalInfoRendered = new StringBuilder();
-            bool hasNickname = card.GetPartsArray<NicknameInfo>().Length != 0;
+            bool hasNickname = card.GetString(StringsEnum.Nicknames).Length != 0;
 
             if (hasNickname)
-                finalInfoRendered.Append(Translate.DoTranslation("Contact nickname") + $": {card.GetPartsArray<NicknameInfo>()[0].ContactNickname}");
+                finalInfoRendered.Append(Translate.DoTranslation("Contact nickname") + $": {card.GetString(StringsEnum.Nicknames)[0].Value}");
             else
                 finalInfoRendered.Append(Translate.DoTranslation("No contact nickname"));
 
@@ -499,10 +500,10 @@ namespace Nitrocid.Extras.Contacts.Contacts.Interactives
         {
             // Render the final information string
             var finalInfoRendered = new StringBuilder();
-            bool hasRoles = card.GetPartsArray<RoleInfo>().Length != 0;
+            bool hasRoles = card.GetString(StringsEnum.Roles).Length != 0;
 
             if (hasRoles)
-                finalInfoRendered.Append(Translate.DoTranslation("Contact role") + $": {card.GetPartsArray<RoleInfo>()[0].ContactRole}");
+                finalInfoRendered.Append(Translate.DoTranslation("Contact role") + $": {card.GetString(StringsEnum.Roles)[0].Value}");
             else
                 finalInfoRendered.Append(Translate.DoTranslation("No contact role"));
 
@@ -521,10 +522,10 @@ namespace Nitrocid.Extras.Contacts.Contacts.Interactives
         {
             // Render the final information string
             var finalInfoRendered = new StringBuilder();
-            bool hasTitles = card.GetPartsArray<TitleInfo>().Length != 0;
+            bool hasTitles = card.GetString(StringsEnum.Titles).Length != 0;
 
             if (hasTitles)
-                finalInfoRendered.Append(Translate.DoTranslation("Contact title") + $": {card.GetPartsArray<TitleInfo>()[0].ContactTitle}");
+                finalInfoRendered.Append(Translate.DoTranslation("Contact title") + $": {card.GetString(StringsEnum.Titles)[0].Value}");
             else
                 finalInfoRendered.Append(Translate.DoTranslation("No contact title"));
 
@@ -543,10 +544,10 @@ namespace Nitrocid.Extras.Contacts.Contacts.Interactives
         {
             // Render the final information string
             var finalInfoRendered = new StringBuilder();
-            bool hasNotes = card.GetPartsArray<NoteInfo>().Length > 0;
+            bool hasNotes = card.GetString(StringsEnum.Notes).Length > 0;
 
             if (hasNotes)
-                finalInfoRendered.Append(Translate.DoTranslation("Contact notes") + $": {card.GetPartsArray<NoteInfo>()[0]}");
+                finalInfoRendered.Append(Translate.DoTranslation("Contact notes") + $": {card.GetString(StringsEnum.Notes)[0]}");
             else
                 finalInfoRendered.Append(Translate.DoTranslation("No contact notes"));
 
