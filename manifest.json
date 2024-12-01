@@ -1515,6 +1515,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Kernel.Configuration.Instances.KernelSplashConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Kernel.Configuration.Instances.KernelSplashConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.yml",
       "output": {
         ".html": {

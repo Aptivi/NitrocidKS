@@ -17386,6 +17386,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Config.SaverConfig
   nameWithType: Config.SaverConfig
+- uid: Nitrocid.Kernel.Configuration.Config.SplashConfig
+  name: SplashConfig
+  href: api/Nitrocid.Kernel.Configuration.Config.html#Nitrocid_Kernel_Configuration_Config_SplashConfig
+  commentId: P:Nitrocid.Kernel.Configuration.Config.SplashConfig
+  fullName: Nitrocid.Kernel.Configuration.Config.SplashConfig
+  nameWithType: Config.SplashConfig
+- uid: Nitrocid.Kernel.Configuration.Config.SplashConfig*
+  name: SplashConfig
+  href: api/Nitrocid.Kernel.Configuration.Config.html#Nitrocid_Kernel_Configuration_Config_SplashConfig_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Config.SplashConfig
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Config.SplashConfig
+  nameWithType: Config.SplashConfig
 - uid: Nitrocid.Kernel.Configuration.Config.TryCreateConfig
   name: TryCreateConfig()
   href: api/Nitrocid.Kernel.Configuration.Config.html#Nitrocid_Kernel_Configuration_Config_TryCreateConfig
@@ -20743,6 +20756,38 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelSaverConfig.SettingsEntries
   nameWithType: KernelSaverConfig.SettingsEntries
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelSplashConfig
+  name: KernelSplashConfig
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelSplashConfig.html
+  commentId: T:Nitrocid.Kernel.Configuration.Instances.KernelSplashConfig
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelSplashConfig
+  nameWithType: KernelSplashConfig
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelSplashConfig.SettingsEntries
+  name: SettingsEntries
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelSplashConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelSplashConfig_SettingsEntries
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelSplashConfig.SettingsEntries
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelSplashConfig.SettingsEntries
+  nameWithType: KernelSplashConfig.SettingsEntries
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelSplashConfig.SettingsEntries*
+  name: SettingsEntries
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelSplashConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelSplashConfig_SettingsEntries_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelSplashConfig.SettingsEntries
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelSplashConfig.SettingsEntries
+  nameWithType: KernelSplashConfig.SettingsEntries
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelSplashConfig.WelcomeShowProgress
+  name: WelcomeShowProgress
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelSplashConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelSplashConfig_WelcomeShowProgress
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelSplashConfig.WelcomeShowProgress
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelSplashConfig.WelcomeShowProgress
+  nameWithType: KernelSplashConfig.WelcomeShowProgress
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelSplashConfig.WelcomeShowProgress*
+  name: WelcomeShowProgress
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelSplashConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelSplashConfig_WelcomeShowProgress_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelSplashConfig.WelcomeShowProgress
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelSplashConfig.WelcomeShowProgress
+  nameWithType: KernelSplashConfig.WelcomeShowProgress
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig
   name: KernelWidgetsConfig
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelWidgetsConfig.html
