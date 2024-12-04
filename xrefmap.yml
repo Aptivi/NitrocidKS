@@ -235,7 +235,14 @@ references:
 - uid: Nitrocid.Arguments.ArgumentParse.AvailableCMDLineArgs
   name: AvailableCMDLineArgs
   href: api/Nitrocid.Arguments.ArgumentParse.html#Nitrocid_Arguments_ArgumentParse_AvailableCMDLineArgs
-  commentId: F:Nitrocid.Arguments.ArgumentParse.AvailableCMDLineArgs
+  commentId: P:Nitrocid.Arguments.ArgumentParse.AvailableCMDLineArgs
+  fullName: Nitrocid.Arguments.ArgumentParse.AvailableCMDLineArgs
+  nameWithType: ArgumentParse.AvailableCMDLineArgs
+- uid: Nitrocid.Arguments.ArgumentParse.AvailableCMDLineArgs*
+  name: AvailableCMDLineArgs
+  href: api/Nitrocid.Arguments.ArgumentParse.html#Nitrocid_Arguments_ArgumentParse_AvailableCMDLineArgs_
+  commentId: Overload:Nitrocid.Arguments.ArgumentParse.AvailableCMDLineArgs
+  isSpec: "True"
   fullName: Nitrocid.Arguments.ArgumentParse.AvailableCMDLineArgs
   nameWithType: ArgumentParse.AvailableCMDLineArgs
 - uid: Nitrocid.Arguments.ArgumentParse.IsArgumentPassed(System.String[],System.String)
