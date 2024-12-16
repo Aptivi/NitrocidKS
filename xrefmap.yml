@@ -18682,6 +18682,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableHomepage
   nameWithType: KernelMainConfig.EnableHomepage
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableHomepageWidgets
+  name: EnableHomepageWidgets
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_EnableHomepageWidgets
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableHomepageWidgets
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableHomepageWidgets
+  nameWithType: KernelMainConfig.EnableHomepageWidgets
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableHomepageWidgets*
+  name: EnableHomepageWidgets
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_EnableHomepageWidgets_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableHomepageWidgets
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableHomepageWidgets
+  nameWithType: KernelMainConfig.EnableHomepageWidgets
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableScrollBarInSelection
   name: EnableScrollBarInSelection
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_EnableScrollBarInSelection
@@ -21584,6 +21597,12 @@ references:
   commentId: F:Nitrocid.Kernel.Configuration.Settings.SettingsKeyType.SList
   fullName: Nitrocid.Kernel.Configuration.Settings.SettingsKeyType.SList
   nameWithType: SettingsKeyType.SList
+- uid: Nitrocid.Kernel.Configuration.Settings.SettingsKeyType.SMultivar
+  name: SMultivar
+  href: api/Nitrocid.Kernel.Configuration.Settings.SettingsKeyType.html#Nitrocid_Kernel_Configuration_Settings_SettingsKeyType_SMultivar
+  commentId: F:Nitrocid.Kernel.Configuration.Settings.SettingsKeyType.SMultivar
+  fullName: Nitrocid.Kernel.Configuration.Settings.SettingsKeyType.SMultivar
+  nameWithType: SettingsKeyType.SMultivar
 - uid: Nitrocid.Kernel.Configuration.Settings.SettingsKeyType.SPreset
   name: SPreset
   href: api/Nitrocid.Kernel.Configuration.Settings.SettingsKeyType.html#Nitrocid_Kernel_Configuration_Settings_SettingsKeyType_SPreset
