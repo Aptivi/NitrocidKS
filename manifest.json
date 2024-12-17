@@ -2585,6 +2585,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Languages.LocalizedString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Languages.LocalizedString.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.Languages.Translate.yml",
       "output": {
         ".html": {
