@@ -21,7 +21,12 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using Aptivestigate.Logging;
+using Aptivestigate.Serilog;
 using Nitrocid.Drivers;
+using Nitrocid.Files;
+using Nitrocid.Files.Folders;
+using Nitrocid.Files.Operations;
 using Nitrocid.Files.Operations.Querying;
 using Nitrocid.Files.Paths;
 using Nitrocid.Kernel.Configuration;
@@ -31,6 +36,7 @@ using Nitrocid.Kernel.Debugging.Trace;
 using Nitrocid.Kernel.Exceptions;
 using Nitrocid.Kernel.Time;
 using Nitrocid.Kernel.Time.Renderers;
+using Serilog;
 using Textify.General;
 
 namespace Nitrocid.Kernel.Debugging
@@ -40,14 +46,10 @@ namespace Nitrocid.Kernel.Debugging
     /// </summary>
     public static class DebugWriter
     {
-
-        internal static string DebugPath = "";
         internal static string lastRoutinePath = "";
-        internal static StreamWriter? DebugStreamWriter;
-        internal static bool isDisposed;
+        internal static BaseLogger? debugLogger;
         internal static object WriteLock = new();
         internal readonly static List<string> debugStackTraces = [];
-        internal readonly static List<string> debugLines = [];
 
         /// <summary>
         /// Debug stack trace list
@@ -66,24 +68,6 @@ namespace Nitrocid.Kernel.Debugging
         /// </summary>
         public static bool EventDebug =>
             Config.MainConfig.EventDebug;
-
-        /// <summary>
-        /// Enables debug quota checks.
-        /// </summary>
-        public static bool DebugQuotaCheck =>
-            Config.MainConfig.DebugQuotaCheck;
-
-        /// <summary>
-        /// How many lines to print to the debug buffer before reaching the quota limit?
-        /// </summary>
-        public static int DebugQuotaLines =>
-            Config.MainConfig.DebugQuotaLines;
-
-        /// <summary>
-        /// Uses the legacy log style
-        /// </summary>
-        public static bool DebugLegacyLogStyle =>
-            Config.MainConfig.DebugLegacyLogStyle;
 
         /// <summary>
         /// Outputs the text into the debugger file, and sets the time stamp. Censors all secure arguments if <see cref="DebugCensorPrivateInfo"/> is on.
@@ -144,20 +128,9 @@ namespace Nitrocid.Kernel.Debugging
             {
                 if (KernelEntry.DebugMode)
                 {
-                    // Open debugging stream
-                    string debugFilePath = DebugPath;
-                    if (DebugStreamWriter is null || DebugStreamWriter?.BaseStream is null || isDisposed)
-                    {
-                        DebugStreamWriter = new StreamWriter(debugFilePath, true) { AutoFlush = true };
-                        isDisposed = false;
-                    }
-
                     // Try to debug...
                     try
                     {
-                        // Check for quota
-                        CheckDebugQuota();
-
                         // Populate the debug stack frame
                         var STrace = new DebugStackFrame();
                         StringBuilder message = new();
@@ -170,71 +143,38 @@ namespace Nitrocid.Kernel.Debugging
                             unwound++;
                         }
 
-                        // Remove the \r line endings from the text, since the debug file needs to have its line endings in the
-                        // UNIX format anyways.
-                        text = text.Replace(char.ToString((char)13), "");
-
-                        // Handle the new lines
-                        string[] texts = text.Split('\n');
-                        foreach (string splitText in texts)
+                        // Handle new lines and write each line to the debugger
+                        string result =
+                            vars is not null && vars.Length > 0 ?
+                            text.ToString().FormatString(vars) :
+                            text.ToString();
+                        string[] split = result.SplitNewLines();
+                        foreach (string splitText in split)
                         {
                             string routinePath = STrace.RoutinePath;
                             string date = TimeDateTools.KernelDateTime.ToShortDateString();
                             string time = TimeDateTools.KernelDateTime.ToShortTimeString();
 
                             // We need to check to see if we're going to use the legacy log style
-                            if (DebugLegacyLogStyle)
-                            {
-                                string routineName = STrace.RoutineName;
-                                string fileName = STrace.RoutineFileName;
-                                int fileLineNumber = STrace.RoutineLineNumber;
+                            string routineName = STrace.RoutineName;
+                            string fileName = STrace.RoutineFileName;
+                            int fileLineNumber = STrace.RoutineLineNumber;
 
-                                // Check to see if source file name is not empty.
-                                message.Append($"{date} {time} [{Level}] ");
-                                if (fileName is not null && fileLineNumber != 0)
-                                    message.Append($"({routineName} - {fileName}:{fileLineNumber}): ");
-                                message.Append($"{splitText}\n");
-                            }
-                            else
-                            {
-                                // Check to see if source routine is the same.
-                                if (routinePath != lastRoutinePath)
-                                {
-                                    string renderedRoutinePath = $"{date} {time} ({routinePath})";
-                                    message.Append($"\n{renderedRoutinePath}\n");
-                                    message.Append(new string('-', renderedRoutinePath.Length));
-                                    message.Append($"\n\n");
-                                }
+                            // Check to see if source file name is not empty.
+                            message.Clear();
+                            if (fileName is not null && fileLineNumber != 0)
+                                message.Append($"({routineName} - {fileName}:{fileLineNumber}): ");
+                            message.Append($"{splitText}");
 
-                                // Show stack information
-                                message.Append($"[{Level}] : {splitText}\n");
-                            }
-
-                            // Set teh last routine path for modern debug logs
+                            // Set the last routine path for modern debug logs
                             lastRoutinePath = routinePath;
-                        }
 
-                        // Debug to file and all connected debug devices (raw mode). The reason for the \r\n is that because
-                        // Nitrocid on the Linux host tends to use \n only for new lines, and Windows considers \r\n as the
-                        // new line. This causes the staircase effect on text written to the remote debugger, which messes up
-                        // the output on Windows.
-                        //
-                        // However, we don't want to append the Windows new line character to the debug file, because we need
-                        // it to have consistent line endings across platforms, like if you try to print the output of a text
-                        // file that only has \n at the end of each line, we would inadvertently place the \r\n in each debug
-                        // line, causing the file to have mixed line endings.
-                        string result =
-                            vars is not null && vars.Length > 0 ?
-                            message.ToString().FormatString(vars) :
-                            message.ToString();
-                        DriverHandler.CurrentDebugLoggerDriverLocal.Write(result);
+                            // Write the result
+                            DriverHandler.CurrentDebugLoggerDriverLocal.Write(message.ToString(), Level);
 #if VSDEBUG
-                        Debug.Write(result);
+                            Debug.Write($"[{Level}] {result}");
 #endif
-
-                        // If quota is enabled, add the line
-                        if (DebugQuotaCheck)
-                            debugLines.Add(message.ToString());
+                        }
                     }
                     catch (Exception ex)
                     {
@@ -411,28 +351,65 @@ namespace Nitrocid.Kernel.Debugging
         }
 
         internal static string GetExceptionTraceString(Exception ex) =>
-            $"{ex.GetType().FullName}: {(ex is KernelException kex ? kex.OriginalExceptionMessage : ex.Message)}{CharManager.NewLine}{ex.StackTrace}{CharManager.NewLine}";
+            $"{ex.GetType().FullName}: " +
+            $"{(ex is KernelException kex ? kex.OriginalExceptionMessage : ex.Message)}{CharManager.NewLine}" +
+            $"{ex.StackTrace}{CharManager.NewLine}";
 
-        internal static void CheckDebugQuota()
+        internal static void InitializeDebug() =>
+            InitializeDebug(LogTools.GenerateLogFilePath(out _));
+
+        internal static void InitializeDebug(string loggerPath)
         {
-            // Don't do anything if debug quota check is disabled.
-            if (!DebugQuotaCheck)
-                return;
+            // Initialize debug logger
+            debugLogger = new SerilogLogger(new LoggerConfiguration().WriteTo.File(loggerPath, rollOnFileSizeLimit: true));
+        }
 
-            // Now, check how many lines we've written to the buffer
-            if (debugLines.Count > DebugQuotaLines)
+        internal static void DeterministicDebug(string text, DebugLevel level, params object?[]? vars)
+        {
+            switch (level)
             {
-                debugLines.Clear();
-                InitializeDebugPath();
-                isDisposed = true;
+                case DebugLevel.T:
+                case DebugLevel.D:
+                    if (vars is null)
+                        debugLogger?.Debug($"[{level}] {text}");
+                    else
+                        debugLogger?.Debug($"[{level}] {text}", vars);
+                    break;
+                case DebugLevel.I:
+                    if (vars is null)
+                        debugLogger?.Info(text);
+                    else
+                        debugLogger?.Info(text, vars);
+                    break;
+                case DebugLevel.W:
+                    if (vars is null)
+                        debugLogger?.Warning(text);
+                    else
+                        debugLogger?.Warning(text, vars);
+                    break;
+                case DebugLevel.E:
+                    if (vars is null)
+                        debugLogger?.Error(text);
+                    else
+                        debugLogger?.Error(text, vars);
+                    break;
+                case DebugLevel.F:
+                    if (vars is null)
+                        debugLogger?.Fatal(text);
+                    else
+                        debugLogger?.Fatal(text, vars);
+                    break;
             }
         }
 
-        internal static void InitializeDebugPath()
+        internal static void RemoveDebugLogs()
         {
-            // Initialize debug path
-            DebugPath = Getting.GetNumberedFileName(Path.GetDirectoryName(PathsManagement.GetKernelPath(KernelPathType.Debugging)), PathsManagement.GetKernelPath(KernelPathType.Debugging));
+            var files = Listing.GetFilesystemEntries(FilesystemTools.NeutralizePath(PathsManagement.AppDataPath + "/../Aptivi/Logs/") + "log_Nitrocid_*.txt");
+            foreach (var file in files)
+            {
+                if (Checking.FileExists(file))
+                    Removing.RemoveFile(file);
+            }
         }
-
     }
 }
