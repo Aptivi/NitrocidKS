@@ -18682,6 +18682,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableHomepage
   nameWithType: KernelMainConfig.EnableHomepage
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableHomepageRssFeed
+  name: EnableHomepageRssFeed
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_EnableHomepageRssFeed
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableHomepageRssFeed
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableHomepageRssFeed
+  nameWithType: KernelMainConfig.EnableHomepageRssFeed
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableHomepageRssFeed*
+  name: EnableHomepageRssFeed
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_EnableHomepageRssFeed_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableHomepageRssFeed
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableHomepageRssFeed
+  nameWithType: KernelMainConfig.EnableHomepageRssFeed
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableHomepageWidgets
   name: EnableHomepageWidgets
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_EnableHomepageWidgets
