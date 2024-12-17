@@ -4821,24 +4821,24 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.DriverType
   nameWithType: BaseDebugLoggerDriver.DriverType
-- uid: Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.Write(System.String)
-  name: Write(string)
-  href: api/Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.html#Nitrocid_Drivers_DebugLogger_BaseDebugLoggerDriver_Write_System_String_
-  commentId: M:Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.Write(System.String)
-  name.vb: Write(String)
-  fullName: Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.Write(string)
-  fullName.vb: Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.Write(String)
-  nameWithType: BaseDebugLoggerDriver.Write(string)
-  nameWithType.vb: BaseDebugLoggerDriver.Write(String)
-- uid: Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.Write(System.String,System.Object[])
-  name: Write(string, params object[])
-  href: api/Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.html#Nitrocid_Drivers_DebugLogger_BaseDebugLoggerDriver_Write_System_String_System_Object___
-  commentId: M:Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.Write(System.String,System.Object[])
-  name.vb: Write(String, ParamArray Object())
-  fullName: Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.Write(string, params object[])
-  fullName.vb: Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.Write(String, ParamArray Object())
-  nameWithType: BaseDebugLoggerDriver.Write(string, params object[])
-  nameWithType.vb: BaseDebugLoggerDriver.Write(String, ParamArray Object())
+- uid: Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.Write(System.String,Nitrocid.Kernel.Debugging.DebugLevel)
+  name: Write(string, DebugLevel)
+  href: api/Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.html#Nitrocid_Drivers_DebugLogger_BaseDebugLoggerDriver_Write_System_String_Nitrocid_Kernel_Debugging_DebugLevel_
+  commentId: M:Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.Write(System.String,Nitrocid.Kernel.Debugging.DebugLevel)
+  name.vb: Write(String, DebugLevel)
+  fullName: Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.Write(string, Nitrocid.Kernel.Debugging.DebugLevel)
+  fullName.vb: Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.Write(String, Nitrocid.Kernel.Debugging.DebugLevel)
+  nameWithType: BaseDebugLoggerDriver.Write(string, DebugLevel)
+  nameWithType.vb: BaseDebugLoggerDriver.Write(String, DebugLevel)
+- uid: Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.Write(System.String,Nitrocid.Kernel.Debugging.DebugLevel,System.Object[])
+  name: Write(string, DebugLevel, params object[])
+  href: api/Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.html#Nitrocid_Drivers_DebugLogger_BaseDebugLoggerDriver_Write_System_String_Nitrocid_Kernel_Debugging_DebugLevel_System_Object___
+  commentId: M:Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.Write(System.String,Nitrocid.Kernel.Debugging.DebugLevel,System.Object[])
+  name.vb: Write(String, DebugLevel, ParamArray Object())
+  fullName: Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.Write(string, Nitrocid.Kernel.Debugging.DebugLevel, params object[])
+  fullName.vb: Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.Write(String, Nitrocid.Kernel.Debugging.DebugLevel, ParamArray Object())
+  nameWithType: BaseDebugLoggerDriver.Write(string, DebugLevel, params object[])
+  nameWithType.vb: BaseDebugLoggerDriver.Write(String, DebugLevel, ParamArray Object())
 - uid: Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.Write*
   name: Write
   href: api/Nitrocid.Drivers.DebugLogger.BaseDebugLoggerDriver.html#Nitrocid_Drivers_DebugLogger_BaseDebugLoggerDriver_Write_
@@ -4900,24 +4900,24 @@ references:
   commentId: T:Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver
   fullName: Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver
   nameWithType: IDebugLoggerDriver
-- uid: Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver.Write(System.String)
-  name: Write(string)
-  href: api/Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver.html#Nitrocid_Drivers_DebugLogger_IDebugLoggerDriver_Write_System_String_
-  commentId: M:Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver.Write(System.String)
-  name.vb: Write(String)
-  fullName: Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver.Write(string)
-  fullName.vb: Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver.Write(String)
-  nameWithType: IDebugLoggerDriver.Write(string)
-  nameWithType.vb: IDebugLoggerDriver.Write(String)
-- uid: Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver.Write(System.String,System.Object[])
-  name: Write(string, params object[])
-  href: api/Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver.html#Nitrocid_Drivers_DebugLogger_IDebugLoggerDriver_Write_System_String_System_Object___
-  commentId: M:Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver.Write(System.String,System.Object[])
-  name.vb: Write(String, ParamArray Object())
-  fullName: Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver.Write(string, params object[])
-  fullName.vb: Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver.Write(String, ParamArray Object())
-  nameWithType: IDebugLoggerDriver.Write(string, params object[])
-  nameWithType.vb: IDebugLoggerDriver.Write(String, ParamArray Object())
+- uid: Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver.Write(System.String,Nitrocid.Kernel.Debugging.DebugLevel)
+  name: Write(string, DebugLevel)
+  href: api/Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver.html#Nitrocid_Drivers_DebugLogger_IDebugLoggerDriver_Write_System_String_Nitrocid_Kernel_Debugging_DebugLevel_
+  commentId: M:Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver.Write(System.String,Nitrocid.Kernel.Debugging.DebugLevel)
+  name.vb: Write(String, DebugLevel)
+  fullName: Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver.Write(string, Nitrocid.Kernel.Debugging.DebugLevel)
+  fullName.vb: Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver.Write(String, Nitrocid.Kernel.Debugging.DebugLevel)
+  nameWithType: IDebugLoggerDriver.Write(string, DebugLevel)
+  nameWithType.vb: IDebugLoggerDriver.Write(String, DebugLevel)
+- uid: Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver.Write(System.String,Nitrocid.Kernel.Debugging.DebugLevel,System.Object[])
+  name: Write(string, DebugLevel, params object[])
+  href: api/Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver.html#Nitrocid_Drivers_DebugLogger_IDebugLoggerDriver_Write_System_String_Nitrocid_Kernel_Debugging_DebugLevel_System_Object___
+  commentId: M:Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver.Write(System.String,Nitrocid.Kernel.Debugging.DebugLevel,System.Object[])
+  name.vb: Write(String, DebugLevel, ParamArray Object())
+  fullName: Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver.Write(string, Nitrocid.Kernel.Debugging.DebugLevel, params object[])
+  fullName.vb: Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver.Write(String, Nitrocid.Kernel.Debugging.DebugLevel, ParamArray Object())
+  nameWithType: IDebugLoggerDriver.Write(string, DebugLevel, params object[])
+  nameWithType.vb: IDebugLoggerDriver.Write(String, DebugLevel, ParamArray Object())
 - uid: Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver.Write*
   name: Write
   href: api/Nitrocid.Drivers.DebugLogger.IDebugLoggerDriver.html#Nitrocid_Drivers_DebugLogger_IDebugLoggerDriver_Write_
@@ -16471,12 +16471,6 @@ references:
   commentId: F:Nitrocid.Files.Paths.KernelPathType.DebugDevices
   fullName: Nitrocid.Files.Paths.KernelPathType.DebugDevices
   nameWithType: KernelPathType.DebugDevices
-- uid: Nitrocid.Files.Paths.KernelPathType.Debugging
-  name: Debugging
-  href: api/Nitrocid.Files.Paths.KernelPathType.html#Nitrocid_Files_Paths_KernelPathType_Debugging
-  commentId: F:Nitrocid.Files.Paths.KernelPathType.Debugging
-  fullName: Nitrocid.Files.Paths.KernelPathType.Debugging
-  nameWithType: KernelPathType.Debugging
 - uid: Nitrocid.Files.Paths.KernelPathType.DriverConfiguration
   name: DriverConfiguration
   href: api/Nitrocid.Files.Paths.KernelPathType.html#Nitrocid_Files_Paths_KernelPathType_DriverConfiguration
@@ -16844,19 +16838,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Files.Paths.PathsManagement.DebugDevicesPath
   nameWithType: PathsManagement.DebugDevicesPath
-- uid: Nitrocid.Files.Paths.PathsManagement.DebuggingPath
-  name: DebuggingPath
-  href: api/Nitrocid.Files.Paths.PathsManagement.html#Nitrocid_Files_Paths_PathsManagement_DebuggingPath
-  commentId: P:Nitrocid.Files.Paths.PathsManagement.DebuggingPath
-  fullName: Nitrocid.Files.Paths.PathsManagement.DebuggingPath
-  nameWithType: PathsManagement.DebuggingPath
-- uid: Nitrocid.Files.Paths.PathsManagement.DebuggingPath*
-  name: DebuggingPath
-  href: api/Nitrocid.Files.Paths.PathsManagement.html#Nitrocid_Files_Paths_PathsManagement_DebuggingPath_
-  commentId: Overload:Nitrocid.Files.Paths.PathsManagement.DebuggingPath
-  isSpec: "True"
-  fullName: Nitrocid.Files.Paths.PathsManagement.DebuggingPath
-  nameWithType: PathsManagement.DebuggingPath
 - uid: Nitrocid.Files.Paths.PathsManagement.DriverConfigurationPath
   name: DriverConfigurationPath
   href: api/Nitrocid.Files.Paths.PathsManagement.html#Nitrocid_Files_Paths_PathsManagement_DriverConfigurationPath
@@ -18474,32 +18455,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.DebugPort
   nameWithType: KernelMainConfig.DebugPort
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaCheck
-  name: DebugQuotaCheck
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_DebugQuotaCheck
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaCheck
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaCheck
-  nameWithType: KernelMainConfig.DebugQuotaCheck
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaCheck*
-  name: DebugQuotaCheck
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_DebugQuotaCheck_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaCheck
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaCheck
-  nameWithType: KernelMainConfig.DebugQuotaCheck
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaLines
-  name: DebugQuotaLines
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_DebugQuotaLines
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaLines
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaLines
-  nameWithType: KernelMainConfig.DebugQuotaLines
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaLines*
-  name: DebugQuotaLines
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_DebugQuotaLines_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaLines
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.DebugQuotaLines
-  nameWithType: KernelMainConfig.DebugQuotaLines
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.DebugShellPromptPreset
   name: DebugShellPromptPreset
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_DebugShellPromptPreset
