@@ -40,6 +40,7 @@ using Terminaux.Base;
 using Terminaux.Base.Extensions;
 using Nitrocid.Kernel.Configuration;
 using Terminaux.Writer.ConsoleWriters;
+using Aptivestigate.CrashHandler;
 
 namespace Nitrocid.Kernel
 {
@@ -90,7 +91,10 @@ namespace Nitrocid.Kernel
                 // Set main thread name
                 Thread.CurrentThread.Name = "Main Nitrocid Kernel Thread";
 
-                // Show help / version prior to starting the kernel if help / version is passed
+                // Run unhandled crash handler
+                CrashTools.InstallCrashHandler();
+
+                // Show help prior to starting the kernel if help is passed
                 if (ArgumentParse.IsArgumentPassed(Args, "help"))
                 {
                     // Kernel arguments

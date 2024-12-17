@@ -192,14 +192,6 @@ namespace Nitrocid.Kernel.Configuration.Instances
         /// </summary>
         public bool AllowUntrustedMods { get; set; }
         /// <summary>
-        /// Enables debug quota check
-        /// </summary>
-        public bool DebugQuotaCheck { get; set; }
-        /// <summary>
-        /// How many lines to print to the debug buffer before reaching the quota limit?
-        /// </summary>
-        public int DebugQuotaLines { get; set; } = 10000;
-        /// <summary>
         /// Whether to use the operating system time zone or to use the kernel-wide time zone
         /// </summary>
         public bool UseSystemTimeZone
@@ -219,10 +211,6 @@ namespace Nitrocid.Kernel.Configuration.Instances
         /// Shows an informational box for the program license for fifteen seconds after each login
         /// </summary>
         public bool ShowLicenseInfoBox { get; set; } = true;
-        /// <summary>
-        /// Uses the legacy log style
-        /// </summary>
-        public bool DebugLegacyLogStyle { get; set; } = true;
         /// <summary>
         /// Bootloader style
         /// </summary>
