@@ -29347,6 +29347,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Languages.LanguageManager.Languages
   nameWithType: LanguageManager.Languages
+- uid: Nitrocid.Languages.LanguageManager.ListAllCountries
+  name: ListAllCountries()
+  href: api/Nitrocid.Languages.LanguageManager.html#Nitrocid_Languages_LanguageManager_ListAllCountries
+  commentId: M:Nitrocid.Languages.LanguageManager.ListAllCountries
+  fullName: Nitrocid.Languages.LanguageManager.ListAllCountries()
+  nameWithType: LanguageManager.ListAllCountries()
+- uid: Nitrocid.Languages.LanguageManager.ListAllCountries*
+  name: ListAllCountries
+  href: api/Nitrocid.Languages.LanguageManager.html#Nitrocid_Languages_LanguageManager_ListAllCountries_
+  commentId: Overload:Nitrocid.Languages.LanguageManager.ListAllCountries
+  isSpec: "True"
+  fullName: Nitrocid.Languages.LanguageManager.ListAllCountries
+  nameWithType: LanguageManager.ListAllCountries
 - uid: Nitrocid.Languages.LanguageManager.ListAllLanguages(System.Boolean)
   name: ListAllLanguages(bool)
   href: api/Nitrocid.Languages.LanguageManager.html#Nitrocid_Languages_LanguageManager_ListAllLanguages_System_Boolean_
@@ -29363,6 +29376,22 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Languages.LanguageManager.ListAllLanguages
   nameWithType: LanguageManager.ListAllLanguages
+- uid: Nitrocid.Languages.LanguageManager.ListCountries(System.String)
+  name: ListCountries(string)
+  href: api/Nitrocid.Languages.LanguageManager.html#Nitrocid_Languages_LanguageManager_ListCountries_System_String_
+  commentId: M:Nitrocid.Languages.LanguageManager.ListCountries(System.String)
+  name.vb: ListCountries(String)
+  fullName: Nitrocid.Languages.LanguageManager.ListCountries(string)
+  fullName.vb: Nitrocid.Languages.LanguageManager.ListCountries(String)
+  nameWithType: LanguageManager.ListCountries(string)
+  nameWithType.vb: LanguageManager.ListCountries(String)
+- uid: Nitrocid.Languages.LanguageManager.ListCountries*
+  name: ListCountries
+  href: api/Nitrocid.Languages.LanguageManager.html#Nitrocid_Languages_LanguageManager_ListCountries_
+  commentId: Overload:Nitrocid.Languages.LanguageManager.ListCountries
+  isSpec: "True"
+  fullName: Nitrocid.Languages.LanguageManager.ListCountries
+  nameWithType: LanguageManager.ListCountries
 - uid: Nitrocid.Languages.LanguageManager.ListLanguages(System.String,System.Boolean)
   name: ListLanguages(string, bool)
   href: api/Nitrocid.Languages.LanguageManager.html#Nitrocid_Languages_LanguageManager_ListLanguages_System_String_System_Boolean_
