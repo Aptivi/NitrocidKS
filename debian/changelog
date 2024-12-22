@@ -1,3 +1,12 @@
+kernel-simulator (3.0.26.54-0.1.1.27-1) noble; urgency=medium
+
+  * Updated libraries to fix some bugs
+  * General improvements and bug fixes
+  * Removed music player (to be implemented as a mod of Nitrocid KS later)
+  * Removed unused config category
+
+ -- Aptivi CEO <ceo@aptivi.anonaddy.com>  Sun, 22 Dec 2024 12:23:55 +0300
+
 kernel-simulator (3.0.26.53-0.1.1.26-1) noble; urgency=medium
 
   * Fixed a usability issue regarding Terminaux

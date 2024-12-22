@@ -1,7 +1,26 @@
 Nitrocid KS 0.1.1 changes
 =========================
 
-Released July 23rd, 2024; codename (Magikaleidoscope) (0.1.1) (Rev 26)
+Released July 23rd, 2024; codename (Magikaleidoscope) (0.1.1) (Rev 27)
+
+=============================================================================
+
+0.1.1.27 - Service Pack 2 (December 22nd, 2024)
+===============================================
+
+This service pack release is a small patch release that enhances your Nitrocid
+KS experience by enhancing existing geatures and fixing bugs left and right. It
+also brings in such changes from the upcoming 0.1.2 series to move forward in
+further development.
+
+Removal of Music Player
+-----------------------
+
+As we're planning to change the audio subsystem for audio files in BassBoom,
+we are planning to remove the music player from Nitrocid KS as an addon to
+reduce maintenance burden and to incorporate all improvements to the player in
+just one codebase. This will allow us to integrate the music player again as a
+Nitrocid KS mod.
 
 =============================================================================
 
