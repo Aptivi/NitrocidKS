@@ -18755,6 +18755,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.HighPriorityBorderColor
   nameWithType: KernelMainConfig.HighPriorityBorderColor
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.HomepageWidget
+  name: HomepageWidget
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_HomepageWidget
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.HomepageWidget
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.HomepageWidget
+  nameWithType: KernelMainConfig.HomepageWidget
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.HomepageWidget*
+  name: HomepageWidget
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_HomepageWidget_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.HomepageWidget
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.HomepageWidget
+  nameWithType: KernelMainConfig.HomepageWidget
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.HostName
   name: HostName
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_HostName
