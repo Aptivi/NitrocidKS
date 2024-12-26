@@ -1555,6 +1555,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Kernel.Configuration.Settings.SettingsFunctionArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Kernel.Configuration.Settings.SettingsFunctionArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.Kernel.Configuration.Settings.SettingsKey.yml",
       "output": {
         ".html": {

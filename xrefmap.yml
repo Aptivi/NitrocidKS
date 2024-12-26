@@ -20778,6 +20778,38 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Settings.SettingsEntry.Name
   nameWithType: SettingsEntry.Name
+- uid: Nitrocid.Kernel.Configuration.Settings.SettingsFunctionArgs
+  name: SettingsFunctionArgs
+  href: api/Nitrocid.Kernel.Configuration.Settings.SettingsFunctionArgs.html
+  commentId: T:Nitrocid.Kernel.Configuration.Settings.SettingsFunctionArgs
+  fullName: Nitrocid.Kernel.Configuration.Settings.SettingsFunctionArgs
+  nameWithType: SettingsFunctionArgs
+- uid: Nitrocid.Kernel.Configuration.Settings.SettingsFunctionArgs.ArgType
+  name: ArgType
+  href: api/Nitrocid.Kernel.Configuration.Settings.SettingsFunctionArgs.html#Nitrocid_Kernel_Configuration_Settings_SettingsFunctionArgs_ArgType
+  commentId: P:Nitrocid.Kernel.Configuration.Settings.SettingsFunctionArgs.ArgType
+  fullName: Nitrocid.Kernel.Configuration.Settings.SettingsFunctionArgs.ArgType
+  nameWithType: SettingsFunctionArgs.ArgType
+- uid: Nitrocid.Kernel.Configuration.Settings.SettingsFunctionArgs.ArgType*
+  name: ArgType
+  href: api/Nitrocid.Kernel.Configuration.Settings.SettingsFunctionArgs.html#Nitrocid_Kernel_Configuration_Settings_SettingsFunctionArgs_ArgType_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Settings.SettingsFunctionArgs.ArgType
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Settings.SettingsFunctionArgs.ArgType
+  nameWithType: SettingsFunctionArgs.ArgType
+- uid: Nitrocid.Kernel.Configuration.Settings.SettingsFunctionArgs.ArgValue
+  name: ArgValue
+  href: api/Nitrocid.Kernel.Configuration.Settings.SettingsFunctionArgs.html#Nitrocid_Kernel_Configuration_Settings_SettingsFunctionArgs_ArgValue
+  commentId: P:Nitrocid.Kernel.Configuration.Settings.SettingsFunctionArgs.ArgValue
+  fullName: Nitrocid.Kernel.Configuration.Settings.SettingsFunctionArgs.ArgValue
+  nameWithType: SettingsFunctionArgs.ArgValue
+- uid: Nitrocid.Kernel.Configuration.Settings.SettingsFunctionArgs.ArgValue*
+  name: ArgValue
+  href: api/Nitrocid.Kernel.Configuration.Settings.SettingsFunctionArgs.html#Nitrocid_Kernel_Configuration_Settings_SettingsFunctionArgs_ArgValue_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Settings.SettingsFunctionArgs.ArgValue
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Settings.SettingsFunctionArgs.ArgValue
+  nameWithType: SettingsFunctionArgs.ArgValue
 - uid: Nitrocid.Kernel.Configuration.Settings.SettingsKey
   name: SettingsKey
   href: api/Nitrocid.Kernel.Configuration.Settings.SettingsKey.html
@@ -20992,6 +21024,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Settings.SettingsKey.SelectionFallback
   nameWithType: SettingsKey.SelectionFallback
+- uid: Nitrocid.Kernel.Configuration.Settings.SettingsKey.SelectionFunctionArgs
+  name: SelectionFunctionArgs
+  href: api/Nitrocid.Kernel.Configuration.Settings.SettingsKey.html#Nitrocid_Kernel_Configuration_Settings_SettingsKey_SelectionFunctionArgs
+  commentId: P:Nitrocid.Kernel.Configuration.Settings.SettingsKey.SelectionFunctionArgs
+  fullName: Nitrocid.Kernel.Configuration.Settings.SettingsKey.SelectionFunctionArgs
+  nameWithType: SettingsKey.SelectionFunctionArgs
+- uid: Nitrocid.Kernel.Configuration.Settings.SettingsKey.SelectionFunctionArgs*
+  name: SelectionFunctionArgs
+  href: api/Nitrocid.Kernel.Configuration.Settings.SettingsKey.html#Nitrocid_Kernel_Configuration_Settings_SettingsKey_SelectionFunctionArgs_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Settings.SettingsKey.SelectionFunctionArgs
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Settings.SettingsKey.SelectionFunctionArgs
+  nameWithType: SettingsKey.SelectionFunctionArgs
 - uid: Nitrocid.Kernel.Configuration.Settings.SettingsKey.SelectionFunctionName
   name: SelectionFunctionName
   href: api/Nitrocid.Kernel.Configuration.Settings.SettingsKey.html#Nitrocid_Kernel_Configuration_Settings_SettingsKey_SelectionFunctionName
