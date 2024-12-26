@@ -17942,19 +17942,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.CpuUsageUpdateInterval
   nameWithType: KernelMainConfig.CpuUsageUpdateInterval
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.CurrentCultStr
-  name: CurrentCultStr
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_CurrentCultStr
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.CurrentCultStr
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.CurrentCultStr
-  nameWithType: KernelMainConfig.CurrentCultStr
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.CurrentCultStr*
-  name: CurrentCultStr
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_CurrentCultStr_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.CurrentCultStr
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.CurrentCultureName
+  name: CurrentCultureName
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_CurrentCultureName
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.CurrentCultureName
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.CurrentCultureName
+  nameWithType: KernelMainConfig.CurrentCultureName
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.CurrentCultureName*
+  name: CurrentCultureName
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_CurrentCultureName_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.CurrentCultureName
   isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.CurrentCultStr
-  nameWithType: KernelMainConfig.CurrentCultStr
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.CurrentCultureName
+  nameWithType: KernelMainConfig.CurrentCultureName
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.CurrentDir
   name: CurrentDir
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_CurrentDir
@@ -18592,19 +18592,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.KernelWideTimeZone
   nameWithType: KernelMainConfig.KernelWideTimeZone
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.LangChangeCulture
-  name: LangChangeCulture
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_LangChangeCulture
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.LangChangeCulture
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.LangChangeCulture
-  nameWithType: KernelMainConfig.LangChangeCulture
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.LangChangeCulture*
-  name: LangChangeCulture
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_LangChangeCulture_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.LangChangeCulture
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.LangChangeCulture
-  nameWithType: KernelMainConfig.LangChangeCulture
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.LicenseColor
   name: LicenseColor
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_LicenseColor
@@ -28563,83 +28550,58 @@ references:
   commentId: T:Nitrocid.Languages.CultureManager
   fullName: Nitrocid.Languages.CultureManager
   nameWithType: CultureManager
-- uid: Nitrocid.Languages.CultureManager.CurrentCult
-  name: CurrentCult
-  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_CurrentCult
-  commentId: P:Nitrocid.Languages.CultureManager.CurrentCult
-  fullName: Nitrocid.Languages.CultureManager.CurrentCult
-  nameWithType: CultureManager.CurrentCult
-- uid: Nitrocid.Languages.CultureManager.CurrentCult*
-  name: CurrentCult
-  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_CurrentCult_
-  commentId: Overload:Nitrocid.Languages.CultureManager.CurrentCult
+- uid: Nitrocid.Languages.CultureManager.CurrentCulture
+  name: CurrentCulture
+  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_CurrentCulture
+  commentId: P:Nitrocid.Languages.CultureManager.CurrentCulture
+  fullName: Nitrocid.Languages.CultureManager.CurrentCulture
+  nameWithType: CultureManager.CurrentCulture
+- uid: Nitrocid.Languages.CultureManager.CurrentCulture*
+  name: CurrentCulture
+  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_CurrentCulture_
+  commentId: Overload:Nitrocid.Languages.CultureManager.CurrentCulture
   isSpec: "True"
-  fullName: Nitrocid.Languages.CultureManager.CurrentCult
-  nameWithType: CultureManager.CurrentCult
-- uid: Nitrocid.Languages.CultureManager.GetCultureNamesFromCurrentLang
-  name: GetCultureNamesFromCurrentLang()
-  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_GetCultureNamesFromCurrentLang
-  commentId: M:Nitrocid.Languages.CultureManager.GetCultureNamesFromCurrentLang
-  fullName: Nitrocid.Languages.CultureManager.GetCultureNamesFromCurrentLang()
-  nameWithType: CultureManager.GetCultureNamesFromCurrentLang()
-- uid: Nitrocid.Languages.CultureManager.GetCultureNamesFromCurrentLang*
-  name: GetCultureNamesFromCurrentLang
-  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_GetCultureNamesFromCurrentLang_
-  commentId: Overload:Nitrocid.Languages.CultureManager.GetCultureNamesFromCurrentLang
+  fullName: Nitrocid.Languages.CultureManager.CurrentCulture
+  nameWithType: CultureManager.CurrentCulture
+- uid: Nitrocid.Languages.CultureManager.GetCultureCodes
+  name: GetCultureCodes()
+  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_GetCultureCodes
+  commentId: M:Nitrocid.Languages.CultureManager.GetCultureCodes
+  fullName: Nitrocid.Languages.CultureManager.GetCultureCodes()
+  nameWithType: CultureManager.GetCultureCodes()
+- uid: Nitrocid.Languages.CultureManager.GetCultureCodes*
+  name: GetCultureCodes
+  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_GetCultureCodes_
+  commentId: Overload:Nitrocid.Languages.CultureManager.GetCultureCodes
   isSpec: "True"
-  fullName: Nitrocid.Languages.CultureManager.GetCultureNamesFromCurrentLang
-  nameWithType: CultureManager.GetCultureNamesFromCurrentLang
-- uid: Nitrocid.Languages.CultureManager.GetCultureNamesFromLang(System.String)
-  name: GetCultureNamesFromLang(string)
-  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_GetCultureNamesFromLang_System_String_
-  commentId: M:Nitrocid.Languages.CultureManager.GetCultureNamesFromLang(System.String)
-  name.vb: GetCultureNamesFromLang(String)
-  fullName: Nitrocid.Languages.CultureManager.GetCultureNamesFromLang(string)
-  fullName.vb: Nitrocid.Languages.CultureManager.GetCultureNamesFromLang(String)
-  nameWithType: CultureManager.GetCultureNamesFromLang(string)
-  nameWithType.vb: CultureManager.GetCultureNamesFromLang(String)
-- uid: Nitrocid.Languages.CultureManager.GetCultureNamesFromLang*
-  name: GetCultureNamesFromLang
-  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_GetCultureNamesFromLang_
-  commentId: Overload:Nitrocid.Languages.CultureManager.GetCultureNamesFromLang
+  fullName: Nitrocid.Languages.CultureManager.GetCultureCodes
+  nameWithType: CultureManager.GetCultureCodes
+- uid: Nitrocid.Languages.CultureManager.GetCultureNames
+  name: GetCultureNames()
+  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_GetCultureNames
+  commentId: M:Nitrocid.Languages.CultureManager.GetCultureNames
+  fullName: Nitrocid.Languages.CultureManager.GetCultureNames()
+  nameWithType: CultureManager.GetCultureNames()
+- uid: Nitrocid.Languages.CultureManager.GetCultureNames*
+  name: GetCultureNames
+  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_GetCultureNames_
+  commentId: Overload:Nitrocid.Languages.CultureManager.GetCultureNames
   isSpec: "True"
-  fullName: Nitrocid.Languages.CultureManager.GetCultureNamesFromLang
-  nameWithType: CultureManager.GetCultureNamesFromLang
-- uid: Nitrocid.Languages.CultureManager.GetCulturesFromCurrentLang
-  name: GetCulturesFromCurrentLang()
-  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_GetCulturesFromCurrentLang
-  commentId: M:Nitrocid.Languages.CultureManager.GetCulturesFromCurrentLang
-  fullName: Nitrocid.Languages.CultureManager.GetCulturesFromCurrentLang()
-  nameWithType: CultureManager.GetCulturesFromCurrentLang()
-- uid: Nitrocid.Languages.CultureManager.GetCulturesFromCurrentLang*
-  name: GetCulturesFromCurrentLang
-  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_GetCulturesFromCurrentLang_
-  commentId: Overload:Nitrocid.Languages.CultureManager.GetCulturesFromCurrentLang
+  fullName: Nitrocid.Languages.CultureManager.GetCultureNames
+  nameWithType: CultureManager.GetCultureNames
+- uid: Nitrocid.Languages.CultureManager.GetCultures
+  name: GetCultures()
+  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_GetCultures
+  commentId: M:Nitrocid.Languages.CultureManager.GetCultures
+  fullName: Nitrocid.Languages.CultureManager.GetCultures()
+  nameWithType: CultureManager.GetCultures()
+- uid: Nitrocid.Languages.CultureManager.GetCultures*
+  name: GetCultures
+  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_GetCultures_
+  commentId: Overload:Nitrocid.Languages.CultureManager.GetCultures
   isSpec: "True"
-  fullName: Nitrocid.Languages.CultureManager.GetCulturesFromCurrentLang
-  nameWithType: CultureManager.GetCulturesFromCurrentLang
-- uid: Nitrocid.Languages.CultureManager.GetCulturesFromLang(System.String)
-  name: GetCulturesFromLang(string)
-  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_GetCulturesFromLang_System_String_
-  commentId: M:Nitrocid.Languages.CultureManager.GetCulturesFromLang(System.String)
-  name.vb: GetCulturesFromLang(String)
-  fullName: Nitrocid.Languages.CultureManager.GetCulturesFromLang(string)
-  fullName.vb: Nitrocid.Languages.CultureManager.GetCulturesFromLang(String)
-  nameWithType: CultureManager.GetCulturesFromLang(string)
-  nameWithType.vb: CultureManager.GetCulturesFromLang(String)
-- uid: Nitrocid.Languages.CultureManager.GetCulturesFromLang*
-  name: GetCulturesFromLang
-  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_GetCulturesFromLang_
-  commentId: Overload:Nitrocid.Languages.CultureManager.GetCulturesFromLang
-  isSpec: "True"
-  fullName: Nitrocid.Languages.CultureManager.GetCulturesFromLang
-  nameWithType: CultureManager.GetCulturesFromLang
-- uid: Nitrocid.Languages.CultureManager.UpdateCulture
-  name: UpdateCulture()
-  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_UpdateCulture
-  commentId: M:Nitrocid.Languages.CultureManager.UpdateCulture
-  fullName: Nitrocid.Languages.CultureManager.UpdateCulture()
-  nameWithType: CultureManager.UpdateCulture()
+  fullName: Nitrocid.Languages.CultureManager.GetCultures
+  nameWithType: CultureManager.GetCultures
 - uid: Nitrocid.Languages.CultureManager.UpdateCulture(System.String)
   name: UpdateCulture(string)
   href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_UpdateCulture_System_String_
@@ -28656,12 +28618,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Languages.CultureManager.UpdateCulture
   nameWithType: CultureManager.UpdateCulture
-- uid: Nitrocid.Languages.CultureManager.UpdateCultureDry
-  name: UpdateCultureDry()
-  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_UpdateCultureDry
-  commentId: M:Nitrocid.Languages.CultureManager.UpdateCultureDry
-  fullName: Nitrocid.Languages.CultureManager.UpdateCultureDry()
-  nameWithType: CultureManager.UpdateCultureDry()
 - uid: Nitrocid.Languages.CultureManager.UpdateCultureDry(System.String)
   name: UpdateCultureDry(string)
   href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_UpdateCultureDry_System_String_
@@ -28684,24 +28640,24 @@ references:
   commentId: T:Nitrocid.Languages.LanguageInfo
   fullName: Nitrocid.Languages.LanguageInfo
   nameWithType: LanguageInfo
-- uid: Nitrocid.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.Int32,System.String,System.String)
-  name: LanguageInfo(string, string, bool, int, string, string)
-  href: api/Nitrocid.Languages.LanguageInfo.html#Nitrocid_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_System_Int32_System_String_System_String_
-  commentId: M:Nitrocid.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.Int32,System.String,System.String)
-  name.vb: New(String, String, Boolean, Integer, String, String)
-  fullName: Nitrocid.Languages.LanguageInfo.LanguageInfo(string, string, bool, int, string, string)
-  fullName.vb: Nitrocid.Languages.LanguageInfo.New(String, String, Boolean, Integer, String, String)
-  nameWithType: LanguageInfo.LanguageInfo(string, string, bool, int, string, string)
-  nameWithType.vb: LanguageInfo.New(String, String, Boolean, Integer, String, String)
-- uid: Nitrocid.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.String[],System.String,System.String)
-  name: LanguageInfo(string, string, bool, string[]?, string, string)
-  href: api/Nitrocid.Languages.LanguageInfo.html#Nitrocid_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_System_String___System_String_System_String_
-  commentId: M:Nitrocid.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.String[],System.String,System.String)
-  name.vb: New(String, String, Boolean, String(), String, String)
-  fullName: Nitrocid.Languages.LanguageInfo.LanguageInfo(string, string, bool, string[]?, string, string)
-  fullName.vb: Nitrocid.Languages.LanguageInfo.New(String, String, Boolean, String(), String, String)
-  nameWithType: LanguageInfo.LanguageInfo(string, string, bool, string[]?, string, string)
-  nameWithType.vb: LanguageInfo.New(String, String, Boolean, String(), String, String)
+- uid: Nitrocid.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.Int32,System.String)
+  name: LanguageInfo(string, string, bool, int, string)
+  href: api/Nitrocid.Languages.LanguageInfo.html#Nitrocid_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_System_Int32_System_String_
+  commentId: M:Nitrocid.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.Int32,System.String)
+  name.vb: New(String, String, Boolean, Integer, String)
+  fullName: Nitrocid.Languages.LanguageInfo.LanguageInfo(string, string, bool, int, string)
+  fullName.vb: Nitrocid.Languages.LanguageInfo.New(String, String, Boolean, Integer, String)
+  nameWithType: LanguageInfo.LanguageInfo(string, string, bool, int, string)
+  nameWithType.vb: LanguageInfo.New(String, String, Boolean, Integer, String)
+- uid: Nitrocid.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.String[],System.String)
+  name: LanguageInfo(string, string, bool, string[]?, string)
+  href: api/Nitrocid.Languages.LanguageInfo.html#Nitrocid_Languages_LanguageInfo__ctor_System_String_System_String_System_Boolean_System_String___System_String_
+  commentId: M:Nitrocid.Languages.LanguageInfo.#ctor(System.String,System.String,System.Boolean,System.String[],System.String)
+  name.vb: New(String, String, Boolean, String(), String)
+  fullName: Nitrocid.Languages.LanguageInfo.LanguageInfo(string, string, bool, string[]?, string)
+  fullName.vb: Nitrocid.Languages.LanguageInfo.New(String, String, Boolean, String(), String)
+  nameWithType: LanguageInfo.LanguageInfo(string, string, bool, string[]?, string)
+  nameWithType.vb: LanguageInfo.New(String, String, Boolean, String(), String)
 - uid: Nitrocid.Languages.LanguageInfo.#ctor*
   name: LanguageInfo
   href: api/Nitrocid.Languages.LanguageInfo.html#Nitrocid_Languages_LanguageInfo__ctor_
@@ -28738,32 +28694,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Languages.LanguageInfo.Country
   nameWithType: LanguageInfo.Country
-- uid: Nitrocid.Languages.LanguageInfo.CultureCode
-  name: CultureCode
-  href: api/Nitrocid.Languages.LanguageInfo.html#Nitrocid_Languages_LanguageInfo_CultureCode
-  commentId: P:Nitrocid.Languages.LanguageInfo.CultureCode
-  fullName: Nitrocid.Languages.LanguageInfo.CultureCode
-  nameWithType: LanguageInfo.CultureCode
-- uid: Nitrocid.Languages.LanguageInfo.CultureCode*
-  name: CultureCode
-  href: api/Nitrocid.Languages.LanguageInfo.html#Nitrocid_Languages_LanguageInfo_CultureCode_
-  commentId: Overload:Nitrocid.Languages.LanguageInfo.CultureCode
-  isSpec: "True"
-  fullName: Nitrocid.Languages.LanguageInfo.CultureCode
-  nameWithType: LanguageInfo.CultureCode
-- uid: Nitrocid.Languages.LanguageInfo.Cultures
-  name: Cultures
-  href: api/Nitrocid.Languages.LanguageInfo.html#Nitrocid_Languages_LanguageInfo_Cultures
-  commentId: P:Nitrocid.Languages.LanguageInfo.Cultures
-  fullName: Nitrocid.Languages.LanguageInfo.Cultures
-  nameWithType: LanguageInfo.Cultures
-- uid: Nitrocid.Languages.LanguageInfo.Cultures*
-  name: Cultures
-  href: api/Nitrocid.Languages.LanguageInfo.html#Nitrocid_Languages_LanguageInfo_Cultures_
-  commentId: Overload:Nitrocid.Languages.LanguageInfo.Cultures
-  isSpec: "True"
-  fullName: Nitrocid.Languages.LanguageInfo.Cultures
-  nameWithType: LanguageInfo.Cultures
 - uid: Nitrocid.Languages.LanguageInfo.Custom
   name: Custom
   href: api/Nitrocid.Languages.LanguageInfo.html#Nitrocid_Languages_LanguageInfo_Custom
@@ -28848,19 +28778,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Languages.LanguageManager.CurrentLanguageInfo
   nameWithType: LanguageManager.CurrentLanguageInfo
-- uid: Nitrocid.Languages.LanguageManager.InferLanguageFromSystem
-  name: InferLanguageFromSystem()
-  href: api/Nitrocid.Languages.LanguageManager.html#Nitrocid_Languages_LanguageManager_InferLanguageFromSystem
-  commentId: M:Nitrocid.Languages.LanguageManager.InferLanguageFromSystem
-  fullName: Nitrocid.Languages.LanguageManager.InferLanguageFromSystem()
-  nameWithType: LanguageManager.InferLanguageFromSystem()
-- uid: Nitrocid.Languages.LanguageManager.InferLanguageFromSystem*
-  name: InferLanguageFromSystem
-  href: api/Nitrocid.Languages.LanguageManager.html#Nitrocid_Languages_LanguageManager_InferLanguageFromSystem_
-  commentId: Overload:Nitrocid.Languages.LanguageManager.InferLanguageFromSystem
-  isSpec: "True"
-  fullName: Nitrocid.Languages.LanguageManager.InferLanguageFromSystem
-  nameWithType: LanguageManager.InferLanguageFromSystem
 - uid: Nitrocid.Languages.LanguageManager.InstallCustomLanguage(System.String,System.Boolean)
   name: InstallCustomLanguage(string, bool)
   href: api/Nitrocid.Languages.LanguageManager.html#Nitrocid_Languages_LanguageManager_InstallCustomLanguage_System_String_System_Boolean_
