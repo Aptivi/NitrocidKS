@@ -23910,6 +23910,12 @@ references:
   commentId: F:Nitrocid.Kernel.Exceptions.KernelExceptionType.NetworkOffline
   fullName: Nitrocid.Kernel.Exceptions.KernelExceptionType.NetworkOffline
   nameWithType: KernelExceptionType.NetworkOffline
+- uid: Nitrocid.Kernel.Exceptions.KernelExceptionType.NoSuchCulture
+  name: NoSuchCulture
+  href: api/Nitrocid.Kernel.Exceptions.KernelExceptionType.html#Nitrocid_Kernel_Exceptions_KernelExceptionType_NoSuchCulture
+  commentId: F:Nitrocid.Kernel.Exceptions.KernelExceptionType.NoSuchCulture
+  fullName: Nitrocid.Kernel.Exceptions.KernelExceptionType.NoSuchCulture
+  nameWithType: KernelExceptionType.NoSuchCulture
 - uid: Nitrocid.Kernel.Exceptions.KernelExceptionType.NoSuchDriver
   name: NoSuchDriver
   href: api/Nitrocid.Kernel.Exceptions.KernelExceptionType.html#Nitrocid_Kernel_Exceptions_KernelExceptionType_NoSuchDriver
@@ -28653,6 +28659,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Languages.CultureManager.GetCultures
   nameWithType: CultureManager.GetCultures
+- uid: Nitrocid.Languages.CultureManager.GetCulturesDictionary
+  name: GetCulturesDictionary()
+  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_GetCulturesDictionary
+  commentId: M:Nitrocid.Languages.CultureManager.GetCulturesDictionary
+  fullName: Nitrocid.Languages.CultureManager.GetCulturesDictionary()
+  nameWithType: CultureManager.GetCulturesDictionary()
+- uid: Nitrocid.Languages.CultureManager.GetCulturesDictionary*
+  name: GetCulturesDictionary
+  href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_GetCulturesDictionary_
+  commentId: Overload:Nitrocid.Languages.CultureManager.GetCulturesDictionary
+  isSpec: "True"
+  fullName: Nitrocid.Languages.CultureManager.GetCulturesDictionary
+  nameWithType: CultureManager.GetCulturesDictionary
 - uid: Nitrocid.Languages.CultureManager.UpdateCulture(System.String)
   name: UpdateCulture(string)
   href: api/Nitrocid.Languages.CultureManager.html#Nitrocid_Languages_CultureManager_UpdateCulture_System_String_
@@ -46067,6 +46086,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Users.UserInfo.FullName
   nameWithType: UserInfo.FullName
+- uid: Nitrocid.Users.UserInfo.PreferredCulture
+  name: PreferredCulture
+  href: api/Nitrocid.Users.UserInfo.html#Nitrocid_Users_UserInfo_PreferredCulture
+  commentId: P:Nitrocid.Users.UserInfo.PreferredCulture
+  fullName: Nitrocid.Users.UserInfo.PreferredCulture
+  nameWithType: UserInfo.PreferredCulture
+- uid: Nitrocid.Users.UserInfo.PreferredCulture*
+  name: PreferredCulture
+  href: api/Nitrocid.Users.UserInfo.html#Nitrocid_Users_UserInfo_PreferredCulture_
+  commentId: Overload:Nitrocid.Users.UserInfo.PreferredCulture
+  isSpec: "True"
+  fullName: Nitrocid.Users.UserInfo.PreferredCulture
+  nameWithType: UserInfo.PreferredCulture
 - uid: Nitrocid.Users.UserInfo.PreferredLanguage
   name: PreferredLanguage
   href: api/Nitrocid.Users.UserInfo.html#Nitrocid_Users_UserInfo_PreferredLanguage
