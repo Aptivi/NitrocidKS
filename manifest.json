@@ -235,36 +235,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.ConsoleBase.Writers.TextDynamicWriters.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.ConsoleBase.Writers.TextDynamicWriters.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.ConsoleBase.Writers.TextFancyWriters.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.ConsoleBase.Writers.TextMiscWriters.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.ConsoleBase.Writers.TextMiscWriters.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.ConsoleBase.Writers.TextWriters.yml",
       "output": {
         ".html": {
