@@ -109,16 +109,6 @@
     "title": "Namespace Nitrocid.ConsoleBase.Themes | Nitrocid KS API - Aptivi",
     "keywords": "Namespace Nitrocid.ConsoleBase.Themes Classes ThemeInfo Theme information class ThemePreviewTools Theme preview tools (simple preview and wheel-based preview) ThemeTools Theme tools module Enums ThemeCategory Theme category ThemeSetErrorReasons Enumeration for the theme setting error reasons"
   },
-  "api/Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html": {
-    "href": "api/Nitrocid.ConsoleBase.Writers.MiscWriters.WelcomeMessage.html",
-    "title": "Class WelcomeMessage | Nitrocid KS API - Aptivi",
-    "keywords": "Class WelcomeMessage Welcome message writer Inheritance object WelcomeMessage Namespace: Nitrocid.ConsoleBase.Writers.MiscWriters Assembly: Nitrocid.dll Syntax public static class WelcomeMessage Properties | Edit this page View Source ShowTip Show tips on log-in Declaration public static bool ShowTip { get; } Property Value Type Description bool Methods | Edit this page View Source GetCustomBanner() Gets the custom banner actual text with placeholders parsed Declaration public static string GetCustomBanner() Returns Type Description string | Edit this page View Source GetLicenseString() Gets the license string Declaration public static string GetLicenseString() Returns Type Description string | Edit this page View Source WriteLicense() Writes the license Declaration public static void WriteLicense() | Edit this page View Source WriteMessage() Writes the welcoming message to the console (welcome to kernel) Declaration public static void WriteMessage()"
-  },
-  "api/Nitrocid.ConsoleBase.Writers.MiscWriters.html": {
-    "href": "api/Nitrocid.ConsoleBase.Writers.MiscWriters.html",
-    "title": "Namespace Nitrocid.ConsoleBase.Writers.MiscWriters | Nitrocid KS API - Aptivi",
-    "keywords": "Namespace Nitrocid.ConsoleBase.Writers.MiscWriters Classes WelcomeMessage Welcome message writer"
-  },
   "api/Nitrocid.ConsoleBase.Writers.TextDynamicWriters.html": {
     "href": "api/Nitrocid.ConsoleBase.Writers.TextDynamicWriters.html",
     "title": "Class TextDynamicWriters | Nitrocid KS API - Aptivi",
