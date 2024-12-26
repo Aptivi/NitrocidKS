@@ -148,6 +148,7 @@ namespace Nitrocid.Languages
         /// <returns>True if successful, False if unsuccessful.</returns>
         public static bool SetLang(string lang)
         {
+            SetLangDry(lang);
             Config.MainConfig.CurrentLanguage = lang;
             Config.CreateConfig();
             DebugWriter.WriteDebug(DebugLevel.I, "Saved new language. Updating culture...");
