@@ -19903,6 +19903,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Settings.SettingsKey.IsValuePath
   nameWithType: SettingsKey.IsValuePath
+- uid: Nitrocid.Kernel.Configuration.Settings.SettingsKey.Masked
+  name: Masked
+  href: api/Nitrocid.Kernel.Configuration.Settings.SettingsKey.html#Nitrocid_Kernel_Configuration_Settings_SettingsKey_Masked
+  commentId: P:Nitrocid.Kernel.Configuration.Settings.SettingsKey.Masked
+  fullName: Nitrocid.Kernel.Configuration.Settings.SettingsKey.Masked
+  nameWithType: SettingsKey.Masked
+- uid: Nitrocid.Kernel.Configuration.Settings.SettingsKey.Masked*
+  name: Masked
+  href: api/Nitrocid.Kernel.Configuration.Settings.SettingsKey.html#Nitrocid_Kernel_Configuration_Settings_SettingsKey_Masked_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Settings.SettingsKey.Masked
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Settings.SettingsKey.Masked
+  nameWithType: SettingsKey.Masked
 - uid: Nitrocid.Kernel.Configuration.Settings.SettingsKey.MaximumValue
   name: MaximumValue
   href: api/Nitrocid.Kernel.Configuration.Settings.SettingsKey.html#Nitrocid_Kernel_Configuration_Settings_SettingsKey_MaximumValue
