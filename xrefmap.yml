@@ -30627,6 +30627,15 @@ references:
   fullName.vb: Nitrocid.Misc.Reflection.MethodManager.InvokeMethod(String, Object, ParamArray Object())
   nameWithType: MethodManager.InvokeMethod(string, object, params object[])
   nameWithType.vb: MethodManager.InvokeMethod(String, Object, ParamArray Object())
+- uid: Nitrocid.Misc.Reflection.MethodManager.InvokeMethod(System.String,System.Object,System.Type,System.Object[])
+  name: InvokeMethod(string, object, Type, params object[])
+  href: api/Nitrocid.Misc.Reflection.MethodManager.html#Nitrocid_Misc_Reflection_MethodManager_InvokeMethod_System_String_System_Object_System_Type_System_Object___
+  commentId: M:Nitrocid.Misc.Reflection.MethodManager.InvokeMethod(System.String,System.Object,System.Type,System.Object[])
+  name.vb: InvokeMethod(String, Object, Type, ParamArray Object())
+  fullName: Nitrocid.Misc.Reflection.MethodManager.InvokeMethod(string, object, System.Type, params object[])
+  fullName.vb: Nitrocid.Misc.Reflection.MethodManager.InvokeMethod(String, Object, System.Type, ParamArray Object())
+  nameWithType: MethodManager.InvokeMethod(string, object, Type, params object[])
+  nameWithType.vb: MethodManager.InvokeMethod(String, Object, Type, ParamArray Object())
 - uid: Nitrocid.Misc.Reflection.MethodManager.InvokeMethod*
   name: InvokeMethod
   href: api/Nitrocid.Misc.Reflection.MethodManager.html#Nitrocid_Misc_Reflection_MethodManager_InvokeMethod_
@@ -30643,6 +30652,15 @@ references:
   fullName.vb: Nitrocid.Misc.Reflection.MethodManager.InvokeMethodStatic(String, ParamArray Object())
   nameWithType: MethodManager.InvokeMethodStatic(string, params object[])
   nameWithType.vb: MethodManager.InvokeMethodStatic(String, ParamArray Object())
+- uid: Nitrocid.Misc.Reflection.MethodManager.InvokeMethodStatic(System.String,System.Type,System.Object[])
+  name: InvokeMethodStatic(string, Type, params object[])
+  href: api/Nitrocid.Misc.Reflection.MethodManager.html#Nitrocid_Misc_Reflection_MethodManager_InvokeMethodStatic_System_String_System_Type_System_Object___
+  commentId: M:Nitrocid.Misc.Reflection.MethodManager.InvokeMethodStatic(System.String,System.Type,System.Object[])
+  name.vb: InvokeMethodStatic(String, Type, ParamArray Object())
+  fullName: Nitrocid.Misc.Reflection.MethodManager.InvokeMethodStatic(string, System.Type, params object[])
+  fullName.vb: Nitrocid.Misc.Reflection.MethodManager.InvokeMethodStatic(String, System.Type, ParamArray Object())
+  nameWithType: MethodManager.InvokeMethodStatic(string, Type, params object[])
+  nameWithType.vb: MethodManager.InvokeMethodStatic(String, Type, ParamArray Object())
 - uid: Nitrocid.Misc.Reflection.MethodManager.InvokeMethodStatic*
   name: InvokeMethodStatic
   href: api/Nitrocid.Misc.Reflection.MethodManager.html#Nitrocid_Misc_Reflection_MethodManager_InvokeMethodStatic_
