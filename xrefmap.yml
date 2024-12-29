@@ -17952,6 +17952,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ScreensaverDebug
   nameWithType: KernelMainConfig.ScreensaverDebug
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ScreensaverDelay
+  name: ScreensaverDelay
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ScreensaverDelay
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ScreensaverDelay
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ScreensaverDelay
+  nameWithType: KernelMainConfig.ScreensaverDelay
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ScreensaverDelay*
+  name: ScreensaverDelay
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ScreensaverDelay_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ScreensaverDelay
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ScreensaverDelay
+  nameWithType: KernelMainConfig.ScreensaverDelay
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ScreensaverSeizureAcknowledged
   name: ScreensaverSeizureAcknowledged
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ScreensaverSeizureAcknowledged
@@ -17965,6 +17978,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ScreensaverSeizureAcknowledged
   nameWithType: KernelMainConfig.ScreensaverSeizureAcknowledged
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ScreensaverUnifiedDelay
+  name: ScreensaverUnifiedDelay
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ScreensaverUnifiedDelay
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ScreensaverUnifiedDelay
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ScreensaverUnifiedDelay
+  nameWithType: KernelMainConfig.ScreensaverUnifiedDelay
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ScreensaverUnifiedDelay*
+  name: ScreensaverUnifiedDelay
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ScreensaverUnifiedDelay_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ScreensaverUnifiedDelay
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ScreensaverUnifiedDelay
+  nameWithType: KernelMainConfig.ScreensaverUnifiedDelay
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.SecondWidget
   name: SecondWidget
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_SecondWidget
@@ -31095,6 +31121,22 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Screensaver.ScreensaverManager.DefaultSaverName
   nameWithType: ScreensaverManager.DefaultSaverName
+- uid: Nitrocid.Misc.Screensaver.ScreensaverManager.Delay(System.Int32)
+  name: Delay(int)
+  href: api/Nitrocid.Misc.Screensaver.ScreensaverManager.html#Nitrocid_Misc_Screensaver_ScreensaverManager_Delay_System_Int32_
+  commentId: M:Nitrocid.Misc.Screensaver.ScreensaverManager.Delay(System.Int32)
+  name.vb: Delay(Integer)
+  fullName: Nitrocid.Misc.Screensaver.ScreensaverManager.Delay(int)
+  fullName.vb: Nitrocid.Misc.Screensaver.ScreensaverManager.Delay(Integer)
+  nameWithType: ScreensaverManager.Delay(int)
+  nameWithType.vb: ScreensaverManager.Delay(Integer)
+- uid: Nitrocid.Misc.Screensaver.ScreensaverManager.Delay*
+  name: Delay
+  href: api/Nitrocid.Misc.Screensaver.ScreensaverManager.html#Nitrocid_Misc_Screensaver_ScreensaverManager_Delay_
+  commentId: Overload:Nitrocid.Misc.Screensaver.ScreensaverManager.Delay
+  isSpec: "True"
+  fullName: Nitrocid.Misc.Screensaver.ScreensaverManager.Delay
+  nameWithType: ScreensaverManager.Delay
 - uid: Nitrocid.Misc.Screensaver.ScreensaverManager.GetScreensaver(System.String)
   name: GetScreensaver(string)
   href: api/Nitrocid.Misc.Screensaver.ScreensaverManager.html#Nitrocid_Misc_Screensaver_ScreensaverManager_GetScreensaver_System_String_
