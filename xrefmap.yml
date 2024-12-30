@@ -15898,6 +15898,15 @@ references:
   fullName.vb: Nitrocid.Kernel.Configuration.ConfigTools.CheckConfigVariables(Nitrocid.Kernel.Configuration.Settings.SettingsEntry(), Nitrocid.Kernel.Configuration.Instances.BaseKernelConfig)
   nameWithType: ConfigTools.CheckConfigVariables(SettingsEntry[]?, BaseKernelConfig?)
   nameWithType.vb: ConfigTools.CheckConfigVariables(SettingsEntry(), BaseKernelConfig)
+- uid: Nitrocid.Kernel.Configuration.ConfigTools.CheckConfigVariables(Nitrocid.Kernel.Configuration.Settings.SettingsKey[],Nitrocid.Kernel.Configuration.Instances.BaseKernelConfig)
+  name: CheckConfigVariables(SettingsKey[]?, BaseKernelConfig?)
+  href: api/Nitrocid.Kernel.Configuration.ConfigTools.html#Nitrocid_Kernel_Configuration_ConfigTools_CheckConfigVariables_Nitrocid_Kernel_Configuration_Settings_SettingsKey___Nitrocid_Kernel_Configuration_Instances_BaseKernelConfig_
+  commentId: M:Nitrocid.Kernel.Configuration.ConfigTools.CheckConfigVariables(Nitrocid.Kernel.Configuration.Settings.SettingsKey[],Nitrocid.Kernel.Configuration.Instances.BaseKernelConfig)
+  name.vb: CheckConfigVariables(SettingsKey(), BaseKernelConfig)
+  fullName: Nitrocid.Kernel.Configuration.ConfigTools.CheckConfigVariables(Nitrocid.Kernel.Configuration.Settings.SettingsKey[]?, Nitrocid.Kernel.Configuration.Instances.BaseKernelConfig?)
+  fullName.vb: Nitrocid.Kernel.Configuration.ConfigTools.CheckConfigVariables(Nitrocid.Kernel.Configuration.Settings.SettingsKey(), Nitrocid.Kernel.Configuration.Instances.BaseKernelConfig)
+  nameWithType: ConfigTools.CheckConfigVariables(SettingsKey[]?, BaseKernelConfig?)
+  nameWithType.vb: ConfigTools.CheckConfigVariables(SettingsKey(), BaseKernelConfig)
 - uid: Nitrocid.Kernel.Configuration.ConfigTools.CheckConfigVariables(System.String)
   name: CheckConfigVariables(string)
   href: api/Nitrocid.Kernel.Configuration.ConfigTools.html#Nitrocid_Kernel_Configuration_ConfigTools_CheckConfigVariables_System_String_
