@@ -99,19 +99,19 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_Nitrocid_Kernel_Extensions_KnownAddons_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L122">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L279">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction*"></a>
-  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_Nitrocid_Kernel_Extensions_KnownAddons_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons,System.String)">ExecuteCustomAddonFunction(KnownAddons, string)</h4>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String)">ExecuteCustomAddonFunction(KnownAddons, string, string)</h4>
   <div class="markdown level1 summary"><p>Executes a custom addon function</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static object? ExecuteCustomAddonFunction(KnownAddons addonName, string functionName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static object? ExecuteCustomAddonFunction(KnownAddons addonName, string functionName, string typeName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -132,7 +132,13 @@
       <tr>
         <td><span class="xref">string</span></td>
         <td><span class="parametername">functionName</span></td>
-        <td><p>Function name defined in the <span class="xref">Nitrocid.Kernel.Extensions.IAddon.PubliclyAvailableFunctions</span> dictionary to query</p>
+        <td><p>Function name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_System_String_System_Type_">ListAvailableFunctions(string, Type)</a> method to query all available addon functions from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
 </td>
       </tr>
     </tbody>
@@ -154,416 +160,958 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L131">View Source</a>
-  </span>
-  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction*"></a>
-  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Object___" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Object[])">ExecuteCustomAddonFunction(KnownAddons, string, params object?[]?)</h4>
-  <div class="markdown level1 summary"><p>Executes a custom addon function</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static object? ExecuteCustomAddonFunction(KnownAddons addonName, string functionName, params object?[]? parameters)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
-        <td><span class="parametername">addonName</span></td>
-        <td><p>The addon name to query</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">functionName</span></td>
-        <td><p>Function name defined in the <span class="xref">Nitrocid.Kernel.Extensions.IAddon.PubliclyAvailableFunctions</span> dictionary to query</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">object</span>[]</td>
-        <td><span class="parametername">parameters</span></td>
-        <td><p>Parameters to execute the function with</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">object</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L139">View Source</a>
-  </span>
-  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction*"></a>
-  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_System_String_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String)">ExecuteCustomAddonFunction(string, string)</h4>
-  <div class="markdown level1 summary"><p>Executes a custom addon function</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static object? ExecuteCustomAddonFunction(string addonName, string functionName)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">addonName</span></td>
-        <td><p>The addon name to query</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">functionName</span></td>
-        <td><p>Function name defined in the <span class="xref">Nitrocid.Kernel.Extensions.IAddon.PubliclyAvailableFunctions</span> dictionary to query</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">object</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_System_String_System_String_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L148">View Source</a>
-  </span>
-  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction*"></a>
-  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_System_String_System_String_System_Object___" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String,System.Object[])">ExecuteCustomAddonFunction(string, string, params object?[]?)</h4>
-  <div class="markdown level1 summary"><p>Executes a custom addon function</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static object? ExecuteCustomAddonFunction(string addonName, string functionName, params object?[]? parameters)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">addonName</span></td>
-        <td><p>The addon name to query</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">functionName</span></td>
-        <td><p>Function name defined in the <span class="xref">Nitrocid.Kernel.Extensions.IAddon.PubliclyAvailableFunctions</span> dictionary to query</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">object</span>[]</td>
-        <td><span class="parametername">parameters</span></td>
-        <td><p>Parameters to execute the function with</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">object</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L233">View Source</a>
-  </span>
-  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue*"></a>
-  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String)">GetCustomAddonFieldValue(KnownAddons, string)</h4>
-  <div class="markdown level1 summary"><p>Gets a value from the custom addon field</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static object? GetCustomAddonFieldValue(KnownAddons addonName, string fieldName)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
-        <td><span class="parametername">addonName</span></td>
-        <td><p>The addon name to query</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">fieldName</span></td>
-        <td><p>Field name defined in the <span class="xref">Nitrocid.Kernel.Extensions.IAddon.PubliclyAvailableFields</span> dictionary to query</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">object</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L241">View Source</a>
-  </span>
-  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue*"></a>
-  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_System_String_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(System.String,System.String)">GetCustomAddonFieldValue(string, string)</h4>
-  <div class="markdown level1 summary"><p>Gets a value from the custom addon field</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static object? GetCustomAddonFieldValue(string addonName, string fieldName)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">addonName</span></td>
-        <td><p>The addon name to query</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">fieldName</span></td>
-        <td><p>Field name defined in the <span class="xref">Nitrocid.Kernel.Extensions.IAddon.PubliclyAvailableFields</span> dictionary to query</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">object</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L167">View Source</a>
-  </span>
-  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue*"></a>
-  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String)">GetCustomAddonPropertyValue(KnownAddons, string)</h4>
-  <div class="markdown level1 summary"><p>Gets a value from the custom addon property</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static object? GetCustomAddonPropertyValue(KnownAddons addonName, string propertyName)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
-        <td><span class="parametername">addonName</span></td>
-        <td><p>The addon name to query</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">propertyName</span></td>
-        <td><p>Property name defined in the <span class="xref">Nitrocid.Kernel.Extensions.IAddon.PubliclyAvailableProperties</span> dictionary to query</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">object</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L175">View Source</a>
-  </span>
-  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue*"></a>
-  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_System_String_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(System.String,System.String)">GetCustomAddonPropertyValue(string, string)</h4>
-  <div class="markdown level1 summary"><p>Gets a value from the custom addon property</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static object? GetCustomAddonPropertyValue(string addonName, string propertyName)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">addonName</span></td>
-        <td><p>The addon name to query</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">propertyName</span></td>
-        <td><p>Property name defined in the <span class="xref">Nitrocid.Kernel.Extensions.IAddon.PubliclyAvailableProperties</span> dictionary to query</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">object</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetFunctionParameters_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L289">View Source</a>
   </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_System_Object___" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String,System.Object[])">ExecuteCustomAddonFunction(KnownAddons, string, string, params object?[]?)</h4>
+  <div class="markdown level1 summary"><p>Executes a custom addon function</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object? ExecuteCustomAddonFunction(KnownAddons addonName, string functionName, string typeName, params object?[]? parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">functionName</span></td>
+        <td><p>Function name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_System_String_System_Type_">ListAvailableFunctions(string, Type)</a> method to query all available addon functions from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">object</span>[]</td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Parameters to execute the function with</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String%2CSystem.Type)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L321">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type)">ExecuteCustomAddonFunction(KnownAddons, string, Type)</h4>
+  <div class="markdown level1 summary"><p>Executes a custom addon function</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object? ExecuteCustomAddonFunction(KnownAddons addonName, string functionName, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">functionName</span></td>
+        <td><p>Function name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_System_String_System_Type_">ListAvailableFunctions(string, Type)</a> method to query all available addon functions from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type found in an addon (must be public and static). You can get this type using <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_">GetTypeFromAddon(string, string)</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String%2CSystem.Type%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L331">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_System_Object___" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type,System.Object[])">ExecuteCustomAddonFunction(KnownAddons, string, Type, params object?[]?)</h4>
+  <div class="markdown level1 summary"><p>Executes a custom addon function</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object? ExecuteCustomAddonFunction(KnownAddons addonName, string functionName, Type type, params object?[]? parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">functionName</span></td>
+        <td><p>Function name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_System_String_System_Type_">ListAvailableFunctions(string, Type)</a> method to query all available addon functions from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type found in an addon (must be public and static). You can get this type using <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_">GetTypeFromAddon(string, string)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">object</span>[]</td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Parameters to execute the function with</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L298">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_System_String_System_String_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String,System.String)">ExecuteCustomAddonFunction(string, string, string)</h4>
+  <div class="markdown level1 summary"><p>Executes a custom addon function</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object? ExecuteCustomAddonFunction(string addonName, string functionName, string typeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">functionName</span></td>
+        <td><p>Function name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_System_String_System_Type_">ListAvailableFunctions(string, Type)</a> method to query all available addon functions from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_System_String_System_String_System_String_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String%2CSystem.String%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L308">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_System_String_System_String_System_String_System_Object___" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String,System.String,System.Object[])">ExecuteCustomAddonFunction(string, string, string, params object?[]?)</h4>
+  <div class="markdown level1 summary"><p>Executes a custom addon function</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object? ExecuteCustomAddonFunction(string addonName, string functionName, string typeName, params object?[]? parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">functionName</span></td>
+        <td><p>Function name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_System_String_System_Type_">ListAvailableFunctions(string, Type)</a> method to query all available addon functions from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">object</span>[]</td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Parameters to execute the function with</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_System_String_System_String_System_Type_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String%2CSystem.String%2CSystem.Type)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L340">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_System_String_System_String_System_Type_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String,System.Type)">ExecuteCustomAddonFunction(string, string, Type)</h4>
+  <div class="markdown level1 summary"><p>Executes a custom addon function</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object? ExecuteCustomAddonFunction(string addonName, string functionName, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">functionName</span></td>
+        <td><p>Function name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_System_String_System_Type_">ListAvailableFunctions(string, Type)</a> method to query all available addon functions from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type found in an addon (must be public and static). You can get this type using <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_">GetTypeFromAddon(string, string)</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_System_String_System_String_System_Type_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String%2CSystem.String%2CSystem.Type%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L350">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_System_String_System_String_System_Type_System_Object___" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String,System.Type,System.Object[])">ExecuteCustomAddonFunction(string, string, Type, params object?[]?)</h4>
+  <div class="markdown level1 summary"><p>Executes a custom addon function</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object? ExecuteCustomAddonFunction(string addonName, string functionName, Type type, params object?[]? parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">functionName</span></td>
+        <td><p>Function name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_System_String_System_Type_">ListAvailableFunctions(string, Type)</a> method to query all available addon functions from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type found in an addon (must be public and static). You can get this type using <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_">GetTypeFromAddon(string, string)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">object</span>[]</td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Parameters to execute the function with</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L495">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String)">GetCustomAddonFieldValue(KnownAddons, string, string)</h4>
+  <div class="markdown level1 summary"><p>Gets a value from the custom addon field</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object? GetCustomAddonFieldValue(KnownAddons addonName, string fieldName, string typeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">fieldName</span></td>
+        <td><p>Field name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_System_String_System_Type_">ListAvailableFields(string, Type)</a> method to query all available addon fields from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String%2CSystem.Type)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L517">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type)">GetCustomAddonFieldValue(KnownAddons, string, Type)</h4>
+  <div class="markdown level1 summary"><p>Gets a value from the custom addon field</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object? GetCustomAddonFieldValue(KnownAddons addonName, string fieldName, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">fieldName</span></td>
+        <td><p>Field name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_System_String_System_Type_">ListAvailableFields(string, Type)</a> method to query all available addon fields from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type found in an addon (must be public and static). You can get this type using <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_">GetTypeFromAddon(string, string)</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L504">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_System_String_System_String_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(System.String,System.String,System.String)">GetCustomAddonFieldValue(string, string, string)</h4>
+  <div class="markdown level1 summary"><p>Gets a value from the custom addon field</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object? GetCustomAddonFieldValue(string addonName, string fieldName, string typeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">fieldName</span></td>
+        <td><p>Field name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_System_String_System_Type_">ListAvailableFields(string, Type)</a> method to query all available addon fields from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_System_String_System_String_System_Type_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(System.String%2CSystem.String%2CSystem.Type)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L526">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_System_String_System_String_System_Type_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(System.String,System.String,System.Type)">GetCustomAddonFieldValue(string, string, Type)</h4>
+  <div class="markdown level1 summary"><p>Gets a value from the custom addon field</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object? GetCustomAddonFieldValue(string addonName, string fieldName, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">fieldName</span></td>
+        <td><p>Field name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_System_String_System_Type_">ListAvailableFields(string, Type)</a> method to query all available addon fields from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type found in an addon (must be public and static). You can get this type using <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_">GetTypeFromAddon(string, string)</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L373">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String)">GetCustomAddonPropertyValue(KnownAddons, string, string)</h4>
+  <div class="markdown level1 summary"><p>Gets a value from the custom addon property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object? GetCustomAddonPropertyValue(KnownAddons addonName, string propertyName, string typeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>Property name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_System_String_System_Type_">ListAvailableProperties(string, Type)</a> method to query all available addon properties from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String%2CSystem.Type)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L395">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type)">GetCustomAddonPropertyValue(KnownAddons, string, Type)</h4>
+  <div class="markdown level1 summary"><p>Gets a value from the custom addon property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object? GetCustomAddonPropertyValue(KnownAddons addonName, string propertyName, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>Property name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_System_String_System_Type_">ListAvailableProperties(string, Type)</a> method to query all available addon properties from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type found in an addon (must be public and static). You can get this type using <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_">GetTypeFromAddon(string, string)</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L382">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_System_String_System_String_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(System.String,System.String,System.String)">GetCustomAddonPropertyValue(string, string, string)</h4>
+  <div class="markdown level1 summary"><p>Gets a value from the custom addon property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object? GetCustomAddonPropertyValue(string addonName, string propertyName, string typeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>Property name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_System_String_System_Type_">ListAvailableProperties(string, Type)</a> method to query all available addon properties from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_System_String_System_String_System_Type_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(System.String%2CSystem.String%2CSystem.Type)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L404">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_System_String_System_String_System_Type_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(System.String,System.String,System.Type)">GetCustomAddonPropertyValue(string, string, Type)</h4>
+  <div class="markdown level1 summary"><p>Gets a value from the custom addon property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object? GetCustomAddonPropertyValue(string addonName, string propertyName, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>Property name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_System_String_System_Type_">ListAvailableProperties(string, Type)</a> method to query all available addon properties from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type found in an addon (must be public and static). You can get this type using <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_">GetTypeFromAddon(string, string)</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetFunctionParameters_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L607">View Source</a>
+  </span>
   <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetFunctionParameters_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters*"></a>
-  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetFunctionParameters_System_String_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(System.String,System.String)">GetFunctionParameters(string, string)</h4>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetFunctionParameters_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String)">GetFunctionParameters(KnownAddons, string, string)</h4>
   <div class="markdown level1 summary"><p>Gets the function parameters from a function</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ParameterInfo[]? GetFunctionParameters(string addonName, string functionName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ParameterInfo[]? GetFunctionParameters(KnownAddons addonName, string functionName, string typeName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -576,7 +1124,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
         <td><span class="parametername">addonName</span></td>
         <td><p>The addon name to query</p>
 </td>
@@ -584,7 +1132,13 @@
       <tr>
         <td><span class="xref">string</span></td>
         <td><span class="parametername">functionName</span></td>
-        <td><p>Function name defined in the <span class="xref">Nitrocid.Kernel.Extensions.IAddon.PubliclyAvailableFunctions</span> dictionary to query</p>
+        <td><p>Function name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_System_String_System_Type_">ListAvailableFunctions(string, Type)</a> method to query all available addon functions from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
 </td>
       </tr>
     </tbody>
@@ -607,19 +1161,81 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetFunctionParameters_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String%2CSystem.Type)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L305">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L617">View Source</a>
   </span>
-  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters*"></a>
-  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_System_String_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(System.String,System.String)">GetSetPropertyParameters(string, string)</h4>
-  <div class="markdown level1 summary"><p>Gets the property setter parameters from a property</p>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetFunctionParameters_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetFunctionParameters_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type)">GetFunctionParameters(KnownAddons, string, Type)</h4>
+  <div class="markdown level1 summary"><p>Gets the function parameters from a function</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ParameterInfo[]? GetSetPropertyParameters(string addonName, string propertyName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ParameterInfo[]? GetFunctionParameters(KnownAddons addonName, string functionName, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">functionName</span></td>
+        <td><p>Function name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_System_String_System_Type_">ListAvailableFunctions(string, Type)</a> method to query all available addon functions from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type found in an addon (must be public and static). You can get this type using <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_">GetTypeFromAddon(string, string)</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ParameterInfo</span>[]</td>
+        <td><p>An array of <span class="xref">System.Reflection.ParameterInfo</span> if there are any; null if there is no function</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetFunctionParameters_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L627">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetFunctionParameters_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetFunctionParameters_System_String_System_String_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(System.String,System.String,System.String)">GetFunctionParameters(string, string, string)</h4>
+  <div class="markdown level1 summary"><p>Gets the function parameters from a function</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ParameterInfo[]? GetFunctionParameters(string addonName, string functionName, string typeName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -639,8 +1255,138 @@
       </tr>
       <tr>
         <td><span class="xref">string</span></td>
+        <td><span class="parametername">functionName</span></td>
+        <td><p>Function name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_System_String_System_Type_">ListAvailableFunctions(string, Type)</a> method to query all available addon functions from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ParameterInfo</span>[]</td>
+        <td><p>An array of <span class="xref">System.Reflection.ParameterInfo</span> if there are any; null if there is no function</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetFunctionParameters_System_String_System_String_System_Type_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(System.String%2CSystem.String%2CSystem.Type)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L641">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetFunctionParameters_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetFunctionParameters_System_String_System_String_System_Type_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(System.String,System.String,System.Type)">GetFunctionParameters(string, string, Type)</h4>
+  <div class="markdown level1 summary"><p>Gets the function parameters from a function</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ParameterInfo[]? GetFunctionParameters(string addonName, string functionName, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">functionName</span></td>
+        <td><p>Function name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_System_String_System_Type_">ListAvailableFunctions(string, Type)</a> method to query all available addon functions from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type found in an addon (must be public and static). You can get this type using <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_">GetTypeFromAddon(string, string)</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ParameterInfo</span>[]</td>
+        <td><p>An array of <span class="xref">System.Reflection.ParameterInfo</span> if there are any; null if there is no function</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L665">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String)">GetSetPropertyParameters(KnownAddons, string, string)</h4>
+  <div class="markdown level1 summary"><p>Gets the property setter parameters from a property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ParameterInfo[]? GetSetPropertyParameters(KnownAddons addonName, string propertyName, string typeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
         <td><span class="parametername">propertyName</span></td>
-        <td><p>Property name defined in the <span class="xref">Nitrocid.Kernel.Extensions.IAddon.PubliclyAvailableProperties</span> dictionary to query</p>
+        <td><p>Property name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_System_String_System_Type_">ListAvailableProperties(string, Type)</a> method to query all available addon properties from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
 </td>
       </tr>
     </tbody>
@@ -663,19 +1409,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String%2CSystem.Type)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L96">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L675">View Source</a>
   </span>
-  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields*"></a>
-  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(System.String)">ListAvailableFields(string)</h4>
-  <div class="markdown level1 summary"><p>Lists all the available fields from the addon name</p>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type)">GetSetPropertyParameters(KnownAddons, string, Type)</h4>
+  <div class="markdown level1 summary"><p>Gets the property setter parameters from a property</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string[] ListAvailableFields(string addonName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ParameterInfo[]? GetSetPropertyParameters(KnownAddons addonName, string propertyName, Type type)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -688,9 +1434,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
         <td><span class="parametername">addonName</span></td>
-        <td><p>Addon name to check</p>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>Property name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_System_String_System_Type_">ListAvailableProperties(string, Type)</a> method to query all available addon properties from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type found in an addon (must be public and static). You can get this type using <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_">GetTypeFromAddon(string, string)</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -705,42 +1463,27 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span>[]</td>
-        <td><p>List of field names</p>
+        <td><span class="xref">ParameterInfo</span>[]</td>
+        <td><p>An array of <span class="xref">System.Reflection.ParameterInfo</span> if there are any; null if there is no property</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Nitrocid.Kernel.Exceptions.KernelException.html">KernelException</a></td>
-        <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L42">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L685">View Source</a>
   </span>
-  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions*"></a>
-  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(System.String)">ListAvailableFunctions(string)</h4>
-  <div class="markdown level1 summary"><p>Lists all the available functions from the addon name</p>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_System_String_System_String_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(System.String,System.String,System.String)">GetSetPropertyParameters(string, string, string)</h4>
+  <div class="markdown level1 summary"><p>Gets the property setter parameters from a property</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string[] ListAvailableFunctions(string addonName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ParameterInfo[]? GetSetPropertyParameters(string addonName, string propertyName, string typeName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -755,7 +1498,19 @@
       <tr>
         <td><span class="xref">string</span></td>
         <td><span class="parametername">addonName</span></td>
-        <td><p>Addon name to check</p>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>Property name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_System_String_System_Type_">ListAvailableProperties(string, Type)</a> method to query all available addon properties from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
 </td>
       </tr>
     </tbody>
@@ -770,7 +1525,125 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><span class="xref">ParameterInfo</span>[]</td>
+        <td><p>An array of <span class="xref">System.Reflection.ParameterInfo</span> if there are any; null if there is no property</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_System_String_System_String_System_Type_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(System.String%2CSystem.String%2CSystem.Type)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L699">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_System_String_System_String_System_Type_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(System.String,System.String,System.Type)">GetSetPropertyParameters(string, string, Type)</h4>
+  <div class="markdown level1 summary"><p>Gets the property setter parameters from a property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ParameterInfo[]? GetSetPropertyParameters(string addonName, string propertyName, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>Property name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_System_String_System_Type_">ListAvailableProperties(string, Type)</a> method to query all available addon properties from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type found in an addon (must be public and static). You can get this type using <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_">GetTypeFromAddon(string, string)</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ParameterInfo</span>[]</td>
+        <td><p>An array of <span class="xref">System.Reflection.ParameterInfo</span> if there are any; null if there is no property</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_Nitrocid_Kernel_Extensions_KnownAddons_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetTypeFromAddon(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L66">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetTypeFromAddon*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_Nitrocid_Kernel_Extensions_KnownAddons_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetTypeFromAddon(Nitrocid.Kernel.Extensions.KnownAddons,System.String)">GetTypeFromAddon(KnownAddons, string)</h4>
+  <div class="markdown level1 summary"><p>Gets a type from an addon</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Type GetTypeFromAddon(KnownAddons addonName, string typeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>Addon name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
         <td><p>List of function names</p>
 </td>
       </tr>
@@ -793,19 +1666,1007 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.GetTypeFromAddon(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L69">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L76">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetTypeFromAddon*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.GetTypeFromAddon(System.String,System.String)">GetTypeFromAddon(string, string)</h4>
+  <div class="markdown level1 summary"><p>Gets a type from an addon</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Type GetTypeFromAddon(string addonName, string typeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>Addon name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><p>List of function names</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_Nitrocid_Kernel_Extensions_KnownAddons_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L221">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_Nitrocid_Kernel_Extensions_KnownAddons_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(Nitrocid.Kernel.Extensions.KnownAddons,System.String)">ListAvailableFields(KnownAddons, string)</h4>
+  <div class="markdown level1 summary"><p>Lists all the available fields from the addon name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, FieldInfo&gt; ListAvailableFields(KnownAddons addonName, string typeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>Addon name to check</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">string</span>, <span class="xref">FieldInfo</span>&gt;</td>
+        <td><p>List of field names</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_Nitrocid_Kernel_Extensions_KnownAddons_System_Type_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.Type)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L231">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_Nitrocid_Kernel_Extensions_KnownAddons_System_Type_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(Nitrocid.Kernel.Extensions.KnownAddons,System.Type)">ListAvailableFields(KnownAddons, Type)</h4>
+  <div class="markdown level1 summary"><p>Lists all the available fields from the addon name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, FieldInfo&gt; ListAvailableFields(KnownAddons addonName, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>Addon name to check</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type found in an addon (must be public and static). You can get this type using <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_">GetTypeFromAddon(string, string)</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">string</span>, <span class="xref">FieldInfo</span>&gt;</td>
+        <td><p>List of field names</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L241">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_System_String_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(System.String,System.String)">ListAvailableFields(string, string)</h4>
+  <div class="markdown level1 summary"><p>Lists all the available fields from the addon name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, FieldInfo&gt; ListAvailableFields(string addonName, string typeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>Addon name to check</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">string</span>, <span class="xref">FieldInfo</span>&gt;</td>
+        <td><p>List of field names</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_System_String_System_Type_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(System.String%2CSystem.Type)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L255">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_System_String_System_Type_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(System.String,System.Type)">ListAvailableFields(string, Type)</h4>
+  <div class="markdown level1 summary"><p>Lists all the available fields from the addon name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, FieldInfo&gt; ListAvailableFields(string addonName, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>Addon name to check</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type found in an addon (must be public and static). You can get this type using <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_">GetTypeFromAddon(string, string)</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">string</span>, <span class="xref">FieldInfo</span>&gt;</td>
+        <td><p>List of field names</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_Nitrocid_Kernel_Extensions_KnownAddons_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L92">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_Nitrocid_Kernel_Extensions_KnownAddons_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(Nitrocid.Kernel.Extensions.KnownAddons,System.String)">ListAvailableFunctions(KnownAddons, string)</h4>
+  <div class="markdown level1 summary"><p>Lists all the available functions from the addon name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, MethodInfo&gt; ListAvailableFunctions(KnownAddons addonName, string typeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>Addon name to check</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">string</span>, <span class="xref">MethodInfo</span>&gt;</td>
+        <td><p>List of function names</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_Nitrocid_Kernel_Extensions_KnownAddons_System_Type_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.Type)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L102">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_Nitrocid_Kernel_Extensions_KnownAddons_System_Type_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(Nitrocid.Kernel.Extensions.KnownAddons,System.Type)">ListAvailableFunctions(KnownAddons, Type)</h4>
+  <div class="markdown level1 summary"><p>Lists all the available functions from the addon name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, MethodInfo&gt; ListAvailableFunctions(KnownAddons addonName, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>Addon name to check</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type found in an addon (must be public and static). You can get this type using <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_">GetTypeFromAddon(string, string)</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">string</span>, <span class="xref">MethodInfo</span>&gt;</td>
+        <td><p>List of function names</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L112">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_System_String_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(System.String,System.String)">ListAvailableFunctions(string, string)</h4>
+  <div class="markdown level1 summary"><p>Lists all the available functions from the addon name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, MethodInfo&gt; ListAvailableFunctions(string addonName, string typeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>Addon name to check</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">string</span>, <span class="xref">MethodInfo</span>&gt;</td>
+        <td><p>List of function names</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_System_String_System_Type_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(System.String%2CSystem.Type)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L126">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_System_String_System_Type_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(System.String,System.Type)">ListAvailableFunctions(string, Type)</h4>
+  <div class="markdown level1 summary"><p>Lists all the available functions from the addon name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, MethodInfo&gt; ListAvailableFunctions(string addonName, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>Addon name to check</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type found in an addon (must be public and static). You can get this type using <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_">GetTypeFromAddon(string, string)</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">string</span>, <span class="xref">MethodInfo</span>&gt;</td>
+        <td><p>List of function names</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_Nitrocid_Kernel_Extensions_KnownAddons_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L162">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties*"></a>
-  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(System.String)">ListAvailableProperties(string)</h4>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_Nitrocid_Kernel_Extensions_KnownAddons_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(Nitrocid.Kernel.Extensions.KnownAddons,System.String)">ListAvailableProperties(KnownAddons, string)</h4>
   <div class="markdown level1 summary"><p>Lists all the available properties from the addon name</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string[] ListAvailableProperties(string addonName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, PropertyInfo&gt; ListAvailableProperties(KnownAddons addonName, string typeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>Addon name to check</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">string</span>, <span class="xref">PropertyInfo</span>&gt;</td>
+        <td><p>List of property names</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_Nitrocid_Kernel_Extensions_KnownAddons_System_Type_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.Type)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L172">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_Nitrocid_Kernel_Extensions_KnownAddons_System_Type_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(Nitrocid.Kernel.Extensions.KnownAddons,System.Type)">ListAvailableProperties(KnownAddons, Type)</h4>
+  <div class="markdown level1 summary"><p>Lists all the available properties from the addon name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, PropertyInfo&gt; ListAvailableProperties(KnownAddons addonName, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>Addon name to check</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type found in an addon (must be public and static). You can get this type using <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_">GetTypeFromAddon(string, string)</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">string</span>, <span class="xref">PropertyInfo</span>&gt;</td>
+        <td><p>List of property names</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_System_String_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L182">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_System_String_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(System.String,System.String)">ListAvailableProperties(string, string)</h4>
+  <div class="markdown level1 summary"><p>Lists all the available properties from the addon name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, PropertyInfo&gt; ListAvailableProperties(string addonName, string typeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>Addon name to check</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">string</span>, <span class="xref">PropertyInfo</span>&gt;</td>
+        <td><p>List of property names</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_System_String_System_Type_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(System.String%2CSystem.Type)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L196">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_System_String_System_Type_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(System.String,System.Type)">ListAvailableProperties(string, Type)</h4>
+  <div class="markdown level1 summary"><p>Lists all the available properties from the addon name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, PropertyInfo&gt; ListAvailableProperties(string addonName, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>Addon name to check</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type found in an addon (must be public and static). You can get this type using <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_">GetTypeFromAddon(string, string)</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">string</span>, <span class="xref">PropertyInfo</span>&gt;</td>
+        <td><p>List of property names</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableTypes_Nitrocid_Kernel_Extensions_KnownAddons_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableTypes(Nitrocid.Kernel.Extensions.KnownAddons)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L43">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableTypes_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableTypes*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableTypes_Nitrocid_Kernel_Extensions_KnownAddons_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableTypes(Nitrocid.Kernel.Extensions.KnownAddons)">ListAvailableTypes(KnownAddons)</h4>
+  <div class="markdown level1 summary"><p>Lists all the available types from the addon name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Type[] ListAvailableTypes(KnownAddons addonName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>Addon name to check</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span>[]</td>
+        <td><p>List of function names</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Exceptions.KernelException.html">KernelException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableTypes_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableTypes(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L52">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableTypes_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableTypes*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableTypes_System_String_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableTypes(System.String)">ListAvailableTypes(string)</h4>
+  <div class="markdown level1 summary"><p>Lists all the available types from the addon name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Type[] ListAvailableTypes(string addonName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -835,8 +2696,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span>[]</td>
-        <td><p>List of property names</p>
+        <td><span class="xref">Type</span>[]</td>
+        <td><p>List of function names</p>
 </td>
       </tr>
     </tbody>
@@ -858,19 +2719,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String%2CSystem.String%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L261">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L550">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue*"></a>
-  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Object_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Object)">SetCustomAddonFieldValue(KnownAddons, string, object?)</h4>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_System_Object_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String,System.Object)">SetCustomAddonFieldValue(KnownAddons, string, string, object?)</h4>
   <div class="markdown level1 summary"><p>Sets a value from the custom addon field</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetCustomAddonFieldValue(KnownAddons addonName, string fieldName, object? value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SetCustomAddonFieldValue(KnownAddons addonName, string fieldName, string typeName, object? value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -891,7 +2752,13 @@
       <tr>
         <td><span class="xref">string</span></td>
         <td><span class="parametername">fieldName</span></td>
-        <td><p>Field name defined in the <span class="xref">Nitrocid.Kernel.Extensions.IAddon.PubliclyAvailableFields</span> dictionary to query</p>
+        <td><p>Field name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_System_String_System_Type_">ListAvailableFields(string, Type)</a> method to query all available addon fields from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
 </td>
       </tr>
       <tr>
@@ -904,19 +2771,71 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_System_String_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(System.String%2CSystem.String%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_System_Object_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String%2CSystem.Type%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L270">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L574">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue*"></a>
-  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_System_String_System_String_System_Object_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(System.String,System.String,System.Object)">SetCustomAddonFieldValue(string, string, object?)</h4>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_System_Object_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type,System.Object)">SetCustomAddonFieldValue(KnownAddons, string, Type, object?)</h4>
   <div class="markdown level1 summary"><p>Sets a value from the custom addon field</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetCustomAddonFieldValue(string addonName, string fieldName, object? value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SetCustomAddonFieldValue(KnownAddons addonName, string fieldName, Type type, object? value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">fieldName</span></td>
+        <td><p>Field name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_System_String_System_Type_">ListAvailableFields(string, Type)</a> method to query all available addon fields from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type found in an addon (must be public and static). You can get this type using <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_">GetTypeFromAddon(string, string)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Value to set the field to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_System_String_System_String_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(System.String%2CSystem.String%2CSystem.String%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L560">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_System_String_System_String_System_String_System_Object_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(System.String,System.String,System.String,System.Object)">SetCustomAddonFieldValue(string, string, string, object?)</h4>
+  <div class="markdown level1 summary"><p>Sets a value from the custom addon field</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCustomAddonFieldValue(string addonName, string fieldName, string typeName, object? value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -937,7 +2856,13 @@
       <tr>
         <td><span class="xref">string</span></td>
         <td><span class="parametername">fieldName</span></td>
-        <td><p>Field name defined in the <span class="xref">Nitrocid.Kernel.Extensions.IAddon.PubliclyAvailableFields</span> dictionary to query</p>
+        <td><p>Field name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_System_String_System_Type_">ListAvailableFields(string, Type)</a> method to query all available addon fields from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
 </td>
       </tr>
       <tr>
@@ -950,19 +2875,71 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_System_String_System_String_System_Type_System_Object_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(System.String%2CSystem.String%2CSystem.Type%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L200">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L584">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_System_String_System_String_System_Type_System_Object_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(System.String,System.String,System.Type,System.Object)">SetCustomAddonFieldValue(string, string, Type, object?)</h4>
+  <div class="markdown level1 summary"><p>Sets a value from the custom addon field</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCustomAddonFieldValue(string addonName, string fieldName, Type type, object? value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">fieldName</span></td>
+        <td><p>Field name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_System_String_System_Type_">ListAvailableFields(string, Type)</a> method to query all available addon fields from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type found in an addon (must be public and static). You can get this type using <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_">GetTypeFromAddon(string, string)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Value to set the field to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String%2CSystem.String%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L433">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue*"></a>
-  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Object_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Object)">SetCustomAddonPropertyValue(KnownAddons, string, object?)</h4>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_System_Object_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String,System.Object)">SetCustomAddonPropertyValue(KnownAddons, string, string, object?)</h4>
   <div class="markdown level1 summary"><p>Sets a value from the custom addon property</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetCustomAddonPropertyValue(KnownAddons addonName, string propertyName, object? value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SetCustomAddonPropertyValue(KnownAddons addonName, string propertyName, string typeName, object? value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -983,7 +2960,13 @@
       <tr>
         <td><span class="xref">string</span></td>
         <td><span class="parametername">propertyName</span></td>
-        <td><p>Property name defined in the <span class="xref">Nitrocid.Kernel.Extensions.IAddon.PubliclyAvailableProperties</span> dictionary to query</p>
+        <td><p>Property name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_System_String_System_Type_">ListAvailableProperties(string, Type)</a> method to query all available addon properties from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
 </td>
       </tr>
       <tr>
@@ -996,19 +2979,71 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_System_String_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(System.String%2CSystem.String%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_System_Object_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons%2CSystem.String%2CSystem.Type%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L209">View Source</a>
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L457">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue*"></a>
-  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_System_String_System_String_System_Object_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(System.String,System.String,System.Object)">SetCustomAddonPropertyValue(string, string, object?)</h4>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_System_Object_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type,System.Object)">SetCustomAddonPropertyValue(KnownAddons, string, Type, object?)</h4>
   <div class="markdown level1 summary"><p>Sets a value from the custom addon property</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetCustomAddonPropertyValue(string addonName, string propertyName, object? value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SetCustomAddonPropertyValue(KnownAddons addonName, string propertyName, Type type, object? value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nitrocid.Kernel.Extensions.KnownAddons.html">KnownAddons</a></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>Property name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_System_String_System_Type_">ListAvailableProperties(string, Type)</a> method to query all available addon properties from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type found in an addon (must be public and static). You can get this type using <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_">GetTypeFromAddon(string, string)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Value to set the property to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_System_String_System_String_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(System.String%2CSystem.String%2CSystem.String%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L443">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_System_String_System_String_System_String_System_Object_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(System.String,System.String,System.String,System.Object)">SetCustomAddonPropertyValue(string, string, string, object?)</h4>
+  <div class="markdown level1 summary"><p>Sets a value from the custom addon property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCustomAddonPropertyValue(string addonName, string propertyName, string typeName, object? value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1029,7 +3064,65 @@
       <tr>
         <td><span class="xref">string</span></td>
         <td><span class="parametername">propertyName</span></td>
-        <td><p>Property name defined in the <span class="xref">Nitrocid.Kernel.Extensions.IAddon.PubliclyAvailableProperties</span> dictionary to query</p>
+        <td><p>Property name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_System_String_System_Type_">ListAvailableProperties(string, Type)</a> method to query all available addon properties from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>Full name of the type found in an addon (must be public and static)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Value to set the property to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_System_String_System_String_System_Type_System_Object_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(System.String%2CSystem.String%2CSystem.Type%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L467">View Source</a>
+  </span>
+  <a id="Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue*"></a>
+  <h4 id="Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_System_String_System_String_System_Type_System_Object_" data-uid="Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(System.String,System.String,System.Type,System.Object)">SetCustomAddonPropertyValue(string, string, Type, object?)</h4>
+  <div class="markdown level1 summary"><p>Sets a value from the custom addon property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCustomAddonPropertyValue(string addonName, string propertyName, Type type, object? value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">addonName</span></td>
+        <td><p>The addon name to query</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>Property name to query. You can use the <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_System_String_System_Type_">ListAvailableProperties(string, Type)</a> method to query all available addon properties from an addon type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type found in an addon (must be public and static). You can get this type using <a class="xref" href="Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_">GetTypeFromAddon(string, string)</a>.</p>
 </td>
       </tr>
       <tr>
@@ -1052,7 +3145,7 @@
                     <a href="https://github.com/Aptivi/NitrocidKS/new/main/apiSpec/new?filename=Nitrocid_Kernel_Extensions_InterAddonTools.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Extensions.InterAddonTools%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L33" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Aptivi/NitrocidKS/blob/main/public/Nitrocid/Kernel/Extensions/InterAddonTools.cs/#L35" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

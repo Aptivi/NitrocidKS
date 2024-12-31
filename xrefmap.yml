@@ -23057,42 +23057,78 @@ references:
   commentId: T:Nitrocid.Kernel.Extensions.InterAddonTools
   fullName: Nitrocid.Kernel.Extensions.InterAddonTools
   nameWithType: InterAddonTools
-- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons,System.String)
-  name: ExecuteCustomAddonFunction(KnownAddons, string)
-  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_Nitrocid_Kernel_Extensions_KnownAddons_System_String_
-  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons,System.String)
-  name.vb: ExecuteCustomAddonFunction(KnownAddons, String)
-  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons, string)
-  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons, String)
-  nameWithType: InterAddonTools.ExecuteCustomAddonFunction(KnownAddons, string)
-  nameWithType.vb: InterAddonTools.ExecuteCustomAddonFunction(KnownAddons, String)
-- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Object[])
-  name: ExecuteCustomAddonFunction(KnownAddons, string, params object?[]?)
-  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Object___
-  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Object[])
-  name.vb: ExecuteCustomAddonFunction(KnownAddons, String, ParamArray Object())
-  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons, string, params object?[]?)
-  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons, String, ParamArray Object())
-  nameWithType: InterAddonTools.ExecuteCustomAddonFunction(KnownAddons, string, params object?[]?)
-  nameWithType.vb: InterAddonTools.ExecuteCustomAddonFunction(KnownAddons, String, ParamArray Object())
-- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String)
-  name: ExecuteCustomAddonFunction(string, string)
-  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_System_String_System_String_
-  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String)
-  name.vb: ExecuteCustomAddonFunction(String, String)
-  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(string, string)
-  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(String, String)
-  nameWithType: InterAddonTools.ExecuteCustomAddonFunction(string, string)
-  nameWithType.vb: InterAddonTools.ExecuteCustomAddonFunction(String, String)
-- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String,System.Object[])
-  name: ExecuteCustomAddonFunction(string, string, params object?[]?)
-  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_System_String_System_String_System_Object___
-  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String,System.Object[])
-  name.vb: ExecuteCustomAddonFunction(String, String, ParamArray Object())
-  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(string, string, params object?[]?)
-  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(String, String, ParamArray Object())
-  nameWithType: InterAddonTools.ExecuteCustomAddonFunction(string, string, params object?[]?)
-  nameWithType.vb: InterAddonTools.ExecuteCustomAddonFunction(String, String, ParamArray Object())
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String)
+  name: ExecuteCustomAddonFunction(KnownAddons, string, string)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String)
+  name.vb: ExecuteCustomAddonFunction(KnownAddons, String, String)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons, string, string)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons, String, String)
+  nameWithType: InterAddonTools.ExecuteCustomAddonFunction(KnownAddons, string, string)
+  nameWithType.vb: InterAddonTools.ExecuteCustomAddonFunction(KnownAddons, String, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String,System.Object[])
+  name: ExecuteCustomAddonFunction(KnownAddons, string, string, params object?[]?)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_System_Object___
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String,System.Object[])
+  name.vb: ExecuteCustomAddonFunction(KnownAddons, String, String, ParamArray Object())
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons, string, string, params object?[]?)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons, String, String, ParamArray Object())
+  nameWithType: InterAddonTools.ExecuteCustomAddonFunction(KnownAddons, string, string, params object?[]?)
+  nameWithType.vb: InterAddonTools.ExecuteCustomAddonFunction(KnownAddons, String, String, ParamArray Object())
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type)
+  name: ExecuteCustomAddonFunction(KnownAddons, string, Type)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type)
+  name.vb: ExecuteCustomAddonFunction(KnownAddons, String, Type)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons, string, System.Type)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons, String, System.Type)
+  nameWithType: InterAddonTools.ExecuteCustomAddonFunction(KnownAddons, string, Type)
+  nameWithType.vb: InterAddonTools.ExecuteCustomAddonFunction(KnownAddons, String, Type)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type,System.Object[])
+  name: ExecuteCustomAddonFunction(KnownAddons, string, Type, params object?[]?)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_System_Object___
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type,System.Object[])
+  name.vb: ExecuteCustomAddonFunction(KnownAddons, String, Type, ParamArray Object())
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons, string, System.Type, params object?[]?)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(Nitrocid.Kernel.Extensions.KnownAddons, String, System.Type, ParamArray Object())
+  nameWithType: InterAddonTools.ExecuteCustomAddonFunction(KnownAddons, string, Type, params object?[]?)
+  nameWithType.vb: InterAddonTools.ExecuteCustomAddonFunction(KnownAddons, String, Type, ParamArray Object())
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String,System.String)
+  name: ExecuteCustomAddonFunction(string, string, string)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_System_String_System_String_System_String_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String,System.String)
+  name.vb: ExecuteCustomAddonFunction(String, String, String)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(string, string, string)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(String, String, String)
+  nameWithType: InterAddonTools.ExecuteCustomAddonFunction(string, string, string)
+  nameWithType.vb: InterAddonTools.ExecuteCustomAddonFunction(String, String, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String,System.String,System.Object[])
+  name: ExecuteCustomAddonFunction(string, string, string, params object?[]?)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_System_String_System_String_System_String_System_Object___
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String,System.String,System.Object[])
+  name.vb: ExecuteCustomAddonFunction(String, String, String, ParamArray Object())
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(string, string, string, params object?[]?)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(String, String, String, ParamArray Object())
+  nameWithType: InterAddonTools.ExecuteCustomAddonFunction(string, string, string, params object?[]?)
+  nameWithType.vb: InterAddonTools.ExecuteCustomAddonFunction(String, String, String, ParamArray Object())
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String,System.Type)
+  name: ExecuteCustomAddonFunction(string, string, Type)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_System_String_System_String_System_Type_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String,System.Type)
+  name.vb: ExecuteCustomAddonFunction(String, String, Type)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(string, string, System.Type)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(String, String, System.Type)
+  nameWithType: InterAddonTools.ExecuteCustomAddonFunction(string, string, Type)
+  nameWithType.vb: InterAddonTools.ExecuteCustomAddonFunction(String, String, Type)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String,System.Type,System.Object[])
+  name: ExecuteCustomAddonFunction(string, string, Type, params object?[]?)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_System_String_System_String_System_Type_System_Object___
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(System.String,System.String,System.Type,System.Object[])
+  name.vb: ExecuteCustomAddonFunction(String, String, Type, ParamArray Object())
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(string, string, System.Type, params object?[]?)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction(String, String, System.Type, ParamArray Object())
+  nameWithType: InterAddonTools.ExecuteCustomAddonFunction(string, string, Type, params object?[]?)
+  nameWithType.vb: InterAddonTools.ExecuteCustomAddonFunction(String, String, Type, ParamArray Object())
 - uid: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction*
   name: ExecuteCustomAddonFunction
   href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ExecuteCustomAddonFunction_
@@ -23100,24 +23136,42 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ExecuteCustomAddonFunction
   nameWithType: InterAddonTools.ExecuteCustomAddonFunction
-- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String)
-  name: GetCustomAddonFieldValue(KnownAddons, string)
-  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_
-  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String)
-  name.vb: GetCustomAddonFieldValue(KnownAddons, String)
-  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons, string)
-  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons, String)
-  nameWithType: InterAddonTools.GetCustomAddonFieldValue(KnownAddons, string)
-  nameWithType.vb: InterAddonTools.GetCustomAddonFieldValue(KnownAddons, String)
-- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(System.String,System.String)
-  name: GetCustomAddonFieldValue(string, string)
-  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_System_String_System_String_
-  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(System.String,System.String)
-  name.vb: GetCustomAddonFieldValue(String, String)
-  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(string, string)
-  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(String, String)
-  nameWithType: InterAddonTools.GetCustomAddonFieldValue(string, string)
-  nameWithType.vb: InterAddonTools.GetCustomAddonFieldValue(String, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String)
+  name: GetCustomAddonFieldValue(KnownAddons, string, string)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String)
+  name.vb: GetCustomAddonFieldValue(KnownAddons, String, String)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons, string, string)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons, String, String)
+  nameWithType: InterAddonTools.GetCustomAddonFieldValue(KnownAddons, string, string)
+  nameWithType.vb: InterAddonTools.GetCustomAddonFieldValue(KnownAddons, String, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type)
+  name: GetCustomAddonFieldValue(KnownAddons, string, Type)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type)
+  name.vb: GetCustomAddonFieldValue(KnownAddons, String, Type)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons, string, System.Type)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons, String, System.Type)
+  nameWithType: InterAddonTools.GetCustomAddonFieldValue(KnownAddons, string, Type)
+  nameWithType.vb: InterAddonTools.GetCustomAddonFieldValue(KnownAddons, String, Type)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(System.String,System.String,System.String)
+  name: GetCustomAddonFieldValue(string, string, string)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_System_String_System_String_System_String_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(System.String,System.String,System.String)
+  name.vb: GetCustomAddonFieldValue(String, String, String)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(string, string, string)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(String, String, String)
+  nameWithType: InterAddonTools.GetCustomAddonFieldValue(string, string, string)
+  nameWithType.vb: InterAddonTools.GetCustomAddonFieldValue(String, String, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(System.String,System.String,System.Type)
+  name: GetCustomAddonFieldValue(string, string, Type)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_System_String_System_String_System_Type_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(System.String,System.String,System.Type)
+  name.vb: GetCustomAddonFieldValue(String, String, Type)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(string, string, System.Type)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue(String, String, System.Type)
+  nameWithType: InterAddonTools.GetCustomAddonFieldValue(string, string, Type)
+  nameWithType.vb: InterAddonTools.GetCustomAddonFieldValue(String, String, Type)
 - uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue*
   name: GetCustomAddonFieldValue
   href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonFieldValue_
@@ -23125,24 +23179,42 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonFieldValue
   nameWithType: InterAddonTools.GetCustomAddonFieldValue
-- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String)
-  name: GetCustomAddonPropertyValue(KnownAddons, string)
-  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_
-  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String)
-  name.vb: GetCustomAddonPropertyValue(KnownAddons, String)
-  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons, string)
-  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons, String)
-  nameWithType: InterAddonTools.GetCustomAddonPropertyValue(KnownAddons, string)
-  nameWithType.vb: InterAddonTools.GetCustomAddonPropertyValue(KnownAddons, String)
-- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(System.String,System.String)
-  name: GetCustomAddonPropertyValue(string, string)
-  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_System_String_System_String_
-  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(System.String,System.String)
-  name.vb: GetCustomAddonPropertyValue(String, String)
-  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(string, string)
-  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(String, String)
-  nameWithType: InterAddonTools.GetCustomAddonPropertyValue(string, string)
-  nameWithType.vb: InterAddonTools.GetCustomAddonPropertyValue(String, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String)
+  name: GetCustomAddonPropertyValue(KnownAddons, string, string)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String)
+  name.vb: GetCustomAddonPropertyValue(KnownAddons, String, String)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons, string, string)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons, String, String)
+  nameWithType: InterAddonTools.GetCustomAddonPropertyValue(KnownAddons, string, string)
+  nameWithType.vb: InterAddonTools.GetCustomAddonPropertyValue(KnownAddons, String, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type)
+  name: GetCustomAddonPropertyValue(KnownAddons, string, Type)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type)
+  name.vb: GetCustomAddonPropertyValue(KnownAddons, String, Type)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons, string, System.Type)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons, String, System.Type)
+  nameWithType: InterAddonTools.GetCustomAddonPropertyValue(KnownAddons, string, Type)
+  nameWithType.vb: InterAddonTools.GetCustomAddonPropertyValue(KnownAddons, String, Type)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(System.String,System.String,System.String)
+  name: GetCustomAddonPropertyValue(string, string, string)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_System_String_System_String_System_String_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(System.String,System.String,System.String)
+  name.vb: GetCustomAddonPropertyValue(String, String, String)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(string, string, string)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(String, String, String)
+  nameWithType: InterAddonTools.GetCustomAddonPropertyValue(string, string, string)
+  nameWithType.vb: InterAddonTools.GetCustomAddonPropertyValue(String, String, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(System.String,System.String,System.Type)
+  name: GetCustomAddonPropertyValue(string, string, Type)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_System_String_System_String_System_Type_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(System.String,System.String,System.Type)
+  name.vb: GetCustomAddonPropertyValue(String, String, Type)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(string, string, System.Type)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue(String, String, System.Type)
+  nameWithType: InterAddonTools.GetCustomAddonPropertyValue(string, string, Type)
+  nameWithType.vb: InterAddonTools.GetCustomAddonPropertyValue(String, String, Type)
 - uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue*
   name: GetCustomAddonPropertyValue
   href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetCustomAddonPropertyValue_
@@ -23150,15 +23222,42 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetCustomAddonPropertyValue
   nameWithType: InterAddonTools.GetCustomAddonPropertyValue
-- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(System.String,System.String)
-  name: GetFunctionParameters(string, string)
-  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetFunctionParameters_System_String_System_String_
-  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(System.String,System.String)
-  name.vb: GetFunctionParameters(String, String)
-  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(string, string)
-  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(String, String)
-  nameWithType: InterAddonTools.GetFunctionParameters(string, string)
-  nameWithType.vb: InterAddonTools.GetFunctionParameters(String, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String)
+  name: GetFunctionParameters(KnownAddons, string, string)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetFunctionParameters_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String)
+  name.vb: GetFunctionParameters(KnownAddons, String, String)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(Nitrocid.Kernel.Extensions.KnownAddons, string, string)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(Nitrocid.Kernel.Extensions.KnownAddons, String, String)
+  nameWithType: InterAddonTools.GetFunctionParameters(KnownAddons, string, string)
+  nameWithType.vb: InterAddonTools.GetFunctionParameters(KnownAddons, String, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type)
+  name: GetFunctionParameters(KnownAddons, string, Type)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetFunctionParameters_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type)
+  name.vb: GetFunctionParameters(KnownAddons, String, Type)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(Nitrocid.Kernel.Extensions.KnownAddons, string, System.Type)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(Nitrocid.Kernel.Extensions.KnownAddons, String, System.Type)
+  nameWithType: InterAddonTools.GetFunctionParameters(KnownAddons, string, Type)
+  nameWithType.vb: InterAddonTools.GetFunctionParameters(KnownAddons, String, Type)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(System.String,System.String,System.String)
+  name: GetFunctionParameters(string, string, string)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetFunctionParameters_System_String_System_String_System_String_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(System.String,System.String,System.String)
+  name.vb: GetFunctionParameters(String, String, String)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(string, string, string)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(String, String, String)
+  nameWithType: InterAddonTools.GetFunctionParameters(string, string, string)
+  nameWithType.vb: InterAddonTools.GetFunctionParameters(String, String, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(System.String,System.String,System.Type)
+  name: GetFunctionParameters(string, string, Type)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetFunctionParameters_System_String_System_String_System_Type_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(System.String,System.String,System.Type)
+  name.vb: GetFunctionParameters(String, String, Type)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(string, string, System.Type)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters(String, String, System.Type)
+  nameWithType: InterAddonTools.GetFunctionParameters(string, string, Type)
+  nameWithType.vb: InterAddonTools.GetFunctionParameters(String, String, Type)
 - uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters*
   name: GetFunctionParameters
   href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetFunctionParameters_
@@ -23166,15 +23265,42 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetFunctionParameters
   nameWithType: InterAddonTools.GetFunctionParameters
-- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(System.String,System.String)
-  name: GetSetPropertyParameters(string, string)
-  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_System_String_System_String_
-  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(System.String,System.String)
-  name.vb: GetSetPropertyParameters(String, String)
-  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(string, string)
-  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(String, String)
-  nameWithType: InterAddonTools.GetSetPropertyParameters(string, string)
-  nameWithType.vb: InterAddonTools.GetSetPropertyParameters(String, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String)
+  name: GetSetPropertyParameters(KnownAddons, string, string)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String)
+  name.vb: GetSetPropertyParameters(KnownAddons, String, String)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(Nitrocid.Kernel.Extensions.KnownAddons, string, string)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(Nitrocid.Kernel.Extensions.KnownAddons, String, String)
+  nameWithType: InterAddonTools.GetSetPropertyParameters(KnownAddons, string, string)
+  nameWithType.vb: InterAddonTools.GetSetPropertyParameters(KnownAddons, String, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type)
+  name: GetSetPropertyParameters(KnownAddons, string, Type)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type)
+  name.vb: GetSetPropertyParameters(KnownAddons, String, Type)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(Nitrocid.Kernel.Extensions.KnownAddons, string, System.Type)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(Nitrocid.Kernel.Extensions.KnownAddons, String, System.Type)
+  nameWithType: InterAddonTools.GetSetPropertyParameters(KnownAddons, string, Type)
+  nameWithType.vb: InterAddonTools.GetSetPropertyParameters(KnownAddons, String, Type)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(System.String,System.String,System.String)
+  name: GetSetPropertyParameters(string, string, string)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_System_String_System_String_System_String_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(System.String,System.String,System.String)
+  name.vb: GetSetPropertyParameters(String, String, String)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(string, string, string)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(String, String, String)
+  nameWithType: InterAddonTools.GetSetPropertyParameters(string, string, string)
+  nameWithType.vb: InterAddonTools.GetSetPropertyParameters(String, String, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(System.String,System.String,System.Type)
+  name: GetSetPropertyParameters(string, string, Type)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_System_String_System_String_System_Type_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(System.String,System.String,System.Type)
+  name.vb: GetSetPropertyParameters(String, String, Type)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(string, string, System.Type)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters(String, String, System.Type)
+  nameWithType: InterAddonTools.GetSetPropertyParameters(string, string, Type)
+  nameWithType.vb: InterAddonTools.GetSetPropertyParameters(String, String, Type)
 - uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters*
   name: GetSetPropertyParameters
   href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetSetPropertyParameters_
@@ -23182,15 +23308,64 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetSetPropertyParameters
   nameWithType: InterAddonTools.GetSetPropertyParameters
-- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(System.String)
-  name: ListAvailableFields(string)
-  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_System_String_
-  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(System.String)
-  name.vb: ListAvailableFields(String)
-  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(string)
-  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(String)
-  nameWithType: InterAddonTools.ListAvailableFields(string)
-  nameWithType.vb: InterAddonTools.ListAvailableFields(String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetTypeFromAddon(Nitrocid.Kernel.Extensions.KnownAddons,System.String)
+  name: GetTypeFromAddon(KnownAddons, string)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_Nitrocid_Kernel_Extensions_KnownAddons_System_String_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetTypeFromAddon(Nitrocid.Kernel.Extensions.KnownAddons,System.String)
+  name.vb: GetTypeFromAddon(KnownAddons, String)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetTypeFromAddon(Nitrocid.Kernel.Extensions.KnownAddons, string)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetTypeFromAddon(Nitrocid.Kernel.Extensions.KnownAddons, String)
+  nameWithType: InterAddonTools.GetTypeFromAddon(KnownAddons, string)
+  nameWithType.vb: InterAddonTools.GetTypeFromAddon(KnownAddons, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetTypeFromAddon(System.String,System.String)
+  name: GetTypeFromAddon(string, string)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_System_String_System_String_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.GetTypeFromAddon(System.String,System.String)
+  name.vb: GetTypeFromAddon(String, String)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetTypeFromAddon(string, string)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.GetTypeFromAddon(String, String)
+  nameWithType: InterAddonTools.GetTypeFromAddon(string, string)
+  nameWithType.vb: InterAddonTools.GetTypeFromAddon(String, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.GetTypeFromAddon*
+  name: GetTypeFromAddon
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_GetTypeFromAddon_
+  commentId: Overload:Nitrocid.Kernel.Extensions.InterAddonTools.GetTypeFromAddon
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.GetTypeFromAddon
+  nameWithType: InterAddonTools.GetTypeFromAddon
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(Nitrocid.Kernel.Extensions.KnownAddons,System.String)
+  name: ListAvailableFields(KnownAddons, string)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_Nitrocid_Kernel_Extensions_KnownAddons_System_String_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(Nitrocid.Kernel.Extensions.KnownAddons,System.String)
+  name.vb: ListAvailableFields(KnownAddons, String)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(Nitrocid.Kernel.Extensions.KnownAddons, string)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(Nitrocid.Kernel.Extensions.KnownAddons, String)
+  nameWithType: InterAddonTools.ListAvailableFields(KnownAddons, string)
+  nameWithType.vb: InterAddonTools.ListAvailableFields(KnownAddons, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(Nitrocid.Kernel.Extensions.KnownAddons,System.Type)
+  name: ListAvailableFields(KnownAddons, Type)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_Nitrocid_Kernel_Extensions_KnownAddons_System_Type_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(Nitrocid.Kernel.Extensions.KnownAddons,System.Type)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(Nitrocid.Kernel.Extensions.KnownAddons, System.Type)
+  nameWithType: InterAddonTools.ListAvailableFields(KnownAddons, Type)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(System.String,System.String)
+  name: ListAvailableFields(string, string)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_System_String_System_String_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(System.String,System.String)
+  name.vb: ListAvailableFields(String, String)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(string, string)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(String, String)
+  nameWithType: InterAddonTools.ListAvailableFields(string, string)
+  nameWithType.vb: InterAddonTools.ListAvailableFields(String, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(System.String,System.Type)
+  name: ListAvailableFields(string, Type)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_System_String_System_Type_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(System.String,System.Type)
+  name.vb: ListAvailableFields(String, Type)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(string, System.Type)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields(String, System.Type)
+  nameWithType: InterAddonTools.ListAvailableFields(string, Type)
+  nameWithType.vb: InterAddonTools.ListAvailableFields(String, Type)
 - uid: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields*
   name: ListAvailableFields
   href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFields_
@@ -23198,15 +23373,39 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFields
   nameWithType: InterAddonTools.ListAvailableFields
-- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(System.String)
-  name: ListAvailableFunctions(string)
-  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_System_String_
-  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(System.String)
-  name.vb: ListAvailableFunctions(String)
-  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(string)
-  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(String)
-  nameWithType: InterAddonTools.ListAvailableFunctions(string)
-  nameWithType.vb: InterAddonTools.ListAvailableFunctions(String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(Nitrocid.Kernel.Extensions.KnownAddons,System.String)
+  name: ListAvailableFunctions(KnownAddons, string)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_Nitrocid_Kernel_Extensions_KnownAddons_System_String_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(Nitrocid.Kernel.Extensions.KnownAddons,System.String)
+  name.vb: ListAvailableFunctions(KnownAddons, String)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(Nitrocid.Kernel.Extensions.KnownAddons, string)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(Nitrocid.Kernel.Extensions.KnownAddons, String)
+  nameWithType: InterAddonTools.ListAvailableFunctions(KnownAddons, string)
+  nameWithType.vb: InterAddonTools.ListAvailableFunctions(KnownAddons, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(Nitrocid.Kernel.Extensions.KnownAddons,System.Type)
+  name: ListAvailableFunctions(KnownAddons, Type)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_Nitrocid_Kernel_Extensions_KnownAddons_System_Type_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(Nitrocid.Kernel.Extensions.KnownAddons,System.Type)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(Nitrocid.Kernel.Extensions.KnownAddons, System.Type)
+  nameWithType: InterAddonTools.ListAvailableFunctions(KnownAddons, Type)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(System.String,System.String)
+  name: ListAvailableFunctions(string, string)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_System_String_System_String_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(System.String,System.String)
+  name.vb: ListAvailableFunctions(String, String)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(string, string)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(String, String)
+  nameWithType: InterAddonTools.ListAvailableFunctions(string, string)
+  nameWithType.vb: InterAddonTools.ListAvailableFunctions(String, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(System.String,System.Type)
+  name: ListAvailableFunctions(string, Type)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_System_String_System_Type_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(System.String,System.Type)
+  name.vb: ListAvailableFunctions(String, Type)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(string, System.Type)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions(String, System.Type)
+  nameWithType: InterAddonTools.ListAvailableFunctions(string, Type)
+  nameWithType.vb: InterAddonTools.ListAvailableFunctions(String, Type)
 - uid: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions*
   name: ListAvailableFunctions
   href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableFunctions_
@@ -23214,15 +23413,39 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableFunctions
   nameWithType: InterAddonTools.ListAvailableFunctions
-- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(System.String)
-  name: ListAvailableProperties(string)
-  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_System_String_
-  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(System.String)
-  name.vb: ListAvailableProperties(String)
-  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(string)
-  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(String)
-  nameWithType: InterAddonTools.ListAvailableProperties(string)
-  nameWithType.vb: InterAddonTools.ListAvailableProperties(String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(Nitrocid.Kernel.Extensions.KnownAddons,System.String)
+  name: ListAvailableProperties(KnownAddons, string)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_Nitrocid_Kernel_Extensions_KnownAddons_System_String_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(Nitrocid.Kernel.Extensions.KnownAddons,System.String)
+  name.vb: ListAvailableProperties(KnownAddons, String)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(Nitrocid.Kernel.Extensions.KnownAddons, string)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(Nitrocid.Kernel.Extensions.KnownAddons, String)
+  nameWithType: InterAddonTools.ListAvailableProperties(KnownAddons, string)
+  nameWithType.vb: InterAddonTools.ListAvailableProperties(KnownAddons, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(Nitrocid.Kernel.Extensions.KnownAddons,System.Type)
+  name: ListAvailableProperties(KnownAddons, Type)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_Nitrocid_Kernel_Extensions_KnownAddons_System_Type_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(Nitrocid.Kernel.Extensions.KnownAddons,System.Type)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(Nitrocid.Kernel.Extensions.KnownAddons, System.Type)
+  nameWithType: InterAddonTools.ListAvailableProperties(KnownAddons, Type)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(System.String,System.String)
+  name: ListAvailableProperties(string, string)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_System_String_System_String_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(System.String,System.String)
+  name.vb: ListAvailableProperties(String, String)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(string, string)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(String, String)
+  nameWithType: InterAddonTools.ListAvailableProperties(string, string)
+  nameWithType.vb: InterAddonTools.ListAvailableProperties(String, String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(System.String,System.Type)
+  name: ListAvailableProperties(string, Type)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_System_String_System_Type_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(System.String,System.Type)
+  name.vb: ListAvailableProperties(String, Type)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(string, System.Type)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties(String, System.Type)
+  nameWithType: InterAddonTools.ListAvailableProperties(string, Type)
+  nameWithType.vb: InterAddonTools.ListAvailableProperties(String, Type)
 - uid: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties*
   name: ListAvailableProperties
   href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableProperties_
@@ -23230,24 +23453,64 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableProperties
   nameWithType: InterAddonTools.ListAvailableProperties
-- uid: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Object)
-  name: SetCustomAddonFieldValue(KnownAddons, string, object?)
-  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Object_
-  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Object)
-  name.vb: SetCustomAddonFieldValue(KnownAddons, String, Object)
-  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons, string, object?)
-  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons, String, Object)
-  nameWithType: InterAddonTools.SetCustomAddonFieldValue(KnownAddons, string, object?)
-  nameWithType.vb: InterAddonTools.SetCustomAddonFieldValue(KnownAddons, String, Object)
-- uid: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(System.String,System.String,System.Object)
-  name: SetCustomAddonFieldValue(string, string, object?)
-  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_System_String_System_String_System_Object_
-  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(System.String,System.String,System.Object)
-  name.vb: SetCustomAddonFieldValue(String, String, Object)
-  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(string, string, object?)
-  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(String, String, Object)
-  nameWithType: InterAddonTools.SetCustomAddonFieldValue(string, string, object?)
-  nameWithType.vb: InterAddonTools.SetCustomAddonFieldValue(String, String, Object)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableTypes(Nitrocid.Kernel.Extensions.KnownAddons)
+  name: ListAvailableTypes(KnownAddons)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableTypes_Nitrocid_Kernel_Extensions_KnownAddons_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableTypes(Nitrocid.Kernel.Extensions.KnownAddons)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableTypes(Nitrocid.Kernel.Extensions.KnownAddons)
+  nameWithType: InterAddonTools.ListAvailableTypes(KnownAddons)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableTypes(System.String)
+  name: ListAvailableTypes(string)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableTypes_System_String_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableTypes(System.String)
+  name.vb: ListAvailableTypes(String)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableTypes(string)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableTypes(String)
+  nameWithType: InterAddonTools.ListAvailableTypes(string)
+  nameWithType.vb: InterAddonTools.ListAvailableTypes(String)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableTypes*
+  name: ListAvailableTypes
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_ListAvailableTypes_
+  commentId: Overload:Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableTypes
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.ListAvailableTypes
+  nameWithType: InterAddonTools.ListAvailableTypes
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String,System.Object)
+  name: SetCustomAddonFieldValue(KnownAddons, string, string, object?)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_System_Object_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String,System.Object)
+  name.vb: SetCustomAddonFieldValue(KnownAddons, String, String, Object)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons, string, string, object?)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons, String, String, Object)
+  nameWithType: InterAddonTools.SetCustomAddonFieldValue(KnownAddons, string, string, object?)
+  nameWithType.vb: InterAddonTools.SetCustomAddonFieldValue(KnownAddons, String, String, Object)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type,System.Object)
+  name: SetCustomAddonFieldValue(KnownAddons, string, Type, object?)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_System_Object_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type,System.Object)
+  name.vb: SetCustomAddonFieldValue(KnownAddons, String, Type, Object)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons, string, System.Type, object?)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(Nitrocid.Kernel.Extensions.KnownAddons, String, System.Type, Object)
+  nameWithType: InterAddonTools.SetCustomAddonFieldValue(KnownAddons, string, Type, object?)
+  nameWithType.vb: InterAddonTools.SetCustomAddonFieldValue(KnownAddons, String, Type, Object)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(System.String,System.String,System.String,System.Object)
+  name: SetCustomAddonFieldValue(string, string, string, object?)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_System_String_System_String_System_String_System_Object_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(System.String,System.String,System.String,System.Object)
+  name.vb: SetCustomAddonFieldValue(String, String, String, Object)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(string, string, string, object?)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(String, String, String, Object)
+  nameWithType: InterAddonTools.SetCustomAddonFieldValue(string, string, string, object?)
+  nameWithType.vb: InterAddonTools.SetCustomAddonFieldValue(String, String, String, Object)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(System.String,System.String,System.Type,System.Object)
+  name: SetCustomAddonFieldValue(string, string, Type, object?)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_System_String_System_String_System_Type_System_Object_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(System.String,System.String,System.Type,System.Object)
+  name.vb: SetCustomAddonFieldValue(String, String, Type, Object)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(string, string, System.Type, object?)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue(String, String, System.Type, Object)
+  nameWithType: InterAddonTools.SetCustomAddonFieldValue(string, string, Type, object?)
+  nameWithType.vb: InterAddonTools.SetCustomAddonFieldValue(String, String, Type, Object)
 - uid: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue*
   name: SetCustomAddonFieldValue
   href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonFieldValue_
@@ -23255,24 +23518,42 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonFieldValue
   nameWithType: InterAddonTools.SetCustomAddonFieldValue
-- uid: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Object)
-  name: SetCustomAddonPropertyValue(KnownAddons, string, object?)
-  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Object_
-  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Object)
-  name.vb: SetCustomAddonPropertyValue(KnownAddons, String, Object)
-  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons, string, object?)
-  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons, String, Object)
-  nameWithType: InterAddonTools.SetCustomAddonPropertyValue(KnownAddons, string, object?)
-  nameWithType.vb: InterAddonTools.SetCustomAddonPropertyValue(KnownAddons, String, Object)
-- uid: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(System.String,System.String,System.Object)
-  name: SetCustomAddonPropertyValue(string, string, object?)
-  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_System_String_System_String_System_Object_
-  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(System.String,System.String,System.Object)
-  name.vb: SetCustomAddonPropertyValue(String, String, Object)
-  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(string, string, object?)
-  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(String, String, Object)
-  nameWithType: InterAddonTools.SetCustomAddonPropertyValue(string, string, object?)
-  nameWithType.vb: InterAddonTools.SetCustomAddonPropertyValue(String, String, Object)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String,System.Object)
+  name: SetCustomAddonPropertyValue(KnownAddons, string, string, object?)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_String_System_Object_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.String,System.Object)
+  name.vb: SetCustomAddonPropertyValue(KnownAddons, String, String, Object)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons, string, string, object?)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons, String, String, Object)
+  nameWithType: InterAddonTools.SetCustomAddonPropertyValue(KnownAddons, string, string, object?)
+  nameWithType.vb: InterAddonTools.SetCustomAddonPropertyValue(KnownAddons, String, String, Object)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type,System.Object)
+  name: SetCustomAddonPropertyValue(KnownAddons, string, Type, object?)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_Nitrocid_Kernel_Extensions_KnownAddons_System_String_System_Type_System_Object_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons,System.String,System.Type,System.Object)
+  name.vb: SetCustomAddonPropertyValue(KnownAddons, String, Type, Object)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons, string, System.Type, object?)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(Nitrocid.Kernel.Extensions.KnownAddons, String, System.Type, Object)
+  nameWithType: InterAddonTools.SetCustomAddonPropertyValue(KnownAddons, string, Type, object?)
+  nameWithType.vb: InterAddonTools.SetCustomAddonPropertyValue(KnownAddons, String, Type, Object)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(System.String,System.String,System.String,System.Object)
+  name: SetCustomAddonPropertyValue(string, string, string, object?)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_System_String_System_String_System_String_System_Object_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(System.String,System.String,System.String,System.Object)
+  name.vb: SetCustomAddonPropertyValue(String, String, String, Object)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(string, string, string, object?)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(String, String, String, Object)
+  nameWithType: InterAddonTools.SetCustomAddonPropertyValue(string, string, string, object?)
+  nameWithType.vb: InterAddonTools.SetCustomAddonPropertyValue(String, String, String, Object)
+- uid: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(System.String,System.String,System.Type,System.Object)
+  name: SetCustomAddonPropertyValue(string, string, Type, object?)
+  href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_System_String_System_String_System_Type_System_Object_
+  commentId: M:Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(System.String,System.String,System.Type,System.Object)
+  name.vb: SetCustomAddonPropertyValue(String, String, Type, Object)
+  fullName: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(string, string, System.Type, object?)
+  fullName.vb: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue(String, String, System.Type, Object)
+  nameWithType: InterAddonTools.SetCustomAddonPropertyValue(string, string, Type, object?)
+  nameWithType.vb: InterAddonTools.SetCustomAddonPropertyValue(String, String, Type, Object)
 - uid: Nitrocid.Kernel.Extensions.InterAddonTools.SetCustomAddonPropertyValue*
   name: SetCustomAddonPropertyValue
   href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html#Nitrocid_Kernel_Extensions_InterAddonTools_SetCustomAddonPropertyValue_
