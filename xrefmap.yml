@@ -30179,22 +30179,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Reflection.FieldManager.GetField
   nameWithType: FieldManager.GetField
-- uid: Nitrocid.Misc.Reflection.FieldManager.GetFieldGeneral(System.String)
-  name: GetFieldGeneral(string)
-  href: api/Nitrocid.Misc.Reflection.FieldManager.html#Nitrocid_Misc_Reflection_FieldManager_GetFieldGeneral_System_String_
-  commentId: M:Nitrocid.Misc.Reflection.FieldManager.GetFieldGeneral(System.String)
-  name.vb: GetFieldGeneral(String)
-  fullName: Nitrocid.Misc.Reflection.FieldManager.GetFieldGeneral(string)
-  fullName.vb: Nitrocid.Misc.Reflection.FieldManager.GetFieldGeneral(String)
-  nameWithType: FieldManager.GetFieldGeneral(string)
-  nameWithType.vb: FieldManager.GetFieldGeneral(String)
-- uid: Nitrocid.Misc.Reflection.FieldManager.GetFieldGeneral*
-  name: GetFieldGeneral
-  href: api/Nitrocid.Misc.Reflection.FieldManager.html#Nitrocid_Misc_Reflection_FieldManager_GetFieldGeneral_
-  commentId: Overload:Nitrocid.Misc.Reflection.FieldManager.GetFieldGeneral
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Reflection.FieldManager.GetFieldGeneral
-  nameWithType: FieldManager.GetFieldGeneral
+- uid: Nitrocid.Misc.Reflection.FieldManager.GetFieldValue(System.Reflection.FieldInfo)
+  name: GetFieldValue(FieldInfo?)
+  href: api/Nitrocid.Misc.Reflection.FieldManager.html#Nitrocid_Misc_Reflection_FieldManager_GetFieldValue_System_Reflection_FieldInfo_
+  commentId: M:Nitrocid.Misc.Reflection.FieldManager.GetFieldValue(System.Reflection.FieldInfo)
+  name.vb: GetFieldValue(FieldInfo)
+  fullName: Nitrocid.Misc.Reflection.FieldManager.GetFieldValue(System.Reflection.FieldInfo?)
+  fullName.vb: Nitrocid.Misc.Reflection.FieldManager.GetFieldValue(System.Reflection.FieldInfo)
+  nameWithType: FieldManager.GetFieldValue(FieldInfo?)
+  nameWithType.vb: FieldManager.GetFieldValue(FieldInfo)
 - uid: Nitrocid.Misc.Reflection.FieldManager.GetFieldValue(System.String)
   name: GetFieldValue(string)
   href: api/Nitrocid.Misc.Reflection.FieldManager.html#Nitrocid_Misc_Reflection_FieldManager_GetFieldValue_System_String_
@@ -30204,15 +30197,15 @@ references:
   fullName.vb: Nitrocid.Misc.Reflection.FieldManager.GetFieldValue(String)
   nameWithType: FieldManager.GetFieldValue(string)
   nameWithType.vb: FieldManager.GetFieldValue(String)
-- uid: Nitrocid.Misc.Reflection.FieldManager.GetFieldValue(System.String,System.Type,System.Boolean)
-  name: GetFieldValue(string, Type?, bool)
-  href: api/Nitrocid.Misc.Reflection.FieldManager.html#Nitrocid_Misc_Reflection_FieldManager_GetFieldValue_System_String_System_Type_System_Boolean_
-  commentId: M:Nitrocid.Misc.Reflection.FieldManager.GetFieldValue(System.String,System.Type,System.Boolean)
-  name.vb: GetFieldValue(String, Type, Boolean)
-  fullName: Nitrocid.Misc.Reflection.FieldManager.GetFieldValue(string, System.Type?, bool)
-  fullName.vb: Nitrocid.Misc.Reflection.FieldManager.GetFieldValue(String, System.Type, Boolean)
-  nameWithType: FieldManager.GetFieldValue(string, Type?, bool)
-  nameWithType.vb: FieldManager.GetFieldValue(String, Type, Boolean)
+- uid: Nitrocid.Misc.Reflection.FieldManager.GetFieldValue(System.String,System.Type)
+  name: GetFieldValue(string, Type?)
+  href: api/Nitrocid.Misc.Reflection.FieldManager.html#Nitrocid_Misc_Reflection_FieldManager_GetFieldValue_System_String_System_Type_
+  commentId: M:Nitrocid.Misc.Reflection.FieldManager.GetFieldValue(System.String,System.Type)
+  name.vb: GetFieldValue(String, Type)
+  fullName: Nitrocid.Misc.Reflection.FieldManager.GetFieldValue(string, System.Type?)
+  fullName.vb: Nitrocid.Misc.Reflection.FieldManager.GetFieldValue(String, System.Type)
+  nameWithType: FieldManager.GetFieldValue(string, Type?)
+  nameWithType.vb: FieldManager.GetFieldValue(String, Type)
 - uid: Nitrocid.Misc.Reflection.FieldManager.GetFieldValue*
   name: GetFieldValue
   href: api/Nitrocid.Misc.Reflection.FieldManager.html#Nitrocid_Misc_Reflection_FieldManager_GetFieldValue_
@@ -30243,6 +30236,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Reflection.FieldManager.GetFieldValueInstanceExplicit
   nameWithType: FieldManager.GetFieldValueInstanceExplicit
+- uid: Nitrocid.Misc.Reflection.FieldManager.GetFieldValueInstance``1(``0,System.Reflection.FieldInfo)
+  name: GetFieldValueInstance<T>(T, FieldInfo?)
+  href: api/Nitrocid.Misc.Reflection.FieldManager.html#Nitrocid_Misc_Reflection_FieldManager_GetFieldValueInstance__1___0_System_Reflection_FieldInfo_
+  commentId: M:Nitrocid.Misc.Reflection.FieldManager.GetFieldValueInstance``1(``0,System.Reflection.FieldInfo)
+  name.vb: GetFieldValueInstance(Of T)(T, FieldInfo)
+  fullName: Nitrocid.Misc.Reflection.FieldManager.GetFieldValueInstance<T>(T, System.Reflection.FieldInfo?)
+  fullName.vb: Nitrocid.Misc.Reflection.FieldManager.GetFieldValueInstance(Of T)(T, System.Reflection.FieldInfo)
+  nameWithType: FieldManager.GetFieldValueInstance<T>(T, FieldInfo?)
+  nameWithType.vb: FieldManager.GetFieldValueInstance(Of T)(T, FieldInfo)
 - uid: Nitrocid.Misc.Reflection.FieldManager.GetFieldValueInstance``1(``0,System.String)
   name: GetFieldValueInstance<T>(T, string)
   href: api/Nitrocid.Misc.Reflection.FieldManager.html#Nitrocid_Misc_Reflection_FieldManager_GetFieldValueInstance__1___0_System_String_
@@ -30296,6 +30298,15 @@ references:
   fullName.vb: Nitrocid.Misc.Reflection.FieldManager.GetFields(Of T)(T, System.Type)
   nameWithType: FieldManager.GetFields<T>(T, Type)
   nameWithType.vb: FieldManager.GetFields(Of T)(T, Type)
+- uid: Nitrocid.Misc.Reflection.FieldManager.SetFieldValue(System.Reflection.FieldInfo,System.Object)
+  name: SetFieldValue(FieldInfo?, object?)
+  href: api/Nitrocid.Misc.Reflection.FieldManager.html#Nitrocid_Misc_Reflection_FieldManager_SetFieldValue_System_Reflection_FieldInfo_System_Object_
+  commentId: M:Nitrocid.Misc.Reflection.FieldManager.SetFieldValue(System.Reflection.FieldInfo,System.Object)
+  name.vb: SetFieldValue(FieldInfo, Object)
+  fullName: Nitrocid.Misc.Reflection.FieldManager.SetFieldValue(System.Reflection.FieldInfo?, object?)
+  fullName.vb: Nitrocid.Misc.Reflection.FieldManager.SetFieldValue(System.Reflection.FieldInfo, Object)
+  nameWithType: FieldManager.SetFieldValue(FieldInfo?, object?)
+  nameWithType.vb: FieldManager.SetFieldValue(FieldInfo, Object)
 - uid: Nitrocid.Misc.Reflection.FieldManager.SetFieldValue(System.String,System.Object)
   name: SetFieldValue(string, object?)
   href: api/Nitrocid.Misc.Reflection.FieldManager.html#Nitrocid_Misc_Reflection_FieldManager_SetFieldValue_System_String_System_Object_
@@ -30344,6 +30355,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Reflection.FieldManager.SetFieldValueInstanceExplicit
   nameWithType: FieldManager.SetFieldValueInstanceExplicit
+- uid: Nitrocid.Misc.Reflection.FieldManager.SetFieldValueInstance``1(``0,System.Reflection.FieldInfo,System.Object)
+  name: SetFieldValueInstance<T>(T, FieldInfo?, object?)
+  href: api/Nitrocid.Misc.Reflection.FieldManager.html#Nitrocid_Misc_Reflection_FieldManager_SetFieldValueInstance__1___0_System_Reflection_FieldInfo_System_Object_
+  commentId: M:Nitrocid.Misc.Reflection.FieldManager.SetFieldValueInstance``1(``0,System.Reflection.FieldInfo,System.Object)
+  name.vb: SetFieldValueInstance(Of T)(T, FieldInfo, Object)
+  fullName: Nitrocid.Misc.Reflection.FieldManager.SetFieldValueInstance<T>(T, System.Reflection.FieldInfo?, object?)
+  fullName.vb: Nitrocid.Misc.Reflection.FieldManager.SetFieldValueInstance(Of T)(T, System.Reflection.FieldInfo, Object)
+  nameWithType: FieldManager.SetFieldValueInstance<T>(T, FieldInfo?, object?)
+  nameWithType.vb: FieldManager.SetFieldValueInstance(Of T)(T, FieldInfo, Object)
 - uid: Nitrocid.Misc.Reflection.FieldManager.SetFieldValueInstance``1(``0,System.String,System.Object)
   name: SetFieldValueInstance<T>(T, string, object?)
   href: api/Nitrocid.Misc.Reflection.FieldManager.html#Nitrocid_Misc_Reflection_FieldManager_SetFieldValueInstance__1___0_System_String_System_Object_
@@ -30772,23 +30792,32 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Reflection.MethodManager.GetMethod
   nameWithType: MethodManager.GetMethod
+- uid: Nitrocid.Misc.Reflection.MethodManager.InvokeMethod(System.Reflection.MethodBase,System.Object,System.Object[])
+  name: InvokeMethod(MethodBase?, object, params object?[]?)
+  href: api/Nitrocid.Misc.Reflection.MethodManager.html#Nitrocid_Misc_Reflection_MethodManager_InvokeMethod_System_Reflection_MethodBase_System_Object_System_Object___
+  commentId: M:Nitrocid.Misc.Reflection.MethodManager.InvokeMethod(System.Reflection.MethodBase,System.Object,System.Object[])
+  name.vb: InvokeMethod(MethodBase, Object, ParamArray Object())
+  fullName: Nitrocid.Misc.Reflection.MethodManager.InvokeMethod(System.Reflection.MethodBase?, object, params object?[]?)
+  fullName.vb: Nitrocid.Misc.Reflection.MethodManager.InvokeMethod(System.Reflection.MethodBase, Object, ParamArray Object())
+  nameWithType: MethodManager.InvokeMethod(MethodBase?, object, params object?[]?)
+  nameWithType.vb: MethodManager.InvokeMethod(MethodBase, Object, ParamArray Object())
 - uid: Nitrocid.Misc.Reflection.MethodManager.InvokeMethod(System.String,System.Object,System.Object[])
-  name: InvokeMethod(string, object, params object[])
+  name: InvokeMethod(string, object, params object?[]?)
   href: api/Nitrocid.Misc.Reflection.MethodManager.html#Nitrocid_Misc_Reflection_MethodManager_InvokeMethod_System_String_System_Object_System_Object___
   commentId: M:Nitrocid.Misc.Reflection.MethodManager.InvokeMethod(System.String,System.Object,System.Object[])
   name.vb: InvokeMethod(String, Object, ParamArray Object())
-  fullName: Nitrocid.Misc.Reflection.MethodManager.InvokeMethod(string, object, params object[])
+  fullName: Nitrocid.Misc.Reflection.MethodManager.InvokeMethod(string, object, params object?[]?)
   fullName.vb: Nitrocid.Misc.Reflection.MethodManager.InvokeMethod(String, Object, ParamArray Object())
-  nameWithType: MethodManager.InvokeMethod(string, object, params object[])
+  nameWithType: MethodManager.InvokeMethod(string, object, params object?[]?)
   nameWithType.vb: MethodManager.InvokeMethod(String, Object, ParamArray Object())
 - uid: Nitrocid.Misc.Reflection.MethodManager.InvokeMethod(System.String,System.Object,System.Type,System.Object[])
-  name: InvokeMethod(string, object, Type, params object[])
+  name: InvokeMethod(string, object, Type, params object?[]?)
   href: api/Nitrocid.Misc.Reflection.MethodManager.html#Nitrocid_Misc_Reflection_MethodManager_InvokeMethod_System_String_System_Object_System_Type_System_Object___
   commentId: M:Nitrocid.Misc.Reflection.MethodManager.InvokeMethod(System.String,System.Object,System.Type,System.Object[])
   name.vb: InvokeMethod(String, Object, Type, ParamArray Object())
-  fullName: Nitrocid.Misc.Reflection.MethodManager.InvokeMethod(string, object, System.Type, params object[])
+  fullName: Nitrocid.Misc.Reflection.MethodManager.InvokeMethod(string, object, System.Type, params object?[]?)
   fullName.vb: Nitrocid.Misc.Reflection.MethodManager.InvokeMethod(String, Object, System.Type, ParamArray Object())
-  nameWithType: MethodManager.InvokeMethod(string, object, Type, params object[])
+  nameWithType: MethodManager.InvokeMethod(string, object, Type, params object?[]?)
   nameWithType.vb: MethodManager.InvokeMethod(String, Object, Type, ParamArray Object())
 - uid: Nitrocid.Misc.Reflection.MethodManager.InvokeMethod*
   name: InvokeMethod
@@ -30797,23 +30826,32 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Reflection.MethodManager.InvokeMethod
   nameWithType: MethodManager.InvokeMethod
+- uid: Nitrocid.Misc.Reflection.MethodManager.InvokeMethodStatic(System.Reflection.MethodBase,System.Object[])
+  name: InvokeMethodStatic(MethodBase?, params object?[]?)
+  href: api/Nitrocid.Misc.Reflection.MethodManager.html#Nitrocid_Misc_Reflection_MethodManager_InvokeMethodStatic_System_Reflection_MethodBase_System_Object___
+  commentId: M:Nitrocid.Misc.Reflection.MethodManager.InvokeMethodStatic(System.Reflection.MethodBase,System.Object[])
+  name.vb: InvokeMethodStatic(MethodBase, ParamArray Object())
+  fullName: Nitrocid.Misc.Reflection.MethodManager.InvokeMethodStatic(System.Reflection.MethodBase?, params object?[]?)
+  fullName.vb: Nitrocid.Misc.Reflection.MethodManager.InvokeMethodStatic(System.Reflection.MethodBase, ParamArray Object())
+  nameWithType: MethodManager.InvokeMethodStatic(MethodBase?, params object?[]?)
+  nameWithType.vb: MethodManager.InvokeMethodStatic(MethodBase, ParamArray Object())
 - uid: Nitrocid.Misc.Reflection.MethodManager.InvokeMethodStatic(System.String,System.Object[])
-  name: InvokeMethodStatic(string, params object[])
+  name: InvokeMethodStatic(string, params object?[]?)
   href: api/Nitrocid.Misc.Reflection.MethodManager.html#Nitrocid_Misc_Reflection_MethodManager_InvokeMethodStatic_System_String_System_Object___
   commentId: M:Nitrocid.Misc.Reflection.MethodManager.InvokeMethodStatic(System.String,System.Object[])
   name.vb: InvokeMethodStatic(String, ParamArray Object())
-  fullName: Nitrocid.Misc.Reflection.MethodManager.InvokeMethodStatic(string, params object[])
+  fullName: Nitrocid.Misc.Reflection.MethodManager.InvokeMethodStatic(string, params object?[]?)
   fullName.vb: Nitrocid.Misc.Reflection.MethodManager.InvokeMethodStatic(String, ParamArray Object())
-  nameWithType: MethodManager.InvokeMethodStatic(string, params object[])
+  nameWithType: MethodManager.InvokeMethodStatic(string, params object?[]?)
   nameWithType.vb: MethodManager.InvokeMethodStatic(String, ParamArray Object())
 - uid: Nitrocid.Misc.Reflection.MethodManager.InvokeMethodStatic(System.String,System.Type,System.Object[])
-  name: InvokeMethodStatic(string, Type, params object[])
+  name: InvokeMethodStatic(string, Type, params object?[]?)
   href: api/Nitrocid.Misc.Reflection.MethodManager.html#Nitrocid_Misc_Reflection_MethodManager_InvokeMethodStatic_System_String_System_Type_System_Object___
   commentId: M:Nitrocid.Misc.Reflection.MethodManager.InvokeMethodStatic(System.String,System.Type,System.Object[])
   name.vb: InvokeMethodStatic(String, Type, ParamArray Object())
-  fullName: Nitrocid.Misc.Reflection.MethodManager.InvokeMethodStatic(string, System.Type, params object[])
+  fullName: Nitrocid.Misc.Reflection.MethodManager.InvokeMethodStatic(string, System.Type, params object?[]?)
   fullName.vb: Nitrocid.Misc.Reflection.MethodManager.InvokeMethodStatic(String, System.Type, ParamArray Object())
-  nameWithType: MethodManager.InvokeMethodStatic(string, Type, params object[])
+  nameWithType: MethodManager.InvokeMethodStatic(string, Type, params object?[]?)
   nameWithType.vb: MethodManager.InvokeMethodStatic(String, Type, ParamArray Object())
 - uid: Nitrocid.Misc.Reflection.MethodManager.InvokeMethodStatic*
   name: InvokeMethodStatic
@@ -30948,22 +30986,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Reflection.PropertyManager.GetProperty
   nameWithType: PropertyManager.GetProperty
-- uid: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyGeneral(System.String)
-  name: GetPropertyGeneral(string)
-  href: api/Nitrocid.Misc.Reflection.PropertyManager.html#Nitrocid_Misc_Reflection_PropertyManager_GetPropertyGeneral_System_String_
-  commentId: M:Nitrocid.Misc.Reflection.PropertyManager.GetPropertyGeneral(System.String)
-  name.vb: GetPropertyGeneral(String)
-  fullName: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyGeneral(string)
-  fullName.vb: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyGeneral(String)
-  nameWithType: PropertyManager.GetPropertyGeneral(string)
-  nameWithType.vb: PropertyManager.GetPropertyGeneral(String)
-- uid: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyGeneral*
-  name: GetPropertyGeneral
-  href: api/Nitrocid.Misc.Reflection.PropertyManager.html#Nitrocid_Misc_Reflection_PropertyManager_GetPropertyGeneral_
-  commentId: Overload:Nitrocid.Misc.Reflection.PropertyManager.GetPropertyGeneral
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyGeneral
-  nameWithType: PropertyManager.GetPropertyGeneral
+- uid: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyValue(System.Reflection.PropertyInfo)
+  name: GetPropertyValue(PropertyInfo?)
+  href: api/Nitrocid.Misc.Reflection.PropertyManager.html#Nitrocid_Misc_Reflection_PropertyManager_GetPropertyValue_System_Reflection_PropertyInfo_
+  commentId: M:Nitrocid.Misc.Reflection.PropertyManager.GetPropertyValue(System.Reflection.PropertyInfo)
+  name.vb: GetPropertyValue(PropertyInfo)
+  fullName: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyValue(System.Reflection.PropertyInfo?)
+  fullName.vb: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyValue(System.Reflection.PropertyInfo)
+  nameWithType: PropertyManager.GetPropertyValue(PropertyInfo?)
+  nameWithType.vb: PropertyManager.GetPropertyValue(PropertyInfo)
 - uid: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyValue(System.String)
   name: GetPropertyValue(string)
   href: api/Nitrocid.Misc.Reflection.PropertyManager.html#Nitrocid_Misc_Reflection_PropertyManager_GetPropertyValue_System_String_
@@ -30973,15 +31004,15 @@ references:
   fullName.vb: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyValue(String)
   nameWithType: PropertyManager.GetPropertyValue(string)
   nameWithType.vb: PropertyManager.GetPropertyValue(String)
-- uid: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyValue(System.String,System.Type,System.Boolean)
-  name: GetPropertyValue(string, Type?, bool)
-  href: api/Nitrocid.Misc.Reflection.PropertyManager.html#Nitrocid_Misc_Reflection_PropertyManager_GetPropertyValue_System_String_System_Type_System_Boolean_
-  commentId: M:Nitrocid.Misc.Reflection.PropertyManager.GetPropertyValue(System.String,System.Type,System.Boolean)
-  name.vb: GetPropertyValue(String, Type, Boolean)
-  fullName: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyValue(string, System.Type?, bool)
-  fullName.vb: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyValue(String, System.Type, Boolean)
-  nameWithType: PropertyManager.GetPropertyValue(string, Type?, bool)
-  nameWithType.vb: PropertyManager.GetPropertyValue(String, Type, Boolean)
+- uid: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyValue(System.String,System.Type)
+  name: GetPropertyValue(string, Type?)
+  href: api/Nitrocid.Misc.Reflection.PropertyManager.html#Nitrocid_Misc_Reflection_PropertyManager_GetPropertyValue_System_String_System_Type_
+  commentId: M:Nitrocid.Misc.Reflection.PropertyManager.GetPropertyValue(System.String,System.Type)
+  name.vb: GetPropertyValue(String, Type)
+  fullName: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyValue(string, System.Type?)
+  fullName.vb: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyValue(String, System.Type)
+  nameWithType: PropertyManager.GetPropertyValue(string, Type?)
+  nameWithType.vb: PropertyManager.GetPropertyValue(String, Type)
 - uid: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyValue*
   name: GetPropertyValue
   href: api/Nitrocid.Misc.Reflection.PropertyManager.html#Nitrocid_Misc_Reflection_PropertyManager_GetPropertyValue_
@@ -31012,6 +31043,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyValueInstanceExplicit
   nameWithType: PropertyManager.GetPropertyValueInstanceExplicit
+- uid: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyValueInstance``1(``0,System.Reflection.PropertyInfo)
+  name: GetPropertyValueInstance<T>(T, PropertyInfo?)
+  href: api/Nitrocid.Misc.Reflection.PropertyManager.html#Nitrocid_Misc_Reflection_PropertyManager_GetPropertyValueInstance__1___0_System_Reflection_PropertyInfo_
+  commentId: M:Nitrocid.Misc.Reflection.PropertyManager.GetPropertyValueInstance``1(``0,System.Reflection.PropertyInfo)
+  name.vb: GetPropertyValueInstance(Of T)(T, PropertyInfo)
+  fullName: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyValueInstance<T>(T, System.Reflection.PropertyInfo?)
+  fullName.vb: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyValueInstance(Of T)(T, System.Reflection.PropertyInfo)
+  nameWithType: PropertyManager.GetPropertyValueInstance<T>(T, PropertyInfo?)
+  nameWithType.vb: PropertyManager.GetPropertyValueInstance(Of T)(T, PropertyInfo)
 - uid: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyValueInstance``1(``0,System.String)
   name: GetPropertyValueInstance<T>(T, string)
   href: api/Nitrocid.Misc.Reflection.PropertyManager.html#Nitrocid_Misc_Reflection_PropertyManager_GetPropertyValueInstance__1___0_System_String_
@@ -31030,23 +31070,32 @@ references:
   fullName.vb: Nitrocid.Misc.Reflection.PropertyManager.GetPropertyValueInstance(Of T)(T, String, System.Type)
   nameWithType: PropertyManager.GetPropertyValueInstance<T>(T, string, Type?)
   nameWithType.vb: PropertyManager.GetPropertyValueInstance(Of T)(T, String, Type)
+- uid: Nitrocid.Misc.Reflection.PropertyManager.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  name: SetPropertyValue(PropertyInfo?, object?)
+  href: api/Nitrocid.Misc.Reflection.PropertyManager.html#Nitrocid_Misc_Reflection_PropertyManager_SetPropertyValue_System_Reflection_PropertyInfo_System_Object_
+  commentId: M:Nitrocid.Misc.Reflection.PropertyManager.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  name.vb: SetPropertyValue(PropertyInfo, Object)
+  fullName: Nitrocid.Misc.Reflection.PropertyManager.SetPropertyValue(System.Reflection.PropertyInfo?, object?)
+  fullName.vb: Nitrocid.Misc.Reflection.PropertyManager.SetPropertyValue(System.Reflection.PropertyInfo, Object)
+  nameWithType: PropertyManager.SetPropertyValue(PropertyInfo?, object?)
+  nameWithType.vb: PropertyManager.SetPropertyValue(PropertyInfo, Object)
 - uid: Nitrocid.Misc.Reflection.PropertyManager.SetPropertyValue(System.String,System.Object)
-  name: SetPropertyValue(string, object)
+  name: SetPropertyValue(string, object?)
   href: api/Nitrocid.Misc.Reflection.PropertyManager.html#Nitrocid_Misc_Reflection_PropertyManager_SetPropertyValue_System_String_System_Object_
   commentId: M:Nitrocid.Misc.Reflection.PropertyManager.SetPropertyValue(System.String,System.Object)
   name.vb: SetPropertyValue(String, Object)
-  fullName: Nitrocid.Misc.Reflection.PropertyManager.SetPropertyValue(string, object)
+  fullName: Nitrocid.Misc.Reflection.PropertyManager.SetPropertyValue(string, object?)
   fullName.vb: Nitrocid.Misc.Reflection.PropertyManager.SetPropertyValue(String, Object)
-  nameWithType: PropertyManager.SetPropertyValue(string, object)
+  nameWithType: PropertyManager.SetPropertyValue(string, object?)
   nameWithType.vb: PropertyManager.SetPropertyValue(String, Object)
 - uid: Nitrocid.Misc.Reflection.PropertyManager.SetPropertyValue(System.String,System.Object,System.Type)
-  name: SetPropertyValue(string, object, Type?)
+  name: SetPropertyValue(string, object?, Type?)
   href: api/Nitrocid.Misc.Reflection.PropertyManager.html#Nitrocid_Misc_Reflection_PropertyManager_SetPropertyValue_System_String_System_Object_System_Type_
   commentId: M:Nitrocid.Misc.Reflection.PropertyManager.SetPropertyValue(System.String,System.Object,System.Type)
   name.vb: SetPropertyValue(String, Object, Type)
-  fullName: Nitrocid.Misc.Reflection.PropertyManager.SetPropertyValue(string, object, System.Type?)
+  fullName: Nitrocid.Misc.Reflection.PropertyManager.SetPropertyValue(string, object?, System.Type?)
   fullName.vb: Nitrocid.Misc.Reflection.PropertyManager.SetPropertyValue(String, Object, System.Type)
-  nameWithType: PropertyManager.SetPropertyValue(string, object, Type?)
+  nameWithType: PropertyManager.SetPropertyValue(string, object?, Type?)
   nameWithType.vb: PropertyManager.SetPropertyValue(String, Object, Type)
 - uid: Nitrocid.Misc.Reflection.PropertyManager.SetPropertyValue*
   name: SetPropertyValue
@@ -31078,6 +31127,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Reflection.PropertyManager.SetPropertyValueInstanceExplicit
   nameWithType: PropertyManager.SetPropertyValueInstanceExplicit
+- uid: Nitrocid.Misc.Reflection.PropertyManager.SetPropertyValueInstance``1(``0,System.Reflection.PropertyInfo,System.Object)
+  name: SetPropertyValueInstance<T>(T, PropertyInfo?, object?)
+  href: api/Nitrocid.Misc.Reflection.PropertyManager.html#Nitrocid_Misc_Reflection_PropertyManager_SetPropertyValueInstance__1___0_System_Reflection_PropertyInfo_System_Object_
+  commentId: M:Nitrocid.Misc.Reflection.PropertyManager.SetPropertyValueInstance``1(``0,System.Reflection.PropertyInfo,System.Object)
+  name.vb: SetPropertyValueInstance(Of T)(T, PropertyInfo, Object)
+  fullName: Nitrocid.Misc.Reflection.PropertyManager.SetPropertyValueInstance<T>(T, System.Reflection.PropertyInfo?, object?)
+  fullName.vb: Nitrocid.Misc.Reflection.PropertyManager.SetPropertyValueInstance(Of T)(T, System.Reflection.PropertyInfo, Object)
+  nameWithType: PropertyManager.SetPropertyValueInstance<T>(T, PropertyInfo?, object?)
+  nameWithType.vb: PropertyManager.SetPropertyValueInstance(Of T)(T, PropertyInfo, Object)
 - uid: Nitrocid.Misc.Reflection.PropertyManager.SetPropertyValueInstance``1(``0,System.String,System.Object)
   name: SetPropertyValueInstance<T>(T, string, object?)
   href: api/Nitrocid.Misc.Reflection.PropertyManager.html#Nitrocid_Misc_Reflection_PropertyManager_SetPropertyValueInstance__1___0_System_String_System_Object_
