@@ -32919,24 +32919,42 @@ references:
   commentId: T:Nitrocid.Modifications.Communication.InterModTools
   fullName: Nitrocid.Modifications.Communication.InterModTools
   nameWithType: InterModTools
-- uid: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String)
-  name: ExecuteCustomModFunction(string, string)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ExecuteCustomModFunction_System_String_System_String_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String)
-  name.vb: ExecuteCustomModFunction(String, String)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(string, string)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(String, String)
-  nameWithType: InterModTools.ExecuteCustomModFunction(string, string)
-  nameWithType.vb: InterModTools.ExecuteCustomModFunction(String, String)
-- uid: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String,System.Object[])
-  name: ExecuteCustomModFunction(string, string, params object?[]?)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ExecuteCustomModFunction_System_String_System_String_System_Object___
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String,System.Object[])
-  name.vb: ExecuteCustomModFunction(String, String, ParamArray Object())
-  fullName: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(string, string, params object?[]?)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(String, String, ParamArray Object())
-  nameWithType: InterModTools.ExecuteCustomModFunction(string, string, params object?[]?)
-  nameWithType.vb: InterModTools.ExecuteCustomModFunction(String, String, ParamArray Object())
+- uid: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String,System.String)
+  name: ExecuteCustomModFunction(string, string, string)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ExecuteCustomModFunction_System_String_System_String_System_String_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String,System.String)
+  name.vb: ExecuteCustomModFunction(String, String, String)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(string, string, string)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(String, String, String)
+  nameWithType: InterModTools.ExecuteCustomModFunction(string, string, string)
+  nameWithType.vb: InterModTools.ExecuteCustomModFunction(String, String, String)
+- uid: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String,System.String,System.Object[])
+  name: ExecuteCustomModFunction(string, string, string, params object?[]?)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ExecuteCustomModFunction_System_String_System_String_System_String_System_Object___
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String,System.String,System.Object[])
+  name.vb: ExecuteCustomModFunction(String, String, String, ParamArray Object())
+  fullName: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(string, string, string, params object?[]?)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(String, String, String, ParamArray Object())
+  nameWithType: InterModTools.ExecuteCustomModFunction(string, string, string, params object?[]?)
+  nameWithType.vb: InterModTools.ExecuteCustomModFunction(String, String, String, ParamArray Object())
+- uid: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String,System.Type)
+  name: ExecuteCustomModFunction(string, string, Type)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ExecuteCustomModFunction_System_String_System_String_System_Type_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String,System.Type)
+  name.vb: ExecuteCustomModFunction(String, String, Type)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(string, string, System.Type)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(String, String, System.Type)
+  nameWithType: InterModTools.ExecuteCustomModFunction(string, string, Type)
+  nameWithType.vb: InterModTools.ExecuteCustomModFunction(String, String, Type)
+- uid: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String,System.Type,System.Object[])
+  name: ExecuteCustomModFunction(string, string, Type, params object?[]?)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ExecuteCustomModFunction_System_String_System_String_System_Type_System_Object___
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String,System.Type,System.Object[])
+  name.vb: ExecuteCustomModFunction(String, String, Type, ParamArray Object())
+  fullName: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(string, string, System.Type, params object?[]?)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(String, String, System.Type, ParamArray Object())
+  nameWithType: InterModTools.ExecuteCustomModFunction(string, string, Type, params object?[]?)
+  nameWithType.vb: InterModTools.ExecuteCustomModFunction(String, String, Type, ParamArray Object())
 - uid: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction*
   name: ExecuteCustomModFunction
   href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ExecuteCustomModFunction_
@@ -32944,15 +32962,24 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction
   nameWithType: InterModTools.ExecuteCustomModFunction
-- uid: Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue(System.String,System.String)
-  name: GetCustomModFieldValue(string, string)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetCustomModFieldValue_System_String_System_String_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue(System.String,System.String)
-  name.vb: GetCustomModFieldValue(String, String)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue(string, string)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue(String, String)
-  nameWithType: InterModTools.GetCustomModFieldValue(string, string)
-  nameWithType.vb: InterModTools.GetCustomModFieldValue(String, String)
+- uid: Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue(System.String,System.String,System.String)
+  name: GetCustomModFieldValue(string, string, string)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetCustomModFieldValue_System_String_System_String_System_String_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue(System.String,System.String,System.String)
+  name.vb: GetCustomModFieldValue(String, String, String)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue(string, string, string)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue(String, String, String)
+  nameWithType: InterModTools.GetCustomModFieldValue(string, string, string)
+  nameWithType.vb: InterModTools.GetCustomModFieldValue(String, String, String)
+- uid: Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue(System.String,System.String,System.Type)
+  name: GetCustomModFieldValue(string, string, Type)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetCustomModFieldValue_System_String_System_String_System_Type_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue(System.String,System.String,System.Type)
+  name.vb: GetCustomModFieldValue(String, String, Type)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue(string, string, System.Type)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue(String, String, System.Type)
+  nameWithType: InterModTools.GetCustomModFieldValue(string, string, Type)
+  nameWithType.vb: InterModTools.GetCustomModFieldValue(String, String, Type)
 - uid: Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue*
   name: GetCustomModFieldValue
   href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetCustomModFieldValue_
@@ -32960,15 +32987,24 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue
   nameWithType: InterModTools.GetCustomModFieldValue
-- uid: Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue(System.String,System.String)
-  name: GetCustomModPropertyValue(string, string)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetCustomModPropertyValue_System_String_System_String_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue(System.String,System.String)
-  name.vb: GetCustomModPropertyValue(String, String)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue(string, string)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue(String, String)
-  nameWithType: InterModTools.GetCustomModPropertyValue(string, string)
-  nameWithType.vb: InterModTools.GetCustomModPropertyValue(String, String)
+- uid: Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue(System.String,System.String,System.String)
+  name: GetCustomModPropertyValue(string, string, string)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetCustomModPropertyValue_System_String_System_String_System_String_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue(System.String,System.String,System.String)
+  name.vb: GetCustomModPropertyValue(String, String, String)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue(string, string, string)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue(String, String, String)
+  nameWithType: InterModTools.GetCustomModPropertyValue(string, string, string)
+  nameWithType.vb: InterModTools.GetCustomModPropertyValue(String, String, String)
+- uid: Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue(System.String,System.String,System.Type)
+  name: GetCustomModPropertyValue(string, string, Type)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetCustomModPropertyValue_System_String_System_String_System_Type_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue(System.String,System.String,System.Type)
+  name.vb: GetCustomModPropertyValue(String, String, Type)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue(string, string, System.Type)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue(String, String, System.Type)
+  nameWithType: InterModTools.GetCustomModPropertyValue(string, string, Type)
+  nameWithType.vb: InterModTools.GetCustomModPropertyValue(String, String, Type)
 - uid: Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue*
   name: GetCustomModPropertyValue
   href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetCustomModPropertyValue_
@@ -32976,15 +33012,24 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue
   nameWithType: InterModTools.GetCustomModPropertyValue
-- uid: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(System.String,System.String)
-  name: GetFunctionParameters(string, string)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetFunctionParameters_System_String_System_String_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(System.String,System.String)
-  name.vb: GetFunctionParameters(String, String)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(string, string)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(String, String)
-  nameWithType: InterModTools.GetFunctionParameters(string, string)
-  nameWithType.vb: InterModTools.GetFunctionParameters(String, String)
+- uid: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(System.String,System.String,System.String)
+  name: GetFunctionParameters(string, string, string)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetFunctionParameters_System_String_System_String_System_String_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(System.String,System.String,System.String)
+  name.vb: GetFunctionParameters(String, String, String)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(string, string, string)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(String, String, String)
+  nameWithType: InterModTools.GetFunctionParameters(string, string, string)
+  nameWithType.vb: InterModTools.GetFunctionParameters(String, String, String)
+- uid: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(System.String,System.String,System.Type)
+  name: GetFunctionParameters(string, string, Type)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetFunctionParameters_System_String_System_String_System_Type_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(System.String,System.String,System.Type)
+  name.vb: GetFunctionParameters(String, String, Type)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(string, string, System.Type)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(String, String, System.Type)
+  nameWithType: InterModTools.GetFunctionParameters(string, string, Type)
+  nameWithType.vb: InterModTools.GetFunctionParameters(String, String, Type)
 - uid: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters*
   name: GetFunctionParameters
   href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetFunctionParameters_
@@ -32992,15 +33037,24 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters
   nameWithType: InterModTools.GetFunctionParameters
-- uid: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(System.String,System.String)
-  name: GetSetPropertyParameters(string, string)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetSetPropertyParameters_System_String_System_String_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(System.String,System.String)
-  name.vb: GetSetPropertyParameters(String, String)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(string, string)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(String, String)
-  nameWithType: InterModTools.GetSetPropertyParameters(string, string)
-  nameWithType.vb: InterModTools.GetSetPropertyParameters(String, String)
+- uid: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(System.String,System.String,System.String)
+  name: GetSetPropertyParameters(string, string, string)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetSetPropertyParameters_System_String_System_String_System_String_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(System.String,System.String,System.String)
+  name.vb: GetSetPropertyParameters(String, String, String)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(string, string, string)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(String, String, String)
+  nameWithType: InterModTools.GetSetPropertyParameters(string, string, string)
+  nameWithType.vb: InterModTools.GetSetPropertyParameters(String, String, String)
+- uid: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(System.String,System.String,System.Type)
+  name: GetSetPropertyParameters(string, string, Type)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetSetPropertyParameters_System_String_System_String_System_Type_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(System.String,System.String,System.Type)
+  name.vb: GetSetPropertyParameters(String, String, Type)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(string, string, System.Type)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(String, String, System.Type)
+  nameWithType: InterModTools.GetSetPropertyParameters(string, string, Type)
+  nameWithType.vb: InterModTools.GetSetPropertyParameters(String, String, Type)
 - uid: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters*
   name: GetSetPropertyParameters
   href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetSetPropertyParameters_
@@ -33008,15 +33062,40 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters
   nameWithType: InterModTools.GetSetPropertyParameters
-- uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields(System.String)
-  name: ListAvailableFields(string)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableFields_System_String_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields(System.String)
-  name.vb: ListAvailableFields(String)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields(string)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields(String)
-  nameWithType: InterModTools.ListAvailableFields(string)
-  nameWithType.vb: InterModTools.ListAvailableFields(String)
+- uid: Nitrocid.Modifications.Communication.InterModTools.GetTypeFromMod(System.String,System.String)
+  name: GetTypeFromMod(string, string)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetTypeFromMod_System_String_System_String_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetTypeFromMod(System.String,System.String)
+  name.vb: GetTypeFromMod(String, String)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.GetTypeFromMod(string, string)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetTypeFromMod(String, String)
+  nameWithType: InterModTools.GetTypeFromMod(string, string)
+  nameWithType.vb: InterModTools.GetTypeFromMod(String, String)
+- uid: Nitrocid.Modifications.Communication.InterModTools.GetTypeFromMod*
+  name: GetTypeFromMod
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetTypeFromMod_
+  commentId: Overload:Nitrocid.Modifications.Communication.InterModTools.GetTypeFromMod
+  isSpec: "True"
+  fullName: Nitrocid.Modifications.Communication.InterModTools.GetTypeFromMod
+  nameWithType: InterModTools.GetTypeFromMod
+- uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields(System.String,System.String)
+  name: ListAvailableFields(string, string)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableFields_System_String_System_String_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields(System.String,System.String)
+  name.vb: ListAvailableFields(String, String)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields(string, string)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields(String, String)
+  nameWithType: InterModTools.ListAvailableFields(string, string)
+  nameWithType.vb: InterModTools.ListAvailableFields(String, String)
+- uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields(System.String,System.Type)
+  name: ListAvailableFields(string, Type)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableFields_System_String_System_Type_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields(System.String,System.Type)
+  name.vb: ListAvailableFields(String, Type)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields(string, System.Type)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields(String, System.Type)
+  nameWithType: InterModTools.ListAvailableFields(string, Type)
+  nameWithType.vb: InterModTools.ListAvailableFields(String, Type)
 - uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields*
   name: ListAvailableFields
   href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableFields_
@@ -33024,15 +33103,24 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields
   nameWithType: InterModTools.ListAvailableFields
-- uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions(System.String)
-  name: ListAvailableFunctions(string)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableFunctions_System_String_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions(System.String)
-  name.vb: ListAvailableFunctions(String)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions(string)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions(String)
-  nameWithType: InterModTools.ListAvailableFunctions(string)
-  nameWithType.vb: InterModTools.ListAvailableFunctions(String)
+- uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions(System.String,System.String)
+  name: ListAvailableFunctions(string, string)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableFunctions_System_String_System_String_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions(System.String,System.String)
+  name.vb: ListAvailableFunctions(String, String)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions(string, string)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions(String, String)
+  nameWithType: InterModTools.ListAvailableFunctions(string, string)
+  nameWithType.vb: InterModTools.ListAvailableFunctions(String, String)
+- uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions(System.String,System.Type)
+  name: ListAvailableFunctions(string, Type)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableFunctions_System_String_System_Type_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions(System.String,System.Type)
+  name.vb: ListAvailableFunctions(String, Type)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions(string, System.Type)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions(String, System.Type)
+  nameWithType: InterModTools.ListAvailableFunctions(string, Type)
+  nameWithType.vb: InterModTools.ListAvailableFunctions(String, Type)
 - uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions*
   name: ListAvailableFunctions
   href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableFunctions_
@@ -33040,15 +33128,24 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions
   nameWithType: InterModTools.ListAvailableFunctions
-- uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties(System.String)
-  name: ListAvailableProperties(string)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableProperties_System_String_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties(System.String)
-  name.vb: ListAvailableProperties(String)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties(string)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties(String)
-  nameWithType: InterModTools.ListAvailableProperties(string)
-  nameWithType.vb: InterModTools.ListAvailableProperties(String)
+- uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties(System.String,System.String)
+  name: ListAvailableProperties(string, string)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableProperties_System_String_System_String_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties(System.String,System.String)
+  name.vb: ListAvailableProperties(String, String)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties(string, string)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties(String, String)
+  nameWithType: InterModTools.ListAvailableProperties(string, string)
+  nameWithType.vb: InterModTools.ListAvailableProperties(String, String)
+- uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties(System.String,System.Type)
+  name: ListAvailableProperties(string, Type)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableProperties_System_String_System_Type_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties(System.String,System.Type)
+  name.vb: ListAvailableProperties(String, Type)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties(string, System.Type)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties(String, System.Type)
+  nameWithType: InterModTools.ListAvailableProperties(string, Type)
+  nameWithType.vb: InterModTools.ListAvailableProperties(String, Type)
 - uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties*
   name: ListAvailableProperties
   href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableProperties_
@@ -33056,15 +33153,40 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties
   nameWithType: InterModTools.ListAvailableProperties
-- uid: Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue(System.String,System.String,System.Object)
-  name: SetCustomModFieldValue(string, string, object?)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_SetCustomModFieldValue_System_String_System_String_System_Object_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue(System.String,System.String,System.Object)
-  name.vb: SetCustomModFieldValue(String, String, Object)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue(string, string, object?)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue(String, String, Object)
-  nameWithType: InterModTools.SetCustomModFieldValue(string, string, object?)
-  nameWithType.vb: InterModTools.SetCustomModFieldValue(String, String, Object)
+- uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableTypes(System.String)
+  name: ListAvailableTypes(string)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableTypes_System_String_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ListAvailableTypes(System.String)
+  name.vb: ListAvailableTypes(String)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableTypes(string)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ListAvailableTypes(String)
+  nameWithType: InterModTools.ListAvailableTypes(string)
+  nameWithType.vb: InterModTools.ListAvailableTypes(String)
+- uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableTypes*
+  name: ListAvailableTypes
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableTypes_
+  commentId: Overload:Nitrocid.Modifications.Communication.InterModTools.ListAvailableTypes
+  isSpec: "True"
+  fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableTypes
+  nameWithType: InterModTools.ListAvailableTypes
+- uid: Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue(System.String,System.String,System.String,System.Object)
+  name: SetCustomModFieldValue(string, string, string, object?)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_SetCustomModFieldValue_System_String_System_String_System_String_System_Object_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue(System.String,System.String,System.String,System.Object)
+  name.vb: SetCustomModFieldValue(String, String, String, Object)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue(string, string, string, object?)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue(String, String, String, Object)
+  nameWithType: InterModTools.SetCustomModFieldValue(string, string, string, object?)
+  nameWithType.vb: InterModTools.SetCustomModFieldValue(String, String, String, Object)
+- uid: Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue(System.String,System.String,System.Type,System.Object)
+  name: SetCustomModFieldValue(string, string, Type, object?)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_SetCustomModFieldValue_System_String_System_String_System_Type_System_Object_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue(System.String,System.String,System.Type,System.Object)
+  name.vb: SetCustomModFieldValue(String, String, Type, Object)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue(string, string, System.Type, object?)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue(String, String, System.Type, Object)
+  nameWithType: InterModTools.SetCustomModFieldValue(string, string, Type, object?)
+  nameWithType.vb: InterModTools.SetCustomModFieldValue(String, String, Type, Object)
 - uid: Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue*
   name: SetCustomModFieldValue
   href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_SetCustomModFieldValue_
@@ -33072,15 +33194,24 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue
   nameWithType: InterModTools.SetCustomModFieldValue
-- uid: Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue(System.String,System.String,System.Object)
-  name: SetCustomModPropertyValue(string, string, object)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_SetCustomModPropertyValue_System_String_System_String_System_Object_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue(System.String,System.String,System.Object)
-  name.vb: SetCustomModPropertyValue(String, String, Object)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue(string, string, object)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue(String, String, Object)
-  nameWithType: InterModTools.SetCustomModPropertyValue(string, string, object)
-  nameWithType.vb: InterModTools.SetCustomModPropertyValue(String, String, Object)
+- uid: Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue(System.String,System.String,System.String,System.Object)
+  name: SetCustomModPropertyValue(string, string, string, object?)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_SetCustomModPropertyValue_System_String_System_String_System_String_System_Object_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue(System.String,System.String,System.String,System.Object)
+  name.vb: SetCustomModPropertyValue(String, String, String, Object)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue(string, string, string, object?)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue(String, String, String, Object)
+  nameWithType: InterModTools.SetCustomModPropertyValue(string, string, string, object?)
+  nameWithType.vb: InterModTools.SetCustomModPropertyValue(String, String, String, Object)
+- uid: Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue(System.String,System.String,System.Type,System.Object)
+  name: SetCustomModPropertyValue(string, string, Type, object?)
+  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_SetCustomModPropertyValue_System_String_System_String_System_Type_System_Object_
+  commentId: M:Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue(System.String,System.String,System.Type,System.Object)
+  name.vb: SetCustomModPropertyValue(String, String, Type, Object)
+  fullName: Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue(string, string, System.Type, object?)
+  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue(String, String, System.Type, Object)
+  nameWithType: InterModTools.SetCustomModPropertyValue(string, string, Type, object?)
+  nameWithType.vb: InterModTools.SetCustomModPropertyValue(String, String, Type, Object)
 - uid: Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue*
   name: SetCustomModPropertyValue
   href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_SetCustomModPropertyValue_
@@ -33171,45 +33302,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Modifications.IMod.Name
   nameWithType: IMod.Name
-- uid: Nitrocid.Modifications.IMod.PubliclyAvailableFields
-  name: PubliclyAvailableFields
-  href: api/Nitrocid.Modifications.IMod.html#Nitrocid_Modifications_IMod_PubliclyAvailableFields
-  commentId: P:Nitrocid.Modifications.IMod.PubliclyAvailableFields
-  fullName: Nitrocid.Modifications.IMod.PubliclyAvailableFields
-  nameWithType: IMod.PubliclyAvailableFields
-- uid: Nitrocid.Modifications.IMod.PubliclyAvailableFields*
-  name: PubliclyAvailableFields
-  href: api/Nitrocid.Modifications.IMod.html#Nitrocid_Modifications_IMod_PubliclyAvailableFields_
-  commentId: Overload:Nitrocid.Modifications.IMod.PubliclyAvailableFields
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.IMod.PubliclyAvailableFields
-  nameWithType: IMod.PubliclyAvailableFields
-- uid: Nitrocid.Modifications.IMod.PubliclyAvailableFunctions
-  name: PubliclyAvailableFunctions
-  href: api/Nitrocid.Modifications.IMod.html#Nitrocid_Modifications_IMod_PubliclyAvailableFunctions
-  commentId: P:Nitrocid.Modifications.IMod.PubliclyAvailableFunctions
-  fullName: Nitrocid.Modifications.IMod.PubliclyAvailableFunctions
-  nameWithType: IMod.PubliclyAvailableFunctions
-- uid: Nitrocid.Modifications.IMod.PubliclyAvailableFunctions*
-  name: PubliclyAvailableFunctions
-  href: api/Nitrocid.Modifications.IMod.html#Nitrocid_Modifications_IMod_PubliclyAvailableFunctions_
-  commentId: Overload:Nitrocid.Modifications.IMod.PubliclyAvailableFunctions
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.IMod.PubliclyAvailableFunctions
-  nameWithType: IMod.PubliclyAvailableFunctions
-- uid: Nitrocid.Modifications.IMod.PubliclyAvailableProperties
-  name: PubliclyAvailableProperties
-  href: api/Nitrocid.Modifications.IMod.html#Nitrocid_Modifications_IMod_PubliclyAvailableProperties
-  commentId: P:Nitrocid.Modifications.IMod.PubliclyAvailableProperties
-  fullName: Nitrocid.Modifications.IMod.PubliclyAvailableProperties
-  nameWithType: IMod.PubliclyAvailableProperties
-- uid: Nitrocid.Modifications.IMod.PubliclyAvailableProperties*
-  name: PubliclyAvailableProperties
-  href: api/Nitrocid.Modifications.IMod.html#Nitrocid_Modifications_IMod_PubliclyAvailableProperties_
-  commentId: Overload:Nitrocid.Modifications.IMod.PubliclyAvailableProperties
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.IMod.PubliclyAvailableProperties
-  nameWithType: IMod.PubliclyAvailableProperties
 - uid: Nitrocid.Modifications.IMod.StartMod
   name: StartMod()
   href: api/Nitrocid.Modifications.IMod.html#Nitrocid_Modifications_IMod_StartMod
