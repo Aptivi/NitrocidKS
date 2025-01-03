@@ -1585,6 +1585,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Kernel.Extensions.IMod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Kernel.Extensions.IMod.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.Kernel.Extensions.InterAddonTools.yml",
       "output": {
         ".html": {
@@ -1609,6 +1619,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Nitrocid.Kernel.Extensions.KnownAddons.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Kernel.Extensions.ModLoadPriority.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Kernel.Extensions.ModLoadPriority.html"
         }
       },
       "version": ""
@@ -2365,16 +2385,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Misc.Interactives.ManualViewerCli.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Misc.Interactives.ManualViewerCli.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.Misc.Interactives.SettingsCli.yml",
       "output": {
         ".html": {
@@ -2799,136 +2809,6 @@
       "output": {
         ".html": {
           "relative_path": "api/Nitrocid.Misc.Text.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Modifications.Communication.InterModTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Modifications.Communication.InterModTools.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Modifications.Communication.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Modifications.Communication.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Modifications.Dependencies.ModDependency.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Modifications.Dependencies.ModDependency.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Modifications.Dependencies.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Modifications.Dependencies.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Modifications.IMod.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Modifications.IMod.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Modifications.ManPages.Manual.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Modifications.ManPages.Manual.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Modifications.ManPages.PageManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Modifications.ManPages.PageManager.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Modifications.ManPages.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Modifications.ManPages.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Modifications.ModInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Modifications.ModInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Modifications.ModLoadPriority.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Modifications.ModLoadPriority.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Modifications.ModManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Modifications.ModManager.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Modifications.ModParser.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Modifications.ModParser.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.Modifications.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.Modifications.html"
         }
       },
       "version": ""

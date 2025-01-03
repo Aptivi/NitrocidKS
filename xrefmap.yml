@@ -16401,19 +16401,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowBackgroundColor
   nameWithType: KernelMainConfig.AllowBackgroundColor
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowUntrustedMods
-  name: AllowUntrustedMods
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_AllowUntrustedMods
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowUntrustedMods
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowUntrustedMods
-  nameWithType: KernelMainConfig.AllowUntrustedMods
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowUntrustedMods*
-  name: AllowUntrustedMods
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_AllowUntrustedMods_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowUntrustedMods
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AllowUntrustedMods
-  nameWithType: KernelMainConfig.AllowUntrustedMods
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.AlternativeOptionColor
   name: AlternativeOptionColor
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_AlternativeOptionColor
@@ -16492,19 +16479,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.BeepOnShutdown
   nameWithType: KernelMainConfig.BeepOnShutdown
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.BlacklistedModsString
-  name: BlacklistedModsString
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_BlacklistedModsString
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.BlacklistedModsString
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.BlacklistedModsString
-  nameWithType: KernelMainConfig.BlacklistedModsString
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.BlacklistedModsString*
-  name: BlacklistedModsString
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_BlacklistedModsString_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.BlacklistedModsString
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.BlacklistedModsString
-  nameWithType: KernelMainConfig.BlacklistedModsString
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.BootSelect
   name: BootSelect
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_BootSelect
@@ -18247,19 +18221,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ShowMOTD
   nameWithType: KernelMainConfig.ShowMOTD
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ShowModCommandsCount
-  name: ShowModCommandsCount
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ShowModCommandsCount
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ShowModCommandsCount
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ShowModCommandsCount
-  nameWithType: KernelMainConfig.ShowModCommandsCount
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ShowModCommandsCount*
-  name: ShowModCommandsCount
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ShowModCommandsCount_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ShowModCommandsCount
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ShowModCommandsCount
-  nameWithType: KernelMainConfig.ShowModCommandsCount
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.ShowProgress
   name: ShowProgress
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_ShowProgress
@@ -18468,19 +18429,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.StageTimeColor
   nameWithType: KernelMainConfig.StageTimeColor
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.StartKernelMods
-  name: StartKernelMods
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_StartKernelMods
-  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.StartKernelMods
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.StartKernelMods
-  nameWithType: KernelMainConfig.StartKernelMods
-- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.StartKernelMods*
-  name: StartKernelMods
-  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_StartKernelMods_
-  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.StartKernelMods
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.StartKernelMods
-  nameWithType: KernelMainConfig.StartKernelMods
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.StartScroll
   name: StartScroll
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_StartScroll
@@ -23077,6 +23025,90 @@ references:
   commentId: N:Nitrocid.Kernel.Extensions
   fullName: Nitrocid.Kernel.Extensions
   nameWithType: Nitrocid.Kernel.Extensions
+- uid: Nitrocid.Kernel.Extensions.IMod
+  name: IMod
+  href: api/Nitrocid.Kernel.Extensions.IMod.html
+  commentId: T:Nitrocid.Kernel.Extensions.IMod
+  fullName: Nitrocid.Kernel.Extensions.IMod
+  nameWithType: IMod
+- uid: Nitrocid.Kernel.Extensions.IMod.LoadPriority
+  name: LoadPriority
+  href: api/Nitrocid.Kernel.Extensions.IMod.html#Nitrocid_Kernel_Extensions_IMod_LoadPriority
+  commentId: P:Nitrocid.Kernel.Extensions.IMod.LoadPriority
+  fullName: Nitrocid.Kernel.Extensions.IMod.LoadPriority
+  nameWithType: IMod.LoadPriority
+- uid: Nitrocid.Kernel.Extensions.IMod.LoadPriority*
+  name: LoadPriority
+  href: api/Nitrocid.Kernel.Extensions.IMod.html#Nitrocid_Kernel_Extensions_IMod_LoadPriority_
+  commentId: Overload:Nitrocid.Kernel.Extensions.IMod.LoadPriority
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Extensions.IMod.LoadPriority
+  nameWithType: IMod.LoadPriority
+- uid: Nitrocid.Kernel.Extensions.IMod.MinimumSupportedApiVersion
+  name: MinimumSupportedApiVersion
+  href: api/Nitrocid.Kernel.Extensions.IMod.html#Nitrocid_Kernel_Extensions_IMod_MinimumSupportedApiVersion
+  commentId: P:Nitrocid.Kernel.Extensions.IMod.MinimumSupportedApiVersion
+  fullName: Nitrocid.Kernel.Extensions.IMod.MinimumSupportedApiVersion
+  nameWithType: IMod.MinimumSupportedApiVersion
+- uid: Nitrocid.Kernel.Extensions.IMod.MinimumSupportedApiVersion*
+  name: MinimumSupportedApiVersion
+  href: api/Nitrocid.Kernel.Extensions.IMod.html#Nitrocid_Kernel_Extensions_IMod_MinimumSupportedApiVersion_
+  commentId: Overload:Nitrocid.Kernel.Extensions.IMod.MinimumSupportedApiVersion
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Extensions.IMod.MinimumSupportedApiVersion
+  nameWithType: IMod.MinimumSupportedApiVersion
+- uid: Nitrocid.Kernel.Extensions.IMod.Name
+  name: Name
+  href: api/Nitrocid.Kernel.Extensions.IMod.html#Nitrocid_Kernel_Extensions_IMod_Name
+  commentId: P:Nitrocid.Kernel.Extensions.IMod.Name
+  fullName: Nitrocid.Kernel.Extensions.IMod.Name
+  nameWithType: IMod.Name
+- uid: Nitrocid.Kernel.Extensions.IMod.Name*
+  name: Name
+  href: api/Nitrocid.Kernel.Extensions.IMod.html#Nitrocid_Kernel_Extensions_IMod_Name_
+  commentId: Overload:Nitrocid.Kernel.Extensions.IMod.Name
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Extensions.IMod.Name
+  nameWithType: IMod.Name
+- uid: Nitrocid.Kernel.Extensions.IMod.StartMod
+  name: StartMod()
+  href: api/Nitrocid.Kernel.Extensions.IMod.html#Nitrocid_Kernel_Extensions_IMod_StartMod
+  commentId: M:Nitrocid.Kernel.Extensions.IMod.StartMod
+  fullName: Nitrocid.Kernel.Extensions.IMod.StartMod()
+  nameWithType: IMod.StartMod()
+- uid: Nitrocid.Kernel.Extensions.IMod.StartMod*
+  name: StartMod
+  href: api/Nitrocid.Kernel.Extensions.IMod.html#Nitrocid_Kernel_Extensions_IMod_StartMod_
+  commentId: Overload:Nitrocid.Kernel.Extensions.IMod.StartMod
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Extensions.IMod.StartMod
+  nameWithType: IMod.StartMod
+- uid: Nitrocid.Kernel.Extensions.IMod.StopMod
+  name: StopMod()
+  href: api/Nitrocid.Kernel.Extensions.IMod.html#Nitrocid_Kernel_Extensions_IMod_StopMod
+  commentId: M:Nitrocid.Kernel.Extensions.IMod.StopMod
+  fullName: Nitrocid.Kernel.Extensions.IMod.StopMod()
+  nameWithType: IMod.StopMod()
+- uid: Nitrocid.Kernel.Extensions.IMod.StopMod*
+  name: StopMod
+  href: api/Nitrocid.Kernel.Extensions.IMod.html#Nitrocid_Kernel_Extensions_IMod_StopMod_
+  commentId: Overload:Nitrocid.Kernel.Extensions.IMod.StopMod
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Extensions.IMod.StopMod
+  nameWithType: IMod.StopMod
+- uid: Nitrocid.Kernel.Extensions.IMod.Version
+  name: Version
+  href: api/Nitrocid.Kernel.Extensions.IMod.html#Nitrocid_Kernel_Extensions_IMod_Version
+  commentId: P:Nitrocid.Kernel.Extensions.IMod.Version
+  fullName: Nitrocid.Kernel.Extensions.IMod.Version
+  nameWithType: IMod.Version
+- uid: Nitrocid.Kernel.Extensions.IMod.Version*
+  name: Version
+  href: api/Nitrocid.Kernel.Extensions.IMod.html#Nitrocid_Kernel_Extensions_IMod_Version_
+  commentId: Overload:Nitrocid.Kernel.Extensions.IMod.Version
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Extensions.IMod.Version
+  nameWithType: IMod.Version
 - uid: Nitrocid.Kernel.Extensions.InterAddonTools
   name: InterAddonTools
   href: api/Nitrocid.Kernel.Extensions.InterAddonTools.html
@@ -23913,6 +23945,24 @@ references:
   commentId: F:Nitrocid.Kernel.Extensions.KnownAddons.ExtrasUnitConv
   fullName: Nitrocid.Kernel.Extensions.KnownAddons.ExtrasUnitConv
   nameWithType: KnownAddons.ExtrasUnitConv
+- uid: Nitrocid.Kernel.Extensions.ModLoadPriority
+  name: ModLoadPriority
+  href: api/Nitrocid.Kernel.Extensions.ModLoadPriority.html
+  commentId: T:Nitrocid.Kernel.Extensions.ModLoadPriority
+  fullName: Nitrocid.Kernel.Extensions.ModLoadPriority
+  nameWithType: ModLoadPriority
+- uid: Nitrocid.Kernel.Extensions.ModLoadPriority.Important
+  name: Important
+  href: api/Nitrocid.Kernel.Extensions.ModLoadPriority.html#Nitrocid_Kernel_Extensions_ModLoadPriority_Important
+  commentId: F:Nitrocid.Kernel.Extensions.ModLoadPriority.Important
+  fullName: Nitrocid.Kernel.Extensions.ModLoadPriority.Important
+  nameWithType: ModLoadPriority.Important
+- uid: Nitrocid.Kernel.Extensions.ModLoadPriority.Optional
+  name: Optional
+  href: api/Nitrocid.Kernel.Extensions.ModLoadPriority.html#Nitrocid_Kernel_Extensions_ModLoadPriority_Optional
+  commentId: F:Nitrocid.Kernel.Extensions.ModLoadPriority.Optional
+  fullName: Nitrocid.Kernel.Extensions.ModLoadPriority.Optional
+  nameWithType: ModLoadPriority.Optional
 - uid: Nitrocid.Kernel.Hardware
   name: Nitrocid.Kernel.Hardware
   href: api/Nitrocid.Kernel.Hardware.html
@@ -28794,64 +28844,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Interactives.FoldersSelectorCli.SelectedFolders
   nameWithType: FoldersSelectorCli.SelectedFolders
-- uid: Nitrocid.Misc.Interactives.ManualViewerCli
-  name: ManualViewerCli
-  href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html
-  commentId: T:Nitrocid.Misc.Interactives.ManualViewerCli
-  fullName: Nitrocid.Misc.Interactives.ManualViewerCli
-  nameWithType: ManualViewerCli
-- uid: Nitrocid.Misc.Interactives.ManualViewerCli.GetEntryFromItem(Nitrocid.Modifications.ManPages.Manual)
-  name: GetEntryFromItem(Manual)
-  href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_GetEntryFromItem_Nitrocid_Modifications_ManPages_Manual_
-  commentId: M:Nitrocid.Misc.Interactives.ManualViewerCli.GetEntryFromItem(Nitrocid.Modifications.ManPages.Manual)
-  fullName: Nitrocid.Misc.Interactives.ManualViewerCli.GetEntryFromItem(Nitrocid.Modifications.ManPages.Manual)
-  nameWithType: ManualViewerCli.GetEntryFromItem(Manual)
-- uid: Nitrocid.Misc.Interactives.ManualViewerCli.GetEntryFromItem*
-  name: GetEntryFromItem
-  href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_GetEntryFromItem_
-  commentId: Overload:Nitrocid.Misc.Interactives.ManualViewerCli.GetEntryFromItem
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Interactives.ManualViewerCli.GetEntryFromItem
-  nameWithType: ManualViewerCli.GetEntryFromItem
-- uid: Nitrocid.Misc.Interactives.ManualViewerCli.GetInfoFromItem(Nitrocid.Modifications.ManPages.Manual)
-  name: GetInfoFromItem(Manual)
-  href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_GetInfoFromItem_Nitrocid_Modifications_ManPages_Manual_
-  commentId: M:Nitrocid.Misc.Interactives.ManualViewerCli.GetInfoFromItem(Nitrocid.Modifications.ManPages.Manual)
-  fullName: Nitrocid.Misc.Interactives.ManualViewerCli.GetInfoFromItem(Nitrocid.Modifications.ManPages.Manual)
-  nameWithType: ManualViewerCli.GetInfoFromItem(Manual)
-- uid: Nitrocid.Misc.Interactives.ManualViewerCli.GetInfoFromItem*
-  name: GetInfoFromItem
-  href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_GetInfoFromItem_
-  commentId: Overload:Nitrocid.Misc.Interactives.ManualViewerCli.GetInfoFromItem
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Interactives.ManualViewerCli.GetInfoFromItem
-  nameWithType: ManualViewerCli.GetInfoFromItem
-- uid: Nitrocid.Misc.Interactives.ManualViewerCli.GetStatusFromItem(Nitrocid.Modifications.ManPages.Manual)
-  name: GetStatusFromItem(Manual)
-  href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_GetStatusFromItem_Nitrocid_Modifications_ManPages_Manual_
-  commentId: M:Nitrocid.Misc.Interactives.ManualViewerCli.GetStatusFromItem(Nitrocid.Modifications.ManPages.Manual)
-  fullName: Nitrocid.Misc.Interactives.ManualViewerCli.GetStatusFromItem(Nitrocid.Modifications.ManPages.Manual)
-  nameWithType: ManualViewerCli.GetStatusFromItem(Manual)
-- uid: Nitrocid.Misc.Interactives.ManualViewerCli.GetStatusFromItem*
-  name: GetStatusFromItem
-  href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_GetStatusFromItem_
-  commentId: Overload:Nitrocid.Misc.Interactives.ManualViewerCli.GetStatusFromItem
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Interactives.ManualViewerCli.GetStatusFromItem
-  nameWithType: ManualViewerCli.GetStatusFromItem
-- uid: Nitrocid.Misc.Interactives.ManualViewerCli.PrimaryDataSource
-  name: PrimaryDataSource
-  href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_PrimaryDataSource
-  commentId: P:Nitrocid.Misc.Interactives.ManualViewerCli.PrimaryDataSource
-  fullName: Nitrocid.Misc.Interactives.ManualViewerCli.PrimaryDataSource
-  nameWithType: ManualViewerCli.PrimaryDataSource
-- uid: Nitrocid.Misc.Interactives.ManualViewerCli.PrimaryDataSource*
-  name: PrimaryDataSource
-  href: api/Nitrocid.Misc.Interactives.ManualViewerCli.html#Nitrocid_Misc_Interactives_ManualViewerCli_PrimaryDataSource_
-  commentId: Overload:Nitrocid.Misc.Interactives.ManualViewerCli.PrimaryDataSource
-  isSpec: "True"
-  fullName: Nitrocid.Misc.Interactives.ManualViewerCli.PrimaryDataSource
-  nameWithType: ManualViewerCli.PrimaryDataSource
 - uid: Nitrocid.Misc.Interactives.SettingsCli
   name: SettingsCli
   href: api/Nitrocid.Misc.Interactives.SettingsCli.html
@@ -32985,1008 +32977,6 @@ references:
   commentId: F:Nitrocid.Misc.Text.TextLocation.Top
   fullName: Nitrocid.Misc.Text.TextLocation.Top
   nameWithType: TextLocation.Top
-- uid: Nitrocid.Modifications
-  name: Nitrocid.Modifications
-  href: api/Nitrocid.Modifications.html
-  commentId: N:Nitrocid.Modifications
-  fullName: Nitrocid.Modifications
-  nameWithType: Nitrocid.Modifications
-- uid: Nitrocid.Modifications.Communication
-  name: Nitrocid.Modifications.Communication
-  href: api/Nitrocid.Modifications.Communication.html
-  commentId: N:Nitrocid.Modifications.Communication
-  fullName: Nitrocid.Modifications.Communication
-  nameWithType: Nitrocid.Modifications.Communication
-- uid: Nitrocid.Modifications.Communication.InterModTools
-  name: InterModTools
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html
-  commentId: T:Nitrocid.Modifications.Communication.InterModTools
-  fullName: Nitrocid.Modifications.Communication.InterModTools
-  nameWithType: InterModTools
-- uid: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String,System.String)
-  name: ExecuteCustomModFunction(string, string, string)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ExecuteCustomModFunction_System_String_System_String_System_String_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String,System.String)
-  name.vb: ExecuteCustomModFunction(String, String, String)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(string, string, string)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(String, String, String)
-  nameWithType: InterModTools.ExecuteCustomModFunction(string, string, string)
-  nameWithType.vb: InterModTools.ExecuteCustomModFunction(String, String, String)
-- uid: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String,System.String,System.Object[])
-  name: ExecuteCustomModFunction(string, string, string, params object?[]?)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ExecuteCustomModFunction_System_String_System_String_System_String_System_Object___
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String,System.String,System.Object[])
-  name.vb: ExecuteCustomModFunction(String, String, String, ParamArray Object())
-  fullName: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(string, string, string, params object?[]?)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(String, String, String, ParamArray Object())
-  nameWithType: InterModTools.ExecuteCustomModFunction(string, string, string, params object?[]?)
-  nameWithType.vb: InterModTools.ExecuteCustomModFunction(String, String, String, ParamArray Object())
-- uid: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String,System.Type)
-  name: ExecuteCustomModFunction(string, string, Type)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ExecuteCustomModFunction_System_String_System_String_System_Type_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String,System.Type)
-  name.vb: ExecuteCustomModFunction(String, String, Type)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(string, string, System.Type)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(String, String, System.Type)
-  nameWithType: InterModTools.ExecuteCustomModFunction(string, string, Type)
-  nameWithType.vb: InterModTools.ExecuteCustomModFunction(String, String, Type)
-- uid: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String,System.Type,System.Object[])
-  name: ExecuteCustomModFunction(string, string, Type, params object?[]?)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ExecuteCustomModFunction_System_String_System_String_System_Type_System_Object___
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(System.String,System.String,System.Type,System.Object[])
-  name.vb: ExecuteCustomModFunction(String, String, Type, ParamArray Object())
-  fullName: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(string, string, System.Type, params object?[]?)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction(String, String, System.Type, ParamArray Object())
-  nameWithType: InterModTools.ExecuteCustomModFunction(string, string, Type, params object?[]?)
-  nameWithType.vb: InterModTools.ExecuteCustomModFunction(String, String, Type, ParamArray Object())
-- uid: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction*
-  name: ExecuteCustomModFunction
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ExecuteCustomModFunction_
-  commentId: Overload:Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.Communication.InterModTools.ExecuteCustomModFunction
-  nameWithType: InterModTools.ExecuteCustomModFunction
-- uid: Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue(System.String,System.String,System.String)
-  name: GetCustomModFieldValue(string, string, string)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetCustomModFieldValue_System_String_System_String_System_String_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue(System.String,System.String,System.String)
-  name.vb: GetCustomModFieldValue(String, String, String)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue(string, string, string)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue(String, String, String)
-  nameWithType: InterModTools.GetCustomModFieldValue(string, string, string)
-  nameWithType.vb: InterModTools.GetCustomModFieldValue(String, String, String)
-- uid: Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue(System.String,System.String,System.Type)
-  name: GetCustomModFieldValue(string, string, Type)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetCustomModFieldValue_System_String_System_String_System_Type_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue(System.String,System.String,System.Type)
-  name.vb: GetCustomModFieldValue(String, String, Type)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue(string, string, System.Type)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue(String, String, System.Type)
-  nameWithType: InterModTools.GetCustomModFieldValue(string, string, Type)
-  nameWithType.vb: InterModTools.GetCustomModFieldValue(String, String, Type)
-- uid: Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue*
-  name: GetCustomModFieldValue
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetCustomModFieldValue_
-  commentId: Overload:Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.Communication.InterModTools.GetCustomModFieldValue
-  nameWithType: InterModTools.GetCustomModFieldValue
-- uid: Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue(System.String,System.String,System.String)
-  name: GetCustomModPropertyValue(string, string, string)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetCustomModPropertyValue_System_String_System_String_System_String_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue(System.String,System.String,System.String)
-  name.vb: GetCustomModPropertyValue(String, String, String)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue(string, string, string)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue(String, String, String)
-  nameWithType: InterModTools.GetCustomModPropertyValue(string, string, string)
-  nameWithType.vb: InterModTools.GetCustomModPropertyValue(String, String, String)
-- uid: Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue(System.String,System.String,System.Type)
-  name: GetCustomModPropertyValue(string, string, Type)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetCustomModPropertyValue_System_String_System_String_System_Type_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue(System.String,System.String,System.Type)
-  name.vb: GetCustomModPropertyValue(String, String, Type)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue(string, string, System.Type)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue(String, String, System.Type)
-  nameWithType: InterModTools.GetCustomModPropertyValue(string, string, Type)
-  nameWithType.vb: InterModTools.GetCustomModPropertyValue(String, String, Type)
-- uid: Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue*
-  name: GetCustomModPropertyValue
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetCustomModPropertyValue_
-  commentId: Overload:Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.Communication.InterModTools.GetCustomModPropertyValue
-  nameWithType: InterModTools.GetCustomModPropertyValue
-- uid: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(System.String,System.String,System.String)
-  name: GetFunctionParameters(string, string, string)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetFunctionParameters_System_String_System_String_System_String_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(System.String,System.String,System.String)
-  name.vb: GetFunctionParameters(String, String, String)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(string, string, string)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(String, String, String)
-  nameWithType: InterModTools.GetFunctionParameters(string, string, string)
-  nameWithType.vb: InterModTools.GetFunctionParameters(String, String, String)
-- uid: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(System.String,System.String,System.Type)
-  name: GetFunctionParameters(string, string, Type)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetFunctionParameters_System_String_System_String_System_Type_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(System.String,System.String,System.Type)
-  name.vb: GetFunctionParameters(String, String, Type)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(string, string, System.Type)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters(String, String, System.Type)
-  nameWithType: InterModTools.GetFunctionParameters(string, string, Type)
-  nameWithType.vb: InterModTools.GetFunctionParameters(String, String, Type)
-- uid: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters*
-  name: GetFunctionParameters
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetFunctionParameters_
-  commentId: Overload:Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.Communication.InterModTools.GetFunctionParameters
-  nameWithType: InterModTools.GetFunctionParameters
-- uid: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(System.String,System.String,System.String)
-  name: GetSetPropertyParameters(string, string, string)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetSetPropertyParameters_System_String_System_String_System_String_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(System.String,System.String,System.String)
-  name.vb: GetSetPropertyParameters(String, String, String)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(string, string, string)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(String, String, String)
-  nameWithType: InterModTools.GetSetPropertyParameters(string, string, string)
-  nameWithType.vb: InterModTools.GetSetPropertyParameters(String, String, String)
-- uid: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(System.String,System.String,System.Type)
-  name: GetSetPropertyParameters(string, string, Type)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetSetPropertyParameters_System_String_System_String_System_Type_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(System.String,System.String,System.Type)
-  name.vb: GetSetPropertyParameters(String, String, Type)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(string, string, System.Type)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters(String, String, System.Type)
-  nameWithType: InterModTools.GetSetPropertyParameters(string, string, Type)
-  nameWithType.vb: InterModTools.GetSetPropertyParameters(String, String, Type)
-- uid: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters*
-  name: GetSetPropertyParameters
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetSetPropertyParameters_
-  commentId: Overload:Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.Communication.InterModTools.GetSetPropertyParameters
-  nameWithType: InterModTools.GetSetPropertyParameters
-- uid: Nitrocid.Modifications.Communication.InterModTools.GetTypeFromMod(System.String,System.String)
-  name: GetTypeFromMod(string, string)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetTypeFromMod_System_String_System_String_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.GetTypeFromMod(System.String,System.String)
-  name.vb: GetTypeFromMod(String, String)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.GetTypeFromMod(string, string)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.GetTypeFromMod(String, String)
-  nameWithType: InterModTools.GetTypeFromMod(string, string)
-  nameWithType.vb: InterModTools.GetTypeFromMod(String, String)
-- uid: Nitrocid.Modifications.Communication.InterModTools.GetTypeFromMod*
-  name: GetTypeFromMod
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_GetTypeFromMod_
-  commentId: Overload:Nitrocid.Modifications.Communication.InterModTools.GetTypeFromMod
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.Communication.InterModTools.GetTypeFromMod
-  nameWithType: InterModTools.GetTypeFromMod
-- uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields(System.String,System.String)
-  name: ListAvailableFields(string, string)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableFields_System_String_System_String_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields(System.String,System.String)
-  name.vb: ListAvailableFields(String, String)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields(string, string)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields(String, String)
-  nameWithType: InterModTools.ListAvailableFields(string, string)
-  nameWithType.vb: InterModTools.ListAvailableFields(String, String)
-- uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields(System.String,System.Type)
-  name: ListAvailableFields(string, Type)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableFields_System_String_System_Type_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields(System.String,System.Type)
-  name.vb: ListAvailableFields(String, Type)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields(string, System.Type)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields(String, System.Type)
-  nameWithType: InterModTools.ListAvailableFields(string, Type)
-  nameWithType.vb: InterModTools.ListAvailableFields(String, Type)
-- uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields*
-  name: ListAvailableFields
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableFields_
-  commentId: Overload:Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFields
-  nameWithType: InterModTools.ListAvailableFields
-- uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions(System.String,System.String)
-  name: ListAvailableFunctions(string, string)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableFunctions_System_String_System_String_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions(System.String,System.String)
-  name.vb: ListAvailableFunctions(String, String)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions(string, string)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions(String, String)
-  nameWithType: InterModTools.ListAvailableFunctions(string, string)
-  nameWithType.vb: InterModTools.ListAvailableFunctions(String, String)
-- uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions(System.String,System.Type)
-  name: ListAvailableFunctions(string, Type)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableFunctions_System_String_System_Type_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions(System.String,System.Type)
-  name.vb: ListAvailableFunctions(String, Type)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions(string, System.Type)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions(String, System.Type)
-  nameWithType: InterModTools.ListAvailableFunctions(string, Type)
-  nameWithType.vb: InterModTools.ListAvailableFunctions(String, Type)
-- uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions*
-  name: ListAvailableFunctions
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableFunctions_
-  commentId: Overload:Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableFunctions
-  nameWithType: InterModTools.ListAvailableFunctions
-- uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties(System.String,System.String)
-  name: ListAvailableProperties(string, string)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableProperties_System_String_System_String_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties(System.String,System.String)
-  name.vb: ListAvailableProperties(String, String)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties(string, string)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties(String, String)
-  nameWithType: InterModTools.ListAvailableProperties(string, string)
-  nameWithType.vb: InterModTools.ListAvailableProperties(String, String)
-- uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties(System.String,System.Type)
-  name: ListAvailableProperties(string, Type)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableProperties_System_String_System_Type_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties(System.String,System.Type)
-  name.vb: ListAvailableProperties(String, Type)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties(string, System.Type)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties(String, System.Type)
-  nameWithType: InterModTools.ListAvailableProperties(string, Type)
-  nameWithType.vb: InterModTools.ListAvailableProperties(String, Type)
-- uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties*
-  name: ListAvailableProperties
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableProperties_
-  commentId: Overload:Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableProperties
-  nameWithType: InterModTools.ListAvailableProperties
-- uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableTypes(System.String)
-  name: ListAvailableTypes(string)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableTypes_System_String_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.ListAvailableTypes(System.String)
-  name.vb: ListAvailableTypes(String)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableTypes(string)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.ListAvailableTypes(String)
-  nameWithType: InterModTools.ListAvailableTypes(string)
-  nameWithType.vb: InterModTools.ListAvailableTypes(String)
-- uid: Nitrocid.Modifications.Communication.InterModTools.ListAvailableTypes*
-  name: ListAvailableTypes
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_ListAvailableTypes_
-  commentId: Overload:Nitrocid.Modifications.Communication.InterModTools.ListAvailableTypes
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.Communication.InterModTools.ListAvailableTypes
-  nameWithType: InterModTools.ListAvailableTypes
-- uid: Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue(System.String,System.String,System.String,System.Object)
-  name: SetCustomModFieldValue(string, string, string, object?)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_SetCustomModFieldValue_System_String_System_String_System_String_System_Object_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue(System.String,System.String,System.String,System.Object)
-  name.vb: SetCustomModFieldValue(String, String, String, Object)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue(string, string, string, object?)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue(String, String, String, Object)
-  nameWithType: InterModTools.SetCustomModFieldValue(string, string, string, object?)
-  nameWithType.vb: InterModTools.SetCustomModFieldValue(String, String, String, Object)
-- uid: Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue(System.String,System.String,System.Type,System.Object)
-  name: SetCustomModFieldValue(string, string, Type, object?)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_SetCustomModFieldValue_System_String_System_String_System_Type_System_Object_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue(System.String,System.String,System.Type,System.Object)
-  name.vb: SetCustomModFieldValue(String, String, Type, Object)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue(string, string, System.Type, object?)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue(String, String, System.Type, Object)
-  nameWithType: InterModTools.SetCustomModFieldValue(string, string, Type, object?)
-  nameWithType.vb: InterModTools.SetCustomModFieldValue(String, String, Type, Object)
-- uid: Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue*
-  name: SetCustomModFieldValue
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_SetCustomModFieldValue_
-  commentId: Overload:Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.Communication.InterModTools.SetCustomModFieldValue
-  nameWithType: InterModTools.SetCustomModFieldValue
-- uid: Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue(System.String,System.String,System.String,System.Object)
-  name: SetCustomModPropertyValue(string, string, string, object?)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_SetCustomModPropertyValue_System_String_System_String_System_String_System_Object_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue(System.String,System.String,System.String,System.Object)
-  name.vb: SetCustomModPropertyValue(String, String, String, Object)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue(string, string, string, object?)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue(String, String, String, Object)
-  nameWithType: InterModTools.SetCustomModPropertyValue(string, string, string, object?)
-  nameWithType.vb: InterModTools.SetCustomModPropertyValue(String, String, String, Object)
-- uid: Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue(System.String,System.String,System.Type,System.Object)
-  name: SetCustomModPropertyValue(string, string, Type, object?)
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_SetCustomModPropertyValue_System_String_System_String_System_Type_System_Object_
-  commentId: M:Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue(System.String,System.String,System.Type,System.Object)
-  name.vb: SetCustomModPropertyValue(String, String, Type, Object)
-  fullName: Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue(string, string, System.Type, object?)
-  fullName.vb: Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue(String, String, System.Type, Object)
-  nameWithType: InterModTools.SetCustomModPropertyValue(string, string, Type, object?)
-  nameWithType.vb: InterModTools.SetCustomModPropertyValue(String, String, Type, Object)
-- uid: Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue*
-  name: SetCustomModPropertyValue
-  href: api/Nitrocid.Modifications.Communication.InterModTools.html#Nitrocid_Modifications_Communication_InterModTools_SetCustomModPropertyValue_
-  commentId: Overload:Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.Communication.InterModTools.SetCustomModPropertyValue
-  nameWithType: InterModTools.SetCustomModPropertyValue
-- uid: Nitrocid.Modifications.Dependencies
-  name: Nitrocid.Modifications.Dependencies
-  href: api/Nitrocid.Modifications.Dependencies.html
-  commentId: N:Nitrocid.Modifications.Dependencies
-  fullName: Nitrocid.Modifications.Dependencies
-  nameWithType: Nitrocid.Modifications.Dependencies
-- uid: Nitrocid.Modifications.Dependencies.ModDependency
-  name: ModDependency
-  href: api/Nitrocid.Modifications.Dependencies.ModDependency.html
-  commentId: T:Nitrocid.Modifications.Dependencies.ModDependency
-  fullName: Nitrocid.Modifications.Dependencies.ModDependency
-  nameWithType: ModDependency
-- uid: Nitrocid.Modifications.Dependencies.ModDependency.ModName
-  name: ModName
-  href: api/Nitrocid.Modifications.Dependencies.ModDependency.html#Nitrocid_Modifications_Dependencies_ModDependency_ModName
-  commentId: P:Nitrocid.Modifications.Dependencies.ModDependency.ModName
-  fullName: Nitrocid.Modifications.Dependencies.ModDependency.ModName
-  nameWithType: ModDependency.ModName
-- uid: Nitrocid.Modifications.Dependencies.ModDependency.ModName*
-  name: ModName
-  href: api/Nitrocid.Modifications.Dependencies.ModDependency.html#Nitrocid_Modifications_Dependencies_ModDependency_ModName_
-  commentId: Overload:Nitrocid.Modifications.Dependencies.ModDependency.ModName
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.Dependencies.ModDependency.ModName
-  nameWithType: ModDependency.ModName
-- uid: Nitrocid.Modifications.Dependencies.ModDependency.ModVersion
-  name: ModVersion
-  href: api/Nitrocid.Modifications.Dependencies.ModDependency.html#Nitrocid_Modifications_Dependencies_ModDependency_ModVersion
-  commentId: P:Nitrocid.Modifications.Dependencies.ModDependency.ModVersion
-  fullName: Nitrocid.Modifications.Dependencies.ModDependency.ModVersion
-  nameWithType: ModDependency.ModVersion
-- uid: Nitrocid.Modifications.Dependencies.ModDependency.ModVersion*
-  name: ModVersion
-  href: api/Nitrocid.Modifications.Dependencies.ModDependency.html#Nitrocid_Modifications_Dependencies_ModDependency_ModVersion_
-  commentId: Overload:Nitrocid.Modifications.Dependencies.ModDependency.ModVersion
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.Dependencies.ModDependency.ModVersion
-  nameWithType: ModDependency.ModVersion
-- uid: Nitrocid.Modifications.IMod
-  name: IMod
-  href: api/Nitrocid.Modifications.IMod.html
-  commentId: T:Nitrocid.Modifications.IMod
-  fullName: Nitrocid.Modifications.IMod
-  nameWithType: IMod
-- uid: Nitrocid.Modifications.IMod.LoadPriority
-  name: LoadPriority
-  href: api/Nitrocid.Modifications.IMod.html#Nitrocid_Modifications_IMod_LoadPriority
-  commentId: P:Nitrocid.Modifications.IMod.LoadPriority
-  fullName: Nitrocid.Modifications.IMod.LoadPriority
-  nameWithType: IMod.LoadPriority
-- uid: Nitrocid.Modifications.IMod.LoadPriority*
-  name: LoadPriority
-  href: api/Nitrocid.Modifications.IMod.html#Nitrocid_Modifications_IMod_LoadPriority_
-  commentId: Overload:Nitrocid.Modifications.IMod.LoadPriority
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.IMod.LoadPriority
-  nameWithType: IMod.LoadPriority
-- uid: Nitrocid.Modifications.IMod.MinimumSupportedApiVersion
-  name: MinimumSupportedApiVersion
-  href: api/Nitrocid.Modifications.IMod.html#Nitrocid_Modifications_IMod_MinimumSupportedApiVersion
-  commentId: P:Nitrocid.Modifications.IMod.MinimumSupportedApiVersion
-  fullName: Nitrocid.Modifications.IMod.MinimumSupportedApiVersion
-  nameWithType: IMod.MinimumSupportedApiVersion
-- uid: Nitrocid.Modifications.IMod.MinimumSupportedApiVersion*
-  name: MinimumSupportedApiVersion
-  href: api/Nitrocid.Modifications.IMod.html#Nitrocid_Modifications_IMod_MinimumSupportedApiVersion_
-  commentId: Overload:Nitrocid.Modifications.IMod.MinimumSupportedApiVersion
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.IMod.MinimumSupportedApiVersion
-  nameWithType: IMod.MinimumSupportedApiVersion
-- uid: Nitrocid.Modifications.IMod.Name
-  name: Name
-  href: api/Nitrocid.Modifications.IMod.html#Nitrocid_Modifications_IMod_Name
-  commentId: P:Nitrocid.Modifications.IMod.Name
-  fullName: Nitrocid.Modifications.IMod.Name
-  nameWithType: IMod.Name
-- uid: Nitrocid.Modifications.IMod.Name*
-  name: Name
-  href: api/Nitrocid.Modifications.IMod.html#Nitrocid_Modifications_IMod_Name_
-  commentId: Overload:Nitrocid.Modifications.IMod.Name
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.IMod.Name
-  nameWithType: IMod.Name
-- uid: Nitrocid.Modifications.IMod.StartMod
-  name: StartMod()
-  href: api/Nitrocid.Modifications.IMod.html#Nitrocid_Modifications_IMod_StartMod
-  commentId: M:Nitrocid.Modifications.IMod.StartMod
-  fullName: Nitrocid.Modifications.IMod.StartMod()
-  nameWithType: IMod.StartMod()
-- uid: Nitrocid.Modifications.IMod.StartMod*
-  name: StartMod
-  href: api/Nitrocid.Modifications.IMod.html#Nitrocid_Modifications_IMod_StartMod_
-  commentId: Overload:Nitrocid.Modifications.IMod.StartMod
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.IMod.StartMod
-  nameWithType: IMod.StartMod
-- uid: Nitrocid.Modifications.IMod.StopMod
-  name: StopMod()
-  href: api/Nitrocid.Modifications.IMod.html#Nitrocid_Modifications_IMod_StopMod
-  commentId: M:Nitrocid.Modifications.IMod.StopMod
-  fullName: Nitrocid.Modifications.IMod.StopMod()
-  nameWithType: IMod.StopMod()
-- uid: Nitrocid.Modifications.IMod.StopMod*
-  name: StopMod
-  href: api/Nitrocid.Modifications.IMod.html#Nitrocid_Modifications_IMod_StopMod_
-  commentId: Overload:Nitrocid.Modifications.IMod.StopMod
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.IMod.StopMod
-  nameWithType: IMod.StopMod
-- uid: Nitrocid.Modifications.IMod.Version
-  name: Version
-  href: api/Nitrocid.Modifications.IMod.html#Nitrocid_Modifications_IMod_Version
-  commentId: P:Nitrocid.Modifications.IMod.Version
-  fullName: Nitrocid.Modifications.IMod.Version
-  nameWithType: IMod.Version
-- uid: Nitrocid.Modifications.IMod.Version*
-  name: Version
-  href: api/Nitrocid.Modifications.IMod.html#Nitrocid_Modifications_IMod_Version_
-  commentId: Overload:Nitrocid.Modifications.IMod.Version
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.IMod.Version
-  nameWithType: IMod.Version
-- uid: Nitrocid.Modifications.ManPages
-  name: Nitrocid.Modifications.ManPages
-  href: api/Nitrocid.Modifications.ManPages.html
-  commentId: N:Nitrocid.Modifications.ManPages
-  fullName: Nitrocid.Modifications.ManPages
-  nameWithType: Nitrocid.Modifications.ManPages
-- uid: Nitrocid.Modifications.ManPages.Manual
-  name: Manual
-  href: api/Nitrocid.Modifications.ManPages.Manual.html
-  commentId: T:Nitrocid.Modifications.ManPages.Manual
-  fullName: Nitrocid.Modifications.ManPages.Manual
-  nameWithType: Manual
-- uid: Nitrocid.Modifications.ManPages.Manual.Body
-  name: Body
-  href: api/Nitrocid.Modifications.ManPages.Manual.html#Nitrocid_Modifications_ManPages_Manual_Body
-  commentId: P:Nitrocid.Modifications.ManPages.Manual.Body
-  fullName: Nitrocid.Modifications.ManPages.Manual.Body
-  nameWithType: Manual.Body
-- uid: Nitrocid.Modifications.ManPages.Manual.Body*
-  name: Body
-  href: api/Nitrocid.Modifications.ManPages.Manual.html#Nitrocid_Modifications_ManPages_Manual_Body_
-  commentId: Overload:Nitrocid.Modifications.ManPages.Manual.Body
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ManPages.Manual.Body
-  nameWithType: Manual.Body
-- uid: Nitrocid.Modifications.ManPages.Manual.ModName
-  name: ModName
-  href: api/Nitrocid.Modifications.ManPages.Manual.html#Nitrocid_Modifications_ManPages_Manual_ModName
-  commentId: P:Nitrocid.Modifications.ManPages.Manual.ModName
-  fullName: Nitrocid.Modifications.ManPages.Manual.ModName
-  nameWithType: Manual.ModName
-- uid: Nitrocid.Modifications.ManPages.Manual.ModName*
-  name: ModName
-  href: api/Nitrocid.Modifications.ManPages.Manual.html#Nitrocid_Modifications_ManPages_Manual_ModName_
-  commentId: Overload:Nitrocid.Modifications.ManPages.Manual.ModName
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ManPages.Manual.ModName
-  nameWithType: Manual.ModName
-- uid: Nitrocid.Modifications.ManPages.Manual.Name
-  name: Name
-  href: api/Nitrocid.Modifications.ManPages.Manual.html#Nitrocid_Modifications_ManPages_Manual_Name
-  commentId: P:Nitrocid.Modifications.ManPages.Manual.Name
-  fullName: Nitrocid.Modifications.ManPages.Manual.Name
-  nameWithType: Manual.Name
-- uid: Nitrocid.Modifications.ManPages.Manual.Name*
-  name: Name
-  href: api/Nitrocid.Modifications.ManPages.Manual.html#Nitrocid_Modifications_ManPages_Manual_Name_
-  commentId: Overload:Nitrocid.Modifications.ManPages.Manual.Name
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ManPages.Manual.Name
-  nameWithType: Manual.Name
-- uid: Nitrocid.Modifications.ManPages.Manual.Revision
-  name: Revision
-  href: api/Nitrocid.Modifications.ManPages.Manual.html#Nitrocid_Modifications_ManPages_Manual_Revision
-  commentId: P:Nitrocid.Modifications.ManPages.Manual.Revision
-  fullName: Nitrocid.Modifications.ManPages.Manual.Revision
-  nameWithType: Manual.Revision
-- uid: Nitrocid.Modifications.ManPages.Manual.Revision*
-  name: Revision
-  href: api/Nitrocid.Modifications.ManPages.Manual.html#Nitrocid_Modifications_ManPages_Manual_Revision_
-  commentId: Overload:Nitrocid.Modifications.ManPages.Manual.Revision
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ManPages.Manual.Revision
-  nameWithType: Manual.Revision
-- uid: Nitrocid.Modifications.ManPages.Manual.Title
-  name: Title
-  href: api/Nitrocid.Modifications.ManPages.Manual.html#Nitrocid_Modifications_ManPages_Manual_Title
-  commentId: P:Nitrocid.Modifications.ManPages.Manual.Title
-  fullName: Nitrocid.Modifications.ManPages.Manual.Title
-  nameWithType: Manual.Title
-- uid: Nitrocid.Modifications.ManPages.Manual.Title*
-  name: Title
-  href: api/Nitrocid.Modifications.ManPages.Manual.html#Nitrocid_Modifications_ManPages_Manual_Title_
-  commentId: Overload:Nitrocid.Modifications.ManPages.Manual.Title
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ManPages.Manual.Title
-  nameWithType: Manual.Title
-- uid: Nitrocid.Modifications.ManPages.Manual.Todos
-  name: Todos
-  href: api/Nitrocid.Modifications.ManPages.Manual.html#Nitrocid_Modifications_ManPages_Manual_Todos
-  commentId: P:Nitrocid.Modifications.ManPages.Manual.Todos
-  fullName: Nitrocid.Modifications.ManPages.Manual.Todos
-  nameWithType: Manual.Todos
-- uid: Nitrocid.Modifications.ManPages.Manual.Todos*
-  name: Todos
-  href: api/Nitrocid.Modifications.ManPages.Manual.html#Nitrocid_Modifications_ManPages_Manual_Todos_
-  commentId: Overload:Nitrocid.Modifications.ManPages.Manual.Todos
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ManPages.Manual.Todos
-  nameWithType: Manual.Todos
-- uid: Nitrocid.Modifications.ManPages.Manual.ValidManpage
-  name: ValidManpage
-  href: api/Nitrocid.Modifications.ManPages.Manual.html#Nitrocid_Modifications_ManPages_Manual_ValidManpage
-  commentId: P:Nitrocid.Modifications.ManPages.Manual.ValidManpage
-  fullName: Nitrocid.Modifications.ManPages.Manual.ValidManpage
-  nameWithType: Manual.ValidManpage
-- uid: Nitrocid.Modifications.ManPages.Manual.ValidManpage*
-  name: ValidManpage
-  href: api/Nitrocid.Modifications.ManPages.Manual.html#Nitrocid_Modifications_ManPages_Manual_ValidManpage_
-  commentId: Overload:Nitrocid.Modifications.ManPages.Manual.ValidManpage
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ManPages.Manual.ValidManpage
-  nameWithType: Manual.ValidManpage
-- uid: Nitrocid.Modifications.ManPages.PageManager
-  name: PageManager
-  href: api/Nitrocid.Modifications.ManPages.PageManager.html
-  commentId: T:Nitrocid.Modifications.ManPages.PageManager
-  fullName: Nitrocid.Modifications.ManPages.PageManager
-  nameWithType: PageManager
-- uid: Nitrocid.Modifications.ManPages.PageManager.AddManualPage(System.String,System.String,Nitrocid.Modifications.ManPages.Manual)
-  name: AddManualPage(string, string, Manual)
-  href: api/Nitrocid.Modifications.ManPages.PageManager.html#Nitrocid_Modifications_ManPages_PageManager_AddManualPage_System_String_System_String_Nitrocid_Modifications_ManPages_Manual_
-  commentId: M:Nitrocid.Modifications.ManPages.PageManager.AddManualPage(System.String,System.String,Nitrocid.Modifications.ManPages.Manual)
-  name.vb: AddManualPage(String, String, Manual)
-  fullName: Nitrocid.Modifications.ManPages.PageManager.AddManualPage(string, string, Nitrocid.Modifications.ManPages.Manual)
-  fullName.vb: Nitrocid.Modifications.ManPages.PageManager.AddManualPage(String, String, Nitrocid.Modifications.ManPages.Manual)
-  nameWithType: PageManager.AddManualPage(string, string, Manual)
-  nameWithType.vb: PageManager.AddManualPage(String, String, Manual)
-- uid: Nitrocid.Modifications.ManPages.PageManager.AddManualPage*
-  name: AddManualPage
-  href: api/Nitrocid.Modifications.ManPages.PageManager.html#Nitrocid_Modifications_ManPages_PageManager_AddManualPage_
-  commentId: Overload:Nitrocid.Modifications.ManPages.PageManager.AddManualPage
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ManPages.PageManager.AddManualPage
-  nameWithType: PageManager.AddManualPage
-- uid: Nitrocid.Modifications.ManPages.PageManager.ListAllPages
-  name: ListAllPages()
-  href: api/Nitrocid.Modifications.ManPages.PageManager.html#Nitrocid_Modifications_ManPages_PageManager_ListAllPages
-  commentId: M:Nitrocid.Modifications.ManPages.PageManager.ListAllPages
-  fullName: Nitrocid.Modifications.ManPages.PageManager.ListAllPages()
-  nameWithType: PageManager.ListAllPages()
-- uid: Nitrocid.Modifications.ManPages.PageManager.ListAllPages(System.String)
-  name: ListAllPages(string)
-  href: api/Nitrocid.Modifications.ManPages.PageManager.html#Nitrocid_Modifications_ManPages_PageManager_ListAllPages_System_String_
-  commentId: M:Nitrocid.Modifications.ManPages.PageManager.ListAllPages(System.String)
-  name.vb: ListAllPages(String)
-  fullName: Nitrocid.Modifications.ManPages.PageManager.ListAllPages(string)
-  fullName.vb: Nitrocid.Modifications.ManPages.PageManager.ListAllPages(String)
-  nameWithType: PageManager.ListAllPages(string)
-  nameWithType.vb: PageManager.ListAllPages(String)
-- uid: Nitrocid.Modifications.ManPages.PageManager.ListAllPages*
-  name: ListAllPages
-  href: api/Nitrocid.Modifications.ManPages.PageManager.html#Nitrocid_Modifications_ManPages_PageManager_ListAllPages_
-  commentId: Overload:Nitrocid.Modifications.ManPages.PageManager.ListAllPages
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ManPages.PageManager.ListAllPages
-  nameWithType: PageManager.ListAllPages
-- uid: Nitrocid.Modifications.ManPages.PageManager.ListAllPagesByMod(System.String)
-  name: ListAllPagesByMod(string)
-  href: api/Nitrocid.Modifications.ManPages.PageManager.html#Nitrocid_Modifications_ManPages_PageManager_ListAllPagesByMod_System_String_
-  commentId: M:Nitrocid.Modifications.ManPages.PageManager.ListAllPagesByMod(System.String)
-  name.vb: ListAllPagesByMod(String)
-  fullName: Nitrocid.Modifications.ManPages.PageManager.ListAllPagesByMod(string)
-  fullName.vb: Nitrocid.Modifications.ManPages.PageManager.ListAllPagesByMod(String)
-  nameWithType: PageManager.ListAllPagesByMod(string)
-  nameWithType.vb: PageManager.ListAllPagesByMod(String)
-- uid: Nitrocid.Modifications.ManPages.PageManager.ListAllPagesByMod*
-  name: ListAllPagesByMod
-  href: api/Nitrocid.Modifications.ManPages.PageManager.html#Nitrocid_Modifications_ManPages_PageManager_ListAllPagesByMod_
-  commentId: Overload:Nitrocid.Modifications.ManPages.PageManager.ListAllPagesByMod
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ManPages.PageManager.ListAllPagesByMod
-  nameWithType: PageManager.ListAllPagesByMod
-- uid: Nitrocid.Modifications.ManPages.PageManager.RemoveManualPage(Nitrocid.Modifications.ManPages.Manual)
-  name: RemoveManualPage(Manual)
-  href: api/Nitrocid.Modifications.ManPages.PageManager.html#Nitrocid_Modifications_ManPages_PageManager_RemoveManualPage_Nitrocid_Modifications_ManPages_Manual_
-  commentId: M:Nitrocid.Modifications.ManPages.PageManager.RemoveManualPage(Nitrocid.Modifications.ManPages.Manual)
-  fullName: Nitrocid.Modifications.ManPages.PageManager.RemoveManualPage(Nitrocid.Modifications.ManPages.Manual)
-  nameWithType: PageManager.RemoveManualPage(Manual)
-- uid: Nitrocid.Modifications.ManPages.PageManager.RemoveManualPage*
-  name: RemoveManualPage
-  href: api/Nitrocid.Modifications.ManPages.PageManager.html#Nitrocid_Modifications_ManPages_PageManager_RemoveManualPage_
-  commentId: Overload:Nitrocid.Modifications.ManPages.PageManager.RemoveManualPage
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ManPages.PageManager.RemoveManualPage
-  nameWithType: PageManager.RemoveManualPage
-- uid: Nitrocid.Modifications.ModInfo
-  name: ModInfo
-  href: api/Nitrocid.Modifications.ModInfo.html
-  commentId: T:Nitrocid.Modifications.ModInfo
-  fullName: Nitrocid.Modifications.ModInfo
-  nameWithType: ModInfo
-- uid: Nitrocid.Modifications.ModInfo.ModFileName
-  name: ModFileName
-  href: api/Nitrocid.Modifications.ModInfo.html#Nitrocid_Modifications_ModInfo_ModFileName
-  commentId: P:Nitrocid.Modifications.ModInfo.ModFileName
-  fullName: Nitrocid.Modifications.ModInfo.ModFileName
-  nameWithType: ModInfo.ModFileName
-- uid: Nitrocid.Modifications.ModInfo.ModFileName*
-  name: ModFileName
-  href: api/Nitrocid.Modifications.ModInfo.html#Nitrocid_Modifications_ModInfo_ModFileName_
-  commentId: Overload:Nitrocid.Modifications.ModInfo.ModFileName
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModInfo.ModFileName
-  nameWithType: ModInfo.ModFileName
-- uid: Nitrocid.Modifications.ModInfo.ModFilePath
-  name: ModFilePath
-  href: api/Nitrocid.Modifications.ModInfo.html#Nitrocid_Modifications_ModInfo_ModFilePath
-  commentId: P:Nitrocid.Modifications.ModInfo.ModFilePath
-  fullName: Nitrocid.Modifications.ModInfo.ModFilePath
-  nameWithType: ModInfo.ModFilePath
-- uid: Nitrocid.Modifications.ModInfo.ModFilePath*
-  name: ModFilePath
-  href: api/Nitrocid.Modifications.ModInfo.html#Nitrocid_Modifications_ModInfo_ModFilePath_
-  commentId: Overload:Nitrocid.Modifications.ModInfo.ModFilePath
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModInfo.ModFilePath
-  nameWithType: ModInfo.ModFilePath
-- uid: Nitrocid.Modifications.ModInfo.ModName
-  name: ModName
-  href: api/Nitrocid.Modifications.ModInfo.html#Nitrocid_Modifications_ModInfo_ModName
-  commentId: P:Nitrocid.Modifications.ModInfo.ModName
-  fullName: Nitrocid.Modifications.ModInfo.ModName
-  nameWithType: ModInfo.ModName
-- uid: Nitrocid.Modifications.ModInfo.ModName*
-  name: ModName
-  href: api/Nitrocid.Modifications.ModInfo.html#Nitrocid_Modifications_ModInfo_ModName_
-  commentId: Overload:Nitrocid.Modifications.ModInfo.ModName
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModInfo.ModName
-  nameWithType: ModInfo.ModName
-- uid: Nitrocid.Modifications.ModInfo.ModStrings
-  name: ModStrings
-  href: api/Nitrocid.Modifications.ModInfo.html#Nitrocid_Modifications_ModInfo_ModStrings
-  commentId: P:Nitrocid.Modifications.ModInfo.ModStrings
-  fullName: Nitrocid.Modifications.ModInfo.ModStrings
-  nameWithType: ModInfo.ModStrings
-- uid: Nitrocid.Modifications.ModInfo.ModStrings*
-  name: ModStrings
-  href: api/Nitrocid.Modifications.ModInfo.html#Nitrocid_Modifications_ModInfo_ModStrings_
-  commentId: Overload:Nitrocid.Modifications.ModInfo.ModStrings
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModInfo.ModStrings
-  nameWithType: ModInfo.ModStrings
-- uid: Nitrocid.Modifications.ModInfo.ModVersion
-  name: ModVersion
-  href: api/Nitrocid.Modifications.ModInfo.html#Nitrocid_Modifications_ModInfo_ModVersion
-  commentId: P:Nitrocid.Modifications.ModInfo.ModVersion
-  fullName: Nitrocid.Modifications.ModInfo.ModVersion
-  nameWithType: ModInfo.ModVersion
-- uid: Nitrocid.Modifications.ModInfo.ModVersion*
-  name: ModVersion
-  href: api/Nitrocid.Modifications.ModInfo.html#Nitrocid_Modifications_ModInfo_ModVersion_
-  commentId: Overload:Nitrocid.Modifications.ModInfo.ModVersion
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModInfo.ModVersion
-  nameWithType: ModInfo.ModVersion
-- uid: Nitrocid.Modifications.ModLoadPriority
-  name: ModLoadPriority
-  href: api/Nitrocid.Modifications.ModLoadPriority.html
-  commentId: T:Nitrocid.Modifications.ModLoadPriority
-  fullName: Nitrocid.Modifications.ModLoadPriority
-  nameWithType: ModLoadPriority
-- uid: Nitrocid.Modifications.ModLoadPriority.Important
-  name: Important
-  href: api/Nitrocid.Modifications.ModLoadPriority.html#Nitrocid_Modifications_ModLoadPriority_Important
-  commentId: F:Nitrocid.Modifications.ModLoadPriority.Important
-  fullName: Nitrocid.Modifications.ModLoadPriority.Important
-  nameWithType: ModLoadPriority.Important
-- uid: Nitrocid.Modifications.ModLoadPriority.Optional
-  name: Optional
-  href: api/Nitrocid.Modifications.ModLoadPriority.html#Nitrocid_Modifications_ModLoadPriority_Optional
-  commentId: F:Nitrocid.Modifications.ModLoadPriority.Optional
-  fullName: Nitrocid.Modifications.ModLoadPriority.Optional
-  nameWithType: ModLoadPriority.Optional
-- uid: Nitrocid.Modifications.ModManager
-  name: ModManager
-  href: api/Nitrocid.Modifications.ModManager.html
-  commentId: T:Nitrocid.Modifications.ModManager
-  fullName: Nitrocid.Modifications.ModManager
-  nameWithType: ModManager
-- uid: Nitrocid.Modifications.ModManager.AddModToBlacklist(System.String)
-  name: AddModToBlacklist(string)
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_AddModToBlacklist_System_String_
-  commentId: M:Nitrocid.Modifications.ModManager.AddModToBlacklist(System.String)
-  name.vb: AddModToBlacklist(String)
-  fullName: Nitrocid.Modifications.ModManager.AddModToBlacklist(string)
-  fullName.vb: Nitrocid.Modifications.ModManager.AddModToBlacklist(String)
-  nameWithType: ModManager.AddModToBlacklist(string)
-  nameWithType.vb: ModManager.AddModToBlacklist(String)
-- uid: Nitrocid.Modifications.ModManager.AddModToBlacklist*
-  name: AddModToBlacklist
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_AddModToBlacklist_
-  commentId: Overload:Nitrocid.Modifications.ModManager.AddModToBlacklist
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModManager.AddModToBlacklist
-  nameWithType: ModManager.AddModToBlacklist
-- uid: Nitrocid.Modifications.ModManager.GetBlacklistedMods
-  name: GetBlacklistedMods()
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_GetBlacklistedMods
-  commentId: M:Nitrocid.Modifications.ModManager.GetBlacklistedMods
-  fullName: Nitrocid.Modifications.ModManager.GetBlacklistedMods()
-  nameWithType: ModManager.GetBlacklistedMods()
-- uid: Nitrocid.Modifications.ModManager.GetBlacklistedMods*
-  name: GetBlacklistedMods
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_GetBlacklistedMods_
-  commentId: Overload:Nitrocid.Modifications.ModManager.GetBlacklistedMods
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModManager.GetBlacklistedMods
-  nameWithType: ModManager.GetBlacklistedMods
-- uid: Nitrocid.Modifications.ModManager.GetMod(System.String)
-  name: GetMod(string)
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_GetMod_System_String_
-  commentId: M:Nitrocid.Modifications.ModManager.GetMod(System.String)
-  name.vb: GetMod(String)
-  fullName: Nitrocid.Modifications.ModManager.GetMod(string)
-  fullName.vb: Nitrocid.Modifications.ModManager.GetMod(String)
-  nameWithType: ModManager.GetMod(string)
-  nameWithType.vb: ModManager.GetMod(String)
-- uid: Nitrocid.Modifications.ModManager.GetMod*
-  name: GetMod
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_GetMod_
-  commentId: Overload:Nitrocid.Modifications.ModManager.GetMod
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModManager.GetMod
-  nameWithType: ModManager.GetMod
-- uid: Nitrocid.Modifications.ModManager.HasModStarted(System.String)
-  name: HasModStarted(string)
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_HasModStarted_System_String_
-  commentId: M:Nitrocid.Modifications.ModManager.HasModStarted(System.String)
-  name.vb: HasModStarted(String)
-  fullName: Nitrocid.Modifications.ModManager.HasModStarted(string)
-  fullName.vb: Nitrocid.Modifications.ModManager.HasModStarted(String)
-  nameWithType: ModManager.HasModStarted(string)
-  nameWithType.vb: ModManager.HasModStarted(String)
-- uid: Nitrocid.Modifications.ModManager.HasModStarted*
-  name: HasModStarted
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_HasModStarted_
-  commentId: Overload:Nitrocid.Modifications.ModManager.HasModStarted
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModManager.HasModStarted
-  nameWithType: ModManager.HasModStarted
-- uid: Nitrocid.Modifications.ModManager.InstallMod(System.String)
-  name: InstallMod(string)
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_InstallMod_System_String_
-  commentId: M:Nitrocid.Modifications.ModManager.InstallMod(System.String)
-  name.vb: InstallMod(String)
-  fullName: Nitrocid.Modifications.ModManager.InstallMod(string)
-  fullName.vb: Nitrocid.Modifications.ModManager.InstallMod(String)
-  nameWithType: ModManager.InstallMod(string)
-  nameWithType.vb: ModManager.InstallMod(String)
-- uid: Nitrocid.Modifications.ModManager.InstallMod*
-  name: InstallMod
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_InstallMod_
-  commentId: Overload:Nitrocid.Modifications.ModManager.InstallMod
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModManager.InstallMod
-  nameWithType: ModManager.InstallMod
-- uid: Nitrocid.Modifications.ModManager.ListModCommands(Nitrocid.Shell.ShellBase.Shells.ShellType)
-  name: ListModCommands(ShellType)
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_ListModCommands_Nitrocid_Shell_ShellBase_Shells_ShellType_
-  commentId: M:Nitrocid.Modifications.ModManager.ListModCommands(Nitrocid.Shell.ShellBase.Shells.ShellType)
-  fullName: Nitrocid.Modifications.ModManager.ListModCommands(Nitrocid.Shell.ShellBase.Shells.ShellType)
-  nameWithType: ModManager.ListModCommands(ShellType)
-- uid: Nitrocid.Modifications.ModManager.ListModCommands(System.String)
-  name: ListModCommands(string)
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_ListModCommands_System_String_
-  commentId: M:Nitrocid.Modifications.ModManager.ListModCommands(System.String)
-  name.vb: ListModCommands(String)
-  fullName: Nitrocid.Modifications.ModManager.ListModCommands(string)
-  fullName.vb: Nitrocid.Modifications.ModManager.ListModCommands(String)
-  nameWithType: ModManager.ListModCommands(string)
-  nameWithType.vb: ModManager.ListModCommands(String)
-- uid: Nitrocid.Modifications.ModManager.ListModCommands*
-  name: ListModCommands
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_ListModCommands_
-  commentId: Overload:Nitrocid.Modifications.ModManager.ListModCommands
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModManager.ListModCommands
-  nameWithType: ModManager.ListModCommands
-- uid: Nitrocid.Modifications.ModManager.ListMods
-  name: ListMods()
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_ListMods
-  commentId: M:Nitrocid.Modifications.ModManager.ListMods
-  fullName: Nitrocid.Modifications.ModManager.ListMods()
-  nameWithType: ModManager.ListMods()
-- uid: Nitrocid.Modifications.ModManager.ListMods(System.String)
-  name: ListMods(string)
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_ListMods_System_String_
-  commentId: M:Nitrocid.Modifications.ModManager.ListMods(System.String)
-  name.vb: ListMods(String)
-  fullName: Nitrocid.Modifications.ModManager.ListMods(string)
-  fullName.vb: Nitrocid.Modifications.ModManager.ListMods(String)
-  nameWithType: ModManager.ListMods(string)
-  nameWithType.vb: ModManager.ListMods(String)
-- uid: Nitrocid.Modifications.ModManager.ListMods*
-  name: ListMods
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_ListMods_
-  commentId: Overload:Nitrocid.Modifications.ModManager.ListMods
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModManager.ListMods
-  nameWithType: ModManager.ListMods
-- uid: Nitrocid.Modifications.ModManager.ReloadMod(System.String)
-  name: ReloadMod(string)
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_ReloadMod_System_String_
-  commentId: M:Nitrocid.Modifications.ModManager.ReloadMod(System.String)
-  name.vb: ReloadMod(String)
-  fullName: Nitrocid.Modifications.ModManager.ReloadMod(string)
-  fullName.vb: Nitrocid.Modifications.ModManager.ReloadMod(String)
-  nameWithType: ModManager.ReloadMod(string)
-  nameWithType.vb: ModManager.ReloadMod(String)
-- uid: Nitrocid.Modifications.ModManager.ReloadMod*
-  name: ReloadMod
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_ReloadMod_
-  commentId: Overload:Nitrocid.Modifications.ModManager.ReloadMod
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModManager.ReloadMod
-  nameWithType: ModManager.ReloadMod
-- uid: Nitrocid.Modifications.ModManager.ReloadMods
-  name: ReloadMods()
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_ReloadMods
-  commentId: M:Nitrocid.Modifications.ModManager.ReloadMods
-  fullName: Nitrocid.Modifications.ModManager.ReloadMods()
-  nameWithType: ModManager.ReloadMods()
-- uid: Nitrocid.Modifications.ModManager.ReloadMods*
-  name: ReloadMods
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_ReloadMods_
-  commentId: Overload:Nitrocid.Modifications.ModManager.ReloadMods
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModManager.ReloadMods
-  nameWithType: ModManager.ReloadMods
-- uid: Nitrocid.Modifications.ModManager.RemoveModFromBlacklist(System.String)
-  name: RemoveModFromBlacklist(string)
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_RemoveModFromBlacklist_System_String_
-  commentId: M:Nitrocid.Modifications.ModManager.RemoveModFromBlacklist(System.String)
-  name.vb: RemoveModFromBlacklist(String)
-  fullName: Nitrocid.Modifications.ModManager.RemoveModFromBlacklist(string)
-  fullName.vb: Nitrocid.Modifications.ModManager.RemoveModFromBlacklist(String)
-  nameWithType: ModManager.RemoveModFromBlacklist(string)
-  nameWithType.vb: ModManager.RemoveModFromBlacklist(String)
-- uid: Nitrocid.Modifications.ModManager.RemoveModFromBlacklist*
-  name: RemoveModFromBlacklist
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_RemoveModFromBlacklist_
-  commentId: Overload:Nitrocid.Modifications.ModManager.RemoveModFromBlacklist
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModManager.RemoveModFromBlacklist
-  nameWithType: ModManager.RemoveModFromBlacklist
-- uid: Nitrocid.Modifications.ModManager.StartMod(System.String,Nitrocid.Modifications.ModLoadPriority)
-  name: StartMod(string, ModLoadPriority)
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_StartMod_System_String_Nitrocid_Modifications_ModLoadPriority_
-  commentId: M:Nitrocid.Modifications.ModManager.StartMod(System.String,Nitrocid.Modifications.ModLoadPriority)
-  name.vb: StartMod(String, ModLoadPriority)
-  fullName: Nitrocid.Modifications.ModManager.StartMod(string, Nitrocid.Modifications.ModLoadPriority)
-  fullName.vb: Nitrocid.Modifications.ModManager.StartMod(String, Nitrocid.Modifications.ModLoadPriority)
-  nameWithType: ModManager.StartMod(string, ModLoadPriority)
-  nameWithType.vb: ModManager.StartMod(String, ModLoadPriority)
-- uid: Nitrocid.Modifications.ModManager.StartMod*
-  name: StartMod
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_StartMod_
-  commentId: Overload:Nitrocid.Modifications.ModManager.StartMod
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModManager.StartMod
-  nameWithType: ModManager.StartMod
-- uid: Nitrocid.Modifications.ModManager.StartMods(Nitrocid.Modifications.ModLoadPriority)
-  name: StartMods(ModLoadPriority)
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_StartMods_Nitrocid_Modifications_ModLoadPriority_
-  commentId: M:Nitrocid.Modifications.ModManager.StartMods(Nitrocid.Modifications.ModLoadPriority)
-  fullName: Nitrocid.Modifications.ModManager.StartMods(Nitrocid.Modifications.ModLoadPriority)
-  nameWithType: ModManager.StartMods(ModLoadPriority)
-- uid: Nitrocid.Modifications.ModManager.StartMods*
-  name: StartMods
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_StartMods_
-  commentId: Overload:Nitrocid.Modifications.ModManager.StartMods
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModManager.StartMods
-  nameWithType: ModManager.StartMods
-- uid: Nitrocid.Modifications.ModManager.StopMod(System.String)
-  name: StopMod(string)
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_StopMod_System_String_
-  commentId: M:Nitrocid.Modifications.ModManager.StopMod(System.String)
-  name.vb: StopMod(String)
-  fullName: Nitrocid.Modifications.ModManager.StopMod(string)
-  fullName.vb: Nitrocid.Modifications.ModManager.StopMod(String)
-  nameWithType: ModManager.StopMod(string)
-  nameWithType.vb: ModManager.StopMod(String)
-- uid: Nitrocid.Modifications.ModManager.StopMod*
-  name: StopMod
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_StopMod_
-  commentId: Overload:Nitrocid.Modifications.ModManager.StopMod
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModManager.StopMod
-  nameWithType: ModManager.StopMod
-- uid: Nitrocid.Modifications.ModManager.StopMods
-  name: StopMods()
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_StopMods
-  commentId: M:Nitrocid.Modifications.ModManager.StopMods
-  fullName: Nitrocid.Modifications.ModManager.StopMods()
-  nameWithType: ModManager.StopMods()
-- uid: Nitrocid.Modifications.ModManager.StopMods*
-  name: StopMods
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_StopMods_
-  commentId: Overload:Nitrocid.Modifications.ModManager.StopMods
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModManager.StopMods
-  nameWithType: ModManager.StopMods
-- uid: Nitrocid.Modifications.ModManager.UninstallMod(System.String)
-  name: UninstallMod(string)
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_UninstallMod_System_String_
-  commentId: M:Nitrocid.Modifications.ModManager.UninstallMod(System.String)
-  name.vb: UninstallMod(String)
-  fullName: Nitrocid.Modifications.ModManager.UninstallMod(string)
-  fullName.vb: Nitrocid.Modifications.ModManager.UninstallMod(String)
-  nameWithType: ModManager.UninstallMod(string)
-  nameWithType.vb: ModManager.UninstallMod(String)
-- uid: Nitrocid.Modifications.ModManager.UninstallMod*
-  name: UninstallMod
-  href: api/Nitrocid.Modifications.ModManager.html#Nitrocid_Modifications_ModManager_UninstallMod_
-  commentId: Overload:Nitrocid.Modifications.ModManager.UninstallMod
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModManager.UninstallMod
-  nameWithType: ModManager.UninstallMod
-- uid: Nitrocid.Modifications.ModParser
-  name: ModParser
-  href: api/Nitrocid.Modifications.ModParser.html
-  commentId: T:Nitrocid.Modifications.ModParser
-  fullName: Nitrocid.Modifications.ModParser
-  nameWithType: ModParser
-- uid: Nitrocid.Modifications.ModParser.FinalizeMods(Nitrocid.Modifications.IMod,System.String)
-  name: FinalizeMods(IMod, string)
-  href: api/Nitrocid.Modifications.ModParser.html#Nitrocid_Modifications_ModParser_FinalizeMods_Nitrocid_Modifications_IMod_System_String_
-  commentId: M:Nitrocid.Modifications.ModParser.FinalizeMods(Nitrocid.Modifications.IMod,System.String)
-  name.vb: FinalizeMods(IMod, String)
-  fullName: Nitrocid.Modifications.ModParser.FinalizeMods(Nitrocid.Modifications.IMod, string)
-  fullName.vb: Nitrocid.Modifications.ModParser.FinalizeMods(Nitrocid.Modifications.IMod, String)
-  nameWithType: ModParser.FinalizeMods(IMod, string)
-  nameWithType.vb: ModParser.FinalizeMods(IMod, String)
-- uid: Nitrocid.Modifications.ModParser.FinalizeMods*
-  name: FinalizeMods
-  href: api/Nitrocid.Modifications.ModParser.html#Nitrocid_Modifications_ModParser_FinalizeMods_
-  commentId: Overload:Nitrocid.Modifications.ModParser.FinalizeMods
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModParser.FinalizeMods
-  nameWithType: ModParser.FinalizeMods
-- uid: Nitrocid.Modifications.ModParser.GetModInstance(System.Reflection.Assembly)
-  name: GetModInstance(Assembly)
-  href: api/Nitrocid.Modifications.ModParser.html#Nitrocid_Modifications_ModParser_GetModInstance_System_Reflection_Assembly_
-  commentId: M:Nitrocid.Modifications.ModParser.GetModInstance(System.Reflection.Assembly)
-  fullName: Nitrocid.Modifications.ModParser.GetModInstance(System.Reflection.Assembly)
-  nameWithType: ModParser.GetModInstance(Assembly)
-- uid: Nitrocid.Modifications.ModParser.GetModInstance*
-  name: GetModInstance
-  href: api/Nitrocid.Modifications.ModParser.html#Nitrocid_Modifications_ModParser_GetModInstance_
-  commentId: Overload:Nitrocid.Modifications.ModParser.GetModInstance
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModParser.GetModInstance
-  nameWithType: ModParser.GetModInstance
-- uid: Nitrocid.Modifications.ModParser.ParseMod(System.String,Nitrocid.Modifications.ModLoadPriority)
-  name: ParseMod(string, ModLoadPriority)
-  href: api/Nitrocid.Modifications.ModParser.html#Nitrocid_Modifications_ModParser_ParseMod_System_String_Nitrocid_Modifications_ModLoadPriority_
-  commentId: M:Nitrocid.Modifications.ModParser.ParseMod(System.String,Nitrocid.Modifications.ModLoadPriority)
-  name.vb: ParseMod(String, ModLoadPriority)
-  fullName: Nitrocid.Modifications.ModParser.ParseMod(string, Nitrocid.Modifications.ModLoadPriority)
-  fullName.vb: Nitrocid.Modifications.ModParser.ParseMod(String, Nitrocid.Modifications.ModLoadPriority)
-  nameWithType: ModParser.ParseMod(string, ModLoadPriority)
-  nameWithType.vb: ModParser.ParseMod(String, ModLoadPriority)
-- uid: Nitrocid.Modifications.ModParser.ParseMod*
-  name: ParseMod
-  href: api/Nitrocid.Modifications.ModParser.html#Nitrocid_Modifications_ModParser_ParseMod_
-  commentId: Overload:Nitrocid.Modifications.ModParser.ParseMod
-  isSpec: "True"
-  fullName: Nitrocid.Modifications.ModParser.ParseMod
-  nameWithType: ModParser.ParseMod
 - uid: Nitrocid.Network
   name: Nitrocid.Network
   href: api/Nitrocid.Network.html
