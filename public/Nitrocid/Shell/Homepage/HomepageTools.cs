@@ -108,6 +108,21 @@ namespace Nitrocid.Shell.Homepage
                 ScreenTools.SetCurrent(homeScreen);
                 ColorTools.LoadBack();
 
+                // Prepare the widget
+                var widget =
+                    WidgetTools.CheckWidget(Config.MainConfig.HomepageWidget) ?
+                    WidgetTools.GetWidget(Config.MainConfig.HomepageWidget) :
+                    WidgetTools.GetWidget(nameof(AnalogClock));
+                if (Config.MainConfig.EnableHomepageWidgets)
+                {
+                    int widgetLeft = ConsoleWrapper.WindowWidth / 2 + ConsoleWrapper.WindowWidth % 2;
+                    int widgetWidth = ConsoleWrapper.WindowWidth / 2 - 4;
+                    int widgetHeight = ConsoleWrapper.WindowHeight - 11;
+                    int widgetTop = 2;
+                    string widgetInit = widget.Initialize(widgetLeft + 1, widgetTop + 1, widgetWidth, widgetHeight);
+                    TextWriterRaw.WriteRaw(widgetInit);
+                }
+
                 // Now, render the homepage
                 homeScreenBuffer.AddDynamicText(() =>
                 {
@@ -140,11 +155,12 @@ namespace Nitrocid.Shell.Homepage
                     builder.Append(BorderColor.RenderBorder(widgetLeft, clockTop, widgetWidth, widgetHeight, KernelColorTools.GetColor(KernelColorType.TuiPaneSelectedSeparator)));
                     builder.Append(BorderColor.RenderBorder(widgetLeft, rssTop, widgetWidth, rssHeight, KernelColorTools.GetColor(KernelColorType.TuiPaneSelectedSeparator)));
 
-                    // Render the clock widget
-                    var widget = WidgetTools.GetWidget(nameof(AnalogClock));
-                    string widgetInit = widget.Initialize(widgetLeft + 1, clockTop + 1, widgetWidth, widgetHeight);
-                    string widgetSeq = widget.Render(widgetLeft + 1, clockTop + 1, widgetWidth, widgetHeight);
-                    builder.Append(widgetInit + widgetSeq);
+                    // Render the widget
+                    if (Config.MainConfig.EnableHomepageWidgets)
+                    {
+                        string widgetSeq = widget.Render(widgetLeft + 1, widgetTop + 1, widgetWidth, widgetHeight);
+                        builder.Append(widgetSeq);
+                    }
 
                     // Render the first three RSS feeds
                     if (string.IsNullOrEmpty(rssSequence))
