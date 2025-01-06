@@ -2,15 +2,16 @@ name: Build Project (Debug)
 
 on:
   push:
-    branches: [ "main", "v0.1.0.x-saas", "v0.0.24.x-saas" ]
+    branches: [ "main", "v0.1.0.x-saas", "v0.1.1.x-saas" ]
   pull_request:
-    branches: [ "main", "v0.1.0.x-saas", "v0.0.24.x-saas" ]
+    branches: [ "main", "v0.1.0.x-saas", "v0.1.1.x-saas" ]
     
 jobs:
   build:
     strategy:
       matrix:
         runs-on: [ubuntu-latest, windows-latest, macos-latest]
+      fail-fast: false
     runs-on: ${{ matrix.runs-on }}
 
     steps:
@@ -34,4 +35,9 @@ jobs:
       with:
         name: unit-test-log-${{ matrix.runs-on }}
         path: "private/Nitrocid.Tests/KSTest/net8.0/UnitTestDebug.log"
+    - uses: actions/upload-artifact@v4
+      if: success() || failure()
+      with:
+        name: unit-test-log-ms-${{ matrix.runs-on }}
+        path: "private/Nitrocid.Tests/KSTest/net8.0/TestResults"
         

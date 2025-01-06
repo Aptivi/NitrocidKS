@@ -1,0 +1,38 @@
+name: Push to PPA (amend with original source)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: 'true'
+      
+      - name: Import GPG
+        uses: crazy-max/ghaction-import-gpg@v6
+        with:
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
+
+      - name: Install required packages
+        run: |
+          sudo rm /etc/apt/sources.list.d/microsoft-prod.list
+          sudo apt autoremove dotnet*
+          sudo apt update
+          sudo NEEDRESTART_SUSPEND=1 apt install curl locales-all libunwind8-dev libcurl4-openssl-dev dotnet-sdk-8.0 libjack0 libportaudio2 libopenal1 libsdl2-2.0-0 libpulse0 libaudio2 devscripts debhelper-compat dput build-essential
+        
+      - name: Download original source
+        run: |
+          wget --output-document=../nitrocid-25_3.0.25.0-0.1.0.0.orig.tar.xz https://launchpad.net/~eofla/+archive/ubuntu/nitrocid/+sourcefiles/nitrocid-25/3.0.25.0-0.1.0.0/nitrocid-25_3.0.25.0-0.1.0.0.orig.tar.xz
+          tar xf ../nitrocid-25_3.0.25.0-0.1.0.0.orig.tar.xz .
+          mv .github ..
+
+      - name: Build source package
+        run: debuild -S
+        
+      - name: Push to Launchpad
+        run: dput ppa:eofla/nitrocid ../nitrocid-25_*_source.changes
