@@ -20275,15 +20275,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Debugging.DebugWriter.DebugStackTraces
   nameWithType: DebugWriter.DebugStackTraces
-- uid: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebug(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Object[])
-  name: WriteDebug(DebugLevel, string, params object?[]?)
-  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_WriteDebug_Nitrocid_Kernel_Debugging_DebugLevel_System_String_System_Object___
-  commentId: M:Nitrocid.Kernel.Debugging.DebugWriter.WriteDebug(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Object[])
-  name.vb: WriteDebug(DebugLevel, String, ParamArray Object())
-  fullName: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebug(Nitrocid.Kernel.Debugging.DebugLevel, string, params object?[]?)
-  fullName.vb: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebug(Nitrocid.Kernel.Debugging.DebugLevel, String, ParamArray Object())
-  nameWithType: DebugWriter.WriteDebug(DebugLevel, string, params object?[]?)
-  nameWithType.vb: DebugWriter.WriteDebug(DebugLevel, String, ParamArray Object())
+- uid: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebug(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.String,System.Int32,System.String,System.Object[])
+  name: WriteDebug(DebugLevel, string, string, int, string, object?[]?)
+  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_WriteDebug_Nitrocid_Kernel_Debugging_DebugLevel_System_String_System_String_System_Int32_System_String_System_Object___
+  commentId: M:Nitrocid.Kernel.Debugging.DebugWriter.WriteDebug(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.String,System.Int32,System.String,System.Object[])
+  name.vb: WriteDebug(DebugLevel, String, String, Integer, String, Object())
+  fullName: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebug(Nitrocid.Kernel.Debugging.DebugLevel, string, string, int, string, object?[]?)
+  fullName.vb: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebug(Nitrocid.Kernel.Debugging.DebugLevel, String, String, Integer, String, Object())
+  nameWithType: DebugWriter.WriteDebug(DebugLevel, string, string, int, string, object?[]?)
+  nameWithType.vb: DebugWriter.WriteDebug(DebugLevel, String, String, Integer, String, Object())
 - uid: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebug*
   name: WriteDebug
   href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_WriteDebug_
@@ -20291,15 +20291,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebug
   nameWithType: DebugWriter.WriteDebug
-- uid: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugChatsOnly(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Boolean,System.Object[])
-  name: WriteDebugChatsOnly(DebugLevel, string, bool, params object?[]?)
-  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_WriteDebugChatsOnly_Nitrocid_Kernel_Debugging_DebugLevel_System_String_System_Boolean_System_Object___
-  commentId: M:Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugChatsOnly(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Boolean,System.Object[])
-  name.vb: WriteDebugChatsOnly(DebugLevel, String, Boolean, ParamArray Object())
-  fullName: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugChatsOnly(Nitrocid.Kernel.Debugging.DebugLevel, string, bool, params object?[]?)
-  fullName.vb: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugChatsOnly(Nitrocid.Kernel.Debugging.DebugLevel, String, Boolean, ParamArray Object())
-  nameWithType: DebugWriter.WriteDebugChatsOnly(DebugLevel, string, bool, params object?[]?)
-  nameWithType.vb: DebugWriter.WriteDebugChatsOnly(DebugLevel, String, Boolean, ParamArray Object())
+- uid: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugChatsOnly(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Boolean,System.String,System.Int32,System.String,System.Object[])
+  name: WriteDebugChatsOnly(DebugLevel, string, bool, string, int, string, object?[]?)
+  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_WriteDebugChatsOnly_Nitrocid_Kernel_Debugging_DebugLevel_System_String_System_Boolean_System_String_System_Int32_System_String_System_Object___
+  commentId: M:Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugChatsOnly(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Boolean,System.String,System.Int32,System.String,System.Object[])
+  name.vb: WriteDebugChatsOnly(DebugLevel, String, Boolean, String, Integer, String, Object())
+  fullName: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugChatsOnly(Nitrocid.Kernel.Debugging.DebugLevel, string, bool, string, int, string, object?[]?)
+  fullName.vb: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugChatsOnly(Nitrocid.Kernel.Debugging.DebugLevel, String, Boolean, String, Integer, String, Object())
+  nameWithType: DebugWriter.WriteDebugChatsOnly(DebugLevel, string, bool, string, int, string, object?[]?)
+  nameWithType.vb: DebugWriter.WriteDebugChatsOnly(DebugLevel, String, Boolean, String, Integer, String, Object())
 - uid: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugChatsOnly*
   name: WriteDebugChatsOnly
   href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_WriteDebugChatsOnly_
@@ -20307,15 +20307,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugChatsOnly
   nameWithType: DebugWriter.WriteDebugChatsOnly
-- uid: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugConditional(System.Boolean,Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Object[])
-  name: WriteDebugConditional(bool, DebugLevel, string, params object?[]?)
-  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_WriteDebugConditional_System_Boolean_Nitrocid_Kernel_Debugging_DebugLevel_System_String_System_Object___
-  commentId: M:Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugConditional(System.Boolean,Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Object[])
-  name.vb: WriteDebugConditional(Boolean, DebugLevel, String, ParamArray Object())
-  fullName: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugConditional(bool, Nitrocid.Kernel.Debugging.DebugLevel, string, params object?[]?)
-  fullName.vb: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugConditional(Boolean, Nitrocid.Kernel.Debugging.DebugLevel, String, ParamArray Object())
-  nameWithType: DebugWriter.WriteDebugConditional(bool, DebugLevel, string, params object?[]?)
-  nameWithType.vb: DebugWriter.WriteDebugConditional(Boolean, DebugLevel, String, ParamArray Object())
+- uid: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugConditional(System.Boolean,Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.String,System.Int32,System.String,System.Object[])
+  name: WriteDebugConditional(bool, DebugLevel, string, string, int, string, object?[]?)
+  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_WriteDebugConditional_System_Boolean_Nitrocid_Kernel_Debugging_DebugLevel_System_String_System_String_System_Int32_System_String_System_Object___
+  commentId: M:Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugConditional(System.Boolean,Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.String,System.Int32,System.String,System.Object[])
+  name.vb: WriteDebugConditional(Boolean, DebugLevel, String, String, Integer, String, Object())
+  fullName: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugConditional(bool, Nitrocid.Kernel.Debugging.DebugLevel, string, string, int, string, object?[]?)
+  fullName.vb: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugConditional(Boolean, Nitrocid.Kernel.Debugging.DebugLevel, String, String, Integer, String, Object())
+  nameWithType: DebugWriter.WriteDebugConditional(bool, DebugLevel, string, string, int, string, object?[]?)
+  nameWithType.vb: DebugWriter.WriteDebugConditional(Boolean, DebugLevel, String, String, Integer, String, Object())
 - uid: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugConditional*
   name: WriteDebugConditional
   href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_WriteDebugConditional_
@@ -20323,15 +20323,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugConditional
   nameWithType: DebugWriter.WriteDebugConditional
-- uid: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugDeviceOnly(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Boolean,Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugDevice,System.Object[])
-  name: WriteDebugDeviceOnly(DebugLevel, string, bool, RemoteDebugDevice, params object?[]?)
-  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_WriteDebugDeviceOnly_Nitrocid_Kernel_Debugging_DebugLevel_System_String_System_Boolean_Nitrocid_Kernel_Debugging_RemoteDebug_RemoteDebugDevice_System_Object___
-  commentId: M:Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugDeviceOnly(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Boolean,Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugDevice,System.Object[])
-  name.vb: WriteDebugDeviceOnly(DebugLevel, String, Boolean, RemoteDebugDevice, ParamArray Object())
-  fullName: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugDeviceOnly(Nitrocid.Kernel.Debugging.DebugLevel, string, bool, Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugDevice, params object?[]?)
-  fullName.vb: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugDeviceOnly(Nitrocid.Kernel.Debugging.DebugLevel, String, Boolean, Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugDevice, ParamArray Object())
-  nameWithType: DebugWriter.WriteDebugDeviceOnly(DebugLevel, string, bool, RemoteDebugDevice, params object?[]?)
-  nameWithType.vb: DebugWriter.WriteDebugDeviceOnly(DebugLevel, String, Boolean, RemoteDebugDevice, ParamArray Object())
+- uid: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugDeviceOnly(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Boolean,Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugDevice,System.String,System.Int32,System.String,System.Object[])
+  name: WriteDebugDeviceOnly(DebugLevel, string, bool, RemoteDebugDevice, string, int, string, object?[]?)
+  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_WriteDebugDeviceOnly_Nitrocid_Kernel_Debugging_DebugLevel_System_String_System_Boolean_Nitrocid_Kernel_Debugging_RemoteDebug_RemoteDebugDevice_System_String_System_Int32_System_String_System_Object___
+  commentId: M:Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugDeviceOnly(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Boolean,Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugDevice,System.String,System.Int32,System.String,System.Object[])
+  name.vb: WriteDebugDeviceOnly(DebugLevel, String, Boolean, RemoteDebugDevice, String, Integer, String, Object())
+  fullName: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugDeviceOnly(Nitrocid.Kernel.Debugging.DebugLevel, string, bool, Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugDevice, string, int, string, object?[]?)
+  fullName.vb: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugDeviceOnly(Nitrocid.Kernel.Debugging.DebugLevel, String, Boolean, Nitrocid.Kernel.Debugging.RemoteDebug.RemoteDebugDevice, String, Integer, String, Object())
+  nameWithType: DebugWriter.WriteDebugDeviceOnly(DebugLevel, string, bool, RemoteDebugDevice, string, int, string, object?[]?)
+  nameWithType.vb: DebugWriter.WriteDebugDeviceOnly(DebugLevel, String, Boolean, RemoteDebugDevice, String, Integer, String, Object())
 - uid: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugDeviceOnly*
   name: WriteDebugDeviceOnly
   href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_WriteDebugDeviceOnly_
@@ -20339,15 +20339,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugDeviceOnly
   nameWithType: DebugWriter.WriteDebugDeviceOnly
-- uid: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugDevicesOnly(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Boolean,System.Object[])
-  name: WriteDebugDevicesOnly(DebugLevel, string, bool, params object?[]?)
-  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_WriteDebugDevicesOnly_Nitrocid_Kernel_Debugging_DebugLevel_System_String_System_Boolean_System_Object___
-  commentId: M:Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugDevicesOnly(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Boolean,System.Object[])
-  name.vb: WriteDebugDevicesOnly(DebugLevel, String, Boolean, ParamArray Object())
-  fullName: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugDevicesOnly(Nitrocid.Kernel.Debugging.DebugLevel, string, bool, params object?[]?)
-  fullName.vb: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugDevicesOnly(Nitrocid.Kernel.Debugging.DebugLevel, String, Boolean, ParamArray Object())
-  nameWithType: DebugWriter.WriteDebugDevicesOnly(DebugLevel, string, bool, params object?[]?)
-  nameWithType.vb: DebugWriter.WriteDebugDevicesOnly(DebugLevel, String, Boolean, ParamArray Object())
+- uid: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugDevicesOnly(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Boolean,System.String,System.Int32,System.String,System.Object[])
+  name: WriteDebugDevicesOnly(DebugLevel, string, bool, string, int, string, object?[]?)
+  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_WriteDebugDevicesOnly_Nitrocid_Kernel_Debugging_DebugLevel_System_String_System_Boolean_System_String_System_Int32_System_String_System_Object___
+  commentId: M:Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugDevicesOnly(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Boolean,System.String,System.Int32,System.String,System.Object[])
+  name.vb: WriteDebugDevicesOnly(DebugLevel, String, Boolean, String, Integer, String, Object())
+  fullName: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugDevicesOnly(Nitrocid.Kernel.Debugging.DebugLevel, string, bool, string, int, string, object?[]?)
+  fullName.vb: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugDevicesOnly(Nitrocid.Kernel.Debugging.DebugLevel, String, Boolean, String, Integer, String, Object())
+  nameWithType: DebugWriter.WriteDebugDevicesOnly(DebugLevel, string, bool, string, int, string, object?[]?)
+  nameWithType.vb: DebugWriter.WriteDebugDevicesOnly(DebugLevel, String, Boolean, String, Integer, String, Object())
 - uid: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugDevicesOnly*
   name: WriteDebugDevicesOnly
   href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_WriteDebugDevicesOnly_
@@ -20355,15 +20355,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugDevicesOnly
   nameWithType: DebugWriter.WriteDebugDevicesOnly
-- uid: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugLogOnly(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Object[])
-  name: WriteDebugLogOnly(DebugLevel, string, params object?[]?)
-  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_WriteDebugLogOnly_Nitrocid_Kernel_Debugging_DebugLevel_System_String_System_Object___
-  commentId: M:Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugLogOnly(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Object[])
-  name.vb: WriteDebugLogOnly(DebugLevel, String, ParamArray Object())
-  fullName: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugLogOnly(Nitrocid.Kernel.Debugging.DebugLevel, string, params object?[]?)
-  fullName.vb: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugLogOnly(Nitrocid.Kernel.Debugging.DebugLevel, String, ParamArray Object())
-  nameWithType: DebugWriter.WriteDebugLogOnly(DebugLevel, string, params object?[]?)
-  nameWithType.vb: DebugWriter.WriteDebugLogOnly(DebugLevel, String, ParamArray Object())
+- uid: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugLogOnly(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.String,System.Int32,System.String,System.Object[])
+  name: WriteDebugLogOnly(DebugLevel, string, string, int, string, object?[]?)
+  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_WriteDebugLogOnly_Nitrocid_Kernel_Debugging_DebugLevel_System_String_System_String_System_Int32_System_String_System_Object___
+  commentId: M:Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugLogOnly(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.String,System.Int32,System.String,System.Object[])
+  name.vb: WriteDebugLogOnly(DebugLevel, String, String, Integer, String, Object())
+  fullName: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugLogOnly(Nitrocid.Kernel.Debugging.DebugLevel, string, string, int, string, object?[]?)
+  fullName.vb: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugLogOnly(Nitrocid.Kernel.Debugging.DebugLevel, String, String, Integer, String, Object())
+  nameWithType: DebugWriter.WriteDebugLogOnly(DebugLevel, string, string, int, string, object?[]?)
+  nameWithType.vb: DebugWriter.WriteDebugLogOnly(DebugLevel, String, String, Integer, String, Object())
 - uid: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugLogOnly*
   name: WriteDebugLogOnly
   href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_WriteDebugLogOnly_
@@ -20371,15 +20371,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugLogOnly
   nameWithType: DebugWriter.WriteDebugLogOnly
-- uid: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugPrivacy(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Int32[],System.Object[])
-  name: WriteDebugPrivacy(DebugLevel, string, int[], params object?[]?)
-  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_WriteDebugPrivacy_Nitrocid_Kernel_Debugging_DebugLevel_System_String_System_Int32___System_Object___
-  commentId: M:Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugPrivacy(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Int32[],System.Object[])
-  name.vb: WriteDebugPrivacy(DebugLevel, String, Integer(), ParamArray Object())
-  fullName: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugPrivacy(Nitrocid.Kernel.Debugging.DebugLevel, string, int[], params object?[]?)
-  fullName.vb: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugPrivacy(Nitrocid.Kernel.Debugging.DebugLevel, String, Integer(), ParamArray Object())
-  nameWithType: DebugWriter.WriteDebugPrivacy(DebugLevel, string, int[], params object?[]?)
-  nameWithType.vb: DebugWriter.WriteDebugPrivacy(DebugLevel, String, Integer(), ParamArray Object())
+- uid: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugPrivacy(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Int32[],System.String,System.Int32,System.String,System.Object[])
+  name: WriteDebugPrivacy(DebugLevel, string, int[], string, int, string, object?[]?)
+  href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_WriteDebugPrivacy_Nitrocid_Kernel_Debugging_DebugLevel_System_String_System_Int32___System_String_System_Int32_System_String_System_Object___
+  commentId: M:Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugPrivacy(Nitrocid.Kernel.Debugging.DebugLevel,System.String,System.Int32[],System.String,System.Int32,System.String,System.Object[])
+  name.vb: WriteDebugPrivacy(DebugLevel, String, Integer(), String, Integer, String, Object())
+  fullName: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugPrivacy(Nitrocid.Kernel.Debugging.DebugLevel, string, int[], string, int, string, object?[]?)
+  fullName.vb: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugPrivacy(Nitrocid.Kernel.Debugging.DebugLevel, String, Integer(), String, Integer, String, Object())
+  nameWithType: DebugWriter.WriteDebugPrivacy(DebugLevel, string, int[], string, int, string, object?[]?)
+  nameWithType.vb: DebugWriter.WriteDebugPrivacy(DebugLevel, String, Integer(), String, Integer, String, Object())
 - uid: Nitrocid.Kernel.Debugging.DebugWriter.WriteDebugPrivacy*
   name: WriteDebugPrivacy
   href: api/Nitrocid.Kernel.Debugging.DebugWriter.html#Nitrocid_Kernel_Debugging_DebugWriter_WriteDebugPrivacy_
