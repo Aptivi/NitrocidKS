@@ -37,12 +37,12 @@ jobs:
         run: |
           mv debian ..
           mv .github ..
-          tar cfv ../kernel-simulator_3.0.26.54-0.1.1.29.orig.tar .
-          xz ../kernel-simulator_3.0.26.54-0.1.1.29.orig.tar
+          tar cfv ../nitrocid-26_3.0.26.0-0.1.1.0.orig.tar .
+          xz ../nitrocid-26_3.0.26.0-0.1.1.0.orig.tar
           mv ../debian .
 
       - name: Build source package
         run: debuild -S -sa
         
       - name: Push to Launchpad
-        run: dput ppa:eofla/kernel-sim ../kernel-simulator_*_source.changes
+        run: dput ppa:eofla/nitrocid ../nitrocid-26_*_source.changes

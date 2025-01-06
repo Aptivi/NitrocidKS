@@ -27,12 +27,12 @@ jobs:
         
       - name: Download original source
         run: |
-          wget --output-document=../kernel-simulator_3.0.26.54-0.1.1.29.orig.tar.xz https://launchpad.net/~eofla/+archive/ubuntu/kernel-sim/+sourcefiles/kernel-simulator/3.0.26.54-0.1.1.29/kernel-simulator_3.0.26.54-0.1.1.29.orig.tar.xz
-          tar xf ../kernel-simulator_3.0.26.54-0.1.1.29.orig.tar.xz .
+          wget --output-document=../nitrocid-26_3.0.26.0-0.1.1.0.orig.tar.xz https://launchpad.net/~eofla/+archive/ubuntu/nitrocid/+sourcefiles/nitrocid-26/3.0.26.0-0.1.1.0/nitrocid-26_3.0.26.0-0.1.1.0.orig.tar.xz
+          tar xf ../nitrocid-26_3.0.26.0-0.1.1.0.orig.tar.xz .
           mv .github ..
 
       - name: Build source package
         run: debuild -S
         
       - name: Push to Launchpad
-        run: dput ppa:eofla/kernel-sim ../kernel-simulator_*_source.changes
+        run: dput ppa:eofla/nitrocid ../nitrocid-26_*_source.changes
