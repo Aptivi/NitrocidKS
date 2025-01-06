@@ -99,53 +99,19 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Nitrocid/new/main/apiSpec/new?filename=Nitrocid_Kernel_Debugging_DebugCheck_Assert_System_Boolean_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Debugging.DebugCheck.Assert(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/Nitrocid/new/main/apiSpec/new?filename=Nitrocid_Kernel_Debugging_DebugCheck_Assert_System_Boolean_System_String_System_String_System_Int32_System_String_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Debugging.DebugCheck.Assert(System.Boolean%2CSystem.String%2CSystem.String%2CSystem.Int32%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Nitrocid/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L36">View Source</a>
+    <a href="https://github.com/Aptivi/Nitrocid/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L43">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Debugging_DebugCheck_Assert_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.Assert*"></a>
-  <h4 id="Nitrocid_Kernel_Debugging_DebugCheck_Assert_System_Boolean_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.Assert(System.Boolean)">Assert(bool)</h4>
+  <h4 id="Nitrocid_Kernel_Debugging_DebugCheck_Assert_System_Boolean_System_String_System_String_System_Int32_System_String_System_Object___" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.Assert(System.Boolean,System.String,System.String,System.Int32,System.String,System.Object[])">Assert(bool, string, string, int, string, object?[]?)</h4>
   <div class="markdown level1 summary"><p>Asserts and checks to see if the condition is satisfied</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Assert(bool condition)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">condition</span></td>
-        <td><p>Condition</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Nitrocid/new/main/apiSpec/new?filename=Nitrocid_Kernel_Debugging_DebugCheck_Assert_System_Boolean_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Debugging.DebugCheck.Assert(System.Boolean%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Nitrocid/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L44">View Source</a>
-  </span>
-  <a id="Nitrocid_Kernel_Debugging_DebugCheck_Assert_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.Assert*"></a>
-  <h4 id="Nitrocid_Kernel_Debugging_DebugCheck_Assert_System_Boolean_System_String_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.Assert(System.Boolean,System.String)">Assert(bool, string)</h4>
-  <div class="markdown level1 summary"><p>Asserts and checks to see if the condition is satisfied</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Assert(bool condition, string message)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Assert(bool condition, string message, string memberName = &quot;&quot;, int memberLine = 0, string memberPath = &quot;&quot;, object?[]? vars = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -169,44 +135,22 @@
         <td><p>A message to clarify why the assert failed</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Nitrocid/new/main/apiSpec/new?filename=Nitrocid_Kernel_Debugging_DebugCheck_Assert_System_Boolean_System_String_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Debugging.DebugCheck.Assert(System.Boolean%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Nitrocid/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L64">View Source</a>
-  </span>
-  <a id="Nitrocid_Kernel_Debugging_DebugCheck_Assert_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.Assert*"></a>
-  <h4 id="Nitrocid_Kernel_Debugging_DebugCheck_Assert_System_Boolean_System_String_System_Object___" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.Assert(System.Boolean,System.String,System.Object[])">Assert(bool, string, params object[])</h4>
-  <div class="markdown level1 summary"><p>Asserts and checks to see if the condition is satisfied</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Assert(bool condition, string message, params object[] vars)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Member name. Do not set unless you know what you're doing. Usually, using <code>vars: [...]</code> directly before the <code class="paramref">memberName</code> parameter is enough.</p>
+</td>
       </tr>
-    </thead>
-    <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">condition</span></td>
-        <td><p>Condition</p>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">memberLine</span></td>
+        <td><p>Member line number. Do not set unless you know what you're doing. Usually, using <code>vars: [...]</code> directly before the <code class="paramref">memberName</code> parameter is enough.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">string</span></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>A message to clarify why the assert failed</p>
+        <td><span class="parametername">memberPath</span></td>
+        <td><p>Member path. Do not set unless you know what you're doing. Usually, using <code>vars: [...]</code> directly before the <code class="paramref">memberName</code> parameter is enough.</p>
 </td>
       </tr>
       <tr>
@@ -219,19 +163,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Nitrocid/new/main/apiSpec/new?filename=Nitrocid_Kernel_Debugging_DebugCheck_AssertFail_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Debugging.DebugCheck.AssertFail(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/Nitrocid/new/main/apiSpec/new?filename=Nitrocid_Kernel_Debugging_DebugCheck_AssertFail_System_String_System_String_System_Int32_System_String_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Debugging.DebugCheck.AssertFail(System.String%2CSystem.String%2CSystem.Int32%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Nitrocid/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L200">View Source</a>
+    <a href="https://github.com/Aptivi/Nitrocid/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L114">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Debugging_DebugCheck_AssertFail_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertFail*"></a>
-  <h4 id="Nitrocid_Kernel_Debugging_DebugCheck_AssertFail_System_String_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertFail(System.String)">AssertFail(string)</h4>
+  <h4 id="Nitrocid_Kernel_Debugging_DebugCheck_AssertFail_System_String_System_String_System_Int32_System_String_System_Object___" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertFail(System.String,System.String,System.Int32,System.String,System.Object[])">AssertFail(string, string, int, string, object?[]?)</h4>
   <div class="markdown level1 summary"><p>Triggers assertion failure</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AssertFail(string message)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void AssertFail(string message, string memberName = &quot;&quot;, int memberLine = 0, string memberPath = &quot;&quot;, object?[]? vars = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -249,38 +193,22 @@
         <td><p>A message to clarify why the assert failed</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Nitrocid/new/main/apiSpec/new?filename=Nitrocid_Kernel_Debugging_DebugCheck_AssertFail_System_String_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Debugging.DebugCheck.AssertFail(System.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Nitrocid/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L216">View Source</a>
-  </span>
-  <a id="Nitrocid_Kernel_Debugging_DebugCheck_AssertFail_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertFail*"></a>
-  <h4 id="Nitrocid_Kernel_Debugging_DebugCheck_AssertFail_System_String_System_Object___" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertFail(System.String,System.Object[])">AssertFail(string, params object[])</h4>
-  <div class="markdown level1 summary"><p>Triggers assertion failure</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AssertFail(string message, params object[] vars)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
       <tr>
         <td><span class="xref">string</span></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>A message to clarify why the assert failed</p>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Member name. Do not set unless you know what you're doing. Usually, using <code>vars: [...]</code> directly before the <code class="paramref">memberName</code> parameter is enough.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">memberLine</span></td>
+        <td><p>Member line number. Do not set unless you know what you're doing. Usually, using <code>vars: [...]</code> directly before the <code class="paramref">memberName</code> parameter is enough.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">memberPath</span></td>
+        <td><p>Member path. Do not set unless you know what you're doing. Usually, using <code>vars: [...]</code> directly before the <code class="paramref">memberName</code> parameter is enough.</p>
 </td>
       </tr>
       <tr>
@@ -293,53 +221,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Nitrocid/new/main/apiSpec/new?filename=Nitrocid_Kernel_Debugging_DebugCheck_AssertNot_System_Boolean_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/Nitrocid/new/main/apiSpec/new?filename=Nitrocid_Kernel_Debugging_DebugCheck_AssertNot_System_Boolean_System_String_System_String_System_Int32_System_String_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(System.Boolean%2CSystem.String%2CSystem.String%2CSystem.Int32%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Nitrocid/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L77">View Source</a>
+    <a href="https://github.com/Aptivi/Nitrocid/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L61">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Debugging_DebugCheck_AssertNot_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertNot*"></a>
-  <h4 id="Nitrocid_Kernel_Debugging_DebugCheck_AssertNot_System_Boolean_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(System.Boolean)">AssertNot(bool)</h4>
+  <h4 id="Nitrocid_Kernel_Debugging_DebugCheck_AssertNot_System_Boolean_System_String_System_String_System_Int32_System_String_System_Object___" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(System.Boolean,System.String,System.String,System.Int32,System.String,System.Object[])">AssertNot(bool, string, string, int, string, object?[]?)</h4>
   <div class="markdown level1 summary"><p>Asserts and checks to see if the condition is not satisfied</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AssertNot(bool condition)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">condition</span></td>
-        <td><p>Condition</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Nitrocid/new/main/apiSpec/new?filename=Nitrocid_Kernel_Debugging_DebugCheck_AssertNot_System_Boolean_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(System.Boolean%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Nitrocid/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L85">View Source</a>
-  </span>
-  <a id="Nitrocid_Kernel_Debugging_DebugCheck_AssertNot_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertNot*"></a>
-  <h4 id="Nitrocid_Kernel_Debugging_DebugCheck_AssertNot_System_Boolean_System_String_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(System.Boolean,System.String)">AssertNot(bool, string)</h4>
-  <div class="markdown level1 summary"><p>Asserts and checks to see if the condition is not satisfied</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AssertNot(bool condition, string message)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void AssertNot(bool condition, string message, string memberName = &quot;&quot;, int memberLine = 0, string memberPath = &quot;&quot;, object?[]? vars = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -363,44 +257,22 @@
         <td><p>A message to clarify why the assert failed</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Nitrocid/new/main/apiSpec/new?filename=Nitrocid_Kernel_Debugging_DebugCheck_AssertNot_System_Boolean_System_String_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(System.Boolean%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Nitrocid/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L105">View Source</a>
-  </span>
-  <a id="Nitrocid_Kernel_Debugging_DebugCheck_AssertNot_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertNot*"></a>
-  <h4 id="Nitrocid_Kernel_Debugging_DebugCheck_AssertNot_System_Boolean_System_String_System_Object___" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(System.Boolean,System.String,System.Object[])">AssertNot(bool, string, params object[])</h4>
-  <div class="markdown level1 summary"><p>Asserts and checks to see if the condition is not satisfied</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AssertNot(bool condition, string message, params object[] vars)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Member name. Do not set unless you know what you're doing. Usually, using <code>vars: [...]</code> directly before the <code class="paramref">memberName</code> parameter is enough.</p>
+</td>
       </tr>
-    </thead>
-    <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">condition</span></td>
-        <td><p>Condition</p>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">memberLine</span></td>
+        <td><p>Member line number. Do not set unless you know what you're doing. Usually, using <code>vars: [...]</code> directly before the <code class="paramref">memberName</code> parameter is enough.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">string</span></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>A message to clarify why the assert failed</p>
+        <td><span class="parametername">memberPath</span></td>
+        <td><p>Member path. Do not set unless you know what you're doing. Usually, using <code>vars: [...]</code> directly before the <code class="paramref">memberName</code> parameter is enough.</p>
 </td>
       </tr>
       <tr>
@@ -413,68 +285,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Nitrocid/new/main/apiSpec/new?filename=Nitrocid_Kernel_Debugging_DebugCheck_AssertNotNull__1___0_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull%60%601(%60%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/Nitrocid/new/main/apiSpec/new?filename=Nitrocid_Kernel_Debugging_DebugCheck_AssertNotNull__1___0_System_String_System_String_System_Int32_System_String_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull%60%601(%60%600%2CSystem.String%2CSystem.String%2CSystem.Int32%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Nitrocid/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L159">View Source</a>
+    <a href="https://github.com/Aptivi/Nitrocid/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L97">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Debugging_DebugCheck_AssertNotNull_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull*"></a>
-  <h4 id="Nitrocid_Kernel_Debugging_DebugCheck_AssertNotNull__1___0_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull``1(``0)">AssertNotNull&lt;T&gt;(T)</h4>
+  <h4 id="Nitrocid_Kernel_Debugging_DebugCheck_AssertNotNull__1___0_System_String_System_String_System_Int32_System_String_System_Object___" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull``1(``0,System.String,System.String,System.Int32,System.String,System.Object[])">AssertNotNull&lt;T&gt;(T, string, string, int, string, object?[]?)</h4>
   <div class="markdown level1 summary"><p>Asserts and checks to see if the value is not null</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AssertNotNull&lt;T&gt;(T value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Condition</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Nitrocid/new/main/apiSpec/new?filename=Nitrocid_Kernel_Debugging_DebugCheck_AssertNotNull__1___0_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull%60%601(%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Nitrocid/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L167">View Source</a>
-  </span>
-  <a id="Nitrocid_Kernel_Debugging_DebugCheck_AssertNotNull_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull*"></a>
-  <h4 id="Nitrocid_Kernel_Debugging_DebugCheck_AssertNotNull__1___0_System_String_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull``1(``0,System.String)">AssertNotNull&lt;T&gt;(T, string)</h4>
-  <div class="markdown level1 summary"><p>Asserts and checks to see if the value is not null</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AssertNotNull&lt;T&gt;(T value, string message)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void AssertNotNull&lt;T&gt;(T value, string message, string memberName = &quot;&quot;, int memberLine = 0, string memberPath = &quot;&quot;, object?[]? vars = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -498,59 +321,22 @@
         <td><p>A message to clarify why the assert failed</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
       <tr>
-        <th>Name</th>
-        <th>Description</th>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Member name. Do not set unless you know what you're doing. Usually, using <code>vars: [...]</code> directly before the <code class="paramref">memberName</code> parameter is enough.</p>
+</td>
       </tr>
-    </thead>
-    <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Nitrocid/new/main/apiSpec/new?filename=Nitrocid_Kernel_Debugging_DebugCheck_AssertNotNull__1___0_System_String_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull%60%601(%60%600%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Nitrocid/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L187">View Source</a>
-  </span>
-  <a id="Nitrocid_Kernel_Debugging_DebugCheck_AssertNotNull_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull*"></a>
-  <h4 id="Nitrocid_Kernel_Debugging_DebugCheck_AssertNotNull__1___0_System_String_System_Object___" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull``1(``0,System.String,System.Object[])">AssertNotNull&lt;T&gt;(T, string, params object[])</h4>
-  <div class="markdown level1 summary"><p>Asserts and checks to see if the value is not null</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AssertNotNull&lt;T&gt;(T value, string message, params object[] vars)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Condition</p>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">memberLine</span></td>
+        <td><p>Member line number. Do not set unless you know what you're doing. Usually, using <code>vars: [...]</code> directly before the <code class="paramref">memberName</code> parameter is enough.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">string</span></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>A message to clarify why the assert failed</p>
+        <td><span class="parametername">memberPath</span></td>
+        <td><p>Member path. Do not set unless you know what you're doing. Usually, using <code>vars: [...]</code> directly before the <code class="paramref">memberName</code> parameter is enough.</p>
 </td>
       </tr>
       <tr>
@@ -578,68 +364,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Nitrocid/new/main/apiSpec/new?filename=Nitrocid_Kernel_Debugging_DebugCheck_AssertNull__1___0_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Debugging.DebugCheck.AssertNull%60%601(%60%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/Aptivi/Nitrocid/new/main/apiSpec/new?filename=Nitrocid_Kernel_Debugging_DebugCheck_AssertNull__1___0_System_String_System_String_System_Int32_System_String_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Debugging.DebugCheck.AssertNull%60%601(%60%600%2CSystem.String%2CSystem.String%2CSystem.Int32%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Nitrocid/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L118">View Source</a>
+    <a href="https://github.com/Aptivi/Nitrocid/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L79">View Source</a>
   </span>
   <a id="Nitrocid_Kernel_Debugging_DebugCheck_AssertNull_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertNull*"></a>
-  <h4 id="Nitrocid_Kernel_Debugging_DebugCheck_AssertNull__1___0_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertNull``1(``0)">AssertNull&lt;T&gt;(T)</h4>
+  <h4 id="Nitrocid_Kernel_Debugging_DebugCheck_AssertNull__1___0_System_String_System_String_System_Int32_System_String_System_Object___" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertNull``1(``0,System.String,System.String,System.Int32,System.String,System.Object[])">AssertNull&lt;T&gt;(T, string, string, int, string, object?[]?)</h4>
   <div class="markdown level1 summary"><p>Asserts and checks to see if the value is null</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AssertNull&lt;T&gt;(T value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Condition</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Nitrocid/new/main/apiSpec/new?filename=Nitrocid_Kernel_Debugging_DebugCheck_AssertNull__1___0_System_String_.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Debugging.DebugCheck.AssertNull%60%601(%60%600%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Nitrocid/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L126">View Source</a>
-  </span>
-  <a id="Nitrocid_Kernel_Debugging_DebugCheck_AssertNull_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertNull*"></a>
-  <h4 id="Nitrocid_Kernel_Debugging_DebugCheck_AssertNull__1___0_System_String_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertNull``1(``0,System.String)">AssertNull&lt;T&gt;(T, string)</h4>
-  <div class="markdown level1 summary"><p>Asserts and checks to see if the value is null</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AssertNull&lt;T&gt;(T value, string message)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void AssertNull&lt;T&gt;(T value, string message, string memberName = &quot;&quot;, int memberLine = 0, string memberPath = &quot;&quot;, object?[]? vars = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -663,59 +400,22 @@
         <td><p>A message to clarify why the assert failed</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
       <tr>
-        <th>Name</th>
-        <th>Description</th>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Member name. Do not set unless you know what you're doing. Usually, using <code>vars: [...]</code> directly before the <code class="paramref">memberName</code> parameter is enough.</p>
+</td>
       </tr>
-    </thead>
-    <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Aptivi/Nitrocid/new/main/apiSpec/new?filename=Nitrocid_Kernel_Debugging_DebugCheck_AssertNull__1___0_System_String_System_Object___.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Debugging.DebugCheck.AssertNull%60%601(%60%600%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Aptivi/Nitrocid/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L146">View Source</a>
-  </span>
-  <a id="Nitrocid_Kernel_Debugging_DebugCheck_AssertNull_" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertNull*"></a>
-  <h4 id="Nitrocid_Kernel_Debugging_DebugCheck_AssertNull__1___0_System_String_System_Object___" data-uid="Nitrocid.Kernel.Debugging.DebugCheck.AssertNull``1(``0,System.String,System.Object[])">AssertNull&lt;T&gt;(T, string, params object[])</h4>
-  <div class="markdown level1 summary"><p>Asserts and checks to see if the value is null</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AssertNull&lt;T&gt;(T value, string message, params object[] vars)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Condition</p>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">memberLine</span></td>
+        <td><p>Member line number. Do not set unless you know what you're doing. Usually, using <code>vars: [...]</code> directly before the <code class="paramref">memberName</code> parameter is enough.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">string</span></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>A message to clarify why the assert failed</p>
+        <td><span class="parametername">memberPath</span></td>
+        <td><p>Member path. Do not set unless you know what you're doing. Usually, using <code>vars: [...]</code> directly before the <code class="paramref">memberName</code> parameter is enough.</p>
 </td>
       </tr>
       <tr>
@@ -753,7 +453,7 @@
                     <a href="https://github.com/Aptivi/Nitrocid/new/main/apiSpec/new?filename=Nitrocid_Kernel_Debugging_DebugCheck.md&amp;value=---%0Auid%3A%20Nitrocid.Kernel.Debugging.DebugCheck%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Aptivi/Nitrocid/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L30" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Aptivi/Nitrocid/blob/main/public/Nitrocid/Kernel/Debugging/DebugCheck.cs/#L32" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

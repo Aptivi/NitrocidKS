@@ -20053,33 +20053,15 @@ references:
   commentId: T:Nitrocid.Kernel.Debugging.DebugCheck
   fullName: Nitrocid.Kernel.Debugging.DebugCheck
   nameWithType: DebugCheck
-- uid: Nitrocid.Kernel.Debugging.DebugCheck.Assert(System.Boolean)
-  name: Assert(bool)
-  href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_Assert_System_Boolean_
-  commentId: M:Nitrocid.Kernel.Debugging.DebugCheck.Assert(System.Boolean)
-  name.vb: Assert(Boolean)
-  fullName: Nitrocid.Kernel.Debugging.DebugCheck.Assert(bool)
-  fullName.vb: Nitrocid.Kernel.Debugging.DebugCheck.Assert(Boolean)
-  nameWithType: DebugCheck.Assert(bool)
-  nameWithType.vb: DebugCheck.Assert(Boolean)
-- uid: Nitrocid.Kernel.Debugging.DebugCheck.Assert(System.Boolean,System.String)
-  name: Assert(bool, string)
-  href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_Assert_System_Boolean_System_String_
-  commentId: M:Nitrocid.Kernel.Debugging.DebugCheck.Assert(System.Boolean,System.String)
-  name.vb: Assert(Boolean, String)
-  fullName: Nitrocid.Kernel.Debugging.DebugCheck.Assert(bool, string)
-  fullName.vb: Nitrocid.Kernel.Debugging.DebugCheck.Assert(Boolean, String)
-  nameWithType: DebugCheck.Assert(bool, string)
-  nameWithType.vb: DebugCheck.Assert(Boolean, String)
-- uid: Nitrocid.Kernel.Debugging.DebugCheck.Assert(System.Boolean,System.String,System.Object[])
-  name: Assert(bool, string, params object[])
-  href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_Assert_System_Boolean_System_String_System_Object___
-  commentId: M:Nitrocid.Kernel.Debugging.DebugCheck.Assert(System.Boolean,System.String,System.Object[])
-  name.vb: Assert(Boolean, String, ParamArray Object())
-  fullName: Nitrocid.Kernel.Debugging.DebugCheck.Assert(bool, string, params object[])
-  fullName.vb: Nitrocid.Kernel.Debugging.DebugCheck.Assert(Boolean, String, ParamArray Object())
-  nameWithType: DebugCheck.Assert(bool, string, params object[])
-  nameWithType.vb: DebugCheck.Assert(Boolean, String, ParamArray Object())
+- uid: Nitrocid.Kernel.Debugging.DebugCheck.Assert(System.Boolean,System.String,System.String,System.Int32,System.String,System.Object[])
+  name: Assert(bool, string, string, int, string, object?[]?)
+  href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_Assert_System_Boolean_System_String_System_String_System_Int32_System_String_System_Object___
+  commentId: M:Nitrocid.Kernel.Debugging.DebugCheck.Assert(System.Boolean,System.String,System.String,System.Int32,System.String,System.Object[])
+  name.vb: Assert(Boolean, String, String, Integer, String, Object())
+  fullName: Nitrocid.Kernel.Debugging.DebugCheck.Assert(bool, string, string, int, string, object?[]?)
+  fullName.vb: Nitrocid.Kernel.Debugging.DebugCheck.Assert(Boolean, String, String, Integer, String, Object())
+  nameWithType: DebugCheck.Assert(bool, string, string, int, string, object?[]?)
+  nameWithType.vb: DebugCheck.Assert(Boolean, String, String, Integer, String, Object())
 - uid: Nitrocid.Kernel.Debugging.DebugCheck.Assert*
   name: Assert
   href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_Assert_
@@ -20087,24 +20069,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Debugging.DebugCheck.Assert
   nameWithType: DebugCheck.Assert
-- uid: Nitrocid.Kernel.Debugging.DebugCheck.AssertFail(System.String)
-  name: AssertFail(string)
-  href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_AssertFail_System_String_
-  commentId: M:Nitrocid.Kernel.Debugging.DebugCheck.AssertFail(System.String)
-  name.vb: AssertFail(String)
-  fullName: Nitrocid.Kernel.Debugging.DebugCheck.AssertFail(string)
-  fullName.vb: Nitrocid.Kernel.Debugging.DebugCheck.AssertFail(String)
-  nameWithType: DebugCheck.AssertFail(string)
-  nameWithType.vb: DebugCheck.AssertFail(String)
-- uid: Nitrocid.Kernel.Debugging.DebugCheck.AssertFail(System.String,System.Object[])
-  name: AssertFail(string, params object[])
-  href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_AssertFail_System_String_System_Object___
-  commentId: M:Nitrocid.Kernel.Debugging.DebugCheck.AssertFail(System.String,System.Object[])
-  name.vb: AssertFail(String, ParamArray Object())
-  fullName: Nitrocid.Kernel.Debugging.DebugCheck.AssertFail(string, params object[])
-  fullName.vb: Nitrocid.Kernel.Debugging.DebugCheck.AssertFail(String, ParamArray Object())
-  nameWithType: DebugCheck.AssertFail(string, params object[])
-  nameWithType.vb: DebugCheck.AssertFail(String, ParamArray Object())
+- uid: Nitrocid.Kernel.Debugging.DebugCheck.AssertFail(System.String,System.String,System.Int32,System.String,System.Object[])
+  name: AssertFail(string, string, int, string, object?[]?)
+  href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_AssertFail_System_String_System_String_System_Int32_System_String_System_Object___
+  commentId: M:Nitrocid.Kernel.Debugging.DebugCheck.AssertFail(System.String,System.String,System.Int32,System.String,System.Object[])
+  name.vb: AssertFail(String, String, Integer, String, Object())
+  fullName: Nitrocid.Kernel.Debugging.DebugCheck.AssertFail(string, string, int, string, object?[]?)
+  fullName.vb: Nitrocid.Kernel.Debugging.DebugCheck.AssertFail(String, String, Integer, String, Object())
+  nameWithType: DebugCheck.AssertFail(string, string, int, string, object?[]?)
+  nameWithType.vb: DebugCheck.AssertFail(String, String, Integer, String, Object())
 - uid: Nitrocid.Kernel.Debugging.DebugCheck.AssertFail*
   name: AssertFail
   href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_AssertFail_
@@ -20112,33 +20085,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Debugging.DebugCheck.AssertFail
   nameWithType: DebugCheck.AssertFail
-- uid: Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(System.Boolean)
-  name: AssertNot(bool)
-  href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_AssertNot_System_Boolean_
-  commentId: M:Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(System.Boolean)
-  name.vb: AssertNot(Boolean)
-  fullName: Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(bool)
-  fullName.vb: Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(Boolean)
-  nameWithType: DebugCheck.AssertNot(bool)
-  nameWithType.vb: DebugCheck.AssertNot(Boolean)
-- uid: Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(System.Boolean,System.String)
-  name: AssertNot(bool, string)
-  href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_AssertNot_System_Boolean_System_String_
-  commentId: M:Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(System.Boolean,System.String)
-  name.vb: AssertNot(Boolean, String)
-  fullName: Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(bool, string)
-  fullName.vb: Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(Boolean, String)
-  nameWithType: DebugCheck.AssertNot(bool, string)
-  nameWithType.vb: DebugCheck.AssertNot(Boolean, String)
-- uid: Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(System.Boolean,System.String,System.Object[])
-  name: AssertNot(bool, string, params object[])
-  href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_AssertNot_System_Boolean_System_String_System_Object___
-  commentId: M:Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(System.Boolean,System.String,System.Object[])
-  name.vb: AssertNot(Boolean, String, ParamArray Object())
-  fullName: Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(bool, string, params object[])
-  fullName.vb: Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(Boolean, String, ParamArray Object())
-  nameWithType: DebugCheck.AssertNot(bool, string, params object[])
-  nameWithType.vb: DebugCheck.AssertNot(Boolean, String, ParamArray Object())
+- uid: Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(System.Boolean,System.String,System.String,System.Int32,System.String,System.Object[])
+  name: AssertNot(bool, string, string, int, string, object?[]?)
+  href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_AssertNot_System_Boolean_System_String_System_String_System_Int32_System_String_System_Object___
+  commentId: M:Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(System.Boolean,System.String,System.String,System.Int32,System.String,System.Object[])
+  name.vb: AssertNot(Boolean, String, String, Integer, String, Object())
+  fullName: Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(bool, string, string, int, string, object?[]?)
+  fullName.vb: Nitrocid.Kernel.Debugging.DebugCheck.AssertNot(Boolean, String, String, Integer, String, Object())
+  nameWithType: DebugCheck.AssertNot(bool, string, string, int, string, object?[]?)
+  nameWithType.vb: DebugCheck.AssertNot(Boolean, String, String, Integer, String, Object())
 - uid: Nitrocid.Kernel.Debugging.DebugCheck.AssertNot*
   name: AssertNot
   href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_AssertNot_
@@ -20153,33 +20108,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull
   nameWithType: DebugCheck.AssertNotNull
-- uid: Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull``1(``0)
-  name: AssertNotNull<T>(T)
-  href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_AssertNotNull__1___0_
-  commentId: M:Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull``1(``0)
-  name.vb: AssertNotNull(Of T)(T)
-  fullName: Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull<T>(T)
-  fullName.vb: Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull(Of T)(T)
-  nameWithType: DebugCheck.AssertNotNull<T>(T)
-  nameWithType.vb: DebugCheck.AssertNotNull(Of T)(T)
-- uid: Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull``1(``0,System.String)
-  name: AssertNotNull<T>(T, string)
-  href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_AssertNotNull__1___0_System_String_
-  commentId: M:Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull``1(``0,System.String)
-  name.vb: AssertNotNull(Of T)(T, String)
-  fullName: Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull<T>(T, string)
-  fullName.vb: Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull(Of T)(T, String)
-  nameWithType: DebugCheck.AssertNotNull<T>(T, string)
-  nameWithType.vb: DebugCheck.AssertNotNull(Of T)(T, String)
-- uid: Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull``1(``0,System.String,System.Object[])
-  name: AssertNotNull<T>(T, string, params object[])
-  href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_AssertNotNull__1___0_System_String_System_Object___
-  commentId: M:Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull``1(``0,System.String,System.Object[])
-  name.vb: AssertNotNull(Of T)(T, String, ParamArray Object())
-  fullName: Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull<T>(T, string, params object[])
-  fullName.vb: Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull(Of T)(T, String, ParamArray Object())
-  nameWithType: DebugCheck.AssertNotNull<T>(T, string, params object[])
-  nameWithType.vb: DebugCheck.AssertNotNull(Of T)(T, String, ParamArray Object())
+- uid: Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull``1(``0,System.String,System.String,System.Int32,System.String,System.Object[])
+  name: AssertNotNull<T>(T, string, string, int, string, object?[]?)
+  href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_AssertNotNull__1___0_System_String_System_String_System_Int32_System_String_System_Object___
+  commentId: M:Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull``1(``0,System.String,System.String,System.Int32,System.String,System.Object[])
+  name.vb: AssertNotNull(Of T)(T, String, String, Integer, String, Object())
+  fullName: Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull<T>(T, string, string, int, string, object?[]?)
+  fullName.vb: Nitrocid.Kernel.Debugging.DebugCheck.AssertNotNull(Of T)(T, String, String, Integer, String, Object())
+  nameWithType: DebugCheck.AssertNotNull<T>(T, string, string, int, string, object?[]?)
+  nameWithType.vb: DebugCheck.AssertNotNull(Of T)(T, String, String, Integer, String, Object())
 - uid: Nitrocid.Kernel.Debugging.DebugCheck.AssertNull*
   name: AssertNull
   href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_AssertNull_
@@ -20187,33 +20124,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Debugging.DebugCheck.AssertNull
   nameWithType: DebugCheck.AssertNull
-- uid: Nitrocid.Kernel.Debugging.DebugCheck.AssertNull``1(``0)
-  name: AssertNull<T>(T)
-  href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_AssertNull__1___0_
-  commentId: M:Nitrocid.Kernel.Debugging.DebugCheck.AssertNull``1(``0)
-  name.vb: AssertNull(Of T)(T)
-  fullName: Nitrocid.Kernel.Debugging.DebugCheck.AssertNull<T>(T)
-  fullName.vb: Nitrocid.Kernel.Debugging.DebugCheck.AssertNull(Of T)(T)
-  nameWithType: DebugCheck.AssertNull<T>(T)
-  nameWithType.vb: DebugCheck.AssertNull(Of T)(T)
-- uid: Nitrocid.Kernel.Debugging.DebugCheck.AssertNull``1(``0,System.String)
-  name: AssertNull<T>(T, string)
-  href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_AssertNull__1___0_System_String_
-  commentId: M:Nitrocid.Kernel.Debugging.DebugCheck.AssertNull``1(``0,System.String)
-  name.vb: AssertNull(Of T)(T, String)
-  fullName: Nitrocid.Kernel.Debugging.DebugCheck.AssertNull<T>(T, string)
-  fullName.vb: Nitrocid.Kernel.Debugging.DebugCheck.AssertNull(Of T)(T, String)
-  nameWithType: DebugCheck.AssertNull<T>(T, string)
-  nameWithType.vb: DebugCheck.AssertNull(Of T)(T, String)
-- uid: Nitrocid.Kernel.Debugging.DebugCheck.AssertNull``1(``0,System.String,System.Object[])
-  name: AssertNull<T>(T, string, params object[])
-  href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_AssertNull__1___0_System_String_System_Object___
-  commentId: M:Nitrocid.Kernel.Debugging.DebugCheck.AssertNull``1(``0,System.String,System.Object[])
-  name.vb: AssertNull(Of T)(T, String, ParamArray Object())
-  fullName: Nitrocid.Kernel.Debugging.DebugCheck.AssertNull<T>(T, string, params object[])
-  fullName.vb: Nitrocid.Kernel.Debugging.DebugCheck.AssertNull(Of T)(T, String, ParamArray Object())
-  nameWithType: DebugCheck.AssertNull<T>(T, string, params object[])
-  nameWithType.vb: DebugCheck.AssertNull(Of T)(T, String, ParamArray Object())
+- uid: Nitrocid.Kernel.Debugging.DebugCheck.AssertNull``1(``0,System.String,System.String,System.Int32,System.String,System.Object[])
+  name: AssertNull<T>(T, string, string, int, string, object?[]?)
+  href: api/Nitrocid.Kernel.Debugging.DebugCheck.html#Nitrocid_Kernel_Debugging_DebugCheck_AssertNull__1___0_System_String_System_String_System_Int32_System_String_System_Object___
+  commentId: M:Nitrocid.Kernel.Debugging.DebugCheck.AssertNull``1(``0,System.String,System.String,System.Int32,System.String,System.Object[])
+  name.vb: AssertNull(Of T)(T, String, String, Integer, String, Object())
+  fullName: Nitrocid.Kernel.Debugging.DebugCheck.AssertNull<T>(T, string, string, int, string, object?[]?)
+  fullName.vb: Nitrocid.Kernel.Debugging.DebugCheck.AssertNull(Of T)(T, String, String, Integer, String, Object())
+  nameWithType: DebugCheck.AssertNull<T>(T, string, string, int, string, object?[]?)
+  nameWithType.vb: DebugCheck.AssertNull(Of T)(T, String, String, Integer, String, Object())
 - uid: Nitrocid.Kernel.Debugging.DebugLevel
   name: DebugLevel
   href: api/Nitrocid.Kernel.Debugging.DebugLevel.html
