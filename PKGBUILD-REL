@@ -17,11 +17,6 @@ options=('!strip')
 source=("${pkgname}::git+https://github.com/Aptivi/Nitrocid#tag=v0.1.0.36")
 sha256sums=('SKIP')
 
-pkgver() {
-	cd "${pkgname}"
-	printf "%s" "$(git describe --long | sed 's/\([^-]*-\)g/r\1/;s/-/./g')"
-}
-
 prepare() {
 	cd "${pkgname}"
         HOME=`pwd`/nuget DOTNET_CLI_TELEMETRY_OPTOUT=1 dotnet restore Nitrocid.sln
