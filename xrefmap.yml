@@ -405,6 +405,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.GetColor
   nameWithType: KernelColorTools.GetColor
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.LoadBackground
+  name: LoadBackground()
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_LoadBackground
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorTools.LoadBackground
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.LoadBackground()
+  nameWithType: KernelColorTools.LoadBackground()
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.LoadBackground*
+  name: LoadBackground
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_LoadBackground_
+  commentId: Overload:Nitrocid.ConsoleBase.Colors.KernelColorTools.LoadBackground
+  isSpec: "True"
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.LoadBackground
+  nameWithType: KernelColorTools.LoadBackground
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.PopulateColorsCurrent
   name: PopulateColorsCurrent()
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_PopulateColorsCurrent
@@ -444,6 +457,54 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.PopulateColorsEmpty
   nameWithType: KernelColorTools.PopulateColorsEmpty
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.ResetBackground(System.Boolean)
+  name: ResetBackground(bool)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_ResetBackground_System_Boolean_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorTools.ResetBackground(System.Boolean)
+  name.vb: ResetBackground(Boolean)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.ResetBackground(bool)
+  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorTools.ResetBackground(Boolean)
+  nameWithType: KernelColorTools.ResetBackground(bool)
+  nameWithType.vb: KernelColorTools.ResetBackground(Boolean)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.ResetBackground*
+  name: ResetBackground
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_ResetBackground_
+  commentId: Overload:Nitrocid.ConsoleBase.Colors.KernelColorTools.ResetBackground
+  isSpec: "True"
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.ResetBackground
+  nameWithType: KernelColorTools.ResetBackground
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.ResetColors(System.Boolean)
+  name: ResetColors(bool)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_ResetColors_System_Boolean_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorTools.ResetColors(System.Boolean)
+  name.vb: ResetColors(Boolean)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.ResetColors(bool)
+  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorTools.ResetColors(Boolean)
+  nameWithType: KernelColorTools.ResetColors(bool)
+  nameWithType.vb: KernelColorTools.ResetColors(Boolean)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.ResetColors*
+  name: ResetColors
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_ResetColors_
+  commentId: Overload:Nitrocid.ConsoleBase.Colors.KernelColorTools.ResetColors
+  isSpec: "True"
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.ResetColors
+  nameWithType: KernelColorTools.ResetColors
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.ResetForeground(System.Boolean)
+  name: ResetForeground(bool)
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_ResetForeground_System_Boolean_
+  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorTools.ResetForeground(System.Boolean)
+  name.vb: ResetForeground(Boolean)
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.ResetForeground(bool)
+  fullName.vb: Nitrocid.ConsoleBase.Colors.KernelColorTools.ResetForeground(Boolean)
+  nameWithType: KernelColorTools.ResetForeground(bool)
+  nameWithType.vb: KernelColorTools.ResetForeground(Boolean)
+- uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.ResetForeground*
+  name: ResetForeground
+  href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_ResetForeground_
+  commentId: Overload:Nitrocid.ConsoleBase.Colors.KernelColorTools.ResetForeground
+  isSpec: "True"
+  fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.ResetForeground
+  nameWithType: KernelColorTools.ResetForeground
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.SetColor(Nitrocid.ConsoleBase.Colors.KernelColorType,Terminaux.Colors.Color)
   name: SetColor(KernelColorType, Color)
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_SetColor_Nitrocid_ConsoleBase_Colors_KernelColorType_Terminaux_Colors_Color_
@@ -949,60 +1010,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.ConsolePointerHandler.StopHandler
   nameWithType: ConsolePointerHandler.StopHandler
-- uid: Nitrocid.ConsoleBase.ConsoleTools
-  name: ConsoleTools
-  href: api/Nitrocid.ConsoleBase.ConsoleTools.html
-  commentId: T:Nitrocid.ConsoleBase.ConsoleTools
-  fullName: Nitrocid.ConsoleBase.ConsoleTools
-  nameWithType: ConsoleTools
-- uid: Nitrocid.ConsoleBase.ConsoleTools.ResetBackground(System.Boolean)
-  name: ResetBackground(bool)
-  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_ResetBackground_System_Boolean_
-  commentId: M:Nitrocid.ConsoleBase.ConsoleTools.ResetBackground(System.Boolean)
-  name.vb: ResetBackground(Boolean)
-  fullName: Nitrocid.ConsoleBase.ConsoleTools.ResetBackground(bool)
-  fullName.vb: Nitrocid.ConsoleBase.ConsoleTools.ResetBackground(Boolean)
-  nameWithType: ConsoleTools.ResetBackground(bool)
-  nameWithType.vb: ConsoleTools.ResetBackground(Boolean)
-- uid: Nitrocid.ConsoleBase.ConsoleTools.ResetBackground*
-  name: ResetBackground
-  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_ResetBackground_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleTools.ResetBackground
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleTools.ResetBackground
-  nameWithType: ConsoleTools.ResetBackground
-- uid: Nitrocid.ConsoleBase.ConsoleTools.ResetColors(System.Boolean)
-  name: ResetColors(bool)
-  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_ResetColors_System_Boolean_
-  commentId: M:Nitrocid.ConsoleBase.ConsoleTools.ResetColors(System.Boolean)
-  name.vb: ResetColors(Boolean)
-  fullName: Nitrocid.ConsoleBase.ConsoleTools.ResetColors(bool)
-  fullName.vb: Nitrocid.ConsoleBase.ConsoleTools.ResetColors(Boolean)
-  nameWithType: ConsoleTools.ResetColors(bool)
-  nameWithType.vb: ConsoleTools.ResetColors(Boolean)
-- uid: Nitrocid.ConsoleBase.ConsoleTools.ResetColors*
-  name: ResetColors
-  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_ResetColors_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleTools.ResetColors
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleTools.ResetColors
-  nameWithType: ConsoleTools.ResetColors
-- uid: Nitrocid.ConsoleBase.ConsoleTools.ResetForeground(System.Boolean)
-  name: ResetForeground(bool)
-  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_ResetForeground_System_Boolean_
-  commentId: M:Nitrocid.ConsoleBase.ConsoleTools.ResetForeground(System.Boolean)
-  name.vb: ResetForeground(Boolean)
-  fullName: Nitrocid.ConsoleBase.ConsoleTools.ResetForeground(bool)
-  fullName.vb: Nitrocid.ConsoleBase.ConsoleTools.ResetForeground(Boolean)
-  nameWithType: ConsoleTools.ResetForeground(bool)
-  nameWithType.vb: ConsoleTools.ResetForeground(Boolean)
-- uid: Nitrocid.ConsoleBase.ConsoleTools.ResetForeground*
-  name: ResetForeground
-  href: api/Nitrocid.ConsoleBase.ConsoleTools.html#Nitrocid_ConsoleBase_ConsoleTools_ResetForeground_
-  commentId: Overload:Nitrocid.ConsoleBase.ConsoleTools.ResetForeground
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.ConsoleTools.ResetForeground
-  nameWithType: ConsoleTools.ResetForeground
 - uid: Nitrocid.ConsoleBase.Inputs
   name: Nitrocid.ConsoleBase.Inputs
   href: api/Nitrocid.ConsoleBase.Inputs.html

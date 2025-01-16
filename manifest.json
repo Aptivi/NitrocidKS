@@ -145,16 +145,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nitrocid.ConsoleBase.ConsoleTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nitrocid.ConsoleBase.ConsoleTools.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.ConsoleBase.Inputs.InputTools.yml",
       "output": {
         ".html": {
