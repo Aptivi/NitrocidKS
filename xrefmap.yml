@@ -12754,6 +12754,38 @@ references:
   commentId: T:Nitrocid.Files.Extensions.MimeTypes
   fullName: Nitrocid.Files.Extensions.MimeTypes
   nameWithType: MimeTypes
+- uid: Nitrocid.Files.Extensions.MimeTypes.GetExtendedMimeType(System.String)
+  name: GetExtendedMimeType(string)
+  href: api/Nitrocid.Files.Extensions.MimeTypes.html#Nitrocid_Files_Extensions_MimeTypes_GetExtendedMimeType_System_String_
+  commentId: M:Nitrocid.Files.Extensions.MimeTypes.GetExtendedMimeType(System.String)
+  name.vb: GetExtendedMimeType(String)
+  fullName: Nitrocid.Files.Extensions.MimeTypes.GetExtendedMimeType(string)
+  fullName.vb: Nitrocid.Files.Extensions.MimeTypes.GetExtendedMimeType(String)
+  nameWithType: MimeTypes.GetExtendedMimeType(string)
+  nameWithType.vb: MimeTypes.GetExtendedMimeType(String)
+- uid: Nitrocid.Files.Extensions.MimeTypes.GetExtendedMimeType*
+  name: GetExtendedMimeType
+  href: api/Nitrocid.Files.Extensions.MimeTypes.html#Nitrocid_Files_Extensions_MimeTypes_GetExtendedMimeType_
+  commentId: Overload:Nitrocid.Files.Extensions.MimeTypes.GetExtendedMimeType
+  isSpec: "True"
+  fullName: Nitrocid.Files.Extensions.MimeTypes.GetExtendedMimeType
+  nameWithType: MimeTypes.GetExtendedMimeType
+- uid: Nitrocid.Files.Extensions.MimeTypes.GetMagicInfo(System.String)
+  name: GetMagicInfo(string)
+  href: api/Nitrocid.Files.Extensions.MimeTypes.html#Nitrocid_Files_Extensions_MimeTypes_GetMagicInfo_System_String_
+  commentId: M:Nitrocid.Files.Extensions.MimeTypes.GetMagicInfo(System.String)
+  name.vb: GetMagicInfo(String)
+  fullName: Nitrocid.Files.Extensions.MimeTypes.GetMagicInfo(string)
+  fullName.vb: Nitrocid.Files.Extensions.MimeTypes.GetMagicInfo(String)
+  nameWithType: MimeTypes.GetMagicInfo(string)
+  nameWithType.vb: MimeTypes.GetMagicInfo(String)
+- uid: Nitrocid.Files.Extensions.MimeTypes.GetMagicInfo*
+  name: GetMagicInfo
+  href: api/Nitrocid.Files.Extensions.MimeTypes.html#Nitrocid_Files_Extensions_MimeTypes_GetMagicInfo_
+  commentId: Overload:Nitrocid.Files.Extensions.MimeTypes.GetMagicInfo
+  isSpec: "True"
+  fullName: Nitrocid.Files.Extensions.MimeTypes.GetMagicInfo
+  nameWithType: MimeTypes.GetMagicInfo
 - uid: Nitrocid.Files.Extensions.MimeTypes.GetMimeType(System.String)
   name: GetMimeType(string)
   href: api/Nitrocid.Files.Extensions.MimeTypes.html#Nitrocid_Files_Extensions_MimeTypes_GetMimeType_System_String_
