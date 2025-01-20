@@ -379,19 +379,6 @@ references:
   commentId: T:Nitrocid.ConsoleBase.Colors.KernelColorTools
   fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools
   nameWithType: KernelColorTools
-- uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.GenerateTuiSettings
-  name: GenerateTuiSettings()
-  href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_GenerateTuiSettings
-  commentId: M:Nitrocid.ConsoleBase.Colors.KernelColorTools.GenerateTuiSettings
-  fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.GenerateTuiSettings()
-  nameWithType: KernelColorTools.GenerateTuiSettings()
-- uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.GenerateTuiSettings*
-  name: GenerateTuiSettings
-  href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_GenerateTuiSettings_
-  commentId: Overload:Nitrocid.ConsoleBase.Colors.KernelColorTools.GenerateTuiSettings
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.Colors.KernelColorTools.GenerateTuiSettings
-  nameWithType: KernelColorTools.GenerateTuiSettings
 - uid: Nitrocid.ConsoleBase.Colors.KernelColorTools.GetColor(Nitrocid.ConsoleBase.Colors.KernelColorType)
   name: GetColor(KernelColorType)
   href: api/Nitrocid.ConsoleBase.Colors.KernelColorTools.html#Nitrocid_ConsoleBase_Colors_KernelColorTools_GetColor_Nitrocid_ConsoleBase_Colors_KernelColorType_
