@@ -6,7 +6,7 @@
         
         <StandardDirectory Id="ProgramMenuFolder">
             <Directory Id="ApplicationProgramsFolder" Name="!(bind.Property.Manufacturer) !(bind.Property.ProductName)" >
-                <Component Id="ApplicationProgramsFolder" Guid="b44c5027-1ded-41bb-b28f-a2f0af758fc8">
+                <Component Id="ApplicationProgramsFolder" Guid="b44c5027-1ded-41bb-b28f-a2f0af758fc6">
                     <RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
                     <RegistryValue Root="HKCU" Key="Software\!(bind.Property.Manufacturer)\!(bind.Property.ProductName)" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
                     <Shortcut Id="ApplicationStartMenuShortcut"
@@ -20,7 +20,7 @@
         </StandardDirectory>
         
         <StandardDirectory Id="DesktopFolder">
-            <Component Id="DesktopIcon" Guid="b44c5027-1eed-41bb-b28f-a2f0af758fc8">
+            <Component Id="DesktopIcon" Guid="b44c5027-1eed-41bb-b28f-a2f0af758fc6">
                 <RegistryValue Root="HKCU" Key="Software\!(bind.Property.Manufacturer)\!(bind.Property.ProductName)" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
                 <Shortcut Id="DesktopShortcut"
                             Name="!(bind.Property.ProductName)"
