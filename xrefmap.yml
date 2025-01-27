@@ -14133,22 +14133,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Files.FilesystemTools.SetCurrDir
   nameWithType: FilesystemTools.SetCurrDir
-- uid: Nitrocid.Files.FilesystemTools.ThrowOnInvalidPath(System.String)
-  name: ThrowOnInvalidPath(string?)
-  href: api/Nitrocid.Files.FilesystemTools.html#Nitrocid_Files_FilesystemTools_ThrowOnInvalidPath_System_String_
-  commentId: M:Nitrocid.Files.FilesystemTools.ThrowOnInvalidPath(System.String)
-  name.vb: ThrowOnInvalidPath(String)
-  fullName: Nitrocid.Files.FilesystemTools.ThrowOnInvalidPath(string?)
-  fullName.vb: Nitrocid.Files.FilesystemTools.ThrowOnInvalidPath(String)
-  nameWithType: FilesystemTools.ThrowOnInvalidPath(string?)
-  nameWithType.vb: FilesystemTools.ThrowOnInvalidPath(String)
-- uid: Nitrocid.Files.FilesystemTools.ThrowOnInvalidPath*
-  name: ThrowOnInvalidPath
-  href: api/Nitrocid.Files.FilesystemTools.html#Nitrocid_Files_FilesystemTools_ThrowOnInvalidPath_
-  commentId: Overload:Nitrocid.Files.FilesystemTools.ThrowOnInvalidPath
-  isSpec: "True"
-  fullName: Nitrocid.Files.FilesystemTools.ThrowOnInvalidPath
-  nameWithType: FilesystemTools.ThrowOnInvalidPath
 - uid: Nitrocid.Files.FilesystemTools.TryAddAttributeToFile(System.String,System.IO.FileAttributes)
   name: TryAddAttributeToFile(string, FileAttributes)
   href: api/Nitrocid.Files.FilesystemTools.html#Nitrocid_Files_FilesystemTools_TryAddAttributeToFile_System_String_System_IO_FileAttributes_
