@@ -73,7 +73,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void AddAttributeToFile(string FilePath, FileAttributes Attributes)
         {
-            FS.ThrowOnInvalidPath(FilePath);
             FilePath = FS.NeutralizePath(FilePath);
             DebugWriter.WriteDebug(DebugLevel.I, "Setting file attribute to {0}...", Attributes);
             File.SetAttributes(FilePath, Attributes);
@@ -85,7 +84,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void AddToPathLookup(string Path)
         {
-            FS.ThrowOnInvalidPath(Path);
             var LookupPaths = GetPathList();
             Path = FS.NeutralizePath(Path);
             LookupPaths.Add(Path);
@@ -95,8 +93,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void AddToPathLookup(string Path, string RootPath)
         {
-            FS.ThrowOnInvalidPath(Path);
-            FS.ThrowOnInvalidPath(RootPath);
             var LookupPaths = GetPathList();
             Path = FS.NeutralizePath(Path, RootPath);
             LookupPaths.Add(Path);
@@ -106,7 +102,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void ClearFile(string Path)
         {
-            FS.ThrowOnInvalidPath(Path);
             FileStream clearer = new(Path, FileMode.OpenOrCreate, FileAccess.ReadWrite);
             clearer.SetLength(0);
             clearer.Close();
@@ -120,8 +115,7 @@ namespace Nitrocid.Drivers.Filesystem
                 var CombinedContents = new List<byte>();
 
                 // Add the input contents
-                FS.ThrowOnInvalidPath(Input);
-                if (!Parsing.IsBinaryFile(Input))
+                    if (!Parsing.IsBinaryFile(Input))
                     throw new KernelException(KernelExceptionType.Filesystem, Translate.DoTranslation("To combine text files, use the appropriate function.") + " " + nameof(CombineTextFiles) + "(" + Input + ")");
                 CombinedContents.AddRange(Reading.ReadAllBytes(Input));
 
@@ -129,8 +123,7 @@ namespace Nitrocid.Drivers.Filesystem
                 for (int i = 0; i < TargetInputs.Length; i++)
                 {
                     string TargetInput = TargetInputs[i];
-                    FS.ThrowOnInvalidPath(TargetInput);
-                    if (!Parsing.IsBinaryFile(TargetInput))
+                            if (!Parsing.IsBinaryFile(TargetInput))
                         throw new KernelException(KernelExceptionType.Filesystem, Translate.DoTranslation("To combine text files, use the appropriate function.") + " " + nameof(CombineTextFiles) + "(" + TargetInput + ")");
                     ProgressManager.ReportProgress((i + 1) / TargetInputs.Length, nameof(CombineBinaryFiles), $"{Input} + {TargetInput}");
                     CombinedContents.AddRange(Reading.ReadAllBytes(TargetInput));
@@ -155,8 +148,7 @@ namespace Nitrocid.Drivers.Filesystem
                 var CombinedContents = new List<string>();
 
                 // Add the input contents
-                FS.ThrowOnInvalidPath(Input);
-                if (Parsing.IsBinaryFile(Input))
+                    if (Parsing.IsBinaryFile(Input))
                     throw new KernelException(KernelExceptionType.Filesystem, Translate.DoTranslation("To combine binary files, use the appropriate function.") + " " + nameof(CombineBinaryFiles) + "(" + Input + ")");
                 CombinedContents.AddRange(Reading.ReadContents(Input));
 
@@ -164,8 +156,7 @@ namespace Nitrocid.Drivers.Filesystem
                 for (int i = 0; i < TargetInputs.Length; i++)
                 {
                     string TargetInput = TargetInputs[i];
-                    FS.ThrowOnInvalidPath(TargetInput);
-                    if (Parsing.IsBinaryFile(TargetInput))
+                            if (Parsing.IsBinaryFile(TargetInput))
                         throw new KernelException(KernelExceptionType.Filesystem, Translate.DoTranslation("To combine binary files, use the appropriate function.") + " " + nameof(CombineBinaryFiles) + "(" + TargetInput + ")");
                     ProgressManager.ReportProgress((i + 1) / TargetInputs.Length, nameof(CombineTextFiles), $"{Input} + {TargetInput}");
                     CombinedContents.AddRange(Reading.ReadContents(TargetInput));
@@ -189,7 +180,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void ConvertLineEndings(string TextFile, FilesystemNewlineStyle LineEndingStyle)
         {
-            FS.ThrowOnInvalidPath(TextFile);
             TextFile = FS.NeutralizePath(TextFile);
             if (!Checking.FileExists(TextFile))
                 throw new KernelException(KernelExceptionType.Filesystem, Translate.DoTranslation("File {0} not found."), TextFile);
@@ -221,8 +211,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void CopyDirectory(string Source, string Destination, bool ShowProgress)
         {
-            FS.ThrowOnInvalidPath(Source);
-            FS.ThrowOnInvalidPath(Destination);
             if (!Checking.FolderExists(Source))
                 throw new KernelException(KernelExceptionType.Filesystem, Translate.DoTranslation("Directory {0} not found."), Source);
 
@@ -268,8 +256,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void CopyFile(string Source, string Destination)
         {
-            FS.ThrowOnInvalidPath(Source);
-            FS.ThrowOnInvalidPath(Destination);
             Source = FS.NeutralizePath(Source);
             DebugWriter.WriteDebug(DebugLevel.I, "Source directory: {0}", Source);
             Destination = FS.NeutralizePath(Destination);
@@ -302,8 +288,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void CopyFileOrDir(string Source, string Destination)
         {
-            FS.ThrowOnInvalidPath(Source);
-            FS.ThrowOnInvalidPath(Destination);
             Source = FS.NeutralizePath(Source);
             DebugWriter.WriteDebug(DebugLevel.I, "Source directory: {0}", Source);
             Destination = FS.NeutralizePath(Destination);
@@ -344,7 +328,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual List<FileSystemEntry> CreateList(string folder, bool Sorted = false, bool Recursive = false)
         {
-            FS.ThrowOnInvalidPath(folder);
             DebugWriter.WriteDebug(DebugLevel.I, "Folder {0} will be listed...", folder);
             var FilesystemEntries = new List<FileSystemEntry>();
 
@@ -689,7 +672,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual bool FileExists(string File, bool Neutralize = false)
         {
-            FS.ThrowOnInvalidPath(File);
             if (Neutralize)
                 File = FS.NeutralizePath(File);
             bool exists = System.IO.File.Exists(File);
@@ -700,7 +682,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual bool FileExistsInPath(string FilePath, ref string? Result)
         {
-            FS.ThrowOnInvalidPath(FilePath);
             var LookupPaths = GetPathList();
             string ResultingPath;
             foreach (string LookupPath in LookupPaths)
@@ -718,7 +699,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual bool FolderExists(string Folder, bool Neutralize = false)
         {
-            FS.ThrowOnInvalidPath(Folder);
             if (Neutralize)
                 Folder = FS.NeutralizePath(Folder);
             bool exists = Directory.Exists(Folder);
@@ -776,8 +756,7 @@ namespace Nitrocid.Drivers.Filesystem
             try
             {
                 Path = FS.NeutralizePath(Path);
-                FS.ThrowOnInvalidPath(Path);
-
+                
                 // Check to see if we're calling from the root path
                 string Pattern = IsFile ? "" : "*";
                 string pathRoot = FS.NeutralizePath(IOPath.GetPathRoot(Path));
@@ -835,9 +814,7 @@ namespace Nitrocid.Drivers.Filesystem
             var Entries = Array.Empty<string>();
             try
             {
-                FS.ThrowOnInvalidPath(Parent);
-                FS.ThrowOnInvalidPath(Pattern);
-                Parent = FS.NeutralizePath(Parent);
+                        Parent = FS.NeutralizePath(Parent);
 
                 // Get the entries
                 if (Directory.Exists(Parent))
@@ -913,7 +890,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual FilesystemNewlineStyle GetLineEndingFromFile(string TextFile)
         {
-            FS.ThrowOnInvalidPath(TextFile);
             TextFile = FS.NeutralizePath(TextFile);
             if (!Checking.FileExists(TextFile))
                 throw new KernelException(KernelExceptionType.Filesystem, Translate.DoTranslation("File {0} not found."), TextFile);
@@ -965,8 +941,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual string GetNumberedFileName(string? path, string fileName)
         {
-            FS.ThrowOnInvalidPath(path);
-            FS.ThrowOnInvalidPath(fileName);
             path = FS.NeutralizePath(path);
             string fileNameWithoutExtension = IOPath.GetFileNameWithoutExtension(fileName);
             string fileNameExtension = IOPath.GetExtension(fileName);
@@ -1001,7 +975,6 @@ namespace Nitrocid.Drivers.Filesystem
         public virtual bool IsBinaryFile(string Path)
         {
             // Neutralize path
-            FS.ThrowOnInvalidPath(Path);
             Path = FS.NeutralizePath(Path);
 
             // Check to see if the file contains these control characters
@@ -1025,8 +998,7 @@ namespace Nitrocid.Drivers.Filesystem
             try
             {
                 // Neutralize path
-                FS.ThrowOnInvalidPath(Path);
-                Path = FS.NeutralizePath(Path);
+                    Path = FS.NeutralizePath(Path);
 
                 // Try to parse the content as JSON object
                 try
@@ -1066,7 +1038,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void MakeDirectory(string NewDirectory, bool ThrowIfDirectoryExists = true)
         {
-            FS.ThrowOnInvalidPath(NewDirectory);
             NewDirectory = FS.NeutralizePath(NewDirectory);
             DebugWriter.WriteDebug(DebugLevel.I, "New directory: {0} ({1})", NewDirectory, Checking.FolderExists(NewDirectory));
             if (!Checking.FolderExists(NewDirectory))
@@ -1085,7 +1056,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void MakeFile(string NewFile, bool ThrowIfFileExists = true)
         {
-            FS.ThrowOnInvalidPath(NewFile);
             NewFile = FS.NeutralizePath(NewFile);
             DebugWriter.WriteDebug(DebugLevel.I, "File path is {0} and .Exists is {1}", NewFile, Checking.FileExists(NewFile));
             if (!Checking.FileExists(NewFile))
@@ -1115,7 +1085,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void MakeJsonFile(string NewFile, bool ThrowIfFileExists = true, bool useArray = false)
         {
-            FS.ThrowOnInvalidPath(NewFile);
             NewFile = FS.NeutralizePath(NewFile);
             DebugWriter.WriteDebug(DebugLevel.I, "File path is {0} and .Exists is {1}", NewFile, Checking.FileExists(NewFile));
             if (!Checking.FileExists(NewFile))
@@ -1149,9 +1118,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void MakeSymlink(string linkName, string target)
         {
-            FS.ThrowOnInvalidPath(linkName);
-            FS.ThrowOnInvalidPath(target);
-
             // Neutralize the paths
             linkName = FS.NeutralizePath(linkName);
             target = FS.NeutralizePath(target);
@@ -1173,8 +1139,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void MoveDirectory(string Source, string Destination, bool ShowProgress)
         {
-            FS.ThrowOnInvalidPath(Source);
-            FS.ThrowOnInvalidPath(Destination);
             if (!Checking.FolderExists(Source))
                 throw new KernelException(KernelExceptionType.Filesystem, Translate.DoTranslation("Directory {0} not found."), Source);
 
@@ -1223,8 +1187,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void MoveFile(string Source, string Destination)
         {
-            FS.ThrowOnInvalidPath(Source);
-            FS.ThrowOnInvalidPath(Destination);
             Source = FS.NeutralizePath(Source);
             DebugWriter.WriteDebug(DebugLevel.I, "Source directory: {0}", Source);
             Destination = FS.NeutralizePath(Destination);
@@ -1257,8 +1219,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void MoveFileOrDir(string Source, string Destination)
         {
-            FS.ThrowOnInvalidPath(Source);
-            FS.ThrowOnInvalidPath(Destination);
             Source = FS.NeutralizePath(Source);
             DebugWriter.WriteDebug(DebugLevel.I, "Source directory: {0}", Source);
             Destination = FS.NeutralizePath(Destination);
@@ -1307,7 +1267,6 @@ namespace Nitrocid.Drivers.Filesystem
             var builder = new StringBuilder();
 
             // Check the path
-            FS.ThrowOnInvalidPath(filename);
             filename = FS.NeutralizePath(filename);
 
             // If interacting with the binary file, display it in hex. Otherwise, display it as if it is text except if forced to view binaries as texts.
@@ -1365,7 +1324,6 @@ namespace Nitrocid.Drivers.Filesystem
         public virtual void PrintContents(string filename, bool PrintLineNumbers, bool ForcePlain = false)
         {
             // Check the path
-            FS.ThrowOnInvalidPath(filename);
             filename = FS.NeutralizePath(filename);
 
             // Now, render the contents
@@ -1449,7 +1407,6 @@ namespace Nitrocid.Drivers.Filesystem
         public virtual byte[] ReadAllBytes(string path)
         {
             // Read the bytes
-            FS.ThrowOnInvalidPath(path);
             path = FS.NeutralizePath(path);
             return File.ReadAllBytes(path);
         }
@@ -1457,8 +1414,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual byte[] ReadAllBytesNoBlock(string path)
         {
-            FS.ThrowOnInvalidPath(path);
-
             // Read all the bytes, bypassing the restrictions.
             path = FS.NeutralizePath(path);
             long size = new FileSystemEntry(path).FileSize;
@@ -1472,8 +1427,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual string[] ReadAllLinesNoBlock(string path)
         {
-            FS.ThrowOnInvalidPath(path);
-
             // Read all the lines, bypassing the restrictions.
             path = FS.NeutralizePath(path);
             var AllLnList = new List<string>();
@@ -1488,7 +1441,6 @@ namespace Nitrocid.Drivers.Filesystem
         public virtual string[] ReadContents(string filename)
         {
             // Read the contents
-            FS.ThrowOnInvalidPath(filename);
             filename = FS.NeutralizePath(filename);
             return File.ReadAllLines(filename);
         }
@@ -1496,8 +1448,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual string ReadAllTextNoBlock(string path)
         {
-            FS.ThrowOnInvalidPath(path);
-
             // Read all the lines, bypassing the restrictions.
             path = FS.NeutralizePath(path);
             var fileContentBuilder = new StringBuilder();
@@ -1512,7 +1462,6 @@ namespace Nitrocid.Drivers.Filesystem
         public virtual string ReadContentsText(string filename)
         {
             // Read the contents
-            FS.ThrowOnInvalidPath(filename);
             filename = FS.NeutralizePath(filename);
             return File.ReadAllText(filename);
         }
@@ -1521,7 +1470,6 @@ namespace Nitrocid.Drivers.Filesystem
         public virtual void WriteAllBytes(string path, byte[] contents)
         {
             // Write the bytes
-            FS.ThrowOnInvalidPath(path);
             path = FS.NeutralizePath(path);
             File.WriteAllBytes(path, contents);
         }
@@ -1529,8 +1477,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void WriteAllLinesNoBlock(string path, string[] contents)
         {
-            FS.ThrowOnInvalidPath(path);
-
             // Write all the lines, bypassing the restrictions.
             path = FS.NeutralizePath(path);
             var FOpen = new StreamWriter(File.Open(path, FileMode.OpenOrCreate, FileAccess.Write, FileShare.ReadWrite));
@@ -1543,7 +1489,6 @@ namespace Nitrocid.Drivers.Filesystem
         public virtual void WriteContents(string filename, string[] contents)
         {
             // Write the contents
-            FS.ThrowOnInvalidPath(filename);
             filename = FS.NeutralizePath(filename);
             File.WriteAllLines(filename, contents);
         }
@@ -1551,8 +1496,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void WriteAllTextNoBlock(string path, string contents)
         {
-            FS.ThrowOnInvalidPath(path);
-
             // Write all the lines, bypassing the restrictions.
             path = FS.NeutralizePath(path);
             var FOpen = new StreamWriter(File.Open(path, FileMode.OpenOrCreate, FileAccess.Write, FileShare.ReadWrite));
@@ -1564,7 +1507,6 @@ namespace Nitrocid.Drivers.Filesystem
         public virtual void WriteContentsText(string filename, string contents)
         {
             // Write the contents
-            FS.ThrowOnInvalidPath(filename);
             filename = FS.NeutralizePath(filename);
             File.WriteAllText(filename, contents);
         }
@@ -1572,8 +1514,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void WriteAllBytesNoBlock(string path, byte[] contents)
         {
-            FS.ThrowOnInvalidPath(path);
-
             // Write all the bytes, bypassing the restrictions.
             path = FS.NeutralizePath(path);
             var FOpen = File.Open(path, FileMode.OpenOrCreate, FileAccess.Write, FileShare.ReadWrite);
@@ -1584,7 +1524,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void RemoveAttributeFromFile(string FilePath, FileAttributes Attributes)
         {
-            FS.ThrowOnInvalidPath(FilePath);
             FilePath = FS.NeutralizePath(FilePath);
             var Attrib = File.GetAttributes(FilePath);
             DebugWriter.WriteDebug(DebugLevel.I, "File attributes: {0}", Attrib);
@@ -1603,7 +1542,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void RemoveDirectory(string Target, bool ShowProgress, bool secureRemove = false)
         {
-            FS.ThrowOnInvalidPath(Target);
             if (!Checking.FolderExists(Target))
                 throw new KernelException(KernelExceptionType.Filesystem, Translate.DoTranslation("Directory {0} not found."), Target);
 
@@ -1646,7 +1584,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void RemoveFile(string Target, bool secureRemove = false)
         {
-            FS.ThrowOnInvalidPath(Target);
             string Dir = FS.NeutralizePath(Target);
             if (secureRemove)
             {
@@ -1688,7 +1625,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void RemoveFromPathLookup(string Path)
         {
-            FS.ThrowOnInvalidPath(Path);
             var LookupPaths = GetPathList();
             Path = FS.NeutralizePath(Path);
             LookupPaths.Remove(Path);
@@ -1698,8 +1634,6 @@ namespace Nitrocid.Drivers.Filesystem
         /// <inheritdoc/>
         public virtual void RemoveFromPathLookup(string Path, string RootPath)
         {
-            FS.ThrowOnInvalidPath(Path);
-            FS.ThrowOnInvalidPath(RootPath);
             var LookupPaths = GetPathList();
             Path = FS.NeutralizePath(Path, RootPath);
             LookupPaths.Remove(Path);
@@ -1711,8 +1645,7 @@ namespace Nitrocid.Drivers.Filesystem
         {
             try
             {
-                FS.ThrowOnInvalidPath(FilePath);
-                FilePath = FS.NeutralizePath(FilePath);
+                    FilePath = FS.NeutralizePath(FilePath);
                 var Matches = new List<string>();
                 var Filebyte = Reading.ReadContents(FilePath);
                 int MatchNum = 1;
@@ -1743,8 +1676,7 @@ namespace Nitrocid.Drivers.Filesystem
         {
             try
             {
-                FS.ThrowOnInvalidPath(FilePath);
-                FilePath = FS.NeutralizePath(FilePath);
+                    FilePath = FS.NeutralizePath(FilePath);
                 var Matches = new List<string>();
                 var Filebyte = Reading.ReadContents(FilePath);
                 int MatchNum = 1;
@@ -1775,8 +1707,7 @@ namespace Nitrocid.Drivers.Filesystem
         {
             try
             {
-                FS.ThrowOnInvalidPath(FilePath);
-                FilePath = FS.NeutralizePath(FilePath);
+                    FilePath = FS.NeutralizePath(FilePath);
                 var Matches = new List<(string, MatchCollection)>();
                 var Filebyte = Reading.ReadContents(FilePath);
                 for (int i = 0; i < Filebyte.Length; i++)
@@ -1819,8 +1750,7 @@ namespace Nitrocid.Drivers.Filesystem
         {
             try
             {
-                FS.ThrowOnInvalidPath(Name);
-                return !(Name.IndexOfAny(IOPath.GetInvalidFileNameChars()) >= 0);
+                    return !(Name.IndexOfAny(IOPath.GetInvalidFileNameChars()) >= 0);
             }
             catch (Exception ex)
             {
@@ -1835,8 +1765,7 @@ namespace Nitrocid.Drivers.Filesystem
         {
             try
             {
-                FS.ThrowOnInvalidPath(Path);
-                return !(Path.IndexOfAny(GetInvalidPathChars()) >= 0);
+                    return !(Path.IndexOfAny(GetInvalidPathChars()) >= 0);
             }
             catch (Exception ex)
             {

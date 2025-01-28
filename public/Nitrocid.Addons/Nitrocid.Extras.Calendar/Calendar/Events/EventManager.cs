@@ -168,7 +168,6 @@ namespace Nitrocid.Extras.Calendar.Calendar.Events
         {
             lock (EventManagerLock)
             {
-                FilesystemTools.ThrowOnInvalidPath(EventFile);
                 EventFile = FilesystemTools.NeutralizePath(EventFile);
                 DebugWriter.WriteDebug(DebugLevel.I, "Loading event {0}...", EventFile);
 
@@ -199,7 +198,6 @@ namespace Nitrocid.Extras.Calendar.Calendar.Events
         /// </summary>
         public static void SaveEvents(string Path, bool Destructive)
         {
-            FilesystemTools.ThrowOnInvalidPath(Path);
             Path = FilesystemTools.NeutralizePath(Path);
             DebugWriter.WriteDebug(DebugLevel.I, "Saving events to {0}...", Path);
 
@@ -241,7 +239,6 @@ namespace Nitrocid.Extras.Calendar.Calendar.Events
         /// </summary>
         public static void SaveEvent(EventInfo EventInstance, string File)
         {
-            FilesystemTools.ThrowOnInvalidPath(File);
             File = FilesystemTools.NeutralizePath(File);
             DebugWriter.WriteDebug(DebugLevel.I, "Saving event to {0}...", File);
             var contents = JsonConvert.SerializeObject(EventInstance, Formatting.Indented);
