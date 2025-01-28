@@ -175,7 +175,6 @@ namespace Nitrocid.Extras.Calendar.Calendar.Reminders
         {
             lock (ReminderManagerLock)
             {
-                FilesystemTools.ThrowOnInvalidPath(ReminderFile);
                 ReminderFile = FilesystemTools.NeutralizePath(ReminderFile);
                 DebugWriter.WriteDebug(DebugLevel.I, "Loading reminder {0}...", ReminderFile);
 
@@ -206,7 +205,6 @@ namespace Nitrocid.Extras.Calendar.Calendar.Reminders
         /// </summary>
         public static void SaveReminders(string Path, bool Destructive)
         {
-            FilesystemTools.ThrowOnInvalidPath(Path);
             Path = FilesystemTools.NeutralizePath(Path);
             DebugWriter.WriteDebug(DebugLevel.I, "Saving reminders to {0}...", Path);
 
@@ -248,7 +246,6 @@ namespace Nitrocid.Extras.Calendar.Calendar.Reminders
         /// </summary>
         public static void SaveReminder(ReminderInfo ReminderInstance, string File)
         {
-            FilesystemTools.ThrowOnInvalidPath(File);
             File = FilesystemTools.NeutralizePath(File);
             DebugWriter.WriteDebug(DebugLevel.I, "Saving reminder to {0}...", File);
             var contents = JsonConvert.SerializeObject(ReminderInstance, Formatting.Indented);

@@ -60,7 +60,6 @@ namespace Nitrocid.Extras.SqlShell.Sql
             try
             {
                 // Neutralize path
-                FilesystemTools.ThrowOnInvalidPath(Path);
                 Path = FilesystemTools.NeutralizePath(Path);
 
                 // Try to open an SQL connection
