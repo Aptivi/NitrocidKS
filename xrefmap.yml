@@ -1563,6 +1563,15 @@ references:
   commentId: M:Nitrocid.ConsoleBase.Themes.ThemePreviewTools.PreviewTheme(Nitrocid.ConsoleBase.Themes.ThemeInfo)
   fullName: Nitrocid.ConsoleBase.Themes.ThemePreviewTools.PreviewTheme(Nitrocid.ConsoleBase.Themes.ThemeInfo)
   nameWithType: ThemePreviewTools.PreviewTheme(ThemeInfo)
+- uid: Nitrocid.ConsoleBase.Themes.ThemePreviewTools.PreviewTheme(System.Collections.Generic.Dictionary{Nitrocid.ConsoleBase.Colors.KernelColorType,Terminaux.Colors.Color})
+  name: PreviewTheme(Dictionary<KernelColorType, Color>)
+  href: api/Nitrocid.ConsoleBase.Themes.ThemePreviewTools.html#Nitrocid_ConsoleBase_Themes_ThemePreviewTools_PreviewTheme_System_Collections_Generic_Dictionary_Nitrocid_ConsoleBase_Colors_KernelColorType_Terminaux_Colors_Color__
+  commentId: M:Nitrocid.ConsoleBase.Themes.ThemePreviewTools.PreviewTheme(System.Collections.Generic.Dictionary{Nitrocid.ConsoleBase.Colors.KernelColorType,Terminaux.Colors.Color})
+  name.vb: PreviewTheme(Dictionary(Of KernelColorType, Color))
+  fullName: Nitrocid.ConsoleBase.Themes.ThemePreviewTools.PreviewTheme(System.Collections.Generic.Dictionary<Nitrocid.ConsoleBase.Colors.KernelColorType, Terminaux.Colors.Color>)
+  fullName.vb: Nitrocid.ConsoleBase.Themes.ThemePreviewTools.PreviewTheme(System.Collections.Generic.Dictionary(Of Nitrocid.ConsoleBase.Colors.KernelColorType, Terminaux.Colors.Color))
+  nameWithType: ThemePreviewTools.PreviewTheme(Dictionary<KernelColorType, Color>)
+  nameWithType.vb: ThemePreviewTools.PreviewTheme(Dictionary(Of KernelColorType, Color))
 - uid: Nitrocid.ConsoleBase.Themes.ThemePreviewTools.PreviewTheme(System.String)
   name: PreviewTheme(string)
   href: api/Nitrocid.ConsoleBase.Themes.ThemePreviewTools.html#Nitrocid_ConsoleBase_Themes_ThemePreviewTools_PreviewTheme_System_String_
@@ -1579,28 +1588,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Themes.ThemePreviewTools.PreviewTheme
   nameWithType: ThemePreviewTools.PreviewTheme
-- uid: Nitrocid.ConsoleBase.Themes.ThemePreviewTools.PreviewThemeSimple(Nitrocid.ConsoleBase.Themes.ThemeInfo)
-  name: PreviewThemeSimple(ThemeInfo)
-  href: api/Nitrocid.ConsoleBase.Themes.ThemePreviewTools.html#Nitrocid_ConsoleBase_Themes_ThemePreviewTools_PreviewThemeSimple_Nitrocid_ConsoleBase_Themes_ThemeInfo_
-  commentId: M:Nitrocid.ConsoleBase.Themes.ThemePreviewTools.PreviewThemeSimple(Nitrocid.ConsoleBase.Themes.ThemeInfo)
-  fullName: Nitrocid.ConsoleBase.Themes.ThemePreviewTools.PreviewThemeSimple(Nitrocid.ConsoleBase.Themes.ThemeInfo)
-  nameWithType: ThemePreviewTools.PreviewThemeSimple(ThemeInfo)
-- uid: Nitrocid.ConsoleBase.Themes.ThemePreviewTools.PreviewThemeSimple(System.String)
-  name: PreviewThemeSimple(string)
-  href: api/Nitrocid.ConsoleBase.Themes.ThemePreviewTools.html#Nitrocid_ConsoleBase_Themes_ThemePreviewTools_PreviewThemeSimple_System_String_
-  commentId: M:Nitrocid.ConsoleBase.Themes.ThemePreviewTools.PreviewThemeSimple(System.String)
-  name.vb: PreviewThemeSimple(String)
-  fullName: Nitrocid.ConsoleBase.Themes.ThemePreviewTools.PreviewThemeSimple(string)
-  fullName.vb: Nitrocid.ConsoleBase.Themes.ThemePreviewTools.PreviewThemeSimple(String)
-  nameWithType: ThemePreviewTools.PreviewThemeSimple(string)
-  nameWithType.vb: ThemePreviewTools.PreviewThemeSimple(String)
-- uid: Nitrocid.ConsoleBase.Themes.ThemePreviewTools.PreviewThemeSimple*
-  name: PreviewThemeSimple
-  href: api/Nitrocid.ConsoleBase.Themes.ThemePreviewTools.html#Nitrocid_ConsoleBase_Themes_ThemePreviewTools_PreviewThemeSimple_
-  commentId: Overload:Nitrocid.ConsoleBase.Themes.ThemePreviewTools.PreviewThemeSimple
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.Themes.ThemePreviewTools.PreviewThemeSimple
-  nameWithType: ThemePreviewTools.PreviewThemeSimple
 - uid: Nitrocid.ConsoleBase.Themes.ThemeSetErrorReasons
   name: ThemeSetErrorReasons
   href: api/Nitrocid.ConsoleBase.Themes.ThemeSetErrorReasons.html
