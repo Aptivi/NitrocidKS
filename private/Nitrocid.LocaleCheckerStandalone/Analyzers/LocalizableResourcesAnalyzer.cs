@@ -58,7 +58,7 @@ namespace Nitrocid.LocaleCheckerStandalone.Analyzers
                     // It's a theme. Get its description and its localizable boolean value
                     string description = ((string?)themeMetadata["Description"] ?? "").Replace("\\\"", "\"");
                     bool localizable = (bool?)themeMetadata["Localizable"] ?? false;
-                    if (!string.IsNullOrEmpty(description) && localizable && !EntryPoint.localizationList.Contains(description))
+                    if (!string.IsNullOrWhiteSpace(description) && localizable && !EntryPoint.localizationList.Contains(description))
                     {
                         TextWriterColor.WriteColor($"{nameof(NLOC0001)}Resources: {resourceName}: Unlocalized theme description found: {description}", true, ConsoleColors.Yellow);
                         unlocalizedStrings.Add(description);
@@ -73,17 +73,17 @@ namespace Nitrocid.LocaleCheckerStandalone.Analyzers
                         string description = ((string?)settingsEntryList["Desc"] ?? "").Replace("\\\"", "\"");
                         string displayAs = ((string?)settingsEntryList["DisplayAs"] ?? "").Replace("\\\"", "\"");
                         string knownAddonDisplay = ((string?)settingsEntryList["display"] ?? "").Replace("\\\"", "\"");
-                        if (!string.IsNullOrEmpty(description) && !EntryPoint.localizationList.Contains(description))
+                        if (!string.IsNullOrWhiteSpace(description) && !EntryPoint.localizationList.Contains(description))
                         {
                             TextWriterColor.WriteColor($"{nameof(NLOC0001)}Resources: {resourceName}: Unlocalized settings description found: {description}", true, ConsoleColors.Yellow);
                             unlocalizedStrings.Add(description);
                         }
-                        if (!string.IsNullOrEmpty(displayAs) && !EntryPoint.localizationList.Contains(displayAs))
+                        if (!string.IsNullOrWhiteSpace(displayAs) && !EntryPoint.localizationList.Contains(displayAs))
                         {
                             TextWriterColor.WriteColor($"{nameof(NLOC0001)}Resources: {resourceName}: Unlocalized settings display found: {displayAs}", true, ConsoleColors.Yellow);
                             unlocalizedStrings.Add(displayAs);
                         }
-                        if (!string.IsNullOrEmpty(knownAddonDisplay) && !EntryPoint.localizationList.Contains(knownAddonDisplay))
+                        if (!string.IsNullOrWhiteSpace(knownAddonDisplay) && !EntryPoint.localizationList.Contains(knownAddonDisplay))
                         {
                             TextWriterColor.WriteColor($"{nameof(NLOC0001)}Resources: {resourceName}: Unlocalized known addon display found: {knownAddonDisplay}", true, ConsoleColors.Yellow);
                             unlocalizedStrings.Add(knownAddonDisplay);
@@ -97,12 +97,12 @@ namespace Nitrocid.LocaleCheckerStandalone.Analyzers
                         {
                             string keyName = ((string?)key["Name"] ?? "").Replace("\\\"", "\"");
                             string keyDesc = ((string?)key["Description"] ?? "").Replace("\\\"", "\"");
-                            if (!string.IsNullOrEmpty(keyName) && !EntryPoint.localizationList.Contains(keyName))
+                            if (!string.IsNullOrWhiteSpace(keyName) && !EntryPoint.localizationList.Contains(keyName))
                             {
                                 TextWriterColor.WriteColor($"{nameof(NLOC0001)}Resources: {resourceName}: Unlocalized key name found: {keyName}", true, ConsoleColors.Yellow);
                                 unlocalizedStrings.Add(keyName);
                             }
-                            if (!string.IsNullOrEmpty(keyDesc) && !EntryPoint.localizationList.Contains(keyDesc))
+                            if (!string.IsNullOrWhiteSpace(keyDesc) && !EntryPoint.localizationList.Contains(keyDesc))
                             {
                                 TextWriterColor.WriteColor($"{nameof(NLOC0001)}Resources: {resourceName}: Unlocalized key description found: {keyDesc}", true, ConsoleColors.Yellow);
                                 unlocalizedStrings.Add(keyDesc);
