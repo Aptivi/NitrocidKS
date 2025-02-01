@@ -70,7 +70,7 @@ namespace Nitrocid.LocaleCheckerStandalone.Analyzers
                         {
                             string text = literalText.ToString();
                             text = text[1..^1].Replace("\\\"", "\"");
-                            if (!EntryPoint.localizationList.Contains(text))
+                            if (!string.IsNullOrWhiteSpace(text) && !EntryPoint.localizationList.Contains(text))
                             {
                                 var lineSpan = location.GetLineSpan();
                                 TextWriterColor.WriteColor($"{GetType().Name}: {document.FilePath} ({lineSpan.StartLinePosition} -> {lineSpan.EndLinePosition}): Unlocalized string found: {text}", true, ConsoleColors.Yellow);
