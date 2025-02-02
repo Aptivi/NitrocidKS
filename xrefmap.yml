@@ -31968,15 +31968,15 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Screensaver.ScreensaverManager.DefaultSaverName
   nameWithType: ScreensaverManager.DefaultSaverName
-- uid: Nitrocid.Misc.Screensaver.ScreensaverManager.Delay(System.Int32)
-  name: Delay(int)
-  href: api/Nitrocid.Misc.Screensaver.ScreensaverManager.html#Nitrocid_Misc_Screensaver_ScreensaverManager_Delay_System_Int32_
-  commentId: M:Nitrocid.Misc.Screensaver.ScreensaverManager.Delay(System.Int32)
-  name.vb: Delay(Integer)
-  fullName: Nitrocid.Misc.Screensaver.ScreensaverManager.Delay(int)
-  fullName.vb: Nitrocid.Misc.Screensaver.ScreensaverManager.Delay(Integer)
-  nameWithType: ScreensaverManager.Delay(int)
-  nameWithType.vb: ScreensaverManager.Delay(Integer)
+- uid: Nitrocid.Misc.Screensaver.ScreensaverManager.Delay(System.Int32,System.Boolean)
+  name: Delay(int, bool)
+  href: api/Nitrocid.Misc.Screensaver.ScreensaverManager.html#Nitrocid_Misc_Screensaver_ScreensaverManager_Delay_System_Int32_System_Boolean_
+  commentId: M:Nitrocid.Misc.Screensaver.ScreensaverManager.Delay(System.Int32,System.Boolean)
+  name.vb: Delay(Integer, Boolean)
+  fullName: Nitrocid.Misc.Screensaver.ScreensaverManager.Delay(int, bool)
+  fullName.vb: Nitrocid.Misc.Screensaver.ScreensaverManager.Delay(Integer, Boolean)
+  nameWithType: ScreensaverManager.Delay(int, bool)
+  nameWithType.vb: ScreensaverManager.Delay(Integer, Boolean)
 - uid: Nitrocid.Misc.Screensaver.ScreensaverManager.Delay*
   name: Delay
   href: api/Nitrocid.Misc.Screensaver.ScreensaverManager.html#Nitrocid_Misc_Screensaver_ScreensaverManager_Delay_
