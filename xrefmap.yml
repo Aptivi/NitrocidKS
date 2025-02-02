@@ -28803,27 +28803,33 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Misc.Audio.AudioCuesTools.GetAudioThemeNames
   nameWithType: AudioCuesTools.GetAudioThemeNames
-- uid: Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue(Nitrocid.Misc.Audio.AudioCueType)
-  name: PlayAudioCue(AudioCueType)
-  href: api/Nitrocid.Misc.Audio.AudioCuesTools.html#Nitrocid_Misc_Audio_AudioCuesTools_PlayAudioCue_Nitrocid_Misc_Audio_AudioCueType_
-  commentId: M:Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue(Nitrocid.Misc.Audio.AudioCueType)
-  fullName: Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue(Nitrocid.Misc.Audio.AudioCueType)
-  nameWithType: AudioCuesTools.PlayAudioCue(AudioCueType)
-- uid: Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue(Nitrocid.Misc.Audio.AudioCueType,Nitrocid.Misc.Audio.AudioCueContainer)
-  name: PlayAudioCue(AudioCueType, AudioCueContainer)
-  href: api/Nitrocid.Misc.Audio.AudioCuesTools.html#Nitrocid_Misc_Audio_AudioCuesTools_PlayAudioCue_Nitrocid_Misc_Audio_AudioCueType_Nitrocid_Misc_Audio_AudioCueContainer_
-  commentId: M:Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue(Nitrocid.Misc.Audio.AudioCueType,Nitrocid.Misc.Audio.AudioCueContainer)
-  fullName: Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue(Nitrocid.Misc.Audio.AudioCueType, Nitrocid.Misc.Audio.AudioCueContainer)
-  nameWithType: AudioCuesTools.PlayAudioCue(AudioCueType, AudioCueContainer)
-- uid: Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue(Nitrocid.Misc.Audio.AudioCueType,System.String)
-  name: PlayAudioCue(AudioCueType, string)
-  href: api/Nitrocid.Misc.Audio.AudioCuesTools.html#Nitrocid_Misc_Audio_AudioCuesTools_PlayAudioCue_Nitrocid_Misc_Audio_AudioCueType_System_String_
-  commentId: M:Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue(Nitrocid.Misc.Audio.AudioCueType,System.String)
-  name.vb: PlayAudioCue(AudioCueType, String)
-  fullName: Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue(Nitrocid.Misc.Audio.AudioCueType, string)
-  fullName.vb: Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue(Nitrocid.Misc.Audio.AudioCueType, String)
-  nameWithType: AudioCuesTools.PlayAudioCue(AudioCueType, string)
-  nameWithType.vb: AudioCuesTools.PlayAudioCue(AudioCueType, String)
+- uid: Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue(Nitrocid.Misc.Audio.AudioCueType,Nitrocid.Misc.Audio.AudioCueContainer,System.Boolean)
+  name: PlayAudioCue(AudioCueType, AudioCueContainer, bool)
+  href: api/Nitrocid.Misc.Audio.AudioCuesTools.html#Nitrocid_Misc_Audio_AudioCuesTools_PlayAudioCue_Nitrocid_Misc_Audio_AudioCueType_Nitrocid_Misc_Audio_AudioCueContainer_System_Boolean_
+  commentId: M:Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue(Nitrocid.Misc.Audio.AudioCueType,Nitrocid.Misc.Audio.AudioCueContainer,System.Boolean)
+  name.vb: PlayAudioCue(AudioCueType, AudioCueContainer, Boolean)
+  fullName: Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue(Nitrocid.Misc.Audio.AudioCueType, Nitrocid.Misc.Audio.AudioCueContainer, bool)
+  fullName.vb: Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue(Nitrocid.Misc.Audio.AudioCueType, Nitrocid.Misc.Audio.AudioCueContainer, Boolean)
+  nameWithType: AudioCuesTools.PlayAudioCue(AudioCueType, AudioCueContainer, bool)
+  nameWithType.vb: AudioCuesTools.PlayAudioCue(AudioCueType, AudioCueContainer, Boolean)
+- uid: Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue(Nitrocid.Misc.Audio.AudioCueType,System.Boolean)
+  name: PlayAudioCue(AudioCueType, bool)
+  href: api/Nitrocid.Misc.Audio.AudioCuesTools.html#Nitrocid_Misc_Audio_AudioCuesTools_PlayAudioCue_Nitrocid_Misc_Audio_AudioCueType_System_Boolean_
+  commentId: M:Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue(Nitrocid.Misc.Audio.AudioCueType,System.Boolean)
+  name.vb: PlayAudioCue(AudioCueType, Boolean)
+  fullName: Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue(Nitrocid.Misc.Audio.AudioCueType, bool)
+  fullName.vb: Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue(Nitrocid.Misc.Audio.AudioCueType, Boolean)
+  nameWithType: AudioCuesTools.PlayAudioCue(AudioCueType, bool)
+  nameWithType.vb: AudioCuesTools.PlayAudioCue(AudioCueType, Boolean)
+- uid: Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue(Nitrocid.Misc.Audio.AudioCueType,System.String,System.Boolean)
+  name: PlayAudioCue(AudioCueType, string, bool)
+  href: api/Nitrocid.Misc.Audio.AudioCuesTools.html#Nitrocid_Misc_Audio_AudioCuesTools_PlayAudioCue_Nitrocid_Misc_Audio_AudioCueType_System_String_System_Boolean_
+  commentId: M:Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue(Nitrocid.Misc.Audio.AudioCueType,System.String,System.Boolean)
+  name.vb: PlayAudioCue(AudioCueType, String, Boolean)
+  fullName: Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue(Nitrocid.Misc.Audio.AudioCueType, string, bool)
+  fullName.vb: Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue(Nitrocid.Misc.Audio.AudioCueType, String, Boolean)
+  nameWithType: AudioCuesTools.PlayAudioCue(AudioCueType, string, bool)
+  nameWithType.vb: AudioCuesTools.PlayAudioCue(AudioCueType, String, Boolean)
 - uid: Nitrocid.Misc.Audio.AudioCuesTools.PlayAudioCue*
   name: PlayAudioCue
   href: api/Nitrocid.Misc.Audio.AudioCuesTools.html#Nitrocid_Misc_Audio_AudioCuesTools_PlayAudioCue_
