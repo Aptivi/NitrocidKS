@@ -2325,6 +2325,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Misc.Audio.AudioCueContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Misc.Audio.AudioCueContainer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Misc.Audio.AudioCueType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Misc.Audio.AudioCueType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Misc.Audio.AudioCuesTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Misc.Audio.AudioCuesTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nitrocid.Misc.Audio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nitrocid.Misc.Audio.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nitrocid.Misc.Interactives.FileManagerCli.yml",
       "output": {
         ".html": {
