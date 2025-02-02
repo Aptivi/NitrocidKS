@@ -39743,6 +39743,49 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Shell.ShellBase.Shells.BaseShellInfo.SlashCommand
   nameWithType: BaseShellInfo.SlashCommand
+- uid: Nitrocid.Shell.ShellBase.Shells.BaseShellInfo`1
+  name: BaseShellInfo<TShell>
+  href: api/Nitrocid.Shell.ShellBase.Shells.BaseShellInfo-1.html
+  commentId: T:Nitrocid.Shell.ShellBase.Shells.BaseShellInfo`1
+  name.vb: BaseShellInfo(Of TShell)
+  fullName: Nitrocid.Shell.ShellBase.Shells.BaseShellInfo<TShell>
+  fullName.vb: Nitrocid.Shell.ShellBase.Shells.BaseShellInfo(Of TShell)
+  nameWithType: BaseShellInfo<TShell>
+  nameWithType.vb: BaseShellInfo(Of TShell)
+- uid: Nitrocid.Shell.ShellBase.Shells.BaseShellInfo`1.CurrentPreset
+  name: CurrentPreset
+  href: api/Nitrocid.Shell.ShellBase.Shells.BaseShellInfo-1.html#Nitrocid_Shell_ShellBase_Shells_BaseShellInfo_1_CurrentPreset
+  commentId: P:Nitrocid.Shell.ShellBase.Shells.BaseShellInfo`1.CurrentPreset
+  fullName: Nitrocid.Shell.ShellBase.Shells.BaseShellInfo<TShell>.CurrentPreset
+  fullName.vb: Nitrocid.Shell.ShellBase.Shells.BaseShellInfo(Of TShell).CurrentPreset
+  nameWithType: BaseShellInfo<TShell>.CurrentPreset
+  nameWithType.vb: BaseShellInfo(Of TShell).CurrentPreset
+- uid: Nitrocid.Shell.ShellBase.Shells.BaseShellInfo`1.CurrentPreset*
+  name: CurrentPreset
+  href: api/Nitrocid.Shell.ShellBase.Shells.BaseShellInfo-1.html#Nitrocid_Shell_ShellBase_Shells_BaseShellInfo_1_CurrentPreset_
+  commentId: Overload:Nitrocid.Shell.ShellBase.Shells.BaseShellInfo`1.CurrentPreset
+  isSpec: "True"
+  fullName: Nitrocid.Shell.ShellBase.Shells.BaseShellInfo<TShell>.CurrentPreset
+  fullName.vb: Nitrocid.Shell.ShellBase.Shells.BaseShellInfo(Of TShell).CurrentPreset
+  nameWithType: BaseShellInfo<TShell>.CurrentPreset
+  nameWithType.vb: BaseShellInfo(Of TShell).CurrentPreset
+- uid: Nitrocid.Shell.ShellBase.Shells.BaseShellInfo`1.ShellBase
+  name: ShellBase
+  href: api/Nitrocid.Shell.ShellBase.Shells.BaseShellInfo-1.html#Nitrocid_Shell_ShellBase_Shells_BaseShellInfo_1_ShellBase
+  commentId: P:Nitrocid.Shell.ShellBase.Shells.BaseShellInfo`1.ShellBase
+  fullName: Nitrocid.Shell.ShellBase.Shells.BaseShellInfo<TShell>.ShellBase
+  fullName.vb: Nitrocid.Shell.ShellBase.Shells.BaseShellInfo(Of TShell).ShellBase
+  nameWithType: BaseShellInfo<TShell>.ShellBase
+  nameWithType.vb: BaseShellInfo(Of TShell).ShellBase
+- uid: Nitrocid.Shell.ShellBase.Shells.BaseShellInfo`1.ShellBase*
+  name: ShellBase
+  href: api/Nitrocid.Shell.ShellBase.Shells.BaseShellInfo-1.html#Nitrocid_Shell_ShellBase_Shells_BaseShellInfo_1_ShellBase_
+  commentId: Overload:Nitrocid.Shell.ShellBase.Shells.BaseShellInfo`1.ShellBase
+  isSpec: "True"
+  fullName: Nitrocid.Shell.ShellBase.Shells.BaseShellInfo<TShell>.ShellBase
+  fullName.vb: Nitrocid.Shell.ShellBase.Shells.BaseShellInfo(Of TShell).ShellBase
+  nameWithType: BaseShellInfo<TShell>.ShellBase
+  nameWithType.vb: BaseShellInfo(Of TShell).ShellBase
 - uid: Nitrocid.Shell.ShellBase.Shells.IShell
   name: IShell
   href: api/Nitrocid.Shell.ShellBase.Shells.IShell.html
@@ -39823,19 +39866,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Shell.ShellBase.Shells.IShellInfo.Commands
   nameWithType: IShellInfo.Commands
-- uid: Nitrocid.Shell.ShellBase.Shells.IShellInfo.CurrentPreset
-  name: CurrentPreset
-  href: api/Nitrocid.Shell.ShellBase.Shells.IShellInfo.html#Nitrocid_Shell_ShellBase_Shells_IShellInfo_CurrentPreset
-  commentId: P:Nitrocid.Shell.ShellBase.Shells.IShellInfo.CurrentPreset
-  fullName: Nitrocid.Shell.ShellBase.Shells.IShellInfo.CurrentPreset
-  nameWithType: IShellInfo.CurrentPreset
-- uid: Nitrocid.Shell.ShellBase.Shells.IShellInfo.CurrentPreset*
-  name: CurrentPreset
-  href: api/Nitrocid.Shell.ShellBase.Shells.IShellInfo.html#Nitrocid_Shell_ShellBase_Shells_IShellInfo_CurrentPreset_
-  commentId: Overload:Nitrocid.Shell.ShellBase.Shells.IShellInfo.CurrentPreset
-  isSpec: "True"
-  fullName: Nitrocid.Shell.ShellBase.Shells.IShellInfo.CurrentPreset
-  nameWithType: IShellInfo.CurrentPreset
 - uid: Nitrocid.Shell.ShellBase.Shells.IShellInfo.CustomShellPresets
   name: CustomShellPresets
   href: api/Nitrocid.Shell.ShellBase.Shells.IShellInfo.html#Nitrocid_Shell_ShellBase_Shells_IShellInfo_CustomShellPresets
@@ -39901,19 +39931,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Shell.ShellBase.Shells.IShellInfo.OneLineWrap
   nameWithType: IShellInfo.OneLineWrap
-- uid: Nitrocid.Shell.ShellBase.Shells.IShellInfo.ShellBase
-  name: ShellBase
-  href: api/Nitrocid.Shell.ShellBase.Shells.IShellInfo.html#Nitrocid_Shell_ShellBase_Shells_IShellInfo_ShellBase
-  commentId: P:Nitrocid.Shell.ShellBase.Shells.IShellInfo.ShellBase
-  fullName: Nitrocid.Shell.ShellBase.Shells.IShellInfo.ShellBase
-  nameWithType: IShellInfo.ShellBase
-- uid: Nitrocid.Shell.ShellBase.Shells.IShellInfo.ShellBase*
-  name: ShellBase
-  href: api/Nitrocid.Shell.ShellBase.Shells.IShellInfo.html#Nitrocid_Shell_ShellBase_Shells_IShellInfo_ShellBase_
-  commentId: Overload:Nitrocid.Shell.ShellBase.Shells.IShellInfo.ShellBase
-  isSpec: "True"
-  fullName: Nitrocid.Shell.ShellBase.Shells.IShellInfo.ShellBase
-  nameWithType: IShellInfo.ShellBase
 - uid: Nitrocid.Shell.ShellBase.Shells.IShellInfo.ShellLock
   name: ShellLock
   href: api/Nitrocid.Shell.ShellBase.Shells.IShellInfo.html#Nitrocid_Shell_ShellBase_Shells_IShellInfo_ShellLock
