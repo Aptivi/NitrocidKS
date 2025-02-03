@@ -45,6 +45,15 @@ references:
   commentId: T:Nitrocid.Arguments.ArgumentInfo
   fullName: Nitrocid.Arguments.ArgumentInfo
   nameWithType: ArgumentInfo
+- uid: Nitrocid.Arguments.ArgumentInfo.#ctor(System.String,System.String,Nitrocid.Arguments.ArgumentExecutor,System.Boolean)
+  name: ArgumentInfo(string, string, ArgumentExecutor?, bool)
+  href: api/Nitrocid.Arguments.ArgumentInfo.html#Nitrocid_Arguments_ArgumentInfo__ctor_System_String_System_String_Nitrocid_Arguments_ArgumentExecutor_System_Boolean_
+  commentId: M:Nitrocid.Arguments.ArgumentInfo.#ctor(System.String,System.String,Nitrocid.Arguments.ArgumentExecutor,System.Boolean)
+  name.vb: New(String, String, ArgumentExecutor, Boolean)
+  fullName: Nitrocid.Arguments.ArgumentInfo.ArgumentInfo(string, string, Nitrocid.Arguments.ArgumentExecutor?, bool)
+  fullName.vb: Nitrocid.Arguments.ArgumentInfo.New(String, String, Nitrocid.Arguments.ArgumentExecutor, Boolean)
+  nameWithType: ArgumentInfo.ArgumentInfo(string, string, ArgumentExecutor?, bool)
+  nameWithType.vb: ArgumentInfo.New(String, String, ArgumentExecutor, Boolean)
 - uid: Nitrocid.Arguments.ArgumentInfo.#ctor(System.String,System.String,Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo[],Nitrocid.Arguments.ArgumentExecutor,System.Boolean)
   name: ArgumentInfo(string, string, CommandArgumentInfo[]?, ArgumentExecutor?, bool)
   href: api/Nitrocid.Arguments.ArgumentInfo.html#Nitrocid_Arguments_ArgumentInfo__ctor_System_String_System_String_Nitrocid_Shell_ShellBase_Arguments_CommandArgumentInfo___Nitrocid_Arguments_ArgumentExecutor_System_Boolean_
@@ -36609,6 +36618,15 @@ references:
   fullName.vb: Nitrocid.Shell.ShellBase.Commands.CommandInfo.New(String, String, Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo(), Nitrocid.Shell.ShellBase.Commands.BaseCommand, Nitrocid.Shell.ShellBase.Commands.CommandFlags)
   nameWithType: CommandInfo.CommandInfo(string, string, CommandArgumentInfo[]?, BaseCommand?, CommandFlags)
   nameWithType.vb: CommandInfo.New(String, String, CommandArgumentInfo(), BaseCommand, CommandFlags)
+- uid: Nitrocid.Shell.ShellBase.Commands.CommandInfo.#ctor(System.String,System.String,Nitrocid.Shell.ShellBase.Commands.BaseCommand,Nitrocid.Shell.ShellBase.Commands.CommandFlags)
+  name: CommandInfo(string, string, BaseCommand?, CommandFlags)
+  href: api/Nitrocid.Shell.ShellBase.Commands.CommandInfo.html#Nitrocid_Shell_ShellBase_Commands_CommandInfo__ctor_System_String_System_String_Nitrocid_Shell_ShellBase_Commands_BaseCommand_Nitrocid_Shell_ShellBase_Commands_CommandFlags_
+  commentId: M:Nitrocid.Shell.ShellBase.Commands.CommandInfo.#ctor(System.String,System.String,Nitrocid.Shell.ShellBase.Commands.BaseCommand,Nitrocid.Shell.ShellBase.Commands.CommandFlags)
+  name.vb: New(String, String, BaseCommand, CommandFlags)
+  fullName: Nitrocid.Shell.ShellBase.Commands.CommandInfo.CommandInfo(string, string, Nitrocid.Shell.ShellBase.Commands.BaseCommand?, Nitrocid.Shell.ShellBase.Commands.CommandFlags)
+  fullName.vb: Nitrocid.Shell.ShellBase.Commands.CommandInfo.New(String, String, Nitrocid.Shell.ShellBase.Commands.BaseCommand, Nitrocid.Shell.ShellBase.Commands.CommandFlags)
+  nameWithType: CommandInfo.CommandInfo(string, string, BaseCommand?, CommandFlags)
+  nameWithType.vb: CommandInfo.New(String, String, BaseCommand, CommandFlags)
 - uid: Nitrocid.Shell.ShellBase.Commands.CommandInfo.#ctor*
   name: CommandInfo
   href: api/Nitrocid.Shell.ShellBase.Commands.CommandInfo.html#Nitrocid_Shell_ShellBase_Commands_CommandInfo__ctor_
