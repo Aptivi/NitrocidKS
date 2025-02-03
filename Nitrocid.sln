@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.0.31612.314
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nitrocid", "public\Nitrocid\Nitrocid.csproj", "{C7B37899-C361-423D-9512-FE0A87A46866}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1205F12D-A766-4431-A8DC-CABDCE31B55C} = {1205F12D-A766-4431-A8DC-CABDCE31B55C}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nitrocid.Tests", "private\Nitrocid.Tests\Nitrocid.Tests.csproj", "{2698CB71-9EF6-06A7-2A14-1AFF675F88CB}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -67,6 +70,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nitrocid.LocaleGen.Core", "
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nitrocid.Analyzers", "public\Nitrocid.Analyzers\Nitrocid.Analyzers\Nitrocid.Analyzers.csproj", "{511E3B93-C6BF-4DFF-88D1-165FD3BCF428}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1205F12D-A766-4431-A8DC-CABDCE31B55C} = {1205F12D-A766-4431-A8DC-CABDCE31B55C}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nitrocid.Analyzers.CodeFixes", "public\Nitrocid.Analyzers\Nitrocid.Analyzers.CodeFixes\Nitrocid.Analyzers.CodeFixes.csproj", "{92EFB380-0B78-4B92-A227-F0B6BF982F19}"
 EndProject
@@ -202,6 +208,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Generators", "Generators", "{E403EE05-8642-4496-8897-CBD762D7670B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nitrocid.Generators.KnownAddons", "private\Nitrocid.Generators\Nitrocid.Generators.KnownAddons\Nitrocid.Generators.KnownAddons.csproj", "{E1B8ED9D-541A-4D9E-AAF5-2671114E179B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1205F12D-A766-4431-A8DC-CABDCE31B55C} = {1205F12D-A766-4431-A8DC-CABDCE31B55C}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nitrocid.LocaleChecker", "private\Nitrocid.LocaleChecker\Nitrocid.LocaleChecker.csproj", "{A9DBA465-7F73-449F-B5BD-E143767513E4}"
 EndProject
