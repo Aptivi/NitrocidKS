@@ -60,6 +60,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Private", "Private", "{61916ED1-66D6-4938-9F1A-D0DF38D16E20}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nitrocid.LocaleClean", "private\Nitrocid.LocaleClean\Nitrocid.LocaleClean.csproj", "{22744969-682D-4974-895E-53079DA9EA3C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0E7228D6-AAAE-41FC-BE8C-7731DDA0BA16} = {0E7228D6-AAAE-41FC-BE8C-7731DDA0BA16}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nitrocid.LocaleGen.Core", "public\Nitrocid.LocaleGen.Core\Nitrocid.LocaleGen.Core.csproj", "{09ACA8A4-5AC2-413B-A2EC-4FC5B168E5D0}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -67,6 +70,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nitrocid.LocaleGen.Core", "
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nitrocid.Analyzers", "public\Nitrocid.Analyzers\Nitrocid.Analyzers\Nitrocid.Analyzers.csproj", "{511E3B93-C6BF-4DFF-88D1-165FD3BCF428}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0E7228D6-AAAE-41FC-BE8C-7731DDA0BA16} = {0E7228D6-AAAE-41FC-BE8C-7731DDA0BA16}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nitrocid.Analyzers.CodeFixes", "public\Nitrocid.Analyzers\Nitrocid.Analyzers.CodeFixes\Nitrocid.Analyzers.CodeFixes.csproj", "{92EFB380-0B78-4B92-A227-F0B6BF982F19}"
 EndProject
@@ -158,6 +164,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nitrocid.Extras.Crc32", "public\Nitrocid.Addons\Nitrocid.Extras.Crc32\Nitrocid.Extras.Crc32.csproj", "{4CDBC217-C639-4D93-9F9A-FFD5956C0395}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nitrocid.LocaleTrim", "private\Nitrocid.LocaleTrim\Nitrocid.LocaleTrim.csproj", "{6524403F-F55E-4E8D-8A63-8A7D2FA518D3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0E7228D6-AAAE-41FC-BE8C-7731DDA0BA16} = {0E7228D6-AAAE-41FC-BE8C-7731DDA0BA16}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nitrocid.Extras.Md5", "public\Nitrocid.Addons\Nitrocid.Extras.Md5\Nitrocid.Extras.Md5.csproj", "{CE5F80A9-B27E-4D16-AEBB-A09677E63012}"
 EndProject
@@ -172,6 +181,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{0F3600BA-D929-4E70-957D-71992819CE61}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "templatepack", "public\Nitrocid.Templates\templatepack.csproj", "{6F4FFE84-4F9B-474F-8FA4-A2DCCF5415C2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0E7228D6-AAAE-41FC-BE8C-7731DDA0BA16} = {0E7228D6-AAAE-41FC-BE8C-7731DDA0BA16}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{5C239BD3-9597-4D5C-86C8-1940B9437A1C}"
 	ProjectSection(SolutionItems) = preProject
@@ -202,10 +214,16 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Generators", "Generators", "{E403EE05-8642-4496-8897-CBD762D7670B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nitrocid.Generators.KnownAddons", "private\Nitrocid.Generators\Nitrocid.Generators.KnownAddons\Nitrocid.Generators.KnownAddons.csproj", "{E1B8ED9D-541A-4D9E-AAF5-2671114E179B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0E7228D6-AAAE-41FC-BE8C-7731DDA0BA16} = {0E7228D6-AAAE-41FC-BE8C-7731DDA0BA16}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nitrocid.LocaleChecker", "private\Nitrocid.LocaleChecker\Nitrocid.LocaleChecker.csproj", "{A9DBA465-7F73-449F-B5BD-E143767513E4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nitrocid.LocaleCheckerStandalone", "private\Nitrocid.LocaleCheckerStandalone\Nitrocid.LocaleCheckerStandalone.csproj", "{73E76BBD-BCFD-4E43-9F17-F937A87A2D1B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0E7228D6-AAAE-41FC-BE8C-7731DDA0BA16} = {0E7228D6-AAAE-41FC-BE8C-7731DDA0BA16}
+	EndProjectSection
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Nitrocid.LocaleCommon", "private\Nitrocid.LocaleCommon\Nitrocid.LocaleCommon.shproj", "{709AC61B-B746-46A7-A5A0-390B9091BE99}"
 EndProject
