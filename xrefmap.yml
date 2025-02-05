@@ -17044,6 +17044,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableAmbientSoundFxIntense
   nameWithType: KernelMainConfig.EnableAmbientSoundFxIntense
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableAudio
+  name: EnableAudio
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_EnableAudio
+  commentId: P:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableAudio
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableAudio
+  nameWithType: KernelMainConfig.EnableAudio
+- uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableAudio*
+  name: EnableAudio
+  href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_EnableAudio_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableAudio
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableAudio
+  nameWithType: KernelMainConfig.EnableAudio
 - uid: Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.EnableHighPriorityNotificationSounds
   name: EnableHighPriorityNotificationSounds
   href: api/Nitrocid.Kernel.Configuration.Instances.KernelMainConfig.html#Nitrocid_Kernel_Configuration_Instances_KernelMainConfig_EnableHighPriorityNotificationSounds
