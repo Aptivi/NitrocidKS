@@ -57,12 +57,6 @@
         "country": "France"
     },
     {
-        "three": "frs",
-        "name": "Farsi/Persian",
-        "transliterable": false,
-        "country": "Iran"
-    },
-    {
         "three": "ger",
         "name": "German",
         "transliterable": false,
@@ -129,19 +123,6 @@
         "name": "Roman",
         "transliterable": false,
         "country": "Romania"
-    },
-    {
-        "three": "rus",
-        "name": "Russian",
-        "transliterable": true,
-        "country": "Russia"
-    },
-    {
-        "three": "rus-T",
-        "name": "Russian",
-        "transliterable": true,
-        "codepage": 866,
-        "country": "Russia"
     },
     {
         "three": "spa",

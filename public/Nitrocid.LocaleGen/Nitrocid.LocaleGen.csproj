@@ -90,9 +90,6 @@
     <None Update="AddonTranslations\fre.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="AddonTranslations\frs.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="AddonTranslations\ger.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -127,12 +124,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="AddonTranslations\rmn.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="AddonTranslations\rus-T.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="AddonTranslations\rus.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="AddonTranslations\spa.txt">
