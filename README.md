@@ -5,7 +5,7 @@
 <br>
     
 <img
-  src = 'https://cdn.jsdelivr.net/gh/Aptivi/NitrocidKS@latest/public/Nitrocid/OfficialAppIcon-NitrocidKS-512.png'
+  src = 'https://cdn.jsdelivr.net/gh/Aptivi/Nitrocid@main/public/Nitrocid/OfficialAppIcon-NitrocidKS-512.png'
   width = 256
   align = center
 />
@@ -42,17 +42,17 @@
 
 <!----------------------------------------------------------------------------->
 
-[Releases]: https://github.com/Aptivi/NitrocidKS/releases
-[Latest]: https://github.com/Aptivi/NitrocidKS/releases/latest
+[Releases]: https://github.com/Aptivi/Nitrocid/releases
+[Latest]: https://github.com/Aptivi/Nitrocid/releases/latest
 [NuGet]: https://www.nuget.org/packages/KS/
 
-[Main Debug]: https://github.com/Aptivi/NitrocidKS/actions/workflows/build.yml
-[Main Release]: https://github.com/Aptivi/NitrocidKS/actions/workflows/build-rel.yml
+[Main Debug]: https://github.com/Aptivi/Nitrocid/actions/workflows/build.yml
+[Main Release]: https://github.com/Aptivi/Nitrocid/actions/workflows/build-rel.yml
 
-[Libraries]: https://aptivi.gitbook.io/kernel-simulator-manual/project-dependencies
-[Building]: https://aptivi.gitbook.io/kernel-simulator-manual/advanced-and-power-users/building-the-kernel
-[Install]: https://aptivi.gitbook.io/kernel-simulator-manual/installation-and-maintenance/installing-the-kernel
-[Manual]: https://aptivi.gitbook.io/kernel-simulator-manual/
+[Libraries]: https://aptivi.gitbook.io/aptivi/nitrocid-ks-manual/project-dependencies
+[Building]: https://aptivi.gitbook.io/aptivi/nitrocid-ks-manual/advanced-and-power-users/building-the-kernel
+[Install]: https://aptivi.gitbook.io/aptivi/nitrocid-ks-manual/installation-and-maintenance/installing-the-kernel
+[Manual]: https://aptivi.gitbook.io/aptivi/nitrocid-ks-manual/
 
 <!----------------------------------[ Badges ]--------------------------------->
 
@@ -61,8 +61,8 @@
 [Badge NuGet]: https://img.shields.io/nuget/vpre/KS?color=012f52&style=for-the-badge&logoColor=white&logo=NuGet&labelColor=004880
 [Badge Size]: https://img.shields.io/github/repo-size/Aptivi/NitrocidKS?color=bb4a28&label=size&logoColor=white&style=for-the-badge&logo=GoogleAnalytics&labelColor=E85C33
 
-[Badge Main Debug]: https://github.com/Aptivi/NitrocidKS/actions/workflows/build.yml/badge.svg
-[Badge Main Release]: https://github.com/Aptivi/NitrocidKS/actions/workflows/build-rel.yml/badge.svg
+[Badge Main Debug]: https://github.com/Aptivi/Nitrocid/actions/workflows/build.yml/badge.svg
+[Badge Main Release]: https://github.com/Aptivi/Nitrocid/actions/workflows/build-rel.yml/badge.svg
 
 <!---------------------------------[ Buttons ]--------------------------------->
 
