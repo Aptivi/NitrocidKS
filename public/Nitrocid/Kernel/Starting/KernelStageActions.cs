@@ -31,6 +31,14 @@ using Nitrocid.Users.Groups;
 using Nitrocid.ConsoleBase.Writers.MiscWriters;
 using Nitrocid.Network.Types.RPC;
 
+#if SPECIFIERREL
+using Nitrocid.Files.Paths;
+using Nitrocid.Files.Operations;
+using Nitrocid.Files.Operations.Querying;
+using Terminaux.Inputs.Styles;
+using Terminaux.Inputs.Styles.Infobox;
+#endif
+
 namespace Nitrocid.Kernel.Starting
 {
     internal static class KernelStageActions
@@ -75,6 +83,19 @@ namespace Nitrocid.Kernel.Starting
         {
             if (UpdateManager.CheckUpdateStart)
                 UpdateManager.CheckKernelUpdates();
+#if SPECIFIERREL
+            string upgradedPath = PathsManagement.TempPath + "/.upgraded";
+            if (!Checking.FileExists(upgradedPath) || Reading.ReadContents(upgradedPath)[0] != KernelMain.Version?.ToString())
+            {
+                Writing.WriteContentsText(upgradedPath, KernelMain.Version?.ToString() ?? "0.0.0.0");
+                SplashManager.BeginSplashOut(SplashManager.CurrentSplashContext);
+                string changes = UpdateManager.FetchCurrentChangelogsFromResources();
+                InfoBoxButtonsColor.WriteInfoBoxButtons([
+                    new InputChoiceInfo(Translate.DoTranslation("Acknowledged"), Translate.DoTranslation("Acknowledged")),
+                ], changes);
+                SplashManager.EndSplashOut(SplashManager.CurrentSplashContext);
+            }
+#endif
         }
 
         internal static void Stage03HardwareProbe()

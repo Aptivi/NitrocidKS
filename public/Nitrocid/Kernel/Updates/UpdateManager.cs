@@ -26,6 +26,7 @@ using Nitrocid.Network.Transfer;
 using Nitrocid.Misc.Splash;
 using Nitrocid.Languages;
 using Nitrocid.Kernel.Exceptions;
+using Nitrocid.Misc.Reflection.Internal;
 
 #if SPECIFIERREL
 using Nitrocid.Files.Paths;
@@ -216,5 +217,13 @@ namespace Nitrocid.Kernel.Updates
             return changes;
         }
 
+        internal static string FetchCurrentChangelogsFromResources()
+        {
+            // Get the changelogs from resource
+            bool exists = ResourcesManager.DataExists("changes.chg", ResourcesType.Misc, out string? contents);
+            if (!exists)
+                return "";
+            return contents ?? "";
+        }
     }
 }
