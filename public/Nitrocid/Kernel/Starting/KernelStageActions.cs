@@ -93,7 +93,7 @@ namespace Nitrocid.Kernel.Starting
             {
                 Writing.WriteContentsText(upgradedPath, KernelMain.Version?.ToString() ?? "0.0.0.0");
                 SplashManager.BeginSplashOut(SplashManager.CurrentSplashContext);
-                string changes = UpdateManager.GetVersionChangelogs();
+                string changes = UpdateManager.FetchCurrentChangelogsFromResources();
                 InfoBoxButtonsColor.WriteInfoBoxButtons([
                     new InputChoiceInfo(Translate.DoTranslation("Acknowledged"), Translate.DoTranslation("Acknowledged")),
                 ], changes);

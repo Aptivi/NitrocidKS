@@ -178,7 +178,13 @@ namespace Nitrocid.Shell.Shells.UESH
 
             new CommandInfo("changes", /* Localizable */ "What's new in this version of Nitrocid?",
                 [
-                    new CommandArgumentInfo()
+                    new CommandArgumentInfo(new[]
+                    {
+                        new SwitchInfo("online", /* Localizable */ "Fetch the changelogs from the internet instead of locally", new SwitchOptions()
+                        {
+                            AcceptsValues = false
+                        }),
+                    })
                 ], new ChangesCommand()),
 
             new CommandInfo("chattr", /* Localizable */ "Changes attribute of a file",
