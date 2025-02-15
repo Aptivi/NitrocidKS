@@ -169,6 +169,9 @@ namespace Nitrocid.Kernel
                 // Show a tip telling users to see license information
                 TextWriters.Write("* " + Translate.DoTranslation("Run 'license' to see the license information."), KernelColorType.Tip);
 
+                // Show another tip for release window
+                KernelReleaseInfo.NotifyReleaseSupportWindow();
+
                 // Initialize shell
                 DebugWriter.WriteDebug(DebugLevel.I, "Shell is being initialized.");
                 ShellManager.StartShellInternal(ShellType.Shell);
