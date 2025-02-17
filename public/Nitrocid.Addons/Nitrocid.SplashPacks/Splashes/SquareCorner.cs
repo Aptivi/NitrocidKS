@@ -27,6 +27,7 @@ using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Splash;
 using Terminaux.Colors;
 using Terminaux.Base;
+using Terminaux.Writer.CyclicWriters;
 
 namespace Nitrocid.SplashPacks.Splashes
 {
@@ -119,11 +120,18 @@ namespace Nitrocid.SplashPacks.Splashes
                     CurrentColorRedOut = (int)Math.Round(CurrentColorRedOut - ThresholdRed * _currentStep);
                     CurrentColorGreenOut = (int)Math.Round(CurrentColorGreenOut - ThresholdGreen * _currentStep);
                     CurrentColorBlueOut = (int)Math.Round(CurrentColorBlueOut - ThresholdBlue * _currentStep);
-                    DebugWriter.WriteDebug(DebugLevel.I, "Color out (R;G;B: {0};{1};{2})", CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut);
-                    builder.Append(
-                        new Color(CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut).VTSequenceForeground +
-                        BoxColor.RenderBox(left, top, width, height)
-                    );
+                    DebugWriter.WriteDebug(DebugLevel.I, "Color out (R;G;B: {0};{1};{2})", vars: [CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut]);
+
+                    var box = new Box()
+                    {
+                        Left = left,
+                        Top = top,
+                        InteriorWidth = width,
+                        InteriorHeight = height,
+                        Color = new Color(CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut),
+                    };
+                    builder.Append(box.Render());
+
                     _currentStep++;
                     if (_currentStep > _squareCornerMaxSteps)
                     {
@@ -142,11 +150,18 @@ namespace Nitrocid.SplashPacks.Splashes
                     CurrentColorRedIn = (int)Math.Round((CurrentColorRedIn + ThresholdRed) * _currentStep);
                     CurrentColorGreenIn = (int)Math.Round((CurrentColorGreenIn + ThresholdGreen) * _currentStep);
                     CurrentColorBlueIn = (int)Math.Round((CurrentColorBlueIn + ThresholdBlue) * _currentStep);
-                    DebugWriter.WriteDebug(DebugLevel.I, "Color in (R;G;B: {0};{1};{2})", CurrentColorRedIn, CurrentColorGreenIn, CurrentColorBlueIn);
-                    builder.Append(
-                        new Color(CurrentColorRedIn, CurrentColorGreenIn, CurrentColorBlueIn).VTSequenceForeground +
-                        BoxColor.RenderBox(left, top, width, height)
-                    );
+                    DebugWriter.WriteDebug(DebugLevel.I, "Color in (R;G;B: {0};{1};{2})", vars: [CurrentColorRedIn, CurrentColorGreenIn, CurrentColorBlueIn]);
+
+                    var box = new Box()
+                    {
+                        Left = left,
+                        Top = top,
+                        InteriorWidth = width,
+                        InteriorHeight = height,
+                        Color = new Color(CurrentColorRedIn, CurrentColorGreenIn, CurrentColorBlueIn),
+                    };
+                    builder.Append(box.Render());
+
                     _currentStep++;
                     if (_currentStep > _squareCornerMaxSteps)
                     {

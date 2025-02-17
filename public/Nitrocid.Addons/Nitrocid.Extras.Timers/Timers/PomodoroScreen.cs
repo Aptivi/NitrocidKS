@@ -134,7 +134,7 @@ namespace Nitrocid.Extras.Timers.Timers
                     TimeDateMiscRenderers.GetRemainingTimeFromNow((int)Math.Round(TimerInterval));
                 int HalfWidth = (int)Math.Round(ConsoleWrapper.WindowWidth / 2d);
                 int HalfHeight = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d);
-                string UntilText = Until.ToString(@"d\.hh\:mm\:ss\.fff", CultureManager.CurrentCulture);
+                string UntilText = Until.ToString(@"d\.hh\:mm\:ss\.fff", CultureManager.CurrentCult);
                 int TimeLeftPosition = 0;
                 int TimeTopPosition = 0;
 

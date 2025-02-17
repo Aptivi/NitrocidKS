@@ -29,14 +29,14 @@ using Nitrocid.Kernel.Time.Renderers;
 using Nitrocid.Languages;
 using Terminaux.Base.Buffered;
 using System.Text;
-using Terminaux.Writer.FancyWriters;
 using Terminaux.Colors;
 using Terminaux.Base;
 using Nitrocid.Drivers.RNG;
 using Terminaux.Sequences.Builder.Types;
 using Terminaux.Inputs;
-using Terminaux.Writer.MiscWriters.Tools;
-using Terminaux.Writer.MiscWriters;
+using Terminaux.Writer.CyclicWriters.Renderer.Tools;
+using Terminaux.Writer.CyclicWriters.Renderer;
+using Terminaux.Writer.CyclicWriters;
 
 namespace Nitrocid.Extras.Timers.Timers
 {
@@ -147,16 +147,31 @@ namespace Nitrocid.Extras.Timers.Timers
 
                 // Print the keybindings
                 int KeysTextTopPosition = ConsoleWrapper.WindowHeight - 1;
-                builder.Append(
-                    KeybindingsWriter.RenderKeybindings(keyBindings, 0, KeysTextTopPosition)
-                );
+                var keybindings = new Keybindings()
+                {
+                    KeybindingList = keyBindings,
+                    Left = 0,
+                    Top = KeysTextTopPosition,
+                    Width = ConsoleWrapper.WindowWidth - 1,
+                    BuiltinColor = KernelColorTools.GetColor(KernelColorType.TuiKeyBindingBuiltin),
+                    BuiltinForegroundColor = KernelColorTools.GetColor(KernelColorType.TuiKeyBindingBuiltinForeground),
+                    BuiltinBackgroundColor = KernelColorTools.GetColor(KernelColorType.TuiKeyBindingBuiltinBackground),
+                    OptionColor = KernelColorTools.GetColor(KernelColorType.TuiKeyBindingOption),
+                    OptionForegroundColor = KernelColorTools.GetColor(KernelColorType.TuiOptionForeground),
+                    OptionBackgroundColor = KernelColorTools.GetColor(KernelColorType.TuiOptionBackground),
+                };
+                builder.Append(keybindings.Render());
 
                 // Print the time interval
                 if (TimersInit.TimersConfig.EnableFigletTimer)
                 {
-                    builder.Append(
-                        FigletWhereColor.RenderFigletWhere(UntilText, TimeLeftPosition, TimeTopPosition, true, FigletFont, timerColor, KernelColorTools.GetColor(KernelColorType.Background))
-                    );
+                    var figlet = new FigletText(FigletFont)
+                    {
+                        Text = UntilText,
+                        ForegroundColor = timerColor,
+                        BackgroundColor = KernelColorTools.GetColor(KernelColorType.Background),
+                    };
+                    builder.Append(ContainerTools.RenderRenderable(figlet, new(TimeLeftPosition, TimeTopPosition)));
                 }
                 else
                 {

@@ -31,6 +31,7 @@ using Nitrocid.Misc.Screensaver;
 using Nitrocid.Misc.Text.Probers.Placeholder;
 using Terminaux.Base;
 using Nitrocid.Users.Login.Motd;
+using Terminaux.Writer.CyclicWriters;
 
 namespace Nitrocid.Users.Login.Handlers
 {
@@ -67,7 +68,13 @@ namespace Nitrocid.Users.Login.Handlers
             {
                 var UsersList = UserManagement.ListAllUsers();
                 TextWriterColor.Write(Translate.DoTranslation("You can log in to these accounts:"));
-                ListWriterColor.WriteList(UsersList);
+                var listing = new Listing()
+                {
+                    Objects = UsersList,
+                    KeyColor = KernelColorTools.GetColor(KernelColorType.ListEntry),
+                    ValueColor = KernelColorTools.GetColor(KernelColorType.ListValue),
+                };
+                TextWriterRaw.WriteRaw(listing.Render());
             }
             return true;
         }

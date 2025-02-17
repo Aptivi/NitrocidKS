@@ -23,7 +23,7 @@ using System.Collections.Generic;
 using Nitrocid.Extras.Calendar.Calendar.Reminders;
 using Nitrocid.Extras.Calendar.Calendar.Events;
 using Nitrocid.Kernel.Time.Calendars;
-using Terminaux.Writer.FancyWriters.Tools;
+using Terminaux.Writer.CyclicWriters.Renderer.Tools;
 using Nitrocid.ConsoleBase.Colors;
 using Nitrocid.Kernel.Time;
 using Nitrocid.Kernel.Time.Converters;
@@ -31,6 +31,8 @@ using Nitrocid.ConsoleBase.Writers;
 using Terminaux.Writer.FancyWriters;
 using Terminaux.Base;
 using Terminaux.Colors;
+using Terminaux.Writer.CyclicWriters;
+using Terminaux.Writer.ConsoleWriters;
 
 namespace Nitrocid.Extras.Calendar.Calendar
 {
@@ -162,7 +164,18 @@ namespace Nitrocid.Extras.Calendar.Calendar
                 CurrentDayMark = $"{markStart}{CurrentDay}{markEnd}";
                 CalendarData[CurrentWeekIndex + 1, currentDay - 1] = CurrentDayMark;
             }
-            TableColor.WriteTable(CalendarData, 2, 3, ConsoleWrapper.WindowWidth - 4, ConsoleWrapper.WindowHeight - 4, true, CalendarCellOptions);
+
+            var calendarTable = new Table()
+            {
+                Rows = CalendarData,
+                Left = 2,
+                Top = 3,
+                InteriorWidth = ConsoleWrapper.WindowWidth - 4,
+                InteriorHeight = ConsoleWrapper.WindowHeight - 4,
+                Header = true,
+                Settings = CalendarCellOptions,
+            };
+            TextWriterRaw.WriteRaw(calendarTable.Render());
         }
 
     }

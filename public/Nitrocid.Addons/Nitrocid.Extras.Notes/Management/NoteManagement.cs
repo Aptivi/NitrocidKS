@@ -106,7 +106,7 @@ namespace Nitrocid.Extras.Notes.Management
 
             // Now, serialize the array of notes to the JSON file
             string serialized = Reading.ReadContentsText(NotesPath);
-            var notesArray = JsonConvert.DeserializeObject<string[]>(serialized);
+            var notesArray = JsonConvert.DeserializeObject<string[]>(serialized) ?? [];
             notes = [.. notesArray];
         }
 

@@ -27,15 +27,17 @@ using Terminaux.Colors;
 using Nitrocid.Kernel.Debugging;
 using Nitrocid.Drivers;
 using Nitrocid.Misc.Screensaver;
-using Terminaux.Writer.FancyWriters;
 using Terminaux.Writer.ConsoleWriters;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Kernel.Time.Renderers;
 using Nitrocid.Kernel.Time;
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Languages;
 using Terminaux.Base;
 using Terminaux.Base.Extensions;
+using Terminaux.Writer.CyclicWriters;
+using Terminaux.Writer.CyclicWriters.Renderer.Tools;
+using Terminaux.Writer.CyclicWriters.Renderer;
+using Nitrocid.Kernel.Threading;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
@@ -46,7 +48,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "KSX";
+        public override string ScreensaverName =>
+            "KSX";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -54,7 +57,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             // Variable preparations
             ColorTools.LoadBackDry(new Color(0, 0, 0));
             ConsoleWrapper.CursorVisible = false;
-            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
+            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", vars: [ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight]);
         }
 
         /// <inheritdoc/>
@@ -102,7 +105,17 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                             // Now, make a color and write the X character using figlet
                             Color col = new(currentR, currentG, currentB);
                             var figFont = FigletTools.GetFigletFont("banner");
-                            CenteredFigletTextColor.WriteCenteredFigletColorBack(figFont, "X", col, black);
+                            var xText = new AlignedFigletText(figFont)
+                            {
+                                Text = "X",
+                                ForegroundColor = col,
+                                BackgroundColor = black,
+                                Settings = new()
+                                {
+                                    Alignment = TextAlignment.Middle,
+                                }
+                            };
+                            TextWriterRaw.WriteRaw(xText.Render());
 
                             // Sleep
                             ThreadManager.SleepNoBlock(100, ScreensaverDisplayer.ScreensaverDisplayerThread);
@@ -120,7 +133,17 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
                             // Pulse the X character, alternating between darkGreen and Green colors
                             var figFont = FigletTools.GetFigletFont("banner");
-                            CenteredFigletTextColor.WriteCenteredFigletColorBack(figFont, "X", finalCol, black);
+                            var xText = new AlignedFigletText(figFont)
+                            {
+                                Text = "X",
+                                ForegroundColor = finalCol,
+                                BackgroundColor = black,
+                                Settings = new()
+                                {
+                                    Alignment = TextAlignment.Middle,
+                                }
+                            };
+                            TextWriterRaw.WriteRaw(xText.Render());
 
                             // Sleep
                             ThreadManager.SleepNoBlock(100, ScreensaverDisplayer.ScreensaverDisplayerThread);
@@ -148,7 +171,17 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                             // Now, make a color and write the X character using figlet
                             Color col = new(currentR, currentG, currentB);
                             var figFont = FigletTools.GetFigletFont("banner");
-                            CenteredFigletTextColor.WriteCenteredFigletColorBack(figFont, "X", col, black);
+                            var xText = new AlignedFigletText(figFont)
+                            {
+                                Text = "X",
+                                ForegroundColor = col,
+                                BackgroundColor = black,
+                                Settings = new()
+                                {
+                                    Alignment = TextAlignment.Middle,
+                                }
+                            };
+                            TextWriterRaw.WriteRaw(xText.Render());
 
                             // Sleep
                             ThreadManager.SleepNoBlock(100, ScreensaverDisplayer.ScreensaverDisplayerThread);
@@ -212,7 +245,13 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                         int s4figHeight = FigletTools.GetFigletHeight("2018", s4figFont) / 2;
                         int s4consoleX = ConsoleWrapper.WindowWidth / 2 - s4figWidth;
                         int s4consoleY = ConsoleWrapper.WindowHeight / 2 - s4figHeight;
-                        FigletWhereColor.WriteFigletWhereColorBack("2018", s4consoleX, s4consoleY, true, s4figFont, green, black);
+                        var figlet = new FigletText(s4figFont)
+                        {
+                            Text = "2018",
+                            ForegroundColor = green,
+                            BackgroundColor = black,
+                        };
+                        TextWriterRaw.WriteRaw(ContainerTools.RenderRenderable(figlet, new(s4consoleX, s4consoleY)));
                         ThreadManager.SleepNoBlock(5000, ScreensaverDisplayer.ScreensaverDisplayerThread);
                         break;
                     case 5:
@@ -328,7 +367,15 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                         {
                             // Some power function to make the glitches intense
                             double currentProg = Math.Pow((double)iteration / maxProg * 10, 2);
-                            ProgressBarColor.WriteProgress(currentProg, progPosX, progPosY, black, black, darkGreen);
+                            var progress = new SimpleProgress((int)currentProg, 100)
+                            {
+                                LeftMargin = 5,
+                                RightMargin = 5,
+                                ProgressActiveForegroundColor = green,
+                                ProgressForegroundColor = black,
+                                ProgressBackgroundColor = darkGreen,
+                            };
+                            TextWriterRaw.WriteRaw(ContainerTools.RenderRenderable(progress, new(progPosX, progPosY)));
 
                             // Show current date
                             long travelledTicks = (long)Math.Round(tickDiff * ((double)currentProg / 100));
@@ -364,7 +411,12 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                         int s8figHeight = FigletTools.GetFigletHeight("SYSTEM ERROR", s8figFont) / 2;
                         int s8consoleX = ConsoleWrapper.WindowWidth / 2 - s8figWidth;
                         int s8consoleY = ConsoleWrapper.WindowHeight / 2 - s8figHeight;
-                        FigletWhereColor.WriteFigletWhereColor("SYSTEM ERROR", s8consoleX, s8consoleY, true, s8figFont, red);
+                        var s8Figlet = new FigletText(s8figFont)
+                        {
+                            Text = "SYSTEM ERROR",
+                            ForegroundColor = red,
+                        };
+                        TextWriterRaw.WriteRaw(ContainerTools.RenderRenderable(s8Figlet, new(s8consoleX, s8consoleY)));
                         for (int delayed = 0; delayed < 5000; delayed += 10)
                         {
                             ThreadManager.SleepNoBlock(10, ScreensaverDisplayer.ScreensaverDisplayerThread);
@@ -386,7 +438,15 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                         {
                             // Some power function to make the glitches intense
                             double currentProg = (double)iteration / sysWipeMaxProg * 100;
-                            ProgressBarColor.WriteProgress(currentProg, sysWipeProgPosX, sysWipeProgPosY, black, black, darkGreen);
+                            var progress = new SimpleProgress((int)currentProg, 100)
+                            {
+                                LeftMargin = 5,
+                                RightMargin = 5,
+                                ProgressActiveForegroundColor = green,
+                                ProgressForegroundColor = black,
+                                ProgressBackgroundColor = darkGreen,
+                            };
+                            TextWriterRaw.WriteRaw(ContainerTools.RenderRenderable(progress, new(sysWipeProgPosX, sysWipeProgPosY)));
 
                             // Now, do the glitch
                             Glitch.GlitchAt();

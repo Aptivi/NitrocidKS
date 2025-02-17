@@ -1,4 +1,5 @@
-﻿//
+﻿
+//
 // Nitrocid KS  Copyright (C) 2018-2025  Aptivi
 //
 // This file is part of Nitrocid KS
@@ -17,6 +18,8 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
+extern alias TextifyDep;
+
 using System.Threading;
 using Terminaux.Colors;
 using Terminaux.Sequences;
@@ -34,6 +37,9 @@ using Terminaux.Colors.Data;
 using Nitrocid.Kernel.Configuration;
 using Terminaux.Colors.Transformation.Contrast;
 using Terminaux.Base.Extensions;
+using Terminaux.Writer.CyclicWriters;
+using Terminaux.Writer.CyclicWriters.Renderer.Tools;
+using TextifyDep::Textify.General;
 
 namespace Nitrocid.Misc.Splash.Splashes
 {
@@ -84,10 +90,29 @@ namespace Nitrocid.Misc.Splash.Splashes
             Color col = KernelColorTools.GetColor(KernelColorType.Stage);
             var figFont = FigletTools.GetFigletFont(Config.MainConfig.DefaultFigletFontName);
             int consoleY = (ConsoleWrapper.WindowHeight / 2) + FigletTools.GetFigletHeight(text, figFont);
+            var figText = new AlignedFigletText(figFont)
+            {
+                Text = text,
+                ForegroundColor = col,
+                Settings = new()
+                {
+                    Alignment = TextAlignment.Middle,
+                }
+            };
+            var bottomTextRenderer = new AlignedText()
+            {
+                Text = bottomText,
+                ForegroundColor = col,
+                Top = consoleY - 1,
+                OneLine = true,
+                Settings = new()
+                {
+                    Alignment = TextAlignment.Middle,
+                }
+            };
             builder.Append(
-                col.VTSequenceForeground +
-                CenteredFigletTextColor.RenderCenteredFiglet(figFont, text) +
-                CenteredTextColor.RenderCenteredOneLine(consoleY - 1, bottomText)
+                figText.Render() +
+                bottomTextRenderer.Render()
             );
             return builder.ToString();
         }
@@ -164,10 +189,29 @@ namespace Nitrocid.Misc.Splash.Splashes
                 .ToUpper();
             var figFont = FigletTools.GetFigletFont(Config.MainConfig.DefaultFigletFontName);
             int consoleY = (ConsoleWrapper.WindowHeight / 2) + FigletTools.GetFigletHeight(text, figFont);
+            var figText = new AlignedFigletText(figFont)
+            {
+                Text = text,
+                ForegroundColor = col,
+                Settings = new()
+                {
+                    Alignment = TextAlignment.Middle,
+                }
+            };
+            var bottomTextRenderer = new AlignedText()
+            {
+                Text = KernelReleaseInfo.ConsoleTitle,
+                ForegroundColor = col,
+                Top = consoleY - 1,
+                OneLine = true,
+                Settings = new()
+                {
+                    Alignment = TextAlignment.Middle,
+                }
+            };
             builder.Append(
-                col.VTSequenceForeground +
-                CenteredFigletTextColor.RenderCenteredFiglet(figFont, text) +
-                CenteredTextColor.RenderCenteredOneLine(consoleY - 1, KernelReleaseInfo.ConsoleTitle)
+                figText.Render() +
+                bottomTextRenderer.Render()
             );
             delayRequired =
                 context == SplashContext.ShuttingDown && Config.MainConfig.DelayOnShutdown ||
@@ -198,10 +242,21 @@ namespace Nitrocid.Misc.Splash.Splashes
             var figFont = FigletTools.GetFigletFont(Config.MainConfig.DefaultFigletFontName);
             int figHeight = FigletTools.GetFigletHeight(text, figFont) / 2;
             int consoleY = ConsoleWrapper.WindowHeight / 2 - figHeight;
+            var report = new AlignedText()
+            {
+                Text = $"{Progress}% - {ProgressReport}".FormatString(Vars),
+                ForegroundColor = col,
+                Top = consoleY - 2,
+                OneLine = true,
+                Settings = new()
+                {
+                    Alignment = TextAlignment.Middle,
+                }
+            };
             builder.Append(
                 col.VTSequenceForeground +
-                TextWriterWhereColor.RenderWhere(ConsoleClearing.GetClearLineToRightSequence(), 0, consoleY - 2, true, Vars) +
-                CenteredTextColor.RenderCenteredOneLine(consoleY - 2, $"{Progress}% - {ProgressReport}", Vars: Vars)
+                TextWriterWhereColor.RenderWhere(ConsoleClearing.GetClearLineToRightSequence(), 0, consoleY - 2, true) +
+                report.Render()
             );
             return builder.ToString();
         }

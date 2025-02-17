@@ -54,6 +54,7 @@
   <ItemGroup>
     <PackageReference Include="Terminaux" Version="6.1.6" PrivateAssets="contentfiles;analyzers;build;runtime" />
     <PackageReference Include="Terminaux.Images" Version="6.1.6" PrivateAssets="contentfiles;analyzers;build;runtime;native" />
+    <PackageReference Include="Terminaux.Images.Icons" Version="6.1.6" />
     <PackageReference Include="Textify.Offline" Version="2.9.0" PrivateAssets="contentfiles;analyzers;build;runtime">
       <Aliases>global,TextifyDep</Aliases>
     </PackageReference>

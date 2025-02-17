@@ -25,8 +25,9 @@ using Terminaux.Writer.FancyWriters;
 using Terminaux.Base;
 using Nitrocid.Kernel.Starting.Bootloader.Apps;
 using Nitrocid.Kernel.Configuration;
-using Terminaux.Writer.FancyWriters.Tools;
+using Terminaux.Writer.CyclicWriters.Renderer.Tools;
 using Nitrocid.Languages;
+using Terminaux.Writer.CyclicWriters;
 
 namespace Nitrocid.Kernel.Starting.Bootloader.Style.Styles
 {
@@ -62,9 +63,17 @@ namespace Nitrocid.Kernel.Starting.Bootloader.Style.Styles
                 BorderLeftFrameChar = '║',
                 BorderRightFrameChar = '║',
             };
-            builder.Append(
-                BorderColor.RenderBorder(halfX, startY, interiorWidth, interiorHeight, borderSettings, new Color(boxBorderColor), new Color(boxBorderBackgroundColor))
-            );
+            var border = new Border()
+            {
+                Left = halfX,
+                Top = startY,
+                InteriorWidth = interiorWidth,
+                InteriorHeight = interiorHeight,
+                Color = boxBorderColor,
+                BackgroundColor = boxBorderBackgroundColor,
+                Settings = borderSettings
+            };
+            builder.Append(border.Render());
             for (int y = startY; y < endY; y++)
             {
                 builder.Append(

@@ -29,6 +29,7 @@ using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Files.Operations.Querying;
 using Nitrocid.Kernel.Power;
 using Nitrocid.Kernel.Debugging;
+using ListWriter = Terminaux.Writer.CyclicWriters.Listing;
 
 namespace Nitrocid.Arguments.CommandLineArguments
 {
@@ -104,7 +105,11 @@ namespace Nitrocid.Arguments.CommandLineArguments
             if (files.Length > 0)
             {
                 TextWriters.Write(Translate.DoTranslation("The following files are not wiped:"), true, KernelColorType.Warning);
-                ListWriterColor.WriteList(files);
+                var unwipedFiles = new ListWriter()
+                {
+                    Objects = files,
+                };
+                TextWriterRaw.WriteRaw(unwipedFiles.Render());
                 string answer = ChoiceStyle.PromptChoice(Translate.DoTranslation("Are you sure to wipe these files?"), [("y", "Yes"), ("n", "No")]);
                 if (answer == "y")
                 {

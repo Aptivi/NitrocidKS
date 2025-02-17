@@ -29,6 +29,7 @@ using Nitrocid.Shell.ShellBase.Switches;
 using Terminaux.Inputs.Interactive;
 using Nitrocid.Extras.Forecast.Forecast.Interactive;
 using System;
+using Terminaux.Writer.CyclicWriters;
 
 namespace Nitrocid.Extras.Forecast.Forecast.Commands
 {
@@ -90,7 +91,13 @@ namespace Nitrocid.Extras.Forecast.Forecast.Commands
             if (ListMode)
             {
                 var Cities = WeatherForecast.ListAllCities(SwitchManager.GetSwitchValue(parameters.SwitchesList, "-list"), APIKey);
-                ListWriterColor.WriteList(Cities);
+                var listing = new Listing()
+                {
+                    Objects = Cities,
+                    KeyColor = KernelColorTools.GetColor(KernelColorType.ListEntry),
+                    ValueColor = KernelColorTools.GetColor(KernelColorType.ListValue),
+                };
+                TextWriterRaw.WriteRaw(listing.Render());
             }
             else
             {

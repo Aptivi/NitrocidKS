@@ -39,7 +39,7 @@ using Terminaux.Inputs.Styles.Choice;
 using Nitrocid.Shell.Prompts;
 using Nitrocid.Users.Login.Handlers;
 using Nitrocid.Files.Paths;
-using Terminaux.Writer.FancyWriters.Tools;
+using Terminaux.Writer.CyclicWriters.Renderer.Tools;
 using Nitrocid.ConsoleBase.Colors;
 using Nitrocid.Files.Operations.Querying;
 using Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat;
@@ -143,30 +143,6 @@ namespace Nitrocid.Kernel.Configuration.Instances
         /// Whether to simulate a situation where there is no APM available. If enabled, it informs the user that it's now safe to turn off the computer upon shutdown.
         /// </summary>
         public bool SimulateNoAPM { get; set; }
-        /// <summary>
-        /// If you are color blind or if you want to simulate color blindness, then you can enable it.
-        /// </summary>
-        public bool ColorBlind
-        {
-            get => ColorTools.GlobalSettings.EnableColorTransformation;
-            set => ColorTools.GlobalSettings.EnableColorTransformation = value;
-        }
-        /// <summary>
-        /// The type of color blindness, whether it's protan, deuter, or tritan.
-        /// </summary>
-        public int BlindnessTransformationFormula
-        {
-            get => (int)ColorTools.GlobalSettings.ColorTransformationFormula;
-            set => ColorTools.GlobalSettings.ColorTransformationFormula = (TransformationFormula)value;
-        }
-        /// <summary>
-        /// How severe is the color blindness?
-        /// </summary>
-        public double BlindnessSeverity
-        {
-            get => ColorTools.GlobalSettings.ColorBlindnessSeverity;
-            set => ColorTools.GlobalSettings.ColorBlindnessSeverity = value;
-        }
         /// <summary>
         /// Enables beeping upon shutting down the kernel.
         /// </summary>

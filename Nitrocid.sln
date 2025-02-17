@@ -231,6 +231,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helpers", "Helpers", "{441D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nitrocid.BuildTargets", "private\Nitrocid.BuildTargets\Nitrocid.BuildTargets.csproj", "{0E7228D6-AAAE-41FC-BE8C-7731DDA0BA16}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Nitrocid.Analyzers.Common", "public\Nitrocid.Analyzers\Nitrocid.Analyzers.Common\Nitrocid.Analyzers.Common.shproj", "{596E9B4D-A169-47F1-BE01-08F2E24BC94E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -567,13 +569,17 @@ Global
 		{709AC61B-B746-46A7-A5A0-390B9091BE99} = {5427F963-3094-4111-AB05-DAE364A8DF67}
 		{441DC7A9-9B58-4169-A707-913AFC38485A} = {61916ED1-66D6-4938-9F1A-D0DF38D16E20}
 		{0E7228D6-AAAE-41FC-BE8C-7731DDA0BA16} = {441DC7A9-9B58-4169-A707-913AFC38485A}
+		{596E9B4D-A169-47F1-BE01-08F2E24BC94E} = {60986DC6-07C5-40D1-A305-741E8ABE39FC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {424D8E7A-CFEB-40AE-A79C-437D603177FD}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		private\Nitrocid.LocaleCommon\Nitrocid.LocaleCommon.projitems*{22744969-682d-4974-895e-53079da9ea3c}*SharedItemsImports = 5
+		public\Nitrocid.Analyzers\Nitrocid.Analyzers.Common\Nitrocid.Analyzers.Common.projitems*{596e9b4d-a169-47f1-be01-08f2e24bc94e}*SharedItemsImports = 13
 		private\Nitrocid.LocaleCommon\Nitrocid.LocaleCommon.projitems*{6524403f-f55e-4e8d-8a63-8a7d2fa518d3}*SharedItemsImports = 5
 		private\Nitrocid.LocaleCommon\Nitrocid.LocaleCommon.projitems*{709ac61b-b746-46a7-a5a0-390b9091be99}*SharedItemsImports = 13
+		public\Nitrocid.Analyzers\Nitrocid.Analyzers.Common\Nitrocid.Analyzers.Common.projitems*{73e76bbd-bcfd-4e43-9f17-f937a87a2d1b}*SharedItemsImports = 5
+		public\Nitrocid.Analyzers\Nitrocid.Analyzers.Common\Nitrocid.Analyzers.Common.projitems*{df07f4e1-47b2-452d-a200-f15f558c4977}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal

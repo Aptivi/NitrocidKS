@@ -20,6 +20,7 @@
 using Nitrocid.ConsoleBase.Colors;
 using Nitrocid.ConsoleBase.Writers;
 using Nitrocid.Languages;
+using Terminaux.Writer.FancyWriters;
 
 namespace Nitrocid.Kernel.Debugging.Testing.Facades
 {
@@ -31,7 +32,7 @@ namespace Nitrocid.Kernel.Debugging.Testing.Facades
         public override void Run(params string[] args)
         {
             string rendered = args.Length > 0 ? args[0] : "Hi, {0}!";
-            TextFancyWriters.WriteSeparator(rendered, KernelColorType.Success, "Nitrocid KS");
+            SeparatorWriterColor.WriteSeparatorColor(rendered, KernelColorTools.GetColor(KernelColorType.Success), true, "Nitrocid KS");
         }
     }
 }

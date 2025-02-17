@@ -31,6 +31,7 @@ using Terminaux.Base;
 using Terminaux.Inputs;
 using System;
 using Terminaux.Inputs.Styles;
+using Terminaux.Writer.FancyWriters;
 
 namespace Nitrocid.ConsoleBase.Writers.MiscWriters
 {
@@ -93,7 +94,7 @@ namespace Nitrocid.ConsoleBase.Writers.MiscWriters
         /// </summary>
         public static void WriteLicense()
         {
-            TextFancyWriters.WriteSeparator(Translate.DoTranslation("License information"), KernelColorType.Stage);
+            SeparatorWriterColor.WriteSeparatorColor(Translate.DoTranslation("License information"), KernelColorTools.GetColor(KernelColorType.Stage));
             TextWriters.Write(GetLicenseString(), true, KernelColorType.License);
         }
 

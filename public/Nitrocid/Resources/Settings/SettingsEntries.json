@@ -114,29 +114,6 @@
                 "Description": "Whether to simulate a situation where there is no APM available. If enabled, it informs the user that it's now safe to turn off the computer upon shutdown."
             },
             {
-                "Name": "Enable color blindness",
-                "Type": "SBoolean",
-                "Variable": "ColorBlind",
-                "Description": "If you are color blind or if you want to simulate color blindness, then you can enable it."
-            },
-            {
-                "Name": "Color blindness type",
-                "Type": "SSelection",
-                "Variable": "BlindnessTransformationFormula",
-                "IsEnumeration": true,
-                "EnumerationInternal": false,
-                "Enumeration": "Terminaux.Colors.Transformation.TransformationFormula",
-                "EnumerationAssembly": "Terminaux",
-                "EnumerationZeroBased": true,
-                "Description": "The type of color blindness, whether it's protan, deuter, or tritan."
-            },
-            {
-                "Name": "Color blindness severity",
-                "Type": "SDouble",
-                "Variable": "BlindnessSeverity",
-                "Description": "How severe is the color blindness?"
-            },
-            {
                 "Name": "Beep on shutdown or reboot",
                 "Type": "SBoolean",
                 "Variable": "BeepOnShutdown",

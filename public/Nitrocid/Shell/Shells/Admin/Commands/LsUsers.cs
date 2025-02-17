@@ -20,17 +20,32 @@
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Shell.ShellBase.Commands;
 using Nitrocid.Users;
+using Nitrocid.ConsoleBase.Colors;
+using Terminaux.Writer.CyclicWriters;
 
 namespace Nitrocid.Shell.Shells.Admin.Commands
 {
     class LsUsersCommand : BaseCommand, ICommand
     {
-
         public override int Execute(CommandParameters parameters, ref string variableValue)
         {
             var users = UserManagement.ListAllUsers();
-            ListWriterColor.WriteList(users);
+            var listing = new Listing()
+            {
+                Objects = users,
+                KeyColor = KernelColorTools.GetColor(KernelColorType.ListEntry),
+                ValueColor = KernelColorTools.GetColor(KernelColorType.ListValue),
+            };
+            TextWriterRaw.WriteRaw(listing.Render());
             variableValue = string.Join('\n', users);
+            return 0;
+        }
+
+        public override int ExecuteDumb(CommandParameters parameters, ref string variableValue)
+        {
+            var users = UserManagement.ListAllUsers();
+            foreach (var user in users)
+                TextWriterColor.Write($"  - {user}");
             return 0;
         }
     }

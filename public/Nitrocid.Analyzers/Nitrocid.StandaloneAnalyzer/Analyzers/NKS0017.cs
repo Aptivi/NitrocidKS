@@ -20,13 +20,13 @@
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Nitrocid.Analyzers.Common;
 using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Terminaux.Colors.Data;
 using Terminaux.Writer.ConsoleWriters;
-using Terminaux.Writer.MiscWriters;
 
 namespace Nitrocid.StandaloneAnalyzer.Analyzers
 {
@@ -53,10 +53,7 @@ namespace Nitrocid.StandaloneAnalyzer.Analyzers
                         var idName = name.Identifier.Text;
                         if (idName == nameof(Directory.Delete))
                         {
-                            var lineSpan = location.GetLineSpan();
-                            TextWriterColor.WriteColor($"{GetType().Name}: {document.FilePath} ({lineSpan.StartLinePosition} -> {lineSpan.EndLinePosition}): Caller uses Directory.Delete instead of Removing.RemoveDirectory()", true, ConsoleColors.Yellow);
-                            if (!string.IsNullOrEmpty(document.FilePath))
-                                LineHandleRangedWriter.PrintLineWithHandle(document.FilePath, lineSpan.StartLinePosition.Line + 1, lineSpan.StartLinePosition.Character + 1, lineSpan.EndLinePosition.Character);
+                            AnalyzerTools.PrintFromLocation(location, document, GetType(), "Caller uses Directory.Delete instead of FilesystemTools.RemoveDirectory()");
                             found = true;
                         }
                     }
@@ -83,8 +80,8 @@ namespace Nitrocid.StandaloneAnalyzer.Analyzers
                     if (idName.Identifier.Text != nameof(Directory.Delete))
                         continue;
 
-                    // We need to have a syntax that calls Removing.RemoveDirectory
-                    var classSyntax = SyntaxFactory.IdentifierName("Removing");
+                    // We need to have a syntax that calls FilesystemTools.RemoveDirectory
+                    var classSyntax = SyntaxFactory.IdentifierName("FilesystemTools");
                     var methodSyntax = SyntaxFactory.IdentifierName("RemoveDirectory");
                     var resultSyntax = SyntaxFactory.MemberAccessExpression(SyntaxKind.SimpleMemberAccessExpression, classSyntax, methodSyntax);
                     var replacedSyntax = resultSyntax

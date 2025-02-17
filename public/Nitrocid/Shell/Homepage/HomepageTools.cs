@@ -51,9 +51,10 @@ using Terminaux.Inputs.Styles.Infobox;
 using Terminaux.Inputs.Styles.Selection;
 using Terminaux.Sequences.Builder.Types;
 using Terminaux.Writer.ConsoleWriters;
+using Terminaux.Writer.CyclicWriters;
+using Terminaux.Writer.CyclicWriters.Renderer.Tools;
 using Terminaux.Writer.FancyWriters;
 using Terminaux.Writer.MiscWriters;
-using Terminaux.Writer.MiscWriters.Tools;
 using Textify.General;
 
 namespace Nitrocid.Shell.Homepage
@@ -123,31 +124,62 @@ namespace Nitrocid.Shell.Homepage
                     var builder = new StringBuilder();
 
                     // Make a master border
-                    builder.Append(BorderColor.RenderBorder(0, 1, ConsoleWrapper.WindowWidth - 2, ConsoleWrapper.WindowHeight - 4, KernelColorTools.GetColor(KernelColorType.TuiPaneSelectedSeparator)));
+                    var masterBorder = new Border()
+                    {
+                        Left = 0,
+                        Top = 1,
+                        InteriorWidth = ConsoleWrapper.WindowWidth - 2,
+                        InteriorHeight = ConsoleWrapper.WindowHeight - 4,
+                        Color = KernelColorTools.GetColor(KernelColorType.TuiPaneSelectedSeparator),
+                    };
+                    builder.Append(masterBorder.Render());
 
                     // Show username at the top
                     builder.Append(TextWriterWhereColor.RenderWhere(Translate.DoTranslation("Hi, {0}! Welcome to Nitrocid!"), 0, 0, vars: [string.IsNullOrWhiteSpace(UserManagement.CurrentUser.FullName) ? UserManagement.CurrentUser.Username : UserManagement.CurrentUser.FullName]));
 
                     // Show bindings
-                    builder.Append(
-                        KeybindingsWriter.RenderKeybindings(bindings,
-                            KernelColorTools.GetColor(KernelColorType.TuiKeyBindingBuiltin),
-                            KernelColorTools.GetColor(KernelColorType.TuiKeyBindingBuiltinForeground),
-                            KernelColorTools.GetColor(KernelColorType.TuiKeyBindingBuiltinBackground),
-                            KernelColorTools.GetColor(KernelColorType.TuiKeyBindingOption),
-                            KernelColorTools.GetColor(KernelColorType.TuiOptionForeground),
-                            KernelColorTools.GetColor(KernelColorType.TuiOptionBackground),
-                            0, ConsoleWrapper.WindowHeight - 1));
+                    var keybindings = new Keybindings()
+                    {
+                        KeybindingList = bindings,
+                        BuiltinColor = KernelColorTools.GetColor(KernelColorType.TuiKeyBindingBuiltin),
+                        BuiltinForegroundColor = KernelColorTools.GetColor(KernelColorType.TuiKeyBindingBuiltinForeground),
+                        BuiltinBackgroundColor = KernelColorTools.GetColor(KernelColorType.TuiKeyBindingBuiltinBackground),
+                        OptionColor = KernelColorTools.GetColor(KernelColorType.TuiKeyBindingOption),
+                        OptionForegroundColor = KernelColorTools.GetColor(KernelColorType.TuiOptionForeground),
+                        OptionBackgroundColor = KernelColorTools.GetColor(KernelColorType.TuiOptionBackground),
+                        Left = 0,
+                        Top = ConsoleWrapper.WindowHeight - 1,
+                        Width = ConsoleWrapper.WindowWidth - 1,
+                    };
+                    builder.Append(keybindings.Render());
 
-                    // Make a border for an analog clock widget and the first three RSS feeds (if the addon is installed)
+                    // Make a border for a widget and the first three RSS feeds (if the addon is installed)
                     int widgetLeft = ConsoleWrapper.WindowWidth / 2 + ConsoleWrapper.WindowWidth % 2;
                     int widgetWidth = ConsoleWrapper.WindowWidth / 2 - 4;
                     int widgetHeight = ConsoleWrapper.WindowHeight - 11;
-                    int clockTop = 2;
-                    int rssTop = clockTop + widgetHeight + 2;
+                    int widgetTop = 2;
+                    int rssTop = widgetTop + widgetHeight + 2;
                     int rssHeight = 3;
-                    builder.Append(BorderColor.RenderBorder(widgetLeft, clockTop, widgetWidth, widgetHeight, KernelColorTools.GetColor(KernelColorType.TuiPaneSelectedSeparator)));
-                    builder.Append(BorderColor.RenderBorder(widgetLeft, rssTop, widgetWidth, rssHeight, KernelColorTools.GetColor(KernelColorType.TuiPaneSelectedSeparator)));
+                    var widgetBorder = new Border()
+                    {
+                        Left = widgetLeft,
+                        Top = widgetTop,
+                        InteriorWidth = widgetWidth,
+                        InteriorHeight = widgetHeight,
+                        Color = KernelColorTools.GetColor(KernelColorType.TuiPaneSelectedSeparator),
+                    };
+                    var rssBorder = new Border()
+                    {
+                        Left = widgetLeft,
+                        Top = rssTop,
+                        InteriorWidth = widgetWidth,
+                        InteriorHeight = rssHeight,
+                        Color = KernelColorTools.GetColor(KernelColorType.TuiPaneSelectedSeparator),
+                    };
+                    builder.Append(
+                        widgetBorder.Render() +
+                        rssBorder.Render()
+                    );
 
                     // Render the widget
                     string widgetSeq = widget.Render(widgetLeft + 1, widgetTop + 1, widgetWidth, widgetHeight);
@@ -206,28 +238,104 @@ namespace Nitrocid.Shell.Homepage
                         builder.Append(sequence);
                     }
 
-                    // Populate the settings button
+                    // Populate the button positions
                     int buttonPanelPosY = ConsoleWrapper.WindowHeight - 5;
                     int buttonPanelWidth = widgetLeft - 4;
                     int buttonWidth = buttonPanelWidth / 2 - 2;
                     int buttonHeight = 1;
                     int settingsButtonPosX = 2;
                     int aboutButtonPosX = settingsButtonPosX + buttonWidth + 3;
+
+                    // Populate the settings button
                     var foregroundSettings = buttonHighlight == 1 ? new Color(ConsoleColors.Black) : KernelColorTools.GetColor(KernelColorType.TuiPaneSeparator);
                     var backgroundSettings = buttonHighlight == 1 ? KernelColorTools.GetColor(KernelColorType.TuiPaneSelectedSeparator) : ColorTools.CurrentBackgroundColor;
                     var foregroundSettingsText = buttonHighlight == 1 ? new Color(ConsoleColors.Black) : KernelColorTools.GetColor(KernelColorType.NeutralText);
+                    var settingsBorder = new Border()
+                    {
+                        Left = settingsButtonPosX,
+                        Top = buttonPanelPosY,
+                        InteriorWidth = buttonWidth,
+                        InteriorHeight = buttonHeight,
+                        Color = foregroundSettings,
+                        BackgroundColor = backgroundSettings,
+                    };
+                    var settingsText = new AlignedText()
+                    {
+                        Top = buttonPanelPosY + 1,
+                        Text = Translate.DoTranslation("Settings"),
+                        ForegroundColor = foregroundSettingsText,
+                        BackgroundColor = backgroundSettings,
+                        LeftMargin = settingsButtonPosX + 1,
+                        RightMargin = buttonPanelWidth + settingsButtonPosX + aboutButtonPosX + 2 - ConsoleWrapper.WindowWidth % 2,
+                        Settings = new()
+                        {
+                            Alignment = TextAlignment.Middle
+                        },
+                    };
+                    builder.Append(
+                        settingsBorder.Render() +
+                        settingsText.Render()
+                    );
+
+                    // Populate the about button
                     var foregroundAbout = buttonHighlight == 2 ? new Color(ConsoleColors.Black) : KernelColorTools.GetColor(KernelColorType.TuiPaneSeparator);
                     var backgroundAbout = buttonHighlight == 2 ? KernelColorTools.GetColor(KernelColorType.TuiPaneSelectedSeparator) : ColorTools.CurrentBackgroundColor;
                     var foregroundAboutText = buttonHighlight == 2 ? new Color(ConsoleColors.Black) : KernelColorTools.GetColor(KernelColorType.NeutralText);
-                    builder.Append(BorderColor.RenderBorder(settingsButtonPosX, buttonPanelPosY, buttonWidth, buttonHeight, foregroundSettings, backgroundSettings));
-                    builder.Append(CenteredTextColor.RenderCenteredOneLine(buttonPanelPosY + 1, Translate.DoTranslation("Settings"), foregroundSettingsText, backgroundSettings, settingsButtonPosX + 1, buttonPanelWidth + settingsButtonPosX + aboutButtonPosX + 2 - ConsoleWrapper.WindowWidth % 2));
-                    builder.Append(BorderColor.RenderBorder(aboutButtonPosX, buttonPanelPosY, aboutButtonPosX + buttonWidth == buttonPanelWidth ? buttonWidth + 1 : buttonWidth, buttonHeight, foregroundAbout, backgroundAbout));
-                    builder.Append(CenteredTextColor.RenderCenteredOneLine(buttonPanelPosY + 1, Translate.DoTranslation("About"), foregroundAboutText, backgroundAbout, aboutButtonPosX + 1, buttonWidth + aboutButtonPosX + 4 - ConsoleWrapper.WindowWidth % 2));
+                    var aboutBorder = new Border()
+                    {
+                        Left = aboutButtonPosX,
+                        Top = buttonPanelPosY,
+                        InteriorWidth = aboutButtonPosX + buttonWidth == buttonPanelWidth ? buttonWidth + 1 : buttonWidth,
+                        InteriorHeight = buttonHeight,
+                        Color = foregroundAbout,
+                        BackgroundColor = backgroundAbout,
+                    };
+                    var aboutText = new AlignedText()
+                    {
+                        Top = buttonPanelPosY + 1,
+                        Text = Translate.DoTranslation("About"),
+                        ForegroundColor = foregroundAboutText,
+                        BackgroundColor = backgroundAbout,
+                        LeftMargin = aboutButtonPosX + 1,
+                        RightMargin = buttonWidth + aboutButtonPosX + 4 - ConsoleWrapper.WindowWidth % 2,
+                        Settings = new()
+                        {
+                            Alignment = TextAlignment.Middle
+                        },
+                    };
+                    builder.Append(
+                        aboutBorder.Render() +
+                        aboutText.Render()
+                    );
 
                     // Populate the available options
                     var availableChoices = choices.Select((tuple) => tuple.Item1).ToArray();
-                    builder.Append(BorderColor.RenderBorder(settingsButtonPosX, clockTop, widgetWidth - 1 + ConsoleWrapper.WindowWidth % 2, widgetHeight + 2, KernelColorTools.GetColor(buttonHighlight == 0 ? KernelColorType.TuiPaneSelectedSeparator : KernelColorType.TuiPaneSeparator)));
-                    builder.Append(SelectionInputTools.RenderSelections(availableChoices, settingsButtonPosX + 1, clockTop + 1, choiceIdx, widgetHeight + 2, widgetWidth - 1 + ConsoleWrapper.WindowWidth % 2, foregroundColor: KernelColorTools.GetColor(KernelColorType.NeutralText), selectedForegroundColor: KernelColorTools.GetColor(KernelColorType.TuiPaneSelectedSeparator)));
+                    var choicesBorder = new Border()
+                    {
+                        Left = settingsButtonPosX,
+                        Top = widgetTop,
+                        InteriorWidth = widgetWidth - 1 + ConsoleWrapper.WindowWidth % 2,
+                        InteriorHeight = widgetHeight + 2,
+                        Color = KernelColorTools.GetColor(buttonHighlight == 0 ? KernelColorType.TuiPaneSelectedSeparator : KernelColorType.TuiPaneSeparator),
+                    };
+                    var choicesSelection = new Selection(availableChoices)
+                    {
+                        Left = settingsButtonPosX + 1,
+                        Top = widgetTop + 1,
+                        CurrentSelection = choiceIdx,
+                        AltChoicePos = availableChoices.Length,
+                        Height = widgetHeight + 2,
+                        Width = widgetWidth - 1 + ConsoleWrapper.WindowWidth % 2,
+                        Settings = new()
+                        {
+                            OptionColor = KernelColorTools.GetColor(KernelColorType.NeutralText),
+                            SelectedOptionColor = KernelColorTools.GetColor(KernelColorType.TuiPaneSelectedSeparator),
+                        },
+                    };
+                    builder.Append(
+                        choicesBorder.Render() +
+                        choicesSelection.Render()
+                    );
 
                     // Return the resulting homepage
                     return builder.ToString();
@@ -419,7 +527,7 @@ namespace Nitrocid.Shell.Homepage
                             case ConsoleKey.K:
                                 InfoBoxModalColor.WriteInfoBoxModalColorBack(
                                     "Available keys",
-                                    KeybindingsWriter.RenderKeybindingHelpText(bindings), 
+                                    KeybindingTools.RenderKeybindingHelpText(bindings),
                                     KernelColorTools.GetColor(KernelColorType.TuiBoxForeground),
                                     KernelColorTools.GetColor(KernelColorType.TuiBoxBackground));
                                 break;

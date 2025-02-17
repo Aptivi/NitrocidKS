@@ -442,7 +442,7 @@ namespace Nitrocid.Kernel.Configuration.Instances
         }
         #endregion
 
-        #region
+        #region Emoji
         private string emojiWidgetCurrentEmoticon = "gem-stone";
 
         /// <summary>

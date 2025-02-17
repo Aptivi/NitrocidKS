@@ -30,11 +30,10 @@ using Terminaux.Base;
 using Terminaux.Base.Extensions;
 using Nitrocid.Drivers.RNG;
 using Terminaux.Inputs;
-using Terminaux.Writer.MiscWriters.Tools;
-using Terminaux.Writer.MiscWriters;
-using Terminaux.Writer.FancyWriters;
+using Terminaux.Writer.CyclicWriters.Renderer.Tools;
 using Terminaux.Inputs.Styles.Infobox;
 using Terminaux.Colors.Data;
+using Terminaux.Writer.CyclicWriters;
 
 namespace Nitrocid.Extras.Timers.Timers
 {
@@ -95,9 +94,20 @@ namespace Nitrocid.Extras.Timers.Timers
 
                 // Print the keybindings
                 int KeysTextTopPosition = ConsoleWrapper.WindowHeight - 1;
-                builder.Append(
-                    KeybindingsWriter.RenderKeybindings(keyBindings, 0, KeysTextTopPosition)
-                );
+                var keybindings = new Keybindings()
+                {
+                    KeybindingList = keyBindings,
+                    Left = 0,
+                    Top = KeysTextTopPosition,
+                    Width = ConsoleWrapper.WindowWidth - 1,
+                    BuiltinColor = KernelColorTools.GetColor(KernelColorType.TuiKeyBindingBuiltin),
+                    BuiltinForegroundColor = KernelColorTools.GetColor(KernelColorType.TuiKeyBindingBuiltinForeground),
+                    BuiltinBackgroundColor = KernelColorTools.GetColor(KernelColorType.TuiKeyBindingBuiltinBackground),
+                    OptionColor = KernelColorTools.GetColor(KernelColorType.TuiKeyBindingOption),
+                    OptionForegroundColor = KernelColorTools.GetColor(KernelColorType.TuiOptionForeground),
+                    OptionBackgroundColor = KernelColorTools.GetColor(KernelColorType.TuiOptionBackground),
+                };
+                builder.Append(keybindings.Render());
 
                 // Print the time interval and the current lap
                 builder.Append(
@@ -125,8 +135,28 @@ namespace Nitrocid.Extras.Timers.Timers
                 int SeparatorHalfConsoleWidthInterior = ConsoleWrapper.WindowWidth / 2 - 2;
                 int SeparatorMinimumHeight = 1;
                 int SeparatorMaximumHeightInterior = ConsoleWrapper.WindowHeight - 4;
-                builder.Append(BoxFrameColor.RenderBoxFrame(0, SeparatorMinimumHeight, SeparatorHalfConsoleWidthInterior, SeparatorMaximumHeightInterior, ColorTools.GetGray(), KernelColorTools.GetColor(KernelColorType.Background)));
-                builder.Append(BoxFrameColor.RenderBoxFrame(SeparatorHalfConsoleWidth, SeparatorMinimumHeight, SeparatorHalfConsoleWidthInterior + (ConsoleWrapper.WindowWidth % 2 != 0 ? 1 : 0), SeparatorMaximumHeightInterior, ColorTools.GetGray(), KernelColorTools.GetColor(KernelColorType.Background)));
+                var lapsBoxFrame = new BoxFrame()
+                {
+                    Left = 0,
+                    Top = SeparatorMinimumHeight,
+                    InteriorWidth = SeparatorHalfConsoleWidthInterior,
+                    InteriorHeight = SeparatorMaximumHeightInterior,
+                    FrameColor = ColorTools.GetGray(),
+                    BackgroundColor = KernelColorTools.GetColor(KernelColorType.Background),
+                };
+                var stopwatchBoxFrame = new BoxFrame()
+                {
+                    Left = SeparatorHalfConsoleWidth,
+                    Top = SeparatorMinimumHeight,
+                    InteriorWidth = SeparatorHalfConsoleWidthInterior + (ConsoleWrapper.WindowWidth % 2 != 0 ? 1 : 0),
+                    InteriorHeight = SeparatorMaximumHeightInterior,
+                    FrameColor = ColorTools.GetGray(),
+                    BackgroundColor = KernelColorTools.GetColor(KernelColorType.Background),
+                };
+                builder.Append(
+                    lapsBoxFrame.Render() +
+                    stopwatchBoxFrame.Render()
+                );
 
                 // Print informational messages
                 builder.Append(

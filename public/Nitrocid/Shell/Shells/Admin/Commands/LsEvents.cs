@@ -20,6 +20,8 @@
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Kernel.Events;
 using Nitrocid.Shell.ShellBase.Commands;
+using Terminaux.Writer.CyclicWriters;
+using Nitrocid.ConsoleBase.Colors;
 
 namespace Nitrocid.Shell.Shells.Admin.Commands
 {
@@ -34,7 +36,14 @@ namespace Nitrocid.Shell.Shells.Admin.Commands
 
         public override int Execute(CommandParameters parameters, ref string variableValue)
         {
-            ListWriterColor.WriteList(EventsManager.ListAllFiredEvents());
+            var events = EventsManager.ListAllFiredEvents();
+            var listing = new Listing()
+            {
+                Objects = events,
+                KeyColor = KernelColorTools.GetColor(KernelColorType.ListEntry),
+                ValueColor = KernelColorTools.GetColor(KernelColorType.ListValue),
+            };
+            TextWriterRaw.WriteRaw(listing.Render());
             return 0;
         }
 
