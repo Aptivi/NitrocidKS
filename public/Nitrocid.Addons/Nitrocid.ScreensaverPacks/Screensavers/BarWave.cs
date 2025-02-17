@@ -25,6 +25,10 @@ using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Colors;
 using Terminaux.Base;
+using Terminaux.Writer.CyclicWriters;
+using Terminaux.Writer.ConsoleWriters;
+using Terminaux.Writer.CyclicWriters.Renderer;
+using Terminaux.Colors.Transformation;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
@@ -277,7 +281,16 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
                 var ColorStorage = new Color(RedColorNum, GreenColorNum, BlueColorNum);
                 if (!ConsoleResizeHandler.WasResized(false))
-                    ProgressBarVerticalColor.WriteVerticalProgress(Pos, ThisBarLeft, 1, 4, ColorStorage);
+                {
+                    var progress = new SimpleProgress(Pos, 100)
+                    {
+                        Vertical = true,
+                        Height = 4,
+                        ProgressActiveForegroundColor = ColorStorage,
+                        ProgressForegroundColor = TransformationTools.GetDarkBackground(ColorStorage),
+                    };
+                    TextWriterRaw.WriteRaw(ContainerTools.RenderRenderable(progress, new(ThisBarLeft, 1)));
+                }
             }
 
             // Reset resize sync

@@ -22,6 +22,8 @@ using Nitrocid.Languages;
 using Terminaux.Writer.FancyWriters;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Kernel.Extensions;
+using Terminaux.Writer.CyclicWriters;
+using Nitrocid.ConsoleBase.Colors;
 
 namespace Nitrocid.Shell.Shells.Debug.Commands
 {
@@ -36,11 +38,17 @@ namespace Nitrocid.Shell.Shells.Debug.Commands
 
         public override int Execute(CommandParameters parameters, ref string variableValue)
         {
-            SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("List of fields for") + $" {parameters.ArgumentsList[0]}", true);
+            SeparatorWriterColor.WriteSeparatorColor(Translate.DoTranslation("List of fields for") + $" {parameters.ArgumentsList[0]}", KernelColorTools.GetColor(KernelColorType.ListTitle));
 
             // List all the available addons
             var list = InterAddonTools.ListAvailableFields(parameters.ArgumentsList[0]);
-            ListWriterColor.WriteList(list);
+            var listing = new Listing()
+            {
+                Objects = list,
+                KeyColor = KernelColorTools.GetColor(KernelColorType.ListEntry),
+                ValueColor = KernelColorTools.GetColor(KernelColorType.ListValue),
+            };
+            TextWriterRaw.WriteRaw(listing.Render());
             return 0;
         }
 
@@ -50,7 +58,7 @@ namespace Nitrocid.Shell.Shells.Debug.Commands
 
             // List all the available addons
             var list = InterAddonTools.ListAvailableFields(parameters.ArgumentsList[0]);
-            foreach (string field in list)
+            foreach (var field in list)
                 TextWriterColor.Write($"  - {field}");
             return 0;
         }

@@ -40,6 +40,8 @@ using Nitrocid.Network.Types.RSS;
 using Nitrocid.Kernel.Configuration;
 using Terminaux.Reader;
 using Terminaux.Inputs;
+using Terminaux.Writer.CyclicWriters;
+using Terminaux.Writer.CyclicWriters.Renderer.Tools;
 
 namespace Nitrocid.Extras.Docking.Dock.Docks
 {
@@ -115,18 +117,34 @@ namespace Nitrocid.Extras.Docking.Dock.Docks
                         cachedTimeStr = TimeDateRenderers.RenderTime(FormatType.Short);
                         var figFont = FigletTools.GetFigletFont(Config.MainConfig.DefaultFigletFontName);
                         int figHeight = FigletTools.GetFigletHeight(timeStr, figFont) / 2;
-                        display.Append(
-                            clockColor.VTSequenceForeground +
-                            CenteredFigletTextColor.RenderCenteredFiglet(figFont, timeStr)
-                        );
+                        int consoleY = ConsoleWrapper.WindowHeight / 2 - figHeight;
+                        var timeText = new AlignedFigletText(figFont)
+                        {
+                            Text = timeStr,
+                            ForegroundColor = clockColor,
+                            Top = consoleY,
+                            Settings = new()
+                            {
+                                Alignment = TextAlignment.Middle,
+                            }
+                        };
+                        display.Append(timeText.Render());
 
                         // Print the date
                         string dateStr = $"{TimeDateRenderers.RenderDate()}";
                         int consoleInfoY = (ConsoleWrapper.WindowHeight / 2) + figHeight + 2;
-                        display.Append(
-                            CenteredTextColor.RenderCenteredOneLine(consoleInfoY, dateStr) +
-                            KernelColorTools.GetColor(KernelColorType.NeutralText).VTSequenceForeground
-                        );
+                        var dateText = new AlignedText()
+                        {
+                            Text = dateStr,
+                            ForegroundColor = clockColor,
+                            Top = consoleInfoY,
+                            OneLine = true,
+                            Settings = new()
+                            {
+                                Alignment = TextAlignment.Middle,
+                            }
+                        };
+                        display.Append(dateText.Render());
 
                         // Print the headline
                         if (RSSTools.ShowHeadlineOnLogin)
@@ -135,9 +153,18 @@ namespace Nitrocid.Extras.Docking.Dock.Docks
                                 ModernLogonScreen.MotdHeadlineBottom ?
                                 (ConsoleWrapper.WindowHeight / 2) + figHeight + 3 :
                                 (ConsoleWrapper.WindowHeight / 2) - figHeight - 2;
-                            display.Append(
-                                CenteredTextColor.RenderCenteredOneLine(consoleHeadlineInfoY, headlineStr)
-                            );
+                            var headlineRenderer = new AlignedText()
+                            {
+                                Text = headlineStr,
+                                ForegroundColor = clockColor,
+                                Top = consoleHeadlineInfoY,
+                                OneLine = true,
+                                Settings = new()
+                                {
+                                    Alignment = TextAlignment.Middle,
+                                }
+                            };
+                            display.Append(headlineRenderer.Render());
                         }
 
                         // Print the MOTD
@@ -149,17 +176,35 @@ namespace Nitrocid.Extras.Docking.Dock.Docks
                                 ModernLogonScreen.MotdHeadlineBottom ?
                                 (ConsoleWrapper.WindowHeight / 2) + figHeight + 4 + i :
                                 (ConsoleWrapper.WindowHeight / 2) - figHeight - (RSSTools.ShowHeadlineOnLogin ? 4 : 2) + i;
-                            display.Append(
-                                CenteredTextColor.RenderCenteredOneLine(consoleMotdInfoY, motdStr)
-                            );
+                            var motdRenderer = new AlignedText()
+                            {
+                                Text = motdStr,
+                                ForegroundColor = clockColor,
+                                Top = consoleMotdInfoY,
+                                OneLine = true,
+                                Settings = new()
+                                {
+                                    Alignment = TextAlignment.Middle,
+                                }
+                            };
+                            display.Append(motdRenderer.Render());
                         }
 
                         // Print the instructions
                         string instStr = Translate.DoTranslation("Press any key to go back to the kernel...");
                         int consoleInstY = ConsoleWrapper.WindowHeight - 2;
-                        display.Append(
-                            CenteredTextColor.RenderCenteredOneLine(consoleInstY, instStr)
-                        );
+                        var instructionsRenderer = new AlignedText()
+                        {
+                            Text = instStr,
+                            ForegroundColor = clockColor,
+                            Top = consoleInstY,
+                            OneLine = true,
+                            Settings = new()
+                            {
+                                Alignment = TextAlignment.Middle,
+                            }
+                        };
+                        display.Append(instructionsRenderer.Render());
 
                         // Print everything
                         return display.ToString();

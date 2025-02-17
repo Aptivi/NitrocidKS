@@ -163,7 +163,7 @@ namespace Nitrocid.Shell.Shells.UESH.Commands
                     break;
 
                 // Now, preview the theme
-                ThemePreviewTools.PreviewThemeSimple(Theme);
+                ThemePreviewTools.PreviewTheme(Theme);
                 TextWriterRaw.Write();
 
                 // Pause until a key is pressed

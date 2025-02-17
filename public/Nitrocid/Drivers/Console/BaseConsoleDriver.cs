@@ -1,4 +1,5 @@
-﻿//
+﻿
+//
 // Nitrocid KS  Copyright (C) 2018-2025  Aptivi
 //
 // This file is part of Nitrocid KS
@@ -17,6 +18,8 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
+extern alias TextifyDep;
+
 using System;
 using System.IO;
 using System.Threading;
@@ -29,7 +32,13 @@ using Nitrocid.Languages;
 using Terminaux.Writer.ConsoleWriters;
 using Terminaux.Colors;
 using System.Runtime.Serialization;
-using Terminaux.Writer.DynamicWriters;
+using Nitrocid.ConsoleBase;
+using Nitrocid.ConsoleBase.Colors;
+using Terminaux.Base;
+using Terminaux.Sequences;
+using TextifyDep::Textify.General;
+using Terminaux.Base.Extensions;
+using System.Text;
 
 namespace Nitrocid.Drivers.Console
 {
@@ -452,8 +461,110 @@ namespace Nitrocid.Drivers.Console
             TextWriterWhereSlowColor.WriteWhereSlowlyPlain(msg, Line, Left, Top, MsEachLetter, Return, RightMargin, vars);
 
         /// <inheritdoc/>
-        public virtual void WriteWrappedPlain(string Text, bool Line, params object[] vars) =>
-            TextWriterWrappedColor.WriteWrappedPlain(Text, Line, vars);
+        public virtual void WriteWrappedPlain(string Text, bool Line, params object[] vars)
+        {
+            var LinesMade = 0;
+            try
+            {
+                // Format string as needed
+                if (vars.Length > 0)
+                    Text = TextTools.FormatString(Text, vars);
+                Text = Text.Replace(Convert.ToChar(13), default);
+
+                // First, split the text to wrap
+                string[] sentences = ConsoleMisc.GetWrappedSentencesByWords(Text, ConsoleWrapper.WindowWidth);
+
+                // Iterate through sentences
+                var buffered = new StringBuilder();
+                for (int idx = 0; idx < sentences.Length; idx++)
+                {
+                    string sentence = sentences[idx];
+
+                    // Grab each VT sequence from the paragraph and fetch their indexes
+                    var sequences = VtSequenceTools.MatchVTSequences(sentence);
+                    int vtSeqIdx = 0;
+                    bool bail = false;
+                    for (int i = 0; i < sentence.Length; i++)
+                    {
+                        char TextChar = sentence[i];
+
+                        // Write a character individually
+                        if (LinesMade == ConsoleWrapper.WindowHeight - 1)
+                        {
+                            TextWriterRaw.WriteRaw(buffered.ToString());
+                            buffered.Clear();
+                            var key = ReadKey().Key;
+                            switch (key)
+                            {
+                                case ConsoleKey.Escape:
+                                    return;
+                                case ConsoleKey.PageUp:
+                                    bail = true;
+                                    idx -= ConsoleWrapper.WindowHeight * 2 - 1;
+                                    if (idx < 0)
+                                        idx = -1;
+                                    break;
+                                case ConsoleKey.PageDown:
+                                    bail = true;
+                                    if (idx > sentences.Length - 1 - ConsoleWrapper.WindowHeight)
+                                        idx = sentences.Length - 1 - ConsoleWrapper.WindowHeight;
+                                    else
+                                        idx--;
+                                    break;
+                                case ConsoleKey.UpArrow:
+                                    bail = true;
+                                    idx -= ConsoleWrapper.WindowHeight + 1;
+                                    if (idx < 0)
+                                        idx = -1;
+                                    break;
+                                case ConsoleKey.DownArrow:
+                                    bail = true;
+                                    if (idx >= sentences.Length - 1)
+                                    {
+                                        idx = sentences.Length - 1 - ConsoleWrapper.WindowHeight;
+                                        break;
+                                    }
+                                    idx -= ConsoleWrapper.WindowHeight - 1;
+                                    if (idx < 0)
+                                        idx = -1;
+                                    break;
+                                case ConsoleKey.Home:
+                                    bail = true;
+                                    idx = -1;
+                                    break;
+                                case ConsoleKey.End:
+                                    bail = true;
+                                    idx = sentences.Length - 1 - ConsoleWrapper.WindowHeight;
+                                    if (idx < 0)
+                                        idx = -1;
+                                    break;
+                            }
+                            LinesMade = 0;
+                        }
+                        if (bail)
+                        {
+                            ColorTools.LoadBack(KernelColorTools.GetColor(KernelColorType.Background));
+                            break;
+                        }
+                        buffered.Append(ConsoleTools.BufferChar(sentence, sequences, ref i, ref vtSeqIdx, out _));
+                    }
+                    if (!bail && idx < sentences.Length - 1)
+                    {
+                        buffered.AppendLine();
+                        LinesMade++;
+                    }
+                }
+                TextWriterRaw.WriteRaw(buffered.ToString());
+                buffered.Clear();
+                if (Line)
+                    TextWriterRaw.Write();
+            }
+            catch (Exception ex)
+            {
+                DebugWriter.WriteDebug(DebugLevel.E, $"There is a serious error when printing wrapped text. {ex.Message}");
+                DebugWriter.WriteDebug(DebugLevel.T, ex.StackTrace ?? "No stack trace");
+            }
+        }
 
     }
 }

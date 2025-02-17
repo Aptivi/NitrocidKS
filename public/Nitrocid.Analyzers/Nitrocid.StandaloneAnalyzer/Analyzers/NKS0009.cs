@@ -20,13 +20,13 @@
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Nitrocid.Analyzers.Common;
 using System;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Terminaux.Colors.Data;
 using Terminaux.Writer.ConsoleWriters;
-using Terminaux.Writer.MiscWriters;
 
 namespace Nitrocid.StandaloneAnalyzer.Analyzers
 {
@@ -53,10 +53,7 @@ namespace Nitrocid.StandaloneAnalyzer.Analyzers
                         var idName = name.Identifier.Text;
                         if (idName == nameof(Console.ResetColor))
                         {
-                            var lineSpan = location.GetLineSpan();
-                            TextWriterColor.WriteColor($"{GetType().Name}: {document.FilePath} ({lineSpan.StartLinePosition} -> {lineSpan.EndLinePosition}): Caller uses Console.ResetColor instead of ResetColor()", true, ConsoleColors.Yellow);
-                            if (!string.IsNullOrEmpty(document.FilePath))
-                                LineHandleRangedWriter.PrintLineWithHandle(document.FilePath, lineSpan.StartLinePosition.Line + 1, lineSpan.StartLinePosition.Character + 1, lineSpan.EndLinePosition.Character);
+                            AnalyzerTools.PrintFromLocation(location, document, GetType(), "Caller uses Console.ResetColor instead of ResetColor()");
                             found = true;
                         }
                     }
@@ -83,8 +80,8 @@ namespace Nitrocid.StandaloneAnalyzer.Analyzers
                     if (idName.Identifier.Text != nameof(Console.ResetColor))
                         continue;
 
-                    // We need to have a syntax that calls ConsoleExtensions.ResetColors
-                    var classSyntax = SyntaxFactory.IdentifierName("ConsoleExtensions");
+                    // We need to have a syntax that calls KernelColorTools.ResetColors
+                    var classSyntax = SyntaxFactory.IdentifierName("KernelColorTools");
                     var methodSyntax = SyntaxFactory.IdentifierName("ResetColors");
                     var resultSyntax = SyntaxFactory.MemberAccessExpression(SyntaxKind.SimpleMemberAccessExpression, classSyntax, methodSyntax);
                     var replacedSyntax = resultSyntax
@@ -100,11 +97,15 @@ namespace Nitrocid.StandaloneAnalyzer.Analyzers
 
                     // Check the imports
                     var compilation = finalNode as CompilationUnitSyntax;
-                    if (compilation?.Usings.Any(u => u.Name?.ToString() == $"{AnalysisTools.rootNameSpace}.ConsoleBase") == false)
+                    if (compilation?.Usings.Any(u => u.Name?.ToString() == $"{AnalysisTools.rootNameSpace}.ConsoleBase.Colors") == false)
                     {
-                        var name = SyntaxFactory.QualifiedName(
-                            SyntaxFactory.IdentifierName(AnalysisTools.rootNameSpace),
-                            SyntaxFactory.IdentifierName("ConsoleBase"));
+                        var name =
+                            SyntaxFactory.QualifiedName(
+                                SyntaxFactory.QualifiedName(
+                                    SyntaxFactory.IdentifierName(AnalysisTools.rootNameSpace),
+                                    SyntaxFactory.IdentifierName("ConsoleBase")
+                                ), SyntaxFactory.IdentifierName("Colors")
+                            );
                         var directive = SyntaxFactory.UsingDirective(name).NormalizeWhitespace();
                         TextWriterColor.WriteColor("Additionally, the suggested fix will add the following using statement:", true, ConsoleColors.Yellow);
                         TextWriterColor.WriteColor($"  + {directive.ToFullString()}", true, ConsoleColors.Green);

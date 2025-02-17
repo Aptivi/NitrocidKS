@@ -26,6 +26,9 @@ using Nitrocid.Languages;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Colors;
 using Terminaux.Base;
+using Terminaux.Writer.ConsoleWriters;
+using Terminaux.Writer.CyclicWriters;
+using Terminaux.Writer.CyclicWriters.Renderer;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
@@ -291,6 +294,11 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             if (!ConsoleResizeHandler.WasResized(false))
             {
                 ConsoleWrapper.Clear();
+                var figletText = new FigletText(figFontUsed)
+                {
+                    Text = text,
+                    ForegroundColor = ColorStorage
+                };
                 if (consoleX < 0 || consoleY < 0)
                 {
                     // The figlet won't fit, so use small text
@@ -299,21 +307,31 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                     if (consoleX < 0 || consoleY < 0)
                     {
                         // The fallback figlet also won't fit, so use smaller text
-                        CenteredTextColor.WriteCenteredColor(consoleY, text, ColorStorage);
+                        consoleX = (width / 2) - (text.Length / 2);
                         consoleY = height / 2;
+                        TextWriterWhereColor.WriteWhere(text, consoleX, consoleY, true);
                     }
                     else
                     {
-                        CenteredFigletTextColor.WriteCenteredFigletColor(consoleY, figFontFallback, text, ColorStorage);
+                        // Write the figlet.
+                        figletText.Font = figFontFallback;
+                        ContainerTools.WriteRenderable(figletText, new(consoleX, consoleY));
                         consoleY += figHeightFallback * 2;
                     }
                 }
                 else
                 {
-                    CenteredFigletTextColor.WriteCenteredFigletColor(consoleY, figFontUsed, text, ColorStorage);
+                    // Write the figlet.
+                    ContainerTools.WriteRenderable(figletText, new(consoleX, consoleY));
                     consoleY += figHeight * 2;
                 }
-                CenteredTextColor.WriteCenteredColor(consoleY + 2, textDesc, ColorStorage);
+                var descText = new AlignedText()
+                {
+                    Top = consoleY + 2,
+                    Text = textDesc,
+                    ForegroundColor = ColorStorage,
+                };
+                TextWriterRaw.WriteRaw(descText.Render());
             }
 
             // Reset resize sync

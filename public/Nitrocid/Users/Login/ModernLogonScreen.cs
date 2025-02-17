@@ -37,6 +37,8 @@ using Textify.General;
 using Terminaux.Base;
 using Nitrocid.Users.Login.Motd;
 using Nitrocid.Network.Types.RSS;
+using Terminaux.Writer.CyclicWriters;
+using Terminaux.Writer.CyclicWriters.Renderer.Tools;
 
 namespace Nitrocid.Users.Login
 {
@@ -107,18 +109,32 @@ namespace Nitrocid.Users.Login
                             cachedTimeStr = TimeDateRenderers.RenderTime(FormatType.Short);
                             var figFont = FigletTools.GetFigletFont(Config.MainConfig.DefaultFigletFontName);
                             int figHeight = FigletTools.GetFigletHeight(timeStr, figFont) / 2;
-                            display.Append(
-                                KernelColorTools.GetColor(KernelColorType.Stage).VTSequenceForeground +
-                                CenteredFigletTextColor.RenderCenteredFiglet(figFont, timeStr)
-                            );
+                            var timeFiglet = new AlignedFigletText(figFont)
+                            {
+                                Text = timeStr,
+                                ForegroundColor = KernelColorTools.GetColor(KernelColorType.Stage),
+                                Settings = new()
+                                {
+                                    Alignment = TextAlignment.Middle,
+                                }
+                            };
+                            display.Append(timeFiglet.Render());
 
                             // Print the date
                             string dateStr = $"{TimeDateRenderers.RenderDate()}";
                             int consoleInfoY = ConsoleWrapper.WindowHeight / 2 + figHeight + 2;
-                            display.Append(
-                                CenteredTextColor.RenderCenteredOneLine(consoleInfoY, dateStr) +
-                                KernelColorTools.GetColor(KernelColorType.NeutralText).VTSequenceForeground
-                            );
+                            var dateText = new AlignedText()
+                            {
+                                Top = consoleInfoY,
+                                Text = dateStr,
+                                ForegroundColor = KernelColorTools.GetColor(KernelColorType.Stage),
+                                OneLine = true,
+                                Settings = new()
+                                {
+                                    Alignment = TextAlignment.Middle,
+                                }
+                            };
+                            display.Append(dateText.Render());
 
                             // Print the headline
                             if (RSSTools.ShowHeadlineOnLogin)
@@ -129,9 +145,18 @@ namespace Nitrocid.Users.Login
                                     MotdHeadlineBottom ?
                                     ConsoleWrapper.WindowHeight / 2 + figHeight + 3 :
                                     ConsoleWrapper.WindowHeight / 2 - figHeight - 2;
-                                display.Append(
-                                    CenteredTextColor.RenderCenteredOneLine(consoleHeadlineInfoY, headlineStr)
-                                );
+                                var headlineText = new AlignedText()
+                                {
+                                    Top = consoleHeadlineInfoY,
+                                    Text = headlineStr,
+                                    ForegroundColor = KernelColorTools.GetColor(KernelColorType.NeutralText),
+                                    OneLine = true,
+                                    Settings = new()
+                                    {
+                                        Alignment = TextAlignment.Middle,
+                                    }
+                                };
+                                display.Append(headlineText.Render());
                             }
 
                             // Print the MOTD
@@ -143,17 +168,35 @@ namespace Nitrocid.Users.Login
                                     MotdHeadlineBottom ?
                                     ConsoleWrapper.WindowHeight / 2 + figHeight + 4 + i :
                                     ConsoleWrapper.WindowHeight / 2 - figHeight - (RSSTools.ShowHeadlineOnLogin ? 4 : 2) + i;
-                                display.Append(
-                                    CenteredTextColor.RenderCenteredOneLine(consoleMotdInfoY, motdStr)
-                                );
+                                var motdText = new AlignedText()
+                                {
+                                    Top = consoleMotdInfoY,
+                                    Text = motdStr,
+                                    ForegroundColor = KernelColorTools.GetColor(KernelColorType.NeutralText),
+                                    OneLine = true,
+                                    Settings = new()
+                                    {
+                                        Alignment = TextAlignment.Middle,
+                                    }
+                                };
+                                display.Append(motdText.Render());
                             }
 
                             // Print the instructions
                             string instStr = Translate.DoTranslation("Press any key to start, or ESC for more options...");
                             int consoleInstY = ConsoleWrapper.WindowHeight - 2;
-                            display.Append(
-                                CenteredTextColor.RenderCenteredOneLine(consoleInstY, instStr)
-                            );
+                            var instText = new AlignedText()
+                            {
+                                Top = consoleInstY,
+                                Text = instStr,
+                                ForegroundColor = KernelColorTools.GetColor(KernelColorType.NeutralText),
+                                OneLine = true,
+                                Settings = new()
+                                {
+                                    Alignment = TextAlignment.Middle,
+                                }
+                            };
+                            display.Append(instText.Render());
 
                             // Print everything
                             return display.ToString();

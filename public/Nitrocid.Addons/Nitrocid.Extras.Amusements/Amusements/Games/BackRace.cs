@@ -34,6 +34,10 @@ using Terminaux.Reader;
 using Terminaux.Base.Buffered;
 using System.Text;
 using Terminaux.Inputs;
+using Terminaux.Writer.CyclicWriters.Renderer;
+using Terminaux.Writer.CyclicWriters;
+using Terminaux.Colors.Transformation;
+using Terminaux.Writer.CyclicWriters.Renderer.Tools;
 
 namespace Nitrocid.Extras.Amusements.Amusements.Games
 {
@@ -88,18 +92,42 @@ namespace Nitrocid.Extras.Amusements.Amusements.Games
                     int height = consoleSixthsHeight * i + 3;
                     var horse = horses[i];
                     var finalColor = i + 1 == selected ? ConsoleColors.White : horse.HorseColor;
+                    var border = new Border()
+                    {
+                        Left = boxLeft,
+                        Top = height,
+                        InteriorWidth = boxWidth,
+                        InteriorHeight = 1,
+                        Color = finalColor
+                    };
+                    var progress = new SimpleProgress(horse.HorseProgress, 100)
+                    {
+                        LeftMargin = 5,
+                        RightMargin = 5,
+                        ProgressActiveForegroundColor = finalColor,
+                        ProgressForegroundColor = TransformationTools.GetDarkBackground(finalColor),
+                    };
                     builder.Append(
                         TextWriterWhereColor.RenderWhereColor(Translate.DoTranslation("Horse") + $" {horse.HorseNumber}", 1, height - 1, finalColor) +
-                        BorderColor.RenderBorder(boxLeft, height, boxWidth, 1, finalColor) +
+                        border.Render() +
                         TextWriterWhereColor.RenderWhereColor($"{horse.HorseProgress:000}%", 2, height + 1, finalColor) +
-                        ProgressBarColor.RenderProgress(horse.HorseProgress, progressLeft, height, ConsoleWrapper.WindowWidth - 10, finalColor, finalColor)
+                        ContainerTools.RenderRenderable(progress, new(progressLeft, height))
                     );
                 }
 
                 // Check to see if we're on the rest mode or on the race mode
                 string bindings = Translate.DoTranslation("[ENTER] Start the race | [ESC] Exit | [UP/DOWN] Move selection");
-                int bindingsPositionX = ConsoleWrapper.WindowWidth / 2 - bindings.Length / 2;
                 int bindingsPositionY = ConsoleWrapper.WindowHeight - 2;
+                var alignedText = new AlignedText()
+                {
+                    Text = bindings,
+                    Top = bindingsPositionY,
+                    ForegroundColor = color,
+                    Settings = new()
+                    {
+                        Alignment = TextAlignment.Middle
+                    }
+                };
                 if (racing)
                 {
                     // Write the positions
@@ -109,17 +137,11 @@ namespace Nitrocid.Extras.Amusements.Amusements.Games
                     List<string> positions = [];
                     for (int i = 0; i < horsesSorted.Length; i++)
                         positions.Add($"{ColorTools.RenderSetConsoleColor(color)}#{i + 1}: {ColorTools.RenderSetConsoleColor(horsesSorted[i].HorseColor)}{Translate.DoTranslation("Horse")} {horsesSorted[i].HorseNumber}{ColorTools.RenderSetConsoleColor(color)}");
-                    string renderedPositions = string.Join(" | ", positions);
-                    builder.Append(
-                        CenteredTextColor.RenderCenteredOneLine(bindingsPositionY, renderedPositions, color)
-                    );
+                    alignedText.Text = string.Join(" | ", positions);
                 }
-                else
-                {
-                    builder.Append(
-                        TextWriterWhereColor.RenderWhereColor(bindings, bindingsPositionX, bindingsPositionY, color)
-                    );
-                }
+                builder.Append(
+                    alignedText.Render()
+                );
 
                 // Return the result
                 return builder.ToString();

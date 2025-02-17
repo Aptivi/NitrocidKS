@@ -27,6 +27,7 @@ using Nitrocid.Drivers.RNG;
 using Terminaux.Writer.FancyWriters;
 using Nitrocid.Kernel.Threading;
 using Terminaux.Base;
+using Terminaux.Writer.CyclicWriters;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
@@ -363,7 +364,20 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Draw the frame
             if (!ConsoleResizeHandler.WasResized(false))
-                BorderColor.WriteBorder(RampFrameStartWidth, RampCenterPosition - 2, RampFrameSpaces, 3, IndeterminateSettings.IndeterminateUseBorderColors ? new Color(IndeterminateSettings.IndeterminateLeftFrameColor) : ColorTools.GetGray());
+            {
+                var border = new Border()
+                {
+                    Left = RampFrameStartWidth,
+                    Top = RampCenterPosition - 2,
+                    InteriorWidth = RampFrameSpaces,
+                    InteriorHeight = 3,
+                    Color =
+                        ScreensaverPackInit.SaversConfig.IndeterminateUseBorderColors ?
+                        new Color(ScreensaverPackInit.SaversConfig.IndeterminateLeftFrameColor) :
+                        ColorTools.GetGray(),
+                };
+                TextWriterRaw.WriteRaw(border.Render());
+            }
 
             // Draw the ramp
             int RampFrameBlockEndWidth = RampFrameEndWidth;

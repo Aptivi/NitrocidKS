@@ -37,6 +37,7 @@ using Terminaux.Sequences;
 using System.Text.RegularExpressions;
 using Terminaux.Base.Extensions;
 using Terminaux.Inputs;
+using Terminaux.Writer.CyclicWriters;
 
 namespace Nitrocid.ConsoleBase
 {
@@ -65,12 +66,6 @@ namespace Nitrocid.ConsoleBase
         /// </summary>
         public static bool EnableScrollBarInSelection =>
             Config.MainConfig.EnableScrollBarInSelection;
-
-        /// <summary>
-        /// Wraps the list outputs
-        /// </summary>
-        public static bool WrapListOutputs =>
-            Config.MainConfig.WrapListOutputs;
 
         /// <summary>
         /// Resets the console colors without clearing screen
@@ -146,9 +141,25 @@ namespace Nitrocid.ConsoleBase
 
                 // First, render a box
                 int times = ConsoleWrapper.WindowWidth - 10;
-                DebugWriter.WriteDebug(DebugLevel.I, "Band length: {0} cells", times);
-                band.Append(BoxFrameColor.RenderBoxFrame(3, 3, times + 1, 3));
-                band.Append(BoxFrameColor.RenderBoxFrame(3, 9, times + 1, 1));
+                DebugWriter.WriteDebug(DebugLevel.I, "Band length: {0} cells", vars: [times]);
+                var rgbBand = new BoxFrame()
+                {
+                    Left = 3,
+                    Top = 3,
+                    InteriorWidth = times + 1,
+                    InteriorHeight = 3,
+                };
+                var hueBand = new BoxFrame()
+                {
+                    Left = 3,
+                    Top = 9,
+                    InteriorWidth = times + 1,
+                    InteriorHeight = 1,
+                };
+                band.Append(
+                    rgbBand.Render() +
+                    hueBand.Render()
+                );
                 band.Append(VtSequenceBuilderTools.BuildVtSequence(VtSequenceSpecificTypes.CsiCursorPosition, 5, 5));
 
                 // Then, render the three bands, starting from the red color

@@ -23,7 +23,6 @@ using System;
 using System.Linq;
 using System.Text;
 using Terminaux.Sequences.Builder.Types;
-using Terminaux.Sequences;
 using Nitrocid.Kernel.Debugging;
 using Nitrocid.Kernel.Time.Calendars;
 using Terminaux.Inputs.Styles.Infobox;
@@ -31,20 +30,17 @@ using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.ConsoleBase.Colors;
 using Terminaux.Base.Buffered;
 using Nitrocid.Languages;
-using Terminaux.Inputs.Interactive;
-using Terminaux.Writer.FancyWriters;
 using Nitrocid.Kernel.Time.Converters;
 using Nitrocid.Kernel.Time;
 using Textify.General;
 using Terminaux.Colors;
 using Terminaux.Base;
-using Terminaux.Reader;
 using Terminaux.Base.Extensions;
 using Nitrocid.Kernel.Time.Renderers;
 using System.Collections.Generic;
 using Terminaux.Inputs;
-using Terminaux.Writer.MiscWriters.Tools;
-using Terminaux.Writer.MiscWriters;
+using Terminaux.Writer.CyclicWriters.Renderer.Tools;
+using Terminaux.Writer.CyclicWriters;
 
 namespace Nitrocid.Extras.Calendar.Calendar
 {
@@ -130,14 +126,23 @@ namespace Nitrocid.Extras.Calendar.Calendar
         {
             // Make a screen part
             var part = new ScreenPart();
-            part.AddDynamicText(() => KeybindingsWriter.RenderKeybindings(bindings,
-                KernelColorTools.GetColor(KernelColorType.TuiKeyBindingOption),
-                KernelColorTools.GetColor(KernelColorType.TuiOptionForeground),
-                KernelColorTools.GetColor(KernelColorType.TuiOptionBackground),
-                KernelColorTools.GetColor(KernelColorType.TuiKeyBindingOption),
-                KernelColorTools.GetColor(KernelColorType.TuiOptionForeground),
-                KernelColorTools.GetColor(KernelColorType.TuiOptionBackground),
-                0, ConsoleWrapper.WindowHeight - 1));
+            part.AddDynamicText(() =>
+            {
+                var keybindings = new Keybindings()
+                {
+                    KeybindingList = bindings,
+                    Left = 0,
+                    Top = ConsoleWrapper.WindowHeight - 1,
+                    Width = ConsoleWrapper.WindowWidth - 1,
+                    BuiltinColor = KernelColorTools.GetColor(KernelColorType.TuiKeyBindingOption),
+                    BuiltinForegroundColor = KernelColorTools.GetColor(KernelColorType.TuiOptionForeground),
+                    BuiltinBackgroundColor = KernelColorTools.GetColor(KernelColorType.TuiOptionBackground),
+                    OptionColor = KernelColorTools.GetColor(KernelColorType.TuiKeyBindingOption),
+                    OptionForegroundColor = KernelColorTools.GetColor(KernelColorType.TuiOptionForeground),
+                    OptionBackgroundColor = KernelColorTools.GetColor(KernelColorType.TuiOptionBackground),
+                };
+                return keybindings.Render();
+            });
             screen.AddBufferedPart("Interactive calendar - Keybindings", part);
         }
 
@@ -172,11 +177,16 @@ namespace Nitrocid.Extras.Calendar.Calendar
                 int SeparatorMaximumHeightInterior = ConsoleWrapper.WindowHeight - 4;
 
                 // Render the box
-                builder.Append(
-                    $"{ColorTools.RenderSetConsoleColor(KernelColorTools.GetColor(KernelColorType.TuiPaneSeparator))}" +
-                    $"{ColorTools.RenderSetConsoleColor(KernelColorTools.GetColor(KernelColorType.Background), true)}" +
-                    $"{BorderColor.RenderBorderPlain(0, SeparatorMinimumHeight, SeparatorConsoleWidthInterior, SeparatorMaximumHeightInterior)}"
-                );
+                var border = new Border()
+                {
+                    Left = 0,
+                    Top = SeparatorMinimumHeight,
+                    InteriorWidth = SeparatorConsoleWidthInterior,
+                    InteriorHeight = SeparatorMaximumHeightInterior,
+                    Color = KernelColorTools.GetColor(KernelColorType.TuiPaneSeparator),
+                    BackgroundColor = KernelColorTools.GetColor(KernelColorType.Background),
+                };
+                builder.Append(border.Render());
                 return builder.ToString();
             });
             screen.AddBufferedPart("Interactive calendar - View box", part);
@@ -223,9 +233,17 @@ namespace Nitrocid.Extras.Calendar.Calendar
                 int boxTop = 3;
                 int boxWidth = 4 + (6 * 6);
                 int boxHeight = 13;
-                builder.Append(
-                    BorderColor.RenderBorder(CalendarTitle, boxLeft, boxTop, boxWidth, boxHeight, boxForeground, background)
-                );
+                var border = new Border()
+                {
+                    Text = CalendarTitle,
+                    Left = boxLeft,
+                    Top = boxTop,
+                    InteriorWidth = boxWidth,
+                    InteriorHeight = boxHeight,
+                    Color = boxForeground,
+                    BackgroundColor = background,
+                };
+                builder.Append(border.Render());
 
                 // Make a calendar
                 int dayPosX = boxLeft + 1;
@@ -313,9 +331,17 @@ namespace Nitrocid.Extras.Calendar.Calendar
                 int eventBoxTop = 3;
                 int eventBoxWidth = ConsoleWrapper.WindowWidth - eventBoxLeft - 6;
                 int eventBoxHeight = ConsoleWrapper.WindowHeight - 8;
-                builder.Append(
-                    BorderColor.RenderBorder(Translate.DoTranslation("Events and reminders for") + $" {CalendarTitle}", eventBoxLeft, eventBoxTop, eventBoxWidth, eventBoxHeight, boxForeground, background)
-                );
+                var eventBorder = new Border()
+                {
+                    Text = Translate.DoTranslation("Events and reminders for") + $" {CalendarTitle}",
+                    Left = eventBoxLeft,
+                    Top = eventBoxTop,
+                    InteriorWidth = eventBoxWidth,
+                    InteriorHeight = eventBoxHeight,
+                    Color = boxForeground,
+                    BackgroundColor = background,
+                };
+                builder.Append(eventBorder.Render());
 
                 // List all events and reminders in a separate builder to wrap
                 var eventsBuilder = new StringBuilder();
@@ -408,7 +434,7 @@ namespace Nitrocid.Extras.Calendar.Calendar
             // Show the available keys list
             if (bindings.Length == 0)
                 return;
-            InfoBoxModalColor.WriteInfoBoxModalColorBack(KeybindingsWriter.RenderKeybindingHelpText(bindings),
+            InfoBoxModalColor.WriteInfoBoxModalColorBack(KeybindingTools.RenderKeybindingHelpText(bindings),
                 KernelColorTools.GetColor(KernelColorType.TuiBoxForeground),
                 KernelColorTools.GetColor(KernelColorType.TuiBoxBackground));
             return;

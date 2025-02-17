@@ -18,12 +18,13 @@
 //
 
 using Nitrocid.ConsoleBase.Colors;
+using Nitrocid.Drivers;
 using Nitrocid.Drivers.Console;
 using Nitrocid.Kernel.Debugging;
 using Nitrocid.Languages;
 using System;
 using System.Threading;
-using Terminaux.Writer.DynamicWriters;
+using Terminaux.Writer.ConsoleWriters;
 
 namespace Nitrocid.ConsoleBase.Writers
 {
@@ -229,12 +230,12 @@ namespace Nitrocid.ConsoleBase.Writers
                     KernelColorTools.SetConsoleColorDry(colorType);
 
                     // Write wrapped output
-                    TextWriterWrappedColor.WriteWrappedPlain(Text, Line, vars);
+                    DriverHandler.CurrentConsoleDriverLocal.WriteWrappedPlain(Text, Line, vars);
                 }
                 catch (Exception ex) when (ex.GetType().Name != nameof(ThreadInterruptedException))
                 {
                     DebugWriter.WriteDebugStackTrace(ex);
-                    DebugWriter.WriteDebug(DebugLevel.E, Translate.DoTranslation("There is a serious error when printing text.") + " {0}", ex.Message);
+                    DebugWriter.WriteDebug(DebugLevel.E, "There is a serious error when printing text. {0}", vars: [ex.Message]);
                 }
             }
         }
@@ -258,12 +259,12 @@ namespace Nitrocid.ConsoleBase.Writers
                     KernelColorTools.SetConsoleColorDry(colorTypeBackground, true);
 
                     // Write wrapped output
-                    TextWriterWrappedColor.WriteWrappedPlain(Text, Line, vars);
+                    DriverHandler.CurrentConsoleDriverLocal.WriteWrappedPlain(Text, Line, vars);
                 }
                 catch (Exception ex) when (ex.GetType().Name != nameof(ThreadInterruptedException))
                 {
                     DebugWriter.WriteDebugStackTrace(ex);
-                    DebugWriter.WriteDebug(DebugLevel.E, Translate.DoTranslation("There is a serious error when printing text.") + " {0}", ex.Message);
+                    DebugWriter.WriteDebug(DebugLevel.E, "There is a serious error when printing text. {0}", vars: [ex.Message]);
                 }
             }
         }

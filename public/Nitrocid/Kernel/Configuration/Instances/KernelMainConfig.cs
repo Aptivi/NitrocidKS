@@ -39,7 +39,6 @@ using Terminaux.Inputs.Styles.Choice;
 using Nitrocid.Shell.Prompts;
 using Nitrocid.Users.Login.Handlers;
 using Nitrocid.Files.Paths;
-using Terminaux.Writer.FancyWriters.Tools;
 using Nitrocid.ConsoleBase.Colors;
 using Nitrocid.Files.Operations.Querying;
 using Nitrocid.Kernel.Debugging.RemoteDebug.RemoteChat;
@@ -50,6 +49,7 @@ using Nitrocid.Network;
 using Terminaux.Inputs.Styles.Selection;
 using Terminaux.Inputs.Interactive;
 using Nitrocid.Misc.Reflection.Internal;
+using Terminaux.Writer.CyclicWriters.Renderer.Tools;
 
 namespace Nitrocid.Kernel.Configuration.Instances
 {
@@ -140,30 +140,6 @@ namespace Nitrocid.Kernel.Configuration.Instances
         /// Whether to simulate a situation where there is no APM available. If enabled, it informs the user that it's now safe to turn off the computer upon shutdown.
         /// </summary>
         public bool SimulateNoAPM { get; set; }
-        /// <summary>
-        /// If you are color blind or if you want to simulate color blindness, then you can enable it.
-        /// </summary>
-        public bool ColorBlind
-        {
-            get => ColorTools.GlobalSettings.EnableColorTransformation;
-            set => ColorTools.GlobalSettings.EnableColorTransformation = value;
-        }
-        /// <summary>
-        /// The type of color blindness, whether it's protan, deuter, or tritan.
-        /// </summary>
-        public int BlindnessTransformationFormula
-        {
-            get => (int)ColorTools.GlobalSettings.ColorTransformationFormula;
-            set => ColorTools.GlobalSettings.ColorTransformationFormula = (TransformationFormula)value;
-        }
-        /// <summary>
-        /// How severe is the color blindness?
-        /// </summary>
-        public double BlindnessSeverity
-        {
-            get => ColorTools.GlobalSettings.ColorBlindnessSeverity;
-            set => ColorTools.GlobalSettings.ColorBlindnessSeverity = value;
-        }
         /// <summary>
         /// Enables beeping upon shutting down the kernel.
         /// </summary>
@@ -1138,10 +1114,6 @@ namespace Nitrocid.Kernel.Configuration.Instances
             get => HexEditShellCommon.autoSaveInterval;
             set => HexEditShellCommon.autoSaveInterval = value < 0 ? 60 : value;
         }
-        /// <summary>
-        /// Wraps the list outputs if it seems too long for the current console geometry
-        /// </summary>
-        public bool WrapListOutputs { get; set; }
         /// <summary>
         /// Covers the notification with the border
         /// </summary>

@@ -26,6 +26,7 @@ using Nitrocid.Languages;
 using Terminaux.Writer.FancyWriters;
 using Nitrocid.ConsoleBase.Colors;
 using Terminaux.Writer.ConsoleWriters;
+using Terminaux.Writer.CyclicWriters;
 
 namespace Nitrocid.Shell.Shells.Debug.Commands
 {
@@ -49,8 +50,14 @@ namespace Nitrocid.Shell.Shells.Debug.Commands
                     if (fields.Count > 0)
                     {
                         // Write the field names and their values
-                        SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("List of fields for") + $" {type.Name}", true);
-                        ListWriterColor.WriteList(fields);
+                        SeparatorWriterColor.WriteSeparatorColor(Translate.DoTranslation("List of fields for") + $" {type.Name}", KernelColorTools.GetColor(KernelColorType.ListTitle));
+                        var listing = new Listing()
+                        {
+                            Objects = fields,
+                            KeyColor = KernelColorTools.GetColor(KernelColorType.ListEntry),
+                            ValueColor = KernelColorTools.GetColor(KernelColorType.ListValue),
+                        };
+                        TextWriterRaw.WriteRaw(listing.Render());
                     }
                 }
                 catch (Exception ex)
@@ -73,7 +80,7 @@ namespace Nitrocid.Shell.Shells.Debug.Commands
                     if (fields.Count > 0)
                     {
                         // Write the field names and their values
-                        SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("List of fields for") + $" {type.Name}", true);
+                        TextWriterColor.Write(Translate.DoTranslation("List of fields for") + $" {type.Name}");
                         foreach (var field in fields)
                             TextWriterColor.Write($"  - {field.Key} [{field.Value}]");
                     }

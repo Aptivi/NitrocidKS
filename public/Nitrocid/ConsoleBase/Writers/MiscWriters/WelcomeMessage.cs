@@ -32,6 +32,7 @@ using Terminaux.Inputs;
 using Textify.Data.Figlet;
 using Terminaux.Inputs.Styles;
 using System;
+using Terminaux.Writer.FancyWriters;
 
 namespace Nitrocid.ConsoleBase.Writers.MiscWriters
 {
@@ -118,7 +119,7 @@ namespace Nitrocid.ConsoleBase.Writers.MiscWriters
         /// </summary>
         public static void WriteLicense()
         {
-            TextFancyWriters.WriteSeparator(Translate.DoTranslation("License information"), KernelColorType.Stage);
+            SeparatorWriterColor.WriteSeparatorColor(Translate.DoTranslation("License information"), KernelColorTools.GetColor(KernelColorType.Stage));
             TextWriters.Write("\n" + GetLicenseString(), true, KernelColorType.License);
         }
 

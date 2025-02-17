@@ -28,6 +28,9 @@ using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Threading;
 using Terminaux.Base;
 using Terminaux.Colors.Data;
+using Terminaux.Writer.CyclicWriters.Renderer;
+using Terminaux.Colors.Transformation;
+using Terminaux.Writer.CyclicWriters;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
@@ -107,12 +110,41 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Get the console height and width needed to draw the progress bar
             int oneSixthOfConsoleWidth = ConsoleWrapper.WindowWidth / 6;
+
+            // Draw the bass bar
+            var bassMeter = new SimpleProgress((int)bassHeight, 100)
+            {
+                Vertical = true,
+                Height = 6,
+                ProgressActiveForegroundColor = ConsoleColors.Red1,
+                ProgressForegroundColor = TransformationTools.GetDarkBackground(ConsoleColors.Red1),
+            };
+            TextWriterRaw.WriteRaw(ContainerTools.RenderRenderable(bassMeter, new(oneSixthOfConsoleWidth, 1)));
+
+            // Draw the mid bar
+            var midMeter = new SimpleProgress((int)midHeight, 100)
+            {
+                Vertical = true,
+                Height = 6,
+                ProgressActiveForegroundColor = ConsoleColors.Pink1,
+                ProgressForegroundColor = TransformationTools.GetDarkBackground(ConsoleColors.Pink1),
+            };
+            TextWriterRaw.WriteRaw(ContainerTools.RenderRenderable(midMeter, new(oneSixthOfConsoleWidth * 3, 1)));
+
+            // Draw the treble bar
+            var trebleMeter = new SimpleProgress((int)trebleHeight, 100)
+            {
+                Vertical = true,
+                Height = 6,
+                ProgressActiveForegroundColor = ConsoleColors.Blue1,
+                ProgressForegroundColor = TransformationTools.GetDarkBackground(ConsoleColors.Blue1),
+            };
+            TextWriterRaw.WriteRaw(ContainerTools.RenderRenderable(trebleMeter, new(oneSixthOfConsoleWidth * 5, 1)));
+
+            // Write the preset name
             int infoMessageHeight = ConsoleWrapper.WindowHeight - 2;
             string infoMessage = $"<< {presetName} >>";
             int infoMessageWidth = ConsoleWrapper.WindowWidth / 2 - infoMessage.Length / 2;
-            ProgressBarVerticalColor.WriteVerticalProgress(bassHeight, oneSixthOfConsoleWidth, 1, 6, new Color(ConsoleColors.Red1));
-            ProgressBarVerticalColor.WriteVerticalProgress(midHeight, oneSixthOfConsoleWidth * 3, 1, 6, new Color(ConsoleColors.Pink1));
-            ProgressBarVerticalColor.WriteVerticalProgress(trebleHeight, oneSixthOfConsoleWidth * 5, 1, 6, new Color(ConsoleColors.Blue1));
             TextWriterWhereColor.WriteWhere(infoMessage, infoMessageWidth, infoMessageHeight);
             ThreadManager.SleepNoBlock(EqualizerSettings.EqualizerNextScreenDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
         }

@@ -24,6 +24,7 @@ using Nitrocid.Languages;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.ConsoleBase.Writers;
 using Nitrocid.ConsoleBase.Colors;
+using Terminaux.Writer.CyclicWriters;
 
 namespace Nitrocid.Extras.Dictionary.Commands
 {
@@ -46,17 +47,17 @@ namespace Nitrocid.Extras.Dictionary.Commands
                 // First, print the license out
                 if (Word.LicenseInfo is not null)
                 {
-                    SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("License information"), true);
+                    SeparatorWriterColor.WriteSeparatorColor(Translate.DoTranslation("License information"), KernelColorTools.GetColor(KernelColorType.ListTitle));
                     TextWriterColor.Write("dictionaryapi.dev " + Translate.DoTranslation("API is licensed under") + $" {Word.LicenseInfo.Name}: {Word.LicenseInfo.Url}");
                 }
 
                 // Now, we can write the word information
-                SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("Word information for") + $" {parameters.ArgumentsList[0]}", true);
+                SeparatorWriterColor.WriteSeparatorColor(Translate.DoTranslation("Word information for") + $" {parameters.ArgumentsList[0]}", KernelColorTools.GetColor(KernelColorType.ListTitle));
                 TextWriters.Write(Translate.DoTranslation("Word:"), false, KernelColorType.ListEntry);
                 TextWriters.Write($" {Word.Word}", true, KernelColorType.ListValue);
 
                 // Meanings...
-                SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("Word meanings for") + $" {parameters.ArgumentsList[0]}", true);
+                SeparatorWriterColor.WriteSeparatorColor(Translate.DoTranslation("Word meanings for") + $" {parameters.ArgumentsList[0]}", KernelColorTools.GetColor(KernelColorType.ListTitle));
                 foreach (DictionaryWord.Meaning MeaningBase in Word.Meanings ?? [])
                 {
                     // Base part of speech
@@ -76,14 +77,26 @@ namespace Nitrocid.Extras.Dictionary.Commands
                         if (DefinitionBase.Synonyms is not null && DefinitionBase.Synonyms.Length != 0)
                         {
                             TextWriters.Write("  - " + Translate.DoTranslation("Synonyms:"), true, KernelColorType.ListEntry);
-                            ListWriterColor.WriteList(DefinitionBase.Synonyms);
+                            var listing = new Listing()
+                            {
+                                Objects = DefinitionBase.Synonyms,
+                                KeyColor = KernelColorTools.GetColor(KernelColorType.ListEntry),
+                                ValueColor = KernelColorTools.GetColor(KernelColorType.ListValue),
+                            };
+                            TextWriterRaw.WriteRaw(listing.Render());
                         }
 
                         // ...and the specific antonyms (usually blank)
                         if (DefinitionBase.Antonyms is not null && DefinitionBase.Antonyms.Length != 0)
                         {
                             TextWriters.Write("  - " + Translate.DoTranslation("Antonyms:"), true, KernelColorType.ListEntry);
-                            ListWriterColor.WriteList(DefinitionBase.Antonyms);
+                            var listing = new Listing()
+                            {
+                                Objects = DefinitionBase.Antonyms,
+                                KeyColor = KernelColorTools.GetColor(KernelColorType.ListEntry),
+                                ValueColor = KernelColorTools.GetColor(KernelColorType.ListValue),
+                            };
+                            TextWriterRaw.WriteRaw(listing.Render());
                         }
                     }
 
@@ -91,20 +104,38 @@ namespace Nitrocid.Extras.Dictionary.Commands
                     if (MeaningBase.Synonyms is not null && MeaningBase.Synonyms.Length != 0)
                     {
                         TextWriters.Write("  - " + Translate.DoTranslation("Synonyms:"), true, KernelColorType.ListEntry);
-                        ListWriterColor.WriteList(MeaningBase.Synonyms);
+                        var listing = new Listing()
+                        {
+                            Objects = MeaningBase.Synonyms,
+                            KeyColor = KernelColorTools.GetColor(KernelColorType.ListEntry),
+                            ValueColor = KernelColorTools.GetColor(KernelColorType.ListValue),
+                        };
+                        TextWriterRaw.WriteRaw(listing.Render());
                     }
 
                     // ...and the base antonyms (usually blank)
                     if (MeaningBase.Antonyms is not null && MeaningBase.Antonyms.Length != 0)
                     {
                         TextWriters.Write("  - " + Translate.DoTranslation("Antonyms:"), true, KernelColorType.ListEntry);
-                        ListWriterColor.WriteList(MeaningBase.Antonyms);
+                        var listing = new Listing()
+                        {
+                            Objects = MeaningBase.Antonyms,
+                            KeyColor = KernelColorTools.GetColor(KernelColorType.ListEntry),
+                            ValueColor = KernelColorTools.GetColor(KernelColorType.ListValue),
+                        };
+                        TextWriterRaw.WriteRaw(listing.Render());
                     }
                 }
 
                 // Sources...
-                SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("Sources used to define") + $" {parameters.ArgumentsList[0]}", true);
-                ListWriterColor.WriteList(Word.SourceUrls ?? []);
+                SeparatorWriterColor.WriteSeparatorColor(Translate.DoTranslation("Sources used to define") + $" {parameters.ArgumentsList[0]}", KernelColorTools.GetColor(KernelColorType.ListTitle));
+                var sources = new Listing()
+                {
+                    Objects = Word.SourceUrls ?? [],
+                    KeyColor = KernelColorTools.GetColor(KernelColorType.ListEntry),
+                    ValueColor = KernelColorTools.GetColor(KernelColorType.ListValue),
+                };
+                TextWriterRaw.WriteRaw(sources.Render());
             }
             return 0;
         }

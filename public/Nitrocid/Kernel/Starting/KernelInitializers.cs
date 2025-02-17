@@ -63,6 +63,7 @@ using Terminaux.Base.Extensions;
 using System.Collections.Generic;
 using System.Text;
 using Nitrocid.Kernel.Exceptions;
+using Terminaux.Writer.FancyWriters;
 
 namespace Nitrocid.Kernel.Starting
 {
@@ -312,7 +313,7 @@ namespace Nitrocid.Kernel.Starting
             // Some information
             if (WelcomeMessage.ShowAppInfoOnBoot & !SplashManager.EnableSplash)
             {
-                TextFancyWriters.WriteSeparator(Translate.DoTranslation("Kernel environment information"), KernelColorType.Stage);
+                SeparatorWriterColor.WriteSeparatorColor(Translate.DoTranslation("Kernel environment information"), KernelColorTools.GetColor(KernelColorType.Stage));
                 TextWriterColor.Write("  OS: " + Translate.DoTranslation("Running on {0}"), System.Environment.OSVersion.ToString());
                 TextWriterColor.Write("  KS: " + Translate.DoTranslation("Running from GRILO?") + $" {KernelPlatform.IsRunningFromGrilo()}");
                 TextWriterColor.Write("  KSAPI: " + $"v{KernelMain.ApiVersion}");

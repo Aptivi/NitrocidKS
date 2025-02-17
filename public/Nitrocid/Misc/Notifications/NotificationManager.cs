@@ -42,7 +42,10 @@ using Nitrocid.Files.Operations.Querying;
 using Nitrocid.Kernel.Power;
 using Terminaux.Base;
 using Terminaux.Base.Extensions;
-using Terminaux.Writer.FancyWriters.Tools;
+using Terminaux.Writer.CyclicWriters.Renderer.Tools;
+using Terminaux.Writer.CyclicWriters;
+using Terminaux.Writer.CyclicWriters.Renderer;
+using Terminaux.Colors.Transformation;
 
 namespace Nitrocid.Misc.Notifications
 {
@@ -270,8 +273,8 @@ namespace Nitrocid.Misc.Notifications
                                     CurrentNotifyRightFrameChar = NewNotification.CustomRightFrameChar;
                                 }
 
-                                // Make a border instance
-                                var border = new BorderSettings()
+                                // Just draw the border!
+                                var borderSettings = new BorderSettings()
                                 {
                                     BorderUpperLeftCornerChar = CurrentNotifyUpperLeftCornerChar,
                                     BorderLowerLeftCornerChar = CurrentNotifyLowerLeftCornerChar,
@@ -282,13 +285,17 @@ namespace Nitrocid.Misc.Notifications
                                     BorderLeftFrameChar = CurrentNotifyLeftFrameChar,
                                     BorderRightFrameChar = CurrentNotifyRightFrameChar
                                 };
-
-                                // Just draw the border!
-                                printBuffer.Append(
-                                    BorderColor.RenderBorder(
-                                        notifLeftAgnostic - 1, notifTopAgnostic, notifWidth, 3, border, NotifyBorderColor, background
-                                    )
-                                );
+                                var border = new Border()
+                                {
+                                    Left = notifLeftAgnostic - 1,
+                                    Top = notifTopAgnostic,
+                                    InteriorWidth = notifWidth,
+                                    InteriorHeight = 3,
+                                    Color = NotifyBorderColor,
+                                    BackgroundColor = background,
+                                    Settings = borderSettings
+                                };
+                                printBuffer.Append(border.Render());
                             }
 
                             // Write notification to console
@@ -330,6 +337,13 @@ namespace Nitrocid.Misc.Notifications
                                 string renderedProgressTitleFailure = $"{ProgressTitle} ({Translate.DoTranslation("Failure")})".Truncate(36);
 
                                 // Loop until the progress is finished
+                                var progress = new SimpleProgress(NewNotification.Progress, 100)
+                                {
+                                    Indeterminate = indeterminate,
+                                    LeftMargin = ConsoleWrapper.WindowWidth - 42,
+                                    ProgressActiveForegroundColor = NotifyProgressColor,
+                                    ProgressForegroundColor = TransformationTools.GetDarkBackground(NotifyProgressColor),
+                                };
                                 while (NewNotification.ProgressState == NotificationProgressState.Progressing)
                                 {
                                     // Change the title according to the current progress percentage
@@ -346,7 +360,8 @@ namespace Nitrocid.Misc.Notifications
                                     printBuffer.Append(TextWriterWhereColor.RenderWhereColorBack(Desc, notifLeftAgnostic, notifDescTop, NotifyDescColor, background));
 
                                     // For indeterminate progresses, flash the box inside the progress bar
-                                    ProgressBarColor.WriteProgress(indeterminate ? 100 * indeterminateStep : NewNotification.Progress, notifLeftAgnostic, notifTipTop, 42, NotifyProgressColor, NotifyBorderColor, KernelColorTools.GetColor(KernelColorType.Background), DrawBorderNotification);
+                                    progress.Position = NewNotification.Progress;
+                                    TextWriterRaw.WriteRaw(ContainerTools.RenderRenderable(progress, new(notifLeftAgnostic, notifTipTop)));
                                     indeterminateStep++;
                                     if (indeterminateStep > 1)
                                         indeterminateStep = 0;

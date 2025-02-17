@@ -27,11 +27,12 @@ using Nitrocid.Misc.Screensaver;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Languages;
 using Nitrocid.Drivers.Encryption;
-using Terminaux.Writer.FancyWriters;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Drivers.RNG;
 using Terminaux.Base;
 using Terminaux.Colors.Data;
+using Terminaux.Writer.CyclicWriters;
+using Terminaux.Writer.CyclicWriters.Renderer.Tools;
+using Nitrocid.Kernel.Threading;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
@@ -227,7 +228,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "WordHasherWrite";
+        public override string ScreensaverName =>
+            "WordHasherWrite";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -241,7 +243,17 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             int figHeight = FigletTools.GetFigletHeight(word, figFont) / 2;
             int consoleY = ConsoleWrapper.WindowHeight / 2 - figHeight;
             int hashY = ConsoleWrapper.WindowHeight / 2 + figHeight + 2;
-            CenteredFigletTextColor.WriteCenteredFigletColor(consoleY, figFont, word, ConsoleColors.Green);
+            var wordText = new AlignedFigletText(figFont)
+            {
+                Top = consoleY,
+                Text = word,
+                ForegroundColor = ConsoleColors.Green,
+                Settings = new()
+                {
+                    Alignment = TextAlignment.Middle,
+                }
+            };
+            TextWriterRaw.WriteRaw(wordText.Render());
             TextWriterWhereColor.WriteWhereColor(wordHash, (int)Math.Round(ConsoleWrapper.WindowWidth / 2d - wordHash.Length / 2d), hashY, ConsoleColors.Green);
         }
 
@@ -265,7 +277,17 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 int hashY = ConsoleWrapper.WindowHeight / 2 + figHeight + 2;
                 ThreadManager.SleepNoBlock(250, ScreensaverDisplayer.ScreensaverDisplayerThread);
                 ConsoleWrapper.Clear();
-                CenteredFigletTextColor.WriteCenteredFigletColor(consoleY, figFont, finalWord, hasherColor);
+                var wordText = new AlignedFigletText(figFont)
+                {
+                    Top = consoleY,
+                    Text = finalWord,
+                    ForegroundColor = hasherColor,
+                    Settings = new()
+                    {
+                        Alignment = TextAlignment.Middle,
+                    }
+                };
+                TextWriterRaw.WriteRaw(wordText.Render());
                 TextWriterWhereColor.WriteWhereColor(wordHash, (int)Math.Round(ConsoleWrapper.WindowWidth / 2d - wordHash.Length / 2d), hashY, hasherColor);
             }
 
@@ -285,7 +307,17 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 int hashY = ConsoleWrapper.WindowHeight / 2 + figHeight + 2;
                 ThreadManager.SleepNoBlock(250, ScreensaverDisplayer.ScreensaverDisplayerThread);
                 ConsoleWrapper.Clear();
-                CenteredFigletTextColor.WriteCenteredFigletColor(consoleY, figFont, finalWord, hasherColor);
+                var wordText = new AlignedFigletText(figFont)
+                {
+                    Top = consoleY,
+                    Text = finalWord,
+                    ForegroundColor = hasherColor,
+                    Settings = new()
+                    {
+                        Alignment = TextAlignment.Middle,
+                    }
+                };
+                TextWriterRaw.WriteRaw(wordText.Render());
                 TextWriterWhereColor.WriteWhereColor(wordHash, (int)Math.Round(ConsoleWrapper.WindowWidth / 2d - wordHash.Length / 2d), hashY, hasherColor);
             }
         }
@@ -296,16 +328,16 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private Color ChangeWordHasherWriteColor()
         {
             Color ColorInstance;
-            if (WordHasherWriteSettings.WordHasherWriteTrueColor)
+            if (ScreensaverPackInit.SaversConfig.WordHasherWriteTrueColor)
             {
-                int RedColorNum = RandomDriver.Random(WordHasherWriteSettings.WordHasherWriteMinimumRedColorLevel, WordHasherWriteSettings.WordHasherWriteMaximumRedColorLevel);
-                int GreenColorNum = RandomDriver.Random(WordHasherWriteSettings.WordHasherWriteMinimumGreenColorLevel, WordHasherWriteSettings.WordHasherWriteMaximumGreenColorLevel);
-                int BlueColorNum = RandomDriver.Random(WordHasherWriteSettings.WordHasherWriteMinimumBlueColorLevel, WordHasherWriteSettings.WordHasherWriteMaximumBlueColorLevel);
+                int RedColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.WordHasherWriteMinimumRedColorLevel, ScreensaverPackInit.SaversConfig.WordHasherWriteMaximumRedColorLevel);
+                int GreenColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.WordHasherWriteMinimumGreenColorLevel, ScreensaverPackInit.SaversConfig.WordHasherWriteMaximumGreenColorLevel);
+                int BlueColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.WordHasherWriteMinimumBlueColorLevel, ScreensaverPackInit.SaversConfig.WordHasherWriteMaximumBlueColorLevel);
                 ColorInstance = new Color(RedColorNum, GreenColorNum, BlueColorNum);
             }
             else
             {
-                int ColorNum = RandomDriver.Random(WordHasherWriteSettings.WordHasherWriteMinimumColorLevel, WordHasherWriteSettings.WordHasherWriteMaximumColorLevel);
+                int ColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.WordHasherWriteMinimumColorLevel, ScreensaverPackInit.SaversConfig.WordHasherWriteMaximumColorLevel);
                 ColorInstance = new Color(ColorNum);
             }
             return ColorInstance;

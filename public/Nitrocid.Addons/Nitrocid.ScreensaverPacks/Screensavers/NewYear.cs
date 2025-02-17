@@ -24,12 +24,13 @@ using Nitrocid.Kernel.Debugging;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Kernel.Time;
-using Terminaux.Writer.FancyWriters;
 using Nitrocid.Languages;
-using Nitrocid.Kernel.Threading;
 using Terminaux.Base;
 using Terminaux.Colors.Data;
 using Nitrocid.Kernel.Configuration;
+using Terminaux.Writer.CyclicWriters;
+using Terminaux.Writer.CyclicWriters.Renderer.Tools;
+using Nitrocid.Kernel.Threading;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
@@ -40,7 +41,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "NewYear";
+        public override string ScreensaverName =>
+            "NewYear";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -48,7 +50,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             // Variable preparations
             ColorTools.LoadBackDry(new Color(ConsoleColors.Black));
             ConsoleWrapper.CursorVisible = false;
-            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
+            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", vars: [ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight]);
         }
 
         /// <inheritdoc/>
@@ -69,13 +71,33 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 string currentYearStr = currentYear.ToString();
                 var figFont = FigletTools.GetFigletFont(Config.MainConfig.DefaultFigletFontName);
                 int figHeight = FigletTools.GetFigletHeight(currentYearStr, figFont) / 2;
-                CenteredFigletTextColor.WriteCenteredFigletColorBack(figFont, currentYearStr, green, black);
+                var yearText = new AlignedFigletText(figFont)
+                {
+                    Text = currentYearStr,
+                    ForegroundColor = green,
+                    BackgroundColor = black,
+                    Settings = new()
+                    {
+                        Alignment = TextAlignment.Middle,
+                    }
+                };
+                TextWriterRaw.WriteRaw(yearText.Render());
 
                 // Congratulate!
                 string cong = Translate.DoTranslation("Happy new year!");
-                int consoleInfoX = ConsoleWrapper.WindowWidth / 2 - cong.Length / 2;
                 int consoleInfoY = ConsoleWrapper.WindowHeight / 2 + figHeight + 2;
-                TextWriterWhereColor.WriteWhereColorBack(cong, consoleInfoX, consoleInfoY, green, black);
+                var congratsText = new AlignedText()
+                {
+                    Top = consoleInfoY,
+                    Text = cong,
+                    ForegroundColor = green,
+                    BackgroundColor = black,
+                    Settings = new()
+                    {
+                        Alignment = TextAlignment.Middle,
+                    }
+                };
+                TextWriterRaw.WriteRaw(congratsText.Render());
             }
             else
             {
@@ -83,14 +105,35 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 string nextYearStr = $"{currentYear + 1}";
                 var figFont = FigletTools.GetFigletFont(Config.MainConfig.DefaultFigletFontName);
                 int figHeight = FigletTools.GetFigletHeight(nextYearStr, figFont) / 2;
-                CenteredFigletTextColor.WriteCenteredFigletColorBack(figFont, nextYearStr, darkGreen, black);
+                var yearText = new AlignedFigletText(figFont)
+                {
+                    Text = nextYearStr,
+                    ForegroundColor = darkGreen,
+                    BackgroundColor = black,
+                    Settings = new()
+                    {
+                        Alignment = TextAlignment.Middle,
+                    }
+                };
+                TextWriterRaw.WriteRaw(yearText.Render());
 
                 // Print the time remaining
                 var nextYearDate = new DateTime(currentYear + 1, 1, 1);
                 var distance = nextYearDate - TimeDateTools.KernelDateTime;
-                string distanceStr = distance.ToString("dd\\d\\ hh\\:mm\\:ss") + " left till " + nextYearStr;
+                string distanceStr = distance.ToString("dd\\d\\ hh\\:mm\\:ss") + " " + Translate.DoTranslation("left until the next year");
                 int consoleInfoY = ConsoleWrapper.WindowHeight / 2 + figHeight + 2;
-                CenteredTextColor.WriteCenteredColorBack(consoleInfoY, distanceStr, darkGreen, black);
+                var distanceText = new AlignedText()
+                {
+                    Top = consoleInfoY,
+                    Text = distanceStr,
+                    ForegroundColor = darkGreen,
+                    BackgroundColor = black,
+                    Settings = new()
+                    {
+                        Alignment = TextAlignment.Middle,
+                    }
+                };
+                TextWriterRaw.WriteRaw(distanceText.Render());
             }
 
             // Reset

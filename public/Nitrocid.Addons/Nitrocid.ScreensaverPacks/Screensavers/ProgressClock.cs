@@ -31,7 +31,8 @@ using Nitrocid.Kernel.Time.Renderers;
 using Nitrocid.Kernel.Threading;
 using Terminaux.Base;
 using Terminaux.Base.Extensions;
-using Terminaux.Writer.FancyWriters.Tools;
+using Terminaux.Writer.CyclicWriters.Renderer.Tools;
+using Terminaux.Writer.CyclicWriters;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
@@ -911,49 +912,79 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             InformationPositionSeconds = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d) + 6;
             DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Fill position for info (Seconds) {0}", InformationPositionSeconds);
 
+            // Populate the border settings
+            var hoursBorder = new BorderSettings()
+            {
+                BorderUpperLeftCornerChar = ScreensaverPackInit.SaversConfig.ProgressClockUpperLeftCornerCharHours,
+                BorderLowerLeftCornerChar = ScreensaverPackInit.SaversConfig.ProgressClockLowerLeftCornerCharHours,
+                BorderUpperRightCornerChar = ScreensaverPackInit.SaversConfig.ProgressClockUpperRightCornerCharHours,
+                BorderLowerRightCornerChar = ScreensaverPackInit.SaversConfig.ProgressClockLowerRightCornerCharHours,
+                BorderUpperFrameChar = ScreensaverPackInit.SaversConfig.ProgressClockUpperFrameCharHours,
+                BorderLowerFrameChar = ScreensaverPackInit.SaversConfig.ProgressClockLowerFrameCharHours,
+                BorderLeftFrameChar = ScreensaverPackInit.SaversConfig.ProgressClockLeftFrameCharHours,
+                BorderRightFrameChar = ScreensaverPackInit.SaversConfig.ProgressClockRightFrameCharHours,
+            };
+            var minutesBorder = new BorderSettings()
+            {
+                BorderUpperLeftCornerChar = ScreensaverPackInit.SaversConfig.ProgressClockUpperLeftCornerCharMinutes,
+                BorderLowerLeftCornerChar = ScreensaverPackInit.SaversConfig.ProgressClockLowerLeftCornerCharMinutes,
+                BorderUpperRightCornerChar = ScreensaverPackInit.SaversConfig.ProgressClockUpperRightCornerCharMinutes,
+                BorderLowerRightCornerChar = ScreensaverPackInit.SaversConfig.ProgressClockLowerRightCornerCharMinutes,
+                BorderUpperFrameChar = ScreensaverPackInit.SaversConfig.ProgressClockUpperFrameCharMinutes,
+                BorderLowerFrameChar = ScreensaverPackInit.SaversConfig.ProgressClockLowerFrameCharMinutes,
+                BorderLeftFrameChar = ScreensaverPackInit.SaversConfig.ProgressClockLeftFrameCharMinutes,
+                BorderRightFrameChar = ScreensaverPackInit.SaversConfig.ProgressClockRightFrameCharMinutes,
+            };
+            var secondsBorder = new BorderSettings()
+            {
+                BorderUpperLeftCornerChar = ScreensaverPackInit.SaversConfig.ProgressClockUpperLeftCornerCharSeconds,
+                BorderLowerLeftCornerChar = ScreensaverPackInit.SaversConfig.ProgressClockLowerLeftCornerCharSeconds,
+                BorderUpperRightCornerChar = ScreensaverPackInit.SaversConfig.ProgressClockUpperRightCornerCharSeconds,
+                BorderLowerRightCornerChar = ScreensaverPackInit.SaversConfig.ProgressClockLowerRightCornerCharSeconds,
+                BorderUpperFrameChar = ScreensaverPackInit.SaversConfig.ProgressClockUpperFrameCharSeconds,
+                BorderLowerFrameChar = ScreensaverPackInit.SaversConfig.ProgressClockLowerFrameCharSeconds,
+                BorderLeftFrameChar = ScreensaverPackInit.SaversConfig.ProgressClockLeftFrameCharSeconds,
+                BorderRightFrameChar = ScreensaverPackInit.SaversConfig.ProgressClockRightFrameCharSeconds,
+            };
+
+            // Render the progress clock bars
             if (!ConsoleResizeHandler.WasResized(false))
             {
                 // Hours
-                var hoursBorder = new BorderSettings()
+                var hoursBoxFrame = new BoxFrame()
                 {
-                    BorderUpperLeftCornerChar = ProgressClockSettings.ProgressClockUpperLeftCornerCharHours,
-                    BorderLowerLeftCornerChar = ProgressClockSettings.ProgressClockLowerLeftCornerCharHours,
-                    BorderUpperRightCornerChar = ProgressClockSettings.ProgressClockUpperRightCornerCharHours,
-                    BorderLowerRightCornerChar = ProgressClockSettings.ProgressClockLowerRightCornerCharHours,
-                    BorderUpperFrameChar = ProgressClockSettings.ProgressClockUpperFrameCharHours,
-                    BorderLowerFrameChar = ProgressClockSettings.ProgressClockLowerFrameCharHours,
-                    BorderLeftFrameChar = ProgressClockSettings.ProgressClockLeftFrameCharHours,
-                    BorderRightFrameChar = ProgressClockSettings.ProgressClockRightFrameCharHours
+                    Left = 4,
+                    Top = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d) - 11,
+                    InteriorWidth = ConsoleWrapper.WindowWidth - 10,
+                    InteriorHeight = 1,
+                    Settings = hoursBorder,
+                    FrameColor = ColorStorageHours,
                 };
-                BoxFrameColor.WriteBoxFrame(4, (int)Math.Round(ConsoleWrapper.WindowHeight / 2d) - 11, ConsoleWrapper.WindowWidth - 10, 1, hoursBorder, ColorStorageHours);
+                TextWriterRaw.WriteRaw(hoursBoxFrame.Render());
 
                 // Minutes
-                var minutesBorder = new BorderSettings()
+                var minutesBoxFrame = new BoxFrame()
                 {
-                    BorderUpperLeftCornerChar = ProgressClockSettings.ProgressClockUpperLeftCornerCharMinutes,
-                    BorderLowerLeftCornerChar = ProgressClockSettings.ProgressClockLowerLeftCornerCharMinutes,
-                    BorderUpperRightCornerChar = ProgressClockSettings.ProgressClockUpperRightCornerCharMinutes,
-                    BorderLowerRightCornerChar = ProgressClockSettings.ProgressClockLowerRightCornerCharMinutes,
-                    BorderUpperFrameChar = ProgressClockSettings.ProgressClockUpperFrameCharMinutes,
-                    BorderLowerFrameChar = ProgressClockSettings.ProgressClockLowerFrameCharMinutes,
-                    BorderLeftFrameChar = ProgressClockSettings.ProgressClockLeftFrameCharMinutes,
-                    BorderRightFrameChar = ProgressClockSettings.ProgressClockRightFrameCharMinutes
+                    Left = 4,
+                    Top = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d) - 2,
+                    InteriorWidth = ConsoleWrapper.WindowWidth - 10,
+                    InteriorHeight = 1,
+                    Settings = minutesBorder,
+                    FrameColor = ColorStorageMinutes,
                 };
-                BoxFrameColor.WriteBoxFrame(4, (int)Math.Round(ConsoleWrapper.WindowHeight / 2d) - 2, ConsoleWrapper.WindowWidth - 10, 1, minutesBorder, ColorStorageMinutes);
+                TextWriterRaw.WriteRaw(minutesBoxFrame.Render());
 
                 // Seconds
-                var secondsBorder = new BorderSettings()
+                var secondsBoxFrame = new BoxFrame()
                 {
-                    BorderUpperLeftCornerChar = ProgressClockSettings.ProgressClockUpperLeftCornerCharSeconds,
-                    BorderLowerLeftCornerChar = ProgressClockSettings.ProgressClockLowerLeftCornerCharSeconds,
-                    BorderUpperRightCornerChar = ProgressClockSettings.ProgressClockUpperRightCornerCharSeconds,
-                    BorderLowerRightCornerChar = ProgressClockSettings.ProgressClockLowerRightCornerCharSeconds,
-                    BorderUpperFrameChar = ProgressClockSettings.ProgressClockUpperFrameCharSeconds,
-                    BorderLowerFrameChar = ProgressClockSettings.ProgressClockLowerFrameCharSeconds,
-                    BorderLeftFrameChar = ProgressClockSettings.ProgressClockLeftFrameCharSeconds,
-                    BorderRightFrameChar = ProgressClockSettings.ProgressClockRightFrameCharSeconds
+                    Left = 4,
+                    Top = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d) + 7,
+                    InteriorWidth = ConsoleWrapper.WindowWidth - 10,
+                    InteriorHeight = 1,
+                    Settings = secondsBorder,
+                    FrameColor = ColorStorageSeconds,
                 };
-                BoxFrameColor.WriteBoxFrame(4, (int)Math.Round(ConsoleWrapper.WindowHeight / 2d) + 7, ConsoleWrapper.WindowWidth - 10, 1, secondsBorder, ColorStorageSeconds);
+                TextWriterRaw.WriteRaw(secondsBoxFrame.Render());
 
                 // Fill progress for hours, minutes, and seconds
                 if (TimeDateTools.KernelDateTime.Hour != 0)

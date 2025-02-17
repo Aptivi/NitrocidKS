@@ -20,13 +20,13 @@
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Nitrocid.Analyzers.Common;
 using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Terminaux.Colors.Data;
 using Terminaux.Writer.ConsoleWriters;
-using Terminaux.Writer.MiscWriters;
 
 namespace Nitrocid.StandaloneAnalyzer.Analyzers
 {
@@ -53,10 +53,7 @@ namespace Nitrocid.StandaloneAnalyzer.Analyzers
                         var idName = name.Identifier.Text;
                         if (idName == nameof(Directory.GetFileSystemEntries))
                         {
-                            var lineSpan = location.GetLineSpan();
-                            TextWriterColor.WriteColor($"{GetType().Name}: {document.FilePath} ({lineSpan.StartLinePosition} -> {lineSpan.EndLinePosition}): Caller uses Directory.GetFileSystemEntries instead of Listing.GetFileSystemEntries()", true, ConsoleColors.Yellow);
-                            if (!string.IsNullOrEmpty(document.FilePath))
-                                LineHandleRangedWriter.PrintLineWithHandle(document.FilePath, lineSpan.StartLinePosition.Line + 1, lineSpan.StartLinePosition.Character + 1, lineSpan.EndLinePosition.Character);
+                            AnalyzerTools.PrintFromLocation(location, document, GetType(), "Caller uses Directory.GetFileSystemEntries instead of FilesystemTools.GetFileSystemEntries()");
                             found = true;
                         }
                     }
@@ -83,8 +80,8 @@ namespace Nitrocid.StandaloneAnalyzer.Analyzers
                     if (idName.Identifier.Text != nameof(Directory.GetFileSystemEntries))
                         continue;
 
-                    // We need to have a syntax that calls Listing.GetFilesystemEntries
-                    var classSyntax = SyntaxFactory.IdentifierName("Listing");
+                    // We need to have a syntax that calls FilesystemTools.GetFilesystemEntries
+                    var classSyntax = SyntaxFactory.IdentifierName("FilesystemTools");
                     var methodSyntax = SyntaxFactory.IdentifierName("GetFilesystemEntries");
                     var resultSyntax = SyntaxFactory.MemberAccessExpression(SyntaxKind.SimpleMemberAccessExpression, classSyntax, methodSyntax);
                     var replacedSyntax = resultSyntax

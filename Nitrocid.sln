@@ -212,6 +212,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helpers", "Helpers", "{350F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nitrocid.BuildTargets", "private\Nitrocid.BuildTargets\Nitrocid.BuildTargets.csproj", "{AB385851-26D6-4A89-88D7-2ED9E342D815}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Nitrocid.Analyzers.Common", "public\Nitrocid.Analyzers\Nitrocid.Analyzers.Common\Nitrocid.Analyzers.Common.shproj", "{89BB6864-5DA5-4BAD-97C2-5436C82AF842}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -513,6 +515,7 @@ Global
 		{AD6E464F-9B35-4070-AA9C-90EF64CD5F6F} = {D0F42572-AC47-4E45-943B-80EF3A7C27D0}
 		{350FEA5E-D8FA-4B4C-A0D2-F08975F37E5B} = {61916ED1-66D6-4938-9F1A-D0DF38D16E20}
 		{AB385851-26D6-4A89-88D7-2ED9E342D815} = {350FEA5E-D8FA-4B4C-A0D2-F08975F37E5B}
+		{89BB6864-5DA5-4BAD-97C2-5436C82AF842} = {60986DC6-07C5-40D1-A305-741E8ABE39FC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {424D8E7A-CFEB-40AE-A79C-437D603177FD}
@@ -521,5 +524,8 @@ Global
 		private\Nitrocid.LocaleCommon\Nitrocid.LocaleCommon.projitems*{22744969-682d-4974-895e-53079da9ea3c}*SharedItemsImports = 5
 		private\Nitrocid.LocaleCommon\Nitrocid.LocaleCommon.projitems*{6524403f-f55e-4e8d-8a63-8a7d2fa518d3}*SharedItemsImports = 5
 		private\Nitrocid.LocaleCommon\Nitrocid.LocaleCommon.projitems*{709ac61b-b746-46a7-a5a0-390b9091be99}*SharedItemsImports = 13
+		public\Nitrocid.Analyzers\Nitrocid.Analyzers.Common\Nitrocid.Analyzers.Common.projitems*{73e76bbd-bcfd-4e43-9f17-f937a87a2d1b}*SharedItemsImports = 5
+		public\Nitrocid.Analyzers\Nitrocid.Analyzers.Common\Nitrocid.Analyzers.Common.projitems*{89bb6864-5da5-4bad-97c2-5436c82af842}*SharedItemsImports = 13
+		public\Nitrocid.Analyzers\Nitrocid.Analyzers.Common\Nitrocid.Analyzers.Common.projitems*{df07f4e1-47b2-452d-a200-f15f558c4977}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal

@@ -27,6 +27,7 @@ using System.Threading;
 using Nitrocid.Drivers.Console;
 using Terminaux.Base;
 using Nitrocid.Kernel.Configuration;
+using Terminaux.Writer.CyclicWriters;
 
 namespace Nitrocid.ConsoleBase.Writers
 {
@@ -53,8 +54,16 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="ListKeyColor">A key color.</param>
         /// <param name="ListValueColor">A value color.</param>
         public static void WriteList<TKey, TValue>(Dictionary<TKey, TValue> List, KernelColorType ListKeyColor, KernelColorType ListValueColor)
-            where TKey : notnull =>
-            ListWriterColor.WriteList(List, KernelColorTools.GetColor(ListKeyColor), KernelColorTools.GetColor(ListValueColor), Config.MainConfig.WrapListOutputs);
+            where TKey : notnull
+        {
+            var listing = new Listing()
+            {
+                Objects = List,
+                KeyColor = KernelColorTools.GetColor(ListKeyColor),
+                ValueColor = KernelColorTools.GetColor(ListValueColor),
+            };
+            TextWriterRaw.WriteRaw(listing.Render());
+        }
 
         /// <summary>
         /// Outputs the text into the terminal prompt with custom color support.
@@ -62,29 +71,16 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
         /// <param name="ListKeyColor">A key color.</param>
         /// <param name="ListValueColor">A value color.</param>
-        /// <param name="Wrap">Wraps the output as needed.</param>
-        public static void WriteList<TKey, TValue>(Dictionary<TKey, TValue> List, KernelColorType ListKeyColor, KernelColorType ListValueColor, bool Wrap)
-            where TKey : notnull =>
-            ListWriterColor.WriteList(List, KernelColorTools.GetColor(ListKeyColor), KernelColorTools.GetColor(ListValueColor), Wrap);
-
-        /// <summary>
-        /// Outputs the text into the terminal prompt with custom color support.
-        /// </summary>
-        /// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
-        /// <param name="ListKeyColor">A key color.</param>
-        /// <param name="ListValueColor">A value color.</param>
-        public static void WriteList<T>(IEnumerable<T> List, KernelColorType ListKeyColor, KernelColorType ListValueColor) =>
-            ListWriterColor.WriteList(List, KernelColorTools.GetColor(ListKeyColor), KernelColorTools.GetColor(ListValueColor), ConsoleTools.WrapListOutputs);
-
-        /// <summary>
-        /// Outputs the text into the terminal prompt with custom color support.
-        /// </summary>
-        /// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
-        /// <param name="ListKeyColor">A key color.</param>
-        /// <param name="ListValueColor">A value color.</param>
-        /// <param name="Wrap">Wraps the output as needed.</param>
-        public static void WriteList<T>(IEnumerable<T> List, KernelColorType ListKeyColor, KernelColorType ListValueColor, bool Wrap) =>
-            ListWriterColor.WriteList(List, KernelColorTools.GetColor(ListKeyColor), KernelColorTools.GetColor(ListValueColor), Wrap);
+        public static void WriteList<T>(IEnumerable<T> List, KernelColorType ListKeyColor, KernelColorType ListValueColor)
+        {
+            var listing = new Listing()
+            {
+                Objects = List,
+                KeyColor = KernelColorTools.GetColor(ListKeyColor),
+                ValueColor = KernelColorTools.GetColor(ListValueColor),
+            };
+            TextWriterRaw.WriteRaw(listing.Render());
+        }
 
         /// <summary>
         /// Outputs the text into the terminal prompt, and sets colors as needed.

@@ -23,12 +23,14 @@ using System.Collections.Generic;
 using Nitrocid.Shell.ShellBase.Scripting.Conditions;
 using Nitrocid.Kernel.Debugging;
 using Nitrocid.Shell.ShellBase.Shells;
-using Nitrocid.Files.Operations;
 using Nitrocid.Languages;
 using Nitrocid.Kernel.Exceptions;
-using Terminaux.Writer.MiscWriters;
 using Nitrocid.Kernel.Events;
 using Textify.General;
+using Nitrocid.ConsoleBase.Colors;
+using Terminaux.Writer.CyclicWriters;
+using Nitrocid.Files;
+using Nitrocid.Files.Operations;
 
 namespace Nitrocid.Shell.ShellBase.Scripting
 {
@@ -37,7 +39,6 @@ namespace Nitrocid.Shell.ShellBase.Scripting
     /// </summary>
     public static class UESHParse
     {
-
         /// <summary>
         /// Executes the UESH script
         /// </summary>
@@ -61,7 +62,7 @@ namespace Nitrocid.Shell.ShellBase.Scripting
                 {
                     // Get line
                     string Line = FileLines[l];
-                    DebugWriter.WriteDebug(DebugLevel.I, "Line {0}: \"{1}\"", LineNo, Line);
+                    DebugWriter.WriteDebug(DebugLevel.I, "Line {0}: \"{1}\"", vars: [LineNo, Line]);
 
                     // If $variable is found in string, initialize it
                     var SplitWords = Line.Split(' ');
@@ -90,7 +91,7 @@ namespace Nitrocid.Shell.ShellBase.Scripting
 
                     // Get line
                     string Line = FileLines[l];
-                    DebugWriter.WriteDebug(DebugLevel.I, "Line {0}: \"{1}\"", LineNo, Line);
+                    DebugWriter.WriteDebug(DebugLevel.I, "Line {0}: \"{1}\"", vars: [LineNo, Line]);
 
                     // First, trim the line from the left after checking the stack
                     string stackIndicator = new('|', commandStackNum);
@@ -103,10 +104,10 @@ namespace Nitrocid.Shell.ShellBase.Scripting
 
                         // If it still starts with the new stack indicator, throw an error
                         if (Line.StartsWith('|'))
-                            throw new KernelException(KernelExceptionType.UESHScript, Translate.DoTranslation("You can't declare the new block before you place expressions that support the creation, like conditions or loops. The stack number is {0}.") + " {1}:{2}\n{3}", commandStackNum, ScriptPath, LineNo, LineHandleWriter.RenderLineWithHandle(ScriptPath, LineNo, commandStackNum));
+                            throw new KernelException(KernelExceptionType.UESHScript, Translate.DoTranslation("You can't declare the new block before you place expressions that support the creation, like conditions or loops. The stack number is {0}.") + " {1}:{2}\n{3}", commandStackNum, ScriptPath, LineNo, GetLineHandle(ScriptPath, LineNo, commandStackNum, KernelColorType.Error));
                     }
                     else if (!Line.StartsWith(stackIndicator) && newCommandStackRequired)
-                        throw new KernelException(KernelExceptionType.UESHScript, Translate.DoTranslation("When starting a new block, make sure that you've indented the stack correctly. The stack number is {0}.") + " {1}:{2}\n{3}", commandStackNum, ScriptPath, LineNo, LineHandleWriter.RenderLineWithHandle(ScriptPath, LineNo, commandStackNum));
+                        throw new KernelException(KernelExceptionType.UESHScript, Translate.DoTranslation("When starting a new block, make sure that you've indented the stack correctly. The stack number is {0}.") + " {1}:{2}\n{3}", commandStackNum, ScriptPath, LineNo, GetLineHandle(ScriptPath, LineNo, commandStackNum, KernelColorType.Error));
                     else
                     {
                         if (retryLoopCondition && !justLint)
@@ -215,13 +216,13 @@ namespace Nitrocid.Shell.ShellBase.Scripting
                     // See if the line is a comment or command
                     if (!Line.StartsWith("#") & !Line.StartsWith(" "))
                     {
-                        DebugWriter.WriteDebug(DebugLevel.I, "Line {0} is not a comment.", Line);
+                        DebugWriter.WriteDebug(DebugLevel.I, "Line {0} is not a comment.", vars: [Line]);
                         if (!justLint)
                             ShellManager.GetLine(Line);
                     }
                     else
                         // For debugging purposes
-                        DebugWriter.WriteDebug(DebugLevel.I, "Line {0} is a comment.", Line);
+                        DebugWriter.WriteDebug(DebugLevel.I, "Line {0} is a comment.", vars: [Line]);
 
                     // Increment the new line number
                     LineNo++;
@@ -231,18 +232,28 @@ namespace Nitrocid.Shell.ShellBase.Scripting
             catch (KernelException ex)
             {
                 EventsManager.FireEvent(EventType.UESHError, ScriptPath, ScriptArguments, ex);
-                DebugWriter.WriteDebug(DebugLevel.E, "Error trying to execute script {0} with arguments {1}: {2}", ScriptPath, ScriptArguments, ex.Message);
+                DebugWriter.WriteDebug(DebugLevel.E, "Error trying to execute script {0} with arguments {1}: {2}", vars: [ScriptPath, ScriptArguments, ex.Message]);
                 DebugWriter.WriteDebugStackTrace(ex);
-                throw new KernelException(KernelExceptionType.UESHScript, Translate.DoTranslation("The script is malformed. Check the script and resolve any errors.") + "\n{0}", ex, LineHandleWriter.RenderLineWithHandle(ScriptPath, LineNo, 0));
+                throw new KernelException(KernelExceptionType.UESHScript, Translate.DoTranslation("The script is malformed. Check the script and resolve any errors.") + "\n{0}", ex, GetLineHandle(ScriptPath, LineNo, 0, KernelColorType.Error));
             }
             catch (Exception ex)
             {
                 EventsManager.FireEvent(EventType.UESHError, ScriptPath, ScriptArguments, ex);
-                DebugWriter.WriteDebug(DebugLevel.E, "Error trying to execute script {0} with arguments {1}: {2}", ScriptPath, ScriptArguments, ex.Message);
+                DebugWriter.WriteDebug(DebugLevel.E, "Error trying to execute script {0} with arguments {1}: {2}", vars: [ScriptPath, ScriptArguments, ex.Message]);
                 DebugWriter.WriteDebugStackTrace(ex);
-                throw new KernelException(KernelExceptionType.UESHScript, Translate.DoTranslation("The script is malformed. Check the script and resolve any errors: {0}") + "\n{1}", ex, ex.Message, LineHandleWriter.RenderLineWithHandle(ScriptPath, LineNo, 0));
+                throw new KernelException(KernelExceptionType.UESHScript, Translate.DoTranslation("The script is malformed. Check the script and resolve any errors: {0}") + "\n{1}", ex, ex.Message, GetLineHandle(ScriptPath, LineNo, 0, KernelColorType.Error));
             }
         }
 
+        internal static LineHandle GetLineHandle(string path, int line, int column, KernelColorType colorType)
+        {
+            var lineHandle = new LineHandle(path)
+            {
+                Position = line,
+                SourcePosition = column,
+                Color = KernelColorTools.GetColor(colorType),
+            };
+            return lineHandle;
+        }
     }
 }
