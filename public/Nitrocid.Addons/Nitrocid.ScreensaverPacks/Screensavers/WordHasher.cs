@@ -31,121 +31,9 @@ using Terminaux.Base;
 using Terminaux.Colors.Data;
 using Terminaux.Writer.CyclicWriters;
 using Terminaux.Writer.CyclicWriters.Renderer.Tools;
-using Nitrocid.Kernel.Threading;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
-    /// <summary>
-    /// Settings for WordHasher
-    /// </summary>
-    public static class WordHasherSettings
-    {
-
-        /// <summary>
-        /// [WordHasher] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
-        public static bool WordHasherTrueColor
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WordHasherTrueColor;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.WordHasherTrueColor = value;
-            }
-        }
-        /// <summary>
-        /// [WordHasher] How many milliseconds to wait before making the next write?
-        /// </summary>
-        public static int WordHasherDelay
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WordHasherDelay;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 1000;
-                ScreensaverPackInit.SaversConfig.WordHasherDelay = value;
-            }
-        }
-        /// <summary>
-        /// [WordHasher] The minimum red color level (true color)
-        /// </summary>
-        public static int WordHasherMinimumRedColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WordHasherMinimumRedColorLevel;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 0;
-                if (value > 255)
-                    value = 255;
-                ScreensaverPackInit.SaversConfig.WordHasherMinimumRedColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [WordHasher] The minimum green color level (true color)
-        /// </summary>
-        public static int WordHasherMinimumGreenColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WordHasherMinimumGreenColorLevel;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 0;
-                if (value > 255)
-                    value = 255;
-                ScreensaverPackInit.SaversConfig.WordHasherMinimumGreenColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [WordHasher] The minimum blue color level (true color)
-        /// </summary>
-        public static int WordHasherMinimumBlueColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WordHasherMinimumBlueColorLevel;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 0;
-                if (value > 255)
-                    value = 255;
-                ScreensaverPackInit.SaversConfig.WordHasherMinimumBlueColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [WordHasher] The minimum color level (255 colors or 16 colors)
-        /// </summary>
-        public static int WordHasherMinimumColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WordHasherMinimumColorLevel;
-            }
-            set
-            {
-                int FinalMinimumLevel = 255;
-                if (value <= 0)
-                    value = 0;
-                if (value > FinalMinimumLevel)
-                    value = FinalMinimumLevel;
-                ScreensaverPackInit.SaversConfig.WordHasherMinimumColorLevel = value;
-            }
-        }
-    }
-
     /// <summary>
     /// Display code for WordHasher
     /// </summary>
@@ -210,7 +98,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             TextWriterWhereColor.WriteWhereColor(wordHash, (int)Math.Round(ConsoleWrapper.WindowWidth / 2d - wordHash.Length / 2d), hashY, hasherColor);
 
             // Delay
-            ThreadManager.SleepNoBlock(WordHasherSettings.WordHasherDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.WordHasherDelay);
         }
 
         /// <summary>

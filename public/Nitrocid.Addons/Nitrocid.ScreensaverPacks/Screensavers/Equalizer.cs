@@ -19,46 +19,18 @@
 
 using System.Collections.Generic;
 using System.Linq;
-using Terminaux.Colors;
 using Nitrocid.Kernel.Debugging;
 using Nitrocid.Misc.Screensaver;
-using Terminaux.Writer.FancyWriters;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Drivers.RNG;
-using Nitrocid.Kernel.Threading;
 using Terminaux.Base;
 using Terminaux.Colors.Data;
-using Terminaux.Writer.CyclicWriters.Renderer;
-using Terminaux.Colors.Transformation;
 using Terminaux.Writer.CyclicWriters;
+using Terminaux.Colors.Transformation;
+using Terminaux.Writer.CyclicWriters.Renderer;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
-    /// <summary>
-    /// Settings for Equalizer
-    /// </summary>
-    public static class EqualizerSettings
-    {
-
-        /// <summary>
-        /// [Equalizer] How many milliseconds to wait before going to next equalizer preset?
-        /// </summary>
-        public static int EqualizerNextScreenDelay
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.EqualizerNextScreenDelay;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 3000;
-                ScreensaverPackInit.SaversConfig.EqualizerNextScreenDelay = value;
-            }
-        }
-
-    }
-
     /// <summary>
     /// Display code for Equalizer
     /// </summary>
@@ -69,28 +41,27 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private readonly Dictionary<string, (double, double, double)> presets = new()
         {
             // Name              60,    910,    14k (from -12 to 12 in decibels)
-            { "Normal",         (3,     0,      3) },
-            { "Classical",      (5,     -2,     4) },
-            { "Dance",          (6,     2,      1) },
+            { "Normal",         (3,     0,      3)  },
+            { "Classical",      (5,     -2,     4)  },
+            { "Dance",          (6,     2,      1)  },
             { "Electronic",     (0,     4,      10) },
-            { "Flat",           (0,     0,      0) },
+            { "Flat",           (0,     0,      0)  },
             { "Folk",           (3,     0,      -1) },
-            { "Heavy Metal",    (4,     9,      0) },
-            { "Hip-Hop",        (5,     0,      3) },
-            { "Jazz",           (4,     -2,     5) },
+            { "Heavy Metal",    (4,     9,      0)  },
+            { "Hip-Hop",        (5,     0,      3)  },
+            { "Jazz",           (4,     -2,     5)  },
             { "Pop",            (-1,    5,      -2) },
-            { "Rock",           (5,     -1,     5) },
-            { "Small Speakers", (-1.7,  0.5,    2) }
+            { "Rock",           (5,     -1,     5)  },
+            { "Small Speakers", (-1.7,  0.5,    2)  }
         };
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Equalizer";
+        public override string ScreensaverName =>
+            "Equalizer";
 
         /// <inheritdoc/>
-        public override void ScreensaverPreparation()
-        {
-            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
-        }
+        public override void ScreensaverPreparation() =>
+            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", vars: [ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight]);
 
         /// <inheritdoc/>
         public override void ScreensaverLogic()
@@ -146,7 +117,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             string infoMessage = $"<< {presetName} >>";
             int infoMessageWidth = ConsoleWrapper.WindowWidth / 2 - infoMessage.Length / 2;
             TextWriterWhereColor.WriteWhere(infoMessage, infoMessageWidth, infoMessageHeight);
-            ThreadManager.SleepNoBlock(EqualizerSettings.EqualizerNextScreenDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.EqualizerNextScreenDelay);
         }
 
     }

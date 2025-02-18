@@ -19,66 +19,13 @@
 
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
+using Nitrocid.Kernel.Configuration;
 using Terminaux.Base;
 using Terminaux.Colors;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
-    /// <summary>
-    /// Settings for GlitterMatrix
-    /// </summary>
-    public static class GlitterMatrixSettings
-    {
-
-        /// <summary>
-        /// [GlitterMatrix] How many milliseconds to wait before making the next write?
-        /// </summary>
-        public static int GlitterMatrixDelay
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.GlitterMatrixDelay;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 1;
-                ScreensaverPackInit.SaversConfig.GlitterMatrixDelay = value;
-            }
-        }
-        /// <summary>
-        /// [GlitterMatrix] Screensaver background color
-        /// </summary>
-        public static string GlitterMatrixBackgroundColor
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.GlitterMatrixBackgroundColor;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.GlitterMatrixBackgroundColor = new Color(value).PlainSequence;
-            }
-        }
-        /// <summary>
-        /// [GlitterMatrix] Screensaver foreground color
-        /// </summary>
-        public static string GlitterMatrixForegroundColor
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.GlitterMatrixForegroundColor;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.GlitterMatrixForegroundColor = new Color(value).PlainSequence;
-            }
-        }
-
-    }
-
     /// <summary>
     /// Display code for GlitterMatrix
     /// </summary>
@@ -86,15 +33,16 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "GlitterMatrix";
+        public override string ScreensaverName =>
+            "GlitterMatrix";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
             // Variable preparations
-            ColorTools.SetConsoleColor(new Color(GlitterMatrixSettings.GlitterMatrixForegroundColor));
-            ColorTools.LoadBackDry(new Color(GlitterMatrixSettings.GlitterMatrixBackgroundColor));
-            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
+            ColorTools.SetConsoleColor(new Color(ScreensaverPackInit.SaversConfig.GlitterMatrixForegroundColor));
+            ColorTools.LoadBackDry(new Color(ScreensaverPackInit.SaversConfig.GlitterMatrixBackgroundColor));
+            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", vars: [ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight]);
         }
 
         /// <inheritdoc/>
@@ -103,7 +51,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             ConsoleWrapper.CursorVisible = false;
             int Left = RandomDriver.RandomIdx(ConsoleWrapper.WindowWidth);
             int Top = RandomDriver.RandomIdx(ConsoleWrapper.WindowHeight);
-            DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Selected left and top: {0}, {1}", Left, Top);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Selected left and top: {0}, {1}", vars: [Left, Top]);
             ConsoleWrapper.SetCursorPosition(Left, Top);
             if (!ConsoleResizeHandler.WasResized(false))
             {
@@ -111,13 +59,13 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             }
             else
             {
-                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.W, "Color-syncing. Clearing...");
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.W, "Color-syncing. Clearing...");
                 ConsoleWrapper.Clear();
             }
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(GlitterMatrixSettings.GlitterMatrixDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.GlitterMatrixDelay);
         }
 
     }

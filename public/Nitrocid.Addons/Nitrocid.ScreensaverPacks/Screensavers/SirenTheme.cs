@@ -19,52 +19,11 @@
 
 using System.Collections.Generic;
 using Nitrocid.ConsoleBase.Themes;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Colors;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
-    /// <summary>
-    /// Settings for SirenTheme
-    /// </summary>
-    public static class SirenThemeSettings
-    {
-
-        /// <summary>
-        /// [SirenTheme] How many milliseconds to wait before making the next write?
-        /// </summary>
-        public static int SirenThemeDelay
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.SirenThemeDelay;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 500;
-                ScreensaverPackInit.SaversConfig.SirenThemeDelay = value;
-            }
-        }
-
-        /// <summary>
-        /// [SirenTheme] The siren style
-        /// </summary>
-        public static string SirenThemeStyle
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.SirenThemeStyle;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.SirenThemeStyle = ThemeTools.GetInstalledThemes().ContainsKey(value) ? value : "Default";
-            }
-        }
-
-    }
-
     /// <summary>
     /// Display code for SirenTheme
     /// </summary>
@@ -75,10 +34,12 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private int step = 0;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "SirenTheme";
+        public override string ScreensaverName =>
+            "SirenTheme";
 
         /// <inheritdoc/>
-        public override bool ScreensaverContainsFlashingImages { get; set; } = true;
+        public override bool ScreensaverContainsFlashingImages =>
+            true;
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -112,7 +73,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         public override void ScreensaverLogic()
         {
             // Get step color array from siren type
-            Color[] sirenColors = sirens[SirenThemeSettings.SirenThemeStyle];
+            Color[] sirenColors = sirens[ScreensaverPackInit.SaversConfig.SirenThemeStyle];
 
             // Step through the color
             step += 1;
@@ -123,7 +84,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             ColorTools.LoadBackDry(sirenColors[step]);
 
             // Delay
-            ThreadManager.SleepNoBlock(SirenThemeSettings.SirenThemeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.SirenThemeDelay);
         }
 
     }

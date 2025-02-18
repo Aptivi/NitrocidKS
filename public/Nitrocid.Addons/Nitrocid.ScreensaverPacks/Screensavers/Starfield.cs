@@ -23,39 +23,14 @@ using System.Text;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
+using Nitrocid.Kernel.Configuration;
 using Terminaux.Colors;
 using Terminaux.Base;
 using Terminaux.Colors.Data;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
-    /// <summary>
-    /// Settings for Starfield
-    /// </summary>
-    public static class StarfieldSettings
-    {
-
-        /// <summary>
-        /// [Starfield] How many milliseconds to wait before making the next write?
-        /// </summary>
-        public static int StarfieldDelay
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.StarfieldDelay;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 10;
-                ScreensaverPackInit.SaversConfig.StarfieldDelay = value;
-            }
-        }
-
-    }
-
     /// <summary>
     /// Display code for Starfield
     /// </summary>
@@ -65,7 +40,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private readonly List<Tuple<int, int>> Stars = [];
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Starfield";
+        public override string ScreensaverName =>
+            "Starfield";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -121,7 +97,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             }
             if (ConsoleResizeHandler.WasResized(false))
             {
-                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.W, "Resize-syncing. Clearing...");
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.W, "Resize-syncing. Clearing...");
                 Stars.Clear();
             }
             else
@@ -129,7 +105,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(StarfieldSettings.StarfieldDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.StarfieldDelay);
             ColorTools.LoadBackDry(0);
         }
 

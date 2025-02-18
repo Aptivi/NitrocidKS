@@ -20,220 +20,15 @@
 using System;
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Base;
 using Terminaux.Base.Extensions;
 using Terminaux.Colors;
 using Textify.General;
+using Nitrocid.Kernel.Configuration;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
-    /// <summary>
-    /// Settings for Marquee
-    /// </summary>
-    public static class MarqueeSettings
-    {
-
-        /// <summary>
-        /// [Marquee] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
-        public static bool MarqueeTrueColor
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.MarqueeTrueColor;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.MarqueeTrueColor = value;
-            }
-        }
-        /// <summary>
-        /// [Marquee] How many milliseconds to wait before making the next write?
-        /// </summary>
-        public static int MarqueeDelay
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.MarqueeDelay;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.MarqueeDelay = value;
-            }
-        }
-        /// <summary>
-        /// [Marquee] Text for Marquee. Shorter is better.
-        /// </summary>
-        public static string MarqueeWrite
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.MarqueeWrite;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.MarqueeWrite = value;
-            }
-        }
-        /// <summary>
-        /// [Marquee] Whether the text is always on center.
-        /// </summary>
-        public static bool MarqueeAlwaysCentered
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.MarqueeAlwaysCentered;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.MarqueeAlwaysCentered = value;
-            }
-        }
-        /// <summary>
-        /// [Marquee] Whether to use the KS.ConsoleBase.ConsoleWrapper.Clear() API (slow) or use the line-clearing VT sequence (fast).
-        /// </summary>
-        public static bool MarqueeUseConsoleAPI
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.MarqueeUseConsoleAPI;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.MarqueeUseConsoleAPI = value;
-            }
-        }
-        /// <summary>
-        /// [Marquee] Screensaver background color
-        /// </summary>
-        public static string MarqueeBackgroundColor
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.MarqueeBackgroundColor;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.MarqueeBackgroundColor = value;
-            }
-        }
-        /// <summary>
-        /// [Marquee] The minimum red color level (true color)
-        /// </summary>
-        public static int MarqueeMinimumRedColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.MarqueeMinimumRedColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.MarqueeMinimumRedColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [Marquee] The minimum green color level (true color)
-        /// </summary>
-        public static int MarqueeMinimumGreenColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.MarqueeMinimumGreenColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.MarqueeMinimumGreenColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [Marquee] The minimum blue color level (true color)
-        /// </summary>
-        public static int MarqueeMinimumBlueColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.MarqueeMinimumBlueColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.MarqueeMinimumBlueColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [Marquee] The minimum color level (255 colors or 16 colors)
-        /// </summary>
-        public static int MarqueeMinimumColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.MarqueeMinimumColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.MarqueeMinimumColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [Marquee] The maximum red color level (true color)
-        /// </summary>
-        public static int MarqueeMaximumRedColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.MarqueeMaximumRedColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.MarqueeMaximumRedColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [Marquee] The maximum green color level (true color)
-        /// </summary>
-        public static int MarqueeMaximumGreenColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.MarqueeMaximumGreenColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.MarqueeMaximumGreenColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [Marquee] The maximum blue color level (true color)
-        /// </summary>
-        public static int MarqueeMaximumBlueColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.MarqueeMaximumBlueColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.MarqueeMaximumBlueColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [Marquee] The maximum color level (255 colors or 16 colors)
-        /// </summary>
-        public static int MarqueeMaximumColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.MarqueeMaximumColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.MarqueeMaximumColorLevel = value;
-            }
-        }
-
-    }
-
     /// <summary>
     /// Display code for Marquee
     /// </summary>
@@ -241,14 +36,15 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Marquee";
+        public override string ScreensaverName =>
+            "Marquee";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
             // Variable preparations
-            ColorTools.LoadBackDry(new Color(MarqueeSettings.MarqueeBackgroundColor));
-            MarqueeSettings.MarqueeWrite = MarqueeSettings.MarqueeWrite.ReplaceAll([Convert.ToChar(13).ToString(), Convert.ToChar(10).ToString()], " - ");
+            ColorTools.LoadBackDry(new Color(ScreensaverPackInit.SaversConfig.MarqueeBackgroundColor));
+            ScreensaverPackInit.SaversConfig.MarqueeWrite = ScreensaverPackInit.SaversConfig.MarqueeWrite.ReplaceAll([Convert.ToChar(13).ToString(), Convert.ToChar(10).ToString()], " - ");
         }
 
         /// <inheritdoc/>
@@ -259,11 +55,11 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Ensure that the top position of the written text is always centered if AlwaysCentered is enabled. Else, select a random height.
             int TopPrinted = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d);
-            if (!MarqueeSettings.MarqueeAlwaysCentered)
+            if (!ScreensaverPackInit.SaversConfig.MarqueeAlwaysCentered)
             {
                 TopPrinted = RandomDriver.RandomIdx(ConsoleWrapper.WindowHeight);
             }
-            DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Top position: {0}", TopPrinted);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Top position: {0}", vars: [TopPrinted]);
 
             // Start with the left position as the right position.
             int CurrentLeft = ConsoleWrapper.WindowWidth - 1;
@@ -271,35 +67,35 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             int CurrentCharacterNum = 0;
 
             // We need to set colors for the text.
-            if (MarqueeSettings.MarqueeTrueColor)
+            if (ScreensaverPackInit.SaversConfig.MarqueeTrueColor)
             {
-                int RedColorNum = RandomDriver.Random(MarqueeSettings.MarqueeMinimumRedColorLevel, MarqueeSettings.MarqueeMaximumRedColorLevel);
-                int GreenColorNum = RandomDriver.Random(MarqueeSettings.MarqueeMinimumGreenColorLevel, MarqueeSettings.MarqueeMaximumGreenColorLevel);
-                int BlueColorNum = RandomDriver.Random(MarqueeSettings.MarqueeMinimumBlueColorLevel, MarqueeSettings.MarqueeMaximumBlueColorLevel);
-                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
+                int RedColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.MarqueeMinimumRedColorLevel, ScreensaverPackInit.SaversConfig.MarqueeMaximumRedColorLevel);
+                int GreenColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.MarqueeMinimumGreenColorLevel, ScreensaverPackInit.SaversConfig.MarqueeMaximumGreenColorLevel);
+                int BlueColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.MarqueeMinimumBlueColorLevel, ScreensaverPackInit.SaversConfig.MarqueeMaximumBlueColorLevel);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", vars: [RedColorNum, GreenColorNum, BlueColorNum]);
                 ColorTools.SetConsoleColor(new Color($"{RedColorNum};{GreenColorNum};{BlueColorNum}"));
             }
             else
             {
-                int color = RandomDriver.Random(MarqueeSettings.MarqueeMinimumColorLevel, MarqueeSettings.MarqueeMaximumColorLevel);
-                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Got color ({0})", color);
+                int color = RandomDriver.Random(ScreensaverPackInit.SaversConfig.MarqueeMinimumColorLevel, ScreensaverPackInit.SaversConfig.MarqueeMaximumColorLevel);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color ({0})", vars: [color]);
                 ColorTools.SetConsoleColor(new Color(color));
             }
 
             // If the text is at the right and is longer than the console width, crop it until it's complete.
             while (CurrentLeftOtherEnd != 0)
             {
-                ThreadManager.SleepNoBlock(MarqueeSettings.MarqueeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.MarqueeDelay);
                 if (ConsoleResizeHandler.WasResized(false))
                     break;
-                if (MarqueeSettings.MarqueeUseConsoleAPI)
+                if (ScreensaverPackInit.SaversConfig.MarqueeUseConsoleAPI)
                     ConsoleWrapper.Clear();
-                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Current left: {0} | Current left on other end: {1}", CurrentLeft, CurrentLeftOtherEnd);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Current left: {0} | Current left on other end: {1}", vars: [CurrentLeft, CurrentLeftOtherEnd]);
 
                 // Declare variable for written marquee text
-                string MarqueeWritten = MarqueeSettings.MarqueeWrite;
-                bool Middle = MarqueeSettings.MarqueeWrite.Length - (CurrentLeftOtherEnd - CurrentLeft) != CurrentCharacterNum - (CurrentLeftOtherEnd - CurrentLeft);
-                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Middle of long text: {0}", Middle);
+                string MarqueeWritten = ScreensaverPackInit.SaversConfig.MarqueeWrite;
+                bool Middle = ScreensaverPackInit.SaversConfig.MarqueeWrite.Length - (CurrentLeftOtherEnd - CurrentLeft) != CurrentCharacterNum - (CurrentLeftOtherEnd - CurrentLeft);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Middle of long text: {0}", vars: [Middle]);
 
                 // If the current left position is not zero (not on the left), take the substring starting from the beginning of the string until the
                 // written variable equals the base text variable. However, if we're on the left, take the substring so that the character which was
@@ -314,10 +110,10 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 }
                 else
                 {
-                    MarqueeWritten = MarqueeWritten[(MarqueeSettings.MarqueeWrite.Length - (CurrentLeftOtherEnd - CurrentLeft))..];
+                    MarqueeWritten = MarqueeWritten[(ScreensaverPackInit.SaversConfig.MarqueeWrite.Length - (CurrentLeftOtherEnd - CurrentLeft))..];
                 }
-                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Written result: {0}", MarqueeWritten);
-                if (!MarqueeSettings.MarqueeUseConsoleAPI)
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Written result: {0}", vars: [MarqueeWritten]);
+                if (!ScreensaverPackInit.SaversConfig.MarqueeUseConsoleAPI)
                     MarqueeWritten += $"{ConsoleClearing.GetClearLineToRightSequence()}";
 
                 // Set the appropriate cursor position and write the results
@@ -330,20 +126,20 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 if (CurrentLeft != 0)
                 {
                     CurrentLeft -= 1;
-                    DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Not on left. Decremented left position {0}", CurrentLeft);
+                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Not on left. Decremented left position {0}", vars: [CurrentLeft]);
                 }
 
                 // If we're on the left or the entire text is written, decrement the current left other end position
                 if (!Middle)
                 {
                     CurrentLeftOtherEnd -= 1;
-                    DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "On left or entire text written. Decremented left other end position {0}", CurrentLeftOtherEnd);
+                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "On left or entire text written. Decremented left other end position {0}", vars: [CurrentLeftOtherEnd]);
                 }
             }
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(MarqueeSettings.MarqueeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.MarqueeDelay);
         }
 
     }

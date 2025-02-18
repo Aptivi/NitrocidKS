@@ -22,38 +22,14 @@ using System.Collections.Generic;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
+using Nitrocid.Kernel.Configuration;
 using Terminaux.Colors;
 using Terminaux.Base;
+using Nitrocid.ConsoleBase.Colors;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
-    /// <summary>
-    /// Settings for Speckles
-    /// </summary>
-    public static class SpecklesSettings
-    {
-
-        /// <summary>
-        /// [Speckles] How many milliseconds to wait before making the next write?
-        /// </summary>
-        public static int SpecklesDelay
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.SpecklesDelay;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 10;
-                ScreensaverPackInit.SaversConfig.SpecklesDelay = value;
-            }
-        }
-
-    }
-
     /// <summary>
     /// Display code for Speckles
     /// </summary>
@@ -63,7 +39,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private readonly List<(double, double, int, int, double, double, Color)> Blocks = [];
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Speckles";
+        public override string ScreensaverName =>
+            "Speckles";
 
         /// <inheritdoc/>
         public override void ScreensaverLogic()
@@ -165,14 +142,14 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             }
             else
             {
-                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.W, "Resize-syncing. Clearing...");
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.W, "Resize-syncing. Clearing...");
                 Blocks.Clear();
             }
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(SpecklesSettings.SpecklesDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
-            ColorTools.LoadBack();
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.SpecklesDelay);
+            KernelColorTools.LoadBackground();
         }
 
         /// <inheritdoc/>

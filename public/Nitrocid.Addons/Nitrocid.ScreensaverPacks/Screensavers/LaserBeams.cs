@@ -22,8 +22,8 @@ using System.Text;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
+using Nitrocid.Kernel.Configuration;
 using Terminaux.Colors;
 using Terminaux.Sequences.Builder.Types;
 using Terminaux.Base;
@@ -31,221 +31,6 @@ using Terminaux.Colors.Data;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
-    /// <summary>
-    /// Settings for LaserBeams
-    /// </summary>
-    public static class LaserBeamsSettings
-    {
-
-        /// <summary>
-        /// [LaserBeams] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
-        public static bool LaserBeamsTrueColor
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.LaserBeamsTrueColor;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.LaserBeamsTrueColor = value;
-            }
-        }
-        /// <summary>
-        /// [LaserBeams] How many milliseconds to wait before making the next write?
-        /// </summary>
-        public static int LaserBeamsDelay
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.LaserBeamsDelay;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 500;
-                ScreensaverPackInit.SaversConfig.LaserBeamsDelay = value;
-            }
-        }
-        /// <summary>
-        /// [LaserBeams] Line character
-        /// </summary>
-        public static string LaserBeamsLineChar
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.LaserBeamsLineChar;
-            }
-            set
-            {
-                if (string.IsNullOrEmpty(value))
-                    value = "-";
-                ScreensaverPackInit.SaversConfig.LaserBeamsLineChar = value;
-            }
-        }
-        /// <summary>
-        /// [LaserBeams] Screensaver background color
-        /// </summary>
-        public static string LaserBeamsBackgroundColor
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.LaserBeamsBackgroundColor;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.LaserBeamsBackgroundColor = new Color(value).PlainSequence;
-            }
-        }
-        /// <summary>
-        /// [LaserBeams] The minimum red color level (true color)
-        /// </summary>
-        public static int LaserBeamsMinimumRedColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.LaserBeamsMinimumRedColorLevel;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 0;
-                if (value > 255)
-                    value = 255;
-                ScreensaverPackInit.SaversConfig.LaserBeamsMinimumRedColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [LaserBeams] The minimum green color level (true color)
-        /// </summary>
-        public static int LaserBeamsMinimumGreenColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.LaserBeamsMinimumGreenColorLevel;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 0;
-                if (value > 255)
-                    value = 255;
-                ScreensaverPackInit.SaversConfig.LaserBeamsMinimumGreenColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [LaserBeams] The minimum blue color level (true color)
-        /// </summary>
-        public static int LaserBeamsMinimumBlueColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.LaserBeamsMinimumBlueColorLevel;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 0;
-                if (value > 255)
-                    value = 255;
-                ScreensaverPackInit.SaversConfig.LaserBeamsMinimumBlueColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [LaserBeams] The minimum color level (255 colors or 16 colors)
-        /// </summary>
-        public static int LaserBeamsMinimumColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.LaserBeamsMinimumColorLevel;
-            }
-            set
-            {
-                int FinalMinimumLevel = 255;
-                if (value <= 0)
-                    value = 0;
-                if (value > FinalMinimumLevel)
-                    value = FinalMinimumLevel;
-                ScreensaverPackInit.SaversConfig.LaserBeamsMinimumColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [LaserBeams] The maximum red color level (true color)
-        /// </summary>
-        public static int LaserBeamsMaximumRedColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.LaserBeamsMaximumRedColorLevel;
-            }
-            set
-            {
-                if (value <= ScreensaverPackInit.SaversConfig.LaserBeamsMinimumRedColorLevel)
-                    value = ScreensaverPackInit.SaversConfig.LaserBeamsMinimumRedColorLevel;
-                if (value > 255)
-                    value = 255;
-                ScreensaverPackInit.SaversConfig.LaserBeamsMaximumRedColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [LaserBeams] The maximum green color level (true color)
-        /// </summary>
-        public static int LaserBeamsMaximumGreenColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.LaserBeamsMaximumGreenColorLevel;
-            }
-            set
-            {
-                if (value <= ScreensaverPackInit.SaversConfig.LaserBeamsMinimumGreenColorLevel)
-                    value = ScreensaverPackInit.SaversConfig.LaserBeamsMinimumGreenColorLevel;
-                if (value > 255)
-                    value = 255;
-                ScreensaverPackInit.SaversConfig.LaserBeamsMaximumGreenColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [LaserBeams] The maximum blue color level (true color)
-        /// </summary>
-        public static int LaserBeamsMaximumBlueColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.LaserBeamsMaximumBlueColorLevel;
-            }
-            set
-            {
-                if (value <= ScreensaverPackInit.SaversConfig.LaserBeamsMinimumBlueColorLevel)
-                    value = ScreensaverPackInit.SaversConfig.LaserBeamsMinimumBlueColorLevel;
-                if (value > 255)
-                    value = 255;
-                ScreensaverPackInit.SaversConfig.LaserBeamsMaximumBlueColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [LaserBeams] The maximum color level (255 colors or 16 colors)
-        /// </summary>
-        public static int LaserBeamsMaximumColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.LaserBeamsMaximumColorLevel;
-            }
-            set
-            {
-                int FinalMaximumLevel = 255;
-                if (value <= ScreensaverPackInit.SaversConfig.LaserBeamsMinimumColorLevel)
-                    value = ScreensaverPackInit.SaversConfig.LaserBeamsMinimumColorLevel;
-                if (value > FinalMaximumLevel)
-                    value = FinalMaximumLevel;
-                ScreensaverPackInit.SaversConfig.LaserBeamsMaximumColorLevel = value;
-            }
-        }
-
-    }
-
     /// <summary>
     /// Display code for LaserBeams
     /// </summary>
@@ -255,21 +40,22 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private static readonly List<(int, int)> laserEnds = [];
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "LaserBeams";
+        public override string ScreensaverName =>
+            "LaserBeams";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
             // Variable preparations
             laserEnds.Clear();
-            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
+            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", vars: [ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight]);
         }
 
         /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
             ConsoleWrapper.CursorVisible = false;
-            ColorTools.LoadBackDry(new Color(LaserBeamsSettings.LaserBeamsBackgroundColor));
+            ColorTools.LoadBackDry(new Color(ScreensaverPackInit.SaversConfig.LaserBeamsBackgroundColor));
 
             // Populate the laser ends
             laserEnds.AddRange(
@@ -296,18 +82,18 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             {
                 // Select a color
                 Color colorStorage;
-                if (LaserBeamsSettings.LaserBeamsTrueColor)
+                if (ScreensaverPackInit.SaversConfig.LaserBeamsTrueColor)
                 {
-                    int RedColorNum = RandomDriver.Random(LaserBeamsSettings.LaserBeamsMinimumRedColorLevel, LaserBeamsSettings.LaserBeamsMaximumRedColorLevel);
-                    int GreenColorNum = RandomDriver.Random(LaserBeamsSettings.LaserBeamsMinimumGreenColorLevel, LaserBeamsSettings.LaserBeamsMaximumGreenColorLevel);
-                    int BlueColorNum = RandomDriver.Random(LaserBeamsSettings.LaserBeamsMinimumBlueColorLevel, LaserBeamsSettings.LaserBeamsMaximumBlueColorLevel);
-                    DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
+                    int RedColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.LaserBeamsMinimumRedColorLevel, ScreensaverPackInit.SaversConfig.LaserBeamsMaximumRedColorLevel);
+                    int GreenColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.LaserBeamsMinimumGreenColorLevel, ScreensaverPackInit.SaversConfig.LaserBeamsMaximumGreenColorLevel);
+                    int BlueColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.LaserBeamsMinimumBlueColorLevel, ScreensaverPackInit.SaversConfig.LaserBeamsMaximumBlueColorLevel);
+                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", vars: [RedColorNum, GreenColorNum, BlueColorNum]);
                     colorStorage = new Color(RedColorNum, GreenColorNum, BlueColorNum);
                 }
                 else
                 {
-                    int color = RandomDriver.Random(LaserBeamsSettings.LaserBeamsMinimumColorLevel, LaserBeamsSettings.LaserBeamsMaximumColorLevel);
-                    DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Got color ({0})", color);
+                    int color = RandomDriver.Random(ScreensaverPackInit.SaversConfig.LaserBeamsMinimumColorLevel, ScreensaverPackInit.SaversConfig.LaserBeamsMaximumColorLevel);
+                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color ({0})", vars: [color]);
                     colorStorage = new Color(color);
                 }
 
@@ -339,7 +125,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             // Reset resize sync
             laserEnds.Clear();
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(LaserBeamsSettings.LaserBeamsDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.LaserBeamsDelay);
         }
 
         /// <inheritdoc/>

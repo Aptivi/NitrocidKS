@@ -32,195 +32,9 @@ using Terminaux.Base;
 using Terminaux.Colors.Data;
 using Terminaux.Writer.CyclicWriters;
 using Terminaux.Writer.CyclicWriters.Renderer.Tools;
-using Nitrocid.Kernel.Threading;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
-    /// <summary>
-    /// Settings for WordHasherWrite
-    /// </summary>
-    public static class WordHasherWriteSettings
-    {
-
-        /// <summary>
-        /// [WordHasherWrite] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
-        public static bool WordHasherWriteTrueColor
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WordHasherWriteTrueColor;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.WordHasherWriteTrueColor = value;
-            }
-        }
-        /// <summary>
-        /// [WordHasherWrite] How many milliseconds to wait before making the next write?
-        /// </summary>
-        public static int WordHasherWriteDelay
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WordHasherWriteDelay;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 1000;
-                ScreensaverPackInit.SaversConfig.WordHasherWriteDelay = value;
-            }
-        }
-        /// <summary>
-        /// [WordHasherWrite] The minimum red color level (true color)
-        /// </summary>
-        public static int WordHasherWriteMinimumRedColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WordHasherWriteMinimumRedColorLevel;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 0;
-                if (value > 255)
-                    value = 255;
-                ScreensaverPackInit.SaversConfig.WordHasherWriteMinimumRedColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [WordHasherWrite] The minimum green color level (true color)
-        /// </summary>
-        public static int WordHasherWriteMinimumGreenColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WordHasherWriteMinimumGreenColorLevel;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 0;
-                if (value > 255)
-                    value = 255;
-                ScreensaverPackInit.SaversConfig.WordHasherWriteMinimumGreenColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [WordHasherWrite] The minimum blue color level (true color)
-        /// </summary>
-        public static int WordHasherWriteMinimumBlueColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WordHasherWriteMinimumBlueColorLevel;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 0;
-                if (value > 255)
-                    value = 255;
-                ScreensaverPackInit.SaversConfig.WordHasherWriteMinimumBlueColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [WordHasherWrite] The minimum color level (255 colors or 16 colors)
-        /// </summary>
-        public static int WordHasherWriteMinimumColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WordHasherWriteMinimumColorLevel;
-            }
-            set
-            {
-                int FinalMinimumLevel = 255;
-                if (value <= 0)
-                    value = 0;
-                if (value > FinalMinimumLevel)
-                    value = FinalMinimumLevel;
-                ScreensaverPackInit.SaversConfig.WordHasherWriteMinimumColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [WordHasherWrite] The maximum red color level (true color)
-        /// </summary>
-        public static int WordHasherWriteMaximumRedColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WordHasherWriteMaximumRedColorLevel;
-            }
-            set
-            {
-                if (value <= ScreensaverPackInit.SaversConfig.WordHasherWriteMinimumRedColorLevel)
-                    value = ScreensaverPackInit.SaversConfig.WordHasherWriteMinimumRedColorLevel;
-                if (value > 255)
-                    value = 255;
-                ScreensaverPackInit.SaversConfig.WordHasherWriteMaximumRedColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [WordHasherWrite] The maximum green color level (true color)
-        /// </summary>
-        public static int WordHasherWriteMaximumGreenColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WordHasherWriteMaximumGreenColorLevel;
-            }
-            set
-            {
-                if (value <= ScreensaverPackInit.SaversConfig.WordHasherWriteMinimumGreenColorLevel)
-                    value = ScreensaverPackInit.SaversConfig.WordHasherWriteMinimumGreenColorLevel;
-                if (value > 255)
-                    value = 255;
-                ScreensaverPackInit.SaversConfig.WordHasherWriteMaximumGreenColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [WordHasherWrite] The maximum blue color level (true color)
-        /// </summary>
-        public static int WordHasherWriteMaximumBlueColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WordHasherWriteMaximumBlueColorLevel;
-            }
-            set
-            {
-                if (value <= ScreensaverPackInit.SaversConfig.WordHasherWriteMinimumBlueColorLevel)
-                    value = ScreensaverPackInit.SaversConfig.WordHasherWriteMinimumBlueColorLevel;
-                if (value > 255)
-                    value = 255;
-                ScreensaverPackInit.SaversConfig.WordHasherWriteMaximumBlueColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [WordHasherWrite] The maximum color level (255 colors or 16 colors)
-        /// </summary>
-        public static int WordHasherWriteMaximumColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WordHasherWriteMaximumColorLevel;
-            }
-            set
-            {
-                int FinalMaximumLevel = 255;
-                if (value <= ScreensaverPackInit.SaversConfig.WordHasherWriteMinimumColorLevel)
-                    value = ScreensaverPackInit.SaversConfig.WordHasherWriteMinimumColorLevel;
-                if (value > FinalMaximumLevel)
-                    value = FinalMaximumLevel;
-                ScreensaverPackInit.SaversConfig.WordHasherWriteMaximumColorLevel = value;
-            }
-        }
-
-    }
-
     /// <summary>
     /// Display code for WordHasherWrite
     /// </summary>
@@ -275,7 +89,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 int figHeight = FigletTools.GetFigletHeight(finalWord, figFont) / 2;
                 int consoleY = ConsoleWrapper.WindowHeight / 2 - figHeight;
                 int hashY = ConsoleWrapper.WindowHeight / 2 + figHeight + 2;
-                ThreadManager.SleepNoBlock(250, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                ScreensaverManager.Delay(250);
                 ConsoleWrapper.Clear();
                 var wordText = new AlignedFigletText(figFont)
                 {
@@ -292,7 +106,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             }
 
             // Delay
-            ThreadManager.SleepNoBlock(WordHasherWriteSettings.WordHasherWriteDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.WordHasherWriteDelay);
 
             // Destruct word
             for (int i = builtWord.Length - 1; i >= 0; i--)
@@ -305,7 +119,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 int figHeight = FigletTools.GetFigletHeight(finalWord, figFont) / 2;
                 int consoleY = ConsoleWrapper.WindowHeight / 2 - figHeight;
                 int hashY = ConsoleWrapper.WindowHeight / 2 + figHeight + 2;
-                ThreadManager.SleepNoBlock(250, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                ScreensaverManager.Delay(250);
                 ConsoleWrapper.Clear();
                 var wordText = new AlignedFigletText(figFont)
                 {

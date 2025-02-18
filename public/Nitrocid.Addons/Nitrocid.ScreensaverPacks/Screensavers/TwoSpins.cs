@@ -21,7 +21,6 @@ using Nitrocid.ConsoleBase.Colors;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using System.Collections.Generic;
 using System.Text;
@@ -29,194 +28,10 @@ using Terminaux.Colors;
 using Terminaux.Sequences.Builder.Types;
 using Terminaux.Base;
 using Terminaux.Colors.Data;
+using Nitrocid.Kernel.Configuration;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
-    /// <summary>
-    /// Settings for TwoSpins
-    /// </summary>
-    public static class TwoSpinsSettings
-    {
-
-        /// <summary>
-        /// [TwoSpins] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
-        public static bool TwoSpinsTrueColor
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.TwoSpinsTrueColor;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.TwoSpinsTrueColor = value;
-            }
-        }
-        /// <summary>
-        /// [TwoSpins] How many milliseconds to wait before making the next write?
-        /// </summary>
-        public static int TwoSpinsDelay
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.TwoSpinsDelay;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 25;
-                ScreensaverPackInit.SaversConfig.TwoSpinsDelay = value;
-            }
-        }
-        /// <summary>
-        /// [TwoSpins] The minimum red color level (true color)
-        /// </summary>
-        public static int TwoSpinsMinimumRedColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.TwoSpinsMinimumRedColorLevel;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 0;
-                if (value > 255)
-                    value = 255;
-                ScreensaverPackInit.SaversConfig.TwoSpinsMinimumRedColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [TwoSpins] The minimum green color level (true color)
-        /// </summary>
-        public static int TwoSpinsMinimumGreenColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.TwoSpinsMinimumGreenColorLevel;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 0;
-                if (value > 255)
-                    value = 255;
-                ScreensaverPackInit.SaversConfig.TwoSpinsMinimumGreenColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [TwoSpins] The minimum blue color level (true color)
-        /// </summary>
-        public static int TwoSpinsMinimumBlueColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.TwoSpinsMinimumBlueColorLevel;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 0;
-                if (value > 255)
-                    value = 255;
-                ScreensaverPackInit.SaversConfig.TwoSpinsMinimumBlueColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [TwoSpins] The minimum color level (255 colors or 16 colors)
-        /// </summary>
-        public static int TwoSpinsMinimumColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.TwoSpinsMinimumColorLevel;
-            }
-            set
-            {
-                int FinalMinimumLevel = 255;
-                if (value <= 0)
-                    value = 0;
-                if (value > FinalMinimumLevel)
-                    value = FinalMinimumLevel;
-                ScreensaverPackInit.SaversConfig.TwoSpinsMinimumColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [TwoSpins] The maximum red color level (true color)
-        /// </summary>
-        public static int TwoSpinsMaximumRedColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.TwoSpinsMaximumRedColorLevel;
-            }
-            set
-            {
-                if (value <= ScreensaverPackInit.SaversConfig.TwoSpinsMinimumRedColorLevel)
-                    value = ScreensaverPackInit.SaversConfig.TwoSpinsMinimumRedColorLevel;
-                if (value > 255)
-                    value = 255;
-                ScreensaverPackInit.SaversConfig.TwoSpinsMaximumRedColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [TwoSpins] The maximum green color level (true color)
-        /// </summary>
-        public static int TwoSpinsMaximumGreenColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.TwoSpinsMaximumGreenColorLevel;
-            }
-            set
-            {
-                if (value <= ScreensaverPackInit.SaversConfig.TwoSpinsMinimumGreenColorLevel)
-                    value = ScreensaverPackInit.SaversConfig.TwoSpinsMinimumGreenColorLevel;
-                if (value > 255)
-                    value = 255;
-                ScreensaverPackInit.SaversConfig.TwoSpinsMaximumGreenColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [TwoSpins] The maximum blue color level (true color)
-        /// </summary>
-        public static int TwoSpinsMaximumBlueColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.TwoSpinsMaximumBlueColorLevel;
-            }
-            set
-            {
-                if (value <= ScreensaverPackInit.SaversConfig.TwoSpinsMinimumBlueColorLevel)
-                    value = ScreensaverPackInit.SaversConfig.TwoSpinsMinimumBlueColorLevel;
-                if (value > 255)
-                    value = 255;
-                ScreensaverPackInit.SaversConfig.TwoSpinsMaximumBlueColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [TwoSpins] The maximum color level (255 colors or 16 colors)
-        /// </summary>
-        public static int TwoSpinsMaximumColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.TwoSpinsMaximumColorLevel;
-            }
-            set
-            {
-                int FinalMaximumLevel = 255;
-                if (value <= ScreensaverPackInit.SaversConfig.TwoSpinsMinimumColorLevel)
-                    value = ScreensaverPackInit.SaversConfig.TwoSpinsMinimumColorLevel;
-                if (value > FinalMaximumLevel)
-                    value = FinalMaximumLevel;
-                ScreensaverPackInit.SaversConfig.TwoSpinsMaximumColorLevel = value;
-            }
-        }
-
-    }
-
     /// <summary>
     /// Display code for TwoSpins
     /// </summary>
@@ -235,7 +50,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private static readonly List<(int x, int y, DotMovementDirection direction)> secondGroupDots = [];
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "TwoSpins";
+        public override string ScreensaverName =>
+            "TwoSpins";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -243,16 +59,16 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             base.ScreensaverPreparation();
 
             // Select two colors for two groups
-            if (TwoSpinsSettings.TwoSpinsTrueColor)
+            if (ScreensaverPackInit.SaversConfig.TwoSpinsTrueColor)
             {
-                int firstGroupRedColorNum = RandomDriver.Random(TwoSpinsSettings.TwoSpinsMinimumRedColorLevel, TwoSpinsSettings.TwoSpinsMaximumRedColorLevel);
-                int firstGroupGreenColorNum = RandomDriver.Random(TwoSpinsSettings.TwoSpinsMinimumGreenColorLevel, TwoSpinsSettings.TwoSpinsMaximumGreenColorLevel);
-                int firstGroupBlueColorNum = RandomDriver.Random(TwoSpinsSettings.TwoSpinsMinimumBlueColorLevel, TwoSpinsSettings.TwoSpinsMaximumBlueColorLevel);
-                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Got color for first group (R;G;B: {0};{1};{2})", firstGroupRedColorNum, firstGroupGreenColorNum, firstGroupBlueColorNum);
-                int secondGroupRedColorNum = RandomDriver.Random(TwoSpinsSettings.TwoSpinsMinimumRedColorLevel, TwoSpinsSettings.TwoSpinsMaximumRedColorLevel);
-                int secondGroupGreenColorNum = RandomDriver.Random(TwoSpinsSettings.TwoSpinsMinimumGreenColorLevel, TwoSpinsSettings.TwoSpinsMaximumGreenColorLevel);
-                int secondGroupBlueColorNum = RandomDriver.Random(TwoSpinsSettings.TwoSpinsMinimumBlueColorLevel, TwoSpinsSettings.TwoSpinsMaximumBlueColorLevel);
-                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Got color for second group (R;G;B: {0};{1};{2})", secondGroupRedColorNum, secondGroupGreenColorNum, secondGroupBlueColorNum);
+                int firstGroupRedColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.TwoSpinsMinimumRedColorLevel, ScreensaverPackInit.SaversConfig.TwoSpinsMaximumRedColorLevel);
+                int firstGroupGreenColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.TwoSpinsMinimumGreenColorLevel, ScreensaverPackInit.SaversConfig.TwoSpinsMaximumGreenColorLevel);
+                int firstGroupBlueColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.TwoSpinsMinimumBlueColorLevel, ScreensaverPackInit.SaversConfig.TwoSpinsMaximumBlueColorLevel);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color for first group (R;G;B: {0};{1};{2})", vars: [firstGroupRedColorNum, firstGroupGreenColorNum, firstGroupBlueColorNum]);
+                int secondGroupRedColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.TwoSpinsMinimumRedColorLevel, ScreensaverPackInit.SaversConfig.TwoSpinsMaximumRedColorLevel);
+                int secondGroupGreenColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.TwoSpinsMinimumGreenColorLevel, ScreensaverPackInit.SaversConfig.TwoSpinsMaximumGreenColorLevel);
+                int secondGroupBlueColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.TwoSpinsMinimumBlueColorLevel, ScreensaverPackInit.SaversConfig.TwoSpinsMaximumBlueColorLevel);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color for second group (R;G;B: {0};{1};{2})", vars: [secondGroupRedColorNum, secondGroupGreenColorNum, secondGroupBlueColorNum]);
                 var firstGroupColorStorage = new Color(firstGroupRedColorNum, firstGroupGreenColorNum, firstGroupBlueColorNum);
                 var secondGroupColorStorage = new Color(secondGroupRedColorNum, secondGroupGreenColorNum, secondGroupBlueColorNum);
                 firstGroupDotsColor = firstGroupColorStorage;
@@ -260,10 +76,10 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             }
             else
             {
-                int firstGroupColorNum = RandomDriver.Random(TwoSpinsSettings.TwoSpinsMinimumColorLevel, TwoSpinsSettings.TwoSpinsMaximumColorLevel);
-                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Got color for first group ({0})", firstGroupColorNum);
-                int secondGroupColorNum = RandomDriver.Random(TwoSpinsSettings.TwoSpinsMinimumColorLevel, TwoSpinsSettings.TwoSpinsMaximumColorLevel);
-                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Got color for second group ({0})", secondGroupColorNum);
+                int firstGroupColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.TwoSpinsMinimumColorLevel, ScreensaverPackInit.SaversConfig.TwoSpinsMaximumColorLevel);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color for first group ({0})", vars: [firstGroupColorNum]);
+                int secondGroupColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.TwoSpinsMinimumColorLevel, ScreensaverPackInit.SaversConfig.TwoSpinsMaximumColorLevel);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color for second group ({0})", vars: [secondGroupColorNum]);
                 firstGroupDotsColor = firstGroupColorNum;
                 secondGroupDotsColor = secondGroupColorNum;
             }
@@ -432,7 +248,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(TwoSpinsSettings.TwoSpinsDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.TwoSpinsDelay);
 
             // Clear the printed dots
             var clearBuffer = new StringBuilder();

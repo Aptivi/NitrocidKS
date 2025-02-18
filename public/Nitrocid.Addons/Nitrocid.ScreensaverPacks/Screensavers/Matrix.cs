@@ -23,7 +23,7 @@ using System.Text;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
+using Nitrocid.Kernel.Configuration;
 using Terminaux.Colors;
 using Terminaux.Sequences.Builder.Types;
 using Terminaux.Base;
@@ -31,47 +31,6 @@ using Nitrocid.Misc.Screensaver;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
-    /// <summary>
-    /// Settings for Matrix
-    /// </summary>
-    public static class MatrixSettings
-    {
-
-        /// <summary>
-        /// [Matrix] How many milliseconds to wait before making the next write?
-        /// </summary>
-        public static int MatrixDelay
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.MatrixDelay;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 10;
-                ScreensaverPackInit.SaversConfig.MatrixDelay = value;
-            }
-        }
-        /// <summary>
-        /// [Matrix] How many fade steps to do?
-        /// </summary>
-        public static int MatrixMaxSteps
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.MatrixMaxSteps;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 25;
-                ScreensaverPackInit.SaversConfig.MatrixMaxSteps = value;
-            }
-        }
-
-    }
-
     /// <summary>
     /// Display code for Matrix
     /// </summary>
@@ -84,7 +43,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private readonly Color background = new("0;0;0");
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Matrix";
+        public override string ScreensaverName =>
+            "Matrix";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -122,27 +82,27 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 CoveredPositions.Add(PositionTuple);
 
                 // Delay
-                ThreadManager.SleepNoBlock(MatrixSettings.MatrixDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.MatrixDelay);
             }
 
             // Fade the line down. Please note that this requires true-color support in the terminal to work properly.
-            for (int StepNum = 0; StepNum <= MatrixSettings.MatrixMaxSteps; StepNum++)
+            for (int StepNum = 0; StepNum <= ScreensaverPackInit.SaversConfig.MatrixMaxSteps; StepNum++)
             {
                 // Check to see if user decided to resize
                 if (ConsoleResizeHandler.WasResized(false))
                     break;
 
                 // Set thresholds
-                double ThresholdRed = foreground.RGB.R / (double)MatrixSettings.MatrixMaxSteps;
-                double ThresholdGreen = foreground.RGB.G / (double)MatrixSettings.MatrixMaxSteps;
-                double ThresholdBlue = foreground.RGB.B / (double)MatrixSettings.MatrixMaxSteps;
-                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Color threshold (R;G;B: {0})", ThresholdRed, ThresholdGreen, ThresholdBlue);
+                double ThresholdRed = foreground.RGB.R / (double)ScreensaverPackInit.SaversConfig.MatrixMaxSteps;
+                double ThresholdGreen = foreground.RGB.G / (double)ScreensaverPackInit.SaversConfig.MatrixMaxSteps;
+                double ThresholdBlue = foreground.RGB.B / (double)ScreensaverPackInit.SaversConfig.MatrixMaxSteps;
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Color threshold (R;G;B: {0})", vars: [ThresholdRed, ThresholdGreen, ThresholdBlue]);
 
                 // Set color fade steps
                 int CurrentColorRedOut = (int)Math.Round(foreground.RGB.R - ThresholdRed * StepNum);
                 int CurrentColorGreenOut = (int)Math.Round(foreground.RGB.G - ThresholdGreen * StepNum);
                 int CurrentColorBlueOut = (int)Math.Round(foreground.RGB.B - ThresholdBlue * StepNum);
-                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Color out (R;G;B: {0};{1};{2})", CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Color out (R;G;B: {0};{1};{2})", vars: [CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut]);
 
                 // Get the positions and write the block with new color
                 var CurrentFadeColor = new Color(CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut);
@@ -162,7 +122,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 TextWriterWhereColor.WriteWhereColorBack(bleedBuilder.ToString(), ColumnLine, 0, false, CurrentFadeColor, background);
 
                 // Delay
-                ThreadManager.SleepNoBlock(MatrixSettings.MatrixDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.MatrixDelay);
             }
 
             // Reset covered positions
@@ -170,7 +130,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(MatrixSettings.MatrixDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.MatrixDelay);
         }
 
         /// <inheritdoc/>

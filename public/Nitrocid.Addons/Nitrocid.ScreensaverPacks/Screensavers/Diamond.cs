@@ -21,7 +21,6 @@ using System.Collections.Generic;
 using System.Text;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Drivers.RNG;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Colors;
 using Terminaux.Base;
@@ -29,31 +28,6 @@ using Terminaux.Colors.Data;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
-    /// <summary>
-    /// Settings for Diamond
-    /// </summary>
-    public static class DiamondSettings
-    {
-
-        /// <summary>
-        /// [Diamond] How many milliseconds to wait before making the next write?
-        /// </summary>
-        public static int DiamondDelay
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.DiamondDelay;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 500;
-                ScreensaverPackInit.SaversConfig.DiamondDelay = value;
-            }
-        }
-
-    }
-
     /// <summary>
     /// Display code for Diamond
     /// </summary>
@@ -72,7 +46,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         ];
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Diamond";
+        public override string ScreensaverName =>
+            "Diamond";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -229,7 +204,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                     buffer.Clear();
 
                     // Sleep
-                    ThreadManager.SleepNoBlock(DiamondSettings.DiamondDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                    ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.DiamondDelay);
                 }
                 for (int currentStep = 1; currentStep <= maxShineSteps; currentStep++)
                 {
@@ -277,13 +252,13 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                     buffer.Clear();
 
                     // Sleep
-                    ThreadManager.SleepNoBlock(DiamondSettings.DiamondDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                    ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.DiamondDelay);
                 }
             }
 
             // Delay
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(DiamondSettings.DiamondDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.DiamondDelay);
         }
 
     }

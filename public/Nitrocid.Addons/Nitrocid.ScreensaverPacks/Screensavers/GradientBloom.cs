@@ -18,7 +18,6 @@
 //
 
 using Terminaux.Writer.ConsoleWriters;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using System.Text;
 using Terminaux.Colors;
@@ -27,61 +26,6 @@ using Terminaux.Base;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
-    /// <summary>
-    /// Settings for GradientBloom
-    /// </summary>
-    public static class GradientBloomSettings
-    {
-
-        /// <summary>
-        /// [GradientBloom] How many milliseconds to wait before making the next write?
-        /// </summary>
-        public static int GradientBloomDelay
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.GradientBloomDelay;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 50;
-                ScreensaverPackInit.SaversConfig.GradientBloomDelay = value;
-            }
-        }
-        /// <summary>
-        /// [GradientBloom] Whether to use dark colors or not
-        /// </summary>
-        public static bool GradientBloomDarkColors
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.GradientBloomDarkColors;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.GradientBloomDarkColors = value;
-            }
-        }
-        /// <summary>
-        /// [GradientBloom] How many color steps for transitioning between two colors?
-        /// </summary>
-        public static int GradientBloomSteps
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.GradientBloomSteps;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 100;
-                ScreensaverPackInit.SaversConfig.GradientBloomSteps = value;
-            }
-        }
-
-    }
-
     /// <summary>
     /// Display code for GradientBloom
     /// </summary>
@@ -94,10 +38,11 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private Color? currentColorRight;
 
         private static int MaxLevel =>
-            GradientBloomSettings.GradientBloomDarkColors ? 32 : 255;
+            ScreensaverPackInit.SaversConfig.GradientBloomDarkColors ? 32 : 255;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "GradientBloom";
+        public override string ScreensaverName =>
+            "GradientBloom";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -119,7 +64,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 return;
 
             // Prepare the colors
-            int steps = GradientBloomSettings.GradientBloomSteps;
+            int steps = ScreensaverPackInit.SaversConfig.GradientBloomSteps;
             double thresholdLeftR = (currentColorLeft.RGB.R - nextColorLeft.RGB.R) / (double)steps;
             double thresholdLeftG = (currentColorLeft.RGB.G - nextColorLeft.RGB.G) / (double)steps;
             double thresholdLeftB = (currentColorLeft.RGB.B - nextColorLeft.RGB.B) / (double)steps;
@@ -182,7 +127,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 TextWriterColor.Write(buffered.ToString(), false);
 
                 // Sleep
-                ThreadManager.SleepNoBlock(GradientBloomSettings.GradientBloomDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.GradientBloomDelay);
             }
 
             // Generate new colors
@@ -190,7 +135,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             nextColorLeft = ColorTools.GetRandomColor(ColorType.TrueColor, 0, MaxLevel, 0, MaxLevel, 0, MaxLevel, 0, MaxLevel);
             currentColorRight = nextColorRight;
             nextColorRight = ColorTools.GetRandomColor(ColorType.TrueColor, 0, MaxLevel, 0, MaxLevel, 0, MaxLevel, 0, MaxLevel);
-            ThreadManager.SleepNoBlock(GradientBloomSettings.GradientBloomDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.GradientBloomDelay);
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();

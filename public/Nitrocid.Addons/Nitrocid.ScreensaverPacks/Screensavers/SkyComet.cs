@@ -19,7 +19,6 @@
 
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Drivers.RNG;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using System;
 using System.Collections.Generic;
@@ -30,31 +29,6 @@ using Terminaux.Colors.Data;
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
     /// <summary>
-    /// Settings for SkyComet
-    /// </summary>
-    public static class SkyCometSettings
-    {
-
-        /// <summary>
-        /// [SkyComet] How many milliseconds to wait before making the next write?
-        /// </summary>
-        public static int SkyCometDelay
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.SkyCometDelay;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 10;
-                ScreensaverPackInit.SaversConfig.SkyCometDelay = value;
-            }
-        }
-
-    }
-
-    /// <summary>
     /// Display code for SkyComet
     /// </summary>
     public class SkyCometDisplay : BaseScreensaver, IScreensaver
@@ -63,7 +37,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private static readonly List<(int left, int top)> stars = [];
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "SkyComet";
+        public override string ScreensaverName =>
+            "SkyComet";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -142,7 +117,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(SkyCometSettings.SkyCometDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.SkyCometDelay);
         }
 
         /// <inheritdoc/>

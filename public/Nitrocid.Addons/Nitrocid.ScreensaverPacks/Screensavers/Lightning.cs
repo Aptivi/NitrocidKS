@@ -19,7 +19,6 @@
 
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Drivers.RNG;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using System;
 using System.Text;
@@ -31,57 +30,18 @@ using Terminaux.Colors.Data;
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
     /// <summary>
-    /// Settings for Lightning
-    /// </summary>
-    public static class LightningSettings
-    {
-
-        /// <summary>
-        /// [Lightning] How many milliseconds to wait before making the next write?
-        /// </summary>
-        public static int LightningDelay
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.LightningDelay;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 100;
-                ScreensaverPackInit.SaversConfig.LightningDelay = value;
-            }
-        }
-        /// <summary>
-        /// [Lightning] Chance, in percent, to strike
-        /// </summary>
-        public static int LightningStrikeProbability
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.LightningStrikeProbability;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 5;
-                ScreensaverPackInit.SaversConfig.LightningStrikeProbability = value;
-            }
-        }
-
-    }
-
-    /// <summary>
     /// Display code for Lightning
     /// </summary>
     public class LightningDisplay : BaseScreensaver, IScreensaver
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Lightning";
+        public override string ScreensaverName =>
+            "Lightning";
 
         /// <inheritdoc/>
-        public override bool ScreensaverContainsFlashingImages { get; set; } = true;
+        public override bool ScreensaverContainsFlashingImages =>
+            true;
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -94,7 +54,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         /// <inheritdoc/>
         public override void ScreensaverLogic()
         {
-            bool striking = RandomDriver.RandomChance(LightningSettings.LightningStrikeProbability);
+            bool striking = RandomDriver.RandomChance(ScreensaverPackInit.SaversConfig.LightningStrikeProbability);
             if (striking)
             {
                 // First, determine the lightning bolt position
@@ -207,19 +167,19 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
                         // Write the rendered strike
                         TextWriterRaw.WritePlain(strike.ToString(), false);
-                        ThreadManager.SleepNoBlock(LightningSettings.LightningDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                        ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.LightningDelay);
                     }
                     else
                     {
                         // Show only the white background
                         ColorTools.LoadBackDry(new Color(ConsoleColors.White));
-                        ThreadManager.SleepNoBlock(LightningSettings.LightningDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                        ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.LightningDelay);
                         ColorTools.LoadBackDry(new Color(ConsoleColors.Black));
                     }
                 }
                 ColorTools.LoadBackDry(new Color(ConsoleColors.Black));
             }
-            ThreadManager.SleepNoBlock(LightningSettings.LightningDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.LightningDelay);
         }
 
     }

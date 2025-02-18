@@ -20,190 +20,13 @@
 using System;
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Base;
 using Terminaux.Colors;
+using Nitrocid.Kernel.Configuration;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
-    /// <summary>
-    /// Settings for Wipe
-    /// </summary>
-    public static class WipeSettings
-    {
-
-        /// <summary>
-        /// [Wipe] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
-        public static bool WipeTrueColor
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WipeTrueColor;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.WipeTrueColor = value;
-            }
-        }
-        /// <summary>
-        /// [Wipe] How many milliseconds to wait before making the next write?
-        /// </summary>
-        public static int WipeDelay
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WipeDelay;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.WipeDelay = value;
-            }
-        }
-        /// <summary>
-        /// [Wipe] How many wipes needed to change direction?
-        /// </summary>
-        public static int WipeWipesNeededToChangeDirection
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WipeWipesNeededToChangeDirection;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.WipeWipesNeededToChangeDirection = value;
-            }
-        }
-        /// <summary>
-        /// [Wipe] Screensaver background color
-        /// </summary>
-        public static string WipeBackgroundColor
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WipeBackgroundColor;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.WipeBackgroundColor = value;
-            }
-        }
-        /// <summary>
-        /// [Wipe] The minimum red color level (true color)
-        /// </summary>
-        public static int WipeMinimumRedColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WipeMinimumRedColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.WipeMinimumRedColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [Wipe] The minimum green color level (true color)
-        /// </summary>
-        public static int WipeMinimumGreenColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WipeMinimumGreenColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.WipeMinimumGreenColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [Wipe] The minimum blue color level (true color)
-        /// </summary>
-        public static int WipeMinimumBlueColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WipeMinimumBlueColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.WipeMinimumBlueColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [Wipe] The minimum color level (255 colors or 16 colors)
-        /// </summary>
-        public static int WipeMinimumColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WipeMinimumColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.WipeMinimumColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [Wipe] The maximum red color level (true color)
-        /// </summary>
-        public static int WipeMaximumRedColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WipeMaximumRedColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.WipeMaximumRedColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [Wipe] The maximum green color level (true color)
-        /// </summary>
-        public static int WipeMaximumGreenColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WipeMaximumGreenColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.WipeMaximumGreenColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [Wipe] The maximum blue color level (true color)
-        /// </summary>
-        public static int WipeMaximumBlueColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WipeMaximumBlueColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.WipeMaximumBlueColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [Wipe] The maximum color level (255 colors or 16 colors)
-        /// </summary>
-        public static int WipeMaximumColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.WipeMaximumColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.WipeMaximumColorLevel = value;
-            }
-        }
-
-    }
-
     /// <summary>
     /// Display code for Wipe
     /// </summary>
@@ -214,13 +37,14 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private int TimesWiped = 0;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Wipe";
+        public override string ScreensaverName =>
+            "Wipe";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
             // Variable preparations
-            ColorTools.LoadBackDry(new Color(WipeSettings.WipeBackgroundColor));
+            ColorTools.LoadBackDry(new Color(ScreensaverPackInit.SaversConfig.WipeBackgroundColor));
             ConsoleWrapper.CursorVisible = false;
             TimesWiped = 0;
             ToDirection = WipeDirections.Right;
@@ -232,29 +56,29 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             ConsoleWrapper.CursorVisible = false;
 
             // Select a color
-            if (WipeSettings.WipeTrueColor)
+            if (ScreensaverPackInit.SaversConfig.WipeTrueColor)
             {
-                int RedColorNum = RandomDriver.Random(WipeSettings.WipeMinimumRedColorLevel, WipeSettings.WipeMaximumRedColorLevel);
-                int GreenColorNum = RandomDriver.Random(WipeSettings.WipeMinimumGreenColorLevel, WipeSettings.WipeMaximumGreenColorLevel);
-                int BlueColorNum = RandomDriver.Random(WipeSettings.WipeMinimumBlueColorLevel, WipeSettings.WipeMaximumBlueColorLevel);
-                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
+                int RedColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.WipeMinimumRedColorLevel, ScreensaverPackInit.SaversConfig.WipeMaximumRedColorLevel);
+                int GreenColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.WipeMinimumGreenColorLevel, ScreensaverPackInit.SaversConfig.WipeMaximumGreenColorLevel);
+                int BlueColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.WipeMinimumBlueColorLevel, ScreensaverPackInit.SaversConfig.WipeMaximumBlueColorLevel);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", vars: [RedColorNum, GreenColorNum, BlueColorNum]);
                 if (!ConsoleResizeHandler.WasResized(false))
                     ColorTools.SetConsoleColorDry(new Color($"{RedColorNum};{GreenColorNum};{BlueColorNum}"), true);
             }
             else
             {
-                int ColorNum = RandomDriver.Random(WipeSettings.WipeMinimumColorLevel, WipeSettings.WipeMaximumColorLevel);
-                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
+                int ColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.WipeMinimumColorLevel, ScreensaverPackInit.SaversConfig.WipeMaximumColorLevel);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color ({0})", vars: [ColorNum]);
                 if (!ConsoleResizeHandler.WasResized(false))
                     ColorTools.SetConsoleColorDry(new Color(ColorNum), true);
             }
 
             // Set max height
             int MaxWindowHeight = ConsoleWrapper.WindowHeight - 1;
-            DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Max height {0}", MaxWindowHeight);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Max height {0}", vars: [MaxWindowHeight]);
 
             // Print a space {Column} times until the entire screen is wiped.
-            DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Wipe direction {0}", ToDirection.ToString());
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Wipe direction {0}", vars: [ToDirection.ToString()]);
             switch (ToDirection)
             {
                 case WipeDirections.Right:
@@ -269,12 +93,12 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                                     break;
 
                                 // Do the actual writing
-                                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Setting Y position to {0}", Row);
+                                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Setting Y position to {0}", vars: [Row]);
                                 ConsoleWrapper.SetCursorPosition(0, Row);
                                 ConsoleWrapper.Write(new string(' ', Column));
-                                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", Column);
+                                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", vars: [Column]);
                             }
-                            ThreadManager.SleepNoBlock(WipeSettings.WipeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.WipeDelay);
                         }
 
                         break;
@@ -291,12 +115,12 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                                     break;
 
                                 // Do the actual writing
-                                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Setting position to {0}", Column - 1, Row);
+                                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Setting position to {0}", vars: [Column - 1, Row]);
                                 ConsoleWrapper.SetCursorPosition(Column - 1, Row);
                                 ConsoleWrapper.Write(new string(' ', ConsoleWrapper.WindowWidth - Column + 1));
-                                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", ConsoleWrapper.WindowWidth - Column + 1);
+                                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", vars: [ConsoleWrapper.WindowWidth - Column + 1]);
                             }
-                            ThreadManager.SleepNoBlock(WipeSettings.WipeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.WipeDelay);
                         }
 
                         break;
@@ -309,11 +133,11 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                                 break;
 
                             // Do the actual writing
-                            DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Setting Y position to {0}", Row);
+                            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Setting Y position to {0}", vars: [Row]);
                             ConsoleWrapper.SetCursorPosition(0, Row);
                             ConsoleWrapper.Write(new string(' ', ConsoleWrapper.WindowWidth));
-                            DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", ConsoleWrapper.WindowWidth);
-                            ThreadManager.SleepNoBlock(WipeSettings.WipeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", vars: [ConsoleWrapper.WindowWidth]);
+                            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.WipeDelay);
                         }
 
                         break;
@@ -326,9 +150,9 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                                 break;
 
                             // Do the actual writing
-                            DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", ConsoleWrapper.WindowWidth);
+                            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", vars: [ConsoleWrapper.WindowWidth]);
                             ConsoleWrapper.Write(new string(' ', ConsoleWrapper.WindowWidth));
-                            ThreadManager.SleepNoBlock(WipeSettings.WipeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.WipeDelay);
                         }
                         ConsoleWrapper.SetCursorPosition(0, 0);
                         break;
@@ -338,24 +162,24 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             if (!ConsoleResizeHandler.WasResized(false))
             {
                 TimesWiped += 1;
-                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Wiped {0} times out of {1}", TimesWiped, WipeSettings.WipeWipesNeededToChangeDirection);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Wiped {0} times out of {1}", vars: [TimesWiped, ScreensaverPackInit.SaversConfig.WipeWipesNeededToChangeDirection]);
 
                 // Check if the number of times wiped is equal to the number of required times to change wiping direction.
-                if (TimesWiped == WipeSettings.WipeWipesNeededToChangeDirection)
+                if (TimesWiped == ScreensaverPackInit.SaversConfig.WipeWipesNeededToChangeDirection)
                 {
                     TimesWiped = 0;
                     ToDirection = (WipeDirections)Convert.ToInt32(Enum.Parse(typeof(WipeDirections), RandomDriver.Random(3).ToString()));
-                    DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Changed direction to {0}", ToDirection.ToString());
+                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Changed direction to {0}", vars: [ToDirection.ToString()]);
                 }
             }
             else
             {
-                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.W, "Resize-syncing. Clearing...");
-                ColorTools.LoadBackDry(new Color(WipeSettings.WipeBackgroundColor));
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.W, "Resize-syncing. Clearing...");
+                ColorTools.LoadBackDry(new Color(ScreensaverPackInit.SaversConfig.WipeBackgroundColor));
             }
 
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(WipeSettings.WipeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.WipeDelay);
         }
 
         /// <summary>

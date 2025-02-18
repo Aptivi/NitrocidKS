@@ -19,176 +19,13 @@
 
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
+using Nitrocid.Kernel.Configuration;
 using Terminaux.Base;
 using Terminaux.Colors;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
-    /// <summary>
-    /// Settings for DoorShift
-    /// </summary>
-    public static class DoorShiftSettings
-    {
-
-        /// <summary>
-        /// [DoorShift] Enable truecolor support. Has a higher priority than 255 color support.
-        /// </summary>
-        public static bool DoorShiftTrueColor
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.DoorShiftTrueColor;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.DoorShiftTrueColor = value;
-            }
-        }
-        /// <summary>
-        /// [DoorShift] How many milliseconds to wait before making the next write?
-        /// </summary>
-        public static int DoorShiftDelay
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.DoorShiftDelay;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.DoorShiftDelay = value;
-            }
-        }
-        /// <summary>
-        /// [DoorShift] Screensaver background color
-        /// </summary>
-        public static string DoorShiftBackgroundColor
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.DoorShiftBackgroundColor;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.DoorShiftBackgroundColor = value;
-            }
-        }
-        /// <summary>
-        /// [DoorShift] The minimum red color level (true color)
-        /// </summary>
-        public static int DoorShiftMinimumRedColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.DoorShiftMinimumRedColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.DoorShiftMinimumRedColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [DoorShift] The minimum green color level (true color)
-        /// </summary>
-        public static int DoorShiftMinimumGreenColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.DoorShiftMinimumGreenColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.DoorShiftMinimumGreenColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [DoorShift] The minimum blue color level (true color)
-        /// </summary>
-        public static int DoorShiftMinimumBlueColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.DoorShiftMinimumBlueColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.DoorShiftMinimumBlueColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [DoorShift] The minimum color level (255 colors or 16 colors)
-        /// </summary>
-        public static int DoorShiftMinimumColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.DoorShiftMinimumColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.DoorShiftMinimumColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [DoorShift] The maximum red color level (true color)
-        /// </summary>
-        public static int DoorShiftMaximumRedColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.DoorShiftMaximumRedColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.DoorShiftMaximumRedColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [DoorShift] The maximum green color level (true color)
-        /// </summary>
-        public static int DoorShiftMaximumGreenColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.DoorShiftMaximumGreenColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.DoorShiftMaximumGreenColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [DoorShift] The maximum blue color level (true color)
-        /// </summary>
-        public static int DoorShiftMaximumBlueColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.DoorShiftMaximumBlueColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.DoorShiftMaximumBlueColorLevel = value;
-            }
-        }
-        /// <summary>
-        /// [DoorShift] The maximum color level (255 colors or 16 colors)
-        /// </summary>
-        public static int DoorShiftMaximumColorLevel
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.DoorShiftMaximumColorLevel;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.DoorShiftMaximumColorLevel = value;
-            }
-        }
-
-    }
-
     /// <summary>
     /// Display code for DoorShift
     /// </summary>
@@ -196,13 +33,14 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "DoorShift";
+        public override string ScreensaverName =>
+            "DoorShift";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
             // Variable preparations
-            ColorTools.LoadBackDry(new Color(DoorShiftSettings.DoorShiftBackgroundColor));
+            ColorTools.LoadBackDry(new Color(ScreensaverPackInit.SaversConfig.DoorShiftBackgroundColor));
             ConsoleWrapper.CursorVisible = false;
         }
 
@@ -215,19 +53,19 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             bool isClosing = RandomDriver.RandomChance(30);
 
             // Select a color
-            if (DoorShiftSettings.DoorShiftTrueColor)
+            if (ScreensaverPackInit.SaversConfig.DoorShiftTrueColor)
             {
-                int RedColorNum = RandomDriver.Random(DoorShiftSettings.DoorShiftMinimumRedColorLevel, DoorShiftSettings.DoorShiftMaximumRedColorLevel);
-                int GreenColorNum = RandomDriver.Random(DoorShiftSettings.DoorShiftMinimumGreenColorLevel, DoorShiftSettings.DoorShiftMaximumGreenColorLevel);
-                int BlueColorNum = RandomDriver.Random(DoorShiftSettings.DoorShiftMinimumBlueColorLevel, DoorShiftSettings.DoorShiftMaximumBlueColorLevel);
-                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
+                int RedColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.DoorShiftMinimumRedColorLevel, ScreensaverPackInit.SaversConfig.DoorShiftMaximumRedColorLevel);
+                int GreenColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.DoorShiftMinimumGreenColorLevel, ScreensaverPackInit.SaversConfig.DoorShiftMaximumGreenColorLevel);
+                int BlueColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.DoorShiftMinimumBlueColorLevel, ScreensaverPackInit.SaversConfig.DoorShiftMaximumBlueColorLevel);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", vars: [RedColorNum, GreenColorNum, BlueColorNum]);
                 if (!ConsoleResizeHandler.WasResized(false))
                     ColorTools.SetConsoleColorDry(new Color($"{RedColorNum};{GreenColorNum};{BlueColorNum}"), true);
             }
             else
             {
-                int ColorNum = RandomDriver.Random(DoorShiftSettings.DoorShiftMinimumColorLevel, DoorShiftSettings.DoorShiftMaximumColorLevel);
-                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
+                int ColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.DoorShiftMinimumColorLevel, ScreensaverPackInit.SaversConfig.DoorShiftMaximumColorLevel);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color ({0})", vars: [ColorNum]);
                 if (!ConsoleResizeHandler.WasResized(false))
                     ColorTools.SetConsoleColorDry(new Color(ColorNum), true);
             }
@@ -235,7 +73,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             // Set max height and width
             int MaxWindowHeight = ConsoleWrapper.WindowHeight - 1;
             int halfWidth = ConsoleWrapper.WindowWidth / 2;
-            DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Max height {0}", MaxWindowHeight);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Max height {0}", vars: [MaxWindowHeight]);
             if (isClosing)
             {
                 for (int column = 0; column <= halfWidth; column++)
@@ -256,14 +94,14 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                             rightDoorPos = halfWidth;
 
                         // Do the actual writing
-                        DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Setting position to {0}", column - 1, Row);
+                        DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Setting position to {0}", vars: [column - 1, Row]);
                         ConsoleWrapper.SetCursorPosition(leftDoorPos, Row);
                         ConsoleWrapper.Write(" ");
                         ConsoleWrapper.SetCursorPosition(rightDoorPos, Row);
                         ConsoleWrapper.Write(" ");
-                        DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", ConsoleWrapper.WindowWidth - column + 1);
+                        DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", vars: [ConsoleWrapper.WindowWidth - column + 1]);
                     }
-                    ThreadManager.SleepNoBlock(DoorShiftSettings.DoorShiftDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                    ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.DoorShiftDelay);
                 }
             }
             else
@@ -286,19 +124,19 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                             rightDoorPos = ConsoleWrapper.WindowWidth - 1;
 
                         // Do the actual writing
-                        DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Setting position to {0}", column - 1, Row);
+                        DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Setting position to {0}", vars: [column - 1, Row]);
                         ConsoleWrapper.SetCursorPosition(leftDoorPos, Row);
                         ConsoleWrapper.Write(" ");
                         ConsoleWrapper.SetCursorPosition(rightDoorPos, Row);
                         ConsoleWrapper.Write(" ");
-                        DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", ConsoleWrapper.WindowWidth - column + 1);
+                        DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", vars: [ConsoleWrapper.WindowWidth - column + 1]);
                     }
-                    ThreadManager.SleepNoBlock(DoorShiftSettings.DoorShiftDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                    ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.DoorShiftDelay);
                 }
             }
 
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(DoorShiftSettings.DoorShiftDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.DoorShiftDelay);
         }
 
     }

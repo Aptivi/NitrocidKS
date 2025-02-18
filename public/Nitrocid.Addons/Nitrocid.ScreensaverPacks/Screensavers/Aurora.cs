@@ -22,38 +22,13 @@ using System.Collections.Generic;
 using System.Text;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
+using Nitrocid.Kernel.Configuration;
 using Terminaux.Colors;
 using Terminaux.Base;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
-    /// <summary>
-    /// Settings for Aurora
-    /// </summary>
-    public static class AuroraSettings
-    {
-
-        /// <summary>
-        /// [Aurora] How many milliseconds to wait before making the next write?
-        /// </summary>
-        public static int AuroraDelay
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.AuroraDelay;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 100;
-                ScreensaverPackInit.SaversConfig.AuroraDelay = value;
-            }
-        }
-
-    }
-
     /// <summary>
     /// Display code for Aurora
     /// </summary>
@@ -65,7 +40,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private int bluePosIdx = 0;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Aurora";
+        public override string ScreensaverName =>
+            "Aurora";
 
         /// <inheritdoc/>
         public override void ScreensaverLogic()
@@ -84,7 +60,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             int RedColorNumTo = Math.Abs(RedCurrentLevels[redPosIdx]);
             int GreenColorNumTo = Math.Abs(GreenCurrentLevels[greenPosIdx]);
             int BlueColorNumTo = Math.Abs(BlueCurrentLevels[bluePosIdx]);
-            DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "R: {0} [{1}], G: {2} [{3}], B: {4} [{5}]", RedColorNumTo, redPosIdx, GreenColorNumTo, greenPosIdx, BlueColorNumTo, bluePosIdx);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "R: {0} [{1}], G: {2} [{3}], B: {4} [{5}]", vars: [RedColorNumTo, redPosIdx, GreenColorNumTo, greenPosIdx, BlueColorNumTo, bluePosIdx]);
 
             // Advance the indexes
             redPosIdx++;
@@ -96,7 +72,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             bluePosIdx++;
             if (bluePosIdx >= BlueCurrentLevels.Length)
                 bluePosIdx = 0;
-            DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Indexes advanced to {0}, {1}, {2}", redPosIdx, greenPosIdx, bluePosIdx);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Indexes advanced to {0}, {1}, {2}", vars: [redPosIdx, greenPosIdx, bluePosIdx]);
 
             // Prepare the color bands
             (int, int, int)[] ColorBands = GetColorBands(RedColorNumTo, GreenColorNumTo, BlueColorNumTo);
@@ -108,14 +84,14 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 int red = colorBand.Item1;
                 int green = colorBand.Item2;
                 int blue = colorBand.Item3;
-                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.I, "Aurora drawing... {0}, {1}, {2}", red, green, blue);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Aurora drawing... {0}, {1}, {2}", vars: [red, green, blue]);
                 Color storage = new(red, green, blue);
                 builder.Append($"{storage.VTSequenceBackground}{new string(' ', ConsoleWrapper.WindowWidth)}");
             }
             if (!ConsoleResizeHandler.WasResized(false))
                 TextWriterRaw.WriteRaw(builder.ToString());
             ConsoleWrapper.SetCursorPosition(0, 0);
-            ThreadManager.SleepNoBlock(AuroraSettings.AuroraDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.AuroraDelay);
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();

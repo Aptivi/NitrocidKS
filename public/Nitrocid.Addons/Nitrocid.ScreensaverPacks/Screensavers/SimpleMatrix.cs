@@ -19,8 +19,8 @@
 
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
+using Nitrocid.Kernel.Configuration;
 using Terminaux.Base;
 using Terminaux.Colors;
 using Terminaux.Colors.Data;
@@ -28,38 +28,14 @@ using Terminaux.Colors.Data;
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
     /// <summary>
-    /// Settings for SimpleMatrix
-    /// </summary>
-    public static class SimpleMatrixSettings
-    {
-
-        /// <summary>
-        /// [SimpleMatrix] How many milliseconds to wait before making the next write?
-        /// </summary>
-        public static int SimpleMatrixDelay
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.SimpleMatrixDelay;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 1;
-                ScreensaverPackInit.SaversConfig.SimpleMatrixDelay = value;
-            }
-        }
-
-    }
-
-    /// <summary>
     /// Display code for SimpleMatrix
     /// </summary>
     public class SimpleMatrixDisplay : BaseScreensaver, IScreensaver
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "SimpleMatrix";
+        public override string ScreensaverName =>
+            "SimpleMatrix";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -79,13 +55,13 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             }
             else
             {
-                DebugWriter.WriteDebugConditional(ScreensaverManager.ScreensaverDebug, DebugLevel.W, "Resize-syncing. Clearing...");
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.W, "Resize-syncing. Clearing...");
                 ConsoleWrapper.Clear();
             }
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(SimpleMatrixSettings.SimpleMatrixDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.SimpleMatrixDelay);
         }
 
     }

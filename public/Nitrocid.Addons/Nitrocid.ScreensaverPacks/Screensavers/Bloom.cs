@@ -17,68 +17,12 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Base;
 using Terminaux.Colors;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
-    /// <summary>
-    /// Settings for Bloom
-    /// </summary>
-    public static class BloomSettings
-    {
-
-        /// <summary>
-        /// [Bloom] How many milliseconds to wait before making the next write?
-        /// </summary>
-        public static int BloomDelay
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.BloomDelay;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 50;
-                ScreensaverPackInit.SaversConfig.BloomDelay = value;
-            }
-        }
-        /// <summary>
-        /// [Bloom] Whether to use dark colors or not
-        /// </summary>
-        public static bool BloomDarkColors
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.BloomDarkColors;
-            }
-            set
-            {
-                ScreensaverPackInit.SaversConfig.BloomDarkColors = value;
-            }
-        }
-        /// <summary>
-        /// [Bloom] How many color steps for transitioning between two colors?
-        /// </summary>
-        public static int BloomSteps
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.BloomSteps;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 100;
-                ScreensaverPackInit.SaversConfig.BloomSteps = value;
-            }
-        }
-
-    }
-
     /// <summary>
     /// Display code for Bloom
     /// </summary>
@@ -89,10 +33,11 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private Color? currentColor;
 
         private static int MaxLevel =>
-            BloomSettings.BloomDarkColors ? 32 : 255;
+            ScreensaverPackInit.SaversConfig.BloomDarkColors ? 32 : 255;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Bloom";
+        public override string ScreensaverName =>
+            "Bloom";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -110,7 +55,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 return;
 
             // Prepare the colors
-            int steps = BloomSettings.BloomSteps;
+            int steps = ScreensaverPackInit.SaversConfig.BloomSteps;
             double thresholdR = (currentColor.RGB.R - nextColor.RGB.R) / (double)steps;
             double thresholdG = (currentColor.RGB.G - nextColor.RGB.G) / (double)steps;
             double thresholdB = (currentColor.RGB.B - nextColor.RGB.B) / (double)steps;
@@ -134,13 +79,13 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 ColorTools.LoadBackDry(col);
 
                 // Sleep
-                ThreadManager.SleepNoBlock(BloomSettings.BloomDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.BloomDelay);
             }
 
             // Generate new colors
             currentColor = nextColor;
             nextColor = ColorTools.GetRandomColor(ColorType.TrueColor, 0, MaxLevel, 0, MaxLevel, 0, MaxLevel, 0, MaxLevel);
-            ThreadManager.SleepNoBlock(BloomSettings.BloomDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.BloomDelay);
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();

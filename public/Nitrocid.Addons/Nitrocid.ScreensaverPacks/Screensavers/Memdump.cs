@@ -21,39 +21,12 @@ using System;
 using Terminaux.Colors;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Writer.ConsoleWriters;
-using Terminaux.Writer.FancyWriters;
 using Nitrocid.Drivers.RNG;
-using Nitrocid.Kernel.Threading;
 using Terminaux.Base;
 using Terminaux.Writer.CyclicWriters;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
-    /// <summary>
-    /// Settings for Memdump
-    /// </summary>
-    public static class MemdumpSettings
-    {
-
-        /// <summary>
-        /// [Memdump] How many milliseconds to wait before making the next write?
-        /// </summary>
-        public static int MemdumpDelay
-        {
-            get
-            {
-                return ScreensaverPackInit.SaversConfig.MemdumpDelay;
-            }
-            set
-            {
-                if (value <= 0)
-                    value = 500;
-                ScreensaverPackInit.SaversConfig.MemdumpDelay = value;
-            }
-        }
-
-    }
-
     /// <summary>
     /// Display code for Memdump
     /// </summary>
@@ -61,7 +34,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Memdump";
+        public override string ScreensaverName =>
+            "Memdump";
 
         /// <inheritdoc/>
         public override void ScreensaverLogic()
@@ -122,7 +96,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(MemdumpSettings.MemdumpDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.MemdumpDelay);
         }
 
     }

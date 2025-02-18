@@ -360,6 +360,23 @@ namespace Nitrocid.Misc.Screensaver
         }
 
         /// <summary>
+        /// Delays the screensaver thread until either the unified screensaver delay period or the specified delay period.
+        /// </summary>
+        /// <param name="delay">Delay period (usually a configured value from individual screensaver settings)</param>
+        /// <param name="force">Whether to force use your specified period delay period or not</param>
+        /// <remarks>
+        /// It also returns when either the screensaver displayer thread is told to stop or the console is resized.
+        /// </remarks>
+        public static void Delay(int delay, bool force = false)
+        {
+            int finalDelay = Config.MainConfig.ScreensaverUnifiedDelay && !force ? Config.MainConfig.ScreensaverDelay : delay;
+            SpinWait.SpinUntil(() =>
+                ScreensaverDisplayer.ScreensaverDisplayerThread.IsStopping ||
+                ConsoleResizeHandler.WasResized(false)
+            , finalDelay);
+        }
+
+        /// <summary>
         /// Screensaver error handler
         /// </summary>
         internal static void HandleSaverError(Exception Exception, bool initialVisible)
