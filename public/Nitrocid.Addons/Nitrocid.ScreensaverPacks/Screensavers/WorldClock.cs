@@ -27,7 +27,6 @@ using Nitrocid.Drivers.RNG;
 using Terminaux.Base;
 using Terminaux.Writer.CyclicWriters;
 using Terminaux.Writer.CyclicWriters.Renderer.Tools;
-using Nitrocid.Kernel.Threading;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
@@ -85,7 +84,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             TextWriterWhereColor.WriteWhereColor($"{date} @ {timeZoneName}", (int)Math.Round(ConsoleWrapper.WindowWidth / 2d - $"{date} @ {timeZoneName}".Length / 2d), hashY, color);
 
             // Delay
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.WorldClockDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.WorldClockDelay);
             times++;
         }
 

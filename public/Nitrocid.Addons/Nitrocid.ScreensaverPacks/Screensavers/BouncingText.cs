@@ -21,7 +21,6 @@ using System;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Colors;
 using Terminaux.Base;
@@ -41,7 +40,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private Color? BouncingColor;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "BouncingText";
+        public override string ScreensaverName =>
+            "BouncingText";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -64,9 +64,9 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             TextWriterWhereColor.WriteWhereColorBack(new string(' ', diff), lastLeft, lastTop, true, Color.Empty, ScreensaverPackInit.SaversConfig.BouncingTextBackgroundColor);
 
             // Define the color
-            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Row text: {0}", RowText);
-            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Column first letter of text: {0}", ColumnFirstLetter);
-            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Column last letter of text: {0}", ColumnLastLetter);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Row text: {0}", vars: [RowText]);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Column first letter of text: {0}", vars: [ColumnFirstLetter]);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Column last letter of text: {0}", vars: [ColumnLastLetter]);
             if (BouncingColor is null)
             {
                 DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Defining color...");
@@ -89,7 +89,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             lastTop = RowText;
 
             // Change the direction of text
-            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Text is facing {0}.", Direction);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Text is facing {0}.", vars: [Direction]);
             if (Direction == "BottomRight")
             {
                 DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Increasing row and column text position");
@@ -148,7 +148,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.BouncingTextDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.BouncingTextDelay);
         }
 
         /// <summary>

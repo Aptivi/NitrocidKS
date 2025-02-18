@@ -27,6 +27,7 @@ using Nitrocid.Misc.Screensaver;
 using Nitrocid.Kernel.Configuration;
 using Terminaux.Colors;
 using Terminaux.Base;
+using Nitrocid.ConsoleBase.Colors;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
@@ -40,7 +41,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private Color currentColor = Color.Empty;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "FillFade";
+        public override string ScreensaverName =>
+            "FillFade";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -48,7 +50,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             // Variable preparations
             ColorFilled = false;
             ChangeColor();
-            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
+            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", vars: [ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight]);
             base.ScreensaverPreparation();
         }
 
@@ -62,9 +64,9 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             int Left = RandomDriver.RandomIdx(ConsoleWrapper.WindowWidth);
             int Top = RandomDriver.RandomIdx(ConsoleWrapper.WindowHeight);
             bool goAhead = true;
-            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Dissolving: {0}", ColorFilled);
-            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "End left: {0} | End top: {1}", EndLeft, EndTop);
-            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got left: {0} | Got top: {1}", Left, Top);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Dissolving: {0}", vars: [ColorFilled]);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "End left: {0} | End top: {1}", vars: [EndLeft, EndTop]);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got left: {0} | Got top: {1}", vars: [Left, Top]);
 
             // Fill the color if not filled
             if (!ColorFilled)
@@ -75,7 +77,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                     DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "We're refilling...");
                     ColorFilled = false;
                     goAhead = false;
-                    ColorTools.LoadBack();
+                    KernelColorTools.LoadBackground();
                 }
 
                 if (goAhead)
@@ -84,7 +86,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                     {
                         ColorTools.SetConsoleColorDry(currentColor, true);
                         TextWriterRaw.WritePlain(" ", false);
-                        DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "We're now dissolving... L: {0} = {1} | T: {2} = {3}", ConsoleWrapper.CursorLeft, EndLeft, ConsoleWrapper.CursorTop, EndTop);
+                        DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "We're now dissolving... L: {0} = {1} | T: {2} = {3}", vars: [ConsoleWrapper.CursorLeft, EndLeft, ConsoleWrapper.CursorTop, EndTop]);
                         ColorFilled = true;
                     }
                     else
@@ -110,15 +112,15 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                     double ThresholdRed = RedColorNum / (double)maxSteps;
                     double ThresholdGreen = GreenColorNum / (double)maxSteps;
                     double ThresholdBlue = BlueColorNum / (double)maxSteps;
-                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Color threshold (R;G;B: {0})", ThresholdRed, ThresholdGreen, ThresholdBlue);
+                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Color threshold (R;G;B: {0})", vars: [ThresholdRed, ThresholdGreen, ThresholdBlue]);
 
                     // Fade out
-                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Step {0}/{1}", CurrentStep, maxSteps);
+                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Step {0}/{1}", vars: [CurrentStep, maxSteps]);
                     ThreadManager.SleepNoBlock(50, Thread.CurrentThread);
                     int CurrentColorRedOut = (int)Math.Round(RedColorNum - ThresholdRed * CurrentStep);
                     int CurrentColorGreenOut = (int)Math.Round(GreenColorNum - ThresholdGreen * CurrentStep);
                     int CurrentColorBlueOut = (int)Math.Round(BlueColorNum - ThresholdBlue * CurrentStep);
-                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Color out (R;G;B: {0};{1};{2})", CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut);
+                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Color out (R;G;B: {0};{1};{2})", vars: [CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut]);
                     if (!ConsoleResizeHandler.WasResized(false))
                         ColorTools.LoadBackDry(new Color(CurrentColorRedOut, CurrentColorGreenOut, CurrentColorBlueOut));
                 }
@@ -138,13 +140,13 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 int RedColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.FillFadeMinimumRedColorLevel, ScreensaverPackInit.SaversConfig.FillFadeMaximumRedColorLevel);
                 int GreenColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.FillFadeMinimumGreenColorLevel, ScreensaverPackInit.SaversConfig.FillFadeMaximumGreenColorLevel);
                 int BlueColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.FillFadeMinimumBlueColorLevel, ScreensaverPackInit.SaversConfig.FillFadeMaximumBlueColorLevel);
-                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", vars: [RedColorNum, GreenColorNum, BlueColorNum]);
                 currentColor = new Color($"{RedColorNum};{GreenColorNum};{BlueColorNum}");
             }
             else
             {
                 int ColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.FillFadeMinimumColorLevel, ScreensaverPackInit.SaversConfig.FillFadeMaximumColorLevel);
-                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color ({0})", vars: [ColorNum]);
                 currentColor = new Color(ColorNum);
             }
         }

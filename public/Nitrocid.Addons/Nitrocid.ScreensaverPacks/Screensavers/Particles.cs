@@ -20,13 +20,13 @@
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Nitrocid.Kernel.Configuration;
 using System.Text;
 using Terminaux.Colors;
 using Terminaux.Sequences.Builder.Types;
 using Terminaux.Base;
+using Nitrocid.ConsoleBase.Colors;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
@@ -37,7 +37,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Particles";
+        public override string ScreensaverName =>
+            "Particles";
 
         /// <inheritdoc/>
         public override void ScreensaverLogic()
@@ -57,14 +58,14 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                     int RedColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.ParticlesMinimumRedColorLevel, ScreensaverPackInit.SaversConfig.ParticlesMaximumRedColorLevel);
                     int GreenColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.ParticlesMinimumGreenColorLevel, ScreensaverPackInit.SaversConfig.ParticlesMaximumGreenColorLevel);
                     int BlueColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.ParticlesMinimumBlueColorLevel, ScreensaverPackInit.SaversConfig.ParticlesMaximumBlueColorLevel);
-                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
+                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", vars: [RedColorNum, GreenColorNum, BlueColorNum]);
                     ColorStorage = new Color(RedColorNum, GreenColorNum, BlueColorNum);
                     particlesBuffer.Append(ColorStorage.VTSequenceBackgroundTrueColor);
                 }
                 else
                 {
                     int ColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.ParticlesMinimumColorLevel, ScreensaverPackInit.SaversConfig.ParticlesMaximumColorLevel);
-                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
+                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color ({0})", vars: [ColorNum]);
                     ColorStorage = new Color(ColorNum);
                     particlesBuffer.Append(ColorStorage.VTSequenceBackgroundTrueColor);
                 }
@@ -72,7 +73,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 // Select position to draw the particles
                 int Left = RandomDriver.RandomIdx(ConsoleWrapper.WindowWidth);
                 int Top = RandomDriver.RandomIdx(ConsoleWrapper.WindowHeight);
-                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Selected left and top: {0}, {1}", Left, Top);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Selected left and top: {0}, {1}", vars: [Left, Top]);
                 particlesBuffer.Append(CsiSequences.GenerateCsiCursorPosition(Left + 1, Top + 1));
                 particlesBuffer.Append(' ');
             }
@@ -80,8 +81,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.ParticlesDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
-            ColorTools.LoadBack();
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.ParticlesDelay);
+            KernelColorTools.LoadBackground();
         }
 
     }

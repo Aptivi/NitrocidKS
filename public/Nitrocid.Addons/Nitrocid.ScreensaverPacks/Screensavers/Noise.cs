@@ -20,7 +20,6 @@
 using System;
 using System.Collections;
 using Nitrocid.Drivers.RNG;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Base;
 using Terminaux.Colors;
@@ -35,7 +34,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Noise";
+        public override string ScreensaverName =>
+            "Noise";
 
         /// <inheritdoc/>
         public override void ScreensaverLogic()
@@ -71,7 +71,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.NoiseNewScreenDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.NoiseNewScreenDelay);
         }
 
     }

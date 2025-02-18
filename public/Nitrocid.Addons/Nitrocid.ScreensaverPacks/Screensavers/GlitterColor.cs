@@ -19,7 +19,6 @@
 
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Base;
 using Terminaux.Colors;
@@ -34,7 +33,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "GlitterColor";
+        public override string ScreensaverName =>
+            "GlitterColor";
 
         /// <inheritdoc/>
         public override void ScreensaverLogic()
@@ -44,7 +44,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             // Select position
             int Left = RandomDriver.RandomIdx(ConsoleWrapper.WindowWidth);
             int Top = RandomDriver.RandomIdx(ConsoleWrapper.WindowHeight);
-            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Selected left and top: {0}, {1}", Left, Top);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Selected left and top: {0}, {1}", vars: [Left, Top]);
             ConsoleWrapper.SetCursorPosition(Left, Top);
 
             // Make a glitter color
@@ -53,7 +53,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 int RedColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.GlitterColorMinimumRedColorLevel, ScreensaverPackInit.SaversConfig.GlitterColorMaximumRedColorLevel);
                 int GreenColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.GlitterColorMinimumGreenColorLevel, ScreensaverPackInit.SaversConfig.GlitterColorMaximumGreenColorLevel);
                 int BlueColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.GlitterColorMinimumBlueColorLevel, ScreensaverPackInit.SaversConfig.GlitterColorMaximumBlueColorLevel);
-                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", vars: [RedColorNum, GreenColorNum, BlueColorNum]);
                 var ColorStorage = new Color(RedColorNum, GreenColorNum, BlueColorNum);
                 if (!ConsoleResizeHandler.WasResized(false))
                 {
@@ -64,7 +64,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             else
             {
                 int ColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.GlitterColorMinimumColorLevel, ScreensaverPackInit.SaversConfig.GlitterColorMaximumColorLevel);
-                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color ({0})", vars: [ColorNum]);
                 if (!ConsoleResizeHandler.WasResized(false))
                 {
                     ColorTools.SetConsoleColorDry(new Color(ColorNum), true);
@@ -74,7 +74,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.GlitterColorDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.GlitterColorDelay);
         }
 
     }

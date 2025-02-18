@@ -28,7 +28,6 @@ using Terminaux.Colors.Data;
 using Terminaux.Writer.CyclicWriters;
 using Terminaux.Colors.Transformation;
 using Terminaux.Writer.CyclicWriters.Renderer;
-using Nitrocid.Kernel.Threading;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
@@ -118,7 +117,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             string infoMessage = $"<< {presetName} >>";
             int infoMessageWidth = ConsoleWrapper.WindowWidth / 2 - infoMessage.Length / 2;
             TextWriterWhereColor.WriteWhere(infoMessage, infoMessageWidth, infoMessageHeight);
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.EqualizerNextScreenDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.EqualizerNextScreenDelay);
         }
 
     }

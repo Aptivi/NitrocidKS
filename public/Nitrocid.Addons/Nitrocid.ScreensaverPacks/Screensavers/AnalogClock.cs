@@ -18,7 +18,6 @@
 //
 
 using Nitrocid.Drivers.RNG;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Nitrocid.Users.Login.Widgets;
 using Nitrocid.Users.Login.Widgets.Implementations;
@@ -55,7 +54,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         {
             string widgetSeq = widget.Render();
             TextWriterRaw.WriteRaw(widgetSeq);
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.AnalogClockDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.AnalogClockDelay);
         }
 
         private Color ChangeAnalogClockColor()

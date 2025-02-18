@@ -19,7 +19,6 @@
 
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Nitrocid.Kernel.Configuration;
 using Terminaux.Base;
@@ -34,7 +33,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "DoorShift";
+        public override string ScreensaverName =>
+            "DoorShift";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -58,14 +58,14 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 int RedColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.DoorShiftMinimumRedColorLevel, ScreensaverPackInit.SaversConfig.DoorShiftMaximumRedColorLevel);
                 int GreenColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.DoorShiftMinimumGreenColorLevel, ScreensaverPackInit.SaversConfig.DoorShiftMaximumGreenColorLevel);
                 int BlueColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.DoorShiftMinimumBlueColorLevel, ScreensaverPackInit.SaversConfig.DoorShiftMaximumBlueColorLevel);
-                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", vars: [RedColorNum, GreenColorNum, BlueColorNum]);
                 if (!ConsoleResizeHandler.WasResized(false))
                     ColorTools.SetConsoleColorDry(new Color($"{RedColorNum};{GreenColorNum};{BlueColorNum}"), true);
             }
             else
             {
                 int ColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.DoorShiftMinimumColorLevel, ScreensaverPackInit.SaversConfig.DoorShiftMaximumColorLevel);
-                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color ({0})", vars: [ColorNum]);
                 if (!ConsoleResizeHandler.WasResized(false))
                     ColorTools.SetConsoleColorDry(new Color(ColorNum), true);
             }
@@ -73,7 +73,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             // Set max height and width
             int MaxWindowHeight = ConsoleWrapper.WindowHeight - 1;
             int halfWidth = ConsoleWrapper.WindowWidth / 2;
-            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Max height {0}", MaxWindowHeight);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Max height {0}", vars: [MaxWindowHeight]);
             if (isClosing)
             {
                 for (int column = 0; column <= halfWidth; column++)
@@ -94,14 +94,14 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                             rightDoorPos = halfWidth;
 
                         // Do the actual writing
-                        DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Setting position to {0}", column - 1, Row);
+                        DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Setting position to {0}", vars: [column - 1, Row]);
                         ConsoleWrapper.SetCursorPosition(leftDoorPos, Row);
                         ConsoleWrapper.Write(" ");
                         ConsoleWrapper.SetCursorPosition(rightDoorPos, Row);
                         ConsoleWrapper.Write(" ");
-                        DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", ConsoleWrapper.WindowWidth - column + 1);
+                        DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", vars: [ConsoleWrapper.WindowWidth - column + 1]);
                     }
-                    ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.DoorShiftDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                    ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.DoorShiftDelay);
                 }
             }
             else
@@ -124,19 +124,19 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                             rightDoorPos = ConsoleWrapper.WindowWidth - 1;
 
                         // Do the actual writing
-                        DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Setting position to {0}", column - 1, Row);
+                        DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Setting position to {0}", vars: [column - 1, Row]);
                         ConsoleWrapper.SetCursorPosition(leftDoorPos, Row);
                         ConsoleWrapper.Write(" ");
                         ConsoleWrapper.SetCursorPosition(rightDoorPos, Row);
                         ConsoleWrapper.Write(" ");
-                        DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", ConsoleWrapper.WindowWidth - column + 1);
+                        DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Written blanks {0} times", vars: [ConsoleWrapper.WindowWidth - column + 1]);
                     }
-                    ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.DoorShiftDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                    ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.DoorShiftDelay);
                 }
             }
 
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.DoorShiftDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.DoorShiftDelay);
         }
 
     }

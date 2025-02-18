@@ -19,7 +19,6 @@
 
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Drivers.RNG;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Kernel.Time.Renderers;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Colors;
@@ -37,7 +36,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private string lastRenderedTime = "";
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "DateAndTime";
+        public override string ScreensaverName =>
+            "DateAndTime";
 
         /// <inheritdoc/>
         public override void ScreensaverLogic()
@@ -63,7 +63,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             // Delay
             lastRenderedDate = renderedDate;
             lastRenderedTime = renderedTime;
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.DateAndTimeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.DateAndTimeDelay);
         }
 
         /// <summary>

@@ -21,9 +21,7 @@ using System;
 using Terminaux.Colors;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Writer.ConsoleWriters;
-using Terminaux.Writer.FancyWriters;
 using Nitrocid.Drivers.RNG;
-using Nitrocid.Kernel.Threading;
 using Terminaux.Base;
 using Terminaux.Writer.CyclicWriters;
 
@@ -36,7 +34,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Memdump";
+        public override string ScreensaverName =>
+            "Memdump";
 
         /// <inheritdoc/>
         public override void ScreensaverLogic()
@@ -97,7 +96,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.MemdumpDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.MemdumpDelay);
         }
 
     }

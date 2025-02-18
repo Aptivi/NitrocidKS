@@ -23,12 +23,12 @@ using Textify.Data.Figlet;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Nitrocid.Kernel.Configuration;
 using Terminaux.Colors;
 using Textify.General;
 using Terminaux.Base;
+using Nitrocid.ConsoleBase.Colors;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
@@ -41,11 +41,12 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private int currentHueAngle = 0;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Figlet";
+        public override string ScreensaverName =>
+            "Figlet";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation() =>
-            ColorTools.LoadBack();
+            KernelColorTools.LoadBackground();
 
         /// <inheritdoc/>
         public override void ScreensaverLogic()
@@ -63,13 +64,13 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 int RedColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.FigletMinimumRedColorLevel, ScreensaverPackInit.SaversConfig.FigletMaximumRedColorLevel);
                 int GreenColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.FigletMinimumGreenColorLevel, ScreensaverPackInit.SaversConfig.FigletMaximumGreenColorLevel);
                 int BlueColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.FigletMinimumBlueColorLevel, ScreensaverPackInit.SaversConfig.FigletMaximumBlueColorLevel);
-                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", vars: [RedColorNum, GreenColorNum, BlueColorNum]);
                 ColorStorage = new Color(RedColorNum, GreenColorNum, BlueColorNum);
             }
             else
             {
                 int ColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.FigletMinimumColorLevel, ScreensaverPackInit.SaversConfig.FigletMaximumColorLevel);
-                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color ({0})", vars: [ColorNum]);
                 ColorStorage = new Color(ColorNum);
             }
             if (ScreensaverPackInit.SaversConfig.FigletRainbowMode)
@@ -94,7 +95,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
             int delay = ScreensaverPackInit.SaversConfig.FigletRainbowMode ? 16 : ScreensaverPackInit.SaversConfig.FigletDelay;
-            ThreadManager.SleepNoBlock(delay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(delay);
         }
 
         /// <inheritdoc/>

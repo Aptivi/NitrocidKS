@@ -32,13 +32,14 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private Animations.BSOD.BSODSettings? BSODSettingsInstance;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "BSOD";
+        public override string ScreensaverName =>
+            "BSOD";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
             // Variable preparations
-            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
+            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", vars: [ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight]);
             BSODSettingsInstance = new Animations.BSOD.BSODSettings()
             {
                 BSODDelay = ScreensaverPackInit.SaversConfig.BSODDelay

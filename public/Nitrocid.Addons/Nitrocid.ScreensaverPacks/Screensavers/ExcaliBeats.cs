@@ -33,15 +33,17 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private Animations.ExcaliBeats.ExcaliBeatsSettings? ExcaliBeatsSettingsInstance;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "ExcaliBeats";
+        public override string ScreensaverName =>
+            "ExcaliBeats";
 
         /// <inheritdoc/>
-        public override bool ScreensaverContainsFlashingImages { get; set; } = true;
+        public override bool ScreensaverContainsFlashingImages =>
+            true;
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
-            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
+            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", vars: [ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight]);
             ExcaliBeatsSettingsInstance = new Animations.ExcaliBeats.ExcaliBeatsSettings()
             {
                 ExcaliBeatsTrueColor = ScreensaverPackInit.SaversConfig.ExcaliBeatsTrueColor,

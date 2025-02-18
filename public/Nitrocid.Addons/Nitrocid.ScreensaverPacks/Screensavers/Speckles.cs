@@ -22,11 +22,11 @@ using System.Collections.Generic;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Nitrocid.Kernel.Configuration;
 using Terminaux.Colors;
 using Terminaux.Base;
+using Nitrocid.ConsoleBase.Colors;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
@@ -39,7 +39,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private readonly List<(double, double, int, int, double, double, Color)> Blocks = [];
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Speckles";
+        public override string ScreensaverName =>
+            "Speckles";
 
         /// <inheritdoc/>
         public override void ScreensaverLogic()
@@ -147,8 +148,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.SpecklesDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
-            ColorTools.LoadBack();
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.SpecklesDelay);
+            KernelColorTools.LoadBackground();
         }
 
         /// <inheritdoc/>

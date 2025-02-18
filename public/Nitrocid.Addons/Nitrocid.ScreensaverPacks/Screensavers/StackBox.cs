@@ -17,10 +17,8 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using Terminaux.Writer.FancyWriters;
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Reflection;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Colors;
@@ -40,7 +38,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "StackBox";
+        public override string ScreensaverName =>
+            "StackBox";
 
         /// <inheritdoc/>
         public override void ScreensaverLogic()
@@ -60,10 +59,10 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 // Get the required positions for the box
                 int BoxStartX = RandomDriver.RandomIdx(ConsoleWrapper.WindowWidth);
                 int BoxEndX = RandomDriver.RandomIdx(ConsoleWrapper.WindowWidth);
-                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Box X position {0} -> {1}", BoxStartX, BoxEndX);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Box X position {0} -> {1}", vars: [BoxStartX, BoxEndX]);
                 int BoxStartY = RandomDriver.RandomIdx(ConsoleWrapper.WindowHeight);
                 int BoxEndY = RandomDriver.RandomIdx(ConsoleWrapper.WindowHeight);
-                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Box Y position {0} -> {1}", BoxStartY, BoxEndY);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Box Y position {0} -> {1}", vars: [BoxStartY, BoxEndY]);
 
                 // Check to see if start is less than or equal to end
                 BoxStartX.SwapIfSourceLarger(ref BoxEndX);
@@ -85,13 +84,13 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                         int RedColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.StackBoxMinimumRedColorLevel, ScreensaverPackInit.SaversConfig.StackBoxMaximumRedColorLevel);
                         int GreenColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.StackBoxMinimumGreenColorLevel, ScreensaverPackInit.SaversConfig.StackBoxMaximumGreenColorLevel);
                         int BlueColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.StackBoxMinimumBlueColorLevel, ScreensaverPackInit.SaversConfig.StackBoxMaximumBlueColorLevel);
-                        DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
+                        DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", vars: [RedColorNum, GreenColorNum, BlueColorNum]);
                         color = new Color($"{RedColorNum};{GreenColorNum};{BlueColorNum}");
                     }
                     else
                     {
                         int ColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.StackBoxMinimumColorLevel, ScreensaverPackInit.SaversConfig.StackBoxMaximumColorLevel);
-                        DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color ({0})", ColorNum);
+                        DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color ({0})", vars: [ColorNum]);
                         color = new Color(ColorNum);
                     }
 
@@ -122,7 +121,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                     TextWriterRaw.WriteRaw(stackBox.Render());
                 }
             }
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.StackBoxDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.StackBoxDelay);
         }
 
     }

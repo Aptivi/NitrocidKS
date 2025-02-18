@@ -24,8 +24,6 @@ using Nitrocid.Misc.Screensaver;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.ConsoleBase.Colors;
 using Nitrocid.Drivers.RNG;
-using Terminaux.Writer.FancyWriters;
-using Nitrocid.Kernel.Threading;
 using Terminaux.Base;
 using Nitrocid.Kernel.Configuration;
 using Terminaux.Writer.CyclicWriters;
@@ -45,7 +43,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private IndeterminateDirection IndeterminateCurrentBlockDirection = IndeterminateDirection.LeftToRight;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Indeterminate";
+        public override string ScreensaverName =>
+            "Indeterminate";
 
         /// <inheritdoc/>
         public IndeterminateDisplay()
@@ -69,11 +68,11 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             int RampFrameStartWidth = 4;
             int RampFrameEndWidth = ConsoleWrapper.WindowWidth - RampFrameStartWidth;
             int RampFrameSpaces = RampFrameEndWidth - RampFrameStartWidth;
-            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Start width: {0}, End width: {1}, Spaces: {2}", RampFrameStartWidth, RampFrameEndWidth, RampFrameSpaces);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Start width: {0}, End width: {1}, Spaces: {2}", vars: [RampFrameStartWidth, RampFrameEndWidth, RampFrameSpaces]);
 
             // Let the ramp be printed in the center
             int RampCenterPosition = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d);
-            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Center position: {0}", RampCenterPosition);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Center position: {0}", vars: [RampCenterPosition]);
 
             // Draw the frame
             if (!ConsoleResizeHandler.WasResized(false))
@@ -156,7 +155,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 }
 
                 // Delay writing
-                ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.IndeterminateDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.IndeterminateDelay);
             }
 
             // Change the direction enumeration
@@ -171,9 +170,9 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             }
 
             // Reset the background
-            ColorTools.LoadBack();
+            KernelColorTools.LoadBackground();
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.IndeterminateDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.IndeterminateDelay);
         }
 
         private enum IndeterminateDirection

@@ -32,12 +32,13 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private Animations.Glitch.GlitchSettings? GlitchSettingsInstance;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Glitch";
+        public override string ScreensaverName =>
+            "Glitch";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
-            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
+            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", vars: [ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight]);
             GlitchSettingsInstance = new Animations.Glitch.GlitchSettings()
             {
                 GlitchDelay = ScreensaverPackInit.SaversConfig.GlitchDelay,

@@ -21,7 +21,6 @@ using System.Collections.Generic;
 using System.Text;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Drivers.RNG;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Colors;
 using Terminaux.Base;
@@ -47,7 +46,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         ];
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Diamond";
+        public override string ScreensaverName =>
+            "Diamond";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -204,7 +204,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                     buffer.Clear();
 
                     // Sleep
-                    ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.DiamondDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                    ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.DiamondDelay);
                 }
                 for (int currentStep = 1; currentStep <= maxShineSteps; currentStep++)
                 {
@@ -252,13 +252,13 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                     buffer.Clear();
 
                     // Sleep
-                    ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.DiamondDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                    ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.DiamondDelay);
                 }
             }
 
             // Delay
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.DiamondDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.DiamondDelay);
         }
 
     }

@@ -18,7 +18,6 @@
 //
 
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Base;
 
@@ -33,12 +32,13 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private Animations.Spin.SpinSettings? SpinSettingsInstance;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Spin";
+        public override string ScreensaverName =>
+            "Spin";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
-            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
+            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", vars: [ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight]);
             SpinSettingsInstance = new Animations.Spin.SpinSettings()
             {
                 SpinDelay = ScreensaverPackInit.SaversConfig.SpinDelay
@@ -50,7 +50,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         public override void ScreensaverLogic()
         {
             Animations.Spin.Spin.Simulate(SpinSettingsInstance);
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.SpinDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.SpinDelay);
         }
 
     }

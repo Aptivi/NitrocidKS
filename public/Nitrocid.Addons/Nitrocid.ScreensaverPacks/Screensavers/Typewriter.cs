@@ -19,15 +19,15 @@
 
 using System;
 using Nitrocid.Drivers.RNG;
-using Nitrocid.Files.Operations;
-using Nitrocid.Files.Operations.Querying;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Base;
 using Terminaux.Colors;
 using Textify.General;
 using Nitrocid.Kernel.Configuration;
+using Nitrocid.Files;
+using Nitrocid.Files.Operations.Querying;
+using Nitrocid.Files.Operations;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
@@ -38,7 +38,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Typewriter";
+        public override string ScreensaverName =>
+            "Typewriter";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -54,15 +55,15 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             int CpmSpeedMin = ScreensaverPackInit.SaversConfig.TypewriterWritingSpeedMin * 5;
             int CpmSpeedMax = ScreensaverPackInit.SaversConfig.TypewriterWritingSpeedMax * 5;
             string TypeWrite = ScreensaverPackInit.SaversConfig.TypewriterWrite;
-            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Minimum speed from {0} WPM: {1} CPM", ScreensaverPackInit.SaversConfig.TypewriterWritingSpeedMin, CpmSpeedMin);
-            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Maximum speed from {0} WPM: {1} CPM", ScreensaverPackInit.SaversConfig.TypewriterWritingSpeedMax, CpmSpeedMax);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Minimum speed from {0} WPM: {1} CPM", vars: [ScreensaverPackInit.SaversConfig.TypewriterWritingSpeedMin, CpmSpeedMin]);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Maximum speed from {0} WPM: {1} CPM", vars: [ScreensaverPackInit.SaversConfig.TypewriterWritingSpeedMax, CpmSpeedMax]);
             ConsoleWrapper.CursorVisible = false;
             // Typewriter can also deal with files written on the field that is used for storing text, so check to see if the path exists.
-            DebugWriter.WriteDebug(DebugLevel.I, "Checking \"{0}\" to see if it's a file path", ScreensaverPackInit.SaversConfig.TypewriterWrite);
+            DebugWriter.WriteDebug(DebugLevel.I, "Checking \"{0}\" to see if it's a file path", vars: [ScreensaverPackInit.SaversConfig.TypewriterWrite]);
             if (Parsing.TryParsePath(ScreensaverPackInit.SaversConfig.TypewriterWrite) && Checking.FileExists(ScreensaverPackInit.SaversConfig.TypewriterWrite))
             {
                 // File found! Now, write the contents of it to the local variable that stores the actual written text.
-                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Opening file {0} to write...", ScreensaverPackInit.SaversConfig.TypewriterWrite);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Opening file {0} to write...", vars: [ScreensaverPackInit.SaversConfig.TypewriterWrite]);
                 TypeWrite = Reading.ReadContentsText(ScreensaverPackInit.SaversConfig.TypewriterWrite);
             }
 
@@ -71,7 +72,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             {
                 if (ConsoleResizeHandler.WasResized(false))
                     break;
-                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "New paragraph: {0}", Paragraph);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "New paragraph: {0}", vars: [Paragraph]);
 
                 // Split the paragraph into sentences that have the length of maximum characters that can be printed in various terminal
                 // sizes.
@@ -82,7 +83,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 {
                     ConsoleWrapper.WriteLine();
                     ConsoleWrapper.Write("    ");
-                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop);
+                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", vars: [ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop]);
                 }
 
                 // Get struck character and write it
@@ -99,13 +100,13 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                         // Calculate needed milliseconds from two WPM speeds (minimum and maximum)
                         int SelectedCpm = RandomDriver.RandomIdx(CpmSpeedMin, CpmSpeedMax);
                         int WriteMs = (int)Math.Round(60d / SelectedCpm * 1000d);
-                        DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Delay for {0} CPM: {1} ms", SelectedCpm, WriteMs);
+                        DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Delay for {0} CPM: {1} ms", vars: [SelectedCpm, WriteMs]);
 
                         // If we're at the end of the page, clear the screen
                         if (ConsoleWrapper.CursorTop == ConsoleWrapper.WindowHeight - 2)
                         {
-                            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "We're at the end of the page! {0} = {1}", ConsoleWrapper.CursorTop, ConsoleWrapper.WindowHeight - 2);
-                            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.TypewriterNewScreenDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "We're at the end of the page! {0} = {1}", vars: [ConsoleWrapper.CursorTop, ConsoleWrapper.WindowHeight - 2]);
+                            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.TypewriterNewScreenDelay);
                             ConsoleWrapper.Clear();
                             ConsoleWrapper.WriteLine();
                             if (SentenceIndex == 0)
@@ -116,7 +117,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                             {
                                 ConsoleWrapper.Write(" ");
                             }
-                            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop);
+                            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", vars: [ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop]);
                         }
 
                         // If we need to show the arrow indicator, update its position
@@ -125,25 +126,25 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                             int OldTop = ConsoleWrapper.CursorTop;
                             int OldLeft = ConsoleWrapper.CursorLeft;
                             ConsoleWrapper.SetCursorPosition(OldLeft, ConsoleWrapper.WindowHeight - 1);
-                            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Arrow drawn in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop);
+                            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Arrow drawn in {0}, {1}", vars: [ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop]);
                             ConsoleWrapper.Write(Convert.ToString(CharManager.GetEsc()) + "[1K^" + Convert.ToString(CharManager.GetEsc()) + "[K");
                             ConsoleWrapper.SetCursorPosition(OldLeft, OldTop);
-                            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Returned to {0}, {1}", OldLeft, OldTop);
+                            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Returned to {0}, {1}", vars: [OldLeft, OldTop]);
                         }
 
                         // Write the final character to the console and wait
                         ConsoleWrapper.Write(StruckChar);
-                        ThreadManager.SleepNoBlock(WriteMs, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                        ScreensaverManager.Delay(WriteMs);
                     }
                     ConsoleWrapper.WriteLine();
                     ConsoleWrapper.Write(" ");
-                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop);
+                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Indented in {0}, {1}", vars: [ConsoleWrapper.CursorLeft, ConsoleWrapper.CursorTop]);
                 }
             }
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.TypewriterDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.TypewriterDelay);
         }
 
     }

@@ -19,7 +19,6 @@
 
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Nitrocid.Kernel.Configuration;
 using Terminaux.Base;
@@ -34,13 +33,14 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "MultiLines";
+        public override string ScreensaverName =>
+            "MultiLines";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
             // Variable preparations
-            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
+            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", vars: [ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight]);
         }
 
         /// <inheritdoc/>
@@ -61,20 +61,20 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                     int RedColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.MultiLinesMinimumRedColorLevel, ScreensaverPackInit.SaversConfig.MultiLinesMaximumRedColorLevel);
                     int GreenColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.MultiLinesMinimumGreenColorLevel, ScreensaverPackInit.SaversConfig.MultiLinesMaximumGreenColorLevel);
                     int BlueColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.MultiLinesMinimumBlueColorLevel, ScreensaverPackInit.SaversConfig.MultiLinesMaximumBlueColorLevel);
-                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
+                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", vars: [RedColorNum, GreenColorNum, BlueColorNum]);
                     var ColorStorage = new Color(RedColorNum, GreenColorNum, BlueColorNum);
                     ColorTools.SetConsoleColor(ColorStorage);
                 }
                 else
                 {
                     int color = RandomDriver.Random(ScreensaverPackInit.SaversConfig.MultiLinesMinimumColorLevel, ScreensaverPackInit.SaversConfig.MultiLinesMaximumColorLevel);
-                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color ({0})", color);
+                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color ({0})", vars: [color]);
                     ColorTools.SetConsoleColor(new Color(color));
                 }
 
                 // Now, draw a line
                 int Top = RandomDriver.RandomIdx(ConsoleWrapper.WindowHeight);
-                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got top position ({0})", Top);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got top position ({0})", vars: [Top]);
                 if (!ConsoleResizeHandler.WasResized(false))
                 {
                     ConsoleWrapper.SetCursorPosition(0, Top);
@@ -84,7 +84,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.MultiLinesDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.MultiLinesDelay);
         }
 
     }

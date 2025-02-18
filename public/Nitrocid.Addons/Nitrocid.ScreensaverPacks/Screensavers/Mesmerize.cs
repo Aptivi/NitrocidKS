@@ -21,7 +21,6 @@ using System.Collections.Generic;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Nitrocid.Kernel.Configuration;
 using Terminaux.Colors;
@@ -54,7 +53,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private readonly List<(int, int)> dotPositions = [];
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Mesmerize";
+        public override string ScreensaverName =>
+            "Mesmerize";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -75,7 +75,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             int RedColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.MesmerizeMinimumRedColorLevel, ScreensaverPackInit.SaversConfig.MesmerizeMaximumRedColorLevel);
             int GreenColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.MesmerizeMinimumGreenColorLevel, ScreensaverPackInit.SaversConfig.MesmerizeMaximumGreenColorLevel);
             int BlueColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.MesmerizeMinimumBlueColorLevel, ScreensaverPackInit.SaversConfig.MesmerizeMaximumBlueColorLevel);
-            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", vars: [RedColorNum, GreenColorNum, BlueColorNum]);
             dotColor = new Color(RedColorNum, GreenColorNum, BlueColorNum);
 
             // Assign shades of color
@@ -85,7 +85,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 int finalR = (int)(dotColor.RGB.R * ((maxPositions - i - 1) / (double)(maxPositions - 1)));
                 int finalG = (int)(dotColor.RGB.G * ((maxPositions - i - 1) / (double)(maxPositions - 1)));
                 int finalB = (int)(dotColor.RGB.B * ((maxPositions - i - 1) / (double)(maxPositions - 1)));
-                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", finalR, finalG, finalB);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", vars: [finalR, finalG, finalB]);
                 Color colorShade = new(finalR, finalG, finalB);
                 dotColorShades.Add(colorShade);
             }
@@ -191,7 +191,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.MesmerizeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.MesmerizeDelay);
         }
 
     }

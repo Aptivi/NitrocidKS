@@ -31,7 +31,6 @@ using Terminaux.Base;
 using Terminaux.Colors.Data;
 using Terminaux.Writer.CyclicWriters;
 using Terminaux.Writer.CyclicWriters.Renderer.Tools;
-using Nitrocid.Kernel.Threading;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
@@ -99,7 +98,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             TextWriterWhereColor.WriteWhereColor(wordHash, (int)Math.Round(ConsoleWrapper.WindowWidth / 2d - wordHash.Length / 2d), hashY, hasherColor);
 
             // Delay
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.WordHasherDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.WordHasherDelay);
         }
 
         /// <summary>

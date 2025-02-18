@@ -18,7 +18,6 @@
 //
 
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Base;
 
@@ -33,15 +32,17 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private Animations.BeatPulse.BeatPulseSettings? BeatPulseSettingsInstance;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "BeatPulse";
+        public override string ScreensaverName =>
+            "BeatPulse";
 
         /// <inheritdoc/>
-        public override bool ScreensaverContainsFlashingImages { get; set; } = true;
+        public override bool ScreensaverContainsFlashingImages =>
+            true;
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
-            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
+            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", vars: [ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight]);
             BeatPulseSettingsInstance = new Animations.BeatPulse.BeatPulseSettings()
             {
                 BeatPulseTrueColor = ScreensaverPackInit.SaversConfig.BeatPulseTrueColor,
@@ -65,7 +66,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         public override void ScreensaverLogic()
         {
             Animations.BeatPulse.BeatPulse.Simulate(BeatPulseSettingsInstance);
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.BeatPulseDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.BeatPulseDelay);
         }
 
     }

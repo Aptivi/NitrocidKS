@@ -17,8 +17,6 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using Terminaux.Writer.FancyWriters;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Colors;
 using Terminaux.Base;
@@ -34,7 +32,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "BoxGrid";
+        public override string ScreensaverName =>
+            "BoxGrid";
 
         /// <inheritdoc/>
         public override void ScreensaverLogic()
@@ -75,7 +74,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.BoxGridDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.BoxGridDelay);
         }
 
     }

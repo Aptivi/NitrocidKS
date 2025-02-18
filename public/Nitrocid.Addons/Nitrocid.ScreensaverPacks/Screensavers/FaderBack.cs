@@ -32,12 +32,13 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private Animations.FaderBack.FaderBackSettings? FaderBackSettingsInstance;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "FaderBack";
+        public override string ScreensaverName =>
+            "FaderBack";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
-            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
+            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", vars: [ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight]);
             FaderBackSettingsInstance = new Animations.FaderBack.FaderBackSettings()
             {
                 FaderBackDelay = ScreensaverPackInit.SaversConfig.FaderBackDelay,

@@ -24,7 +24,6 @@ using Nitrocid.ConsoleBase.Colors;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Nitrocid.Kernel.Configuration;
 using Terminaux.Colors;
@@ -40,13 +39,14 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private int posIdx = 0;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Wave";
+        public override string ScreensaverName =>
+            "Wave";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
             posIdx = 0;
-            ColorTools.LoadBack();
+            KernelColorTools.LoadBackground();
         }
 
         /// <inheritdoc/>
@@ -80,7 +80,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             int RedColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.WaveMinimumRedColorLevel, ScreensaverPackInit.SaversConfig.WaveMaximumRedColorLevel);
             int GreenColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.WaveMinimumGreenColorLevel, ScreensaverPackInit.SaversConfig.WaveMaximumGreenColorLevel);
             int BlueColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.WaveMinimumBlueColorLevel, ScreensaverPackInit.SaversConfig.WaveMaximumBlueColorLevel);
-            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", vars: [RedColorNum, GreenColorNum, BlueColorNum]);
             var ColorStorage = new Color(RedColorNum, GreenColorNum, BlueColorNum);
             for (int i = 0; i < Count; i++)
             {
@@ -90,7 +90,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 int Pos = CurrentPos[posIdx] + Math.Abs(CurrentPos.Min()) + 2;
                 if (!ConsoleResizeHandler.WasResized(false))
                 {
-                    ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.WaveDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                    ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.WaveDelay);
                     for (int j = 0; j < ConsoleWrapper.WindowHeight; j++)
                         TextWriterWhereColor.WriteWhereColorBack(" ", i, j, Color.Empty, KernelColorTools.GetColor(KernelColorType.Background));
                     TextWriterWhereColor.WriteWhereColorBack(" ", i, Pos, Color.Empty, ColorStorage);
@@ -99,7 +99,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.WaveDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.WaveDelay);
         }
 
     }

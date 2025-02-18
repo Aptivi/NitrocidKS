@@ -17,7 +17,6 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Base;
 using Terminaux.Colors;
@@ -34,7 +33,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private static int currentHueAngle = 0;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "HueBack";
+        public override string ScreensaverName =>
+            "HueBack";
 
         /// <inheritdoc/>
         public override void ScreensaverLogic()
@@ -46,7 +46,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Now, change the background color accordingly
             ColorTools.LoadBackDry(color);
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.HueBackDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.HueBackDelay);
             currentHueAngle++;
             if (currentHueAngle > 360)
                 currentHueAngle = 0;

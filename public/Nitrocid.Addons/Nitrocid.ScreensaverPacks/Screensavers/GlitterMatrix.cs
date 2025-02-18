@@ -19,7 +19,6 @@
 
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Nitrocid.Kernel.Configuration;
 using Terminaux.Base;
@@ -34,7 +33,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "GlitterMatrix";
+        public override string ScreensaverName =>
+            "GlitterMatrix";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -42,7 +42,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             // Variable preparations
             ColorTools.SetConsoleColor(new Color(ScreensaverPackInit.SaversConfig.GlitterMatrixForegroundColor));
             ColorTools.LoadBackDry(new Color(ScreensaverPackInit.SaversConfig.GlitterMatrixBackgroundColor));
-            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
+            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", vars: [ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight]);
         }
 
         /// <inheritdoc/>
@@ -51,7 +51,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             ConsoleWrapper.CursorVisible = false;
             int Left = RandomDriver.RandomIdx(ConsoleWrapper.WindowWidth);
             int Top = RandomDriver.RandomIdx(ConsoleWrapper.WindowHeight);
-            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Selected left and top: {0}, {1}", Left, Top);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Selected left and top: {0}, {1}", vars: [Left, Top]);
             ConsoleWrapper.SetCursorPosition(Left, Top);
             if (!ConsoleResizeHandler.WasResized(false))
             {
@@ -65,7 +65,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.GlitterMatrixDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.GlitterMatrixDelay);
         }
 
     }

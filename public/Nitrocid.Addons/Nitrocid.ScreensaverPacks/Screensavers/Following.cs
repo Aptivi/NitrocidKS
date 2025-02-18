@@ -19,7 +19,6 @@
 
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Nitrocid.Kernel.Configuration;
 using System;
@@ -27,6 +26,7 @@ using Terminaux.Base;
 using Terminaux.Colors;
 using Terminaux.Colors.Data;
 using Terminaux.Writer.ConsoleWriters;
+using Nitrocid.ConsoleBase.Colors;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
@@ -41,7 +41,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private int currentStep;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Following";
+        public override string ScreensaverName =>
+            "Following";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -52,19 +53,19 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 int RedColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.FollowingMinimumRedColorLevel, ScreensaverPackInit.SaversConfig.FollowingMaximumRedColorLevel);
                 int GreenColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.FollowingMinimumGreenColorLevel, ScreensaverPackInit.SaversConfig.FollowingMaximumGreenColorLevel);
                 int BlueColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.FollowingMinimumBlueColorLevel, ScreensaverPackInit.SaversConfig.FollowingMaximumBlueColorLevel);
-                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", vars: [RedColorNum, GreenColorNum, BlueColorNum]);
                 var ColorStorage = new Color(RedColorNum, GreenColorNum, BlueColorNum);
                 dotColor = ColorStorage;
             }
             else
             {
                 int color = RandomDriver.Random(ScreensaverPackInit.SaversConfig.FollowingMinimumColorLevel, ScreensaverPackInit.SaversConfig.FollowingMaximumColorLevel);
-                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color ({0})", color);
+                DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color ({0})", vars: [color]);
                 dotColor = new Color(color);
             }
             start = (RandomDriver.RandomIdx(ConsoleWrapper.WindowWidth), RandomDriver.RandomIdx(ConsoleWrapper.WindowHeight));
             end = (RandomDriver.RandomIdx(ConsoleWrapper.WindowWidth), RandomDriver.RandomIdx(ConsoleWrapper.WindowHeight));
-            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
+            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", vars: [ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight]);
             currentStep = 0;
             base.ScreensaverPreparation();
         }
@@ -78,7 +79,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             if (currentStep == 20)
             {
                 currentStep = 0;
-                ColorTools.LoadBack();
+                KernelColorTools.LoadBackground();
             }
 
             // Draw the start and the end position marker
@@ -134,7 +135,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                     posX += differenceX2;
                     posY += differenceY2;
                 }
-                ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.FollowingDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.FollowingDelay);
             }
 
             // Reset resize sync

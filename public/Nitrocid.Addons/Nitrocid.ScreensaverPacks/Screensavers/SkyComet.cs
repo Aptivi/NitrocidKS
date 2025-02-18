@@ -19,7 +19,6 @@
 
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Drivers.RNG;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using System;
 using System.Collections.Generic;
@@ -38,7 +37,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private static readonly List<(int left, int top)> stars = [];
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "SkyComet";
+        public override string ScreensaverName =>
+            "SkyComet";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -117,7 +117,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.SkyCometDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.SkyCometDelay);
         }
 
         /// <inheritdoc/>

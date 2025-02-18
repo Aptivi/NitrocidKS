@@ -18,7 +18,6 @@
 //
 
 using System.Collections.Generic;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Colors;
 
@@ -39,10 +38,12 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private int step = 0;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Siren";
+        public override string ScreensaverName =>
+            "Siren";
 
         /// <inheritdoc/>
-        public override bool ScreensaverContainsFlashingImages { get; set; } = true;
+        public override bool ScreensaverContainsFlashingImages =>
+            true;
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -66,7 +67,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             ColorTools.LoadBackDry(sirenColors[step]);
 
             // Delay
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.SirenDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.SirenDelay);
         }
 
     }

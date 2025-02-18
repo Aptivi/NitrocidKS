@@ -18,7 +18,6 @@
 //
 
 using Nitrocid.Drivers.RNG;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using System.Text;
 using Terminaux.Colors;
@@ -42,10 +41,12 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         ];
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Aberration";
+        public override string ScreensaverName =>
+            "Aberration";
 
         /// <inheritdoc/>
-        public override bool ScreensaverContainsFlashingImages { get; set; } = true;
+        public override bool ScreensaverContainsFlashingImages =>
+            true;
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -75,7 +76,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 }
                 TextWriterRaw.WriteRaw(glitch.ToString());
             }
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.AberrationDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.AberrationDelay);
             ColorTools.LoadBackDry(new Color(ConsoleColors.Black));
         }
 

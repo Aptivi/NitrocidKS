@@ -17,7 +17,6 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Base;
 using Terminaux.Colors;
@@ -37,7 +36,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             ScreensaverPackInit.SaversConfig.BloomDarkColors ? 32 : 255;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Bloom";
+        public override string ScreensaverName =>
+            "Bloom";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -79,13 +79,13 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 ColorTools.LoadBackDry(col);
 
                 // Sleep
-                ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.BloomDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.BloomDelay);
             }
 
             // Generate new colors
             currentColor = nextColor;
             nextColor = ColorTools.GetRandomColor(ColorType.TrueColor, 0, MaxLevel, 0, MaxLevel, 0, MaxLevel, 0, MaxLevel);
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.BloomDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.BloomDelay);
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();

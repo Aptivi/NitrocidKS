@@ -18,7 +18,6 @@
 //
 
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Base;
 
@@ -33,15 +32,17 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private Animations.Pulse.PulseSettings? PulseSettingsInstance;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Pulse";
+        public override string ScreensaverName =>
+            "Pulse";
 
         /// <inheritdoc/>
-        public override bool ScreensaverContainsFlashingImages { get; set; } = true;
+        public override bool ScreensaverContainsFlashingImages =>
+            true;
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
-            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
+            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", vars: [ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight]);
             PulseSettingsInstance = new Animations.Pulse.PulseSettings()
             {
                 PulseDelay = ScreensaverPackInit.SaversConfig.PulseDelay,
@@ -60,7 +61,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         public override void ScreensaverLogic()
         {
             Animations.Pulse.Pulse.Simulate(PulseSettingsInstance);
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.PulseDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.PulseDelay);
         }
 
     }

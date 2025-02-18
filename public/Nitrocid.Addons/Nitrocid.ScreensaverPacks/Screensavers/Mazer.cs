@@ -20,7 +20,6 @@
 using System.Collections.Generic;
 using System.Text;
 using Terminaux.Writer.ConsoleWriters;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Reflection;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Colors;
@@ -37,7 +36,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Mazer";
+        public override string ScreensaverName =>
+            "Mazer";
 
         /// <inheritdoc/>
         public override void ScreensaverLogic()
@@ -50,7 +50,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.MazerNewMazeDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.MazerNewMazeDelay);
         }
 
         private static void GenerateMaze()
@@ -132,7 +132,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
                     // Display the maze
                     DisplayMazeFromGrid(grid);
-                    ThreadManager.SleepNoBlock((long)delay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                    ScreensaverManager.Delay((int)delay);
 
                     // Now, do the connection
                     set1.Connect(set2);

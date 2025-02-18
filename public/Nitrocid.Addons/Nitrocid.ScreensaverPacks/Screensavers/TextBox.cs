@@ -19,7 +19,6 @@
 
 using Terminaux.Inputs.Styles.Infobox;
 using Nitrocid.Drivers.RNG;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Colors;
 
@@ -34,7 +33,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private int currentHueAngle = 0;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "TextBox";
+        public override string ScreensaverName =>
+            "TextBox";
 
         /// <inheritdoc/>
         public override void ScreensaverLogic()
@@ -55,7 +55,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Delay
             int delay = ScreensaverPackInit.SaversConfig.TextBoxRainbowMode ? 16 : ScreensaverPackInit.SaversConfig.TextBoxDelay;
-            ThreadManager.SleepNoBlock(delay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(delay);
         }
 
         /// <inheritdoc/>

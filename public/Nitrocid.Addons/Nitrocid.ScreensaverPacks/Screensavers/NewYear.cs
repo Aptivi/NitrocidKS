@@ -30,7 +30,6 @@ using Terminaux.Colors.Data;
 using Nitrocid.Kernel.Configuration;
 using Terminaux.Writer.CyclicWriters;
 using Terminaux.Writer.CyclicWriters.Renderer.Tools;
-using Nitrocid.Kernel.Threading;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
@@ -137,7 +136,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             }
 
             // Reset
-            ThreadManager.SleepNoBlock(500, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(500);
             ConsoleResizeHandler.WasResized();
         }
 

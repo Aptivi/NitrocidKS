@@ -23,7 +23,6 @@ using System.Text;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Nitrocid.Kernel.Configuration;
 using Terminaux.Colors;
@@ -43,7 +42,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private readonly List<Tuple<int, int>> Stars = [];
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Spray";
+        public override string ScreensaverName =>
+            "Spray";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -115,7 +115,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.SprayDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.SprayDelay);
             ColorTools.LoadBackDry(0);
         }
 

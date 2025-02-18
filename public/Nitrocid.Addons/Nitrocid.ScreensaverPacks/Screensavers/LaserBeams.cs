@@ -22,7 +22,6 @@ using System.Text;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Nitrocid.Kernel.Configuration;
 using Terminaux.Colors;
@@ -41,14 +40,15 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private static readonly List<(int, int)> laserEnds = [];
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "LaserBeams";
+        public override string ScreensaverName =>
+            "LaserBeams";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
             // Variable preparations
             laserEnds.Clear();
-            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
+            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", vars: [ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight]);
         }
 
         /// <inheritdoc/>
@@ -87,13 +87,13 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                     int RedColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.LaserBeamsMinimumRedColorLevel, ScreensaverPackInit.SaversConfig.LaserBeamsMaximumRedColorLevel);
                     int GreenColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.LaserBeamsMinimumGreenColorLevel, ScreensaverPackInit.SaversConfig.LaserBeamsMaximumGreenColorLevel);
                     int BlueColorNum = RandomDriver.Random(ScreensaverPackInit.SaversConfig.LaserBeamsMinimumBlueColorLevel, ScreensaverPackInit.SaversConfig.LaserBeamsMaximumBlueColorLevel);
-                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", RedColorNum, GreenColorNum, BlueColorNum);
+                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color (R;G;B: {0};{1};{2})", vars: [RedColorNum, GreenColorNum, BlueColorNum]);
                     colorStorage = new Color(RedColorNum, GreenColorNum, BlueColorNum);
                 }
                 else
                 {
                     int color = RandomDriver.Random(ScreensaverPackInit.SaversConfig.LaserBeamsMinimumColorLevel, ScreensaverPackInit.SaversConfig.LaserBeamsMaximumColorLevel);
-                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color ({0})", color);
+                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got color ({0})", vars: [color]);
                     colorStorage = new Color(color);
                 }
 
@@ -125,7 +125,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             // Reset resize sync
             laserEnds.Clear();
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.LaserBeamsDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.LaserBeamsDelay);
         }
 
         /// <inheritdoc/>

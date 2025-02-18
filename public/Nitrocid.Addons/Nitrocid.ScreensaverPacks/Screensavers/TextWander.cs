@@ -19,7 +19,6 @@
 
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Drivers.RNG;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Colors;
 using Terminaux.Base;
@@ -33,7 +32,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "TextWander";
+        public override string ScreensaverName =>
+            "TextWander";
 
         /// <inheritdoc/>
         public override void ScreensaverLogic()
@@ -49,7 +49,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             TextWriterWhereColor.WriteWhereColor(renderedTextWander, randomPosX, randomPosY, color);
 
             // Delay
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.TextWanderDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.TextWanderDelay);
             TextWriterWhereColor.WriteWhereColor(new string(' ', renderedTextWander.Length), randomPosX, randomPosY, color);
         }
 

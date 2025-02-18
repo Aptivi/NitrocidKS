@@ -18,7 +18,6 @@
 //
 
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Base;
 using Terminaux.Colors;
@@ -34,12 +33,13 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         private Animations.EdgePulse.EdgePulseSettings? EdgePulseSettingsInstance;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "EdgePulse";
+        public override string ScreensaverName =>
+            "EdgePulse";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
         {
-            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight);
+            DebugWriter.WriteDebug(DebugLevel.I, "Console geometry: {0}x{1}", vars: [ConsoleWrapper.WindowWidth, ConsoleWrapper.WindowHeight]);
             EdgePulseSettingsInstance = new Animations.EdgePulse.EdgePulseSettings()
             {
                 EdgePulseDelay = ScreensaverPackInit.SaversConfig.EdgePulseDelay,
@@ -59,7 +59,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
         public override void ScreensaverLogic()
         {
             Animations.EdgePulse.EdgePulse.Simulate(EdgePulseSettingsInstance);
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.EdgePulseDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.EdgePulseDelay);
         }
 
     }

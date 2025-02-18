@@ -18,7 +18,6 @@
 //
 
 using Terminaux.Writer.ConsoleWriters;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using System.Text;
 using Terminaux.Colors;
@@ -42,7 +41,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             ScreensaverPackInit.SaversConfig.GradientBloomDarkColors ? 32 : 255;
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "GradientBloom";
+        public override string ScreensaverName =>
+            "GradientBloom";
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -127,7 +127,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                 TextWriterColor.Write(buffered.ToString(), false);
 
                 // Sleep
-                ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.GradientBloomDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.GradientBloomDelay);
             }
 
             // Generate new colors
@@ -135,7 +135,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             nextColorLeft = ColorTools.GetRandomColor(ColorType.TrueColor, 0, MaxLevel, 0, MaxLevel, 0, MaxLevel, 0, MaxLevel);
             currentColorRight = nextColorRight;
             nextColorRight = ColorTools.GetRandomColor(ColorType.TrueColor, 0, MaxLevel, 0, MaxLevel, 0, MaxLevel, 0, MaxLevel);
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.GradientBloomDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.GradientBloomDelay);
 
             // Reset resize sync
             ConsoleResizeHandler.WasResized();

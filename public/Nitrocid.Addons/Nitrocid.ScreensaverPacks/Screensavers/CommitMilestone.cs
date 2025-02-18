@@ -29,7 +29,6 @@ using Terminaux.Writer.CyclicWriters;
 using Terminaux.Writer.ConsoleWriters;
 using Terminaux.Writer.CyclicWriters.Renderer;
 using Nitrocid.ConsoleBase.Colors;
-using Nitrocid.Kernel.Threading;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
@@ -47,7 +46,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation() =>
-            ColorTools.LoadBack();
+            KernelColorTools.LoadBackground();
 
         /// <inheritdoc/>
         public override void ScreensaverLogic()
@@ -140,7 +139,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             // Reset resize sync
             ConsoleResizeHandler.WasResized();
             int delay = ScreensaverPackInit.SaversConfig.CommitMilestoneRainbowMode ? 16 : ScreensaverPackInit.SaversConfig.CommitMilestoneDelay;
-            ThreadManager.SleepNoBlock(delay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(delay);
         }
 
         /// <inheritdoc/>

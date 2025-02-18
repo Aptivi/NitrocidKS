@@ -18,16 +18,15 @@
 //
 
 using System;
-using Terminaux.Writer.FancyWriters;
 using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Debugging;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Colors;
 using Terminaux.Base;
 using Nitrocid.Kernel.Configuration;
-using Terminaux.Writer.CyclicWriters;
 using Terminaux.Writer.ConsoleWriters;
+using Terminaux.Writer.CyclicWriters;
+using Nitrocid.ConsoleBase.Colors;
 
 namespace Nitrocid.ScreensaverPacks.Screensavers
 {
@@ -38,7 +37,8 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Ramp";
+        public override string ScreensaverName =>
+            "Ramp";
 
         /// <inheritdoc/>
         public override void ScreensaverLogic()
@@ -59,7 +59,7 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             int RampFrameStartWidth = 4;
             int RampFrameEndWidth = ConsoleWrapper.WindowWidth - RampFrameStartWidth;
             int RampFrameSpaces = RampFrameEndWidth - RampFrameStartWidth - 1;
-            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Start width: {0}, End width: {1}, Spaces: {2}", RampFrameStartWidth, RampFrameEndWidth, RampFrameSpaces);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Start width: {0}, End width: {1}, Spaces: {2}", vars: [RampFrameStartWidth, RampFrameEndWidth, RampFrameSpaces]);
 
             // Set thresholds for color ramps
             int RampColorRedThreshold = RedColorNumFrom - RedColorNumTo;
@@ -70,16 +70,16 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
             double RampColorGreenSteps = RampColorGreenThreshold / (double)RampFrameSpaces;
             double RampColorBlueSteps = RampColorBlueThreshold / (double)RampFrameSpaces;
             double RampColorSteps = RampColorThreshold / (double)RampFrameSpaces;
-            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Set thresholds (RGB: {0};{1};{2} | Normal: {3})", RampColorRedThreshold, RampColorGreenThreshold, RampColorBlueThreshold, RampColorThreshold);
-            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Steps by {0} spaces (RGB: {1};{2};{3} | Normal: {4})", RampFrameSpaces, RampColorRedSteps, RampColorGreenSteps, RampColorBlueSteps, RampColorSteps);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Set thresholds (RGB: {0};{1};{2} | Normal: {3})", vars: [RampColorRedThreshold, RampColorGreenThreshold, RampColorBlueThreshold, RampColorThreshold]);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Steps by {0} spaces (RGB: {1};{2};{3} | Normal: {4})", vars: [RampFrameSpaces, RampColorRedSteps, RampColorGreenSteps, RampColorBlueSteps, RampColorSteps]);
 
             // Let the ramp be printed in the center
             int RampCenterPosition = (int)Math.Round(ConsoleWrapper.WindowHeight / 2d);
-            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Center position: {0}", RampCenterPosition);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Center position: {0}", vars: [RampCenterPosition]);
 
             // Set the current positions
             int RampCurrentPositionLeft = RampFrameStartWidth + 1;
-            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Current left position: {0}", RampCurrentPositionLeft);
+            DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Current left position: {0}", vars: [RampCurrentPositionLeft]);
 
             // Draw the frame
             if (!ConsoleResizeHandler.WasResized(false))
@@ -126,13 +126,13 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
                     RampCurrentColorRed -= RampColorRedSteps;
                     RampCurrentColorGreen -= RampColorGreenSteps;
                     RampCurrentColorBlue -= RampColorBlueSteps;
-                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got new current colors (R;G;B: {0};{1};{2}) subtracting from {3};{4};{5}", RampCurrentColorRed, RampCurrentColorGreen, RampCurrentColorBlue, RampColorRedSteps, RampColorGreenSteps, RampColorBlueSteps);
+                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got new current colors (R;G;B: {0};{1};{2}) subtracting from {3};{4};{5}", vars: [RampCurrentColorRed, RampCurrentColorGreen, RampCurrentColorBlue, RampColorRedSteps, RampColorGreenSteps, RampColorBlueSteps]);
                     RampCurrentColorInstance = new Color($"{Convert.ToInt32(RampCurrentColorRed)};{Convert.ToInt32(RampCurrentColorGreen)};{Convert.ToInt32(RampCurrentColorBlue)}");
                     ColorTools.SetConsoleColorDry(RampCurrentColorInstance, true);
 
                     // Delay writing
                     step++;
-                    ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.RampDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                    ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.RampDelay);
                 }
             }
             else
@@ -157,18 +157,18 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
                     // Change the colors
                     RampCurrentColor -= RampColorSteps;
-                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got new current colors (Normal: {0}) subtracting from {1}", RampCurrentColor, RampColorSteps);
+                    DebugWriter.WriteDebugConditional(Config.MainConfig.ScreensaverDebug, DebugLevel.I, "Got new current colors (Normal: {0}) subtracting from {1}", vars: [RampCurrentColor, RampColorSteps]);
                     RampCurrentColorInstance = new Color(Convert.ToInt32(RampCurrentColor));
                     ColorTools.SetConsoleColorDry(RampCurrentColorInstance, true);
 
                     // Delay writing
-                    ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.RampDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                    ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.RampDelay);
                 }
             }
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.RampNextRampDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
-            ColorTools.LoadBack();
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.RampNextRampDelay);
+            KernelColorTools.LoadBackground();
             ConsoleResizeHandler.WasResized();
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.RampDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.RampDelay);
         }
 
     }

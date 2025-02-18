@@ -19,7 +19,6 @@
 
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Drivers.RNG;
-using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using System;
 using System.Text;
@@ -37,10 +36,12 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
     {
 
         /// <inheritdoc/>
-        public override string ScreensaverName { get; set; } = "Lightning";
+        public override string ScreensaverName =>
+            "Lightning";
 
         /// <inheritdoc/>
-        public override bool ScreensaverContainsFlashingImages { get; set; } = true;
+        public override bool ScreensaverContainsFlashingImages =>
+            true;
 
         /// <inheritdoc/>
         public override void ScreensaverPreparation()
@@ -166,19 +167,19 @@ namespace Nitrocid.ScreensaverPacks.Screensavers
 
                         // Write the rendered strike
                         TextWriterRaw.WritePlain(strike.ToString(), false);
-                        ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.LightningDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                        ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.LightningDelay);
                     }
                     else
                     {
                         // Show only the white background
                         ColorTools.LoadBackDry(new Color(ConsoleColors.White));
-                        ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.LightningDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+                        ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.LightningDelay);
                         ColorTools.LoadBackDry(new Color(ConsoleColors.Black));
                     }
                 }
                 ColorTools.LoadBackDry(new Color(ConsoleColors.Black));
             }
-            ThreadManager.SleepNoBlock(ScreensaverPackInit.SaversConfig.LightningDelay, ScreensaverDisplayer.ScreensaverDisplayerThread);
+            ScreensaverManager.Delay(ScreensaverPackInit.SaversConfig.LightningDelay);
         }
 
     }
