@@ -26,6 +26,7 @@ using Terminaux.Base;
 using Terminaux.Colors;
 using Nitrocid.Kernel.Exceptions;
 using Nitrocid.Languages;
+using Nitrocid.ConsoleBase.Colors;
 
 namespace Nitrocid.Misc.Screensaver
 {
@@ -81,7 +82,7 @@ namespace Nitrocid.Misc.Screensaver
                 Screensaver.ScreensaverOutro();
                 ColorTools.AllowBackground = initialBack;
                 ColorTools.GlobalSettings.UseTerminalPalette = initialPalette;
-                ColorTools.LoadBack();
+                KernelColorTools.LoadBackground();
             }
         }
 

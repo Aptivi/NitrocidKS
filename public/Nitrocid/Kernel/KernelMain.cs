@@ -148,7 +148,7 @@ namespace Nitrocid.Kernel
                             PowerSignalHandlers.DisposeHandlers();
 
                             // Clear the console
-                            ColorTools.LoadBack();
+                            KernelColorTools.LoadBackground();
                         }
 
                         // Always switch back to the main environment
