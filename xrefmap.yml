@@ -36054,6 +36054,19 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.AcceptsSet
   nameWithType: CommandArgumentInfo.AcceptsSet
+- uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.ArgChecker
+  name: ArgChecker
+  href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentInfo_ArgChecker
+  commentId: P:Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.ArgChecker
+  fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.ArgChecker
+  nameWithType: CommandArgumentInfo.ArgChecker
+- uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.ArgChecker*
+  name: ArgChecker
+  href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentInfo_ArgChecker_
+  commentId: Overload:Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.ArgChecker
+  isSpec: "True"
+  fullName: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.ArgChecker
+  nameWithType: CommandArgumentInfo.ArgChecker
 - uid: Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.Arguments
   name: Arguments
   href: api/Nitrocid.Shell.ShellBase.Arguments.CommandArgumentInfo.html#Nitrocid_Shell_ShellBase_Arguments_CommandArgumentInfo_Arguments
