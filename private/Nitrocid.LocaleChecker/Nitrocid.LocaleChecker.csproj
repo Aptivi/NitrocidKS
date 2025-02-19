@@ -7,11 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="AnalyzerReleases.Shipped.md" />
-    <None Remove="AnalyzerReleases.Unshipped.md" />
-  </ItemGroup>
-
-  <ItemGroup>
     <AdditionalFiles Include="AnalyzerReleases.Shipped.md" />
     <AdditionalFiles Include="AnalyzerReleases.Unshipped.md" />
   </ItemGroup>
@@ -41,11 +36,21 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\public\Nitrocid\Resources\Languages\eng.json" Visible="false" />
-    <EmbeddedResource Include="..\..\public\Nitrocid\Resources\Settings\*.json" Visible="false" />
-    <EmbeddedResource Include="..\..\public\Nitrocid\Resources\Themes\*.json" Visible="false" />
-    <EmbeddedResource Include="..\..\public\Nitrocid.Addons\**\Resources\*Settings.json" Visible="false" />
-    <EmbeddedResource Include="..\..\public\Nitrocid.Addons\Nitrocid.ThemePacks\Resources\Themes\*.json" Visible="false" />
-    <EmbeddedResource Include="..\..\private\Nitrocid.Generators\Nitrocid.Generators.KnownAddons\Resources\KnownAddons.json" Visible="false" />
+    <EmbeddedResource Include="..\..\public\Nitrocid\Resources\Settings\*.json" Visible="false">
+      <LogicalName>%(EmbeddedResource.FullPath)</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\public\Nitrocid\Resources\Themes\*.json" Visible="false">
+      <LogicalName>%(EmbeddedResource.FullPath)</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\public\Nitrocid.Addons\**\Resources\*Settings.json" Visible="false">
+      <LogicalName>%(EmbeddedResource.FullPath)</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\public\Nitrocid.Addons\Nitrocid.ThemePacks\Resources\Themes\*.json" Visible="false">
+      <LogicalName>%(EmbeddedResource.FullPath)</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\private\Nitrocid.Generators\Nitrocid.Generators.KnownAddons\Resources\KnownAddons.json" Visible="false">
+      <LogicalName>%(EmbeddedResource.FullPath)</LogicalName>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>

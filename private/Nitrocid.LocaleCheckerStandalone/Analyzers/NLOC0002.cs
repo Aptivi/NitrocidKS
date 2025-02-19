@@ -30,7 +30,7 @@ using Terminaux.Writer.MiscWriters;
 
 namespace Nitrocid.LocaleCheckerStandalone.Analyzers
 {
-    internal class NLOC0001Implicit : IAnalyzer
+    internal class NLOC0002 : IAnalyzer
     {
         public bool Analyze(Document document, out string[] unlocalized)
         {
@@ -71,7 +71,6 @@ namespace Nitrocid.LocaleCheckerStandalone.Analyzers
                                 text = text.Substring(1, text.Length - 2).Replace("\\\"", "\"");
                                 if (!string.IsNullOrWhiteSpace(text) && !EntryPoint.localizationList.Contains(text))
                                 {
-                                    var lineSpan = location.GetLineSpan();
                                     AnalyzerTools.PrintFromLocation(location, document, GetType(), $"Unlocalized string found: {text}");
                                     found = true;
                                     unlocalizedStrings.Add(text);
