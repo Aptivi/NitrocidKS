@@ -28,7 +28,7 @@ namespace Nitrocid.LocaleCheckerStandalone
         internal static readonly IAnalyzer[] analyzers =
         [
             new NLOC0001(),
-            new NLOC0001Implicit(),
+            new NLOC0002(),
         ];
     }
 }

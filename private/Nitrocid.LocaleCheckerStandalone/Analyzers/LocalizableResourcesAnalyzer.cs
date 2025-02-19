@@ -60,7 +60,7 @@ namespace Nitrocid.LocaleCheckerStandalone.Analyzers
                     bool localizable = (bool?)themeMetadata["Localizable"] ?? false;
                     if (!string.IsNullOrWhiteSpace(description) && localizable && !EntryPoint.localizationList.Contains(description))
                     {
-                        TextWriterColor.WriteColor($"{nameof(NLOC0001)}Resources: {resourceName}: Unlocalized theme description found: {description}", true, ConsoleColors.Yellow);
+                        TextWriterColor.WriteColor($"NLOC0003: {resourceName}: Unlocalized theme description found: {description}", true, ConsoleColors.Yellow);
                         unlocalizedStrings.Add(description);
                     }
                 }
@@ -75,17 +75,17 @@ namespace Nitrocid.LocaleCheckerStandalone.Analyzers
                         string knownAddonDisplay = ((string?)settingsEntryList["display"] ?? "").Replace("\\\"", "\"");
                         if (!string.IsNullOrWhiteSpace(description) && !EntryPoint.localizationList.Contains(description))
                         {
-                            TextWriterColor.WriteColor($"{nameof(NLOC0001)}Resources: {resourceName}: Unlocalized settings description found: {description}", true, ConsoleColors.Yellow);
+                            TextWriterColor.WriteColor($"NLOC0003: {resourceName}: Unlocalized settings description found: {description}", true, ConsoleColors.Yellow);
                             unlocalizedStrings.Add(description);
                         }
                         if (!string.IsNullOrWhiteSpace(displayAs) && !EntryPoint.localizationList.Contains(displayAs))
                         {
-                            TextWriterColor.WriteColor($"{nameof(NLOC0001)}Resources: {resourceName}: Unlocalized settings display found: {displayAs}", true, ConsoleColors.Yellow);
+                            TextWriterColor.WriteColor($"NLOC0003: {resourceName}: Unlocalized settings display found: {displayAs}", true, ConsoleColors.Yellow);
                             unlocalizedStrings.Add(displayAs);
                         }
                         if (!string.IsNullOrWhiteSpace(knownAddonDisplay) && !EntryPoint.localizationList.Contains(knownAddonDisplay))
                         {
-                            TextWriterColor.WriteColor($"{nameof(NLOC0001)}Resources: {resourceName}: Unlocalized known addon display found: {knownAddonDisplay}", true, ConsoleColors.Yellow);
+                            TextWriterColor.WriteColor($"NLOC0003: {resourceName}: Unlocalized known addon display found: {knownAddonDisplay}", true, ConsoleColors.Yellow);
                             unlocalizedStrings.Add(knownAddonDisplay);
                         }
 
@@ -99,12 +99,12 @@ namespace Nitrocid.LocaleCheckerStandalone.Analyzers
                             string keyDesc = ((string?)key["Description"] ?? "").Replace("\\\"", "\"");
                             if (!string.IsNullOrWhiteSpace(keyName) && !EntryPoint.localizationList.Contains(keyName))
                             {
-                                TextWriterColor.WriteColor($"{nameof(NLOC0001)}Resources: {resourceName}: Unlocalized key name found: {keyName}", true, ConsoleColors.Yellow);
+                                TextWriterColor.WriteColor($"NLOC0003: {resourceName}: Unlocalized key name found: {keyName}", true, ConsoleColors.Yellow);
                                 unlocalizedStrings.Add(keyName);
                             }
                             if (!string.IsNullOrWhiteSpace(keyDesc) && !EntryPoint.localizationList.Contains(keyDesc))
                             {
-                                TextWriterColor.WriteColor($"{nameof(NLOC0001)}Resources: {resourceName}: Unlocalized key description found: {keyDesc}", true, ConsoleColors.Yellow);
+                                TextWriterColor.WriteColor($"NLOC0003: {resourceName}: Unlocalized key description found: {keyDesc}", true, ConsoleColors.Yellow);
                                 unlocalizedStrings.Add(keyDesc);
                             }
                         }

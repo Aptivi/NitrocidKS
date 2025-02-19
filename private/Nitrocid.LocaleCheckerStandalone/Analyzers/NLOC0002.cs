@@ -30,7 +30,7 @@ using Terminaux.Writer.MiscWriters;
 
 namespace Nitrocid.LocaleCheckerStandalone.Analyzers
 {
-    internal class NLOC0001Implicit : IAnalyzer
+    internal class NLOC0002 : IAnalyzer
     {
         public bool Analyze(Document document, out string[] unlocalized)
         {
