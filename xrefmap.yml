@@ -15715,6 +15715,31 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Configuration.Config.DriverConfig
   nameWithType: Config.DriverConfig
+- uid: Nitrocid.Kernel.Configuration.Config.GetFallbackKernelConfig(System.String)
+  name: GetFallbackKernelConfig(string)
+  href: api/Nitrocid.Kernel.Configuration.Config.html#Nitrocid_Kernel_Configuration_Config_GetFallbackKernelConfig_System_String_
+  commentId: M:Nitrocid.Kernel.Configuration.Config.GetFallbackKernelConfig(System.String)
+  name.vb: GetFallbackKernelConfig(String)
+  fullName: Nitrocid.Kernel.Configuration.Config.GetFallbackKernelConfig(string)
+  fullName.vb: Nitrocid.Kernel.Configuration.Config.GetFallbackKernelConfig(String)
+  nameWithType: Config.GetFallbackKernelConfig(string)
+  nameWithType.vb: Config.GetFallbackKernelConfig(String)
+- uid: Nitrocid.Kernel.Configuration.Config.GetFallbackKernelConfig*
+  name: GetFallbackKernelConfig
+  href: api/Nitrocid.Kernel.Configuration.Config.html#Nitrocid_Kernel_Configuration_Config_GetFallbackKernelConfig_
+  commentId: Overload:Nitrocid.Kernel.Configuration.Config.GetFallbackKernelConfig
+  isSpec: "True"
+  fullName: Nitrocid.Kernel.Configuration.Config.GetFallbackKernelConfig
+  nameWithType: Config.GetFallbackKernelConfig
+- uid: Nitrocid.Kernel.Configuration.Config.GetFallbackKernelConfig``1
+  name: GetFallbackKernelConfig<TConfig>()
+  href: api/Nitrocid.Kernel.Configuration.Config.html#Nitrocid_Kernel_Configuration_Config_GetFallbackKernelConfig__1
+  commentId: M:Nitrocid.Kernel.Configuration.Config.GetFallbackKernelConfig``1
+  name.vb: GetFallbackKernelConfig(Of TConfig)()
+  fullName: Nitrocid.Kernel.Configuration.Config.GetFallbackKernelConfig<TConfig>()
+  fullName.vb: Nitrocid.Kernel.Configuration.Config.GetFallbackKernelConfig(Of TConfig)()
+  nameWithType: Config.GetFallbackKernelConfig<TConfig>()
+  nameWithType.vb: Config.GetFallbackKernelConfig(Of TConfig)()
 - uid: Nitrocid.Kernel.Configuration.Config.GetKernelConfig(System.String)
   name: GetKernelConfig(string)
   href: api/Nitrocid.Kernel.Configuration.Config.html#Nitrocid_Kernel_Configuration_Config_GetKernelConfig_System_String_
