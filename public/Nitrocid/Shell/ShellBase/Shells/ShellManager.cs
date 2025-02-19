@@ -93,8 +93,14 @@ namespace Nitrocid.Shell.ShellBase.Shells
                 [
                     new CommandArgumentInfo(
                     [
-                        new CommandArgumentPart(true, "process"),
-                        new CommandArgumentPart(false, "args")
+                        new CommandArgumentPart(true, "process", new CommandArgumentPartOptions()
+                        {
+                            ArgumentDescription = /* Localizable */ "Path to a process"
+                        }),
+                        new CommandArgumentPart(false, "args", new CommandArgumentPartOptions()
+                        {
+                            ArgumentDescription = /* Localizable */ "Arguments to pass to a process"
+                        })
                     ],
                     [
                         new SwitchInfo("forked", /* Localizable */ "Executes the process without interrupting the shell thread. A separate window will be created.", new SwitchOptions()
@@ -113,7 +119,10 @@ namespace Nitrocid.Shell.ShellBase.Shells
                 [
                     new CommandArgumentInfo(
                     [
-                        new CommandArgumentPart(true, "search")
+                        new CommandArgumentPart(true, "search", new CommandArgumentPartOptions()
+                        {
+                            ArgumentDescription = "Search phrase"
+                        })
                     ], false)
                 ], new FindCmdsUnifiedCommand()),
 
@@ -123,7 +132,8 @@ namespace Nitrocid.Shell.ShellBase.Shells
                     [
                         new CommandArgumentPart(false, "command", new CommandArgumentPartOptions()
                         {
-                            AutoCompleter = (_) => CommandManager.GetCommandNames(CurrentShellType)
+                            AutoCompleter = (_) => CommandManager.GetCommandNames(CurrentShellType),
+                            ArgumentDescription = /* Localizable */ "Command to show help entry"
                         })
                     ],
                     [
@@ -174,7 +184,8 @@ namespace Nitrocid.Shell.ShellBase.Shells
                     {
                         new CommandArgumentPart(true, "times", new CommandArgumentPartOptions()
                         {
-                            IsNumeric = true
+                            IsNumeric = true,
+                            ArgumentDescription = /* Localizable */ "Target command to execute upon building argument based on the source command output"
                         }),
                         new CommandArgumentPart(false, "command"),
                     })
@@ -196,7 +207,8 @@ namespace Nitrocid.Shell.ShellBase.Shells
                     {
                         new CommandArgumentPart(true, "command", new CommandArgumentPartOptions()
                         {
-                            AutoCompleter = (_) => CommandExecutor.GetWrappableCommands(CurrentShellType)
+                            AutoCompleter = (_) => CommandExecutor.GetWrappableCommands(CurrentShellType),
+                            ArgumentDescription = /* Localizable */ "Command to wrap its output"
                         })
                     })
                 ], new WrapUnifiedCommand()),
