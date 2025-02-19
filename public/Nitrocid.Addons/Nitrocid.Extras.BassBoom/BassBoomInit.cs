@@ -133,7 +133,7 @@ namespace Nitrocid.Extras.BassBoom
 
             // Additionally, register a custom extension handler that handles music playback
             if (!InitBasolia.BasoliaInitialized)
-                InitBasolia.Init(PathsManagement.AddonsPath + "/Extras.BassBoom");
+                InitBasolia.Init();
 
             // Initialize versions
             mpgVer = InitBasolia.MpgLibVersion;
@@ -146,8 +146,6 @@ namespace Nitrocid.Extras.BassBoom
             ScreensaverManager.AddonSavers.Remove("lyrics");
             ConfigTools.UnregisterBaseSetting(nameof(BassBoomSaversConfig));
             ConfigTools.UnregisterBaseSetting(nameof(BassBoomConfig));
-            HomepageTools.UnregisterBuiltinAction("Music Player");
-            HomepageTools.UnregisterBuiltinAction("Radio Player");
         }
 
         void IAddon.FinalizeAddon()

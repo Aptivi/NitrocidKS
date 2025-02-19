@@ -12,7 +12,6 @@
     <Description>Nitrocid KS Extras - BassBoom</Description>
     <AssemblyTitle>Nitrocid KS Extras - BassBoom</AssemblyTitle>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
   <!-- Extras.BassBoom addon General Information End -->
 
@@ -29,10 +28,6 @@
     <ProjectReference Include="..\..\Nitrocid\Nitrocid.csproj" Private="false" />
   </ItemGroup>
   <!-- Extras.BassBoom addon Platform Information End -->
-
-  <ItemGroup>
-    <PackageReference Include="BassBoom.Basolia" Version="0.2.5" />
-  </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Resources\*" />
