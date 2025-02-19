@@ -205,7 +205,7 @@ namespace Nitrocid.Misc.Splash
                 ScreenTools.SetCurrent(splashScreen);
 
                 // Finally, render it
-                ColorTools.LoadBack();
+                KernelColorTools.LoadBackground();
                 ScreenTools.Render();
 
                 // Render the display

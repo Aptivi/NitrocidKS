@@ -107,7 +107,7 @@ namespace Nitrocid.Kernel
                 );
                 ConsoleWrapper.CursorVisible = false;
                 ThreadManager.SleepUntilInput(15000);
-                ColorTools.LoadBack();
+                KernelColorTools.LoadBackground();
             }
 
             // Start the main loop

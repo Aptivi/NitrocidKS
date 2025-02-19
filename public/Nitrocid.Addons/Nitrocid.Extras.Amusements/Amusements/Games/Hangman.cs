@@ -31,6 +31,7 @@ using Terminaux.Reader;
 using Terminaux.Base.Buffered;
 using Terminaux.Inputs.Styles.Infobox;
 using Terminaux.Inputs;
+using Nitrocid.ConsoleBase.Colors;
 
 namespace Nitrocid.Extras.Amusements.Amusements.Games
 {
@@ -44,7 +45,7 @@ namespace Nitrocid.Extras.Amusements.Amusements.Games
         {
             // Clear the screen
             ConsoleWrapper.CursorVisible = false;
-            ColorTools.LoadBack();
+            KernelColorTools.LoadBackground();
 
             // Get a random word and populate some variables
             string RandomWord = WordManager.GetRandomWord();
@@ -231,7 +232,7 @@ namespace Nitrocid.Extras.Amusements.Amusements.Games
             // Clear after ourselves
             ScreenTools.UnsetCurrent(screen);
             ConsoleWrapper.CursorVisible = true;
-            ColorTools.LoadBack();
+            KernelColorTools.LoadBackground();
         }
 
     }

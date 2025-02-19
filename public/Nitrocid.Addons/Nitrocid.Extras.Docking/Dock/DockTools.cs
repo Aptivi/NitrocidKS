@@ -81,14 +81,14 @@ namespace Nitrocid.Extras.Docking.Dock
             }
             catch (Exception ex)
             {
-                ColorTools.LoadBack();
+                KernelColorTools.LoadBackground();
                 DebugWriter.WriteDebug(DebugLevel.E, $"Screen dock crashed [{dockInstance.DockName}]: {ex.Message}");
                 DebugWriter.WriteDebugStackTrace(ex);
                 InfoBoxModalColor.WriteInfoBoxModalColor(Translate.DoTranslation("Screen dock has crashed") + $": {ex.Message}", KernelColorTools.GetColor(KernelColorType.Error));
             }
             finally
             {
-                ColorTools.LoadBack();
+                KernelColorTools.LoadBackground();
                 ScreensaverManager.AllowLock();
             }
         }
