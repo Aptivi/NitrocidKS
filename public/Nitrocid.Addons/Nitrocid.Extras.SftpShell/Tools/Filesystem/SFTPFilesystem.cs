@@ -23,7 +23,6 @@ using System.Reflection;
 using System.Text;
 using Nitrocid.ConsoleBase.Colors;
 using Nitrocid.Extras.SftpShell.SFTP;
-using Nitrocid.Files;
 using Nitrocid.Files.Operations.Querying;
 using Nitrocid.Kernel.Debugging;
 using Nitrocid.Kernel.Exceptions;

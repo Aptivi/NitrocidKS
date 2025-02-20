@@ -40,7 +40,6 @@ using System.Text;
 using System.Threading;
 using Terminaux.Base;
 using Terminaux.Base.Buffered;
-using Terminaux.Base.Extensions;
 using Terminaux.Colors;
 using Terminaux.Colors.Data;
 using Terminaux.Inputs;
@@ -48,13 +47,10 @@ using Terminaux.Inputs.Interactive;
 using Terminaux.Inputs.Pointer;
 using Terminaux.Inputs.Styles;
 using Terminaux.Inputs.Styles.Infobox;
-using Terminaux.Inputs.Styles.Selection;
 using Terminaux.Sequences.Builder.Types;
 using Terminaux.Writer.ConsoleWriters;
 using Terminaux.Writer.CyclicWriters;
 using Terminaux.Writer.CyclicWriters.Renderer.Tools;
-using Terminaux.Writer.FancyWriters;
-using Terminaux.Writer.MiscWriters;
 using Textify.General;
 
 namespace Nitrocid.Shell.Homepage

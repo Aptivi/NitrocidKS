@@ -24,7 +24,6 @@ using Terminaux.Base;
 using Terminaux.Colors;
 using Textify.General;
 using Nitrocid.Kernel.Configuration;
-using Nitrocid.Files;
 using Nitrocid.Files.Operations.Querying;
 using Nitrocid.Files.Operations;
 
