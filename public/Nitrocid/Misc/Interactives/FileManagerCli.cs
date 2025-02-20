@@ -43,8 +43,6 @@ using Nitrocid.Files.LineEndings;
 using Nitrocid.Files.Extensions;
 using Nitrocid.Files.Operations.Querying;
 using Textify.General;
-using Terminaux.Colors;
-using Magico.Files;
 using Nitrocid.Kernel.Exceptions;
 using Nitrocid.ConsoleBase.Colors;
 

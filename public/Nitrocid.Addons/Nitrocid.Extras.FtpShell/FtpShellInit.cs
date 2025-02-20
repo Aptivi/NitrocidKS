@@ -21,7 +21,6 @@ using Nitrocid.Extras.FtpShell.FTP;
 using Nitrocid.Extras.FtpShell.Settings;
 using Nitrocid.Kernel.Configuration;
 using Nitrocid.Kernel.Extensions;
-using Nitrocid.Languages;
 using Nitrocid.Modifications;
 using Nitrocid.Shell.ShellBase.Arguments;
 using Nitrocid.Shell.ShellBase.Commands;

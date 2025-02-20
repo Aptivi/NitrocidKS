@@ -28,7 +28,6 @@ using System;
 using System.Text;
 using Nitrocid.Kernel;
 using Nitrocid.Kernel.Debugging;
-using Terminaux.Writer.FancyWriters;
 using Nitrocid.Languages;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.ConsoleBase.Colors;
@@ -41,7 +40,6 @@ using Terminaux.Base.Extensions;
 using Terminaux.Writer.CyclicWriters;
 using Terminaux.Writer.CyclicWriters.Renderer.Tools;
 using TextifyDep::Textify.General;
-using Terminaux.Writer.CyclicWriters.Renderer;
 
 namespace Nitrocid.Misc.Splash.Splashes
 {

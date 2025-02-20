@@ -19,8 +19,6 @@
 
 using Textify.Data.Figlet;
 using Terminaux.Base.Buffered;
-using Nitrocid.ConsoleBase.Colors;
-using Terminaux.Writer.FancyWriters;
 using Nitrocid.Kernel.Debugging;
 using Nitrocid.Kernel.Exceptions;
 using Nitrocid.Kernel.Extensions;
@@ -38,7 +36,6 @@ using Terminaux.Base;
 using Nitrocid.Users.Login.Motd;
 using Nitrocid.Network.Types.RSS;
 using Nitrocid.Kernel.Configuration;
-using Terminaux.Reader;
 using Terminaux.Inputs;
 using Terminaux.Writer.CyclicWriters;
 using Terminaux.Writer.CyclicWriters.Renderer.Tools;

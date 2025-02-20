@@ -24,12 +24,10 @@ using Nitrocid.Kernel.Debugging;
 using Nitrocid.Languages;
 using System.Linq;
 using System.Threading;
-using Terminaux.Colors;
 using Terminaux.Base;
 using Terminaux.Inputs;
 using System;
 using Nitrocid.Kernel.Power;
-using Terminaux.Reader;
 using Terminaux.Inputs.Styles;
 using Nitrocid.Kernel.Exceptions;
 

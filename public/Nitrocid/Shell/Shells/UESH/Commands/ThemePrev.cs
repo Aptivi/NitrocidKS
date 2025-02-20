@@ -27,8 +27,6 @@ using Nitrocid.Shell.ShellBase.Commands;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Terminaux.Colors;
-using Terminaux.Inputs;
 using Terminaux.Inputs.Styles;
 using Nitrocid.ConsoleBase.Colors;
 

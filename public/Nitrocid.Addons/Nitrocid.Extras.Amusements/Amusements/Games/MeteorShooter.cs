@@ -30,7 +30,6 @@ using Nitrocid.Misc.Screensaver;
 using Terminaux.Base;
 using Terminaux.Colors.Data;
 using Nitrocid.Kernel.Debugging;
-using Terminaux.Reader;
 using Terminaux.Inputs;
 
 namespace Nitrocid.Extras.Amusements.Amusements.Games

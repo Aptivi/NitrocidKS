@@ -18,7 +18,6 @@
 //
 
 using System;
-using System.Reflection;
 using Nitrocid.Kernel.Configuration;
 using Nitrocid.Kernel.Configuration.Instances;
 using Nitrocid.Kernel.Updates;

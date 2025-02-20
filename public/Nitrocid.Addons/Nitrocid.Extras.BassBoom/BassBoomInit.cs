@@ -47,16 +47,13 @@ using System.Reflection;
 using BassBoom.Basolia;
 using Nitrocid.Kernel.Configuration;
 using Nitrocid.Shell.ShellBase.Commands;
-using Nitrocid.Files.Extensions;
 using Nitrocid.Kernel.Extensions;
 using Nitrocid.Shell.ShellBase.Shells;
 using Nitrocid.Misc.Screensaver;
-using Nitrocid.Files.Paths;
 using Nitrocid.Modifications;
 using System.Linq;
 using Terminaux.Colors;
 using Terminaux.Colors.Data;
-using Nitrocid.Shell.ShellBase.Switches;
 
 namespace Nitrocid.Extras.BassBoom
 {

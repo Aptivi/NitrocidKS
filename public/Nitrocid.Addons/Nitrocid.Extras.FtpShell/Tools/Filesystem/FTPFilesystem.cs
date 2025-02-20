@@ -27,7 +27,6 @@ using FluentFTP;
 using FluentFTP.Helpers;
 using Nitrocid.ConsoleBase.Colors;
 using Nitrocid.Extras.FtpShell.FTP;
-using Nitrocid.Files;
 using Nitrocid.Files.Operations.Querying;
 using Nitrocid.Files.Paths;
 using Nitrocid.Kernel.Debugging;

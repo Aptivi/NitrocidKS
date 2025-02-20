@@ -24,7 +24,6 @@ using Nitrocid.Languages;
 using Terminaux.Base;
 using Nitrocid.ConsoleBase.Inputs;
 using Terminaux.Base.Extensions;
-using Terminaux.Reader;
 using Terminaux.Inputs;
 
 namespace Nitrocid.Legacy.HddUncleaner

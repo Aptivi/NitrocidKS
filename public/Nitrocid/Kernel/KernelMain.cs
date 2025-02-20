@@ -35,11 +35,8 @@ using Terminaux.Inputs.Styles.Infobox;
 using Nitrocid.ConsoleBase.Colors;
 using Nitrocid.Arguments.Help;
 using Nitrocid.Kernel.Power;
-using Terminaux.Colors;
 using Terminaux.Base;
 using Terminaux.Base.Extensions;
-using Nitrocid.Kernel.Configuration;
-using Terminaux.Writer.ConsoleWriters;
 using Aptivestigate.CrashHandler;
 
 namespace Nitrocid.Kernel

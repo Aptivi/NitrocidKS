@@ -27,7 +27,6 @@ using Terminaux.Colors;
 using Terminaux.Sequences.Builder.Types;
 using Terminaux.Base;
 using Terminaux.Colors.Data;
-using Terminaux.Reader;
 using Terminaux.Inputs;
 using Terminaux.Base.Extensions;
 

@@ -37,7 +37,6 @@ using Nitrocid.Files.Paths;
 using Nitrocid.Kernel.Events;
 using Nitrocid.ConsoleBase.Colors;
 using Nitrocid.Files.Operations.Querying;
-using Terminaux.Inputs;
 using Nitrocid.Misc.Reflection.Internal;
 using Terminaux.Inputs.Styles;
 

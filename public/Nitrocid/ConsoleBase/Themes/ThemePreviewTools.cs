@@ -17,20 +17,13 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using Terminaux.Colors;
 using Nitrocid.Languages;
 using Nitrocid.Kernel.Exceptions;
-using Terminaux.Writer.FancyWriters;
-using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.ConsoleBase.Colors;
-using Terminaux.Base;
-using Terminaux.Inputs;
 using Terminaux.Inputs.Styles.Selection;
-using Terminaux.Base.Extensions;
-using Terminaux.Reader;
 using Terminaux.Inputs.Styles;
 using Nitrocid.Kernel.Configuration;
 

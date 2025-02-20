@@ -27,7 +27,6 @@ using Nitrocid.Misc.Screensaver;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using Terminaux.Colors;
 
 namespace Nitrocid.Extras.Docking.Dock
 {

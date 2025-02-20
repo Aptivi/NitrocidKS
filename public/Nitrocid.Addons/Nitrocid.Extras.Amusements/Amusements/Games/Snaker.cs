@@ -27,7 +27,6 @@ using Nitrocid.Drivers.RNG;
 using Nitrocid.Kernel.Threading;
 using Nitrocid.Misc.Screensaver;
 using Terminaux.Base;
-using Terminaux.Reader;
 using Terminaux.Colors.Transformation.Contrast;
 using Terminaux.Base.Buffered;
 using System.Text;

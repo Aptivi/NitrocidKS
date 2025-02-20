@@ -32,7 +32,6 @@ using Nitrocid.ConsoleBase.Colors;
 using Nitrocid.Files.Extensions;
 using Nitrocid.Files.Operations.Querying;
 using Terminaux.Writer.ConsoleWriters;
-using Magico.Files;
 using Nitrocid.Kernel.Exceptions;
 
 namespace Nitrocid.Shell.Shells.UESH.Commands

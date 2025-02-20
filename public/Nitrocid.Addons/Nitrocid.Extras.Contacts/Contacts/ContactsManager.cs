@@ -32,7 +32,6 @@ using Nitrocid.Files.Operations;
 using Nitrocid.Languages;
 using Nitrocid.Drivers.Encryption;
 using Nitrocid.Misc.Text.Probers.Regexp;
-using VisualCard.Parts.Implementations;
 using VisualCard.Extras.Converters;
 using VisualCard.Parts.Enums;
 

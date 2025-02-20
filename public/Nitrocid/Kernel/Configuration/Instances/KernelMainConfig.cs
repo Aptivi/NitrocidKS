@@ -20,7 +20,6 @@
 using Newtonsoft.Json;
 using System;
 using Terminaux.Colors;
-using Terminaux.Colors.Transformation;
 using Textify.Data.Figlet;
 using Nitrocid.Kernel.Configuration.Settings;
 using Nitrocid.Shell.Shells.Text;
@@ -47,7 +46,6 @@ using Nitrocid.ConsoleBase.Writers.MiscWriters;
 using Nitrocid.Network.Types.RPC;
 using Nitrocid.Network;
 using Terminaux.Inputs.Styles.Selection;
-using Terminaux.Inputs.Interactive;
 using Nitrocid.Misc.Reflection.Internal;
 using Terminaux.Writer.CyclicWriters.Renderer.Tools;
 
