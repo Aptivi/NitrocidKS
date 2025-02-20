@@ -328,5 +328,26 @@ namespace Nitrocid.Extras.FtpShell.Tools.Filesystem
             return false;
         }
 
+        /// <summary>
+        /// Makes a directory in the remote
+        /// </summary>
+        /// <param name="name">New directory name</param>
+        /// <returns>True if successful; False if unsuccessful</returns>
+        public static bool FTPMakeDirectory(string name)
+        {
+            try
+            {
+                var instance = (FtpClient?)FTPShellCommon.ClientFTP?.ConnectionInstance ??
+                    throw new KernelException(KernelExceptionType.FTPShell, Translate.DoTranslation("There is no FTP client yet."));
+                return instance.CreateDirectory(name);
+            }
+            catch (Exception ex)
+            {
+                DebugWriter.WriteDebug(DebugLevel.E, "Error creating FTP directory {0}: {1}", vars: [name, ex.Message]);
+                DebugWriter.WriteDebugStackTrace(ex);
+            }
+            return false;
+        }
+
     }
 }

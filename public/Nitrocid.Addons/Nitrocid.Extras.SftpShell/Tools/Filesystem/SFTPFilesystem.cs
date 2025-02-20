@@ -205,5 +205,27 @@ namespace Nitrocid.Extras.SftpShell.Tools.Filesystem
             return CanonicalPath;
         }
 
+        /// <summary>
+        /// Makes a directory in the remote
+        /// </summary>
+        /// <param name="name">New directory name</param>
+        /// <returns>True if successful; False if unsuccessful</returns>
+        public static bool SFTPMakeDirectory(string name)
+        {
+            try
+            {
+                var client = (SftpClient?)SFTPShellCommon.ClientSFTP?.ConnectionInstance ??
+                    throw new KernelException(KernelExceptionType.SFTPShell, Translate.DoTranslation("Client is not connected yet"));
+                client.CreateDirectory(name);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                DebugWriter.WriteDebug(DebugLevel.E, "Error creating SFTP directory {0}: {1}", vars: [name, ex.Message]);
+                DebugWriter.WriteDebugStackTrace(ex);
+            }
+            return false;
+        }
+
     }
 }

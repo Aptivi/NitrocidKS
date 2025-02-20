@@ -116,6 +116,28 @@ namespace Nitrocid.Extras.SftpShell.SFTP
                     ])
                 ], new LsrCommand(), CommandFlags.Wrappable),
 
+            new CommandInfo("mkldir", /* Localizable */ "Creates a local directory",
+                [
+                    new CommandArgumentInfo(
+                    [
+                        new CommandArgumentPart(true, "directory", new CommandArgumentPartOptions()
+                        {
+                            ArgumentDescription = /* Localizable */ "Path to local directory"
+                        }),
+                    ], true)
+                ], new MkldirCommand()),
+
+            new CommandInfo("mkrdir", /* Localizable */ "Creates a remote directory",
+                [
+                    new CommandArgumentInfo(
+                    [
+                        new CommandArgumentPart(true, "directory", new CommandArgumentPartOptions()
+                        {
+                            ArgumentDescription = /* Localizable */ "Path to remote directory"
+                        }),
+                    ], true)
+                ], new MkrdirCommand()),
+
             new CommandInfo("put", /* Localizable */ "Uploads local file to remote directory using binary or text",
                 [
                     new CommandArgumentInfo(new[]
