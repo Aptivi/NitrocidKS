@@ -36,11 +36,21 @@
 
   <ItemGroup>
     <EmbeddedResource Include="..\..\public\Nitrocid\Resources\Languages\eng.json" Visible="false" />
-    <EmbeddedResource Include="..\..\public\Nitrocid\Resources\Settings\*.json" Visible="false" />
-    <EmbeddedResource Include="..\..\public\Nitrocid\Resources\Themes\*.json" Visible="false" />
-    <EmbeddedResource Include="..\..\public\Nitrocid.Addons\**\Resources\*Settings.json" Visible="false" />
-    <EmbeddedResource Include="..\..\public\Nitrocid.Addons\Nitrocid.ThemePacks\Resources\Themes\*.json" Visible="false" />
-    <EmbeddedResource Include="..\..\private\Nitrocid.Generators\Nitrocid.Generators.KnownAddons\Resources\KnownAddons.json" Visible="false" />
+    <EmbeddedResource Include="..\..\public\Nitrocid\Resources\Settings\*.json" Visible="false">
+      <LogicalName>%(EmbeddedResource.FullPath)</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\public\Nitrocid\Resources\Themes\*.json" Visible="false">
+      <LogicalName>%(EmbeddedResource.FullPath)</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\public\Nitrocid.Addons\**\Resources\*Settings.json" Visible="false">
+      <LogicalName>%(EmbeddedResource.FullPath)</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\public\Nitrocid.Addons\Nitrocid.ThemePacks\Resources\Themes\*.json" Visible="false">
+      <LogicalName>%(EmbeddedResource.FullPath)</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\private\Nitrocid.Generators\Nitrocid.Generators.KnownAddons\Resources\KnownAddons.json" Visible="false">
+      <LogicalName>%(EmbeddedResource.FullPath)</LogicalName>
+    </EmbeddedResource>
   </ItemGroup>
 
   <Import Project="..\..\public\Nitrocid.Analyzers\Nitrocid.Analyzers.Common\Nitrocid.Analyzers.Common.projitems" Label="Shared" />
