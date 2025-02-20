@@ -39,10 +39,13 @@ namespace Nitrocid.Extras.Notes
         [
             new CommandInfo("addnote", /* Localizable */ "Adds a note",
                 [
-                    new CommandArgumentInfo(new[]
-                    {
-                        new CommandArgumentPart(true, "noteContents...")
-                    }),
+                    new CommandArgumentInfo(
+                    [
+                        new CommandArgumentPart(true, "noteContents...", new CommandArgumentPartOptions()
+                        {
+                            ArgumentDescription = /* Localizable */ "Note contents to add"
+                        })
+                    ]),
                 ], new AddNote()),
 
             new CommandInfo("removenote", /* Localizable */ "Removes a note",
@@ -51,7 +54,8 @@ namespace Nitrocid.Extras.Notes
                     {
                         new CommandArgumentPart(true, "noteNumber", new CommandArgumentPartOptions()
                         {
-                            IsNumeric = true
+                            IsNumeric = true,
+                            ArgumentDescription = /* Localizable */ "Note number"
                         })
                     }),
                 ], new RemoveNote()),

@@ -39,38 +39,26 @@ namespace Nitrocid.Extras.ToDoList
         [
             new CommandInfo("todo", /* Localizable */ "To-do task manager",
                 [
-                    new CommandArgumentInfo(new[]
-                    {
-                        new CommandArgumentPart(true, "add"),
-                        new CommandArgumentPart(true, "taskname"),
-                    }),
-                    new CommandArgumentInfo(new[]
-                    {
-                        new CommandArgumentPart(true, "remove"),
-                        new CommandArgumentPart(true, "taskname"),
-                    }),
-                    new CommandArgumentInfo(new[]
-                    {
-                        new CommandArgumentPart(true, "done"),
-                        new CommandArgumentPart(true, "taskname"),
-                    }),
-                    new CommandArgumentInfo(new[]
-                    {
-                        new CommandArgumentPart(true, "undone"),
-                        new CommandArgumentPart(true, "taskname"),
-                    }),
-                    new CommandArgumentInfo(new[]
-                    {
-                        new CommandArgumentPart(true, "list"),
-                    }),
-                    new CommandArgumentInfo(new[]
-                    {
-                        new CommandArgumentPart(true, "save"),
-                    }),
-                    new CommandArgumentInfo(new[]
-                    {
-                        new CommandArgumentPart(true, "load"),
-                    }),
+                    new CommandArgumentInfo(
+                    [
+                        new CommandArgumentPart(true, "add/remove/done/undone", new CommandArgumentPartOptions()
+                        {
+                            ExactWording = ["add", "remove", "done", "undone"],
+                            ArgumentDescription = /* Localizable */ "Whether to add, remove, mark as done, or unmark as done on a task"
+                        }),
+                        new CommandArgumentPart(true, "taskname", new CommandArgumentPartOptions()
+                        {
+                            ArgumentDescription = /* Localizable */ "Task name"
+                        }),
+                    ]),
+                    new CommandArgumentInfo(
+                    [
+                        new CommandArgumentPart(true, "list", new CommandArgumentPartOptions()
+                        {
+                            ExactWording = ["list", "save", "load"],
+                            ArgumentDescription = /* Localizable */ "Whether to list, save, or load all tasks"
+                        }),
+                    ]),
                 ], new TodoCommand()),
         ];
 

@@ -45,10 +45,13 @@ namespace Nitrocid.Extras.FtpShell
         [
             new CommandInfo("ftp", /* Localizable */ "Use an FTP shell to interact with servers",
                 [
-                    new CommandArgumentInfo(new[]
-                    {
-                        new CommandArgumentPart(false, "server"),
-                    })
+                    new CommandArgumentInfo(
+                    [
+                        new CommandArgumentPart(false, "server", new CommandArgumentPartOptions()
+                        {
+                            ArgumentDescription = /* Localizable */ "FTP server to connect to"
+                        }),
+                    ])
                 ], new FtpCommandExec())
         ];
 

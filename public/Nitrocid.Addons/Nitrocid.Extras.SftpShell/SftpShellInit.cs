@@ -45,10 +45,13 @@ namespace Nitrocid.Extras.SftpShell
         [
             new CommandInfo("sftp", /* Localizable */ "Lets you use an SSH FTP server",
                 [
-                    new CommandArgumentInfo(new[]
-                    {
-                        new CommandArgumentPart(false, "server"),
-                    })
+                    new CommandArgumentInfo(
+                    [
+                        new CommandArgumentPart(false, "server", new CommandArgumentPartOptions()
+                        {
+                            ArgumentDescription = /* Localizable */ "SFTP server to connect to"
+                        }),
+                    ])
                 ], new SftpCommandExec()),
         ];
 

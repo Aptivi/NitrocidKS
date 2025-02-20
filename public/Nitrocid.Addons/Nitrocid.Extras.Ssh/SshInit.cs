@@ -43,21 +43,36 @@ namespace Nitrocid.Extras.Ssh
         [
             new CommandInfo("sshell", /* Localizable */ "Connects to an SSH server.",
                 [
-                    new CommandArgumentInfo(new[]
-                    {
-                        new CommandArgumentPart(true, "address:port"),
-                        new CommandArgumentPart(true, "username"),
-                    })
+                    new CommandArgumentInfo(
+                    [
+                        new CommandArgumentPart(true, "address:port", new CommandArgumentPartOptions()
+                        {
+                            ArgumentDescription = /* Localizable */ "SSH server to connect to"
+                        }),
+                        new CommandArgumentPart(true, "username", new CommandArgumentPartOptions()
+                        {
+                            ArgumentDescription = /* Localizable */ "Username to authenticate with"
+                        }),
+                    ])
                 ], new SshellCommand()),
 
             new CommandInfo("sshcmd", /* Localizable */ "Connects to an SSH server to execute a command.",
                 [
-                    new CommandArgumentInfo(new[]
-                    {
-                        new CommandArgumentPart(true, "address:port"),
-                        new CommandArgumentPart(true, "username"),
-                        new CommandArgumentPart(true, "command"),
-                    })
+                    new CommandArgumentInfo(
+                    [
+                        new CommandArgumentPart(true, "address:port", new CommandArgumentPartOptions()
+                        {
+                            ArgumentDescription = /* Localizable */ "SSH server to connect to"
+                        }),
+                        new CommandArgumentPart(true, "username", new CommandArgumentPartOptions()
+                        {
+                            ArgumentDescription = /* Localizable */ "Username to authenticate with"
+                        }),
+                        new CommandArgumentPart(true, "command", new CommandArgumentPartOptions()
+                        {
+                            ArgumentDescription = /* Localizable */ "Command to remotely execute"
+                        }),
+                    ])
                 ], new SshcmdCommand()),
         ];
 
