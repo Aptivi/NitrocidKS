@@ -120,10 +120,7 @@ namespace Nitrocid.Extras.SftpShell.SFTP
                 [
                     new CommandArgumentInfo(
                     [
-                        new CommandArgumentPart(true, "directory", new CommandArgumentPartOptions()
-                        {
-                            ArgumentDescription = /* Localizable */ "Path to local directory"
-                        }),
+                        new CommandArgumentPart(true, "directory"),
                     ], true)
                 ], new MkldirCommand()),
 
@@ -131,10 +128,7 @@ namespace Nitrocid.Extras.SftpShell.SFTP
                 [
                     new CommandArgumentInfo(
                     [
-                        new CommandArgumentPart(true, "directory", new CommandArgumentPartOptions()
-                        {
-                            ArgumentDescription = /* Localizable */ "Path to remote directory"
-                        }),
+                        new CommandArgumentPart(true, "directory"),
                     ], true)
                 ], new MkrdirCommand()),
 
