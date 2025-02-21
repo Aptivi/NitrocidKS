@@ -186,9 +186,6 @@ namespace Nitrocid.Extras.Contacts.Contacts.Interactives
             string finalRenderedContactNotes = GetContactNotesFinal(index);
             finalInfoRendered.AppendLine(finalRenderedContactNotes);
 
-            // Add a prompt to close
-            finalInfoRendered.AppendLine("\n" + Translate.DoTranslation("Press any key to close this window."));
-
             // Now, render the info box
             InfoBoxModalColor.WriteInfoBoxModalColorBack(finalInfoRendered.ToString(), KernelColorTools.GetColor(KernelColorType.TuiBoxForeground), KernelColorTools.GetColor(KernelColorType.TuiBoxBackground));
         }
@@ -200,8 +197,7 @@ namespace Nitrocid.Extras.Contacts.Contacts.Interactives
             var card = ContactsManager.GetContact(index);
 
             string finalRenderedContactVcardInfo = card.SaveToString();
-            finalInfoRendered.AppendLine(finalRenderedContactVcardInfo);
-            finalInfoRendered.Append(Translate.DoTranslation("Press any key to close this window."));
+            finalInfoRendered.Append(finalRenderedContactVcardInfo);
 
             // Now, render the info box
             InfoBoxModalColor.WriteInfoBoxModalColorBack(finalInfoRendered.ToString(), KernelColorTools.GetColor(KernelColorType.TuiBoxForeground), KernelColorTools.GetColor(KernelColorType.TuiBoxBackground));
