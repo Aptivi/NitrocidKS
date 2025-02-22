@@ -120,7 +120,6 @@ Vous essayez de vous connecter à {0} avec le profil {1} ...
 L'analyse des mods n'est pas autorisée en mode sans échec.
 Le chemin n'est ni un fichier ni un répertoire.
 Crée une autre copie d'un fichier sous un répertoire ou un nom différent.
-Déplace un fichier vers un autre répertoire
 Correspondance {0} ({1}): {2}
 Correspondance {0}: {1}
 Temps passé: {0} millisecondes
@@ -627,7 +626,6 @@ Activer le débogage de l'économiseur d'écran
 Active le débogage pour les économiseurs d'écran. Veuillez noter que cela peut rapidement remplir le journal de débogage et ralentir légèrement l'économiseur d'écran, selon l'économiseur d'écran utilisé. Ne fonctionne que si le débogage du noyau est activé à des fins de diagnostic.
 La page de manuel {0} n'est pas valide.
 Pensez à remplir cette page de manuel.
-Mode d'emploi
 Arguments de noyau disponibles :
 Erreur irrécupérable dans l'argument :
 Crypte une chaîne à l'aide de SHA512
@@ -1268,8 +1266,6 @@ Impossible d'effacer les fichiers divers
 Description de l'aide sans argument
 Votre console doit prendre en charge les vraies couleurs pour utiliser ce thème.
 Quitter l'aperçu
-Fait
-Types de commutateurs
 Le thème {0} célèbre un événement, mais vous arrivez trop tôt ou trop tard pour y assister. Chaque année, ce thème est accessible du {1}/{2} au {3}/{4}.
 Le thème {0} nécessite la prise en charge des couleurs réelles, mais votre console ne la prend pas en charge.
 Le texte ne doit pas être vide.
@@ -1608,7 +1604,6 @@ Le thread de noyau {0} a échoué.
 Vous avez installé Nitrocid KS à l'aide de votre gestionnaire de packages. Veuillez plutôt l'utiliser pour mettre à niveau votre noyau.
 Pas d'information.
 Impossible d'ouvrir un fichier ou un dossier
-Appuyez sur n'importe quelle touche pour fermer cette fenêtre.
 Style de nouvelle ligne :
 Fichier binaire :
 Métadonnées MIME :
@@ -2120,8 +2115,6 @@ Imprimer une chaîne sur la console
 Imprimer une chaîne sur le débogueur
 Imprimer une chaîne sur le débogueur avec formatage
 Imprimer une chaîne sur la console avec formatage
-Imprimer une chaîne figlet sur la console
-Imprimer une chaîne figlet sur la console avec formatage
 Imprimer une chaîne sur la console avec surbrillance
 Imprimer un séparateur sur la console
 Imprimer un séparateur pour consoler avec de la couleur
@@ -2189,8 +2182,6 @@ Autorisations
 Groupes
 Langue utilisateur préférée définie sur {0}. Vous souhaiterez peut-être vous reconnecter.
 Shell d'administrateur
-Numéro de session invalide
-Aucun numéro de session
 Aucun type d'exception de ce type
 Nom du type d'exception
 Message
@@ -2344,7 +2335,6 @@ Jouez au jeu Wordle de manière originale
 Commémore le 5ème anniversaire de la sortie du noyau
 Ouvre le fichier d'archive dans le shell d'archive
 Récupère toutes les lignes de paroles du fichier de paroles
-Ouvre un lecteur de musique interactif
 Lit un fichier de paroles
 Joue un son
 Ajoute une alarme pour vous avertir lorsque votre tasse de thé ou de café est prête.
@@ -2465,8 +2455,6 @@ Joyeux 5ème anniversaire !
 Je ne peux rien extraire.
 L'archive n'est pas accessible en écriture car le type est
 Assurez-vous de spécifier le chemin d'accès à un fichier LRC.
-Le fichier musical « {0} » n'existe pas.
-Erreur fatale dans le module complémentaire BassBoom CLI.
 Impossible de lire le son car le fichier est introuvable.
 Fichier musical ouvert avec succès.
 Impossible d'ouvrir le fichier musical.
@@ -2479,63 +2467,8 @@ Genre
 Durée
 Appuyez sur « q » pour arrêter la lecture.
 Impossible de lire le son.
-Une erreur s'est produite avec Basolia lors de la tentative de traitement de l'opération d'égalisation.
-Une erreur s'est produite avec la sortie Basolia lors de la tentative de traitement de l'opération d'égalisation.
-Une erreur inconnue s'est produite lors de la tentative de traitement de l'opération d'égalisation.
-Changement
-Sélectionnez la bande
-Propulsé par BassBoom
-Entrez un chemin vers le fichier musical
-Le fichier "{0}" n'existe pas.
-Entrez un chemin vers le répertoire de la bibliothèque musicale
-Le répertoire de la bibliothèque musicale est introuvable.
-Chargement de BassBoom pour ouvrir {0}...
 Lecture en cours
-J'essaie d'ouvrir le fichier de paroles
-Impossible d'ouvrir le fichier de paroles
-Écrivez la position cible dans ce format
-Frappes disponibles
-Jouer pause
-Arrêt
-Contrôle du volume
-Rechercher le contrôle
-Rechercher un contrôle de durée
-Informations sur la chanson
-Ajouter un fichier musical
-Chanson précédente
-Prochaine chanson
-Supprimer la chanson actuelle
-Supprimer toutes les chansons
-Inconnu
 Titre
-Album
-Commentaire
-Paroles
-lignes
-Pas de paroles
-Informations sur la couche
-Couche
-Taux
-Mode
-Mode Ext.
-Taille du cadre
-Accent
-Débit
-Taux PEA
-Débit binaire variable
-Textes et Extras
-Impossible d'ouvrir le fichier musical « {0} », car il est introuvable.
-Titre de chanson
-Artiste de la chanson
-Genre de chanson
-Chercher
-Volume
-Il y a une erreur avec Basolia lors de la tentative de traitement du fichier musical.
-Une erreur s'est produite avec la sortie Basolia lors de la tentative de traitement du fichier musical.
-Une erreur inconnue s'est produite lors de la tentative de traitement du fichier musical.
-Échec de lecture
-Aide
-Appuyez sur « A » pour insérer une seule chanson dans la liste de lecture, ou sur « S » pour insérer toute la bibliothèque musicale.
 Café américain
 Thé rouge
 Thé vert
@@ -2714,7 +2647,6 @@ Entrez un nombre à convertir...
 Vous n'avez pas saisi de nombre à convertir.
 Le numéro saisi n'est pas valide.
 Impossible de convertir l'unité.
-Célébration du 6 000ème commit depuis la 0.0.1 !
 À suivre...
 La fin
 Bonne année!
@@ -2919,12 +2851,6 @@ Paramètres généraux du noyau
 Langue
 Spécifie la langue du noyau.
 Culture
-Activer le daltonisme
-Si vous êtes daltonien ou si vous souhaitez simuler le daltonisme, vous pouvez l'activer.
-Type de daltonisme
-Le type de daltonisme, qu'il s'agisse de protan, deuter ou de tritan.
-Gravité du daltonisme
-Quelle est la gravité du daltonisme ?
 Bip à l'arrêt ou au redémarrage
 Permet d'émettre un bip lors de l'arrêt du noyau.
 Retard à l'arrêt ou au redémarrage
@@ -2937,18 +2863,12 @@ Avis de développement reconnu
 S'il est défini sur true, le noyau ne vous montrera pas l'avis de développement à chaque fois que vous démarrez le noyau dans les versions de développement.
 Autoriser le chargement de mods non fiables
 S'il est défini sur true, le noyau n'affichera pas d'erreur lors du chargement de mods qui n'ont pas la clé publique signée.
-Quota de débogage activé
-Si cette option est activée, le rédacteur de débogage effectue une rotation du fichier journal de débogage si le quota est dépassé.
-Nombre de lignes de quota de débogage
-Combien de lignes imprimer dans le tampon de débogage avant d’atteindre la limite de quota ? Veuillez noter que cela ne représente pas le nombre de lignes contenues dans les fichiers journaux de débogage.
 Utiliser le fuseau horaire du système
 Si cette option est activée, le noyau utilise le fuseau horaire des paramètres de votre ordinateur. Sinon, utilise le fuseau horaire à l'échelle du noyau qui peut être configuré.
 Fuseau horaire à l'échelle du noyau
 Le fuseau horaire à l'échelle du noyau à utiliser
 Afficher la boîte d'informations sur la licence
 S'il faut afficher la boîte d'informations de licence modale pendant trois secondes après chaque connexion. Il est recommandé de le conserver.
-Style de journalisation hérité pour les journaux de débogage
-Qu'il s'agisse d'activer le style de journalisation hérité pour les journaux de débogage ou d'activer les journaux de débogage groupés.
 Cette section vous permet de choisir le type de couleur que vous souhaitez modifier.
 Paramètres de couleur
 Utiliser des couleurs d'accent
@@ -3129,7 +3049,6 @@ Préréglage d'invite RSS
 Cette section vous permet de configurer le fonctionnement du shell SFTP.
 Cette section vous permet de configurer le fonctionnement du shell SQL.
 Préréglage d'invite SQL Shell
-Cette section vous permet de configurer le fonctionnement des minuteries.
 Cette section vous permet de configurer le fonctionnement des astuces.
 Afficher les astuces du noyau
 Si activé, le shell vous montre les conseils à chaque connexion.
@@ -3355,7 +3274,6 @@ Cette commande contient les arguments ci-dessous qui modifient son fonctionnemen
 Description de l'argument non spécifié
 Répertorie tous les paramètres de fonction disponibles à partir d'une fonction
 Gérez vos alarmes
-Gérez vos alarmes dans une TUI interactive
 Redémarre une instance de noyau distante
 Le noyau de l'instance distante sera arrêté
 Utilise le style des paramètres hérités
@@ -3412,7 +3330,6 @@ Sélectionnez l'entrée de démarrage :
 Utilise la liste de mots courants.
 Utilise la liste complète de mots.
 Le jeu de ping-pong !
-Ouvre le lecteur de la station de radio à la place
 Lit un fichier de synthèse sonore
 Convertit le modèle de couleur source en modèle de couleur cible en nombres.
 Convertit le modèle de couleur source en modèle de couleur cible au format KS.
@@ -3441,72 +3358,6 @@ Symbole court de l'entreprise
 Crée un nouveau thème dans une TUI interactive
 que vous pouvez créer des programmes amorçables en utilisant les mods de votre noyau ?
 Type de gare
-Appareil
-Conducteur
-Impossible d'interroger les appareils actuels lorsque vous ne jouez pas.
-Périphérique et pilote
-Périphériques et pilotes disponibles
-Spécifications du BassBoom
-Décodeurs
-Spécifications du système
-Version Basolie
-Version MPG123
-version OUT123
-Décodeurs pris en charge
-Tous les décodeurs
-Système
-Architecture du système
-Architecture des processus
-Description du système
-Descriptif .NET
-Définir un point de contrôle répété
-Chercher à répéter le point de contrôle
-Ouvre l'égaliseur
-Informations sur le périphérique et le pilote
-Définir le périphérique et le pilote
-Réinitialiser le périphérique et le pilote
-Information système
-Informations sur les radios
-Informations étendues sur la station de radio
-Ajouter une radio
-Station de radio précédente
-Radio suivante
-Supprimer la station de radio actuelle
-Supprimer toutes les stations de radio
-Sélectionnez un pilote. ESC pour quitter.
-Sélectionnez un appareil. Le pilote actuel est {0}. ESC pour quitter.
-Ne joue pas. Le lecteur de musique est inactif.
-Basse
-Milieu supérieur
-Tripler
-Type de bande inconnu
-Bande d'égalisation
-Sélectionnez une parole à rechercher
-État natif
-Rendu précis
-Remplissage du tampon
-Délai de décodage
-Délai d'encodage
-Remplissage d'encodage
-Flux Frankenstein
-Nouveau décodeur
-Appuyez sur « A » pour insérer une station de radio dans la liste de lecture.
-Entrez un chemin vers la station de radio. L'URL de la station doit indiquer une station de radio MPEG. Ceux AAC ne sont pas encore pris en charge.
-Informations sur la gare
-URL de la station de radio
-Nom de la station de radio
-Chanson actuelle de la station de radio
-Page d'accueil
-Chemin du flux
-Auditeurs : {0} avec {1} au pic
-Débit binaire
-Type de support
-Informations sur le serveur radio
-Informations sur le flux
-La station de radio utilise HTTPS
-Type de serveur de station radio
-Flux de stations de radio : {0} avec {1} actifs
-Auditeurs de stations de radio : {0} avec {1} en pointe
 Le fichier de synthèse sonore n'existe pas.
 Nom du chapitre
 La représentation du synthétiseur n'est pas valide.
@@ -3649,7 +3500,6 @@ Le fichier texte n'est pas encore ouvert.
 Le gestionnaire de l'extension n'est pas spécifié.
 Impossible d'obtenir le gestionnaire par défaut
 Le chargement des gestionnaires par défaut a échoué.
-Tentative d'accès à un chemin non valide. Cette vérification a été effectuée pour empêcher les anciens systèmes Windows 10 qui n'ont pas été mis à jour vers le correctif d'avril 2021 ou une version ultérieure d'accéder à ces chemins connus pour provoquer la corruption du système de fichiers NTFS ou le problème d'écran bleu de la mort (BSOD). Cela implique que l'appelant tente de provoquer un déni de service (DoS) et doit être corrigé, ou que la saisie de l'utilisateur est malveillante.
 Sélectionner
 Copie
 Se déplacer
@@ -3688,11 +3538,6 @@ Le périphérique de débogage à distance ne semble pas exister.
 Impossible d'obtenir des périphériques de débogage à distance à partir de
 Impossible d'ouvrir la ressource de localisation en anglais
 Impossible d'ouvrir la ressource de localisation pour
-Impossible d'obtenir la police Figlet
-Imprimer une chaîne figlet sur la console (centrée)
-Imprimer une chaîne figlet sur la console avec mise en forme (centrée)
-Imprimer une chaîne figlet sur la console (centrée, positionnelle)
-Imprimer une chaîne figlet sur la console avec mise en forme (centrée, positionnelle)
 Impossible d'obtenir le point d'entrée.
 Teste les boutons dans la boîte d'information (intitulée)
 Teste la zone de saisie colorée dans la zone d'information (intitulée)
@@ -3710,7 +3555,6 @@ Je n'arrive pas à obtenir la méthode
 Une erreur d'expression régulière s'est produite pendant le traitement du texte. Vérifiez la syntaxe de votre expression régulière et réessayez. Si le délai d'attente est dépassé, assurez-vous de ne pas trop répéter l'opération (ne soyez pas gourmand).
 Les outils de la page d'accueil ont rencontré une erreur lors du traitement de votre demande. Veuillez vous assurer que vous avez correctement saisi toutes les données nécessaires.
 Malheureusement, la dernière panne est inconnue, nous ne savons donc pas exactement ce qui s'est passé. Cependant, il peut être utile de consulter les journaux de débogage du noyau.
-Impossible d'obtenir les métadonnées du module complémentaire
 Impossible d'obtenir des informations sur le terrain pour
 Impossible d'obtenir les entrées de journal
 (Utilisez les touches fléchées pour mettre en surbrillance votre choix, puis appuyez sur ENTRÉE.)
@@ -3826,18 +3670,8 @@ Liste des tours
 Générer des étiquettes de nom (les trémas ne sont actuellement pas pris en charge)
 Convertir...
 Convertisseur d'unités
-Lecteur de musique
-Lecteur radio
 Informations sur la radio Internet (FM) pour
 Impossible d'obtenir des informations sur la radio Internet.
-Appareil (mis en cache
-Pilote (mis en cache
-(en mode inactif) Ajouter un répertoire musical à la liste de lecture
-(en jouant) Rechercher sélectivement
-(en jouant) Rechercher les paroles précédentes
-(en jouant) Chercher la parole suivante
-(en jouant) Rechercher les paroles actuelles
-(en jouant) Cherche à quelles paroles
 Changement...
 Sauvegarder...
 Charger...
@@ -3929,4 +3763,3 @@ Ramenez la nostalgie avec ce thème !
 Votre terminal est constitué de planches de bois
 Inspiré du motif chinois de différents fruits
 Suppléments - CRC32C (Castagnoli)
-La recherche de mises à jour est désactivée sur les versions de développement.

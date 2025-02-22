@@ -120,7 +120,6 @@ jalmosdoen peulopil seontaeg
 anjeon modeueseoneun gumun bunseog modeuga heoyongdoeji anhseubnida.
 gyeongloneun pail-ina dilegtoliga anibnida.
 daleun dilegtoli ttoneun ileum-eulo pail-ui daleun sabon-eul jagseonghabnida.
-pail-eul daleun dilegtolilo idong
 {0} ({1}) ilchi : {2}
 {0} ilchi : {1}
 soyo sigan : {0} milli cho
@@ -627,7 +626,6 @@ hwamyeon bohogi dibeoging hwalseonghwa
 hwamyeon bohogie daehan dibeoging-eul hwalseonghwahabnida. sayonghaneun hwamyeon bohogie ttala dibeogeu logeuga ppaleuge chaewojigo hwamyeon bohogiga yaggan neulyeojil su issseubnida. jindan mogjeog-eulo keoneol dibeoging-i hwalseonghwadoen gyeong-ueman jagdonghabnida.
 maenyueol peiji {0}i(ga) jalmosdoeeossseubnida.
 i maenyueol peijileul chaeuneun geos-eul golyeohasibsio.
-modeu maenyueol
 sayong ganeunghan keoneol insu:
 insuui bogguhal su eobsneun olyu:
 SHA512leul sayonghayeo munjayeol amhohwa
@@ -1268,8 +1266,6 @@ gita paireul jiul su eopsseupnida
 insu eopseum doummal seolmyeong
 i temareul sayongharyeomyeon bonchega teurukeolleoreul jiwonhaeya hapnida.
 miribogi jongryo
-wanryo
-seuwichi yuhyeong
 {0} temaneun ibenteureul ginyeomhajiman chamseokhagieneun neomu ireugeona neomu neujeossseupnida. maenyeon i temaneun {1}/{2}buteo {3}/{4}kkaji aekseseuhal su issseupnida.
 {0} temaeneun teuru keolleo jiwoni piryohajiman konsoreseo jiwonhaji anhseupnida.
 tekseuteuneun biwodul su eopsseupnida.
@@ -1608,7 +1604,6 @@ keoneol seuredeu {0}i(ga) silpaehaessseupnida.
 paekiji gwanrijareul sayonghayeo Nitrocid KSreul seolchihaessseupnida. daesin ireul sayonghayeo keoneoreul eopgeureideuhasipsio.
 jeongboga eopsseupnida.
 pairina poldeoreul yeol su eopsseupnida
-i changeul dadeuryeomyeon amu kina nureuseyo.
 gaehaeng seutail:
 baineori pail:
 MIME metadeiteo:
@@ -2120,8 +2115,6 @@ konsore munjayeol inswae
 dibeogeoe munjayeol inswae
 hyeongsik jijeongeul sayonghayeo dibeogeoe munjayeol inswae
 hyeongsigeul jijeonghayeo konsore munjayeoreul inswaehapnida.
-konsore figlet munjayeoreul inswaehapnida.
-hyeongsigeul jijeonghayeo konsore figlet munjayeoreul inswaehapnida.
 gangjo pyosireul sayonghayeo konsore munjayeoreul inswaehapnida.
 konsore gubun gihoreul inswaehapnida.
 saeksangeuro konsore gubun gihoreul inswaehapnida.
@@ -2189,8 +2182,6 @@ gwonhan
 yeoreo tte
 gibon sayongja eoneoga {0}(eu)ro seoljeongdoeeossseupnida. dasi rogeuinhago sipeul sudo issseupnida.
 gwanrija syel
-jalmosdoen sesyeon beonho
-haedang sesyeon beonhoga eopsseupnida.
 haedang yeoe yuhyeongi eopsseupnida.
 yeoe yuhyeong ireum
 mesiji
@@ -2344,7 +2335,6 @@ wonrae Wordle geimeul peulleihaseyo
 keoneol chulsi 5junyeoneul ginyeomhapnida.
 akaibeu paireul akaibeu syello yeopnida.
 gasa paireseo modeun gasa daesareul gajyeoopnida.
-daehwahyeong eumak peulleieoreul yeopnida.
 gasa paireul jaesaenghapnida
 sorireul jaesaenghapnida
 chana keopiga junbidoemyeon allyeojuneun allameul chugahapnida.
@@ -2465,8 +2455,6 @@ saeroun hoekgijeogin gineungi chulsidoeeossgi ttaemune urineun i keoneorui ireum
 amugeosdo chuchulhal su eopsseupnida.
 yuhyeongi daeumgwa gatgi ttaemune akaibeue sseul su eopsseupnida.
 lRC pairui gyeongroreul jijeonghaeya hapnida.
-eumak pail '{0}'i(ga) jonjaehaji anhseupnida.
-bassboom ClI aedeuone chimyeongjeogin oryuga balsaenghaessseupnida.
 paireul chajeul su eopseo sorireul jaesaenghal su eopsseupnida.
 eumak paireul seonggongjeogeuro yeoreossseupnida.
 eumak paireul yeol su eopsseupnida.
@@ -2479,63 +2467,8 @@ jangreu
 jisok
 jaesaengeul jungjiharyeomyeon 'q'reul nureuseyo.
 sorireul jaesaenghal su eopsseupnida.
-ikwollaijeo jageobeul cheoriharyeogo hal ttae basoliae oryuga issseupnida.
-ikwollaijeo jageobeul cheoriharyeogo hal ttae basolia chullyeoge oryuga issseupnida.
-ikwollaijeo jageobeul cheorihaneun junge al su eopsneun oryuga balsaenghaessseupnida.
-byeonhwa
-baendeu seontaek
-bassboom jegong
-eumak pairui gyeongroreul ipryeokhaseyo
-"{0}" pairi jonjaehaji anhseupnida.
-eumak raibeureori direktori gyeongroreul ipryeokhaseyo.
-eumak raibeureori direktorireul chajeul su eopsseupnida.
-{0}eul(reul) yeolgi wihae bassboom rodeu jung...
 jigeum jaesaeng jung
-gasa paireul yeollyeogo hapnida
-gasa paireul yeol su eopsseupnida
-mokpyo wichireul daeum hyeongsigeuro jakseonghaseyo.
-sayong ganeunghan ki ipryeok
-jaesaeng/ilsi jeongji
-meomchuda
-bollyum jojeol
-tongjereul chuguhada
-tamsaek gigan jeeo
-norae jeongbo
-eumak pail chuga
-ijeon norae
-daeum norae
-hyeonjae norae sakje
-modeun norae jegeo
-allyeojiji anheun
 jemok
-aelbeom
-nonpyeong
-gasa
-yungwak
-gasa eopseum
-reieo jeongbo
-cheung
-biyul
-bangbeop
-modeu hwakjang
-peureim keugi
-jungyoseong
-biteureiteu
-ApR biyul
-gabyeon biteureiteu
-tekseuteu mit chuga jeongbo
-eumak pail '{0}'eul(reul) chajeul su eopsgi ttaemune yeol su eopsseupnida.
-norae jemok
-norae atiseuteu
-norae jangreu
-guhada
-yongryang
-eumak paireul cheoriharyeogo hal ttae basoliae oryuga balsaenghaessseupnida.
-eumakpail cheorisi basolia chullyeoge oryuga balsaenghapnida.
-eumak paireul cheorihaneun junge al su eopsneun oryuga balsaenghaessseupnida.
-jaesaeng silpae
-dopda
-jaesaeng mokroge norae han gogeul sabipharyeomyeon 'A'reul nureugo, jeonche eumak raibeureorireul sabipharyeomyeon 'S'reul nureuseyo.
 amerikan keopi
 hongcha
 nokcha
@@ -2714,7 +2647,6 @@ byeonhwanhal susjareul ipryeokhaseyo...
 byeonhwanhal susjareul ipryeokhaji anhassseupnida.
 ipryeokhan beonhoga jalmosdoeeossseupnida.
 danwireul byeonhwanhal su eopsseupnida.
-0.0.1 ihu 6,000beonjjae keomiseul chukhahapnida!
 gyesokharyeomyeon ...
 kkeut
 saehae bok manhi badeuseyo!
@@ -2919,12 +2851,6 @@ ilban keoneol seoljeong
 eoneo
 keoneol eoneoreul jijeonghapnida.
 munhwa
-saekmaeng hwalseonghwa
-saekmaengigeona saekmaengeul simyulleisyeonharyeoneun gyeongu i gineungeul hwalseonghwahal su issseupnida.
-saegmaeng yuhyeong
-saekmaengui yuhyeong(peurotan, dyuteo, teuritan)
-saekmaeng simgakdo
-saekmaengeun eolmana simgakhangayo?
 jongryo ttoneun jaebuting si gyeonggoeum balsaeng
 keoneoreul jongryohal ttae gyeonggoeumeul hwalseonghwahapnida.
 jongryo ttoneun jaebuting jiyeon
@@ -2937,18 +2863,12 @@ gaebal gongjiga seungindoeeossseupnida.
 truero seoljeonghamyeon gaebal beojeoneseo keoneollo butinghal ttaemada keoneori gaebal allimeul pyosihaji anhseupnida.
 sinroehal su eopsneun modeu rodeu heoyong
 truero seoljeonghamyeon seomyeongdoen gonggae kiga eopsneun modeureul rodeuhal ttae keoneoreseo oryuga balsaenghaji anhseupnida.
-dibeogeu haldangryangi hwalseonghwadoeeossseupnida.
-i opsyeoneul hwalseonghwahamyeon haldangryangi chogwadoemyeon dibeogeu girokgiga dibeogeu rogeu paireul hoejeonhapnida.
-dibeogeu haldangryang jul su
-haldangryang jehane dodalhagi jeone dibeogeu beopeoe inswaehal rain suneun myeot gaeipnikka? dibeogeu rogeu paire myeot juri issneunjineun natanaeji anhseupnida.
 siseutem sigandae sayong
 i opsyeoni hwalseonghwadoemyeon keoneoreun keompyuteo seoljeongui sigandaereul sayonghapnida. geureohji anheumyeon guseonghal su issneun keoneol jeonche sigandaereul sayonghapnida.
 keoneol jeonche sigandae
 sayonghal keoneol jeonche sigandae
 raisenseu jeongbo sangja pyosi
 gak rogeuin hu 3cho dongan modal raisenseu jeongbo sangjareul pyosihalji yeobuipnida. gyesok yujihaneun geosi johseupnida.
-dibeogeu rogeuui gijon roging seutail
-dibeogeu rogeue daehae regeosi roging seutaireul hwalseonghwahalji animyeon geuruphwadoen dibeogeu rogeureul hwalseonghwahalji yeobuipnida.
 i seksyeoneseoneun byeongyeongharyeoneun saeksang yuhyeongeul seontaekhal su issseupnida.
 saeksang seoljeong
 gangjo saeksang sayong
@@ -3129,7 +3049,6 @@ RSS peurompeuteu sajeon seoljeong
 i seksyeoneseoneun SFTP syel jakdong bangsigeul guseonghal su issseupnida.
 i seksyeoneseoneun SQl syel jakdong bangsigeul guseonghal su issseupnida.
 SQl syel peurompeuteu sajeon seoljeong
-i seksyeoneseoneun taimeo jakdong bangsigeul guseonghal su issseupnida.
 i seksyeoneseoneun tip jakdong bangsigeul guseonghal su issseupnida.
 keoneol tip pyosi
 hwalseonghwadoemyeon swereun rogeuinhal ttaemada tibeul pyosihapnida.
@@ -3355,7 +3274,6 @@ i myeonglyeong-eneun jagdong bangsig-eul byeongyeonghaneun alae insuga issseubni
 jijeongdoeji anh-eun insu seolmyeong
 hamsueseo sayong ganeunghan modeun hamsu maegaebyeonsuleul nayeolhabnida.
 allam gwanli
-daehwahyeong TUIeseo allam-eul gwanlihaseyo
 wongyeog keoneol inseuteonseuleul dasi sijaghabnida.
 wongyeog inseuteonseuui keoneol-i jonglyodoebnida.
 legeosi seoljeong seutail-eul sayonghabnida.
@@ -3412,7 +3330,6 @@ buting hangmog seontaeg:
 gongtong dan-eo moglog-eul sayonghabnida.
 jeonche dan-eo moglog-eul sayonghabnida.
 taggu geim!
-daesin ladio bangsong-gug peulleieoleul yeobnida.
 gyeong-go-eum sindisaijeo pail-eul ilgseubnida.
 soseu saegsang model-eul daesang saegsang modello susjalo byeonhwanhabnida.
 soseu saegsang model-eul KS hyeongsig-ui daesang saegsang modello byeonhwanhabnida.
@@ -3441,72 +3358,6 @@ jjalb-eun hoesa giho
 daehwahyeong TUIeseo sae temaleul mandeubnida.
 keoneol modeuleul sayonghayeo buting ganeunghan peulogeulaem-eul mandeul su issdagoyo?
 seuteisyeon yuhyeong
-jangchi
-unjeonsa
-jaesaenghaji anhneun dong-an hyeonjae jangchileul kwolihal su eobs-seubnida.
-jangchi mich deulaibeo
-sayong ganeunghan jangchi mich deulaibeo
-beiseubum sayang
-dikodeo
-siseutem sayang
-basollia beojeon
-MPG123 beojeon
-OUT123 beojeon
-jiwondoeneun dikodeo
-modeun dikodeo
-chegye
-siseutem gujo
-peuloseseu akitegcheo
-siseutem seolmyeong
-.NET seolmyeong
-banbog chekeupointeu seoljeong
-chekeupointeu banbog chugu
-ikwollaijeoleul yeobnida
-jangchi mich deulaibeo jeongbo
-jangchi mich deulaibeo seoljeong
-jangchi mich deulaibeo jaeseoljeong
-siseutem jeongbo
-ladio bangsong-gug jeongbo
-ladio bangsong-gug hwagjang jeongbo
-ladio bangsong-gug chuga
-ijeon ladio bangsong-gug
-da-eum ladio bangsong-gug
-hyeonjae ladio bangsong-gug jegeo
-modeun ladio bangsong-gug jegeo
-deulaibeoleul seontaeghaseyo. ESCleul nulleo jonglyohabnida.
-jangchileul seontaeghaseyo. hyeonjae deulaibeoneun {0}ibnida. ESCleul nulleo jonglyohabnida.
-nolgo issji anhseubnida. myujig peulleieoga yuhyu sangtaeibnida.
-beiseu
-eopeomideu
-go-eumbu
-al su eobsneun baendeu yuhyeong
-ikwollaijeo baendeu
-chajgo sip-eun gasaleul seontaeghaseyo
-gibon sangtae
-jeonghwaghan lendeoling
-beopeo chaeugi
-dikoding jiyeon
-inkoding jiyeon
-inkoding paeding
-peulangkensyutain seuteulim
-sinseonhan dikodeo
-jaesaeng moglog-e ladio bangsong-gug-eul sab-ibhalyeomyeon 'A'leul nuleuseyo.
-ladio bangsong-gug-ui gyeongloleul iblyeoghaseyo. bangsong-gug-ui URLeun MPEG ladio bangsong-gug-eul jegonghaeya habnida. AACneun ajig jiwondoeji anhseubnida.
-yeog jeongbo
-ladio bangsong-gug URL
-ladio bangsong-gug ileum
-ladio bangsong-gug hyeonjae nolae
-hompeiji
-seuteulim gyeonglo
-cheongchwija: {0}, choedae {1}
-biteu jeonsonglyul
-maeche yuhyeong
-ladio seobeo jeongbo
-seuteulim jeongbo
-ladio bangsong-gug-eseoneun HTTPSleul sayonghabnida.
-ladio bangsong-gug seobeo yuhyeong
-ladio bangsong-gug seuteulim: {1}i(ga) hwalseonghwadoen {0}
-ladio bangsong-gug cheongchwija: {0}, choedae {1}
 gyeong-go-eum sindisaijeo pail-i jonjaehaji anhseubnida.
 chaebteo ileum
 habseong pyohyeon-i jalmosdoeeossseubnida.
@@ -3649,7 +3500,6 @@ tegseuteu pail-i ajig yeolliji anh-assseubnida.
 hwagjangja-e daehan haendeulleoga jijeongdoeji anh-assseubnida.
 gibon haendeulleoleul gajyeooji moshaessseubnida.
 gibon haendeulleoleul lodeuhaneun de silpaehaessseubnida.
-jalmosdoen gyeonglo-e aegseseuhalyeogo habnida. i geomsaneun 2021nyeon 4wol paechi isang-eulo eobdeiteudoeji anh-eun ijeon Windows 10 siseutem-i NTFS pail siseutem sonsang-ina beullu seukeulin obeu deseu(BSOD) munjeleul il-eukineun geos-eulo allyeojin ileohan gyeonglo-e aegseseuhaneun geos-eul bangjihagi wihae suhaengdoeeossseubnida. ineun hochuljaga seobiseu geobu(DoS)leul il-eukilyeo hago iss-eumyeo ileul sujeonghaeya hageona sayongja iblyeog-i ag-uijeog-im-eul uimihabnida.
 seontaeg
 bogsa
 idong
@@ -3688,11 +3538,6 @@ wongyeog dibeogeu jangchiga eobsneun geos gatseubnida.
 wongyeog dibeogeu jangchileul gajyeool su eobs-seubnida.
 yeong-eo hyeonjihwa lisoseuleul yeol su eobs-seubnida.
 da-eum-e daehan hyeonjihwa lisoseuleul yeol su eobs-seubnida.
-figlet geulkkol-eul gajyeooneun de silpaehaessseubnida.
-figlet munjayeol-eul konsol-e inswaehabnida(jung-ang jeonglyeol)
-figlet munjayeol-eul seosig-eul sayonghayeo konsol-e inswaehabnida(jung-ang jeonglyeol)
-figlet munjayeol-eul konsol-e inswaehabnida(jung-ang jeonglyeol, wichi jijeong)
-figle munjayeol-eul seosig-eul sayonghayeo konsol-e inswaehabnida(jung-ang jeonglyeol, wichi jijeong)
 jin-ibjeom-eul gajyeooneun de silpaehaessseubnida.
 jeongbo sangja(jemog)ui beoteun-eul teseuteuhabnida.
 jeongbo sangja(jemog)ui keolleo iblyeog sangjaleul teseuteuhabnida.
@@ -3710,7 +3555,6 @@ meseodeuleul gajyeool su eobs-eum
 tegseuteuleul cheolihaneun dong-an jeong-gyu pyohyeonsig olyuga balsaenghaessseubnida. jeong-gyu pyohyeonsig gumun-eul hwag-inhago dasi sidohaseyo. sigan chogwaga balsaenghan gyeong-u jaegwileul neomu manh-i sayonghaji anhdolog haseyo(yogsim-eul buliji maseyo).
 hompeiji dogueseo yocheong-eul cheolihaneun dong-an olyuga balsaenghaessseubnida. pil-yohan modeun deiteoleul olbaleuge iblyeoghaessneunji hwag-inhaseyo.
 antakkabgedo majimag silpaeneun al su eobs-eumeulo jeonghwaghi mueos-i jalmosdoeeossneunji al su eobs-seubnida. geuleona keoneol dibeogeu logeuleul chamjohamyeon doum-i doel su issseubnida.
-aedeuon metadeiteoleul gajyeooji moshaessseubnida.
 pildeu jeongboleul gajyeool su eobs-seubnida.
 jeoneol hangmog-eul gajyeool su eobs-seubnida.
 (hwasalpyo kileul sayonghayeo seontaeg hangmog-eul gangjo pyosihan da-eum ENTERleul nuleubnida.)
@@ -3826,18 +3670,8 @@ laeb moglog
 ileum taegeu saengseong(umlauteuneun hyeonjae jiwondoeji anh-eum)
 byeonhwan...
 dan-wi byeonhwangi
-eum-ag peulleieo
-ladio peulleieo
 da-eum-e daehan inteones ladio(FM) jeongbo
 inteones ladio jeongboleul gajyeool su eobs-seubnida.
-jangchi(kaesidoem
-deulaibeo(kaesidoem
-(yuhyu sangtaeil ttae) jaesaeng moglog-e eum-ag dilegtoli chuga
-(jaesaeng jung) seontaegjeog-eulo tamsaeg
-(jaesaeng jung) ijeon gasa tamsaeg
-(jaesaeng jung) da-eum gasa tamsaeg
-(jaesaeng jung) hyeonjae gasa tamsaeg
-(jaesaeng jung) eotteon gasa tamsaeg
 byeongyeong...
 jeojang...
 lodeu...
@@ -3929,4 +3763,3 @@ i temalo hyangsuleul doesallyeoboseyo!
 teomineol-eun namu panjalo guseongdoeeo issseubnida
 dayanghan gwail-ui jung-gug paeteon-eseo yeong-gam-eul bad-assseubnida
 chuga gineung - CRC32C(Castagnoli)
-gaebal beojeon-eseoneun eobdeiteu hwag-in gineung-i bihwalseonghwadoeeo issseubnida.
