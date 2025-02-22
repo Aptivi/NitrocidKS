@@ -427,8 +427,6 @@ Wèi néng wánchéng mod {0}:{1}
 Liè chū suǒyǒu chùfā de shìjiàn
 dāngqián mùlù
 shèzhì shell dí dàng qián mùlù. Xiě rù rènhé xiàn yǒu mùlù de juéduì lùjìng.
-Huànháng lièbiǎo shūchū
-rúguǒ dāngqián kòngzhì tái jǐhétǐ kàn qǐlái tài zhǎng, zé bāozhuāng lièbiǎo shūchū.
 Píng!
 {0} Gěi nǐ fāle ping.
 Jiāng zhǔtí bǎocún dào dāngqián mùlù wèi...
@@ -1273,8 +1271,6 @@ wú fǎ cā chú zá xiàng wén jiàn
 wú cān shù bāng zhù shuō míng
 nín de kòng zhì tái bì xū zhī chí zhēn cǎi sè cái néng shǐ yòng cǐ zhǔ tí 。
 tuì chū yù lǎn
-wán bì
-kāi guān lèi xíng
 zhǔ tí “{0}” qìng zhù yī xiàng huó dòng ， dàn nín yào me tài zǎo ， yào me tài wǎn ， wú fǎ cān jiā 。 měi nián ， cǐ zhǔ tí de fǎng wèn shí jiān wéi {1}/{2} zhì {3}/{4}。
 zhǔ tí {0} xū yào zhēn cǎi sè zhī chí ， dàn nín de kòng zhì tái bù zhī chí 。
 wén běn bù néng wéi kōng 。
@@ -1622,7 +1618,6 @@ nèi hé xiàn chéng {0} shī bài 。
 nín yǐ shǐ yòng bāo guǎn lǐ qì ān zhuāng liǎo Nitrocid KS。 qǐng shǐ yòng tā lái shēng jí nín de nèi hé 。
 méi yǒu xìn xī 。
 wú fǎ dǎ kāi wén jiàn huò wén jiàn jiā
-àn rèn yì jiàn guān bì gāi chuāng kǒu 。
 huàn xíng yàng shì ：
 èr jìn zhì wén jiàn ：
 MIME yuán shù jù ：
@@ -2139,8 +2134,6 @@ jiāng zì fú chuàn dǎ yìn dào kòng zhì tái
 jiāng zì fú chuàn dǎ yìn dào diào shì qì
 jiāng zì fú chuàn dǎ yìn dào diào shì qì bìng gé shì huà
 jiāng dài yǒu gé shì de zì fú chuàn dǎ yìn dào kòng zhì tái
-jiāng Figlet zì fú chuàn dǎ yìn dào kòng zhì tái
-jiāng dài yǒu gé shì de Figlet zì fú chuàn dǎ yìn dào kòng zhì tái
 jiāng zì fú chuàn dǎ yìn dào kòng zhì tái bìng tū chū xiǎn shì
 jiāng fēn gé fú dǎ yìn dào kòng zhì tái
 yòng yán sè dǎ yìn fēn gé fú dào kòng zhì tái
@@ -2209,8 +2202,6 @@ quán xiàn
 tuán tǐ
 shǒu xuǎn yòng hù yǔ yán shè zhì wéi {0}。 nín kě néng xiǎng zài cì dēng lù 。
 guǎn lǐ yuán wài ké
-huì huà hào wú xiào
-méi yǒu gāi huì huà hào
 méi yǒu zhè yàng de yì cháng lèi xíng
 yì cháng lèi xíng míng chēng
 xìn xī
@@ -2366,7 +2357,6 @@ zuì chū wán Wordle yóu xì
 jì niàn nèi hé fā bù 5 zhōu nián
 zài guī dàng shell zhōng dǎ kāi guī dàng wén jiàn
 cóng gē cí wén jiàn zhōng huò qǔ suǒ yǒu gē cí xíng
-dǎ kāi jiāo hù shì yīn lè bō fàng qì
 bō fàng gē cí wén jiàn
 bō fàng shēng yīn
 tiān jiā nào zhōng ， zài nín de chá huò kā fēi zhǔn bèi hǎo shí tí xǐng nín 。
@@ -2490,8 +2480,6 @@ wǔ zhōu nián kuài lè ！
 shén me yě tí qǔ bù chū lái 。
 cún dàng bù kě xiě ， yīn wéi lèi xíng shì
 què bǎo zhǐ dìng LRC wén jiàn de lù jìng 。
-yīn lè wén jiàn “{0}” bù cún zài 。
-BassBoom CLI chā jiàn zhōng chū xiàn zhì mìng cuò wù 。
 wú fǎ bō fàng shēng yīn ， yīn wéi zhǎo bù dào gāi wén jiàn 。
 chéng gōng dǎ kāi yīn lè wén jiàn 。
 wú fǎ dǎ kāi yīn lè wén jiàn 。
@@ -2504,63 +2492,7 @@ lèi xíng
 qī jiān
 àn “q” tíng zhǐ bō fàng 。
 wú fǎ bō fàng shēng yīn 。
-cháng shì chǔ lǐ jūn héng qì cāo zuò shí ，Basolia chū xiàn cuò wù 。
-cháng shì chǔ lǐ jūn héng qì cāo zuò shí ，Basolia shū chū chū xiàn cuò wù 。
-cháng shì chǔ lǐ jūn héng qì cāo zuò shí chū xiàn wèi zhī cuò wù 。
-gǎi biàn
-xuǎn zé pín duàn
-yóu BassBoom tí gōng zhī chí
-shū rù yīn lè wén jiàn de lù jìng
-wén jiàn “{0}” bù cún zài 。
-shū rù yīn lè kù mù lù de lù jìng
-wèi zhǎo dào yīn lè kù mù lù 。
-zhèng zài jiā zài BassBoom yǐ dǎ kāi {0}...
-zhèng zài bō fàng
-cháng shì dǎ kāi gē cí wén jiàn
-wú fǎ dǎ kāi gē cí wén jiàn
-àn cǐ gé shì xiě rù mù biāo wèi zhì
-kě yòng de jī jiàn
-bō fàng / zàn tíng
-tíng zhǐ
-yīn liáng kòng zhì
-xún qiú kòng zhì
-xún qiú chí xù shí jiān kòng zhì
-gē qū xìn xī
-tiān jiā yīn lè wén jiàn
-shàng yī shǒu gē qū
-xià yī shǒu gē
-shān chú dāng qián gē qū
-shān chú suǒ yǒu gē qū
-wèi zhī
 biāo tí
-zhuān jí
-píng lùn
-gē cí
-xiàn
-méi yǒu gē cí
-tú céng xìn xī
-céng
-sù dù
-mó shì
-mó shì kuò zhǎn
-kuàng jià chǐ cùn
-qiáng diào
-bǐ tè shuài
-ABR shuài
-kě biàn bǐ tè shuài
-wén běn hé fù jiā nèi róng
-wú fǎ dǎ kāi yīn lè wén jiàn “{0}”， yīn wéi zhǎo bù dào gāi wén jiàn 。
-gē míng
-gē qū yì shù jiā
-gē qū lèi xíng
-xún zhǎo
-tǐ jī
-cháng shì chǔ lǐ yīn lè wén jiàn shí Basolia chū xiàn cuò wù 。
-cháng shì chǔ lǐ yīn lè wén jiàn shí ，Basolia shū chū chū xiàn cuò wù 。
-cháng shì chǔ lǐ yīn lè wén jiàn shí chū xiàn wèi zhī cuò wù 。
-bō fàng shī bài
-bāng zhù
-àn “A” jiāng yī shǒu gē qū chā rù bō fàng liè biǎo ， huò àn “S” chā rù zhěng gè yīn lè kù 。
 měi shì kā fēi
 hóng chá
 lǜ chá
@@ -2739,7 +2671,6 @@ shū rù yào zhuǎn huàn de shù zì ...
 nín shàng wèi shū rù yào zhuǎn huàn de shù zì 。
 shū rù de hào mǎ wú xiào 。
 wú fǎ huàn suàn dān wèi 。
-qìng zhù zì 0.0.1 yǐ lái de dì 6,000 cì tí jiāo ！
 dài xù ...
 jié shù
 xīn nián kuài lè ！
@@ -2946,12 +2877,6 @@ cháng guī nèi hé shè zhì
 yǔ yán
 zhǐ dìng nèi hé yǔ yán 。
 wén huà
-qǐ yòng sè máng
-rú guǒ nín shì sè máng huò xiǎng yào mó nǐ sè máng ， zé kě yǐ qǐ yòng tā 。
-Sèmáng lèixíng
-sè máng de lèi xíng ， wú lùn shì protan、deuter huán shì tritan。
-sè máng yán zhòng chéng dù
-sè máng yǒu duō yán zhòng ？
 guān jī huò zhòng xīn qǐ dòng shí fā chū fēng míng shēng
 guān bì nèi hé shí qǐ yòng fēng míng shēng 。
 yán chí guān bì huò zhòng xīn qǐ dòng
@@ -2964,18 +2889,12 @@ kāi fā tōng zhī yǐ huò què rèn
 rú guǒ shè zhì wéi true， zé měi cì nín zài kāi fā bǎn běn zhōng qǐ dòng nèi hé shí ， nèi hé jiāng bù huì xiàng nín xiǎn shì kāi fā tōng zhī 。
 yǔn xǔ jiā zài bù shòu xìn rèn de mó zǔ
 rú guǒ shè zhì wéi true， zé nèi hé zài jiā zài méi yǒu qiān míng gōng yuè de mod shí bù huì chū cuò 。
-qǐ yòng diào shì pèi é
-rú guǒ qǐ yòng cǐ xuǎn xiàng ， zé diào shì biān xiě qì huì zài chāo chū pèi é shí lún huàn diào shì rì zhì wén jiàn 。
-diào shì pèi é xíng shù
-zài dá dào pèi é xiàn zhì zhī qián yào dǎ yìn duō shǎo xíng dào diào shì huǎn chōng qū ？ qǐng zhù yì ， tā bìng bù dài biǎo diào shì rì zhì wén jiàn zhōng yǒu duō shǎo xíng 。
 shǐ yòng xì tǒng shí qū
 rú guǒ qǐ yòng cǐ xuǎn xiàng ， nèi hé jiāng shǐ yòng jì suàn jī shè zhì zhōng de shí qū 。 fǒu zé ， shǐ yòng kě pèi zhì de nèi hé fàn wéi shí qū 。
 nèi hé fàn wéi nèi de shí qū
 yào shǐ yòng de nèi hé fàn wéi shí qū
 xiǎn shì xǔ kě zhèng xìn xī kuàng
 měi cì dēng lù hòu shì fǒu xiǎn shì mó shì xǔ kě zhèng xìn xī kuàng sān miǎo 。 jiàn yì jì xù shǐ yòng 。
-diào shì rì zhì de jiù rì zhì jì lù yàng shì
-shì fǒu qǐ yòng diào shì rì zhì de jiù rì zhì jì lù yàng shì huò qǐ yòng fēn zǔ diào shì rì zhì 。
 cǐ bù fēn yǔn xǔ nín xuǎn zé yào gēng gǎi de yán sè lèi xíng 。
 yán sè shè zhì
 shǐ yòng qiáng diào sè
@@ -3156,7 +3075,6 @@ RSS tí shì yù shè
 běn bù fēn yǔn xǔ nín pèi zhì SFTP shell de gōng zuò fāng shì 。
 běn bù fēn yǔn xǔ nín pèi zhì SQL shell de gōng zuò fāng shì 。
 SQL Shell tí shì yù shè
-běn bù fēn yǔn xǔ nín pèi zhì jì shí qì de gōng zuò fāng shì 。
 cǐ bù fēn yǔn xǔ nín pèi zhì tí shì de gōng zuò fāng shì 。
 xiǎn shì nèi hé tí shì
 rú guǒ qǐ yòng ，shell huì zài měi cì dēng lù shí xiǎn shì tí shì 。
@@ -3311,7 +3229,6 @@ Wénběn wénjiàn shàngwèi dǎkāi.
 Wèi zhǐdìng kuòzhǎn de chǔlǐ chéngxù.
 Wúfǎ huòqǔ mòrèn chǔlǐ chéngxù
 jiāzài mòrèn chǔlǐ chéngxù shībài.
-Chángshì fǎngwèn wúxiào lùjìng. Jìnxíng cǐ jiǎnchá shì wèile fángzhǐ wèi gēngxīn dào 2021 nián 4 yuè bǔdīng huò gèng gāo bǎnběn de jiùbǎn Windows 10 xìtǒng fǎngwèn yǐ zhī hui dǎozhì NTFS wénjiàn xìtǒng sǔnhuài huò lánpíng sǐjī (BSOD) wèntí de zhèxiē lùjìng. Zhèyìwèizhe diàoyòng zhě zhèngzài shìtú dǎozhì jùjué fúwù (DoS) bìng yīngyǔyǐ xiūfù, huòzhě yònghù shūrù shì è yì de.
 Xuǎnzé
 fùzhì
 yídòng
@@ -3343,11 +3260,6 @@ yuǎnchéng tiáoshì shèbèi sìhū bù cúnzài.
 Wúfǎ cóng yǐxià wèizhì huòqǔ yuǎnchéng tiáoshì shèbèi
 wúfǎ dǎkāi yīngyǔ běndì huà zīyuán
 wúfǎ dǎkāi běndì huà zīyuán
-wúfǎ huòqǔ figlet zìtǐ
-jiāng figlet zìfú chuàn dǎyìn dào kòngzhì tái (jūzhōng)
-jiāng figlet zìfú chuàn dǎyìn dào kòngzhì tái bìng shèzhì géshì (jūzhōng)
-jiāng figlet zìfú chuàn dǎyìn dào kòngzhì tái (jūzhōng, wèizhì)
-jiāng figlet zìfú chuàn dǎyìn dào kòngzhì tái bìng shèzhì géshì (jūzhōng, wèizhì)
 wúfǎ huòqǔ rùkǒu diǎn.
 Cèshì xìnxī kuāng zhōng de ànniǔ (biāotí)
 cèshì xìnxī kuāng zhōng de cǎisè shūrù kuāng (biāotí)
@@ -3364,7 +3276,6 @@ wúfǎ huòqǔ kuàngjià
 wúfǎ huòqǔ fāngfǎ
 wénběn jiāzài shí fāshēng zhèngzé biǎodá shì cuòwù zhèngzài chǔlǐ. Qǐng jiǎnchá zhèngzé biǎodá shì yǔfǎ bìng chóng shì. Rúguǒ fāshēng chāoshí, qǐng quèbǎo bu yào guò duō dìguī (bùyào tānxīn).
 Bùxìng de shì, zuìhòu yīcì shībài shì wèizhī de, suǒyǐ wǒmen bùzhīdào dàodǐ chūle shénme wèntí. Dànshì, rúguǒ nín cháyuèle nèihé tiáoshì rìzhì, kěnéng huì yǒu suǒ bāngzhù.
-Wúfǎ huòqǔ chājiàn yuán shùjù
 wúfǎ huòqǔ rìjì tiáomù
 xuǎnzé nín de yǔyán.
 Shūrù nín de xīn yònghù míng. Nín yīnggāi shūrù yīgè bù cúnzài de xīn yònghù míng.
@@ -3452,81 +3363,6 @@ shàng wú quān shù...
 Quān shù lièbiǎo
 shēngchéng míngchēng biāoqiān (mùqián bù zhīchí biàn yīn fúhào)
 zhuǎnhuàn...
-Gǎi wèi dǎkāi diàntái bòfàng qì
-shèbèi
-qūdòng chéngxù
-shèbèi (huǎncún
-qūdòng chéngxù (huǎncún
-wèi bòfàng shí wúfǎ cháxún dāngqián shèbèi.
-Shèbèi hé qūdòng chéngxù
-kěyòng de shèbèi hé qūdòng chéngxù
-BassBoom guīgé
-jiěmǎ qì
-xìtǒng guīgé
-Basolia bǎnběn
-MPG123 bǎnběn
-OUT123 bǎnběn
-zhīchí de jiěmǎ qì
-suǒyǒu jiěmǎ qì
-xìtǒng
-xìtǒng jiàgòu
-liúchéng jiàgòu
-xìtǒng miáoshù
-.NET miáoshù
-(kòngxián shí) jiāng yīnyuè mùlù tiānjiā dào bòfàng lièbiǎo
-(bòfàng shí) xuǎnzé xìng sōusuǒ
-(bòfàng shí) sōusuǒ shàng yī shǒu gēcí
-(bòfàng shí) tiào zhuǎn dào xià yījù gēcí
-(bòfàng shí) tiào zhuǎn dào dāngqián gēcí
-(bòfàng shí) tiào zhuǎn dào nǎ yījù gēcí
-shèzhì chóngfù jiǎnchá diǎn
-tiào zhuǎn dào chóngfù jiǎnchá diǎn
-dǎkāi jūnhéng qì
-shèbèi hé qūdòng chéngxù xìnxī
-shèzhì shèbèi hé qūdòng chéngxù
-chóng zhì shèbèi hé qūdòng chéngxù
-xìtǒng xìnxī
-diàntái xìnxī
-diàntái kuòzhǎn xìnxī
-tiānjiā diàntái
-shàng yīgè diàntái
-xià yīgè diàntái
-shānchú dāngqián diàntái
-shānchú suǒyǒu diàntái
-xuǎnzé qūdòng chéngxù. Àn ESC tuìchū.
-Xuǎnzé shèbèi. Dāngqián qūdòng chéngxù wèi {0}. Àn ESC tuìchū.
-Wèi bòfàng. Yīnyuè bòfàng qì chǔyú kòngxián zhuàngtài.
-Dīyīn
-zhōng gāoyīn
-gāoyīn
-wèizhī pínduàn lèixíng
-jūnhéng qì pínduàn
-xuǎnzé yào tiào zhuǎn dào de gēcí
-yuánshēng zhuàngtài
-jīngquè xuànrǎn
-huǎnchōng qū tiánchōng
-jiěmǎ yánchí
-biānmǎ yánchí
-biānmǎ tiánchōng
-fú lán kěn sītǎn liú
-xīn jiěmǎ qì
-àn “A” jiāng diàntái chārù bòfàng lièbiǎo.
-Shūrù diàntái lùjìng. Diàntái URL bìxū tígōng MPEG diàntái. Shàng bù zhīchí AAC géshì.
-Diàntái xìnxī
-diàntái wǎngzhǐ
-diàntái míngchēng
-diàntái dāngqián gēqǔ
-zhǔyè
-liú lùjìng
-tīngzhòng:{0}, Fēngzhí wèi {1}
-bǐtè lǜ
-méitǐ lèixíng
-diàntái fúwùqì xìnxī
-liú xìnxī
-diàntái shǐyòng HTTPS
-diàntái fúwùqì lèixíng
-diàntái liú:{0},{1} Huóyuè
-diàntái tīngzhòng:{0}, Fēngzhí wèi {1}
 jiāng yuán yánsè móxíng zhuǎnhuàn wéi shùzì xíngshì de mùbiāo yánsè móxíng.
 Jiāng yuán yánsè móxíng zhuǎnhuàn wèi KS géshì de mùbiāo yánsè móxíng.
 Jiāng yuán yánsè móxíng zhuǎnhuàn wèi shíliù jìn zhì.

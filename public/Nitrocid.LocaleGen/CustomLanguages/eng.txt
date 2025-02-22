@@ -427,8 +427,6 @@ Failed to finalize mod {0}: {1}
 Lists all fired events
 Current Directory
 Sets the shell's current directory. Write an absolute path to any existing directory.
-Wrap list outputs
-Wraps the list outputs if it seems too long for the current console geometry.
 Ping!
 {0} pinged you.
 Save Theme to Current Directory as...
@@ -1273,8 +1271,6 @@ Can't wipe miscellaneous file
 No argument help description
 Your console must support true color to use this theme.
 Exit the preview
-Done
-Switch Types
 The theme {0} celebrates an event, but you're either too early or too late to attend. Each year, this theme is accessible from {1}/{2} to {3}/{4}.
 The theme {0} needs true color support, but your console doesn't support it.
 The text must not be empty.
@@ -1622,7 +1618,6 @@ Kernel thread {0} failed.
 You've installed Nitrocid KS using your package manager. Please use it to upgrade your kernel instead.
 No info.
 Can't open file or folder
-Press any key to close this window.
 Newline style:
 Binary file:
 MIME metadata:
@@ -2139,8 +2134,6 @@ Print a string to console
 Print a string to debugger
 Print a string to debugger with formatting
 Print a string to console with formatting
-Print a figlet string to console
-Print a figlet string to console with formatting
 Print a string to console with highlight
 Print a separator to console
 Print a separator to console with color
@@ -2209,8 +2202,6 @@ Permissions
 Groups
 Preferred user language set to {0}. You may want to log in again.
 Administrator Shell
-Invalid session number
-No such session number
 No such exception type
 Exception type name
 Message
@@ -2366,7 +2357,6 @@ Play the Wordle game originally
 Commemorates the 5-year anniversary of the kernel release
 Opens the archive file to the archive shell
 Gets all lyric lines from the lyric file
-Opens an interactive music player
 Plays a lyric file
 Plays a sound
 Adds an alarm to alert you when your cup of tea or coffee is ready.
@@ -2490,8 +2480,6 @@ Happy 5-year anniversary!
 Can't extract nothing.
 Archive is not writable because type is
 Make sure to specify the path to an LRC file.
-Music file '{0}' doesn't exist.
-Fatal error in the BassBoom CLI addon.
 Can't play sound because the file is not found.
 Opened music file successfully.
 Can't open music file.
@@ -2504,63 +2492,7 @@ Genre
 Duration
 Press 'q' to stop playing.
 Can't play sound.
-There's an error with Basolia when trying to process the equalizer operation.
-There's an error with Basolia output when trying to process the equalizer operation.
-There's an unknown error when trying to process the equalizer operation.
-Change
-Select Band
-Powered by BassBoom
-Enter a path to the music file
-File "{0}" doesn't exist.
-Enter a path to the music library directory
-Music library directory is not found.
-Loading BassBoom to open {0}...
-Now playing
-Trying to open lyrics file
-Can't open lyrics file
-Write the target position in this format
-Available keystrokes
-Play/Pause
-Stop
-Volume control
-Seek control
-Seek duration control
-Song info
-Add a music file
-Previous song
-Next song
-Remove current song
-Remove all songs
-Unknown
 Title
-Album
-Comment
-Lyrics
-lines
-No lyrics
-Layer info
-Layer
-Rate
-Mode
-Mode Ext
-Frame Size
-Emphasis
-Bitrate
-ABR Rate
-Variable bitrate
-Texts and Extras
-Can't open music file '{0}' because it's not found.
-Song name
-Song artist
-Song genre
-Seek
-Volume
-There's an error with Basolia when trying to process the music file.
-There's an error with Basolia output when trying to process the music file.
-There's an unknown error when trying to process the music file.
-Playback failure
-Help
-Press 'A' to insert a single song to the playlist, or 'S' to insert the whole music library.
 American Coffee
 Red Tea
 Green Tea
@@ -2739,7 +2671,6 @@ Enter a number to convert...
 You haven't entered a number to convert.
 The entered number is invalid.
 Can't convert unit.
-Celebrating the 6,000th commit since 0.0.1!
 To be continued...
 The End
 Happy new year!
@@ -2946,12 +2877,6 @@ General kernel settings
 Language
 Specifies the kernel language.
 Culture
-Enable color blindness
-If you are color blind or if you want to simulate color blindness, then you can enable it.
-Color blindness type
-The type of color blindness, whether it's protan, deuter, or tritan.
-Color blindness severity
-How severe is the color blindness?
 Beep on shutdown or reboot
 Enables beeping upon shutting down the kernel.
 Delay on shutdown or reboot
@@ -2964,18 +2889,12 @@ Development notice acknowledged
 If set to true, the kernel won't show you the development notice every time you boot to the kernel in development versions.
 Allow loading untrusted mods
 If set to true, the kernel won't error out upon loading mods that don't have the signed public key.
-Debug quota enabled
-If this option is enabled, the debug writer rotates the debug log file if the quota is exceeded.
-Debug quota line count
-How many lines to print to the debug buffer before reaching the quota limit? Please note that it doesn't represent how many lines are in the debug log files.
 Use system time zone
 If this option is enabled, the kernel uses the time zone from your computer settings. Else, uses the kernel-wide time zone that can be configured.
 Kernel-wide time zone
 The kernel-wide time zone to use
 Show the license information box
 Whether to show the modal license information box for three seconds after each login. It's recommended to keep it on.
-Legacy logging style for debug logs
-Whether to enable the legacy logging style for debug logs or to enable grouped debug logs.
 This section lets you choose what type of color do you want to change.
 Color settings
 Use accent colors
@@ -3156,7 +3075,6 @@ RSS Prompt Preset
 This section lets you configure how the SFTP shell works.
 This section lets you configure how the SQL shell works.
 SQL Shell Prompt Preset
-This section lets you configure how the timers work.
 This section lets you configure how Tips works.
 Show kernel tips
 If enabled, the shell shows you the tips on every login.
@@ -3311,7 +3229,6 @@ Text file is not open yet.
 Handler for extension is not specified.
 Failed to obtain default handler
 Loading default handlers failed.
-Trying to access invalid path. This check was done to prevent older Windows 10 systems that didn't update to the April 2021 patch or higher from accessing these paths known to cause either the NTFS filesystem corruption or the Blue Screen of Death (BSOD) issue. This implies that the caller is attempting to cause a Denial of Service (DoS) and should be fixed, or that the user input is malicious.
 Select
 Copy
 Move
@@ -3343,11 +3260,6 @@ Remote debug device doesn't seem to exist.
 Can't get remote debug devices from
 Can't open the English localization resource
 Can't open the localization resource for
-Failed to get figlet font
-Print a figlet string to console (centered)
-Print a figlet string to console with formatting (centered)
-Print a figlet string to console (centered, positional)
-Print a figlet string to console with formatting (centered, positional)
 Failed to get entry point.
 Tests the buttons in the informational box (titled)
 Tests the colored input box in the informational box (titled)
@@ -3364,7 +3276,6 @@ Can't get frame
 Can't get method
 A regular expression error happened while the text is being processed. Check your regular expression syntax and try again. If the time-out occurred, ensure that you don't recurse too much (don't be greedy).
 Unfortunately, the last failure is unknown, so we don't exactly know what went wrong. However, it could be helpful if you've consulted the kernel debug logs.
-Failed to get addon metadata
 Can't get journal entries
 Select your language.
 Enter your new username. You should enter a new username that doesn't already exist.
@@ -3452,81 +3363,6 @@ No laps yet...
 Lap list
 Generate nametags (umlauts are currently not supported)
 Convert...
-Opens the radio station player instead
-Device
-Driver
-Device (cached
-Driver (cached
-Can't query current devices while not playing.
-Device and Driver
-Available devices and drivers
-BassBoom specifications
-Decoders
-System specifications
-Basolia version
-MPG123 version
-OUT123 version
-Supported decoders
-All decoders
-System
-System Architecture
-Process Architecture
-System description
-.NET description
-(when idle) Add a music directory to the playlist
-(when playing) Selectively seek
-(when playing) Seek to previous lyric
-(when playing) Seek to next lyric
-(when playing) Seek to current lyric
-(when playing) Seek to which lyric
-Set repeat checkpoint
-Seek to repeat checkpoint
-Opens the equalizer
-Device and driver info
-Set device and driver
-Reset device and driver
-System info
-Radio station info
-Radio station extended info
-Add a radio station
-Previous radio station
-Next radio station
-Remove current radio station
-Remove all radio stations
-Select a driver. ESC to quit.
-Select a device. Current driver is {0}. ESC to quit.
-Not playing. Music player is idle.
-Bass
-Upper Mid
-Treble
-Unknown band type
-Equalizer Band
-Select a lyric to seek to
-Native State
-Accurate rendering
-Buffer fill
-Decoding delay
-Encoding delay
-Encoding padding
-Frankenstein stream
-Fresh decoder
-Press 'A' to insert a radio station to the playlist.
-Enter a path to the radio station. The URL to the station must provide an MPEG radio station. AAC ones are not supported yet.
-Station info
-Radio station URL
-Radio station name
-Radio station current song
-Home page
-Stream path
-Listeners: {0} with {1} at peak
-Bit rate
-Media type
-Radio server info
-Stream info
-Radio station uses HTTPS
-Radio station server type
-Radio station streams: {0} with {1} active
-Radio station listeners: {0} with {1} at peak
 Converts the source color model to the target color model in numbers.
 Converts the source color model to the target color model in KS format.
 Converts the source color model to hex.
