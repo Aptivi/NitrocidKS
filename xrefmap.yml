@@ -2011,6 +2011,13 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Writers.TextWriters.Write
   nameWithType: TextWriters.Write
+- uid: Nitrocid.ConsoleBase.Writers.TextWriters.WriteList*
+  name: WriteList
+  href: api/Nitrocid.ConsoleBase.Writers.TextWriters.html#Nitrocid_ConsoleBase_Writers_TextWriters_WriteList_
+  commentId: Overload:Nitrocid.ConsoleBase.Writers.TextWriters.WriteList
+  isSpec: "True"
+  fullName: Nitrocid.ConsoleBase.Writers.TextWriters.WriteList
+  nameWithType: TextWriters.WriteList
 - uid: Nitrocid.ConsoleBase.Writers.TextWriters.WriteListEntry(System.String,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Int32)
   name: WriteListEntry(string, string, KernelColorType, KernelColorType, int)
   href: api/Nitrocid.ConsoleBase.Writers.TextWriters.html#Nitrocid_ConsoleBase_Writers_TextWriters_WriteListEntry_System_String_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Int32_
@@ -2027,6 +2034,24 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Writers.TextWriters.WriteListEntry
   nameWithType: TextWriters.WriteListEntry
+- uid: Nitrocid.ConsoleBase.Writers.TextWriters.WriteList``1(System.Collections.Generic.IEnumerable{``0},Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType)
+  name: WriteList<T>(IEnumerable<T>, KernelColorType, KernelColorType)
+  href: api/Nitrocid.ConsoleBase.Writers.TextWriters.html#Nitrocid_ConsoleBase_Writers_TextWriters_WriteList__1_System_Collections_Generic_IEnumerable___0__Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextWriters.WriteList``1(System.Collections.Generic.IEnumerable{``0},Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType)
+  name.vb: WriteList(Of T)(IEnumerable(Of T), KernelColorType, KernelColorType)
+  fullName: Nitrocid.ConsoleBase.Writers.TextWriters.WriteList<T>(System.Collections.Generic.IEnumerable<T>, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType)
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextWriters.WriteList(Of T)(System.Collections.Generic.IEnumerable(Of T), Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType)
+  nameWithType: TextWriters.WriteList<T>(IEnumerable<T>, KernelColorType, KernelColorType)
+  nameWithType.vb: TextWriters.WriteList(Of T)(IEnumerable(Of T), KernelColorType, KernelColorType)
+- uid: Nitrocid.ConsoleBase.Writers.TextWriters.WriteList``2(System.Collections.Generic.Dictionary{``0,``1},Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType)
+  name: WriteList<TKey, TValue>(Dictionary<TKey, TValue>, KernelColorType, KernelColorType)
+  href: api/Nitrocid.ConsoleBase.Writers.TextWriters.html#Nitrocid_ConsoleBase_Writers_TextWriters_WriteList__2_System_Collections_Generic_Dictionary___0___1__Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextWriters.WriteList``2(System.Collections.Generic.Dictionary{``0,``1},Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType)
+  name.vb: WriteList(Of TKey, TValue)(Dictionary(Of TKey, TValue), KernelColorType, KernelColorType)
+  fullName: Nitrocid.ConsoleBase.Writers.TextWriters.WriteList<TKey, TValue>(System.Collections.Generic.Dictionary<TKey, TValue>, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType)
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextWriters.WriteList(Of TKey, TValue)(System.Collections.Generic.Dictionary(Of TKey, TValue), Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType)
+  nameWithType: TextWriters.WriteList<TKey, TValue>(Dictionary<TKey, TValue>, KernelColorType, KernelColorType)
+  nameWithType.vb: TextWriters.WriteList(Of TKey, TValue)(Dictionary(Of TKey, TValue), KernelColorType, KernelColorType)
 - uid: Nitrocid.ConsoleBase.Writers.TextWriters.WriteWhere(System.String,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
   name: WriteWhere(string, int, int, KernelColorType, KernelColorType, params object[])
   href: api/Nitrocid.ConsoleBase.Writers.TextWriters.html#Nitrocid_ConsoleBase_Writers_TextWriters_WriteWhere_System_String_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
