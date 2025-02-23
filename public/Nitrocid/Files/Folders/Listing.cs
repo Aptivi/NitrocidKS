@@ -256,10 +256,10 @@ namespace Nitrocid.Files.Folders
                             switch (Entry.Type)
                             {
                                 case FileSystemEntryType.File:
-                                    ListEntryWriterColor.WriteListEntry(name, Entry.FileSize.SizeString(), level);
+                                    TextWriters.WriteListEntry(name, Entry.FileSize.SizeString(), indent: level);
                                     break;
                                 case FileSystemEntryType.Directory:
-                                    ListEntryWriterColor.WriteListEntry(name, "[/]", level);
+                                    TextWriters.WriteListEntry(name, "[/]", indent: level);
                                     ListTree(Entry.FilePath, SuppressUnauthorizedMessage, Sort, level + 1);
                                     break;
                             }
@@ -267,13 +267,13 @@ namespace Nitrocid.Files.Folders
                         catch (UnauthorizedAccessException ex)
                         {
                             if (!SuppressUnauthorizedMessage)
-                                ListEntryWriterColor.WriteListEntry(name, Translate.DoTranslation("Unauthorized"), level);
+                                TextWriters.WriteListEntry(name, Translate.DoTranslation("Unauthorized"), indent: level);
                             DebugWriter.WriteDebugStackTrace(ex);
                         }
                         catch (Exception ex)
                         {
                             if (!SuppressUnauthorizedMessage)
-                                ListEntryWriterColor.WriteListEntry(name, Translate.DoTranslation("Error"), level);
+                                TextWriters.WriteListEntry(name, Translate.DoTranslation("Error"), indent: level);
                             DebugWriter.WriteDebugStackTrace(ex);
                         }
                     }
@@ -290,18 +290,18 @@ namespace Nitrocid.Files.Folders
                 string name = Path.GetFileName(entry.FilePath);
                 try
                 {
-                    ListEntryWriterColor.WriteListEntry(name, entry.FileSize.SizeString());
+                    TextWriters.WriteListEntry(name, entry.FileSize.SizeString());
                 }
                 catch (UnauthorizedAccessException ex)
                 {
                     if (!SuppressUnauthorizedMessage)
-                        ListEntryWriterColor.WriteListEntry(name, Translate.DoTranslation("Unauthorized"));
+                        TextWriters.WriteListEntry(name, Translate.DoTranslation("Unauthorized"));
                     DebugWriter.WriteDebugStackTrace(ex);
                 }
                 catch (Exception ex)
                 {
                     if (!SuppressUnauthorizedMessage)
-                        ListEntryWriterColor.WriteListEntry(name, Translate.DoTranslation("Error"));
+                        TextWriters.WriteListEntry(name, Translate.DoTranslation("Error"));
                     DebugWriter.WriteDebugStackTrace(ex);
                 }
             }

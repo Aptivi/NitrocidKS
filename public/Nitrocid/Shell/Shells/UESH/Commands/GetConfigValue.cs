@@ -49,10 +49,10 @@ namespace Nitrocid.Shell.Shells.UESH.Commands
                 {
                     var key = ConfigTools.GetSettingsKey(config, varName);
                     var value = ConfigTools.GetValueFromEntry(key, config);
-                    ListEntryWriterColor.WriteListEntry(Translate.DoTranslation("Key name"), key.Name);
-                    ListEntryWriterColor.WriteListEntry(Translate.DoTranslation("Key description"), key.Description);
-                    ListEntryWriterColor.WriteListEntry(Translate.DoTranslation("Key type"), $"{key.Type}");
-                    ListEntryWriterColor.WriteListEntry(Translate.DoTranslation("Key variable"), $"{key.Variable} [{value}]");
+                    TextWriters.WriteListEntry(Translate.DoTranslation("Key name"), key.Name);
+                    TextWriters.WriteListEntry(Translate.DoTranslation("Key description"), key.Description);
+                    TextWriters.WriteListEntry(Translate.DoTranslation("Key type"), $"{key.Type}");
+                    TextWriters.WriteListEntry(Translate.DoTranslation("Key variable"), $"{key.Variable} [{value}]");
                     variableValue = $"{value}";
                 }
                 else

@@ -96,10 +96,10 @@ namespace Nitrocid.Extras.BassBoom.Commands
                         Translate.DoTranslation("Unknown Genre");
                     var totalSpan = AudioInfoTools.GetDurationSpanFromSamples(media, total);
                     string duration = totalSpan.ToString();
-                    ListEntryWriterColor.WriteListEntry(Translate.DoTranslation("Name"), musicName);
-                    ListEntryWriterColor.WriteListEntry(Translate.DoTranslation("Artist"), musicArtist);
-                    ListEntryWriterColor.WriteListEntry(Translate.DoTranslation("Genre"), musicGenre);
-                    ListEntryWriterColor.WriteListEntry(Translate.DoTranslation("Duration"), duration);
+                    TextWriters.WriteListEntry(Translate.DoTranslation("Name"), musicName);
+                    TextWriters.WriteListEntry(Translate.DoTranslation("Artist"), musicArtist);
+                    TextWriters.WriteListEntry(Translate.DoTranslation("Genre"), musicGenre);
+                    TextWriters.WriteListEntry(Translate.DoTranslation("Duration"), duration);
 
                     // Wait until the song stops or the user bails
                     TextWriters.Write(Translate.DoTranslation("Press 'q' to stop playing."), KernelColorType.Tip);

@@ -43,7 +43,7 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="indent">Indentation level</param>
         /// <param name="ListKeyColor">A key color.</param>
         /// <param name="ListValueColor">A value color.</param>
-        public static void WriteListEntry(string entry, string value, KernelColorType ListKeyColor, KernelColorType ListValueColor, int indent = 0) =>
+        public static void WriteListEntry(string entry, string value, KernelColorType ListKeyColor = KernelColorType.ListEntry, KernelColorType ListValueColor = KernelColorType.ListValue, int indent = 0) =>
             ListEntryWriterColor.WriteListEntry(entry, value, KernelColorTools.GetColor(ListKeyColor), KernelColorTools.GetColor(ListValueColor), indent);
 
         /// <summary>
@@ -52,7 +52,7 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
         /// <param name="ListKeyColor">A key color.</param>
         /// <param name="ListValueColor">A value color.</param>
-        public static void WriteList<TKey, TValue>(Dictionary<TKey, TValue> List, KernelColorType ListKeyColor, KernelColorType ListValueColor)
+        public static void WriteList<TKey, TValue>(Dictionary<TKey, TValue> List, KernelColorType ListKeyColor = KernelColorType.ListEntry, KernelColorType ListValueColor = KernelColorType.ListValue)
             where TKey : notnull
         {
             var listing = new Listing()
@@ -70,7 +70,7 @@ namespace Nitrocid.ConsoleBase.Writers
         /// <param name="List">A dictionary that will be listed to the terminal prompt.</param>
         /// <param name="ListKeyColor">A key color.</param>
         /// <param name="ListValueColor">A value color.</param>
-        public static void WriteList<T>(IEnumerable<T> List, KernelColorType ListKeyColor, KernelColorType ListValueColor)
+        public static void WriteList<T>(IEnumerable<T> List, KernelColorType ListKeyColor = KernelColorType.ListEntry, KernelColorType ListValueColor = KernelColorType.ListValue)
         {
             var listing = new Listing()
             {

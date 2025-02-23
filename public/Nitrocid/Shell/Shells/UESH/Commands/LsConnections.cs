@@ -23,6 +23,7 @@ using Nitrocid.Languages;
 using Terminaux.Writer.FancyWriters;
 using Terminaux.Writer.ConsoleWriters;
 using Nitrocid.Network.Connections;
+using Nitrocid.ConsoleBase.Writers;
 
 namespace Nitrocid.Shell.Shells.UESH.Commands
 {
@@ -47,8 +48,8 @@ namespace Nitrocid.Shell.Shells.UESH.Commands
                     TextWriterColor.Write($"- {connection.ConnectionName} -> {connection.ConnectionOriginalUrl}");
                     TextWriterColor.Write($"  {connection.ConnectionUri}");
                     if (!connection.ConnectionIsInstance)
-                        ListEntryWriterColor.WriteListEntry(Translate.DoTranslation("Alive"), $"{connection.ConnectionAlive}", 1);
-                    ListEntryWriterColor.WriteListEntry(Translate.DoTranslation("Instance"), $"{connection.ConnectionInstance}", 1);
+                        TextWriters.WriteListEntry(Translate.DoTranslation("Alive"), $"{connection.ConnectionAlive}", indent: 1);
+                    TextWriters.WriteListEntry(Translate.DoTranslation("Instance"), $"{connection.ConnectionInstance}", indent: 1);
                 }
             }
             return 0;
