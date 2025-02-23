@@ -3458,3 +3458,151 @@ O seu terminal consiste em tábuas de madeira
 Inspirado no padrão chinês de diferentes frutos
 Extras - Gerador de nomes
 A verificação de atualizações é desativada em versões de desenvolvimento.
+Não é possível limpar os ficheiros de depuração
+Não iremos suportar mais esta versão do Nitrocid KS após esta data
+Certifique-se de atualizar para a versão compatível em breve se quiser continuar a receber suporte.
+Esta versão do Nitrocid KS já não é suportada.
+Falha ao carregar idiomas personalizados
+Falha ao carregar add-ons importantes do kernel
+Falha ao carregar consentimentos de privacidade
+Falha ao carregar o splash
+Falha ao carregar mods importantes
+Falha ao carregar dispositivos de depuração remotos
+Ocorreram erros ao tentar inicializar componentes essenciais.
+Falha ao carregar o tópico de notificação
+Falha ao carregar o manipulador de cancelamento
+Falha ao carregar aliases
+Falha ao carregar entradas de marcação rápida
+Falha ao carregar a data no canto superior direito
+Falha ao carregar variáveis ​​de ambiente
+Falha ao carregar o ouvinte de alarme
+Falha ao carregar add-ons de finalização
+Falha ao carregar MOTD e MAL
+Falha ao carregar históricos de comandos da shell
+Falha ao carregar os manipuladores de extensão
+Ocorreram erros ao tentar inicializar componentes opcionais.
+Falha ao repor variáveis ​​​​gerais
+Falha ao guardar históricos de comandos shell
+Falha ao guardar consentimentos de privacidade
+Falha ao parar o depurador remoto
+Falha ao repor idiomas
+Falha ao guardar os manipuladores de extensão
+Falha ao parar o ouvinte de alarme
+Falha ao guardar a configuração
+Falha ao parar os mods
+Falha ao parar os suplementos
+Falha ao parar RPC
+Falha ao fechar todas as ligações
+Falha ao parar o canto da hora e data
+Falha ao interromper o tempo limite do protetor de ecrã
+Falha ao repor o buffer do registo de arranque
+Falha ao parar o depurador
+Falha ao interromper todos os threads do kernel
+Ocorreram erros ao tentar repor componentes.
+Exceção
+Consulte os registos de depuração do kernel para obter mais informações.
+Descrição do switch não especificado
+GUID de sessão inválido
+Não existe GUID de sessão
+Obtenha os changelogs da internet em vez de localmente
+Temporizador Pomodoro
+O temporizador Pomodoro está pronto
+Número do temporizador Pomodoro {0} em quatro iterações
+Pequena pausa
+Especifique o tempo limite de interrupção em milissegundos
+Definir intervalo de pausa
+A celebrar o 7.000º commit desde 0.0.1!
+deixado para o próximo ano
+Cria um diretório local
+Cria um diretório remoto
+Atraso unificado
+Se for verdadeiro, ativa o atraso de gravação unificado para todos os protetores de ecrã. Caso contrário, utiliza valores de atraso configurados específicos do protetor de ecrã.
+Esta secção permite configurar como funciona a aplicação de temporizador.
+Esta secção permite configurar como funciona a aplicação temporizador Pomodoro.
+Activar Figlet para o temporizador pomodoro
+Se estiver ativado, utilizará o figlet para o temporizador pomodoro. Note que é necessário um ecrã de consola grande para renderizar a hora corretamente com o Figlet ativado.
+Fonte Figlet para o cronómetro pomodoro
+Simula um hipotético ecrã preto com defeito, por vezes com linhas RGB a aparecer.
+Probabilidade de falha
+Possibilidade, em percentagem, de ocorrer falha no ecrã
+Mostra o texto abaixo de uma linha sobre um fundo vermelho escuro.
+Nível máximo de cor de fundo
+Nível máximo de cor de fundo. O valor mínimo aceite é 0 e o valor máximo aceite é 255.
+Nível máximo de cor da linha
+Nível máximo de cor da linha. O valor mínimo aceite é 0 e o valor máximo aceite é 255.
+Nível máximo de cor do texto
+Nível máximo de cor do texto. O valor mínimo aceite é 0 e o valor máximo aceite é 255.
+Personagens aleatórias que se espalham aleatoriamente pelo ecrã.
+Data e hora simples no meio do ecrã e muda a cor com base na hora atual.
+Data e hora brilhantes
+Se deve usar a versão clara ou escura.
+Mostra números dançantes.
+As ondas giratórias horizontal e verticalmente criam grandes padrões com rastos deixados para trás até desaparecerem.
+Comprimento da trilha
+O comprimento do rasto da onda giratória em movimento.
+Bloco que se move num padrão de onda com réguas verdes a acompanhar a sua posição.
+Mostra um único caractere aleatório num texto colorido.
+Mostra uma palavra que está a ser selecionada, assim como uma slot machine encontrada em casinos.
+Mostra um texto colorido alternando entre duas cores néon: ciano e fúcsia.
+Utilize a cultura do sistema
+Se o protetor de ecrã utiliza a cultura definida pelas definições principais do kernel ou pelas definições deste protetor de ecrã.
+Qual a cultura que está a ser utilizada para alterar os nomes dos meses, calendário, etc.?
+Texto informativo para o primeiro
+Escreva como é apresentado o seu texto informativo para a hora atual. {0} para a hora atual das 24 primeiras.
+Caracter do canto superior esquerdo para a primeira barra
+Caracter do canto superior direito para a primeira barra
+Caracter do canto inferior esquerdo para a primeira barra
+Caracter do canto inferior direito para a primeira barra
+Caracter do fotograma superior para o primeiro compasso
+Caracter do quadro inferior para o primeiro compasso
+Caracter do fotograma esquerdo para o primeiro compasso
+Caracter de quadro direito para o primeiro compasso
+Cor da primeira barra
+Nível mínimo de cor vermelha para o primeiro
+Nível mínimo de cor verde para o primeiro
+Nível mínimo de cor azul para o primeiro
+Nível mínimo de cor para o primeiro
+Nível máximo de cor vermelha para o primeiro
+Nível máximo de cor verde para o primeiro
+Nível máximo de cor azul para o primeiro
+Nível máximo de cor para o primeiro
+Texto informativo para o segundo
+Escreva como é apresentado o seu texto informativo para o minuto atual. {0} para o minuto atual de 60 segundos.
+Caracter do canto superior esquerdo para a segunda barra
+Caracter do canto superior direito para a segunda barra
+Caracter do canto inferior esquerdo para a segunda barra
+Caracter do canto inferior direito para a segunda barra
+Caracter do quadro superior para a segunda barra
+Caracter do quadro inferior para a segunda barra
+Caracter do quadro esquerdo para a segunda barra
+Caracter do quadro direito para a segunda barra
+Cor da segunda barra
+Nível mínimo de cor vermelha para o segundo
+Nível mínimo de cor verde para o segundo
+Nível mínimo de cor azul para o segundo
+Nível mínimo de cor para o segundo
+Nível máximo de cor vermelha para o segundo
+Nível máximo de cor verde para o segundo
+Nível máximo de cor azul por segundo
+Nível máximo de cor para o segundo
+Caracter do canto superior esquerdo para a terceira barra
+Caracter do canto superior direito para a terceira barra
+Caracter do canto inferior esquerdo para a terceira barra
+Caracter do canto inferior direito para a terceira barra
+Caracter do fotograma superior para o terceiro compasso
+Caracter do fotograma inferior para o terceiro compasso
+Caracter do fotograma esquerdo para o terceiro compasso
+Caracter do quadro direito para o terceiro compasso
+Texto informativo para o terceiro
+Escreva como é apresentado o seu texto informativo para o segundo atual. {0} para o atual segundo lugar entre 60 terceiros.
+Cor da Terceira Barra
+Nível mínimo de cor vermelha para o terceiro
+Nível mínimo de cor verde para o terceiro
+Nível mínimo de cor azul para o terceiro
+Nível mínimo de cor para o terceiro
+Nível máximo de cor vermelha para o terceiro
+Nível máximo de cor verde para o terceiro
+Nível máximo de cor azul para o terceiro
+Nível máximo de cor para o terceiro
+Os progressos selecionarão cores aleatórias se estiverem ativados. Caso contrário, utilize cores da configuração.
+Se o ciclo de cores estiver activado, quantos tiques faltam para alterar as cores no Progresso? 1 tique = 0,5 terços

@@ -3458,3 +3458,151 @@ Votre terminal est constitué de planches de bois
 Inspiré du motif chinois de différents fruits
 Suppléments - Générateur de noms
 La recherche de mises à jour est désactivée sur les versions de développement.
+Impossible d'effacer les fichiers de débogage
+Nous ne prendrons plus en charge cette version de Nitrocid KS après cette date
+Assurez-vous de mettre à niveau vers la version prise en charge prochainement si vous souhaitez continuer à bénéficier de l'assistance.
+Cette version de Nitrocid KS n'est plus prise en charge.
+Impossible de charger les langues personnalisées
+Impossible de charger des modules complémentaires importants du noyau
+Impossible de charger les consentements de confidentialité
+Impossible de charger le splash
+Impossible de charger des mods importants
+Échec du chargement des périphériques de débogage à distance
+Des erreurs se sont produites lors de la tentative d’initialisation des composants essentiels.
+Impossible de charger le fil de notification
+Échec du chargement du gestionnaire d'annulation
+Échec du chargement des alias
+Échec du chargement des entrées de numérotation rapide
+Échec du chargement de la date en haut à droite
+Échec du chargement des variables d'environnement
+Échec du chargement de l'écouteur d'alarme
+Impossible de charger les modules complémentaires finalisés
+Échec du chargement de MOTD et MAL
+Échec du chargement des historiques de commandes du shell
+Échec du chargement des gestionnaires d'extension
+Des erreurs se sont produites lors de la tentative d'initialisation des composants facultatifs.
+Échec de la réinitialisation des variables générales
+Échec de l'enregistrement des historiques de commandes du shell
+Impossible d'enregistrer les consentements de confidentialité
+Impossible d'arrêter le débogueur distant
+Impossible de réinitialiser les langues
+Impossible d'enregistrer les gestionnaires d'extension
+Impossible d'arrêter l'écouteur d'alarme
+Impossible d'enregistrer la configuration
+Impossible d'arrêter les mods
+Impossible d'arrêter les modules complémentaires
+Impossible d'arrêter RPC
+Impossible de fermer toutes les connexions
+Impossible d'arrêter le coin heure et date
+Impossible d'arrêter le délai d'expiration de l'économiseur d'écran
+Échec de la réinitialisation du tampon du journal de démarrage
+Impossible d'arrêter le débogueur
+Impossible d'arrêter tous les threads du noyau
+Des erreurs se sont produites lors de la tentative de réinitialisation des composants.
+Exception
+Consultez les journaux de débogage du noyau pour plus d'informations.
+Description du commutateur non spécifiée
+GUID de session non valide
+Aucun GUID de session de ce type
+Récupérez les journaux des modifications sur Internet plutôt que localement
+Minuterie Pomodoro
+Le minuteur Pomodoro est prêt
+Minuterie Pomodoro numéro {0} en quatre itérations
+Courte pause
+Spécifiez le délai d'expiration de la pause en millisecondes
+Définir l'intervalle de pause
+Nous célébrons le 7 000e commit depuis la version 0.0.1 !
+laissé jusqu'à l'année prochaine
+Crée un répertoire local
+Crée un répertoire distant
+Délai unifié
+Si cette option est définie sur true, le délai d'écriture unifié est activé pour tous les économiseurs d'écran. Sinon, les valeurs de délai configurées spécifiques à l'économiseur d'écran sont utilisées.
+Cette section vous permet de configurer le fonctionnement de l'application du minuteur.
+Cette section vous permet de configurer le fonctionnement de l'application de minuterie Pomodoro.
+Activer Figlet pour le minuteur Pomodoro
+Si cette option est activée, Figlet sera utilisé pour le minuteur Pomodoro. Veuillez noter qu'un grand écran de console est nécessaire pour afficher correctement l'heure avec Figlet activé.
+Police Figlet pour le minuteur Pomodoro
+Simule un hypothétique écran noir défectueux avec des lignes RVB apparaissant parfois.
+Probabilité de problème
+Probabilité, en pourcentage, que le problème d'écran se produise
+Vous montre du texte sous une ligne sur un fond rouge sombre.
+Niveau de couleur d'arrière-plan maximal
+Niveau de couleur d'arrière-plan maximal. La valeur minimale acceptée est 0 et la valeur maximale acceptée est 255.
+Niveau de couleur de ligne maximal
+Niveau de couleur de ligne maximal. La valeur minimale acceptée est 0 et la valeur maximale acceptée est 255.
+Niveau de couleur de texte maximal
+Niveau de couleur de texte maximal. La valeur minimale acceptée est 0 et la valeur maximale acceptée est 255.
+Des personnages aléatoires qui se répartissent de manière aléatoire sur l'écran.
+Date et heure simples au milieu de l'écran et change de couleur en fonction de l'heure actuelle.
+Date et heure lumineuses
+Faut-il utiliser la version claire ou sombre ?
+Vous montre des numéros de danse.
+Onde pivotante horizontalement et verticalement pour créer de superbes motifs avec des traînées laissées derrière pour disparaître.
+Longueur du sentier
+La longueur de la traînée de l'onde pivotante en mouvement.
+Bloc se déplaçant selon un motif ondulé avec des règles vertes suivant sa position.
+Vous montre un seul caractère aléatoire dans un texte figlet coloré.
+Vous montre un mot qui est sélectionné, tout comme une machine à sous trouvée dans les casinos.
+Vous montre un texte figlet coloré alternant entre deux couleurs néon : cyan et fuchsia.
+Utiliser la culture du système
+Si l'économiseur d'écran utilise la culture définie par les paramètres principaux du noyau ou par ces paramètres d'économiseur d'écran.
+Quelle culture est utilisée pour changer les noms des mois, le calendrier, etc. ?
+Texte d'information pour la première
+Écrivez comment votre texte d'information pour l'heure actuelle s'affiche. {0} pour l'heure actuelle sur 24 en premier.
+Caractère du coin supérieur gauche pour la première mesure
+Caractère du coin supérieur droit pour la première mesure
+Caractère du coin inférieur gauche pour la première mesure
+Caractère du coin inférieur droit pour la première mesure
+Caractère du cadre supérieur pour la première mesure
+Caractère du cadre inférieur pour la première mesure
+Caractère du cadre gauche pour la première mesure
+Caractère du cadre droit pour la première mesure
+Couleur de la première barre
+Niveau de couleur rouge minimum pour le premier
+Niveau de couleur verte minimum pour le premier
+Niveau de couleur bleu minimum pour le premier
+Niveau de couleur minimum pour le premier
+Niveau de couleur rouge maximum pour le premier
+Niveau de couleur verte maximum pour le premier
+Niveau de couleur bleu maximum pour le premier
+Niveau de couleur maximum pour le premier
+Texte d'information pour la seconde
+Écrivez comment votre texte d'information pour la minute en cours s'affiche. {0} pour la minute en cours sur 60 secondes.
+Caractère du coin supérieur gauche pour la deuxième barre
+Caractère du coin supérieur droit pour la deuxième barre
+Caractère du coin inférieur gauche pour la deuxième barre
+Caractère du coin inférieur droit pour la deuxième barre
+Caractère du cadre supérieur pour la deuxième barre
+Caractère du cadre inférieur pour la deuxième mesure
+Caractère du cadre gauche pour la deuxième mesure
+Caractère du cadre droit pour la deuxième mesure
+Couleur de la deuxième barre
+Niveau de couleur rouge minimum pour la seconde
+Niveau de couleur verte minimum pour la seconde
+Niveau de couleur bleu minimum pour la seconde
+Niveau de couleur minimum pour la seconde
+Niveau de couleur rouge maximum pour la seconde
+Niveau de couleur verte maximum pour la seconde
+Niveau de couleur bleue maximal pour la seconde
+Niveau de couleur maximum pour la seconde
+Caractère du coin supérieur gauche pour la troisième barre
+Caractère du coin supérieur droit pour la troisième barre
+Caractère du coin inférieur gauche pour la troisième barre
+Caractère du coin inférieur droit pour la troisième barre
+Caractère du cadre supérieur pour la troisième mesure
+Caractère du cadre inférieur pour la troisième mesure
+Caractère du cadre gauche pour la troisième mesure
+Caractère du cadre droit pour la troisième mesure
+Texte d'information pour les tiers
+Écrivez comment votre texte d'information s'affiche pour la seconde actuelle. {0} pour la deuxième actuelle sur 60 troisième.
+Couleur de la troisième barre
+Niveau de couleur rouge minimum pour le tiers
+Niveau de couleur verte minimum pour le tiers
+Niveau de couleur bleu minimum pour le tiers
+Niveau de couleur minimum pour le tiers
+Niveau de couleur rouge maximum pour le tiers
+Niveau de couleur verte maximum pour le tiers
+Niveau de couleur bleu maximum pour le tiers
+Niveau de couleur maximum pour le tiers
+Les progressions sélectionneront des couleurs aléatoires si cette option est activée. Sinon, utilisez les couleurs de la configuration.
+Si le cycle de couleurs est activé, combien de ticks avant de changer de couleur dans Progresses ? 1 tick = 0,5 tiers
