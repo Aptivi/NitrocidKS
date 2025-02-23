@@ -27923,12 +27923,6 @@ references:
   commentId: F:Nitrocid.Kernel.Updates.UpdateKind.BinaryLite
   fullName: Nitrocid.Kernel.Updates.UpdateKind.BinaryLite
   nameWithType: UpdateKind.BinaryLite
-- uid: Nitrocid.Kernel.Updates.UpdateKind.Changelogs
-  name: Changelogs
-  href: api/Nitrocid.Kernel.Updates.UpdateKind.html#Nitrocid_Kernel_Updates_UpdateKind_Changelogs
-  commentId: F:Nitrocid.Kernel.Updates.UpdateKind.Changelogs
-  fullName: Nitrocid.Kernel.Updates.UpdateKind.Changelogs
-  nameWithType: UpdateKind.Changelogs
 - uid: Nitrocid.Kernel.Updates.UpdateManager
   name: UpdateManager
   href: api/Nitrocid.Kernel.Updates.UpdateManager.html
@@ -27974,19 +27968,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Updates.UpdateManager.FetchBinaryArchive
   nameWithType: UpdateManager.FetchBinaryArchive
-- uid: Nitrocid.Kernel.Updates.UpdateManager.FetchChangelogs
-  name: FetchChangelogs()
-  href: api/Nitrocid.Kernel.Updates.UpdateManager.html#Nitrocid_Kernel_Updates_UpdateManager_FetchChangelogs
-  commentId: M:Nitrocid.Kernel.Updates.UpdateManager.FetchChangelogs
-  fullName: Nitrocid.Kernel.Updates.UpdateManager.FetchChangelogs()
-  nameWithType: UpdateManager.FetchChangelogs()
-- uid: Nitrocid.Kernel.Updates.UpdateManager.FetchChangelogs*
-  name: FetchChangelogs
-  href: api/Nitrocid.Kernel.Updates.UpdateManager.html#Nitrocid_Kernel_Updates_UpdateManager_FetchChangelogs_
-  commentId: Overload:Nitrocid.Kernel.Updates.UpdateManager.FetchChangelogs
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Updates.UpdateManager.FetchChangelogs
-  nameWithType: UpdateManager.FetchChangelogs
 - uid: Nitrocid.Kernel.Updates.UpdateManager.FetchKernelUpdates(Nitrocid.Kernel.Updates.UpdateKind)
   name: FetchKernelUpdates(UpdateKind)
   href: api/Nitrocid.Kernel.Updates.UpdateManager.html#Nitrocid_Kernel_Updates_UpdateManager_FetchKernelUpdates_Nitrocid_Kernel_Updates_UpdateKind_
@@ -28000,19 +27981,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.Kernel.Updates.UpdateManager.FetchKernelUpdates
   nameWithType: UpdateManager.FetchKernelUpdates
-- uid: Nitrocid.Kernel.Updates.UpdateManager.GetVersionChangelogs
-  name: GetVersionChangelogs()
-  href: api/Nitrocid.Kernel.Updates.UpdateManager.html#Nitrocid_Kernel_Updates_UpdateManager_GetVersionChangelogs
-  commentId: M:Nitrocid.Kernel.Updates.UpdateManager.GetVersionChangelogs
-  fullName: Nitrocid.Kernel.Updates.UpdateManager.GetVersionChangelogs()
-  nameWithType: UpdateManager.GetVersionChangelogs()
-- uid: Nitrocid.Kernel.Updates.UpdateManager.GetVersionChangelogs*
-  name: GetVersionChangelogs
-  href: api/Nitrocid.Kernel.Updates.UpdateManager.html#Nitrocid_Kernel_Updates_UpdateManager_GetVersionChangelogs_
-  commentId: Overload:Nitrocid.Kernel.Updates.UpdateManager.GetVersionChangelogs
-  isSpec: "True"
-  fullName: Nitrocid.Kernel.Updates.UpdateManager.GetVersionChangelogs
-  nameWithType: UpdateManager.GetVersionChangelogs
 - uid: Nitrocid.Languages
   name: Nitrocid.Languages
   href: api/Nitrocid.Languages.html
