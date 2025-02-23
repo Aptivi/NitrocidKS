@@ -72,11 +72,7 @@ namespace Nitrocid.Kernel.Updates
             // the user that 0.0.21.4 was available due to 0.0.8.12 and versions that came after coming as first according to the API until 0.0.21.5
             // arrived)
             List<(SemVer? UpdateVersion, Uri UpdateURL)> SortedVersions = [];
-            string specifier =
-                kind == UpdateKind.Binary ? "bin" :
-                kind == UpdateKind.BinaryLite ? "bin-lite" :
-                kind == UpdateKind.Changelogs ? "changes" :
-                "bin";
+            string specifier = kind == UpdateKind.BinaryLite ? "bin-lite" : "bin";
             foreach (JToken KernelUpdate in UpdateToken)
             {
                 if (KernelUpdate is null)
@@ -99,20 +95,9 @@ namespace Nitrocid.Kernel.Updates
                 foreach (var asset in assets)
                 {
                     string url = (string?)asset["browser_download_url"] ?? "";
-                    string binSpecifier = kind != UpdateKind.Binary ? specifier : specifier +
-#if NET6_0
-                        "6"
-#elif NET7_0
-                        "7"
-#elif NET8_0
-                        ""
-#else
-                        "48"
-#endif
-                        ;
+                    string binSpecifier = specifier;
                     if (url.EndsWith($"-{binSpecifier}.zip") ||
-                        url.EndsWith($"-{binSpecifier}.rar") ||
-                        url.EndsWith($"-{binSpecifier}.chg"))
+                        url.EndsWith($"-{binSpecifier}.rar"))
                     {
                         KernelUpdateURL = url;
                         break;
