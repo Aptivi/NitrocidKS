@@ -1024,8 +1024,6 @@ Indien ingeschakeld, wordt de totale mapgrootte in de lijst weergegeven, afhanke
 Je bent op de hoogte!
 Standaard JSON-opmaak voor JSON-shell
 Selecteert de standaard JSON-opmaak (verfraaid of verkleind) voor de JSON-shell om op te slaan.
-Updates automatisch downloaden
-Als er een update is, zal de kernel deze automatisch downloaden.
 Explosiestraal vuurwerk
 Hoeveel blokken (maximaal 10) is de explosieradius voor het vuurwerk wanneer het wordt aangestoken?
 Deze opdracht heeft de onderstaande schakelaars die de manier waarop het werkt veranderen:
@@ -1228,7 +1226,6 @@ Automatische updates
 Nitrocid KS werkt zichzelf momenteel bij om de meest recente versie te krijgen die algemene verbeteringen en bugfixes bevat. Nieuwe hoofdversies bevatten meestal baanbrekende wijzigingen en nieuwe opwindende functies.
 Wilt u dat Nitrocid KS automatisch controleert op updates?
 Naast het automatisch controleren op updates, kan Nitrocid KS het updatebestand ook automatisch downloaden.
-Wilt u dat Nitrocid KS automatisch updates downloadt?
 U kunt altijd controleren op kernelupdates met behulp van de opdracht "update".
 Begin!
 Gefeliciteerd! U heeft nu een gebruikersaccount, {0}!
@@ -3194,7 +3191,6 @@ Voer uw gebruikerswachtwoord in. Voor meer veiligheid moet u een sterk wachtwoor
 Automatische updatecontrole
 Ja, ik wil!
 Nee bedankt.
-Automatische updatedownload
 Het starten of stoppen van mods is niet toegestaan in de veilige modus.
 Er is een onbekende kernelfout opgetreden, mogelijk doordat het kerneluitzonderingstype niet is opgegeven of omdat er iets mis is.
 Het kernelnetwerk heeft een fout gemeld voor de hostnaamcomponent.
