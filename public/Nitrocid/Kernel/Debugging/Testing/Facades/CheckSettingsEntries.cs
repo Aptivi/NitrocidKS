@@ -52,11 +52,7 @@ namespace Nitrocid.Kernel.Debugging.Testing.Facades
             if (NotFound.Count > 0)
             {
                 TextWriters.Write(Translate.DoTranslation("These configuration entries have invalid variables or enumerations and need to be fixed:"), true, KernelColorType.Warning);
-                var invalidSettings = new Listing()
-                {
-                    Objects = NotFound,
-                };
-                TextWriterRaw.WriteRaw(invalidSettings.Render());
+                TextWriters.WriteList(NotFound);
             }
 
             TestActualValue = NotFound.Count != 0;

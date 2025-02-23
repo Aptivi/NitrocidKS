@@ -51,13 +51,7 @@ namespace Nitrocid.Shell.Shells.Debug.Commands
                     {
                         // Write the field names and their values
                         SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("List of fields for") + $" {type.Name}", true);
-                        var listing = new Listing()
-                        {
-                            Objects = fields,
-                            KeyColor = KernelColorTools.GetColor(KernelColorType.ListEntry),
-                            ValueColor = KernelColorTools.GetColor(KernelColorType.ListValue),
-                        };
-                        TextWriterRaw.WriteRaw(listing.Render());
+                        TextWriters.WriteList(fields);
                     }
                 }
                 catch (Exception ex)
