@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31612.314
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nitrocid.BuildTargets", "private\Nitrocid.BuildTargets\Nitrocid.BuildTargets.csproj", "{AB385851-26D6-4A89-88D7-2ED9E342D815}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nitrocid", "public\Nitrocid\Nitrocid.csproj", "{C7B37899-C361-423D-9512-FE0A87A46866}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nitrocid.Tests", "private\Nitrocid.Tests\Nitrocid.Tests.csproj", "{2698CB71-9EF6-06A7-2A14-1AFF675F88CB}"
@@ -209,8 +211,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nitrocid.Generators.KnownAd
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helpers", "Helpers", "{350FEA5E-D8FA-4B4C-A0D2-F08975F37E5B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nitrocid.BuildTargets", "private\Nitrocid.BuildTargets\Nitrocid.BuildTargets.csproj", "{AB385851-26D6-4A89-88D7-2ED9E342D815}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Nitrocid.Analyzers.Common", "public\Nitrocid.Analyzers\Nitrocid.Analyzers.Common\Nitrocid.Analyzers.Common.shproj", "{89BB6864-5DA5-4BAD-97C2-5436C82AF842}"
 EndProject
