@@ -139,7 +139,7 @@ namespace Nitrocid.Misc.Interactives
                 return "";
             var configs = config.SettingsEntries ??
                 throw new KernelException(KernelExceptionType.Config, Translate.DoTranslation("Can't get settings entries"));
-            string entryDesc = configs[entryIdx].Desc;
+            string entryDesc = Translate.DoTranslation(configs[entryIdx].Desc);
             string status =
                 $"""
                 {entryName}
@@ -159,7 +159,7 @@ namespace Nitrocid.Misc.Interactives
                 return "";
             var configs = config.SettingsEntries ??
                 throw new KernelException(KernelExceptionType.Config, Translate.DoTranslation("Can't get settings entries"));
-            string keyDesc = configs[FirstPaneCurrentSelection - 1].Keys[keyIdx].Description;
+            string keyDesc = Translate.DoTranslation(configs[FirstPaneCurrentSelection - 1].Keys[keyIdx].Description);
             string status = $"K: {keyName} - {keyDesc}";
             return status;
         }
@@ -177,7 +177,7 @@ namespace Nitrocid.Misc.Interactives
                 return "";
             var configs = config.SettingsEntries ??
                 throw new KernelException(KernelExceptionType.Config, Translate.DoTranslation("Can't get settings entries"));
-            string keyDesc = configs[FirstPaneCurrentSelection - 1].Keys[keyIdx].Description;
+            string keyDesc = Translate.DoTranslation(configs[FirstPaneCurrentSelection - 1].Keys[keyIdx].Description);
             string status =
                 $"""
                 {keyName}
