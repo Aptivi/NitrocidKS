@@ -1827,6 +1827,123 @@ references:
   commentId: N:Nitrocid.ConsoleBase.Writers
   fullName: Nitrocid.ConsoleBase.Writers
   nameWithType: Nitrocid.ConsoleBase.Writers
+- uid: Nitrocid.ConsoleBase.Writers.TextDynamicWriters
+  name: TextDynamicWriters
+  href: api/Nitrocid.ConsoleBase.Writers.TextDynamicWriters.html
+  commentId: T:Nitrocid.ConsoleBase.Writers.TextDynamicWriters
+  fullName: Nitrocid.ConsoleBase.Writers.TextDynamicWriters
+  nameWithType: TextDynamicWriters
+- uid: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteSlowly(System.String,System.Boolean,System.Double,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteSlowly(string, bool, double, KernelColorType, KernelColorType, params object[])
+  href: api/Nitrocid.ConsoleBase.Writers.TextDynamicWriters.html#Nitrocid_ConsoleBase_Writers_TextDynamicWriters_WriteSlowly_System_String_System_Boolean_System_Double_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteSlowly(System.String,System.Boolean,System.Double,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteSlowly(String, Boolean, Double, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteSlowly(string, bool, double, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteSlowly(String, Boolean, Double, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextDynamicWriters.WriteSlowly(string, bool, double, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: TextDynamicWriters.WriteSlowly(String, Boolean, Double, KernelColorType, KernelColorType, ParamArray Object())
+- uid: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteSlowly(System.String,System.Boolean,System.Double,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteSlowly(string, bool, double, KernelColorType, params object[])
+  href: api/Nitrocid.ConsoleBase.Writers.TextDynamicWriters.html#Nitrocid_ConsoleBase_Writers_TextDynamicWriters_WriteSlowly_System_String_System_Boolean_System_Double_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteSlowly(System.String,System.Boolean,System.Double,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteSlowly(String, Boolean, Double, KernelColorType, ParamArray Object())
+  fullName: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteSlowly(string, bool, double, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteSlowly(String, Boolean, Double, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextDynamicWriters.WriteSlowly(string, bool, double, KernelColorType, params object[])
+  nameWithType.vb: TextDynamicWriters.WriteSlowly(String, Boolean, Double, KernelColorType, ParamArray Object())
+- uid: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteSlowly*
+  name: WriteSlowly
+  href: api/Nitrocid.ConsoleBase.Writers.TextDynamicWriters.html#Nitrocid_ConsoleBase_Writers_TextDynamicWriters_WriteSlowly_
+  commentId: Overload:Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteSlowly
+  isSpec: "True"
+  fullName: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteSlowly
+  nameWithType: TextDynamicWriters.WriteSlowly
+- uid: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteWhereSlowly(string, bool, int, int, double, KernelColorType, KernelColorType, params object[])
+  href: api/Nitrocid.ConsoleBase.Writers.TextDynamicWriters.html#Nitrocid_ConsoleBase_Writers_TextDynamicWriters_WriteWhereSlowly_System_String_System_Boolean_System_Int32_System_Int32_System_Double_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteWhereSlowly(String, Boolean, Integer, Integer, Double, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(string, bool, int, int, double, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(String, Boolean, Integer, Integer, Double, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextDynamicWriters.WriteWhereSlowly(string, bool, int, int, double, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: TextDynamicWriters.WriteWhereSlowly(String, Boolean, Integer, Integer, Double, KernelColorType, KernelColorType, ParamArray Object())
+- uid: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteWhereSlowly(string, bool, int, int, double, KernelColorType, params object[])
+  href: api/Nitrocid.ConsoleBase.Writers.TextDynamicWriters.html#Nitrocid_ConsoleBase_Writers_TextDynamicWriters_WriteWhereSlowly_System_String_System_Boolean_System_Int32_System_Int32_System_Double_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteWhereSlowly(String, Boolean, Integer, Integer, Double, KernelColorType, ParamArray Object())
+  fullName: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(string, bool, int, int, double, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(String, Boolean, Integer, Integer, Double, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextDynamicWriters.WriteWhereSlowly(string, bool, int, int, double, KernelColorType, params object[])
+  nameWithType.vb: TextDynamicWriters.WriteWhereSlowly(String, Boolean, Integer, Integer, Double, KernelColorType, ParamArray Object())
+- uid: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteWhereSlowly(string, bool, int, int, double, bool, KernelColorType, KernelColorType, params object[])
+  href: api/Nitrocid.ConsoleBase.Writers.TextDynamicWriters.html#Nitrocid_ConsoleBase_Writers_TextDynamicWriters_WriteWhereSlowly_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteWhereSlowly(String, Boolean, Integer, Integer, Double, Boolean, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(string, bool, int, int, double, bool, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(String, Boolean, Integer, Integer, Double, Boolean, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextDynamicWriters.WriteWhereSlowly(string, bool, int, int, double, bool, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: TextDynamicWriters.WriteWhereSlowly(String, Boolean, Integer, Integer, Double, Boolean, KernelColorType, KernelColorType, ParamArray Object())
+- uid: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteWhereSlowly(string, bool, int, int, double, bool, KernelColorType, params object[])
+  href: api/Nitrocid.ConsoleBase.Writers.TextDynamicWriters.html#Nitrocid_ConsoleBase_Writers_TextDynamicWriters_WriteWhereSlowly_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteWhereSlowly(String, Boolean, Integer, Integer, Double, Boolean, KernelColorType, ParamArray Object())
+  fullName: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(string, bool, int, int, double, bool, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(String, Boolean, Integer, Integer, Double, Boolean, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextDynamicWriters.WriteWhereSlowly(string, bool, int, int, double, bool, KernelColorType, params object[])
+  nameWithType.vb: TextDynamicWriters.WriteWhereSlowly(String, Boolean, Integer, Integer, Double, Boolean, KernelColorType, ParamArray Object())
+- uid: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteWhereSlowly(string, bool, int, int, double, bool, int, KernelColorType, KernelColorType, params object[])
+  href: api/Nitrocid.ConsoleBase.Writers.TextDynamicWriters.html#Nitrocid_ConsoleBase_Writers_TextDynamicWriters_WriteWhereSlowly_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteWhereSlowly(String, Boolean, Integer, Integer, Double, Boolean, Integer, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(string, bool, int, int, double, bool, int, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(String, Boolean, Integer, Integer, Double, Boolean, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextDynamicWriters.WriteWhereSlowly(string, bool, int, int, double, bool, int, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: TextDynamicWriters.WriteWhereSlowly(String, Boolean, Integer, Integer, Double, Boolean, Integer, KernelColorType, KernelColorType, ParamArray Object())
+- uid: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteWhereSlowly(string, bool, int, int, double, bool, int, KernelColorType, params object[])
+  href: api/Nitrocid.ConsoleBase.Writers.TextDynamicWriters.html#Nitrocid_ConsoleBase_Writers_TextDynamicWriters_WriteWhereSlowly_System_String_System_Boolean_System_Int32_System_Int32_System_Double_System_Boolean_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(System.String,System.Boolean,System.Int32,System.Int32,System.Double,System.Boolean,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteWhereSlowly(String, Boolean, Integer, Integer, Double, Boolean, Integer, KernelColorType, ParamArray Object())
+  fullName: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(string, bool, int, int, double, bool, int, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly(String, Boolean, Integer, Integer, Double, Boolean, Integer, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextDynamicWriters.WriteWhereSlowly(string, bool, int, int, double, bool, int, KernelColorType, params object[])
+  nameWithType.vb: TextDynamicWriters.WriteWhereSlowly(String, Boolean, Integer, Integer, Double, Boolean, Integer, KernelColorType, ParamArray Object())
+- uid: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly*
+  name: WriteWhereSlowly
+  href: api/Nitrocid.ConsoleBase.Writers.TextDynamicWriters.html#Nitrocid_ConsoleBase_Writers_TextDynamicWriters_WriteWhereSlowly_
+  commentId: Overload:Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly
+  isSpec: "True"
+  fullName: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWhereSlowly
+  nameWithType: TextDynamicWriters.WriteWhereSlowly
+- uid: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWrapped(System.String,System.Boolean,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteWrapped(string, bool, KernelColorType, KernelColorType, params object[])
+  href: api/Nitrocid.ConsoleBase.Writers.TextDynamicWriters.html#Nitrocid_ConsoleBase_Writers_TextDynamicWriters_WriteWrapped_System_String_System_Boolean_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWrapped(System.String,System.Boolean,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteWrapped(String, Boolean, KernelColorType, KernelColorType, ParamArray Object())
+  fullName: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWrapped(string, bool, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWrapped(String, Boolean, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextDynamicWriters.WriteWrapped(string, bool, KernelColorType, KernelColorType, params object[])
+  nameWithType.vb: TextDynamicWriters.WriteWrapped(String, Boolean, KernelColorType, KernelColorType, ParamArray Object())
+- uid: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWrapped(System.String,System.Boolean,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name: WriteWrapped(string, bool, KernelColorType, params object[])
+  href: api/Nitrocid.ConsoleBase.Writers.TextDynamicWriters.html#Nitrocid_ConsoleBase_Writers_TextDynamicWriters_WriteWrapped_System_String_System_Boolean_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWrapped(System.String,System.Boolean,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
+  name.vb: WriteWrapped(String, Boolean, KernelColorType, ParamArray Object())
+  fullName: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWrapped(string, bool, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWrapped(String, Boolean, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
+  nameWithType: TextDynamicWriters.WriteWrapped(string, bool, KernelColorType, params object[])
+  nameWithType.vb: TextDynamicWriters.WriteWrapped(String, Boolean, KernelColorType, ParamArray Object())
+- uid: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWrapped*
+  name: WriteWrapped
+  href: api/Nitrocid.ConsoleBase.Writers.TextDynamicWriters.html#Nitrocid_ConsoleBase_Writers_TextDynamicWriters_WriteWrapped_
+  commentId: Overload:Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWrapped
+  isSpec: "True"
+  fullName: Nitrocid.ConsoleBase.Writers.TextDynamicWriters.WriteWrapped
+  nameWithType: TextDynamicWriters.WriteWrapped
 - uid: Nitrocid.ConsoleBase.Writers.TextWriters
   name: TextWriters
   href: api/Nitrocid.ConsoleBase.Writers.TextWriters.html
@@ -1894,6 +2011,22 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Writers.TextWriters.Write
   nameWithType: TextWriters.Write
+- uid: Nitrocid.ConsoleBase.Writers.TextWriters.WriteListEntry(System.String,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Int32)
+  name: WriteListEntry(string, string, KernelColorType, KernelColorType, int)
+  href: api/Nitrocid.ConsoleBase.Writers.TextWriters.html#Nitrocid_ConsoleBase_Writers_TextWriters_WriteListEntry_System_String_System_String_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Int32_
+  commentId: M:Nitrocid.ConsoleBase.Writers.TextWriters.WriteListEntry(System.String,System.String,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Int32)
+  name.vb: WriteListEntry(String, String, KernelColorType, KernelColorType, Integer)
+  fullName: Nitrocid.ConsoleBase.Writers.TextWriters.WriteListEntry(string, string, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, int)
+  fullName.vb: Nitrocid.ConsoleBase.Writers.TextWriters.WriteListEntry(String, String, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, Integer)
+  nameWithType: TextWriters.WriteListEntry(string, string, KernelColorType, KernelColorType, int)
+  nameWithType.vb: TextWriters.WriteListEntry(String, String, KernelColorType, KernelColorType, Integer)
+- uid: Nitrocid.ConsoleBase.Writers.TextWriters.WriteListEntry*
+  name: WriteListEntry
+  href: api/Nitrocid.ConsoleBase.Writers.TextWriters.html#Nitrocid_ConsoleBase_Writers_TextWriters_WriteListEntry_
+  commentId: Overload:Nitrocid.ConsoleBase.Writers.TextWriters.WriteListEntry
+  isSpec: "True"
+  fullName: Nitrocid.ConsoleBase.Writers.TextWriters.WriteListEntry
+  nameWithType: TextWriters.WriteListEntry
 - uid: Nitrocid.ConsoleBase.Writers.TextWriters.WriteWhere(System.String,System.Int32,System.Int32,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
   name: WriteWhere(string, int, int, KernelColorType, KernelColorType, params object[])
   href: api/Nitrocid.ConsoleBase.Writers.TextWriters.html#Nitrocid_ConsoleBase_Writers_TextWriters_WriteWhere_System_String_System_Int32_System_Int32_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
@@ -1955,31 +2088,6 @@ references:
   isSpec: "True"
   fullName: Nitrocid.ConsoleBase.Writers.TextWriters.WriteWhere
   nameWithType: TextWriters.WriteWhere
-- uid: Nitrocid.ConsoleBase.Writers.TextWriters.WriteWrapped(System.String,System.Boolean,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name: WriteWrapped(string, bool, KernelColorType, KernelColorType, params object[])
-  href: api/Nitrocid.ConsoleBase.Writers.TextWriters.html#Nitrocid_ConsoleBase_Writers_TextWriters_WriteWrapped_System_String_System_Boolean_Nitrocid_ConsoleBase_Colors_KernelColorType_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextWriters.WriteWrapped(System.String,System.Boolean,Nitrocid.ConsoleBase.Colors.KernelColorType,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name.vb: WriteWrapped(String, Boolean, KernelColorType, KernelColorType, ParamArray Object())
-  fullName: Nitrocid.ConsoleBase.Writers.TextWriters.WriteWrapped(string, bool, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextWriters.WriteWrapped(String, Boolean, Nitrocid.ConsoleBase.Colors.KernelColorType, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
-  nameWithType: TextWriters.WriteWrapped(string, bool, KernelColorType, KernelColorType, params object[])
-  nameWithType.vb: TextWriters.WriteWrapped(String, Boolean, KernelColorType, KernelColorType, ParamArray Object())
-- uid: Nitrocid.ConsoleBase.Writers.TextWriters.WriteWrapped(System.String,System.Boolean,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name: WriteWrapped(string, bool, KernelColorType, params object[])
-  href: api/Nitrocid.ConsoleBase.Writers.TextWriters.html#Nitrocid_ConsoleBase_Writers_TextWriters_WriteWrapped_System_String_System_Boolean_Nitrocid_ConsoleBase_Colors_KernelColorType_System_Object___
-  commentId: M:Nitrocid.ConsoleBase.Writers.TextWriters.WriteWrapped(System.String,System.Boolean,Nitrocid.ConsoleBase.Colors.KernelColorType,System.Object[])
-  name.vb: WriteWrapped(String, Boolean, KernelColorType, ParamArray Object())
-  fullName: Nitrocid.ConsoleBase.Writers.TextWriters.WriteWrapped(string, bool, Nitrocid.ConsoleBase.Colors.KernelColorType, params object[])
-  fullName.vb: Nitrocid.ConsoleBase.Writers.TextWriters.WriteWrapped(String, Boolean, Nitrocid.ConsoleBase.Colors.KernelColorType, ParamArray Object())
-  nameWithType: TextWriters.WriteWrapped(string, bool, KernelColorType, params object[])
-  nameWithType.vb: TextWriters.WriteWrapped(String, Boolean, KernelColorType, ParamArray Object())
-- uid: Nitrocid.ConsoleBase.Writers.TextWriters.WriteWrapped*
-  name: WriteWrapped
-  href: api/Nitrocid.ConsoleBase.Writers.TextWriters.html#Nitrocid_ConsoleBase_Writers_TextWriters_WriteWrapped_
-  commentId: Overload:Nitrocid.ConsoleBase.Writers.TextWriters.WriteWrapped
-  isSpec: "True"
-  fullName: Nitrocid.ConsoleBase.Writers.TextWriters.WriteWrapped
-  nameWithType: TextWriters.WriteWrapped
 - uid: Nitrocid.Drivers
   name: Nitrocid.Drivers
   href: api/Nitrocid.Drivers.html
