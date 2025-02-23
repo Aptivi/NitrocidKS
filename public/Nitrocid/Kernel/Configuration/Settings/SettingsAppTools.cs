@@ -32,9 +32,7 @@ using Terminaux.Base;
 using Terminaux.Inputs.Styles;
 
 #if SPECIFIERREL
-#if !PACKAGEMANAGERBUILD
 using Nitrocid.Kernel.Updates;
-#endif
 #endif
 
 namespace Nitrocid.Kernel.Configuration.Settings
@@ -147,32 +145,24 @@ namespace Nitrocid.Kernel.Configuration.Settings
         internal static void CheckForSystemUpdates()
         {
             string devVersionWarning = Translate.DoTranslation("Checking for updates is disabled on development versions.");
-            string packageManagerError = Translate.DoTranslation("You've installed Nitrocid KS using your package manager. Please use it to upgrade your kernel instead.");
             string checkFailed = Translate.DoTranslation("Failed to check for updates.");
             string checking = Translate.DoTranslation("Checking for system updates...");
             string newVersion = Translate.DoTranslation("Found new version: ");
             string upToDate = Translate.DoTranslation("You're up to date!");
-#if SPECIFIERREL && !PACKAGEMANAGERBUILD
+
+#if SPECIFIERREL
             // Check for updates now
             InfoBoxNonModalColor.WriteInfoBox(checking);
             var AvailableUpdate = UpdateManager.FetchBinaryArchive();
             if (AvailableUpdate is not null)
             {
                 if (!AvailableUpdate.Updated)
-                {
                     InfoBoxModalColor.WriteInfoBoxModal(newVersion + $"{AvailableUpdate.UpdateVersion}");
-                }
                 else
-                {
                     InfoBoxModalColor.WriteInfoBoxModal(upToDate);
-                }
             }
             else if (AvailableUpdate is null)
-            {
                 InfoBoxModalColor.WriteInfoBoxModal(checkFailed);
-            }
-#elif PACKAGEMANAGERBUILD
-            InfoBoxModalColor.WriteInfoBoxModal(packageManagerError);
 #else
             InfoBoxModalColor.WriteInfoBoxModal(devVersionWarning);
 #endif
