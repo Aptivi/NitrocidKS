@@ -32,9 +32,7 @@ using Terminaux.Base;
 using Terminaux.Inputs.Styles;
 
 #if SPECIFIERREL
-#if !PACKAGEMANAGERBUILD
 using Nitrocid.Kernel.Updates;
-#endif
 #endif
 
 namespace Nitrocid.Kernel.Configuration.Settings
