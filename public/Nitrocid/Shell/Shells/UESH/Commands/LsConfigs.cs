@@ -23,6 +23,7 @@ using Nitrocid.Shell.ShellBase.Switches;
 using Nitrocid.Languages;
 using Terminaux.Writer.FancyWriters;
 using Terminaux.Writer.ConsoleWriters;
+using Nitrocid.ConsoleBase.Writers;
 
 namespace Nitrocid.Shell.Shells.UESH.Commands
 {
@@ -44,15 +45,15 @@ namespace Nitrocid.Shell.Shells.UESH.Commands
                 if (config is null || config.SettingsEntries is null)
                     continue;
                 SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("Info for") + $" {config.GetType().Name}", true);
-                ListEntryWriterColor.WriteListEntry(Translate.DoTranslation("Entries count"), $"{config.SettingsEntries.Length}");
+                TextWriters.WriteListEntry(Translate.DoTranslation("Entries count"), $"{config.SettingsEntries.Length}");
                 if (deep)
                 {
                     foreach (var entry in config.SettingsEntries)
                     {
                         SeparatorWriterColor.WriteSeparator(Translate.DoTranslation("Entry name") + $": {entry.Name}", true);
-                        ListEntryWriterColor.WriteListEntry(Translate.DoTranslation("Displaying as"), entry.DisplayAs, 1);
-                        ListEntryWriterColor.WriteListEntry(Translate.DoTranslation("Description"), entry.Desc, 1);
-                        ListEntryWriterColor.WriteListEntry(Translate.DoTranslation("Keys count"), $"{entry.Keys.Length}", 1);
+                        TextWriters.WriteListEntry(Translate.DoTranslation("Displaying as"), entry.DisplayAs, indent: 1);
+                        TextWriters.WriteListEntry(Translate.DoTranslation("Description"), entry.Desc, indent: 1);
+                        TextWriters.WriteListEntry(Translate.DoTranslation("Keys count"), $"{entry.Keys.Length}", indent: 1);
                     }
                 }
             }

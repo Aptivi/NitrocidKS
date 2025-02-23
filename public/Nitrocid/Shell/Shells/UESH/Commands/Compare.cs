@@ -62,9 +62,9 @@ namespace Nitrocid.Shell.Shells.UESH.Commands
             TextWriterColor.Write(Translate.DoTranslation("The two files are different."));
             foreach (var (line, one, two) in compared)
             {
-                ListEntryWriterColor.WriteListEntry($"[{line}]", Translate.DoTranslation("Different"));
-                ListEntryWriterColor.WriteListEntry($"[-]", one, 1);
-                ListEntryWriterColor.WriteListEntry($"[+]", two, 1);
+                TextWriters.WriteListEntry($"[{line}]", Translate.DoTranslation("Different"));
+                TextWriters.WriteListEntry($"[-]", one, indent: 1);
+                TextWriters.WriteListEntry($"[+]", two, indent: 1);
             }
             return 0;
         }

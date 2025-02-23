@@ -51,10 +51,10 @@ namespace Nitrocid.Shell.Shells.UESH.Commands
                     foreach (var key in entry.Keys)
                     {
                         var value = ConfigTools.GetValueFromEntry(key, config);
-                        ListEntryWriterColor.WriteListEntry(Translate.DoTranslation("Key name"), key.Name, 1);
-                        ListEntryWriterColor.WriteListEntry(Translate.DoTranslation("Key description"), key.Description, 1);
-                        ListEntryWriterColor.WriteListEntry(Translate.DoTranslation("Key type"), $"{key.Type}", 1);
-                        ListEntryWriterColor.WriteListEntry(Translate.DoTranslation("Key variable"), $"{key.Variable} [{value}]", 1);
+                        TextWriters.WriteListEntry(Translate.DoTranslation("Key name"), key.Name, indent: 1);
+                        TextWriters.WriteListEntry(Translate.DoTranslation("Key description"), key.Description, indent: 1);
+                        TextWriters.WriteListEntry(Translate.DoTranslation("Key type"), $"{key.Type}", indent: 1);
+                        TextWriters.WriteListEntry(Translate.DoTranslation("Key variable"), $"{key.Variable} [{value}]", indent: 1);
                     }
                 }
             }
@@ -69,7 +69,7 @@ namespace Nitrocid.Shell.Shells.UESH.Commands
         public override void HelpHelper()
         {
             var names = Config.GetKernelConfigs().Select((bkc) => bkc.GetType().Name).ToArray();
-            TextWriters.WriteListEntry(Translate.DoTranslation("Available configuration types"), string.Join(", ", names), KernelColorType.ListEntry, KernelColorType.ListValue);
+            TextWriters.WriteListEntry(Translate.DoTranslation("Available configuration types"), string.Join(", ", names));
         }
 
     }
