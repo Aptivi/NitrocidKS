@@ -1027,8 +1027,6 @@ Wenn aktiviert, wird die Gesamtordnergröße in der Liste angezeigt, je nachdem,
 Sie sind auf dem Laufenden!
 Standardmäßige JSON-Formatierung für die JSON-Shell
 Wählt die standardmäßige JSON-Formatierung (verschönert oder minimiert) für die zu speichernde JSON-Shell aus.
-Updates automatisch herunterladen
-Wenn es ein Update gibt, lädt der Kernel es automatisch herunter.
 Explosionsradius von Feuerwerk
 Wie viele Blöcke (bis zu 10) beträgt der Explosionsradius für das Feuerwerk, wenn es gezündet wird?
 Dieser Befehl hat die folgenden Schalter, die seine Funktionsweise ändern:
@@ -1231,7 +1229,6 @@ Automatische Updates
 Nitrocid KS aktualisiert sich derzeit selbst, um die neueste Version zu erhalten, die allgemeine Verbesserungen und Fehlerbehebungen enthält. Neue Hauptversionen enthalten in der Regel bahnbrechende Änderungen und neue aufregende Funktionen.
 Möchten Sie, dass Nitrocid KS automatisch nach Updates sucht?
 Zusätzlich zur automatischen Suche nach Updates kann Nitrocid KS die Update-Datei auch automatisch herunterladen.
-Möchten Sie, dass Nitrocid KS Updates automatisch herunterlädt?
 Sie können jederzeit mit dem Befehl „update“ nach Kernel-Updates suchen.
 Loslegen!
 Glückwunsch! Sie haben jetzt ein Benutzerkonto, {0}!
@@ -3281,7 +3278,6 @@ Geben Sie Ihr Benutzerkennwort ein. Zur Erhöhung der Sicherheit sollten Sie ein
 Automatischer Update-Check
 Ja, das tue ich!
 Nein danke.
-Automatischer Update-Download
 Der Remote-Debug konnte aus unbekannten Gründen nicht gestartet werden.
 Thread kann nicht regeneriert werden
 Änderungsprotokolle können nicht abgerufen werden.

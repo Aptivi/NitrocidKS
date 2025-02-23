@@ -80,12 +80,6 @@
                 "Description": "If there is any kernel error, choose whether or not to print the stack trace to the console."
             },
             {
-                "Name": "Automatically download updates",
-                "Type": "SBoolean",
-                "Variable": "AutoDownloadUpdate",
-                "Description": "If there is any update, the kernel will automatically download it."
-            },
-            {
                 "Name": "Enable event debugging",
                 "Type": "SBoolean",
                 "Variable": "EventDebug",

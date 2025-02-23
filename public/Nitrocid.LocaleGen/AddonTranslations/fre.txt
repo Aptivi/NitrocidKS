@@ -1027,8 +1027,6 @@ Si activé, affiche la taille totale des dossiers dans la liste, en fonction de 
 Vous êtes à jour !
 Formatage JSON par défaut pour le shell JSON
 Sélectionne la mise en forme JSON par défaut (embellie ou minifiée) pour le shell JSON à enregistrer.
-Télécharger automatiquement les mises à jour
-S'il y a une mise à jour, le noyau la téléchargera automatiquement.
 Rayon d'explosion du feu d'artifice
 Combien de blocs (jusqu'à 10) est le rayon d'explosion du feu d'artifice lorsqu'il est allumé ?
 Cette commande a les commutateurs ci-dessous qui changent son fonctionnement :
@@ -1231,7 +1229,6 @@ Mises à jour automatiques
 Nitrocid KS se met actuellement à jour pour obtenir la version la plus récente qui inclut des améliorations générales et des corrections de bugs. Les nouvelles versions majeures incluent généralement des modifications importantes et de nouvelles fonctionnalités intéressantes.
 Voulez-vous que Nitrocid KS vérifie automatiquement les mises à jour ?
 En plus de vérifier automatiquement les mises à jour, Nitrocid KS peut également télécharger automatiquement le fichier de mise à jour.
-Voulez-vous que Nitrocid KS télécharge automatiquement les mises à jour ?
 Vous pouvez toujours vérifier les mises à jour du noyau à l'aide de la commande "update".
 Commencer!
 Toutes nos félicitations! Vous disposez désormais d'un compte utilisateur, {0} !
@@ -3281,7 +3278,6 @@ Saisissez votre mot de passe utilisateur. Vous devez choisir un mot de passe for
 Vérification automatique des mises à jour
 Oui je le fais!
 Non merci.
-Téléchargement de mise à jour automatique
 Le débogage à distance n'a pas pu démarrer pour des raisons inconnues.
 Le fil ne peut pas être régénéré
 Impossible de récupérer les journaux des modifications.
