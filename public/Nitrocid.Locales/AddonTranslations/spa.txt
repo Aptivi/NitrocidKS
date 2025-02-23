@@ -4133,3 +4133,57 @@ Nivel máximo de color para el tercero
 Progresses seleccionará colores aleatorios si está habilitado. De lo contrario, usa los colores de la configuración.
 Si el ciclo de color está habilitado, ¿cuántos ticks antes de cambiar los colores en Progresses? 1 tick = 0,5 tercios
 ¡Listo! Utilice la aplicación Nitrocid.Locales con los argumentos adecuados para finalizar los idiomas. Puede utilizar esta ruta:
+La configuración del núcleo no funcionará correctamente. Las claves no válidas son
+Intentando registrar una configuración personalizada con contenido no válido. Las claves no válidas son
+Intentando registrar una configuración base con contenido no válido. Las claves no válidas son
+Agrega un mod a la lista negra
+Elimina un mod de la lista negra
+Estas entradas de configuración tienen variables o enumeraciones no válidas y deben corregirse:
+Inicia todos los mods
+Imprime un separador en la consola con color
+Imprime un separador en la consola con formato y color
+Recarga todos los mods
+Estadísticas
+Muestra las estadísticas de prueba actuales
+Probar todo
+Prueba todas las fachadas
+Vuelve a la selección de sección
+Elija una fachada de prueba para ejecutar
+Esta prueba contiene parámetros opcionales. Ingrese el valor del parámetro para agregar a los parámetros de prueba.
+Número de parámetros
+¡Sí!
+Reintentar
+¿Se ejecutó la prueba como se esperaba?
+La prueba falló. El valor esperado es {0}, pero el valor real es {1}.
+La prueba falló inesperadamente.
+Pruebas exitosas:
+Pruebas fallidas:
+Pruebas a ejecutar:
+No se puede obtener la lista de funciones
+No se puede obtener la lista de propiedades
+No se puede obtener la lista de campos
+Según la configuración de idioma de su sistema, el idioma apropiado es
+No se pudieron cargar los complementos de finalización
+Modificaciones del kernel
+Seleccionó '{0}'. Presione ESC para salir y confirmar la selección.
+La variable {0} no se encuentra en ninguno de los módulos.
+El tipo de método no está definido en la lista de tipos base de Nitrocid.
+No se puede ejecutar la propiedad personalizada con un mod inexistente
+No se puede ejecutar el campo personalizado con un mod inexistente
+Obtiene fácilmente la información del registro de depuración usando el número de sesión
+¡Sí, configúrelo!
+No, no lo configure.
+Usa la configuración de idioma del sistema para intentar inferir el idioma
+No hay información de propiedad para
+Temporizador Pomodoro
+Selección de perfil no válida.
+Cambiar la cultura al cambiar de idioma
+Al cambiar de idioma, cambia los nombres de los meses, el calendario, etc.
+¿Qué variante del idioma actual se está utilizando para cambiar los nombres de los meses, el calendario, etc.?
+Tiempo de espera en segundos para iniciar con la selección predeterminada.
+Selección de entrada de inicio predeterminada. Este número se basa en cero, por lo que el primer elemento es el índice 0, y así sucesivamente.
+Esta sección enumera las configuraciones predeterminadas del shell.
+Configuraciones predeterminadas del shell
+Enrollar salidas de lista
+Enrolla las salidas de lista si parecen demasiado largas para la geometría actual de la consola.
+Esta sección te permite configurar cómo funcionan las diversiones.

@@ -4117,7 +4117,6 @@ Ký tự góc dưới bên trái cho thanh thứ ba
 Ký tự góc dưới bên phải cho thanh thứ ba
 Ký tự khung trên cho thanh thứ ba
 Ký tự khung dưới cho thanh thứ ba
-Ký tự khung dưới cho thanh thứ ba
 Ký tự khung trái cho thanh thứ ba
 Ký tự khung phải cho thanh thứ ba bar
 Văn bản thông tin cho thứ ba
@@ -4134,3 +4133,57 @@ Mức màu tối đa cho thứ ba
 Tiến trình sẽ chọn màu ngẫu nhiên nếu được bật. Nếu không, hãy sử dụng màu từ cấu hình.
 Nếu bật tính năng tuần hoàn màu, có bao nhiêu tích tắc trước khi thay đổi màu trong Tiến trình? 1 tích tắc = 0,5 thứ ba
 Xong! Vui lòng sử dụng ứng dụng Nitrocid.Locales với các đối số phù hợp để hoàn thiện ngôn ngữ. Bạn có thể sử dụng đường dẫn này:
+Cấu hình hạt nhân sẽ không hoạt động bình thường. Các khóa không hợp lệ
+Đang cố gắng đăng ký một thiết lập tùy chỉnh với nội dung không hợp lệ. Các khóa không hợp lệ
+Đang cố gắng đăng ký một thiết lập cơ sở với nội dung không hợp lệ. Các khóa không hợp lệ
+Thêm một mod vào danh sách đen
+Xóa một mod khỏi danh sách đen
+Các mục cấu hình này có các biến hoặc phép liệt kê không hợp lệ và cần được sửa:
+Bắt đầu tất cả các mod
+In một dấu phân cách vào bảng điều khiển có màu
+In một dấu phân cách vào bảng điều khiển có định dạng và màu
+Tải lại tất cả các mod
+Thống kê
+Hiển thị số liệu thống kê thử nghiệm hiện tại
+Kiểm tra tất cả
+Kiểm tra tất cả các mặt tiền
+Quay lại phần lựa chọn
+Chọn một mặt tiền thử nghiệm để chạy
+Kiểm tra này chứa các tham số tùy chọn. Nhập giá trị của tham số để thêm vào các tham số thử nghiệm.
+Số lượng tham số
+Có!
+Thử lại
+Kiểm tra có chạy như mong đợi không?
+Kiểm tra không thành công. Giá trị mong đợi là {0}, nhưng giá trị thực tế là {1}.
+Kiểm tra không thành công ngoài mong đợi.
+Kiểm tra thành công:
+Kiểm tra không thành công:
+Kiểm tra cần chạy:
+Không thể lấy danh sách hàm
+Không thể lấy danh sách thuộc tính
+Không thể lấy danh sách trường
+Dựa trên cài đặt ngôn ngữ trên hệ thống của bạn, ngôn ngữ phù hợp là
+Không tải được tiện ích bổ sung hoàn thiện
+Sửa đổi hạt nhân
+Đã chọn '{0}'. Nhấn ESC để thoát và xác nhận lựa chọn.
+Không tìm thấy biến {0} trên bất kỳ mô-đun nào.
+Kiểu phương thức không được xác định trong danh sách kiểu Nitrocid cơ sở.
+Không thể thực thi thuộc tính tùy chỉnh với mod không tồn tại
+Không thể thực thi trường tùy chỉnh với mod không tồn tại
+Dễ dàng lấy thông tin nhật ký gỡ lỗi bằng số phiên
+Có, hãy đặt!
+Không, đừng đặt.
+Sử dụng cài đặt ngôn ngữ hệ thống để cố gắng suy ra ngôn ngữ từ
+Không có thông tin thuộc tính nào cho
+Pomodoro Timer
+Lựa chọn hồ sơ không hợp lệ.
+Thay đổi Văn hóa khi Chuyển đổi Ngôn ngữ
+Khi chuyển đổi ngôn ngữ, hãy thay đổi tên tháng, lịch, v.v.
+Biến thể nào của ngôn ngữ hiện tại đang được sử dụng để thay đổi tên tháng, lịch, v.v.?
+Thời gian chờ tính bằng giây để khởi động đến lựa chọn mặc định.
+Lựa chọn mục khởi động mặc định. Số này bắt đầu từ số không, vì vậy phần tử đầu tiên là chỉ mục 0, v.v.
+Phần này liệt kê các cài đặt trước của shell.
+Cài đặt trước của shell
+Gói đầu ra danh sách
+Gói đầu ra danh sách nếu có vẻ quá dài đối với hình dạng bảng điều khiển hiện tại.
+Phần này cho phép bạn định cấu hình cách thức hoạt động của các trò giải trí.

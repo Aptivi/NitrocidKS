@@ -4133,3 +4133,57 @@ Geçerli saniye için bilgi metninizin nasıl gösterildiğini yazın. 60 üçü
 Progresses, etkinleştirilirse rastgele renkler seçecektir. Aksi takdirde, yapılandırmadaki renkleri kullanın.
 Renk döngüsü etkinleştirilirse, Progresses'ta renkleri değiştirmeden önce kaç tik var? 1 tik = 0,5 üçüncü
 Tamamlandı! Lütfen dilleri sonlandırmak için uygun argümanlarla Nitrocid.Locales uygulamasını kullanın. Bu yolu kullanabilirsiniz:
+Çekirdek yapılandırması düzgün çalışmayacak. Geçersiz anahtarlar
+Geçersiz içerikle özel bir ayar kaydetmeye çalışıyor. Geçersiz anahtarlar
+Geçersiz içerikle temel bir ayar kaydetmeye çalışıyor. Geçersiz anahtarlar
+Kara listeye bir mod ekler
+Kara listeden bir mod kaldırır
+Bu yapılandırma girişleri geçersiz değişkenlere veya numaralandırmalara sahiptir ve düzeltilmesi gerekir:
+Tüm modları başlatır
+Konsolda renkli bir ayırıcı yazdırır
+Konsolda biçimlendirme ve renkle bir ayırıcı yazdırır
+Tüm modları yeniden yükler
+İstatistikler
+Geçerli test istatistiklerini gösterir
+Hepsini test eder
+Tüm cepheleri test eder
+Bölüm seçimine geri döner
+Çalıştırılacak bir test cephesi seçer
+Bu test isteğe bağlı parametreler içerir. Test parametrelerine eklenecek parametrenin değerini girin.
+Parametre sayısı
+Evet!
+Tekrar dene
+Test beklendiği gibi çalıştı mı?
+Test başarısız oldu. Beklenen değer {0}, ancak gerçek değer {1}.
+Test beklenmedik şekilde başarısız oldu.
+Başarılı testler:
+Başarısız testler:
+Çalıştırılacak testler:
+Fonksiyonlar listesi alınamıyor
+Özellikler listesi alınamıyor
+Alanlar listesi alınamıyor
+Sisteminizdeki dil ayarlarınıza göre uygun dil
+Sonlandırma eklentileri yüklenemedi
+Çekirdek değişiklikleri
+Seçilen '{0}'. Çıkmak ve seçimi onaylamak için ESC tuşuna basın.
+Değişken {0} modüllerin hiçbirinde bulunamadı.
+Metot türü temel Nitrocid tür listesinde tanımlı değil.
+Var olmayan mod ile özel özellik yürütülemiyor
+Var olmayan mod ile özel alan yürütülemiyor
+Oturum numarasını kullanarak hata ayıklama günlüğü bilgilerini kolayca getirir
+Evet, ayarlayın!
+Hayır, ayarlamayın.
+Dilden çıkarım yapmak için sistem dil ayarlarını kullanır
+Için özellik bilgisi yok
+Pomodoro Zamanlayıcısı
+Geçersiz profil seçimi.
+Dil Değiştirirken Kültürü Değiştir
+Dil değiştirirken ay adlarını, takvimi vb. değiştirin.
+Ay adlarını, takvimi vb. değiştirmek için geçerli dilin hangi çeşidi kullanılıyor?
+Varsayılan seçime önyükleme yapmak için saniye cinsinden zaman aşımı.
+Varsayılan önyükleme girişi seçimi. Bu sayı sıfır tabanlıdır, bu nedenle ilk öğe dizin 0'dır, vb.
+Bu bölüm kabuk ön ayar ayarlarını listeler.
+Kabuk ön ayar ayarları
+Sarma listesi çıktıları
+Geçerli konsol geometrisi için çok uzun görünüyorsa liste çıktılarını sarar.
+Bu bölüm eğlencelerin nasıl çalıştığını yapılandırmanıza olanak tanır.
