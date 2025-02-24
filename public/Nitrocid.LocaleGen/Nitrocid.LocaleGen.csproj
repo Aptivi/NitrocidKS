@@ -38,26 +38,6 @@
   </ItemGroup>
   <!-- LocaleGen Dependencies Information End -->
 
-  <!-- LocaleGen Language Metadata and Base -->
-  <ItemGroup>
-    <None Include="CustomLanguages\Metadata.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Translations\Metadata.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Translations\eng.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="CustomLanguages\eng.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="AddonTranslations\eng.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <!-- LocaleGen Language Metadata and Base End -->
-
   <!-- LocaleGen Translations -->
   <ItemGroup>
     <None Include="AddonTranslations\Metadata.json">
@@ -68,9 +48,11 @@
     </None>
   </ItemGroup>
 
-  <Target Name="UpdateEng" BeforeTargets="Compile">
-    <Copy SourceFiles="Translations\eng.txt" DestinationFolder="AddonTranslations" />
-    <Copy SourceFiles="Translations\eng.txt" DestinationFolder="CustomLanguages" />
+  <Target Name="UpdateEng" AfterTargets="Compile">
+    <Copy SourceFiles="AddonTranslations\eng.txt" DestinationFolder="$(OutputPath)\Translations" />
+    <Copy SourceFiles="AddonTranslations\eng.txt" DestinationFolder="$(OutputPath)\CustomLanguages" />
+    <Copy SourceFiles="AddonTranslations\MetadataEng.json" DestinationFiles="$(OutputPath)\Translations\Metadata.json" />
+    <Copy SourceFiles="AddonTranslations\MetadataEng.json" DestinationFiles="$(OutputPath)\CustomLanguages\Metadata.json" />
   </Target>
   <!-- LocaleGen Translations End -->
 
