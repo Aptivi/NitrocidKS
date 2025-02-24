@@ -37,7 +37,6 @@ namespace Nitrocid.Misc.Screensaver
     {
 
         internal readonly static KernelThread ScreensaverDisplayerThread = new("Screensaver display thread", false, (ss) => DisplayScreensaver((BaseScreensaver?)ss));
-        internal static bool OutOfSaver;
         internal static BaseScreensaver? displayingSaver;
 
         /// <summary>
@@ -54,14 +53,13 @@ namespace Nitrocid.Misc.Screensaver
             try
             {
                 // Preparations
-                OutOfSaver = false;
                 displayingSaver = Screensaver;
                 ColorTools.AllowBackground = true;
                 ColorTools.GlobalSettings.UseTerminalPalette = false;
                 Screensaver.ScreensaverPreparation();
 
                 // Execute the actual screensaver logic
-                while (!OutOfSaver)
+                while (!ScreensaverDisplayerThread.IsStopping)
                 {
                     if (ConsoleWrapper.CursorVisible)
                         ConsoleWrapper.CursorVisible = false;
@@ -70,7 +68,7 @@ namespace Nitrocid.Misc.Screensaver
             }
             catch (ThreadInterruptedException)
             {
-                ScreensaverManager.HandleSaverCancel(initialVisible);
+                DebugWriter.WriteDebug(DebugLevel.W, "Screensaver is stopping due to user request...");
             }
             catch (Exception ex)
             {
@@ -78,8 +76,8 @@ namespace Nitrocid.Misc.Screensaver
             }
             finally
             {
-                OutOfSaver = true;
                 Screensaver.ScreensaverOutro();
+                ScreensaverManager.HandleSaverCancel(initialVisible);
                 ColorTools.AllowBackground = initialBack;
                 ColorTools.GlobalSettings.UseTerminalPalette = initialPalette;
                 KernelColorTools.LoadBackground();
