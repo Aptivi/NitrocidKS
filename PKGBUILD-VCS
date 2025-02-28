@@ -1,6 +1,6 @@
 # Maintainer: Aptivi <ceo at aptivi dot anonaddy dot com>
 pkgname=nitrocid-27-git
-pkgver=v0.1.0.r741.e2aecf6d2
+pkgver=v0.1.2.r3.6925bae55
 pkgrel=1
 pkgdesc="Simulates our future-planned kernel"
 arch=('x86_64' 'aarch64')
@@ -26,7 +26,7 @@ pkgver() {
 
 prepare() {
 	cd "${pkgname}"
-	HOME=`pwd`/nuget DOTNET_CLI_TELEMETRY_OPTOUT=1 dotnet restore Nitrocid.sln
+	HOME=`pwd`/nuget dotnet restore Nitrocid.sln
 	mkdir -p deps
 	cp nuget/.nuget/packages/*/*/*.nupkg deps/
 	rm -rf nuget
@@ -35,7 +35,7 @@ prepare() {
 
 build() {
 	cd "${pkgname}"
-	HOME="$srcdir/homedir" DOTNET_CLI_TELEMETRY_OPTOUT=1 make all-offline
+	HOME="$srcdir/homedir" make all-offline
 }
 
 package() {

@@ -25,6 +25,10 @@ set buildoptions=%*
 call set buildoptions=%%buildoptions:*%1=%%
 if "%buildoptions%" == "*=" set buildoptions=
 
+REM Turn off telemetry and logo
+set DOTNET_CLI_TELEMETRY_OPTOUT=1
+set DOTNET_NOLOGO=1
+
 :download
 echo Downloading packages...
 "%ProgramFiles%\dotnet\dotnet.exe" restore "..\Nitrocid.sln" -p:Configuration=%releaseconfig% %buildoptions%

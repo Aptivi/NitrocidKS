@@ -36,6 +36,10 @@ fi
 dotnetpath=`which dotnet`
 checkerror $? "dotnet is not found"
 
+# Turn off telemetry and logo
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export DOTNET_NOLOGO=1
+
 # Download packages
 echo Downloading packages...
 "$dotnetpath" restore "../Nitrocid.sln" -p:Configuration=$ksreleaseconf ${@:2}

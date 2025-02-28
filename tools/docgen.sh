@@ -25,6 +25,10 @@ if [ ! $? == 0 ]; then
 	exit 1
 fi
 
+# Turn off telemetry and logo
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export DOTNET_NOLOGO=1
+
 # Build KS
 echo Building KS documentation...
 docfx ../DocGen/docfx.json
