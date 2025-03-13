@@ -32,8 +32,8 @@ checkerror $? "  - Failed to remove nuget folder"
 
 # Copy NuGet.config for offline use
 echo "- Copying NuGet.config..."
-echo "  - cp $ROOTDIR/tools/OfflineNuGet.config $ROOTDIR/NuGet.config"
-cp $ROOTDIR/tools/OfflineNuGet.config $ROOTDIR/NuGet.config
+echo "  - cp $ROOTDIR/vnd/OfflineNuGet.config $ROOTDIR/NuGet.config"
+cp $ROOTDIR/vnd/OfflineNuGet.config $ROOTDIR/NuGet.config
 checkerror $? "  - Failed to copy offline NuGet config"
 
 echo "- You should be able to build offline!"
